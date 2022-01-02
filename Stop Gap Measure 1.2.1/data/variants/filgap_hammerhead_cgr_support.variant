@@ -1,0 +1,45 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "filgap_hammerhead_cgr",
+  "hullMods": [
+    "blast_doors"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "filgap_hammerhead_cgr_support",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "filgap_mosychlosbag",
+        "WS 002": "heavyac",
+        "WS 003": "heatseeker",
+        "WS 004": "filgap_saturation_launcher",
+        "WS 005": "filgap_scattergun",
+        "WS 006": "filgap_scattergun",
+        "WS 007": "lightmg",
+        "WS 008": "lightmg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

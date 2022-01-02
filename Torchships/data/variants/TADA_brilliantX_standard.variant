@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 11,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_brilliantX",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "variantId": "TADA_brilliantX_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 000": "plasma"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "typhoon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "heavyneedler",
+                "WS 006": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pdburst",
+                "WS 003": "pdburst"
+            }
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+  "hullName": "Gryning",
+  "hullId": "prv_gryning",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_gryning.png",
+  "style": "PRV_HIGH",
+  "height": 93,
+  "width": 78,
+  "center": [39, 45],
+  "collisionRadius": 69,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 63.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_ramshield",
+  ],
+  "builtInWeapons": {
+    "D01":"prv_d_emitter_gryning",
+    "WS0003": "prv_skatunge",
+    "WS0004": "prv_skatunge",
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, 0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [9, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [9, -31]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [18.5, -13.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [18.5, 13.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-4, 17]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-4, -17]
+    },
+    {
+      "id": "D01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-45.5, 10],
+      "length": 34,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-45.5, -10],
+      "length": 34,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-34.5, 24.5],
+      "length": 35,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-34.5, -24.5],
+      "length": 35,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -38.5, 13.5,
+    -15.5, 34,
+    5, 34,
+    42, 0,
+    5, -34,
+    -15.5, -34,
+    -38.5, -13.5
+  ]
+}

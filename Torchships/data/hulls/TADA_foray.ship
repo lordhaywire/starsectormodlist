@@ -1,0 +1,290 @@
+{
+  "bounds": [
+    104,
+    32.5,
+    96.5,
+    41,
+    54.5,
+    42,
+    52,
+    68.5,
+    8.5,
+    67.5,
+    -6.5,
+    94.5,
+    -36,
+    94.5,
+    -47,
+    87,
+    -70.5,
+    89.5,
+    -70.5,
+    89.5,
+    -78.5,
+    51.5,
+    -43.5,
+    51,
+    -27.5,
+    38.5,
+    -41,
+    34,
+    -51,
+    -0,
+    -41,
+    -34,
+    -27.5,
+    -38.5,
+    -43.5,
+    -51.5,
+    -78.5,
+    -51.5,
+    -70.5,
+    -89.5,
+    -70.5,
+    -89.5,
+    -47,
+    -87,
+    -36,
+    -94.5,
+    -6.5,
+    -94.5,
+    8.5,
+    -67.5,
+    52,
+    -68.5,
+    54.5,
+    -42,
+    96.5,
+    -41,
+    104,
+    -32.5
+  ],
+  "builtInMods": [
+    "TADA_fullRacks",
+    "civgrade"
+  ],
+  "builtInWeapons": {
+    "WS0001": "TADA_hailstorm"
+  },
+  "builtInWings": [],
+  "center": [
+    97,
+    83
+  ],
+  "collisionRadius": 124.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -81,
+        54.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -81,
+        -54.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -81,
+        62.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -81,
+        -62.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 22,
+      "length": 48.5,
+      "location": [
+        -77,
+        77
+      ],
+      "style": "LOW_TECH",
+      "width": 22
+    },
+    {
+      "angle": -180,
+      "contrailSize": 22,
+      "length": 48.5,
+      "location": [
+        -77,
+        -77
+      ],
+      "style": "LOW_TECH",
+      "width": 22
+    }
+  ],
+  "height": 191,
+  "hullId": "TADA_foray",
+  "hullName": "Foray",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 124,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_foray.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        84,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 235,
+      "id": "WS0002",
+      "locations": [
+        43,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 235,
+      "id": "WS0003",
+      "locations": [
+        -23,
+        68
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 235,
+      "id": "WS0004",
+      "locations": [
+        -23,
+        -68
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        52,
+        60
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        52,
+        -60
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 5,
+      "id": "WS0008",
+      "locations": [
+        24,
+        67
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        24,
+        -67
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 5,
+      "id": "WS0007",
+      "locations": [
+        -55,
+        89
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 5,
+      "id": "WS0010",
+      "locations": [
+        -55,
+        -89
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 5,
+      "id": "WS0011",
+      "locations": [
+        -48.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 194
+}

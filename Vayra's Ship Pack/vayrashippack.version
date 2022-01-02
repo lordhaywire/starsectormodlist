@@ -1,0 +1,11 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/Vayraa/vayrasector/master/vayrashippack.version",
+    "modName":"Vayra's Ship Pack",
+    "modThreadId":16059,
+    "modVersion":
+    {
+        "major":1,
+        "minor":2,
+        "patch":3
+    },
+}

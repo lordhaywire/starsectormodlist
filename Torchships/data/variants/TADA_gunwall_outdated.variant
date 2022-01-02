@@ -1,0 +1,64 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 9,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall",
+    "hullMods": [
+        "heavyarmor",
+        "reinforcedhull",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_gunwall_outdated",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "annihilatorpod",
+                "WS0018": "annihilatorpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "arbalest",
+                "WS0002": "arbalest",
+                "WS0003": "arbalest",
+                "WS0004": "arbalest",
+                "WS0005": "arbalest",
+                "WS0006": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "shredder",
+                "WS0008": "shredder",
+                "WS0009": "shredder",
+                "WS0010": "shredder",
+                "WS0013": "shredder",
+                "WS0014": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0015": "flak",
+                "WS0016": "flak",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["piranha_wing"]
+}

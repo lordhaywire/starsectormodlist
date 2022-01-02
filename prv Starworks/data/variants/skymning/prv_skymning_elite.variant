@@ -1,0 +1,71 @@
+{
+  "variantId": "prv_skymning_elite",
+  "hullId": "prv_skymning",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_heavygravkan",
+        "WS0002": "prv_heavygravkan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "prv_berguv"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_frasare",
+        "WS0005": "prv_frasare",
+        "WS0006": "prv_frasare"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_heavyakers",
+        "WS0008": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_vakt",
+        "WS0009": "irpulse",
+        "WS0010": "irpulse",
+        "WS0011": "prv_sipdlaser",
+        "WS0013": "prv_sipdlaser",
+        "WS0014": "prv_sipdlaser",
+        "WS0015": "prv_sipdlaser",
+        "WS0016": "prv_sipdlaser",
+        "WS0017": "irpulse",
+        "WS0018": "irpulse",
+        "WS0019": "irpulse",
+        "WS0020": "irpulse",
+        "WS0022": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing"
+  ]
+}

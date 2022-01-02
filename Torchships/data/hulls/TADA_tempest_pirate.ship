@@ -1,0 +1,157 @@
+{
+  "bounds": [
+    -34.5,
+    11,
+    -39.5,
+    7.5,
+    -39.5,
+    -7.5,
+    -34.5,
+    -11,
+    -23.5,
+    -27.5,
+    -13.5,
+    -28.5,
+    3.5,
+    -21.5,
+    30.5,
+    -21.5,
+    35.5,
+    -13.5,
+    31.5,
+    -0,
+    35.5,
+    13.5,
+    30.5,
+    21.5,
+    11.5,
+    21.5,
+    1.5,
+    28.5,
+    -32.5,
+    21.5
+  ],
+  "builtInMods": [
+    "ill_advised"
+  ],
+  "builtInWings": [
+    "borer_wing"
+  ],
+  "center": [
+    31,
+    41
+  ],
+  "collisionRadius": 67,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 48,
+      "location": [
+        -40,
+        -1
+      ],
+      "style": "HIGH_TECH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 24,
+      "location": [
+        -34,
+        19
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 24,
+      "location": [
+        -29,
+        -21
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    }
+  ],
+  "height": 82,
+  "hullId": "TADA_tempest_pirate",
+  "hullName": "Tempest Mk.II",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    4,
+    -0
+  ],
+  "shieldRadius": 63,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_tempest_pirate.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        19,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -15,
+        -16.5,
+        -11,
+        -16
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        25,
+        -20.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -29.5,
+        10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        25,
+        20.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 62
+}

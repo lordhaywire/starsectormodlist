@@ -1,0 +1,36 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "pulse_laser_fire",
+  "glowColor": [
+    255,
+    100,
+    155,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_plasma_caster_glow_hardpoint.png",
+  "hardpointOffsets": [
+    13.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_plasma_caster_hardpoint.png",
+  "id": "filgap_plasma_caster",
+  "projectileSpecId": "filgap_plasma_bullet_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_plasma_caster_glow_turret.png",
+  "turretOffsets": [
+    10,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_plasma_caster_turret.png",
+  "type": "ENERGY"
+}

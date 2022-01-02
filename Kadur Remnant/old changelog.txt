@@ -1,0 +1,424 @@
+3.0.1
+- PUBLIC RELEASE OF KADUR REMNANT, VAYRA'S SECTOR, AND VAYRA'S SHIP PACK
+
+3.0.0
+!!! Added player bounty feature !!!
+!!! Requires faction whitelisting in /data/config/vayraBounties/player_bounty_factions.csv !!!
+!!! Mod creators: Whitelist your mod factions! !!!
+- split the damn mod into three separate mods god DAMN it
+- added Luddic Path start option
+- added rare scavenger weapon which is definitely not a GES Bio-Rifle from Unreal Tournament, Game of the Year 1999
+- added Fortress-class heavy drone cruiser
+- renamed Intimidator to Torturer
+- added Intimidator-class destroyer
+- added Persecutor-class destroyer
+- added Subjugator-class cruiser
+- added Athame-class Light Support Pod wing
+- switched Typhon system to vanilla Sensor Drones
+- pushed stuff around in the Mirage system
+- cleaned up sim_opponents
+- cleaned up some hullmod descriptions
+- cleaned up some ship/weapon descriptions
+- added in-depth explanation of crystal shard mechanics to kadur splinter torpedo
+- reduced Jahannam Siege Cannon ammo count to 7, lowered ammo/second to maintain same reload time
+- reduced Caliph core and module mass values
+- optimized Caliph modular shields script
+- gave Caliph a special version of Mass-Aug Ram Jets with longer cooldown, less bonus maneuverability, and no mass multiplier (it has enough already, christ)
+- added tactical blurb to Operation Godslayer mission
+- added no_drop tags to Antediluvian weapons... you'll have to find another way to get them  ;) (j/k there's no way to get them... [i]yet[/i])
+- fixed drone fighter wings requiring crew (oops)
+- added +1 Burn speed bonus to Pirate XIV hullmod
+- added status indicator for Ashen Bulwark hullmod
+- added description, fighter Swarmers, and minimal hardpoint arcs to Pegasus heavy escort fighter
+- added description to Workhorse interceptor
+- added 50 armor to Tarsus Ultra
+- added [tt]minimumFleetFP[/tt] and [tt]playerFPScalingFactor[/tt] fields to unique_bounty_data.csv
+- rare bounty flagships will no longer replace flags with a higher FP cost - this should reduce the incidence of misplaced flagships in the fleet member list
+
+2.4.3
+- fixed duplication of procgen entities caused by multiple newgames within same Starsector session (hopefully)
+- squashed another rare unique bounty nullpointererror crash bug
+
+2.4.2
+- fixed save duplication of unique bounties
+- added missing SYSTEM tag to fighter version of Janissary SRM
+- added squiggly lines
+- buffed Rock Hound - changed nacelle hardpoint to modular, added hullmod to equip LR Mining Laser or Mining Lance when left empty with enough OP
+- buffed LR Mining Pod - changed weapon from Mining Laser to Mining Lance
+- removed Advanced Optics from Mining Platform, increased LR Mining Laser range by 200 to compensate
+- reduced LR Mining Laser flux cost to 45/sec (1.5 eff)
+- doubled Mining Lance damage, set flux eff. to 1.5, reduced fire rate to maintain 60 DPS
+- fixed rare custom bounty manager crash on spawnFleet()
+- the Independent AI War Research Mandate will no longer post or be targeted by bounties (again)
+
+2.4.1
+- fixed raider bases (hopefully)
+
+2.4.0
+- cut extremely contentious "add admins to adminless markets" script
+- fixed save bloat bug
+- fixed L'Interstellaire duplication bug
+- broke raider bases oops (idk wtf)
+- fixed infrequent bounty-related crash bug (hopefully)
+- allowed colony factions to post bounties and have bounties posted for them
+- added PDPRC non-Nexerelin start
+- added message when trying to run Vayra's Sector and Kadur Remnant at same time
+!!! UNIQUE BOUNTY FRAMEWORK !!!
+- added mod-extensible framework for unique, non-expiring bounties with custom text
+- added "Black Talon" test case unique pirate Eagle
+- added Caliph campaign integration via unique bounty framework
+!!! PROCGEN ENTITY FRAMEWORK !!!
+- added mod-extensible framework for simple campaign integration for factions, mini-factions, and exploration content
+- added hidden Kadur Remnant station as test case via procgen entity framework
+- added Antediluvian frigate, eventually to be test case for procgen entity framework
+
+2.3.0b
+- added particles to Joachim Heavy Graviton Sweeper effect
+- added fix for Ram Jets retreat AI
+- added fixy thingy for colony faction ships added by other mods (applies faction hullmod)
+- hellasick custom illustration for the Revenant Gestalt added (thanks Mendonca)
+
+2.3.0a
+- reduced Graviton Blaster flux efficiency to 1.2
+- fixed some script bugs, hopefully
+- set config .csvs and .jsons to be merged rather than simply loaded (allows overwriting by other mods)
+- disabled "fix admins" by default - activate at own risk of mandering other modder's intentions
+
+2.3.0
+MISC TWEAKS AND FIXES
+- forum thread OP reworked to emphasize new focus
+- VERY IMPORTANT ARTWORK added to mod folder
+- variants cleaned up
+- artwork moved to graphics folder
+- scripts moved to scripts folder (except ones that have their own place to live)
+- fixed double ruins bug
+- fixed bug where targeting pods status displayed for player ship despite player ship not being the Badger Mk.II with targeting pods
+- Kadur crusades now exclude markets owned by nonhostile factions, even inside targeted systems
+- New Beginnings whitelist added for Kadur Remnant and all colony factions
+- Ruthless Sector whitelist added for Kadur Remnant and all colony factions
+- specifically excluded Cabal from using the Rock Hound
+- admin fix script updated to respect (i.e. not replace) faction leaders as well as administrators, and use vanilla logic for admin skill picking
+VAYRA_SETTINGS.INI CHANGES
+- new setting to apply NPC admins to all markets that lack one (other than player-owned markets)
+- new setting to tweak first cycle colonial competitors can appear in if player has no colonies yet (default: 208)
+- new setting to enable/disable Popular Front
+- new setting to tweak first cycle Popular Front appears in
+- enabling/disabling settings after new game should now work much better (probably still not perfect, but...)
+CUSTOM BOUNTY MANAGER FEATURE CHANGES
+- custom bounty manager now increases bounty credit reward scaling with level (does not tamper with base reward but 500FP carrier fleets should feel a bit more worth engaging hopefully)
+- custom bounties will now occasionally spawn with rare flagships not necessarily normally available to their faction and not subject to autofit fuckery
+- !!! RARE BOUNTY FLAGSHIPS IS A MOD FRAMEWORK !!!
+- !!! YOU CAN ADD YOUR OWN !!!
+- !!! LOOK IN THE DATA/CONFIG/VAYRABOUNTIES DIRECTORY FOR EXAMPLES !!!
+COLONY FACTION FEATURE CHANGES
+- !!! COLONIAL COMPETITORS NOW ACTIVE BY DEFAULT !!!
+- !!! COLONIAL COMPETITORS IS NOW A MOD FRAMEWORK !!!
+- !!! YOU CAN MAKE YOUR OWN !!!
+- !!! LOOK IN THE DATA/CONFIG/VAYRACOLONIES DIRECTORY FOR EXAMPLES !!!
+- colonial competitors launch colony fleets considerably less often
+- colonial competitors build colony upgrades somewhat slower
+- colonial competitors will no longer target the same planet
+- colonial competitors now follow a more dynamic "script" for colony development, which now includes catches to respect the size/industry limit
+- Nexerelin integration for colony factions
+- science fuckers' hubris will be their downfall when they install incredibly intelligent AI cores into powerful positions in their colonies despite those same AI cores being ripped only days earlier from the hulls of gigantic and hostile battleships
+- also the science fuckers are slightly harder to farm for AI cores now, slippery and clever bastards that they are
+- communist clouds will now start a hidden deep-hyperspace station to provide a firebase for eventual raids on space fascists, funded by some of the more socialistic major factions and allied with some of the minor ones
+- almighty dollar will now spawn the occasional treasure fleet, carrying their colonial riches back to their shareholders at chicomoztoc
+- generally more characterization and differentiation for the colony factions
+- maybe a new colony faction?!?!
+NEW SHIPS/WEAPONS/MUSIC
+- new and infinitely better sprite for the Typhon added to High Tech
+- Caliban-class support fighter added to High Tech
+- Tarsus Ultra-class destroyer added to Pirates
+- Caliph-class Superdreadnought added to Kadur Theocracy
+- Buzzard-class frigate added to Kadur Remnant
+- Targe-class destroyer added to Kadur Remnant
+- Seraph-class battlecarrier added to Kadur Remnant
+- Crystalline Splinter Torpedo weapon added to Kadur Remnant
+- Joachim Heavy Graviton Sweeper weapon added to Kadur Remnant
+- Jahannam Siege Cannon weapon added to Kadur Remnant
+- communist clouds lasher skin added
+- communist clouds dominator skin added
+- communist clouds monitor skin added
+- communist clouds buffalo mk.ii skin added
+- almighty dollar hound skin added
+- almighty dollar gemini skin added
+- almighty dollar TREASURE GALLEON added
+- almighty dollar Pegasus-class heavy support fighter added
+- almighty dollar Workhorse-class light fighter added
+- GLORIOUS PEOPLE'S ANTHEM RECORDED BY CUMS added to communist clouds faction
+- science fuckers Apogee skin added
+- also secret second science fuckers Apogee skin added
+- Buffalo Mk.XIV converted to ship skin (was whole separate ship)
+- LR Fission Strike Rifle added, with greater range, accuracy, projectile speed, OP cost, flux cost, credit cost, reload time, and chance to jam when rapid-fired
+- Graviton and Phase Blaster weapons added
+BALANCE TWEAKS (pending tournament feedback)
+- Light Plasma Cutter turn rate increased
+- Sling burst size cut to 4, chargedown greatly decreased, now reloads fully even when equipped with expanded magazines.
+- Jericho VLRMSs flight time lowered slightly, reload speed now increases slightly with weapon size (bigger = better), damage increased to 175
+- Janissary SRM hit points slightly increased, speed lowered to 400
+- Both Jericho and Janissary ammo systems set up to work similar to vanilla Pilums -- a few "ready magazines" and then much slower refire once exhausted -- which should make both Forge Vats and Fast Missile Racks useful when used with them correctly
+- Jazayer Strike Cannon reworked to Fission Strike Driver, a strike/assault hybrid close-range heavy hitter
+- Medium Combat Laser set to PD_ALSO
+- Frag Scatterer reworked to Frag Splintergun, changed manufacturer to Kadur Remnant and added to blueprints
+- Ion Scatterer spread and EMP arc effect chance increased
+- Sphinx supply/deploy cost increased to 28 (was: 26)
+- Jordan-class LCPKV damage type changed to energy
+- Joshua Micro-Missile damage lowered to 40, speed increased to 500, pods now fire 3 missiles each
+- Jamadhar Micro-Volley Driver renamed to Light Volley Driver
+- Immortal crew requirement increased to 5 (was 3), speed lowered to 180 (was 200), OP cost increased to 18 (was 12), Rukh and Seraph variants adjusted to match
+- Rukh shipsystem changed to Martyr Channel
+- Hyena maneuverability increased, OP increased to 38 (was 34), small missile hardpoint added, base fuel cost increased to 1 (was 0.5), fleet points increased to 4 (was 3)
+- Mass-Transference Field name changed to Mass-Anomaly Field
+- Splintergun boom noise and cosmetic lightning arc effects added
+- Splintergun now shows loaded crystal shards on weapon sprite
+- Splintergun stated/tooltip damage adjusted to more accurately convey its power and purpose, hopefully with benefits to AI use of it (no change to actual damage)
+- MagicLib lightweight missile AI added to missiles
+- Kadur ship fuel stats tweaked (again)
+- Badger and Falchion minimum crew requirements lowered
+- Camel speed increased by 5 (110 base -> 115 base)
+- Falchion reclassed and rebalanced as Light Destroyer
+- Ship credit costs rebalanced according to 0.9.1 standards
+- added built-in Unstable Injector to Mudskipper Mk.XIV and gave it back its Maneuvering Jets
+- buffed Looted Thermal Pulse Cannon and added it to the XIV Battlegroup tech type
+- reduced spawn chance of Mk.XIV ships in rare blueprints
+- Mining Platforms are now equipped with an LR Mining Laser and cost 2 OP
+- LR Mining Pods are now slightly faster, equipped with a Mining Lance, and cost 2 OP
+- renamed a bunch of crap
+
+2.2.2a - Apr 6th, 2019
+fixed double ruins bug
+
+2.2.2 - Jan 23rd, 2019
+pre-tournament stat fix
+- ship, wing, and weapon credit, supply, and fleet point costs tweaked
+custom ship system AI added for ram jets, ram drive, mass transference field and flux overdrive ship systems
+mass transference field now has a maximum range and a visual effect sprite
+Caliban heavy fighter removed
+Dervish interceptor variant and wing removed
+Phalanx heavy fighter added
+Myrmidon fast bomber added
+Badger Mk.II slot types changed
+Planetary conditions on Kadur cleaned up. It has ore again!
+Vesperon whitelist added for most ships/weapons
+mission icons added
+OPTION FOR competing upstart faction colonies added to campaign mode
+- these are off by default as they are not 100% complete, turn them ON in KADUR_SETTINGS.ini if you want to try them out
+- these will begin appearing in cycle 208 or after the player starts their first colony
+- they can also be prevented from spawning via the simple expedient of decivilizing (or invading, with Nexerelin) all of their colonies plus all the settlements of their parent faction
+custom bounty manager now tells you the target's faction, which is much more interesting, rather than the offering faction
+- it still says the offering faction in the header
+
+2.2.1 - Jan 10th, 2019
+Badger Mk.II added
+- and drones to support it
+Colossus Mk.XIV upgraded
+Handful of Nexerelin starting fleets added to Pirate start menu
+Dervish speed increased by 50, flare launcher downgraded to single
+Fixed some weird behavior on the fancy faction bounty manager
+- Default bounty behavior now back to "SOMETIMES"
+
+2.2.0 - Jan 5th, 2019
+!!! Script added that kills raider base manager scripts if the parent faction is entirely decivilized or otherwise destroyed !!!
+!!! this is set ON by default, but can be toggled off in the KADUR_SETTINGS.ini (vanilla) if you prefer the default behavior !!!
+!!! foulmouthed fancy faction bounties are now ON by default, but can be toggled off in the KADUR_SETTINGS.ini if you prefer the default (vanilla) and non-cussing behavior !!!
+!!! Nexerelin compatibility update !!!
+- Nexerelin start options and faction config tweaked
+- moved scripts from Gehenna systemgen to be compatible with random sector mode
+added a whole bunch more bounty words for the random bounty generator
+Sling removed from both Dervish loadouts 
+- and also their description (nice)
+Fixed Hail turret mistakenly set as hardpoint (garbage turn rate, on its only PD turret) (nice)
+- Flares upgraded to full flare load (rather than single) to compensate
+Mother Medusa blueprint removed (it should never have had one, duhhhhh)
+populations of Star Fortress Requiem and the Revenant Gestalt each increased by 1
+the Revenant Gestalt is no longer a free port, get your got damnb drugs elsewhere
+Jezail driver sounds and sprites upgraded
+IR Micropulser and Degraded Tac Laser soft-removed
+Degraded Pulse Laser renamed to LR Pulse Laser, description altered, range increased by 100, no longer in base_bp
+weapon stats tweaked slightly;
+- chargeup time for most weapons unified at 0.3 seconds
+- chargedown time for most weapons increased/decreased to maintain same DPS
+- except for the Jezail, which now does 50 DPS (was: 43)
+- light plasma cutter, IR micropulser, and ion scatterer range increased by 50 again (to 400)
+- jazeraint rocket acceleration increased
+fleet points/supply usage/fuel usage and capacity tweaked
+- Kadur ships are slightly more logistically viable now, and should fare better in campaign-layer autoresolve (maybe?)
+Kadur hullmod added
+- Kadur ship stats modified to net very few changes to final stats
+- Some ships are slightly (10 su/s or less) faster or slightly (100 armor or less) better armored
+- Kadur ships gain strength when they need it most
+Eagle (K) and Falcon (K) added, replacing the Eagle and Falcon in Kadur fleets (these are probably temporary)
+Rukh shipsystem changed to Mass-Transference Field (oooo) (only sort of works, oops) (it's still a 3-deck carrier it's still good shut up)
+
+2.1.5 - Dec 20th, 2018
+fixed the damn thing where immortals had missiles stuck on their noses
+D-mods removed from "XIV Battlegroup" and pirate ships and skins (they'll still usually spawn with D-mods due to ship quality, but none are 'mandatory' now)
+Tech type colors assigned
+Pirate start added
+Independent start added
+script added to clear some room in starting area so you don't immediately get jumped by 8 Hegemony Dominators in the Kadur start
+Camel (P) added
+Falchion (P) added
+Start options shuffled around, now in a submenu
+Rock Hound salvage gantry now built-in, Rock Hound OP reduced by 5 to compensate
+Hyena maneuverability (accel/decel) improved
+Weapon rarity values adjusted (still not sure if this does anything)
+Impact of Jazayer and both varieties of Particle Streamer increased
+Jazayer Strike Cannon range lowered to 750
+Ion Scatterer range increased to 350
+IR Micropulser range increased to 350
+Hammer Pod ammo increased to 10 (5 volleys)
+Jezail Mass Driver removed
+Light Flechette Driver renamed to Jezail Flechette Driver, accuracy decreased significantly
+Jezail Driver Battery stats adjusted; per-shot damage reduced, rate of fire increased, now fires alternating single shots rather than two-shot burst, accuracy reduced significantly
+New weapon: Jazeraint-class Gyrojet Driver
+New weapon: Crystalline Splintergun
+New weapon: Light Particle Streamer
+
+2.1.4
+fixed crash when selecting Kadur start with Ship Pack Mode enabled
+fixed issue where Kadur start would leave Galatia in permanent limbo and the player unable to escape should they venture into that cursed realm
+tips cleaned up a little
+
+2.1.3
+really embarrassing thing fixed where the Kadur didn't actually know their own weapon blueprints (maybe? unless i actually commented that out to test something in between the last release and now and just forgot about it. anyway~)
+Collapsed Cargo Holds now incompatible with Converted Cargo Bay (the builtin on the Colossus Mk. III) because that made no sense
+role weights (and thus spawn weights) adjusted for some ships -- Henchmen should be much less common now, and a few others were slightly reduced in frequency as well
+Ion Scatterer damage halved (to: 5, was: 10), flux/shot raised by 2 (to: 12, was: 10), EMP damage doubled (to: 200, was: 100)
+Mass-Aug Ram Jets speed boosted by 50 su/sec (to: 150, was: 100), cooldown reduced by 1 sec (to: 8, was: 9)
+Particle Streamer and Degraded Particle Streamer damage decreased by 100/sec each (to: 1500 and 900, was: 1600 and 1000); description edited to reflect that it's LosTech
+Frag Scatterer damage, radius, and flux cost (very) slightly increased; description edited to reflect that it's LosTech
+Light Flechette Driver flux/shot halved (to: 50, was: 100)
+Jamadhar Volley Driver damage and flux/shot increased (to: 25, 10, was: 24, 8)
+VLRMS reload time increased by 5sec (to: 25, was: 20)
+VLRMS-8 OP increased to 18 (was: 16)
+Hammer Pod base sprite changed to base from Harpoon, should be less easily confused with Salamander Pod now (hopefully)
+Annihilator Rocket Rack added
+Harvester Torpedo Rack added
+Jezail Sabot Driver renamed to Jezail Mass Driver (as it's now a chemically assisted coilgun rather than a proper railgun, it wouldn't necessarily use a sabot...)
+Jazayer Strike Cannon range and first-shot accuracy increased substantially, flux cost and reload cooldown increased to match
+Hammer Carrier drone wing increased to 6 OP (was: 4)
+Dervish wings increased to 8 OP, 3 fighters/wing, Interceptor fixed to actually use Dervish volley drivers (half damage, have PD tag) as intended
+- Rukh variants adjusted to compensate
+Maneuverability increased very slightly across the board for Kadur ships (buffs to acceleration, little or no change to other stats)
+Fuel efficiency increased slightly for some Kadur ships (Hyena, Falchion, Rukh and Sphinx)
+Armor increased significantly for Ram Jet ships (should be slightly more survivable in AI hands now, god willing)
+Flux Overdrive bonus increased to 60 (was: 50), duration increased to 5 seconds (was: 3), cooldown increased to 10 seconds (was: i forget. less)
+Dire Wolf wing hardpoints changed to small missiles (were: medium)
+- Dire Wolf variants adjusted to compensate
+Sirocco now tagged as "CIVILIAN", should flee combat rather than blow itself up
+Kadur-allied starting option added, starts you in Mirage with a wolfpack of frigates from the mod including non-Kadur vessels, hostile to the Hegemony and Church and suspicious at best with everyone else, with no Academy stipend (but no debt either)
+Also added a Lasher second starting ship option because why not
+Removed vanilla ruins condition from Kadur and replaced with a non-explorable dummy ruins condition -- no more free lunch (though Mirage is still a lucrative salvaging destination)
+Kadur guerrilla fighters will now build camps to harass enemy settlements in their "grand crusade"
+Blueprints tweaked, separated, and tagged no-drop -- you'll have to purchase Kadur BPs from Kadur military markets (placeholder until i can get them set up as quest rewards) or pry them from the cold, dead hands of Kadur guard-paladins in a raid
+- this also means that "ship/weapon pack only" mode now properly excludes Kadur ships and weapons (except for the Light Flechette Driver, an export) from the campaign.
+!!!Version Checker support added!!!
+some other stuff i forgot, probably
+
+2.1.2
+Sphinx shipsystem bug fixed
+Hammer Carrier drone turn rate, speed, armor, and hull reduced, OP cost increased to 4 (may go up from there)
+LR Mining Pod and Mining Platform hull and armor increased to match base Mining Pod
+Greyhound, Rock Hound, and Hyena OP increased to match auxiliary/base Hound
+Badger-class heavy drone tender rarity increased
+Plasma Cutter damage decreased, range increased slightly
+Particle Streamer damage decreased
+Collapsed Cargo Holds now reduces peak performance time by 25% and is incompatible with Expanded Cargo Holds
+Tariffs added to markets (oops)
+Variants adjusted to remove spare/overspent OP
+Hyena sprite desaturated slightly to match others
++200% hazard rating added to the Virus Bombed condition on Kadur
+Blueprints further tweaked
+
+2.1.1
+Hammer Carrier drone wing refit time increased to 20sec
+blueprints tweaked slightly, hopefully dodging a crash
+
+2.1.0
+bare minimum compatibility update for 0.9a
+market conditions changed to industries where applicable
+orbital stations/star fortressii added where appropriate
+things assigned to blueprints, which maybe worked
+very little testing done
+
+2.0.0
+initial release MARK II. everything has changed.
+also 0.9 is about to come out so everything is gonna change again. oops
+
+~5 year hiatus during which i lost the files and they were rescued by NetworkPesci~
+
+1.1.8 (unreleased)
+reduced sizes of moons
+changed Oasis III rings
+separated Mirage and Mirage Beta slightly
+hopefully fixed horrible save bloat problems
+1.1.7b
+buffed corvettes slightly
+fixed some bugs
+raised Dolphin hull integrity again
+1.1.7
+changed ram drive to be even faster, for a shorter amount of time. it will also flameout and overload the tug upon completion but will no longer flameout on impact.
+ram drive also lowers armor damage taken by 80%, but only while active
+lowered Dolphin combat speed
+lowered Dolphin hull integrity dramatically
+narrowed forward-facing prow turret arcs slightly (usually from 280 degrees to 220) on most ships
+edited Mirage and Mirage Beta very slightly (they're 200 units further from eachother, and Mirage Beta is properly the smaller of the two now)
+lowered peak CR times for everything except the Jackal (which was already low enough :))
+removed peak CR time from Hauberk
+lowered most frigate speeds a little to stay in line with vanilla (they're still all the same speeds relative to vanilla, but vanilla frigates got slower)
+tweaked fighter supply costs to stay in line with vanilla
+fixed BRDY station weapon restocking
+fixed test mission for 0.6.1a
+v1.1.6b
+now properly integrates mods that are included in Uomoz's Sector if you're playing Uomoz's with the Kadur installed
+v1.1.6
+added integration for Blackrock Driveyards (they have a small solar research station in Oasis)
+increased small/medium railgun and coilgun ranges slightly again
+added blinking lights to everything b/c i'm a trendhopper
+redid Hyena sprite
+replaced Oasis background and cleaned up the system a little
+fixed SHI trade convoy integration -- SHI ships should show up in Kadur stations a lot less now (they might still show up sometimes, that is intended)
+uhhh i think that was it
+new ship system for the Hyena: augmented turret system, increases turret rotation speed to 400% for a few seconds
+new ship system for the Buzzard and Behemoth: weapons drive redirect, like an ammo feed accelerator but for everything and four times faster... and it cuts your engines and overloads your ship. Kadur engineering, people.
+v1.1.5
+lowered railgun ranges by 100
+raised ABM damage slightly
+lowered ABM, HP especially for larger ABM systems
+lowered all ballistic projectile speeds significantly
+lowered coilgun damage slightly
+lowered heavy railgun damage more than slightly
+lowered large weapon damage significantly
+lowered turn rate on small/medium heavy railguns/coilguns dramatically and large railguns/coilguns slightly
+lowered heavy railgun and coilgun ammo significantly and large railgun and coilgun ammo slightly
+fixed VLRMS ammo (was higher than i intended, oops)
+lowered Javelin VLRMS-2 ammo to 5 salvos
+lowered VLRM HP slightly
+lowered VLRM damage slightly
+increased martyr cannon damage and decreased range
+allowed martyr cannon to be used as PD, though I wouldn't recommend mounting it on ships for use as such
+increased strike cannon damage very slightly
+increased Light Railgun array flux generation
+increased most weapon credit values slightly
+AI Hints added for various weapons (PD missiles got ANTI_FTR, large ballistics got STRIKE, USE_VS_FRIGATES, etc.)
+Hauberk EWAR Field now generates 1% flux/second and prevents flux from dissipating while active
+Hauberk EWAR Field now has functional AI script
+Hauberk EWAR Field now increases friendly (and decreases enemy) weapon ranges by 20%, up from 15%
+Hauberk-class destroyers now have considerably less hull and armor strength
+removed flare launchers from civilian ships, gave martyr drones (varying amounts based on hull size) to all civilian ships
+Dervish phase fighters now have a longer-range phase teleport, though still not as impressive as Tri-Tachyon ships
+Vulture heavily revamped, changes include a new sprite, different weapon mounts (now has 1 small universal and 1 small ballistic), more armor, worse maneuverability, and different variants
+wrote slightly longer descriptions for things (drunk, at times ranging from 3:00 am to 5:30... i'm sorry in advance.)
+implemented ASP Syndicate integration
+made hardpoint sprites for weapons (still not pretty, but look less terrible on hardpoints than they did)
+v1.1.4
+updated Exerelin fleets for the Kadur Theocracy
+implemented Exerelin fleets for the Qamar Insurgency
+slightly dimmed cores of bright blue "near stars" in Mirage background image
+maybe something else (i forget)
+v1.1.3
+added "allegiance items" to the Qamar Insurgency base on the fringe of Mirage and the Kadur Theocracy orbital fortress in Kadur
+added giant "boss" fleets for both the Qamar Insurgency and Kadur Theocracy, each of which have a 50% c
++++TRANSMISSION ENDS+++

@@ -1,0 +1,69 @@
+id,trigger,conditions,script,text,options,notes
+greetingARSFriendly,OpenCommLink,"$faction.id == al_ars
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""This is $PersonRank $personName of the Anarakis Reparations Society, what can I do for you?""
+OR
+""Greetings, friend. Do you require our assistence?""",,
+greetingARSHostileWeaker,OpenCommLink,"$faction.id == al_ars
+$entity.isHostile
+$entity.relativeStrength < 0","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""I don't suppose you could pretend like you didn't see us, could you?""
+OR
+""…Shit.""",,
+greetingARSHostileWeakerDefiant,OpenCommLink,"$faction.id == al_ars
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$ignorePlayerCommRequests = true 1,"The $PersonRank glares at you with a grinding smile. ""If you intend to go through with this you had better make sure I'm dead when you're done!""
+OR
+""If you expect us to beg for mercy I can promise this won't be the first time you are disappointed today!""",cutCommLink:Cut the comm link,
+greetingARSHostileStronger,OpenCommLink,"$faction.id == al_ars
+$entity.isHostile
+$entity.relativeStrength >= 0",$ignorePlayerCommRequests = true 1,"""We can do this the easy way or the hard way, sorry for you I've already chosen the hard way."" The enemy $PersonRank cuts his feed, leaving you with dead air and a hint of cosmic background radiation.
+OR
+""This is $PersonRank $personName of the Anarakis Reparations Society, you are hereby ordered to stand down and prepare to be boarded. Failure to comply will result in your destruction.""
+OR
+The $PersonRank wears a disturbing grin on his face. ""Do me a favor and put up a good fight.""
+OR
+""Nothing personal kid.""",cutCommLink:Cut the comm link,
+greetingARSNeutral,OpenCommLink,"$faction.id ==al_ars
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""This is $PersonRank $personName of the Anarakis Reparations Society, can I help you?""
+OR
+""We are in a bit of a hurry commander, if you have business please make it quick.""",,
+flavorTextMarketARS3,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == al_ars
+$marketSize == 3","AddText ""Embedded in a small cove to the side of this station's modest docking section, the primary market facilities of this base are similarly spartan, if pleasantly un-crowded. A few small shops have sprung up in dugouts around the quartermaster's office, butmost are selling personal goods or laughably small quantities of spacer-grade hardware."" textGrayColor
+",,,
+flavorTextMarketARS4,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == al_ars
+$marketSize == 4","AddText ""The merchant district of this installation takes on the form of a large cave, done up in colored drapery to give it some air of civilization. Spacers and locals dart between establishments of all sizes built directly into the rock, offering a wide array of services, from street food carts to starship dealers."" textGrayColor
+",,,
+flavorTextMarketARS5,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == al_ars
+$marketSize == 5","AddText ""The expansive promenade throngs with crowds, mostly Society personnel, but one can catch a glimpse of smuggler types and independent pirates working deals amongst one another. Though primarily a military installation, the relative lack of shipping regulation enforced by the Society draws in entrepreneurs from all walks of life."" textGrayColor
+",,,
+flavorTextMarketAnargaia,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == al_ars 
+$market.id == loa_anargaia_station_market
+$id == loa_anargaia_station","AddText "" In contrast to most other Society Installations, business on Anargaia is not handled at a modest, if accommodating trade district, but a spartan quartermaster's office. Most spacers to be seen are Society members, not entirely surprising given Anargaia's guarded existence, but the odd trader, mercenary, or diplomat still manages to stick out among the monotony. Despite the importance of this mobile port, the Society seems willing to share its advantages to those who have managed to befriend them"" textGrayColor
+",,,
+,,,,,,
+# champion quest,,,,,,
+championPostBattle,BeatDefendersContinue,$tag:ChampionDerelict score:1000,,Your $shipOrFleet finishes its approach to the $nameInText without further incident.,0:championBeatDefendersContinue:Continue,
+championBeatDefendersContinue,DialogOptionSelected,$option == championBeatDefendersContinue,FireBest ChampionOptions,,,
+championNoDefenders,CheckSalvageSpecial,$tag:ChampionDerelict score:1000,FireBest ChampionOptions,,,
+championBeginRecover,ChampionOptions,,ChampionShowWreck,Salvage crews boarding the wreck discover that many essential systems are undamaged and the ship could be restored to basic functionality.,"recoverChampion:Recover the ship
+defaultLeave:Leave",
+championRecover,DialogOptionSelected,$option == recoverChampion,"CallEvent $champion_eventRef continue1
+ChampionAddShip",,defaultLeave:Leave,
+championPirateOpen,BeginFleetEncounter,"$tag:ChampionFleet score:1000
+!$ChampionOpeningTalkDone","AddText ""You're being hailed by the $otherShipOrFleet."" $faction.baseColor
+$ChampOpeningConv = true 0
+$ChampionOpeningTalkDone = true 7",,,
+championOpenConv,OpenCommLink,$entity.ChampOpeningConv score:100,"SetTextHighlights ""Champion-class cruiser""
+$entity.ignorePlayerCommRequests = true 1","The comlink opens up, the static clearing to reveal an all-too-familiar face, wearing an unfamiliar ear to ear grin. ""Well well, fancy meeting you here, I guess I won't need to ask you about this strange little find after all, since I'll be taking it now."" The pirate looks over at a console next to their chair before looking back to you. ""It's in quite a rough shape too isn't it? I'll need about...lets say half of your fuel and supplies to get it back to the core worlds intact."" The pirate leans forward and gives you a piercing glare. ""Of course I don't think you're in any condition to stop me, so if you just hand it all over, I'd be inclined not to add murder to my list of deeds for this expedition, your choice.""","championGiveShipAndSupplies:Ascede to their demands, handing over the ship and half of your fuel and supplies
+cutCommLink:Cut the comm link",
+championGiveShipAndSupplies,DialogOptionSelected,$option == championGiveShipAndSupplies,"ChampionExtortion
+MakeOtherFleetNonHostile ChampionGaveCargo true 30
+CallEvent $champion_eventRef finish","""Pleasure doing business with you captain, I'm thinking I might name this thing 'gullible idiot' in your honor, what do you think?"" The traitorous bastard's wicked grin returns before the comlink abruptly cuts out. At the very least, the pirate fleet begins assuming a more neutral posture, presumably you are no longer worth the expendature of ammunition.",cutCommLink:Cut the comm link,
+AL_saveSectorInfo,InitNewGameChoices,,LoA_SaveSectorData,,,

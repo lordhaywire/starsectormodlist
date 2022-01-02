@@ -1,0 +1,38 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 4,
+    "fluxVents": 30,
+    "hullId": "loamtg_hawke",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamtg_hawke_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hveldriver",
+                "WS0005": "heatseeker",
+                "WS0006": "heatseeker",
+                "WS0007": "heatseeker",
+                "WS0008": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "heavymauler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vulcan",
+                "WS0004": "vulcan"
+            }
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

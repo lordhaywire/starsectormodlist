@@ -1,0 +1,58 @@
+{
+  "variantId": "brilliant_prv_hvb",
+  "hullId": "brilliant",
+  "displayName": "Nova Refit",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_gravanchor",
+    "prv_ramshield_modular"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "prv_akers_nova",
+        "WS 006": "prv_akers_nova"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_vakt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_sipdlaser",
+        "WS 003": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_missljud_wing"
+  ]
+}

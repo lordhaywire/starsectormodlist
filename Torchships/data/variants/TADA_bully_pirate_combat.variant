@@ -1,0 +1,43 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 0,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "TADA_bully_pirate",
+    "hullMods": [
+        "magazines",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_bully_pirate_combat",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "TADA_urchin"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0002": "swarmer"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lightdualac",
+                "WS0004": "lightdualac",
+                "WS0005": "lightag",
+                "WS0006": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "vulcan",
+                "WS0008": "vulcan"
+            }
+        }
+    ]
+}

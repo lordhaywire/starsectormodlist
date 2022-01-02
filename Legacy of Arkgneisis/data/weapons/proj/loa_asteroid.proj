@@ -1,0 +1,44 @@
+{
+	"id":"loa_asteroid",
+	"specClass":"missile",	
+	"missileType":"BOMB",
+	"sprite":"graphics/asteroids/asteroid2.png",
+	"size":[38,37],	
+	"center":[19,18],
+	"collisionRadius":30,
+	"collisionClass":"MISSILE_NO_FF",
+	#"collisionClass":"FIGHTER",
+	"explosionColor":[255,255,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":125, # purely visual
+	#"maxFlightTime":3,
+	"flameoutTime":10, # total time from flameout to full fadeout
+	"noEngineGlowTime":500, # time spent without the engine glow being rendered
+	"fadeTime":10, # fadeout duration
+	#"collisionClassAfterFlameout":"MISSILE_NO_FF",
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":400,
+				  "maxSpeed":500,
+				  "acc":0,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[0, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[0,0,0,0],
+						"contrailDuration":0,
+						"contrailWidthMult":0,
+						"contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":0, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0f,
+						"contrailColor":[0,0,0,0],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":0,
+				    "length":0,
+				    "angle":0},
+				    ]
+
+}

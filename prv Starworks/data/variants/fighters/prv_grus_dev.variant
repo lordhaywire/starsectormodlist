@@ -1,0 +1,33 @@
+{
+  "displayName": "Interceptor",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_grus",
+  "hullMods": [
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_grus_dev",
+  "weaponGroups": [
+  #1: turret
+  #2: gun hardpoint, l
+  #3: naked hardpoint, r
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_splitter_fighter",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        #"WS0001": "prv_hagel_fighter",
+        "WS0001": "vulcan",
+      }
+    },
+  ],
+  "wings": []
+}

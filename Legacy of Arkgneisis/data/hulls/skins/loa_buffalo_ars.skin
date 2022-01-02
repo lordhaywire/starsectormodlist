@@ -1,0 +1,18 @@
+{
+	"baseHullId":"buffalo",
+	"skinHullId":"loa_buffalo_ars",
+	"hullName":"Buffalo (ARS)",
+	"descriptionId":"buffalo",  # optional
+	"descriptionPrefix":"This ship has been dressed in the livery of the Anarakis Reparations Society. Systems modifications are otherwise superficial.",
+	"tags":["loa_ark1_bp"],
+	"tech":"Anarakis Reparations Society",
+	"fleetPoints":5,
+	"spriteName":"graphics/arkleg/ships/loa_buffalo_ars.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":[],
+	"builtInWeapons":{
+    },
+}

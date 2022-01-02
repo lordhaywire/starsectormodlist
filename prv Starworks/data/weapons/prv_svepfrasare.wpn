@@ -1,0 +1,66 @@
+{
+  "id": "prv_svepfrasare",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "beamEffect": "scripts.weapons.prv_fragbeam_sweeping_BeamEffect",
+  #"everyFrameEffect": "scripts.weapons.prv_fragbeam_sweeper_EveryFrameEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/prv/weapons/prv_svepfrasare_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_svepfrasare_turret_glow.png",
+  "turretUnderSprite": "graphics/prv/weapons/prv_svepfrasare_turret_under.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_svepfrasare_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_svepfrasare_hardppoint_glow.png",
+  "hardpointUnderSprite": "graphics/prv/weapons/prv_svepfrasare_hardpoint_under.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    128,
+    196,
+    64,
+    255
+  ],
+  "hitGlowRadius": 60,
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    128,
+    196,
+    64,
+    128
+  ],
+  "coreColor": [
+    200,
+    255,
+    0,
+    128
+  ],
+  "convergeOnPoint": true,
+  "width": 15,
+  "textureType": [
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+  ],
+  "textureScrollSpeed": 260,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "ion_beam_loop"
+}

@@ -1,0 +1,50 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "hullId": "loamt_caswell",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loamt_caswell_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vulcan",
+                "WS0007": "vulcan"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "al_rod",
+                "WS0009": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lightdualmg",
+                "WS0004": "lightdualmg",
+                "WS0005": "lightdualmg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "loa_er",
+                "WS0002": "loa_er"
+            }
+        }
+    ],
+    "wings": [
+        "hoplon_wing",
+        "hoplon_wing"
+    ]
+}

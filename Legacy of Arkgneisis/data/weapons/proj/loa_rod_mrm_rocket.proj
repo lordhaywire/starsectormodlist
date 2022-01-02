@@ -1,0 +1,36 @@
+{
+	"id":"loa_rod_mrm_rocket",
+	"specClass":"missile",	
+	"missileType":"ROCKET",
+	"sprite":"graphics/arkleg/missiles/al_rod_missile.png",
+	"size":[6,21],	
+	"center":[3,10.5],
+	"collisionRadius":14,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,100,55,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"engineSpec":{"turnAcc":300,
+				  "turnRate":200,
+				  "acc":2000,
+				  "dec":2000},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-9, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[200,165,55,255],
+						"contrailDuration":1,
+						"contrailWidthMult":.6,
+						"contrailWidthAddedFractionAtEnd":2.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailColor":[200,200,200,75],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":70.0,
+				    "angle":180.0},
+				    ]
+}

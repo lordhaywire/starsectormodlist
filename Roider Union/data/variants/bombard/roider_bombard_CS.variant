@@ -1,0 +1,35 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 12,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "roider_bombard",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "roider_bombard_CS",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 005": "mark9"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 004": "harpoonpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightag",
+                "WS 003": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "roider_marksman"}
+        }
+    ]
+}

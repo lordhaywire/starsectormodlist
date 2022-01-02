@@ -1,0 +1,45 @@
+{
+	"baseHullId":"prv_hornfels",
+	"skinHullId":"prv_hornfels_pather",
+	"hullName":"Hornfels (LP)",
+	"descriptionId":"prv_hornfels_pather",
+	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+	"tags":["prv_lp_bp","luddic_path"],
+	#"tech":"Luddic Path (prv)",
+	"tech":"Luddic Path",
+	#"fleetPoints":15,
+	"baseValueMult":.85,
+	"ordnancePoints":140,
+	"restoreToBaseHull":false,
+	"spriteName":"graphics/prv/ships/prv_hornfels_pather.png",
+	"systemId":"fastmissileracks",
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0009":{
+		  "type": "BUILT_IN",
+	   },
+	   "WS0010":{
+		  "type": "BUILT_IN"
+	   },
+    },
+	"builtInMods":[
+		"ill_advised",
+		"safetyoverrides"],
+	"builtInWeapons":{
+		"WS0009": "prv_hammer_mag",
+		"WS0010": "prv_hammer_mag",
+    },
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+		"6":{"style":"LOW_TECH"},
+		"7":{"style":"LOW_TECH"},
+	}, 
+}

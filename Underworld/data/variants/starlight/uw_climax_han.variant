@@ -1,0 +1,49 @@
+{
+    "displayName": "Hangover",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "uw_climax",
+    "hullMods": [
+        "safetyoverrides",
+        "adaptiveshields"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_climax_han",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 006": "amblaster",
+                "WS 007": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "heatseeker",
+                "WS 008": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavyblaster",
+                "WS 004": "ioncannon",
+                "WS 009": "plasma"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "pdlaser",
+                "WS 003": "pdlaser"
+            }
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_kvarts_militia",
+  "hullId": "prv_kvarts",
+  "displayName": "Militia",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 22,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hammerrack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "sabot",
+        "WS0017": "sabot",
+        "WS0018": "sabot",
+        "WS0019": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "chaingun",
+        "WS0004": "chaingun",
+        "WS0015": "prv_lighttripleac",
+        "WS0016": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "shredder",
+        "WS0006": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavymg",
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "mininglaser",
+        "WS0011": "mininglaser",
+        "WS0012": "mininglaser",
+        "WS0013": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

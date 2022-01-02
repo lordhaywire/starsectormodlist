@@ -1,0 +1,49 @@
+{
+	"baseHullId":"prv_flamma",
+	"skinHullId":"prv_flamma_p",
+	"hullName":"Flamma (P)",
+	"descriptionId":"prv_flamma",
+	"descriptionPrefix":"Its engines replaced by hotrodded scrapyard finds and with a gigantic plasma thrower welded into the hull, this ship truly embraces the Rust Belt spirit.",
+	"tags":["prv_pirate_bp","pirates"],
+	#"tech":"Pirate (prv)",
+	"tech":"Pirate",
+	"restoreToBaseHull":false,
+	"ordnancePoints":40,
+	"fleetPoints":4,
+	"baseValueMult":0.9,
+	"spriteName":"graphics/prv/ships/prv_flamma_p.png",
+	"systemId":"prv_plasmamanjets_overtuned",
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0003":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0004":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0005":{
+		  "type": "BUILT_IN",
+		  "mount": "HARDPOINT",
+		  "arc": 5,
+		  "angle": 0,
+	   },
+	},
+	"builtInMods":[
+		"unstable_injector"],
+	"builtInWeapons":{
+	"WS0005": "prv_spatterflamer",
+	},
+	"engineSlotChanges":{
+		"0":{"style":"PRV_LOW"},
+		"1":{"style":"PRV_LOW"},
+		"2":{"style":"PRV_LOW"},
+		"3":{"style":"PRV_LOW"},
+		"4":{"style":"PRV_LOW"},
+		"5":{"style":"PRV_LOW"},
+		"6":{"style":"PRV_LOW"},
+		"7":{"style":"PRV_LOW"},
+	},    
+}

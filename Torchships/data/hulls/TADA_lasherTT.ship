@@ -1,0 +1,240 @@
+{
+  "bounds": [
+    -15.5,
+    30.5,
+    4.5,
+    37.5,
+    18.5,
+    32.5,
+    18.5,
+    18.5,
+    27.5,
+    13.5,
+    47.5,
+    13.5,
+    55.5,
+    7.5,
+    59.5,
+    0,
+    55.5,
+    -7.5,
+    47.5,
+    -13.5,
+    27.5,
+    -13.5,
+    18.5,
+    -18.5,
+    18.5,
+    -32.5,
+    4.5,
+    -37.5,
+    -15.5,
+    -30.5,
+    -33.5,
+    -0
+  ],
+  "builtInWeapons": {
+    #"WS0008": "TADA_lasherTT_skirtL",
+    #"WS0009": "TADA_lasherTT_skirtR"
+  },
+  "center": [
+    34,
+    35
+  ],
+  "collisionRadius": 75,
+  "coversColor": "255,188,175,255",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 46.5,
+      "location": [
+        -26,
+        22
+      ],
+      "style": "HIGH_TECH",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 46.5,
+      "location": [
+        -26,
+        -22
+      ],
+      "style": "HIGH_TECH",
+      "width": 13
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 60,
+      "location": [
+        -30,
+        14
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 60,
+      "location": [
+        -30,
+        -14
+      ],
+      "style": "HIGH_TECH",
+      "width": 15
+    }
+  ],
+  "height": 96,
+  "hullId": "TADA_lasherTT",
+  "hullName": "Lasher TT",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    11,
+    0
+  ],
+  "shieldRadius": 64,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_lasherTT.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS_001",
+      "locations": [
+        14,
+        24
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS_002",
+      "locations": [
+        14,
+        -24
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -100,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        19.5,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 100,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        19.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        21.5,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        21.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -80,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        23.5,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 80,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        23.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 180,
+      "arc": 225,
+      "id": "WS0007",
+      "locations": [
+        -18,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "renderOrderMod":100,
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -3,
+        27.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        -3,
+        -27.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 68
+}

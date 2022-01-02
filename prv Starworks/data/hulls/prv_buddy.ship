@@ -1,0 +1,94 @@
+{
+  "bounds": [
+    -13.5,
+    -9,
+    -13.5,
+    10,
+    7.5,
+    10,
+    11,
+    -13.5,
+    -7.5,
+    -13.5
+  ],
+  "center": [
+    15,
+    16.5
+  ],
+  "collisionRadius": 26.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 12,
+      "location": [
+        -14.5,
+        7.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 12,
+      "location": [
+        -14.5,
+        -7.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    }
+  ],
+  "height": 33,
+  "hullId": "prv_buddy",
+  "hullName": "Buddy",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 26,
+  "spriteName": "graphics/prv/ships/fighters/prv_buddy.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -90,
+      "arc": 320,
+      "id": "WS0001",
+      "locations": [
+        1,
+        -11
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        14,
+        0.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 45,
+      "id": "WS0002",
+      "locations": [
+        16,
+        -5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    }
+  ],
+  "width": 30
+}

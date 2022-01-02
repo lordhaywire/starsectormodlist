@@ -1,0 +1,8 @@
+{
+    "startShipsCombatSmall":[
+      ["TADA_tinnitus_assault", "TADA_tinnitus_assault", "TADA_tinnitus_support", "TADA_tinnitus_beamer"],
+    ],
+    "startShipsCombatLarge":[
+      ["TADA_bonnethead_standard", "TADA_scalper_assault", "brawler_Starting"],
+    ],
+}

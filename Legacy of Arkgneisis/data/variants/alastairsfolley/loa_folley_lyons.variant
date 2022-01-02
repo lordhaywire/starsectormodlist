@@ -1,0 +1,48 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "hullId": "loamt_lyons",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_folley_lyons",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0021": "loa_siegecannon_l"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "al_plasmadriver",
+                "WS0014": "al_plasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "al_pelletgun",
+                "WS0012": "al_pelletgun",
+                "WS0019": "al_string",
+                "WS0020": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "al_bongo",
+                "WS0016": "al_bongo",
+                "WS0017": "al_bongo",
+                "WS0018": "loa_er"
+            }
+        }
+    ],
+    "wings": [
+        "earl_wing",
+        "ace_wing"
+    ]
+}

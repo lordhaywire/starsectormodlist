@@ -1,0 +1,28 @@
+{
+	"specClass":"projectile",
+	"id":"TADA_gravitonBolterL",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"displayArcRadius":550,
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"turretGlowSprite":"graphics/TORCHSHIPS/ships/TADA_pinnace/TADA_pinnace_leftGun.png",
+	"hardpointGlowSprite":"graphics/TORCHSHIPS/ships/TADA_pinnace/TADA_pinnace_leftGun.png",
+	"turretOffsets":[17.5, 2.5],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[23, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"glowColor":[50,180,225,255],
+	"muzzleFlashSpec":{"length":33.0,
+                            "spread":15.0,
+                            "particleSizeMin":15.0,
+                            "particleSizeRange":17.0,
+                            "particleDuration":0.12,
+                            "particleCount":7,
+                            "particleColor":[100,200,255,255]},					   
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"TADA_gravBolt_shot",  # projectile that will be fired
+	"fireSoundTwo":"TADA_gravBolter",
+}

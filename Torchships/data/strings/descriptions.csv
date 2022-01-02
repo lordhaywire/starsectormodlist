@@ -1,0 +1,286 @@
+id,type,text1,text2,text3,notes
+,,,,,
+# WEAPONS WEAPONS WEAPONS,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+TADA_triplemortar,WEAPON," Bigger cousin of the Light Mortar, the Triple variant is an attempt at capitalizing on the few strengths of its smaller sibling and make a worthwhile military weapon out of it.
+
+ A single Light Mortar with its low projectile velocity and mild firepower is barely a threat to any competently piloted ship. Three of them firing in concentrated salvos from a single weapon mount however is an issue to be dealt with immediately. At least for a lightly armored spacecraft. There is a slight loss in flux efficiency due to the now very confined turret body, which is somewhat made up with the extra range gained from the longer barrels.",Anti-armor,,
+,,,,,
+TADA_dioscuri,WEAPON," The Dioscuri is an accurate mid-range recoilless rifle firing deceptively powerful rounds. Its complex reload mechanism makes it slightly less flux efficient compared to more straightforward weapons, but its ease of installation somewhat compensate for that trait.
+
+ The Dioscuri combines several unusual engineering decisions neatly interlocking to produce what is unexpectedly a very reliable and smooth operating weapon. Starting with the obvious rotating barrels, allowing an easier shell extraction from the base of the turret without requiring a large reciprocating motion of the breech. The twin barrel design also allows for reloading while laying fire at the same time, with less volume constraints and a more secured ammo handling area.
+ 
+ Overall, while the weapon has a large number of moving parts, the lower stress on any given element leads to a reduced chance of mechanical failure as long as it is properly maintained.",Anti-armor,,
+,,,,,
+TADA_plasma,WEAPON," An over-sized ship-breaking tool re-purposed for war. Despite the fiery look, it is actually a chemical reaction that decompose armor and deal massive damages to the ships internals. The blazing aspect is caused by a super heated catalyst that vaporise off the viscous stream of acid, a startling outlook that is actively embraced by the pirates that usually field this kind of weapons.",Can Opener,,
+,,,,,
+TADA_pilumWaveL,WEAPON," A large guided missile suited for long-range support by back-line combat ships. A combat-rated auto-loader system ensures continued usefulness in protracted engagements. A technologically mature weapon system, the Pilum-class missile is the obvious choice for long-range strikes by cautious captains. The guidance system on this weapon make it dangerous versus only the heavier of enemy craft. Unfortunately, those craft also tend to have the best point defense system, which somewhat limits the Pilum's otherwise considerable punch.",Fire Support,,
+,,,,,
+TADA_pilumWaveR,WEAPON," A large guided missile suited for long-range support by back-line combat ships. A combat-rated auto-loader system ensures continued usefulness in protracted engagements. A technologically mature weapon system, the Pilum-class missile is the obvious choice for long-range strikes by cautious captains. The guidance system on this weapon make it dangerous versus only the heavier of enemy craft. Unfortunately, those craft also tend to have the best point defense system, which somewhat limits the Pilum's otherwise considerable punch.",Fire Support,,
+,,,,,
+TADA_urchin,WEAPON," A long range artillery piece with a staggering fire rate, the Urchin Suppressor was quite a feat of engineering when it was first introduced. Sadly, while the weapon itself is still more than adequate in a modern battle-space it is now held back by a slightly underpowered ammunition.
+
+ Still, this weapon has a couple of advantages going for itself that can make it worth considering. Firstly, special recoil dampeners transmit very little impact back to the mount's structure, making the whole assembly easy to adapt and fit to any ship with a weapon emplacement large enough. And secondly the reasonable flux requirements, somewhat expected for a weapon of such a bygone era, can be more interesting than sheer fire-power to backwater fleets that cannot afford modern vessels with deep flux pool or fast dissipation.
+ 
+ Armchair specialists have often railed this weapon, criticizing their navy for not ""just"" re-chambering them to use some better and readily available ammunition the like of the Hephaestus or the Mark IX... What these people often forget is the scale of space warfare: there really is nothing trivial when it comes to modifying a machinery that handles high explosive materials encased in shells larger than a man, conveying, chambering and firing them up to twelve hundred times per minute.",Assault,,
+,,,,,
+TADA_hammerStorm,WEAPON," A Pirate jury-rigged oversized hammer launcher, this weapon is meant to lay waste on small defense stations that cannot intercept that amount of incoming threats. With an effectively unlimited reserve of munition stored in the cargo-hold, silencing this weapon is always a priority... Although given the inherent risks of storing such an amount of explosives in an un-secured and un-armored compartment, this task is not that complicated.",Assault,,
+,,,,,
+TADA_hailstorm,WEAPON," A long range station assault weapon able to continuously pummel defensive positions with high yield torpedoes until they break. While the ordinance can be securely stored in bulk, their performances other than sheer explosive power are somewhat underwhelming and hardly threatening for any smaller target.",Assault,,
+,,,,,
+TADA_pike,WEAPON," Formerly a mining tool aimed at quickly placing remote controlled demolition charges for low gravity mountain-top removal or asteroid fracturing. This re-purposed version shoots high velocity timed fusion charges that stick to a ship's hull before detonating in concert for maximum effect.
+
+ While having a surprisingly fast and reliable revolver loading system for a civilian borne tool, the very limited number of charges it contains limits this weapon's use for sustained pressure. Also betraying it's industrial heritage, it is by design exceptionally inefficient against any kind of shield.",Special,,
+,,,,,
+TADA_LRA,WEAPON,"Arbalest auto-cannon that has been refitted with an extended barrel for a much better range, at the cost of precision and fire-rate. 
+
+ With the advent or modern shield technology raw firepower became more important than range. The Long Range Arbalests, and their pitiful performances in term of damage, were completely overshadowed by the slick Hypervelocity Drivers and abandoned even faster than the standard Arbalests.",Close Support,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# FIGHTER WEAPONS,,,,,
+,,,,,
+,,,,,
+,,,,,
+TADA_swarmer,WEAPON,"A short range guided missile launcher. The missiles are designed to intercept and destroy enemy fighters.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_owlFlak,WEAPON,"A defensive weapon system that fires shrapnel-filled shells equipped with a proximity fuse for maximum effect against fighters and missiles.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_lightIonBeam,WEAPON,"A scaled down Ion Beam with much shorter range but light enough to be mounted on particularly large strikecrafts.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_gravitonBolterL,WEAPON,"A medium impact kinetic pulse laser derived from the Gaviton Beam. Mild performances but deals hard flux.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_gravitonBolterR,WEAPON,"A medium impact kinetic pulse laser derived from the Gaviton Beam. Mild performances but deals hard flux.",,,
+,,,,,
+,,,,,
+,,,,,
+# SHIPS SHIPS SHIPS,,,,,
+,,,,,
+,,,,,
+,,,,,
+TADA_firespitter,SHIP," Often overlooked by spacecraft enthusiasts, the Firespitter escort fighter has a long service record and a glowing reputation among crewmen. While rarely, if ever, involved in a daring offensive assault, virtually every Firespitter combat sortie will result in dozens, sometimes hundreds of saved lives thanks to their ability to efficiently intercept missiles and enemy fighters.
+
+ The vehicle in itself is a rugged, reliable design built almost solely from wildly available and proven hardware. The lack of flashiness hides its strength: it is cost-effective, easy to fly, easy to maintain, and can be integrated seamlessly into any military doctrine.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_owlDrone,SHIP," The Beak-class drone is an early post-AI ban autonomous spacecraft. Intentionally limited in its decision-making capacities to avoid the ire of the Domain, the Beak was designed to be a cheap but resilient escort craft that can be sacrificed if needed. The removal of the cockpit and related environmental plant allowd the engineers to integrate a primitive shield emmiter in addition to its sizeable armament.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_pinnace,SHIP," A multi-purpose small craft primarily used as fast troop transports to hot zone and then provide them with fire support. The Pinnace is very well suited for this role thanks to its generous armament and cargo size, only able to fit most shuttle bays by folding its wings and pylon weapon mounts. If needed, it can also be re-purposed into a very capable logistical craft, or even a surveillance AWACS by fitting the corresponding modular ventral bay. But the strength of this design is also it's main weakness: it's sheer bulk limit the number of Pinnaces that can be deployed from a single standard fighter bay.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_herald,SHIP," For a carrier, the Herald sports an impressive armament that would give pause to any cruiser and a number of battlecruisers, and possesses a sizeable fighter complement on top. However, it is not a battleship by any means, its armor being somewhat limited to maintain favorable tactical mobility. This versatile hull can be outfitted to rely mainly on either its armament or its fighter force, but the design shines on the battlefield when neither are ignored.
+
+ Altair Exotech's crown jewel: while arguably their most successful design was the Heron-class, they could have never secured as many significant contracts pre-Collapse without the openings created by the Herald's design. Developed to stand in as compromise for navies struggling with rivalry between the old guard tacticians adamant in the superiority of their "ship-of-the-line" doctrine and their younger officers coming from the rising "Cruiser School". With large number of shared components and operational procedures, it made economical and logistical sense to buy production licenses for both ships. Heralds were often sold at cost, but A.E. made its money back and then more on large orders of Herons.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_scalper,SHIP," With its slick hull and numerous weapon emplacements, the Scalper-class is certainly an eye-catcher. Designed with logistic efficiency in mind, this class shares a lot of components with its bigger cousins the Gryphons and Herons cruisers. Its versatile weapon layout can easily be adapted for both offensive and defensive roles, although the lack of heavy weapon emplacement can be troublesome against heavier opponents.
+
+ Given how adaptable the design is and how neatly it can integrate to most fleet doctrines, this class of ships could, and should, have attracted a large amount of buyers. Unfortunately for Altair Exotech, the unveiling of this new design was muddied by rumors of corruption and self-dealing with their previous Domain contracts, even some unconfirmed reports about the alleged use of slave labor to shore-up their shipyard's manpower. Despite vehement denials, those rumors delivered a fatal blow to the Scalper's projected widespread use.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_cassicus,SHIP," An oddity among ships of that era, especially among destroyers-sized hulls, the Cassicus-class eschewed the expected forward-facing firepower and omni-directional defenses for the exact opposite. With its central full-azimut weapon emplacement able to receive turrets usually reserved to ships of the line, the Cassicus is more suited to engage multiple opponents than other destroyers relying on their mobility to not get caught in a pinch. Despite a fairly limited amount of secondary armament this class is also fairly versatile and can quickly change gears to become a potent escort vessel apt to survive frontline combat.
+
+ There is a latent rivalry between Cassicus-class captains and ones from other more offensive-oriented classes like Shrikes and Medusas. Those latter ones having little respect for a ship too slow to take the initiative on the battlefield and having to rely on excessively big guns to get anything done. The formers considering their counterparts no higher than hot-headed cowboys commanding space coffins that systematically and needlessly get their ship damaged after yet another failed ""epic maneuver"".",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_tempest_pirate,SHIP," After the Second AI War, many corrupted blueprints became available, sourced by salvagers willing to risk the star systems abandoned by Tri-Tachyon. Many of these were sold to disreputable elements such as black marketeers and pirates, who promptly put them back into service producing low quality but combat-capable ships.
+
+ Hardly much of a combat vessel, the dubiously named ""Tempest MK.II"" cannot legitimately be described as an improvement over the extremely advanced and dangerous Tempest. But having the biggest gun around is a form of power in some disreputable circles, and this class of ship is continuously produced in small batches for rising pirate captains with more money than comon sense.
+ 
+ The only saving grace of that class is that its armament is arguably a decent negociation tool when asking civilian transports to pay their ""protection fee.""",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_lasherTT,SHIP,"This ship has been thoroughly overhauled by the Tri-Tachyon Corporation. Tri-Tachyon compliant software patches have been installed which are fully integrated with Tri-Pad(R) status monitoring protocols, high-spec flux conduit upgrades performed, and weapon attachment points refurbished for mounting advanced energy weapons.
+
+The Lasher is clearly not a high-tech ship, but it is dependable, economical and cheap to produce. All qualities that made it an attractive option for the sanctions-ridden Tri-Tachyon Corporation in the aftermath of the First AI War. This model however is a significantly modified design adapted to mount some of the leftover energy weapon from the war, as well as to better comform to the existing combat doctrine. It was not produced in large numbers as the TT shipyards would soon resume producing more regular high tech ships, but those ships are still occasionally spotted in small patrols to this day.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_hightide,SHIP," In desperate times people turn to desperate measures. Perfect example of that saying, the High-tide class cruiser is an extensive conversion of the ubiquitous Starliner-class civilian cruise ship into a deadly artillery platform. While not that different from the outside, the interior has been entirely remodelled except for the bridge and engineering sections. The vast majority of the soft compartment that used to be cabins have been gutted out to fit large missile auto-loaders, connected to an impressive array of sideways launchers. Additionally the shuttle bay has been enlarged to support a standard fighter auto-fab. This makes the High-tide capable of sending an inordinate amount of missiles down-range.
+
+ In the early days after the collapse, when regular armies were still jealously keeping their military ships for themselves, trading fleets were using High-tides as Q-ships to beef up their defenses against the increasingly frequent pirates attacks. While even a cursory scan would reveal the subterfuge, those pirates were also using converted civilian ships with near-sighted navigation sensors. Adding on top a common excess of confidence given the meager escort those trade fleets could afford, this created a perfect combination to make Q-ships effective. As time went on and those same pirates started to get better hardware, the High-tides began to show the limitations borne from their civilian origin, and they soon were deemed obsolete in all but the direst situations.
+ 
+ It must be noted though that despite their inherent fragility in combat, this class of ships is generally very much liked by their personel. This may be explained by the fact that the crew quarters have been placed near the bridge, where the first class suites and restaurants were located on the original Starliner. Given the amount of work already involved by the conversion, the engineers usualy do not care to modify them.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_whirlwind,SHIP," The Whirlwind-class heavy cruiser is a tough and dependable ship sporting an unusual all-heavy-weapons loadout. Callback to a time of slower and more deliberate tactics, the Whirlwind is slower than most ships of its generation but makes up for it with a strong shield and its signature ""Gravitic Hook"" system, allowing it to catch faster preys. 
+
+ While very easy to outfit for a wide variety of roles, the lack of tactical versatility has somewhat limited this line of ships to second line roles compared to flashier designs like the Aurora-class. Despite being less logistically efficient than average, a solid phalanx of Whirlwinds will easily stop most attackers in their track.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_gunwall_XIV,SHIP," A survivor of the original 14th Domain Battle-group which founded the Hegemony, this ship is a prime specimen of the Domain Navy's 'decisive battle' doctrine, particularly exhibited by a series of radical structural modifications performed using pre-Collapse industrial technology. In the case of this particular hull it is also part of a very limited production series built for testing larger mount emplacements. While the modified models were rejected for general use, the 14th Domain battle-group with it's ""Bigger Is Better"" motto would not let these get wasted and subsequently reactivated them. After some further modifications to reinforce the superstructure to acceptable levels, the resulting ships were deemed serviceable and painted to the battle-group's livery. 
+
+ One of the oldest ship class still in use, the Niagara-class defense platform dates way back from the height of the Entrenched Warfare Era. Designed as a leap forward during a size and armor arms-race, it was supposed to completely eclipse all competition at the time. And so it did if only for a short while... Past that grace period, the class never really took back the spotlight despite numerous modernization updates to the blueprints.
+
+ Some changes were quite obvious and common for ships of that era, starting with the installation of a shield emmiter, higher performance armor and a massive internal automation to reduce the ludicrous crew complement. Other were not quite as sound like the conversion of half the cargo-holds into a single automated flight deck that would never quite make a significant difference in combat. The lack of heavy weaponry has always been criticized, despite the claims that they would require to remove most of the current medium mounts, and inevitably reduce the overall versatility of the design. Despite its shortcomings, the class is still appreciated in local defensive deployments, where the surprising mobility of the Niagara can make all the difference without being held back by its considerable maintenance requirements.",,,
+,,,,,
+TADA_gunwall,SHIP," One of the oldest ship class still in use, the Niagara-class defense platform dates way back from the height of the Entrenched Warfare Era. Designed as a leap forward during a size and armor arms-race, it was supposed to completely eclipse all competition at the time. And so it did if only for a short while... Past that grace period, the class never really took back the spotlight despite numerous modernization updates to the blueprints.
+
+ Some changes were quite obvious and common for ships of that era, starting with the installation of a shield emmiter, higher performance armor and a massive internal automation to reduce the ludicrous crew complement. Other were not quite as sound like the conversion of half the cargo-holds into a single automated flight deck that would never quite make a significant difference in combat. The lack of heavy weaponry has always been criticized, despite the claims that they would require to remove most of the current medium mounts, and inevitably reduce the overall versatility of the design. Despite its shortcomings, the class is still appreciated in local defensive deployments, where the surprising mobility of the Niagara can make all the difference without being held back by its considerable maintenance requirements.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_bully,SHIP," A starfarer favorite's thanks to a generous cargo bay, reasonable price and maintenance, acceptable defenses and a mean armament. Often-times the first destroyer sized ship to join the ranks of an emerging bounty-hunter/pirate party, the Bully-class would be ubiquitous if they also did not tended to be their last ship. Overconfidence is a treacherous mistress and the Bully is very much aptly named: while it does not pull its punches against smaller opponents, it also very much does not like to take any in return.
+
+ The internal structure closer to a civilian combat freighter than a true military ship provides wide cargo bays (one of which being partially occupied by missile ready-racks to reload the unique launcher in combat) and easy access to every internal compartment. Even the numerous markings help to prevent rookie mistakes during maintenance operations, as if the whole ship had been designed for training recruits instead or combat. Either myth or reality no longer matter since the Collapse, those ships being easy to manufacture and capable enough to be used in these dangerous times.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_challenger,SHIP," A reliable frigate class often seen among non government-sanctioned fleets. Universally liked by independent starfarers due to their fair price, thick armor, reasonable logistic profile and more than adequate weapon layout. Perfectly suited to mold talented aspiring officers into grizzling veterans without risking either their lives of the fleet's treasure chest.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_tinnitus,SHIP," An economical and lightweight frigate with limited versatility meant to be deployed in large numbers. The intended doctrine is to distract and divide an enemy force in a myriad of individual engagements where local superiority could be achieved before the pack moved to reinforce the next nearby duel.
+
+ When looked in a vacuum, a Pest-class frigate is quite a bare-bone spacecraft. Limited armament, limited combat endurance, limited cargo, their only saving grace is their superior maneuvrability and to some extend their average shield that makes them a better vessel than say, a Hound. Which is not saying much. However they start to make a lot more sense in the context of their intended use: Using wolf pack tactics, the aptly named horde of Pest-class frigates was to spread chaos in the enemy formation, hunt down the most vulnerable target and work their way up the food chain as more ships rejoin the pack. While an individual ship has little versatility to offer, the group as a whole would be able to fulfill any task.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_bonnethead,SHIP," The Bonnethead-class cruiser is a late Expansion era design, curiously combining some of the tactical tenets of Core, Expansion and the emerging Mastery era doctrines. It boast a tough armor, a reasonable tactical maneuverability, and a better than average flux grid for a ship of that technological level. However to offer such performances, other areas had to be sacrificed, starting by the limited weapon emplacements, the anemic on-board logistical facilities, and a reduced shield coverage.
+
+ In combat, and provided their captain does not overextend, the Bonnethead's performances are more than satisfactory, especially in fleet operations where several units can cover each-other's weaknesses. And even in case of tactical blunder, it is a very forgiving design able to take some punches without breaking. The only true Bonnethead killers are fast frigates/fighters equipped with ion weaponry that can outmaneuver it, disable its rear defenses and rapidly sink it with torpedo strikes.",,,
+,,,,,
+TADA_bonnethead_pirate,SHIP," This Bonnethead's propulsion system has been given impractical yet showy 'improvements' by some enthusiastic pirate crew; the patchwork of engine components, somehow persuaded to work toward ungainly common purpose, conform to zero safety standards.
+
+ The Bonnethead-class cruiser is a late Expansion era design, curiously combining some of the tactical tenets of Core, Expansion and the emerging Mastery era doctrines. It boast a tough armor, a reasonable tactical maneuverability, and a better than average flux grid for a ship of that technological level. However to offer such performances, other areas had to be sacrificed, starting by the limited weapon emplacements, the anemic on-board logistical facilities, and a reduced shield coverage.
+
+ In combat, and provided their captain does not overextend, the Bonnethead's performances are more than satisfactory, especially in fleet operations where several units can cover each-other's weaknesses. And even in case of tactical blunder, it is a very forgiving design able to take some punches without breaking. The only true Bonnethead killers are fast frigates/fighters equipped with ion weaponry that can outmaneuver it, disable its rear defenses and rapidly sink it with torpedo strikes.",,,
+,,,,,
+TADA_bonnethead_pather,SHIP," Following the footseps of their Pirate contemporaries, Pather militants adapted Bonnetheads to their particular doctrine by using similar modifications to the drive, and then adding on top some tinkering of their own to the safeties that were still in place. A couple of spectacular explosions later they decided to settle for slightly less extensive but more durable modifications. They also opted out ouf oversizing the weapon mounts due to the lack of such large weapons readily available in their stocks, even going as far as downsizing them.
+
+ The Bonnethead-class cruiser is a late Expansion era design, curiously combining some of the tactical tenets of Core, Expansion and the emerging Mastery era doctrines. It boast a tough armor, a reasonable tactical maneuverability, and a better than average flux grid for a ship of that technological level. However to offer such performances, other areas had to be sacrificed, starting by the limited weapon emplacements, the anemic on-board logistical facilities, and a reduced shield coverage.
+
+ In combat, and provided their captain does not overextend, the Bonnethead's performances are more than satisfactory, especially in fleet operations where several units can cover each-other's weaknesses. And even in case of tactical blunder, it is a very forgiving design able to take some punches without breaking. The only true Bonnethead killers are fast frigates/fighters equipped with ion weaponry that can outmaneuver it, disable its rear defenses and rapidly sink it with torpedo strikes.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_owl,SHIP," An elongated, slightly stealthy hull derived from Eagle-class cruiser. The redesign adds a fourth ballistic hardpoint but also removes the three medium energy mounts to make space for the additional flight decks and the protuding nose houses additional attitude thrusters making this class very swift on its feet. 
+
+ With only fighter wings to cover its sides, the Owl is a tool of war than needs careful positioning, but in the hands of a competent captain it is a potent precision knife that can make short work out of priority targets. A couple of well piloted Owls can also destroy much larger ships without as much as a scratch, and can even be a formidable addition for mid-sized fleets in a harasser/pursuer role. However their effectiveness drops sharply in larger engagements where multiple lighter targets can easily outmaneuvre them, destroy the fighters and freely fire from the rear.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_owlLiberation,SHIP," A few of the firsts models of this modified class to be produced were destined to the Valis' self-defense Force. They sported this honorific livery and had a few internal adjustments. The main one being the reduction in cargo space, extending the internal launch bays to be used with regular Fighter UACs. 
+
+ An elongated, slightly stealthy hull derived from Eagle-class cruiser. The redesign adds a fourth ballistic hardpoint but also removes the three medium energy mounts to make space for the additional flight decks and the protuding nose houses additional attitude thrusters making this class very swift on its feet. 
+
+ With only fighter wings to cover its sides, the Owl is a tool of war than needs careful positioning, but in the hands of a competent captain it is a potent precision knife that can make short work out of priority targets. A couple of well piloted Owls can also destroy much larger ships without as much as a scratch, and can even be a formidable addition for mid-sized fleets in a harasser/pursuer role. However their effectiveness drops sharply in larger engagements where multiple lighter targets can easily outmaneuvre them, destroy the fighters and freely fire from the rear.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_attrition,SHIP," A very old ship design, optimized for maximum reliability both technologically and tactically. The hull offers little weaknesses to exploit, combining tough armor and numerous overlapping turrets. As a matter of fact this class has sometimes been dubbed ""Space Urchin"" due to the lack of any blind spot in its weapon coverage. Internally, redundancy is king with critical systems often having a triple backup, and large operating margins on top. 
+
+ Despite all its qualities, this design is quite the rare sight in the Sector. Both because of the very limited UACs availability, and due to the logistical nightmare fully fitting one of these ships creates. Additionally, the lack of heavy weapon emplacement is seen as a shortcoming when compared to the nearly ubiquitous Dominator.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_foray,SHIP," While not exactly modular, with the help of a decent dry-dock and some elbow grease, the ventral cargo-hold of a Venture-class Freighter can be replaced with something entirely different. In this instance, a humongous missile storage unit and a dedicated torpedo launcher. While not exactly a combat grade ship, this now well know modification gave smaller independent worlds the possibility to lay siege on low key Pirate strongholds. Sadly for them, it was not long before the same Pirates started to convert their own Venture-class and assault small defense stations, albeit with inferior but more readily available weapons. 
+
+ Given the somewhat niche role and not insignificant work required to make the modifications, these ships are about as a rare sight as one can expect, and seeing several assembling together is almost guaranteed to indicate that yet another station is going to be turned into space rubble.",,,
+,,,,,
+TADA_foray_pather,SHIP," Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war. While not exactly modular, with the help of a decent dry-dock and some elbow grease, the ventral cargo-hold of a Venture-class Freighter can be replaced with something entirely different. In this instance, a humongous missile storage unit and a dedicated torpedo launcher. While not exactly a combat grade ship, this now well know modification gave smaller independent worlds the possibility to lay siege on low key Pirate strongholds. Sadly for them, it was not long before the same Pirates started to convert their own Venture-class and assault small defense stations, albeit with inferior but more readily available weapons. 
+
+ Given the somewhat niche role and not insignificant work required to make the modifications, these ships are about as a rare sight as one can expect, and seeing several assembling together is almost guaranteed to indicate that yet another station is going to be turned into space rubble.",,,
+,,,,,
+TADA_foray_pirate,SHIP," While not exactly modular, with the help of a decent dry-dock and some elbow grease, the ventral cargo-hold of a Venture-class Freighter can be replaced with something entirely different. In this instance, a humongous missile storage unit and a dedicated torpedo launcher. While not exactly a combat grade ship, this now well know modification gave smaller independent worlds the possibility to lay siege on low key Pirate strongholds. Sadly for them, it was not long before the same Pirates started to convert their own Venture-class and assault small defense stations, albeit with inferior but more readily available weapons. 
+
+ Given the somewhat niche role and not insignificant work required to make the modifications, these ships are about as a rare sight as one can expect, and seeing several assembling together is almost guaranteed to indicate that yet another station is going to be turned into space rubble.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_crane,SHIP,"An extensive conversion of decommissioned Eagle-class cruisers into fast and sturdy freighters with both a vast cargo hold and large fuel tanks, designed to keep up with military fleets. Though almost useless offensively, they can defend themselves against pursuing strike crafts. 
+
+In 193, the Valis system went through a succession of uprisings that left the dominant government quite weakened. Dangerously close to bankruptcy, the planet could no longer afford its oversize military fleet. After securing the borders through a diplomatic agreement with the Hegemony around century long exploitation rights for the rich asteroid fields, the government tried to start on rebuilding the ruined infrastructure. The idea was to fund the reconstruction by selling half the ships of the fleet, and keeping only a quarter of them in active duty to maintain the fragile peace. 
+
+That sale attracted a lot of propositions from rather shady groups from every nearby star. Worrying about willingly arming pirates, and not eager to further reinforce the local presence of the Hegemony in the system, the sale was postponed until they could have the insurance these weapons would never be used against them. The obvious solution was to disarm them, but then nobody would buy them. These were warships; even removing the mounts would not create much usable cargo space without a serious refit of the interior space. 
+
+The decision was taken to only sell Eagle class cruisers, redesigned as fast, moderately armored freighters to reduce the cost of the modification. The specification document asked to remove all but one turret, but also add a small fighter bay in the space emptied from the frontal armament. The launching doors would also be used to load the cargo with great efficiency. This new class of ships was to place itself as an alternative between Mule and Venture class freighters. Fast as a Mule, but with the Cargo space of a Venture, and a dedicated fighter escort to avoid any damage should the ships encounter pirates. 
+
+Sadly, the redesigning took quite some time, and the first conversions didn't go that well. While the Crane class Composite freighter is now a commercial success, the Valis system had to sink deeper under the Hegemony influence to secure reconstruction funds and avoid a total breakdown of the Planet's infrastructure. Now the government is but a puppet of the Hegemony, but the system is renowned for its ship refitting industry and talented engineers in converting existing hulls.",,,
+,,,,,
+TADA_crane_pirate,SHIP," While it is a demilitarized surplus Eagle conversion, the Crane-class is still posses many traits of a combat vessel. And by virtue of being easier to procure, they turned out to be a perfect platform for the Pirate shipyard to jury-rig a whole family of conversions of their own. The most popular of them being a carrier conversion: Opening up the front to install proper landing strips and converting some of the cargo space for flux capacitors can turn a Crane into an adequate Freighter/Carrier hybrid support ship.
+
+In 193, the Valis system went through a succession of uprisings that left the dominant government quite weakened. Dangerously close to bankruptcy, the planet could no longer afford its oversize military fleet. After securing the borders through a diplomatic agreement with the Hegemony around century long exploitation rights for the rich asteroid fields, the government tried to start on rebuilding the ruined infrastructure. The idea was to fund the reconstruction by selling half the ships of the fleet, and keeping only a quarter of them in active duty to maintain the fragile peace. 
+
+That sale attracted a lot of propositions from rather shady groups from every nearby star. Worrying about willingly arming pirates, and not eager to further reinforce the local presence of the Hegemony in the system, the sale was postponed until they could have the insurance these weapons would never be used against them. The obvious solution was to disarm them, but then nobody would buy them. These were warships; even removing the mounts would not create much usable cargo space without a serious refit of the interior space. 
+
+The decision was taken to only sell Eagle class cruisers, redesigned as fast, moderately armored freighters to reduce the cost of the modification. The specification document asked to remove all but one turret, but also add a small fighter bay in the space emptied from the frontal armament. The launching doors would also be used to load the cargo with great efficiency. This new class of ships was to place itself as an alternative between Mule and Venture class freighters. Fast as a Mule, but with the Cargo space of a Venture, and a dedicated fighter escort to avoid any damage should the ships encounter pirates. 
+
+Sadly, the redesigning took quite some time, and the first conversions didn't go that well. While the Crane class Composite freighter is now a commercial success, the Valis system had to sink deeper under the Hegemony influence to secure reconstruction funds and avoid a total breakdown of the Planet's infrastructure. Now the government is but a puppet of the Hegemony, but the system is renowned for its ship refitting industry and talented engineers in converting existing hulls.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_brilliantX,SHIP," A fortunately rare variant of the Brillant-class autonomous AI ship that trades its fighter support and shield for a Phase Cloack system and High Energy Focus.
+
+A remnant of the autonomous AI fleets developed by the TriTachyon Corporation. Illegal under Domain (and Hegemony) law, and an abomination to the Church of Galactic Redemption, the First AI War saw these creations purged from the Sector. At least that is how the official histories tell it.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_scintillaX,SHIP,"A fortunately rare variant of the Scintilla-class autonomous AI ship that trades its fighter support and shield for a Phase system and heavier armament.
+
+A remnant of the autonomous AI fleets developed by the TriTachyon Corporation. Illegal under Domain (and Hegemony) law, and an abomination to the Church of Galactic Redemption, the First AI War saw these creations purged from the Sector. At least that is how the official histories tell it.",,,
+,,,,,
+,,,,,
+,,,,,
+TADA_shine,SHIP,"A remnant of the autonomous AI fleets developed by the TriTachyon Corporation. Illegal under Domain (and Hegemony) law, and an abomination to the Church of Galactic Redemption, the First AI War saw these creations purged from the Sector. At least that is how the official histories tell it.
+
+A very offensive design maximizing damage output at the expense of almost everything else. Able to mount a staggering variety of loadouts, the Shine-class can be fitted for virtually every role with deadly results.",,,
+,,,,,
+,,,,,
+,,,,,
+# SHIP-SYSTEMS SHIP-SYSTEMS SHIP-SYSTEMS,,,,,
+,,,,,
+,,,,,
+,,,,,
+TADA_readyracks,SHIP_SYSTEM,"Reload missile launchers in combat by using two ammo ready-racks.",Special,"Reload missile launchers in combat by using two ammo ready-racks.",
+,,,,,
+TADA_burn,SHIP_SYSTEM,"Lower intensity Burn Drive system that can be sustained during combat operation, allowing quick strategic repositioning.",Movement,"Increases the ship's speed and maneuverability at the cost of all flux dissipation. Forces the ship forward.",
+,,,,,
+TADA_gravHook,SHIP_SYSTEM,"Pulls back anything standing in a long but narrow arc in front of the ship. The system can store up to three charges.",Special,"Pulls back anything standing in a long but narrow arc in front of the ship. The system can store up to three charges.",
+,,,,,
+TADA_attitudejets,SHIP_SYSTEM,"Engages extra thrusters to greatly improve the ship's maneuverability. Also provides a slight boost to the ship's top speed.",Movement,"Provides a instant boost to maneuverability and top speed.",
+,,,,,
+TADA_drone_sensor,SHIP_SYSTEM,"Launches two drones equiped with sensors and a ion cannon. Regenerates charges slowly.",Drone,"Launches two drones equiped with sensors and a ion cannon. Regenerates charges slowly.",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# PLANETS PLANETS PLANETS,,,,,
+,,,,,
+# COMMODITY COMMODITY COMMODITY,,,,,
+,,,,,
+# MARKETS MARKETS MARKETS,,,,,
+,,,,,
+# FACTION FACTION FACTION,,,,,
+,,,,,

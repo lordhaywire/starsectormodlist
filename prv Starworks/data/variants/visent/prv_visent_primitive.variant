@@ -1,0 +1,50 @@
+{
+  "displayName": "Primitive",
+  "fluxCapacitors": 10,
+  "fluxVents": 13,
+  "goalVariant": false,
+  "hullId": "prv_visent",
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_visent_primitive",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

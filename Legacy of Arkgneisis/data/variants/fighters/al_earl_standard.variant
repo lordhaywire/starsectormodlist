@@ -1,0 +1,22 @@
+{
+  "displayName": "Strike Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "al_earl",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "al_earl_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "al_plasmabuster_f",
+        "WS0001": "loa_rangefinder"
+      }
+    },
+  ],
+  "wings": []
+}

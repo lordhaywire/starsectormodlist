@@ -1,0 +1,55 @@
+{
+  "id": "prv_akers_fighter",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_akers_fighter_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 375,
+  "turretSprite": "graphics/prv/weapons/prv_jursla_fighter_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_jursla_fighter_turret_glow.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_jursla_fighter_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_jursla_fighter_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_jursla_fighter_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_jursla_fighter_hardpoint_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    180,
+    180,
+    255,
+    235
+  ],
+  "visualRecoil": 8,
+  "turretOffsets": [
+    15,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    18,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "GLOW_AND_FLASH",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 24,
+    "spread": 2,
+    "particleSizeMin": 4,
+    "particleSizeRange": 16,
+    "particleDuration": 0.75,
+    "particleCount": 14,
+    "particleColor": [
+      180,
+      180,
+      255,
+      235
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "railgun_fire"
+}

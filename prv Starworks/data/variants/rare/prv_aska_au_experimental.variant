@@ -1,0 +1,54 @@
+{
+  "displayName": "Experimental",
+  "fluxCapacitors": 9,
+  "fluxVents": 23,
+  "goalVariant": false,
+  "hullId": "prv_aska_au",
+  "hullMods": [
+    "hardened_subsystems", 
+    "prv_arcfault_insulator",
+    #"magazines",
+    "reinforcedhull",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_aska_au_experimental",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "pulselaser",
+        "WS0003": "pulselaser",
+        "WS0004": "pulselaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,16 @@
+{
+	"id":"al_monoshot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":100,
+	"hitGlowRadius":10,
+	"width":2,
+	"fadeTime":0.5,
+	"fringeColor":[255,255,255,255],
+	"coreColor":[255,255,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/arkleg/missiles/al_pixelshot.png"
+}

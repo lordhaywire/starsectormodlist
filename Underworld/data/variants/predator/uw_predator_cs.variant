@@ -1,0 +1,39 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "uw_predator",
+    "hullMods": [
+        "targetingunit",
+        "fluxdistributor"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_predator_cs",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "ionbeam"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "breach",
+                "WS0003": "breach"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "railgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "taclaser"}
+        }
+    ]
+}

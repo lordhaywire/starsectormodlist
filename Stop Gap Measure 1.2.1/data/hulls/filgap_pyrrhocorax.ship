@@ -1,0 +1,163 @@
+{
+  "bounds": [
+    41.5,
+    -9,
+    57.5,
+    -9,
+    76,
+    -2.5,
+    82,
+    9,
+    74.5,
+    24,
+    58.5,
+    29.5,
+    45,
+    30.5,
+    6.5,
+    49.5,
+    -49,
+    49.5,
+    -61.5,
+    40.5,
+    -71,
+    27,
+    -81.5,
+    25.5,
+    -90.5,
+    15.5,
+    -90.5,
+    -1,
+    -85,
+    -11,
+    -69,
+    -16.5,
+    -60.5,
+    -32.5,
+    -36.5,
+    -47,
+    4,
+    -49,
+    32.5,
+    -37,
+    41.5,
+    -27.5
+  ],
+  "builtInWings": [],
+  "center": [
+    52,
+    89.5
+  ],
+  "collisionRadius": 106.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 41,
+      "location": [
+        -90.5,
+        8
+      ],
+      "style": "HIGH_TECH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 31.5,
+      "location": [
+        -65.5,
+        -21.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    }
+  ],
+  "height": 179,
+  "hullId": "filgap_pyrrhocorax",
+  "hullName": "Pyrrhocorax",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 97.5,
+  "spriteName": "graphics/filgap/ships/filgap_pyrrhocorax.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        60,
+        10.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 225,
+      "id": "WS0002",
+      "locations": [
+        -55.5,
+        7
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        -41.5,
+        30.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 225,
+      "id": "WS0004",
+      "locations": [
+        -13.5,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0005",
+      "locations": [
+        32.5,
+        -17
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -12,
+        35.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 104
+}

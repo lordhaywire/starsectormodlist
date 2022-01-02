@@ -1,0 +1,48 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 7,
+    "fluxVents": 30,
+    "hullId": "loamt_king",
+	"quality": 0.5,
+    "hullMods": [
+        "loamt_suspendedmounts",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_king_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletdriver",
+                "WS0002": "al_pelletdriver",
+                "WS0008": "loa_can_launcher",
+                "WS0009": "loa_can_launcher",
+                "WS0010": "loa_can_launcher",
+                "WS0011": "loa_can_launcher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dualflak",
+                "WS0006": "dualflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "loa_flashlight",
+                "WS0004": "loa_flashlight"
+            }
+        }
+    ]
+}

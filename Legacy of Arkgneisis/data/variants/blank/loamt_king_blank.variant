@@ -1,0 +1,28 @@
+{
+  "displayName": "Blank",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_king",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "loamt_king_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,35 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+Blasting Laser,roider_blastinglaser,0,,400,500,490,,,0,30,6,,,,ENERGY,,600,0.1,0.1,0.3,1,,,,,10000,,,,,,,"PD, ANTI_FTR, PD_ALSO","pd7, roider, roider_bp",,Roider Union,,Point Defense,,,,,,,,,,3
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Arc Cannon,roider_arccannon,1,,350,400,,75,200,0,35,4,,,,ENERGY, ,,0,1,1,,0,0,0,0,,1200,,,10000,,,ANTI_FTR,"energy6, roider",,Roider Union,,Suppression,,,,,,,,,,4
+Arc Blaster,roider_arcblaster,1,,1400,500,,350,350,0,20,10,,,,ENERGY,600,,0.5,1.3,2,0.2,12,12,0,10,,750,,,10000,,,,"energy12, roider",,Roider Union,,Suppression,,,,,,,,,,5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hazard MRM,roider_hazard_mrm,0,,150,2000,,250,,15,30,1,4,,,HIGH_EXPLOSIVE,0,,0,8,4,0.25,0,0,0,0,,400,200,7.5,75,,,DO_NOT_AIM,"missile6, strike1, roider, roider_bp",,Roider Union,,Finisher,Medium,Medium,,,,,,,,
+Zap SRM Launcher,roider_zap,1,,200,1000,,50,180,0,50,4,60,0.5,8,FRAGMENTATION,0,,0,3,4,0.1,0,0,0,0,,400,150,4,50,,,"ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility8, missile0, roider, roider_bp",,Roider Union,,Anti Fighter,Fast,Excellent,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Rotary Hammer Launcher,roider_rotary_hammer,1,,800,1200,,1500,,30,12,7,5,,,HIGH_EXPLOSIVE,0,,0,5,1,,8,8,0,0,,500,40,4,350,,,"STRIKE, CONSERVE_1","strike11, rocket8, roider, roider_bp",,Roider Union,,Torpedo,Fast,None,,,,,,,TRUE,16.4
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Sharpshooter,roider_marksman,1,,250,600,,75,,10,75,4,,,,FRAGMENTATION,25,,0,0.5,1,,0,0,0,10,,1000,,,100,,,"PD, ANTI_FTR","pd7, LR, roider, roider_bp",,Roider Union,,Point Defense,,,,,,,,,,109
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Spike Driver,roider_spike_driver,1,,1200,600,,300,,20,20,10,,,,KINETIC,240,,0,1,1,,5,15,5,5,,650,,,500,,,,"kinetic13, roider, roider_bp",,Roider Union,,Anti Shield,,,,,,,,,,110
+Pile Driver,roider_pile_driver,1,,3500,750,,600,,70,15,20,,,,KINETIC,600,,0,1,1,,5,15,5,5,,600,,,500,,,,"kinetic19, roider, rare_bp",,Roider Union,,Anti Shield,,,,,,,,,,111
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Built-in,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Assault Chaingun (Clipped),roider_chaingun,4,,0,450,,75,,3,30,0,20,3.6,20,HIGH_EXPLOSIVE,0,,0,0.15,1,,0,20,1,10,,800,,,30,,,SYSTEM,,,,,Anti Armor,,,,,,,,,,101
+Vulcan Cannon,roider_vulcan,4,,0,250,,25,,1,75,0,,,,FRAGMENTATION,1,,0,0.05,1,,0,15,1,15,,800,,,10,,,"SYSTEM, PD",,,,,Point Defense,,,,,,,,,,102
+Hazard MRM,roider_hazard_mrm_bomber,4,,0,2000,,250,,15,30,0,4,,,HIGH_EXPLOSIVE,0,,0,8,4,0.25,0,0,0,0,,400,200,7.5,75,,,"STRIKE, SYSTEM, GUIDED_POOR",,,,,Close Support,Medium,Medium,,,,,,,,106
+Zap SRM Launcher,roider_zap_fighter,4,,0,1000,,50,180,0,50,0,,,,FRAGMENTATION,0,,0,3,4,0.1,0,0,0,0,,400,150,4,50,,,"ANTI_FTR, DO_NOT_AIM, SYSTEM,DO_NOT_CONSERVE",,,,,Anti Fighter,Fast,Excellent,,,,,,,,108
+Mini Vulcan Cannon,roider_mini_vulcan,0,,0,250,,25,,1,75,2,,,,FRAGMENTATION,1,,0,1.05,20,0.05,0,15,1,15,,800,,,10,,,"SYSTEM,PD","pd5, SR",,,,Point Defense,,,,,,,This weapon is built-in only.,,,109
+Annihilator Rocket Pod,roider_annihilatorpod,0,,0,1500,,200,,5,30,10,,,,HIGH_EXPLOSIVE,0,,0,1.8,2,0.2,0,0,0,0,,400,50,3.75,50,,,SYSTEM,,,,,Pressure,Fast,None,,,,,,,,110
+Mini Sharpshooter,roider_marksman_mini,0,,0,600,,50,,10,75,4,2,0.5,1,FRAGMENTATION,25,,0,0.5,1,,0,0,0,10,,1000,,,100,,,"SYSTEM, PD, ANTI_FTR",,,,,Point Defense,,,,,,,,,,111
+Hammer-class Torpedo (Single),roider_hammer_armature,0,,75,1200,,1500,,30,10,1,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,0,,500,40,4,350,,,"STRIKE, SYSTEM",,,,,Torpedo,Fast,None,,,,,,,TRUE,9.9
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#Special,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Arc Blaster spread,roider_arcblastershot_clone,0,,0,500,,70,70,0,20,10,,,,ENERGY,120,,0,2.5,1,0.1,0,0,0,10,,4000,,,10000,,,SYSTEM,,,,,,,,,,,,,,,201
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+roider_sheriff_glow,roider_sheriff_glow,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,Roider Union,,,,,,,,,This weapon is built-in only.,,TRUE,30001
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+roider_jane_mask_fl,roider_jane_mask_fl,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,Roider Union,,,,,,,,,This weapon is built-in only.,,TRUE,31001
+roider_jane_mask_fr,roider_jane_mask_fr,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,Roider Union,,,,,,,,,This weapon is built-in only.,,TRUE,31002
+roider_jane_mask_rl,roider_jane_mask_rl,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,Roider Union,,,,,,,,,This weapon is built-in only.,,TRUE,31003
+roider_jane_mask_rr,roider_jane_mask_rr,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,Roider Union,,,,,,,,,This weapon is built-in only.,,TRUE,31004

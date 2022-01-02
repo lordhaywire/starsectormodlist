@@ -1,0 +1,36 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "goalVariant": false,
+  "hullId": "prv_gnista_p",
+  "hullMods": ["safetyoverrides",],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_gnista_p_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_hfl_array_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hammer_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightac"
+      }
+    }
+  ],
+  "wings": []
+}

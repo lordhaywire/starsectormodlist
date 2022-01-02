@@ -1,0 +1,30 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 2,
+    "fluxVents": 5,
+    "hullId": "loamt_fox",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "auxiliarythrusters",
+        "extendedshieldemitter",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_fox_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_monorail",
+                "WS0002": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "vulcan"}
+        }
+    ]
+}

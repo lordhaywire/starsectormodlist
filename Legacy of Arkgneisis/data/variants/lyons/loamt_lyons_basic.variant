@@ -1,0 +1,61 @@
+{
+  "variantId": "loamt_lyons_basic",
+  "hullId": "loamt_lyons",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0021": "loa_siegecannon_l"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0019": "loa_mosaic_torpedo",
+        "WS0020": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "heavyac",
+        "WS0014": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "al_bulldog",
+        "WS0012": "al_bulldog"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "al_bongo",
+        "WS0016": "al_bongo",
+        "WS0017": "al_bongo",
+        "WS0018": "al_lightplasmadriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ace_wing",
+    "ace_wing"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "bounds": [
+    -17.5,
+    -3,
+    -1.5,
+    -10.5,
+    19.5,
+    -3.5,
+    19.5,
+    3.5,
+    -1.5,
+    10.5,
+    -17.5,
+    3
+  ],
+  "builtInWeapons": {
+    "WS0001": "al_plasmadriver_f_left",
+    "WS0002": "al_plasmadriver_f_right",
+    "WS0003": "al_deco_ace"
+  },
+  "builtInMods": [
+    "loa_closeairsupport_fake"
+  ],
+  "builtInWings": [],
+  "center": [
+    12.5,
+    19.5
+  ],
+  "collisionRadius": 24,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 2,
+      "length": 35,
+      "location": [
+        -5.5,
+        5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 2
+    },
+    {
+      "angle": -180,
+      "contrailSize": 2,
+      "length": 35,
+      "location": [
+        -5.5,
+        -5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 2
+    }
+  ],
+  "height": 40,
+  "hullId": "al_ace",
+  "hullName": "Ace",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 23.5,
+  "spriteName": "graphics/arkleg/ships/ace/al_ace.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 19,
+      "arc": 90,
+      "id": "WS0001",
+      "locations": [
+        -4,
+        8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -19,
+      "arc": 90,
+      "id": "WS0002",
+      "locations": [
+        -4,
+        -8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        0.5,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 25
+}

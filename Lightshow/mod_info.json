@@ -1,0 +1,11 @@
+{
+    "id":"$$$_lightshow",
+    "name":"$$$ Lightshow",
+    "utility": "true",
+    "author":"Tartiflette",
+    "version":"1.41",
+    "description":"Alter the look of various vanilla beams to better differentiate them on from another.",
+    "gameVersion": "0.95a-RC9",
+    "jars":["jars/Lightshow.jar"],
+    "modPlugin":"data.scripts.LS_modPlugin",
+}

@@ -1,0 +1,94 @@
+{
+   "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "midline_bp", "hightech_bp", "mayasura_bp", "mayasura_e_bp", "mayasura_w_bp", "mayasura_c_bp"],
+        "hulls":[
+            "MSS_Mokarran",
+            "MSS_Javanicus_B",
+			"MSS_Arjuna",
+			"MSS_Javanicus_A",
+
+            "MSS_Falcon",
+            "MSS_Sarissa",
+            "MSS_Winghead",
+            "MSS_Pilgrim",
+			"MSS_Javanicus",
+
+            "MSS_Hammerhead",
+            "MSS_Argentavis",
+            "MSS_Sunder",
+            "MSS_Stingray",
+
+            "MSS_Perryi_F",
+            "MSS_Mako",
+            "MSS_Nailer",
+			"MSS_vigilance_m",
+			"MSS_vigilance_carrier",
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "midline_bp", "mayasura_bp", "mayasura_e_bp", "mayasura_w_bp", "mayasura_c_bp"],
+        "hulls":[
+            "MSS_Mokarran",
+            "MSS_Javanicus_B",
+			"MSS_Arjuna",
+			"MSS_Javanicus_A",
+
+            "MSS_Falcon",
+            "MSS_Sarissa",
+            "MSS_Winghead",
+            "MSS_Pilgrim",
+			"MSS_Javanicus",
+
+            "MSS_Hammerhead",
+            "MSS_Argentavis",
+            "MSS_Sunder",
+            "MSS_Stingray",
+
+            "MSS_Perryi_F",
+            "MSS_Mako",
+            "MSS_Nailer",
+			"MSS_vigilance_m",
+			"MSS_vigilance_carrier",
+        ],
+    },
+
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "tags":[],
+        "hulls":[
+        ],
+    },
+
+    "knownFighters":{
+        "tags":["base_bp", "mayasura_bp"],
+        "fighters":[
+		"MSS_Crow",
+		"MSS_Tiburo",
+		"MSS_Tachi",
+		"MSS_Sipahi",
+		"MSS_Ferox",
+		"MSS_Crossbow",
+        ],
+    },
+
+    "priorityFighters":{
+        "tags":["midline_bp"],
+        "fighters":[
+		"MSS_Crow",
+		"MSS_Tiburo",
+		"MSS_Tachi",
+		"MSS_Sipahi",
+		"MSS_Ferox",
+		"MSS_Crossbow",
+        ],
+    },
+}

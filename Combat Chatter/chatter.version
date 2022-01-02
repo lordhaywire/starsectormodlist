@@ -1,0 +1,13 @@
+{
+	"masterVersionFile":"https://raw.githubusercontent.com/Histidine91/SS-CombatChatter/release/chatter.version",
+	"modName":"Combat Chatter",
+	"modThreadId":10399,
+	"modNexusId":29,
+	"modVersion":
+	{
+		"major":1,
+		"minor":11,
+		"patch":4
+	},
+	"starsectorVersion":"0.95a-RC15"
+}

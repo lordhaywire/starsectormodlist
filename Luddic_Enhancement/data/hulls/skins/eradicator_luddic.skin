@@ -1,0 +1,31 @@
+{
+	"baseHullId":"eradicator",
+	"skinHullId":"eradicator_luddic",
+	"hullName":"Eradicator (LC)",
+	"descriptionId":"eradicator",  # optional
+	"descriptionPrefix":"This vessel has been refitted with the sanction of the Luddic Church. Several smaller point defense mounts have been removed for a stronger emphasis on missile strikes.",
+	"tags":["LC_bp"],
+	"tech":"Luddic Church",
+	"baseValueMult":1.2,
+	"spriteName":"graphics/ships/eradicator/eradicator_lc.png",
+	"removeWeaponSlots":["WS 010", "WS 011"],		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"systemId":"ammofeed",
+	"weaponSlotChanges":{
+	   "WS 005":{
+		  "type": "COMPOSITE"
+	   },
+	   "WS 007":{
+		  "type": "COMPOSITE"
+	   },
+	   "WS 009":{
+		  "arc": 5,
+		  "mount": "HARDPOINT",
+		  "type": "MISSILE"
+	   },
+	},
+	"builtInMods":[],
+	"builtInWeapons":{},
+}

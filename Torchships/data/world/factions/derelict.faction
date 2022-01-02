@@ -1,0 +1,9 @@
+{
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

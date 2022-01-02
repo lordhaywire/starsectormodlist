@@ -1,0 +1,46 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "TADA_bonnethead_pather",
+    "hullMods": ["pointdefenseai"],
+    "permaMods": [],
+    "variantId": "TADA_bonnethead_pather_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "TADA_triplemortar",
+                "WS0007": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "TADA_triplemortar",
+                "WS0006": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "railgun",
+                "WS0003": "railgun",
+                "WS0004": "railgun",
+                "WS0008": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "vulcan",
+                "WS0010": "vulcan"
+            }
+        }
+    ]
+}

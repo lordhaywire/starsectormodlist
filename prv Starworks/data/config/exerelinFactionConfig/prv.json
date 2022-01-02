@@ -1,0 +1,90 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Rogue House",
+    
+    "directoryUseShortName":true,
+	
+	"marketSpawnWeight":1,
+     
+    "startRelationships":{
+		"persean":		 0.3,
+		"sindrian_diktat": 0.3,
+		"rb":			-0.6,
+		"hegemony":		-0.3,
+		},
+    "maxRelationships":{ },
+    #"diplomacyPositiveChance":{ "persean":1, "diktat":1.5, "hegemony":0.5, },
+    #"diplomacyNegativeChance":{ "persean":1.5, "diktat":1.5, "hegemony":1.5, "luddic_church":0.5, },
+    "morality":"amoral",
+    
+	"alignments":{
+		#"diplomatic":	 0.5,
+		#"technocratic":   -0.5,
+		"corporate":	 1,
+		"militarist":	 0.5,
+		"ideological":	-1,
+		"hierarchial":	 -0.5,
+	},
+	"diplomacyTraits":[
+		"paranoid", 
+		"temperamental", 
+		"envious", 
+	],
+    
+    "startShipsSolo":[["prv_flamma_overdriven"]],
+    "startShipsCombatSmall":[
+      ["prv_eld_hunter", "prv_fasnod_support", "prv_gnista_cs"],						#9 + 10 + 5 = 24
+	["prv_fasklot_flicker", "prv_flamma_standard", "prv_ljus_ks"],					#13 + 5 + 3 = 21
+    ],
+    "startShipsTradeSmall":[
+      ["prv_munsbit_standard ", "prv_shrike_balanced", "prv_flamma_beam"], 				#6 + 8 + 5     = 19
+      ["prv_tarsus_aux", "prv_ljus_ambush", "prv_flamma_strike", "prv_gnista_escort"],		#3 + 5 + 5 + 3 = 16
+    ],
+    "startShipsCombatLarge":[
+      ["prv_aska_elite", "prv_fasklot_standard", "prv_ljus_strike"],					#27 + 13 + 5     = 45
+      ["prv_flock_attack", "prv_eld_elite", "prv_fasnod_standard", "prv_tiger_aux_c"],		#17 + 13 + 9 + 7 = 46
+    ],
+    "startShipsTradeLarge":[
+      ["prv_ilbud_stealth", "prv_gemini_aux_i", "prv_tiger_support"],					#10 + 9 + 7 = 26
+    ],
+    "startShipsCarrierSmall":[
+	["prv_sorl_attack", "prv_ljus_strike", "prv_flamma_beam"],						#15 + 5 + 5 = 25
+	["prv_ande_nav", "prv_tystnad_overdriven", "prv_kite_aux_attack"],				#11 + 9 + 3 = 23
+    ],
+    "startShipsCarrierLarge":[
+	["prv_kakafoni_balanced", "prv_sorl_escort", "prv_ljus_strike"],					#24 + 15 + 5     = 44
+	["prv_gast_grav", "prv_condor_aux_b", "prv_flamma_beam", "prv_gnista_strike"],		#21 + 10 + 5 + 3 = 39
+    ],
+    "startShipsSuper":[
+    	["prv_sinne_missile"],
+    	["prv_fasvinge_starter"],
+    	["prv_brand_hunter"],
+    ],
+    
+    "startSpecialItems":[
+		#[["prv_standard_package",""]],
+		#[["prv_advanced_package",""]],
+		[["prv_stjarngard_package","prv_kratul_package","prv_hel_package"]],
+    ],
+    
+    "customStations":["prv_station_ryak_hel","prv_station_old_wharf"],
+    "defenceStations":[
+	  {"ids":["prv_station1", "prv_station2", "prv_station3"], "weight":2},
+        #{"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.25},
+        #{"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.25},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"prv_labs", "mult":0.01},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+	  #{"id":"population_upsize", "count":1},
+        {"id":"nanoforge_corrupted", "count":1},
+        {"id":"aiCore_heavyindustry", "count":1},
+    ],
+}

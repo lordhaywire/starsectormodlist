@@ -1,0 +1,52 @@
+{
+  "hullName": "Tracker",
+  "hullId": "roider_drone_tracker",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/roider_tracker.png",
+  "style": "ROIDER_HULL",
+  "height": 27,
+  "width": 42,
+  "center": [21, 11],
+  "collisionRadius": 30,
+  "shieldCenter": [-3, 0],
+  "shieldRadius": 27,
+  "viewOffset": 0,
+  "builtInMods": [
+	"roider_midas_fighter"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [16, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, 6],
+      "length": 12,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-10, -6],
+      "length": 12,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "ROIDER_ENGINE"
+    }
+  ],
+  "bounds": [
+    2, -18,
+    10, -0,
+    2, 18,
+    -8, -0
+  ]
+}

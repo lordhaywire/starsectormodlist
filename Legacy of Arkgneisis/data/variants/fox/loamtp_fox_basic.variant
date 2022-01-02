@@ -1,0 +1,30 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 7,
+    "fluxVents": 5,
+    "hullId": "loamtp_fox",
+	"goalVariant": true,
+    "hullMods": [
+        "missleracks",
+        "heavyarmor",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_fox_basic",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "reaper",
+                "WS0002": "reaper"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "lightneedler"}
+        }
+    ]
+}

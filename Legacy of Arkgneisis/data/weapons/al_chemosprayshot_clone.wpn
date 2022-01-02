@@ -1,0 +1,30 @@
+{
+	"id":"al_chemosprayshot_clone",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/arkleg/weapons/al_chemospray_turret_base.png",
+	"turretGunSprite":"graphics/arkleg/weapons/al_chemospray_turret_recoil.png",
+	"hardpointSprite":"graphics/arkleg/weapons/al_chemospray_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/arkleg/weapons/al_chemospray_hardpoint_recoil.png",
+	"visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[13, 0],
+	"turretAngleOffsets":[],
+	"hardpointOffsets":[18, 0],
+	"hardpointAngleOffsets":[],
+	#"renderHints":[RENDER_BARREL_BELOW],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"autocharge":true,
+	"muzzleFlashSpec":{"length":70.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":25.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":3,
+					   "particleCount":50,
+					   "particleColor":[255,200,100,200]},
+	"projectileSpecId":"al_chemosprayshot_clone_proj",  # projectile that will be fired
+	#"fireSoundOne":"light_machinegun_intro",
+	"fireSoundTwo":"al_bullpup_fire",
+}

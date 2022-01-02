@@ -1,0 +1,23 @@
+{
+  "displayName": "Strike Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_skarn",
+  "hullMods": [
+    "no_weapon_flux"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_skarn_strafe",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_akc_fighter",
+      }
+    },
+  ],
+  "wings": []
+}

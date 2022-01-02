@@ -1,0 +1,32 @@
+{
+  "displayName": "Gunboat",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "al_duke",
+  "hullMods": [],
+  "quality": 0.5,
+  "variantId": "al_duke_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+      "WS0003": "al_pelletgun_f" 
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	   "WS0002": "al_bongo_f"
+	  }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0004": "al_rod_f"
+	  }
+    }
+  ]
+}

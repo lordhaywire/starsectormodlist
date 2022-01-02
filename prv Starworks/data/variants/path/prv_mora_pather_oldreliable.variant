@@ -1,0 +1,56 @@
+{
+  "displayName": "\"Reliable\"",
+  "fluxCapacitors": 20,
+  "fluxVents": 8,
+  "hullId": "prv_mora_pather",
+  "hullMods": [
+    "autorepair",
+    "hardened_subsystems"
+  ],
+  "quality": 0.25,
+  "variantId": "prv_mora_pather_oldreliable",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightdualac",
+        "WS 007": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "vulcan",
+        "WS 011": "vulcan"
+      }
+    }
+  ],
+    "wings": [
+	  "prv_broadsword_pather_wing",
+	  "prv_broadsword_pather_wing",
+	  "prv_talon_pather_wing",
+  ]
+}

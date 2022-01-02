@@ -1,0 +1,20 @@
+{
+	"id":"prv_akers_shot",
+	"onHitEffect":"data.scripts.weapons.prv_akers_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":90.0,
+	"hitGlowRadius":12,
+	"glowColor":[180,180,255,64],
+	"glowRadius":2.5,
+	#"width":5.5,
+	"width":3.5, #5
+	"fadeTime":0.15, #0.3	
+	"fringeColor":[180,180,255,235],	#light blue
+	"coreColor":[180,180,180,235],	#white
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/flechette_med.png"	
+}

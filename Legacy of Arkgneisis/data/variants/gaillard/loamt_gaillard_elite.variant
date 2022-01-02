@@ -1,0 +1,68 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 7,
+    "fluxVents": 50,
+    "hullId": "loamt_gaillard",
+	"goalVariant": false,
+    "hullMods": [
+        "targetingunit",
+        "advancedoptics"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_gaillard_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "al_pelletgun",
+                "WS0007": "al_pelletgun",
+                "WS0008": "al_pelletgun",
+                "WS0019": "al_pelletgun",
+                "WS0020": "al_pelletgun",
+                "WS0021": "al_pelletgun",
+                "WS0022": "loa_can_launcher",
+                "WS0023": "loa_can_launcher",
+                "WS0024": "loa_can_launcher",
+                "WS0025": "loa_can_launcher",
+                "WS0026": "loa_can_launcher",
+                "WS0027": "loa_can_launcher",
+                "WS0028": "loa_can_launcher",
+                "WS0029": "loa_can_launcher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_plasmadriver",
+                "WS0013": "al_plasmadriver",
+                "WS0014": "al_plasmadriver",
+                "WS0015": "al_plasmadriver",
+                "WS0016": "al_plasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "al_monorail",
+                "WS0010": "al_monorail",
+                "WS0011": "al_monorail",
+                "WS0012": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vulcan",
+                "WS0003": "vulcan",
+                "WS0004": "loa_er",
+                "WS0005": "loa_er",
+                "WS0017": "loa_er",
+                "WS0018": "loa_er"
+            }
+        }
+    ]
+}

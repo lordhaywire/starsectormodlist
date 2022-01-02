@@ -1,0 +1,46 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 18,
+    "fluxVents": 30,
+    "hullId": "loamt_king",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["fluxdistributor"],
+    "permaMods": [],
+    "variantId": "loamt_king_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "al_pelletcannon"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "al_rod",
+                "WS0009": "al_rod",
+                "WS0010": "al_rod",
+                "WS0011": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavymauler",
+                "WS0006": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_bongo",
+                "WS0002": "al_bongo",
+                "WS0003": "al_bongo",
+                "WS0004": "al_bongo"
+            }
+        }
+    ]
+}

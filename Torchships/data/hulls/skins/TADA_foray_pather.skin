@@ -1,0 +1,37 @@
+{
+    "baseHullId":"TADA_foray",
+    "skinHullId":"TADA_foray_pather",
+    "hullName":"Foray (LP)",
+    "descriptionId":"TADA_foray",
+    "descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+    "spriteName":"graphics/TORCHSHIPS/ships/TADA_foray_pather.png",
+    "baseValueMult":1,
+    "restoreToBaseHull":false,
+    "addHints":[],
+    "tags":["LP_bp"],
+    "tech":"Luddic Path",
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[], 		# hullmod ids
+    "removeBuiltInWeapons":["WS0001"], 		# weapon slot ids
+    "builtInMods":["safetyoverrides","ill_advised"],
+    "builtInWeapons":{
+        "WS0001": "TADA_hammerStorm"
+    },
+    "weaponSlotChanges":{
+       "WS0005":{
+            #"angle": 0,
+            #"arc": 5,
+            #"mount": "HARDPOINT",
+            #"size": "SMALL",
+            "type": "BALLISTIC"
+       },
+       "WS0006":{
+            #"angle": 0,
+            #"arc": 5,
+            #"mount": "HARDPOINT",
+            #"size": "SMALL",
+            "type": "BALLISTIC"
+       },
+    },
+}

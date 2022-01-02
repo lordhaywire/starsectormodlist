@@ -1,0 +1,44 @@
+{
+  "displayName": "Flicker",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "prv_ilbud",
+  "hullMods": [
+    "prv_flickercore"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_ilbud_flicker",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "typhoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_berguv_rack",
+        "WS0006": "prv_berguv_rack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

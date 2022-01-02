@@ -1,0 +1,53 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "prv_gryning",
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gryning_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_svala"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "irpulse",
+        "WS0006": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "prv_skatunge",
+        "WS0004": "prv_skatunge"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "TADA_scalper",
+    "hullMods": [
+        "safetyoverrides",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_scalper_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "chaingun"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "annihilator",
+                "WS0003": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "lightneedler",
+                "WS0007": "lightneedler",
+                "WS0008": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pdburst",
+                "WS0006": "pdburst"
+            }
+        }
+    ]
+}

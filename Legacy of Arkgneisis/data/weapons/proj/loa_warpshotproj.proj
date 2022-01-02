@@ -1,0 +1,17 @@
+{
+	"id":"loa_warpshotproj",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":135.0,
+	"width":11.0,
+	"fadeTime":0.15,
+	"hitGlowRadius":11,
+	"fringeColor":[255,50,255,0],
+	"coreColor":[50,125,255,0],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

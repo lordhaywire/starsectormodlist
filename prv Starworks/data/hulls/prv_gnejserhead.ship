@@ -1,0 +1,142 @@
+{
+  "hullName": "Gnejserhead",
+  "hullId": "prv_gnejserhead",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/rare/prv_gnejserhead.png",
+  "style": "PRV_LOW",
+  "height": 194,
+  "width": 108,
+  "center": [54, 96],
+  "collisionRadius": 117.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 113.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [54, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [37, -30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [37, 30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 60,
+      "locations": [-17, 39]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -60,
+      "locations": [-17, -39]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-71, 38],
+      "length": 25,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-71, -38],
+      "length": 25,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-69, -14.5],
+      "length": 36,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 24,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-69, 14.5],
+      "length": 36,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 24,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-70, 27],
+      "length": 25,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-70, -27],
+      "length": 25,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-35, 50.5],
+      "length": 37.5,
+      "width": 20,
+      "angle": 155,
+      "contrailSize": 128,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-35, -50.5],
+      "length": 37.5,
+      "width": 20,
+      "angle": -155,
+      "contrailSize": 128,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -69, -43,
+    -46, -39.5,
+    -22.5, -51.5,
+    5.5, -45.5,
+    68, -17,
+    68, 17,
+    5.5, 45.5,
+    -22, 49,
+    -46, 39.5,
+    -69, 43,
+    -65.5, 8,
+    -33, -0,
+    -65.5, -8
+  ]
+}

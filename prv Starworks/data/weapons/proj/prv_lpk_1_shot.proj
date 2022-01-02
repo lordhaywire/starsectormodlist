@@ -1,0 +1,41 @@
+{
+	"id":"prv_lpk_1_shot",
+	"specClass":"projectile",
+	#"onHitEffect":"scripts.weapons.prv_lpk_splinter_OnHitEffect",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":10, #15
+	"width":10, #7
+	"fadeTime":0.25,
+	"glowRadius":10, #14
+	"fringeColor":[51,0,153,255],
+	"coreColor":[255,255,255,155],
+	"glowColor":[51,0,153,75],
+	#"coreColor":[175,175,175,255],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,	
+	#"bulletSprite":"graphics/prv/missiles/prv_shot_lpk.png",
+	
+	"behaviorSpec":{
+		"behavior":"PROXIMITY_FUSE",
+		"range":0, #2 #8
+		"vsMissileRange":0,
+		"shotRangeVariance":0.25,
+		"explosionSpec":{"duration":0.1f, # not visual
+			"explosionColor":[51,0,153,64],  # purely visual, will get a white additively blended core on top of this color
+			"explosionRadius":21, #14 # purely visual
+			"radius":21, #14
+			"coreRadius":7, #3 # full damage within core radius
+			"collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+			"collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+			"particleSizeMin":7.0,
+			"particleSizeRange":3.0,
+			"particleDuration":0.44,
+			"particleCount":5,
+			"particleColor":[51,0,153,96]
+		},	
+	},
+}

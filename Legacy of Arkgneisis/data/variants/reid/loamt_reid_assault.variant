@@ -1,0 +1,43 @@
+{
+  "variantId": "loamt_reid_assault",
+  "hullId": "loamt_reid",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "loamt_shieldcoreupgrade",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_ionpike",
+        "WS0012": "loa_ionpike"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightdualmg",
+        "WS0014": "lightdualmg",
+        "WS0015": "lightdualmg",
+        "WS0016": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "loa_er"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

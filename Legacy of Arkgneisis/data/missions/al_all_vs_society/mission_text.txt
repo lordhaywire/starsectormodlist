@@ -1,0 +1,7 @@
+Location: Somewhere in hyperspace
+Date: Unknown
+
+Command a randomly sized vanilla faction fleet and battle a random equally matched fleet from the Anarakis Reparations Society. Factions cannot fight themselves.
+Features an improved battlespace terrain generator and fleet balance.
+
+Click on the mission in the list to re-roll.

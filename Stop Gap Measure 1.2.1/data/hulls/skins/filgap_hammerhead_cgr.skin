@@ -1,0 +1,40 @@
+{
+  "baseHullId": "hammerhead",
+  "baseValueMult": 1.1,
+  "builtInMods": [
+    "filgap_luddic_refit"
+  ],
+  "descriptionId": "hammerhead",
+  "descriptionPrefix": "This version of the Hammerhead is an approved design according to the Luddic Chuch dogmas against machinery and technology. It has been retrofitted to accommodate industrial capabilities of the Church domain. Offensive technologies have been replaced by more orthodox ballistic mounts.",
+  "tags":["LC_bp"],
+  "tech":"Luddic Church",
+  "fleetPoints": 10,
+  "hullDesignation": "Destroyer",
+  "hullName": "Hammerhead (CGR)",
+  "ordnancePoints": 95,
+  "restoreToBaseHull": false,
+  "skinHullId": "filgap_hammerhead_cgr",
+  "spriteName": "graphics/filgap/ships/filgap_hammerhead_cgr.png",
+  "weaponSlotChanges": {
+    "WS 005": {
+      "angle": 45,
+      "arc": 215,
+      "type": "BALLISTIC"
+    },
+    "WS 006": {
+      "angle": -45,
+      "arc": 215,
+      "type": "BALLISTIC"
+    },
+    "WS 007": {
+      "angle": 80,
+      "arc": 215,
+      "type": "BALLISTIC"
+    },
+    "WS 008": {
+      "angle": -80,
+      "arc": 215,
+      "type": "BALLISTIC"
+    }
+  }
+}

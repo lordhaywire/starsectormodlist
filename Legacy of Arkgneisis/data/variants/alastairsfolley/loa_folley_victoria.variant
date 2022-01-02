@@ -1,0 +1,48 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 0,
+    "fluxVents": 12,
+    "hullId": "loamt_caswell",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loa_folley_victoria",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_pelletdriver",
+                "WS0005": "al_pelletdriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "al_rod",
+                "WS0009": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_bongo",
+                "WS0006": "al_bongo",
+                "WS0007": "al_bongo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "loa_er",
+                "WS0002": "loa_er"
+            }
+        }
+    ],
+    "wings": [
+        "earl_wing",
+        "earl_wing"
+    ]
+}

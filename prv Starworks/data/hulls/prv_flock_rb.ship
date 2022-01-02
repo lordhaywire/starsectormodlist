@@ -1,0 +1,268 @@
+{
+  "bounds": [
+    -54.5,
+    69,
+    27,
+    79.5,
+    38.5,
+    69,
+    59.5,
+    60.5,
+    61,
+    49.5,
+    81.5,
+    39.5,
+    53.5,
+    17.5,
+    53.5,
+    -16.5,
+    79.5,
+    -39,
+    49,
+    -67.5,
+    27,
+    -78.5,
+    -54.5,
+    -69,
+    -54.5,
+    -35.5,
+    -24,
+    0,
+    -54.5,
+    35.5
+  ],
+  #"builtInMods": [
+  #  "prv_reman"
+  #],
+  "center": [
+    120,
+    96.5
+  ],
+  "collisionRadius": 151.5,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 20,
+      "location": [
+        -25.5,
+        0
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 20,
+      "location": [
+        -39.5,
+        11
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 20,
+      "location": [
+        -39.5,
+        -11
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 75,
+      "location": [
+        -40,
+        20.5
+      ],
+      "style": "PRV_LOW",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 75,
+      "location": [
+        -40,
+        -20.5
+      ],
+      "style": "PRV_LOW",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 20,
+      "location": [
+        -50.5,
+        -30.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 20,
+      "location": [
+        -50.5,
+        30.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    }
+  ],
+  "height": 200,
+  "hullId": "prv_flock_rb",
+  "hullName": "Flock (RB)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 150.5,
+  "spriteName": "graphics/prv/ships/prv_flock_rb.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 30,
+      "arc": 210,
+      "id": "WS0001",
+      "locations": [
+        33,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        77,
+        -33
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        77,
+        33
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS0005",
+      "locations": [
+        5,
+        62
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS0006",
+      "locations": [
+        5,
+        -62
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 210,
+      "id": "WS0007",
+      "locations": [
+        -38,
+        50
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -180,
+      "arc": 210,
+      "id": "WS0008",
+      "locations": [
+        -38,
+        -50
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        19.5,
+        -5.5,
+        20,
+        6,
+        23.5,
+        10,
+        24,
+        -9.5,
+        36,
+        6.5,
+        37,
+        -7.5,
+        47,
+        -7,
+        46,
+        6.5,
+        26.5,
+        0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        39,
+        -60,
+        35,
+        -52,
+        46.5,
+        -52.5,
+        49,
+        -62.5,
+        61,
+        -53
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 240
+}

@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_rok_p_stolen",
+  "hullId": "prv_rok_p",
+  "displayName": "Stolen",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "converted_hangar"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "pilum",
+        "WS0018": "pilum"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "annihilator",
+        "WS0015": "annihilator",
+        "WS0016": "annihilator",
+        "WS0017": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hephag",
+        "WS0003": "hephag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "arbalest",
+        "WS0012": "arbalest",
+        "WS0013": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0011": "vulcan",
+        "WS0019": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": ["borer_wing"]
+}

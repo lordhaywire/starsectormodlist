@@ -1,0 +1,23 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_tinnitus",
+    "hullMods": ["advancedoptics"],
+    "permaMods": [],
+    "quality": 0.75,
+    "variantId": "TADA_tinnitus_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "phasebeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pdburst"}
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+id,value
+# ship/wing/weapon ID or pack ID,100
+loa_arkmid1_package,400
+loa_arkmid2_package,700
+loa_arkmid3_package,1000
+loa_alastair_package,3000
+loa_osmond_package,1500
+loa_arkmidw_package,1000
+loa_pelletcannon_package,750
+loa_mk2bigram_package,750
+loa_warpshot_package,2500
+loa_zapflak_package,5000
+loa_rupturecannon_package,7500
+loa_hyperbeam_package,10000
+loa_arkg_package,500
+loa_arkp_package,500

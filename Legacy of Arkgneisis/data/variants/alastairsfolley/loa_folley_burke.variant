@@ -1,0 +1,43 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "hullId": "loamt_victoria",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_folley_burke",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "loa_siegecannon_v"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletgun",
+                "WS0008": "al_cone",
+                "WS0011": "al_cone"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "al_bullpup",
+                "WS0003": "al_bullpup",
+                "WS0009": "al_bullpup",
+                "WS0010": "al_bullpup"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "al_lightplasmadriver",
+                "WS0007": "al_lightplasmadriver"
+            }
+        }
+    ]
+}

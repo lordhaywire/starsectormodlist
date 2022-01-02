@@ -1,0 +1,62 @@
+{
+  "displayName": "Assault",
+  "fluxCapacitors": 23,
+  "fluxVents": 30,
+  "goalVariant": false,
+  "hullId": "prv_hornfels",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "unstable_injector"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_hornfels_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "arbalest",
+        "WS0002": "arbalest",
+        "WS0004": "lightac",
+        "WS0005r": "lightac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "sabot",
+        "WS0009": "hammer",
+        "WS0010": "hammer",
+        "WS0013": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "prv_lightthumper",
+        "WS0012": "prv_lightthumper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_pskd",
+        "WS0006": "prv_pskd",
+        "WS0007": "prv_pskd"
+      }
+    }
+  ],
+  "wings": []
+}

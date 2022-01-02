@@ -1,0 +1,45 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 23,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_shine",
+    "hullMods": [
+        "advancedoptics",
+        "targetingunit",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_shine_beamer",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "phasebeam",
+                "WS0002": "phasebeam",
+                "WS0003": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "gravitonbeam",
+                "WS0005": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lrpdlaser",
+                "WS0007": "lrpdlaser",
+                "WS0008": "lrpdlaser",
+                "WS0009": "lrpdlaser",
+                "WS0010": "lrpdlaser",
+                "WS0011": "lrpdlaser"
+            }
+        }
+    ]
+}

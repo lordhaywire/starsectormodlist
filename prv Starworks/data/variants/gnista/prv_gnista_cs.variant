@@ -1,0 +1,30 @@
+{
+  "displayName": "Close Support",
+  "fluxCapacitors": 7,
+  "fluxVents": 8,
+  "goalVariant": true,
+  "hullId": "prv_gnista",
+  "hullMods": ["prv_missile_plating",],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_gnista_cs",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_akers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_kaja",
+        "WS0002": "prv_kaja"
+      }
+    }
+  ],
+  "wings": []
+}

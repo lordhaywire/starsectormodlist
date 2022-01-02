@@ -1,0 +1,29 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_shine":0.25,
+            "TADA_brilliantX":0.1,
+            "TADA_scintillaX":0.1,
+        },
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_shine",
+            "TADA_brilliantX",
+            "TADA_scintillaX",
+        ],
+    },
+
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

@@ -1,0 +1,47 @@
+{
+  "variantId": "prv_tystnad_ryak",
+  "hullId": "prv_tystnad",
+  "displayName": "Ryak",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 20,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_spattergun",
+        "WS0006": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_akers_nova"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0004": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xyphos_wing"
+  ]
+}

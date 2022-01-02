@@ -1,0 +1,5 @@
+alias,command
+clearreputation,clearrep
+stem,SetTraitEffectMult
+seteffectmult,SetTraitEffectMult
+settraitmult,SetTraitEffectMult

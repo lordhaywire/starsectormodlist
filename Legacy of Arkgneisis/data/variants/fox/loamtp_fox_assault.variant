@@ -1,0 +1,29 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 10,
+    "fluxVents": 10,
+    "hullId": "loamtp_fox",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "reinforcedhull"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_fox_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "lightdualac",
+                "WS0002": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "lightag"}
+        }
+    ]
+}

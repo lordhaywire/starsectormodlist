@@ -1,0 +1,42 @@
+{
+  "variantId": "prv_valnad_sustained",
+  "hullId": "prv_valnad",
+  "displayName": "Sustained",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_tardes"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_sipdlaser",
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_skran_wing",
+    "prv_skran_wing",
+    "prv_jammer_wing",
+    "prv_ovasen_wing",
+    "prv_missljud_wing",
+    "prv_diskordant_wing"
+  ]
+}

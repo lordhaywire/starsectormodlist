@@ -1,0 +1,167 @@
+{
+  "bounds": [
+    56,
+    -8,
+    18.5,
+    -19,
+    18.5,
+    -32.5,
+    -6.5,
+    -48,
+    -16.5,
+    -38.5,
+    -31,
+    -37,
+    -43,
+    -23,
+    -43.5,
+    -11,
+    -58,
+    -7.5,
+    -58,
+    7.5,
+    -43.5,
+    11,
+    -43,
+    23,
+    -31,
+    37,
+    -16.5,
+    38.5,
+    -6.5,
+    48,
+    18.5,
+    32.5,
+    18.5,
+    19,
+    56,
+    8
+  ],
+  "builtInWings": [],
+  "center": [
+    47,
+    59
+  ],
+  "collisionRadius": 78,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 25,
+      "location": [
+        -31,
+        32.5
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 25,
+      "location": [
+        -31,
+        -32.5
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 23,
+      "location": [
+        -43.5,
+        19.5
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 23,
+      "location": [
+        -43.5,
+        -19.5
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    }
+  ],
+  "height": 118,
+  "hullId": "filgap_velite",
+  "hullName": "Velite",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 75,
+  "spriteName": "graphics/filgap/ships/filgap_velite.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        19.5,
+        -26
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        19.5,
+        26
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        26.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 20,
+      "id": "WS0004",
+      "locations": [
+        53.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        -41.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 95
+}

@@ -1,0 +1,54 @@
+{
+  "variantId": "prv_eld_rb_pirate",
+  "hullId": "prv_eld_rb",
+  "displayName": "Pirate",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 20,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_hfl_array"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "prv_sidensvans",
+        "WS0009": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vulcan",
+        "WS0006": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

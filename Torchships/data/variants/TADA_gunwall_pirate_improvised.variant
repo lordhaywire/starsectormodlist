@@ -1,0 +1,60 @@
+{
+    "displayName": "Improvised",
+    "fluxCapacitors": 32,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall_pirate",
+    "hullMods": [
+        "blast_doors",
+        "reinforcedhull",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_gunwall_pirate_improvised",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "shredder",
+                "WS0002": "shredder",
+                "WS0003": "shredder",
+                "WS0004": "shredder",
+                "WS0005": "shredder",
+                "WS0006": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "heavymortar",
+                "WS0008": "heavymortar",
+                "WS0009": "heavymortar",
+                "WS0010": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "shredder",
+                "WS0016": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "heavymg",
+                "WS0012": "heavymg",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

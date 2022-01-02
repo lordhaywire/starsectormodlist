@@ -1,0 +1,16 @@
+{
+  "displayName": "Macnamara",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_macnamara",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "loamt_macnamara_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ]
+}

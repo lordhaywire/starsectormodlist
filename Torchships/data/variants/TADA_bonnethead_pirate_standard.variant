@@ -1,0 +1,33 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 26,
+    "goalVariant": true,
+    "hullId": "TADA_bonnethead_pirate",
+    "hullMods": [
+        "missleracks",
+        "eccm"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_bonnethead_pirate_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "locust"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "squall"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "flak",
+                "WS0010": "flak"
+            }
+        }
+    ]
+}

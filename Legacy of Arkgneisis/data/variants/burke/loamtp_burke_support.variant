@@ -1,0 +1,22 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 8,
+    "fluxVents": 20,
+    "hullId": "loamtp_burke",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_burke_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "al_heavymonorail2"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "hurricane"}
+        }
+    ]
+}

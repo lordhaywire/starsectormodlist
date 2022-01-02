@@ -1,0 +1,51 @@
+{
+  "variantId": "loamt_hawke_basic",
+  "hullId": "loamt_hawke",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "loamt_shieldcoreupgrade",
+    "auxiliarythrusters",
+    "loamt_suspendedmounts"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac",
+        "WS0002": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "loa_mosaic_torpedo",
+        "WS0006": "loa_mosaic_torpedo",
+        "WS0007": "loa_mosaic_torpedo",
+        "WS0008": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "al_lightplasmadriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "al_bongo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

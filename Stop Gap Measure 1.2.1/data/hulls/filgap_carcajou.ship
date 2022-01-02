@@ -1,0 +1,192 @@
+{
+  "bounds": [
+    35,
+    24,
+    16.5,
+    43,
+    -6.5,
+    33,
+    -33.5,
+    38,
+    -41.5,
+    1,
+    -32.5,
+    -37,
+    -9.5,
+    -33,
+    15.5,
+    -45,
+    35.5,
+    -24,
+    28.5,
+    -14,
+    37.5,
+    0,
+    30.5,
+    12
+  ],
+  "builtInMods": [
+    "automated"
+  ],
+  "builtInWings": [],
+  "center": [
+    46,
+    43.5
+  ],
+  "collisionRadius": 90,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 36,
+      "location": [
+        -40.5,
+        21
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 36,
+      "location": [
+        -40.5,
+        -21
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 20,
+      "location": [
+        -41.5,
+        9
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 20,
+      "location": [
+        -41.5,
+        -8
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 28,
+      "location": [
+        -41.5,
+        3
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 28,
+      "location": [
+        -41.5,
+        -2
+      ],
+      "style": "HIGH_TECH",
+      "width": 8
+    }
+  ],
+  "height": 87,
+  "hullId": "filgap_carcajou",
+  "hullName": "Carcajou",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 75,
+  "spriteName": "graphics/filgap/ships/filgap_carcajou.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 30,
+      "id": "WS 002",
+      "locations": [
+        34.5,
+        24
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 30,
+      "id": "WS 003",
+      "locations": [
+        34.5,
+        -24
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -55,
+      "arc": 130,
+      "id": "WS 005",
+      "locations": [
+        19.5,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 120,
+      "arc": 150,
+      "id": "WS 008",
+      "locations": [
+        -26,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 240,
+      "arc": 150,
+      "id": "WS 009",
+      "locations": [
+        -26.5,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 55,
+      "arc": 130,
+      "id": "WS 010",
+      "locations": [
+        19.5,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 92
+}

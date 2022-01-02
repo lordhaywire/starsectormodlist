@@ -1,0 +1,42 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 10,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "roider_nolasher",
+    "hullMods": [
+        "roider_fighterClamps",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "variantId": "roider_nolasher_Balanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightmortar",
+                "WS 002": "lightmortar"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "harpoon"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "roider_zap"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "lightdualac",
+                "WS 006": "lightdualac"
+            }
+        }
+    ],
+    "wings": ["roider_breaker_wing"]
+}

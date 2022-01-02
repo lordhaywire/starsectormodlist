@@ -1,0 +1,14 @@
+{
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["loa_arkg_bp"],
+	},
+		"knownShips":{
+		"tags":["loa_arkg_bp"],
+	},
+		"knownFighters":{
+		"fighters":[
+			"monodrone_wing",
+		],
+	},
+},	

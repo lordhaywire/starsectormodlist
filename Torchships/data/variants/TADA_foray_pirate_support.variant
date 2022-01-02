@@ -1,0 +1,38 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 19,
+    "goalVariant": true,
+    "hullId": "TADA_foray_pirate",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "TADA_foray_pirate_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "railgun",
+                "WS0006": "railgun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "TADA_hammerStorm"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "TADA_LRA",
+                "WS0004": "TADA_LRA"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "dualflak"}
+        }
+    ]
+}

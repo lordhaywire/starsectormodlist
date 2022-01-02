@@ -1,0 +1,34 @@
+{
+    "displayName": "Interceptor",
+    "fluxCapacitors": 8,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "roider_cowboy",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "roider_cowboy_Interceptor",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "lightag",
+                "WS 003": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "flak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "vulcan",
+                "WS 005": "vulcan"
+            }
+        }
+    ],
+    "wings": ["roider_bolt_wing"]
+}

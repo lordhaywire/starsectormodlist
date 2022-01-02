@@ -1,0 +1,57 @@
+{
+  "beamFireOnlyOnFullCharge": true,
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    175,
+    0,
+    255
+  ],
+  "fireSoundOne": "high_intensity_laser_loop",
+  "fringeColor": [
+    255,
+    55,
+    55,
+    155
+  ],
+  "glowColor": [
+    255,
+    0,
+    0,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_aton_glow_hp.png",
+  "hardpointOffsets": [
+    19.5,
+    -4,
+    19.5,
+    4
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_aton_hp.png",
+  "hitGlowRadius": 0,
+  "id": "filgap_aton",
+  "pixelsPerTexel": 1,
+  "size": "LARGE",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_aton_glow_turret.png",
+  "turretOffsets": [
+    15,
+    -4,
+    15,
+    4
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_aton_turret.png",
+  "type": "ENERGY",
+  "width": 18
+}

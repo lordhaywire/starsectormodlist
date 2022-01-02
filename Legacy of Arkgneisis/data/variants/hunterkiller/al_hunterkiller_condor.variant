@@ -1,0 +1,37 @@
+{
+    "displayName": "Fleeing",
+    "fluxCapacitors": 5,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "condor",
+    "hullMods": [
+	"missleracks",
+	"comp_hull",
+	"faulty_grid",
+	"unstable_coils",
+	"damaged_deck",
+	"fragile_subsystems"
+	],
+    "permaMods": [],
+    "quality": 0.25,
+    "variantId": "al_hunterkiller_condor",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 003": "annihilatorpod"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightdualmg",
+                "WS 002": "lightdualmg"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "talon_wing"
+    ]
+}

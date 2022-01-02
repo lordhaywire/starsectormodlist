@@ -1,0 +1,65 @@
+{
+  "variantId": "prv_rok_fast",
+  "hullId": "prv_rok",
+  "displayName": "Fast",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "prv_svala",
+        "WS0015": "prv_svala",
+        "WS0016": "prv_svala",
+        "WS0017": "prv_svala"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "sabotpod",
+        "WS0005": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_heavygravkan",
+        "WS0002": "prv_heavygravkan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_jursla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightdualmg",
+        "WS0007": "lightdualmg",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0012": "lightdualmg",
+        "WS0013": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

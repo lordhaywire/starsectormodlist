@@ -1,0 +1,45 @@
+{
+  "variantId": "scintilla_prv_hvb",
+  "hullId": "scintilla",
+  "displayName": "SIPD Refit",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "prv_ramshield_modular"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "prv_svala",
+        "WS 008": "prv_svala"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_sipdlaser",
+        "WS 001": "prv_sipdlaser",
+        "WS 002": "prv_sipdlaser",
+        "WS 003": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_oklang_wing",
+    "prv_oklang_wing"
+  ]
+}

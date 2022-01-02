@@ -1,0 +1,47 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 25,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_owl",
+    "hullMods": [
+        "fluxbreakers",
+        "reinforcedhull",
+        "armoredweapons"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_owl_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "heavymortar",
+                "WS0007": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "heavyac",
+                "WS0009": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdburst",
+                "WS0002": "pdlaser",
+                "WS0003": "pdlaser",
+                "WS0004": "lrpdlaser"
+            }
+        }
+    ],
+    "wings": [
+        "TADA_owlDrone_wing",
+        "TADA_owlDrone_wing"
+    ]
+}

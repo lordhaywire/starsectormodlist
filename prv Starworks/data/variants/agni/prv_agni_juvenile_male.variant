@@ -1,0 +1,60 @@
+{
+  "variantId": "prv_agni_juvenile_male",
+  "hullId": "prv_agni_juvenile",
+  "displayName": "Male",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    #"heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_agni_conflagration"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "prv_agni_pureflame_lance",
+        "WS0013": "prv_agni_pureflame_lance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_agni_teeth",
+        "WS0003": "prv_agni_teeth",
+        "WS0010": "prv_agni_teeth",
+        "WS0011": "prv_agni_teeth"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "prv_agni_eye",
+        "WS0009": "prv_agni_eye"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "prv_agni_flamelash",
+        "WS0005": "prv_agni_flamelash",
+        "WS0006": "prv_agni_flamelash",
+        "WS0007": "prv_agni_flamelash"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

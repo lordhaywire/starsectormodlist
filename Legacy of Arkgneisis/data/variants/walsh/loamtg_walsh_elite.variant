@@ -1,0 +1,30 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "hullId": "loamtg_walsh",
+	"goalVariant": false,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "pointdefenseai"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_walsh_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "lightmortar",
+                "WS0005": "lightmortar",
+                "WS0006": "lightmortar"
+            }
+        }
+    ]
+}

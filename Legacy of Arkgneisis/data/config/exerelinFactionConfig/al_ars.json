@@ -1,0 +1,47 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Traitors",
+	
+	"maxRelationships":{"hegemony":-0.5 },
+ 
+    "startRelationships":{ "hegemony": -0.5 },
+    "diplomacyPositiveChance":{ "hegemony":0.25 },
+    "diplomacyNegativeChance":{ "hegemony":1.5 },
+	"diplomacyTraits":["stalwart", "anarchist", "temperamental", "helps_allies"],
+ 
+    "alignments":{
+        "diplomatic":0.25,
+        "militarist":1,
+        "ideological":-0.5,
+    },
+   
+    "vengeanceLevelNames":["Grudge", "Vendetta"],
+    "vengeanceFleetNames":["Enforcers", "Hit-Fleet"],
+    "vengeanceFleetNamesSingle":["an Enforcer fleet", "a Hit-Fleet"],
+ 
+    "miningVariantsOrWings":["shepherd_Frontier"],
+ 
+    # In Nexerelin 0.8.4b and later, customStations can have specific size ranges
+    "customStations":[
+        {"entity":"al_arsbase_3", "minSize": 1, "maxSize": 3},
+        {"entity":"al_arsbase_4", "minSize": 4, "maxSize": 5},
+        {"entity":"al_arsbase_6", "minSize": 6, "maxSize": 10},
+    ],
+	
+	"startSpecialItems":[
+	[["loa_arkmid1_package", ""]],
+	[["loa_arkmid2_package", ""]],
+	[["loa_arkmidw_package", ""]],
+	],
+ 
+    "startShipsSolo":[["loamt_reid_basic"]],
+    "startShipsCombatSmall":[["loamt_victoria_support", "loamt_fox_basic", "loamt_fox_basic"]],
+    "startShipsCarrierSmall":[["loamt_caswell_basic", "loamt_sherman_support", "loamt_walsh_basic"]],
+    "startShipsCombatLarge":[["loamt_king_assault", "loamt_walsh_elite", "loamt_fox_support", "loamt_fox_support"]],
+	
+	"defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"]},
+    ],
+}

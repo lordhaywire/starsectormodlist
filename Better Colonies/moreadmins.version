@@ -1,0 +1,12 @@
+{
+	"masterVersionFile":"https://raw.githubusercontent.com/TechpriestEnginseer/solid-winner2/master/moreadmins.version",
+	"modName":"Better Colonies",
+	"modThreadId":17103,
+	"modVersion":
+	{
+		"major":1,
+		"minor":6,
+		"patch":3,
+	},
+	"starsectorVersion":".95a"
+}

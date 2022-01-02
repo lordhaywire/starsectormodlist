@@ -1,0 +1,39 @@
+{
+  "displayName": "Auxiliary-B",
+  "fluxCapacitors": 5,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_gemini",
+  "hullMods": [
+    "insulatedengine"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_gemini_aux_b",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_gravkan",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS 003": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_akc",
+      }
+    },
+  ],
+  "wings": [
+    "prv_jammer_wing"
+  ]
+}

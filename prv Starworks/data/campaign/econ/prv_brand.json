@@ -1,0 +1,62 @@
+{
+	"starSystem":"prv_brand",
+	"markets":[
+		{
+			"entities":["prv_brand_skargard"],
+			"faction":"prv",
+			"size":4,
+			"startingConditions":[
+				"habitable",
+				"population_4",
+				"organics_common",
+				"water_surface",
+				"extreme_weather",
+			],
+			"industries":[
+				"population",
+				"aquaculture",
+				"grounddefenses",
+				"lightindustry",
+				"spaceport",
+			],
+		},
+		{
+			"entities":["prv_brand_skade_moon1","prv_brand_skade_moon1_station"],
+			"faction":"luddic_church",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"volatiles_diffuse",
+				"cold",
+				"low_gravity",
+				"no_atmosphere",
+			],
+			"industries":[
+				"population",
+				"mining",
+				"heavybatteries",
+				"spaceport",
+				"battlestation",
+				"militarybase",
+			],
+		},
+		{
+			"entities":["prv_brand_vakten_station"],
+			"faction":"prv",
+			"size":3,
+			"startingConditions":[
+				"population_3",
+			],
+			"industries":[
+				"population",
+				"heavybatteries",
+				"spaceport",
+				"prv_station2",
+				"patrolhq",
+			],
+		},
+	],
+}
+
+
+

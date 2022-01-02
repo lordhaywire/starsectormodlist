@@ -1,0 +1,4 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+,,,,,,,,,,,,,,,,,,
+Jam-packed Racks,TADA_fullRacks,4,1,,special,,,,TRUE,,0,0,0,0,data.hullmods.TADA_fullRacks,"The ship's Missile Racks are already choke-full of ordinances, it is physically impossible to add any.",,graphics/hullmods/missile_autofactory.png
+Destroyed Fighter Gantry,TADA_noDecks,,,,dmod,,,,TRUE,,0,0,0,0,data.hullmods.TADA_noDecks,"A strikecraft autofab has been critically damaged and is no longer operable, reducing the number of available flight deck on the ship by one.",,graphics/TORCHSHIPS/hullmods/TADA_destroyedDeck.png

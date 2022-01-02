@@ -1,0 +1,20 @@
+{
+	"id":"al_pellet_tiny",
+	"specClass":"projectile",
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",	
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":3.0,
+	"width":3,
+	"fadeTime":0.2,
+	"fringeColor":[50,255,255,0],
+	"coreColor":[150,255,255,0],
+	"hitGlowRadius":15,
+	#"textureType":"ROUGH",
+	"textureScrollSpeed":5,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/arkleg/missiles/al_pellettiny.png"	
+}

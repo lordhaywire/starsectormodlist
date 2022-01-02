@@ -1,0 +1,79 @@
+{
+	"raiderFactionId":"rb", # String, faction id
+	
+	"onlySpawnWhenVisibleInIntelTab":true, # OPTIONAL Boolean, default false. CAN be modified by scripts in-game
+	# if true, will only spawn when the parent controls at least 1 (one) non-hidden market and is visible in intel tab, if false will NOT be reaped by reaper script (i.e. will always spawn bases like vanilla)
+	"startEnabled":false, # OPTIONAL Boolean, default true. CAN be modified by scripts in-game
+	
+	"isFirebase":true, # OPTIONAL Boolean, default false
+	# Firebases spawn in the same system as their target
+	
+	"createBounty":true, # OPTIONAL Boolean, default false - creates bounty for killing the base
+	
+	"freePort":true, # OPTIONAL Boolean, default true
+	
+	"spawnNonEventFleets":false, # OPTIONAL Boolean, default false
+	# Causes small, NON-EVENT-RELATED fleets to spawn from ALL markets owned by the faction (i.e. not just bases created by this framework)
+	
+	"raiderActivityString":"Ruster Raids", # OPTIONAL String, default "<personOrEntityPrefix> Raider Activity"
+	
+	"raidTargetWeights":{ # OPTIONAL String -> Float map, factionId -> pick weight, default no special weights
+		"hegemony":1.5, # example, "hegemony":10, = 10x more likely to pick Hegemony targets
+		"prv": 5,
+		"independent": 1.5,
+		"persean": 1.5,
+		},
+		
+	"raiderBaseTypes":{ # OPTIONAL String -> Float map, orbital station industry ID -> pick weight, default always low-tech
+		"prv_station1":1,
+		"orbitalstation":2,
+		"orbitalstation_mid":1,
+		},
+		
+	"raiderBaseConditionsAndIndustries":[ # OPTIONAL List<String>, default “Frontier”, “No Atmosphere”, “Population”, “Spaceport”, “Military Base”, “Orbital Works”
+		"heavybatteries", 
+		"no_atmosphere",
+		"population",
+		"spaceport",
+		"militarybase",
+		"prv_rb_pirate_2",
+		"orbitalworks"
+		],
+
+	# Fleet names are set in the .faction file, under the "merc" fleet types
+
+	# Base names will be combined with a random other word. idk where they come from
+    "raiderBaseTypeNames":[
+		"Asperö",
+		"Brännö",
+		"Donsö",
+		"Galterö",
+		"Knarrholmen",
+		"Kårholmen",
+		"Källö",
+		"Känsö",
+		"Köpstadsö",
+		"Rivö",
+		"Sillfarsholmen",
+		"Sjumansholmen",
+		"Stora Förö",
+		"Lilla Förö",
+		"Stora Mosskullen",
+		"Styrsö",
+		"Tistlarna",
+		"Valö",
+		"Vargö",
+		"Vinga",
+		"Vrångö",
+		"Björkö",
+		"Fotö",
+		"Grötö",
+		"Hyppeln",
+		"Hälsö",
+		"Hönö",
+		"Kalvsund",
+		"Knippla",
+		"Rörö",
+		"Öckerö",
+	],
+}

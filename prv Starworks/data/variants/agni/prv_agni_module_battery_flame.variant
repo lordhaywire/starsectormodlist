@@ -1,0 +1,65 @@
+{
+  "variantId": "prv_agni_module_battery_flame",
+  "hullId": "prv_agni_module_battery",
+  "displayName": "Flame Spouts",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_agni_conflagration",
+        "WS 002": "prv_agni_conflagration",
+        "WS 005": "prv_agni_pureflame_lance",
+        "WS 008": "prv_agni_pureflame_lance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "prv_agni_web",
+        "WS 003": "prv_agni_web"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "prv_agni_teeth",
+        "WS 009": "prv_agni_teeth"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "prv_agni_spines",
+        "WS 007": "prv_agni_spines",
+        "WS 018": "prv_agni_flamelash",
+        "WS 023": "prv_agni_flamelash"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 010": "prv_agni_eye",
+        "WS 011": "prv_agni_eye",
+        "WS 012": "prv_agni_eye",
+        "WS 013": "prv_agni_eye",
+        "WS 015": "prv_agni_eye",
+        "WS 020": "prv_agni_eye",
+        "WS 021": "prv_agni_eye",
+        "WS 026": "prv_agni_eye"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

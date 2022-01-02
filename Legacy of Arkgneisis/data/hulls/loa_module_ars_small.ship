@@ -1,0 +1,105 @@
+{
+  "hullName": "Supplement Module",
+  "hullId": "loa_module_ars_small",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/arkleg/ships/station/ars/loa_module_small.png",
+  "style": "ANARGAIA",
+  "height": 133,
+  "width": 210,
+  "center": [105, 52],
+  "collisionRadius": 113.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 112,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -76,
+    1
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "missile_reload"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -20,
+      "locations": [-1, -81]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 20,
+      "locations": [-1, 81]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -20,
+      "locations": [35, -49]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 20,
+      "locations": [35, 49]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 20,
+      "locations": [43, 23]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -20,
+      "locations": [43, -23]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -12, -57.5,
+    -35, -58,
+    -35, -103,
+    1, -104,
+    12.5, -89.5,
+    39.5, -88.5,
+    69.5, -16.5,
+    69.5, 16.5,
+    39.5, 88.5,
+    12.5, 89.5,
+    1, 104,
+    -35, 103,
+    -35, 58,
+    -12, 57.5
+  ]
+}

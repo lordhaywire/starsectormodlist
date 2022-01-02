@@ -1,0 +1,33 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_eld_midline",
+			"prv_tystnad_midline",
+			"prv_flamma_midline",
+			"prv_flock_midline",
+			"prv_aska",
+			"prv_fasnod",
+			"prv_fasklot",
+			"prv_fasvinge",
+		],
+	},
+	"knownWeapons":{
+		"tags":["prv_bp","prv_adv_bp"],
+		"weapons":[
+			"prv_akers_denova",
+			"prv_rorsangare",
+		]
+	},
+	"knownWings":{
+		"fighters":[
+			"prv_skral_wing",
+		],
+	},
+	"knownHullMods":{
+		"hullMods":[
+			"prv_arcfault_insulator",
+			"prv_flickercore",
+			"prv_gravanchor",
+		],
+	},
+}

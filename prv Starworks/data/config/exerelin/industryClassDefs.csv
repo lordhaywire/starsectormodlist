@@ -1,0 +1,3 @@
+id,name,class,priority,special,requiredMod
+prv_rb_pirate ,Raider Base ,data.scripts.campaign.prv_war_syndicate_nex,4,TRUE,
+prv_labs,Laboratory Complex,data.scripts.campaign.prv_labs_nex,3,TRUE,

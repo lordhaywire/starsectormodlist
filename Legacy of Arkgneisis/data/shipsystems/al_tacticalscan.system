@@ -1,0 +1,24 @@
+{
+	"id":"al_tacticalscan",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_tacscan_ai",
+	"statsScript":"data.scripts.shipsystems.Al_TacScanStats",
+
+	#"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true, # unapply() never gets called
+		
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"ui_transponder_on",
+	"loopSound":"al_tacscan_loop",
+	"deactivateSound":"ui_transponder_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

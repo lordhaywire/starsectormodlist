@@ -1,0 +1,46 @@
+{
+    "displayName": "Artillery",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "hullId": "loamt_king",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_hill_king",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "al_pelletcannon",
+                "WS0008": "al_cone",
+                "WS0009": "al_cone",
+                "WS0010": "al_cone",
+                "WS0011": "al_cone"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "heavymauler",
+                "WS0006": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_lightplasmadriver",
+                "WS0004": "al_lightplasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "loa_er",
+                "WS0002": "loa_er"
+            }
+        }
+    ]
+}

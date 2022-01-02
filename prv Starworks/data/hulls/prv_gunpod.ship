@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    0,
+    -12,
+    -12,
+    -0,
+    0,
+    12,
+    12,
+    -0
+  ],
+  "builtInMods": [
+    "missile_reload"
+  ],
+  "builtInWings": [],
+  "center": [
+    19,
+    19
+  ],
+  "collisionRadius": 25,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 2.5,
+      "location": [
+        -18.5,
+        2
+      ],
+      "style": "PRV_HIGH",
+      "width": 4
+    },
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 2.5,
+      "location": [
+        -18.5,
+        -3
+      ],
+      "style": "PRV_HIGH",
+      "width": 4
+    }
+  ],
+  "height": 38,
+  "hullId": "prv_gunpod",
+  "hullName": "prv Armed Pod",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 24.5,
+  "spriteName": "graphics/prv/ships/fighters/prv_gunpod.png",
+  "style": "PRV_HIGH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0001",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 38
+}

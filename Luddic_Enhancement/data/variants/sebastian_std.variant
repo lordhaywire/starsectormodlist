@@ -1,0 +1,66 @@
+{
+  "variantId": "sebastian_std",
+  "hullId": "sebastian",
+  "displayName": "Balanced",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "sabotpod",
+        "WS0014": "sabot",
+        "WS0015": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "heavymauler",
+        "WS0012": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "heavymauler",
+        "WS0010": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "lightdualmg",
+        "WS0002": "lightdualmg",
+        "WS0007": "vulcan",
+        "WS0008": "vulcan",
+        "WS0016": "lightdualmg",
+        "WS0017": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "dualflak",
+        "WS0004": "dualflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "variantId": "prv_tystnad_assault",
+  "hullId": "prv_tystnad",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 19,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "amblaster",
+        "WS0006": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_akc"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing"
+  ]
+}

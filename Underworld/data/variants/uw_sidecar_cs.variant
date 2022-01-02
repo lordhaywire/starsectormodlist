@@ -1,0 +1,27 @@
+{
+    "displayName": "Close Support",
+    "fluxCapacitors": 3,
+    "fluxVents": 6,
+    "goalVariant": true,
+    "hullId": "uw_sidecar",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "uw_sidecar_cs",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "heatseeker"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "lightmg"}
+        }
+    ]
+}

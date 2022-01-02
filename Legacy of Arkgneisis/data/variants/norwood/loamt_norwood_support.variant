@@ -1,0 +1,28 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 14,
+    "fluxVents": 5,
+    "hullId": "loamt_norwood",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamt_norwood_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_string",
+                "WS0004": "al_string",
+                "WS0009": "al_string",
+                "WS0010": "al_string"
+            }
+        }
+    ]
+}

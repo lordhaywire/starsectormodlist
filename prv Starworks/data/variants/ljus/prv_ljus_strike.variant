@@ -1,0 +1,39 @@
+{
+  "variantId": "prv_ljus_strike",
+  "hullId": "prv_ljus",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_frasare"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,59 @@
+{
+  "variantId": "prv_aska_elite",
+  "hullId": "prv_aska",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 30,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_jursla"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI03": "prv_kaja_quint"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_bounder",
+        "WS0004": "prv_bounder"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_frasare"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

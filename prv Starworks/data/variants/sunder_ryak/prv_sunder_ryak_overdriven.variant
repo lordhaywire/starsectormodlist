@@ -1,0 +1,54 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "goalVariant": true,
+  "hullId": "prv_sunder_ryak",
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_sunder_ryak_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_gravkan",
+        "WS0006": "prv_akc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "prv_svala",
+        "WS0008": "prv_svala"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_siege_akers_sunder_prototype"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0002": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

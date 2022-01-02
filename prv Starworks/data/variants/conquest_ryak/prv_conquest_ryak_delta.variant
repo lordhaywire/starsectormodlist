@@ -1,0 +1,69 @@
+{
+  "displayName": "Deltamodell",
+  "fluxCapacitors": 23,
+  "fluxVents": 50,
+  "goalVariant": true,
+  "hullId": "prv_conquest_ryak",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_conquest_ryak_delta",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_ljungeld_conquest_prototype"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "prv_sidensvans_array",
+        "WS 020": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 012": "hil",
+        "WS 014": "hil",
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "prv_akers_nova",
+        "WS 013": "prv_akers_nova",
+        "WS 015": "prv_frasare",
+        "WS 016": "prv_frasare",
+        "WS 017": "prv_frasare",
+        "WS 018": "prv_frasare",
+        "WS 022": "prv_akers_nova",
+        "WS 023": "prv_akers_nova"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_pskd",
+        "WS 004": "prv_pskd",
+        "WS 005": "prv_pskd",
+        "WS 006": "prv_pskd",
+        "WS 007": "prv_pskd",
+        "WS 008": "prv_pskd",
+        "WS 009": "prv_pskd",
+        "WS 010": "prv_pskd"
+      }
+    }
+  ],
+  "wings": []
+}

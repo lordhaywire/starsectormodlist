@@ -1,0 +1,62 @@
+{
+  "displayName": "Elite",
+  "fluxCapacitors": 17,
+  "fluxVents": 30,
+  "goalVariant": false,
+  "hullId": "prv_hornfels",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "fluxbreakers"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_hornfels_elite",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "amblaster",
+        "WS0012": "amblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "heatseeker",
+        "WS0013": "heatseeker"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "reaper",
+        "WS0010": "reaper",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymortar",
+        "WS0002": "heavymortar",
+        "WS0003": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightdualac",
+        "WS0005": "vulcan",
+        "WS0005r": "lightdualac",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

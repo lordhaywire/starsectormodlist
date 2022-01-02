@@ -1,0 +1,13 @@
+{	
+	"MIDLINE_NO_SMOKE":{
+		"engineColor":[255,145,75,255],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[0,0,0,0],
+		"contrailCampaignColor":[0,0,0,0],
+		"type":"GLOW" # GLOW or SMOKE
+	},
+}	

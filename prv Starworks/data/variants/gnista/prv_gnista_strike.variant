@@ -1,0 +1,36 @@
+{
+  "variantId": "prv_gnista_strike",
+  "hullId": "prv_gnista",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "amblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_svala"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_akers"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

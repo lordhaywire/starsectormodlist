@@ -1,0 +1,28 @@
+{
+	"quality":0.5,
+    "displayName": "Escort",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "roider_cyclops",
+    "hullMods": ["hardened_subsystems","fluxbreakers"],
+    "permaMods": [],
+    "variantId": "roider_cyclops_Escort",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "flak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightac",
+                "WS 002": "lightac"
+            }
+        }
+    ]
+}

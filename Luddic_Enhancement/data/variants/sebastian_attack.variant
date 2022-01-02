@@ -1,0 +1,64 @@
+{
+  "variantId": "sebastian_attack",
+  "hullId": "sebastian",
+  "displayName": "Attack",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 22,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "reinforcedhull",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "annihilator",
+        "WS0015": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "chaingun",
+        "WS0010": "chaingun",
+        "WS0011": "chaingun",
+        "WS0012": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "heavyac",
+        "WS0004": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "lightmg",
+        "WS0002": "lightmg",
+        "WS0007": "vulcan",
+        "WS0008": "vulcan",
+        "WS0016": "lightmg",
+        "WS0017": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

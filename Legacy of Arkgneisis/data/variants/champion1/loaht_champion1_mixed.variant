@@ -1,0 +1,52 @@
+{
+    "displayName": "Mixed",
+    "fluxCapacitors": 16,
+    "fluxVents": 30,
+    "hullId": "loaht_champion1",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loaht_champion1_mixed",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "amblaster",
+                "WS0018": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0019": "heavyneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "irpulse",
+                "WS0006": "irpulse",
+                "WS0009": "irpulse",
+                "WS0010": "irpulse",
+                "WS0013": "irpulse",
+                "WS0014": "irpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "loa_warpshot",
+                "WS0008": "loa_warpshot",
+                "WS0011": "loa_warpshot",
+                "WS0012": "loa_warpshot",
+                "WS0015": "loa_warpshot",
+                "WS0016": "loa_warpshot"
+            }
+        }
+    ]
+}

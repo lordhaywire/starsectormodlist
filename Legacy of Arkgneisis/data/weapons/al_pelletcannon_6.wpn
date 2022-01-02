@@ -1,0 +1,28 @@
+{
+	"id":"al_pelletcannon_6",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1100,
+	"turretSprite":"graphics/arkleg/weapons/al_pelletgun_turret_base.png",
+	"hardpointSprite":"graphics/arkleg/weapons/al_pelletgun_hardpoint_base.png",	
+	"visualRecoil":8.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"autocharge":true,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":150.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":0.5,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.55,
+					   "particleCount":55,
+					   "particleColor":[155,255,255,100]},	
+	"projectileSpecId":"al_pellet_small",  # projectile that will be fired
+	"fireSoundOne":"al_pelletgun_charge",
+	"fireSoundTwo":"al_pelletgun_fire",	
+}

@@ -1,0 +1,53 @@
+{
+  "displayName": "Assault",
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "prv_sunder_ryak",
+  "hullMods": [
+    "targetingunit",
+    "pointdefenseai"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_sunder_ryak_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_spattergun",
+        "WS0008": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_akc",
+        "WS0006": "prv_akc"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

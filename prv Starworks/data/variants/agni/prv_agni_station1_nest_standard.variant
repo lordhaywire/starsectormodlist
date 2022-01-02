@@ -1,0 +1,31 @@
+{
+    "displayName": "Nest",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "prv_agni_station1_nest",
+    "hullMods": [],
+    "quality": 0.5,
+    "variantId": "prv_agni_station1_nest_standard",
+    "weaponGroups": [],
+    "modules": [
+    
+     # defense modules
+		{"WS 009": "prv_agni_module_battery_flame"},
+		{"WS 010": "prv_agni_module_cocoons_nesting"},
+		{"WS 011": "prv_agni_module_cocoons_nesting"},
+    
+    # armour struts
+		{"WS 006": "module_armour3_Standard"},
+		{"WS 007": "module_armour3_Standard"},
+		{"WS 008": "module_armour3_Standard"},
+
+	# under decor
+	#	{"WS 000": "module_decor_under1_Standard"},
+	#	{"WS 001": "module_decor_under2_Standard"},
+	#	{"WS 002": "module_decor_under3_Standard"},
+	#	{"WS 003": "module_decor_under2_Standard"},
+	#	{"WS 004": "module_decor_under1_Standard"},
+	#	{"WS 005": "module_decor_under3_Standard"},
+		
+    ],
+}

@@ -1,0 +1,78 @@
+{
+    "displayName": "Savior",
+    "fluxCapacitors": 40,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "loaht_savior",
+    "hullMods": [
+        "targetingunit",
+        "stabilizedshieldemitter",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "loaht_savior_test",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0035": "loa_riftcannon",
+                "WS0036": "loa_riftcannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0025": "loa_can_launcher",
+                "WS0026": "loa_can_launcher",
+                "WS0027": "loa_can_launcher",
+                "WS0028": "loa_can_launcher"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "loa_hypercannon",
+                "WS0004": "loa_hypercannon",
+                "WS0005": "loa_hypercannon",
+                "WS0006": "loa_hypercannon",
+                "WS0007": "loa_hypercannon",
+                "WS0008": "loa_hypercannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "loa_hypercannon",
+                "WS0012": "loa_hypercannon",
+                "WS0015": "loa_hypercannon",
+                "WS0016": "loa_hypercannon",
+                "WS0017": "loa_hypercannon",
+                "WS0018": "loa_hypercannon",
+                "WS0019": "loa_hypercannon",
+                "WS0020": "loa_hypercannon",
+                "WS0023": "loa_hypercannon",
+                "WS0024": "loa_hypercannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "loa_warpshot",
+                "WS0002": "loa_warpshot",
+                "WS0009": "loa_warpshot",
+                "WS0010": "loa_warpshot",
+                "WS0013": "loa_warpshot",
+                "WS0014": "loa_warpshot",
+                "WS0021": "loa_warpshot",
+                "WS0022": "loa_warpshot",
+                "WS0029": "loa_zapflak",
+                "WS0030": "loa_zapflak"
+            }
+        }
+    ]
+}

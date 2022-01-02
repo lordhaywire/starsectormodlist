@@ -1,0 +1,38 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 6,
+    "fluxVents": 20,
+    "hullId": "loamtp_thatcher",
+	"goalVariant": true,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_thatcher_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavyac",
+                "WS0007": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "al_rod",
+                "WS0010": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_bongo",
+                "WS0006": "al_bongo"
+            }
+        }
+    ],
+    "wings": ["warthog_wing"]
+}

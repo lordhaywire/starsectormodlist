@@ -1,0 +1,17 @@
+{
+	"id":"al_hypershrapnel",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":70.0,
+	"width":7.0,
+	"fadeTime":0.25,
+	"hitGlowRadius":20,
+	"fringeColor":[200,100,0,100],
+	"coreColor":[255,200,50,255],
+	#"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

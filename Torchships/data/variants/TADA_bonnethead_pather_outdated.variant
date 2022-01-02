@@ -1,0 +1,50 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 3,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "TADA_bonnethead_pather",
+    "hullMods": [
+        "heavyarmor",
+        "pointdefenseai",
+        "autorepair"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_bonnethead_pather_outdated",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightmortar",
+                "WS0006": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lightmortar",
+                "WS0007": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "lightdualmg",
+                "WS0003": "lightdualmg",
+                "WS0004": "lightdualmg",
+                "WS0008": "lightdualmg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "vulcan",
+                "WS0010": "vulcan"
+            }
+        }
+    ]
+}

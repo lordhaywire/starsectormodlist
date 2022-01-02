@@ -1,0 +1,40 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 7,
+    "fluxVents": 20,
+    "hullId": "loamtp_thatcher",
+	"goalVariant": true,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_thatcher_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "heavymauler"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "heatseeker",
+                "WS0010": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "hveldriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0006": "vulcan"
+            }
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

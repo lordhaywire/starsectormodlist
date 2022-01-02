@@ -1,0 +1,60 @@
+{
+  "beamEffect": "data.scripts.weapons.prv_sipdlaser_BeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    229,
+    255,
+    238,
+    255
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "pd_laser_loop",
+  "fringeColor": [
+    102,
+    255,
+    153,
+    196
+  ],
+  "glowColor": [
+    102,
+    255,
+    153,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_sipdlaser_hardpoint_glow.png",
+  "hardpointOffsets": [
+    12.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_sipdlaser_hardpoint.png",
+  "hitGlowRadius": 0,
+  "id": "prv_sipdlaser",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 64,
+  "textureType": [
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_sipdlaser_turret_glow.png",
+  "turretOffsets": [
+    11.5,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_sipdlaser_turret.png",
+  "type": "ENERGY",
+  "width": 7.5
+}

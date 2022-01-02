@@ -1,0 +1,20 @@
+{
+    "plugins":{
+    },
+	
+    "designTypeColors":{
+    },
+	
+    "graphics":{	
+        "ui":{
+        },
+        "shields":{
+        },
+        "fx":{
+            "TADA_plasma_splash_A":"graphics/TORCHSHIPS/fx/TADA_plasma_splash_00.png",
+            "TADA_plasma_splash_B":"graphics/TORCHSHIPS/fx/TADA_plasma_splash_01.png",
+            "TADA_plasma_splash_C":"graphics/TORCHSHIPS/fx/TADA_plasma_splash_02.png",
+            "sweetener":"graphics/TORCHSHIPS/fx/TADA_sweetener.png",
+        },
+    }
+}

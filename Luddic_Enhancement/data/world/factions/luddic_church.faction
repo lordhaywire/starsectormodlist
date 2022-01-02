@@ -1,0 +1,117 @@
+{
+    "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+            "cerberus":0,
+            "brawler":0,
+			"legion":0,	
+			"mule":0,			
+			"vanguard":0,
+			"manticore":0,
+			"eradicator":0,
+			"venture":0,
+			"onslaught":0,
+			"dominator":0,
+			"enforcer":0,
+			
+			
+			"brawler_luddic":10,
+			"cerberus_luddic":10,
+			"vanguard_luddic":10,
+			"eradicator_luddic":10,
+			"manticore_luddic":10,
+			"mule_luddic":10,			
+			"dominator_luddic":10,
+			"enforcer_luddic":10,
+			"venture_luddic":10,
+			"onslaught_lc":3,
+			"legion_lc":10,
+        },
+    },
+    "knownShips":{
+        "tags":["LC_bp"],
+        "hulls":[
+            "brawler_luddic",
+			"cerberus_luddic",
+			"eradicator_luddic",
+			"vanguard_luddic",
+			"mule_luddic",
+			"lector",
+			"christopher",			
+			"fidem",
+			"manticore_luddic",
+			"dominator_luddic",
+			"enforcer_luddic",
+			"venture_luddic",
+			"eradicator_lp",
+			"onslaught_lc",
+			"legion_lc",
+        ],
+    },
+		"priorityShips":{
+		"tags":[],
+		"hulls":[
+            "brawler_luddic",
+			"cerberus_luddic",
+			"eradicator_luddic",
+			"vanguard_luddic",
+			"mule_luddic",
+			"fidem",
+			"manticore_luddic",
+			"lector",
+			"christopher",
+			"dominator_luddic",
+			"enforcer_luddic",
+			"venture_luddic",
+			"eradicator_lp",
+			"onslaught_lc",		
+			"legion_lc",
+		],
+	},
+	"shipRoles":{
+		"carrierSmall":{
+			"fidem_cs":50,
+			"fidem_attack":25,
+			"fidem_std":25,	
+			"fidem_strike":10,
+		},
+		"carrierLarge":{
+			"legion_lc_Assault":50,
+			"legion_lc_Escort":50,
+			"legion_lc_FS":50,
+			"legion_lc_Strike":50,
+		},
+		"combatMedium":{
+			"enforcer_Balanced_luddic":50,
+			"fasces_cs":25,
+			"fasces_attack":25,
+			"fasces_standard":25,
+			"fasces_so":25,
+
+			"lector_outdated":25,
+			"lector_attack":25,
+
+			"manticore_luddic_std":25,
+		
+		},
+		"combatFreighterMedium":{
+			"mule_luddic_support":50,
+		},
+		"combatLarge":{
+			"christopher_outdated":50,
+			"christopher_cs":50,
+			"christopher_attack":50,
+			"christopher_std":50,
+			
+			"sebastian_cs":50,
+			"sebastian_attack":50,
+			"sebastian_std":50,
+			"dominator_luddic_standard":50,
+			
+			"eradicator_luddic_old":25,
+			"eradicator_luddic_std":50,
+	
+		},
+	},
+},

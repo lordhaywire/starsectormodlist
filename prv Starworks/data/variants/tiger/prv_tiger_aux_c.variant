@@ -1,0 +1,53 @@
+{
+  "variantId": "prv_tiger_aux_c",
+  "hullId": "prv_tiger",
+  "displayName": "Auxiliary-C",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "converted_hangar"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_lpk"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kaja"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_spattergun",
+        "WS0004": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing"
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "hullName": "Gast",
+  "hullId": "prv_gast",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_gast.png",
+  "style": "PRV_SWARM_MEDIUM",
+  "height": 75,
+  "width": 75,
+  "center": [37.5, 37.5],
+  "collisionRadius": 100,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 75,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_swarm_host",
+    "prv_intangible"
+  ],
+  "builtInWeapons": {
+    "WS0001": "prv_tardes"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -2.5, 22.5,
+        17, 17
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -13.5, -11,
+        -21.5, 11
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        24.5, -0,
+        10, -14
+      ]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 60,
+      "locations": [4, 8.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -60,
+      "locations": [4, -8.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7, 4.5],
+      "length": 0,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-7, -5.5],
+      "length": 0,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -3.5, 10,
+    -3.5, -10,
+    10.5, 0
+  ]
+}

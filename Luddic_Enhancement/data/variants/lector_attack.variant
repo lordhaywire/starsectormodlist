@@ -1,0 +1,40 @@
+{
+  "variantId": "lector_attack",
+  "hullId": "lector",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "hammer",
+        "WS0004": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "heavymg",
+        "WS0002": "heavymg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,45 @@
+{
+	"TADA":{
+		"graphicLib_lights":"data/config/modFiles/TADA_light_data.csv",
+		"graphicLib_maps":"data/config/modFiles/TADA_texture_data.csv",
+	},
+	
+    "diableavionics":{
+        "missile_resist_derecho": [
+            # Lists missiles id that should loose guidance but not get flamed out by the Derecho ECM system
+			"TADA_hailMissile",
+        ],
+        "missile_immune_derecho": [
+            # Lists missiles id that should not get affected at all by the Derecho ECM system
+            # please be mindful to not break player expectations, only very special projectiles should be immune
+            # Such as phased missiles or "smart" bullets
+			"TADA_spike_rod",
+        ],
+    },
+	
+    "nexerelin":{
+		"agent_steal_ship_mults":{
+		    #increases the "cost" of stealing a given ship
+			#"my_fancy_ship":1.5,
+			#"do_not_steal":-1,
+			"TADA_tinnitus_plasma":1.5,
+			"TADA_tinnitus_xiv":2,
+			"TADA_gunwall_XIV":2,
+		},
+		"mining_ship_strengths":{
+			#"mining_wing": 0.5,
+			#"dedicated_mining_frigate": 5,
+			#"dedicated_mining_destroyer": 20,
+		},
+		"mining_weapon_strengths":{
+		    #"small_mining_weapon":2,
+		    #"medium_mining_weapon":10,
+		    #"large_mining_weapon":20,
+			"TADA_pike":20,
+		},
+		"mining_hidden_ships_and_weapons":[
+		    #??????
+		],
+    },
+
+}

@@ -1,0 +1,34 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "goalVariant": true,
+    "hullId": "TADA_bonnethead_pirate",
+    "hullMods": [
+        "auxiliarythrusters",
+        "missleracks",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_bonnethead_pirate_outdated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "TADA_urchin"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hammerrack"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "heavymg",
+                "WS0010": "heavymg"
+            }
+        }
+    ]
+}

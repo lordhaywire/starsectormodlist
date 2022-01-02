@@ -1,0 +1,26 @@
+{
+    "hullFrequency":{
+        "tags":{
+            "uw_hack_job_bp":0.5,
+            "uw_junker_bp":0.25,
+        },
+        "hulls":{
+            "uw_stalker":0.5,
+            "uw_dragon":0.5,
+            "uw_predator":2,
+        },
+    },
+    "shipsWhenImporting":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp", "uw_junker_bp"],
+    },
+    "knownShips":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp"],
+        "hulls":[
+            "uw_stalker",
+            "uw_dragon",
+        ],
+    },
+    "knownFighters":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp"],
+    },
+},

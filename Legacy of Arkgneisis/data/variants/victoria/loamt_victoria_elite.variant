@@ -1,0 +1,59 @@
+{
+  "variantId": "loamt_victoria_elite",
+  "hullId": "loamt_victoria",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "loamt_shieldcoreupgrade"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_siegecannon_v"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "al_bullpup",
+        "WS0009": "al_bullpup"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "loa_needle",
+        "WS0011": "loa_needle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "loa_flashlight",
+        "WS0006": "loa_er",
+        "WS0007": "loa_er",
+        "WS0010": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

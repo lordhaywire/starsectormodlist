@@ -1,0 +1,62 @@
+{
+  "variantId": "prv_kakafoni_overdriven",
+  "hullId": "prv_kakafoni",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_gravkan",
+        "WS0004": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "typhoon",
+        "WS0002": "typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_akers",
+        "WS0006": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_missljud_wing",
+    "prv_missljud_wing"
+  ]
+}

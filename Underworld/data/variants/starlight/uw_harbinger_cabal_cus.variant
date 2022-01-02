@@ -1,0 +1,34 @@
+{
+    "displayName": "Custom",
+    "fluxCapacitors": 16,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "uw_harbinger_cabal",
+    "hullMods": ["adaptive_coils"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_harbinger_cabal_cus",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "plasma"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 004": "atropos",
+                "WS 005": "atropos"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "ionpulser",
+                "WS 003": "ionpulser"
+            }
+        }
+    ]
+}

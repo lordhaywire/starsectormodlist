@@ -1,0 +1,56 @@
+{
+  "variantId": "eradicator_luddic_old",
+  "hullId": "eradicator_luddic",
+  "displayName": "Outdated",
+  "goalVariant": false,
+  "fluxCapacitors": 22,
+  "fluxVents": 23,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "unstable_injector",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "breach",
+        "WS 003": "breach",
+        "WS 004": "breach"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "annihilator",
+        "WS 001": "annihilator",
+        "WS 009": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "shredder",
+        "WS 006": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "flak",
+        "WS 008": "lightdualmg",
+        "WS 012": "lightdualmg",
+        "WS 013": "vulcan",
+        "WS 014": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

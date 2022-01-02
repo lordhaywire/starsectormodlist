@@ -1,0 +1,61 @@
+{
+	"id":"TADA_plasma",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"everyFrameEffect":"data.scripts.weapons.TADA_plasmaEffect",
+	"turretSprite":"graphics/TORCHSHIPS/weapons/TADA_plasma.png",
+	"turretGlowSprite":"graphics/TORCHSHIPS/weapons/TADA_plasma_glow.png",
+	"hardpointSprite":"graphics/TORCHSHIPS/weapons/TADA_plasma.png",
+	"hardpointGlowSprite":"graphics/TORCHSHIPS/weapons/TADA_plasma_glow.png",
+	"turretOffsets":
+[
+26, 0,
+14, 0,
+10, 0,
+22, 0,
+18, 0,
+30, 0,
+],
+	"turretAngleOffsets":
+[
+-0.25,
+1.25,
+-1.25,
+0.75,
+-0.75,
+0.25,
+],
+	"hardpointOffsets":
+[
+31, 0,
+19, 0,
+15, 0,
+27, 0,
+23, 0,
+35, 0,
+],
+	"hardpointAngleOffsets":
+[
+-0.25,
+1.25,
+-1.25,
+0.75,
+-0.75,
+0.25,
+],
+	"barrelMode":"DUAL", #ALTERNATING or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"muzzleFlashSpec":{"length":30.0,
+                            "spread":10.0,
+                            "particleSizeMin":15.0,
+                            "particleSizeRange":30.0,
+                            "particleDuration":0.2,
+                            "particleCount":10,
+                            "particleColor":[50,155,255,150]},
+	"interruptibleBurst":true,
+        "separateRecoilForLinkedBarrels":"TRUE",
+	"projectileSpecId":"TADA_plasma_shot",
+        "fireSoundOne":"TADA_plasma_fire",
+	#"fireSoundTwo":"TADA_ravager_fire",
+}

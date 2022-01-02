@@ -1,0 +1,117 @@
+{
+  "hullName": "ARS Capitol Prow",
+  "hullId": "loa_arscapitol_prow",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/arkleg/ships/arscapitol/loa_arscapitol_prow.png",
+  "style": "ANARGAIA_MODULE",
+  "height": 193,
+  "width": 194,
+  "center": [97, 86],
+  "collisionRadius": 110.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 109.5,
+  "viewOffset": 0,
+  "builtInMods": [
+  "reduced_explosion",
+    "loa_enigmacomputer",
+	"loa_supermassiveram",
+	"loa_linkedhull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0010",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 44.5,
+      "locations": [-1, 29]
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -44.5,
+      "locations": [-1, -29]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 25,
+      "locations": [89, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -25,
+      "locations": [89, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 35,
+      "locations": [45, 21]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -35,
+      "locations": [45, -21]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": 70,
+      "locations": [-41, 56]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -70,
+      "locations": [-41, -56]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -21, -6.5,
+    -83.5, -57.5,
+    -49, -76.5,
+    -64.5, -85,
+    -45.5, -91.5,
+    1.5, -89,
+    9, -80.5,
+    1, -67.5,
+    85, -37.5,
+    99, -12,
+    99, 12,
+    85, 37.5,
+    1, 67.5,
+    9, 80.5,
+    1.5, 89,
+    -45.5, 91.5,
+    -64.5, 85,
+    -49, 76.5,
+    -83.5, 57.5,
+    -21, 6.5
+  ]
+}

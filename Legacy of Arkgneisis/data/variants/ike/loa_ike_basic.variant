@@ -1,0 +1,25 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 8,
+    "fluxVents": 0,
+    "hullId": "loa_ike",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "reinforcedhull",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loa_ike_basic",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0003": "al_bongo",
+            "WS0004": "al_bongo",
+            "WS0005": "al_bongo",
+            "WS0006": "al_bongo"
+        }
+    }]
+}

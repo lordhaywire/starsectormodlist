@@ -1,0 +1,58 @@
+{
+  "variantId": "prv_agni_module_cocoons_nesting",
+  "hullId": "prv_agni_module_cocoons",
+  "displayName": "Nest",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "prv_agni_pureflame_lance",
+        "WS 004": "prv_agni_pureflame_lance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "prv_agni_spines",
+        "WS 009": "prv_agni_spines"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_agni_flamelash",
+        "WS 003": "prv_agni_flamelash"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_agni_eye",
+        "WS 005": "prv_agni_eye",
+        "WS 007": "prv_agni_eye",
+        "WS 010": "prv_agni_eye",
+        "WS 012": "prv_agni_eye"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_agni_scale_wing",
+    "prv_agni_down_wing"
+  ]
+}

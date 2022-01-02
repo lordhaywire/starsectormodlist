@@ -1,0 +1,63 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "TADA_attrition",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "TADA_attrition_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "harpoonpod",
+                "WS0003": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "TADA_triplemortar",
+                "WS0008": "TADA_triplemortar",
+                "WS0009": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lightneedler",
+                "WS0007": "lightneedler",
+                "WS0010": "lightneedler",
+                "WS0011": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "lightag",
+                "WS0015": "lightag",
+                "WS0018": "lightdualac",
+                "WS0019": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "vulcan",
+                "WS0005": "vulcan",
+                "WS0012": "vulcan",
+                "WS0013": "vulcan",
+                "WS0016": "vulcan",
+                "WS0017": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan"
+            }
+        }
+    ]
+}

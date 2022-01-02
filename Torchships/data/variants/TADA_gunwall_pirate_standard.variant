@@ -1,0 +1,59 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 45,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall_pirate",
+    "hullMods": [
+        "magazines",
+        "targetingunit",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_gunwall_pirate_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "TADA_pike",
+                "WS0008": "TADA_pike",
+                "WS0009": "TADA_pike",
+                "WS0010": "TADA_pike"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyac",
+                "WS0002": "heavyac",
+                "WS0005": "heavyac",
+                "WS0006": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heavymortar",
+                "WS0004": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0015": "heavymg",
+                "WS0016": "heavymg",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["piranha_wing"]
+}

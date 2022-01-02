@@ -1,0 +1,297 @@
+{
+  "bounds": [
+    -117,
+    -27.5,
+    -62,
+    -31.5,
+    -54,
+    -27.5,
+    -52,
+    -53.5,
+    -5,
+    -60.5,
+    4,
+    -51.5,
+    36.5,
+    -51,
+    48.5,
+    -33.5,
+    121,
+    -15.5,
+    121,
+    15.5,
+    48.5,
+    33.5,
+    36.5,
+    51,
+    4,
+    51.5,
+    -5,
+    60.5,
+    -52,
+    53.5,
+    -54,
+    27.5,
+    -62,
+    31.5,
+    -117,
+    27.5
+  ],
+  "builtInMods": [
+    "loa_monkeymodel",
+	"loamt_missilefix"
+  ],
+  "builtInWeapons": {
+    "WS0009": "loa_hawke_lowermask_g",
+    "WS0010": "loa_hawke_uppermask_g",
+    "WS0017": "loa_hawke_leftshadow",
+    "WS0018": "loa_hawke_rightshadow"
+  },
+  "builtInWings": [],
+  "center": [
+    62,
+    121.5
+  ],
+  "collisionRadius": 138.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 44.5,
+      "location": [
+        -119,
+        6.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 44.5,
+      "location": [
+        -119,
+        -6.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 70,
+      "location": [
+        -119,
+        13
+      ],
+      "style": "LOW_TECH",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 70,
+      "location": [
+        -119,
+        -13
+      ],
+      "style": "LOW_TECH",
+      "width": 13
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 44.5,
+      "location": [
+        -119,
+        20
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 44.5,
+      "location": [
+        -119,
+        -20
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    }
+  ],
+  "height": 245,
+  "hullId": "loamtg_hawke",
+  "hullName": "Hawke (SG)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 137,
+  "spriteName": "graphics/arkleg/ships/hawke/loa_hawke_g.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 220,
+      "id": "WS0001",
+      "locations": [
+        25.5,
+        38
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 220,
+      "id": "WS0002",
+      "locations": [
+        25.5,
+        -38
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 230,
+      "id": "WS0003",
+      "locations": [
+        90.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 230,
+      "id": "WS0004",
+      "locations": [
+        -50.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        1.5,
+        14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        1.5,
+        -14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -18.5,
+        14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -18.5,
+        -14.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        -21,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        8,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -33,
+        -37,
+        -33,
+        38
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0017",
+      "locations": [
+        -9,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0018",
+      "locations": [
+        -9,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 123
+}

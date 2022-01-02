@@ -1,0 +1,57 @@
+{
+  "variantId": "prv_flock_overdriven",
+  "hullId": "prv_flock",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_kraka_auto"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "prv_berguv_rack",
+        "WS0004": "prv_berguv_rack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_frasare"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

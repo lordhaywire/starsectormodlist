@@ -1,0 +1,36 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed by the Engineering hub (Reverse Engineering ship hulls)
+# Ships that would break the game (Balance/Technical/Lore) if the player could produce them via blueprint should not be on this list.
+TADA_tinnitus
+TADA_tinnitus_p
+TADA_tinnitus_plasma
+TADA_tinnitus_xiv
+TADA_challenger
+TADA_challenger_pather
+TADA_challenger_pirate
+TADA_lasherTT
+TADA_tempest_pirate
+TADA_bully
+TADA_bully_pather
+TADA_bully_pirate
+TADA_cassicus
+TADA_scalper
+TADA_scalper_pirate
+TADA_foray
+TADA_foray_pather
+TADA_foray_pirate
+TADA_attrition
+TADA_crane
+TADA_crane_pirate
+TADA_owl
+TADA_bonnethead
+TADA_bonnethead_pirate
+TADA_bonnethead_pather
+TADA_hightide
+TADA_hightide_pirate
+TADA_whirlwind
+TADA_gunwall
+TADA_gunwall_pirate
+TADA_gunwall_XIV
+TADA_herald

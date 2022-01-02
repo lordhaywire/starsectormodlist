@@ -1,0 +1,56 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "harpoon_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    8.5,
+    8,
+    8.5,
+    -8,
+    4.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_davidsystem_hp.png",
+  "id": "filgap_davidsystem",
+  "projectileSpecId": "filgap_david_srm",
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    9.5,
+    8,
+    9.5,
+    -8,
+    5.5,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_davidsystem_t.png",
+  "type": "MISSILE"
+}

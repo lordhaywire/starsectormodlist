@@ -1,0 +1,24 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 18,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "roider_jane",
+    "hullMods": [
+        "assault_package",
+        "roider_trackerSwap"
+    ],
+    "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "roider_jane_Attack",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS 002": "railgun",
+            "WS 004": "railgun"
+        }
+    }],
+    "wings": []
+}

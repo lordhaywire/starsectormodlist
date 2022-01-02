@@ -1,0 +1,38 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "roider_nolasher",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "roider_nolasher_Escort",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightdualac",
+                "WS 002": "lightdualac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "roider_zap"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "heatseeker"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "roider_marksman",
+                "WS 006": "roider_marksman"
+            }
+        }
+    ]
+}

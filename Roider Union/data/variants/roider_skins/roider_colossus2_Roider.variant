@@ -1,0 +1,48 @@
+{
+    "displayName": "Roider",
+    "fluxCapacitors": 26,
+    "fluxVents": 5,
+    "goalVariant": false,
+    "hullId": "roider_colossus2",
+    "hullMods": ["dedicated_targeting_core"],
+    "permaMods": [],
+    "quality": 0,
+    "variantId": "roider_colossus2_Roider",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 013": "lightmg",
+                "WS 014": "lightmg",
+                "WS 015": "lightmg",
+                "WS 016": "lightmg"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 017": "hammerrack"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "lightdualac",
+                "WS 012": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS 001": "lightmortar",
+				"WS 003": "lightmortar",
+				"WS 002": "lightmortar",
+				"WS 004": "lightmortar",
+				"WS 009": "lightmortar",
+				"WS 010": "lightmortar",
+            }
+        }
+    ]
+}

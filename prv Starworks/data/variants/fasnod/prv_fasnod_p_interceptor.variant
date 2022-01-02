@@ -1,0 +1,34 @@
+{
+  "displayName": "Interceptor",
+  "fluxCapacitors": 10,
+  "fluxVents": 3,
+  "goalVariant": false,
+  "hullId": "prv_fasnod_p",
+  "hullMods": [
+    "turretgyros",
+    "missleracks"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_fasnod_p_interceptor",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_lightthumper",
+        "WS0002": "prv_lightthumper"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "swarmer",
+        "WS0004": "swarmer"
+      }
+    },
+  ],
+  "wings": []
+}

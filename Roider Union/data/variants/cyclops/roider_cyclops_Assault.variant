@@ -1,0 +1,28 @@
+{
+	"quality":0.5,
+    "displayName": "Assault",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "roider_cyclops",
+    "hullMods": ["armoredweapons"],
+    "permaMods": [],
+    "variantId": "roider_cyclops_Assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightmg",
+                "WS 002": "lightmg"
+            }
+        }
+    ]
+}

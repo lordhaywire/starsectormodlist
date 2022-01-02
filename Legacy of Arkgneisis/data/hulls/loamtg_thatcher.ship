@@ -1,0 +1,208 @@
+{
+  "bounds": [
+    -67.5,
+    -21.5,
+    -55.5,
+    -21.5,
+    -43,
+    -33,
+    -53.5,
+    -35,
+    -49,
+    -41.5,
+    -18,
+    -41.5,
+    -7.5,
+    -29,
+    3,
+    -35.5,
+    57,
+    -36,
+    67.5,
+    -26.5,
+    65.5,
+    -12,
+    71,
+    -0,
+    65.5,
+    12,
+    67.5,
+    26.5,
+    57,
+    36,
+    3,
+    35.5,
+    -7.5,
+    29,
+    -18,
+    41.5,
+    -49,
+    41.5,
+    -53.5,
+    35,
+    -43,
+    33,
+    -55.5,
+    21.5,
+    -67.5,
+    21.5
+  ],
+  "builtInMods": [
+    "loa_monkeymodel",
+	"loamt_missilefix"
+  ],
+  "builtInWeapons": {
+    "WS0001": "al_deco_thatcher_g_mask"
+  },
+  "builtInWings": [],
+  "center": [
+    42,
+    71
+  ],
+  "collisionRadius": 85.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 43.5,
+      "location": [
+        -59,
+        16
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 43.5,
+      "location": [
+        -59,
+        -16
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 43.5,
+      "location": [
+        -59,
+        8
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 43.5,
+      "location": [
+        -59,
+        -8
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    }
+  ],
+  "height": 143,
+  "hullId": "loamtg_thatcher",
+  "hullName": "Thatcher (SG)",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 84.5,
+  "spriteName": "graphics/arkleg/ships/thatcher/al_thatcher_g.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 65,
+      "arc": 250,
+      "id": "WS0004",
+      "locations": [
+        13,
+        16
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -65,
+      "arc": 250,
+      "id": "WS0007",
+      "locations": [
+        13,
+        -16
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        -8,
+        10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        -8,
+        -10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 130,
+      "arc": 260,
+      "id": "WS0005",
+      "locations": [
+        -31,
+        24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -130,
+      "arc": 260,
+      "id": "WS0006",
+      "locations": [
+        -31,
+        -24
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -6,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 84
+}

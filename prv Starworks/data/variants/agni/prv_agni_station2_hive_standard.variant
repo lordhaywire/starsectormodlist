@@ -1,0 +1,34 @@
+{
+    "displayName": "Hive",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "prv_agni_station2_hive",
+    "hullMods": [],
+    "quality": 0.5,
+    "variantId": "prv_agni_station2_hive_standard",
+    "weaponGroups": [],
+    "modules": [
+	#under plates
+	# armoured struts
+	# citadel strut - first part
+		{"WS 018": "module_armour3_Standard"}, 
+		{"WS 019": "module_armour3_Standard"},
+		{"WS 020": "module_armour3_Standard"},
+	# citadel strut - second part
+		{"WS 007": "module_armour4_Standard"},
+		{"WS 008": "module_armour4_Standard"},
+		{"WS 006": "module_armour4_Standard"}, 
+   	# armour plates
+		{"WS 015": "prv_agni_module_armor_webbed"},
+		{"WS 016": "prv_agni_module_armor_webbed"},
+		{"WS 017": "prv_agni_module_armor_webbed"},
+     # defense modules
+		{"WS 009": "prv_agni_module_battery_flame"},
+		{"WS 010": "prv_agni_module_cocoons_nesting"},
+		{"WS 011": "prv_agni_module_cocoons_nesting"},
+	# bastions, PD and otherwise
+		{"WS 012": "prv_agni_module_bastion_crevice"},
+		{"WS 013": "prv_agni_module_citadel_flame"}, # north-facing
+		{"WS 014": "prv_agni_module_bastion_crevice"},
+    ],
+}

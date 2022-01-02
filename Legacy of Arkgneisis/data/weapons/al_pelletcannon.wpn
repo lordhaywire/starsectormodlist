@@ -1,0 +1,32 @@
+{
+	"id":"al_pelletcannon",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"everyFrameEffect": "data.scripts.weapons.loa_pelletcannon_flash",
+	"displayArcRadius":1400,
+	"turretSprite":"graphics/arkleg/weapons/al_pelletcannon_turret_base.png",
+	"turretGunSprite":"graphics/arkleg/weapons/al_pelletcannon_turret_recoil.png",
+	"hardpointSprite":"graphics/arkleg/weapons/al_pelletcannon_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/arkleg/weapons/al_pelletcannon_hardpoint_recoil.png",	
+	"visualRecoil":6.0,  # the gun sprites are only used if this is non-0
+	"glowColor":[255,255,255,255],
+	#"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[45, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[44, 0],
+	"hardpointAngleOffsets":[0],	
+	"autocharge":true,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":80.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":0.5,
+					   "particleSizeMin":14.0,
+					   "particleSizeRange":7.0,
+					   "particleDuration":0.5,
+					   "particleCount":150,
+					   "particleColor":[155,255,255,100]},	
+	"projectileSpecId":"al_pellet_large_prime",  # projectile that will be fired
+	"fireSoundOne":"al_pelletcannon_charge",
+	"fireSoundTwo":"al_pelletcannon_fire",	
+}

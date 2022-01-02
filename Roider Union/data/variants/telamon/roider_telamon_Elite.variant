@@ -1,0 +1,70 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 13,
+    "fluxVents": 50,
+	"goalVariant": true,
+    "hullId": "roider_telamon",
+    "hullMods": [
+        "auxiliarythrusters",
+        "dedicated_targeting_core"
+    ],
+    "modules": [
+        {"PROW ARMOR": "roider_telamon_front_Standard"},
+        {"LEFT ARMOR": "roider_telamon_left_Standard"},
+        {"RIGHT ARMOR": "roider_telamon_right_Standard"}
+    ],
+    "permaMods": [],
+    "variantId": "roider_telamon_Elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 021": "locust"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 017": "harpoonpod",
+                "WS 018": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "roider_pile_driver",
+                "WS 010": "roider_pile_driver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavymauler",
+                "WS 002": "heavymauler",
+                "WS 007": "railgun",
+                "WS 008": "railgun",
+                "WS 019": "railgun",
+                "WS 020": "railgun",
+                "WS 022": "mjolnir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "flak",
+                "WS 004": "flak",
+                "WS 005": "vulcan",
+                "WS 006": "vulcan",
+                "WS 015": "vulcan",
+                "WS 016": "vulcan"
+            }
+        }
+    ],
+    "wings": [
+        "roider_dragline_wing",
+        "roider_breaker_wing"
+    ]
+}

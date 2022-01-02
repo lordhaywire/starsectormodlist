@@ -1,0 +1,14 @@
+{
+	"id":"le_explode_dram",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.ai.LE_DramDAI",
+
+	"statsScript":"data.shipsystems.LE_Explode_Dram",
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+	
+	"outOfUsesSound":"gun_out_of_ammo",
+}

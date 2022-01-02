@@ -1,0 +1,40 @@
+{
+  "variantId": "prv_munsbit_br",
+  "hullId": "prv_munsbit",
+  "displayName": "Blockade Runner",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 4,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "militarized_subsystems",
+    "insulatedengine"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "railgun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

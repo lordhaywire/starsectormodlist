@@ -1,0 +1,239 @@
+{
+  "hullName": "Prometheus (LP IED)",
+  "hullId": "prometheus_lp_ied",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/prometheus_lp_ied.png",
+  "style": "LOW_TECH",
+  "height": 360,
+  "width": 236,
+  "center": [118, 153],
+  "collisionRadius": 232,
+  "shieldCenter": [26, 0],
+  "shieldRadius": 203,
+  "viewOffset": 0,
+  "builtInMods": [
+    "safetyoverrides",
+    "luddenhance_martyr"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [148, -64]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [120.5, 43]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [149, 45]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [85, 63.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [52, -67.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [79.5, -70]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [92, -66]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [103, -65.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [115, -65]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [126.5, -66.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-130, 84],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-147, 43],
+      "length": 44,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, 26],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, 19],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, 12],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, -12],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, -19],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, -27],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, -39],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-148, -47],
+      "length": 32,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-132, -84],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -41, 66,
+    -30, 79,
+    -30, 94.5,
+    -63, 101,
+    -88, 100,
+    -120, 100,
+    -132, 53,
+    -144, 49,
+    -144, 11,
+    -116, 8,
+    -116, -9,
+    -145, -11,
+    -144, -50,
+    -126, -53,
+    -120, -100,
+    -89, -103,
+    -65, -102,
+    -31, -97.5,
+    -30, -78,
+    -45, -65,
+    3.5, -81,
+    16, -70.5,
+    52.5, -79,
+    70.5, -75,
+    124, -75,
+    158.5, -80,
+    170, -56,
+    196, -25,
+    200, 0,
+    163, 33,
+    159, 63,
+    143.5, 75.5,
+    100.5, 67,
+    71.5, 67,
+    51, 78,
+    -8, 84,
+    -7, 66
+  ]
+}

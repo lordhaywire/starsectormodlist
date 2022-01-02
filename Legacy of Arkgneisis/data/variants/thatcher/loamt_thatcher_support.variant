@@ -1,0 +1,42 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 9,
+    "fluxVents": 15,
+    "hullId": "loamt_thatcher",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_thatcher_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "heavymauler"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "al_string",
+                "WS0010": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "al_pelletgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0006": "vulcan"
+            }
+        }
+    ]
+}

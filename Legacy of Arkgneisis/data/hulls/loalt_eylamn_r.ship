@@ -1,0 +1,268 @@
+{
+  "hullName": "??????",
+  "hullId": "loalt_eylamn_r",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/arkleg/ships/eylamn/loa_eylamn_r.png",
+  "style": "ARKGNEISIS_LOW",
+  "height": 216,
+  "width": 180,
+  "center": [90, 107],
+  "collisionRadius": 126.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-34, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [75, 14]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [75, -14]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 65,
+      "locations": [47, 37]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -65,
+      "locations": [47, -37]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 65,
+      "locations": [19, 35]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -65,
+      "locations": [19, -35]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 65,
+      "locations": [-10, 27]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -65,
+      "locations": [-10, -27]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 100,
+      "locations": [-26, 47]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -100,
+      "locations": [-26, -47]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 135,
+      "locations": [-52, 21]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -135,
+      "locations": [-52, -21]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [27, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-94, 21],
+      "length": 65,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-94, -21],
+      "length": 65,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+	{
+      "location": [-94, -0],
+      "length": 65,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-94, 21],
+      "length": 25,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "ARKGNEISIS_LOW"
+    },
+    {
+      "location": [-94, -21],
+      "length": 25,
+      "width": 25,
+      "angle": -180,
+      "contrailSize": 25,
+      "style": "ARKGNEISIS_LOW"
+    },
+    {
+      "location": [-94, -0],
+      "length": 25,
+      "width": 25,
+      "angle": 180,
+      "contrailSize": 25,
+      "style": "ARKGNEISIS_LOW"
+    },
+	{
+      "location": [-45, 75.5],
+      "length": 46.315494,
+      "width": 9.192388,
+      "angle": 159,
+      "contrailSize": 128,
+      "style": "ARKGNEISIS_LOW_SYSTEM"
+    },
+    {
+      "location": [-45, -75.5],
+      "length": 46.315494,
+      "width": 9.192388,
+      "angle": -159,
+      "contrailSize": 128,
+      "style": "ARKGNEISIS_LOW_SYSTEM"
+    },
+    {
+      "location": [-63, 68.5],
+      "length": 70.004852,
+      "width": 11.970038,
+      "angle": 155.5,
+      "contrailSize": 128,
+      "style": "ARKGNEISIS_LOW_SYSTEM"
+    },
+    {
+      "location": [-63, -68.5],
+      "length": 70.004852,
+      "width": 11.970038,
+      "angle": -155.5,
+      "contrailSize": 128,
+      "style": "ARKGNEISIS_LOW_SYSTEM"
+    }
+  ],
+  "bounds": [
+    -94, -26.5,
+    -106, -32,
+    -101, -38.5,
+    -73, -44,
+    -50, -55,
+    -65, -63.5,
+    -62, -71.5,
+    -48.5, -71,
+    -43, -79,
+    -27.5, -73,
+    -22, -77.5,
+    4.5, -60,
+    32, -52.5,
+    88, -46,
+    108, -26.5,
+    100.5, -18,
+    87, -17.5,
+    86.5, -7,
+    81.5, -1.5,
+    71, -4,
+    26.5, -1.5,
+    26.5, 1.5,
+    71, 4,
+    81.5, 1.5,
+    86.5, 7,
+    87, 17.5,
+    100.5, 18,
+    108, 26.5,
+    88, 46,
+    32, 52.5,
+    4.5, 60,
+    -22, 77.5,
+    -27.5, 73,
+    -43, 79,
+    -48.5, 71,
+    -62, 71.5,
+    -65, 63.5,
+    -50, 55,
+    -73, 44,
+    -101, 38.5,
+    -106, 32,
+    -94, 26.5
+  ]
+}

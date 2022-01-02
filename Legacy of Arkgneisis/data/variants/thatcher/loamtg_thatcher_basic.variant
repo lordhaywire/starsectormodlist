@@ -1,0 +1,40 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 13,
+    "fluxVents": 20,
+    "hullId": "loamtg_thatcher",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_thatcher_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "arbalest",
+                "WS0007": "arbalest"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "swarmer",
+                "WS0010": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0006": "vulcan"
+            }
+        }
+    ]
+}

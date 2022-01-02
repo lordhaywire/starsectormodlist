@@ -1,0 +1,49 @@
+{
+  "variantId": "loamt_thatcher_elite",
+  "hullId": "loamt_thatcher",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 6,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "stabilizedshieldemitter",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "al_rod",
+        "WS0010": "al_rod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "loa_her"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "loa_flashlight",
+        "WS0006": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

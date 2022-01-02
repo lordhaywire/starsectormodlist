@@ -1,0 +1,10 @@
+{
+  "id":"ArkLeg",
+  "name":"Legacy of Arkgneisis",
+  "author":"Gwyvern",
+  "version":"v1.9.11",
+  "description":"Requires LazyLib. Requires GraphicsLib. Requires MagicLib. Adds the Anarakis Reparations Society, a band of privateers playing soldier in fast and fragile hulls of striking blue.",
+  "gameVersion":"0.95.1a-RC6",
+  "jars":["jars/al_arkleg.jar"],
+  "modPlugin":"data.scripts.al_ArkgneisisModPlugin",
+}

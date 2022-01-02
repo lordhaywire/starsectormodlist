@@ -1,0 +1,53 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 16,
+    "hullId": "loamt_caswell",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "expanded_deck_crew"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_caswell_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "al_bongo",
+                "WS0007": "al_bongo"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "loa_needle",
+                "WS0009": "loa_needle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_monorail",
+                "WS0004": "al_monorail",
+                "WS0005": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_lightplasmadriver",
+                "WS0002": "al_lightplasmadriver"
+            }
+        }
+    ],
+    "wings": [
+        "earl_wing",
+        "broadsword_wing"
+    ]
+}

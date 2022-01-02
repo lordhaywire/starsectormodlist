@@ -1,0 +1,274 @@
+{
+  "bounds": [
+    -44.5,
+    -1.5,
+    -50,
+    -24,
+    -70,
+    -36.5,
+    -70,
+    -43,
+    -31.5,
+    -59.5,
+    -18,
+    -57,
+    -9.5,
+    -41,
+    6.5,
+    -43.5,
+    12.5,
+    -65.5,
+    27,
+    -67.5,
+    66.5,
+    -49.5,
+    53.5,
+    -14,
+    53.5,
+    14,
+    66.5,
+    49.5,
+    27,
+    67.5,
+    12.5,
+    65.5,
+    6.5,
+    43.5,
+    -9.5,
+    41,
+    -18,
+    57,
+    -31.5,
+    59.5,
+    -70,
+    43,
+    -70,
+    36.5,
+    -50,
+    24,
+    -44.5,
+    1.5
+  ],
+  "builtInMods": [
+    "advancedoptics"
+  ],
+  "builtInWings": [],
+  "center": [
+    67.5,
+    71.5
+  ],
+  "collisionRadius": 113.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 44,
+      "location": [
+        -66,
+        32
+      ],
+      "style": "HIGH_TECH",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 44,
+      "location": [
+        -66,
+        -32.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48.5,
+        17.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48.5,
+        -17.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48,
+        10.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48,
+        -10.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48.5,
+        14
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 24.5,
+      "location": [
+        -48.5,
+        -14
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    }
+  ],
+  "height": 139,
+  "hullId": "filgap_orthus",
+  "hullName": "Orthus",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 101,
+  "spriteName": "graphics/filgap/ships/filgap_orthus.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        49.5,
+        23.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        49.5,
+        -23.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        -5,
+        27.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -5,
+        -27.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 30,
+      "arc": 150,
+      "id": "WS0005",
+      "locations": [
+        14.5,
+        27.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -30,
+      "arc": 150,
+      "id": "WS0006",
+      "locations": [
+        14.5,
+        -27.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        43,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        61,
+        -39.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        61,
+        39.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 135
+}

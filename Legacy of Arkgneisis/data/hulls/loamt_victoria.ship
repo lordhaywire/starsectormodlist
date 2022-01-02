@@ -1,0 +1,394 @@
+{
+  "bounds": [
+    -57.5,
+    -6.5,
+    -102,
+    -9,
+    -102,
+    -25.5,
+    -91,
+    -26,
+    -90.5,
+    -38,
+    -73,
+    -38,
+    -63.5,
+    -48,
+    -29,
+    -49,
+    -11,
+    -35,
+    28.5,
+    -34,
+    45.5,
+    -26,
+    91,
+    -29,
+    104.5,
+    -11.5,
+    91.5,
+    -7.5,
+    91.5,
+    7.5,
+    104.5,
+    11.5,
+    91,
+    29,
+    45.5,
+    26,
+    28.5,
+    34,
+    -11,
+    35,
+    -29,
+    49,
+    -63.5,
+    48,
+    -73,
+    38,
+    -90.5,
+    38,
+    -91,
+    26,
+    -102,
+    25.5,
+    -102,
+    9,
+    -57.5,
+    6.5
+  ],
+  "builtInMods": [
+  "loamt_missilefix"
+  ],
+  "builtInWeapons": {
+    "GLOW": "al_victoria_glow",
+    "WS0004": "loa_siegecannon_v",
+    "WS0005": "loa_blinker",
+    "WS0012": "loa_blinker",
+    "WS0013": "loa_blinker",
+    "WS0015": "loa_blinker",
+    "WS0016": "loa_blinker",
+    "WS0017": "loa_blinker",
+    "WS0018": "al_deco_vic_left",
+    "WS0019": "al_deco_vic_right"
+  },
+  "builtInWings": [],
+  "center": [
+    52,
+    103
+  ],
+  "collisionRadius": 124,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 70,
+      "location": [
+        -81,
+        32
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 70,
+      "location": [
+        -81,
+        -32
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -92,
+        -13.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -92,
+        13.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -92,
+        20.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -92,
+        -20.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 208,
+  "hullId": "loamt_victoria",
+  "hullName": "Victoria",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 122.5,
+  "spriteName": "graphics/arkleg/ships/victoria/al_victoria.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        14,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+	  "renderOrderMod": 100
+    },
+    {
+      "angle": 90,
+      "arc": 200,
+      "id": "WS0003",
+      "locations": [
+        -41,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "GLOW",
+      "locations": [
+        -29,
+        1
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+	  "renderOrderMod": 50
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        19,
+        16.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        19,
+        -16.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 200,
+      "id": "WS0010",
+      "locations": [
+        -41,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0002",
+      "locations": [
+        -25,
+        40
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0009",
+      "locations": [
+        -25,
+        -40
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 215,
+      "id": "WS0006",
+      "locations": [
+        -48,
+        45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 215,
+      "id": "WS0007",
+      "locations": [
+        -48,
+        -45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        72.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -41.5,
+        40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        -41.5,
+        -40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        -37.5,
+        40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0015",
+      "locations": [
+        -37.5,
+        -40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0016",
+      "locations": [
+        -33.5,
+        40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0017",
+      "locations": [
+        -33.5,
+        -40.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0018",
+      "locations": [
+        19,
+        12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0019",
+      "locations": [
+        19,
+        -12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 104
+}

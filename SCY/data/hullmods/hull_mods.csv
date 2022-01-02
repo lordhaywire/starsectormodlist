@@ -1,0 +1,55 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Scyan Engineering,SCY_engineering,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SCY_engineering," The Scyan Engineering College optimizes its designs for hunter-killer purposes: While the ships are slightly more expensive to deploy compared to the average standard hull, they can stay in ambush longer thanks to their reduced maintenance. Additionally, compared to the average ships in the Sector, the fleet has:
+ %s burn,
+ %s better engines,
+ %s flux reserves,
+ %s vent rates,
+ %s sensor profile while laying still;
+at the cost of:
+ %s flux dissipation,
+ %s armor, shield efficiency and weapon slots,
+ %s sensor profile while moving.
+ The standardized singular engine is %s sturdier and faster to repair than conventional engines but %s support any further performance enhancement.","Faster ships that vent quickly, few weapons and little dissipation.",graphics/SCY/hullmods/SCY_engineering.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Scyan Raider Hardware,SCY_militarized,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SCY_militarized,"Removes the penalties from a civilian-grade hull. Incompatible with Militarized Subsytems.","Removes the penalties from a civilian-grade hull.",graphics/SCY/hullmods/SCY_militarized.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Modular Armor,SCY_armorplating,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SCY_modularArmor," This modular armor is a recent innovation that allows specially fitted ships to drop these extremely massive armored plates when they no longer provide an effective protection. 
+
+ When all protective armors are discarded the base speed is %s percent higher.",Raises the speed of armored ships as they drop their protection plates.,graphics/SCY/hullmods/SCY_armor.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Lightweight Plating,SCY_lightArmor,2,,Scyan Engineering,"defensive, special","Defenses",5000,FALSE,FALSE,FALSE,5,10,15,25,data.hullmods.SCY_lightArmor," Replacing the original armor plating with lightweight alloys increases maneuverability and acceleration by %s percent, and raises the top speed by %s.
+
+ This weaker protection however reduces the armor rating by %s percent. The lack of hull integrated flux management systems reduce the ship's dissipation and capacity by %s. Finally, securing the ship to cope with increased acceleration raises the cost of deployment by %s percent.
+
+ Incompatible with %s.","Halve the ship's armor, reduce flux stats, raises its speed and acceleration.",graphics/SCY/hullmods/SCY_lightArmor.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Minimal Preparation,SCY_minimalPrep,0,0.5,Scyan Engineering,special,Support,1000,FALSE,FALSE,FALSE,3,6,10,20,data.hullmods.SCY_minimalPrep," Reduces the maintenance cost of the ship by %s percent, but reduces the repair rate by %s percent in and out of combat, lowers the maximum CR by %s percent and shorten the Peak Performance Time by %s percent.
+
+ Often used by unscrupulous cargo shipowners to cut their running costs.",Drasticaly reduce the maintenance cost of a ship as well as it's CR and PPT.,graphics/SCY/hullmods/SCY_minimalPrep.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Reactive Armor,SCY_reactiveArmor,1,0.75,Scyan Engineering,defensive,Defenses,5000,FALSE,FALSE,FALSE,6,12,18,35,data.hullmods.SCY_reactiveArmor," Somewhat out of fashion protection since the advent of shields, the reactive armors use layers of impact-sensitive materials to disperse the energy from High Explosive ordinance, reducing their damage by %s percents.
+
+ The ship is however less suited to wistand other types of impacts and take %s percents more damage from Energy and %s percents more from Kinetic weapons.
+
+ Best suited for ships with already strong armor to make it more durable.","Drastically reduce HE damage to the ship's armor, raises the other type's damage.",graphics/SCY/hullmods/SCY_reactiveArmor.png
+####,,,,,,,,,,,,,,,,,,
+####,,,,,,,,,,,,,,,,,,
+####,,,,,,,,,,,,,,,,,,
+Modular Armor,SCY_armorChild,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.SCY_armorChild,Child modules inherit the changes to hull and armor from their parent.,Child modules inherit the changes to hull and armor from their parent.,graphics/SCY/hullmods/SCY_armor.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+Scyan Interception Protocols,SCY_CommissionedCrew,,,,,,,,TRUE,,0,0,0,0,data.hullmods.SCY_CommissionedCrew,"The ship's crews have received special training on the best ways to intercept an enemy fleet, or avoid interception themselves. The ship gain %s better sensors, and %s smaller signature.","Ships gain an improved sensor profile.",graphics/SCY/hullmods/SCY_commissionedCrew.png
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,
+#####,,,,,,,,,,,,,,,,,,

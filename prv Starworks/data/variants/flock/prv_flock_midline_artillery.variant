@@ -1,0 +1,55 @@
+{
+  "displayName": "Artillery",
+  "fluxCapacitors": 9,
+  "fluxVents": 25,
+  "goalVariant": false,
+  "hullId": "prv_flock_midline",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_flock_midline_artillery",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "harpoon",
+        "WS0004": "harpoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "hurricane"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hveldriver",
+        "WS0002": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "taclaser",
+        "WS0006": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "pdburst",
+        "WS0008": "pdburst"
+      }
+    }
+  ],
+  "wings": []
+}

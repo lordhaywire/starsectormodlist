@@ -1,0 +1,14 @@
+{
+	"masterVersionFile":"https://raw.githubusercontent.com/Histidine91/Nexerelin/release/nexerelin.version",
+	"modName":"Nexerelin",
+	"modThreadId":9175,
+	"modNexusId":28,
+	"modVersion":
+	{
+		"major":0,
+		"minor":10,
+		"patch":3i
+	},
+	"starsectorVersion":"0.95.1a-RC3",
+	"directDownloadURL":"https://github.com/Histidine91/Nexerelin/releases/download/v0.10.3h/Nexerelin_0.10.3h.zip",
+}

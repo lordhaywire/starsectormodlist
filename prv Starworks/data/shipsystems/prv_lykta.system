@@ -1,0 +1,10 @@
+{
+	"id":"prv_lykta",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"scripts.ai.systems.prv_lykta_ai_simple",
+	"statsScript":"scripts.shipsystems.prv_lykta_arcing",
+	
+	"useSound":"phase_cloak_collision",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

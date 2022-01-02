@@ -1,0 +1,58 @@
+{
+  "variantId": "loamt_king_basic",
+  "hullId": "loamt_king",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "mark9",
+        "WS0008": "loa_can_launcher",
+        "WS0009": "loa_can_launcher"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "al_rod",
+        "WS0011": "al_rod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "al_bulldog",
+        "WS0006": "al_bulldog"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "al_lightplasmadriver",
+        "WS0004": "al_lightplasmadriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_er",
+        "WS0002": "loa_er"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

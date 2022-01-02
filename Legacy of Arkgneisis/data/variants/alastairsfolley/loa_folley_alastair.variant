@@ -1,0 +1,54 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 32,
+    "fluxVents": 50,
+    "hullId": "loamt_alastair",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_folley_alastair",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletcannon",
+                "WS0002": "al_pelletcannon",
+                "WS0013": "al_cone",
+                "WS0014": "al_cone",
+                "WS0015": "al_cone",
+                "WS0016": "al_cone",
+                "WS0017": "al_cone",
+                "WS0018": "al_cone"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0043": "al_nuclearburstcannon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_bulldog",
+                "WS0004": "al_bulldog",
+                "WS0005": "al_bulldog"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "al_bongo",
+                "WS0007": "al_lightplasmadriver",
+                "WS0008": "al_lightplasmadriver",
+                "WS0011": "al_bass",
+                "WS0012": "al_bass"
+            }
+        }
+    ],
+    "wings": [
+        "ace_wing",
+        "ace_wing"
+    ]
+}

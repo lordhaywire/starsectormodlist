@@ -1,0 +1,39 @@
+{
+  "displayName": "Missile",
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "prv_flamma_midline",
+  "hullMods": [
+	"eccm",
+  ],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_flamma_midline_missile",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightneedler",
+        "WS0004": "lightneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser",
+      }
+    }
+  ],
+  "wings": []
+}

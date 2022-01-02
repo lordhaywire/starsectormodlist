@@ -1,0 +1,102 @@
+{
+  "hullName": "Asteroid Station",
+  "hullId": "loa_arsstation_core2",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/arkleg/ships/station/ars/loa_ars_station_core.png",
+  "style": "ANARGAIA",
+  "height": 542,
+  "width": 542,
+  "center": [271, 267.5],
+  "collisionRadius": 517,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 509,
+  "viewOffset": 0,
+  "builtInMods": [
+    "vastbulk",
+    "supercomputer",
+    "chassis_storage",
+    "axialrotation",
+    "shared_flux_sink"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 8,
+      "angle": 57.5,
+      "locations": [74.5, 126.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 8,
+      "angle": -62,
+      "locations": [73.5, -123.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-74, -68]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 8,
+      "angle": -180,
+      "locations": [-145, 1.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -103, 175.5,
+        -93.5, 181,
+        -112, 170.5
+      ]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "TURRET",
+      "arc": 8,
+      "angle": -62,
+      "locations": [125.5, -198.5]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -99, -214,
+    37, -241,
+    125, -214,
+    185, -158,
+    223, -72,
+    223, 72,
+    185, 158,
+    125, 214,
+    37, 241,
+    -99, 214,
+    -183, 165,
+    -231, 81,
+    -253, -0,
+    -231, -79,
+    -177, -155,
+    -181, -184,
+    -137, -210,
+    -120, -201.5
+  ]
+}

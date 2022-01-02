@@ -1,0 +1,87 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_challenger":1,
+            "TADA_tinnitus":0.5,
+            "TADA_tinnitus_xiv":0.25,
+
+            "TADA_bully":1,
+            "TADA_scalper":0.5,
+
+            "TADA_foray":0.5,
+            "TADA_hightide":0.25,
+            "TADA_attrition":1,
+            "TADA_bonnethead":0.5,
+            "TADA_owl":0.5,
+
+            "TADA_gunwall":0.5,
+            "TADA_gunwall_XIV":0.25,
+
+            "TADA_crane":1,
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "TADA_challenger",
+            "TADA_tinnitus",
+
+            "TADA_bully",
+            "TADA_scalper",
+
+            "TADA_foray",
+            "TADA_hightide",
+            "TADA_owl",
+
+            "TADA_gunwall",
+            "TADA_gunwall_XIV",
+
+            "TADA_crane",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_challenger",
+            "TADA_tinnitus",
+            "TADA_tinnitus_xiv",
+
+            "TADA_bully",
+            "TADA_scalper",
+
+            "TADA_foray",
+            "TADA_hightide",
+            "TADA_attrition",
+            "TADA_bonnethead",
+            "TADA_owl",
+
+            "TADA_gunwall",
+            "TADA_gunwall_XIV",
+        ],
+    },
+
+    "priorityShips":{
+        "hulls":[
+            #"condor",
+            #"mora",
+            #"legion",
+            #"onslaught",
+            #"onslaught_xiv",
+            "TADA_gunwall",
+            "TADA_gunwall_XIV",
+        ],
+    },
+
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

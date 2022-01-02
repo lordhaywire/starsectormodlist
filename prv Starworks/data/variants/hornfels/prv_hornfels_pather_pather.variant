@@ -1,0 +1,61 @@
+{
+  "displayName": "Pather",
+  "fluxCapacitors": 22,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "prv_hornfels_pather",
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_hornfels_pather_pather",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "prv_hammer_mag",
+        "WS0010": "prv_hammer_mag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "swarmer",
+        "WS0013": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "chaingun",
+        "WS0002": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "miningblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightdualmg",
+        "WS0005": "vulcan",
+        "WS0005r": "lightdualmg",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0011": "lightdualmg",
+        "WS0012": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

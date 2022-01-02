@@ -1,0 +1,22 @@
+{
+    "baseHullId":"TADA_gunwall",
+    "skinHullId":"TADA_gunwall_pirate",
+    "hullName":"Niagara (P)",
+    "descriptionId":"TADA_gunwall",
+    "descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+    "spriteName":"graphics/TORCHSHIPS/ships/TADA_gunwall_pirate.png",
+    "baseValueMult":1,
+    #"restoreToBaseHull":true,
+    "addHints":[],
+    "tags":["rare_bp"],
+    "tech":"Pirate",
+    "ordnancePoints":260,
+    "removeWeaponSlots":[WS0013,WS0014,WS0017,WS0018], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[armoredweapons], 		# hullmod ids
+    "removeBuiltInWeapons":[], 		# weapon slot ids
+    "builtInMods":[],
+    "builtInWeapons":{
+    },
+    "systemId":"burndrive",
+}

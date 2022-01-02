@@ -1,0 +1,31 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 9,
+    "fluxVents": 0,
+    "hullId": "loamt_norwood",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "missleracks",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_norwood_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "al_bass"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "loa_can_launcher",
+                "WS0004": "loa_can_launcher",
+                "WS0009": "loa_can_launcher",
+                "WS0010": "loa_can_launcher"
+            }
+        }
+    ]
+}

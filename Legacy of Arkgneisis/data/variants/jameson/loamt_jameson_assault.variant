@@ -1,0 +1,30 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "hullId": "loamt_jameson",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loamt_jameson_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "lightneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_lightplasmadriver",
+                "WS0002": "al_lightplasmadriver"
+            }
+        }
+    ],
+    "wings": [
+        "hoplon_wing",
+        "hoplon_wing"
+    ]
+}

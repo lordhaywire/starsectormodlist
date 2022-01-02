@@ -1,0 +1,17 @@
+{
+	"id":"filgap_plasma_bullet_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":6,
+	"fadeTime":0.3,
+	"fringeColor":[0,0,255,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[250,100,100,75],
+	"glowRadius":30,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

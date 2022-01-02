@@ -1,0 +1,312 @@
+{
+  "bounds": [
+    84.5,
+    23.5,
+    78.5,
+    31.5,
+    85.5,
+    33,
+    85.5,
+    63,
+    62.5,
+    69.5,
+    42.5,
+    63.5,
+    32.5,
+    39.5,
+    10.5,
+    39.5,
+    -6.5,
+    68.5,
+    -72,
+    89.5,
+    -90,
+    80,
+    -94.5,
+    29.5,
+    -41.5,
+    8.5,
+    -41.5,
+    -8.5,
+    -94.5,
+    -29.5,
+    -90,
+    -80,
+    -72,
+    -89.5,
+    -6.5,
+    -68.5,
+    10.5,
+    -39.5,
+    32.5,
+    -39.5,
+    42.5,
+    -63.5,
+    62.5,
+    -69.5,
+    85.5,
+    -63,
+    85.5,
+    -33,
+    78.5,
+    -31.5,
+    84.5,
+    -23.5
+  ],
+  "builtInMods": [
+    "ill_advised",
+    "safetyoverrides"
+  ],
+  "center": [
+    93,
+    98
+  ],
+  "collisionRadius": 144,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 26,
+      "length": 65.5,
+      "location": [
+        -97,
+        36.5
+      ],
+      "style": "MIDLINE",
+      "width": 26
+    },
+    {
+      "angle": -180,
+      "contrailSize": 26,
+      "length": 65.5,
+      "location": [
+        -97,
+        -36.5
+      ],
+      "style": "MIDLINE",
+      "width": 26
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 40.5,
+      "location": [
+        -96,
+        55
+      ],
+      "style": "MIDLINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 40.5,
+      "location": [
+        -96,
+        -55
+      ],
+      "style": "MIDLINE",
+      "width": 14
+    },
+    {
+      "angle": 176,
+      "contrailSize": 10,
+      "length": 30,
+      "location": [
+        -95,
+        66.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -176,
+      "contrailSize": 10,
+      "length": 30,
+      "location": [
+        -95,
+        -66.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 173,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -92,
+        77
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -173,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -92,
+        -77
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 145,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        43,
+        69.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -156,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        43,
+        -69.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    }
+  ],
+  "height": 196,
+  "hullId": "TADA_bonnethead_pather",
+  "hullName": "Bonnethead (LP)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    5,
+    -0
+  ],
+  "shieldRadius": 135.5,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_bonnethead_pather.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 22.5,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        63,
+        48
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -22.5,
+      "arc": 120.010002,
+      "id": "WS0004",
+      "locations": [
+        62,
+        -48
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 135,
+      "arc": 235,
+      "id": "WS0009",
+      "locations": [
+        -26.5,
+        29.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -135,
+      "arc": 235,
+      "id": "WS0010",
+      "locations": [
+        -26.5,
+        -29.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        87,
+        57
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        87,
+        -57
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        87,
+        -39
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0007",
+      "locations": [
+        87,
+        39
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 45,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        57,
+        12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        57,
+        -12
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 186
+}

@@ -1,0 +1,58 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	#"variantOverrides":{
+	#},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_tinnitus":1,
+
+            "TADA_scalper":2.5,
+            "TADA_cassicus":10,
+
+            "TADA_owl":1,
+            "TADA_bonnethead":1,
+            "TADA_whirlwind":10,
+
+            "TADA_crane":1,
+            "TADA_lasherTT":5,
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "TADA_tinnitus",
+            "TADA_lasherTT",
+            "TADA_scalper",
+            "TADA_owl",
+            "TADA_crane",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_lasherTT",
+            "TADA_cassicus",
+            "TADA_whirlwind",
+        ],
+    },
+
+    #"priorityShips":{
+        #"hulls":[
+            #"doom",
+            #"afflictor",
+            #"shade",
+            #"harbinger",
+            #"drover",
+            #"heron",
+            #"astral",
+            #"paragon",
+        #],
+    #},
+    "knownFighters":{
+        "fighters":[
+            "TADA_pinnace_wing",
+        ],
+    },
+},

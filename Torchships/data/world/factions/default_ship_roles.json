@@ -1,0 +1,251 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+            "TADA_challenger_assault":2,
+            "TADA_challenger_brawler":2,
+            "TADA_challenger_combat":3,
+            "TADA_challenger_standard":3,
+
+            "TADA_challenger_pirate_assault":4,
+            "TADA_challenger_pirate_standard":6,
+
+            "TADA_challenger_pather_brawler":4,
+            "TADA_challenger_pather_combat":6,
+
+            "TADA_tinnitus_assault":2,
+            "TADA_tinnitus_outdated":2,
+            "TADA_tinnitus_beamer":3,
+            "TADA_tinnitus_support":3,
+
+            "TADA_tinnitus_xiv_advanced":2,
+            "TADA_tinnitus_xiv_assault":2,
+            "TADA_tinnitus_xiv_beamer":3,
+            "TADA_tinnitus_xiv_support":3,
+
+            "TADA_tinnitus_p_standard":5,
+            "TADA_tinnitus_p_outdated":5,
+
+            "TADA_tinnitus_plasma_standard":7,
+            "TADA_tinnitus_plasma_support":3,
+
+            "TADA_tempest_pirate_outdated":10,
+
+            "TADA_lasherTT_support":5,
+            "TADA_lasherTT_standard":5,
+	},
+	"combatSmall":{
+            "TADA_challenger_assault":2,
+            "TADA_challenger_brawler":2,
+            "TADA_challenger_combat":3,
+            "TADA_challenger_standard":3,
+
+            "TADA_challenger_pirate_assault":4,
+            "TADA_challenger_pirate_standard":6,
+
+            "TADA_challenger_pather_brawler":4,
+            "TADA_challenger_pather_combat":6,
+
+            "TADA_tinnitus_assault":2,
+            "TADA_tinnitus_outdated":2,
+            "TADA_tinnitus_beamer":3,
+            "TADA_tinnitus_support":3,
+
+            "TADA_tinnitus_xiv_advanced":2,
+            "TADA_tinnitus_xiv_assault":2,
+            "TADA_tinnitus_xiv_beamer":3,
+            "TADA_tinnitus_xiv_support":3,
+
+            "TADA_lasherTT_support":3,
+            "TADA_lasherTT_advanced":2,
+            "TADA_lasherTT_assault":2,
+            "TADA_lasherTT_standard":3,
+
+            "TADA_tinnitus_p_standard":3,
+            "TADA_tinnitus_p_support":2,
+            "TADA_tinnitus_p_assault":2,
+            "TADA_tinnitus_p_outdated":3,
+
+            "TADA_tinnitus_plasma_standard":7,
+            "TADA_tinnitus_plasma_support":3,
+
+            "TADA_tempest_pirate_outdated":5,
+            "TADA_tempest_pirate_combat":4,
+            "TADA_tempest_pirate_elite":1,
+	},
+	"combatMedium":{
+
+            "TADA_bully_assault":2,
+            "TADA_bully_brawler":2,
+            "TADA_bully_combat":3,
+            "TADA_bully_support":3,
+
+            "TADA_bully_pirate_assault":4,
+            "TADA_bully_pirate_combat":6,
+
+            "TADA_bully_pather_brawler":4,
+            "TADA_bully_pather_support":6,
+
+            "TADA_scalper_assault":2,
+            "TADA_scalper_escort":3,
+            "TADA_scalper_outdated":2,
+            "TADA_scalper_standard":3,
+
+            "TADA_scalper_pirate_assault":2,
+            "TADA_scalper_pirate_escort":3,
+            "TADA_scalper_pirate_outdated":2,
+            "TADA_scalper_pirate_standard":3,
+
+            "TADA_cassicus_combat":2,
+            "TADA_cassicus_defense":3,
+            "TADA_cassicus_standard":3,
+            "TADA_cassicus_support":2,
+
+            "TADA_scintillaX_standard":10,
+	},
+	"combatLarge":{
+            "TADA_attrition_elite":2,
+            "TADA_attrition_outdated":3,
+            "TADA_attrition_standard":5,
+
+            "TADA_foray_standard":5,
+            "TADA_foray_outdated":3,
+            "TADA_foray_support":2,
+
+            "TADA_foray_pirate_improvised":5,
+            "TADA_foray_pirate_standard":3,
+            "TADA_foray_pirate_support":2,
+
+            "TADA_foray_pather_standard":3,
+            "TADA_foray_pather_support":2,
+            "TADA_foray_pather_improvised":5,
+
+            "TADA_owl_balanced":3,
+            "TADA_owl_assault":2,
+            "TADA_owl_standard":5,
+
+            "TADA_hightide_support":2,
+            "TADA_hightide_combat":5,
+            "TADA_hightide_outdated":3,
+
+            "TADA_hightide_pirate_support":2,
+            "TADA_hightide_pirate_combat":3,
+            "TADA_hightide_pirate_outdated":5,
+
+            "TADA_bonnethead_assault":2,
+            "TADA_bonnethead_brawler":2,
+            "TADA_bonnethead_standard":3,
+            "TADA_bonnethead_support":3, 
+
+            "TADA_bonnethead_pirate_brawler":2,
+            "TADA_bonnethead_pirate_outdated":3,
+            "TADA_bonnethead_pirate_standard":5,
+            
+            "TADA_bonnethead_pather_assault":2,
+            "TADA_bonnethead_pather_standard":3,
+            "TADA_bonnethead_pather_outdated":5,
+
+            "TADA_whirlwind_assault":2,
+            "TADA_whirlwind_beamer":2,
+            "TADA_whirlwind_standard":3,
+            "TADA_whirlwind_support":3,
+
+            "TADA_shine_standard":5,
+            "TADA_shine_beamer":3,
+            "TADA_shine_assault":2,
+
+            "TADA_brilliantX_standard":10,
+	},
+	"combatCapital":{
+
+            "TADA_gunwall_advanced":2,
+            "TADA_gunwall_outdated":2,
+            "TADA_gunwall_standard":3,
+            "TADA_gunwall_support":3,
+
+            "TADA_gunwall_XIV_outdated":3,
+            "TADA_gunwall_XIV_advanced":2,
+            "TADA_gunwall_XIV_standard":5,
+
+            "TADA_gunwall_pirate_improvised":5,
+            "TADA_gunwall_pirate_standard":3,
+            "TADA_gunwall_pirate_support":2,
+
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	#"combatFreighterSmall":{
+	#},
+	#"combatFreighterMedium":{
+	#},
+	"combatFreighterLarge":{
+            "TADA_crane_standard":10,
+	},
+	
+	#"civilianRandom":{
+	#},
+
+	# carriers
+	#"carrierSmall":{
+	#},
+	"carrierMedium":{
+            "TADA_crane_pirate_assault":2,
+            "TADA_crane_pirate_outdated":5,
+            "TADA_crane_pirate_standard":3,
+	},
+	"carrierLarge":{
+            "TADA_herald_bomber":1,
+            "TADA_herald_outdated":1,
+            "TADA_herald_standard":1,
+            "TADA_herald_super":1,
+            "TADA_herald_support":1,
+	},
+
+	# phase ships
+	#"phaseSmall":{
+	#},
+	#"phaseMedium":{
+	#},
+	#"phaseLarge":{
+	#},
+	#"phaseCapital":{
+	#},
+
+	# freighters and such
+	#"freighterSmall":{
+	#},
+	#"freighterMedium":{
+	#},
+	#"freighterLarge":{
+	#},
+	
+	#"tankerSmall":{
+	#},
+	#"tankerMedium":{
+	#},
+	#"tankerLarge":{
+	#},
+	
+	#"personnelSmall":{
+	#},
+	"personnelMedium":{
+	},
+	#"personnelLarge":{
+	#},
+	
+	#"linerSmall":{
+	#},
+	#"linerMedium":{
+	#},
+	"linerLarge":{
+	},
+	
+	# utility ships
+	#"tug":{
+	#},
+	#"crig":{
+	#},
+	#"utility":{
+	#},
+}

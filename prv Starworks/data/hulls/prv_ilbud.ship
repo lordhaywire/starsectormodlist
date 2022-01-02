@@ -1,0 +1,253 @@
+{
+  "bounds": [
+    -42,
+    -96,
+    -28.5,
+    -96,
+    -28.5,
+    -112,
+    -19.5,
+    -119,
+    4.5,
+    -108,
+    38,
+    -0,
+    4.5,
+    108,
+    -19.5,
+    119,
+    -28.5,
+    112,
+    -28.5,
+    96,
+    -42,
+    96,
+    -34.5,
+    -0
+  ],
+  "builtInMods": [
+    "shielded_holds",
+    "phasefield",
+    "high_maintenance"
+  ],
+  "center": [
+    121,
+    44.5
+  ],
+  "collisionRadius": 149,
+  "engineSlots": [
+    {
+      "angle": 145,
+      "contrailSize": 14.32921,
+      "length": 26.380266,
+      "location": [
+        -24,
+        116.5
+      ],
+      "style": "PRV_MID",
+      "width": 14.32921
+    },
+    {
+      "angle": -145,
+      "contrailSize": 14.32921,
+      "length": 26.380266,
+      "location": [
+        -24,
+        -116.5
+      ],
+      "style": "PRV_MID",
+      "width": 14.32921
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -31.5,
+        -15.5
+      ],
+      "style": "PRV_MID",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 23.5,
+      "location": [
+        -31.5,
+        15.5
+      ],
+      "style": "PRV_MID",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 60,
+      "location": [
+        -26.5,
+        102.5
+      ],
+      "style": "PRV_MID",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 60,
+      "location": [
+        -26.5,
+        -102.5
+      ],
+      "style": "PRV_MID",
+      "width": 14
+    }
+  ],
+  "height": 92,
+  "hullId": "prv_ilbud",
+  "hullName": "Ilbud",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 140.5,
+  "spriteName": "graphics/prv/ships/prv_ilbud.png",
+  "style": "PRV_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -30,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        34.5,
+        -15
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 30,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        34.5,
+        15
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -30,
+      "arc": 90,
+      "id": "WS0003",
+      "locations": [
+        -2.5,
+        -32
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 30,
+      "arc": 90,
+      "id": "WS0004",
+      "locations": [
+        -2.5,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 210,
+      "id": "WS0005",
+      "locations": [
+        -1.5,
+        -81
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 210,
+      "id": "WS0006",
+      "locations": [
+        -1.5,
+        81
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 60,
+      "arc": 270,
+      "id": "WS0007",
+      "locations": [
+        17.5,
+        71.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -60,
+      "arc": 270,
+      "id": "WS0008",
+      "locations": [
+        17.5,
+        -71.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 30,
+      "arc": 150,
+      "id": "WS0009",
+      "locations": [
+        28.5,
+        33.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -30,
+      "arc": 150,
+      "id": "WS0010",
+      "locations": [
+        28.5,
+        -33.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0011",
+      "locations": [
+        38,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 242
+}

@@ -1,0 +1,32 @@
+{
+  "displayName": "Gunboat",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "loa_baron",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loa_baron_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "loa_cone_f",
+        "WS0008": "loa_cone_f"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_flashlight_f",
+        "WS0002": "loa_flashlight_f",
+        "WS0003": "loa_flashlight_f",
+        "WS0004": "loa_flashlight_f"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,133 @@
+{
+  "hullName": "Ike",
+  "hullId": "loa_ike",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/arkleg/ships/loa_ike.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 124,
+  "width": 74,
+  "center": [37, 62],
+  "collisionRadius": 73.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 72.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ground_support"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 45,
+      "locations": [24, 23]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -45,
+      "locations": [24, -23]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 135,
+      "locations": [-18, 23]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -135,
+      "locations": [-18, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-51, 10.5],
+      "length": 70,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "ARKGNEISIS_MID"
+    },
+    {
+      "location": [-51, -10.5],
+      "length": 70,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "ARKGNEISIS_MID"
+    },
+    {
+      "location": [-51, 3.5],
+      "length": 70,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "ARKGNEISIS_MID"
+    },
+    {
+      "location": [-51, -3.5],
+      "length": 70,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 6,
+      "style": "ARKGNEISIS_MID"
+    },
+    {
+      "location": [-22.5, 27.5],
+      "length": 10,
+      "width": 10,
+      "angle": 135,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-22.5, -27.5],
+      "length": 10,
+      "width": 10,
+      "angle": -135,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [28.5, 27.5],
+      "length": 10,
+      "width": 10,
+      "angle": 45,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [28.5, -27.5],
+      "length": 10,
+      "width": 10,
+      "angle": -45,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -60.5, -17,
+    -35.5, -20,
+    0, -36.5,
+    50, -22,
+    60.5, -8,
+    60.5, 8,
+    50, 22,
+    0, 36.5,
+    -35.5, 20,
+    -60.5, 17
+  ]
+}

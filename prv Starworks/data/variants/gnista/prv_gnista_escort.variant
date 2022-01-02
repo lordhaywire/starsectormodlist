@@ -1,0 +1,36 @@
+{
+  "displayName": "Escort",
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "goalVariant": false,
+  "hullId": "prv_gnista",
+  "hullMods": [],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gnista_escort",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_pskd"
+      }
+    }
+  ],
+  "wings": []
+}

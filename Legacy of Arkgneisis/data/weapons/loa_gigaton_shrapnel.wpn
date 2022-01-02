@@ -1,0 +1,30 @@
+{
+	"id":"loa_gigaton_shrapnel",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"turretSprite":"graphics/arkleg/weapons/al_bullpup_turret_base.png",
+	"turretGunSprite":"graphics/arkleg/weapons/al_bullpup_turret_recoil.png",
+	"hardpointSprite":"graphics/arkleg/weapons/al_bullpup_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/arkleg/weapons/al_bullpup_hardpoint_recoil.png",
+	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[17, 0],
+	"turretAngleOffsets":[],
+	"hardpointOffsets":[23, 0],
+	"hardpointAngleOffsets":[],
+	"renderHints":[RENDER_BARREL_BELOW],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"interruptibleBurst":true,
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":20.0,
+					   "particleSizeMin":8.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.3,
+					   "particleCount":30,
+					   "particleColor":[255,240,165,200]},
+	"projectileSpecId":"loa_gigaton_shrapnel",  # projectile that will be fired
+	#"fireSoundOne":"light_machinegun_intro",
+	#"fireSoundTwo":"al_bulldog_fire",
+}

@@ -1,0 +1,61 @@
+{
+  "variantId": "eradicator_lp_std",
+  "hullId": "eradicator_lp",
+  "displayName": "Attack",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "missleracks",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+	    "WS 007": "hellbore",
+	  }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "sabot",
+        "WS 003": "sabot",
+        "WS 004": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "annihilator",
+        "WS 001": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "heavymg",
+        "WS 006": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "lightdualmg",
+        "WS 009": "lightdualmg",
+        "WS 010": "lightdualmg",
+        "WS 012": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

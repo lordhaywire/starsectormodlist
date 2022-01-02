@@ -1,0 +1,44 @@
+{
+    "displayName": "Hunter",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "hullId": "loamt_macnamara",
+    "hullMods": ["safetyoverrides"],
+    "permaMods": [],
+    "variantId": "loa_hunter_macnamara",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "chaingun",
+                "WS0006": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "al_string",
+                "WS0009": "al_string",
+                "WS0010": "al_string",
+                "WS0011": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "heavyneedler",
+                "WS0002": "heavyneedler",
+                "WS0003": "heavyneedler",
+                "WS0004": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "al_bass"}
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+  "displayName": "Exploration",
+  "fluxCapacitors": 22,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "filgap_era_lc",
+  "hullMods": [
+    "surveying_equipment"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_era_lc_exploration",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_magaccelerator",
+        "WS0002": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "pilum",
+        "WS0006": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heatseeker",
+        "WS0008": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
+      }
+    }
+  ],
+  "wings": [
+    "asp_wing",
+    "talon_wing"
+  ]
+}

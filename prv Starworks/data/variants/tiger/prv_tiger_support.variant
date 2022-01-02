@@ -1,0 +1,52 @@
+{
+  "variantId": "prv_tiger_support",
+  "hullId": "prv_tiger",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "prv_agiplasma"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_berguv_rack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,34 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "goalVariant": false,
+  "hullId": "prv_fasnod",
+  "hullMods": [
+    "fluxcoil"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_fasnod_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "amblaster",
+        "WS0002": "amblaster",
+        "WS0006": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

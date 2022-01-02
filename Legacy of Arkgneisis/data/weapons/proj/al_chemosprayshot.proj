@@ -1,0 +1,18 @@
+{
+	"id":"al_chemosprayshot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":5.0,
+	"glowColor": [255,100,0,100],
+    "glowRadius":10,
+	"hitGlowRadius":25,
+	"width":5,
+	"fadeTime":1,
+	"fringeColor":[250,100,0,150],
+	"coreColor":[250,150,150,255],
+	"textureScrollSpeed":10.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/arkleg/missiles/al_spreadmortarshot.png"
+}

@@ -1,0 +1,187 @@
+{
+  "bounds": [
+    -54.5,
+    -11.5,
+    -58.5,
+    -20.5,
+    -23,
+    -26,
+    -2.5,
+    -37,
+    15,
+    -28,
+    51,
+    -22,
+    60,
+    -10,
+    39.5,
+    -6,
+    39.5,
+    6,
+    60,
+    10,
+    51,
+    22,
+    15,
+    28,
+    -2.5,
+    37,
+    -23,
+    26,
+    -58.5,
+    20.5,
+    -54.5,
+    11.5
+  ],
+  "builtInWings": [],
+  "center": [
+    39,
+    60
+  ],
+  "collisionRadius": 75,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 38,
+      "location": [
+        -55,
+        8
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 38,
+      "location": [
+        -55,
+        -8
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+	{
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 15,
+      "location": [
+        -55,
+        8
+      ],
+      "style": "ARKGNEISIS_LOW",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 15,
+      "location": [
+        -55,
+        -8
+      ],
+      "style": "ARKGNEISIS_LOW",
+      "width": 15
+    }
+  ],
+  "height": 121,
+  "hullId": "loalt_taath_r",
+  "hullName": "????",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 74.5,
+  "spriteName": "graphics/arkleg/ships/taath/loa_taath_r.png",
+  "style": "ARKGNEISIS_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS0001",
+      "locations": [
+        -2,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS0002",
+      "locations": [
+        -2,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 250,
+      "id": "WS0003",
+      "locations": [
+        -12,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -8.5,
+        34.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -135,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -8.5,
+        -34.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 45,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        4.5,
+        34.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -45,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        4.5,
+        -34.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 78
+}

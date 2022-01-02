@@ -1,0 +1,47 @@
+{
+  "id": "prv_minehead",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_minehead_rocket",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 300,
+  "turretSprite": "graphics/prv/weapons/prv_minehead_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_minehead_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    17,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    21,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "hurricane_mirv_fire"
+}

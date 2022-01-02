@@ -1,0 +1,27 @@
+{
+    "displayName": "Fortress",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "uw_palace_rear",
+    "hullMods": [
+        "autorepair",
+        "insulatedengine",
+        "fluxbreakers",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "uw_palace_rear_for",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "heavyburst",
+            "WS0002": "heavyburst",
+            "WS0003": "heavyburst",
+            "WS0004": "heavyburst",
+            "WS0005": "pdburst",
+            "WS0006": "pdburst"
+        }
+    }]
+}

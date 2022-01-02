@@ -1,0 +1,57 @@
+{
+  "variantId": "prv_aska_overdriven",
+  "hullId": "prv_aska",
+  "displayName": "Overdriven",
+  "goalVariant": false,
+  "fluxCapacitors": 13,
+  "fluxVents": 13,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_uvir"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI03": "prv_kaja_quint"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_gravkan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst",
+        "WS0007": "pdburst",
+        "WS0008": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "prv_akc",
+        "WS0004": "prv_akc"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

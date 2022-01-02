@@ -4,7 +4,19 @@ This mod list works with this version of the game.
 
 # Starsector Mod List
 
-This is a list of the mods I use when I am streaming.  Suggestions for mods are always welcome!  Join my [Discord](https://discord.gg/TbArAzu6h3)!
+This is a list of the mods I use when I am [streaming](https://www.twitch.tv/lordhaywire).  Suggestions for mods are always welcome!  Join my [Discord](https://discord.gg/TbArAzu6h3)!
+
+This is set up how I have mine set up and it works fine. I am sure most modders don't want someone to compile a mod list/pack and distribute because if someone (me) fucks something up then people go to them asking for help, so I highly recommend setting it up yourself. 
+
+Here is a link to the [unofficial Starsector Discord](https://discord.gg/a8AWVcPCPr) if you are going to set it up yourself.  Below are all the links to the mods so you can grab them.
+
+## Vmparams File
+
+I use the 6 gig vmparams file to fix the RAM issues.  You can find it on the unofficial Starsector Discord or I included it here.  You should put it in your Starsector root directory.
+
+## Mods
+
+I have included all the mods I use in this repository.  You can just extract all of them into your mod folder in your Starsector directory.  You should really set it all up yourself though.
 
 ## Required
 

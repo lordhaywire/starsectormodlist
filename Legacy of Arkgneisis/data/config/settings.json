@@ -1,0 +1,71 @@
+{
+	"plugins":{
+		"loa_hyperspace_tracker_small":"data.scripts.plugins.loa_hyperspace_tracker_small",
+		"loa_hyperspace_tracker":"data.scripts.plugins.loa_hyperspace_tracker",
+		"loa_hyperspace_tracker_large":"data.scripts.plugins.loa_hyperspace_tracker_large",
+		"loa_warpshotparticles":"data.scripts.plugins.loa_warpshotparticles",
+		"loa_zapflakplugin":"data.scripts.plugins.loa_zapflakplugin",
+		"al_SpreadMortarSpecialBehavior":"data.scripts.plugins.al_SpreadMortarSpecialBehavior",
+		"al_PelletWeaponSpecialBehavior":"data.scripts.plugins.al_PelletWeaponSpecialBehavior",
+		"NicToyCustomTrailPlugin":"data.scripts.plugins.NicToyCustomTrailPlugin",
+		"al_ProjectileTrailHandlerPlugin":"data.scripts.plugins.al_ProjectileTrailHandlerPlugin",
+		"al_empcore_plugin":"data.scripts.plugins.al_empcore_plugin",
+		"loa_awacs_bonus_applier_plugin":"data.scripts.plugins.loa_awacs_bonus_applier_plugin",
+		"loa_awacsOrderManager":"data.scripts.plugins.loa_awacsordermanager",
+		"loa_shield_flicker_plugin":"data.scripts.plugins.loa_shield_flicker_plugin",
+		"loa_explosion_manager_plugin":"data.scripts.plugins.loa_explosion_manager_plugin",
+		"loa_deploy_anargaia_plugin":"data.scripts.plugins.loa_deploy_anargaia_plugin",
+
+	},
+	
+	    "ruleCommandPackages":[
+        "data.scripts.campaign.rulecmd"
+    ],
+	
+	"designTypeColors":{
+		"Exodus Initiative":[50,100,200,255],
+		"Anarakis Reparations Society":[50,100,200,255],
+		"Salvation Initiative":[180,190,200,255],
+		"Colonial Initiative":[75,200,175,255],
+		
+	},
+		
+	"graphics":{
+		
+				"misc":{
+					"loa_enigma":"graphics/arkleg/portraits/loa_enigma.png",
+				},
+	
+	"loa_intel":{
+			
+			"loa_raid":"graphics/arkleg/factions/al_ars_crest.png", # 20x20
+			"loa_champ":"graphics/arkleg/factions/al_arkgneinstate_crest.png", # 20x20
+
+		},
+		
+		
+	"loa_combat":{
+			
+			"loa_savior_glow1":"graphics/arkleg/ships/savior/loa_savior_glow1.png",
+			"loa_savior_glow2":"graphics/arkleg/ships/savior/loa_savior_glow2.png",
+			"loa_pingcircle":"graphics/arkleg/ships/edith/loa_pingcircle.png", # 1000x1000
+
+		},
+		
+		"al_fx":{
+			"al_particletrail":"graphics/arkleg/fx/al_particletrail.png",
+			"loa_electrontrail":"graphics/arkleg/fx/al_particletrail.png",
+			"al_smoketrail":"graphics/arkleg/fx/al_smoketrail.png",
+			"loa_warptrail":"graphics/arkleg/fx/loa_warptrail.png",
+	},
+	
+	    "loa_hyperspace_visuals":{
+            "1":"graphics/arkleg/fx/loa_hyperparticle.png",
+            "2":"graphics/arkleg/fx/loa_hyperparticle.png",
+            "3":"graphics/arkleg/fx/loa_hyperparticle.png",
+        },
+		
+  }
+  
+
+}

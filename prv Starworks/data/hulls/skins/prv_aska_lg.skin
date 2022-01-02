@@ -1,0 +1,47 @@
+{
+	"baseHullId": "prv_aska",
+	"descriptionPrefix":"This ship was built to the exacting specifications demanded by the Lion's Guard, environmentally-hardened to survive the harsh fires of Askonia.",
+	"tags":["swp_LG_bp"],
+	"tech":"Lion's Guard",
+	"baseValueMult": 1.25,
+	#"fleetPoints":19,
+	#"ordnancePoints":150,
+	"builtInWeapons": {
+		"BI01": "squall"
+	},
+	"removeBuiltInWeapons":["BI03"],
+	"removeWeaponSlots":[
+		"BI03",
+		#"WS0005"
+	],
+	#"removeBuiltInMods":["prv_did"],
+	"addHints":[HIDE_IN_CODEX],
+	"builtInMods":["solar_shielding"],
+	"descriptionId": "prv_aska",
+	"hullName": "Aska (LG)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_aska_lg",
+	"spriteName": "graphics/prv/ships/prv_aska_lg.png",
+	"weaponSlotChanges":{
+		#center BI
+		"BI01":{
+		  "size": "LARGE",
+		  "type": "BUILT_IN",
+		  "mount": "HARDPOINT",
+		},
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+		"8":{"style":"MIDLINE"},
+		"9":{"style":"MIDLINE"},
+		"10":{"style":"MIDLINE"},
+		"11":{"style":"MIDLINE"},
+	},  
+}

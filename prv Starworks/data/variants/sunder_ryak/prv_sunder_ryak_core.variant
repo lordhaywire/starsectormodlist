@@ -1,0 +1,52 @@
+{
+  "displayName": "Core Prototype",
+  "fluxCapacitors": 16,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "prv_sunder_ryak",
+  "hullMods": [
+    "hardenedshieldemitter",
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_sunder_ryak_core",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_berguv_rack",
+        "WS0008": "prv_berguv_rack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_akers_nova",
+        "WS0006": "prv_akers_nova"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "pdburst",
+        "WS0002": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

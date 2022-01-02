@@ -1,0 +1,38 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "hullId": "prv_flamma_midline",
+  "hullMods": [
+    "hardened_subsystems",
+    "extendedshieldemitter",
+    "armoredweapons",
+  ],
+  "quality": 0,
+  "variantId": "prv_flamma_midline_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0003": "lightdualac",
+        "WS0004": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser"
+      }
+    }
+  ]
+}

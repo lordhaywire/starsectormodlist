@@ -1,0 +1,74 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "LINKED",
+  "fireSoundOne": "thumper_spinup",
+  "fireSoundTwo": "prv_kaja_fire",
+  "hardpointAngleOffsets": [
+    0,
+    -2,
+    2,
+    -4,
+    4
+  ],
+  "hardpointOffsets": [
+    12.5,
+    0,
+    12.5,
+    -3,
+    12.5,
+    3,
+    12.5,
+    -6,
+    12.5,
+    6
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_kaja_quint_launcher_hardpoint.png",
+  "id": "prv_kaja_quint",
+  "muzzleFlashSpec": {
+    "length": -24,
+    "particleColor": [
+      180,
+      180,
+      255,
+      255
+    ],
+    "particleCount": 11,
+    "particleDuration": 1,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "spread": 9
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_kaja_mrm",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    2,
+    -2,
+    4,
+    -4
+  ],
+  "turretOffsets": [
+    6.5,
+    0,
+    6.5,
+    3,
+    6.5,
+    -3,
+    6.5,
+    6,
+    6.5,
+    -6
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_kaja_quint_launcher_turret.png",
+  "type": "MISSILE",
+  "mountTypeOverride":"SYNERGY",
+}

@@ -1,0 +1,58 @@
+{
+  "displayName": "Militarized",
+  "fluxCapacitors": 13,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "prv_gabbro",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "militarized_subsystems"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_gabbro_mil",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_lighttripleac",
+        "WS 003": "heavymortar",
+        "WS0003": "heavymortar"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "typhoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightmortar",
+        "WS0002": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vulcan",
+        "WS0005": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vulcan",
+        "WS 006": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

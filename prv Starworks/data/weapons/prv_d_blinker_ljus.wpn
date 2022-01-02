@@ -1,0 +1,59 @@
+{
+	"numFrames":2,
+	"frameRate":0,
+	"alwaysAnimate":"false",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "everyFrameEffect": "data.scripts.weapons.prv_d_SystemBlinker_Ljus_EveryFrameEffect",
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/decorative/prv_d_ljus_blinker_00.png",
+  "hitGlowRadius": 0,
+  "id": "prv_d_blinker_ljus",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "pixelsPerTexel": 1,
+  "renderAboveAllWeapons": 0,
+  "renderBelowAllWeapons": true,
+  "renderHints": [
+    "RENDER_ADDITIVE"
+  ],
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 1,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/decorative/prv_d_ljus_blinker_00.png",
+  "type": "DECORATIVE",
+  "width": 1
+}

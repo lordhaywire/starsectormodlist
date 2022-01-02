@@ -1,0 +1,32 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "hullId": "loamt_walsh",
+    "hullMods": [
+        "targetingunit",
+        "loamt_modulatedinjectors"
+    ],
+    "permaMods": [],
+    "variantId": "loa_hill_walsh",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyac"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "loa_siegecannon_w"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_bullpup",
+                "WS0006": "al_bullpup"
+            }
+        }
+    ]
+}

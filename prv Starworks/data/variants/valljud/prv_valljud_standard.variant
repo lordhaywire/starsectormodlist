@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_valljud_standard",
+  "hullId": "prv_valljud",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0015": "prv_berguv_mirv",
+        "WS0016": "prv_berguv_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "prv_gravkan",
+        "WS0012": "prv_gravkan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0013": "prv_sipdlaser",
+        "WS0014": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_diskordant_wing",
+    "prv_skran_wing",
+    "prv_missljud_wing"
+  ]
+}

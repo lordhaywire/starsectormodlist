@@ -1,0 +1,45 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 11,
+    "fluxVents": 20,
+    "goalVariant": false,
+    "hullId": "hammerhead",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "al_kingofthehill_hammerhead",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "heavymauler",
+                "WS 002": "heavymauler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "harpoon",
+                "WS 004": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "railgun",
+                "WS 006": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "lrpdlaser",
+                "WS 008": "lrpdlaser"
+            }
+        }
+    ]
+}

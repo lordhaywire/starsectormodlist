@@ -1,0 +1,15 @@
+{
+	"id":"loa_gailardfist",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_moe_ai",
+	"statsScript":"data.scripts.shipsystems.loa_gailardfist",
+	
+	"weaponGlowColor":[255,50,50,155],
+	"weaponTypes":[BALLISTIC, ENERGY],
+	
+	"useSound":"loa_gailardfist_start",
+	"loopSound":"loa_moe_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

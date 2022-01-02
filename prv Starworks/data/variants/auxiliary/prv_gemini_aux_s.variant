@@ -1,0 +1,34 @@
+{
+  "displayName": "Auxiliary-S",
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_gemini",
+  "hullMods": [
+    "insulatedengine",
+    "expanded_deck_crew"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_gemini_aux_s",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_heavyakers",
+        "WS 002": "prv_heavyakers",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+              "WS 003": "pilum"
+      }
+    }
+  ],
+  "wings": [
+    "prv_diskordant_wing"
+  ]
+}

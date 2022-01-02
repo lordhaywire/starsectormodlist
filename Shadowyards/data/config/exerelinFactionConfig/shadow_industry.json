@@ -1,0 +1,64 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "directoryUseShortName":true,
+    
+    "rebelFleetSuffix":"Renegades",
+    
+    "morality":"good",
+
+    "alignments":{
+        "ideological":0.5,
+        "technocratic":0.5,
+        "diplomatic":1,
+    },
+    "startRelationships":{
+        "new_galactic_order":-1,	# this should never happen:but just in case it does
+    },
+    "diplomacyTraits":["helps_allies", "stalwart", "temperamental", "irredentist"],
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":1,	# baseline expansion behaviour
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+    
+    "factionIdForHqResponse":"redwings",
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+    "specialForcesMaxFleets":1,
+    
+    "vengeanceLevelNames":["Grudge", "Vendetta"],
+    "vengeanceFleetNames":["Hunter Fleet", "Executors"],
+    "vengeanceFleetNamesSingle":["a Hunter Fleet", "Executors"],
+    
+    "customStations":["station_shi_prana","station_shi_med"],
+    
+    "startShipsSolo":[["ms_enlil_Balanced"]],
+    "startShipsCombatSmall":[["ms_clade_Standard", "ms_inanna_Standard", "ms_seski_CS"],
+        ["ms_lobatus_Attack", "ms_inanna_EMP", "ms_belet-seri_PD"]],
+    "startShipsTradeSmall":[["ms_solidarity_Standard", "ms_belet-seri_CS", "ms_ashnan_Standard"]],
+    "startShipsCombatLarge":[["ms_tartarus_Standard", "ms_morningstar_Standard", "ms_enlil_Balanced"],
+        ["ms_elysium_Standard", "ms_lobatus_Standard", "ms_inanna_Strike"]],
+    "startShipsTradeLarge":[["ms_cetus_Standard", "ms_solidarity_Fast", "ms_seski_BR"],
+        ["ms_minos_balanced", "ms_lambent_Standard", "ms_ashnan_Fast"]],
+    "startShipsCarrierSmall":[["ms_sargasso_Balanced", "ms_enlil_AF", "ms_belet-seri_CS"]],
+    "startShipsCarrierLarge":[["ms_charybdis_Attack", "ms_morningstar_CS", "ms_seski_LA"]],
+    "startShipsSuper":[["ms_shamash_EMP"]],
+    
+    "defenceStations":[
+        {"ids":["ms_orbitalstation", "ms_battlestation", "ms_starfortress"]},
+    ],
+	
+    "industrySeeds":[
+        {"id":"ms_orbitalShipyard", "mult":0.2},
+        {"id":"ms_modularFac", "mult":0.1},
+        {"id":"ms_supersolar", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+        {"id":"ms_redwingsCommand", "mult":0.2, "count":1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"nanoforge_pristine", "count":1},
+        {"id":"aiCore_any", "mult":0.1},
+    ],
+}

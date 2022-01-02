@@ -1,0 +1,26 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 14,
+    "hullId": "loamtp_burke",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_burke_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "gauss"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "cyclone"}
+        }
+    ]
+}

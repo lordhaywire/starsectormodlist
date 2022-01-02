@@ -1,0 +1,33 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 0,
+    "fluxVents": 6,
+    "hullId": "loamt_jameson",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "expanded_cargo_holds",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_jameson_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "loa_er",
+                "WS0002": "loa_er"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "al_bongo"}
+        }
+    ],
+    "wings": [
+        "ace_wing",
+        "ace_wing"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 13,
+    "fluxVents": 20,
+    "hullId": "loamt_thatcher",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loa_folley_reid",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0004": "loa_her",
+            "WS0007": "loa_her",
+            "WS0009": "al_cone",
+            "WS0010": "al_cone"
+        }
+    }]
+}

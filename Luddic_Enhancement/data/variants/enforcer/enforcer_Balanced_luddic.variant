@@ -1,0 +1,50 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 11,
+    "fluxVents": 20,
+    "hullId": "enforcer_luddic",
+	"goalVariant": false,
+    "hullMods": [
+        "auxiliarythrusters",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "enforcer_Balanced_luddic",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+			    "WS 006": "annihilator",
+                "WS 007": "annihilator",
+                "WS 008": "annihilator",
+				"WS 009": "annihilator"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "arbalest",
+                "WS 003": "arbalest",
+                "WS 005": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+			    "WS 002": "heavymortar",
+                "WS 004": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+
+            }
+        }
+    ]
+}

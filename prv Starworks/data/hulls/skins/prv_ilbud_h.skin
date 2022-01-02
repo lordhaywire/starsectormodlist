@@ -1,0 +1,45 @@
+{
+	"baseHullId":"prv_ilbud",
+	"skinHullId":"prv_ilbud_h",
+	"hullName":"Ilbud (H)",
+	"descriptionId":"prv_ilbud",
+	"descriptionPrefix":"Though it is clearly carrying Hegemony markings, this ship is curiously missing from the auxiliary list. There is however little doubt that its systems have been upgraded to Hegemony standards and a rigorous schedule of servicing is enforced.",
+	"tags":["rare_bp"],
+	#"tech":"Hegemony (prv)",
+	"tech":"Hegemony",
+	#"restoreToBaseHull":true,
+	"ordnancePoints":80,
+	"fleetPoints":13,
+	"baseValueMult":1.5,
+	"spriteName":"graphics/prv/ships/prv_ilbud_h.png",
+	"systemId":"maneuveringjets",
+	#"addHints":[HIDE_IN_CODEX],
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0005":{
+		  "type": "UNIVERSAL",
+	   },
+	   "WS0006":{
+		  "type": "UNIVERSAL",
+	   },
+	   "WS0003":{
+		  "type": "HYBRID",
+	   },
+	   "WS0004":{
+		  "type": "HYBRID",
+	   },
+
+    },
+	"builtInMods":["prv_hegemony_spec",],
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+	},    
+}

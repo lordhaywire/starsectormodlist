@@ -1,0 +1,53 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 1,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_bonnethead",
+    "hullMods": ["reinforcedhull"],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "TADA_bonnethead_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "amblaster",
+                "WS0006": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "phasebeam",
+                "WS0004": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyneedler",
+                "WS0002": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "flak",
+                "WS0010": "flak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "salamanderpod",
+                "WS0008": "salamanderpod"
+            }
+        }
+    ]
+}

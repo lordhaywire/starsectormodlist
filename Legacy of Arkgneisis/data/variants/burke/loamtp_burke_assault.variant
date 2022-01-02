@@ -1,0 +1,26 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 11,
+    "hullId": "loamtp_burke",
+    "hullMods": [
+        "missleracks",
+        "unstable_injector",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_burke_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hephag"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "squall"}
+        }
+    ]
+}

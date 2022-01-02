@@ -1,0 +1,52 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 26,
+    "hullId": "loamtp_hawke",
+    "hullMods": ["safetyoverrides"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_hawke_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "lightag",
+                "WS0008": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "lightag",
+                "WS0010": "lightag",
+                "WS0015": "lightag",
+                "WS0016": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heavymg",
+                "WS0004": "heavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightmg",
+                "WS0002": "lightmg",
+                "WS0005": "lightmg",
+                "WS0006": "lightmg",
+                "WS0011": "lightmg",
+                "WS0012": "lightmg",
+                "WS0013": "lightmg",
+                "WS0014": "lightmg"
+            }
+        }
+    ]
+}

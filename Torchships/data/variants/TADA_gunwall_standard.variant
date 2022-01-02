@@ -1,0 +1,62 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 23,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_gunwall_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "heavymortar",
+                "WS0008": "heavymortar",
+                "WS0009": "heavymortar",
+                "WS0010": "heavymortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyac",
+                "WS0002": "heavyac",
+                "WS0003": "heavyac",
+                "WS0004": "heavyac",
+                "WS0005": "heavyac",
+                "WS0006": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "harpoonpod",
+                "WS0018": "harpoonpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0013": "flak",
+                "WS0014": "flak",
+                "WS0015": "flak",
+                "WS0016": "flak",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["gladius_wing"]
+}

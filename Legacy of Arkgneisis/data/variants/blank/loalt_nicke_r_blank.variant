@@ -1,0 +1,21 @@
+{
+  "displayName": "Blank",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "loalt_nicke_r",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loalt_nicke_r_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "loa_nicke_gun_r"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,20 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_gnista",
+			"prv_tystnad",
+			"prv_ljus",
+			"prv_tiger",
+			"prv_gryning_tt",
+		],
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"hulls":{
+			"prv_gryning_tt":0.15,
+		},
+	},	
+	"custom":{
+		"syndicateName": "The Hybrasil Cartel",
+	}
+}

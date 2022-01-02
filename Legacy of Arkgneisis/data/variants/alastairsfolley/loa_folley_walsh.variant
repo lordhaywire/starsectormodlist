@@ -1,0 +1,29 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "hullId": "loamt_walsh",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_folley_walsh",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "al_bulldog"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "loa_siegecannon_w"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_pelletdriver",
+                "WS0006": "al_pelletdriver"
+            }
+        }
+    ]
+}

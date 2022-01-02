@@ -1,0 +1,56 @@
+{
+    "displayName": "Roider",
+    "fluxCapacitors": 15,
+    "fluxVents": 2,
+    "goalVariant": true,
+    "hullId": "roider_colossus2",
+    "hullMods": [
+		"dedicated_targeting_core",
+		"roider_fighterClamps"
+	],
+    "permaMods": [],
+    "quality": 0,
+    "variantId": "roider_colossus2_Carrier",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 013": "lightmg",
+                "WS 014": "lightmg",
+                "WS 015": "lightmg",
+                "WS 016": "lightmg"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS 017": "hammerrack"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "lightdualac",
+                "WS 012": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+				"WS 001": "lightmortar",
+				"WS 003": "lightmortar",
+				"WS 002": "lightmortar",
+				"WS 004": "lightmortar",
+				"WS 009": "lightmortar",
+				"WS 010": "lightmortar",
+            }
+        }
+    ],
+    "wings": [
+		"roider_breaker_wing",
+		"roider_breaker_wing"
+		
+	]
+}

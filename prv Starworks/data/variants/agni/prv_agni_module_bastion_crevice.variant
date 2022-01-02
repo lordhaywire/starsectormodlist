@@ -1,0 +1,59 @@
+{
+  "variantId": "prv_agni_module_bastion_crevice",
+  "hullId": "prv_agni_module_bastion",
+  "displayName": "Symbiote Crevice",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_agni_teeth",
+        "WS 003": "prv_agni_teeth",
+        "WS 004": "prv_agni_teeth",
+        "WS 005": "prv_agni_teeth",
+        "WS0005": "prv_agni_flamelash",
+        "WS0006": "prv_agni_flamelash"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_agni_spines",
+        "WS 002": "prv_agni_spines"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_agni_flamelash",
+        "WS0004": "prv_agni_flamelash"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "prv_agni_eye",
+        "WS0001": "prv_agni_eye",
+        "WS0002": "prv_agni_eye"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_agni_scale_wing"
+  ]
+}

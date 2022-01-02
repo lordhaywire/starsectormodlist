@@ -1,0 +1,58 @@
+{
+  "variantId": "loamt_victoria_support",
+  "hullId": "loamt_victoria",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 19,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "loamt_suspendedmounts"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_siegecannon_v"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "al_string",
+        "WS0011": "al_string"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "al_pelletgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "al_monorail",
+        "WS0003": "al_bullpup",
+        "WS0009": "al_monorail",
+        "WS0010": "al_bullpup"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "al_bongo",
+        "WS0007": "al_bongo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

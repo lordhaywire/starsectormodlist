@@ -1,0 +1,85 @@
+{
+	"baseHullId": "prv_aska",
+	"descriptionPrefix":"By all accounts this ship does not exist. The prv do not export heavy warships to the Church of Galactic Redemption, the CGR do not permit phase teleporters, the Knights of Ludd do not import advanced armaments, and no party has any records of Aska-class warships being transferred to the Luddic Church.",
+	"tags":["rare_bp"],
+	#"tech":"Luddic Church (prv)",
+	"tech":"Luddic Church",
+	"baseValueMult": 1.2,
+	"fleetPoints":19,
+	"ordnancePoints":150,
+	"builtInWeapons": {
+		"BI01": "hammerrack"
+	},
+	"removeBuiltInWeapons":["BI03"],
+	"removeWeaponSlots":[
+		"BI03",
+		#"WS0005"
+	],
+	#"removeBuiltInMods":["prv_did"],
+	"addHints":[ALWAYS_PANIC,HIDE_IN_CODEX],
+	#"builtInMods":["prv_reman"],
+	"descriptionId": "prv_aska",
+	"hullName": "Aska (LC)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_aska_lc",
+	"spriteName": "graphics/prv/ships/prv_aska_lc.png",
+	"weaponSlotChanges":{
+		#center BI
+		"BI01":{
+		  "size": "LARGE",
+		  "type": "BUILT_IN",
+		  "mount": "HARDPOINT",
+		},
+		#main gun
+		"WS0001":{
+		  "type": "MISSILE",
+		  "mount": "HARDPOINT",
+		  "arc": 0,
+		},
+		#left clutch
+		"WS0002":{
+		  "type": "COMPOSITE",
+		},
+		"WS0003":{
+		  "type": "COMPOSITE",
+		},
+		"WS0004":{
+		  "type": "COMPOSITE",
+		},
+		#mid-mid smalls
+		"WS0005":{
+		  "type": "BALLISTIC",
+		},
+		"WS0006":{
+		  "type": "BALLISTIC",
+		},
+		#mid-wing smalls
+		"WS0007":{
+		  "type": "BALLISTIC",
+		},
+		"WS0008":{
+		  "type": "BALLISTIC",
+		},
+		#rear smalls
+		"WS0009":{
+		  "type": "BALLISTIC",
+		},
+		"WS0010":{
+		  "type": "BALLISTIC",
+		},
+	},
+	"engineSlotChanges":{
+		"0":{"style":"PRV_LOW"},
+		"1":{"style":"PRV_LOW"},
+		"2":{"style":"PRV_LOW"},
+		"3":{"style":"PRV_LOW"},
+		"4":{"style":"PRV_LOW"},
+		"5":{"style":"PRV_LOW"},
+		"6":{"style":"PRV_LOW"},
+		"7":{"style":"PRV_LOW"},
+		"8":{"style":"PRV_LOW"},
+		"9":{"style":"PRV_LOW"},
+		"10":{"style":"PRV_LOW"},
+		"11":{"style":"PRV_LOW"},
+	},    
+}

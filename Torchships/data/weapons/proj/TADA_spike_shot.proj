@@ -1,0 +1,18 @@
+{
+	"id":"TADA_spike_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":100.0,
+	"width":10.0,
+	"hitGlowRadius":25,
+	"fadeTime":0.25,
+	"fringeColor":[255,150,55,255],
+	"coreColor":[255,230,200,255],
+	"textureType":"ROUGH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+	"bulletSprite":"graphics/TORCHSHIPS/missiles/TADA_spikeP.png",
+	"onHitEffect":"data.scripts.weapons.TADA_spikeEffect",
+}

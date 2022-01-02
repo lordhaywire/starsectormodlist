@@ -1,0 +1,40 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_module_ars_small",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_module_ars_small_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "al_heavyplasmadriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "al_pelletgun",
+                "WS0009": "al_pelletgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_lightplasmadriver",
+                "WS0004": "al_lightplasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_bongo",
+                "WS0002": "al_bongo"
+            }
+        }
+    ]
+}

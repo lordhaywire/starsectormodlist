@@ -1,0 +1,46 @@
+{
+  "id": "prv_berguv_mirv",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_berguv_mirv",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_berguv_mirv_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_berguv_mirv_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    12,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    16,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 6,
+    "particleSizeRange": 18,
+    "cloudParticleCount": 14,
+    "cloudDuration": 4,
+    "cloudRadius": 12,
+    "blowbackParticleCount": 8,
+    "blowbackDuration": 2,
+    "blowbackLength": 18,
+    "blowbackSpread": 10,
+    "particleColor": [
+      51,
+      0,
+      153,
+      64
+    ]
+  },
+  "fireSoundTwo": "reaper_fire"
+}

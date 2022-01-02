@@ -1,0 +1,50 @@
+{
+  "variantId": "prv_tystnad_p_ambush",
+  "hullId": "prv_tystnad_p",
+  "displayName": "Ambush",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 20,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "insulatedengine",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "swarmer",
+        "WS0006": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightag",
+        "WS0004": "lightag",
+      }
+    },
+  ],
+  "modules": [],
+  "wings": [
+    "talon_wing"
+  ]
+}

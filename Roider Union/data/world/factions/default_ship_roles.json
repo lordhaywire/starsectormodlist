@@ -1,0 +1,172 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"roider_cyclops_Assault":2,
+		"roider_cyclops_Balanced":5,
+		"roider_cyclops_Outdated":3,
+		
+		"roider_nolasher_Balanced":4,
+		"roider_nolasher_Assault":3,
+		#"roider_nolasher_Escort":3,
+		
+		#"roider_pepperbox_Escort":1,
+		#"roider_pepperbox_Support":1,
+		
+		"roider_roach_Assault":2,
+		"roider_roach_Attack":2,
+		
+		"roider_mudskipper2_Escort":2,
+	},
+	"combatSmall":{
+		"roider_cyclops_Assault":1,
+		"roider_cyclops_Balanced":4,
+		"roider_cyclops_Escort":3,
+		"roider_cyclops_Outdated":2,
+		
+		"roider_nolasher_Balanced":4,
+		"roider_nolasher_Assault":3,
+		"roider_nolasher_Escort":3,
+		
+		"roider_pepperbox_Escort":1,
+		"roider_pepperbox_Support":1,
+		
+		"roider_roach_Assault":5,
+		"roider_roach_Attack":5,
+		
+		"roider_sheriff_Attack":4,
+		"roider_sheriff_Elite":2,
+		"roider_sheriff_Strike":3,
+		"roider_sheriff_Overdriven":1,
+		
+		"roider_mudskipper2_Escort":2,
+	},
+	"combatMedium":{
+		"roider_aurochs_Balanced":6,
+		"roider_aurochs_Elite":4,
+		
+		"roider_bombard_Patrol":2,
+		"roider_bombard_CS":4,
+		"roider_bombard_Outdated":2,
+		"roider_bombard_Mining":2,
+		
+		"roider_firestorm_Assault":3,
+		"roider_firestorm_Defense":4,
+		"roider_firestorm_Patrol":3,
+		
+		"roider_onager_Assault":2,
+		"roider_onager_Balanced":3,
+		"roider_onager_Mining":2,
+		"roider_onager_Rocket":1,
+		"roider_onager_Support":2,
+		
+		"roider_colossus2_Roider":5,
+		"roider_colossus2_Carrier":5,
+	},
+	"combatLarge":{
+		
+		"roider_gambit_Balanced":5,
+		"roider_gambit_Assault":5,
+		
+		"roider_wrecker_Assault":3,
+		"roider_wrecker_CS":4,
+		"roider_wrecker_Shieldbreaker":1,
+		"roider_wrecker_Overdriven":2,
+	},
+	"combatCapital":{
+		"roider_telamon_Balanced":7,
+		"roider_telamon_Elite":3,
+		
+		"roider_argos_Balanced":2,
+		"roider_argos_Outdated":1,
+		"roider_argos_Support":2,
+	},
+
+	# carriers
+	"carrierSmall":{
+		"roider_jane_Escort":2,
+		
+		"roider_condor_Interference":1,
+		
+		"roider_cowboy_Strike":4,
+		"roider_cowboy_Support":2,
+		"roider_cowboy_Interceptor":4,
+	},
+	"carrierMedium":{
+		"roider_ranch_Interceptor":4,
+		"roider_ranch_Attack":4,
+		"roider_ranch_Assault":2,
+	},
+	
+	"civilianRandom":{
+		"roider_hound_Starfarer":2,
+		"roider_tarsus_Roider":2,
+	},
+	
+	"combatFreighterSmall":{
+		"roider_hound_Starfarer":2,
+	},
+	
+	"combatFreighterLarge":{
+		"roider_argos_Balanced":3,
+		"roider_argos_Outdated":5,
+		"roider_argos_Support":2,
+	},
+	
+	"freighterSmall":{
+		"roider_mudskipper_Carrier":0,
+		
+		"roider_tarsus_Combat":1,
+		"roider_tarsus_Roider":2,
+		
+		#"roider_buffalo_Standard":2,
+	},
+	"freighterMedium":{
+		"roider_colossus_Roider":2,
+	},
+	"freighterLarge":{
+		"roider_argos_Support":2,
+	},
+	
+	"tankerSmall":{
+		"roider_jane_Escort":2,
+		"roider_jane_Support":2,
+		#"roider_dram_Support":10,
+	},
+	"tankerMedium":{
+		"roider_jane_Attack":2,
+		"roider_jane_Escort":4,
+		"roider_jane_Support":4,
+		#"roider_phaeton_Standard":10,
+	},
+	"tankerLarge":{
+		"roider_argos_Balanced":1,
+		"roider_argos_Outdated":1,
+		"roider_argos_Support":2,
+		
+		"roider_prometheus_Super":2,
+	},
+	
+	"personnelLarge":{
+		"roider_argos_Balanced":1,
+		"roider_argos_Outdated":1,
+		"roider_argos_Support":2,
+	},
+	
+	"tug":{
+		"roider_wrecker_Assault":4,
+		"roider_wrecker_CS":4,
+	},
+	"crig":{
+		"roider_argos_Balanced":1,
+		"roider_argos_Outdated":1,
+	},
+	"utility":{
+		"roider_wrecker_Assault":4,
+		"roider_wrecker_CS":4,
+		
+		"roider_argos_Balanced":1,
+		"roider_argos_Outdated":1,
+	},
+	
+}

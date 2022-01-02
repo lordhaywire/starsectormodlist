@@ -1,0 +1,10 @@
+{
+	"id":"kadur_remnant",
+	"name":"Kadur Remnant",
+	"author":"Vayra",
+	"version":"3.2.3", # GO UPDATE YOUR VERSION FILE (as the last thing you do before uploadin cuz otherwise... heh)
+	"description":"Watchers guide you, convert. Integrates with Vayra's Sector for additional content. Requires LazyLib and MagicLib.",
+	"gameVersion":"0.95a-RC9",
+	"jars":["jars/KadurRemnant.jar"],
+	"modPlugin":"data.scripts.KadurModPlugin",
+}

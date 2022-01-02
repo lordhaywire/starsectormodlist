@@ -1,0 +1,271 @@
+{
+  "bounds": [
+    -133.5,
+    -26,
+    -123,
+    -34,
+    -47.5,
+    -38,
+    -39,
+    -52.5,
+    -69,
+    -54,
+    -69,
+    -76,
+    3.5,
+    -80,
+    8.5,
+    -73.5,
+    92,
+    -74,
+    105,
+    -66.5,
+    114.5,
+    -34.5,
+    114.5,
+    34.5,
+    105,
+    66.5,
+    92,
+    74,
+    8.5,
+    73.5,
+    3.5,
+    80,
+    -69,
+    76,
+    -69,
+    54,
+    -39,
+    52.5,
+    -47.5,
+    38,
+    -123,
+    34,
+    -133.5,
+    26
+  ],
+  "builtInMods": [
+  ],
+  "builtInWeapons": {
+    "WS0005": "loa_blinker",
+    "WS0006": "loa_blinker",
+    "WS0007": "loa_blinker",
+    "WS0008": "loa_blinker",
+    "WS0009": "loa_blinker",
+    "WS0010": "loa_blinker"
+  },
+  "builtInWings": [],
+  "center": [
+    80,
+    134
+  ],
+  "collisionRadius": 147,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        57.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        -57.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        64.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        -64.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        71.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -59,
+        -71.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 251,
+  "hullId": "loamt_jameson",
+  "hullName": "Jameson",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 144,
+  "spriteName": "graphics/arkleg/ships/jameson/loa_jameson.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 75,
+      "arc": 245,
+      "id": "WS0001",
+      "locations": [
+        -21,
+        60
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -75,
+      "arc": 245,
+      "id": "WS0002",
+      "locations": [
+        -21,
+        -60
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 290,
+      "id": "WS0003",
+      "locations": [
+        98,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0005",
+      "locations": [
+        -4.5,
+        60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 360,
+      "id": "WS0006",
+      "locations": [
+        -4.5,
+        -60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0007",
+      "locations": [
+        0,
+        60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 360,
+      "id": "WS0008",
+      "locations": [
+        0,
+        -60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0009",
+      "locations": [
+        4.5,
+        60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 360,
+      "id": "WS0010",
+      "locations": [
+        4.5,
+        -60.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -101.5,
+        -0,
+        -102,
+        11,
+        -102,
+        -10
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 160
+}

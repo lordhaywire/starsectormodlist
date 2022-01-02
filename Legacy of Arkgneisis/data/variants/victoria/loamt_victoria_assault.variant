@@ -1,0 +1,58 @@
+{
+  "variantId": "loamt_victoria_assault",
+  "hullId": "loamt_victoria",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_siegecannon_v"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "loa_mosaic_torpedo",
+        "WS0011": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "al_bulldog"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "railgun",
+        "WS0003": "railgun",
+        "WS0009": "railgun",
+        "WS0010": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "loa_flashlight",
+        "WS0007": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

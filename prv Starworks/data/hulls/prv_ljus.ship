@@ -1,0 +1,118 @@
+{
+  "hullName": "Ljus",
+  "hullId": "prv_ljus",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_ljus.png",
+  "style": "PRV_MID",
+  "height": 124,
+  "width": 62,
+  "center": [31, 65],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 85.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hiressensors",
+    "prv_ramshield"
+  ],
+  "builtInWeapons": {
+    "WS0025": "prv_d_blinker_ljus",
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, -1]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [42, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [-23, -1]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 90,
+      "locations": [-7, 16]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": -90,
+      "locations": [-7, -18]
+    },
+    {
+      "id": "WS0025",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [-10.5, -1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59, -11],
+      "length": 20,
+      "width": 12,
+      "angle": -145,
+      "contrailSize": 10,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-59, 11],
+      "length": 20,
+      "width": 12,
+      "angle": 145,
+      "contrailSize": 10,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-64.5, 0],
+      "length": 35,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    -60, 18.5,
+    -26.5, 11.5,
+    -6.5, 27.5,
+    11, 10,
+    28, 13.5,
+    43, 5,
+    43, -5,
+    28, -13.5,
+    11, -10,
+    -6.5, -27.5,
+    -26.5, -11.5,
+    -60, -18.5
+  ]
+}

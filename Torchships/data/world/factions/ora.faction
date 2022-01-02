@@ -1,0 +1,25 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_whirlwind":1,
+            "TADA_cassicus":1,
+        },
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_whirlwind",
+            "TADA_cassicus",
+        ],
+    },
+
+    "knownFighters":{
+        "fighters":[
+            "TADA_pinnace_wing",
+        ],
+    },
+},

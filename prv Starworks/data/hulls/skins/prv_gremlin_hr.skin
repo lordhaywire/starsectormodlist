@@ -1,0 +1,24 @@
+{
+  "baseHullId": "prv_gremlin_rb",
+  "baseValueMult": 1.1,
+  "builtInMods": [
+  ],
+  "tags":["prv_rb_bp"],
+  "tech":"Rust Belt",
+  "systemId":"prv_limitbreak",
+  "descriptionId": "prv_gremlin_rb",
+  "descriptionPrefix": "Some enthusiastic group have gotten their hands on this ship and gone hog-wild tuning it up and painting it over.",
+  #"hullDesignation": "FRIGATE",
+  "hullName": "Gremlin (HR)",
+  "removeBuiltInMods": [
+  ],
+  "restoreToBaseHull": false,
+  "builtInWeapons":{
+	"WS0001": "lrpdlaser"
+  },
+  "style": "PRV_LOW",
+  "skinHullId": "prv_gremlin_hr",
+  "spriteName": "graphics/prv/ships/prv_gremlin_hr.png",
+	"engineSlotChanges":{
+	},    
+}

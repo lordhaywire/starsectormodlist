@@ -1,0 +1,51 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "light_mortar_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/prv/weapons/prv_splitter_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    19.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_splitter_hardpoint.png",
+  "id": "prv_splitter_fighter",
+  "muzzleFlashSpec": {
+    "length": 15,
+    "particleColor": [
+      255,
+      225,
+      165,
+      175
+    ],
+    "particleCount": 35,
+    "particleDuration": 0.13,
+    "particleSizeMin": 4,
+    "particleSizeRange": 8,
+    "spread": 10
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_splitter_fighter_shot",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/prv/weapons/prv_splitter_turret_recoil.png",
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_splitter_turret.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 8
+}

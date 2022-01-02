@@ -1,0 +1,15 @@
+{
+	"id":"loa_awacs",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_awacs_ai",
+	"statsScript":"data.scripts.shipsystems.loa_awacs",
+	
+	#"weaponGlowColor":[255,50,50,155],
+	#"weaponTypes":[BALLISTIC, ENERGY],
+	
+	"useSound":"loa_awacs_start",
+	"loopSound":"loa_awacs_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

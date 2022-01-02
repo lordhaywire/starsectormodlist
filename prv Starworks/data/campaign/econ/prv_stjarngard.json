@@ -1,0 +1,103 @@
+{
+	"starSystem":"prv_stjarngard",
+	"markets":[
+		{
+			"entities":["prv_stjarngard_strand"],
+			"faction":"prv",
+			"size":5,
+			"startingConditions":[
+				"habitable",
+				#"frontier",
+				"arid",
+				"hot",
+				"mild_climate",
+				"low_gravity",
+				"population_5",
+				"farmland_poor",
+			],
+			"industries":[
+				"population",
+				#"mining",
+				"farming",
+				#"refining",
+				#"lightindustry",
+				"waystation",
+				"commerce",
+				"grounddefenses",
+				"spaceport",
+			],
+		},
+		{
+			"entities":["prv_stjarngard_utbo","prv_stjarngard_utbo_station"],
+			"faction":"prv",
+			"size":7,
+			"startingConditions":[
+				"habitable",
+				#"frontier",
+				"terran",
+				"population_7",
+				"closed_immigration",
+				#"cottage_industry",
+				#"rural_polity",
+				"prv_backwater",
+				"prv_feudal",
+				"prv_keyhole_world",
+				"ore_sparse",
+				"farmland_adequate",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"commerce",
+				["orbitalworks", "corrupted_nanoforge"],
+				"spaceport",
+				"militarybase",
+				"prv_station3",
+			],
+		},
+		{
+			### Nedan
+			"entities":["prv_stjarngard_ymer_moon1"],
+			"faction":"independent",
+			"size":3,
+			"startingConditions":[
+				"tectonic_activity",
+				"very_hot",
+				"population_3",
+				"ore_abundant",
+				"rare_ore_rich",
+				"thin_atmosphere",
+				"outpost",
+			],
+			"industries":[
+				"population",
+				"mining",
+				"spaceport",
+			],
+		},
+		{
+			### Ny
+			"entities":["prv_stjarngard_ymer_moon2"],
+			"size":3,
+			"faction":"prv",
+			"startingConditions":[
+				"thin_atmosphere",
+				"ice",
+				"cold",
+				"population_3",
+				"volatiles_abundant",
+				"organics_common",
+			],
+			"industries":[
+				"population",
+				"mining",
+				"spaceport",
+				"patrolhq",
+			],
+		},
+	],
+
+}
+
+
+

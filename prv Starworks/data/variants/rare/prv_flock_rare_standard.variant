@@ -1,0 +1,56 @@
+{
+  "variantId": "prv_flock_rare_standard",
+  "hullId": "prv_flock_rare",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 23,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_kraka_auto_burst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "sabot",
+        "WS0005": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavymortar",
+        "WS0002": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "vulcan",
+        "WS0008": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,22 @@
+{
+  "displayName": "Kaja Drone",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_drone_missile",
+  "hullMods": [
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_drone_missile_kaja",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kaja",
+      }
+    },
+  ],
+  "wings": []
+}

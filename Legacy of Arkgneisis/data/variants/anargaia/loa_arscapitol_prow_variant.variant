@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_arscapitol_prow",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_arscapitol_prow_variant",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "al_heavyplasmadriver",
+                "WS0011": "al_heavyplasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "loa_heavyionpike",
+                "WS0006": "loa_heavyionpike"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "hveldriver",
+                "WS0005": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_bongo",
+                "WS0002": "al_bongo"
+            }
+        }
+    ]
+}

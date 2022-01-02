@@ -1,0 +1,30 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "hullId": "loamtg_walsh",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_walsh_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavymg"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "lightag",
+                "WS0005": "vulcan",
+                "WS0006": "vulcan"
+            }
+        }
+    ]
+}

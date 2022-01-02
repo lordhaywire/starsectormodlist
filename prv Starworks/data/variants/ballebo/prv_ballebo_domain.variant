@@ -1,0 +1,56 @@
+{
+  "variantId": "prv_ballebo_domain",
+  "hullId": "prv_ballebo",
+  "displayName": "Domain-era",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 20,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "prv_arcfault_insulator",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_rorsangare"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heavyblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_lpk"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0002": "prv_sipdlaser",
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

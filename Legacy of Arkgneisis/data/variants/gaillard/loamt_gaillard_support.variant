@@ -1,0 +1,65 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 42,
+    "fluxVents": 50,
+    "hullId": "loamt_gaillard",
+	"goalVariant": true,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamt_gaillard_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0022": "loa_mosaic_torpedo",
+                "WS0023": "loa_mosaic_torpedo",
+                "WS0024": "loa_mosaic_torpedo",
+                "WS0025": "loa_mosaic_torpedo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletgun",
+                "WS0006": "al_pelletgun",
+                "WS0007": "heavymauler",
+                "WS0008": "heavymauler",
+                "WS0013": "al_pelletgun",
+                "WS0016": "al_pelletgun",
+                "WS0019": "heavymauler",
+                "WS0020": "heavymauler",
+                "WS0021": "al_pelletgun",
+                "WS0026": "al_string",
+                "WS0027": "al_string",
+                "WS0028": "al_string",
+                "WS0029": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_monorail",
+                "WS0005": "al_monorail",
+                "WS0017": "al_monorail",
+                "WS0018": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "al_bongo",
+                "WS0003": "al_bongo",
+                "WS0009": "al_bongo",
+                "WS0010": "al_bongo",
+                "WS0011": "al_bongo",
+                "WS0012": "al_bongo",
+                "WS0014": "dualflak",
+                "WS0015": "dualflak"
+            }
+        }
+    ]
+}

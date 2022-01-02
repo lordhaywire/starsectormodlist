@@ -1,0 +1,40 @@
+{
+	"id":"prv_sidensvans_srm",
+	"specClass":"missile",	
+	#"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"missileType":"MISSILE",
+	"sprite":"graphics/prv/missiles/prv_missile_sidensvans.png",
+	"size":[6,14],	
+	"center":[3,7],
+	"collisionRadius":14,
+	"collisionClass":"MISSILE_FF",
+	#"explosionColor":[165,225,100,255], #nasty green  # purely visual, will get a white additively blended core on top of this color
+	"explosionColor":[100,100,255,255],
+	"explosionRadius":60, # purely visual
+	#"flameoutTime":0.5, # total time from flameout to full fadeout
+	"flameoutTime":0.75, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.25, # fadeout duration	
+	"engineSpec":{"turnAcc":1440,
+				  "turnRate":420,		#240
+				  "acc":500,
+				  "dec":500},				  
+	"engineSlots":[{"id":"ES1",
+		"loc":[-9, 0],
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", 				# PARTICLES or QUAD_STRIP, determines which params are used
+			"engineColor":[102,232,255,255], 		#
+			"contrailDuration":0.4,				# 1
+			"contrailWidthMult":1,
+			"contrailWidthAddedFractionAtEnd":0.25,  	# can be negative. makes trail spread out/narrow at the end	#2.5
+			"contrailMinSeg":12, 				# min segment length, in pixels
+			"contrailMaxSpeedMult":0.5f,
+			"contrailAngularVelocityMult":0.5f,
+			"contrailColor":[102,232,255,60],
+			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":4.0,
+		"length":20.0,
+		"angle":180.0}],
+}

@@ -1,0 +1,20 @@
+{
+    "hullFrequency":{
+        "tags":{
+            "uw_post_collapse_bp":0.5,
+            "uw_hack_job_bp":0.25,
+        },
+        "hulls":{
+            "uw_predator":2,
+        },
+    },
+    "shipsWhenImporting":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp"],
+    },
+    "knownShips":{
+        "tags":["uw_post_collapse_bp"],
+    },
+    "knownFighters":{
+        "tags":["uw_post_collapse_bp"],
+    },
+},

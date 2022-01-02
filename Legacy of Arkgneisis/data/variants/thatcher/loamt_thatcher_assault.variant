@@ -1,0 +1,42 @@
+{
+  "variantId": "loamt_thatcher_assault",
+  "hullId": "loamt_thatcher",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 17,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "loamt_shieldcoreupgrade",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavymg",
+        "WS0007": "heavymg"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "loa_mosaic_torpedo",
+        "WS0010": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "loa_flashlight",
+        "WS0006": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

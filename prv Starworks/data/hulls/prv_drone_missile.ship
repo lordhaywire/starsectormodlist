@@ -1,0 +1,63 @@
+{
+  "hullName": "prv Drone",
+  "hullId": "prv_drone_missile",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_drone_missile.png",
+  "style": "PRV_MID",
+  "height": 32,
+  "width": 32,
+  "center": [16, 17],
+  "collisionRadius": 25,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload"
+  ],
+  "builtInWeapons": {
+    "D01": "prv_d_cover_drone_missile"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-2, -0]
+    },
+    {
+      "id": "D01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-1, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11, 6.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-11, -6.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -9, -11,
+    -9, 11,
+    11, 0
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "hullName": "Firestorm",
+  "hullId": "roider_firestorm",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/roider_firestorm.png",
+  "style": "ROIDER_HULL",
+  "builtInMods": [
+    "roider_midas2",
+    "roider_firestormmod"
+  ],
+  "height": 196,
+  "width": 90,
+  "center": [45, 89],
+  "collisionRadius": 130,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": 180,
+      "locations": [-18, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 35,
+      "locations": [90, 21]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -35,
+      "locations": [90, -21]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 80,
+      "locations": [60, 24]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -80,
+      "locations": [60, -24]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 80,
+      "locations": [34, 24]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -80,
+      "locations": [34, -24]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 80,
+      "locations": [8, 24]
+    },
+    {
+      "id": "WS 009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -80,
+      "locations": [8, -24]
+    },
+    {
+      "id": "WS 010",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 70,
+      "locations": [-30, 37]
+    },
+    {
+      "id": "WS 011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -70,
+      "locations": [-30, -37]
+    },
+    {
+      "id": "WS 012",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 130,
+      "locations": [-54, 37]
+    },
+    {
+      "id": "WS 013",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -130,
+      "locations": [-54, -37]
+    },
+    {
+      "id": "LEFT ARMOR",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10, 39]
+    },
+    {
+      "id": "RIGHT ARMOR",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10, -39]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-88, 27.5],
+      "length": 48,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, 11.5],
+      "length": 60,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, -11.5],
+      "length": 60,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, -27.5],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, 19.5],
+      "length": 54,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-88, -19.5],
+      "length": 54,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -44, -6,
+    -86, -9,
+    -85, -31,
+    -70, -33,
+    -61, -43,
+    -42, -41,
+    -25, -43,
+    -19, -37,
+    88, -35,
+    100, -24,
+    96, -13,
+    46, -9,
+    46, 9,
+    96, 13,
+    100, 24,
+    88, 35,
+    -19, 37,
+    -25, 43,
+    -42, 41,
+    -61, 43,
+    -70, 33,
+    -85, 31,
+    -86, 9,
+    -44, 6
+  ]
+}

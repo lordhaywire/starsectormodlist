@@ -1,0 +1,60 @@
+{
+  "bounds": [
+    -4.5,
+    -4.5,
+    4.5,
+    -4.5,
+    4.5,
+    4.5,
+    -4.5,
+    4.5
+  ],
+  "builtInWeapons": {
+    "RANGE": "al_emdroneweapon"
+  },
+  "center": [
+    5.5,
+    5.5
+  ],
+  "collisionRadius": 8,
+  "engineSlots": [],
+  "height": 11,
+  "hullId": "al_emdrone",
+  "hullName": "EMP Disc",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 7.5,
+  "spriteName": "graphics/arkleg/ships/em drone/al_emdrone.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "RANGE",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "SYSTEM",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 11
+}

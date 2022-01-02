@@ -1,0 +1,57 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 0,
+  "fluxVents": 25,
+  "goalVariant": true,
+  "hullId": "venture_luddic_path",
+  "hullMods": [
+    "blast_doors",
+    "heavyarmor"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "venture_luddic_path_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hellbore"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "hammer",
+        "WS 007": "hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "annihilatorpod",
+        "WS 006": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavymg",
+        "WS 003": "heavymg",
+        "WS0001": "lightdualmg",
+        "WS0002": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

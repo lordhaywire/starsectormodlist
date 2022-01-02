@@ -1,0 +1,26 @@
+{
+  "variantId": "loa_asteroiddrone_standard",
+  "hullId": "loa_asteroiddrone",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "tachyonlance",
+        "WS0002": "al_pelletdriver",
+        "WS0003": "al_pelletdriver",
+        "WS0004": "al_pelletdriver",
+        "WS0005": "al_pelletdriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

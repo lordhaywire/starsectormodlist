@@ -1,0 +1,46 @@
+{
+  "variantId": "loamt_osmond_basic",
+  "hullId": "loamt_osmond",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "loamt_shieldcoreupgrade"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "mark9",
+        "WS0008": "loa_can_launcher",
+        "WS0009": "loa_can_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "al_bullpup",
+        "WS0005": "al_bullpup",
+        "WS0006": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "al_lightplasmadriver",
+        "WS0002": "loa_flashlight",
+        "WS0003": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

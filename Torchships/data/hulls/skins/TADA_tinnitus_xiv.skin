@@ -1,0 +1,33 @@
+{
+        # XIVth model gains Accelerated Ammo Feeder but looses the maneuvering thrusters
+	"baseHullId":"TADA_tinnitus",
+	"skinHullId":"TADA_tinnitus_xiv",
+	"hullName":"Pest (XIV)",
+	"descriptionId":"TADA_tinnitus",
+	"descriptionPrefix":"A survivor of the original 14th Domain Battlegroup which founded the Hegemony, this ship is a prime specimen of the Domain Navy's 'decisive battle' doctrine, particularly exhibited by a series of radical structural modifications performed using pre-Collapse industrial technology.",
+	"fleetPoints":5,
+	"ordnancePoints":40,
+	"baseValueMult":1.5,
+	"tags":["XIV_bp"],
+	"tech":"XIV Battlegroup",
+	"spriteName":"graphics/TORCHSHIPS/ships/TADA_tinnitus_XIV.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[
+            "WS0003",
+            "WS0004",
+            "WS0005",
+            "WS0006",
+            "WS0007",
+            "WS0008"
+        ], 		# weapon slot ids
+        "weaponSlotChanges":{
+            "WS0001":{
+                "type": "BALLISTIC"
+            },
+        },
+	"builtInMods":["fourteenth",],
+	"builtInWeapons":{},
+	"systemId":"ammofeed",
+}

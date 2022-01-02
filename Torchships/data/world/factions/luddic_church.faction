@@ -1,0 +1,61 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_challenger":1,
+            "TADA_bully":1,
+
+            "TADA_foray":0.5,
+            "TADA_hightide":0.25,
+            "TADA_attrition":1,
+
+            "TADA_gunwall":0.5,
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "TADA_challenger",
+
+            "TADA_bully",
+
+            "TADA_foray",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_challenger",
+
+            "TADA_bully",
+
+            "TADA_foray",
+            "TADA_hightide",
+            "TADA_attrition",
+
+            "TADA_gunwall",
+        ],
+    },
+
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "hulls":[
+            #"condor",
+            #"mora",
+            #"legion",
+            "TADA_gunwall",
+        ],
+    },
+
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

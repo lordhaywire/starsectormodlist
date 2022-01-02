@@ -1,0 +1,105 @@
+{
+  "hullName": "Jämmer",
+  "hullId": "prv_jammer",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_jammer.png",
+  "style": "PRV_HIGH",
+  "height": 26,
+  "width": 52,
+  "center": [26, 13],
+  "collisionRadius": 30,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 28,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "D01": "prv_d_cover_jammer"
+  },
+  "weaponSlots": [
+    {
+      "id": "CL01",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": -0,
+      "locations": [7, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 0,
+      "locations": [7, 13]
+    },
+    {
+      "id": "MS01",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8, 0]
+    },
+    {
+      "id": "D01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0.5, 0],
+      "renderOrderMod": 100
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7.5, 10.5],
+      "length": 13,
+      "width": 6,
+      "angle": 155,
+      "contrailSize": 6,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-7.5, -10.5],
+      "length": 13,
+      "width": 6,
+      "angle": -155,
+      "contrailSize": 6,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-11.5, -3.5],
+      "length": 7,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-11.5, 3.5],
+      "length": 7,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    0.5, -18,
+    9, 0,
+    0.5, 18,
+    -10.5, 0
+  ]
+}

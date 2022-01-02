@@ -1,0 +1,14 @@
+{
+  "displayName": "Derelict",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "loalt_nicke_d",
+  "hullMods": ["reinforcedhull","comp_armor","comp_hull","comp_structure","degraded_engines","faulty_grid","glitched_sensors","fragile_subsystems"],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loalt_nicke_d_blank",
+  "weaponGroups": [
+  ],
+  "wings": []
+}

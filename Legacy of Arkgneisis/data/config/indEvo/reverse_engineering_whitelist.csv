@@ -1,0 +1,30 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed by the Engineering hub (Reverse Engineering ship hulls)
+# Ships that would break the game (Balance/Technical/Lore) if the player could produce them via blueprint should not be on this list.
+
+loamt_fox
+loamtg_fox
+loamtp_fox
+loamt_edith
+loamt_walsh
+loamtg_walsh
+loamt_sherman
+loamt_reid
+loamt_thatcher
+loamtg_thatcher
+loamtp_thatcher
+loamt_norwood
+loamt_burke
+loamtp_burke
+loamt_victoria
+loamt_osmond
+loamt_caswell
+loamt_hawke
+loamtg_hawke
+loamtp_hawke
+loamt_jameson
+loamt_lyons
+loamt_king
+loamt_macnamara
+loamt_alastair

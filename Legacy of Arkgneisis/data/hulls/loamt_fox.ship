@@ -1,0 +1,176 @@
+{
+  "bounds": [
+    -36,
+    -5.5,
+    -39.5,
+    -9,
+    -25.5,
+    -21,
+    -33,
+    -30,
+    -28.5,
+    -33.5,
+    -1.5,
+    -19.5,
+    39,
+    -14,
+    43,
+    -9.5,
+    43,
+    9.5,
+    39,
+    14,
+    -1.5,
+    19.5,
+    -28.5,
+    33.5,
+    -33,
+    30,
+    -25.5,
+    21,
+    -39.5,
+    9,
+    -36,
+    5.5
+  ],
+  "builtInMods": [
+  ],
+  "builtInWeapons": {
+    "WS0003": "loa_blinker",
+    "WS0004": "loa_blinker",
+    "WS0007": "loa_fox_leftmask",
+    "WS0008": "loa_fox_rightmask"
+  },
+  "builtInWings": [],
+  "center": [
+    34,
+    41
+  ],
+  "collisionRadius": 53.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 70,
+      "location": [
+        -27,
+        -0
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 86,
+  "hullId": "loamt_fox",
+  "hullName": "Fox",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 53,
+  "spriteName": "graphics/arkleg/ships/fox/loa_fox.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0005",
+      "locations": [
+        2,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 360,
+      "id": "WS0006",
+      "locations": [
+        -28.5,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -4.5,
+        14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -4.5,
+        -14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        -10,
+        20
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        -10,
+        -20
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -24.5,
+        19.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+	  "renderOrderMod": 40
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -24.5,
+        -19.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+	  "renderOrderMod": 40
+    }
+  ],
+  "width": 68
+}

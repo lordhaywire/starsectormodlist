@@ -1,0 +1,30 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+loa_anargaia_station,Anargaia,,,,5,,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:loa_arscapitol_core_variant,
+fleetName:Anargaia
+}",graphics/icons/industry/battlestation.png,data.scripts.campaign.loa_anargaia_industry,It's a big ass ship.,2030
+loa_void_extraction,Void Extraction,45,90,,4,,,industry,,graphics/arkleg/icons/industry/loa_voidextraction.png,data.scripts.campaign.loa_void_extraction,"Exploiting the relative ease with which materials can be handled in a zero-G environment, this collection of industries breaks apart asteroids, siphons gas clouds, and grows crops in hydroponic arrays to provide the local economy with a reliable source of basic resources.
+
+While plundering the depths of space is a fairly efficient way to obtain material, it scales poorly compared to more traditional industries supplied with vast quantities of manpower.",2020
+loa_asteroid_orbitalstation,Orbital Station - Society,50,90,,3,,loa_asteroid_battlestation,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:loa_arsstation_core_1_variant,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"A makeshift space station built into an asteroid, featuring heavy armor and medium firepower.
+
+Must be reduced before invasions or bombardment can be attempted.",2010
+loa_asteroid_battlestation,Battlestation - Society,100,120,,4,loa_asteroid_orbitalstation,loa_asteroid_starfortress,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:loa_arsstation_core_2_variant,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"A makeshift space station built into an asteroid, featuring heavy armor, upgraded firepower, and a seeded network of trapped asteroids.
+
+Must be reduced before invasions or bombardment can be attempted.",2010
+loa_asteroid_starfortress,Star Fortress - Society,200,180,,5,loa_asteroid_battlestation,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:loa_arsstation_core_3_variant,
+fleetName:Star Fortress,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"A makeshift space station built into an asteroid, featuring heavy armor and firepower, a seeded network of trapped asteroids, and a compliment of Regolith class drones.
+
+Must be reduced before invasions or bombardment can be attempted.",2010

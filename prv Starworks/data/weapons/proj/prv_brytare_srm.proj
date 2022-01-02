@@ -1,0 +1,42 @@
+{
+	"id":"prv_brytare_srm",
+	"specClass":"missile",
+	#"missileType":"ROCKET",
+	"missileType":"MISSILE_TWO_STAGE_SECOND_UNGUIDED",
+	"sprite":"graphics/prv/missiles/prv_missile_brytare.png",
+	"size":[10,20],	
+	"center":[5,10],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,120,60,235],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":100, # purely visual
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{"turnAcc":1080,
+				  "turnRate":540,
+				  "acc":400,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-5, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,120,60,255],
+						"glowSizeMult":0.75,
+						"contrailDuration":.5,
+						"contrailWidthMult":2,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":30.0,
+				    "angle":180.0}]
+}
+
+			

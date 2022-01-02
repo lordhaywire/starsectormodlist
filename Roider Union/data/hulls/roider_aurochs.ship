@@ -1,0 +1,145 @@
+{
+  "hullName": "Aurochs",
+  "hullId": "roider_aurochs",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/roider_aurochs.png",
+  "style": "ROIDER_HULL",
+  "height": 149,
+  "width": 94,
+  "center": [47, 73],
+  "collisionRadius": 120,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 110,
+  "viewOffset": 0,
+  "builtInMods": [
+    "roider_midas1"
+  ],
+  "weaponSlots": [
+    {
+      "id": "EMP",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [36, 29]
+    },
+    {
+      "id": "PROW ARMOR",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [67, -0]
+    },
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 0,
+      "locations": [58, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [66, -24]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [-10, 37]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [-10, -37]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 180,
+      "locations": [-33, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-70, 24],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, 15],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-72, 6],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-72, -6],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71, -15],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-70, -24],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    64, -36,
+    74, -0,
+    65, 34,
+    37, 45,
+    -48, 35,
+    -52, 29,
+    -67, 27,
+    -67, -27,
+    -52, -29,
+    -48, -35,
+    49, -43
+  ]
+}

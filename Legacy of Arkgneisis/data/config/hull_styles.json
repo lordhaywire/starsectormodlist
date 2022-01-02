@@ -1,0 +1,178 @@
+{
+	# The following hull style ids are reserved and can not be used:
+	# "sounds", "DEFAULT", "FIGHTER", "FRIGATE", "DESTROYER", "CRUISER", "CAPITAL_SHIP"
+	
+		"ARKGNEISIS_LOW":{
+		"hyperspaceJitterColor":[100,165,255,200],
+		"baseCampaignExplosionColor":[225,165,50,255],
+		"baseCombatExplosionColor":[225,165,50,255],
+		"fighterRepairFlickerColor":[255,200,0,255],
+		"fighterChipIconColor":[200,165,50,255],
+		"weaponDisabledExplosionColor":[100,165,255,255],
+		"shieldRingColor":[250,255,255,255],
+		"shieldInnerColor":[255,100,50,75],
+		"fluxVentCoreColor":[250,200,255,155],
+		"fluxVentFringeColor":[200,50,255,255],
+		"engineLoopSet":"loa_engine_loop_lowtech", 					# id of entry in sounds.json
+		"engineAccelerateSet":"loa_engine_low_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"loa_shield_low_burnout_loop",		# id of entry in sounds.json
+		"fluxLoopSet":"loa_low_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"loa_low_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"loa_shield_low_burnout",	# id of entry in sounds.json
+		"shieldLowerSet":"loa_shield_low_lower",		# id of entry in sounds.json
+		"shieldRaiseSet":"loa_shield_low_raise",		# id of entry in sounds.json
+		"explosionShipSet":"loa_explosion_low",			# id of entry in sounds.json
+		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
+		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
+		
+		#"colorShiftCovers":true,
+		#"coversColorShiftAmount":0,  # 0 to 1
+		#"coversMatchShipBrightness":true,
+		#"slotCoverSmallTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_small.png",
+		#"slotCoverSmallHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_small.png",
+		#"slotCoverMediumTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_medium.png",
+		#"slotCoverMediumHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_medium.png",
+		#"slotCoverLargeTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_large.png",
+		#"slotCoverLargeHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_large.png",
+		
+		"dHullOverlayLight":"graphics/damage/dmod_overlay_lowtech_light.png",
+		"dHullOverlayMedium":"graphics/damage/dmod_overlay_lowtech_medium.png",
+		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_lowtech_heavy.png",
+	},
+	
+	"ARKGNEISIS_MID":{
+		"hyperspaceJitterColor":[100,165,255,200],
+		"baseCampaignExplosionColor":[100,165,255,255],
+		"baseCombatExplosionColor":[100,165,255,255],
+		"fighterRepairFlickerColor":[100,165,255,255],
+		"fighterChipIconColor":[100,165,255,255],
+		"weaponDisabledExplosionColor":[100,165,255,255],
+		"shieldRingColor":[250,255,255,255],
+		"shieldInnerColor":[150,50,255,75],
+		"fluxVentCoreColor":[250,200,255,155],
+		"fluxVentFringeColor":[200,50,255,255],
+		"engineLoopSet":"loa_engine_loop_midtech", 				# id of entry in sounds.json
+		"engineAccelerateSet":"loa_engine_mid_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"loa_shield_mid_burnout_loop",				# id of entry in sounds.json
+		"fluxLoopSet":"loa_mid_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"loa_mid_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"loa_shield_mid_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"loa_shield_mid_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"loa_shield_mid_raise",				# id of entry in sounds.json
+		"explosionShipSet":"loa_explosion_mid",					# id of entry in sounds.json
+		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
+		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
+		
+		#"colorShiftCovers":true,
+		#"coversColorShiftAmount":0,  # 0 to 1
+		#"coversMatchShipBrightness":true,
+		#"slotCoverSmallTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_small.png",
+		#"slotCoverSmallHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_small.png",
+		#"slotCoverMediumTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_medium.png",
+		#"slotCoverMediumHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_medium.png",
+		#"slotCoverLargeTurret":"graphics/arkleg/weapons/covers/al_cover_mid_turret_large.png",
+		#"slotCoverLargeHardpoint":"graphics/arkleg/weapons/covers/al_cover_mid_hardpoint_large.png",
+		
+		"dHullOverlayLight":"graphics/damage/dmod_overlay_midline_light.png",
+		"dHullOverlayMedium":"graphics/damage/dmod_overlay_midline_medium.png",
+		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_midline_heavy.png",
+	},
+	
+	"ARKGNEISIS_HIGH":{
+		"hyperspaceJitterColor":[100,165,255,200],
+		"baseCampaignExplosionColor":[100,165,255,255],
+		"baseCombatExplosionColor":[100,165,255,255],
+		"fighterRepairFlickerColor":[100,165,255,255],
+		"fighterChipIconColor":[100,165,255,255],
+		"weaponDisabledExplosionColor":[100,165,255,255],
+		"shieldRingColor":[255,255,255,255],
+		"shieldInnerColor":[100,125,255,150],
+		"fluxVentCoreColor":[0,150,255,55],
+		"fluxVentFringeColor":[25,75,255,255],
+		"engineLoopSet":"loa_engine_loop_hightech", 			# id of entry in sounds.json
+		"engineAccelerateSet":"loa_engine_high_accelerate",		# id of entry in sounds.json
+		"empLoopSet":"loa_shield_high_burnout_loop",			# id of entry in sounds.json
+		"fluxLoopSet":"loa_high_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"loa_high_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"loa_shield_high_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"loa_shield_high_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"loa_shield_high_raise",				# id of entry in sounds.json
+		"explosionShipSet":"loa_explosion_high",				# id of entry in sounds.json
+		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
+		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
+		
+		#"colorShiftCovers":true,
+		"coversColorShiftAmount":0,  # 0 to 1
+		"coversMatchShipBrightness":true,
+		"slotCoverSmallTurret":"graphics/arkleg/weapons/covers/loa_smallcover_high.png",
+		"slotCoverSmallHardpoint":"graphics/arkleg/weapons/covers/loa_smallcover_high.png",
+		"slotCoverMediumTurret":"graphics/arkleg/weapons/covers/loa_medcover_high.png",
+		"slotCoverMediumHardpoint":"graphics/arkleg/weapons/covers/loa_medcover_high.png",
+		"slotCoverLargeTurret":"graphics/arkleg/weapons/covers/loa_smallcover_high.png",
+		"slotCoverLargeHardpoint":"graphics/arkleg/weapons/covers/loa_smallcover_high.png",
+		
+		"dHullOverlayLight":"graphics/damage/dmod_overlay_hightech_light.png",
+		"dHullOverlayMedium":"graphics/damage/dmod_overlay_hightech_medium.png",
+		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_hightech_heavy.png",
+	},
+
+	"ANARGAIA_MODULE":{
+		"hyperspaceJitterColor":[255,125,45,200],
+		"baseCampaignExplosionColor":[255,125,25,255],
+		"baseCombatExplosionColor":[255,125,25,255],
+		"fighterRepairFlickerColor":[255,125,25,255],
+		"fighterChipIconColor":[255,200,150,255],
+		"weaponDisabledExplosionColor":[255,125,25,255],
+		"shieldRingColor":[255,255,255,255],
+		"shieldInnerColor":[255,125,125,75],
+		"fluxVentCoreColor":[255,255,255,255],
+		"fluxVentFringeColor":[125,0,155,255],
+		"engineLoopSet":"loa_anarg_engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"loa_anarg_engine_boost",		# id of entry in sounds.json
+		"empLoopSet":"loa_anarg_shield_burnout_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"loa_anarg_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"loa_anarg_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"loa_anarg_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"loa_anarg_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"loa_anarg_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"explosion_ship",			# id of entry in sounds.json
+		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
+		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
+
+		"dHullOverlayLight":"graphics/damage/dmod_overlay_lowtech_light.png",
+		"dHullOverlayMedium":"graphics/damage/dmod_overlay_lowtech_medium.png",
+		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_lowtech_heavy.png",
+	},
+	
+		"ANARGAIA":{
+		"hyperspaceJitterColor":[255,125,45,200],
+		"baseCampaignExplosionColor":[255,125,25,255],
+		"baseCombatExplosionColor":[255,125,25,255],
+		"fighterRepairFlickerColor":[255,125,25,255],
+		"fighterChipIconColor":[255,200,150,255],
+		"weaponDisabledExplosionColor":[255,125,25,255],
+		"shieldRingColor":[255,255,255,255],
+		"shieldInnerColor":[255,125,125,75],
+		"fluxVentCoreColor":[255,255,255,255],
+		"fluxVentFringeColor":[125,0,155,255],
+		"engineLoopSet":"loa_anarg_engine_loop", 					# id of entry in sounds.json
+		"engineAccelerateSet":"loa_anarg_engine_boost",		# id of entry in sounds.json
+		"empLoopSet":"loa_anarg_shield_burnout_loop",						# id of entry in sounds.json
+		"fluxLoopSet":"loa_anarg_flux_loop",						# id of entry in sounds.json
+		"ventFluxSet":"loa_anarg_flux_vent",						# id of entry in sounds.json
+		"shieldBurnoutSet":"loa_anarg_shield_burnout",			# id of entry in sounds.json
+		"shieldLowerSet":"loa_anarg_shield_lower",				# id of entry in sounds.json
+		"shieldRaiseSet":"loa_anarg_shield_raise",				# id of entry in sounds.json
+		"explosionShipSet":"loa_anarg_explosion",			# id of entry in sounds.json
+		"damageDecalSheet":"graphics/damage/damage_decal_sheet_base.png",
+		"damageDecalGlowSheet":"graphics/damage/damage_decal_sheet_glow.png",
+
+		"dHullOverlayLight":"graphics/damage/dmod_overlay_lowtech_light.png",
+		"dHullOverlayMedium":"graphics/damage/dmod_overlay_lowtech_medium.png",
+		"dHullOverlayHeavy":"graphics/damage/dmod_overlay_lowtech_heavy.png",
+	},
+	
+}
+
+
+

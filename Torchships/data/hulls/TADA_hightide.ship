@@ -1,0 +1,281 @@
+{
+  "bounds": [
+    133.5,
+    30.5,
+    125.5,
+    28.5,
+    117.5,
+    38.5,
+    -32.5,
+    42.5,
+    -55.5,
+    34.5,
+    -66.5,
+    50.5,
+    -95.5,
+    50.5,
+    -102.5,
+    32.5,
+    -119.5,
+    29.5,
+    -119.5,
+    -29.5,
+    -102.5,
+    -32.5,
+    -95.5,
+    -50.5,
+    -66.5,
+    -50.5,
+    -55.5,
+    -34.5,
+    -32.5,
+    -42.5,
+    117.5,
+    -38.5,
+    124.5,
+    -28.5,
+    133.5,
+    -29.5,
+    150,
+    -0
+  ],
+  "builtInMods": [
+    "civgrade"
+  ],
+  "builtInWeapons": {
+    "WS0001": "TADA_pilumWaveL",
+    "WS0002": "TADA_pilumWaveR",
+    "WS0003": "TADA_pilumWaveL",
+    "WS0004": "TADA_pilumWaveR"
+  },
+  "builtInWings": [],
+  "center": [
+    53,
+    125
+  ],
+  "collisionRadius": 164.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 21,
+      "length": 46.5,
+      "location": [
+        -124,
+        19
+      ],
+      "style": "MIDLINE",
+      "width": 21
+    },
+    {
+      "angle": -180,
+      "contrailSize": 21,
+      "length": 46.5,
+      "location": [
+        -124,
+        -19
+      ],
+      "style": "MIDLINE",
+      "width": 21
+    },
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 77,
+      "location": [
+        -124,
+        -0
+      ],
+      "style": "MIDLINE",
+      "width": 24
+    }
+  ],
+  "height": 278,
+  "hullId": "TADA_hightide",
+  "hullName": "High-tide",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    14,
+    0
+  ],
+  "shieldRadius": 148,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_hightide.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        26,
+        0.5,
+        41,
+        -0,
+        33.5,
+        -5,
+        33.5,
+        4.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        74.5,
+        32
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        74.5,
+        -32
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        9.5,
+        38
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        9.5,
+        -38
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        100,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 45,
+      "arc": 205,
+      "id": "WS0006",
+      "locations": [
+        130,
+        19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 205,
+      "id": "WS0007",
+      "locations": [
+        130,
+        -19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 135,
+      "arc": 205,
+      "id": "WS0008",
+      "locations": [
+        -69,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -135,
+      "arc": 205,
+      "id": "WS0009",
+      "locations": [
+        -69,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        120.5,
+        31.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -45,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        120.5,
+        -31.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        -93,
+        47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        -93,
+        -47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 106
+}

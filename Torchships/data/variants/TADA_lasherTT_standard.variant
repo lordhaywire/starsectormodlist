@@ -1,0 +1,30 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_lasherTT",
+    "hullMods": [
+        "magazines",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_lasherTT_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS_002": "ionpulser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS_001": "pulselaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "pdburst"}
+        }
+    ]
+}

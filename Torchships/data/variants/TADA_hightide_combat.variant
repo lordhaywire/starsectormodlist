@@ -1,0 +1,39 @@
+{
+    "displayName": "Combat",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "TADA_hightide",
+    "hullMods": ["frontshield"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_hightide_combat",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "TADA_pilumWaveL",
+                "WS0002": "TADA_pilumWaveR",
+                "WS0003": "TADA_pilumWaveL",
+                "WS0004": "TADA_pilumWaveR"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "hveldriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan",
+                "WS0009": "vulcan"
+            }
+        }
+    ],
+    "wings": ["TADA_firespitter_wing"]
+}

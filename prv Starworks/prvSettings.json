@@ -1,0 +1,7 @@
+{
+	"enableAgni":true,			# Enables the Agni system theme for sector generation. Without this no Agni will spawn.
+	"enableDebrisBelts":true,		# Enables random generation of the Debris Belt terrain.
+	"enableRaiders":true,			# If false the Rust Belt will not exhibit raiding behavior when used in combination with Vayras Mod.
+	"enableSyndicateGrowth":true,		# Enables War Syndicate industry spread.
+	"enableDoctrineSwitching":true	# Enables the prv to periodically update its fleet doctrine.
+}

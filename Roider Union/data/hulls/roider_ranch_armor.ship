@@ -1,0 +1,35 @@
+{
+  "hullName": "Ranch Armor Module",
+  "hullId": "roider_ranch_armor",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/roider_ranch_prow.png",
+  "style": "ROIDER_HULL",
+  "height": 80,
+  "width": 126,
+  "center": [63, 40],
+  "collisionRadius": 80,
+  "shieldCenter": [-10, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "roider_midas_armor",
+    "reduced_explosion",
+    "never_detaches"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -38, -60,
+    6, -60,
+    16, -41,
+    35, -26,
+    37, -19,
+    23, -15,
+    23, 15,
+    37, 19,
+    35, 26,
+    16, 41,
+    6, 60,
+    -38, 60
+  ]
+}

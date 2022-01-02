@@ -1,0 +1,59 @@
+{
+  "variantId": "prv_middag_rare",
+  "hullId": "prv_middag",
+  "displayName": "Advanced",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavymauler",
+        "WS0004": "heavymauler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "prv_jursla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0012": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_pskd",
+        "WS0002": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

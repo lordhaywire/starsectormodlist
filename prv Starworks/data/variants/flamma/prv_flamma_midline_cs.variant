@@ -1,0 +1,43 @@
+{
+  "displayName": "Close Support",
+  "fluxCapacitors": 9,
+  "fluxVents": 10,
+  "hullId": "prv_flamma_midline",
+  "hullMods": [
+    "turretgyros",
+    "frontemitter"
+  ],
+  "quality": 1,
+  "variantId": "prv_flamma_midline_cs",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0004": "lightag",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0003": "lightdualmg",
+      }
+    }
+  ]
+}

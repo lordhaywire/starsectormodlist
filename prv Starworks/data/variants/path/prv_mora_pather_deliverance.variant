@@ -1,0 +1,53 @@
+{
+  "displayName": "Deliverance",
+  "fluxCapacitors": 0,
+  "fluxVents": 14,
+  "hullId": "prv_mora_pather",
+  "hullMods": [
+    "shield_shunt",
+    "heavyarmor",
+    "armoredweapons"
+  ],
+  "quality": 0.25,
+  "variantId": "prv_mora_pather_deliverance",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "lightdualac",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "typhoon",
+        "WS 004": "typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 012": "lightag",
+        "WS 013": "lightag",
+        "WS 005": "lightag",
+        "WS 007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "lightmg",
+        "WS 011": "lightmg"
+      }
+    }
+  ],
+  "wings": [
+	  "prv_broadsword_pather_wing",
+	  "prv_talon_pather_wing",
+	  "prv_talon_pather_wing",
+  ],
+}

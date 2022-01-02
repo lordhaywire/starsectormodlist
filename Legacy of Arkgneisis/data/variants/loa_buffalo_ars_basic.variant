@@ -1,0 +1,14 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 8,
+    "fluxVents": 6,
+    "hullId": "loa_buffalo_ars",
+    "hullMods": ["auxiliarythrusters"],
+    "permaMods": [],
+    "variantId": "loa_buffalo_ars_basic",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {"WS 001": "vulcan"}
+    }]
+}

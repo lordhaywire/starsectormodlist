@@ -1,0 +1,49 @@
+{
+  "variantId": "prv_sinne_missile",
+  "hullId": "prv_sinne",
+  "displayName": "Missile",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "prv_missile_plating",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "prv_sidensvans",
+        "WS0008": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irpulse",
+        "WS0004": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

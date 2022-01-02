@@ -1,0 +1,17 @@
+{
+	"baseHullId":"enforcer",
+	"skinHullId":"enforcer_luddic",
+	"hullName":"Enforcer (LC)",
+	"descriptionId":"enforcer",
+	"descriptionPrefix":"This vessel has been refitted with the sanction of the Luddic Church. Changes are largely cosmetic, however some systems have been replaced with less-heretical versions.",
+	"tags":["LC_bp"],
+	"tech":"Luddic Church",
+	"spriteName":"graphics/ships/enforcer/enforcer_luddic.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	#"builtInMods":[],
+	"builtInWeapons":{
+    },
+}

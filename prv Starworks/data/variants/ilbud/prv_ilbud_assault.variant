@@ -1,0 +1,39 @@
+{
+  "variantId": "prv_ilbud_assault",
+  "hullId": "prv_ilbud",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 14,
+  "fluxVents": 10,
+  "quality": 0.25,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "typhoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_sidensvans",
+        "WS0006": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyblaster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

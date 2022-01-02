@@ -1,0 +1,33 @@
+{
+  "variantId": "loamt_fox_basic",
+  "hullId": "loamt_fox",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "extendedshieldemitter",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "al_chemospray",
+        "WS0002": "al_chemospray"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightdualac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

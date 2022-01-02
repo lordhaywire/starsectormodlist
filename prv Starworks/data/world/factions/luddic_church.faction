@@ -1,0 +1,37 @@
+{
+	"hullFrequency":{
+		"hulls":{
+			"prv_aska_lc":0.33,
+		},
+	},
+	"knownShips":{
+		"hulls":[
+			"prv_aska_lc",
+			"prv_tiger_lc",
+			"prv_aska_lc",
+		],
+	},
+	"shipsWhenImporting":{
+		"hulls":[
+			"prv_aska_lc",
+			"prv_tiger_lc",
+			"prv_aska_lc",
+		],
+	},
+	"knownWeapons":{
+		"tags":[
+			"prv_lp_bp",
+		],
+		"weapons":[
+			"prv_lightthumper",
+			"prv_lighttripleac",
+		]
+	},
+	"knownFighters":{
+		"tags":["prv_lp_bp"],
+	},
+	
+	"custom":{
+		"syndicateName": "Societas Necessarius",
+	}
+}

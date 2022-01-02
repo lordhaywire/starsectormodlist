@@ -1,0 +1,38 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "TADA_hightide_pirate",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_hightide_pirate_outdated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "TADA_pilumWaveL",
+                "WS0002": "TADA_pilumWaveR",
+                "WS0003": "TADA_pilumWaveL",
+                "WS0004": "TADA_pilumWaveR"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "shredder"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "lightmg",
+                "WS0007": "lightmg",
+                "WS0008": "lightmg",
+                "WS0009": "lightmg"
+            }
+        }
+    ]
+}

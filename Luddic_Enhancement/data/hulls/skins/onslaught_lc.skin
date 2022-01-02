@@ -1,0 +1,17 @@
+{
+	"baseHullId":"onslaught",
+	"skinHullId":"onslaught_lc",
+	"hullName":"Onslaught (LC)",
+	"descriptionId":"onslaught",
+	"descriptionPrefix":"This vessel has been refitted with the sanction of the Luddic Church. Changes are largely cosmetic, however some systems have been replaced with less-heretical versions.",
+	"tags":["rare_bp"],
+	"tech":"Luddic Church",
+	"spriteName":"graphics/ships/onslaught/onslaught_lc.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":[],
+	"builtInWeapons":{
+     },
+}

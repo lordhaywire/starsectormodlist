@@ -1,0 +1,38 @@
+{
+  "displayName": "Auxiliary-B",
+  "fluxCapacitors": 0,
+  "fluxVents": 9,
+  "goalVariant": false,
+  "hullId": "prv_condor",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_condor_aux_b",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_pskd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "pilum"
+      }
+    }
+  ],
+  "wings": [
+    "prv_jammer_wing",
+    "prv_missljud_wing"
+  ]
+}

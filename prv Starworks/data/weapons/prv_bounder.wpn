@@ -1,0 +1,66 @@
+{
+  "id": "prv_bounder",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_bounder_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 750,
+  "turretSprite": "graphics/prv/weapons/prv_bounder_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_bounder_turret_glow.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_bounder_turret_recoil.png",
+  "turretUnderSprite": "graphics/prv/weapons/prv_bounder_turret_under.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_bounder_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_bounder_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_bounder_hardpoint_recoil.png",
+  "hardpointUnderSprite": "graphics/prv/weapons/prv_akers_nova_hardpoint_base.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    255,
+    128,
+    0,
+    196
+  ],
+  "visualRecoil": 9,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    24.5,
+    1.5,
+    24.5,
+    -1.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    27,
+    -1.5,
+    27,
+    1.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 24,
+    "spread": 5,
+    "particleSizeMin": 7,
+    "particleSizeRange": 16,
+    "particleDuration": 0.45,
+    "particleCount": 14,
+    "particleColor": [
+      255,
+      120,
+      105,
+      250
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_bounder_fire"
+}

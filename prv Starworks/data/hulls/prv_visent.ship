@@ -1,0 +1,139 @@
+{
+  "bounds": [
+    -73.5,
+    17.5,
+    -39,
+    34,
+    -35,
+    50,
+    -22,
+    50,
+    -22,
+    41,
+    36.5,
+    40,
+    75,
+    -0,
+    36.5,
+    -40,
+    -4.5,
+    -41.5,
+    -11,
+    -56.5,
+    -34,
+    -50.5,
+    -46,
+    -26,
+    -73.5,
+    -19.5
+  ],
+  "builtInMods": [
+    "civgrade",
+    "rugged"
+  ],
+  "builtInWings": [],
+  "center": [
+    58,
+    77
+  ],
+  "collisionRadius": 100.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 54,
+      "location": [
+        -40.5,
+        38.5
+      ],
+      "style": "PRV_LOW",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 54,
+      "location": [
+        -40.5,
+        -38.5
+      ],
+      "style": "PRV_LOW",
+      "width": 15
+    }
+  ],
+  "height": 154,
+  "hullId": "prv_visent",
+  "hullName": "Visent",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 99,
+  "spriteName": "graphics/prv/ships/prv_visent.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        43,
+        -28
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        43,
+        28
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 120,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        20,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS0004",
+      "locations": [
+        -13,
+        -47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 240,
+      "id": "WS0005",
+      "locations": [
+        68,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 116
+}

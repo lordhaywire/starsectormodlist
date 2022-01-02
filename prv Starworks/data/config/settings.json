@@ -1,0 +1,55 @@
+{
+	### Blueprint colors ###
+	"designTypeColors":{
+		"prv Starworks":[102,255,153,255],
+		"Rust Belt":[189,66,0,255],
+		"Detached Agni Organ":[196,0,32,255],
+		"Agni":[196,0,32,255],
+		"Lion's Guard":[160,0,95,255],
+	},
+	### Graphics ###
+	"graphics":{
+		"blueprint_packages":{
+			"prv_stjarngard_package":"graphics/prv/icons/cargo/prv_stjarngard_bp.png",
+			"prv_hel_package":"graphics/prv/icons/cargo/prv_hel_bp.png",
+			"prv_kratul_package":"graphics/prv/icons/cargo/prv_kratul_bp.png",
+			"prv_midline_package":"graphics/prv/icons/cargo/prv_export_bp.png",
+			"prv_aux_package":"graphics/prv/icons/cargo/prv_aux_bp.png",
+			"prv_pirate_package":"graphics/prv/icons/cargo/prv_pirate_bp.png",
+			"prv_rb_package":"graphics/prv/icons/cargo/prv_rb_bp.png",
+			"prv_lp_package":"graphics/prv/icons/cargo/prv_lp_bp.png",
+			
+			"prv_rare_package_gnejserhead":"graphics/prv/icons/cargo/prv_rare_bp_gnejserhead.png",
+		},
+		"status":{
+			"prv_agni_web": "graphics/prv/icons/status/prv_agni_web.png",
+			"prv_agni_cocoon":"graphics/prv/icons/hullsys/prv_agni_cocoon.png",
+		},
+		"industry":{
+			"prv_rb_pirate_3_generic": "graphics/prv/icons/industry/prv_war_syndicate_hq_generic.png",
+		},
+		"misc":{
+			"prv_intel_rb_raids":"graphics/prv/icons/intel/pirate_station_cropped.png",
+			"prv_rings_debris0":"graphics/prv/planets/prv_rings_debris0.png",
+		},
+		"planets":{
+			#"prv_utbo":"graphics/prv/planets/planet_utbo.png",
+			"prv_strand":"graphics/prv/planets/prv_planet_strand.png",
+		},
+		"fx":{
+			"prv_beam_ljungeld_core":"graphics/prv/fx/prv_beam_ljungeld_core.png",
+			"prv_beam_ljungeld_fringe":"graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+			"prv_diamond_beam_core_cut":"graphics/prv/fx/prv_diamond_beam_core_cut.png",
+			"prv_karbid_saw":"graphics/prv/fx/prv_karbid_saw.png",
+			"prv_overlay_spatterfire":"graphics/prv/fx/prv_overlay_spatterfire.png",
+			"prv_overlay_diszone":"graphics/prv/fx/prv_overlay_diszone.png",
+			"prv_agni_tooth":"graphics/prv/missiles/prv_shell_agni_tooth.png",
+			"prv_agni_web":"graphics/prv/fx/prv_agni_web_fx_small.png",
+		},
+	},
+	### Plugins
+	#"plugins":{
+	#	"prv_lpk_EveryFrameCombatPlugin":"data.scripts.weapons.plugins.prvLPKEveryFrameCombatPlugin",
+	#	"prv_EveryFrameCombatPlugin":"scripts.weapons.plugins.prvEveryFrameCombatPlugin",
+	#},	
+}

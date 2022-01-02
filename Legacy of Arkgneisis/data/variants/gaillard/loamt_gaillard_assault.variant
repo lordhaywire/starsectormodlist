@@ -1,0 +1,73 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 5,
+    "fluxVents": 50,
+    "hullId": "loamt_gaillard",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "loamt_floodedinjectors",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_gaillard_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "heavyneedler",
+                "WS0007": "heavyneedler",
+                "WS0008": "heavyneedler",
+                "WS0019": "heavyneedler",
+                "WS0020": "heavyneedler",
+                "WS0021": "heavyneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_plasmadriver",
+                "WS0013": "al_plasmadriver",
+                "WS0014": "loa_heavyionpike",
+                "WS0015": "loa_heavyionpike"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0016": "al_plasmadriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0022": "loa_needle",
+                "WS0023": "loa_needle",
+                "WS0024": "loa_needle",
+                "WS0025": "loa_needle",
+                "WS0026": "loa_needle",
+                "WS0027": "loa_needle",
+                "WS0028": "loa_needle",
+                "WS0029": "loa_needle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "vulcan",
+                "WS0003": "vulcan",
+                "WS0004": "loa_flashlight",
+                "WS0005": "loa_flashlight",
+                "WS0009": "vulcan",
+                "WS0010": "vulcan",
+                "WS0011": "vulcan",
+                "WS0012": "vulcan",
+                "WS0017": "loa_flashlight",
+                "WS0018": "loa_flashlight"
+            }
+        }
+    ]
+}

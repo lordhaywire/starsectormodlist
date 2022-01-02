@@ -1,0 +1,64 @@
+{
+    "displayName": "Super",
+    "fluxCapacitors": 7,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_herald",
+    "hullMods": [
+        "expanded_deck_crew",
+        "recovery_shuttles",
+        "ecm"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_herald_super",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "pilum"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "taclaser",
+                "WS0006": "taclaser",
+                "WS0007": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "railgun",
+                "WS0004": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "vulcan",
+                "WS0009": "pdburst",
+                "WS0010": "pdburst",
+                "WS0011": "pdburst",
+                "WS0012": "pdburst",
+                "WS0013": "vulcan",
+                "WS0014": "vulcan"
+            }
+        }
+    ],
+    "wings": [
+        "thunder_wing",
+        "perdition_wing",
+        "perdition_wing",
+        "perdition_wing",
+        "perdition_wing"
+    ]
+}

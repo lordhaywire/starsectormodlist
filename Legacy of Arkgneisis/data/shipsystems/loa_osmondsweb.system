@@ -1,0 +1,24 @@
+{
+	"id":"loa_osmondsweb",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.scripts.shipsystems.loa_osmondswebstats",
+
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":1200,
+		"threatAmount":7,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

@@ -1,0 +1,43 @@
+{
+  "variantId": "loamt_thatcher_basic",
+  "hullId": "loamt_thatcher",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "fluxbreakers",
+    "stabilizedshieldemitter",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_heavyionpike",
+        "WS0007": "loa_heavyionpike"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "loa_can_launcher",
+        "WS0010": "loa_can_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "loa_flashlight",
+        "WS0006": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

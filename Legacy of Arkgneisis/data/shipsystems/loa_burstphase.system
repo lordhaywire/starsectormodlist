@@ -1,0 +1,37 @@
+{
+	"id":"loa_burstphase",
+	"type":"PHASE_CLOAK",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_phasediveai",
+	"statsScript":"data.scripts.shipsystems.loa_burstphasestats",
+	"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":false,
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+	
+	
+	"effectColor1":[255,175,255,255],
+	"effectColor2":[255,0,255,150],
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"engineGlowColor":[0,0,0,0],
+	"engineGlowContrailColor":[0,0,0,0],
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+	
+	"shipAlpha":1, # handled in stats script, don't change
+
+	"useSound":"loa_burstphase_activate",
+	"deactivateSound":"loa_burstphase_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+}

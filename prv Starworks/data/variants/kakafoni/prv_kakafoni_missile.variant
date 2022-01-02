@@ -1,0 +1,62 @@
+{
+  "variantId": "prv_kakafoni_missile",
+  "hullId": "prv_kakafoni",
+  "displayName": "Missile",
+  "goalVariant": false,
+  "fluxCapacitors": 6,
+  "fluxVents": 25,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_heavyakers",
+        "WS0004": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightag",
+        "WS0006": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "heavyburst",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_jammer_wing",
+    "longbow_wing"
+  ]
+}

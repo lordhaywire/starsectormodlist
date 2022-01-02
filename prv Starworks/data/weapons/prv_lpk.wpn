@@ -1,0 +1,76 @@
+{
+  "id": "prv_lpk",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_lpk_shot",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "everyFrameEffect": "scripts.weapons.prv_lpk_ScriptEffect",
+  "turretSprite": "graphics/prv/weapons/prv_lpk_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_lpk_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    2,
+    8,
+    7,
+    6.5,
+    9,
+    2.5,
+    9,
+    -2.5,
+    7,
+    -6.5,
+    2,
+    -8
+  ],
+  "turretAngleOffsets": [
+    20,
+    30,
+    25,
+    -25,
+    -30,
+    -20
+  ],
+  "hardpointOffsets": [
+    4,
+    8,
+    9,
+    6.5,
+    11,
+    2.5,
+    11,
+    -2.5,
+    9,
+    -6.5,
+    4,
+    -8
+  ],
+  "hardpointAngleOffsets": [
+    20,
+    30,
+    25,
+    -25,
+    -30,
+    -20
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 7,
+    "spread": 9,
+    "particleSizeMin": 2,
+    "particleSizeRange": 6,
+    "particleDuration": 1,
+    "particleCount": 11,
+    "particleColor": [
+      51,
+      0,
+      153,
+      255
+    ]
+  },
+  "fireSoundTwo": "prv_lpk_fire",
+  "mountTypeOverride": "SYNERGY"
+}

@@ -1,0 +1,80 @@
+{
+	"id":"prv_kartesch_main_shot",
+	"specClass":"missile",
+	"missileType":"MIRV",
+	"sprite":"graphics/prv/missiles/prv_missile_kartesch_main.png",
+	"size":[10,22],	
+	"center":[5,11],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,125,80,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":120, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+					 "radius":120,
+					 "coreRadius":60, # full damage within core radius
+					 "collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+					 "collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+					 "particleSizeMin":3.0,
+					 "particleSizeRange":1.5,
+					 "particleDuration":1,
+					 "particleCount":150,
+					 "particleColor":[255,165,135,255]},
+	#"flameoutTime":2, # total time from flameout to full fadeout
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"armingTime":0.5,
+	"noEngineGlowTime":0, # time spent without the engine glow being rendered
+	"fadeTime":0.3, # fadeout duration					 
+	"engineSpec":{"turnAcc":1,
+				  "turnRate":1,
+				  "acc":1,
+				  "dec":1},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-10, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[225,100,70,128],
+						"glowSizeMult":1,
+						"contrailDuration":0.33,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":0.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.5, # how far away from engine it starts
+						"contrailColor":[255,165,30,105],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":10.0,
+				    "length":30.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"MIRV",
+					"splitRange":450,
+					"splitRangeRange":50,
+					"minTimeToSplit":0.5,
+					"canSplitEarly":true,
+					"splitSound":"heavy_mortar_fire",
+					"numShots":12,
+					"damage":60,
+					"emp":0,
+					"damageType":HIGH_EXPLOSIVE,
+					"hitpoints":30,
+					"evenSpread":true,
+					"arc":40,
+					"spreadInaccuracy":5,
+					"spreadSpeed":50,
+					"spreadSpeedRange":50,
+					"projectileRange":60, # only needed if not a missile
+					"projectileSpec":"prv_kartesch_1_shot",
+					"smokeSpec":{"particleSizeMin":20.0,
+								 "particleSizeRange":20.0,
+								 "cloudParticleCount":11,
+								 "cloudDuration":1.0,
+								 "cloudRadius":20.0,
+								 "blowbackParticleCount":0,
+								 "blowbackDuration":0,
+								 "blowbackLength":0,
+								 "blowbackSpread":0,
+								 "particleColor":[100,100,100,200]}
+					}
+}

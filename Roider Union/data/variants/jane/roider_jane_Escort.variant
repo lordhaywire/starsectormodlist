@@ -1,0 +1,26 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 16,
+    "fluxVents": 4,
+    "goalVariant": true,
+    "hullId": "roider_jane",
+    "hullMods": [
+        "pointdefenseai",
+        "escort_package"
+    ],
+    "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "roider_jane_Escort",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS 001": "lightac",
+            "WS 002": "lightac",
+            "WS 003": "lightac",
+            "WS 004": "lightac"
+        }
+    }],
+    "wings": []
+}

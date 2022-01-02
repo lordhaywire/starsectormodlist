@@ -1,0 +1,37 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 12,
+    "hullId": "loamtg_hawke",
+	"goalVariant": false,
+	"quality": 0.5,
+    "hullMods": ["safetyoverrides"],
+    "permaMods": [],
+    "variantId": "loamtg_hawke_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "chaingun",
+                "WS0002": "chaingun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "swarmer",
+                "WS0006": "swarmer",
+                "WS0007": "swarmer",
+                "WS0008": "swarmer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "lightneedler"}
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

@@ -1,0 +1,54 @@
+{
+  "variantId": "prv_skara_rare",
+  "hullId": "prv_skara",
+  "displayName": "Tuned-up",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_ljungeld_damaged"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_fusion_burster",
+        "WS0005": "prv_fusion_burster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_lighttripleac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

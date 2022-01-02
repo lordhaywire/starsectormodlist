@@ -1,0 +1,30 @@
+{
+  "variantId": "loa_arsstation_core_1_blank",
+  "hullId": "loa_arsstation_core",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0005": "loa_module_ars_support_blank"
+    },
+    {
+      "WS0001": "loa_module_ars_small_blank"
+    },
+    {
+      "WS0007": "loa_module_ars_big_blank"
+    },
+    {
+      "WS0002": "loa_module_ars_annex_blank"
+    }
+  ],
+  "wings": [
+    "ace_wing",
+    "ace_wing"
+  ]
+}

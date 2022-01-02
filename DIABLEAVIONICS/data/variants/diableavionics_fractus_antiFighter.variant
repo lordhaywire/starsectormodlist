@@ -1,0 +1,41 @@
+{
+    "displayName": "Anti-fighter",
+    "fluxCapacitors": 1,
+    "fluxVents": 20,
+    "hullId": "diableavionics_fractus",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "diableavionics_fractus_antiFighter",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "diableavionics_artassault",
+                "WS0004": "diableavionics_artassault"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "diableavionics_magicbox",
+                "WS0006": "diableavionics_magicbox"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "diableavionics_lazyhorn"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "diableavionics_ibis"}
+        }
+    ],
+    "wings": [
+        "diableavionics_arbitrator_wing",
+        "diableavionics_arbitrator_wing"
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_module_ars_big",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_module_ars_big_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hephag",
+                "WS0004": "tachyonlance",
+                "WS0015": "hephag",
+                "WS0020": "mjolnir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "al_pelletcannon",
+                "WS0003": "al_pelletcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "al_plasmadriver",
+                "WS0008": "al_bulldog",
+                "WS0009": "al_plasmadriver",
+                "WS0014": "al_pelletdriver",
+                "WS0016": "al_pelletdriver",
+                "WS0017": "al_pelletdriver",
+                "WS0018": "al_pelletdriver",
+                "WS0024": "al_bulldog",
+                "WS0025": "al_bulldog"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0021": "loa_ionpike",
+                "WS0022": "loa_ionpike",
+                "WS0023": "loa_ionpike"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "dualflak",
+                "WS0006": "dualflak",
+                "WS0010": "loa_er",
+                "WS0011": "loa_er",
+                "WS0012": "al_bongo",
+                "WS0013": "al_bongo",
+                "WS0019": "al_bongo",
+                "WS0026": "heavyburst"
+            }
+        }
+    ]
+}

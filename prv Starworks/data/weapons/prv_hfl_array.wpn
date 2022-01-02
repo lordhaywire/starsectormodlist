@@ -1,0 +1,52 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "prv_hfl_array_fire",
+  "glowColor": [
+    255,
+    192,
+    0,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_hfl_array_hardpoint_glow.png",
+  "hardpointOffsets": [
+    37,
+    0,
+    29,
+    -9,
+    29,
+    9
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_hfl_array_hardpoint.png",
+  "id": "prv_hfl_array",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_hfl_shot",
+  "renderAboveAllWeapons": 0,
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    -0,
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_hfl_array_turret_glow.png",
+  "turretOffsets": [
+    24,
+    0,
+    19,
+    10,
+    19,
+    -10
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_hfl_array_turret.png",
+  "type": "ENERGY"
+}

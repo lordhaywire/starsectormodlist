@@ -1,0 +1,54 @@
+{
+    "displayName": "Advanced",
+    "fluxCapacitors": 8,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall_XIV",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "TADA_gunwall_XIV_advanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "sabotpod",
+                "WS0018": "sabotpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "mjolnir",
+                "WS0008": "mjolnir",
+                "WS0009": "mjolnir",
+                "WS0010": "mjolnir"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0015": "dualflak",
+                "WS0016": "dualflak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "vulcan",
+                "WS0014": "vulcan",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["warthog_wing"]
+}

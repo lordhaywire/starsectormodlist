@@ -1,0 +1,54 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 15,
+  "fluxVents": 5,
+  "goalVariant": true,
+  "hullId": "filgap_nitassinan",
+  "hullMods": [
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_nitassinan_support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "filgap_saturation_launcher",
+        "WS0004": "filgap_saturation_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heatseeker",
+        "WS0006": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "flak",
+        "WS0002": "flak",
+        "WS0007": "lightmg",
+        "WS0008": "lightmg"
+      }
+    }
+  ],
+  "wings": []
+}

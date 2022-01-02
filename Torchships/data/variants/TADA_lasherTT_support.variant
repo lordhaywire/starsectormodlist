@@ -1,0 +1,30 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_lasherTT",
+    "hullMods": [
+        "advancedoptics",
+        "efficiency_overhaul"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_lasherTT_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS_001": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS_002": "gravitonbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "lrpdlaser"}
+        }
+    ]
+}

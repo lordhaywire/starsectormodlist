@@ -1,0 +1,63 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "prv_module_battery2",
+  "hullMods": [],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_module_battery2_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_ljungeld"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_kraka",
+        "WS0006": "prv_kraka"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_sidensvans_array",
+        "WS0002": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_siege_akers",
+        "WS0012": "railgun",
+        "WS0013": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyburst",
+        "WS0008": "prv_pskd",
+        "WS0009": "prv_pskd",
+        "WS0010": "prv_pskd",
+        "WS0011": "prv_pskd"
+      }
+    }
+  ],
+  "wings": [
+    "prv_missljud_wing",
+    "prv_ovasen_wing",
+    "prv_stilllhet_wing",
+    "prv_diskordant_wing"
+  ]
+}

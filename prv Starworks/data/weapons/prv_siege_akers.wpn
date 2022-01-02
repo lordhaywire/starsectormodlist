@@ -1,0 +1,68 @@
+{
+  "id": "prv_siege_akers",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_siege_akers_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/prv/weapons/prv_siege_akers_turret.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_siege_akers_turret_recoil.png",
+  "turretUnderSprite": "graphics/prv/weapons/prv_siege_akers_turret_under.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_siege_akers_hardpoint.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_siege_akers_hardpoint_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "visualRecoil": 12,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    46,
+    -3.5,
+    40,
+    9.5,
+    40,
+    -9.5,
+    46,
+    3.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    51,
+    3.5,
+    45,
+    -10.5,
+    45,
+    10.5,
+    51,
+    -3.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 24,
+    "spread": 2,
+    "particleSizeMin": 4,
+    "particleSizeRange": 16,
+    "particleDuration": 0.75,
+    "particleCount": 14,
+    "particleColor": [
+      180,
+      180,
+      255,
+      235
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_siege_akers_fire"
+}

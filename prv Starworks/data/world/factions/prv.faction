@@ -1,0 +1,456 @@
+{
+	id:"prv",
+	#"color":[102,255,212,255],
+	"color":[102,255,153,255],
+	#"color":[227,255,0,255],
+	"displayName":"prv",
+	"displayNameWithArticle":"the prv",
+	"displayNameLong":"prv Starworks",
+	"displayNameLongWithArticle":"prv Starworks",
+	"entityNamePrefix":"prv",
+	"personNamePrefix":"prv",
+	"personNamePrefixAOrAn":"a",
+	"displayNameIsOrAre":"are",
+	"logo":"graphics/prv/factions/prv_prv.png",
+	"crest":"graphics/prv/factions/prv_crest_prv.png",
+	"shipNamePrefix":"prv",
+	"shipNameSources":{
+		"NORSE":2,
+		"BEASTS":1,
+		"SPACE":1,
+		"GENERAL":1,
+		"MERCANTILE":2,
+		"PRV":7,
+		"PRV_MET":3,
+		"PRV_TEK":3,
+		"PRV_ICH":2,
+	},
+	#"description":"No description yet.",
+	"names":{
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"hightech_bp": 0.33,
+		},
+		"hulls":{
+			"prv_is":0.75,
+			#"prv_valljud":0.5,		#jesus christ stop spawning
+			"prv_eld":1.5,
+			"prv_brand":0.5,			#elite ship
+			"prv_flamma":1.5,
+			"prv_ballebo": 0.1,
+			"prv_sorl":1,
+			"tarsus":0,
+			"prv_tarsus":1,
+			"gemini":0,
+			"prv_gemini":1,
+			"condor":0,
+			"prv_condor":2,
+			"prv_gryning":0.075,
+			### phase
+			"prv_fasnod":1.5,
+			"shade":0.33,
+			"afflictor":0.33,
+			"harbinger":0.33,
+			### swarm
+			#"prv_ande":1.25,
+			#"prv_gast":0.10,
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
+		"hulls":[
+			"shade",
+			"afflictor",
+			"harbinger",
+		],
+	},
+	"knownShips":{
+		"tags":["prv_bp", "prv_adv_bp", "prv_cap_bp", "base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "independent"],
+		"hulls":[
+			#"atlas",		#blown up
+			"kite_original",
+			#"doom",
+			"afflictor",
+			#"prometheus",	#RIP
+			"omen",
+			"shade",
+			"tempest",
+			#"conquest",
+			"prv_conquest_ryak", #rare_bp
+			#"gryphon",
+			#"eagle",
+			"valkyrie",
+			"harbinger",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["prv_bp","prv_adv_bp","prv_cap_bp","prv_swarm_bp"],
+		"hulls":[
+			"prv_ballebo",
+			#"shade",		#aux variant added
+			#"afflictor",	#aux variant added
+			#"harbinger",	#aux variant added
+		],
+	},
+	"knownFighters":{
+		"tags":["prv_bp","prv_adv_bp"],
+		"fighters":[
+			"claw_wing",
+			"dagger_wing",
+			"longbow_wing",
+			"xyphos_wing",
+			"wasp_wing",
+		],
+	},
+#	"priorityFighters":{
+#		"tags":["prv_bp","prv_adv_bp"],
+#		"fighters":[
+#		],
+#	},
+	"knownWeapons":{
+		"tags":["prv_bp","prv_adv_bp"],
+		"weapons":[
+		#ballistic small
+			"lightmg",
+			"lightdualmg",
+			"lightac",
+			"lightag",
+			"lightmortar",
+			"railgun",
+		#ballistic medium
+			"arbalest",
+			#"chaingun",
+			"heavymauler",
+			#"hveldriver",
+		#ballistic large
+			#"hellbore",
+			#"hephag",
+			#"gauss",
+			"mjolnir",
+			"prv_spatterflamer",
+		#energy small
+			"mininglaser",
+			#"pdlaser",
+			"lrpdlaser",
+			"pdburst",
+			"amblaster",
+			"irpulse",
+			#"ioncannon",
+			#"taclaser",
+			"prv_fusion_burster",
+		#energy medium
+			"pulselaser",
+			"heavyblaster",
+			"heavyburst",
+			"phasebeam",
+			"ionpulser",
+			#"ionbeam",
+			#"gravitonbeam",
+		#energy large
+			#"hil",
+			#"plasma",
+			#"guardian",
+			"prv_vakt",
+			"autopulse",
+		#missile small
+			"sabot",
+			"atropos",
+			"atropos_single",
+			"reaper",
+		#missile medium
+			"typhoon",
+			"sabotpod",
+			"pilum",
+		#missile large
+			#"cyclone",
+			#"hurricane",
+		],
+	},
+#	"priorityWeapons":{
+#		"tags":["prv_bp","prv_adv_bp"],
+#		"weapons":[
+#			#"chaingun", #replaced by gravkan
+#			"irpulse",
+#			"pulselaser",
+#			#"ionpulser",
+#			#"ionbeam",
+#			#"pdburst",
+#			"heavyburst",
+#			"amblaster",
+#			#"gravitonbeam", #fräsare
+#		],
+#	},
+	"knownHullMods":{
+		"tags":["prv_bp","prv_adv_bp","base_bp","independent"],
+		"hullMods":[
+			### 0.95.1
+			"phase_anchor",
+			"adaptive_coils",
+			### older
+			"advancedshieldemitter", # accelerated
+			"turretgyros",
+			"armoredweapons",
+			"auxiliarythrusters",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter", # front conv
+			#"frontshield",  # makeshift
+			"hardened_subsystems",
+			"hardenedshieldemitter",
+			"heavyarmor",
+			"pointdefenseai",
+			"insulatedengine",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni conv
+			#"operations_center",
+			#"recovery_shuttles",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"solar_shielding",
+			"surveying_equipment",
+			"auxiliary_fuel_tanks",
+			"hiressensors",
+			"efficiency_overhaul",
+			"high_scatter_amp",
+			###
+			"prv_arcfault_insulator",
+			"prv_flickercore",
+			"prv_gravanchor",
+			"prv_missile_plating",
+			"prv_agiplasma",
+			#"prv_comimplants",
+		],
+	},
+	"factionDoctrine":{
+		"warships":3,
+		"carriers":2,
+		"phaseShips":2,
+		
+		"officerQuality":2,
+		"shipQuality":2,
+		"numShips":3,
+		
+		"shipSize":4,
+		
+		"aggression":4,
+		
+		"combatFreighterProbability":0.25,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.175,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.25,  	# as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.125,
+
+		"commanderSkillsShuffleProbability":1,
+		"commanderSkills":[
+			#"tactical_drills",
+			"coordinated_maneuvers",
+			"fighter_uplink",
+			"officer_training",
+			#"electronic_warfare",
+			"phase_corps",
+			"cybernetic_augmentation",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		#"organs",
+		"hand_weapons",
+		"ai_cores",	
+	],
+	"portraits":{
+		"standard_male":[
+			#prv
+			"graphics/prv/portraits/prv_m_1.png",
+			#custom
+			"graphics/portraits/portrait_corporate01.png",
+			"graphics/portraits/portrait_corporate03.png",
+			"graphics/portraits/portrait_corporate05.png",
+			"graphics/portraits/portrait_diktat01.png",
+			"graphics/portraits/portrait_diktat07.png",
+			"graphics/portraits/portrait_hegemony01.png",
+			"graphics/portraits/portrait_hegemony05.png",
+			"graphics/portraits/portrait_hegemony12.png",
+			"graphics/portraits/portrait_league06.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait23.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait31.png",
+			"graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
+			"graphics/portraits/portrait36.png",
+			"graphics/portraits/portrait38.png",
+			#end custom
+		],
+		"standard_female":[
+			#prv
+			"graphics/prv/portraits/prv_f_1.png",
+			#custom
+			"graphics/portraits/portrait_corporate02.png",
+			"graphics/portraits/portrait_corporate04.png",
+			"graphics/portraits/portrait_corporate07.png",
+			"graphics/portraits/portrait_diktat02.png",
+			"graphics/portraits/portrait_diktat08.png",
+			"graphics/portraits/portrait_hegemony03.png",
+			"graphics/portraits/portrait_hegemony04.png",
+			"graphics/portraits/portrait_hegemony10.png",
+			"graphics/portraits/portrait_league00.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait28.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
+			"graphics/portraits/portrait37.png",
+			"graphics/portraits/portrait39.png",
+			#end custom
+		],
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"spacer":10,
+			"aristo":3,
+		},
+		"MEDIUM":{
+			"official":10,
+			"business":10,
+			"aristo":5,
+		},
+		"HIGH":{
+			"business":5,
+			"faithful":5,
+			"aristo":10,
+		},
+	},	
+	"custom":{
+		"syndicateName": "CzU-Pariabyrån",
+		"allowsTransponderOffTrade":false,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":2,
+		"AICoreRepMult":1,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"caresAboutAtrocities":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":false,
+			"territorial":true,
+		},
+		#prv Doctrine Drift
+		"noDoctrineDrift": true,
+		####### Starship Legends support
+		"starshipLegendsConfig":{
+			"goodTraitFrequency":{
+				"peak_cr_time":3,
+				"repair":1,
+				"malfunction":3,
+				"mount_durability":1,
+				"engine_durability":3,
+				"hull_integrity":1,
+				"armor_strength":1,
+				"emp_resistance":3,
+				"engine_power":0.1,
+				"maneuverability":1,
+				"damage":3,
+				"weapon_stability":1,
+				"turret_rotation":2,
+				"range":0.25,
+				"fighter_damage":1,
+				"fighter_speed":2,
+				"fighter_durability":0,
+				"refit_time":4,
+				"overload_time":2,
+				"flux_capacity":0.33,
+				"flux_dissipation":1,
+				"vent_rate":1,
+				"shield_raise_rate":2,
+				"shield_stability":0.5,
+				"shield_strength":1,
+				"phase_cost":0.25,
+				"phase_cooldown":2,
+			},
+			"badTraitFrequency":{
+				"peak_cr_time":3,
+				"repair":1,
+				"malfunction":0.25,
+				"mount_durability":3,
+				"engine_durability":1,
+				"hull_integrity":2,
+				"armor_strength":1,
+				"emp_resistance":3,
+				"engine_power":3,
+				"maneuverability":1,
+				"damage":1,
+				"weapon_stability":3,
+				"turret_rotation":1,
+				"range":3,
+				"fighter_damage":0.5,
+				"fighter_speed":0.5,
+				"fighter_durability":3,
+				"refit_time":0.25,
+				"overload_time":2,
+				"flux_capacity":3,
+				"flux_dissipation":1,
+				"vent_rate":2,
+				"shield_raise_rate":3,
+				"shield_stability":1,
+				"shield_strength":1,
+				"cursed":5,
+				"phase_cost":2,
+				"phase_cooldown":0.25,
+			},
+		},
+		############ Starship Legends End
+	},
+	"fleetTypeNames":{
+		"trade":"Starworks Convoy",
+		"tradeLiner":"Starliner Convoy",
+		"tradeSmuggler":"Blockade Runner",
+		"smallTrader":"Distribution Group",
+		
+		"patrolSmall":"Picket",
+		"patrolMedium":"Combat Patrol",
+		"patrolLarge":"Battlefleet",
+		
+		"inspectionFleet":"Core Compliance Force",
+		"taskForce":"Taskforce",
+		
+		"foodReliefFleet":"Relief Convoy",
+		
+		"mercScout":"House Scout",
+		"mercBountyHunter":"House Assassin",
+		"mercPrivateer":"House Scout",
+		"mercPatrol":"House Patrol",
+		"mercArmada":"House Battlefleet",
+	},
+},	

@@ -1,0 +1,59 @@
+{
+  "displayName": "Armed",
+  "fluxCapacitors": 24,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "prv_bergslag",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "turretgyros"
+  ],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_bergslag_armed",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_belt_blaster",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hammerrack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_kartesch"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0005": "vulcan",
+        "WS0007": "vulcan",
+        "WS0009": "vulcan",
+        "WS0006": "lightag"
+      }
+    }
+  ],
+  "wings": [
+    "prv_grus_wing",
+    "gladius_wing"
+  ]
+}

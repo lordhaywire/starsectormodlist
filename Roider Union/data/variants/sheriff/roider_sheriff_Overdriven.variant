@@ -1,0 +1,35 @@
+{
+    "displayName": "Overdriven",
+    "fluxCapacitors": 10,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "roider_sheriff",
+    "hullMods": [
+        "safetyoverrides",
+        "frontemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "roider_sheriff_Overdriven",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightdualmg",
+                "WS 002": "lightdualmg",
+                "WS 005": "lightag",
+                "WS 006": "lightag"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 003": "hammer_single",
+                "WS 004": "hammer_single"
+            }
+        }
+    ],
+    "wings": []
+}

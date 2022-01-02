@@ -1,0 +1,87 @@
+{
+	"baseHullId":"prv_ballebo",
+	"skinHullId":"prv_ballebo_p",
+	"hullName":"Ballebo (P)",
+	"descriptionId":"prv_ballebo",
+	"descriptionPrefix":"This ship has been fitted with an especially unstable fuel injector. Additionally the entire front piece is covered in guns.",
+	#"tags":["prv_pirate_bp"],
+	#"tech":"Pirate (prv)",
+	"tech":"Pirate",
+	"restoreToBaseHull":false,
+	"addHints":[HIDE_IN_CODEX],
+	"ordnancePoints":95,
+	#"fleetPoints":9,
+	"baseValueMult":.85,
+	"spriteName":"graphics/prv/ships/rare/prv_ballebo_p.png",
+	"systemId":"prv_plasmamanjets_overtuned",
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WSML01":{
+		  "size": "SMALL",
+		  "mount": "HARDPOINT",
+		  "type": "BUILT_IN",
+	   },
+	   "WSML02":{
+		  "size": "SMALL",
+		  "mount": "HARDPOINT",
+		  "type": "BUILT_IN",
+	   },
+	   "WS0001":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0002":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0003":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0004":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0005":{
+		  "size": "MEDIUM",
+		  "type": "COMPOSITE",
+	   },
+	   "WS0006":{
+		  "size": "MEDIUM",
+		  "type": "COMPOSITE",
+	   },
+	   "WS0007":{
+		  "size": "SMALL",
+		  "type": "BUILT_IN",
+	   },
+	   "WS0008":{
+		  "type": "BALLISTIC",
+		  #"arc": "90",
+	   },
+    },
+	"builtInMods":[
+		#"degraded_engines",
+		#"faulty_grid",
+		"unstable_injector"],
+	"builtInWeapons":{
+	"WSML01": "lightac",
+	"WSML02": "lightac",
+	"WS0007": "prv_lighttripleac",
+	},
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+		"6":{"style":"LOW_TECH"},
+		"7":{"style":"LOW_TECH"},
+		"8":{"style":"LOW_TECH"},
+		"9":{"style":"LOW_TECH"},
+		"10":{"style":"LOW_TECH"},
+		"11":{"style":"LOW_TECH"},
+		#"12":{"style":"LOW_TECH"},
+		#"13":{"style":"LOW_TECH"},
+		#"14":{"style":"LOW_TECH"},
+	},    
+}

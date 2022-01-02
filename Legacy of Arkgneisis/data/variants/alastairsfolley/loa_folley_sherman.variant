@@ -1,0 +1,35 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 0,
+    "fluxVents": 8,
+    "hullId": "loamt_sherman",
+    "hullMods": [
+        "heavyarmor",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "loa_folley_sherman",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "al_pelletdriver",
+                "WS0009": "al_pelletdriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_rod",
+                "WS0002": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "loa_er"}
+        }
+    ]
+}

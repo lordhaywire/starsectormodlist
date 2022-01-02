@@ -1,0 +1,55 @@
+{
+  "variantId": "loamt_hawke_elite",
+  "hullId": "loamt_hawke",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "al_bulldog"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "loa_can_launcher",
+        "WS0006": "loa_can_launcher",
+        "WS0007": "loa_can_launcher",
+        "WS0008": "loa_can_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavyneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "al_lightplasmadriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

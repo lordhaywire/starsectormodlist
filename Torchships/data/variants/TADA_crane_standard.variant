@@ -1,0 +1,19 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 2,
+    "goalVariant": true,
+    "hullId": "TADA_crane",
+    "hullMods": [
+        "reinforcedhull",
+        "magazines"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_crane_standard",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {"WS0001": "heavyburst"}
+    }],
+    "wings": []
+}

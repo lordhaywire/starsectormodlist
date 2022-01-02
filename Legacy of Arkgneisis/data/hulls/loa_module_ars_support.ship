@@ -1,0 +1,208 @@
+{
+  "hullName": "Supplement Module",
+  "hullId": "loa_module_ars_support",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/arkleg/ships/station/ars/loa_module_support.png",
+  "style": "ANARGAIA",
+  "height": 156,
+  "width": 520,
+  "center": [260, 57],
+  "collisionRadius": 190.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 188,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -76,
+    1
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "chassis_storage",
+    "reduced_explosion",
+    "missile_reload"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0023",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [88, 36]
+    },
+    {
+      "id": "WS0024",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [88, -36]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [88, 12]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [88, -12]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [41, -120]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [41, 120]
+    },
+    {
+      "id": "WS0018",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [34, -154]
+    },
+    {
+      "id": "WS0020",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [34, 154]
+    },
+    {
+      "id": "WS0022",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -35,
+      "locations": [57, -93]
+    },
+    {
+      "id": "WS0025",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 35,
+      "locations": [57, 93]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -17,
+      "locations": [66, -16]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 17,
+      "locations": [66, 16]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -11.5,
+      "locations": [-2, -81]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 11.5,
+      "locations": [-2, 81]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": 25.5,
+      "locations": [-8, 135]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 145,
+      "angle": -25.5,
+      "locations": [-8, -135]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        15.5, -0,
+        15, 14,
+        15, 28,
+        15, 42,
+        15, -14,
+        15, -28,
+        15, -42
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -15, 57.5,
+    -45, 59.5,
+    -45, 147,
+    -16, 176.5,
+    33, 179,
+    51, 108.5,
+    69, 103,
+    73.5, 82,
+    97, 58,
+    97, -58,
+    73.5, -82,
+    69, -103,
+    51, -108.5,
+    33, -179,
+    -16, -176.5,
+    -45, -147,
+    -45, -59.5,
+    -15, -57.5
+  ]
+}

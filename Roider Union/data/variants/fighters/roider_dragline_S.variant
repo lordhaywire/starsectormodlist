@@ -1,0 +1,29 @@
+{
+	"quality":1,
+	"displayName":"Support Fighter",
+	"hullId":"roider_dragline",
+	"variantId":"roider_dragline_S",
+	"fluxVents":0,
+	"fluxCapacitors":0,
+	"mods":[], # array of strings
+	
+	# mode is either LINKED or ALTERNATING
+	# slot ids (WS ***) must match what's in the .ship file
+	"weaponGroups":[
+		{
+			"autofire": false,
+			"mode":"LINKED",
+			"weapons":{
+		 		"WS 001":"roider_annihilatorpod"
+			}
+		},
+		{
+			"autofire": false,
+			"mode":"LINKED",
+			"weapons":{
+				"WS 002":"roider_marksman_mini",
+				"WS 003":"roider_marksman_mini"
+		    }
+		}
+	],
+}

@@ -1,0 +1,59 @@
+{
+  "displayName": "Siege",
+  "fluxCapacitors": 15,
+  "fluxVents": 11,
+  "goalVariant": true,
+  "hullId": "filgap_cathar",
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_cathar_Siege",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "locust"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightdualac",
+        "WS0002": "lightdualac",
+        "WS0005": "heavymortar",
+        "WS0006": "heavymortar",
+        "WS0009": "lightdualac",
+        "WS0010": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0012": "pilum",
+        "WS0013": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan",
+        "WS0007": "dualflak",
+        "WS0008": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

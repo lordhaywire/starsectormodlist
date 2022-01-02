@@ -1,0 +1,15 @@
+{
+	"id":"prv_slag",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	"statsScript":"shipsystems.prv_slag",
+	
+	#"weaponGlowColor":[200,200,255,255],
+	"weaponGlowColor":[0,213,255,255],
+	"weaponTypes":[BALLISTIC],
+	
+	"useSound":"system_temporalshell",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	"loopSound":"system_high_energy_focus_loop",	
+	"outOfUsesSound":"gun_out_of_ammo",
+}

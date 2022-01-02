@@ -1,0 +1,16 @@
+{
+	"id":"prv_phasechainer",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"scripts.ai.systems.prv_phasechainer_ai",
+	"statsScript":"scripts.shipsystems.prv_phasechainer",
+
+	#"jitterColor":[191,100,191,75], #purple 5/5
+	#"jitterCopies":1,
+	#"jitterRange":8,
+	#"jitterRangeRadiusFraction":0,
+	
+	"useSound":"phase_cloak_collision",
+	#"loopSound":"system_temporalshell_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

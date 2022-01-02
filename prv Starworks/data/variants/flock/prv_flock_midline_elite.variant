@@ -1,0 +1,55 @@
+{
+  "displayName": "Elite",
+  "fluxCapacitors": 12,
+  "fluxVents": 25,
+  "goalVariant": false,
+  "hullId": "prv_flock_midline",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_flock_midline_elite",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "atropos",
+        "WS0004": "atropos"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "cyclone"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "heavyneedler",
+        "WS0002": "heavyneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "taclaser",
+        "WS0006": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

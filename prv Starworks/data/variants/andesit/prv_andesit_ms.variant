@@ -1,0 +1,73 @@
+{
+  "variantId": "prv_andesit_ms",
+  "hullId": "prv_andesit",
+  "displayName": "Missile Support",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 6,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "eccm",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "harpoon",
+        "WS0010": "harpoon",
+        "WS0011": "harpoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "locust"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hurricane"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "pilum",
+        "WS0004": "pilum",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0012": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_kalk_wing",
+    "prv_kalk_wing",
+    "prv_skarn_wing"
+  ]
+}

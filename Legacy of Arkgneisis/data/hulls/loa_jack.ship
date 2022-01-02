@@ -1,0 +1,115 @@
+{
+  "bounds": [
+    -11.5,
+    -7,
+    -6,
+    -12.5,
+    9,
+    -10,
+    9,
+    10,
+    -6,
+    12.5,
+    -11.5,
+    7
+  ],
+  "builtInWeapons": {
+    "WS0001": "loa_er_f",
+    "WS0002": "loa_er_f",
+    "WS0003": "loa_rod_rocket_f",
+    "WS0004": "loa_rod_rocket_f"
+  },
+  "builtInWings": [],
+  "center": [
+    14,
+    12
+  ],
+  "collisionRadius": 17,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 26.5,
+      "location": [
+        -5,
+        5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 26.5,
+      "location": [
+        -5,
+        -5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    }
+  ],
+  "height": 24,
+  "hullId": "loa_jack",
+  "hullName": "Baron",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 16.5,
+  "spriteName": "graphics/arkleg/ships/loa_jack.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        10.5,
+        4.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        10.5,
+        -4.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        0,
+        4.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        0,
+        -4.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 28
+}

@@ -1,0 +1,62 @@
+{
+  "variantId": "prv_kakafoni_ryak",
+  "hullId": "prv_kakafoni",
+  "displayName": "Ryak",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 30,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "phasebeam",
+        "WS0009": "phasebeam"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_berguv_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_akers_nova",
+        "WS0004": "prv_akers_nova"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_pskd",
+        "WS0006": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_missljud_wing",
+    "prv_stilllhet_wing"
+  ]
+}

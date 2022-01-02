@@ -1,0 +1,58 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 23,
+  "fluxVents": 27,
+  "goalVariant": true,
+  "hullId": "prv_gabbro",
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_gabbro_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_fusion_burster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "arbalest"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightac",
+        "WS0001": "prv_lightthumper",
+        "WS0005": "prv_lightthumper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vulcan",
+        "WS 003": "dualflak",
+        "WS 004": "vulcan",
+        "WS 005": "vulcan",
+        "WS 006": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

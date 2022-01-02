@@ -1,0 +1,22 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_eld_midline",
+			"prv_tystnad_midline",
+			"prv_flamma_midline",
+			"prv_sorl_midline",
+			"prv_flock_midline",
+			"prv_tiger",
+		],
+	},
+	"knownWeapons":{
+		"tags":["prv_bp","prv_adv_bp"],
+	},
+	"knownFighters":{
+		"tags":["prv_bp"],
+	},
+	
+	"custom":{
+		"syndicateName": "Kanni front groups",
+	}
+}

@@ -1,0 +1,73 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "prv_uvpulse_fighter_fire",
+  "glowColor": [
+    153,
+    102,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_uvpulse_fighter_glow.png",
+  "hardpointOffsets": [
+    14.5,
+    0.5,
+    14.5,
+    -0.5,
+    14.5,
+    1.5,
+    14.5,
+    -1.5
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_uvpulse_fighter.png",
+  "id": "prv_uvpulse_fighter",
+  "muzzleFlashSpec": {
+    "length": 23,
+    "particleColor": [
+      153,
+      102,
+      255,
+      255
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.12,
+    "particleSizeMin": 10,
+    "particleSizeRange": 12,
+    "spread": 5
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_uvpulse_shot",
+  "renderAboveAllWeapons": 0,
+  "requiresFullCharge": false,
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    -0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_uvpulse_fighter_glow.png",
+  "turretOffsets": [
+    7.5,
+    0.5,
+    7.5,
+    -1.5,
+    7.5,
+    1.5,
+    7.5,
+    -0.5
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_uvpulse_fighter.png",
+  "type": "ENERGY"
+}

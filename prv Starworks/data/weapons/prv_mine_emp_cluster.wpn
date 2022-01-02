@@ -1,0 +1,51 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "squall_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    6.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_mine_launcher_emp_hardpoint.png",
+  "id": "prv_mine_emp_cluster",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_mine_emp",
+  "renderAboveAllWeapons": 0,
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 1,
+    "blowbackLength": 10,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 8,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 5,
+    "cloudRadius": 10,
+    "particleColor": [
+      128,
+      255,
+      255,
+      110
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    5.5,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_mine_launcher_emp_turret.png",
+  "type": "BALLISTIC",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+}

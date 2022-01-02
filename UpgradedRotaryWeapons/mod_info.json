@@ -1,0 +1,11 @@
+{
+    "id":"URW",
+    "name":"Upgraded Rotary Weapons",
+    "author":"Tartiflette",
+    "utility":"true",
+    "version":"1.43",
+    "description":"Adds animated spin up and down for the vanilla rotary weapons.",
+    "gameVersion": "0.95a-RC9",
+    "jars":["jars/URW.jar"],
+    "modPlugin":"data.scripts.URW_modPlugin",
+}

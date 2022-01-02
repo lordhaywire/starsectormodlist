@@ -1,0 +1,39 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 10,
+  "fluxVents": 2,
+  "goalVariant": false,
+  "hullId": "prv_fasnod_p",
+  "hullMods": [
+    "missleracks",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_fasnod_p_strike",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightdualac",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hammer",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "annihilator",
+        "WS0004": "annihilator"
+      }
+    },
+  ],
+  "wings": []
+}

@@ -1,0 +1,61 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 23,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall",
+    "hullMods": [
+        "fluxbreakers",
+        "unstable_injector",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_gunwall_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "chaingun",
+                "WS0008": "chaingun",
+                "WS0009": "chaingun",
+                "WS0010": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "chaingun",
+                "WS0012": "chaingun",
+                "WS0015": "chaingun",
+                "WS0016": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavymg",
+                "WS0002": "heavymg",
+                "WS0003": "heavymg",
+                "WS0004": "heavymg",
+                "WS0005": "heavymg",
+                "WS0006": "heavymg",
+                "WS0013": "heavymg",
+                "WS0014": "heavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

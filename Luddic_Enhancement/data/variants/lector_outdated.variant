@@ -1,0 +1,41 @@
+{
+  "variantId": "lector_outdated",
+  "hullId": "lector",
+  "displayName": "Outdated",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "breach",
+        "WS0004": "breach"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "shredder",
+        "WS0002": "shredder"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

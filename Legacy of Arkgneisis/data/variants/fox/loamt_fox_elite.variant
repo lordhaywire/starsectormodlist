@@ -1,0 +1,25 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "hullId": "loamt_fox",
+	"quality": 0.5,
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loamt_fox_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "amblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletdriver",
+                "WS0002": "al_pelletdriver"
+            }
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+  "id": "prv_spattergun",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_spattergun_main_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "displayArcRadius": 400,
+  "turretSprite": "graphics/prv/weapons/prv_spattergun_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_spattergun_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_spattergun_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_spattergun_hardpoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    202,
+    128,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    6.5,
+    3.5,
+    7.5,
+    -1.5,
+    6.5,
+    -3.5,
+    7.5,
+    1.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    7.5,
+    -3.5,
+    8.5,
+    1.5,
+    7.5,
+    3.5,
+    8.5,
+    -1.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 20,
+    "spread": 5,
+    "particleSizeMin": 5,
+    "particleSizeRange": 5,
+    "particleDuration": 0.25,
+    "particleCount": 5,
+    "particleColor": [
+      220,
+      160,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_spattergun_fire"
+}

@@ -1,0 +1,31 @@
+{
+	"id":"loa_savior_system",
+	"type":"TELEPORTER",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_savior_ai",
+	"statsScript":"data.scripts.shipsystems.loa_savior_system",
+	
+	"range":3000,
+	"randomRange":0,
+	
+	"engineGlowColor":[0,0,0,0],
+	"engineGlowContrailColor":[0,0,0,0],
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"vulnerableChargeup":false,
+	"vulnerableChargedown":true,
+	"renderCopyDuringTeleport":false,
+	
+	"useSound":"loa_shockjump_start",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":1000,
+		"averageSpeedIncrease":750,
+	}
+}

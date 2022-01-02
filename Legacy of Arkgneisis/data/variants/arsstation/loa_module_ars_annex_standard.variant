@@ -1,0 +1,61 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_module_ars_annex",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_module_ars_annex_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletcannon",
+                "WS0002": "al_pelletcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_monorail",
+                "WS0009": "al_monorail",
+                "WS0016": "al_bulldog",
+                "WS0017": "al_bulldog"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_bullpup",
+                "WS0004": "al_bullpup",
+                "WS0006": "al_bullpup",
+                "WS0007": "al_bullpup"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0014": "al_plasmadriver",
+                "WS0015": "al_plasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "loa_er",
+                "WS0011": "loa_er",
+                "WS0012": "al_bass",
+                "WS0013": "al_bass"
+            }
+        }
+    ],
+    "wings": [
+        "duke_wing",
+        "duke_wing"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+  "displayName": "Residential",
+  "fluxCapacitors": 10,
+  "fluxVents": 23,
+  "goalVariant": false,
+  "hullId": "prv_gabbro",
+  "hullMods": [
+    "prv_crewcomforts",
+    "blast_doors",
+    "dedicated_targeting_core"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gabbro_res",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "arbalest",
+        "WS0003": "arbalest"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pilum"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse",
+        "WS0002": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vulcan",
+        "WS 004": "vulcan",
+        "WS 005": "vulcan",
+        "WS 006": "vulcan",
+        "WS0005": "mininglaser"
+      }
+    }
+  ],
+  "wings": []
+}

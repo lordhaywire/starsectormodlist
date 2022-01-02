@@ -1,0 +1,63 @@
+{
+  "variantId": "prv_kakafoni_rb_attack",
+  "hullId": "prv_kakafoni_rb",
+  "displayName": "Attack",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "expanded_deck_crew",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "autopulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "annihilatorpod",
+        "WS0002": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_remission"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_lighttripleac",
+        "WS0013": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "mininglaser",
+        "WS0007": "mininglaser",
+        "WS0009": "vulcan",
+        "WS0010": "mininglaser",
+        "WS0011": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_buddy_wing",
+    "prv_buddy_wing"
+  ]
+}

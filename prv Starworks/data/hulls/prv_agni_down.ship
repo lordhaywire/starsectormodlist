@@ -1,0 +1,70 @@
+{
+  "hullName": "Down",
+  "hullId": "prv_agni_down",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/agni/prv_agni_down.png",
+  "style": "PRV_AGNI",
+  "height": 29,
+  "width": 26,
+  "center": [13, 13],
+  "collisionRadius": 15.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 15,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_agni_solarcarapace",
+    "prv_agni_toughhide"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-8.5, -4],
+      "length": 7,
+      "width": 3,
+      "angle": -155,
+      "contrailSize": 3,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-8.5, 4],
+      "length": 7,
+      "width": 3,
+      "angle": 155,
+      "contrailSize": 3,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-6.5, 0],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -7, -7,
+    7, -8,
+    7, 8,
+    -7, 7
+  ]
+}

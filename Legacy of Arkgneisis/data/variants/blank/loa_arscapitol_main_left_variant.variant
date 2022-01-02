@@ -1,0 +1,14 @@
+{
+  "variantId": "loa_arscapitol_main_left_variant",
+  "hullId": "loa_arscapitol_main_left",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

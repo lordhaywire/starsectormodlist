@@ -1,0 +1,17 @@
+{
+  "baseHullId": "filgap_wagner",
+  "baseValueMult": 0.8,
+  "descriptionId": "filgap_wagner",
+  "descriptionPrefix": "This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+  "tags":["pirate_bp"],
+  "tech":"Pirate",
+  "fleetPoints": 12,
+  "hullDesignation": "Cruiser",
+  "hullName": "Wagner (P)",
+  "ordnancePoints": 130,
+  "restoreToBaseHull": false,
+  "removeWeaponSlots":["WS0005", "WS0006"], 		# ids
+
+  "skinHullId": "filgap_wagner_p",
+  "spriteName": "graphics/filgap/ships/filgap_wagner_p.png"
+}

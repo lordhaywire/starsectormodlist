@@ -1,0 +1,29 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "hullId": "loamtg_fox",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "hardenedshieldemitter",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_fox_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "lightmortar"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightdualmg",
+                "WS0002": "lightdualmg"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "variantId": "loamt_walsh_elite",
+  "hullId": "loamt_walsh",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_heavyionpike"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_siegecannon_w"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "railgun",
+        "WS0006": "railgun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

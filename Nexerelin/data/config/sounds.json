@@ -1,0 +1,33 @@
+{
+	"music_campaign_victory_theme":{
+		"sounds":[
+			{"file":"sounds/nexerelin/music/Posthumus_Regnum_Finale.ogg","pitch":1.0,"volume":0.8},
+		],
+	},
+	"music_campaign_defeat_theme":{
+		"sounds":[
+			{"file":"sounds/nexerelin/music/el_prendimiento_intro.ogg","pitch":1.0,"volume":1.0},
+		],
+	},
+	"nex_sfx_combat":[
+		{"file":"sounds/nexerelin/sfx_interface/combat.wav","pitch":0.8,"volume":0.8},
+	],
+	
+	"nex_sfx_gb_attrition":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/groundfire.ogg","pitch":1,"volume":0.8},
+	],
+	"nex_sfx_deciv_bomb":[
+		{"file":"sounds/nexerelin/sfx_interface/explosion_01.ogg","pitch":1,"volume":1.0},
+	],
+	"nex_sfx_gb_ewar":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/static.ogg","pitch":1,"volume":1},
+	],
+	"nex_sfx_gb_inspire":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/cheer.ogg","pitch":1,"volume":0.5},
+	],
+	
+	
+	"nex_alarm":[
+		{"file":"sounds/nexerelin/sfx_interface/alarm.wav","pitch":1,"volume":1.0}
+	]
+}

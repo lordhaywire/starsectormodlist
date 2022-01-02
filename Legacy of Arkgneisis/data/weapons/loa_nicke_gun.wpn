@@ -1,0 +1,32 @@
+{
+	"id":"loa_nicke_gun",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"everyFrameEffect": "data.scripts.weapons.loa_BasicAmmoSwapperGunScript",
+	"displayArcRadius":250,
+	"autocharge":true,
+	"turretSprite":"graphics/arkleg/weapons/nicke_gun/loa_nicke_gun.png",
+	"turretGlowSprite":"graphics/arkleg/weapons/nicke_gun/loa_nicke_gun_glow.png",
+	"hardpointSprite":"graphics/arkleg/weapons/nicke_gun/loa_nicke_gun.png",
+	"hardpointGlowSprite":"graphics/arkleg/weapons/nicke_gun/loa_nicke_gun_glow.png",
+	"visualRecoil":0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[40, 0],
+	"turretAngleOffsets":[],
+	"hardpointOffsets":[40, 0],
+	"hardpointAngleOffsets":[],
+	"renderHints":[RENDER_BARREL_BELOW],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"glowColor":[75,100,255,255],
+	"animationType":"GLOW_AND_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":50.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":10.0,
+					   "particleSizeMin":3.0,
+					   "particleSizeRange":15.0,
+					   "particleDuration":0.5,
+					   "particleCount":50,
+					   "particleColor":[175,215,255,200]},
+	"projectileSpecId":"loa_nickeshot_dummy",  # projectile that will be fired
+	"fireSoundOne":"loa_nicke_gun_charge",
+	"fireSoundTwo":"loa_nicke_gun_fire",
+}

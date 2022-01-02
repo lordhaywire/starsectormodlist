@@ -1,0 +1,46 @@
+{
+  "variantId": "prv_tiger_lc_support",
+  "hullId": "prv_tiger_lc",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_remission"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_lighttripleac",
+        "WS0004": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "vulcan"
+      }
+    },
+  ],
+  "modules": [],
+  "wings": []
+}

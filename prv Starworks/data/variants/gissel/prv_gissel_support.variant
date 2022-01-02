@@ -1,0 +1,69 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_gissel",
+  "hullMods": [
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gissel_support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "harpoonpod",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "swarmer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BI01": "prv_skatunge",
+        "BI02": "prv_skatunge",
+        "BI03": "prv_skatunge",
+        "BI04": "prv_skatunge"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "prv_lighttripleac",
+        "WS0007": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ioncannon",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyburst"
+      }
+    }
+  ],
+  "wings": []
+}

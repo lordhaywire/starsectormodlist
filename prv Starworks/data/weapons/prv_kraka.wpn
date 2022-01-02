@@ -1,0 +1,53 @@
+{
+  "id": "prv_kraka",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_kraka_mrm",
+  "type": "MISSILE",
+  "mountTypeOverride":"SYNERGY",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_kraka_launcher_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_kraka_launcher_hardpoint.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    8.5,
+    2.5,
+    8.5,
+    -2.5
+  ],
+  "turretAngleOffsets": [
+    5,
+    -5
+  ],
+  "hardpointOffsets": [
+    12,
+    2.5,
+    12,
+    -2.5
+  ],
+  "hardpointAngleOffsets": [
+    5,
+    -5
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": -30,
+    "spread": 9,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "particleDuration": 1,
+    "particleCount": 11,
+    "particleColor": [
+      180,
+      180,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundOne": "thumper_spinup",
+  "fireSoundTwo": "prv_kraka_fire"
+}

@@ -1,0 +1,58 @@
+name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,hints,tags,rarity,breakProb,minPieces,maxPieces,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# TINNITUS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pest,TADA_tinnitus,Light Frigate,Midline,maneuveringjets,4,1750,175,1750,,175,35,,170,170,150,90,180,150,FRONT,,180,0.4,0.8,,,10,15,20,20,1,,10,8000,8,10,240,0.25,3,3,,"rare_bp, merc",,0.5,2,2,227
+# CHALLENGER,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Challenger,TADA_challenger,Frigate,Low Tech,burndrive,4,2300,375,2250,,150,45,,100,75,75,50,100,300,FRONT,,120,0.4,1,,,30,45,50,30,1,,10,8500,8,10,300,0.25,4,4,,"rare_bp, merc",,0.3,2,2,213
+#LASHER TT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lasher TT,TADA_lasherTT,Frigate,High Tech,highenergyfocus,6,1250,200,2500,,225,50,,150,150,100,90,120,200,FRONT,,210,0.3,0.8,,,30,40,30,25,1,,10,11000,8,10,240,0.25,5,5,,"rare_bp, merc",,0.4,2,2,204
+#TEMPEST MKII,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tempest Mk.II,TADA_tempest_pirate,Frigate,Pirate,flarelauncher_active,6,1000,180,2000,,200,35,1,175,150,125,90,180,200,FRONT,,120,0.3,1.0,,,25,30,15,10,1,,11,16000,10,20,180,0.25,8,8,,rare_bp,0.75,0.5,2,2,206
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# BULLY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bully,TADA_bully,Destroyer,Low Tech,TADA_readyracks,9,4500,650,4500,,275,80,,50,40,20,25,20,450,FRONT,,150,0.35,1,,,75,125,125,125,3,,9,30000,5,15,420,0.25,8,8,,lowtech_bp,,0.4,2,3,303
+# SCINTILLA X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Scintilla X,TADA_scintillaX,Drone Phaseship,Remnant,emp,15,2800,600,5000,,650,95,,90,60,40,30,30,400,PHASE,phasecloak,,,,0.15,0.05,0,0,60,100,2,,9,80000,5,20,240,0.25,20,20,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",,0.5,2,3,314
+# CASSICUS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cassicus,TADA_cassicus,Destroyer,High Tech,flarelauncher_active,10,3250,350,8000,,350,90,,90,70,60,30,60,325,FRONT,,180,0.3,0.7,,,45,60,55,45,2,20,9,55000,4,16,360,0.25,11,11,,"hightech_bp, merc",,0.7,2,3,309
+# SCALPER,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Scalper,TADA_scalper,Destroyer,Midline,TADA_drone_sensor,9,4000,450,5000,,300,100,,80,55,40,30,60,375,FRONT,,300,0.4,0.9,,,60,120,120,80,2,30,9,35000,5,10,360,0.25,10,10,,"midline_bp, merc",,0.5,2,3,300
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# FORRAY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Foray,TADA_foray,Cruiser,Low Tech,flarelauncher,14,10000,1250,7000,,300,80,,40,15,10,12,6,1500,OMNI,,120,0.4,1,,,150,250,150,110,3,,7,120000,5,20,540,0.25,18,18,,rare_bp,,0.4,2,3,402
+# ATTRITION,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Attrition,TADA_attrition,Artillery Cruiser,Low Tech,fastmissileracks,14,10000,1250,9000,,450,160,,35,20,10,12,12,2000,FRONT,,270,0.5,1,,,225,320,125,100,5,,8,110000,4,12,540,0.25,22,22,,"rare_bp, merc",,0.5,2,3,404
+# CRANE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Crane,TADA_crane,Composite Freighter,Midline,maneuveringjets,8,7000,700,4000,,150,35,1,50,30,20,12,8,1000,FRONT,,270,0.4,1,,,75,250,600,600,3,,8,60000,3,20,480,0.25,10,10,CIVILIAN,rare_bp,,0.75,2,3,400
+Crane (P),TADA_crane_pirate,Makeshift Carrier,Pirate,maneuveringjets,12,7000,500,6000,,150,75,2,50,30,20,12,8,1000,FRONT,,270,0.4,1,,,150,250,250,200,3,,8,100000,4,14,480,0.25,17,17,CARRIER,rare_bp,0.25,0.75,2,3,400
+# OWL,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Owl,TADA_owl,Cruiser,Midline,TADA_attitudejets,14,7000,850,7500,,400,150,2,50,30,25,12,20,1100,FRONT,,135,0.4,0.8,,,140,200,120,80,3,,8,130000,3,12,480,0.25,22,22,,"rare_bp, merc",0.5,0.5,2,3,401
+# BONNETHEAD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bonnethead,TADA_bonnethead,Cruiser,Midline,ammofeed,14,10000,1250,10000,,500,150,,70,70,40,30,30,1250,FRONT,,180,0.3,0.8,,,120,200,125,90,3,,8,115000,3,12,480,0.25,23,23,,"rare_bp, merc",0.5,0.5,2,3,401
+Bonnethead (P),TADA_bonnethead_pirate,Cruiser,Pirate,burndrive,15,10000,1250,10000,,500,115,,60,60,30,25,25,1250,FRONT,,180,0.3,0.8,,,120,200,125,90,3,,8,140000,3,12,480,0.25,25,25,,rare_bp,0.25,0.5,2,3,401
+Bonnethead (LP),TADA_bonnethead_pather,Cruiser,Luddic Path,ammofeed,15,10000,1250,10000,,500,80,,60,60,30,25,25,1250,FRONT,,180,0.3,0.8,,,120,200,125,90,3,,8,140000,3,12,480,0.25,25,25,,rare_bp,0.25,0.5,2,3,401
+# HIGH-TIDE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+High-tide,TADA_hightide,LRM boat,Midline,flarelauncher,11,5000,250,2500,,175,55,1,40,15,10,10,5,1100,NONE,,150,0.5,1,,,200,300,100,80,3,,7,90000,3,20,480,0.25,20,20,"CARRIER,ALWAYS_PANIC",rare_bp,0.5,0.6,2,3,409
+# WHIRLWIND,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Whirlwind,TADA_whirlwind,Heavy Cruiser,High Tech,TADA_gravHook,17,9000,900,12000,,600,140,,60,30,20,20,15,1950,OMNI,,90,0.4,0.7,,,85,180,140,80,4,,8,190000,4,20,420,0.25,29,29,,"rare_bp, merc",,0.6,2,3,405
+# SHINE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Shine,TADA_shine,Droneship Cruiser,Remnant,microburn,18,7000,800,10000,,700,150,,50,35,30,20,25,2000,OMNI,,225,0.5,0.7,,,0,0,100,60,4,15,8,160000,5,25,540,0.25,32,32,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",,0.5,2,3,413
+# BRILLANT X,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brilliant X,TADA_brilliantX,Drone Phaseship,Remnant,highenergyfocus,22,7500,1100,10000,,900,145,,80,55,40,20,25,1200,PHASE,phasecloak,,,,0.15,0.05,0,0,120,150,3,50,8,180000,5,25,300,0.25,35,35,"UNBOARDABLE, HIDE_IN_CODEX","remnant, auto_rec",,0.5,2,3,406
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# NIAGARA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Niagara,TADA_gunwall,Battle Wall,Low Tech,TADA_burn,26,19000,1600,15000,,750,300,1,20,10,7,6,8,3400,FRONT,,140,0.35,1,,,800,1300,200,450,17,,7,325000,3,15,720,0.25,38,38,,"rare_bp, merc",,0.4,2,4,500
+Niagara (XIV),TADA_gunwall_XIV,Battle Wall,XIV Battlegroup,TADA_burn,28,19000,1600,15000,,750,235,1,20,10,7,6,8,3500,FRONT,,140,0.35,1,,,900,1300,200,450,17,,7,375000,3,15,720,0.25,42,42,,"rare_bp, merc",0.25,0.4,2,4,500
+# HERALD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Herald,TADA_herald,Carrier,Midline,maneuveringjets,27,11000,1000,12000,,550,275,5,40,15,15,8,6,3500,FRONT,,120,0.4,0.8,,,550,900,300,300,12,,8,390000,3,12,600,0.25,45,45,CARRIER,"rare_bp, merc",,0.4,2,4,507
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# FIGHTER,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pinnace,TADA_pinnace,Gunship,High Tech,flarelauncher_fighter,,500,75,1000,,200,,,135,135,100,75,150,30,OMNI,,180,0,1,,,5,5,,,,,,,,,,,,,,,0.5,0,,,200
+Firespitter,TADA_firespitter,Escort,Low Tech,flarelauncher_active,,750,100,200,,50,0,,150,200,200,120,240,40,NONE,,0,0,0,,,3,3,,,,,,,,,,,,,,,,0,,,109
+Beak,TADA_owlDrone,Support Drone,Midline,flarelauncher_fighter,,400,50,600,,100,,,150,300,200,180,180,25,FRONT,,90,0,1,,,0,0,,,,,,,,,,,,,,,,,,,4
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,53 @@
+{
+  "displayName": "Missile",
+  "fluxCapacitors": 10,
+  "fluxVents": 11,
+  "goalVariant": true,
+  "hullId": "buffalo2",
+  "hullMods": [
+    "frontshield"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_mkII_missile",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 008": "filgap_davidsystem"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "sabot",
+        "WS 006": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "ioncannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "filgap_scattergun",
+        "WS 003": "filgap_scattergun"
+      }
+    }
+  ],
+  "wings": []
+}

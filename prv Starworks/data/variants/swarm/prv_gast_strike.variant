@@ -1,0 +1,29 @@
+{
+  "variantId": "prv_gast_strike",
+  "hullId": "prv_gast",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_tardes"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_jammer_wing",
+    "longbow_wing",
+    "prv_diskordant_wing",
+    "prv_missljud_wing"
+  ]
+}

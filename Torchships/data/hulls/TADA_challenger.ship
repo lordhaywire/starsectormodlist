@@ -1,0 +1,121 @@
+{
+  "bounds": [
+    25.5,
+    12.5,
+    9.5,
+    49.5,
+    -0.5,
+    48.5,
+    -12.5,
+    35.5,
+    -47.5,
+    16.5,
+    -41,
+    -0,
+    -47.5,
+    -16.5,
+    -12.5,
+    -35.5,
+    -0.5,
+    -48.5,
+    9.5,
+    -49.5,
+    25.5,
+    -12.5,
+    11,
+    -0
+  ],
+  "builtInWings": [],
+  "center": [
+    52,
+    49
+  ],
+  "collisionRadius": 58.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 36.5,
+      "location": [
+        -48,
+        13
+      ],
+      "style": "LOW_TECH",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 36.5,
+      "location": [
+        -48,
+        -13
+      ],
+      "style": "LOW_TECH",
+      "width": 16
+    }
+  ],
+  "height": 87,
+  "hullId": "TADA_challenger",
+  "hullName": "Challenger",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    -2,
+    -0
+  ],
+  "shieldRadius": 56.5,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_challenger.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        19,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 30,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        -1,
+        20
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -30,
+      "arc": 120.010002,
+      "id": "WS0003",
+      "locations": [
+        -1,
+        -20
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 180,
+      "arc": 235,
+      "id": "WS0004",
+      "locations": [
+        -24,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 104
+}

@@ -1,0 +1,17 @@
+{
+	"id":"loa_ammo_swap",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_NickeAmmoSwapperAI",
+	"statsScript":"data.scripts.shipsystems.loa_BasicAmmoSwapper",
+	
+	#"weaponGlowColor":[255,50,50,155],
+	#"weaponTypes":[BALLISTIC, ENERGY],
+	
+	"runScriptWhileIdle":true,
+	
+	"useSound":"loa_ammoswap",
+	#"loopSound":"loa_moe_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

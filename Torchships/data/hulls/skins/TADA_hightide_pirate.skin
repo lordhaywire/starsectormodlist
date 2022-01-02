@@ -1,0 +1,26 @@
+{
+	"baseHullId":"TADA_hightide",
+	"skinHullId":"TADA_hightide_pirate",
+	"hullName":"High-tide (P)",
+	"descriptionId":"TADA_hightide",
+	"descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+	"spriteName":"graphics/TORCHSHIPS/ships/TADA_hightide_pirate.png",
+	"baseValueMult":1,
+        "restoreToBaseHull":true,
+	"addHints":[],
+        "tags":["rare_bp"],
+	"tech":"Pirate",
+        "ordnancePoints":45,
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":[TADA_noDecks],
+	"builtInWeapons":{
+        },
+	"weaponSlotChanges":{
+	   "WS0005":{
+		  "type": "BALLISTIC"
+	   },
+	},
+}

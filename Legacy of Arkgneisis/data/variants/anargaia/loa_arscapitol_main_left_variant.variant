@@ -1,0 +1,54 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_arscapitol_main_left",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_arscapitol_main_left_variant",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "LOA_SWITCH_1_1": "loa_rod_cap",
+                "LOA_SWITCH_2_1": "loa_mosaic_torpedo_cap",
+                "LOA_SWITCH_3_1": "loa_string_cap",
+                "LOA_SWITCH_4_1": "loa_can_launcher_cap"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_pelletcannon",
+                "WS0002": "al_pelletcannon",
+                "WS0003": "al_pelletcannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_bullpup",
+                "WS0006": "al_monorail",
+                "WS0008": "al_bullpup"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_lightplasmadriver",
+                "WS0007": "al_lightplasmadriver",
+                "WS0009": "dualflak"
+            }
+        }
+    ],
+    "wings": [
+        "duke_wing",
+        "duke_wing",
+        "baron_wing",
+        "jack_wing"
+    ]
+}

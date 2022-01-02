@@ -1,0 +1,70 @@
+{
+  "variantId": "prv_bergtagen_assault",
+  "hullId": "prv_bergtagen",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 29,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "armoredweapons",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_belt_blaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_brytare_pod",
+        "WS0024": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hellbore",
+        "WS0004": "hellbore",
+        "WS0015": "prv_hfl_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "miningblaster",
+        "WS0010": "prv_lightthumper",
+        "WS0011": "prv_lightthumper",
+        "WS0012": "prv_lighttripleac",
+        "WS0013": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heavymg",
+        "WS0007": "heavymg",
+        "WS0008": "dualflak",
+        "WS0009": "dualflak",
+        "WS0014": "vulcan",
+        "WS0016": "vulcan",
+        "WS0017": "vulcan",
+        "WS0018": "vulcan",
+        "WS0019": "mininglaser",
+        "WS0023": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

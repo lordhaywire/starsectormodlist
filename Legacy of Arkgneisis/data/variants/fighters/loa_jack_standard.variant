@@ -1,0 +1,30 @@
+{
+  "displayName": "Combat Drone",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "loa_jack",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loa_jack_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "al_rod_f",
+        "WS0004": "al_rod_f"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_er_f",
+        "WS0002": "loa_er_f"
+      }
+    }
+  ],
+  "wings": []
+}

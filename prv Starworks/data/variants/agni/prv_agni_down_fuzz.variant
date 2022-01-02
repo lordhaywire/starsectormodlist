@@ -1,0 +1,22 @@
+{
+  "variantId": "prv_agni_down_fuzz",
+  "hullId": "prv_agni_down",
+  "displayName": "Symbiote",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_agni_web_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,286 @@
+{
+  "bounds": [
+    35.5,
+    7.5,
+    64.5,
+    9.5,
+    29.5,
+    24.5,
+    2.5,
+    27.5,
+    -2.5,
+    39.5,
+    -26.5,
+    32.5,
+    -18.5,
+    16.5,
+    -26.5,
+    14.5,
+    -26.5,
+    -14.5,
+    -18.5,
+    -16.5,
+    -26.5,
+    -32.5,
+    -2.5,
+    -39.5,
+    2.5,
+    -27.5,
+    29.5,
+    -24.5,
+    64.5,
+    -9.5,
+    35.5,
+    -7.5
+  ],
+  "builtInWeapons": {
+    "WS0003": "TADA_Zvernier",
+    "WS0004": "TADA_Zvernier",
+    "WS0005": "TADA_Zvernier",
+    "WS0006": "TADA_Zvernier",
+    "WS0007": "TADA_Zvernier",
+    "WS0008": "TADA_Zvernier"
+  },
+  "builtInWings": [],
+  "center": [
+    42,
+    30
+  ],
+  "collisionRadius": 72.5,
+  "engineSlots": [
+    {
+      "angle": 176,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -28.5,
+        12
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -176,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -28.5,
+        -12
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 45,
+      "location": [
+        -27.5,
+        -0
+      ],
+      "style": "MIDLINE",
+      "width": 30
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -26,
+        33
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -26,
+        -33
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    },
+    {
+      "angle": 90,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -10.5,
+        39
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    },
+    {
+      "angle": -90,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -10.5,
+        -39
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    },
+    {
+      "angle": 0,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -1,
+        34.5
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    },
+    {
+      "angle": -0,
+      "contrailSize": 128,
+      "length": 1,
+      "location": [
+        -1,
+        -34.5
+      ],
+      "style": "MIDLINE_NO_SMOKE",
+      "width": 5
+    }
+  ],
+  "height": 97,
+  "hullId": "TADA_tinnitus",
+  "hullName": "Pest",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    13,
+    -0
+  ],
+  "shieldRadius": 59.5,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_tinnitus.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0001",
+      "locations": [
+        31,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 360,
+      "id": "WS0002",
+      "locations": [
+        -8,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -26,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -26,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -10.5,
+        -39
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -10.5,
+        39
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -0.5,
+        -34.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -1,
+        34.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        12.5,
+        -19.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        12.5,
+        19.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 84
+}

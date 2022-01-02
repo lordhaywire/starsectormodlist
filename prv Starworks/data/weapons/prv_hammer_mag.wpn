@@ -1,0 +1,54 @@
+{
+  "id": "prv_hammer_mag",
+  "specClass": "projectile",
+  "projectileSpecId": "hammer_torp",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_hammer_mag_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_hammer_mag_hardpoint.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    7,
+    -4,
+    7,
+    4
+  ],
+  "turretAngleOffsets": [
+    -0,
+    0
+  ],
+  "hardpointOffsets": [
+    11,
+    -4,
+    11,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    -0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 12,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 6,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "harpoon_fire"
+}

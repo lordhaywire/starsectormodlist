@@ -1,0 +1,40 @@
+{
+  "variantId": "loamt_sherman_elite",
+  "hullId": "loamt_sherman",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "blast_doors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "al_bullpup",
+        "WS0009": "al_bullpup"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "loa_needle",
+        "WS0002": "loa_needle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "railgun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

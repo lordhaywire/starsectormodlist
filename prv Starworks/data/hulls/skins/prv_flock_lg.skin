@@ -1,0 +1,59 @@
+{
+	"baseHullId":"prv_flock",
+	"skinHullId":"prv_flock_lg",
+	"hullName":"Flock (LG)",
+	"descriptionId":"prv_flock_midline",
+	"descriptionPrefix":"This ship was built to the exacting specifications demanded by the Lion's Guard, environmentally-hardened to survive the harsh fires of Askonia.",
+	"tags":["swp_LG_bp"],
+	#"tech":"Midline (prv)",
+	"tech":"Lion's Guard",
+	"restoreToBaseHull":false,
+	"ordnancePoints":130,
+	"addHints":[HIDE_IN_CODEX],
+	#"fleetPoints":11,
+	"baseValueMult":1.25,
+	"spriteName":"graphics/prv/ships/prv_flock_lg.png",
+	"systemId":"fastmissileracks",
+	#"removeWeaponSlots":["WS0007"], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["eccm"], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BI01",		#autolauncher
+	],
+	"weaponSlotChanges":{
+	   "BI01":{
+		  "mount": "HARDPOINT",
+		  "type": "MISSILE",
+	   },
+	   "WS0001":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0002":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0003":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0004":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0005":{
+		  "type": "ENERGY",
+	   },
+	   "WS0006":{
+		  "type": "ENERGY",
+	   },
+    },
+	"builtInMods":["missleracks", "solar_shielding",],
+	"builtInWeapons":{
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+	},    
+}

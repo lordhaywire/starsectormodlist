@@ -1,0 +1,29 @@
+{
+    # Pirate Pest gets crappy flares and looses the thrusters, but can be restored into the original Pest
+    "baseHullId":"TADA_tinnitus",
+    "skinHullId":"TADA_tinnitus_p",
+    "hullName":"Pest (P)",
+    "descriptionId":"TADA_tinnitus",
+    "descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+    "fleetPoints":5,
+    "ordnancePoints":30,
+    "baseValueMult":1,
+    "tags":["pirate_bp"],
+    "tech":"Pirate",
+    "spriteName":"graphics/TORCHSHIPS/ships/TADA_tinitus_pirate.png",
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[], 		# hullmod ids
+    "builtInMods":[],
+	"removeBuiltInWeapons":[
+            "WS0003",
+            "WS0004",
+            "WS0005",
+            "WS0006",
+            "WS0007",
+            "WS0008"
+        ], 		# weapon slot ids
+    "weaponSlotChanges":{},
+    "systemId":"flarelauncher",
+    "restoreToBaseHull":true,
+}

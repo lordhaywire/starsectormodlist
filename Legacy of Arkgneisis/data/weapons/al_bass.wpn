@@ -1,0 +1,30 @@
+{
+	"id":"al_bass",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":250,
+	"everyFrameEffect": "data.scripts.weapons.al_bassdrum_soundplayer",
+	"turretSprite":"graphics/arkleg/weapons/al_bass_turret_base.png",
+	"hardpointSprite":"graphics/arkleg/weapons/al_bass_hardpoint_base.png",
+	"visualRecoil":1.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[9, -1, 7, 1, 9, -3, 7, 3],
+	"turretAngleOffsets":[-2, 2],
+	"hardpointOffsets":[10, -1, 8, 1, 10, -3, 8, 3],
+	"hardpointAngleOffsets":[-2, 2],
+	#"renderHints":[RENDER_BARREL_BELOW],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":true,
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":2.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":400.0,
+					   "particleSizeMin":4.0,
+					   "particleSizeRange":6.0,
+					   "particleDuration":0.05,
+					   "particleCount":3,
+					   "particleColor":[255,240,165,200]},
+	"projectileSpecId":"al_bongoshot",  # projectile that will be fired
+	#"fireSoundOne":"light_machinegun_intro",
+	#"fireSoundTwo":"al_bassdrum_loop",
+}
