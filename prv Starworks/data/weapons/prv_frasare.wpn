@@ -1,0 +1,55 @@
+{
+  "id": "prv_frasare",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "scripts.weapons.prv_fragbeam_BeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/prv/weapons/prv_frasare_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_frasare_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_frasare_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_frasare_hardppoint_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    255,
+    128,
+    0,
+    255
+  ],
+  "hitGlowRadius": 60,
+  "turretOffsets": [
+    24.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    27,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "fringeColor": [
+    200,
+    255,
+    0,
+    128
+  ],
+  "coreColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "width": 7.5,
+  "textureType": [
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+  ],
+  "textureScrollSpeed": 260,
+  "pixelsPerTexel": 5,
+  "fireSoundTwo": "ion_beam_loop"
+}

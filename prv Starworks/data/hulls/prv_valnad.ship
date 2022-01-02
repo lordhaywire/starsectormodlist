@@ -1,0 +1,151 @@
+{
+  "hullName": "Vålnad",
+  "hullId": "prv_valnad",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/prv/ships/prv_gast.png",
+  "style": "PRV_SWARM_LARGE",
+  "height": 150,
+  "width": 150,
+  "center": [75, 75],
+  "collisionRadius": 100,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 150,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_swarm_host",
+    "prv_intangible"
+  ],
+  "builtInWeapons": {
+    "WS0001": "prv_tardes"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -6, 35.5,
+        20.5, 31
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -24.5, -16.5,
+        -33.5, 16
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        37.5, 10.5,
+        -7, -31.5,
+        37.5, -11
+      ]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 45,
+      "locations": [17.5, 17.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -45,
+      "locations": [17.5, -17.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 135,
+      "locations": [-17.5, 17.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -135,
+      "locations": [-17.5, -17.5]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [19, -26]
+    },
+    {
+      "id": "LB 5",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -3, 9,
+        13, -6,
+        -5, -4.5,
+        16.5, 18.5
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7, 4.5],
+      "length": 0,
+      "width": 0,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-7, -5.5],
+      "length": 0,
+      "width": 0,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -3.5, 10,
+    -3.5, -10,
+    10.5, 0
+  ]
+}

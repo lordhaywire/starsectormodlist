@@ -1,0 +1,53 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 19,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_sunder_ryak",
+  "hullMods": [
+    "unstable_injector"
+  ],
+  "permaMods": [],
+  "quality": 3,
+  "variantId": "prv_sunder_ryak_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "amblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_siege_akers_sunder_prototype"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_bounder",
+        "WS0006": "prv_bounder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0002": "prv_sipdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

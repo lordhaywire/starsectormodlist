@@ -1,0 +1,53 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "light_assault_gun_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/filgap/weapons/BAG_barrel_hp.png",
+  "hardpointOffsets": [
+    29,
+    4,
+    29,
+    -4
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/BAG_hp_base.png",
+  "id": "filgap_mosychlosbag",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      255,
+      155,
+      105,
+      185
+    ],
+    "particleCount": 15,
+    "particleDuration": 0.5,
+    "particleSizeMin": 10,
+    "particleSizeRange": 12,
+    "spread": 20
+  },
+  "projectileSpecId": "lightag_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/filgap/weapons/BAG_barrel_turret.png",
+  "turretOffsets": [
+    21,
+    4,
+    21,
+    -4
+  ],
+  "turretSprite": "graphics/filgap/weapons/BAG_turret_base.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 5
+}

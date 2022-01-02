@@ -1,0 +1,39 @@
+{
+  "displayName": "Raider",
+  "fluxCapacitors": 4,
+  "fluxVents": 5,
+  "goalVariant": false,
+  "hullId": "prv_fasnod_p",
+  "hullMods": [
+    "heavyarmor",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_fasnod_p_raider",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightag",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
+      }
+    },
+  ],
+  "wings": []
+}

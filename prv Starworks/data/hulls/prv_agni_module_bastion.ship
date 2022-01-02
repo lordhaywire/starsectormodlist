@@ -1,0 +1,177 @@
+{
+  "hullName": "Module, Bastion",
+  "hullId": "prv_agni_module_bastion",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_module_agni_bastion.png",
+  "style": "PRV_AGNI",
+  "height": 160,
+  "width": 160,
+  "center": [80, 58],
+  "collisionRadius": 150,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 130,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -51,
+    0
+  ],
+  "builtInMods": [
+    "prv_agni_sharp_senses",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "always_detaches",
+    "prv_agni_phoenixshroud",
+    "prv_agni_solarcarapace",
+    "prv_agni_symbiote_crevice"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 000",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 60,
+      "locations": [19, 66]
+    },
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 45,
+      "locations": [23, 37]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -45,
+      "locations": [23, -37]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -60,
+      "locations": [20, -66]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 30,
+      "locations": [47, 57]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -30,
+      "locations": [47, -57]
+    },
+    {
+      "id": "WS 008",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [35, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 135,
+      "locations": [-23, 30]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -135,
+      "locations": [-23, -30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 30,
+      "locations": [50, 24]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -30,
+      "locations": [50, -24]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -135,
+      "locations": [-5, -53]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 135,
+      "locations": [-5, 53]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        6, -1.5,
+        2, -7.5,
+        -3.5, -1.5,
+        15, -1.5,
+        5.5, 7.5
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    43, 40,
+    56, 14,
+    56, -14,
+    44, -38,
+    57, -61,
+    -2, -73,
+    -11, -52,
+    -24, -43,
+    -51, 0,
+    -25, 45,
+    -12, 51,
+    -3, 73,
+    56, 61
+  ]
+}

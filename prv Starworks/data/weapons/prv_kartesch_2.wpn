@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "heavy_mauler_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGunSprite": "graphics/prv/weapons/prv_kartesch_hardpoint_recoil.png",
+  "hardpointOffsets": [
+    23.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_kartesch_hardpoint.png",
+  "id": "prv_kartesch_2",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.5,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "spread": 5
+  },
+  "projectileSpecId": "prv_kartesch_2_shot",
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGunSprite": "graphics/prv/weapons/prv_kartesch_turret_recoil.png",
+  "turretOffsets": [
+    19,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_kartesch_turret.png",
+  "type":"BALLISTIC",
+  "mountTypeOverride":"COMPOSITE",
+  "visualRecoil": 7
+}

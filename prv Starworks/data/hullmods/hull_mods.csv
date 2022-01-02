@@ -1,0 +1,114 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+,,,,,,,,,,,,,,,,,,
+#Light Phase Coils,prv_adaptive_coils_fighter,2,,prv Starworks,"phase, merc",Phase,,,,,0,0,0,0,scripts.hullmods.prv_adaptive_coils_fighter,"Optimized for very light ships, these phase coils can maintain full ship speed even during heavy flux loads.",Removes impact of hard flux level on top speed while phased.,graphics/hullmods/phase_field.png
+#Shatter Rods,prv_shatterrods,2,,prv Starworks,offensive,Weapons,7000,,,,3,6,9,15,scripts.hullmods.prv_shatterrods,"Kinetic shells fired from the ship’s guns will shatter and deal %s damage when they strike hull or armor, with a chance to deal %s additional damage. 
+
+The chance is up to %s, based on shell damage, with heavier shells having a higher chance of shattering.","Kinetic shells shatter on penetrating hits, dealing additional damage.",graphics/prv/hullmods/prv_auxiliary.png
+###,,,,,,,,,,,,,,,,,,
+###,,,,,,,,,,,,,,,,,,
+Symbiote Host,prv_agni_phoenixshroud,3,0,Agni,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_agni_phoenixshroud,Exhausing a group of armor cells will spawn a wing of short-lived %s fighters.,Sheds damaged armor cells as fighters.,
+Prominence,prv_agni_prominence,1,0,Agni,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_agni_prominence,"The ship is shrouded in flames, dealing %s high explosive damage per second to itself and any nearby ships.
+
+The ship explodes once it is entirely exhausted, dealing up to %s energy damage to ships within %s range and burning them for an additional %s high explosive damage over time.",Cloaks the ship in flames.,
+Solar Carapace,prv_agni_solarcarapace,2,0,Agni,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_agni_solarcarapace,"Decreases the effect operating in a solar corona has on combat readiness by %s; also has the same effect against storms in deep hyperspace.
+
+In combat the carapace proves highly resistant to beam and EMP attacks, reducing damage taken from them by %s. EMP damage from beams will be reduced by a total of %s.",Reduces effect of being in corona and beam damage taken.,
+Tough Hide,prv_agni_toughhide,0,0,Agni,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_agni_toughhide,The durable armored hide treats %s and %s damage as %s damage.,Turns high explosive damage into energy damage.,
+Agni Behavior,prv_agni_behavior,0,0,Agni,,,,,TRUE,TRUE,0,0,0,0,scripts.hullmods.prv_agni_behavior,"This creature will become increasingly cautious as it gets hurt, and will retreat on its own volition if it is badly wounded.",Animal instincts.,
+Symbiote Crevice,prv_agni_symbiote_crevice,0,0,Agni,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FighterChassisStorage,Fighter replacement rate does not go down when fighters are lost.,Fighter replacement rate does not go down.,graphics/hullmods/expanded_deck_crew.png
+Sharp Senses,prv_agni_sharp_senses,0,0,Agni,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_agni_sharp_senses,"Extends the range of ballistic and energy weapons by %s.
+
+Also increases target-leading accuracy and greatly increases in-combat sensor range.",Greatly extends non-missile weapon range.,
+,,,,,,,,,,,,,,,,,,
+### Cost mods,,,,,,,,,,,,,,,,,,
+Logistically Demanding,prv_cost_25,,,,,,,,TRUE,TRUE,0,0,0,0,scripts.hullmods.prv_cost_25,Increases the supply cost for both maintenance and recovery operations by %s.,Increases supply use.,graphics/hullmods/high_maintenance.png
+Logistically Demanding,prv_cost_50,,,,,,,,TRUE,TRUE,0,0,0,0,scripts.hullmods.prv_cost_50,Increases the supply cost for both maintenance and recovery operations by %s.,Increases supply use.,graphics/hullmods/high_maintenance.png
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+### Built-in,,,,,,,,,,,,,,,,,,
+Ramshield,prv_ramshield,,,prv Starworks,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_ramshield,"Shield deployment is %s and %s wider, but quickly shrinks to its normal maximum.
+
+The shield must be fully lowered for the system to reset.",Instant shield deployment.,graphics/prv/hullmods/prv_ramshield.png
+Flux Compressor,prv_fluxcompressor,,,prv Starworks,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_fluxcompressor,"Firing flux-generating weapons builds compression, increasing the rate of fire of all energy weapons on the ship by up to %s. 
+
+Maximum compression is reached after firing %s weapons for %s seconds.",Increases energy weapon cost and damage.,graphics/prv/hullmods/prv_fluxcompressor.png
+Tide Vanes,prv_tcore,,,prv Starworks,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_tcore,Periodically increases the rate of fire of all weapons by up to %s.,Periodically increases weapon rate of fire.,graphics/prv/hullmods/prv_tcore.png
+Overstressed Fire Control,prv_badtar,,,Rust Belt,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_badtar,"The targeting computers on this ship are badly overstressed, leading to a moderate reduction in target leading, and a reduction in weapon ranges past %s units by %s.",Reduces weapon range.,graphics/prv/hullmods/prv_badtar.png
+Habitat,prv_habitat,,,Rust Belt,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_habitat,"The crew facilities on this ship have been restructured to enable long-term habitation. The facilities desired for permanent ship-bound life are considerably bulkier than those required for mere transport, reducing maximum crew capacity by %s.",Greatly reduces crew capacity.,graphics/prv/hullmods/prv_habitat.png
+Intangible,prv_intangible,,,prv Starworks,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_intangible,"This ship is an integrated swarm system. Its distributed command core is %s and almost entirely %s.
+
+The nanobot cloud is very difficult to hit directly and any damage done will be greatly reduced.",This ship is not made out of solid matter.,graphics/prv/hullmods/prv_intangible.png
+Swarm Host,prv_swarm_host,,,prv Starworks,,,,,TRUE,,0,0,0,0,scripts.hullmods.prv_swarm_host,"The swarm system is dependent on the health of its fighter wings. It will build flux at a rate of up to %s flux per second, proportional to the amount of %s which are %s or %s. If the swarm’s flux capacity is entirely used up its integrity will rapidly deteriorate until it is destroyed.
+
+The swarm has no effective way to actively vent flux. Active venting is disabled.
+
+Wing range is reduced to %s. Not all fighters operate well under these constraints.",This ship is actually a swarm of fighters.,graphics/prv/hullmods/prv_swarm_host.png
+Exposed Flux Transport,prv_exposed_flux_transport,,,Rust Belt,,,,,TRUE,,0,0,0,0,hullmods.prv_exposed_flux_transport,The modifications done to this ship have left the main flux line very exposed. Any %s suffered by the ship will reduce its %s rate by %s.,Hull damage reduces flux dissipation.,graphics/prv/hullmods/prv_exposed_flux_transport.png
+Hegemony Specialist,prv_hegemony_spec,,,Hegemony,,,,,TRUE,,0,0,0,0,data.hullmods.Fourteenth,"It is unclear if this ship has ever been on the Hegemony auxiliary list. Nonetheless it has undergone an extensive remodelling at one of the Hegemony’s naval yards, which has allowed for the mounting of heavier armor plating, increasing protection by %s standard units with only a %s reduction in speed and maneuverability. Further upgrades to the energy systems additionally increase flux throughput and capacity by %s over standard examples of this hull.",,graphics/hullmods/militarized_hegemony_auxiliary.png
+prv Auxiliary,prv_auxiliary,,,prv Starworks,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.prv_auxiliary,"This ship has been refit by the prv to better handle the dangers of the sector. A drive system rebuild done at the Kratul II spacewharf has minimized emissions and optimized fuel efficiency, giving an improvement of %s to both and a %s improvement to overall performance. Core power systems have also been upgraded to military standards resulting in a %s increase in flux capacity, as well as a %s increase in flux dissipation.",Improves engine and generator performance.,graphics/prv/hullmods/prv_auxiliary.png
+Lean Hangar,prv_leanhangar,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_leanhangar,Increases the rate at which the fighter replacement rate both depletes and recovers by %s.,Makes fighter replacement rate more volatile.,graphics/prv/hullmods/prv_lean_hangar.png
+Defense In Depth,prv_did,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_did,"This ship suffers %s fewer crew casualties and takes %s less energy and fragmentation damage. Ship modules are %s more vulnerable to EMP damage and weapon repairs take %s longer.
+
+Rather than following the 'armored citadel' model most combat vessels in the sector are built around, this ship is designed to instead encase the crew and most critical ship systems in a many-layered cocoon of armor and structural defenses. By operating largely on electronic controls, crew casualties can be minimized and critical command and control systems are the last to see enemy attack. ",Protects crew and structure at the cost of vulnerable electronics.,graphics/prv/hullmods/prv_did.png
+Remanualized,prv_reman,,,Luddic Church,,,,,TRUE,,0,0,0,0,hullmods.prv_reman,"Increases minimum crew requirements by %s.
+
+Trusting man over machine, this ship has had as many functions as possible delegated to those with a mortal soul.",Increases crew requirement.,graphics/prv/hullmods/prv_reman.png
+Companion Integration,prv_companion_integration,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_companion_integration,Specialized command and control facilities reduce the ordnance point cost of support fighter wings by %s.,Reduces ordnance point cost of support fighters.,graphics/prv/hullmods/prv_companion_integration.png
+Hypergenerators,prv_hypergenerators,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_hypergenerators,Advanced generators inside the ship periodically fully recharge all energy weapons.,Periodically reloads all energy weapons.,graphics/prv/hullmods/prv_hypergenerators.png
+Irregular Axial Rotation,prv_axialrotation,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_axialrotation_var,This structure constantly rotates around its axis at a varying rate and direction.,Rotates at a varied rate and direction.,graphics/prv/hullmods/prv_axialrotation_var.png
+Gravity Minefield,prv_gravityminefield,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_gravityminefield,Gravity mines attack enemy ships during battle.,Gravity mines attack enemy ships during battle.,graphics/prv/hullmods/prv_gravity_mines.png
+,,,,,,,,,,,,,,,,,,
+### Rare,,,,,,,,,,,,,,,,,,
+Shock Detonators,prv_shockdetonators,2,,prv Starworks,"offensive, merc",Weapons,7000,,,,3,6,9,15,scripts.hullmods.prv_shockdetonators,"Explosive shells fired from the ship’s guns will deal %s damage to shields, but only inflict %s flux damage.",Explosive shells cause soft-flux energy damage to shields.,graphics/prv/hullmods/prv_shockdetonators.png
+Arc Smelter,prv_arcsmelter,3,,Rust Belt,"req_spaceport,special","Logistics, Requires Dock",12000,,,,8,15,25,40,hullmods.prv_arcsmelter,A small slagwork in the ship converts up to %s ore or %s transplutonic ore into smelted metals of the same quality once every %s. ,Refines ore into metal.,graphics/prv/hullmods/prv_arcsmelter.png
+Gengångare Reversion Core,prv_gengangare,3,,prv Starworks,"prv_lab_bp, special",Special,11500,,,,5,10,15,25,scripts.hullmods.prv_gengangare,If the ship is disabled or destroyed it will perform an emergency recall of all fighters and generate %s to support them for the rest of the battle.,Spawns an integrated swarm on when disabled.,graphics/prv/hullmods/prv_swarm_host.png
+Ramshield Adjunct,prv_ramshield_modular,3,0,prv Starworks,"prv_lab_bp, defensive",Defenses,12000,,,,4,8,12,25,scripts.hullmods.prv_ramshield_modular,"Shield deployment is %s and %s wider, but quickly shrinks to its normal maximum.
+
+Increases the damage taken by the shield by %s.
+
+The shield must be fully lowered for the system to reset.",Near-instant shield deployment.,graphics/prv/hullmods/prv_ramshield_modular.png
+Plasma Agitators,prv_agiplasma,2,,prv Starworks,"prv_lab_bp, offensive",Weapons,9000,,,,3,6,9,15,scripts.hullmods.prv_agiplasma,"Instead of burning, %s agglomerations will %s after %s seconds. This %s explosion applies %s of the stored energy damage.",Spatterplasma will now explode instead of burning.,graphics/prv/hullmods/prv_agiplasma.png
+,,,,,,,,,,,,,,,,,,
+### Standard,,,,,,,,,,,,,,,,,,
+Arcfault Ejector,prv_arcfault_insulator,1,,prv Starworks,"defensive, merc",Defenses,3000,,,,4,8,15,25,scripts.hullmods.prv_arcfault_ejector,"Flux overloads are ejected as a graviton burst, reducing overload duration by %s and violently displacing targets within %s/%s/%s/%s range of the ship, depending on hull size, dealing up to %s/%s/%s/%s energy damage. 
+
+The ship will also unleash a %s more powerful graviton burst when it is destroyed.",Overloads are shortened and trigger a gravitic burst.,graphics/prv/hullmods/prv_arcfault_insulator.png
+#Arcfault Insulator,prv_arcfault_insulator,1,,prv Starworks,defensive,Defenses,3000,,,,6,12,24,35,hullmods.prv_arcfault_insulator,"Installs additonal safeties and redundancies in the ship’s flux system, reducing overload duration by %s.",Reduces overload duration.,graphics/prv/hullmods/prv_arcfault_insulator.png
+Hallbar Missile Plating,prv_missile_plating,2,,prv Starworks,"offensive, merc",Weapons,4500,,,,3,6,9,15,hullmods.prv_missile_plating,Light and hardy alloys increase the durability of all missiles launched from this ship by %s points and their top speed by %s.,Increases missile speed and durability.,graphics/prv/hullmods/prv_missile_plating.png
+Flicker Core,prv_flickercore,2,,prv Starworks,"phase, merc",Phase,6000,,,,6,12,24,35,hullmods.prv_flickercore,"A dedicated AI is installed to manage phase coil reflux, letting the ship take advantage of an up to %s stronger time dilation effect of over %s seconds on entering or leaving p-space, reduced by the current hard flux level of the ship.",Increases time dilation on entering or leaving p-space.,graphics/prv/hullmods/prv_flickercore.png
+Gravitic Anchor,prv_gravanchor,3,,prv Starworks,"special, merc",Special,9000,,,,5,10,15,25,hullmods.prv_gravanchor,"By generating a graviton field the ship increases its apparent mass by %s, ensuring that it has little need to fear direct contact with other ships.
+
+Additionally the ship will direct a gravitational pull towards hostile ships within %s/%s/%s range of the ship, depending on its hull size, making it more difficult for them to escape its presence. 
+
+Enemy fighter craft may be crushed against the ship’s hull.",Increases ship mass. Crushes fighters.,graphics/prv/hullmods/prv_gravanchor.png
+Ruggedization,prv_ruggedization,1,,Rust Belt,"req_spaceport, special, merc","Logistics, Requires Dock",3000,,,,5,8,12,20,hullmods.prv_ruggedization,"A comprehensive overhaul of at-risk systems allows the ship to better weather repeated stress, effectively increasing the number of deployments the ship can undertake before requiring time for recovery.
+
+Reduces the combat readiness cost per deployment and recovery rate by %s.
+
+The per-day supply consumption for CR recovery is reduced to account for the slower recovery rate, but increasing the maximum number of deployments a ship can undertake before recovery will also increase the maximum cost of recovery proportionally. The total supply cost per deployment remains the same. 
+
+Also reduces most secondary CR costs by %s, for no net change in supply costs.",Improves deployment logistics.,graphics/prv/hullmods/prv_ruggedization.png
+Crew Comforts,prv_crewcomforts,2,,Rust Belt,"req_spaceport, special, merc","Logistics, Requires Dock",4500,,,,3,6,9,15,hullmods.prv_crewcomforts,"Enlarged and enhanced crew facilities ensure that the crew is hale and hearty, reducing the rate at which combat readiness degrades by %s.
+
+Increases the combat readiness recovery rate by %s. The per-day supply consumption for CR recovery is increased to account for the increased recovery rate, but the total supply cost remains the same.
+
+The ship’s crew will also require an additional %s/%s/%s/%s supplies per month, depending on hullsize.",Improves combat endurance and recovery rate.,graphics/prv/hullmods/prv_crewcomforts.png
+Blast Heater,prv_blastheater,3,0.5,Rust Belt,"offensive, merc",Weapons,9000,,,,6,12,24,35,hullmods.prv_blastheater,"Hybrid energy routing ensures that power can be directed to where it most needed in the ship.
+
+While the flux level is above %s, the flux cost to fire energy weapon is reduced by up to %s. 
+
+While the flux level is below %s, the rate of fire of ballistic weapons is increased by up to %s.",Boosts weapons based on the flux level.,graphics/prv/hullmods/prv_blastheater.png
+,,,,,,,,,,,,,,,,,,
+### Commissioned Crew,,,,,,,,,,,,,,,,,,
+Command Implants,prv_comimplants,,,prv Starworks,,,,,TRUE,,0,0,0,0,hullmods.prv_comimplants,"Integrated cybernetics among the ship’s officers allow for instant leadership, increasing the top speed of the ship by %s, and the top speed of other ships in the fleet by %s.
+
+The implants are somewhat unstable, and officers equipped with them have been known to be irrationally timid and cautious, or, more often, aggressive and reckless. 
+
+These personality swings occur at uneven intervals with an average period of %s between shifts.",Increases fleet speed in combat and induces personality shifts.,graphics/prv/hullmods/prv_comimplants.png
+Belt Spirit,prv_belt_spirit,,,Rust Belt,,,,,TRUE,,0,0,0,0,hullmods.prv_belt_spirit,"Rusters are incorrigible free spirits, which has some worrying implications when it comes to naval discipline. Maximum combat readiness for manned ships is reduced by %s.
+
+They are however also excellent mechanics, and ensure that their ships have %s increased hull integrity and that repairs can be performed %s faster, both in and out of combat.",Reduces maximum CR and increases repair rates.,graphics/prv/hullmods/prv_belt_spirit.png
+,,,,,,,,,,,,,,,,,,
+#Nullmass Dissembler,prv_nullmass,,,prv Starworks,,"Logistics, Requires Dock",,TRUE,,,1,1,1,1,data.hullmods.prv_nullmass,"Installs gravitic tuners which minimize the drive field friction for the entire fleet, reducing the penalty for bad terrain by %s. The effect of multiple stabilizers is multiplicatively cumulative.
+
+Increases the fuel cost per lightyear for this ship by %s.",Reduces the penalty for bad terrain. Increases fuel usage.,graphics/prv/hullmods/prv_nullmass.png

@@ -1,0 +1,52 @@
+{
+  "id": "prv_frasare_fighter_1",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_fragbeam_fighter_1_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_frasare_fighter_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_frasare_fighter_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_frasare_fighter_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_frasare_fighter_hardpoint_glow.png",
+  "visualRecoil": 7,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    12,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    14,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "glowColor": [
+    255,
+    128,
+    0,
+    255
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 12,
+    "spread": 1,
+    "particleSizeMin": 3,
+    "particleSizeRange": 12,
+    "particleDuration": 0.5,
+    "particleCount": 7,
+    "particleColor": [
+      255,
+      255,
+      200,
+      128
+    ]
+  },
+  "fireSoundTwo": "prv_akers_fire"
+}

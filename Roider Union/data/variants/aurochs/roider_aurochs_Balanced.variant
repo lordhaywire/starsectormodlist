@@ -1,0 +1,39 @@
+{
+    "displayName": "Balanced",
+    "fluxCapacitors": 10,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "roider_aurochs",
+    "modules": [{"PROW ARMOR": "roider_aurochs_armor_Standard"}],
+    "hullMods": [
+        "ecm",
+        "missleracks"
+    ],
+    "permaMods": [],
+	"variantId": "roider_aurochs_Balanced",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "lightac",
+                "WS 004": "lightac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "sabot"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "pdlaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 005": "lightmg"}
+        }
+    ]
+}

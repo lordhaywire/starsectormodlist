@@ -1,0 +1,61 @@
+{
+	"baseHullId":"prv_flock",
+	"skinHullId":"prv_flock_midline",
+	"hullName":"Flock (Export)",
+	"descriptionId":"prv_flock_midline",
+	"descriptionPrefix":"Export model of the Flock which is produced without any integrated systems, opening up a large missile hardpoint for any compatible launcher.",
+	"tags":["prv_midline_bp","merc"],
+	#"tech":"Midline (prv)",
+	"tech":"Midline",
+	"restoreToBaseHull":false,
+	"ordnancePoints":130,
+	#"fleetPoints":11,
+	"baseValueMult":1,
+	"suppliesToRecover":20,
+	"suppliesPerMonth":20,
+	"spriteName":"graphics/prv/ships/prv_flock_midline.png",
+	"systemId":"fastmissileracks",
+	"removeWeaponSlots":["prv_ramshield"], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["eccm","prv_ramshield"], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BI01",		#autolauncher
+		"prv_ramshield"
+	],
+	"weaponSlotChanges":{
+	   "BI01":{
+		  "mount": "HARDPOINT",
+		  "type": "MISSILE",
+	   },
+	   "WS0001":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0002":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0003":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0004":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS0005":{
+		  "type": "ENERGY",
+	   },
+	   "WS0006":{
+		  "type": "ENERGY",
+	   },
+    },
+	"builtInMods":["missleracks","prv_ramshield_modular"],
+	"builtInWeapons":{
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+	},    
+}

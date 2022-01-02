@@ -1,0 +1,49 @@
+{
+  "bounds": [
+    -18,
+    6.5,
+    2,
+    25.5,
+    23.5,
+    25.5,
+    23.5,
+    -25.5,
+    2,
+    -25.5,
+    -18,
+    -6.5
+  ],
+  "builtInMods": [
+    "anchorrotation",
+    "shield_always_on",
+    "reduced_explosion",
+    "always_detaches",
+    "advancedshieldemitter",
+    #"prv_arcfault_insulator"
+  ],
+  "center": [
+    40,
+    40
+  ],
+  "collisionRadius": 80,
+  "engineSlots": [],
+  "height": 80,
+  "hullId": "prv_module_shield_center",
+  "hullName": "Shield Module",
+  "hullSize": "FRIGATE",
+  "moduleAnchor": [
+    -39,
+    0
+  ],
+  "shieldCenter": [
+    -39,
+    0
+  ],
+  #"shieldRadius": 475,
+  "shieldRadius": 375,
+  "spriteName": "graphics/prv/ships/stations/prv_module_shield_center.png",
+  "style": "PRV_MID",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 80
+}

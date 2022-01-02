@@ -1,0 +1,48 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "squall_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    3.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_mine_launcher_gravity_hardpoint.png",
+  "id": "prv_mine_gravitywell",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_mine_gravitywell",
+  "renderAboveAllWeapons": 0,
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 1,
+    "blowbackLength": 10,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 8,
+    "cloudDuration": 1.5,
+    "cloudParticleCount": 5,
+    "cloudRadius": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      110
+    ],
+    "particleSizeMin": 16,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    3.5,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_mine_launcher_gravity_turret.png",
+  "type": "MISSILE"
+}

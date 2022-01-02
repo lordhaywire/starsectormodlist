@@ -1,0 +1,48 @@
+{
+	"baseHullId": "prv_aska",
+	"descriptionPrefix":"This Aska has had its phase teleporter adapted into a deadly assault weapon. The pyrite coating is a bit of a mystery - perhaps it's required for the system to function?",
+	"systemId":"prv_phasechainer",
+	#"tags":["swp_LG_bp"],
+	"baseValueMult": 1.33,
+	#"fleetPoints":19,
+	"ordnancePoints":140,
+	"removeBuiltInWeapons":["BI03","BI01"],
+	"removeWeaponSlots":["BI03"],
+	#"removeBuiltInMods":["prv_did"],
+	"addHints":[HIDE_IN_CODEX],
+	"builtInMods":["safetyoverrides"],
+	"descriptionId": "prv_aska",
+	"hullName": "Aska (Au)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_aska_au",
+	"spriteName": "graphics/prv/ships/rare/prv_aska_au.png",
+	"weaponSlotChanges":{
+		"WS0001":{
+		  "type": "BALLISTIC",
+		  "arc": 60,
+		},
+		"WS0002":{
+		  "type": "SYNERGY",
+		},
+		"WS0003":{
+		  "type": "SYNERGY",
+		},
+		"WS0004":{
+		  "type": "SYNERGY",
+		},
+	},
+	#"engineSlotChanges":{
+	#	"0":{"style":"MIDLINE"},
+	#	"1":{"style":"MIDLINE"},
+	#	"2":{"style":"MIDLINE"},
+	#	"3":{"style":"MIDLINE"},
+	#	"4":{"style":"MIDLINE"},
+	#	"5":{"style":"MIDLINE"},
+	#	"6":{"style":"MIDLINE"},
+	#	"7":{"style":"MIDLINE"},
+	#	"8":{"style":"MIDLINE"},
+	#	"9":{"style":"MIDLINE"},
+	#	"10":{"style":"MIDLINE"},
+	#	"11":{"style":"MIDLINE"},
+	#}, 
+}

@@ -1,0 +1,57 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "heavy_machinegun_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointGunSprite": "graphics/filgap/weapons/filgap_scattergun_barrel_hardpoint.png",
+  "hardpointOffsets": [
+    14,
+    0,
+    16,
+    3,
+    16,
+    -3
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_scattergun_hardpoint.png",
+  "id": "filgap_scattergun",
+  "muzzleFlashSpec": {
+    "length": 20,
+    "particleColor": [
+      255,
+      155,
+      75,
+      255
+    ],
+    "particleCount": 10,
+    "particleDuration": 0.3,
+    "particleSizeMin": 8,
+    "particleSizeRange": 9,
+    "spread": 15
+  },
+  "projectileSpecId": "filgap_scattergun_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretGunSprite": "graphics/filgap/weapons/filgap_scattergun_barrel_turret.png",
+  "turretOffsets": [
+    12,
+    0,
+    14,
+    -3,
+    14,
+    3
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_scattergun_turret.png",
+  "type": "BALLISTIC",
+  "visualRecoil": 2
+}

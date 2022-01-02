@@ -1,0 +1,36 @@
+{
+	"id":"prv_heavyspattergun_main_shot",
+	#"onHitEffect":"scripts.weapons.prv_spattergun_unified_OnHitEffect",
+	"onHitEffect":"scripts.weapons.prv_spattergun_sticky_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"explosionColor":[199,102,255,196],  # purely visual, will get a white additively blended core on top of this color
+	"explosionColor":[199,102,255,64],  # purely visual, will get a white additively blended core on top of this color
+	"explosionSpec":{
+		"duration":0.2f, # not visual #0.1
+		"radius":200,
+		"coreRadius":125, # full damage within core radius
+		"collisionClass":PROJECTILE_FF,
+		"collisionClassByFighter":PROJECTILE_FIGHTER,
+		"particleSizeMin":8.0,
+		"particleSizeRange":4.0,
+		"particleDuration":3,
+		"particleCount":20,
+		"particleColor":[220,160,255,196]
+				},
+	####
+	"length":90.0, #60
+	"width":30, #20
+	"hitGlowRadius":45, #30
+	"glowColor":[199,102,255,128], #proj glow
+	"glowRadius":30, #20
+	"fadeTime":0.45, #0.3
+	"fringeColor":[199,102,255,196],
+	"coreColor":[220,160,255,196],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":3.0,
+	#"bulletSprite":"graphics/prv/missiles/prv_shell_spattergun.png",		
+}

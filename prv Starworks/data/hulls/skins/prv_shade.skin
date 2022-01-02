@@ -1,0 +1,24 @@
+{
+  "baseHullId": "shade",
+  "baseValueMult": 1,
+#  "builtInMods": [
+#    "prv_auxiliary"
+#  ],
+  "tags":["prv_adv_bp","prv_aux_bp"],
+  "tech":"prv Starworks",
+  "descriptionId": "shade",
+  "descriptionPrefix":"This ship has been given prv markings. Systems modifications are otherwise superficial.",
+  #"hullDesignation": "FRIGATE",
+  "hullName": "Shade (prv)",
+#  "removeBuiltInMods": [
+#    "civgrade"
+#  ],
+  "restoreToBaseHull": false,
+  "style": "PRV_HIGH",
+  "skinHullId": "prv_shade",
+  "spriteName": "graphics/prv/ships/prv_shade.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_HIGH"},
+		"1":{"style":"PRV_HIGH"},
+	},    
+}

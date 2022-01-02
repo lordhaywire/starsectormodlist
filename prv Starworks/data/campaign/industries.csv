@@ -1,0 +1,26 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+prv_rb_pirate_1,Raider Hideout,,,,3,,,"prv_pirate, tactical_bombardment, structure",,graphics/prv/icons/industry/prv_raider_base.png,data.scripts.campaign.prv_war_syndicate,"In good times, merchants. In bad times, pirates. Outlaws operate out of this hideout, and in greater numbers if the market has low stability.",2444,EXTREME
+prv_rb_pirate_2,Armed Community,,,,5,,,"prv_pirate, tactical_bombardment, structure",,graphics/prv/icons/industry/prv_armed_community.png,data.scripts.campaign.prv_war_syndicate,"Rusters take a very distributed approach to warfare, a bring-your-own-ship attitude to military procurement, and regard chain of command as largely optional. Large raiding parties can launch from the colony, and in greater numbers if stability is low.",2445,EXTREME
+prv_rb_pirate_3,War Syndicate HQ,100,120,,7,,,"prv_pirate, tactical_bombardment, industry",,graphics/prv/icons/industry/prv_war_syndicate_hq.png,data.scripts.campaign.prv_war_syndicate,The War Syndicate puts a professional face on what some would describe as shameless warlordism. If colony stability is low entire pirate armadas may be launched from these facilities.,2446,EXTREME
+prv_station1,Orbital Station - prv,50,90,,3,,prv_station2,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:prv_station1_standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.scripts.campaign.prv_station,"A prv-style space station, featuring dispersed firepower and slowly shifting axial rotation.
+
+Must be reduced before invasions or bombardment can be attempted.",2047,
+prv_station2,Battlestation - prv,100,120,,4,prv_station1,prv_station3,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:prv_station2_standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,data.scripts.campaign.prv_station,"A prv-style space station, augmented with twin shields, a mine teleporter, and shifting axial rotation.
+
+Must be reduced before invasions or bombardment can be attempted.",2057,
+prv_station3,Star Fortress - prv,200,180,,5,prv_station2,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:prv_station3_standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,data.scripts.campaign.prv_station,"A heavily armed prv-style battlestation, featuring powerful shielding, defense drones, a minefield, and rapidly shifting axial rotation.
+
+Must be reduced before invasions or bombardment can be attempted.",2067,
+prv_labs,Laboratory Complex,55,90,,12,,,"prv_laboratory, industry, urban, uses_blueprints",,graphics/prv/icons/industry/prv_labs.png,data.scripts.campaign.prv_labs,"All the facilities required to assault the natural order of the world with the cutting edge of notion. Here exotic minds and esoteric materials are turned into practical goods, decadent or destructive.",444,MEDIUM

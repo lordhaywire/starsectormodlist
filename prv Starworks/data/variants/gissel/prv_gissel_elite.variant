@@ -1,0 +1,58 @@
+{
+  "displayName": "Elte",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_gissel",
+  "hullMods": [
+    "targetingunit"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gissel_elite",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "amblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "harpoon",
+        "WS0002": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BI01": "prv_skatunge",
+        "BI02": "prv_skatunge",
+        "BI03": "prv_skatunge",
+        "BI04": "prv_skatunge"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ionpulser",
+        "WS0006": "prv_pskd",
+        "WS0007": "prv_pskd"
+      }
+    }
+  ],
+  "wings": []
+}

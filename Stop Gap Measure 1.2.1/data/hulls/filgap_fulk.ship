@@ -1,0 +1,258 @@
+{
+  "bounds": [
+    21,
+    -5.5,
+    11,
+    -8,
+    25.5,
+    -11.5,
+    25.5,
+    -23,
+    16.5,
+    -25,
+    16.5,
+    -35.5,
+    6.5,
+    -40,
+    0.5,
+    -46,
+    -10,
+    -46,
+    -19.5,
+    -37,
+    -26.5,
+    -38.5,
+    -31.5,
+    -35.5,
+    -31.5,
+    -28.5,
+    -26.5,
+    -25,
+    -23.5,
+    -26.5,
+    -19.5,
+    -26.5,
+    -14.5,
+    -21.5,
+    -21.5,
+    -22,
+    -24,
+    -20,
+    -24,
+    -16,
+    -19.5,
+    -12.5,
+    -29.5,
+    -10,
+    -29.5,
+    -5,
+    -24.5,
+    -4,
+    -24.5,
+    4,
+    -29.5,
+    5,
+    -29.5,
+    10,
+    -19.5,
+    12.5,
+    -24,
+    16,
+    -24,
+    20,
+    -21.5,
+    22,
+    -14.5,
+    21.5,
+    -19.5,
+    26.5,
+    -23.5,
+    26.5,
+    -26.5,
+    25,
+    -31.5,
+    28.5,
+    -31.5,
+    35.5,
+    -26.5,
+    38.5,
+    -19.5,
+    37,
+    -10,
+    46,
+    0.5,
+    46,
+    6.5,
+    40,
+    16.5,
+    35.5,
+    16.5,
+    25,
+    25.5,
+    23,
+    31,
+    19,
+    31,
+    14,
+    24,
+    9,
+    11,
+    8,
+    21,
+    5.5
+  ],
+  "builtInMods": [
+    "filgap_luddic_refit"
+  ],
+  "builtInWings": [],
+  "center": [
+    48,
+    32.5
+  ],
+  "collisionRadius": 65.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 30,
+      "location": [
+        -31,
+        32
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": -180,
+      "contrailSize": 17,
+      "length": 30,
+      "location": [
+        -31,
+        -32
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -24,
+        18
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -24,
+        -18
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 65,
+  "hullId": "filgap_fulk",
+  "hullName": "Fulk",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 57.5,
+  "spriteName": "graphics/filgap/ships/filgap_fulk.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 225,
+      "id": "WS0001",
+      "locations": [
+        -7.5,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 225,
+      "id": "WS0002",
+      "locations": [
+        -7.5,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        4.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0004",
+      "locations": [
+        16.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0005",
+      "locations": [
+        19.5,
+        -17
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        -5,
+        45.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 5,
+      "id": "WS0007",
+      "locations": [
+        -5,
+        -45.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 96
+}

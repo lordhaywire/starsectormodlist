@@ -1,0 +1,81 @@
+{
+  "bounds": [
+    15,
+    0,
+    10.5,
+    -9,
+    -3,
+    -19.5,
+    -4.5,
+    -5.5,
+    -16,
+    0,
+    -16,
+    -0,
+    -4.5,
+    5.5,
+    -3,
+    19.5,
+    10.5,
+    9,
+    15,
+    -0
+  ],
+  "builtInWings": [],
+  "center": [
+    21,
+    16
+  ],
+  "collisionRadius": 25,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 19,
+      "location": [
+        -6.5,
+        12
+      ],
+      "style": "LOW_TECH",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 19,
+      "location": [
+        -6.5,
+        -12
+      ],
+      "style": "LOW_TECH",
+      "width": 7
+    }
+  ],
+  "height": 32,
+  "hullId": "filgap_asp",
+  "hullName": "Asp",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 22,
+  "spriteName": "graphics/filgap/ships/filgap_asp.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        3,
+        -6
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 42
+}

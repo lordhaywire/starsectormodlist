@@ -1,0 +1,59 @@
+{
+  "displayName": "Cilivian",
+  "fluxCapacitors": 14,
+  "fluxVents": 5,
+  "goalVariant": true,
+  "hullId": "filgap_starblazer",
+  "hullMods": [
+    "recovery_shuttles",
+    "insulatedengine"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_starblazer_Civilian",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightmg",
+        "WS 002": "lightmg",
+        "WS 003": "filgap_scattergun",
+        "WS 004": "filgap_scattergun",
+        "WS 005": "lightmg",
+        "WS 006": "lightmg",
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": [
+    "talon_wing",
+    "talon_wing",
+    "wasp_wing"
+  ]
+}

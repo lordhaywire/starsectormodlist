@@ -1,0 +1,65 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "baseFleetCostMultiplier":1.0,
+    
+    "rebelFleetSuffix":"Dissidents",
+    
+    "marketSpawnWeight":0.75,
+    
+    "morality":"evil",
+    
+    "alignments":{
+        "militarist":1,
+        "diplomatic":-1,
+        "hierarchial":1,
+    },
+    "diplomacyTraits":["paranoid", "monopolist", "temperamental"],
+
+    "factionIdForHqResponse":"lions_guard",
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.DiktatNamer",   
+    "specialForcesMaxFleets":1,
+    
+    "startShipsSolo":[
+      ["swp_brawler_lions_guard_eli"],
+      ["brawler_Elite"]
+    ],
+    "startShipsCombatSmall":[
+      ["swp_hammerhead_lions_guard_eli", "swp_vigilance_lions_guard_eli", "kite_Standard"],
+      ["hammerhead_Balanced", "vigilance_AP", "monitor_Escort"]
+    ],
+    "startShipsTradeSmall":[["tarsus_Standard", "vigilance_Starting", "mercury_PD"]],
+    "startShipsCombatLarge":[
+      ["swp_vulture_sta", "swp_hammerhead_lions_guard_eli", "swp_vigilance_lions_guard_eli"],
+      ["gryphon_FS", "hammerhead_Elite", "vigilance_FS"]
+    ],
+    "startShipsTradeLarge":[["colossus_Standard", "mule_Standard", "wayfarer_Standard"]],
+    "startShipsExplorerLarge":[["venture_Balanced", "gemini_Standard", "wayfarer_Standard"]],
+    "startShipsCarrierSmall":[["drover_Strike", "vigilance_Standard", "brawler_Elite"]],
+    "startShipsCarrierLarge":[
+      ["swp_heron_lions_guard_eli", "swp_archon_att", "kite_Standard"],
+      ["heron_Strike", "sunder_Assault", "centurion_Starting"]
+    ],
+    
+    "startSpecialItems":[
+        [["midline_package", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.5},
+    ],
+    
+    "industrySeeds":[
+        {"id":"fuelprod", "mult":0.2},
+        {"id":"orbitalworks", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"synchrotron", "count":1},
+        {"id":"nanoforge_corrupted", "count":1},
+        {"id":"aiCore_station", "count":1},
+    ],
+}

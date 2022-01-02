@@ -1,0 +1,35 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "goalVariant": true,
+  "hullId": "filgap_pyrrhocorax",
+  "hullMods": [
+    "ecm"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_pyrrhocorax_Support",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser",
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser"
+      }
+    }
+  ],
+  "wings": [
+    "wasp_wing"
+  ]
+}

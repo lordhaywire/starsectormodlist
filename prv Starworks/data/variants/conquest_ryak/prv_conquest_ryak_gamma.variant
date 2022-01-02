@@ -1,0 +1,71 @@
+{
+  "variantId": "prv_conquest_ryak_gamma",
+  "hullId": "prv_conquest_ryak",
+  "displayName": "Gammamodell",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "frontemitter",
+    "prv_missile_plating"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_ljungeld_conquest_prototype"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "prv_rorsangare",
+        "WS 020": "prv_rorsangare"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 012": "prv_skata",
+        "WS 014": "prv_skata"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_akers",
+        "WS 004": "prv_akers",
+        "WS0001": "prv_uvir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "prv_pskd",
+        "WS 006": "prv_pskd",
+        "WS 007": "prv_pskd",
+        "WS 008": "prv_pskd",
+        "WS 009": "prv_pskd",
+        "WS 010": "prv_pskd",
+        "WS 011": "prv_akc",
+        "WS 013": "prv_akc",
+        "WS 015": "prv_lpk",
+        "WS 016": "prv_lpk",
+        "WS 017": "prv_lpk",
+        "WS 018": "prv_lpk",
+        "WS 022": "prv_akc",
+        "WS 023": "prv_akc"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

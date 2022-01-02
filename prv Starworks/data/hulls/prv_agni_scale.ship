@@ -1,0 +1,83 @@
+{
+  "hullName": "Scale",
+  "hullId": "prv_agni_scale",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/agni/prv_agni_scale.png",
+  "style": "PRV_AGNI",
+  "height": 21,
+  "width": 18,
+  "center": [9, 8],
+  "collisionRadius": 16.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 16,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_agni_solarcarapace",
+    "prv_agni_prominence",
+    "prv_agni_toughhide"
+  ],
+  "builtInWeapons": {
+    "prv_agni_prominence": "prv_agni_prominence"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [8, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-1, -0]
+    },
+    {
+      "id": "prv_agni_prominence",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 180,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-7, -4],
+      "length": 7,
+      "width": 3,
+      "angle": -155,
+      "contrailSize": 3,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-7, 4],
+      "length": 7,
+      "width": 3,
+      "angle": 155,
+      "contrailSize": 3,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-5, -0],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -6, -6,
+    8, -6,
+    8, 6,
+    -6, 6
+  ]
+}

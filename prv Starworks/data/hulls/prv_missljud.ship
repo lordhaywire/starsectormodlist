@@ -1,0 +1,61 @@
+{
+  "hullName": "Missljud",
+  "hullId": "prv_missljud",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_missljud.png",
+  "style": "PRV_MID",
+  "height": 25,
+  "width": 25,
+  "center": [12.5, 11.5],
+  "collisionRadius": 24,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 13,
+  "viewOffset": 0,
+  "builtInMods": [
+    #"shield_always_on",
+    "fluxshunt"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0.5, 5.5]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 180,
+      "locations": [-4.5, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9, 5],
+      "length": 13,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-9, -5],
+      "length": 13,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    8.5, -0,
+    -5.5, -10.5,
+    -5.5, 10.5
+  ]
+}

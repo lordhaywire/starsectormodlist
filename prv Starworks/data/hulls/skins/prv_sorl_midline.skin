@@ -1,0 +1,62 @@
+{
+	"baseHullId":"prv_sorl",
+	"skinHullId":"prv_sorl_midline",
+	"hullName":"Sorl (League)",
+	"descriptionId":"prv_sorl",
+	"descriptionPrefix":"License-produced model of the Sorl manufactured in the Persean League.",
+	"tags":["prv_midline_bp"],
+	#"tech":"Midline (prv)",
+	"tech":"Midline",
+	"restoreToBaseHull":false,
+	#"ordnancePoints":40,
+	#"fleetPoints":4,
+	"baseValueMult":0.9,
+	"suppliesToRecover":15,
+	"suppliesPerMonth":15,
+	"spriteName":"graphics/prv/ships/prv_sorl_midline.png",
+	"systemId":"maneuveringjets",
+	"removeWeaponSlots":["prv_ramshield"], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["prv_ramshield"], 		# hullmod ids
+	"removeBuiltInWeapons":["prv_ramshield"],	# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0001":{
+		  "type": "HYBRID",
+	   },
+	   "WS0002":{
+		  "type": "HYBRID",
+	   },
+	   "WS0003":{
+		  "type": "HYBRID",
+	   },
+	   "WS0004":{
+		  "type": "HYBRID",
+	   },
+	   "WS0005":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0006":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0007":{
+		  "type": "MISSILE",
+	   },
+	},
+	"builtInMods":[ "prv_ramshield_modular" ],
+	"builtInWeapons":{
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+		"8":{"style":"MIDLINE"},
+		"9":{"style":"MIDLINE"},
+		"10":{"style":"MIDLINE"},
+		"11":{"style":"MIDLINE"},
+	},    
+}

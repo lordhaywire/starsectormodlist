@@ -1,0 +1,59 @@
+{
+  "displayName": "Sword",
+  "fluxCapacitors": 2,
+  "fluxVents": 30,
+  "goalVariant": false,
+  "hullId": "prv_aska_lc",
+  "hullMods": [
+    "dedicated_targeting_core",
+    #"missleracks",
+    "heavyarmor",
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_lc_sword",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0001": "locust",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "hammerrack",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_remission",
+        "WS0003": "prv_remission",
+        "WS0004": "prv_remission",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_lighttripleac",
+        "WS0006": "prv_lighttripleac",
+	  "WS0007": "prv_lighttripleac",
+        "WS0008": "prv_lighttripleac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

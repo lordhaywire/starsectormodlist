@@ -1,0 +1,23 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 18,
+    "fluxVents": 8,
+    "goalVariant": true,
+    "hullId": "roider_jane",
+    "hullMods": ["expanded_deck_crew"],
+    "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "roider_jane_Support",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS 001": "roider_marksman",
+            "WS 002": "roider_marksman",
+            "WS 003": "roider_marksman",
+            "WS 004": "roider_marksman"
+        }
+    }],
+    "wings": []
+}

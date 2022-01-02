@@ -1,0 +1,238 @@
+{
+  "hullName": "Fasvinge",
+  "hullId": "prv_fasvinge",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/prv/ships/prv_fasvinge.png",
+  "style": "PRV_HIGH",
+  "height": 150,
+  "width": 270,
+  "center": [135, 89],
+  "collisionRadius": 164,
+  "shieldCenter": [-21, -0],
+  "shieldRadius": 140.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "prv_flickercore"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 60,
+      "locations": [0.5, 84.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": -60,
+      "locations": [0.5, -84.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [40, 47]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, -47]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [49, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [23, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -30,
+      "locations": [-4, -61]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 30,
+      "locations": [-4, 61]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 30,
+      "locations": [12, 35]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -30,
+      "locations": [12, -35]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [47, -26]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [47, 26]
+    },
+    {
+      "id": "WS0013",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [-24, 101]
+    },
+    {
+      "id": "WS0014",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [-24, -101]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-76.5, -107.5],
+      "length": 27,
+      "width": 10,
+      "angle": -155,
+      "contrailSize": 10,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-76.5, 107.5],
+      "length": 27,
+      "width": 10,
+      "angle": 155,
+      "contrailSize": 10,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-55, 59],
+      "length": 72,
+      "width": 30,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-55, -59],
+      "length": 72,
+      "width": 30,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-53.5, 45.5],
+      "length": 12,
+      "width": 12,
+      "angle": -155,
+      "contrailSize": 12,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-53.5, -45.5],
+      "length": 12,
+      "width": 12,
+      "angle": 155,
+      "contrailSize": 12,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-71, -113.5],
+      "length": 12,
+      "width": 12,
+      "angle": -155,
+      "contrailSize": 12,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-71, 113.5],
+      "length": 12,
+      "width": 12,
+      "angle": 155,
+      "contrailSize": 12,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    -53.5, -62.5,
+    -78.5, -83.5,
+    -79.5, -93.5,
+    -51.5, -128,
+    -8, -118.5,
+    -8, -95,
+    7.5, -86.5,
+    12, -92,
+    40, -72,
+    29.5, -50.5,
+    29.5, -28,
+    48, -13,
+    48, 13,
+    29.5, 28,
+    29.5, 50.5,
+    40, 72,
+    12, 92,
+    7.5, 86.5,
+    -8, 95,
+    -8, 118.5,
+    -51.5, 128,
+    -79.5, 93.5,
+    -78.5, 83.5,
+    -53.5, 62.5
+  ]
+}

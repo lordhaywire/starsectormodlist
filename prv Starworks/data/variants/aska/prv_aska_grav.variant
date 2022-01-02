@@ -1,0 +1,60 @@
+{
+  "variantId": "prv_aska_grav",
+  "hullId": "prv_aska",
+  "displayName": "Hunter",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 30,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_gravanchor",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_heavyakers",
+        "WS0003": "prv_heavyakers",
+        "WS0004": "prv_heavyakers",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI03": "prv_kaja_quint"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+	  "WS0005": "prv_spattergun",
+        "WS0006": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdburst",
+        "WS0008": "pdburst",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

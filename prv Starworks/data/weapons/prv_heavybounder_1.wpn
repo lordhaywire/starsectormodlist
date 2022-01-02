@@ -1,0 +1,62 @@
+{
+  "id": "prv_heavybounder_1",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_heavybounder_1_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "displayArcRadius": 750,
+  "turretSprite": "graphics/prv/weapons/prv_heavybounder/prv_heavybounder_turret_00.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_heavybounder/prv_heavybounder_hardpoint_00.png",
+  "renderAboveAllWeapons": 0,
+  "numFrames": 6,
+  "frameRate": 36,
+  "glowColor": [
+    255,
+    128,
+    0,
+    196
+  ],
+  "visualRecoil": 0,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    27.5,
+    -2,
+    27.5,
+    2
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    35,
+    2,
+    35,
+    -2
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 24,
+    "spread": 5,
+    "particleSizeMin": 7,
+    "particleSizeRange": 16,
+    "particleDuration": 0.45,
+    "particleCount": 14,
+    "particleColor": [
+      255,
+      120,
+      105,
+      250
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_bounder_fire"
+}

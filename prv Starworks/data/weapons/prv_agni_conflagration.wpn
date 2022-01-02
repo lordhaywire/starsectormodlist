@@ -1,0 +1,46 @@
+{
+  "id": "prv_agni_conflagration",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_conflagration_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/prv/weapons/prv_agni_conflagration_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_conflagration_hardpoint.png",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    -7,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    -4,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 35,
+    "spread": 30,
+    "particleSizeMin": 10,
+    "particleSizeRange": 35,
+    "particleDuration": 1.25,
+    "particleCount": 50,
+    "particleColor": [
+      255,
+      96,
+      0,
+      255
+    ]
+  },
+  "fireSoundTwo": "salamander_fire",
+  "mountTypeOverride": "HYBRID"
+}

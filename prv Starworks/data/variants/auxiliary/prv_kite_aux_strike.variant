@@ -1,0 +1,29 @@
+{
+  "displayName": "Auxiliary-Strike",
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "goalVariant": true,
+  "hullId": "prv_kite",
+  "hullMods": [
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_kite_aux_strike",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_berguv_rack",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "irpulse",
+      }
+    },
+  ],
+  #"wings": ["prv_missljud_wing",]
+}

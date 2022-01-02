@@ -1,0 +1,63 @@
+{
+  "id": "prv_lighttripleac",
+  "specClass": "projectile",
+  "projectileSpecId": "lightdualac_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "displayArcRadius": 600,
+  "turretSprite": "graphics/prv/weapons/prv_lighttripleac_turret.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_lighttripleac_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_lighttripleac_hardpoint.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_lighttripleac_hardpoint_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "specialWeaponGlowHeight": 30,
+  "specialWeaponGlowWidth": 12,
+  "visualRecoil": 7,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    10.5,
+    4,
+    12.5,
+    0,
+    10.5,
+    -4
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    17.5,
+    4,
+    19.5,
+    0,
+    17.5,
+    -4
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 10,
+    "spread": 28,
+    "particleSizeMin": 12,
+    "particleSizeRange": 14,
+    "particleDuration": 0.2,
+    "particleCount": 18,
+    "particleColor": [
+      165,
+      225,
+      185,
+      175
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "light_dual_autocannon_fire"
+}

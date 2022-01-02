@@ -1,0 +1,63 @@
+{
+  "beamEffect": "scripts.weapons.prv_vakt_BeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    34,
+    0,
+    128,
+    255
+  ],
+  "darkCore": true,
+  #"fireSoundOne": "prv_uvbeam_fighter_chargeup",
+  "fireSoundTwo": "pd_laser_loop",
+  "fringeColor": [
+    #43,0,152,255
+    153,102,255,255
+  ],
+  "glowColor": [
+    153,
+    102,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_uvbeam_fighter_glow.png",
+  "hardpointOffsets": [
+    16,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_uvbeam_fighter.png",
+  "hitGlowRadius": 10,
+  "id": "prv_uvbeam_fighter",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 1,
+  "renderAboveAllWeapons": 0,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 512,
+  "textureType": [
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_uvbeam_fighter_glow.png",
+  "turretOffsets": [
+    9,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_uvbeam_fighter.png",
+  "type": "ENERGY",
+  "width": 6
+}

@@ -1,0 +1,44 @@
+{
+  "id": "prv_akc",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_akc_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_akc/prv_akc_single_turret_00.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_akc/prv_akc_single_hardpoint_00.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    21,
+    -0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    22,
+    -0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 6,
+  "frameRate": 40,
+  "muzzleFlashSpec": {
+    "length": 12,
+    "spread": 2,
+    "particleSizeMin": 3,
+    "particleSizeRange": 12,
+    "particleDuration": 0.15,
+    "particleCount": 7,
+    "particleColor": [
+		255,120,105,250
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_akc_fire"
+}

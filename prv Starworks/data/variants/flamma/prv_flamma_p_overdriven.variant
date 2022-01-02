@@ -1,0 +1,28 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "hullId": "prv_flamma_p",
+  "hullMods": [
+    "safetyoverrides",
+  ],
+  "quality": 3,
+  "variantId": "prv_flamma_p_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualmg",
+        "WS0004": "lightdualmg"
+      }
+    },
+  ]
+}

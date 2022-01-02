@@ -1,0 +1,41 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "sabot_srm_fire",
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    7,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_skatunge_hardpoint.png",
+  "id": "prv_skatunge",
+  "muzzleFlashSpec": {
+    "length": 8,
+    "particleColor": [
+      255,
+      207,
+      64,
+      196
+    ],
+    "particleCount": 11,
+    "particleDuration": 1,
+    "particleSizeMin": 6,
+    "particleSizeRange": 12,
+    "spread": 9
+  },
+  "projectileSpecId": "prv_skatunge_srm",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    2,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_skatunge_hardpoint.png",
+  "type": "MISSILE"
+}

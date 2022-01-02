@@ -1,0 +1,66 @@
+{
+  "variantId": "prv_rok_grav",
+  "hullId": "prv_rok",
+  "displayName": "Gravitic",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "turretgyros",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_heavygravkan",
+        "WS0002": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "reaper",
+        "WS0015": "reaper",
+        "WS0016": "reaper",
+        "WS0017": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_jursla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "phasebeam",
+        "WS0005": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "prv_pskd",
+        "WS0007": "prv_pskd",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0012": "prv_pskd",
+        "WS0013": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

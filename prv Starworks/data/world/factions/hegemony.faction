@@ -1,0 +1,11 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_ilbud_h",
+		],
+	},
+	
+	"custom":{
+		"syndicateName": "The Tezcatlipoca network",
+	}
+}

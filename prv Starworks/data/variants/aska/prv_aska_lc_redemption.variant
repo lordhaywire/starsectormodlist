@@ -1,0 +1,59 @@
+{
+  "displayName": "Redemption",
+  "fluxCapacitors": 8,
+  "fluxVents": 18,
+  "goalVariant": true,
+  "hullId": "prv_aska_lc",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks",
+    "armoredweapons",
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_lc_redemption",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BI01": "hammerrack",
+        "WS0001": "hammerrack",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "sabotpod",
+        "WS0004": "sabotpod",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "chaingun",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightag",
+        "WS0006": "lightag",
+        "WS0007": "prv_lighttripleac",
+        "WS0008": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

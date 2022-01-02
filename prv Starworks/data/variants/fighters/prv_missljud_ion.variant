@@ -1,0 +1,22 @@
+{
+  "variantId": "prv_missljud_ion",
+  "hullId": "prv_missljud",
+  "displayName": "Suppression Drone",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0.25,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_blames_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

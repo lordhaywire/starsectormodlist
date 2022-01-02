@@ -1,0 +1,47 @@
+{
+  "displayName": "Assault",
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "filgap_chrysops",
+  "hullMods": [
+    "armoredweapons"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_chrysops_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_mosychlosbag",
+        "WS0002": "filgap_mosychlosbag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualac",
+        "WS0004": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightmg",
+        "WS0007": "lightmg"
+      }
+    }
+  ],
+  "wings": []
+}

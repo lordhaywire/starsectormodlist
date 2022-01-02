@@ -1,0 +1,38 @@
+{
+  "displayName": "Ambush",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "prv_station_drone_redan",
+  "hullMods": [],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_station_drone_redan_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_akc",
+        "WS0002": "prv_akc",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_atropos_er",
+        "WS0004": "prv_atropos_er",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_spattergun"
+      }
+    },
+  ],
+  "wings": []
+}

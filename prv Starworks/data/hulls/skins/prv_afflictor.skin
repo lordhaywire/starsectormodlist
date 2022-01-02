@@ -1,0 +1,24 @@
+{
+  "baseHullId": "afflictor",
+  "baseValueMult": 1,
+#  "builtInMods": [
+#    "prv_auxiliary"
+#  ],
+  "tags":["prv_adv_bp","prv_aux_bp"],
+  "tech":"prv Starworks",
+  "descriptionId": "afflictor",
+  "descriptionPrefix":"This ship has been given prv markings. Systems modifications are otherwise superficial.",
+  #"hullDesignation": "FRIGATE",
+  "hullName": "Afflictor (prv)",
+#  "removeBuiltInMods": [
+#    "civgrade"
+#  ],
+  "restoreToBaseHull": false,
+  "style": "PRV_HIGH",
+  "skinHullId": "prv_afflictor",
+  "spriteName": "graphics/prv/ships/prv_afflictor.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_HIGH"},
+		"1":{"style":"PRV_HIGH"},
+	},    
+}

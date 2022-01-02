@@ -1,0 +1,70 @@
+{
+  "hullName": "Skarn",
+  "hullId": "prv_skarn",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_skarn.png",
+  "style": "PRV_LOW",
+  "height": 35,
+  "width": 28,
+  "center": [14, 18],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 28,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "prv_akc_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [17, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-1.5, 11.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-1.5, -10.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 4.5],
+      "length": 17,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-12.5, -3.5],
+      "length": 17,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    15, 7,
+    15, -6,
+    -11, -10,
+    -11, 11
+  ]
+}

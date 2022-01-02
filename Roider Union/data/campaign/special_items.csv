@@ -1,0 +1,7 @@
+name,id,tags,rarity,base price,stack size,cargo space,icon,sound id,sound id drop,plugin,plugin params,desc,order
+Roider Blueprint Package,roider_package,"package_bp, no_drop",,20000,1000,1,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,roider_bp,Enables heavy industry to construct designs and modifications developed by the Roider Union.,200
+,,,,,,,,,,,,,
+Base Ship Retrofit Template,roider_retrofit_bp,single_bp,,10000,1000,1,graphics/icons/cargo/roider_ship_blueprint.png,ui_chip_pickup,ui_ship_bp_drop,scripts.campaign.retrofit.blueprints.Roider_RetrofitBlueprintPlugin,,Describes a streamlined process for heavy industry to directly construct the given converted ship hull. Requires blueprints for at least one source hull.,301
+,,,,,,,,,,,,,
+Union HQ Blueprint,roider_industry_bp,,,20000,1000,1,graphics/icons/cargo/blueprint_industry.png,ui_chip_pickup,ui_industry_bp_drop,scripts.campaign.econ.Roider_UnionHQBlueprint,,Contains the technological specifications needed to construct a planet-side industry or structure.,400
+Rockpiper Shipworks Blueprint,roider_industry_bp2,,,20000,1000,1,graphics/icons/cargo/blueprint_industry.png,ui_chip_pickup,ui_industry_bp_drop,scripts.campaign.econ.Roider_ShipworksBlueprint,,Contains the technological specifications needed to construct a planet-side industry or structure.,400

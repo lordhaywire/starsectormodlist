@@ -1,0 +1,59 @@
+{
+  "id": "prv_korp",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_korp_mrm",
+  "type": "MISSILE",
+  "mountTypeOverride":"SYNERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/prv/weapons/prv_korp_launcher_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_korp_launcher_hardpoint.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    15.5,
+    7,
+    17.5,
+    0,
+    15.5,
+    -7
+  ],
+  "turretAngleOffsets": [
+    5,
+    0,
+    -5
+  ],
+  "hardpointOffsets": [
+    13.5,
+    7,
+    15.5,
+    0,
+    13.5,
+    -7
+  ],
+  "hardpointAngleOffsets": [
+    5,
+    0,
+    -5
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": -40,
+    "spread": 12,
+    "particleSizeMin": 8,
+    "particleSizeRange": 14,
+    "particleDuration": 1,
+    "particleCount": 14,
+    "particleColor": [
+      180,
+      180,
+      255,
+      255
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundOne": "thumper_spinup",
+  "fireSoundTwo": "prv_korp_fire"
+}

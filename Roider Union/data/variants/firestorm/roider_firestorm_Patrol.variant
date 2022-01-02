@@ -1,0 +1,58 @@
+{
+    "displayName": "Patrol",
+    "fluxCapacitors": 15,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "roider_firestorm",
+    "hullMods": ["converted_hangar"],
+    "modules": [
+        {"LEFT ARMOR": "roider_firestorm_left_Standard"},
+        {"RIGHT ARMOR": "roider_firestorm_right_Standard"}
+    ],
+    "permaMods": [],
+    "variantId": "roider_firestorm_Patrol",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "arbalest"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 002": "hammer",
+                "WS 003": "hammer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "lightmortar",
+                "WS 005": "lightmortar",
+                "WS 006": "lightmortar",
+                "WS 007": "lightmortar",
+                "WS 008": "lightmortar",
+                "WS 009": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 010": "lightdualac",
+                "WS 011": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "roider_marksman",
+                "WS 013": "roider_marksman"
+            }
+        }
+    ],
+    "wings": ["roider_duster_wing"]
+}

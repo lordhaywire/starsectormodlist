@@ -1,0 +1,27 @@
+{
+  "variantId": "prv_ande_nav",
+  "hullId": "prv_ande",
+  "displayName": "Nav",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "nav_relay"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_tardes"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_oklang_wing",
+    "prv_missljud_wing"
+  ]
+}

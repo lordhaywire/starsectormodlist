@@ -1,0 +1,17 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_eld_midline",
+			"prv_flamma_midline",
+			"prv_tystnad_midline",
+			"prv_flock_midline",
+		],
+	},
+	"knownWeapons":{
+		"tags":["prv_bp","prv_adv_bp"],
+	},
+	
+	"custom":{
+		"syndicateName": "Umbra Shipping",
+	}
+}

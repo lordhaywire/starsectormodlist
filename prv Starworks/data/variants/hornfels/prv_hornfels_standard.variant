@@ -1,0 +1,61 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 23,
+  "fluxVents": 30,
+  "goalVariant": true,
+  "hullId": "prv_hornfels",
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_hornfels_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "swarmer",
+        "WS0013": "swarmer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "annihilator",
+        "WS0010": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kartesch",
+        "WS0002": "prv_kartesch",
+        "WS0003": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "lightdualac",
+        "WS0012": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0005": "vulcan",
+        "WS0005r": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

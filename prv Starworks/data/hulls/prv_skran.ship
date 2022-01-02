@@ -1,0 +1,91 @@
+{
+  "hullName": "Skran",
+  "hullId": "prv_skran",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_skran.png",
+  "style": "PRV_HIGH",
+  "height": 28,
+  "width": 44,
+  "center": [22, 16],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 27.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": -0,
+      "locations": [-1, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [-1, -12]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [2.5, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": -180,
+      "locations": [-3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13, 13.5],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-13, -13.5],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-8, 17.5],
+      "length": 12,
+      "width": 4,
+      "angle": 170,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-8, -17.5],
+      "length": 12,
+      "width": 4,
+      "angle": -170,
+      "contrailSize": 4,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -5, -19,
+    9, -0,
+    -5, 19
+  ]
+}

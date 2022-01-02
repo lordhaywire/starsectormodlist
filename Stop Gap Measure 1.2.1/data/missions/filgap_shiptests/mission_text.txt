@@ -1,0 +1,6 @@
+Location: Chicoutimi
+Date: Unknown
+
+A simple custom mod test
+
+Feel free to switch craft and try out different variants.

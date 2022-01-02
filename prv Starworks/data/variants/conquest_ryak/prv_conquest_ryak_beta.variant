@@ -1,0 +1,69 @@
+{
+  "variantId": "prv_conquest_ryak_beta",
+  "hullId": "prv_conquest_ryak",
+  "displayName": "Betamodell",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_ljungeld_conquest_prototype"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 012": "prv_berguv",
+        "WS 014": "prv_berguv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "sabotpod",
+        "WS 020": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "prv_heavyakers",
+        "WS 013": "prv_heavyakers",
+        "WS 015": "ionpulser",
+        "WS 017": "ionpulser",
+        "WS 022": "prv_heavyakers",
+        "WS 023": "prv_heavyakers",
+        "WS0001": "prv_heavygravkan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_pskd",
+        "WS 004": "prv_pskd",
+        "WS 005": "prv_pskd",
+        "WS 006": "prv_pskd",
+        "WS 007": "prv_pskd",
+        "WS 008": "prv_pskd",
+        "WS 009": "prv_pskd",
+        "WS 010": "prv_pskd",
+        "WS 016": "heavyburst",
+        "WS 018": "heavyburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

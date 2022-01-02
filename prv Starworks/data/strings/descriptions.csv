@@ -1,0 +1,957 @@
+id,type,text1,text2,text3,notes
+#############################,,,,,
+###,,,,,
+### Agni,,,,,
+###,,,,,
+#############################,,,,,
+,,,,,
+### Weapons,,,,,
+prv_agni_spines,WEAPON,"”Each spine group is attached to a neuron cluster, and acts independently of the main body ganglions. Their accuracy is most impressive once we consider that they are operating only on impulses from the gravitic sacs and Enholm organs.”","- Emma Sandgren, veterinary neurologist, House Gyllenhaag",,
+#prv_agni_claw,WEAPON,"”While the Agni are largely lucivore, we’ve spotted them smashing small asteroids with a claw strike and then consuming the debris. They’re very picky, and finding a suitable rock can take weeks.","- Karl Nilsson, exobiologist, House Gyllenhaag",,
+prv_agni_web,WEAPON,"”The spinnet structure is remarkably similar to the silk glands of cocooning insects, and we believe it is primarily used to build nests.”","- Karl Nilsson, exobiologist, House Gyllenhaag",,
+prv_agni_teeth,WEAPON,”It took us the better part of a day to extract the damn thing from where it had lodged itself the bulkhead. Plasma cutters simply didn’t work on the enamel.”,"- Erik Tallberg, chief salvor, prv Begynnelsen",,
+prv_agni_pureflame_lance,WEAPON,"”We’ve mostly seen them used in mating displays. The brightest, hottest lance attracts the most mates.”","- My Holmquist, exobiologist, House Gyllenhaag",,
+prv_agni_flamelash,WEAPON,"”If we disturb the creatures, their first response will be a gout of flame emitted from one of their many gas nozzles. We have not yet found a way for our sample retrieval drones to survive this.”","- Karl Nilsson, exobiologist, House Gyllenhaag",,
+prv_agni_conflagration,WEAPON,"”The agitative trial ended with the complete destruction of prv Begynnelsen. But the data is astounding, the energies involved are an order of magnitude beyond what we can account for.”","- Mikael Gyllenhaag, director of exobiology, Fältbiologiska Institutet",,
+prv_agni_eye,WEAPON,”I’m gonna be honest. They creep me out.”,"- Björn Lidén, sensors operator, prv Saknad",,
+,,,,,
+### Systems,,,,,
+prv_agni_cocoon,SHIP_SYSTEM,"”We believe the silk is mostly used for nesting. Very durable material, and easily spun.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Defensive,"Coats the user in layers of defensive silk, which will absorb any incoming damage until it is depleted.",
+prv_agni_cocoon_fighter,SHIP_SYSTEM,"”We believe the silk is mostly used for nesting. Very durable material, and easily spun.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Defensive,"Coats the user in layers of defensive silk, which will absorb any incoming damage until it is depleted.",
+prv_agni_microburn,SHIP_SYSTEM,"”They can be frightfully fast, expecially the larger males, though they also tire quickly.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Movement,Quickly leaps forward at high speed.,
+,,,,,
+### Ships,,,,,
+prv_agni_buck,SHIP,"”Adult bucks are generally found travelling in shoals of one to three families, jealously guarding the breeding-age females from competitors.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_doe,SHIP,"”Adult females spend most of their time rearing hatchlings.  Does without young usually stay near the nest, maintaining and improving it.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_juvenile,SHIP,"”Starting to exhibit strong sex characteristics, the female juveniles develop ’silk’ spinnerets, while the capabilities of the males’ flame organs intensify greatly.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_hatchling,SHIP,"”The youngest are curious and precocious, and are generally the first to investigate any intrusions into Agni territory.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_down,SHIP,"”We find them attached to their hosts, serving as heat insulation. Once disturbed they will attempt to immobilize any threat using sticky silk strands.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_scale,SHIP,"”We find them attached to their hosts, serving as protective armor. Once disturbed they will ignite their interior gas reserves and attack the threat. In this state they live for mere minutes, but are immensely destructive.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_station1_nest,SHIP,"”While we have found a few asteroids showing signs of having had Agni dens in them, the creatures show a remarkable affinity for our artificial constructions, such as mining stations, which they seem to consider ready-made nests only in need of a layer of silk. The fights between nesting pairs over an abandoned station can be fiercely violent.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Infested Station,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+prv_agni_station2_hive,SHIP,"”One of the largest stations in the system has become home to dozens of the creatures, who have made every bit of it their own. Getting an intact exploration team inside the station to examine the organic growths among the nests is one of our highest priorities.”
+
+ - Agni, an executive primer, House Gyllenhaag archives.",Infested Station,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Frigates,,,,,
+#############################,,,,,
+prv_kite,SHIP,"Remodeled to carry a wing of escort drones instead of a gun turret, this shuttle features an impressively optimized flight deck complete with a miniature manufactory.
+
+A familiar civilian design, the ""Kite""-class aeroshuttle is the day-to-day reminder of Fabrique Orbitale's reputation for aeronautical engineering- a valuable specialty even in the age of space travel. This compact space/aircraft is streamlined for efficient atmospheric flight and boasts a grid of cleverly distributed short-burst maneuvering thrusters coordinated by a delta-level AI subsystem to ensure smooth landings (a point driven home by Fabrique marketing by way of amusing ad-holos featuring a well-dressed couple and an overfull wine glass). The Kite has powerful engines for a civilian ship of its size, though zero-G maneuverability leaves something to be desired when the special subsystem is not engaged.
+
+In the dangerous cycles post-Collapse, the Kite has been outfitted with a defense turret in place of the executive-class viewing dome and the two auxiliary jet-pods are replaced with missile systems (which do not need to draw on the limited powerplant). It won't stand up in a fair fight, but the Kite can be given unexpectedly sharp teeth and use its speed to escape from raiders. Luddic Path radicals have even been known to use modified Kite to deliver strike weapons against helpless freighters, followed by engaging the maneuvering subsystem to make a swift exit to avoid the wrath of their victim's escort.",,,
+prv_gnista,SHIP,"Built to support larger ships, the Gnista ensures missile superiority through a combination of once-cutting-edge active flares, light point defense, and its own missile armaments. The ship is unlikely to end many fights on its own, however.
+
+An older prv model, the Gnista was built as a competing offering to the Vigilance frigate. Though it was rejected by the Domain navy, the prv still managed to salvage the program by competing on price, successfully selling the ships to a number of smaller polities in need of cheap patrol craft.
+
+Though not the most common ship in the sector, after hundreds of cycles travelling the starlanes on all sides of the law the Gnista is a tried and true ship with its flaws and virtues known to most spacers.",,,
+prv_ljus,SHIP,"A sensor frigate built for long patrols in the far reaches of space. In addition to a state-of-the-art detection suite the Ljus also carries a modest armament.
+
+After numerous convoy losses to unknown parties prv Starworks started development of a picket ship capable of providing early detection and warning against incoming raids. Priorities were excellent sensor strength, high endurance for extended patrols in both regular and hyperspace, and combat damage avoidance in convoy defense. Breadth of armament, tactical speed, and core structural integrity were considered secondary goals at best.
+
+Combat survivability was achieved in two ways, one very simple and one very complicated. First, additional armor plating was applied to the hull (but not, some will note, the sensor arrays). For its thin frame and small size the Ljus is surprisingly well armored. Second, a deal was struck with the Tri-Tachyon Corporation for them to develop a delta-tier AI system that allows the Ljus to reconfigure its deep space sensor array to instead increase combat targeting range. This ”Lykta” system allows the Ljus to support fellow ships from outside the range of most threatening strike weapons found in the sector.
+
+The advanced sensor array has proven to be very susceptible to battle damage, leading to a generous amount of (D)-grade hulls being available for purchase across the sector.",,,
+prv_ljus_lp,SHIP,"A sensor frigate sans sensors, this ship is dedicated to bringing the light of Ludd unto the unbelievers by means of a nose-mounted Hammer launcher. Extremely threatening for as long as the magazine lasts.",,,
+prv_flamma,SHIP,"A patrol frigate that revels in being the biggest ship in the smallest engagements, the Flamma is a natural companion to the Ljus frigate on local patrols. Offering energy or missile firepower and a potent gravitic shield the Flamma outmuscles the typical frigate while still being fast enough to outpace destroyers and larger ships. That's the ideal, anyway. Proponents call it a pocket destroyer, while detractors dismiss it as a ”fat, lazy cow”. 
+
+While generally unassuming, the Flamma is quietly regarded as the second pillar of the prv, being the first mass-line ship with a graviton-manipulation system. As a technological and doctrinal springboard it has led to a silent revolution in the corporation’s direction.
+
+Readily available and generally competent, the Flamma’s quiet work supporting the rest of the fleet often comes out to be the glue that keeps the prv house of cards together.",,,
+prv_gryning,SHIP,"A light and agile frigate equipped with light armaments and a time-warping device that lets it - in effect - speed up the local flow of time by a noticeable percentage and maintain this level for significant periods of time.
+
+Public records about the history of this ship are exceedingly scarse. What little there is suggests that the Temporal Core is reverse-engineered from a Tri-Tachyon ship, and that the prv failed to maintain the same tach-field precision levels as the Scarab, having to settle for a low-potency but longer-lasting generator.
+
+In the prv the Tachyon Workers' Union (motto: ""Live fast, die old"") recently lost a case concerning whether work hours should be counted based on subjective time or standard time - the ""Time and a half"" case, as the public would call it. The final statement of the court concluded that ""[...] even though work can feel like it drags on forever, this does not change the fact that we have materially objective and reliable timekeeping devices which are more than sufficient at giving us a common frame of reference for the passage of time. Furthermore, this court obeys the laws of causality in accordance with Domain statutes.""
+
+Many temporal academics have objected to the ruling, but arguments about why it would be mistaken tend to get bogged down in solipsism or outright rejection of the possibility of shared frames of reference.",,,
+prv_sinne,SHIP,"A fast attack frigate equipped with advanced Domain-era technologies, the Sinne’s powerful flux lines enable it to stand up to even light cruisers in direct combat. A deadly ship by any measure.
+
+The Sinne was undergoing final trials at the time of the gate system collapse, representing some of the finest work the prv had ever done. This rude interruption of all known society caused some delays in the development of the ship. Now rescued from the deep archives of Kratul Heavy Industries by a dedicated development team, the Sinne is finally ready to make its mark on the sector; an impertinent youth from a lost era.
+
+prv leadership were somewhat concerned when they found out that their TriPads had contained a largely accurate technical readout since long before they were even aware that the project’s data archives had survived into the post-collapse.",,,
+prv_fasnod,SHIP,"Disruptive to the extreme, the Fasnod's reason for existence is to wreak havoc on enemy battle cohesion. A quick flanker in itself, the Fasnod also carries a light phase teleporter used to deploy gravity mines. Only the most solid fleets can maintain their formation against a determined gravity mine attack.
+
+Fasnod ship insignias often include cats, for their fondness of toying with their prey. Experienced crews have been known to hit vulnerable ships many times in a row with well-planned mine strikes, rebounding the target from one mine to another. Others have directed light ships into their heavier comrades, with devastating results.",,,
+prv_fasnod_p,SHIP,"A fast hunting frigate, adept at ganging up on isolated targets. One of the more advanced hulls to end up in pirate hands.
+
+Among the many things that were lost during the collapse were one of the prv’s Fasnod production chips, which a senior technician absconded with in the general confusion of the first century of the collapse. 
+
+It is unclear where - and with whom - the chip itself ended up, but it was likely on an industrial world as a large batch of Fasnods quickly made their way to pirate hands. The ramifications were however not quite as dire as sector legal authorities first feared, as the blueprint did not include the production codes for the ship’s gravity mine teleporter. 
+
+Mass production ceased after a few cycles. It is suspected that prv agents from Pariabyrån managed to track down the deserter. There is still a trickle of hulls of dubious quality being produced in fringe workshops. Experienced appraisers can easily tell the difference through to a tell-tale flange replacement that is not present in the mass-produced series.",,,
+prv_ande,SHIP,"Not, strictly speaking, a ship in itself, the Ande is an integrated system that allows a group of fighters to both coordinate and strenghten and reinforce each other using a swarm of nanites.
+
+The swarm intelligence of an Ande is very poor, and rarely reaches even low delta levels. As an ”instinctual” system it does however function quite well while operating within its pre-set design scenarios. Most notably, the system allows the fighter swarm to coordinate their engine emitters and jump into hyperspace, something that generally requires at least a corvette-sized craft.
+
+The logistical abilities of an Ande could be generously described as ”limited”, and largely consists of a few specialized containers carried by the fighters. The towed crew cabins are known for being very cramped, but surprisingly comfortable.
+
+Integrated swarms are maintained by their fighter wings; if enough of the fighters are destroyed at once, the entire swarm system fails.",,,
+,,,,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### Rust Belt Frigates,,,,,
+#############################,,,,,
+prv_damm,SHIP,"A shuttle craft common in Ruster space. The Damm can carry light cargo loads or small groups of people, and also carries a multitool array and a tug-line fastener. Ideal for everyday tasks that are beyond a Buddy drone.
+
+Supposedly there exists a pattern for installing a furnace on the Damm that smelts a single standard industrial ore grain at a time. Combined with a mining laser, a family could probably make a living off of that…",,,
+prv_skiffer,SHIP,"One of the primary economic engines of the belt, these small craft recycle and reuse the leftovers of life (and death) in space. Capable of cutting up and carting off larger ships in remarkably short time, the Skiffer is ubiquitous in Ruster space. To assist in the work, the Skiffer can carry a group of utility drones, or if safety is a bigger concern than usual, a wing of armed fighter craft.",,,
+prv_basalt,SHIP,"By all appearances chiseled out of a mountain, the Basalt is a sturdy combat frigate popular with the more well-organized Rust Belt militias. Held back somewhat by a sub-par flux system and limited uptime on the orientation thrusters.
+
+Much of the innards of the Basalt are dedicated to a generous cargo hold, and it is not uncommon for the ship to be used as an armed courier in the ’freer’ parts of the sector.",,,
+prv_skara,SHIP,"Scrapyard salvage of the best kind has been gathered to build this rugged and feisty combat frigate. It is armed with an assortment of smaller weapons and with a potent shock emitter mounted on the port side. Although the Skära is a relatively common ship in the belt, owning one still commands a fair bit of respect. It is regarded as a solid ship, for respectable freebooters.
+
+Sporting more creature comforts than most combat ships, Skära officers rarely have trouble finding willing crewmen. The standard non-standard mish-mash interior does cut deep in the heart of the more fashionably inclined however. But some of those seats are real pleather, man. That ain't bad.
+
+On the side of the hull there is mounted a reclaimed beam weapon; no longer functional in its original role but full of power coils, flux vanes and other goodies that can be coaxed to transfer extreme currents. Once a splendor of the technology of man, this beam weapon now serves as a glorified spark plug.",,,
+prv_gremlin_rb,SHIP,"A Gremlin with a burnt-out phase coil is not much of a combat ship - but there's still a respectable power generator inside the hull. With some ingenuity, a donor hulk, and a lot of welding, this can be used to power a major energy weapon and a shield generator. Waste not, want not.
+
+If possible, the Rust Belt modification is even less comfortable than the original model Gremlin - but at least the phase coil is gone now. Spontaneous illness in the crew is down 80%.",,,
+prv_gremlin_rb_rare,SHIP,"Some people would claim that this heavily modified Gremlin is in fact a lightly modified Apogee. Such people are fools, imbeciles with no vision and no sense of greatness.
+
+One of many ambitious one-off models found in the Rust Belt, this ship appears to be built out of the best, or possibly worst, parts of a Ruster-pattern Gremlin and an Apogee. The immense generator of the science ship is used to power an appropriately oversized battery of energy weapons. The endeavor seems to have left the ship’s main flux transport somewhat exposed.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Destroyers,,,,,
+#############################,,,,,
+prv_tystnad,SHIP,"The final product of an experimental miniaturized combat carrier program by Kratul Spacewharfs. The Tystnad is a support ship through-and-through with only moderate direct firepower but the versatility to carry a wide array of support fighters and drones. 
+
+The primary armament of the Tystnad is a ballistic battery located in the aft of the ship. This is complemented with a wing of support fighters, generally Oväsen models, and a group of slaved missile drones. Protection comes in the form of a narrow but efficient omni-shield and a barebones layer of hallbar armor honeycomb.
+
+One of the many compromises involved in fitting a flight deck onto such a small ship is that the hangar carries only the bare necessities to operate its integrated wing of fighters and can only replace a few combat losses before exhausting itself. Additionally it can only be adjusted to fly more offensive fighter craft with difficulty, as the default configuration is focused on close ship/fighter integration over more independent operations.
+
+The ship is infamous among Persean crews for having a tendency of breaking in half when struck laterally. There is a persistent rumor of an unnamed captain who replaced the rear PD mounts with Antimatter Blasters and caused a mutiny through his habit doing close-range assaults in order to bring them to bear. 
+
+The prv consider the same configuration to be standard issue.",,,
+prv_eld,SHIP,"An agile and flexible destroyer that can be outfitted for most mission profiles. Its advanced tensor drive gives it a somewhat ”bursty” movement pattern. In the prv officers are often given command of an Eld very early in their careers, as a trial by fire and as an excellent way for a young talent to prove themselves. Attrition rates tend to be high, but the officers that complete their assignments often do go on to become the naval elite.
+
+There are many differing opinions on how the Eld is best utilized, from the conservative Elite school who believe that range and kinetics are the key to dictating a battle, to the reckless captains who prefer to redline all their equipment, firm in their belief that there’s no such thing as a best defense against a well-tuned plasma drive. The opinions of the Missile Corps are obvious, debates on torpedoes versus guided missiles aside. There are also the Hunter cadres, a little-spoken-of group who utilize gravitonic equipment to isolate enemy support ships and defeat them in detail.",,,
+prv_ballebo,SHIP,"A mostly forgotten ship, the Ballebo was once the prv’s flagship model destroyer. It never achieved any particularly impressive production numbers however, and by now the ship is largely a footnote in the company histories.
+
+Normally a fairly slow ship, the Ballebo's engine core is configured to generate and store excess plasma, which can then be expelled through a set of maneuvering jets located on the sides of the ship, greatly increasing speed and agility for a limited time. ",,,
+prv_fasklot,SHIP,"The Fasklot is a speedy ship ideal for punishing distracted opponents. A light phase teleporter allows it to deploy groups of EMP mines to cripple its targets.
+
+Generally thought of as dishonorable to the extreme - as if there’s such a thing as honor when men try to destroy each other. Fasklot crews are well aware of their reputation, and will ask no quarter. Certainly none would be given to a craft specialized in killing the disarmed.",,,
+prv_brand,SHIP,"One of the rare examples of technological advancement in the sector, this ship combines high-quality components from the height of the Domain-era with more recent advancements in gravitonics and drive technology in order to offer a deadly hunter-killer craft.
+
+The Brand utilizes a late Domain-era shield emitter and power generator in combination with a potent gravitic field emitter and a few well-applied techniques from the prv’s tensor drives. Combined with a heavy energy weapon, the Brand offers a level of performance that could have seen it operating in the core worlds of the Domain. Or at least, it might have by standards 200 cycles past.
+
+Production of new Brands is difficult and generally stalls when it’s time to install the reactor. Finding usable Antima-Re/87s has proven to be challenging to say the least, and to the best of anyone’s knowledge there exists no still-functioning production chips for it, or any compatible model, in the sector. Indeed as the few Brand captains are well aware, even simple wear-and-tear parts for it such as 304kWb flux catalysers are becoming increasingly elusive.",,,
+prv_sorl,SHIP,"A relatively well-armed support carrier that reliably outperforms the ”flying landing strip” models so common in the sector, but is in turn significantly more expensive to maintain and field.
+
+Dissenting voices in the prv often question the wisdom in operating the Sorl. The question asked is if it would not be better to field three Condor auxiliaries instead of two Sorl. Satisfying answers are few, and between political inertia and the potential cost of retooling the manufactory the Sorl production line keeps chugging along.",,,
+prv_sunder_ryak,SHIP,"This Sunder has been heavily modified at the Ryak High-Energy Labs to serve as a test platform for advanced sensor and armaments projects. It now carries a powerful ballistic suite backed up by light missile or energy armaments.
+
+Originally a technologically advanced yet fragile destroyer from the late Domain era designed to provide additional firepower in fleet actions carried out by the stretched Domain Navy rather than serve on independent patrols. It had powerful shield emitters and energy weapons, now replaced with a powerful ballistic battery, and retains its vulnerability to strike craft and flanking assault frigates. 
+
+An early-model Siege Akers has been built into the hull and a shield drawline bypass has allowed for a hypercryogenic feedsystem to be installed in the ship, at the cost of shield coverage and generator performance. The ~0-K cooling enable the ballistic armaments to be overcharged immensely for a shot or two. The extensive structural changes also allowed the ship's armor to be augmented substantially.",,,
+prv_gast,SHIP,"Not, strictly speaking, a ship in itself, the Gast is a vast integrated system that allows a large group of fighters to both coordinate and strenghten and reinforce each other using a swarm of nanites. The bot swarm also includes weapon elements, enabling it to take minor offensive action.
+
+The swarm intelligence of a Gast is poor, and rarely reaches even middling delta levels. It has however shown a curious tendency to bond to its pilots. In a few cases, after sustaining heavy fighter losses Gasts have been known to refuse further combat orders entirely. For the swarm to regain combat effectiveness prv service technicians had to replace the fighter-side neural coordinators and retrain the system from scratch.
+
+Integrated swarms are maintained by their fighter wings; if enough of the fighters are destroyed at once, the entire swarm system fails.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### Rust Belt Destroyers,,,,,
+#############################,,,,,
+prv_gnejs,SHIP,"A straight-forward and practical destroyer. When it comes to bringing heavy firepower at a low cost, few ships can beat the Gnejs. However the ship carries a somewhat poor reputation due to its exceedingly weak point defense mounts.",,,
+prv_gnejserhead,SHIP,"This mutt of a ship combines the heavy cannon mounts of a Gnejs with the rear half of a Hammerhead destroyer. It is surprisingly fast for its heritage, likely due to shedding some gun mounts and armor while forcing the engines well past their rated performance envelope.",,,
+prv_gissel,SHIP,"Built out of select salvage hulls by a few in-the-know shipbreakers, the Gissel offers a competent combat destroyer for those without access to more mainstream arms traders. Carrying a blink displacer, a motley but competent armaments lineup and a hefty armor belt this ship is a not too rare sight in the fringes of the sector.
+
+Maintaining compartmentalization and structural integrity while cutting up and reassembling scrap hulks is challenging, and often comes at the expense of the humans who have to crew the ships. The Gissel is infamous for its byzantine and sometimes outright bizarre internal layout, where moving to the compartment on the other side of a firewall can involve a trip straight across the ship.
+
+What used to be a flight deck has been replaced with a bulky missile system that feeds magazines of Skatunge missiles into launchers, while the old fighter command & control electronics have been retasked for ECCM, enhancing missile guidance and protecting the main batteries from EW disruption. Few destroyers in the sector have better fire control than these rusty hulks.",,,
+prv_bitumen,SHIP,"An armored tanker that suggests more combat ability than it offers in practice. Sometimes pressed into combat as a missile support platform.
+
+For all its armor and weapon mounts, the Bitumen rarely does well in actual combat. Evidence of cost-cutting measures in the design are abundant, and the general opinion of the ship is that if you were to turn on a water kettle in the galley you’re more likely to blow a fuse on the bridge than to get hot water.",,,
+prv_eld_rb,SHIP,"Though referred to as a ”petty mockery” by the prv Starworks corporation, the Rust Belt model of the Eld destroyer nonetheless finds itself as an appreciated ship among sector fringe elements, offering a competent mix of speed and firepower.
+
+While the ship’s relationship to the prv Eld is evident at a glance, the Rust Belt model rebuilds large parts of the ship to be more suited for Outer Yard construction habits. This does result in it being cheaper to build, maintain and field, but leaves a noticable mark in the ship’s perfomance ratings due to a weaker generator and much more common frontal shield emitter - not to mention the complete lack of a tensor drive.
+
+The Head4 syndicate claim that they produce the ship from a now-decrypted production chip stolen in a convoy raid. While outsiders have been unable to confirm the claims, it has been noted that the Old Wharf Eld production is down an average of 27% since the first Eldsjäl sighting was documented. According to the prv this reduction was done to shift production towards the Tystnad. 
+
+Clear and credible sources supporting either side remain elusive.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Cruisers,,,,,
+#############################,,,,,
+prv_is,SHIP,"Designed to hunt and disable high-value targets, the Is is equipped with a fearsome tachyon system and a potent strike weapon of choice. These days it is usually regarded as a ”high-value target” in itself.",,,
+prv_flock,SHIP,"A somewhat fragile light cruiser with an integrated high-end missile launch system capable of launching sustained salvoes of Kråka MRM missiles. A limited number of hardpoints allow the ship to pair this with either a wide selection of missiles, or a more reliable suite of energy cannons.
+
+One of the more popular fire support platforms of the prv, the Flock’s flexible automatic launcher allows for smooth transitions between harassing fire, saturation bombardment, and heavy strikes.",,,
+prv_flock_midline,SHIP,"A somewhat fragile light cruiser built around a fast-cycle heavy missile mount. A limited number of hardpoints allow the ship to pair this with either a wide selection of missiles, or a more reliable suite of ballistics.",,,
+prv_flock_rb,SHIP,"An extensive carrier conversion of the Flock missile cruiser, the Ruster model figures that if there's anything that's better than a big missile, it's two bomber wings.
+
+Few Ruster ships are alike. The Flock conversions vary more than most, with the secondary flight deck moving about according to what resources were available when the conversion was done, and the state of the base hulk. On some ships the flight decks operate independently, each with its own maintenance facilities. Others have a combined hangar, and run one launch deck and one recovery deck. 
+
+The debate about which is the superior variant seems never-ending, though the shipwrights building the ships seem to take it in strike; you work with the materials you’ve got and make the best of them.",,,
+prv_flock_rare,SHIP,"This appears to be an attempt to imitate the ”Flock” light missile cruiser, constructed out of considerably cruder parts. A large custom missile launcher built into the center of the ship promises significant firepower, while an abundance of thrusters supply as much speed as the ship can handle - or possibly more.",,,
+prv_kakafoni,SHIP,"Multirole cruiser that carries a wide gun or missile array and a moderate fighter complement. These ships effortlessly fit into just about any fleet, offering a somewhat defensive blend of firepower and durability.
+
+Kakafoni cruiser-carriers carry two wings of fighters, a diverse armament and reasonable point defense. They are protected by a prv-characteristic narrow band omni-shield generator and a respectable armor belt. Maintenance costs are somewhat high due to the numerous different capabilities covered by the ship.
+
+The ever-reliable rock in the storm, the anchor, the beating heart of prv battlefleets.",,,
+prv_kakafoni_p,SHIP,Multirole cruiser that combines a heavy ballistic piece with fighters and lighter armaments. This ship has been run ragged over the years and the advanced teleportation system and integrated ramshield core have been swapped out for after-market replacement parts.,,,
+prv_kakafoni_rb,SHIP,"Multirole cruiser combining missile pods, strike craft, and a heavy cannon into one intimidating package. A munitions autoforge ensures sustained firepower, making the (RB) model a very reliable ship for longer engagements.",,,
+prv_aska,SHIP,"Imposing and terrifying, the Aska utilizes an enormous phase teleporter to move around the battlefield and hunt down opposing ships. Armed with an assortment of ballistic, energy and missile weapons this powerful cruiser is more than capable of taking down its prey.
+
+The lumbering and bulky form of the ship belies the true speed it can move at. By stutterjumping up to eight times a minute the Aska can outpace most ships in the sector. Though, it must be admitted that the ship is not the most agile thing around - standard engine performance has taken second seat to the ability of teleportation, no doubt.
+
+Built to do everything the Kakafoni does not, the Aska brings a punishing weapons array, capable of mounting the very largest missile and energy systems that can be found in the sector. Powerful, aggressive and destructive. One of the finest products of the spacewharfs at Kratul.",,,
+prv_fasvinge,SHIP,A high-tech strike cruiser equipped with a rapid phase shift system operated by a dubiously legal AI. Seeing a Fasvinge in spite of its stealth fields is considered a bad omen by superstitious spacers; misfortune will follow.,,,
+prv_valnad,SHIP,"Not, strictly speaking, a ship in itself, the Vålnad is a vast integrated system that allows a large group of fighters to both coordinate and strenghten and reinforce each other using a swarm of nanites. Much larger than other integrated swarm systems, the Vålnad has sufficient mass that it can be programmed to mimic most kinds of modular light energy weapons.
+
+The decision to base the neural net of the Vålnad on a Labrador Retriever has resulted in the system being easily trained, eager, and moderately obedient. Its tendency to get overenthusiastic and overtaxing its flux systems has however led to the loss of several of the prototype systems. Alternative neural patterns are being investigated, such as the old earth octopus or the Kratul I rovälg.
+
+Integrated swarms are maintained by their fighter wings; if enough of the fighters are destroyed at once, the entire swarm system fails.",,,
+,,,,,
+#############################,,,,,
+### Rust Belt Cruisers,,,,,
+#############################,,,,,
+prv_hornfels,SHIP,"As immovable as the mountain, this indomitable ship can hold its ground against even capital-grade firepower. The deep hum of the fortress generator promises safety against even the most devastating attacks, while the sizable ballistic batteries allow for a potent second strike once the storm has been weathered.
+
+Larger than most Ruster ships, the Hornfels is much sought-after and rarely are operating ships given time for overhauls. It’s not unheard of for Hornfels ships to dock and let off their crew, only to immediately take on an entirely new crew and undock to start a new deployment. Any required maintenance is then done while underway, to whatever extend possible. The only component given all time and resources asked for is the fortress generator.
+
+It is a good thing these ships are rugged. More recent Domain models would by no means stand up to the treatment the Rusters give these run-ragged craft. The things you love the most always wear out first.",,,
+prv_hornfels_pather,SHIP,"Adapted from the normally highly defensive Hornfels, the Path remodel retains little of the original’s characteristics - instead of a sturdy bulwark against to protect the free flock, it has been forged into a righteous sword to strike down the wicked. Little remains of its protective capabilities, and all systems are pushed to the point of failure in order to fire the ship’s arsenal without pause or delay.
+
+prv naval intelligence have had some trouble tracking down how the Path are supplied with Hornfels hulls; the most popular theory is that any hulls with failed Fortress Generators are sold on the ship market in Baetis, at which point they are purchased by Path-aligned operatives within the Church itself. A politically sensitive quagmire, no doubt. Regardless, they are considered a moderate security threat, especially to the Ryak HEL, which has been explicitly named as a target due to ”continual and willful tech-heresy”.",,,
+prv_dominator_rb,SHIP,"Ponderous and menacing, these Dominator-class remodels are among the most widespread military cruisers in Ruster space. Mostly built from long-lost Dominator hulks salvaged from the belts, the Rusters attempt to make these ponderous ships somewhat more flexible by installing plasma drive afterburners and converting a large ballistic mount to instead carry a heavy energy weapon; generally one of the ubiquitous Belt Blasters.
+
+While not the most technologically advanced hull, it relies on a plethora of ballistic hardpoints to accomplish its mission, which is more often than not defending orbital installations and vital points of intra-system trade routes. A poor shield emitter which is difficult to manage and thus, rarely engaged, gives way to an almost impregnable interlocking armor belt system making the Dominator safe from most weapons. Even strike craft cannot overcome the hail of projectiles that can be launched to intercept their payloads. This hull proves that tried and true military engineering is difficult to overcome by new ideas and technologies, especially when in the hands of tough, determined crews and experienced officers.
+
+Dependable, durable, and an ever-wished-for presence in home space around free stations and worlds, the Dominator (RB) serves as the professional backbone of Ruster defense fleets.",,,
+prv_kvarts,SHIP,"Constructed around a group of presumably stolen phase coils and an equally suspect graviton core, the Kvarts may well be the most advanced ship operating in the belts - not that you could tell from its rough exterior. It is heavily armed, and by phase ship standards solid and durable.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Capital Ships,,,,,
+#############################,,,,,
+prv_valljud,SHIP,"A lively combat carrier equipped with an underhanded disruption system, the Välljud is adept at delivering effective strikes against even the toughest targets. However, this offensive focus comes at the cost of durability and the ship will quickly fall to a determined assault.
+
+The primary capital-class ship manufactured at the Works over Utbo. The prv top rungs used to regard the Välljud as somewhat of a failure - until an upgrade program equipped the class with the now infamous disruption zone generator, turning it into a disturbingly effective strike platform.",,,
+prv_rok,SHIP,"As a matter of faith as much as doctrine, the prv believe that defenses are used to enable offensive action, a principle exemplified in the Rök, which carries heavy armaments and for a battlecruiser uncharacteristically strong defenses. The class is however also known for having a tendency to use up its entire flux capacity in a matter of seconds.
+
+The class is considered a strategic-level threat by the Hegemony due to its powerful anti-ballistic gravity shield, and incidents of sabotage of the remaining Rök ships have become so common that the prv press no longer reports on it not for reasons of secrecy, but simply because ”dog bites man” is not news. At any given time several Rök are likely to be laid up for critical repair work - often waiting for parts that are increasingly impossible to get a hold of. The entire affair has led Pariabyrån - prv covert intelligence - to be considered entirely unreliable when it comes matters of counter-intelligence.",,,
+prv_skymning,SHIP,"The largest ship operated by the prv, these behemoths carry a wide array of sophisticated weapons and fighters. The Skymning is built for head-on engagements and breaking up packs of smaller ships, and is fit with an integral tensor drive which gives the ship a highly dynamic engagement profile.
+
+Unlike most prv ships the actual design of the Skymning significantly predates the collapse - and the enormity of the undertaking had the entire corporation struggling to stay solvent. When the time came to move from low-volume initial production to mass manufacturing, Domain politics turned against the project, which was characterized as wasteful and redundant. Funding was pulled. Most hulls that had been laid down had to be put in indefinite storage while the prv administration scrambled for funds to restart the production lines. The corporation was overleveraged, all contingencies had been used up, and the entire shipbuilding division was looking at dissolution. 
+
+And then, the collapse happened. 
+
+One of three Skymning production facilities was located in the now-isolated sector; the wharves orbiting Kratul. In spite of the logistical challenges brought on by the turmoil of the post-collapse, a number of Skymning battleships have been finished from previously laid-down hulls - a major factor behind the prv's waxing influence in the region.
+
+The question of the corporation's outstanding debts remains unresolved. It is suspected that creditors will have to enforce any claims by force of arms.",,,
+prv_conquest_ryak,SHIP,"This Conquest has been very heavily modified at the Ryak High-Energy Labs to serve as a test platform for an experimental armaments project. It now backs up its main broadside batteries with a powerful spinal-mount particle projector. Generally considered a somewhat awkward model.
+
+The Conquest-class battlecruiser is the embodiment of concentrated firepower. Developed in the period just preceding the popularization of fighter craft, the class emphasizes firepower and speed over armor protection.
+
+Space Naval tacticians of the day were confident that new weapons systems would always outperform armor and shields and thus were the key to winning an engagement. So why not build a ship for speed and power? Give it the armor protection of a cruiser, but arm it with the best weapons available to any ship, and have it remain faster than any of those lumbering behemoths of the line. The Conquest is a good example of these concepts put into a hull. Many other advanced technologies were incorporated into the design, including weapon mounts designed for a circling engagement. This maneuver requires greater navigational skill while serving to provide more tactical options to the commanding officers. 
+
+Fortune favors the bold, the ancients said. This class of ships does indeed favor the bold captain, willing to risk everything for the thrill of victory.",,,
+,,,,,
+#############################,,,,,
+### Rust Belt Capital Ships,,,,,
+#############################,,,,,
+prv_andesit,SHIP,"The Great Belt Alliance's most recent capital ship class, though considering how much Ruster ships tend to vary, talking about classes may be stretching the definition. Regardless, technical information on the ships is scarce outside the prv, who are not forthcoming with what they have learned. Analysis of the few available combat recordings suggests that they rely on a mixture of fighter wings and missile armaments, and suffer from poor mobility.
+
+Rusters are known for their habit of talking about things they should not, leading to a bevy of information on their ships. Equally, they are infamous for running their mouth even - especially - when they are completely clueless on the topic. Supposed capabilities of the Andesit class include a 120 LY hyperspace range, a phase cloak system, lower production costs than an Eagle cruiser, secret ""plasma afterburner tanks"", and thicker armor than a XIV-battlegroup Onslaught battleship. Dubious claims, to say the least.
+
+What there is evidence for indicates a moderately armored ship with a focus on long-ranged support and a simple logistical profile. Claims that the ship has a high parts commonality with the Bergtagen class, but with a downgraded flux system, appear entirely plausible. The rampart-like armor layout plainly suggests a shared ancestry.",,,
+prv_rok_p,SHIP,"It takes a brazen thief to steal a battlecruiser, but some madman has evidently managed to; this armored beast is constructed around the better part of a prv Rök. The ship may be somewhat worse for wear, but any pirate laying claim to a vessel like this is doubtlessly a warlord without peer.",,,
+prv_bergtagen,SHIP,"An immense agglomeration of recovered, refurbished or rebuilt ship parts, this Ruster battleship has a main battery of almost unrivaled size - to the point where its relatively primitive fire control computers have trouble managing it all. The Bergtagen has been built to last and even should its hefty armor belts be breached the ship can take a remarkable amount of punishment before going down. Rarely seen outside of the Kratul belts.
+
+Supposedly more Bergtagens have been lost in combat than were constructed in the first place - it is a testament to Ruster tenacity and ingenuity both that that they so often manage to reclaim their lost beasts. Standing prv doctrine is now to scuttle any wrecks using no fewer than five nuclear demolition charges.
+
+Conceptually there exists a pristine Bergtagen that’s built entirely to-spec with no compromises in construction, all parts brand new and with its sleek, flawless armor belts covered in immaculate silver paint. What a horrible thing that would be, a soulless hunk of metal operated by expendable drones and thin-lipped leeches in tailored uniforms.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Utility Ships,,,,,
+#############################,,,,,
+prv_tiger,SHIP,"Combat tanker with a solid flux system and real bite in its armaments.
+
+Most fleet commanders in the sector scoff at the idea of sticking guns on a tanker. The prv disagree, and build the Tiger. Offering a capable combat platform with a sizable amount of well-protected fuel storage, the Tiger makes sure that the fleet comes home again.  Built in the same facilities as the Flamma frigate, the Tiger shares many structural parts with its smaller sibling and is designed entirely to military specifications.
+
+The sector at large continues scoffing. The Tiger still finds a customer base however, as there are more than a few skippers who feel that a half-dozen machine guns just aren't enough to keep his fellow man honest in the depths of space.",,,
+prv_ilbud,SHIP,"Phase courier ship with a healthy armament suite for those ultra high value cargoes.
+
+Built as an - excessive, according to some - response to prv Starworks's ongoing troubles with lost convoys, the Ilbud utilizes a sophisticated phase system to ensure that it will not be detected, intercepted, or destroyed by anything but the most involved and capable opposition. Ruinously expensive from a credits per cargo-lightyear perspective the Ilbud nonetheless offers the ability to transport just about anything, to just about anywhere, past just about anyone.
+
+Neither pirates nor pathers nor heat nor gloom of space stays these couriers from the swift completion of their appointed rounds.",,,
+prv_munsbit,SHIP,"The infamous egg. Munsbit freighters are small and reasonably economical freighters produced by the prv to cover their domestic transportation needs. Serving as an officer on one of these mundane ships tends to mark the end of a career, rather than the beginning of one.
+
+While feared and loathed by the prv officer corps, the ship is incredibly popular with the rank and file - as a dedicated freighter the ship is unlikely to see direct combat, and the crew compartment is surprisingly large and comfortable. It is not uncommon for service placements on a Munsbit to be grey-market traded for several credits.",,,
+prv_middag,SHIP,"As many prv ships the Middag straddles the line between ambitious and megalomanic - oversized and overarmed, this freighter is capable of standing up to most cruisers in the sector in direct combat. It is extravagant to a fault, and much too expensive for civilian shipping - or deployment in most navies, for that matter. Only a small number were built before the production lines were retooled to manufacture smaller and demilitarized versions.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### Rust Belt Utility Ships,,,,,
+#############################,,,,,
+prv_visent,SHIP,"An armed and armored shell cradling a generous cargo module, the Visent is a hardy cargo hauler that will survive most challenges thrown at it. A pair of powerful engines give the ship a very respectable top speed, though its acceleration and agility leave much to be desired.",,,
+prv_gabbro,SHIP,"A passenger liner for a more volatile age, based on the Huan-Gogel 440 ”Starliner” and built to travel between the systems of the Persean sector in safety and security. The Gabbro features combat-rated armor, two additional thrusters, a pair of heavy gun turrets, and a sizable hydroponics bay to enable longer-term habitation on the ship.
+
+The Gabbro maintains a wide forward shield to ensure safety in combat and protect the armor from routine high-explosives bombardment. Rebuilt for the current realities of the belt, this ship class is routinely utilized not only to move populations from combat zones and towards more secure habitats, but also function as line combatants, should the need arise.
+
+It's unclear how many Starliners have been converted into Gabbros. The official estimate of the prv naval intelligence division is a little over a hundred, but persistent rumors claim the numbers are many times that, most supposedly utilized as moored habitats in various discrete hideaways. The possibility that there are tens, possibly hundreds of thousands of Rusters completely unaccounted for is a quiet source of great concern on Kratul II.",,,
+prv_venture_rb,SHIP,"Happily modified for life on the rim, the tough and dependable Venture (RB) sports a larger cargo hold than the standard model and is generally regarded as being more of a long-haul freighter than anything else. Still, the ship carries several gun turrets and a pair of reliable Skatunge SRM launchers.
+
+The Venture-class ships are perhaps the most widely used civilian cruisers in the Sector. Several Ruster modification packages have been made for it throughout its service in the belt, before this latest one - now approaching 150 cycles in age - finally stuck and became the dominant remodel.
+
+When used by Rusters, the ship is usually a packmule trusted to carry trade goods to and fro without being threatened by opportunistic brigands. On the other side of the law, the vessel also serves with quite a few pirate outfits, where it sometimes fills the role of command ship.",,,
+prv_venture_rb_rare,SHIP,"With a population of just under 300, this ship is the smallest political entity to have full membership status in the Great Belt Alliance. The Free State of Lasse was founded in c143, when the crew chief Lasse Sjöberg led a mutiny, protesting witheld pay and outrageous disciplinary punishments. Ever since, the ship has traveled from one end of the sector to the next, trading, salvaging, exploring, and seeing both the best and the worst of Persean space.
+
+Over the years, the ship has been repaired, renovated, torn down and built up numerous times. The largest and costliest modification was the installation of a Thermal Pulse Cannon purchased from a very dubious ship parts dealer on Baetis. The most important modification was the application of 40 cubic meters of magenta paint, purchased on Volturn.",,,
+prv_bergslag,SHIP,"An industrial goliath, this heavy vessel carries all the equipment needed to turn entire asteroids into processed metals. Rock goes into the grinders, tailings are dumped out the bottom, and the wealth stays within the ship.
+
+Big fans of dual-use technology, the Rusters make sure that their mining equipment can function in combat, and the enlarged mining blaster installed on the ship is especially dangerous and more than enough to keep lone raiders away. Additionally, the drone bays are often fit with at least one wing of fighter craft to act as scouts and additional firepower. Generally lacking larger combat ships, the GBA routinely impress Bergslag ships into combat service.
+
+Built for deployments lasting many months, the Bergslag has room for hundreds of crew and spare equipment for any occasion. Little short of total destruction can force the ship to turn back to port ahead of schedule.",,,
+prv_bergslag_p,SHIP,"Rebuilt from an industrial goliath, this brigand vessel has replaced all civilian tooling with purely violent implements. With heavy arms, including a hefty ground support package, sturdy bulkheads, and several fighter wings, the only thing that keeps it from truly terrorizing the more independent parts of the sector is its sluggish speed and easily-identified drive signature.
+
+Not the most common pirate ship, the Bergslag is mostly used as an ambush vessel - by hiding its weapons and posing as a distressed mining ship it tries to draw in other pirates to instead prey on them. This has turned out to be only moderately successful, and ultimately seems to have resulted in Bergslag-class ships being left alone on general principle.
+
+Suggestions that this was the plan behind the Fe & Ox Ltd. syndicate’s (P)-model conversion all along are generally dismissed as fanciful and conspiratorical.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Fighters,,,,,
+#############################,,,,,
+prv_skran,SHIP,"Heavy interceptor focused on destroying other fighters. Armed with a single Akers heavy gun repeater and equipped with a Energized Reactive Field that can be activated to zap any hostile craft in extreme proximity.
+
+Originally concepted as a ”one shot, one kill” platform, a full-size h41-calibre gun sadly proved too unweildy to fit on a fighter. The scaled-down version, while still punchy, falls short of the original goal. Nonetheless shielded or lightly armored fighters suffer greatly in combat with the Skrän.
+
+While intended only for fighter combat there has still been found a need for the Skrän to do point-defense work, which neccessitated a crash program to update the fighter's targeting systems. Still, due to the cannon’s low rate of fire Skrän doctrine is to only target missiles if no other targets are available.
+
+Later models of the Skrän have been upgraded with fighter-scale Energized Reactive Field emitters that build up immense potential differences between the craft and its environment. Once charged, the field needs just the slightest suggestion of contact in order to to reach out and equalize the potential - which takes the form of a powerful energy jolt, capable of destroying missiles and seriously harming other fighters and light ships.",,,
+prv_ovasen,SHIP,"Advanced companion fighter which harasses the enemy with a clutch of scaled-down Skata missiles. Also carries an extended-range Punktskydd cannon for use against hostile fighters and missiles. 
+
+The hull is protected by a narrow but reliable omni-shield generator and two layers of duranium-hallbar plating. A magazine of additional missiles is located under the cockpit and is accessed continually while the supplies last.
+
+Expensive to replace and manned by a crew of two, operators are strongly encouraged to only deploy their Oväsen wings in close coordination with friendly ships.",,,
+prv_diskordant,SHIP,"Strike fighter armed with a pair of Light Spattergun plasma projectors. This mobile craft swoops in and drenches its target in volleys of superheated plasma.
+
+The cockpit, engine and critical machinery are protected by an ablative armor plating that can be replaced in a manner of seconds, something necessitated by the Spatterguns infamous tendency to cover every available surface with burning death.
+
+Early models carried a full-scale Spattergun, but unmanageable levels of splashback damage forced development of a scaled down version. Diskordant pilots passing through the Ryak High Energy Labs are fond of showing off the station museum's fighter prototype to anyone willing to get roped in. It's mostly holes.",,,
+prv_missljud,SHIP,"Built to distract and disable enemy point defense and interceptors, the Missljud attacks its target with short-range EMP missiles. The otherwise delicate drone is protected by a reliable omni-shield, allowing it to soak a fair amount of enemy firepower.
+
+This unmanned craft's purpose is to enhance the performance of other fighters by overloading or just outright absorbing hostile firepower. The Blåmes SRM, while lacking a breaching charge, is highly capable of disabling any electronics near the point of impact.",,,
+prv_oklang,SHIP,"Fragile attack drone armed with a focusing beam laser in a rotating housing. Opting for offense over defense, they carry a damage-boosting system but only minimal defenses. Oklang are normally operated in large wings as heavy materiel losses are to be expected.
+
+While the drone itself is easy to manufacture, producing LPCs for this fighter has proven difficult, with low yields and a high refuse rate. As such, availability is highly limited and it’s more common to hardwire a bay nanoforge with the pattern - or to simply use a sector-standard model, such as a Wasp or Talon, instead.",,,
+prv_skral,SHIP,"Torpedo bomber with a twin-mounted powered launch system similar to that found in the Kaja-family missiles. Skrål strikes are frighteningly swift.
+
+Formally the Plasma Burn system is only supposed to be engaged when the fighter is in final approach for the bombing run, but endemic recklessness among prv fighter pilots and the general stresses of combat mean Skråls tend to burn early and often. When proper procedures are actually followed, a near-instant strike can be executed from, in the words of one Hegemony captain, a ”highly concerning” distance.",,,
+prv_jammer,SHIP,"This strike craft launches a velocity-boosted torpedo at its target and then follows the attack up with a blast from a fragmenting particle beam. Deadly against unshielded targets. 
+
+The beam is highly effective against other fighter craft and can also be used to clear the way for a strike, should there be a defensive screen. The Jämmer only carries enough capacitors for two Fräsar-bursts however, potentially leaving it without any follow-up to the torpedo attack.",,,
+prv_stillhet,SHIP,"Sophisticated fighter with a phase system and a bevy of light energy weapons. Its durable armor provides it with reliable protection against kinetic attacks.
+
+Piloting the Stillhet is a tremendous experience - Between the wash of the largely unshielded phase coils and the fully g-isolated cockpit that, from the pilot's perspective, lets the entire craft rotate around them, little else compares. These exertions mean that once the crew are back on the carrier and the combat stims wear off, drug-induced calm and focus turns into nausea, which is quickly followed by exhaustion and sudden deep sleep as the brain tries to deal with the intense overstimulation of rapid phase shifting and intense maneuvering in zero-g. prv Stillhet pilots in active service are required to adhere to a strict drug regimen and have their health monitored closely by ship doctors. 
+
+In spite of Stillhet jocks being generally well-respected and compensated, once discharged from service and left to their own devices former crew show a disturbing tendency to turn to drug use and danger-seeking habits. Fewer than half are still alive and living unassisted after a decade.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### Rust Belt Fighters,,,,,
+#############################,,,,,
+prv_buddy,SHIP,"Also known as the Belt Utility Drone, this craft carries a powerful fusion cutter, an extendable manipulator arm, an impressive multitool array for salvage or maintenance work, and a light machine gun ”just in case”. 
+
+Built-to-last and somewhat combat capable the craft is often pressed into combat situations where it doesn't actually last very long at all. Thankfully it can be operated on remote control.",,,
+prv_skarn,SHIP,"The forlorn hope of the belt, Skarn pilots live to strafe and strafe to live. Armed with an intimidating AKC rotary cannon and a big box of shells they strap in and point their craft directly at their target, firing wildly from the moment they enter range. Only the most resilient shields can hope to stand up to the kinetic barrage of a Skarn attack, and should the fighter strike against unarmored hull the damage is disastrous.",,,
+prv_grus,SHIP,"Militarized version of a popular racing craft, outfitted with solid armaments and less solid armor. Remarkably good at clearing out missile swarms and light ships, while faltering against shielded targets.
+
+Bit of a guilty pleasure among Ruster commanders due to its tendency to take heavy losses in assault scenarios. Attempts to find an economically acceptable way to fit a shield generator to the craft have sadly failed.",,,
+prv_kalk,SHIP,"Equipped with a small phase coil, these precious bombers move in close to their target and disperse a rocket barrage before phasing away back to safety.
+
+It is said that there’s nothing more terrifying than those few moments a Kalk spends unphased while launching its ordinance. Attrition rates plotted over sortie time certainly support this claim. Kalk pilots know that it’s the seconds before phasing in that are the truly terrifying ones.",,,
+prv_karbid,SHIP,"These tough fighters attack their target using an industrial cutting blade. Generally regarded as more of an ad-hoc terror weapon than a practical fighter craft.
+
+For readily apparent reasons the Karbid is not on the table of organization and equipment of any regular military, and only sees limited use among some of the more political pirate groups on the sector fringe. 
+
+Pilots who have been unlucky enough to come face to face with a Karbid - and been lucky enough to survive the encounter - will readily agree that it is indeed an implement of terror.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### Other Fighters,,,,,
+#############################,,,,,
+prv_broadsword_pather,SHIP,"With its right side armament and armor ripped out and replaced by a torpedo mount the Pather Broadsword is a terrifying implement of holy war capable of devastating bombing runs.
+
+Fanatics of the Luddic Path have managed to crudely modify a still-encrypted Broadsword master production chip, creating a blueprint for a vehicle that could potentially operate as the Path's primary strike bomber. Replacing the left-hand machinegun with a light mortar and most of the right side of the fighter's hull with a Hammer launch rail the strike potential of the vehicle is undeniably intimidating. Unfortunately the unpredictable and poorly understood modifications have also degraded the performance of the engine. Pather engineers attempt to get around this by mounting a modified exhaust nozzle in post-production, but it only helps so much.
+
+The torpedoes fit to these vessels tend to have numerous and often intricate and artistic blessings and prayers drawn on them, in the hopes that providence will guide the Hammer to strike true. Certainly, once the rocket engine has ignited the lack of a guidance system leaves it entirely out of the hands of man.",,,
+prv_talon_pather,SHIP,"Faster and cheaper than ever, this overtuned vehicle of holy war sports surprising firepower and is capable of dispatching enemy fighters. It can also deal appreciable damage to larger ships when used en masse, though such use usually results in heavy pilot losses. To help absorb such losses more readily the Pathers operate the fighter in larger wings than Domain doctrine would demand.",,,
+,,,,,
+#############################,,,,,
+### Ships,,,,,
+### prv Stations,,,,,
+#############################,,,,,
+prv_station1,SHIP,"A prv-model orbital station featuring dispersed firepower and irregular axial rotation. This platform hosts shipyards, habitats, factories, and large stockpiles of weapons and supplies allowing projection of military and industrial power throughout the local orbital volume.",,,
+prv_station2,SHIP,"A large prv-model battlestation featuring twin shields, an EMP mine teleporter, and heavy dispersed firepower. This platform hosts shipyards, habitats, factories, and large stockpiles of weapons and supplies allowing projection of military and industrial power throughout the local orbital volume.",,,
+prv_station3,SHIP,"An enormous star fortress, the pinnacle of contemporary zero-G construction in the Persean Sector, build to the prv model featuring Redan-class phase drones, tri-omni shielding, and an extensive gravity minefield. This platform hosts shipyards, habitats, factories, and large stockpiles of weapons and supplies which allow projection of military and industrial power throughout the local orbital volume.",,,
+prv_station_drone_redan,SHIP,"The Redan is a station defense drone focused on ambushing attackers from phased space. Because it requires no crew, travel drive, or any kind of independent command core, the Redan can punch well above its weight class in combat.",,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### prv Energy Weapons,,,,,
+#############################,,,,,
+prv_sipdlaser,WEAPON,"Built to combat fighter craft, this close-in beam emitter hones in on its target and after a moment of accurate fire emits a strong energy burst.
+
+The SIPD is capable of targeting missiles, but performs better against fighters and frigates. The fire control logic is wired accordingly, and captains concerned about strike weapons would do well to combine the laser with more traditional point defense weapons.
+
+Field experience with the SIPD has shown that the system benefits greatly from after-market enhancements such as accelerated turret gyros or focusing array replacements, ensuring that it can start focusing the beam early and keep it on target reliably. At the same time such enhancements tend to increase the size of the weapon significantly - removing one of its main virtues, the unintrusive and easy-to-maintain weapon mounting.",Close Defense,,
+prv_spattergun,WEAPON,"Raw plasma projector that unleashes unfocused energy bursts. The sticky plasma clings to ship hulls, dealing additional damage over time.
+
+The Magnetdestabiliserad plasmaprojekteringskanon - Spattergun in common parlance - spreads superheated unfocused plasma over a wide area, melting even combat armor plating. Due to the short maximum range operators are adviced to be very aware of the splashback potential. 
+
+A simple implementation of what was originally a very large and complicated weapon, the Spattergun is derived from early and ill-fated attempts to construct a capital-scale shield-bypassing energy weapon. After throwing out essentially all the complicated parts - sophisticated power banks, omnifocal photon focusing arrays, ultramagnetic field generators, and so on - the principles behind a practical and efficient energy blaster could be found under the dross of ineffective hypertechnology.",General (Area),,
+prv_heavyspattergun,WEAPON,"Heavy plasma projector that unleashes a large number unfocused energy bursts. The sticky plasma clings to ship hulls, dealing additional damage over time.
+
+The Tung magnetdestabiliserad plasmaprojekteringskanon - Heavy Spattergun in common parlance - spreads superheated unfocused plasma over a wide area, melting even combat armor plating. The heavy version comes with an enlarged mount, offering superior range and stability, and can handle significantly more powerful plasma discharges.",General (Area),,
+prv_lpk,WEAPON,"Guided particle pulse launcher firing from capacitor banks that recharge faster at high flux levels. Its energy blasts are flux-efficient and homing, but also tend to be somewhat unstable and will dissipate if subjected to accurate point-defense fire.
+
+By utilizing a complicated passive flux shunt interface that gives maintenance engineers ulcers the LPK can achieve astounding power efficiencies. This comes at the cost of being unable to feed the weapon directly, instead having to rely on the entire main line load to achieve maximized recharge rates.
+
+According to the technical manual the main flux shunt feedrate limiter should ”under no circumstances be removed, tampered with or otherwise modified”. It continues: ”Removal may induce recharge rates above component ratings, induction feedback loops, and other forms of enhanced performance”. The sector being what it is, intact LPK feedrate limiters have ended up being about as common as hen's teeth.",General,,
+prv_frasare,WEAPON,"The Fräsare tears up the space around its target with a smattering of subspace tearing. With an initial sharp kick and a rapid dropoff, this beam rips through poorly protected targets. 
+
+The focusing arrays on the weapon are seemingly misaligned, which is necessary for the autodeharmonizing shift effect to be as concentrated as possible. Replacing the optical array with a more advanced one would have the curious side-effect of spreading out the shift bursts significantly, in addition to the expected range increase on the main beam. Enhancing the targeting systems of the ship carries no such effects, however.",Finisher (Area),,
+prv_svepfrasare,WEAPON,"Ripping space itself into shreds this particle beam calmly sweeps across the battlefield, which then erupts into countless blasts of subspace tearing. Lightly protected targets caught under the beam’s arc can expect to take heavy damage, if they are not destroyed outright. 
+
+The sweep arc width is hard set on installation, and may end up reduced when installed into mounts with limited space to rotate.
+
+The focusing arrays on the weapon are seemingly misaligned, which is necessary for the autodeharmonizing shift effect to be as concentrated as possible. Replacing the optical array with a more advanced one would have the curious side-effect of spreading out the shift bursts significantly, in addition to the expected range increase on the main beam. Enhancing the targeting systems of the ship carries no such effects, however.",Finisher (Area),,
+prv_ljungeld,WEAPON,"Devastating heavy particle beam that can partially bypass pressured shields. Has limited charges and a very slow recharge rate.
+
+By creating and carefully maintaining a vortex feedback loop a standard shield can be induced to create local vulnerabilities that can be exploited by a sufficiently powerful beam emitter to break through the shield and arc to any massive matter present behind it.
+
+Actually monitoring and nurturing these vulnerabilities is a task well beyond any human operator, or indeed most electronics. A (nominally) sub-gamma level AI is embedded in the power coil system of the weapon and ensures that optimal power levels and emission frequencies are maintained at all times.
+
+The immense power of the beam emitter poses equally immense challenges for the power feed. which is based on a number of AI-monitored capacitor banks that must be maintained at very specific charge levels to enable to feedback loop to function. Recharging them is a slow and deliberate process that is ill-suited for the stresses of combat. Operators are adviced to make sure that combat operations end before they ”run out of juice”.",Strike,,
+prv_uvir,WEAPON,"Considerably larger than most pulse lasers found in the sector, the UVIR fires repeating bolts of energy. It is a reliable and consistent medium-range energy weapon.
+
+The usual problems with large-scale pulse lasers have been bypassed by using a twin-frequency emitter, firing at two vastly different wavelengths. The difficulties involved in maintaining what is essentially two different cannons in one mount have led to the weapon never gaining much popularity outside the prv.",Assault,,
+prv_vakt,WEAPON,"A multi-purpose beam that easily destroys any small objects - such as missiles, fighters, or frigates - that come within its fairly short focusing envelope.
+
+Drawing power from p-space, this disturbing beam weapon strikes the target moments before it has been fired. By opening up a channel to phased space, any unshielded matter around the beam rapidly begins tearing itself apart.
+
+Banned by the Domain as a grossly causality-violating technology. Current-day powers in the Persean sector would do the same, had they information about its deployment in the region.",General / Point Defense,,
+,,,,,
+### Built-In ###################,,,,,
+prv_sipdlaser_fighter,WEAPON,"Built to combat fighter craft, this close-in beam emitter hones in on its target and after a moment of accurate fire emits a strong energy burst.
+
+The SIPD is capable of targeting missiles, but performs better against fighters and frigates. The fire control logic is wired accordingly, and captains concerned about strike weapons would do well to combine the laser with more traditional point defense weapons.
+
+Field experience with the SIPD has shown that the system benefits greatly from after-market enhancements such as accelerated turret gyros or focusing array replacements, ensuring that it can start focusing the beam early and keep it on target reliably. At the same time such enhancements tend to increase the size of the weapon significantly - removing one of its main virtues, the unintrusive and easy-to-maintain weapon mounting.",Close Defense,,
+prv_frasare_fighter,WEAPON,The Jämmer’s layered assault of an armor-stripping torpedo followed by a fragmentation blast from the Karbinfräsare is a fearsome combination - this subspace-fracturing beam tears through unprotected ships at an appalling rate.,Fighter,,
+prv_uvbeam_fighter,WEAPON,"Constructed specifically for the Stillhet Phase Fighter, this beam emitter projects a momentary burst of energy at wavelengths just outside human vision. It is even shorter-ranged than standard phase beams, but small enough to be mounted on a fighter craft.
+
+Accusations that the gun recieved its ”Inget” moniker just to ”sound cool” have never been given an official response.",Fighter,,
+prv_uvpulse_fighter,WEAPON,"Constructed specifically for the Stillhet Phase Fighter, this pulse cannon fires a barrage of energy blasts at wavelengths just outside human vision. It is even shorter-ranged than standard IR pulse lasers, but the burst fire mode complements the strike-and-evade tactics of phasecraft very well.
+
+Accusations that the gun recieved its ”Intet” moniker just to ”sound cool” have never been given an official response.",Fighter,,
+prv_spattergun_fighter,WEAPON,"Fighter-scale raw plasma projector. The sticky plasma clings to ship hulls, dealing additional damage over time.
+
+The Magnetdestabiliserad plasmaprojekteringskanon - Spattergun in common parlance - spreads superheated unfocused plasma over a wide area, melting even combat armor plating. Due to the short maximum range operators are adviced to be very aware of the splashback potential. 
+
+Damaging and energy-efficient. It's amazing what you can accomplish when you put your life on the line.",Fighter,,
+prv_blames_fighter,WEAPON,"A short-range weapon for support fighters, the Blåmes homes in and strikes its target with a disabling EMP burst.
+
+The prv, appalled at the loss of pilots and more importantly materiel, needed a tool to keep their fighter wings alive. After more political maneuvering than the topic really warranted the issue ended up being settled in favor of the missile corps’s proposal - a light bombardment missile with an EMP warhead.",Fighter,,
+prv_tardes,WEAPON,"An insidious tool that uses a wide-band phased lidar array to identify weaknesses in the target, combined with a multifocal blinding beam that interferes with defensive gunnery sensors. Highly effective at amplifying the damage done by other craft.",Utility,,
+prv_ljungeld_conquest_prototype,WEAPON,"A large-scale test platform used in the development of the Ljungeld particle beam, embedded into the structure of a Conquest-class Battlecruiser. Unlike the final Ljungeld model, this weapon fires a barrage of energy blasts that arc through shields more by sheer energy than through field modulation.
+
+The major limiting factor of the design is that once an energy blast is fired, it is no longer possible - or at least practically feasible - to adjust it in response to changes in the shield structure and it must rely on sheer power to compensate for any misalignments.
+
+This straight-forward - brutal even - approach of the test-bed model proved two things: First of all, it worked. The energy blasts reliably arced past shields, often dealing significant damage to the craft behind them. And second of all, it didn't work. The scale of the weapon was immense, and the performance just could not justify such an investment for a weapon that, in the end, was less damaging than a plasma cannon. As such a less direct approach was tried and eventually succeded - a reactive particle beam, that creates and exploits feedback patterns.",Assault,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### Rust Belt Energy Weapons,,,,,
+#############################,,,,,
+prv_fusion_burster,WEAPON,"An unwieldy beam weapon that can tear a hole through even the thickest armor.
+
+Ruthlessly miniaturized, Ruster engineers had to sacrifice much in order to fit the Fusion Burst Laser into such a small package. The microfocus array and most of the control motors found in common beam weapons have been removed, leaving the weapon hopeless at targeting fighters and awkward against frigates. Achieving maximized armor ablation has also required the beam to be restricted to ultrashort wavelengths, leaving it largely incapable of disrupting shields.
+
+Nonetheless the Fusion Burst Laser, once laid onto a target and fully charged, will melt through hull and armor at a rate several times greater than suggested by its small size.
+
+The ""can-opener"" is a favorite of many freebooters lucky enough to possess a ship capable of fitting energy weapons.",Assault,,
+prv_fusion_pulser,WEAPON,,Assault,,
+prv_belt_blaster,WEAPON,"Upsized version of the common mining blaster, featuring burst fire capability and enhanced range. Destroys asteroids, ships, and your flux level, all in one easy package.
+
+Between the constant threat of pirates, and the ever-present risk of getting caught in a prv sweep, Rust Belt miners are always on the lookout for dual-use equipment. Enhancing their mining blasters was a natural step, and after some experimentation the Belt Blaster upgrade kit quickly became a regional favorite. 
+
+Though large and bulky, the addional energy feed lines and enhanced focusing arrays allow for not just deadly fire in combat, but operators can also lay in a pre-planned firing solution in order to excavate an entire rock face in moments - without having to wait for dust to settle between shots. The moderate reduction in peak charge level is more than made up for by the increase in overall firing rate and reduced wastage.",General,,
+prv_hfl_array,WEAPON,"Fast firing and short-ranged pulse laser array. Quantity has a quality all of its own.
+
+When you can't get your hands on the fancy components needed to make high-intensity lasers or physics-defying tachyon beams you have to make up for it somehow. In the belt, this simple laser array is very popular. Cheap, readily available, and flux-efficient enough to be operated even on a beat-up old junker, the HFL array is the common man's big laser.
+
+Naval ordnance bureaus across the sector are given grey hairs by this weapon, as no two arrays ever seem to be quite alike. More pragmatic souls appreciate the ”just jam it in, see what happens” approach to replacement parts enabled by the exceedingly loose engineering tolerances involved.",Assault,,
+,,,,,
+### Built-In ###################,,,,,
+prv_ljungeld_damaged,WEAPON,"A recovered and dubiously refurbished Ljungeld particle lance, supposedly capable of arcing through shields. Isolated capacitors let the weapon be fired cheaply, though the number charges is extremely limited.
+
+”It works fine. - Chaz”",Strike,,
+prv_fusion_burster_fighter,WEAPON,"An applied ”can-opener” used for mainly for cutting up abandoned ship hulls, such as those found in the Great Belts around the Kratul system. Mounted on a utility craft this tool can reliably cut almost any salvage into more manageable chunks.
+
+Compared to the larger weaponized Fusion Burst Laser the Cutter lacks range and peak energy output. As a tool this is more than adequate, but in combat the order of the day is generally ”more, faster”.",Assault,,
+prv_hfl_array_single,WEAPON,"Fast firing pulse laser. A solid choice as a do-it-all weapon for a light ship.
+
+When you can't get your hands on the fancy components needed to make high-intensity lasers or physics-defying tachyon beams you have to make up for it somehow. In the belt, this simple laser is very popular. Cheap, readily available, and flux-efficient enough to be operated even on a beat-up old junker, the HFL is the common man's big laser.",General,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### prv Ballistic Weapons,,,,,
+#############################,,,,,
+prv_pskd,WEAPON,"Point defense system designed to reliably destroy incoming missiles with a small salvo of bursting shells. Poor sustained fire.
+
+With twin barrels and a novel all-the-way-through recoil system the Pskd can fire its proximity-fuzed grenades at high velocity and maintain accuracy out to a respectable distance. 
+
+In order to keep costs low and the system small the barrel cooling is limited to a dual-purpose halocarbon lubricant half-jacket, restricting the weapon to burst fire. For missile defense this is not a problem, but performance flags somewhat against fighters and ships.",Point Defense,,
+prv_akc,WEAPON,"A fine-caliber rotary cannon that fires streams of high-velocity flechettes. Useful for pressuring enemy shields or destroying light fighter craft and missiles.
+
+Featuring an easy-to-install all-in-one pod configuration with seven rotating barrels the AKC offers a convenient CIWS package suited for most ships. 
+
+The rapid reload rate and rotating halon-cooled barrels enable burst rates of fire in excess of 1000 RPM. With some aftermarket modifications to the magazine and ammunition manufactory this firing rate can be maintained for impressive amounts of time. To feed this hungry beast, the AKC is installed alongside a dedicated ammunition manufactory. The forge can use most semi-ferrous alloys as feedstock, and more than one piece of wreckage has ended up as ammunition for the gun that destroyed it.",Point Defense,,
+prv_akers,WEAPON,"A fine-caliber autocannon which fires kinetic shells with secondary EMP bursts. Ideal for the close-in combatant.
+
+Featuring an easy-to-install all-in-one pod configuration with two recoiling barrels the Light Akers offers solid close-support performance in a small and convenient package. 
+
+A proven technological base of an electromechanical belt loader, simple rifled barrels and a shell that is 74% intercompatible with Domain-standard c27 EMP grenades ensure that maintaining the weapon is easy no matter where in the sector you are. No special certification is required for routine maintenance and servicing.",Close Support,,
+prv_akers_nova_fighter,WEAPON,"A rejected early version of the Akers Nova, this gun significantly smaller but somewhat lacking in firepower. It fires ionized flechettes which are useful for pressuring enemy shields or disabling the systems of unprotected targets.
+
+While it was never produced in any significant quantities, there are still a number of the guns floating around the sector - sometimes literally. Rumor has it that the Ryak High-Energy Lab had significant problems with theft, shrinkage and smuggling in the early days of the prv takeover.",Close Support,,
+prv_heavyakers,WEAPON,"A small caliber autocannon which fires twin-function shells, dealing kinetic damage with secondary EMP bursts. A good choice for ships willing to trade off some range on their kinetic armaments.
+
+Featuring an easy-to-install all-in-one pod configuration with twin recoiling barrels the Heavy Akers offers solid close-support performance in a single convenient package. 
+
+A proven technological base of an electromechanical belt loader, simple rifled barrels and a shell that is 63% intercompatible with Domain-standard d39 EMP shells ensure that the weapon is easy to keep operational no matter where in the sector you are. No special certification is required for routine maintenance and servicing.",Close Support,,
+prv_siege_akers,WEAPON,"A magazine-fed heavy-caliber autocannon which fires heavy electrokinetic shells, capable of overloading enemy shields or disabling ship systems with EMP bursts. A savage assault weapon that offers the enemy nothing but bad options.
+
+Featuring an easy-to-install all-in-one pod configuration with quad recoiling barrels and a magazine loading system the Siege Akers offers powerful kinetic firepower in a single convenient package. 
+
+A reliable if somewhat unproven electromechanical magazine loader, simple rifled barrels and a shell that is 42% intercompatible with Domain-standard h41 EMP bombs ensure that the weapon is relatively easy to keep operational even on longer deployments. Routine maintenance and servicing can be performed by any certified engineer even while underway.",Close Support,,
+prv_jursla,WEAPON,"This heavy graviton beam is used to guide energy blasts towards the target. The ceaseless particle bombardment is a significant threat to any shield emitter.
+
+Surfing on the outside of the beam walls, the graviton packets smoothly oscillate towards the target following sophisticated EM principles that are, for once, well understood even in the degraded Persean sector. Manufacture of the components of the weapon is still very costly however, and most specimens used in the sector are remnant stock from better times.",Close Support,,
+prv_akers_nova,WEAPON,"These long-range cannons fire ionized flechettes which are capable of overloading enemy shields by kinetic impact or disabling systems through EMP bursts. Ideal for disabling shield-reliant targets.
+
+prv Starworks' recent acquisition of the Ryak High-Energy Labs shaped the development of this youngest member of the Akers family. Little of the technology of its relatives remain, abandoning orthodox chemical propellants and rifled barrels in favor of an isolated-plasma rail system that can ionize and launch a shell twice as heavy as that of the Heavy Akers without any loss in velocity, offering improved kinetic performance and a strong EMP effect on hull strikes without having to rely on a fuzed charge. Improved ship sensors integration and a thorough overhaul of the control servomotors have also increased the accuracy of the system, especially during sustained fire.
+
+This excellent performance improvement does however come at a price. The plasma rails and ionization vanes both draw significant amounts of extra power, leading the weapon to suffer in flux efficiency. It is also hell to maintain, requiring daily recalibration of the plasma field sensors and frequent replacement of abraded flux shunts and worn out plasma guide rails. Systems installation and grade 3+ service and repair work should only ever be done by a prv-certified technical team at a fully equipped spaceyard.
+
+The weapon is a rarity on the open market; it is rumored that prv Starworks have signed an exclusive supply contract with the Sindrian Diktat.",Close Support,,
+prv_akers_denova,WEAPON,"By giving up any pretense of efficiency these cannons manage to fire their bursting shells at an exceptional rate. The high flux load does however mean that the weapon challenges its operator as much as the target.
+
+The shell’s subspace-tearing charge is a minor marvel, offering deadly effect on exposed targets. Regrettably the charges have a short shelf-life and fairly difficult to produce, leading to shipside forges only managing to keep a limited amount in the magazines. 
+
+Mechanically the gun is otherwise fairly traditional, with a tendency towards oversized and high-spec parts. Powerful but simple components define the weapon’s basic configuration.
+
+A rejected model of the Akers Nova project. Only a small batch was ever produced. There exists no standard installation or maintenance procedures; any user will have to figure things out as he goes. The tactical manual is an empty binder with the label FIELD NOTES.",Close Support,,
+prv_gravkan,WEAPON,"Revs up and fires a large burst of shells charged with a gravitic burst detonator, ripping armor and displacing light craft near the impact.
+
+Often regarded as a run-away vanity project, the Gravkan’s development took over a hundred cycles and no one’s entirely sure how many credits were thrown away, good after bad, running down various R&D dead ends. 
+
+The end result is a functional but painfully short-ranged weapon that does exhibit peculiar gravitic properties - though they are generally too unpredictable to be of much practical use.  The saving grace for the project was that the resulting weapon is fairly cheap to produce and operate, while still managing good effect on ship armor. 
+
+The prv use the weapon in an assault role, while the sector at large generally prefer the good old GA-X Mk. II chaingun, or a simple bombardment mortar.",Assault,,
+prv_heavygravkan,WEAPON,"Fires an immense gravitic blast that can displace all but the largest ships and tear through even heavy plating.
+
+The graviton distorsions left behind by this weapon have been noted to often cause more trouble to the user than the target - diverting incoming fire and disrupting allied fighter formations. It still carries a certain respect among the prv though, as it is well capable of shaking up a battlespace, opening up opportunities that can be exploited by fast ships and agile minds. And as one admiral remarked, ”a pulse laser cares little about gravity”.
+
+Greatly feared by persean fighter jocks, fed by stories (and, for that matter, by bootleg combat footage) of pilots being hit by the gravblast and getting ejected from the battlefield in a disabled craft, never to be seen again. There are worse fates than instant incineration by a particle lance.",Area Disruption,,
+prv_bounder,WEAPON,"A bit of a curiousity, these cannons fire high-explosive ”smart” shells that repeatedly attempt to ricochet onto a new target if they hit a shield. Best used against enemies in tight formation.
+
+Due to the high risk of friendly fire, once on the rebound a shell will not detonate on fighter-sized targets.
+
+Attempts to adapt the technology to kinetic weapons have proven fruitless, as the Studsare fundamentally works by ”skipping” the shell on the shield surface, making as little impact on the field itself as possible. Doing the same with a kinetic shell would be possible, but leave the shield unharmed, making the entire endeavor pointless.",Assault,,
+prv_heavybounder,WEAPON,"Rotary cannon firing large bursts of tiny explosive ”smart” shells that attempt to ricochet onto a new target if they hit a shield. Infamous for its effects on tight fleet formations - the bounding shells turn every friend into a flanking threat.
+
+Due to the high risk of friendly fire, once on the rebound a shell will not detonate on fighter-sized targets.
+
+The gun housing is traditionally coated in brass, for reasons lost in the mists of time. This does add some flair to what would otherwise be just another grimy machine.",Assault,,
+,,,,,
+### Built-In ###################,,,,,
+prv_akers_fighter,WEAPON,"Heavy-duty kinetic cannon designed to allow the Skrän to dispatch lighter fighters.
+
+In order to fit the gun onto a fighter some compromises had to be made; foremost of these was greatly downsizing the EMP payload and cutting the number of launch rails in half. The end result is a heavy cannon that is still small enough to fit on a fighter, though its range and EMP potential is greatly reduced.",Fighter,,
+prv_siege_akers_sunder_prototype,WEAPON,"A heavy-duty autocannon which fires heavy electrokinetic shells, capable of overloading enemy shields or disabling ship systems with EMP bursts. Once cryoquenched the heavy shells can deal heavy damage to even heavily armored targets.
+
+Integrated closely into the Sunder's core structure this weapon cannot be removed without destroying the ship. Presumably no one particularly cared about reusability when installing it.",Close Support,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### Rust Belt Ballistic Weapons,,,,,
+#############################,,,,,
+prv_lightthumper,WEAPON,"Ruster-pattern Thumper, downtuned to allow it to be installed in smaller mounts. Fires a salvo of light fragmentation rounds, with poor effect against shields or heavy armor. Ease of operation and good range are the main virtues of this weapon.
+
+In spite of its small size it is just as rugged as the standard model, largely thanks to a significantly lowered cyclic rate of fire. Supposedly the gun only needs maintenance every 5 cycles or 10 000 rounds, though wise weapons officers make sure not to find out the truthfulness of that claim.
+
+There are tales of an overdriven Thumper pattern, combining the small size of the light mount with the full rate of fire of the standard model. Baseless spacer tales dreamt up on too-long voyages through the nether, no doubt.",Finisher,,
+prv_lightthumper_oc,WEAPON,"Optimized Thumper. Little remains of the engineering tolerances of the original; this is a lean, mean killing machine. A ruinous weapon against vulnerable targets.
+
+Thought nonexistent throughout the sector, little more than a tall tale told in old timers’ bars as the night drags long. A dream of equipment that actually works, shared by men who always have to make do.",Assault,,
+prv_lighttripleac,WEAPON,"A tri-barreled version of the Light AC which fires an unceasing stream of light kinetic shells. Highly effective at bringing down shields.
+
+A Rust Belt special, this AC pattern outputs as much kinetic energy as a railgun through sheer volume of fire, though it lacks the accuracy and efficiency of said weapon. As an expedient means of firing large amounts of ordinance at the enemy it is however still a fine choice.
+
+The elegant case ejection mechanism of the Light Dual Autocannon has been augmented through the somewhat less elegant method of simply installing two alternating ejectors.",Close Support,,
+prv_kartesch,WEAPON,"Heavy-duty mortar used for firing submunition cartridges which burst into a swarm of explosive bomblets. A flux-efficient siege weapon with high burst damage and excellent effect against lightly armored targets.
+
+The mortar tube is usually converted from a worn-out Hellbore barrel, with recoil hydraulics scrounged from wherever possible and the cartridge loader is adapted from a common spacedock cargo loader. Anything that can be fit with an impact fuze is a submunition candidate, though GA-X shells are regarded as the ideal payload.",Siege,,
+prv_pskd_cluster,WEAPON,"Large point defense array that provides area saturation with a deluge of shells, shredding any fighters or missiles caught under, or vaguely nearby, the gun’s crosshairs.
+
+Numerous pirates make dubious claims about being the original creator behind this somewhat unhinged design - the Cluster is little more than a half-dozen Punktskydd that have been welded together and had their barrels drilled out to fire a larger shell. While this haphazard engineering has left the guns woefully inaccurate and prone to overheating, abandoning prudence and best practices has its upsides - few weapons can claim to put as much ordinance downrange as the Cluster. Fighter pilots, beware.",Area Saturation,,
+prv_spatterflamer,WEAPON,"Sprays a stream of flux-conductive plasma that sticks to ship hulls, dealing additional damage over time.
+
+Derived from the prv Spattergun by Rust Belt engineers, the ingeniously named Spatterflamer emits a stream of flux-conductive liquid that is energized by a plasma particle projector. The result is a supercharged semifluid that sticks to ship hulls and delivers devastating burns. 
+
+The liquid projector is uncomfortably bulky, restricting the weapon to large ships. Even then, the conductor reservoirs are challenging to handle as they must be energized in small batches. 
+
+As they faced pirates armed with the weapon, the prv quickly became curious about its potential, and a limited permit was put out to mount it on corporate warships. 
+
+The first corporate craft carrying the weapon was lost in an attempt to charge the main reservoir, bypassing the cumbersome reloading procedure. The fluid quickly went supercritical and underwent fission, turning the better part of the ship into an impromptu nuclear reactor. 
+
+The circumstances surrounding the destruction of the ”I Won't Forget” were promptly buried by the ship’s operating house.",Assault,,
+,,,,,
+### Built-In ###################,,,,,
+prv_splitter_fighter,WEAPON,"Fighter weapon which fires explosive grenades which have a fairly large area of effect and a remarkably unreliable proximity fuze.
+
+Derived from the Devastator Cannon, according to the idea that if it’s a good weapon for killing fighters, it should certainly give any fighter carrying one a leg up in a superiority fight.",Fighter,,
+prv_akc_fighter,WEAPON,"This fine-caliber rotary cannon fires a stream of high-velocity flechettes, capable of pressuring enemy shields or destroying light fighter craft through kinetic impact. Highly restrictive magazine size.
+
+Adjusted for strafing runs, the AKC rb-f variant carries a strictly limited amount of ammunition, but is none the less capable of withering damage to shields or unarmored targets.",Point Defense,,
+prv_karbid_saw,WEAPON,"An industrial angle grinder given a different life. When rotating at full speed the blade carries an immense amount of energy, letting it tear deep gashes in the target. The recoil generally sends the user spinning.",Direct Attack,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### prv Missile Weapons,,,,,
+#############################,,,,,
+prv_svala,WEAPON,"A light launcher for advanced guided torpedoes. As the Svala approaches its target the main torpedo splits into seven submunitions which immediately unleash antimatter blasts towards the target.
+
+Conceptually the Svala torpedo disperses a number of scaled-down single-use anti-matter blasters, each of which contains a polarized-magfield generator plus capacitor, a powerful but short-lived set of orienting thrusters, and a shell filled with 1,42 micrograms of positron antimatter. 
+
+An unfortunate compromise of the design is that the magfield generators have to operate disconnected from the main ship generator, necessitating a short delay to charge the on-board capacitors before the torpedo can be launched.
+
+The intricate and valuable gun component of the Svala warhead is reusable, and a little over half of the field operator's manual covers search, recovery and refurbishment procedures. This has done little to help the system's reputation of being wastefully expensive and over-elaborate. The Ryak High-Energy Labs marketing department have given up on combating this characterization and now sell the weapon under the tagline ”Performance at any cost! - When it's your life that is on the line.” Obviously this has not been terribly persuasive when it comes to landing contracts with the Sindrian Armaments Committee.",Strike,,
+prv_rorsangare,WEAPON,"A rack of advanced guided torpedoes. As the Rörsångare approaches the target the main torpedo splits into numerous submunitions which rapidly surround the target and unleash antimatter blasts towards it.
+
+Further developed from the Svala, the Rörsångare antimatter torpedo suffers from many of the same flaws, keeping the otherwise potent weapon from gaining much acceptance within the prv, much less with the sector at large.",Strike,,
+prv_kaja,WEAPON,"Launches guided missiles at exceptionally high velocity, with moderate damage and a fairly high reload rate.
+
+Featuring a powerful boost system in the launcher the Kaja MRM system can fire its missile at great speed, bypassing point defense outright at close range and minimizing target reaction time over longer distances. Sustained fire is achieved through an autoloader that can rearm the system in 10 seconds.
+
+The launch boost system is not without downsides however; it builds up a noticeable amount of flux, and the initial missile speed is well above what the missile's steering systems are capable of adjusting for, leaving it largely unguided for a moment after launch. The missile is however still armed from the instant it leaves the launcher, and entirely capable of detonating on impact with a target even before it drops to guidance speed.
+
+The system can be fit with an after-market expanded magazine for a rapid second strike.",Close Support,,
+prv_kraka,WEAPON,"Launches guided missiles at exceptionally high velocity, with moderate damage and a fairly high reload rate.
+
+Featuring a powerful boost system in twin launchers the Kråka MRM system can fire its missiles at great speed, bypassing point defense outright at close range and minimizing target reaction time over longer distances. Sustained fire is achieved through an autoloader that can rearm both launchers in 10 seconds.
+
+The launch boost system is not without downsides however; it builds up a noticeable amount of flux, and the initial missile speeds are well above what the missiles' steering systems are capable of adjusting for, leaving them largely unguided for a moment after launch. The missiles are however still armed from the instant they leave the launcher, and entirely capable of detonating on impact with a target even before they drop to guidance speeds.
+
+The system includes a ready-rack that enables a rapid second strike before falling back to the standard loading procedure.",Close Support,,
+prv_korp,WEAPON,"Launches guided missiles at exceptionally high velocity, with moderate damage and a fairly high reload rate.
+
+Featuring a powerful boost system in triple launchers the Korp MRM system can fire its missiles at great speed, bypassing point defense outright at close range and minimizing target reaction time over longer distances. Sustained fire is achieved through an autoloader that can rearm the system in 10 seconds.
+
+The launch boost system is not without downsides however; it builds up a noticeable amount of flux, and the initial missile speeds are well above what the missiles' steering systems are capable of adjusting for, leaving them largely unguided for a moment after launch. The missiles are however still armed from the instant they leave the launcher, and entirely capable of detonating on impact with a target even before they drop to guidance speeds.
+
+The system includes a large ready-rack that enables numerous rapid launches before falling back to the standard loading procedure.",Close Support,,
+prv_sidensvans,WEAPON,"Fires a small barrage of explosive missiles equipped with a backup split-attack mode. The missiles have a brief orientation stage, after which they travel straight forwards.
+
+Fast moving and able to aquire its target from almost any angle, the Sidensvans is a versatile, if somewhat bulky, support weapon. The large installation size does allow for a considerable ammunition count.",Fire Support,,
+prv_sidensvans_array,WEAPON,"Fires a barrage of explosive missiles equipped with a backup split-attack mode. The missiles have a brief orientation stage, after which they travel straight forwards.
+
+Fast moving and able to aquire its target from almost any angle, the Sidensvans is a versatile, if somewhat bulky, support weapon. The large installation size does allow for a considerable ammunition count.",Fire Support,,
+prv_skata,WEAPON,"Long range semi-guided missile launcher designed for suppression of large ships. Launches a small group of light missiles before quickly reloading.
+
+The Skata LRM system rapidly launches groups of missiles that will gradually accelerate to extremely high velocity before striking the target. To ensure effect on target at any range the missiles are equipped with a plasma bursting charge that is equally effective against shields and armor.
+
+Putting speed ahead of maneuverability, Skata missiles cannot be relied upon to strike frigates or destroyers.",Fire Support,,
+prv_berguv_rack,WEAPON,"A rack of nuclear/plasma torpedoes. The Berguv detonates once in proximity of the target, leaving any nearby ships engulfed by superheated plasma.
+
+While the prv guarantee that the Berguv is completely inert until the plasmaflux reservoir is energized and the fuze is set, it is generally agreed that it is better to mount the torpedoes in an external rack. Ideally with a couple of solid reinforcing plates backing them.
+
+Berguv production standards have hit an all-time low in the post-collapse era. Almost none of the torpedoes are assembled with the standard Hallbar armor plating, and the simplified electronics package completely fails to detect overshoot.",Strike,,
+prv_berguv,WEAPON,"A launcher for nuclear/plasma torpedoes. The Berguv detonates once in proximity of the target, leaving any nearby ships engulfed by superheated plasma.
+
+Shunned by most navies in the sector, the Berguv has a well-deserved reputation for detonating whenever, wherever, however. Even inside the prv only the black-ops units of Pariabyrån are entirely comfortable with carrying the heavy launcher and its accompanying magazine in their ships.
+
+Berguv production standards have hit an all-time low in the post-collapse era. Almost none of the torpedoes are assembled with the standard Hallbar armor plating, and the simplified electronics package completely fails to detect overshoot.",Strike,,
+prv_berguv_mirv,WEAPON,"Launches a missile that will split into nuclear/plasma warheads after approaching the target. The warheads detonate once in close proximity, leaving any nearby ships engulfed by superheated plasma.
+
+An attempt to make the Berguv torpedo more reliable, the MIRV version has moderate homing capabilities and much better kill probability against light ships. When it comes to larger targets however, the more concentrated plasma blast of the standard torpedo generally comes out ahead.
+
+Even the MIRV submunitions suffer from the falling Berguv production standards of the post-collapse era. Almost none of them are assembled with the standard Hallbar armor plating, and the simplified guidance core completely fails to detect overshoot.",Strike,,
+,,,,,
+### Built-In ###################,,,,,
+prv_skatunge,WEAPON,"Short range semi-guided missile launcher designed for fire support. A simple autoloader ensures usefulness in protracted engagements.
+
+An adaptation of the larger Skata missile for light ship use. To ensure effect on targets of any size the missiles are equipped with a plasma bursting charge that is equally effective against shields and armor.
+
+Putting speed and payload ahead of maneuverability, Skatunge missiles cannot be relied upon to hit fighters.",Fire Support,,
+prv_skatunge_fighter,WEAPON,"Short range semi-guided missile launcher designed for suppression of nearby ships.
+
+An adaptation of the larger Skata missile for fighter use. To ensure effect on targets of any size the missiles are equipped with a plasma bursting charge that is equally effective against shields and armor.
+
+Putting speed and payload ahead of maneuverability, Skatunge missiles cannot be relied upon to strike other fighters.",Fighter,,
+prv_raka_fighter,WEAPON,"A light guided torpedo that launches at exceptionally high velocity. Usually found mounted on fighter-bombers.
+
+Based on the Korp MRM, once fired the missile behaves very similarly. The under-the-hood adaptations to enable a single powered launch from a fighter-scale craft are however quite extensive.",Fighter,,
+prv_raka_fighter_codex,WEAPON,"A light guided torpedo that launches at exceptionally high velocity. Usually found mounted on fighter-bombers.
+
+Based on the Korp MRM, once fired the missile behaves very similarly. The under-the-hood adaptations to enable a single powered launch from a fighter-scale craft are however quite extensive.",Fighter,,
+prv_kaja_quint,WEAPON,"Medium range, moderate payload guided missile launcher array. Launches at exceptionally high velocity. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+Featuring a powerful boost system in the launcher the Kaja MRM system can fire its missile at great speed, bypassing point defense outright at close range and minimizing target reaction time over longer distances. Sustained fire is achieved through an autoloader that can rearm the system in 10 seconds.
+
+The launch boost system is not without downsides however; it builds up a noticeable amount of flux, and the initial missile speed is well above what the missile's steering systems are capable of adjusting for, leaving it largely unguided for a moment after launch. The missile is however still armed from the instant it leaves the launcher, and entirely capable of detonating on impact with a target even before it drops to guidance speed.
+
+The system can be fit with an after-market expanded magazine for a rapid second strike.",Close Support,,
+prv_kraka_auto,WEAPON,"Integrated into the core structure of the Flock, this launch system fires guided missiles at exceptionally high velocity. Includes an extravagant autoloader system that allows at-will loading and firing of missiles.
+
+Featuring a powerful boost system with triple launchers the Kråka MRM system can fire its missiles at great speed, bypassing point defense outright at close range and minimizing target reaction time over longer distances. Sustained fire is achieved through an autoloader that can feed 36 missiles per minute.
+
+The launch boost system is not without downsides however; it builds up a noticeable amount of flux, and the initial missile speeds are well above what the missiles' steering systems are capable of adjusting for, leaving them largely unguided for a moment after launch. The missiles are however still armed from the instant they leave the launcher, and entirely capable of detonating on impact with a target even before they drop to guidance speeds.",Close Support,,
+prv_kraka_auto_burst,WEAPON,"A hybrid of the Kråka Autoloader system and several Annihilator rocket pods. This weapon fires a large barrage of dumb rockets, with a tremendous damage potential should they all hit. 
+
+A faux-technical readout of this weapon system is passed around in the prv missile division R&D, titled ”What not to do. (Do it anyway.)”.",Anti Armor,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### Rust Belt Missile Weapons,,,,,
+#############################,,,,,
+prv_brytare_rack,WEAPON,"These explosive rockets are launched behind the ship, where they spread out and ignite their engines before heading straight for their target. While fast ships can sidestep the barrage, the tough missiles carry a considerable payload and can often overwhelm more static defenses.
+
+The launcher is capable of loading and firing its missiles at-will, enabling the mounting ship to launch everything from light harrassment fire to a heavy barrage.",Burst Pressure,,
+prv_brytare_pod,WEAPON,"Quickly launches a burst of explosive rockets behind the ship, where they spread out and ignite their engines before heading straight for their target. While fast ships can sidestep the barrage, the tough missiles carry a considerable payload and can often overwhelm more static defenses.
+
+Very popular in the belts, syndicate fleets combine these pods with heavy autocannons. Once the target’s shields are pressured a quick series of barrages are fired to destroy their hapless victim. 
+
+Luddic Church observers have noted that this practice handily defeats the prv’s preferred point defense method of establishing an overlapping SIPD-grid - the focusing lasers simply don’t have time to burst down much, if any, of the incoming ordinance.",Burst Pressure,,
+prv_minehead,WEAPON,"Launches a rocket that leaves a trail of mines behind it. The inertia-guided mines travel in the same direction as the missile, creating a swathe of ordinance that’s remarkably hard to intercept for precision-based PD grids.
+
+Originally a terraforming tool used for high-altitude bioseeding, an Eridani-Utopia Microdisperser Autonomous Drone production chip has, after some coaxing, found itself serving a vastly different role.",Strike,,
+,,,,,
+### Built-In ###################,,,,,
+prv_brytare_fighter,WEAPON,"These explosive rockets will orient themselves and then head straight for the target. While fast ships can often sidestep the missile barrage, the total payload of a Brytare pack is considerable and can deal crippling damage to a slower target.
+
+When fit on a Kalk phase bomber the Brytare rockets’ orientation stage allow the bomber pilots great flexibility in where and when to strike. A close-in launch, ideally from multiple wings working in concert, is preferred, giving the enemy minimal chance to mount a focused response.",Burst Pressure,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### Other Ballistic Weapons,,,,,
+#############################,,,,,
+prv_remission,WEAPON,"Specialized in punishing hyper-technology, the shells launched from this mortar cause energy weapons to discharge their capacitors, gravely disrupting the systems of the targeted ship. In addition a fairly large explosive charge ensures that the offender is properly chastised.
+
+The shells contain a two-stage fuze, first discharging a powerful burst of energy from a primary cell battery. Ideally this burst causes a discharge cascade within the flux system of the affected ship, but often it does little more than singe some power lines. The second stage detonates a primer which triggers a sympathetic detonation in the now-discharged power cell, turning the remaining chemical energy into a an explosive blast.
+
+Originally developed by the Luddic Church to combat automated ships, the Remission fulfills its mission admirably; a discharge cascade can knock out advanced electronics in remarkably short order.",Suppression,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### Other Missile Weapons,,,,,
+#############################,,,,,
+### Built-In ###################,,,,,
+prv_hammer_mag,WEAPON,"Engineers of the Luddic Path have attached a crude magazine loading system to this rack of dumb-fire Hammer torpedoes.
+
+The Hammer was ubiquitous in the Sector pre-Collapse due to civilian applications discovered by asteroid miners. The go-to strike weapon of the desperately under-equipped, the Hammer is most often employed by poor independent militias, Pirates, and especially the Luddic Path. This has led to the mildly blasphemous alternative name for the weapon, ""Ludd's Hammer"".",Strike,,
+,,,,,
+#############################,,,,,
+### Weapons,,,,,
+### prv System Weapons,,,,,
+#############################,,,,,
+prv_mine_emp_cluster,WEAPON,"While lacking the panache of phase deployment, this simple minelayer allows the expedient launching of groups of homing EMP mines.",Suppression,,
+prv_mine_gravity,WEAPON,"While not quite as stylish as a phase teleporter, this simple machine can deploy advanced gravity mines that seek out nearby enemy ships and ensure that they go far away.",Disruption,,
+prv_mine_disruption,WEAPON,"Acausal Disruption mines make everything go wrong for any target hit, causing anything from shield failures to cascading system overloads. This simple mine luncher can deploy them outside your ship, to seek out nearby victims.",Disruption,,
+,,,,,
+#############################,,,,,
+### Systems,,,,,
+### prv Systems,,,,,
+#############################,,,,,
+prv_absterr,SHIP_SYSTEM,"Draws in nearby entities until they reach the terminus of the ship’s absolute territory, at which point they are repelled, ejecting them with a strong impulse of kinetic force.",Defensive,"Draws in and holds nearby enemy ships and projectiles, before ejecting them with great force.",
+prv_lykta,SHIP_SYSTEM,"Diverts power to the Lykta sensor system, increasing sensor strength and weapons range. Generates a moderate amount of flux while active.",Defensive,Increases sensor and weapons range. Slight activation delay. Builds flux while active.,
+prv_lykta_d,SHIP_SYSTEM,"Diverts power to what's left of the Lykta sensor system, increasing weapons range at the cost of sensor strength for a short time before failing. Generates a moderate amount of flux while active.",Defensive,Increases sensor and weapons range. Slight activation delay and limited duration. Builds flux while active.,
+prv_slag,SHIP_SYSTEM,"Null-temperature cryonics enable the ballistic armaments to be overcharged, greatly increasing damage for a brief moment. Reload rate gradually recovers afterwards.",Offensive,"Cryogenic quenching allow the ship’s ballistic weapons to be overcharged for a brief period, at the cost of firing rate.",
+prv_fracturer,SHIP_SYSTEM,"Uses flux-crystalization vanes and sensitive graviton guidebeams to give flux a solid form, which can then be ejected towards an enemy target. Drains a moderate amount of flux to create a group of crystallized projectiles, with more crystals being created at higher flux levels. The crystals deal energy damage.",Offensive,Ejects flux as homing projectiles which attack the enemy. More effective at high flux levels.,
+prv_mine_strike_emp_cluster,SHIP_SYSTEM,Teleports a group of light phase mines to the target area. The mines will zap anything nearby with arcs of EM energy. Can be used while phased.,Offensive,Teleports a group of light EMP mines to the target area. Can be used while phased.,
+prv_mine_strike_emp_cluster_station,SHIP_SYSTEM,Teleports a group of light phase mines to the target area. The mines will zap anything nearby with arcs of EM energy.,Offensive,Teleports a group of light EMP mines to the target area.,
+prv_mine_strike_gravity,SHIP_SYSTEM,"Teleports a gravity mine to the target area. The mine will slowly track nearby enemy ships and attempt to latch onto them, delivering a powerful displacing kinetic blast.
+
+Shields offer partial protection against the mines, with stronger shields being more effective.",Special,Teleports a gravity mine to the target area.,
+prv_mine_strike_disruption,SHIP_SYSTEM,"Teleports an acausal disruption mine to the target area. The mine will slowly track nearby enemy ships and attempt to latch onto them, causing momentary ship system failures.
+
+Should a disruption mine strike a shield it will cause a shield failure, but nothing more. Wise captains immediately redeploy their shields when this happens.",Special,Teleports a system disruption mine to the target area.,
+prv_disruptionzone,SHIP_SYSTEM,"Teleports an acausal disruption emitter to the target area. For a short duration the emitter will disrupt the systems of any ship caught within its field.
+
+Requires diverting additional power to the system while deploying the emitter, briefly disabling all weapons on the ship. The emitter will fail if it is deployed onto a massive entity or a sufficiently powerful shield generator.
+
+Volumes have been written detailing exactly what happens to entities smaller than the critical threshold which are caught in a collapsing disruption zone. Unfortunately the information is - was - all stored on servers located on the far side of the gate network. Perseans can only conclude that once the zone is gone, so are any fighters that were inside it. 
+
+The only people in the sector entirely sure of what happens to the poor souls caught in a zone collapse are the chaplains of Ludd.",Special,"Generates a disruption field, briefly disabling any ships caught in the targeted area. Disables weapons while deploying.",
+prv_gravitywell,SHIP_SYSTEM,"Teleports a gravitic mine to the target area. The mine will briefly home towards a nearby target, before detonating in a powerful gravitic burst.
+
+The field manual contains a few hand-written pages detailing a potential method to use the mines to move the deploying ship itself as a kind of gravitic push drive. The included pencil illustration of the concept fails to be overly convincing.",Special,Teleports a gravity mine to the target area.,
+prv_phasechainer,SHIP_SYSTEM,"This specialized phase teleporter will perform a series of rapid jumps around an enemy ship, allowing them to be attacked from almost any angle. The final jump will attempt to return the ship towards the starting point.",Offensive,Performs a series of rapid phase shift centered around an enemy target.,
+prv_phaserecall,SHIP_SYSTEM,"Charges up and teleports all fighers back to the carrier, allowing them to be quickly refitted and redeployed. Generates a significant amount of flux and must be recalibrated between uses.",Fighter,"Teleports all fighters back to the carrier after a short delay, allowing them to be quickly refitted and relaunched. Generates a significant amount of flux.",
+prv_plasmamanjets,SHIP_SYSTEM,Engages extra thrusters to greatly improve the ship's maneuverability. Also provides a slight boost to the ship's top speed.,Movement,Provides a brief boost to maneuverability and top speed.,
+prv_heavyphaseteleporter,SHIP_SYSTEM,The ship instantly teleports to any desired nearby location. Using this system generates some flux. Requires a brief moment to recharge between activations.,Movement,The ship instantly teleports to any desired nearby location. Generates flux when used. Requires recharging afterwards.,
+prv_tensordrive,SHIP_SYSTEM,"A set of field effectors are utilized to allow the ship to move without inertia, giving it near-infinite acceleration. The field effect also causes dangerous resonances when it interacts with the drive field of other ships, leading to them being repelled and damaged.
+
+The system operates by pre-calculating a tensor solution, and executing it for a momentary burst of movement. Current methods limit the burst to about half a second before entropy renders the field matrix unstable.
+
+Real-time tensor field manipulation is immensely complicated, and would require a dedicated high-alpha level AI. This was tried during the system’s development. The ship hosting the prototype drive - and it’s AI - disappeared during the third activation trial. Further inquiries were quietly halted.",Movement,"Immediately accelerates the ship in the chosen direction, pushing away and harming any ships in the way. Can store up to three charges.",
+prv_tensordrive_heavy,SHIP_SYSTEM,"A set of powerful field effectors are utilized to allow the ship to move without inertia, giving it near-infinite acceleration. The field effect also causes dangerous resonances when it interacts with the drive field of other ships, leading to them being repelled and damaged.
+
+The system operates by pre-calculating a tensor solution, and executing it for a momentary burst of movement. Current methods limit the burst to about half a second before entropy renders the field matrix unstable.
+
+Real-time tensor field manipulation is immensely complicated, and would require a dedicated high-alpha level AI. This was tried during the system’s development. The ship hosting the prototype drive - and it’s AI - disappeared during the third activation trial. Further inquiries were quietly halted.",Movement,"Immediately accelerates the ship in the chosen direction, pushing away and harming any ships in the way. Can store up to three charges.",
+prv_gravity_shield,SHIP_SYSTEM,"Engages a gravitic field which repels hostile projectiles. Ineffective against objects of negligible mass, such as laser pulses. 
+
+Builds up hard flux based on the size of the projectiles being affected. An automatic safety shutoff engages at very high flux buildup.",Defensive,"Wards off hostile material projectiles. Builds hard flux based on the mass being shifted, and has a safety shutoff at high flux buildup.",
+prv_gravity_pulse_shield,SHIP_SYSTEM,"Emits pulses which repels hostile projectiles. Ineffective against objects of negligible mass, such as laser pulses.
+
+Builds up hard flux based on the size of the projectiles being affected. An automatic safety bypass engages while at very high flux buildup.",Defensive,"Wards off hostile material projectiles. Builds hard flux based on the mass being shifted, and has a safety bypass while at high flux buildup.",
+prv_gravity_orbits,SHIP_SYSTEM,"A complicated array of agrav-emitters can be set to create an interference pattern that only cancels out in a few points, creating gravitonic ”wells” which effectively ward off incoming ballistic fire. If overstressed the bubbles will lose cohesion and burst in a powerful gravitic blast.",Defensive,"Generates gravitic orbs which ward off hostile material projectiles.  When stressed the orbs grow and burst, ejecting nearby objects.",
+prv_erfield,SHIP_SYSTEM,"Energizes conduits embedded in the ship's hull, creating deadly shock arcs that zap any enemy that flies too close.
+
+After a number of disturbing incidents while the system was still in its initial operating capacity, the IFF sensors used to identify suitable discharge targets are regarded as the top priority for maintenance and are inspected both at the beginning and end of a maintenance pass. After adjustment, fail-active behaviors should no longer occur.",Special,Zaps hostile targets in very close proximity to the ship.,
+prv_erfield_fighter,SHIP_SYSTEM,"Energizes conduits embedded in the fighter’s hull, creating damaging shock arcs that zap any enemy that flies too close.
+
+After a number of disturbing incidents while the system was still in its initial operating capacity, the IFF sensors used to identify suitable discharge targets are regarded as the top priority for maintenance and are inspected both at the beginning and end of a maintenance pass. After adjustment, fail-active behaviors should no longer occur.",Special,Zaps hostile targets in very close proximity to the fighter.,
+prv_microburn_fighter,SHIP_SYSTEM,"Provides a brief engine boost, propelling the fighter forward at an extreme velocity.",Movement,"Provides a brief engine boost, propelling the fighter forward at an extreme velocity.",
+#prv_temporalvent,SHIP_SYSTEM,"Slows the flow of time on board the ship greatly while the tachyon core of the ship discharges flux into p-space. Does not disable the ship’s shields.
+
+Stories about an early model failure that aged the crew of the ship 400 cycles in 3 seconds keep officers hovering a moment extra over the switch before engaging the system. It only happened that one time - but they never figured out why…",Defensive,"Greatly slows time on board the ship, while venting large amounts of flux. Does not disable the ship’s shields.",
+prv_temporalcore,SHIP_SYSTEM,"Speeds up the flow of time on board the ship. Generates a moderate amount of flux while active.
+
+Labor conflicts about whose reference frame should be used to determine pay rates, flight hours, and so on are frequent and inflamed. The notion of ”time and a half” has rarely felt more relevant.",Special,Speeds up the flow of time on board the ship. Generates a moderate amount of flux while active.,
+prv_timefreeze,SHIP_SYSTEM,"Overloads the tachyon fields around the targeted ship, effectively leaving it stuck in time for a short duration.",Special,Briefly freezes the target in time. Generates significant amounts of flux while active.,
+prv_gunpod_kaja,SHIP_SYSTEM,Deploys several combat drones armed with Kaja MRM Launchers.,Drones,Deploys several combat drones armed with missile launchers.,
+prv_gunpod_akers_nova,SHIP_SYSTEM,Deploys a pair of combat drones armed with single-barreled Akers Nova.,Drones,Deploys a pair of combat drones armed with kinetic guns.,
+prv_gunpod_lpk,SHIP_SYSTEM,Deploys many combat drones armed with LPK laser pulse cannons.,Drones,Deploys many combat drones armed with energy cannons.,
+prv_station_drone_redan,SHIP_SYSTEM,Deploys a few station defense phase drones armed with light guns and a powerful homing torpedo array.,Drones,Deploys a few station defense phase drones armed with torpedoes.,
+,,,,,
+#############################,,,,,
+### Systems,,,,,
+### Rust Belt Systems,,,,,
+#############################,,,,,
+prv_missilechaff,SHIP_SYSTEM,Deploys distratction flares from all missiles currently in flight.,Offensive,Deploys distratction flares from all missiles currently in flight.,
+prv_limitbreak,SHIP_SYSTEM,"Disables all ship safeties, increasing weapon rate of fire by 50% and allowing them to be fired regardless of flux. Removes all penalties from overstressed fire control.
+
+Causes immense flux buildup throughout the entire ship, and completely disables the shield while active. Weapon and engine malfunctions are to be expected, and potentially severe enough to disable the component for the entire engagement.
+
+Break in case of emergency. Break or be broken.",Offensive,"Overrides all safeties, allowing weapons to be fired rapidly and regardless of flux level. Also removes all penalties from overstressed fire control. Spikes flux and disables the ship’s shields while active. Weapons and engines may malfunction.",
+prv_plasmamanjets_overtuned,SHIP_SYSTEM,"Engages extra thrusters to greatly improve the ship's speed and maneuverability. May cause a flameout, with increasing likelyhood at low combat readiness.
+
+Pushed to what could generously be described as peak performance, the boost given from engaging the overdrive mode is very impressive. Less impressive is drifting helplessly through space after the overstressed engines flame out. Regular and thorough maintenance is critically important on ships utilizing this system.
+
+A prudent captain only engages these in an emergency. But then, a prudent captain wouldn’t allow such a reckless modification in the first place.",Movement,Provides a brief boost to maneuverability and top speed. May flame out.,
+prv_erfield_p,SHIP_SYSTEM,"Energizes the salvaged emitter mounted on the ship's hull, creating deadly shock arcs that zap any enemy that flies too close. Generates a significant amount of flux while active.
+
+By appearances an automated system, in actuality a qualified bombardier is dedicated to identifying targets and approving arcs suggested by the relatively primitive targeting computer.",Special,Zaps hostile targets in very close proximity to the emitter. Generates a significant amount of flux while active.,
+prv_evasive_formation,SHIP_SYSTEM,"Engages plasma boosters on all fighters belonging to this carrier, temporarily increasing their mobility and reducing their damage taken.",Fighter,"Engages plasma boosters on all fighters belonging to this carrier, temporarily increasing their mobility and reducing their damage taken.",
+,,,,,
+#############################,,,,,
+### Systems,,,,,
+### Other Systems,,,,,
+#############################,,,,,
+prv_microburn_p,SHIP_SYSTEM,"Provides a brief engine boost, propelling the ship forward at an extreme velocity.",Movement,"Provides a brief engine boost, propelling the ship forward at an extreme velocity.",
+,,,,,
+#############################,,,,,
+### Factions,,,,,
+#############################,,,,,
+prv,FACTION,"For the upstarts and opportunists of the prv Starworks megacorporation the post-collapse era has been ripe with opportunity, a time where wealth and power is within reach of anyone brave enough to reach out and grasp it, hold it down, and make it his own. After a series of leveraged buyouts, hostile takeovers, and a few direct invasions, the prv has managed to carve out a fief of its own and is eyeing the post-collapse sector hungrily for any new opportunities for an ”acquisition”.
+
+The Works, an orbital megafactory orbiting a backwards fringe world, form the heart of the corporation's power. There one of only a few still functioning nanoforges in the sector churns out ship after ship, squadron after squadron, fleet after fleet to allow the prv to challenge the sector for supremacy. The major powers are not entirely impressed however - what could a group of fringe-worlders hope to accomplish against the likes of the Hegemony? The prv seem to agree, and have pursued trade alliances with the neighboring powers of the Persean League and Sindrian Diktat. Haughtier voices in the inner sector have gone as far as to describe the relationship as ”tributary”.
+
+Indeed the situation of the prv is not entirely clear-cut. While their industrial capacity is respectable and the corporation's navy grows stronger by the day, they lack military experience and have an unenviable strategic situation with vulnerable supply routes connecting far-flung and isolated assets.",,,
+rb,FACTION,"Formally the Great Belt Alliance, but even the Rusters own official documents have trouble sticking with the full name. As a barely coherent confederation of not-quite outlaws, outcasts and other fringe elements, the Rust Belt hover just at the edge of ”shoot on sight” status with the established legal authorities of the sector.
+
+Most of the spacefaring population of the faction live as scavengers, salvagers and miners in the Kratul Rust Belt, where the ship graveyards and asteroid mines can be scoured for a great abundance of rusted-up minerals. But, should a salvage group come up empty-handed Rusters travel well-armed and have been known to take live prey. So to speak.
+
+Recent history has the Alliance butting heads with the prv, with a few convoy raids too many spurning the great corporation into a furious vendetta. Frequent prv patrols comb through the miserable ship graveyards of the Kratul system, trying to figure out which rusted hulks are dead, and which are Rusters that have gone dark - possibly laying up a vicious ambush. This low-intensity war has been ongoing for decades, and shows few signs of ending any time soon.",,,
+,,,,,
+#############################,,,,,
+### Terrain,,,,,
+#############################,,,,,
+prv_debris_belt,TERRAIN,An orbital zone abundant with rusted debris and asteroids.,,,
+,,,,,
+#############################,,,,,
+### Campaign,,,,,
+#############################,,,,,
+### Stjärngård ################,,,,,
+prv_stjarngard_strand,CUSTOM,"Great waves of harmless golden sand punctuated by a occasional streams, lakes and even a few minor oceans make up the main geographical features on Strand. Sadly, the otherwise pleasant planet is completely bereft of valuable resources or significant soil nutrients and the population must make a living though trade and manufacturing.",,"While economically completely worthless - its main export would be silicate - the low gravity and almost comforting biosphere of Strand make it an ideal waystation for goods that would be expensive and difficult to process elsewhere. The prv Starworks Corporation have set up a major presence here, completely dominating local politics through a combination of gunboat diplomacy and monopolizing all spacebound logistics on the planet.",
+prv_stjarngard_utbo,CUSTOM,"A large, mild eccentric world populated by millions of people who live quiet lives mainly as farmers under the thumb of a dizzying array of feudal lords. All legal trade with the world passes through the orbital station, leaving the planet itself largely isolated from the sector.",,"Time passes slowly in endless farmsteads, fishing villages and townships of Utbo. The farmers work the land, the lords skirmish amongst each other, and the corporation taxes. In the planetside port, a large armed garrison ensures that no visitors leave the trade city without a passport, and likewise that no unauthorized locals enter it.",
+prv_stjarngard_utbo_station,CUSTOM,"Hanging as a dark star in the sky above the night-side of Utbo the orbital smelters, foundries and yards that form the industrial heart of the system loom hungrily, always asking for additional dues from the lords on the planet below.",,"The outer walls of the station contain a complex of dirty smelters, busy yards, noisy manufactories and bustling trade docks, all overlooked by a series of gigantic towers looming through the central axis of the station. In the towers residential sections are squeezed in between formal corporate offices and opulent trade houses. 
+
+Salarymen walk the skybridges between the towers and cargo barges weave through the thin air and low gravity, delivering goods to wherever they are needed. Underneath the towers monorail trains move the industry laborers about through the din and clamor of the wharves and workshops. 
+
+In the towers, ever-busy bureaucrats hurry through sedate parks and solemn office houses, while on the ring calm, collected workers carefully navigate a cacaphonous bustle of men and machines.",
+prv_stjarngard_utbo_moon1,CUSTOM,"Barren, lifeless, and one of two reasons for the fascinating tidal patterns on Utbo, this dead rock has little else to offer the universe at large.",,,
+prv_stjarngard_utbo_moon2,CUSTOM,"Barren, lifeless, and one of two reasons for the amazingly intricate folk astrology of the peasants on Utbo, this dead rock has little else to offer the universe at large.",,,
+prv_stjarngard_ymer,CUSTOM,A giant planet composed primarily of a mist of frozen water overlaying gigantic icebergs floating in a diffuse sea of liquid nitrogen.,,,
+prv_stjarngard_ymer_moon1,CUSTOM,"Hot, fiery and always changing the moon of Ny offers great wealth to the mining crews who work on it. It's hard, dangerous work but the reward is well worth it - at least for the managers who sit in their climate-controlled offices at the colony hub. Order and discipline is maintained through a large gendarmerie of comfortably employed guards.",,"Nothing on Ny lasts for very long. The acrid atmosphere, intense earthquakes, and rapid tectonic movements ensure that no industrial installation can remain for more than a cycle or two. The men who work the mines can, with some luck, last longer. Some even manage to save enough of their wages to leave.",
+prv_stjarngard_ymer_moon2,CUSTOM,"Icy, cold and full of fascinating gasses locked under the ice, Nedan has reserves of volatiles that are expected to last for hundreds of cycles. The workers on the planet labor diligently to pump up anything of value from the crushing depths of the abyssal sea, where freezing temperatures and immense pressure combine to offer incredibly challenging working conditions.",,"The volatiles industry of Nedan stretches its pipelines over the vast ice plains of the moon like veins, delivering the lifeblood of interstellar travel to the spaceport and only permanent settlement.
+
+On the barely-prepared icy plain that serves as the planet spaceport severe men wearing fur-lined clothes and breathing masks dourly recieve any travelers, who are waved towards the main port structure, barely visible through the snow haze. It is a lonely place, empty offices and empty spaces on an empty planet. Outside, the wind screeches and the whirling snow claims another few meters of visibility.",
+prv_stjarngard_bov,CUSTOM,"This rogue rock hurtles through space on a distant and irregular orbit, keeping itself and its twin Bandit a constant annoyance for astronavigators in the system.",,,
+prv_stjarngard_bandit,CUSTOM,A dust-covered ball of regolith hurtling through space on a moody and unpredictable path that has shepherded an asteroid field into a stable orbit in the inner system.,,,
+,,,,,
+### Kylan ####################,,,,,
+prv_kylan_tordehus,CUSTOM,"Once a pearl of the Domain, this world was lost to surface bombardment during the collapse. Only in recent decades has anything approaching civilization started to return to the now-sealed habitats scattered amongst the ruins. Named for the current warlord in charge, Tord.",,"Disjointed networks of crudely sealed-up buildings criss-cross this world, proving that life goes on even after the apocalypse. Scavenge teams, techminers, bandits and raiders in sealed exosuits scurry between the gigantic once-homes of a lost society while the people of the larger resettlements work in their sealed habitats to ensure that their waterworks, powerplants and greenhouses stay functional.",
+prv_kylan_tordehus_station,CUSTOM,The shattered remains of what was once a welcoming portal to a thriving world. Jagged holes in the structure of this station offer solemn testimony about the fate of its inhabitants.,,"A visitor walking through the remains of the trade quarter would not even hear his footsteps echo, due to the lack of air. Long since picked clean of anything of value nothing remains here but desolation.",
+prv_kylan_ryak,CUSTOM,"A swirling mass of ionized gasses and strange energies, Ryak is an astronomical marvel that has fascinated scientists for hundreds of years. Constantly churning and rearranging its own mass and bombarded by the ceaseless energies of Kylan, few places in the sector can provide as much insight into the finer details of the EM spectrum as this incandescent gas giant.",,,
+prv_kylan_ryak_station,CUSTOM,"Built to study the roiling magnetosphere of the gas giant below the HEL has been a roaring success, providing the sector with all manner of advanced technology both before and after the collapse. In later years, the laboratory station has had annexes added for volatiles capture and light industrial manufacturing.",,"Business is booming at the HEL, where old laboratories are now complemented by a volatiles siphon, manufacturing facilities and a permanent military base. Frazzled scientists and busy technicians pass through the corridors of the station on unnamed errands while armed guards escort merchants and their shipments directly to their individual destinations.",
+prv_kylan_fjarran_store,CUSTOM,"Exiles and bandits from Tordehus gather up at Store's Rock, generally to prey on trade heading through the Ryak High-Energy Labs. A small mining installation supports what passes for an economy on this transient world.",,"Originally a mining installation, the old staff buildings have mostly been taken over by pirates and smugglers, who quickly converted the settlement to house twice as many now-free spirits. Old hands run crowded bars and haphazard shipyards while a constant flow of newcomers from Tordehus sign up with more or less reckless captains to do more or less legal things.",
+,,,,,
+### Kratul ####################,,,,,
+prv_kratul_fristad,CUSTOM,"A quiet frontier world with a population that's not at all interested in the greater problems of the sector, or even the local system. The Church of Galactic Redemption is highly influential on the planet, but have not yet managed to convince the populace to officially join Ludd's flock.",,"Visitors to the Fristad spaceport are greeted by two large tripedal skeletons with remarkably pointy teeth exhibited in the main hall, a poignant reminder that the local biohazard protocols are no joke. While most of the biosphere is benign and quite literally spineless, a few species of apex predators are more than capable of claiming unwary humans. A stall next to one of the specimens has a corporate suit selling dead peasants insurance to visiting captains, should any crew go missing during their stay. Realistically, the spacer's bars claim significantly more lives - and the insurance covers that as well.",
+prv_kratul_rust_station,CUSTOM,"The largest mining station in the Kratul system, claimed sovereign by the miners and spacers who live and work there. An anarchic order is maintained by the local community militia, who generally end up sympathetic to the great man of the hour.",,"During the Domain the Kratul system was used as a scrapyard for ship hulks deemed to be of marginal economic interest. Over the centuries the salvage stocks built up, orbits decayed, and the whole mess got mixed into the asteroid belts of the system. Post-collapse, miners and salvagers make a good living recovering what, these days, are often regarded as perfectly good ships that just need some basic refurbishment.",
+prv_kratul_oy_station,CUSTOM,"Intended to supplement the Kratul II wharfs, the Outer Yards were a grandiose project meant to supply much of the demand for civilian ships in the ever-growing Persean sector. However the station was only halfway constructed at the time of the collapse, and today it sits still unfinished, sporting jutting support beams and abandoned construction equipment.",,"An ever-growing population of traders, miners and engineers live and work on the Outer Yard, making their livings off the generous amounts minerals and salvage brought back from the belt. Local society is largely syndicalist and basic law and order is maintained by a system of guild enforcers with each policing its own quarter of the station. Inter-syndicate conflicts are common, and often get inflamed but only rarely escalate into organized violence. Still, visitors are advised to not ask about the c194 incidents.",
+prv_kratul_kratul,CUSTOM,"The very face of industrial devastation, Kratul II's rimy and mountainous surface sports dozens of different types of ice - most highly toxic. An extensive mining industry and countless heavy manufactories have polluted freely over centuries and while the planet was never terribly habitable to begin with the post-collapse years have brought the environment to a point where walking the surface unprotected is regarded as, at best, unwise.",,"A popular pastime on Kratul is snipe-hunting. In this case, the snipe is an actual animal that lives and feeds on various chemical ices, metabolizing even the strangest toxins. Supposedly the species was bioengineered by a local potentate, who missed the post-burn hunts of his youth on Jangala. Reportedly the snipe is very difficult prey - quick, clever, and so tough that ”it doesn't die even if you kill it”.",
+prv_kratul_kratul_station,CUSTOM,"One of the largest and oldest spacewharfs in the Persean Sector. In the pre-collapse era it was to be one of the primary manufacturing locations for Skymning-class battleships, a large number of which have been laid down and then left to rust unfinished at anchorpoints slowly orbiting the station.",,"When the light is just right a visitor can look out one of the station's massive panorama windows and see the dozens of battleship hulls anchored around the wharf. Massive ribcages of beasts that never were, an armada that even the Domain thought excessive. And a very attentive visitor could even notice the occasional flicker of light or moving shadow among the skeletal behemoths, as work slowly progresses on one of the hulks.",
+prv_kratul_basen_station,CUSTOM,An old mining outpost unmoored from its original position and towed to beyond the reach of local authorities. Now used as a staging post by pirates who find the loose rules of Ruster society to be overly confining.,,"Little more than a refueling post, Basen offers only the basest creature comforts and frequently doesn't even have any fuel for sale. The miserly station only livens up when successful raiders come along to spend their ill-earned loot.",

@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_rok_p_belt",
+  "hullId": "prv_rok_p",
+  "displayName": "Belt",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "heavyac",
+        "WS0013": "heavyac",
+        "WS0014": "prv_lightthumper",
+        "WS0015": "prv_lightthumper",
+        "WS0016": "prv_lightthumper",
+        "WS0017": "prv_lightthumper"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "salamanderpod",
+        "WS0018": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_kartesch"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "devastator",
+        "WS0003": "prv_pskd_cluster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "pdlaser",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0011": "vulcan",
+        "WS0019": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

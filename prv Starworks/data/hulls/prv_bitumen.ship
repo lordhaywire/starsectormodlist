@@ -1,0 +1,174 @@
+{
+  "hullName": "Bitumen",
+  "hullId": "prv_bitumen",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_bitumen.png",
+  "style": "PRV_LOW",
+  "height": 186,
+  "width": 186,
+  "center": [93, 82],
+  "collisionRadius": 159.5,
+  "shieldCenter": [-4, -0],
+  "shieldRadius": 150,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 45,
+      "locations": [26, 45]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [26, -45]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 300,
+      "angle": 15,
+      "locations": [84, 10]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -60,
+      "locations": [-1, -58]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [98, -37]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 60,
+      "locations": [-1, 58]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-65.5, 75],
+      "length": 30,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-65.5, -75],
+      "length": 30,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-64.5, 64.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-64.5, -64.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-62, 57.5],
+      "length": 15,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-62, -57.5],
+      "length": 15,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-68.5, 48.5],
+      "length": 30,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-68.5, -48.5],
+      "length": 30,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    96.5, 16.5,
+    85.5, 31.5,
+    66, 29,
+    66, 40.5,
+    78.5, 42.5,
+    67, 55,
+    49.5, 54.5,
+    37.5, 49,
+    27.5, 65,
+    -1.5, 85.5,
+    -62.5, 85.5,
+    -65, 33.5,
+    -59, 31,
+    -68, 28,
+    -75.5, 19.5,
+    -72, 14,
+    -72, -20,
+    -74.5, -24.5,
+    -64, -35,
+    -24, -41,
+    -24, -35.5,
+    -18.5, -34.5,
+    -23.5, -41,
+    -64, -35,
+    -62.5, -85.5,
+    -1.5, -85.5,
+    27.5, -65,
+    37.5, -49,
+    67, -55,
+    72.5, -46.5,
+    100, -38.5,
+    90, -26,
+    96.5, -16.5
+  ]
+}

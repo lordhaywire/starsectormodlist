@@ -1,0 +1,24 @@
+{
+	"id":"prv_mine_strike_emp_cluster_station",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"scripts.shipsystems.prv_mine_strike_emp_cluster_station",
+
+	"canUseWhileRightClickSystemOn":true,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":3500,
+		"threatAmount":33,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

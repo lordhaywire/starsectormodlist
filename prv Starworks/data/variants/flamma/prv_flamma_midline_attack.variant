@@ -1,0 +1,40 @@
+{
+  "displayName": "Attack",
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  #"goalVariant": true,
+  "hullId": "prv_flamma_midline",
+  "hullMods": [
+    "unstable_injector",
+    "extendedshieldemitter"
+  ],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_flamma_midline_attack",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightag",
+        "WS0004": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser",
+      }
+    }
+  ],
+  "wings": []
+}

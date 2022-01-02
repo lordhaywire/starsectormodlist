@@ -1,0 +1,28 @@
+{
+  "displayName": "Utility Craft",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_buddy",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_buddy_utility",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_fusion_burster_fighter",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0003": "lightmg",
+      }
+    }
+  ],
+  "wings": []
+}

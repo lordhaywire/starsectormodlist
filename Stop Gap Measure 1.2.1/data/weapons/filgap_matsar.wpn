@@ -1,0 +1,50 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "sabot_srm_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    23.5,
+    5,
+    23.5,
+    -5
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_itsystem_hp.png",
+  "id": "filgap_matsar",
+  "projectileSpecId": "filgap_matsar_mirv",
+  "size": "LARGE",
+  "smokeSpec": {
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ],
+    "particleSizeMin": 20,
+    "particleSizeRange": 20
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretOffsets": [
+    13,
+    -8,
+    13,
+    8
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_itsystem_t.png",
+  "type": "MISSILE"
+}

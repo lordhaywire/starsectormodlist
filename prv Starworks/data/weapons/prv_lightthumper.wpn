@@ -1,0 +1,48 @@
+{
+  "animationType": "MUZZLE_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundOne": "thumper_spinup",
+  "fireSoundTwo": "thumper_fire",
+  "frameRate": 20,
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    24,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_lightthumper/prv_lightthumper_hardpoint_00.png",
+  "id": "prv_lightthumper",
+  "muzzleFlashSpec": {
+    "length": 35,
+    "particleColor": [
+      255,
+      140,
+      125,
+      200
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.15,
+    "particleSizeMin": 10,
+    "particleSizeRange": 16,
+    "spread": 5
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "numFrames": 6,
+  "projectileSpecId": "shredder_shot",
+  "renderAboveAllWeapons": 0,
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    14.5,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_lightthumper/prv_lightthumper_turret_00.png",
+  "type": "BALLISTIC"
+}

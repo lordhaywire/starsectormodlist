@@ -1,0 +1,39 @@
+{
+  "variantId": "prv_gnista_missile",
+  "hullId": "prv_gnista",
+  "displayName": "Missile",
+  "goalVariant": false,
+  "fluxCapacitors": 2,
+  "fluxVents": 4,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_akers"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

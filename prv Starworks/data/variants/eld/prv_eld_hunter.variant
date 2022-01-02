@@ -1,0 +1,56 @@
+{
+  "variantId": "prv_eld_hunter",
+  "hullId": "prv_eld",
+  "displayName": "Hunter",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "prv_gravanchor",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pulselaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_berguv_mirv"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_bounder",
+        "WS0006": "prv_bounder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_akers",
+        "WS0002": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

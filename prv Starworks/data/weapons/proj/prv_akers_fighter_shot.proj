@@ -1,0 +1,19 @@
+{
+	"id":"prv_akers_fighter_shot",
+	"onHitEffect":"data.scripts.weapons.prv_heavyakers_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":60.0,
+	"hitGlowRadius":40,
+	"width":7,
+	"fadeTime":0.3,
+	"fringeColor":[180,180,255,235],
+	"coreColor":[180,180,180,235],
+	"glowColor":[180,180,255,64],
+	"glowRadius":5.5,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/prv/missiles/prv_shell_siege_akers.png"	
+}

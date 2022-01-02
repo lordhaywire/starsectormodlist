@@ -1,0 +1,41 @@
+{
+	"id":"prv_erfield",
+	"type":"EMP",
+	"aiType":"EMP",
+	
+	"range":450,
+	
+	"empDamage":50,
+	"damage":150,
+	"damageType":ENERGY,
+	
+	#"effectColor1":[150,150,255,200],
+	#"effectColor2":[175,175,255,255],
+	"effectColor1":[80,255,144,155],
+	"effectColor2":[178,255,204,255],
+
+	"jitterUnderColor":[80,255,144,155],
+	"jitterUnderCopies":25,
+	"jitterUnderMinRange":2,
+	"jitterUnderRange":6,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"jitterColor":[80,255,144,55],
+	"jitterCopies":2,
+	"jitterMinRange":2,
+	"jitterRange":3,
+	"jitterRangeRadiusFraction":0,
+
+
+	"useSound":"system_emp_emitter_activate",
+	"loopSound":"system_emp_emitter_loop",
+	"impactSound":"system_emp_emitter_impact",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":500,
+		"threatAmount":6,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

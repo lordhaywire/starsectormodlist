@@ -1,0 +1,247 @@
+{
+  "bounds": [
+    38,
+    2.5,
+    38,
+    -14.5,
+    65.5,
+    -14.5,
+    71.5,
+    -18.5,
+    71,
+    -30.5,
+    1,
+    -57,
+    -11.5,
+    -62,
+    -33,
+    -56.5,
+    -71.5,
+    -40,
+    -69.5,
+    -21,
+    -41.5,
+    -7,
+    -49.5,
+    -0,
+    -41.5,
+    7,
+    -69.5,
+    21,
+    -71.5,
+    40,
+    -33,
+    56.5,
+    -11.5,
+    62,
+    1,
+    57,
+    71,
+    30.5,
+    71.5,
+    18.5,
+    65.5,
+    14.5,
+    30.5,
+    14,
+    31.5,
+    7
+  ],
+  "builtInWings": [],
+  "center": [
+    64,
+    72
+  ],
+  "collisionRadius": 100,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 30,
+      "location": [
+        -69,
+        24.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 30,
+      "location": [
+        -69,
+        -24.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 5,
+      "length": 18,
+      "location": [
+        -65.5,
+        17.5
+      ],
+      "style": "LOW_TECH",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 5,
+      "length": 18,
+      "location": [
+        -65.5,
+        -17.5
+      ],
+      "style": "LOW_TECH",
+      "width": 5
+    },
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -67.5,
+        32
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -67.5,
+        -32
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    }
+  ],
+  "height": 144,
+  "hullId": "filgap_dragoon",
+  "hullName": "Dragoon",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 87.5,
+  "spriteName": "graphics/filgap/ships/filgap_dragoon.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        -31.5,
+        -32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        -31.5,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0.5,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        51,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0.5,
+      "arc": 225,
+      "id": "WS0004",
+      "locations": [
+        51,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        8,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 90,
+      "id": "WS0006",
+      "locations": [
+        -12.5,
+        -54.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 90,
+      "id": "WS0007",
+      "locations": [
+        -12.5,
+        54.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 22.5,
+      "id": "WS0008",
+      "locations": [
+        31,
+        -7
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        27.5,
+        11.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 128
+}

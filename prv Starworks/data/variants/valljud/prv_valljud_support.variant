@@ -1,0 +1,66 @@
+{
+  "variantId": "prv_valljud_support",
+  "hullId": "prv_valljud",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 17,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_jursla"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "prv_kraka",
+        "WS0016": "prv_kraka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "prv_lpk",
+        "WS0013": "prv_akers",
+        "WS0014": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "ionpulser",
+        "WS0012": "ionpulser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser",
+        "WS0005": "lrpdlaser",
+        "WS0006": "lrpdlaser",
+        "WS0007": "lrpdlaser",
+        "WS0008": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_skral_wing",
+    "prv_skral_wing",
+    "prv_missljud_wing"
+  ]
+}

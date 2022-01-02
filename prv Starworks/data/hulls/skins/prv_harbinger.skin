@@ -1,0 +1,28 @@
+{
+  "baseHullId": "harbinger",
+  "baseValueMult": 1,
+#  "builtInMods": [
+#    "prv_auxiliary"
+#  ],
+  "tags":["prv_adv_bp","prv_aux_bp"],
+  "tech":"prv Starworks",
+  "descriptionId": "harbinger",
+  "descriptionPrefix":"This ship has been given prv markings. Systems modifications are otherwise superficial.",
+  #"hullDesignation": "DESTROYER",
+  "hullName": "Harbinger (prv)",
+#  "removeBuiltInMods": [
+#    "civgrade"
+#  ],
+  "restoreToBaseHull": false,
+  "style": "PRV_HIGH",
+  "skinHullId": "prv_harbinger",
+  "spriteName": "graphics/prv/ships/prv_harbinger.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_HIGH"},
+		"1":{"style":"PRV_HIGH"},
+		"2":{"style":"PRV_HIGH"},
+		"3":{"style":"PRV_HIGH"},
+		"4":{"style":"PRV_HIGH"},
+		"5":{"style":"PRV_HIGH"},
+	},    
+}

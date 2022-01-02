@@ -1,0 +1,44 @@
+{
+  "variantId": "prv_shrike_overdriven",
+  "hullId": "prv_shrike",
+  "displayName": "Overdriven",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 0,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "prv_akc"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_sipdlaser",
+        "WS 002": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,71 @@
+{
+  "variantId": "prv_bergtagen_standard",
+  "hullId": "prv_bergtagen",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "reinforcedhull",
+    "turretgyros",
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "pilum",
+        "WS0024": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "mark9",
+        "WS0004": "mark9",
+        "WS0015": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "heavymortar",
+        "WS0009": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdlaser",
+        "WS0006": "heavymg",
+        "WS0007": "heavymg",
+        "WS0010": "vulcan",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "pdlaser",
+        "WS0016": "lightmg",
+        "WS0017": "lightmg",
+        "WS0018": "pdlaser",
+        "WS0019": "pdlaser",
+        "WS0023": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

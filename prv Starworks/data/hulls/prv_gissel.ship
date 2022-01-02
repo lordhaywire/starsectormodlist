@@ -1,0 +1,211 @@
+{
+  "bounds": [
+    -63.5,
+    -24,
+    -26.5,
+    -66.5,
+    64.5,
+    -58.5,
+    61,
+    -29,
+    51,
+    -0,
+    61,
+    29,
+    37,
+    32,
+    37,
+    45,
+    5,
+    73.5,
+    -12.5,
+    57,
+    -52.5,
+    57
+  ],
+  "builtInMods": [
+    "eccm"
+  ],
+  "builtInWeapons": {
+    "BI01": "prv_skatunge",
+    "BI02": "prv_skatunge",
+    "BI03": "prv_skatunge",
+    "BI04": "prv_skatunge"
+  },
+  "center": [
+    75,
+    64.5
+  ],
+  "collisionRadius": 117.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 33,
+      "length": 46,
+      "location": [
+        -65.5,
+        18.5
+      ],
+      "style": "PRV_LOW",
+      "width": 33
+    },
+    {
+      "angle": -180,
+      "contrailSize": 33,
+      "length": 46,
+      "location": [
+        -65.5,
+        -18.5
+      ],
+      "style": "PRV_LOW",
+      "width": 33
+    }
+  ],
+  "height": 133,
+  "hullId": "prv_gissel",
+  "hullName": "Gissel",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 113.5,
+  "spriteName": "graphics/prv/ships/prv_gissel.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "BI02",
+      "locations": [
+        -24,
+        46.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "BI01",
+      "locations": [
+        -18,
+        46.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "BI03",
+      "locations": [
+        -36,
+        45.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "BI04",
+      "locations": [
+        -43,
+        45.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        59,
+        -20
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        59,
+        22
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        33.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        2.5,
+        -40
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -30,
+      "arc": 240,
+      "id": "WS0005",
+      "locations": [
+        52.5,
+        -51
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 200,
+      "id": "WS0006",
+      "locations": [
+        20.5,
+        -61
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 80,
+      "arc": 200,
+      "id": "WS0007",
+      "locations": [
+        7.5,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 150
+}

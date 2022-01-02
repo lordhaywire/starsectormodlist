@@ -1,0 +1,357 @@
+{
+  "bounds": [
+    168,
+    0.5,
+    152,
+    -27.5,
+    125,
+    -38.5,
+    121,
+    -57.5,
+    54.5,
+    -65.5,
+    31.5,
+    -52.5,
+    -14.5,
+    -51.5,
+    -66.5,
+    -58,
+    -71,
+    -67,
+    -85,
+    -67.5,
+    -105,
+    -22.5,
+    -105,
+    24.5,
+    -85,
+    68.5,
+    -72.5,
+    69.5,
+    -68,
+    60,
+    -13,
+    52.5,
+    25,
+    53.5,
+    42.5,
+    62,
+    81,
+    64.5,
+    85.5,
+    69.5,
+    105.5,
+    70.5,
+    139,
+    56,
+    134,
+    39.5,
+    152,
+    29.5
+  ],
+  "builtInMods": [
+    "civgrade",
+    "prv_habitat",
+  ],
+  "center": [
+    73,
+    113
+  ],
+  "collisionRadius": 205.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 96,
+      "length": 64,
+      "location": [
+        -108.5,
+        19
+      ],
+      "style": "PRV_LOW",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 96,
+      "length": 96,
+      "location": [
+        -108.5,
+        0
+      ],
+      "style": "PRV_LOW",
+      "width": 32
+    },
+    {
+      "angle": 180,
+      "contrailSize": 96,
+      "length": 64,
+      "location": [
+        -108.5,
+        -18
+      ],
+      "style": "PRV_LOW",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 32,
+      "length": 24,
+      "location": [
+        -85.5,
+        39
+      ],
+      "style": "PRV_LOW",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 32,
+      "length": 24,
+      "location": [
+        -85.5,
+        -38
+      ],
+      "style": "PRV_LOW",
+      "width": 6
+    },
+    {
+      "angle": 170,
+      "contrailSize": 32,
+      "length": 24,
+      "location": [
+        -106.5,
+        26
+      ],
+      "style": "PRV_LOW",
+      "width": 6
+    },
+    {
+      "angle": 190,
+      "contrailSize": 32,
+      "length": 24,
+      "location": [
+        -106.5,
+        -25
+      ],
+      "style": "PRV_LOW",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 96,
+      "length": 64,
+      "location": [
+        -91,
+        56.5
+      ],
+      "style": "PRV_LOW",
+      "width": 24
+    },
+    {
+      "angle": -180,
+      "contrailSize": 96,
+      "length": 64,
+      "location": [
+        -91,
+        -56.5
+      ],
+      "style": "PRV_LOW",
+      "width": 24
+    }
+  ],
+  "height": 284,
+  "hullId": "prv_gabbro",
+  "hullName": "Gabbro",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    26,
+    -0
+  ],
+  "shieldRadius": 178.5,
+  "spriteName": "graphics/prv/ships/prv_gabbro.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 60,
+      "arc": 170,
+      "id": "WS 001",
+      "locations": [
+        74,
+        47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -60,
+      "arc": 170,
+      "id": "WS 002",
+      "locations": [
+        104,
+        -47
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 75,
+      "arc": 170,
+      "id": "WS 003",
+      "locations": [
+        48,
+        48
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 150,
+      "id": "WS 004",
+      "locations": [
+        -6,
+        39.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 170,
+      "id": "WS 005",
+      "locations": [
+        -53,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 240,
+      "arc": 170,
+      "id": "WS 006",
+      "locations": [
+        -53,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 150,
+      "arc": 30,
+      "id": "WS 007",
+      "locations": [
+        31,
+        53
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -150,
+      "arc": 30,
+      "id": "WS 008",
+      "locations": [
+        31,
+        -53
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        96.5,
+        54
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        132,
+        52
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -75,
+      "arc": 170,
+      "id": "WS0003",
+      "locations": [
+        65,
+        -52
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        69,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -60,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        -16,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 30,
+      "arc": 30,
+      "id": "WS0006",
+      "locations": [
+        158,
+        19.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -30,
+      "arc": 30,
+      "id": "WS0007",
+      "locations": [
+        158,
+        -19.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 146
+}

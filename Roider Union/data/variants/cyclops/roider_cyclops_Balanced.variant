@@ -1,0 +1,28 @@
+{
+	"quality":0.5,
+    "displayName": "Balanced",
+    "fluxCapacitors": 2,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "roider_cyclops",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "variantId": "roider_cyclops_Balanced",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightag",
+                "WS 002": "lightag"
+            }
+        }
+    ]
+}

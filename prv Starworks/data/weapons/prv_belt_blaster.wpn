@@ -1,0 +1,52 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "mining_blaster_fire",
+  "glowColor": [
+    255,
+    100,
+    100,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_belt_blaster_hardpoint_glow.png",
+  "hardpointOffsets": [
+    24.5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_belt_blaster_hardpoint_gun.png",
+  "hardpointUnderSprite": "graphics/prv/weapons/prv_belt_blaster_hardpoint_body.png",
+  "id": "prv_belt_blaster",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 50,
+    "particleColor": [
+      255,
+      100,
+      100,
+      255
+    ],
+    "particleCount": 12,
+    "particleDuration": 0.12,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "spread": 25
+  },
+  "projectileSpecId": "prv_belt_blaster_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_belt_blaster_turret_glow.png",
+  "turretOffsets": [
+    12.5,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_belt_blaster_turret_gun.png",
+  "turretUnderSprite": "graphics/prv/weapons/prv_belt_blaster_turret_body.png",
+  "type": "ENERGY"
+}

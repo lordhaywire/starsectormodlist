@@ -1,0 +1,58 @@
+{
+  "displayName": "Fire",
+  "fluxCapacitors": 21,
+  "fluxVents": 10,
+  "goalVariant": false,
+  "hullId": "prv_aska_lc",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks",
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_lc_fire",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BI01": "hammerrack",
+        "WS0001": "cyclone",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "annihilatorpod",
+        "WS0003": "annihilatorpod",
+        "WS0004": "annihilatorpod",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightdualac",
+        "WS0008": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightag",
+        "WS0006": "lightag",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,74 @@
+{
+  "hullName": "Karbid",
+  "hullId": "prv_karbid",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_karbid.png",
+  "style": "PRV_LOW",
+  "height": 34,
+  "width": 30,
+  "center": [15, 17],
+  "collisionRadius": 23,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 22.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9.5, 11],
+      "length": 14,
+      "width": 4,
+      "angle": 155,
+      "contrailSize": 4,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-9.5, -11],
+      "length": 14,
+      "width": 4,
+      "angle": -155,
+      "contrailSize": 4,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-14.5, 7.5],
+      "length": 16,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-14.5, -7.5],
+      "length": 16,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -14.5, -9,
+    13, -13.5,
+    13, 13.5,
+    -14.5, 9
+  ]
+}

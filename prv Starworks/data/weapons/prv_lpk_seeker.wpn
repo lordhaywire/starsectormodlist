@@ -1,0 +1,41 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  #"everyFrameEffect": "scripts.weapons.prv_lpk_EveryFrameEffect",
+  "fireSoundTwo": "prv_lpk_fire",
+  "autocharge": true,
+  "glowColor": [
+    153,
+    102,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    8.5,
+    0,
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_lpk_hardpoint.png",
+  "id": "prv_lpk_seeker",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_lpk_seeker_shot",
+  "renderAboveAllWeapons": 0,
+  "requiresFullCharge": false,
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    6.5,
+    0,
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_lpk_turret.png",
+  "type":"ENERGY",
+  "mountTypeOverride":"SYNERGY",
+}

@@ -1,0 +1,15 @@
+{
+	"id":"prv_hfl_shot",	
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":70.0,
+	"width":11.0,
+	"fadeTime":0.25,
+	"fringeColor":[255,128,0,255],	#jursla
+	"coreColor":[255,128,128,255],	#jursla
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

@@ -1,0 +1,34 @@
+{
+    "displayName": "Strike",
+    "fluxCapacitors": 10,
+    "fluxVents": 14,
+    "goalVariant": true,
+    "hullId": "roider_cowboy",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "roider_cowboy_Strike",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "arbalest"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "roider_marksman",
+                "WS 003": "roider_marksman"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "roider_marksman",
+                "WS 005": "roider_marksman"
+            }
+        }
+    ],
+    "wings": ["roider_armature_wing"]
+}

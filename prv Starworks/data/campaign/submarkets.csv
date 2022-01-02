@@ -1,0 +1,6 @@
+id,name,faction,desc,script,icon,order
+prv_labmarket,Laboratory R&D,,"Trade with $theFaction R&D facility.
+
+Rare and advanced ships, weapons and other military hardware can be bought here. A high standing with $theFaction is required to purchase most wares.
+
+Will buy locally rare, valuable or exotic goods as part of a no-questions-asked requisitions program, although the cost of the permits involved in trading directly with the Complex tend to claim most of the profits.",campaign.submarkets.prv_labmarket,,101

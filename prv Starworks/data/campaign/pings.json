@@ -1,0 +1,19 @@
+{
+
+	"prv_laneclear":{
+		"sounds":["default_campaign_ping"],
+		"color":[51,0,153,128],
+		"width":10,
+		"range":225, #75
+		"duration":3,
+		"invert":true,
+		
+		"num":8,
+		"delay":0.125,	
+	},
+}
+
+
+
+
+

@@ -1,0 +1,38 @@
+{
+  "displayName": "Auxiliary",
+  "fluxCapacitors": 6,
+  "fluxVents": 9,
+  "goalVariant": false,
+  "hullId": "prv_tarsus",
+  "hullMods": [
+    "insulatedengine"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_tarsus_aux",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_pskd",
+        "WS 002": "prv_pskd"
+      }
+    }
+  ],
+  "wings": []
+}

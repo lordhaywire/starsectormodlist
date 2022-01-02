@@ -1,0 +1,56 @@
+{
+  "variantId": "prv_venture_rb_armed",
+  "hullId": "prv_venture_rb",
+  "displayName": "Armed",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 30,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "prv_blastheater"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hammer_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "prv_skatunge",
+        "WS 007": "prv_skatunge"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavymortar",
+        "WS 003": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "miningblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "prv_lighttripleac",
+        "WS 006": "prv_lighttripleac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

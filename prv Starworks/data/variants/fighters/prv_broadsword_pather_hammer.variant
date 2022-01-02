@@ -1,0 +1,29 @@
+{
+  "displayName": "Hammer Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "prv_broadsword_pather",
+  "hullMods": [
+    "ill_advised",
+    "no_weapon_flux",
+    #"safetyoverrides"
+  ],
+  "quality": 0,
+  "variantId": "prv_broadsword_pather_hammer",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hammer_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightmortar"
+      }
+    }
+  ]
+}

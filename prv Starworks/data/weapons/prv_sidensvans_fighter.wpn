@@ -1,0 +1,70 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 500,
+  "fireSoundTwo": "swarmer_fire",
+  "hardpointAngleOffsets": [
+    -5,
+    5,
+    -5,
+    5
+  ],
+  "hardpointOffsets": [
+    7,
+    -1.5,
+    7,
+    1.5,
+    0,
+    1.5,
+    0,
+    -1.5,
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_sidensvans_fighter_hardpoint.png",
+  "id": "prv_sidensvans_fighter",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_sidensvansunge_srm",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "size": "SMALL",
+  "smokeSpec": {
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackParticleCount": 3,
+    "blowbackSpread": 10,
+    "cloudDuration": 0.9,
+    "cloudParticleCount": 3,
+    "cloudRadius": 8,
+    "particleColor": [
+      220,
+      255,
+      220,
+      100
+    ],
+    "particleSizeMin": 5,
+    "particleSizeRange": 12
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    5,
+    -5,
+    5,
+    -5
+  ],
+  "turretOffsets": [
+    6.5,
+    1.5,
+    6.5,
+    -1.5,
+    -0.5,
+    1.5,
+    -0.5,
+    -1.5,
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_sidensvans_fighter_turret.png",
+  "type": "MISSILE"
+}

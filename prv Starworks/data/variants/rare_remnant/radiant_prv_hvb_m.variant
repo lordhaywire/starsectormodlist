@@ -1,0 +1,70 @@
+{
+  "variantId": "radiant_prv_hvb_m",
+  "hullId": "radiant",
+  "displayName": "Missile Refit",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 40,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "prv_gravanchor",
+    "targetingunit",
+    "eccm",
+    "prv_missile_plating",
+    "prv_ramshield_modular",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "prv_uvir",
+        "WS 001": "prv_uvir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_korp",
+        "WS 004": "prv_korp",
+        "WS 005": "prv_kraka",
+        "WS 006": "prv_kraka",
+        "WS 007": "prv_kraka",
+        "WS 008": "prv_kraka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_vakt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 009": "prv_sipdlaser",
+        "WS 010": "prv_sipdlaser",
+        "WS 011": "prv_sipdlaser",
+        "WS 012": "prv_sipdlaser",
+        "WS 013": "prv_sipdlaser",
+        "WS 014": "prv_sipdlaser",
+        "WS 015": "prv_sipdlaser",
+        "WS 016": "prv_sipdlaser",
+        "WS 017": "prv_sipdlaser",
+        "WS 018": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,28 @@
+{
+  "hullName": "Aurochs Armor Module",
+  "hullId": "roider_aurochs_armor",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/roider_aurochs_prow.png",
+  "style": "ROIDER_HULL",
+  "height": 36,
+  "width": 92,
+  "center": [46, 18],
+  "collisionRadius": 75,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    "roider_midas_armor",
+    "reduced_explosion",
+    "never_detaches"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -16, 43,
+    -16, -43,
+    8, -44,
+    11, -0,
+    8, 44
+  ]
+}

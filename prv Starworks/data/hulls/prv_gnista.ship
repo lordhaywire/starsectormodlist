@@ -1,0 +1,211 @@
+{
+  "bounds": [
+    32,
+    -0,
+    22.5,
+    -11.5,
+    22,
+    -26,
+    5,
+    -39,
+    -12,
+    -39,
+    -47,
+    -0,
+    -10.5,
+    40,
+    11,
+    33.5
+  ],
+  "center": [
+    49,
+    54
+  ],
+  "collisionRadius": 78.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 21,
+      "location": [
+        -42.5,
+        11.5
+      ],
+      "style": "PRV_MID",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 21,
+      "location": [
+        -42.5,
+        -11.5
+      ],
+      "style": "PRV_MID",
+      "width": 7
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 28,
+      "location": [
+        -32,
+        22.5
+      ],
+      "style": "PRV_MID",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 28,
+      "location": [
+        -32,
+        -22.5
+      ],
+      "style": "PRV_MID",
+      "width": 14
+    },
+    {
+      "angle": 150,
+      "contrailSize": 6,
+      "length": 12,
+      "location": [
+        -21.5,
+        33
+      ],
+      "style": "PRV_MID",
+      "width": 6
+    },
+    {
+      "angle": -150,
+      "contrailSize": 6,
+      "length": 12,
+      "location": [
+        -21.5,
+        -33
+      ],
+      "style": "PRV_MID",
+      "width": 6
+    }
+  ],
+  "height": 97,
+  "hullId": "prv_gnista",
+  "hullName": "Gnista",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    -8,
+    -0
+  ],
+  "shieldRadius": 69.5,
+  "spriteName": "graphics/prv/ships/prv_gnista.png",
+  "style": "PRV_MID",
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_ramshield"
+  ],
+  "builtInWeapons": {
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, 0]
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -35,
+        8,
+        -34.5,
+        15,
+        -40,
+        1
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        16.5,
+        19
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        4.5,
+        36
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -45,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        3,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -30,
+      "arc": 10,
+      "id": "WS0005",
+      "locations": [
+        20,
+        -13
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 60,
+      "arc": 10,
+      "id": "WS0006",
+      "locations": [
+        13.5,
+        29.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "LCHP1",
+      "locations": [
+        10,
+        -25
+      ],
+      "mount": "HIDDEN",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 97
+}

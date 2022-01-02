@@ -1,0 +1,39 @@
+{
+  "variantId": "prv_ilbud_strike",
+  "hullId": "prv_ilbud",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 11,
+  "quality": 0.25,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sidensvans_array",
+        "WS0004": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "pdburst",
+        "WS0006": "pdburst"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

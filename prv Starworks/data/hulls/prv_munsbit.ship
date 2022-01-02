@@ -1,0 +1,155 @@
+{
+  "bounds": [
+    17.5,
+    -59,
+    87,
+    -36,
+    102,
+    -0,
+    87,
+    36,
+    17.5,
+    59,
+    -17.5,
+    59,
+    -90,
+    35.5,
+    -102,
+    -0,
+    -90,
+    -35.5,
+    -17.5,
+    -59
+  ],
+  "builtInMods": [
+    "civgrade",
+    "prv_ramshield"
+  ],
+  "builtInWings": [],
+  "center": [
+    64,
+    107
+  ],
+  "collisionRadius": 153,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 28.5,
+      "location": [
+        -91.5,
+        -31.5
+      ],
+      "style": "PRV_HIGH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 28.5,
+      "location": [
+        -91.5,
+        31.5
+      ],
+      "style": "PRV_HIGH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 60,
+      "location": [
+        -81,
+        47
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    },
+    {
+      "angle": -180,
+      "contrailSize": 20,
+      "length": 60,
+      "location": [
+        -81,
+        -47
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    }
+  ],
+  "height": 214,
+  "hullId": "prv_munsbit",
+  "hullName": "Munsbit",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 151.5,
+  "spriteName": "graphics/prv/ships/prv_munsbit.png",
+  "style": "PRV_MID",
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, 0]
+    },
+    {
+      "angle": 0,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        90.5,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        54.5,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 210,
+      "id": "WS0009",
+      "locations": [
+        -55,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -180,
+      "arc": 210,
+      "id": "WS0011",
+      "locations": [
+        -90,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 128
+}

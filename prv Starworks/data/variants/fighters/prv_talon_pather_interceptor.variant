@@ -1,0 +1,28 @@
+{
+  "displayName": "Interceptor",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "prv_talon_pather",
+  "hullMods": [
+    "no_weapon_flux",
+    "ill_advised",
+  ],
+  "quality": 0,
+  "variantId": "prv_talon_pather_interceptor",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "vulcan"
+      }
+    }
+  ]
+}

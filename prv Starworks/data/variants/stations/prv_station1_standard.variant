@@ -1,0 +1,30 @@
+{
+  "displayName": "Orbital Station",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "prv_station1",
+  "hullMods": [],
+  "modules": [
+    {
+      "WS 002": "prv_module_battery2_standard"
+    },
+    {
+      "WS 007": "prv_module_hangar4_standard"
+    },
+    {
+      "WS 004": "prv_module_bastion1_missile"
+    },
+    {
+      "WS 005": "prv_module_bastion1_ballistic"
+    },
+    {
+      "WS0001": "prv_module_shield_center_standard"
+    }
+  ],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "prv_station1_standard",
+  "weaponGroups": [],
+  "wings": []
+}

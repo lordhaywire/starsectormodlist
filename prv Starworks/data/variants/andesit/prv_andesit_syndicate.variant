@@ -1,0 +1,78 @@
+{
+  "variantId": "prv_andesit_syndicate",
+  "hullId": "prv_andesit",
+  "displayName": "Syndicate",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 40,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "sabot",
+        "WS0010": "sabot",
+        "WS0011": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_minehead"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "annihilatorpod",
+        "WS0008": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightag",
+        "WS0012": "lightag",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_kartesch",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
+        "WS0006": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan"
+      }
+    },
+  ],
+  "modules": [],
+  "wings": [
+    "claw_wing",
+    "broadsword_wing",
+    "prv_buddy_wing"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 11,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "filgap_herder",
+  "hullMods": [
+    "expanded_deck_crew",
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_herder_Support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "filgap_saturation_launcher",
+        "WS0004": "filgap_saturation_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "heatseeker",
+        "WS0006": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_scattergun",
+        "WS0002": "filgap_scattergun"
+      }
+    }
+  ],
+  "wings": [
+    "claw_wing",
+    "wasp_wing"
+  ]
+}

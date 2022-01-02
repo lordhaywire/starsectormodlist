@@ -1,0 +1,43 @@
+{
+  "variantId": "prv_tystnad_overdriven",
+  "hullId": "prv_tystnad",
+  "displayName": "Overdriven",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 0,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_gravkan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "prv_berguv_rack",
+        "WS0006": "prv_berguv_rack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_akers",
+        "WS0004": "prv_akers",
+      }
+    },
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing"
+  ]
+}

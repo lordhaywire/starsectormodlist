@@ -1,0 +1,36 @@
+{
+	"id":"prv_heavyphaseteleporter",
+	"type":"TELEPORTER",
+	#"aiType":"PHASE_TELEPORTER",
+	"aiType":"PHASE_TELEPORTER_2",
+	
+	"jitterColor":[102,255,153,150],
+	"jitterCopies":5,
+	"jitterRange":25,
+	"jitterRangeRadiusFraction":0,
+	
+	"weaponGlowColor":[102,255,153,0],
+	"weaponTypes":[ENERGY],
+	
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"range":700,
+	"randomRange":0,
+	
+	"vulnerableChargeup":false,
+	"vulnerableChargedown":false,
+	"renderCopyDuringTeleport":true,
+	
+	"fadeActivationSoundOnChargedown":false,
+	
+	"useSound":"system_phase_teleporter",	
+	"outOfUsesSound":"gun_out_of_ammo",
+		
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":700,
+		"averageSpeedIncrease":40, #50
+	}
+}

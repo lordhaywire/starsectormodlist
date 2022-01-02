@@ -1,0 +1,44 @@
+{
+  "variantId": "prv_shrike_attack",
+  "hullId": "prv_shrike",
+  "displayName": "Attack",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_sipdlaser",
+        "WS 002": "prv_sipdlaser",
+        "WS 006": "prv_sipdlaser",
+        "WS 007": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

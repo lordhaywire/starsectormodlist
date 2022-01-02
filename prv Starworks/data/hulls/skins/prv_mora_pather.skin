@@ -1,0 +1,26 @@
+{
+	"baseHullId":"mora",
+	"skinHullId":"prv_mora_pather",
+	"hullName":"Mora (LP)",
+	"descriptionId":"mora",
+	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+	"tags":["prv_lp_bp","luddic_path",],
+	#"tech":"Luddic Path (prv)",
+	"tech":"Luddic Path",
+	"fleetPoints":15,
+	"baseValueMult":.75,
+	"spriteName":"graphics/prv/ships/prv_mora_pather.png",
+	"systemId":"burndrive",
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	},
+	"builtInMods":[
+		#"faulty_grid",
+		"safetyoverrides",
+		"ill_advised"],
+	"builtInWeapons":{
+    },
+}

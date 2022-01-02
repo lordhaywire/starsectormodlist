@@ -1,0 +1,61 @@
+{
+  "animationType": "GLOW_AND_FLASH",
+  "autocharge": true,
+  "barrelMode": "ALTERNATING",
+  "displayArcRadius": 400,
+  "fireSoundTwo": "prv_spattergun_fighter_fire",
+  "glowColor": [
+    202,
+    128,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    13.5,
+    -3,
+    13.5,
+    3
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_spattergun_fighter_turret.png",
+  "id": "prv_spattergun_fighter",
+  "interruptibleBurst": true,
+  "muzzleFlashSpec": {
+    "length": 10,
+    "particleColor": [
+      220,
+      160,
+      255,
+      255
+    ],
+    "particleCount": 5,
+    "particleDuration": 0.25,
+    "particleSizeMin": 5,
+    "particleSizeRange": 5,
+    "spread": 5
+  },
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "projectileSpecId": "prv_spattergun_fighter_main_shot",
+  "renderAboveAllWeapons": 0,
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_spattergun_fighter_turret_glow.png",
+  "turretOffsets": [
+    10,
+    -3,
+    10,
+    3
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_spattergun_fighter_turret.png",
+  "type": "ENERGY"
+}

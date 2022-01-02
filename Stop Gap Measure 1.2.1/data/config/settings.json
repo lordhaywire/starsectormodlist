@@ -1,0 +1,13 @@
+{
+	"graphics":{
+		"blueprint_packages":{
+			"filgap_archeolow_package":"graphics/filgap/icons/filgap_blueprint_archeolow.png",
+			"filgap_archeomid_package":"graphics/filgap/icons/filgap_blueprint_archeomid.png",
+			"filgap_archeohigh_package":"graphics/filgap/icons/filgap_blueprint_archeohigh.png",
+		},
+		"illustrations":{
+			"filgap_bythinia":"graphics/illustrations/filgap_bythinia.jpg",
+			"filgap_nora":"graphics/illustrations/filgap_nora.jpg",
+		}
+	}
+}

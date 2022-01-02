@@ -1,0 +1,58 @@
+{
+  "displayName": "Attack",
+  "fluxCapacitors": 9,
+  "fluxVents": 16,
+  "goalVariant": true,
+  "hullId": "prv_flock_rb",
+  "hullMods": [
+    "heavyarmor",
+    "dedicated_targeting_core"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_flock_rb_attack",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_sidensvans"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kraka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "lightdualac",
+        "WS0006": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "vulcan",
+        "WS0008": "vulcan"
+      }
+    }
+  ],
+  "wings": [
+    "prv_skarn_wing",
+    "prv_buddy_wing"
+  ]
+}

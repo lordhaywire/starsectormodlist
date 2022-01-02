@@ -1,0 +1,21 @@
+{
+	"prv_ryak":{ # like Jupiter or Saturn
+		"name":"Ryak",
+		"tilt":-10, # left-right (>0 tilts to the left)
+		"pitch":-15, # towards-away from the viewer (>0 pitches towards)
+		"rotation":-3, # degrees/second
+		"planetColor":[50, 50, 255, 255],
+		"atmosphereThickness":0.5, # as fraction of radius.  Set to 0 for no atmosphere
+		"atmosphereThicknessMin":62, #  minimum thickness in pixels - used when radius * atmosphereThickness is really low
+		"atmosphereColor":[50, 50, 150, 150],
+		"texture":"graphics/planets/gas_giant.jpg",
+		"icon":"graphics/warroom/icon_planet.png",
+		"iconColor":[220,180,100,255],
+		"isStar":false,
+		"isGasGiant":true,
+		"lightPosition":[5,-2,3], # in planet radii.  Not used for stars.  z > 0 is above the playing field.
+		"cloudTexture":"graphics/planets/clouds_banded01.png", # omit for no cloud layer
+		"cloudColor":[192, 48, 128, 200],
+		"cloudRotation":-7, # degrees/second, optional
+	},
+}

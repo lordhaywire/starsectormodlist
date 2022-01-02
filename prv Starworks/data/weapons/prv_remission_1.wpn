@@ -1,0 +1,62 @@
+{
+  "id": "prv_remission_1",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_remission_1_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_remission_turret_main.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_remission_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_remission_hardpoint_main.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_remission_hardpoint_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "visualRecoil": 5,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    16.5,
+    -7,
+    18.5,
+    0,
+    16.5,
+    7
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    22.5,
+    7,
+    26.5,
+    0,
+    22.5,
+    -7
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "requiresFullCharge": false,
+  "muzzleFlashSpec": {
+    "length": 25,
+    "spread": 40,
+    "particleSizeMin": 12,
+    "particleSizeRange": 16,
+    "particleDuration": 0.5,
+    "particleCount": 16,
+    "particleColor": [
+      122,
+      128,
+      96,
+      128
+    ]
+    #"particleColor": [128,255,255,128],
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "heavy_mortar_fire"
+}

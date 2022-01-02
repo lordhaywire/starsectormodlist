@@ -1,0 +1,182 @@
+{
+  "hullName": "Sinne",
+  "hullId": "prv_sinne",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_sinne.png",
+  "style": "PRV_HIGH",
+  "height": 150,
+  "width": 104,
+  "center": [52, 75],
+  "collisionRadius": 87,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 84.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_ramshield",
+    "prv_fluxcompressor"
+  ],
+  "builtInWeapons": {
+    "WS0009": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [-9, 33]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [-9, -33]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [34, 19],
+      "renderOrderMod": -50
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [34, -19],
+      "renderOrderMod": -50
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [18, 29]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [18, -29]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        0.5, -0.5,
+        -5, 5.5,
+        -4, -5,
+        5, -4.5,
+        4.5, 5
+      ]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [-10, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, 18],
+      "length": 42,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-44, -18],
+      "length": 42,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-43, 24],
+      "length": 15,
+      "width": 5,
+      "angle": 155,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-43, -24],
+      "length": 15,
+      "width": 5,
+      "angle": -155,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-35, 26],
+      "length": 15,
+      "width": 5,
+      "angle": 155,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    },
+    {
+      "location": [-35, -26],
+      "length": 15,
+      "width": 5,
+      "angle": -155,
+      "contrailSize": 5,
+      "style": "PRV_HIGH"
+    }
+  ],
+  "bounds": [
+    -13.5, 44,
+    -6.5, 49.5,
+    -4, 42,
+    20.5, 35.5,
+    27.5, 15.5,
+    47.5, 11,
+    58, -0,
+    47.5, -11,
+    27.5, -15.5,
+    20.5, -35.5,
+    -4, -42,
+    -6.5, -49.5,
+    -13.5, -44,
+    -41, -34.5,
+    -25, -29,
+    -25, -29,
+    -59.5, -9.5,
+    -38, -0,
+    -10, -0,
+    -3, -6,
+    10, -0,
+    -3, 7,
+    -10, 0,
+    -38, -0,
+    -59.5, 9.5,
+    -25, 29,
+    -41, 34.5
+  ]
+}

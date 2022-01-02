@@ -1,0 +1,44 @@
+{
+	"id":"prv_raka_torpedo",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/prv/missiles/prv_missile_raka.png",
+	"size":[11,17],	
+	"center":[5.5,8.5],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,100,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":180, # purely visual
+	"flameoutTime":1.125, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.75, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+#	"armingTime":0.3,
+#	"engineSpec":{"turnAcc":140,
+#				  "turnRate":35,
+#				  "acc":1000,
+#				  "dec":500},
+	"engineSpec":{"turnAcc":210,
+				  "turnRate":70,
+				  "acc":700,
+				  "dec":400},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-12, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[145,255,75,255], #255,145,75
+						"contrailDuration":1,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":1, # how far away from engine it starts
+						"contrailColor":[145,255,75,75],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":9.0,
+				    "length":45.0,
+				    "angle":180.0}],
+}

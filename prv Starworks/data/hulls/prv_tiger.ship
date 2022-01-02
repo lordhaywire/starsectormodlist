@@ -1,0 +1,147 @@
+{
+  "hullName": "Tiger",
+  "hullId": "prv_tiger",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_tiger.png",
+  "style": "PRV_MID",
+  "height": 141,
+  "width": 110,
+  "center": [55, 73.5],
+  "collisionRadius": 87,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 83.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_ramshield"
+  ],
+  "builtInWeapons": {
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, -1]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [49.5, 24]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -60,
+      "locations": [22.5, -16]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [-14.5, 25]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [7.5, 12]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": -30,
+      "locations": [-0.5, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-61.5, 36.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-61.5, -36.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-42.5, 49.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-42.5, -49.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-49.5, -42.5],
+      "length": 10,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-49.5, 43.5],
+      "length": 10,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    -68, 11,
+    -68, 24,
+    -60, 38,
+    -21.5, 50.5,
+    6.5, 49,
+    26.5, 35.5,
+    46, 31.5,
+    40, 12.5,
+    53, 11.5,
+    62.5, -1,
+    53, -13.5,
+    43, -13.5,
+    25, -27.5,
+    6.5, -51,
+    -21.5, -52.5,
+    -60, -40,
+    -68, -26,
+    -68, -13,
+    -55, -0.5
+  ]
+}

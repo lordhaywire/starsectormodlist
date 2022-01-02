@@ -1,0 +1,38 @@
+{
+  "displayName": "Converted",
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "goalVariant": true,
+  "hullId": "prv_munsbit_lc",
+  "hullMods": [
+    "converted_hangar",
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_munsbit_lc_converted",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lightac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0011": "vulcan"
+      }
+    },
+  ],
+  "wings": ["prv_talon_pather_wing",]
+}

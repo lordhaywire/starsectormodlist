@@ -1,0 +1,46 @@
+{
+  "variantId": "prv_flamma_overdriven",
+  "hullId": "prv_flamma",
+  "displayName": "Overdriven",
+  "goalVariant": false,
+  "fluxCapacitors": 2,
+  "fluxVents": 5,
+  "quality": 3,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "prv_akers",
+        "WS0004": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0002": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

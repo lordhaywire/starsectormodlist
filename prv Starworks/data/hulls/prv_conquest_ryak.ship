@@ -1,0 +1,524 @@
+{
+  "bounds": [
+    215,
+    56,
+    155,
+    72,
+    148,
+    60,
+    126,
+    81,
+    95,
+    61,
+    9,
+    66,
+    -21,
+    80,
+    -58,
+    68,
+    -90,
+    89,
+    -138,
+    93,
+    -162,
+    81,
+    -172,
+    36,
+    -157,
+    13,
+    -142,
+    0,
+    -157,
+    -13,
+    -171,
+    -33,
+    -162,
+    -80,
+    -139,
+    -91,
+    -93,
+    -89,
+    -59,
+    -68,
+    -20,
+    -80,
+    11,
+    -66,
+    98,
+    -64,
+    128,
+    -80,
+    145,
+    -57,
+    157,
+    -69,
+    215,
+    -56,
+    210,
+    -32,
+    173.5,
+    -32,
+    173.5,
+    -18,
+    219,
+    -12.5,
+    173.5,
+    -5,
+    173.5,
+    5,
+    219,
+    12.5,
+    173.5,
+    18,
+    173.5,
+    32,
+    210,
+    32
+  ],
+  "builtInMods": [
+    "prv_ramshield"
+  ],
+  "builtInWeapons": {
+    "BI01": "prv_ljungeld_conquest_prototype",
+    "prv_ramshield": "prv_u_ramshield"
+  },
+  "center": [
+    95,
+    178
+  ],
+  "collisionRadius": 300,
+  "coversColor": "255,255,255,255",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 96,
+      "location": [
+        -147,
+        0
+      ],
+      "style": "PRV_MID",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 72,
+      "location": [
+        -169,
+        22
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 72,
+      "location": [
+        -169,
+        -21
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -174,
+        64
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 48,
+      "location": [
+        -175,
+        53
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 48,
+      "location": [
+        -176,
+        39
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 48,
+      "location": [
+        -176,
+        -39
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 48,
+      "location": [
+        -175,
+        -53
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -174,
+        -63
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 80,
+      "location": [
+        -173,
+        78
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 80,
+      "location": [
+        -173,
+        -77
+      ],
+      "style": "PRV_HIGH",
+      "width": 20
+    },
+    {
+      "angle": 165,
+      "contrailSize": 128,
+      "length": 32,
+      "location": [
+        110,
+        77
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    },
+    {
+      "angle": 195,
+      "contrailSize": 128,
+      "length": 32,
+      "location": [
+        110,
+        -76
+      ],
+      "style": "PRV_HIGH",
+      "width": 12
+    }
+  ],
+  "height": 400,
+  "hullId": "prv_conquest_ryak",
+  "hullName": "Conquest (Ryak)",
+  "hullSize": "CAPITAL_SHIP",
+  "shieldCenter": [
+    26,
+    0
+  ],
+  "shieldRadius": 250,
+  "spriteName": "graphics/prv/ships/rare/prv_conquest_ryak.png",
+  "style": "PRV_HIGH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "prv_ramshield",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, 0]
+    },
+    {
+      "angle": 30,
+      "arc": 240,
+      "id": "WS 003",
+      "locations": [
+        200,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -30,
+      "arc": 240,
+      "id": "WS 004",
+      "locations": [
+        200,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 170,
+      "id": "WS 005",
+      "locations": [
+        128,
+        71
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 170,
+      "id": "WS 006",
+      "locations": [
+        128,
+        -71
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 80,
+      "arc": 170,
+      "id": "WS 007",
+      "locations": [
+        -88,
+        78
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -80,
+      "arc": 170,
+      "id": "WS 008",
+      "locations": [
+        -88,
+        -78
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 160,
+      "arc": 150,
+      "id": "WS 009",
+      "locations": [
+        -135.5,
+        53
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -160,
+      "arc": 150,
+      "id": "WS 010",
+      "locations": [
+        -135.5,
+        -53
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 120,
+      "id": "WS 011",
+      "locations": [
+        112,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 120,
+      "id": "WS 012",
+      "locations": [
+        35,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS 013",
+      "locations": [
+        112,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS 014",
+      "locations": [
+        35,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 120,
+      "id": "WS 015",
+      "locations": [
+        70,
+        45
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 120,
+      "id": "WS 016",
+      "locations": [
+        -8,
+        51
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS 017",
+      "locations": [
+        70,
+        -45
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS 018",
+      "locations": [
+        -8,
+        -51
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 5,
+      "id": "WS 019",
+      "locations": [
+        -44,
+        66
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -90,
+      "arc": 5,
+      "id": "WS 020",
+      "locations": [
+        -44,
+        -66
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 120,
+      "arc": 120,
+      "id": "WS 022",
+      "locations": [
+        161,
+        48
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -120,
+      "arc": 120,
+      "id": "WS 023",
+      "locations": [
+        161,
+        -48
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BI01",
+      "locations": [
+        70,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 240,
+      "id": "WS0001",
+      "locations": [
+        -112,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 190
+}

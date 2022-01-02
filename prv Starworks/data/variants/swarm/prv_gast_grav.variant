@@ -1,0 +1,29 @@
+{
+  "variantId": "prv_gast_grav",
+  "hullId": "prv_gast",
+  "displayName": "Gravitic",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 11,
+  "quality": 2,
+  "permaMods": [],
+  "hullMods": [
+    "prv_gravanchor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_tardes"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_stilllhet_wing",
+    "prv_oklang_wing",
+    "prv_ovasen_wing",
+    "prv_missljud_wing"
+  ]
+}

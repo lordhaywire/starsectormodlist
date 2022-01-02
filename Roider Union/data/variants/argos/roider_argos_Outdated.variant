@@ -1,0 +1,56 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 44,
+    "fluxVents": 35,
+    "goalVariant": true,
+    "hullId": "roider_argos",
+    "hullMods": ["converted_hangar"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "roider_argos_Outdated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 001": "locust",
+                "WS 002": "locust"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 007": "pilum",
+                "WS 008": "pilum"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "lightdualac",
+                "WS 004": "lightdualac",
+                "WS 005": "lightdualac",
+                "WS 006": "lightdualac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 009": "shredder",
+                "WS 010": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 011": "arbalest",
+                "WS 012": "arbalest"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

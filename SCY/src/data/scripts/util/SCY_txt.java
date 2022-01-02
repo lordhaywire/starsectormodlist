@@ -1,0 +1,13 @@
+/*
+By Tartiflette
+ */
+package data.scripts.util;
+
+import com.fs.starfarer.api.Global;
+
+public class SCY_txt {   
+    private static final String SCY="SCY";
+    public static String txt(String id){
+        return Global.getSettings().getString(SCY, id);
+    }    
+}

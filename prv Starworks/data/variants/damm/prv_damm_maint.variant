@@ -1,0 +1,24 @@
+{
+  "variantId": "prv_damm_maint",
+  "hullId": "prv_damm",
+  "displayName": "Maintenance",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 5,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

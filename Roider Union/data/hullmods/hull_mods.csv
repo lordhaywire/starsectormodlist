@@ -1,0 +1,39 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+MIDAS,roider_midas,1,,,"special, roider","Special, Defenses",5000,FALSE,,,4,8,12,20,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+Fighter Clamps,roider_fighterClamps,0,,,"special, non_phase, roider",Fighters,5000,TRUE,,,2,4,8,10,hullmods.Roider_FighterClamps,"An old and discredited trick, deploying fighters from simple hull clamps was reinvented by roiders and has proliferated among independents and pirates.
+
+Adds attachment points for %s fighter wings to the ship's hull, depending on ship size, requiring %s more crew. Fighters cost %s more ordnance points. New fighters cannot be produced in combat and most components have minor defects. Fighter speed reduced by %s, and damage taken increased by %s.
+
+Cannot be installed on phase ships or ships that have fighter bays. Blocks bombers.",Improvised fighter bay for non-carriers.,graphics/hullmods/roider_fighter_clamps.png
+Tracker Swap,roider_trackerSwap,0,,Roider Union,"special, roider","Special, Fighters",5000,FALSE,,,0,0,0,0,hullmods.Roider_TrackerSwap,Switches the built-in drone bays on certain Roider ships to produce Tracker defense drones.,Switches built-in drones to Trackers.,graphics/hullmods/roider_tracker_swap.png
+EVA Expertise,roider_commissionCrew,,,Roider Union,,,,,TRUE,,0,0,0,0,hullmods.Roider_EVAExpertise,"Roiders have a level of familiarity with working ""outside"" that other spacers can only dream of. Engine and weapon repairs are completed %s faster and %s fewer crew are lost both in and out of combat.",Faster combat repairs and reduced crew losses.,graphics/hullmods/roider_eva_expertise.png
+,,,,,,,,,,,,,,,,,,
+# Built in hullmods,,,,,,,,,,,,,,,,,,
+MIDAS,roider_midas_fighter,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS_Fighter,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
+
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS-1,roider_midas1,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+
+The improved hull and armor receive %s less EMP damage, increase the ship's effective mass by %s, and include an armor module.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS-2,roider_midas2,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s. Two armor modules provide increased survivability.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS-3,roider_midas3,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s. Three armor modules form a tough outer shell.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS Armor,roider_midas_armor,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS_Armor,Massive Impact Deflection/Ablation System armor modules inherit their parent ship's relevant hullmods.,Copies parent's hullmods.,graphics/hullmods/roider_midas.png
+Firestorm Integration,roider_firestormmod,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_FirestormMod,Reduces the ordnance point cost of small and medium ballistic weapons by %s.,Reduces ordnance point cost of ballistic weapons.,graphics/hullmods/roider_firestorm_integration.png
+Dedicated Targeting Core (Cruiser),roider_bombardmentmod,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_BombardmentMod,"This cruiser-grade targeting core increases the range of ballistic and energy weapons by %s percent.
+
+Not compatible with Integrated Targeting Unit.",Increases weapon range.,graphics/hullmods/targeting_core.png
+Phasenet Tow Pattern,roider_phasenetTowPattern,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_PhasenetTowPattern,"Improves the maximum burn level of the slowest ship in the fleet by %s/%s/%s/%s, depending on hull size and up to the burn level of this ship. Multiple phasenets can not be used to speed up the same ship.",Increases burn level of another ship.,graphics/hullmods/roider_phasenet_tow.png
+Advanced Drone Net,roider_sheriffDrones,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_SheriffDrones,"A suspiciously sophisticated control system manages this ship's drones in a high-bandwidth network, improving performance but requiring their engagement range be reduced by %s. The effects of hostile EW on the ship are reduced by up to %s, depending on the number of active drones.","Reduces EW penalty, improves drone performance, and leashes drones.",graphics/hullmods/roider_drone_net.png
+Conversion Dock,roider_argosConversion,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_ArgosSalvage,"Can convert certain ships into pristine warships at the cost of CR and materials. Use the Roider Conversions ability to access the conversion screen.
+
+Also increases the resources gained from salvaging abandoned stations, derelicts, floating hulks, and other such by %s. Only affects the recovery of common resources such as fuel and supplies, and not rare items like blueprints. %s of the bonus applies to post-battle salvage.",Allows ship conversions and increases the resources gained from salvage.,graphics/hullmods/roider_argos_conversion.png
+Armature Core,roider_armatureCore,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_ArmatureCore,"Used by the Armature drone, this text should not be visible to the player.",,graphics/hullmods/roider_drone_net.png
+,,,,,,,,,,,,,,,,,,
+Heavy Armor,roider_heavyarmor,,,,defensive,Defenses,,FALSE,TRUE,,8,15,20,40,hullmods.Roider_HeavyArmor,"Increases the ship's armor by %s/%s/%s/%s points, depending on hull size. Also reduces its maneuverability by %s.","Increases armor, reduces maneuverability.",graphics/hullmods/heavy_armor.png
+Towed by Phasenet,roider_phasenetTow,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_PhasenetTowed,This ship is being towed by a phasenet. Its burn level is increased by up to %s/%s/%s/%s.,Increases burn level.,graphics/hullmods/roider_phasenet_tow.png

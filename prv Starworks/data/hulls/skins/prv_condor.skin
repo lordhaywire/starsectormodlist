@@ -1,0 +1,27 @@
+{
+  "baseHullId": "condor",
+  "baseValueMult": 1.25,
+  "builtInMods": [
+    "prv_auxiliary"
+  ],
+  "tags":["prv_adv_bp","prv_aux_bp"],
+  "tech":"prv Starworks",
+  "descriptionId": "condor",
+  "descriptionPrefix": "This ship has at some point been given a major drive overhaul and a fresh coat of paint at the Kratul Spacewharf. Engine emissions are minimized, fuel use optimized, and the flux system is as good as new.",
+  #"hullDesignation": "FRIGATE",
+  "hullName": "Condor (prv)",
+#  "removeBuiltInMods": [
+#    "civgrade"
+#  ],
+  "restoreToBaseHull": false,
+  "style": "PRV_MID",
+  "skinHullId": "prv_condor",
+  "spriteName": "graphics/prv/ships/prv_condor.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_MID"},
+		"1":{"style":"PRV_MID"},
+		"2":{"style":"PRV_MID"},
+		"3":{"style":"PRV_MID"},
+		"4":{"style":"PRV_MID"},
+	},    
+}

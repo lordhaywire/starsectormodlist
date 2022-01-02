@@ -1,0 +1,163 @@
+{
+  "hullName": "Sheriff",
+  "hullId": "roider_sheriff",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/sheriff/roider_sheriff.png",
+  "style": "ROIDER_HULL",
+  "height": 79,
+  "width": 78,
+  "center": [39, 33],
+  "collisionRadius": 70,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 61,
+  "viewOffset": 0,
+  "builtInMods": [
+    "roider_midas",
+    "roider_sheriffDrones"
+	#"delicate"
+  ],
+  "builtInWeapons": {
+    "GLOW": "roider_sheriff_glow"
+  },
+  "builtInWings": [
+    "roider_breaker_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "GLOW",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [7, 0]
+    },
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [24, -25]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [24, 25]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -45,
+      "locations": [9, -29]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 45,
+      "locations": [9, 29]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -60,
+      "locations": [-7, -18]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 60,
+      "locations": [-7, 18]
+    },
+    {
+      "id": "LB 1",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [
+        34, -0,
+        -12.5, -0
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33, 14],
+      "length": 48,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-33, -14],
+      "length": 48,
+      "width": 24,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-33, 21.5],
+      "length": 36,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-33, -21.5],
+      "length": 36,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-31, 26],
+      "length": 24,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-31, -26],
+      "length": 24,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    }
+  ],
+  "bounds": [
+    -31, -17,
+    -15, -37,
+    14, -37,
+    41, -11,
+    41, 11,
+    14, 37,
+    -15, 37,
+    -31, 17,
+    -22, -0
+  ]
+}

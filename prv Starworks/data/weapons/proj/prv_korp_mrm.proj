@@ -1,0 +1,43 @@
+{
+	"id":"prv_korp_mrm",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/prv/missiles/prv_missile_kraka.png",
+	"size":[10,19],	
+	"center":[5.5,10.5],
+	"collisionRadius":14,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[100,100,255,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":180, # purely visual
+	"flameoutTime":1.125, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.75, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+#	"engineSpec":{"turnAcc":140,
+#				  "turnRate":35,
+#				  "acc":1000,
+#				  "dec":500},
+	"engineSpec":{"turnAcc":210,
+				  "turnRate":70,
+				  "acc":700,
+				  "dec":400},
+	"engineSlots":[{"id":"ES1",
+		"loc":[-9.5, 0],
+		#"style":"PRV_HIGH",
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", 				# PARTICLES or QUAD_STRIP, determines which params are used
+			"engineColor":[102,255,212,255], 		#
+			"contrailDuration":0.4,				# 1
+			"contrailWidthMult":2,
+			"contrailWidthAddedFractionAtEnd":0.25,  	# can be negative. makes trail spread out/narrow at the end	#2.5
+			"contrailMinSeg":12, 				# min segment length, in pixels
+			"contrailMaxSpeedMult":0.5f,
+			"contrailAngularVelocityMult":0.5f,
+			"contrailColor":[102,255,212,30],
+			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":7.0,
+		"length":42.0,
+		"angle":180.0},
+	]
+}

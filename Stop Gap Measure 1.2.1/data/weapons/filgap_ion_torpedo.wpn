@@ -1,0 +1,50 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "sabot_srm_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    5,
+    0,
+    3,
+    -10,
+    3,
+    10
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_rack_IT_hardpoint.png",
+  "id": "filgap_ion_torpedo",
+  "renderHints":[RENDER_LOADED_MISSILES],
+  "projectileSpecId": "filgap_matsar_mirv",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    2,
+    0,
+    0,
+    -10,
+    0,
+    10
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_rack_IT_turret.png",
+  "type": "MISSILE",
+	"smokeSpec":{"particleSizeMin":20.0,
+				 "particleSizeRange":20.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":1.0,
+				 "cloudRadius":10.0,
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":2.0,
+				 "blowbackLength":30.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[100,100,100,200]},
+}

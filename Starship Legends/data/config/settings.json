@@ -1,0 +1,15 @@
+{
+	"ruleCommandPackages":[
+        "starship_legends.campaign.rulecmd",
+    ],
+	
+	"plugins":{
+		"starshipLegendsCombatPlugin":"starship_legends.CombatPlugin",
+	},
+	
+	"graphics":{
+		"starship_legends":{
+			"battleReport":"sun_sl/graphics/icons/battle_report.png",
+		}
+	}
+}

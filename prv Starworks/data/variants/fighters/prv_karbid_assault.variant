@@ -1,0 +1,24 @@
+{
+  "variantId": "prv_karbid_assault",
+  "hullId": "prv_karbid",
+  "displayName": "Assault Fighter",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_karbid_saw"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

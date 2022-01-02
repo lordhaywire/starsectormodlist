@@ -1,0 +1,34 @@
+{
+  "displayName": "Auxiliary-I",
+  "fluxCapacitors": 0,
+  "fluxVents": 16,
+  "goalVariant": false,
+  "hullId": "prv_gemini",
+  "hullMods": [
+    "insulatedengine",
+    "eccm"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_gemini_aux_i",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_akers_nova",
+        "WS 002": "prv_akers_nova",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+              "WS 003": "prv_kraka"
+      }
+    }
+  ],
+  "wings": [
+    "prv_skran_wing"
+  ]
+}

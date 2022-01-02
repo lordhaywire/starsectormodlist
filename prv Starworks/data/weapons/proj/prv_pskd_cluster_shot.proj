@@ -1,0 +1,38 @@
+{
+	"id":"prv_pskd_cluster_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":35.0,
+	"hitGlowRadius":25,
+	"width":3.5,
+	"fadeTime":0.3,
+	"fringeColor":[255,128,0,196],	#angry orange
+	"coreColor":[255,255,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/flechette_med.png",	
+	"behaviorSpec":{
+		"behavior":"PROXIMITY_FUSE",
+		"range":0, #1 #5
+		"vsMissileRange":12,
+		"shotRangeVariance":0.45,
+		"explosionSpec":
+			{
+				"duration":0.05f,
+				 "radius":8, #17
+				 "coreRadius":5, #12 # full damage within core radius
+				 "collisionClass":PROJECTILE_FF,
+				 "collisionClassByFighter":PROJECTILE_FIGHTER,
+				 "particleSizeMin":7.0,
+				 "particleSizeRange":4.0,
+				 "particleDuration":0.75, #0.5
+				 "particleCount":12,
+				 "particleColor":[255,191,128,127],
+				 #"sound":"explosion_flak"
+			},
+		},
+	}
+					
+}

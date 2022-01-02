@@ -1,0 +1,2902 @@
+prv Starworks
+
+####
+
+v21
+
+Added the Berguv MIRV Launcher
+- A medium-sized finisher weapon with moderate homing ability. 
+- Used by the prv.
+
+Added the Brytare Rocket Launcher and Brytare Rocket Pod
+- Launch orienting rockets. The heavy barrage is good at overwhelming the defenses of slower ships.
+- Used by the Rust Belt, and the occasional independent captain.
+
+Gravity Well
+- Recharge rate reduced by 33%, to one charge per 10 seconds.
+
+Swarm Hosts
+- Target Designator now applies a brief debuff to the target, increasing damage taken and reducing autoaim accuracy.
+- Target Designator now automatically sets wings to engage while fired. Reverts to the previous setting afterwards.
+- Added a fitting hint and an explanatory line to the Swarm Host and Intangible hullmods, respectively.
+
+Campaign
+- Rust Belt starting relationship with the Hegemony improved to suspicious.
+- Debris Belts can now spawn in the sector fringes on new campaigns.
+- Reduced Aska (LC) spawn rate in LC fleets by two thirds.
+- Removed Skära from the Rust Belt package, it is now rare-drop only.
+-- Rusters will continue using the ship as usual. Other factions will no longer use it.
+- Added some items to the Mercenary table of equipment.
+- Removed the Ion Cannon from the prv's table of equipment.
+- prv doctrine switchups will now also affect their weapon preferences.
+
+Added as potential Historian targets
+- Skrål Wing
+- Oklang Wing
+- Ballebo
+- Is
+- Vålnad
+- Gryning
+- Akers Denova
+- Rörsångare Torpedo
+
+Fixed an error where Fräsare-family explosions were significantly larger than intended.
+Touched up the Sinne sprite in a couple of spots.
+Kite (prv) codex now accurately reflects its new fighter loadout.
+Tweaked the color-picking logic for the Arcfault Ejector.
+Fixed Rök (P) weapon arc error on one of the small ballistic mounts.
+Adjusted the missile attachment points for the Berguv Launcher.
+Kakafoni spawn category shifted to carrierMedium.
+Flares will no longer be affected by gravitic effects.
+Adjusted the death vfx and sfx of Integrated Swarms.
+Added some code hardening to Blast Heater to hunt down a very rare NPE.
+
+v20.2
+
+- Fixed a bug with Gengångare Reversion Core forgetting its memory state.
+
+v20.1
+
+- Added exception handling for a suspected crash involving the Debris Belt terrain.
+
+v20
+
+Reintegrated GraphicsLib, it is once again a dependency.
+- While GraphicsLib must be present and activated in the mod manager, its shaders do not need to be enabled.
+
+Added the Sinne frigate
+- An advanced pack leader that can channel its flux level into a potent attack.
+-- Largely replaces the Gryning.
+
+Kalk
+- Weapon replaced with Brytare SRM
+-- Fires a group of explosive rockets which will orient themselves and then head straight for the target.
+- Top speed increased to 160.
+- Phase cost reduced by 25%.
+
+Gravity Effects
+- Fixed a bug that gave area push effects diminishing returns depending on how many entities were affected.
+- Adjusted the push force of several effects to account for this.
+
+Bergslag (P)
+- Added Advanced Ground Support Package hullmod.
+
+Sorl
+- System changed to Phase Recall.
+
+Sold (League)
+- System changed to 
+
+Eld, Eldsjäl
+- Turn acceleration increased to 60°/s.
+
+Gryning
+- Greatly reduced spawn rate. They will now be very rare ships.
+
+Skära
+- Maintenance and recovery cost increased to 10.
+- Small hybrid hardpoint switched to medium composite.
+- Significant across-the board buffs to most stats.
+- Minor sprite tweaks.
+
+Tarsus (prv), Gemini (prv),
+- Now retain the base model's Civilian Grade Hull hullmod.
+
+Kite (prv)
+- Wings replaced by a single wing of 4 Oklang drones in support formation.
+- Added Civilian-grade Hull, Militarized Subsystems hullmods.
+- Maintenance and recovery cost increased to 3.
+
+Ljungeld, Ljungeld (Damaged), Ljungeld (Prototype)
+- Improved vfx.
+
+Jursla, Vakt
+- No longer receives a turn rate boost while idle.
+
+Spatterflamer, Punktskydd Cluster
+- No longer receives a turn rate boost while idle.
+- Base turning rate tripled.
+
+Svepfräsare
+- Tooltip updated
+
+Fräsare
+- Anomaly count increased to 9.
+- Tooltip updated.
+
+Karbinfräsare
+- Anomaly count increased to 9.
+- Tooltip updated.
+
+Linjär PK
+- Temporarily removed, though you may find one in some odd corners of the sector.
+- Will return, possibly split into two weapons.
+
+Gravkan
+- Sprite updated.
+
+Fusion Burster
+- Improved vfx.
+
+Karbid
+- Armor increased by 300%.
+
+Missljud Wing, Oklang Wing, Buddy Wing
+- Can now be installed on automated ships.
+
+Gravity Shield
+- Will no longer overload ships at extremely high flux loads.
+
+Disruption Zone
+- Now uses a nebula cloud visual effect.
+
+Tensor Drive, Heavy Tensor Drive
+- Improved visual effect.
+
+Phase Recall
+- Now uses charges. 
+- 2 charges base, 3 with Systems Mastery.
+- 40 second recharge rate.
+- Cooldown reduced to 10 seconds.
+
+Heavy Phase Teleporter
+- Cooldown increased to 10 seconds.
+-- System's Mastery cooldown is 6,67 seconds, marginally faster than in 0.91a.
+
+Asolute Territory Field
+- Cooldown increased to 15 seconds.
+- Once again deals damage.
+
+Reactive Emitter
+- Damage increased by 33%.
+- Range increased by 40%.
+- 7 second cooldown added.
+-- 50% uptime.
+
+Unstable Thrusters
+- Flameout chance reduced by 33%.
+
+Arcfault Ejector
+- OP cost reduced to 4/8/15/25.
+- Now displays a visual effect when the ship is near overloading.
+- Once again deals damage.
+
+Laboraty Complex
+- Can now be raided for blueprints.
+- Can now be constructed by the player.
+- R&D market inventory spiced up.
+- Tariffs increased by 50%, unless the market is player-owned.
+- Now receives bonuses from story-point Improvement and installed alpha cores.
+- Production and resource demand reduced by 1 across the board.
+- No longer recieves a stability penalty from production of illegal goods if the market is a freeport.
+- UI improvements.
+- Added "heavyindustry" tag to bypass a vanilla bug.
+
+Fighters
+- Attack positions offsets adjusted.
+
+Mod interoperability
+- GraphicsLib
+-- Disabled self-destruct effect for most missiles.
+- Commissioned Crews
+-- Belt Spirit no longer reduces the CR of automated ships.
+-- Belt Spirit CR penalty reduced to 10%.
+- Console Commands
+-- Added the CheckVariantOPUsage command, which prints any ship variants belonging to a specified manufacturer which use too many or too few OP.
+--- Very useful if you're a modder. Not very useful if you're not.
+- Nexerelin
+- Fixed some oddities with starting relationships.
+
+Campaign
+- The Rust Belt now offer commissions.
+- Utbo will no longer suffer polution from its orbital nanoforge.
+
+Kratul System
+- Fristad population size reduced to 4.
+- Fristad and Inner JP orbits swapped.
+- Outer JP is now slightly further from Outer Yard.
+- Fleets will now lurk in the debris belts of Kratul. Some are harmless. Others are quite dangerous.
+- Removed the lesser asteroid fields from Kratul. The great belts remain.
+
+Kylan System
+- Tordehus population size reduced to 5.
+- Now has a slightly larger clearing in hyperspace.
+
+Hullmod OP costs in capital hulls rounded off to the nearest 5 OP.
+Arc Smelter description now explicitly states that you get metals of the same quality as that of the ore used.
+Reduced the frequency of prv doctrine switchups by 67%, doubled intel lifetime. Tweaked wording.
+Adjusted the codex entries of all fighter-exclusive weapons.
+The Aska (LC) is no longer part of the Luddic Church BP package. The blueprint is now rare-drop (or raid) only. 
+-- The Church still uses the ship.
+Fixed a bug that could sometimes cause the Karbid to fail to engage its blade against foes that were unworthy of its attention.
+Fixed a crash that would occur if the Bergtagen activated its system while equipped with more than 5 weapon groups.
+Fixed a crash that would occur when spawning an Integrated Swarm if there were fighters present which did not have a carrier mothership.
+Fixed Is hardpoint location.
+Adjusted Gravpjäs barrel offsets.
+Adjusted Command Implants combat infotext.
+Adjusted Berguv, Berguv Launcher autofit hints.
+War Syndicates will no longer spawn additional blueprints if the player has already learned the industry.
+War Syndicate growth will no longer create intel notifications during campaign creation.
+Reduced the tier of Skrän and Missljud wings to 0 and 1 respectively.
+Gravanchor now accounts for the ship's own collision radius.
+Slightly reduced the brightness of the Jursla beam and increased particle density.
+
+Included a license notice. Licensing terms have not changed, all rights reserved.
+
+####
+
+v19.2 note addendum
+- Restored the phase systems of the Kalk and Stillhet fighters.
+
+####
+
+v19.2
+
+Aska
+- Updated Heavy Phase Teleporter AI to use PHASE_TELEPORTER_2.
+
+Spatterflamer
+- Now uses a flame cohesion mechanism based recent base game code.
+
+Fräsare, Svepfräsare, Karbinfräsare, Akers Denova
+- Improved visual effect.
+
+Spatterfire
+- Improved visual effect.
+
+Added support for launcher dependency checks. Current dependencies are:
+- Lazylib
+- Magiclib
+
+These weapon-type changes are experimental, do not be surprised if some or all of them are rolled back in a later update:
+The following weapons are now classed as Hybrid. For bonuses they are considered energy weapons.
+- Spatterflamer
+- Gravkan
+- Gravpjäs
+
+The following weapons are now classed as Composite. For bonuses they are considered ballistic weapons.
+- Kartesch
+
+The following weapons are now classed as Synergy. For bonuses they are considered missile weapons.
+- Kaja
+- Kråka
+- Korp
+
+Campaign
+- Added access to the Shield Shunt, Assault Package, and Escort Package hullmods for the Rust Belt.
+- Added access to the High Scatter Amplifier for the prv.
+
+Integrated Swarms are now hidden in the codex.
+Added new columns to ships, systems and weapons csvs.
+Fixed a serialization error that could cause savegame incompatability between different versions of Starsector.
+
+####
+v19.1
+
+Interim release for 0.95a compatability.
+
+No longer requires Graphicslib.
+- Disabled all distortion effects.
+- Many systems and weapons will now have minimal vfx. They will be adjusted in a later update.
+
+Phase fighters (Stillhet, Kalk)
+- Due to base game changes phase fighters currently cause crashes.
+- As a temporary solution, both fighters now have shields instead of phase systems.
+
+UVIR Pulse Laser
+- Flux cost reduced to 220.
+-- Flux efficiency is now 1,1.
+
+Campaign
+- prv and RB officer skills updated to 0.95a.
+- Defined agent voice styles for both factions.
+
+Added the gravbeam infotext to Jursla.
+Tidevanes icon is now correctly sized.
+
+####
+
+v19 note addendum
+- The Conquest (Ryak) is only available as a rare bounty.
+
+####
+
+v19
+
+NOT SAVEGAME COMPATIBLE
+
+Added the Rök Battlecruiser
+- Combining solid armor with a gravitic shield and wide-arc gun turrets, this battlecruiser is happiest in the thick of battle. Be careful not to overtax its generator though.
+- The Rusters may have also gotten their grubby fingers on a few speciments. Or parts of them, at least.
+
+Added the Is Light Cruiser
+- Equipped with a device that can momentarily freeze a target in time, this sleek cruiser is designed to work with other fast craft to hunt and destroy capital ships.
+
+Added the Shrike (prv)
+- Featuring a ramshield and ballistic hardpoint the prv knockoff of the Shrike has much to recommend it, but these features come at the cost of a severely limited OP count.
+
+Added the Karbid Assault Fighter
+- Attacks the target with a giant spinning blade.
+- Not a manhack.
+
+Added the Berguv Torpedo
+- Fires unguided torpedoes with proximity fuzes which detonate and leave devastating burns on any nearby ships.
+- Available as a heavy launcher or a light rack.
+
+Added the Gravpjäs
+- This long-ranged cannon attacks the target with immense gravitic blasts, tearing through armor and displacing all but the heaviest ships.
+
+Added the Jursla Graviton Emitter
+- Replaces the Jursla cannon and shamelessly retains the name.
+- This large kinetic beam guides a steady stream of energy blasts towards the target, heavily pressuring any shield.
+
+Added the Gengångare Reversion Core hullmod
+- Rare hullmod that can be acquired at the Laboratory Complex.
+- If the equipped ship is disabled or destroyed it will recall all its fighters and create an Integrated Swarm to care for them for the rest of the battle.
+
+Gravity Effects
+- Many previously instant gravity effects are now applied over a brief duration.
+- Performance improvements.
+- Improved handling of projectiles that were not fired from a weapon; notably Gravmines will now affect each other.
+- Improved handling of locational damage.
+- Improved handling of very light projectiles.
+- Removed the direct damage portion of all gravitic effects that had one.
+-- ie. Arcfault Ejector, Absolute Territory Zone, Gravwell.
+
+Spatterfire Effects
+- Large detonations will now damage nearby ships.
+- Vfx overhauled, now applies a glowing plasma web.
+- Vfx performance optimizations.
+- Sizing and bunching behavior improved.
+- Application rate now scales with the local time rate of the target.
+- Will no longer stick to split hulks. This fixes the lingering point bug.
+
+Ships, general
+- All prv ships now sport prominent livery colors. 
+-- The colors match the ship's place of origin:
+--- Green: The Works
+--- Yellow: Kratul Heavy Industries
+--- Pink: Ryak High-Energy Labs
+
+Skymning
+- Sprite updated.
+- Large synergy hardpoint converted to a missile turret.
+- Nose small energy turret group can no longer aim straight forwards. Number of mounts increased to 6 (3 per side).
+- Rear medium energy turret pair downsized to smalls.
+- Medium turret locations adjusted.
+- Removed Defense in Depth hullmod.
+
+Välljud
+- Sprite updated.
+- Turret arcs adjusted slightly.
+- Added Gengångare Reversion Core as a built-in hullmod.
+- Maintenance and recovery cost reverted to 37.
+- OP reduced by 10.
+- AI hints adjusted, may now be slightly more aggressive.
+
+Middag, Fika
+- Retired, will no longer spawn.
+
+Aska
+- Sprite updated.
+- Small turrets rearranged.
+- Small synergy turret converted to energy.
+- Removed Defense in Depth hullmod.
+
+Aska (LC), (LG)
+- No longer lose a small turret compared to the base model.
+- Removed "Remanualized" hullmod.
+
+Kakafoni, all models
+- Sprites updated.
+- Mount locations adjusted.
+- Shield center moved back slightly.
+- Bounds and collision size updated.
+
+Kakafoni
+- Fixed a visual error related to weapon mount z-indexes and very long gun sprites.
+- Removed built-in "Defense in Depth" hullmod.
+- Medium synergy turret arcs increased to 60°.
+
+Kakafoni (P)
+- Mounts adjusted.
+-- Now more similar to base model. Retains its 1x Ballistic Large, 2x Composite Medium core.
+- Maintenance and recovery cost reduced to 21.
+- OP reduced by 20.
+- Built-in Ramshield hullmod replaced with Ramshield Adjunct.
+- Shield changed to Frontal, 225 upkeep, 0,9 efficiency, 150° arc
+-- from Omni, 300 upkeep, 0,8 efficiency, 120° arc.
+- Engine and shield styles updated.
+- Technical change: now a hull, not a skin. Id is unchanged.
+
+Kakafoni (RB)
+- Mounts adjusted.
+-- Large hybrid and medium missile mounts are now narrow-arc turrets.
+-- Secondary mounts redistributed and adjusted.
+- Shield changed to Frontal, 225 upkeep, 0,9 efficiency, 150° arc
+-- from Omni, 300 upkeep, 0,8 efficiency, 120° arc.
+- Engine and shield styles updated.
+- Technical change: now a hull, not a skin. Id is unchanged.
+
+Bergslag
+- Adjusted arcs and facings of the medium ballistic turrets.
+- Updated sprite normal and material maps.
+
+Brand
+- Added the built-in "Tide Vanes" hullmod.
+-- Increases weapon ROF up to 100%, following a periodic pattern.
+- Large turret is now oriented forwards.
+-- May improve autofitter behavior somewhat.
+
+Fasklot
+- Sprite updated.
+
+Flock
+- Sprite adjusted.
+- Removed "Defense in Depth" hullmod.
+- Style changed to PRV_MID.
+
+Sorl
+- Added Gengångare Reversion Core as a built-in hullmod.
+- Removed "Defense in Depth" hullmod.
+- Adjusted normal map.
+
+Eld
+- Sprite updated.
+- Removed "Defense in Depth" hullmod.
+- Nose turrets now only cover a 120° arc to each side, plus straight forward.
+
+Eld (Diktat), (LG)
+- No longer lose a small turret compared to the base model.
+
+Eldsjäl
+- Max speed reduced to 75.
+- Hull integrity increased to 6000.
+- OP increased by 5.
+- Flux dissipation increased to 300.
+-- It's a real shame to have a big gun you can never afford to fire.
+
+Sunder (Ryak)
+- Greatly restricted availability.
+
+Tiger, Tiger (LC)
+- Sprite updated.
+- Maintenance and recovery cost increased to 7.
+- Mounts updated.
+
+Tiger (HR)
+- Removed.
+
+Flamma, Flamma (Diktat)
+- Sprite updated.
+- Mounts redistributed.
+
+Flamma (P)
+- Built-in Pskd Cluster replaced with a Spatterflamer.
+- Hybrid turrets changed to Ballistic.
+- OP reduced to 35.
+
+Basalt
+-- Now considerably slower and tougher.
+- Sprite updated.
+- Mounts updated.
+- Top speed reduced to 110.
+- Hull increased to 3000.
+- Armor increased to 500.
+- Peak CR time increased to 270 seconds.
+
+Stillhet Fighter
+- UV Pulse Laser renamed Flickerpulse Laser.
+- Flickerpulse Laser can now target missiles.
+- UV Beam Lance renamed Flicker Lance.
+-- Flicker Lance vfx updated; now similar to Vakt.
+- Burst PD Laser replaced by a second Flickerpulse Laser.
+
+Skrän Fighter
+- Sprite updated.
+- Microjursla gun replaced with Akers Repeater.
+-- Very similar in performance.
+- OP cost increased to 11.
+
+Missljud Drone
+- Sprite updated.
+- Light Ion Beam replaced with the Blåmes EMP missile.
+-- Repeatedly launches 3 light homing missiles.
+- Flare system removed.
+- Shield arc reduced to 210°.
+- Shield radius increased slightly.
+
+Jämmer Bomber
+- Sprite updated.
+- Karbinfräsare VFX updated.
+
+Buddy drone
+- Will now stick slightly closer to their target while attacking.
+
+prv Station Hangar Module
+- Added Gengångare Reversion Core as a built-in hullmod.
+
+Disruption Zone
+- Now has a visual fallback when Graphicslib shaders are disabled.
+- Hit detection improved.
+- Deployment range reduced by 33%.
+- Deployment time increased by 100%.
+- Net cooldown increased by ~25%.
+- Disruption Zones will now disperse when they encounter a target with the Massive Bulk hullmod or an extremely strong shield.
+-- The target will still be briefly disrupted.
+-- Station modules do not have Massive Bulk. Stations do.
+- A collapsing Disruption Zone will now cause any unfortunate fighters caught within it to disappear.
+
+Tensor Drive, Heavy Tensor Drive
+- Now blocks weapons from firing while active.
+-- Largely to improve AI behavior.
+
+Gravity Well
+- Sustained push force reduced by 60%
+- Area burst push force increased significantly.
+- Will now have a brief homing phase before entering the terminal detonation sequence.
+-- ie first it homes towards the target, pushing it strongly if it makes contact.
+-- if it does not find a target in a few seconds it halts and emits push force around it before detonating in a strong gravitic blast.
+--- Yes I missed the ping-pong mode too.
+
+EMP Cluster Mine Strike
+- Number of mines deployed reduced by 1.
+- Mines will now hit targets up to one more time per discharge round.
+-- Note that this increases their effectiveness against fighters significantly.
+- Fixed a bug where spent mines would sometimes continue discharging.
+
+Lykta System, Temporal Core
+- AI perfomance optimized.
+
+Absolute Territory System
+- Improved visual effect.
+- Cooldown increased by 5 seconds.
+- Duration increased by 1 seconds.
+- Push area increased by 50%.
+- Peak push force reduced.
+- AI adjustments.
+- Behavior tweaks.
+
+Jursla
+- Removed. Name is reused for a large energy weapon.
+
+Spatterflamer
+- Damage per shot increased by 20%.
+- Will now pass through missiles.
+- Accuracy description changed to "poor".
+-- Actual accuracy is unchanged.
+
+Siege Akers
+- Sprite updated.
+- Range increased to 750.
+- Flux per shot increased to 270.
+-- Flux efficiency is now 1,125.
+
+Automatstudsare
+- Range increased to 750.
+- Spread on bounces reduced by 50%.
+- Visual effect tweaked.
+
+Skata
+- Sprite updated.
+- Reload time increased by 2,8%.
+
+Akers Denova
+- Vfx enhanced.
+- Fixed tooltip; now correctly states that each fragmentation blast deals 75 additional damage.
+
+Fräsare
+- Vfx enhanced.
+- Reduced the fragmentation blast damage to 75.
+- Due to backend changes the exact damage rate may be slightly different.
+
+Svepfräsare
+- Sprite updated.
+- Vfx enhanced.
+
+Vakt UV PD Laser
+- Sprite updated.
+- Renamed Vakt Flicker Beam
+- VFx adjusted.
+- Particle logic optimized.
+- Beam split into two.
+- Range increased by 100.
+- Beam speed increased by 83x.
+
+Gravkan
+- Burst is now interruptible.
+- Rate of fire reduced by ~15%.
+- Recoil per shot doubled.
+- Push size and force are now derived from the projectile's damage.
+
+Akers Nova (Single)
+- Now available as a rare Laboratory weapon.
+- Size set to Small.
+- OP cost set to 7.
+- Rate of fire reduced to 0,67 shots per second.
+
+AKC c67
+- Range increased to 500.
+- Projectile speed reduced by 25%.
+- Rate of fire reduced by ~1%.
+- Reload rate reduced by ~1%.
+
+Studsare
+- Spread on bounces reduced by 50%.
+- Flux per shot reduced to 120.
+-- Flux efficiency is now 1,0.
+- Visual effect tweaked.
+
+Punktskydd
+- Sprite updated.
+- Burst size increased to 9 shots.
+- Refire delay (net) increased to 2.25s
+-- DPS reduced to 300.
+
+Light Thumper
+- OP cost reduced to 3.
+- Spread per shot increased slightly.
+- Maximum spread increased by ~28%.
+
+Overdriven Thumper
+- OP cost reduced to 7.
+- Spread per shot increased slightly.
+
+AKC rb-f
+- Projectile speed reduced by 25%.
+- Rate of fire reduced by ~1%.
+
+Rörsångare
+- Ammunition increased to 8.
+- OP cost increased to 14.
+- Main torpedo damage increased to 2000.
+-- Largely used for AI threat assessment.
+
+Intangible hullmod
+- Damage reduction cut in half.
+-- Damage reduction is still very high.
+
+Plasma Agitators
+- Conversion rate increased to 75%.
+
+Blast Heater
+- Thresholds improved to 35%/65%.
+- Energy discount is now multiplicative, not a percentage decrease. 
+-- ROF boost remains a percentage increase.
+- Bonuses increased to 35%.
+- Adjusted vfx.
+
+Gravitic Anchor
+- Improved visual effect.
+- No longer affects phased ships.
+- Backend code updated; overall behavior should be similar.
+
+Additional sprite touchups:
+- Tystnad
+- Ballebo
+- Ballebo (P)
+- UVIR Pulse Laser
+- Belt Blaster
+- Light Akers
+- Heavy Akers
+- Siege akers
+- Akers Nova (Single)
+- Hammer Launcher
+- Spattergun
+- Heavy Spattergun
+- Spatterflamer
+- HFL Array
+- HFL
+- Fräsare
+- Remission
+- Skata
+- Skatunge
+- Svala
+- Kaja
+- Kråka
+- Korp
+- Kråka Autolauncher
+- Kråka Burst Launcher
+- Sidensvans
+- Sidensvans Array
+- Punktskydd Cluster
+- Ljungeld
+- Ljungeld (Damaged)
+- AKC c67
+- AKC rb-f
+- Skarn Fighter
+
+Updated codex entries:
+- Ljus (LP)
+- Fasnod (P)
+- Flock (Midline)
+- Flock (LG)
+- Kakafoni (P)
+
+Converted from skins to hulls and baked-in the maintenance & recovery cost increase:
+- Gremlin (RB-Mod)
+- Venture (RB-Mod)
+
+Campaign
+-- Utbo in the Stjärngård system is now a Terran-Eccentric planet.
+-- Fristad in the Kratul system is now a Tundra planet.
+- Removed (standard) access to Swarm Host ships from the prv.
+- prv fighter preferences updated.
+- prv weapon preferences updated - now uses very few sustained beams.
+- prv access to Hurricane and Cyclone missile launchers removed.
+- Atropos torpedoes removed from prv target variants; they will still be used by the faction, but only rarely.
+- Bergtagen, Kvarts, Välljud, Conquest (Ryak), Skymning, Middag, Aska and Fasvinge removed from BP packages; they are now rare-drop only.
+
+Intermod functionality
+- With Vayra's Sector & Nexerelin
+-- The Rust Belt may now abstain from creating raider bases if they are in a war with a large "civilized" faction other than the prv.
+-- Comes with an intel notification when the raiding mode switches.
+
+Minor fighter wing price adjustments.
+Improved fitting hints for Fusion Burster.
+Improved the code performance of many effects.
+Fixed a typo in the "shuffledoctrine" console command error message when a supplied factionId argument is not found.
+Fixed a typo in the Jämmer's codex.
+SIPD Laser description condensed.
+Fixed a harmless but unintended clearing of the Tritachyon preferred ships list.
+Fixed Ramshield Adjunct being applicable to ships that do not have a shield.
+Fixed a bug which would cause the Gravity Shield AI to only activate the system if at greater than 80% flux.
+Fixed a bug which would cause Arcfault Ejector to play the chargeup sound at an incorrect volume.
+Fixed a bug which would rarely cause EMP Cluster Mines to fail to detonate.
+Fixed a bug which would cause the War Syndicate intel notifier to list the wrong industry tier when downgrading from tier 3.
+Fixed an error where the flare launchers on the Bergslag were not marked as hidden.
+Improved the performance and responsiveness of Exposed Flux Transport.
+Reduced the size and tweaked the color of Akers-family hit glows.
+Spatterfire weapon tooltips adjusted.
+Recolored some EMP arcs.
+Completely removed the Tystnad (Mod) and Skära (HR).
+Cleared out assorted cruft.
+
+####
+
+v18.1
+- Fixed a rare crash related to memory management.
+
+####
+
+v18
+
+Added the Fasfasa mission
+- Take on a Tri-Tachyon blockade using a prv specops detachment.
+- Watch out of the phase jammer!
+
+Added the At the gates of HEL mission
+- Fight for your life as a Rust Belt raid intercepts your trade convoy.
+- The HEL are scrambling a relief force. Stay cool.
+
+Added the Kvarts Phase Cruiser
+- The Rusters have managed to steal enough phase coils and graviton cores to build their very own Doom knockoff.
+- Lacking a standard shield it instead relies on a Gravity Pulse Core for protection.
+
+Added the Plasma Agitators hullmod
+- Rare hullmod that can be acquired at the Laboratory Complex.
+- Causes Spattergun plasma to explode rather than burn.
+-- Don't let the 50% conversion rate fool you; it's quite effective.
+
+Added the Ramshield Adjunct hullmod
+- Rare hullmod that can be acquired at the Laboratory Complex.
+- A modular version of the Ramshield.
+- It places some additional strain on the shield generator, but can be installed on most ships.
+
+Ljus
+- Hybrid turret arc reduced to 70°.
+
+Tystnad
+- Ballistic medium turret now faces forwards.
+
+Jämmer Wing
+- Autofit priority reduced to bomber3
+
+Diskordant Wing
+- Autofit priority increased to bomber4
+
+Skära
+- Built-in Ljungeld (Damaged) range increased by 100%.
+
+Skrål Bomber
+- Added missing system description.
+- Improved system AI.
+
+Spatterguns, all sizes
+- Shield spatter damage type changed to energy.
+-- Damage values are unchanged.
+
+Spatterfire
+- Damage rate reduced to 2 ticks per second.
+-- Armor will be less effective at reducing the damage from heavy burns.
+-- Net application rate is unchanged. 
+-- Exact amount per tick is ((remaining plasma damage * 0,25) + 30) * 0,5
+--- Eg. 300 damage stored (one full Spattergun volley) creates damage ticks of 53, 46, 40, etc energy damage (before armor).
+
+Studsare
+- Bouncing behavior adjusted - will now behave more closely in line with the "skips on the outside of the shield" concept. 
+- Seeking behavior toned down, will now aim for new targets in a 45° cone from its impact angle.
+-- ie it Will no longer bounce backwards.
+- Rate of fire increased by 12.5%.
+- Trail size reduced.
+
+Automatstudsare
+- Bouncing behavior adjusted - will now behave more closely in line with the "skips on the outside of the shield" concept. 
+- Seeking behavior toned down, will now aim for new targets in a 45° cone from its impact angle.
+-- ie it Will no longer bounce backwards.
+- Maximum number of bounces uncapped.
+- Damage and flux per shot increased by 12.5%.
+- Rate of fire increased by ~40%.
+-- Net throughput is now 650/second, an increase of 57%.
+- Recoil buildup and recovery rates reduced.
+
+Gravity Shield
+- Optimized AI code.
+-- Exact behavior may be slightly different.
+
+Tensor Drive
+- Added special-casing when resetting the collisionclass for fighters with burned-out engines and phased ships.
+
+Gravity Mine Strike 
+- Replaced with Gravity Well
+- The mines will now repel objects near them while active.
+- The mines will also give off a repelling blast when they time-detonate.
+- Homing reduced.
+
+EMP Cluster Mine Strike
+- Updated.
+- The mines will now give off light EMP arcs while active.
+- The mines will also detonate into a more potent set of arcs.
+- Homing reduced.
+
+Rörsångare Torpedo
+- Missile durability increased by ~30%.
+- Vfx tweaked.
+- Adjusted AI threat profile; enemy ships will now be more likely to keep shields up while the missile is discharging.
+
+Ramshield
+- Shield will now change color based on deployment state.
+- Icon updated.
+
+Blast Heater
+- Thresholds improved to 33%/67%.
+- Ballistic ROF increase and Energy flux discount doubled.
+- Reduced CPU load.
+
+Arc Smelter
+- Will now keep its tracker state between save reloads, and only report smelt amounts of 1 or more.
+- Improved smelting logic.
+- Now leaves a message intel notification instead of a floating text.
+
+War Syndicate
+- Blueprint can now be acquired.
+- Will now continue operating if controlled by a faction that matches one of the following:
+-- Are the Rust Belt.
+-- Have a Suspicious or better relationship with the pirates.
+- Other factions will attempt to shut down the industry as soon as they are able. The success chance is based on market stability.
+- Added an intel item for syndicate industry changes.
+
+Campaign
+- The Ryak HEL's Dazzling Lights condition will now add a slight increase to population growth.
+- Ryak HEL volatiles reduced to 'diffuse'.
+- Rust Belt fleets will now contain slightly more phase ships and slightly fewer line ships.
+- The prv will now occasionally reshuffle their naval doctrine.
+- Rust Belt weapon preferences updated
+-- Siege Akers replaced with Storm Needler
+-- Removed all ballistic weapons from the priority list; ballistics will now be fit without any particular preference.
+- prv weapon preferences updated
+-- Gauss Cannon access added.
+-- Hephaestus Assault Gun, Assault Chaingun and Hypervelocity Driver access removed.
+-- Removed the priority list; weapons will now be fit without any particular preference.
+- Greatly increased the priority of Laboratory Complex and War Syndicate HQ industries when generating a random Nexerelin sector.
+
+Console
+- Added the "smeltore" console command: instantly performs one week's worth of ore processing.
+- Added the "shuffledoctrine" console command: permanently shuffles the specified faction's fleet doctrine.
+-- While only intended to be used on the prv, it can be used on any faction. Keep in mind that there is no reset command.
+- Added the "syncrusterindustry" console command: forces a synchronization pass on all War Syndicate line industries.
+-- Created to aid development. There is no reason to use this in a normal game.
+
+Centered Eldsjäl's rear small turret.
+Brand "Standard" variant renamed "Advanced".
+Removed errant Kartesch BP tags.
+Corrected the engine attachment point for Sidensvans submunitions.
+Fixed a bug which would prevent Skrål from using their system while returning to the carrier unless they were the wing leader.
+Fixed a bug which would cause the Gravity Shield safety shutoff sound to play at the wrong volume.
+Fixed a bug which would cause phased ships or fighters with disabled engines to recieve the wrong collision class when reset from a Tensor Drive effect.
+Fixed a bug which could cause a crash if Gravity Shield was used by a ship without a shield.
+Fixed a bug which could cause a crash if Disruption Zone was used by a ship without a shield.
+Fixed a bug which could cause a crash if a gravitic effect with added damage was applied to a ship without a shield.
+Fixed a bug which caused Gravity Shield to display an incorrect statusinfo. Actual flux usage has not changed.
+Fixed a bug which caused Remission shells to ignore muzzle the flash particle color of the targeted weapon when choosing effect color.
+Fixed a bug which would let a Tensor Drive overwrite the damage of a Heavy Tensor Drive.
+Improved Ruster Industry Manager code performance.
+Added missing Ballebo variants to DSR.
+Further reduced the spawn rate of the Gast for prv fleets.
+Improved how certain gravitic effects affect certain types of projectiles.
+Increased patch note vagarity.
+
+Mod intercompatability
+- Added a hullmod whitelist for the Laboratory Complex to ensure that an otherwise hidden or restricted hullmod can show up there. 
+- Use the "prv_lab_bp" tag to opt in.
+- "prv_lab_exclude" opt-out remains.
+- Added an optional .faction "custom":{"syndicateName": "your syndicate name here",},
+-- Use if you want to specify a syndicate name for a faction. Otherwise one will be picked from the sector-wide name list.
+-- Should work with the format "[syndicateName] have established a Raider Base at Umbra" and "There are rumors that [syndicateName] are operating a Raider Base on the Hegemony station of Tigra City."
+-- Criminals know no borders.
+
+###
+
+v17 note addendum
+- Svepfräsare no longer pierces ships and fighters.
+
+###
+
+v17
+
+MAGICLIB IS NOW A REQUIRED DEPENDENCY
+
+Added the Eldsjäl
+- An extensive conversion of the Eld, adapted to Ruster wants, needs, and wallets.
+
+Added the Bergslag (P)
+- Rearmed with not-at-all-civilian weapons, this ship is a clear danger to anyone too slow to run away.
+
+Added the Aska (Au)
+- Wouldn't you like to know.
+- Vayra's Sector HVB.
+
+Added the Spatterflamer
+- Large ballistic weapon which sprays a stream of plasma fire that sticks to the target and delivers additional damage over time.
+
+Added the Rörsångare Torpedo Rack
+- Mid-sized strike weapon of the Svala family, which disperses a long chain of antimatter blasters around the target, striking from all angles.
+- Limited ammunition.
+- Rare laboratory weapon.
+
+Ljus
+- Sprite updated.
+
+Aska
+- Sprite updated.
+- Bounds refined.
+- Middle and fore small turret locations swapped.
+
+Aska (LC)
+- Removed the fore (previously middle) small turret.
+- Outer large missile mount is now correctly a hardpoint.
+- Otherwise as above.
+
+Aska (LG)
+- Removed the fore (previously middle) small turret.
+- Otherwise as above.
+
+Skära
+- Sprite touchups.
+- The Ljungeld emitter can now also be fired directly, twice per battle.
+
+Gnejs, Gnejs (P)
+- Hull reduced by 10%.
+- Armor reduced by 20%.
+- Max speed and acceleration reduced by ~25%
+- Shield arc reduced to 150°.
+
+Spattergun, all sizes
+- Damage reduced by 20%.
+-- Nominal efficiency is now 1,0.
+- Hits on hull and armor will now cling to the target, dealing an additional 100% damage over time.
+-- Burns deal damage 4 times per second; armor is effective at reducing the damage.
+-- Spattergun plasma will agglomerate if it hits an already affected surface, leading to larger rather than more numerous ticks.
+- Spatter amount on shield hits reduced.
+
+Linjär PK
+- Homing reintroduced using new backend mechanics.
+- Base accuracy massively reduced.
+- Projectile size slightly increased.
+- Splinter effect removed.
+
+Fräsare
+- Damage and flux cost increased by 30%.
+- Beam impact increased by 100%.
+- Range increased to 900.
+
+Jursla
+- Flux per shot increased by ~18%.
+-- Efficiency is now 1,3.
+
+Kartesch
+- Mechanics overhauled; large back-end changes. No longer has strange corner case behaviors.
+- No longer vulnerable to PD.
+- Nominal range increased to 1 000.
+- Rate of fire increased by ~10%.
+- Turn rate reduced by ~33%.
+- Projectile restyled.
+
+Svala
+- New missile sprite.
+- Added a new custom missile AI
+-- The split behavior is now VASTLY cleaner, and the submunition stage is skipped entirely.
+-- Split distance may be somewhat different.
+- Improved visual effect.
+- Damage per blast reduced by 9%.
+
+Sidensvans
+- Added a custom missile AI
+-- Will now split into three small and strongly homing submunitions if the missile is a near miss or has been sufficiently damaged.
+-- The SubSRMs deal 80 HE damage each, have a short lifespan, and are very fragile.
+- Nominal range reduced by 33%.
+
+Skrål
+- Added a custom systems AI.
+-- Fighters will now preserve their burn charges until they are in final approach, or are returning to the carrier.
+--- While in approach for a bombing run the fighters will coordinate their burn timing.
+--- While returning fighters will use any remaining charges to evade individually.
+- Maximum turn speed increased by 100%.
+- OP cost reduced to 12.
+
+Grus
+- Now launches one flare per fighter, not two.
+
+Kalk
+- Missile pack now fires Sidensvans submunitions (see above).
+
+Diskordant
+- Spatterguns have had their base damage reduced and will now stick to the target and deal additional damage over time (see above).
+
+Jämmer
+- Karbinfräsare damage increased by 30%.
+
+Skrän
+- Max speed reduced to 225.
+- Gun damage increased by ~21%
+- ER field damage tripled.
+- Both the Microjursla and the ER Field will now generate significant amounts of flux.
+- Flux stats adjusted.
+
+Oklang
+- Hull integrity increased by 50%.
+- Armor increased by 33%.
+
+Tensor Drive, Heavy Tensor Drive
+- Improved visual effect.
+- Will now repel and deal damage over time to any ships that it would otherwise collide with.
+- Affects all ships, and fighters belonging to any other ship.
+
+Gravity Shield
+- The safety shutoff will now only engage if the ship's shield is active.
+- Fixed a bug which resulted in BaB-type projectiles to always get pushed towards absolute left.
+- Reduced BaB deflection by 33%
+
+Absolute Territory Field
+- Fixed a very odd bug which could cause a crash under rare circumstances.
+- Now also affects friendlies.
+
+Arcfault Insulator
+- Renamed Arcfault Ejector
+- Overload duration reduction reduced to 20%.
+- In addition to reducing overload duration, the hullmod will now emit a powerful gravitic burst when the ship is overloaded or destroyed.
+-- The burst potency scales by ship size and does not discriminate based on teams.
+
+Blueprint reshuffling
+- Heavy Spattergun to Stjärngård
+- Fräsare, Svepfräsare to HEL
+- Linjär PK to Laboratory
+
+Updated several ship variants.
+Added missing variants for the rare Flock.
+Rare flock maintenance and deployment cost increased to 19.
+Simplified several fighter bounds.
+Simplfied Gnejs bounds.
+Refined Venture (RB) bounds.
+Fixed a bug which caused considerably more Gryning to spawn than intended.
+Fixed a bug which would cause the Ruster industry synchronization script to conclude prematurely.
+Fixed Ramshield not affecting the Sunder (Ryak)
+Fusion Burst Laser autofit weights reduced.
+Belt Blaster projectile color shifted towards red.
+Ballebo can now show up as a rare blueprint.
+Added skin-specific codex entry for the Hornfels (LP)
+
+###
+
+v16.1
+
+Fixed a crash bug that could occur in combination with other mods when the Gravkan hit near certain projectiles.
+
+v16
+
+Added the Bergtagen Battleship
+- More heavy weapons and rusted-up hull than you can shake a stick at. 
+- Press F for fun.
+
+Added the Brand Destroyer
+- A prv elite destroyer with a powerful attraction/repulsion system and heavy energy armaments.
+
+Added the Svepfräsare
+- Large energy weapon which sweeps through space leaving an arc of fragmentation blasts behind it.
+
+Added the Gravkan
+- Mid-sized ballistic assault weapon with a tendency to push around smaller targets.
+
+Added the Akers Denova
+- A developmental what-if that might be found in the dark corners of space.
+
+Added the Remission EMP Mortar
+- Fires explosive shells which cause energy weapons around the hit location to discharge EMP damage.
+-- Used and developed by the Luddic Church. May also occasionally turn up on Ruster ships.
+-- We all know that wouldn't have been punished if they hadn't been doing anything wrong.
+
+Added Ramshields
+- This hullmod is found on all prv ships, and most derived models.
+- Ramshields deploy rapidly, and briefly cover a larger arc than normal before settling at regular size.
+
+Välljud
+- Disruption Mine Strike replaced with Disruption Zone
+-- Teleports a short-lived disruption emitter to the targeted location. 
+-- The emitter continually disrupts (briefly overloads) all ships caught in its area of effect.
+- Removed built-in Defense in Depth hullmod.
+
+Sorl
+- Overhauled
+-- New sprites
+-- Shield efficiency improved to 0,8.
+-- Armor reduced by ~11%
+-- Hull reduced by ~11%
+-- System changed to Plasma Thrusters.
+- Spawn group changed to carrierMedium
+-- Should reduce the amount of Gasts used by prv fleets a little.
+
+Tystnad
+- New sprite.
+- Mounts realigned for broadside firing.
+- Added two small hybrid turrets.
+- Nose mount removed.
+-- Pre-v16 Tystnads may retain a decorative weapon in this location. To remove it, simply use the Strip button on the ship refit screen.
+- OP reduced by 5.
+- System changed to Kaja Gun Drones.
+
+Tystnad (League), Tystnad (P)
+- Also updated.
+
+Tystnad (Mod)
+- No longer availiable.
+- Retained only for save compatability. Expect visual errors if you still use one.
+
+Flamma (P)
+- The built-in Punktskydd Cluster is now restricted to a 90° arc, and faces forward.
+
+Ljungeld
+- Improved visual effect.
+- Chargeup and chargedown reduced by 0.8s total.
+- Beam duration increased by 0.8s.
+- Beam damage per second reduced by ~20%.
+- Rotation speed reduced by 50%.
+-- Sustained DPS, ROF and damage per burst is unchanged.
+-- Net change should be slightly improved AI behavior, with similar raw performance.
+
+Vakt
+- Improved visual effect.
+
+Linjär PK
+- Projectile and effects color changed to violet.
+- Hits will launch two 30-damage splinters which are strongly homing.
+- Removed homing from the main projectile.
+-- Significantly improves game performance.
+- Cooldown time switched to chargeup time.
+- Rate of fire reduced by 14%.
+
+Fräsare
+- Enabled friendly fire on the secondary explosions.
+
+Belt Blaster
+- Damage and flux per shot increased by 50%
+- Maximum burst size reduced to 4.
+- Cooldown increased to 6s
+-- Throughput is unchanged.
+
+Light Akers
+- Projectile speed reduced by 50%.
+
+Heavy Akers, Siege Akers
+- Projectile speed reduced by 25%.
+
+Punktskydd
+- Sprite updated.
+
+Punktskydd Cluster
+- Sprite updated.
+- Rotation rate reduced by 80%.
+- Proximity fuze and explosion radius reduced by ~50%.
+-- It's still highly potent against massed missiles, but you'll have to work a little harder for reliable coverage.
+
+Skata
+- New sprite.
+
+Annihilator Rocket Burst Launcher
+- Renamed to Annihilator Burst Launcher.
+
+Gravity Mine Strike
+- Contact detonating mines will now displace nearby entities.
+
+Gravity Shield
+- Added a dynamic particle effect.
+- Status info will now display the flux usage.
+- Fixed a bug that caused projectiles to get ejected with incorrect speed and heading in certain arc sectors.
+-- Sadly this also fixes the cool "loop around" behavior.
+- Fixed a bug that caused odd over-effective behaviour with missile-class projectiles.
+- Removed effect penalty vs missiles.
+- Improved game performance.
+- Push effect and flux buildup rate may be somewhat different. Overall changes are minor.
+
+Lykta System
+- The antennas will now send electrical arcs between them while the system is active.
+-- You have no idea how long I've wanted to add this.
+
+Swarm Host
+- Increased the update rate significantly. Swarm Hosts will now die many times more quickly when capped on flux.
+- Removed the glow effect from linked fighters.
+-- Largely for performance reasons. It sure looked cool though.
+
+Arc Smelter
+- Reversed smelting order; it will now smelt ore before transplutonics.
+- Improved tooltip.
+
+Campaign
+- For factions with no defined relationship with the Rust Belt, the starting relationship level will now be half of that with the pirates.
+-- E.g. a faction that's hostile to the pirates will be inhospitable to rusters.
+-- This applies both directions; factions that somehow love pirates will like rusters.
+--- Technical comment: the check is if the rep is exactly 0f.
+
+The Tiger combat tanker now belongs to the Kratul blueprint group.
+Adjusted weapon mount z-render order on the Skymning, Eld and Aska.
+Adjusted magictrail offsets on several projectiles.
+Added a small visual highlight to the Fristat Lasse TPC.
+Overdriven Thumpers will no longer show up at the lab market.
+Improved burnout behavior for Kaja, Råka and Skata-family missiles; no more dangling trails.
+Corrected a few sound effects, now correctly mono-channel. Volume and sound characteristics may be slightly different.
+Added version checker support.
+
+###
+
+v15
+
+Magiclib is NOT required but strongly recommended.
+Implemented Magictrails for many weapons.
+
+Added the Jämmer Bomber
+- Hits the target with a single fast torpedo, before firing a frag beam into the resulting hole.
+- Replaces the Skrål as the prv's heavy bomber.
+
+Added the Fräsare burst beam
+- With a sharp kick and rapid dropoff, this beam quickly dumps a large amount of fragmentation damage into the target.
+- Also generates a smattering of secondary explosions, dealing additional fragmentation damage to nearby targets.
+
+Replaced all composite mounts on prv ships.
+Flamma
+- Medium turret composite mount converted to synergy.
+- Flux dissipation increased by 20.
+- Flux capacity increased by 250.
+
+Flamma (Midline), Flamma (P)
+- No mount changes.
+- Otherwise as above.
+
+Eld
+- Composite hardpoints converted to synergy.
+- Flux dissipation increased by 50.
+- Flux capacity increased by 750.
+
+Eld (Midline)
+- No mount changes. Otherwise as above.
+
+Eld (LG)
+- Energy hardpoints converted to composite. Otherwise as above.
+
+Sorl
+- Composite hardpoints converted to synergy.
+- Small ballistic turrets converted to hybrid.
+- Medium hybrid turret converted to energy.
+- Crew mess seating assignments rearranged.
+
+Sorl (Midline)
+- Hardpoints converted to composite. Otherwise as above.
+
+Flock
+- Medium composite turrets converted to synergy.
+- Small composite hardpoints converted to missile.
+- Flux dissipation increased by 50.
+
+Flock (Midline)
+- Medium turrets converted to composite.
+- Small hardpoints converted to composite.
+- Otherwise as above.
+
+Kakafoni
+- Medium composite turret converted to hybrid.
+- Flux capacity increased by 500.
+
+Rare ships
+- Increased maintenance and recovery costs by up to 50%.
+
+Gryning (TT)
+- Price markup reduced to +50% over base hull.
+- Maintenance and recovery cost increased to 10.
+
+Fasklot
+- Maintenance and recovery cost increased to 17.
+
+Aska
+- Heavy Phase Teleporter cooldown increased by ~15%.
+- HPT activation now generates soft flux, not hard.
+
+Välljud
+- Crew capacity and minimum crew reduced by ~35%.
+- Fuel/ly reduced by ~15%.
+- Fuel capacity reduced by ~30%.
+-- Range to 40 from 45.
+
+Skymning
+- Tensor Drive replaced with Heavy Tensor Drive
+-- Longer duration and cooldown, with a slower recharge rate.
+- Fuel capacity and fuel/ly increased by 33%.
+
+Fusion Burst Laser
+- Damage and flux per burst reduced by 25%.
+
+Spattergun, all types
+- Projectiles restyled.
+- spawnType changed to BALLISTIC_AS_BEAM.
+
+Linjär PK
+- Damage per shot doubled.
+- Rate of fire and ammo rates cut in half.
+- Magazine size reduced by 40%.
+- Now has some innate shot dispersion
+- Projectiles will not home for the first 0,33s of their life.
+- Added a moderate range variance.
+- Max range increased to 525.
+-- Average shot range is more or less unchanged.
+- Projectile size increased.
+
+Ljungeld (Prototype)
+- Projectiles restyled.
+- spawnType changed to BALLISTIC_AS_BEAM.
+
+Studsare, both types
+- Bounce spread is now based on maximum gun dispersion, rather than current.
+- Bounces will now speed up a little, rather than slow down.
+
+Kaja-family MRMs
+- Will now be autogrouped as linked weapons.
+
+Skata
+- Rate of fire reduced by 40%.
+- Ammunition reduced by 40%
+- Damage per missile increased by 33%.
+-- Note that this does not effect the Skatunge SRMs used by lighter launchers, which remain at 200 damage per missile.
+
+UVIR Pulse Laser
+- OP cost increased to 18.
+- Cost reduced to 3700.
+- Damage per shot reduced to 200.
+- Rate of fire increased by 33%.
+-- Damage and flux throughput increases by ~5%.
+
+Skrål Torpedo Bomber
+- Now a rare laboratory LPC.
+
+Kalk Phase Bomber
+- Wing size increased to 3.
+- OP cost increased to 18.
+
+Phase Recall
+- Cooldown reduced by 45%.
+- Flux cost per use doubled.
+
+Gravity Shield
+- Increased effectiveness against projectiles by 25~40%, depending on projectile size.
+
+Swarm Host hullmod
+- Wing range remainder doubled.
+
+Command Implants
+- Ships with senior officers will now base their random weighting on the officer's personality rather than your faction doctrine.
+- Adjusted personality weighting; outcomes that are more than one step away from your doctrine are now less likely.
+- Aggression bias set to 33% chance to roll as one step higher on the doctrine setting.
+
+Campaign
+- prv blueprint packages have been split into three, one for each primary industrial hub operated by the faction:
+-- Kratul supplies primarily ballistic weapons. Its main products are reliable Akers autocannons and the tensor drive ships, Eld and Skymning.
+-- Stjärngård supplies carriers and missile weapons. The package includes Kaja-family missiles, the Välljud and the Flock.
+-- The Ryak HEL supplies phase ships and energy weapons. The blueprints include sophisticated weapons and the Conquest (Ryak) battlecruiser.
+--- Nexerelin prv starts will supply the player with only one of the above packages.
+- Reduced asteroid counts in the Kratul system by two thirds.
+
+Factions
+- Removed access to the Plasma Cannon from the prv.
+- Added the Pulse Laser to the prv preferred weapons list.
+- Removed the Ion Beam and Heavy Burst Laser from the prv preferred weapons list.
+- Promoted the UVIR Pulse Laser to a standard prv weapon.
+
+Shortened many codex shorts.
+
+###
+
+v14
+
+NOT savegame compatible.
+
+Added Vayra's Sector Raiding Base support.
+
+Added some rare ships and unique bounties. Most require Vayra's Sector.
+
+Added the Ande and Gast Integrated Swarms.
+- Very irregular carriers.
+
+Added the Oklang Fighter Drone
+- Rare wing.
+
+Added the Light Triple Autocannon
+- A Ruster special, this gun is exactly what it sounds like. Volume of fire is the name of the game.
+
+Added the Arc Smelter hullmod
+- Converts Ore and Rare Ore into Metals and Transplutonics on a weekly basis.
+-- Found built-in on the Bergslag Mining Ship.
+
+Kite (prv)
+- Wings are now short-ranged fighter wings rather than long-ranged support wings.
+
+Flamma
+- Flux dissipation increased by 7%.
+- Maintenance and recovery cost increased to 6.
+
+Gryning, Gryning (TT)
+- Sprite updated.
+- Enhanced Temporal Core vfx.
+- Removed built-in High Maintance hullmod.
+- Recovery rate reduced to 12%/day.
+
+Gnejs, Gnejs (P)
+- Sprite updated.
+
+Ballebo, Ballebo P
+-- Returning as rare bounty flagships with Vayra's.
+- Sprite restyled.
+- Mounts overhauled.
+- Statline updated.
+- Maintenance and recovery cost increased to 14.
+
+Gabbro
+- Added the Habitat hullmod, which reduces crew capacity to one third.
+- Base crew capacity increased to 1500.
+-- Net crew capacity is reduced to 500.
+- Maintenance and recovery cost reduced to 12.
+- Fleet points reduced to 9.
+
+Venture (RB)
+- System changed to Micro Burn, a low-tech version of Plasma Burn.
+
+Kakafoni
+- Major sprite update.
+- Swapped locations between the medium synergy and ballistic turrets.
+- Widened the firing arc of the composite turret to 135°.
+
+Kakafoni (P)
+- System chanced to Micro Burn, a low-tech version of Plasma Burn.
+- Large hybrid hardpoint changed to ballistic.
+- Missile hardpoints changed to 30° arc composite turrets.
+- Removed the rear right-hand small turret.
+
+Aska
+- Large synergy mount changed to a 30° turret.
+- Adjusted large mount visual style.
+- Armor reduced by ~10%.
+
+Fasvinge
+- System changed to Entropy Amplifier.
+-- The phase ship AI simply does not get along with the gravity shield. A shame.
+
+Välljud
+- Swapped the location of the bridge and the large hybrid turret.
+- Center large hybrid turret arc reduced to 45°.
+- Inner small hybrid turrets reoriented slighly inwards, with their arcs reduced to 45°.
+- Number of fighter bays reduced to 3.
+- OP reduced to 270.
+
+Conquest (Ryak)
+- Sprite hue adjustments.
+- Ljungeld (Prototype) rate of fire reduced by 3%.
+-- Ammunition reload rate is unchanged.
+- Maintenance and recovery cost increased to 45.
+- Cost increased to 330 000.
+
+Skymning
+- Sprite depth adjustments.
+
+Tensor Drive
+- Tuned to be significantly better behaved in AI hands. "Jittering" should be almost completely eliminated.
+
+Gravity Shield
+- Added a minor cooldown to prevent AI fuckery.
+- Hard flux buildup reduced by 33%.
+
+Unstable Thrusters 
+- Now framerate agnostic. 
+- Flameout chance adjusted.
+- Now displays the flameout chance as a status info.
+
+Fusion Burst Laser
+- Overhauled. Now fires a brief 400 damage burst.
+- Flux efficiency reduced to 1,33.
+- AI hints adjusted.
+-- Much, much more comfortable to use now.
+
+Spattergun, all versions
+- Updated code.
+- Will now dynamically generate spatters based on the actual damage amount of the projectile.
+-- e.g. firing with High Energy Focus on will create more spatter.
+- Enhanced visual effects.
+
+Linjär PK
+- Shots will now home towards the closest enemy fighter or ship.
+- Accuracy reduced.
+- Rewrote the reload code. 
+-- No practical difference user-side but it's much better I promise.
+- Enhanced visual effects.
+
+Kaja-family
+- Trails restyled
+
+Skata missiles
+- Trails restyled.
+
+Skatunge SRM Launcher, Skatunge SRM Pack
+- Rate of fire increased by ~5%.
+-- Ammunition reload rate is unchanged.
+
+Missljud Fighter
+- Sprite completely redone. It looks exactly the same.
+
+Buddy Drone
+- Fusion Burst Cutter updated to be more similar to the Fusion Burst Laser.
+-- Scary.
+
+prv Stations
+- Removed the Arcfault Insulator hullmod from the Shield module. 
+-- Shield overloads should now last considerably longer.
+
+Campaign
+- Completely restructured the Rust Belt industry update functionality. It will now process at the end of every month.
+ Stjärngård
+- Strand now has a custom texture.
+- Strand description updated.
+ Kratul
+- Tordehus JP is now in a stable lagrange location. It should no longer dip into the star corona.
+- The abandoned station above Tordehus can now be used for storage.
+ Kratul
+- Outer JP now has the same orbital period as the Outer Yard.
+
+Factions
+- prv ship name prefix is now lowercase.
+- Removed non-pirate prv hulls from the Pirates.
+- Added access to the Fusion Burst Laser for the prv and the independents.
+- Added access to the Vulcan for the RB.
+- Removed access to the PD Laser from the prv.
+- Removed access to the Light and Heavy Needler from the RB.
+
+Added more magenta paint to the Fristat Lasse.
+Added confetti to the Punktskydd and Spattergun projectiles.
+Added support for rare wings to the R&D market. Use the tag "prv_lab_bp".
+prv (LG) hulls are now hidden in the codex.
+Increased the intensity of several system vfx.
+Fixed some logistics-tag related hullmod niggles.
+Completely removed the Kondensator and Ballebo (Midline).
+
+###
+
+v13
+
+Added limited support for Vayra's Sector bounties.
+- Including one unique ship.
+
+Added the Venture (RB)
+- A freighty variant with fewer missiles.
+
+Command Implants hullmod (Crew Commissions)
+- Redesigned.
+- Now increases the combat speed of the ship and the fleet, similar to Coordinated Maneuvers.
+- Also periodically changes the AI personality of the ship.
+-- Vaguely respects your faction doctrine's aggression value.
+
+Välljud
+- Added COMBAT AI hint, encouraging it to seek out enemy ships directly.
+- Shield efficiency increased to 0,7
+- Max speed increased by 33%
+- Agility increased by ~40%.
+
+Eld
+- Maintenance and recovery cost increased to 13.
+
+Svala Torpedo
+- Main torpedo damage increased to 1000.
+-- Improves AI behavior.
+
+Gravity Shield
+- Backend change, added some code hardening which may prevent a rare crash when used with other mods.
+- Force factor against missiles reduced by 75%.
+- Upkeep cost reduced by 50%.
+- Now builds hard flux based on the mass of the projectiles being effected.
+-- Safety shutoff when near max flux.
+
+Added an escape tag, "prv_lab_exclude", for weapons that absolutely should not show up at the Lab R&D market.
+-- I wouldn't worry too much about it, myself.
+-- Flavor-wise the prv will absolutely try to resell, reverse-engineer or outright steal tech from their allies and associates.
+
+Removed (prv) manufacturer suffix.
+-- By request.
+
+(LG) variants are now tech "Lion's Guard", not Midline.
+Title screen flyby list updated.
+Code refactoring and backend changes.
+Kratul system specials chance reduced by 2/3.
+
+###
+
+v12.1
+
+Reduced the occurence rate of several ships.
+
+###
+
+v12
+
+Added prv-style stations.
+- Come in three sizes and are similar to standard stations in role and performance.
+- The stations have varying axial rotation; advanced gravitic systems allow the station to change its rotational speed and direction.
+- Larger stations add independent omni-shielding, EMP mine teleporters, gravity minefields and phase drones.
+- Used by the prv and, occasionally, the Rusters.
+
+Added a few rare weapons.
+- Found in the depths of space.
+
+Added the Laboratory Complex industry
+- Found at the Ryak High-Energy Labs.
+- Consumes large amounts of rare materials, producing luxury goods and heavy armaments.
+- Sells advanced weapons and equipment to those who enjoy good relations with the market controller.
+-- Modder note: Weapons tagged prv_lab_bp, or are known by welcoming (+25 to market controller) factions, show up here.
+-- The blueprint is unobtainable; if you get your hands on one anyway, be aware that it can't be removed once constructed.
+
+Added the Fasvinge phase cruiser
+- A dangerous high-tech strike craft with a rapid-shift phase system.
+-- Also equipped with a Gravity Shield system, offering it some protection from material projectile weapons.
+
+Added the Gabbro armed transport
+- A Starliner cruiser adapted for Ruster use, adding significant amounts of guns and armor.
+
+Added the Eld destroyer.
+- A drop-in replacement for the Ballebo, which is being retired. 
+- Very similar in loadout, role and performance.
+
+Added the Gnista frigate.
+- Light missile support ship with limited armaments.
+- Also comes in Pirate and Luddic Church variants, with more gun.
+
+Added the Gravity Shield ship system.
+- A graviton field protects the ship, bending enemy projectiles away from it.
+-- Ineffective against projectiles with negligible mass, such as laser pulses.
+-- Highly effective against light or slow projectiles.
+-- Moderately effective against missiles.
+-- Used on the Flamma and the Fasvinge.
+
+Added the Tensor Drive ship system.
+- Engages the ship's gravitic drive, instantly propelling it in the chosen direction. 
+- Used on the Eld and Skymning.
+
+Added the Automatstudsare weapon.
+- Large-mount ballistic weapon which fires a barrage of small explosive shells which can rebound a single time. High potency, but poor range.
+
+Added the Studsare weapon.
+- Replaces the Bounder.
+- Fires mid-sized ricocheting shells at a moderate rate.
+- 850 range, high shell velocity.
+- Ricochet accuracy is now derived from your current gun spread.
+- Ricochets will no longer aim for fighters.
+
+Added the Light Thumper weapon
+- A shrunk-down Thumper, trading rate of fire for size.
+-- Used by the Rusters and Luddic Church.
+
+Added Sindrian Diktat Lion's Guard skins for the Aska, Flock and Eld.
+- In the style of the Ships/Weapons Pack skins, painted purple on white and with Solar Shielding integrated.
+- Will only spawn if you have the S/W Pack enabled.
+
+Added the Ilbud (H) skin
+- Uparmored, upspecced courier ship.
+-- I wonder what the Hegemony wants with a stealthy spec-ops vessel. I asked, but they wouldn't tell me.
+
+Added the Kalk phase bomber
+- Unleashes a barrage of indirectly fired Sidensvans missiles.
+- Uses a phase system to ensure a safe approach and escape. Vulnerable while attacking.
+
+Added several hullmods:
+Arcfault Insulator
+- Reduces overload duration.
+
+Flicker Core
+- Reduces phase system cooldown.
+
+Hallbar Missile Plating
+- Gives a flat increase to missile durability and a slight percentage increase to missile top speed.
+
+Gravity Anchor
+- Increases the mass of the ship, and exerts a weak pull towards nearby enemies. Adds a slight collision zone for hostile fighters.
+
+Ruggedization
+- Significantly reduces CR recovery rate and CR deployment cost, allowing you to deploy the ship more times before it needs time to recover.
+-- Note that due to vanilla quirks with how the CR recovery cost is calculated, this will greatly increase the cost of recovering a ship from 0 to full.
+-- This is especially relevant if you like to overstay your peak time.
+
+Crew Comforts
+- Reduces the in-combat CR decay rate, and increases the out-of-combat CR recovery rate. Requires a few additional supplies per month.
+
+Blast Heater
+- Improves weapon performance at very low and very high flux levels.
+
+Added Starship Legends faction preferences.
+Added Commissioned Crews compatability.
+- prv ships install Command Implants, increasing maximum CR and reducing the minimum crew requirement.
+- Ruster ships have Belt Spirit, increasing hull integrity and repair rates at the cost of a reduction in max CR.
+Added Nexerelin faction personalities.
+
+Raider Hideout, Armed Community, War Syndicate HQ industries
+- Will now automatically match the tier of local military infrastructure, assuming there's a functioning HQ. Updated roughly bi-weekly.
+- Will now reduce local stability by 1.
+- Will now have an increased demand for goods while stability is low.
+- Cost set to 0.
+- Upkeep set to 0 while hidden.
+- Can no longer be manually upgraded.
+- Corrected min/max error; should now correctly spawn more pirates at low stability.
+- Pirate spawn rate additionally reduced by 33%.
+
+Skymning
+- Plasma Burn system replaced with a Tensor Drive (see above).
+-- Yes, prv engineers discovered that there are directions other than forward. Investigations are ongoing.
+- Small and medium rear energy turret arcs narrowed by 25%.
+- Fleet points increased to 26.
+- Maintenance and recovery cost increased to 47.
+- Added the Companion Integration hullmod, reducing support wing OP costs by 10.
+- Removed the built-in Oväsen wing.
+- Base value increased to 370 000.
+
+Conquest (Ryak)
+- Shield flux/damage increased to 1,4.
+- Hull and armor reduced by ~7,5%.
+- Built-in Auxiliary Thrusters removed.
+
+Välljud
+- Adjusted shield offset.
+
+Aska
+- Sprite adjustments.
+- Large synergy mount arc reduced to 5°.
+-- This should improve the AI's behavior somewhat.
+- Now also availiable as a rare blueprint.
+
+Aska (LC)
+- Sprite adjustments.
+- Large synergy mount arc reduced to 5°.
+-- This should improve the AI's behavior somewhat.
+- Added ALWAYS_PANIC AI hint, promoting aggressive missile usage.
+- Now also availiable as a rare blueprint.
+
+Kakafoni
+- Sprite adjustments for all versions.
+- Fuel use reduced to 4/ly
+- Fuel capacity increased by 20%.
+-- Net range is increased by 50%, to 30 ly.
+
+Flock
+- Improved Autokråka visual integration.
+
+Kondensator
+- Removed; no more will spawn.
+
+Ballebo
+- Removed; no more will spawn.
+-- Get an Eld instead.
+
+Fasnod
+- Fleet points, maintenance, and recovery cost increased to 9.
+
+Ljus
+- Lykta System weapon and sensor range bonuses increased by ~50%.
+- Small energy turret arcs reduced to 195°.
+- Acceleration reduced by 50%.
+- Turn acceleration reduced by 60%.
+- Max turn rate reduced by ~33%.
+- Minimum crew required reduced to 15.
+- Base value reduced to 15 000.
+
+Ljus (LP)
+- Added ALWAYS_PANIC AI hint, promoting aggressive missile usage.
+
+Gissel
+- Maintenance and recovery cost increased to 12.
+
+Ilbud
+- Sprite updated.
+- Removed nose turrets.
+-- Pre-v12 Ilbuds may retain decorative weapons in these locations. To remove them, simply use the Strip button on the ship refit screen.
+
+Tystnad
+- Added the Companion Integration hullmod, reducing Support Wing OP costs by 10.
+- Removed the built-in Oväsen wing.
+
+Tystnad (Midline)
+- Cost multiplier reduced to 1.
+
+Tystnad (P)
+- Engine style changed to LOW_TECH.
+- Removed the Defective Manufactory hullmod.
+
+Munsbit
+- Minimum crew reduced by 33%.
+
+Fika
+- Added built-in Militarized Subsystems.
+- Maximum burn reduced by 1.
+- Minimum crew reduced by 33%.
+- CR per deployment increased by 33%.
+- Recovery cost and supplies per month increased by 9%.
+
+Middag
+- Added built-in Militarized Subsystems.
+- Maximum burn reduced by 1.
+- Minimum crew reduced by 33%.
+- CR per deployment increased by 33%.
+- Recovery cost and supplies per month increased by 8%.
+
+Skära
+- Now comes with a Crew Comforts hullmod built-in.
+
+Gnejs
+- Rear ballistic mount arcs increased to 165°.
+
+Gnejs (P)
+- Added ALWAYS_PANIC AI hint, promoting aggressive missile usage.
+- Rear ballistic mount arcs increased to 165°.
+
+Oväsen fighter
+- HP reduced by 18,75%.
+- Max flux reduced by ~45%. 
+- Crew reduced to 2.
+- Forgevats system removed.
+
+Skrän fighter
+- Weapon glow color shifted to yellow.
+
+Grus fighter
+- Hagel Hailcannon replaced with a standard Vulcan.
+-- On account of the gun being completely uninteresting.
+
+Akers family
+- Projectile styles adjusted.
+
+Akers / Light Akers
+- Display name changed to Light Akers.
+- Sprites updated. Now reduced to a humble two barrel cannon.
+- OP reduced to 4.
+- Range reduced by 125.
+- Flux/shot reduced by 40%.
+- Now fires continuously. DPS increased by ~50%.
+-- Now a solid knife-fighting weapon occupying the middle-ground between an autocannon and a machinegun.
+
+Akers Nova
+- Sprites updated. Now a smooth, futuristic tri-barrel.
+
+Siege Akers
+- Sprites updated.
+
+Bounder / Studsare.
+- Display name changed to Studsare.
+- Overhauled, see above.
+
+Punktskydd
+- Added a slight variance to the projectile's range. Largely a visual change.
+
+Punktskydd Cluster
+- Reverted availiability change.
+
+SIPD Laser
+- Now focuses ~50% faster, for an average frequency of 1Hz.
+- Explosion damage and visual effect size will now scale with the ship's energy damage multiplier.
+-- These things are pretty good now.
+
+Ljungeld
+- Full beam damage increased by 3.45%.
+- Energy/second increased by 4.2%
+- Focus rate is now linear, not exponential.
+- Fracture rate increased.
+- Fracture damage type changed to high explosive.
+- Base fracture damage reduced by 40%.
+-- Net change is a major increase in fracture effectiveness against armored targets.
+
+Fusion Burst Laser
+- Overhauled.
+- Now fires a potent long-duration beam burst that requires several seconds to reach full potency.
+- Beam size greatly increased at full charge; there should be no doubt when someone is getting can-opened.
+
+HFL Array
+- Updated sprite.
+- Projectile speed reduced to 1 000.
+- Projectile restyled; now considerably shorter.
+
+Skata LRM Launcher
+- Firing behavior redesigned; now quickly launches nine Skata missiles followed by a brief reload period.
+- Sustained DPS increased by 70%.
+- Salvo size reduced by 64%.
+- Ammunition reduced by 18%.
+- OP cost reduced by 6.
+- Launch inaccuracy reduced.
+- Engine burn time increased by 30%.
+- Contrail visual effect shortened significantly.
+
+Skatunge missile
+- Contrail visual effect adjusted to match Skata missiles.
+
+Kaja-family missiles
+- Nominal range increased to 3 000.
+-- De-facto range is unchanged.
+
+Sidensvans, Sidensvans Array
+- Nominal range increased to 1 500.
+-- De-facto range is unchanged.
+
+Gravity Mine Strike system
+- Improved visual effect.
+- Regeneration rate reduced by 33%.
+- Added a slight variation to mine lifetime.
+
+EMP Cluster Mine Strike system
+- Regeneration rate reduced by 33%.
+- Added a slight variation to mine lifetime.
+
+Disruption Mine Strike system
+- Maximum system charges reduced to 1.
+- Added a slight variation to mine lifetime.
+
+Kaja / Akers Nova / LPK Drones systems
+- Maximum system charges reduced to 3/2/4.
+-- ie no spares.
+- Regeneration rate set to one drone per 20/30/15 seconds.
+
+Remanualized Hullmod
+- Minimum Crew penalty reduced to +50%.
+- Now additive, not multiplicative.
+
+Campaign
+- prv industry redistributed.
+- Overhauled the market conditions on Utbo, adding three new custom conditions.
+- Added two market conditions to the Ryak HEL.
+- Removed several do-nothing market conditions.
+- Stjärngård and Kratul will now clear nearby deep hyperspace.
+- Kylan will clear only a fractional amount.
+- Nexerelin prv player starting equipment is now prv Standard Blueprint Package and prv Advanced Blueprint Package both, rather than either.
+- Nexerelin prv player spawnpoint moved to The Works over Utbo.
+- Adjusted the size of the custom stations.
+
+Many codex updates.
+Many ship material updates.
+Improved Flock thumbnailing.
+Increased TTL on PRV_HIGH engine trail particles.
+Cleaned up some int-on-float math.
+Removed "CIVILIAN" hint from the Skiffer; it will now autodeploy as a combat ship.
+Removed access to basic prv weapons from the Pirates and Luddic Path factions.
+Added access to Annihilator Pods for the Rusters.
+Adjusted fighter wing rarity & autofit hints.
+Slightly reduced Välljud spawn rate.
+Greatly reduced Flamma (P) spawn rate in very small or pirate-faction fleets.
+Aska Heavy Artillery variant renamed just Artillery.
+-- Heavy Heavy Artillery Cruiser indeed.
+Fixed Ruster markets with a Raider Hideout erraneously getting a "Military" map flag.
+pskd_shot, pskd_cluster_shot now range 0, not undefined. Note that this means that they will now explode on reaching max range.
+Fixed a mod conflict issue with Nexerelin resulting in odd faction reputations.
+Countless variant changes.
+
+###
+
+v11.1
+
+Conquest (Ryak)
+- Medium missile hardpoint arcs now correctly 5°.
+
+####
+
+v11
+
+Added the Välljud Battlecarrier
+- Offensively inclined ship with plenty of fightercraft and firepower. Just don't expect it to hold a battleline.
+- Its Disruption Mine Strike system allows it to place mines that momentarily overload their targets.
+
+Added the Hornfals Cruiser
+- Resilient Ruster Cruiser with a Fortress Shield system. Thinks it's a battleship.
+- Also comes with a Luddic Path skin:
+-- Built-in Safety Overrides turn the immovable object into an irresistible force. Outlasting it won't be easy.
+
+Added the Kondensator Heavy Destroyer
+- A deep flux tank and an efficient shield keep this ship standing against most opponents, while its Stillhet Phase Fighter wing wears them down. 
+- Carries an advanced Tachyon Vent system which allows the ship to reduce its flux levels without disabling its shield - at the steep price of slowing down its own time rate.
+
+Added the Gnejs Destroyer
+- With a large ballistic hardpoint and low operating costs this Ruster ship offers heavy firepower at an affordable price.
+- Also comes in a Pirate model:
+-- Preferring heavy missiles, this ship punches well above its weight while the munition supplies last.
+
+Added the Fasklot Phase Destroyer
+- Mobile ship that believes in the virtue of ganging up on disabled opponents and striking from behind. Pretty sure that's a virtue.
+- Carries an EMP Cluster Mine Strike system, in case it runs across anyone not already helpless.
+
+Added the Fasnod Phase Frigate
+- Disruption specialist designed to break up enemy formations and wreak general havoc.
+- The Gravity Mine Strike system teleports in a disruption mine at the targeted location. Up to 7 charges can be stored at once.
+- Gravity Mines home towards nearby enemies and unleash a strong kinetic blast on contact, displacing the target.
+-- You can absolutely use this to bowl ships into each other.
+- Also comes with a Pirate skin:
+- With its mounts converted to composite/universal this little terror can deal a disturbing amount of damage. The system is replaced with a Reactive Emitter.
+
+Added the Stillhet Phase Fighter
+- Strike-and-evade offensive fighter mounting specialized UV lasers and a brief-period phase cloak system.
+
+Added the Grus Interceptor
+- Militarized racecraft fit with anti-missile armaments. Performs best when combined with heavier fighters.
+
+Added the Munsbit (LC) skin.
+- Luddic Church variety freighter.
+
+Added the Slag Mode ship system
+- Near-zero K cooling systems allows for briefly and vastly increased ballistic weapon damage. Afterwards the weapons must thaw out, reducing rate of fire for a short time.
+-- Used on the Sunder (Ryak).
+
+Lykta System
+- Complete visual overhaul.
+- Removed loop sound effect.
+
+Unstable Thrusters
+- Adjusted description.
+
+Flock, Flock (Export)
+- Major sprite overhaul.
+- Maintenance & recovery cost increased to 17.
+- Fleet points increased to 13.
+- Medium hardpoints converted to turrets.
+
+Flock (RB)
+- Major sprite overhaul.
+- One medium composite hardpoint turned into a small composite hardpoint.
+- One medium composite hardpoint turned into a turret.
+- Maintenance & Recovery cost increased to 17.
+- Fleet points increased to 13.
+- Variants updated.
+- Now correctly considered a carrier when spawning AI fleets.
+
+Aska
+- Minor sprite adjustments.
+- Redesignated as a Heavy Cruiser.
+-- No functional changes.
+
+Skära
+- Enhanced Reactive Emitter system visual effect.
+
+Bergslag
+- Maintenance & recovery cost increased to 21.
+
+Dominator (RB)
+- Updated sprite.
+- Added plasma chamber decorative flare.
+- Updated target variants.
+- Updated codex entry.
+-- Technical change: Changed from .skin to .ship. Id remains prv_dominator_rb.
+
+Gissel
+- Updated sprite.
+
+Gremlin RB
+- Updated sprite.
+
+Flamma, Flamma Midline, Flamma (P)
+- Updated variants.
+- Adjusted (P) sprite.
+
+Tystnad
+- Base cost reduced to 39 000.
+- Secret model rear PD replaced with Vakt UV PD.
+
+Sunder (Ryak)
+- Lykta ship system replaced with Slag Mode.
+- Engine and visual style changed to PRV_MID (greener).
+- Updated codex entry.
+
+Ballebo (P)
+- Sprite updated.
+- Mounts overhauled.
+- Now comes with three Swarmers instead of two Hammers.
+- Engine style changed to LOW_TECH.
+- Fleet points reverted to base (12).
+- Value multiplier increased to 0,85.
+
+Kakafoni
+- Adjusted hitbox.
+- Updated (RB) skin sprite.
+- (RB) Burn Drive ship system replaced with Missile Autoforge.
+
+Conquest (Ryak)
+- Updated graphics.
+- Adjusted codex entry.
+- Base value reduced to 300 000.
+- HP reduced to 13000.
+- Armor increased to 1300.
+- Shield Efficiency improved to 1,2.
+- Flux Dissipation increased to 1200.
+- Added a large hybrid turret located at the rear of the ship.
+- Skatunge launchers replaced with small ballistic turrets.
+-- To alleviate weapon group crowding.
+- OP increased to 320.
+-- At 5/10/20 points per mount with all mounts used the net change is -20 OP.
+- Ljungeld Prototype 
+-- Flux cost reduced by ~23%.
+-- Chargeup reduced by 25% (0,11 seconds).
+-- Chargedown increased by ~4% (0,11 seconds).
+
+Skymning
+- Rear energy turret coverage slightly reduced.
+- Can now show up as a rare BP.
+
+Diskordant Fighter
+- Tweaked sprite.
+- Light Spattergun improved.
+-- Damage and flux per shot increased by ~15%.
+
+Buddy Fighter
+- Flux dissipation increased by 33%.
+- Fusion Burst Cutter improved.
+-- Firing angle increased to 45°.
+-- Rotation rate greatly increased.
+-- Chargeup reduced by 0,25 seconds.
+-- Cooldown increased by 0,25 seconds.
+
+Kaja, Kaja Array, Kråka, Kråka Auto, Korp MRM Launchers
+- Complete launcher sprite overhaul.
+- Missile sprite updated and engine effects adjusted.
+
+Sidensvans, Sidensvans Array
+- Complete visual overhaul.
+- Missile orientation time increased by 50%.
+
+Punktskydd
+- New weapon graphics.
+- Damage increased by ~15%.
+
+Punktskydd Cluster
+- New weapon graphics.
+- Damage increased by ~15%.
+- DPS increased to 3000.
+- Now fires continously.
+
+AKC c67
+- Burst size increased to 3.
+-- net DPS, ROF, etc unchanged.
+
+Akers, Heavy Akers, Siege Akers
+- EMP arcs made rarer and more potent.
+-- Akers family EMP is now ~1x their kinetic damage, half applied directly and half in (relatively) powerful arcs.
+-- 2x for the Akers Nova.
+
+Akers Nova
+- Burst size increased to 6.
+- Cooldown increased to 1,764.
+- Added 0,146 chargeup delay.
+-- No net rate of fire change.
+- EMP arcs made rarer and more potent.
+- Removed arc energy damage component.
+- Projectile size reduced.
+- Firing sound volume reduced.
+
+Spattergun, Light Spattergun
+- New weapon graphics.
+
+LPK
+- New weapon graphics.
+- Effects recolored.
+
+Hammer Launcher
+- New weapon graphics.
+
+Svala Torpedo
+- New launcher graphic.
+- Minimum time to split increased by 100%.
+- Ammunition increased to 3.
+- Refire delay increased to 16 seconds.
+
+Skata LRM
+- Updated launcher graphic.
+
+Ljus (D) and Ilbud (D)
+- Now use the base graphic.
+
+Updated prv ship variants
+- Cleaned up and replaced many less interesting variants with Overdriven specs.
+- Several smaller tweaks.
+
+Rust Belt (PRV_LOW) engine style shifted to orange/red.
+prv Standard (PRV_MID) engine style intensity increased.
+Adjusted prv and RB factions fleet doctrines and weapon preferences.
+Adjusted prv and RB starting relationships.
+Various graphicslib light tweaks.
+Fixed codex typo.
+
+####
+
+v10.1
+
+- Fixed a crash that would occur with the Nexerelin mod while generating a random sector map. Thanks to Histidine for the bug report and assistance.
+- Raider Hideout, Armed Community and War Syndicate HQ industries will now be pre-placed during Nexerelin random sector generation.
+-- Rarely a Ruster colony may spawn with a Raider Hideout and no regular military industries. Honest travelers would do well to avoid such places.
+
+####
+
+v10:
+
+COMPATABILITY NOTE: 
+A new campaign is required for several new features, most notably the Rust Belt faction.
+
+Added the Rust Belt faction
+- A loose confederation of usually-not-quite-pirates operating on the fringe of the sector. Fond of salvaging and restoring lost ships, for sale or use.
+-- Ruster markets occasionally spawn pirate fleets. Travelers, beware.
+-- Most Pirate (prv) ships and weapons have been reassigned to the Rusters.
+
+Added the Kratul system
+- Hiding in the never-ending iron-oxide asteroid fields and Dominion-era scrapyard dumping grounds of the Kratul belts lie the Great Belt Alliance, or more commonly Rusters. Miners, salvagers, occasionally pirates and generally free spirits the Rusters have ended up in a violent vendetta with the intractable prv's industrial world of Kratul II.
+
+Added the Raider Hideout, Armed Community and War Syndicate HQ industries
+- Rust Belt markets with one of these industries will generate Pirate fleets.
+-- If the RB are at not at peace with the Pirates, additional RB fleets will spawn instead.
+-- Corvus-mode pre-placed only, for the moment.
+
+Added the Flock Light Missile Cruiser
+- Fragile craft equipped with a unique automatic missile launcher that can fire prodigious amounts of Kråka missiles.
+- Also comes in Midrange and Rust Belt variants:
+-- Midrange: Unlocks the middle Large Missile mount and comes with fast missile racks. Very volatile.
+-- Rust Belt: Carrier conversion with two fighter bays.
+
+Added the Skiffer Salvage Tender
+- Small civilian craft with a flexible drone bay and a frigate-size salvage gantry.
+
+Added the Basalt Heavy Frigate
+- A sturdy brawling ship with a cheap support profile that is popular in the belt.
+
+Added the Visent Frontier Freighter
+- Barely larger than a frigate, the Visent still carries everything you need to haul cargo on the fringes of the sector - including guns and armor. Boasts an excellent top speed, but it's held back by poor acceleration and agility.
+
+Added the Middag, Fika and Munsbit freighters
+- Ranging from large and heavily armed to small and mostly harmless these transports take on a variety of hauling jobs for the prv corporation.
+- Carry a number of semi-autonomous gun pods.
+
+Added the Kakafoni (RB) skin
+- Pirate version, but with a burn drive.
+- Kakafoni (P) spawn rate greatly reduced.
+
+Added the Skarn Strike Fighter
+- Quick strike craft which strafes the target with an AKC chaingun, inflicting significant kinetic damage.
+
+Added the Buddy Utility Craft
+- Unmanned industrial drone armed with a machine gun and a fusion cutter. Durable, damaging and fairly slow-moving.
+
+Added the Dominator (RB) Heavy Cruiser skin
+- A slower but more agile version with the ability to fit energy weapons.
+
+Added the SIPD Laser
+- Weak close-in defense laser that releases an energy damage burst after a moment of sustained fire.
+-- prv mainstay in the PD Laser role.
+
+Added the Kartesch mortar
+- Fires a large canister that bursts into a hail of HE bomblets.
+-- Deadly against poorly protected targets, and an efficient paint-stripper against those still armored.
+
+Flamma
+- Recategorized as a Heavy Frigate.
+- Added Midline Missile variant.
+- Updated autofit goal variants.
+- Updated graphics.
+
+Ljus
+- Updated graphics.
+- Updated autofit goal variants.
+
+Skära
+- Updated graphics.
+- No longer has a built-in Insulated Engine Assembly.
+- CR/day increased to 8%.
+- Increased AI threat value of the ship system.
+- Added Belt variant.
+- Retired Hotrodded skin. No more will spawn.
+-- To prevent an engine alignment issue, the Skära (HR) skin has changed to use the new Skära graphic.
+
+Tystnad
+- Updated graphics.
+
+Ballebo
+- Updated graphics.
+- Shield type changed to Omni.
+- Shield upkeep increased to 0,45.
+- Shield arc reduced to 120.
+- Shield efficiency increased to 0.9.
+- Tweaked codex entry.
+- Updated Midline Close Support variant.
+- Updated autofit selection.
+
+Skymning
+- Max Flux reduced to 17 000.
+- Hitpoints reduced to 15 000.
+- Corrected visual error in fighter launch bay alignment.
+
+Conquest (Ryak)
+- Inceased max turn rate and turn acceleration by 1°/s.
+-- It makes a difference I promise.
+
+Missljud
+- Added built-in Flux Shunt hullmod.
+- The Light Ion Beam will now also target missiles, should it lack a bigger target.
+
+Sidensvans
+- Refire delay increased by 100%, now 12 seconds per salvo.
+- Projectile hitpoints reduced by ~33%.
+- Role description changed to "Anti Armor".
+- Updated codex entry.
+
+Svala
+- Improved visual effect.
+
+Pskd, Pskd Cluster
+_ Increased AoE by 50%
+- Increase anti-missile fuze range by 50%
+
+Plasma Maneuvering Jets
+- Corrected major code errors.
+- Removed flat bonuses, reduced multipliers.
+-- Now gives a smaller maneuverability increase, especially for larger ships.
+
+Unstable Thrusters
+- Unchanged.
+
+Stjärngård System
+- Will now create random outer entities during sector generation.
+- Adjusted star size.
+
+Kylan System
+- Adjusted star size.
+
+Adjusted prv fleet doctrine.
+Adjusted ship spawn rates.
+Adjusted weapon tags for more sensible autofits.
+Expanded ship name list.
+Reduced the LPK firing sound volume.
+Retired custom variants for vanilla ships.
+
+Added missing Siege Akers, Svala AM Blast, Ljungeld Prototype and Bounder graphicslib lights profiles.
+Added missing bomber tag for Skrål and Diskordant fighters.
+The Ljungeld (Prototype) should no longer show up in stores. May require a new campaign to take effect.
+Fixed several codex typos.
+
+####
+
+v9:
+
+Added the Skymning Battleship
+- Fearsome capital ship with frontally focused firepower and a plasma burn drive.
+-- Better at getting into fights than out of them.
+
+Added the Gissel Destroyer
+- Mixed-armament destroyer from the scrapyard fringe of the sector.
+-- Watch out for its left hook.
+
+Gremlin (RB)
+- Updated sprite
+- Added (HR) variant using the old sprite. Also replaces the Mining Laser with a lrpdlaser, otherwise identical.
+
+Aska
+- Armor increased by 100
+- Adjusted Heavy Phase Teleporter AI hints
+
+Ballebo
+- Fleet points increased to 11
+- Maintenance and recovery cost increased to 12
+
+Sorl
+- Flux dissipation increased to 300
+- Shield efficiency improved to 0,9
+
+Tystnad
+- Fleet points reduced to 9
+- Maintenance and recovery cost reduced to 9
+- Acceleration reduced by 25%
+- Turn acceleration reduced by 50%
+- HP increased by 500
+- Flux capacity increased by 300
+
+Flamma
+- HP increased by 600
+- Beam variant adjusted to prevent 4x PD autofits
+
+Kakafoni
+- Engine and visual style changed to PRV_MID (greener)
+- Fleet points reduced to 15
+-- Maintenance and recovery costs unchanged.
+
+Ilbud
+- Ordnance Points increased to 70
+- Flux dissipation increased to 240
+
+Tiger
+- HP increased to 5000
+
+Kite (prv)
+- Fleet points reduced to 3
+- Maintenance and recovery cost reduced to 3
+
+Broadsword (Pather)
+- Increased refit time to 20
+- Reduced speed to 110
+
+Ljungeld (Prototype)
+- Maximum range reduced to 900
+
+Sidensvans, Sidensvans Array
+- Adjusted to cause less clutter
+-- Number of missiles launched cut in half
+-- Missile damage and missile hitpoints doubled
+-- Launch speed reduced to 100
+-- Max speed increased by 200
+-- Range/Lifetime reduced by ~33%
+
+AKC c67
+- Increased damage by 50%
+- Increased flux cost by 100%
+- Reduced reload rate by ~25%
+-- New sustained uptime 50%, from ~67%
+
+Siege Akers
+- Tier reduced to 1
+
+prv faction doctrine adjusted
+- Fleet composition now somewhat prefers larger combat ships.
+- Added Pilum LRM and Tactical Laser access*
+- Added IR Pulse Laser, Ion Cannon, AM Blaster and Graviton Beam to the preferred equipment list
+-- Should increase fit variety a little
+- Removed Salamander MRM and Salamander MRM Pod access*
+-- * Requires a new campaign to take effect
+
+Luddic Church faction doctrine adjusted
+- Removed access to standard prv weapons*
+-- * Requires a new campaign to take effect
+
+Adjusted ship spawn tables.
+
+Expanded prv ship name list
+
+Adjusted weapon tags for more sensible autofits
+Corrected string error in prv_skara_attack.variant
+Corrected typo in Linjär PK codex entry
+Corrected fleet points error in Aska (LP) skin, now 19.
+
+####
+
+v8:
+
+Added the Conquest (Ryak)-class Battlecruiser
+- Refit experimental weapons platform featuring large synergy mounts and a spinal particle projector.
+
+Spattergun, Light Spattergun
+- Marginally reduced ROF to ensure functionality in low fps scenarios.
+-- Burst ROF reduced, chargedown reduced to compensate.
+-- Net DPS unchanged.
+
+HFL Array
+- Marginally reduced ROF to ensure functionality in low fps scenarios.
+-- Burst ROF reduced, chargeup and chargedown reduced to compensate.
+-- Net DPS unchanged.
+
+Punktskydd, Punktskydd Cluster
+- Adjusted proximity fuze. Should now be considerably more powerful against ships and slightly weaker against missiles.
+
+Increased base values of ship hulls to match vanilla changes.
+
+Slightly reduced amount of Gryning (TT) in Tritachyon fleets.
+Slightly reduced amount of Ilbud in prv fleets.
+
+Fixed errors in independent faction generation. Independent markets will now populate properly, and the faction will use a small amount of standard prv ships.
+
+Fixed error with missing value in Tritachyon (prv) color array.
+
+Fixed error in the Sorl (League) description prefix.
+
+Added missing Kite (prv) codex description.
+
+####
+
+v7:
+
+Kakafoni
+- Reduced crew by 33%, now 200 skeleton crew, 300 max.
+- Base cost reduced to 58000
+- Updated sprite. 
+-- Wing aft portions are now smoother.
+-- Corrected emissiveness.
+- Added Pirate skin
+-- Comes with a large hybrid slot, overhauled mounts, borer drones, and a large crew requirement.
+-- Cool spooky skull (important).
+
+Aska
+- Corrected minor sprite error.
+- Added the Aska (LC)
+-- Missile-focused attack cruiser.
+-- The Church of Galactic Redemption vehemently deny fielding any vessels capable of phase teleportation.
+
+Added the Sorl-class light carrier.
+- Somewhat supply-intensive DV with two fighter wings and moderate armaments. A Phase Skimmer keeps it out of too much trouble.
+
+Added the Gryning-class frigate.
+- Light and aggressive attack craft with a Temporal Core that lets it speed up time while toggled on.
+- Also comes in a Tritachyon version. Imitation might be the sincerest form of flattery, but it's not neccessarily well received.
+
+Added Kite (prv)-remodel shuttle.
+- Flight deck version of the common Kite shuttle with a single integrated Oväsen fighter and its lone drone buddy Missljud.
+
+Added the AKC c67 medium ballstic cannon
+- Kinetic CIWS to keep fighters in check and frigates at an honest distance. Single rotary mount, reload rate permits ~66% uptime.
+
+Updated the Tystnad, Tystnad (League), Tystnad (P) and Tystnad (Mod) sprites
+-- Strange and funky bridge replaced with different strange and funky bridge.
+-- Lighting and engines changed.
+-- I hear the pirates painted their ship pink. Oooh, real intimidating there buddy.
+- Deployment cost and maintenance reduced to 12.
+
+Spattergun
+- Increased spread decay rate. It will now re-zero quicker after firing.
+- Burst is no longer interruptible. Should fix a rare unintended "stagger-fire" AI behavior.
+
+Ljungeld
+- Improved rarity to 1. Stays as a tier 3 prv_adv_bp, which should keep it rare enough.
+- Narrowed the beam greatly. Sharp and deadly like a scalpel.
+
+HGL Array
+- Maximum range increased to 650.
+
+Fusion Burst Laser
+- Beam color shifted towards purple to help differentiate from pdlaser.
+
+Linjär PK
+- Increased sound variety.
+
+Siege Akers (Prototype)
+- Damage increased to 240 kinetic 120 EMP. Flux cost unchanged.
+- Max spread reduced to 9
+-- Now matches the standard Siege Akers.
+
+Gremlin (RB)
+- Base value reduced to 8000
+
+Ballebo (P), Flamma (P)
+- No longer have built-in D-mods.
+
+Tystnad (P)
+- Compromised Hull and Damaged Flight Deck D-mods replaced with Defective Manufactory.
+
+Mora (LP), Ljus (LP)
+- No longer have a Faulty Grid. Still very much Ill-Advised.
+
+Oväsen Wing
+- No longer no_drop, no_sell.
+
+prv
+- Reduced equipment randomization; ships are now more likely to adhere to their variant loadout.
+
+Overhauled prv equipment table.
+- prv ships will not use very low-tech weapons (eg. Hammer Barrage), or weapons with very close prv-tech equivalents (eg. Tachyon Lance) weapons unless absolutely neccessary.
+
+Reduced weapon base values:
+- Spattergun -100 (375 -> 275)
+- Heavy Akers -600 (1800 -> 1200)
+- Akers Nova -300 (2600 -> 2300)
+- Korp MRM Launcher -1000 (4800 -> 3800)
+
+Adjusted Aska variant weights. Heavy Artillery fits should be more common now. The Frag fit has been retired; no new ones will spawn.
+
+Changed tech tag on Sunder (Ryak), now prv Starworks. Aesthetic change only.
+
+Added Skatunge launcher graphic.
+Added unused Ilbud fit to spawn table.
+Fixed Tiger (HR) skin errors; the engines should now be pointing in the right direction.
+Fixed minor kaja_quint sprite errors and created shader data.
+Fixed tag errors in hfl_shot and sidensvans_srm, they will now correctly also hit friendly targets.
+
+####
+
+v6:
+
+The sophisticated technology of setting file encoding to UTF-8 has been discovered. Å, Ä and Ö will now be found where they rightfully belong. May require a new campaign to affect campaign map entities.
+Updated numerous visual effects.
+Added new firing sounds to many prv weapons.
+
+Added the Aska Cruiser. 
+- Bulky phase-teleporting attack cruiser with heavy armaments. Very intimidating.
+
+Added the Tiger Combat Tanker. 
+- Destroyer-sized tanker with plenty of bite.
+- Added Luddic Church and Hotrodded skins for the Tiger.
+
+Added three prv Auxiliary skins with an associated hullmod.
+- Tarsus (prv)
+- Condor (prv)
+- Gemini (prv)
+
+Added the Gremlin (RB) frigate. 
+- Trades in the phase system for a shitty shield and a large (!) energy turret. If you like your ships grungy, this is your boy.
+
+Added the Sidensvans SRM family
+- Launcher (small missile)
+- Array (medium missile)
+- Fires a barrage of 8/16 small explosive missiles. Missiles have a brief homing stage, after which they travel straight forwards at moderate speed. 
+- Reasonable ammunition reserves, decent rate of fire. Poor damage.
+
+Added the Linjär PK medium energy weapon.
+- Fires a steady stream of minor pulse blasts.
+- High rate of fire, limited ammunition. Reload rate increases greatly at high flux levels.
+- Excellent DPS if you can stay hot. Go on. Live on the edge.
+
+Added the Ljungeld large energy weapon.
+- Fires a massive explosive-damage beam that can arc energy-blasts off pressured shields. Limited ammunition with a marginal regeneration rate.
+- Devastating.
+
+Added the HFL Array large energy weapon. 
+- Fires impressive bursts of small, short-ranged laser pulses. Very energy-efficient.
+- Sounds like a tin can, may be built out of one.
+
+Added the Defense In Depth hullmod. Available as a built-in on the Aska and Kakafoni. 
+- Protects your crew and blunts frag and energy damage at the cost of EMP vulnerability and increased weapon repair times.
+- That EMP vulnerability is no joke. Be careful.
+
+Added Pirate (prv) weapon access to most vanilla factions. Pirates will sell to anyone willing to buy.
+
+Updated the codex to include prv fighter built-in weapons. No more guessing what they do.
+Updated the Siege Akers (Prototype) codex graphic.
+
+Skrän fighter
+- Increased damage and rate of fire on the Microjursla.
+- Added new system, Energized Reactive Field. Zaps any hostiles in very close proximity to the fighter for minor energy damage.
+
+Kakafoni
+- Slightly reduced the fleet points of Kakafoni. 
+- Deployment cost reduced to 24.
+
+Missljud
+- Will now default to keeping their shield up, significantly improving their expected lifespan.
+- Minimized shield bubble radius.
+
+Kraka, Korp MRM Launcher
+- Reduced ammunition regeneration time for the to 10 seconds per launch.
+
+Siege Akers
+- Increased damage and flux per shot to 240, EMP damage to 120.
+- Increased rate of fire by 50%. 
+- Reduced reload time by 7%.
+
+Ryak-fit Brawler and Missile Support-fit Lasher are no longer goal variants.
+Updated many prv/prv-adjacent fits to use Sidensvans SRMs instead of other missiles.
+Reduced firing glow on the Bounder. The barrel recoil action should no longer be obscured.
+Added graphicslib textures for the prv_ballebo_p.
+Added graphicslib surface texture for the prv_ovasen.
+Updated the prv_tystnad_mod to carry a different nose weapon.
+Improved many autofit weapon tags.
+
+####
+
+v5:
+Added the prv Starworks faction, an upstart megacorp attempting to balance diplomacy and brazen expansionism. Exerelin-compatible.
+Added two new fully populated star systems, Stjarngard and Kylan, located on the Persean/Luddic Church border.
+
+Complete overhaul of the Ballebo sprite.
+Significant sprite adjustments of the Ljus and Tystnad.
+
+Added Flamma combat frigate. A pocket destroyer, or possibly just cannonfodder.
+Added the Ilbud phase combat freighter. Expensive and effective. Also available in a rare (D) skin.
+Added the Kakafoni cruiser-carrier. A powerful ship suitable for forming the core of a fleet.
+Added the Sunder (Ryak) destroyer. Extensively remodeled to serve as test platforms, these ships now carry ballistic armaments, advanced sensors, and beefed-up armor.
+Added "Midline" skins for the Tystnad, Ballebo, and Flamma. Flown by the Diktat and Perseans.
+Added Pirate skins for the Ballebo and Flamma. Very hotrodded.
+Added secret skin for the Tystnad (prv_tystnad_mod). Does not spawn normally.
+
+Added four new fighters:
+the Skran heavy Interceptor,
+the Diskordant strike fighter,
+the Skral torpedo bomber,
+and the Missljud suppression drone.
+
+Added new weapons:
+Regular:
+Spattergun, small energy plasma projector. Not very precise.
+Siege Akers, large ballistic kinetic cannon. Magazine-fired and short-ranged.
+Bounder, medium ballistic explosive mortar. Recoils off shields and seeks a new target instead of detonating.
+
+Built-ins:
+Light Spattergun, scaled down version for the Diskordant fighter. Built-in exclusive.
+Siege Akers (Prototype), integrated Sunder (Ryak) weapon. Lacks the the magazine of the final product. Built-in exclusive.
+Microjursla, integrated Skran kinetic rifle. Built-in exclusive.
+Raka, boosted homing torpedo carried by the Skral bomber. Built-in exclusive.
+
+Added a ship names list for the prv.
+Assorted codex fixes.
+Assorted variant adjustments.
+Minor but extensive balance tweaks. Most notable:
+- Skata LRM now fires smaller salvoes at a higher burst rate.
+- Fusion Burst Laser no longer has a travel time.
+- Punktskydd Cluster flux efficiency greatly improved.
+
+Adjusted the occurence rate and integration of prv ships and weapons into the sector. Overall, other factions will be using fewer prv assets.
+Adjusted simulator list. Now features one fit per ship skin.
+
+####
+
+v4.1
+
+Included missing Tystnad sprite update.
+
+####
+
+v4:
+Added the Tystnad (P) skin.
+	A far more offensively inclined variant.
+	Rebuilt to take any fighter wing. Phase Recall system replaced with Reserve Deployment. 
+	Small mount arcs greatly narrowed, rear pair now point forwards. Synergy and Hybrid mounts downgraded, new setup is 1x Med Missile, 1x Med Ballistic, 2x Small Ballistic, 2x Small Energy.
+	Flown by Pirates and less scrupulous Salvagers and Independents.
+	Adjusted Tystnad occurence rates.
+	"Pirate" variant is available to fight in the simulator.
+
+Added the Ljus (LP) skin
+	Operates as a strike frigate. Can fire its Hammers at a frightening rate, so be careful.
+	Nose mount replaced by a custom Hammer launcher with an 8-shot magazine. Mounts otherwise as on the (D) model.
+	Lykta system replaced by Fast Missile Racks.
+	Standard LP hullmods.
+	Flown by the Luddic Path.
+	
+Ljus (D) Hammer and Rocket variants trade in their Safety Overrides for additional flux vents and capacitors, making them significantly less obnoxious.
+Ljus Ambush variant switches its Dual Light Autocannon (and a vent) for an Akers.
+
+Updated Punktskydd and Punktskydd Cluster graphics - now a pleasant ballistic tan.
+
+Fusion Burst Laser role description changed from "Strike" to "Assault".
+The AI will now consider the FBL a strike weapon, and keep it in reserve until it has a clear shot on armor or hull.
+Corrected error in FBL autofit weighting.
+
+Various fleet integration adjustments. Most notably, reduced occurence rate of Ljus in independent fleets by roughly a third.
+
+Corrected error in description of the Degraded Lykta System. Now correctly states that it reduces, not increases, sensor strength while active.
+
+####
+
+v3:
+Added the Tystnad light destroyer.
+	A high-tech support ship with a single locked-in wing of Ovasen fighters. Light armaments, good mobility, reasonable protection but low hull integrity. Expensive to operate for its size.
+	Excellent potential as a PD-boat.
+	Flown by the Independents, the Tri-Tachyon Corporation and the Persean League.
+	
+Added the Ovasen companion fighter.
+	Only found integrated into Tystnad light destroyers.
+	Agile and well-protected fighters which defend their escort target with an extended-range Punktskydd cannon and harrass nearby enemies with modified Skata missiles.
+
+Adjusted faction fleet preferences to integrate the Tystnad.
+
+Updated the graphics of the Ljus and Ljus D. They should now be considerably less busy.
+
+Added a surface map to the Ljus and Ljus D. Look out for the pretty lights on the Lykta antennas.
+
+Akers
+	New sprite - now a more traditional tan gun mount.
+	Adjusted projectile trail color.
+	Adjusted lighting effects.
+	Now has a 20% chance to create a minor EMP arc on hull hits.
+Heavy Akers
+	New sprite - now a more traditional tan gun mount.
+	Adjusted projectile trail color.
+	Adjusted lighting effects.
+	Now has a 33% chance to create a small EMP arc on hull hits.
+	Reduced range from 700 to 675.
+Akers Nova
+	Now has a 50% chance to create a significant EMP arc with a minor damage component (10% as energy) on hull hits.
+	Rate of fire reduced by 15%.
+	Adjusted lighting effects.
+
+These changes were made to make the Akers family more visually interesting and to further differentiate them from Autocannons and Needlers.
+
+Kaja, Kraka
+	AI will now use these against frigates more aggressively.
+	
+I mean, it's not like they're gonna run out.
+	
+Korp
+	AI will now use it more aggressively against frigates.
+	Tier increased from 2 to 3.
+	Rarity modifier increased from 0.65 to 1.
+	
+Fits the tier 3 spot better than the Skata.
+
+Skata
+	Missiles will now be more randomly distributed within the cone of fire.
+	Increased number of missiles per salvo from 30 to 45.
+	Increased ammunition from 180 to 270.
+	Reduced burst refire delay from 0,3 to 0,2.
+	Reduced damage per shot from 300 to 225.
+	Reduced projectile hitpoints from 75 to 65.
+	Corrected transparency error in main graphic.
+	OVerhauled turret base graphic.
+	Tier reduced to 2.
+	Rarity modifier reduced to 0.5.
+	
+This was mostly an aesthetic change with only minor gameplay implications. Skata volleys will now gum up PD a little better, and deal a little more damage on shields and hull. Performance against heavy armor will suffer somewhat. Tier was reduced since simply painting your missiles yellow doesn't actually make them high tech (you have to use blue paint for that).
+
+Improved automatic fitting ranks - Autofit should work better now.
+
+Mora (LP)
+	Now correctly named "Mora (LP)".
+
+Punktskydd
+	Tweaked flak cloud visual effect.
+	Corrected codex typo.
+	
+Pynktskydd Cluster
+	Range increased from 600 to 700.
+	Fuzes now have a chance of detonating early.
+	Tweaked flak cloud visual effect.
+	
+Broadsword (LP)
+	Corrected codex typo, minor wording changes.
+
+####
+
+v2 rc1:
+
+added Mora (LP) carrier skin
+Used by the Luddic Path, and, less commonly, the Luddic Church.
+
+added Broadsword (LP) bomber
+added Talon (LP) interceptor
+
+Updated Luddic Church and Luddic Path ship selection: they now also fly Ljus (D), Mora (LP), and Dominator (D) ships. This greatly improves the selection in Path military markets.
+
+Added the Mora (LP) Great Struggle to the simulator
+Removed the Wolf Kaja, Gryphon Corvid, Ljus (D) Hyperspace Lizard and Ljus Kinetic Support variants from the simulator.
+
+Known issues: Broadsword (LP) and Talon (LP) LPCs look extremely similar to Broadsword and Talon LPCs in the market. Suggested workaround is simply mousing over them to see which is which.
+
+####
+
+v1 rc5
+Initial Release

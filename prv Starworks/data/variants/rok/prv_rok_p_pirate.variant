@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_rok_p_pirate",
+  "hullId": "prv_rok_p",
+  "displayName": "Pirate",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "ballistic_rangefinder"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "harpoon",
+        "WS0015": "harpoon",
+        "WS0016": "harpoon",
+        "WS0017": "harpoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_brytare_pod",
+        "WS0018": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "locust"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightdualmg",
+        "WS0005": "heavymg",
+        "WS0006": "lightag",
+        "WS0007": "lightag",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+        "WS0010": "pdlaser",
+        "WS0011": "lightag",
+        "WS0012": "dualflak",
+        "WS0013": "dualflak",
+        "WS0019": "lightag"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

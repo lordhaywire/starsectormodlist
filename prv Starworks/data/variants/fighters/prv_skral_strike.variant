@@ -1,0 +1,22 @@
+{
+  "displayName": "Torpedo Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "prv_skral",
+  "hullMods": [
+    "no_weapon_flux",
+  ],
+  "quality": 1,
+  "variantId": "prv_skral_strike",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        #"WS0001": "prv_raka_fighter",
+	  #"WS0002": "prv_raka_fighter",
+	  "WS0003": "prv_raka_fighter",
+      }
+    },
+  ]
+}

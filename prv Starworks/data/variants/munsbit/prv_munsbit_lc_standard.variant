@@ -1,0 +1,39 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 9,
+  "goalVariant": false,
+  "hullId": "prv_munsbit_lc",
+  "hullMods": [
+    "expanded_cargo_holds",
+    "efficiency_overhaul"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_munsbit_lc_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightac",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "swarmer",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0011": "vulcan"
+      }
+    },
+  ],
+  "wings": []
+}

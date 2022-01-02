@@ -1,0 +1,71 @@
+{
+  "variantId": "prv_skymning_rare",
+  "hullId": "prv_skymning",
+  "displayName": "Experimental",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_jursla",
+        "WS0002": "prv_jursla"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "hurricane"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_heavyspattergun",
+        "WS0005": "prv_heavyspattergun",
+        "WS0006": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_akers_denova",
+        "WS0008": "prv_akers_denova"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_vakt",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0013": "prv_sipdlaser",
+        "WS0014": "prv_sipdlaser",
+        "WS0015": "prv_sipdlaser",
+        "WS0016": "prv_sipdlaser",
+        "WS0017": "prv_sipdlaser",
+        "WS0018": "prv_sipdlaser",
+        "WS0019": "prv_sipdlaser",
+        "WS0020": "prv_sipdlaser",
+        "WS0022": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "displayName": "Strike Fighter",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "prv_diskordant",
+  "hullMods": [
+    "no_weapon_flux",
+  ],
+  "quality": 1,
+  "variantId": "prv_ovasen_tactical",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_spattergun_fighter",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+	  "WS0002": "prv_spattergun_fighter",
+      }
+    }
+  ]
+}

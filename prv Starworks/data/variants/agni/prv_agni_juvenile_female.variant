@@ -1,0 +1,62 @@
+{
+  "variantId": "prv_agni_juvenile_female",
+  "hullId": "prv_agni_juvenile",
+  "displayName": "Female",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 15,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    #"ecm",
+    #"nav_relay",
+    #"heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_agni_web"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "prv_agni_teeth",
+        "WS0011": "prv_agni_teeth"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_agni_spines",
+        "WS0003": "prv_agni_spines"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "prv_agni_eye",
+        "WS0009": "prv_agni_eye"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "prv_agni_flamelash",
+        "WS0005": "prv_agni_flamelash",
+        "WS0006": "prv_agni_flamelash",
+        "WS0007": "prv_agni_flamelash",
+        "WS0012": "prv_agni_flamelash",
+        "WS0013": "prv_agni_flamelash"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

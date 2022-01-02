@@ -1,0 +1,24 @@
+{
+  "displayName": "Phase Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_kalk",
+  "hullMods": [
+    "no_weapon_flux"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_kalk_bomber",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_brytare_fighter"
+      }
+    },
+  ],
+  "wings": []
+}

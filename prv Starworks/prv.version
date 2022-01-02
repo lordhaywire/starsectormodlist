@@ -1,0 +1,11 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/johcas/prvStarworksRelease/master/prv.version",
+    "modName":"prv Starworks",
+    "modThreadId":12553,
+    "modVersion":
+    {
+        "major":22,
+        "minor":0,
+        "patch":0,
+    },
+}

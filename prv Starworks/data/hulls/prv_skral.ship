@@ -1,0 +1,75 @@
+{
+  "hullName": "Skral",
+  "hullId": "prv_skral",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_skral.png",
+  "style": "PRV_MID",
+  "height": 35,
+  "width": 51,
+  "center": [25.5, 15.5],
+  "collisionRadius": 28.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 27.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [6, 11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [6, -11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [2, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": -180,
+      "locations": [-1, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13, -11],
+      "length": 27,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-13, 11],
+      "length": 27,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    10, 23,
+    10, -23,
+    -14, -0
+  ]
+}

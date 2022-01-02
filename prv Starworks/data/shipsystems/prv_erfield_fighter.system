@@ -1,0 +1,41 @@
+{
+	"id":"prv_erfield_fighter",
+	"type":"EMP",
+	"aiType":"EMP",
+	
+	"range":100,
+	
+	"empDamage":0,
+	"damage":75,
+	"damageType":ENERGY,
+	
+	#"effectColor1":[150,150,255,200],
+	#"effectColor2":[175,175,255,255],
+	"effectColor1":[80,255,144,96],
+	"effectColor2":[178,255,204,160],
+
+	"jitterUnderColor":[80,255,144,155],
+	"jitterUnderCopies":25,
+	"jitterUnderMinRange":0,
+	"jitterUnderRange":4,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	"jitterColor":[80,255,144,55],
+	"jitterCopies":2,
+	"jitterMinRange":0,
+	"jitterRange":2,
+	"jitterRangeRadiusFraction":0,
+
+
+	"useSound":"system_emp_emitter_activate",
+	#"loopSound":"system_emp_emitter_loop",
+	"impactSound":"system_emp_emitter_impact",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":150,
+		"threatAmount":1,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

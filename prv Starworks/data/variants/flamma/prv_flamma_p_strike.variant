@@ -1,0 +1,41 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 9,
+  "fluxVents": 10,
+  "hullId": "prv_flamma_p",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "prv_flamma_p_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "amblaster",
+      }
+    },
+
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan",
+        "WS0004": "vulcan",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0001": "pdlaser"
+      }
+    },
+  ]
+}

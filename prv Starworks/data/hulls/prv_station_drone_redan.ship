@@ -1,0 +1,177 @@
+{
+  "hullName": "Redan",
+  "hullId": "prv_station_drone_redan",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_station_drone_redan.png",
+  "style": "PRV_MID",
+  "height": 120,
+  "width": 100,
+  "center": [50, 66],
+  "collisionRadius": 90,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "fluxbreakers",
+    "missile_reload",
+    "phasefield",
+    "delicate",
+    "supercomputer",
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [2, 15]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [2, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-28, 34]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -180,
+      "locations": [-28, -34]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [29.5, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 210,
+      "angle": 90,
+      "locations": [14.5, 40.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 210,
+      "angle": -90,
+      "locations": [14.5, -40.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 270,
+      "angle": 0,
+      "locations": [43, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, 20],
+      "length": 14,
+      "width": 7,
+      "angle": 140,
+      "contrailSize": 20,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-44, -20],
+      "length": 14,
+      "width": 7,
+      "angle": 220,
+      "contrailSize": 20,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-57, 0],
+      "length": 12,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [21.5, 34.5],
+      "length": 12,
+      "width": 6,
+      "angle": 90,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [21.5, -34.5],
+      "length": 12,
+      "width": 6,
+      "angle": -90,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [45, 17.5],
+      "length": 12,
+      "width": 6,
+      "angle": 0,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [45, -17.5],
+      "length": 12,
+      "width": 6,
+      "angle": 0,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [2.5, -41.5],
+      "length": 12,
+      "width": 6,
+      "angle": -90,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [2.5, 41.5],
+      "length": 12,
+      "width": 6,
+      "angle": 90,
+      "contrailSize": 18,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    41.5, -22.5,
+    41.5, 22.5,
+    -11.5, 42.5,
+    -55, -0,
+    -11.5, -42.5
+  ]
+}

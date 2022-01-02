@@ -1,0 +1,40 @@
+{
+  "displayName": "Auxiliary-Strike",
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "goalVariant": false,
+  "hullId": "prv_afflictor",
+  "hullMods": [
+    "hardened_subsystems"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_afflictor_aux_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "amblaster",
+        "WS 004": "amblaster",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "pdburst",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "prv_sipdlaser",
+        "WS 003": "prv_sipdlaser",
+      }
+    }
+  ],
+  "wings": []
+}

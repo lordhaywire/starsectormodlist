@@ -1,0 +1,27 @@
+{
+  "id":"prv",
+	"name":"prv Starworks",
+	"author":"Prav",	
+	"version":"v22",
+	"description":"Adds the prv Starworks and Rust Belt factions.",
+	"modPlugin":"data.scripts.PRVModPlugin",
+	"gameVersion":"0.95.1a-RC6",
+	"dependencies": [
+		{
+			"id": "lw_lazylib",
+			"name": "LazyLib",
+			#"version": "2.6"
+		},
+		{
+			"id": "MagicLib",
+			"name": "MagicLib",
+			#"version": "32rc2"
+		},
+		{
+			"id": "shaderLib",
+			"name": "GraphicsLib",
+			#"version": "32rc2"
+		}
+	],
+	"jars":["jar/prv.jar"],
+}

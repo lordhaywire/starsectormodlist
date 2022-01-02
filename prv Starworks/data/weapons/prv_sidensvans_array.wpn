@@ -1,0 +1,91 @@
+{
+  "id": "prv_sidensvans_array",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_sidensvans_srm",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/prv/weapons/prv_sidensvans_array_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_sidensvans_array_hardpoint.png",
+  "renderAboveAllWeapons": 0,
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    8.5,
+    5,
+    8.5,
+    2,
+    8.5,
+    -2,
+    8.5,
+    -5,
+    0.5,
+    5,
+    0.5,
+    2,
+    0.5,
+    -2,
+    0.5,
+    -5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    11.5,
+    -5,
+    11.5,
+    -2,
+    11.5,
+    2,
+    11.5,
+    5,
+    3.5,
+    -5,
+    3.5,
+    -2,
+    3.5,
+    2,
+    3.5,
+    5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 5,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.9,
+    "cloudRadius": 8,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      220,
+      255,
+      220,
+      100
+    ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "swarmer_fire"
+}

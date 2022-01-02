@@ -1,0 +1,6 @@
+command,class,tags,syntax,help
+SmeltOre,scripts.console.prvConsoleSmeltOre,"prv,campaign",smeltore,Forces one period of Arc Smelter processing.
+ShuffleDoctrine,scripts.console.prvConsoleShuffleDoctrine,"prv,campaign",shuffledoctrine all|<factionId>,Scrambles the faction’s doctrine.
+SyncRusterIndustry,scripts.console.prvConsoleSyncRusterIndustry,"prv,campaign",syncrusterindustry,Forces a synchronization pass for all War Syndicate industries.
+CheckVariantOPUsage,scripts.console.prvConsoleCheckVariantOPUsage,"prv,campaign",checkvariantopusage all|<manufacturer>,Prints a list of all hull variants belonging to the specified manufacturer which use an inappropriate amount of OP. Manufacturer argument is case sensitive.
+ListManufacturers,scripts.console.prvConsoleListManufacturers,"prv,campaign",listmanufacturers,"Prints a list of all manufacturers of starships, weapons and hullmods in the sector."

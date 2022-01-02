@@ -1,0 +1,33 @@
+{
+  "displayName": "Pirate",
+  "fluxCapacitors": 7,
+  "fluxVents": 7,
+  "goalVariant": true,
+  "hullId": "prv_fasnod_p",
+  "hullMods": [
+    "armoredweapons",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 2,
+  "variantId": "prv_fasnod_p_pirate",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightag",
+        "WS0002": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser"
+      }
+    },
+  ],
+  "wings": []
+}

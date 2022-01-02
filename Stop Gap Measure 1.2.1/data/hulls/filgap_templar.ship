@@ -1,0 +1,239 @@
+{
+  "bounds": [
+    24,
+    57,
+    1,
+    58,
+    -22,
+    66,
+    -43,
+    49,
+    -62,
+    42,
+    -62,
+    16,
+    -45,
+    12,
+    -29,
+    -0,
+    -44,
+    -14,
+    -62,
+    -16,
+    -62,
+    -42,
+    -42,
+    -49,
+    -22,
+    -66,
+    0,
+    -62,
+    24,
+    -57,
+    34,
+    -50,
+    37,
+    -30,
+    31.5,
+    -24,
+    37.5,
+    -17,
+    49.5,
+    -21,
+    63,
+    -21,
+    68,
+    -6,
+    68,
+    6,
+    62.5,
+    21.5,
+    49,
+    21.5,
+    38,
+    16.5,
+    31.5,
+    24,
+    37,
+    30,
+    34,
+    50
+  ],
+  "builtInMods": [
+    "filgap_luddic_refit"
+  ],
+  "builtInWings": [],
+  "center": [
+    66,
+    67
+  ],
+  "collisionRadius": 105,
+  "coversColor": "255,188,175,255",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -66,
+        28
+      ],
+      "style": "LOW_TECH",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -66,
+        -28
+      ],
+      "style": "LOW_TECH",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -67.5,
+        37
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -66.5,
+        19.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -66,
+        -19.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -68,
+        -37
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    }
+  ],
+  "height": 135,
+  "hullId": "filgap_templar",
+  "hullName": "Templar",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    -5,
+    0
+  ],
+  "shieldRadius": 96,
+  "spriteName": "graphics/filgap/ships/filgap_templar.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS 001",
+      "locations": [
+        -16,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 30,
+      "arc": 125,
+      "id": "WS 002",
+      "locations": [
+        11,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 125,
+      "id": "WS 003",
+      "locations": [
+        17.5,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -30,
+      "arc": 125,
+      "id": "WS 004",
+      "locations": [
+        11,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS 005",
+      "locations": [
+        -16.5,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 006",
+      "locations": [
+        37,
+        40
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS 009",
+      "locations": [
+        37,
+        -40
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 132
+}

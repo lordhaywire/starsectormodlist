@@ -1,0 +1,48 @@
+{
+  "baseHullId": "shrike",
+  "baseValueMult": 1,
+  "tags":["prv_adv_bp", "prv_hel_bp"],
+  "tech":"prv Starworks",
+  "descriptionId": "shrike",
+  "descriptionPrefix":"This Shrike's hallbar armor plating makes it easily identifiable as having been manufactured in the prv. Their model carries a ramshield and can be equipped with a ballistic cannon, but has a reputation for being difficult to customize.",
+  "hullName": "Shrike (prv)",
+  "restoreToBaseHull": false,
+  "style": "PRV_MID",
+  "ordnancePoints":65,
+  "skinHullId": "prv_shrike",
+  "spriteName": "graphics/prv/ships/prv_shrike.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_MID"},
+		"1":{"style":"PRV_MID"},
+		"2":{"style":"PRV_MID"},
+		"3":{"style":"PRV_MID"},
+		"4":{"style":"PRV_MID"},
+		"5":{"style":"PRV_MID"},
+		"6":{"style":"PRV_MID"},
+		"7":{"style":"PRV_MID"},
+	},    
+	"weaponSlotChanges":{
+		"WS 001":{
+			"mount": "HIDDEN",
+			"type": "DECORATIVE",
+		},
+		"WS 000":{
+			"arc":190,
+			"angle":75,
+		},
+		"WS 002":{
+			"arc":190,
+			"angle":-75,
+		},
+		"WS 003":{
+			"type":"SYNERGY",
+		},
+		"WS 005":{
+			"type":"BALLISTIC",
+		},
+	},
+	"builtInWeapons": {
+		"WS 001": "prv_u_ramshield"
+	},
+	"builtInMods":["prv_ramshield"],
+}
