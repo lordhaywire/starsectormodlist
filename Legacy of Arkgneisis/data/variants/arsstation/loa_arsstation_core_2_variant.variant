@@ -1,0 +1,31 @@
+{
+  "variantId": "loa_arsstation_core_2_variant",
+  "hullId": "loa_arsstation_core2",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "loa_AsteroidChucker",
+    "hardenedshieldemitter",
+    "extendedshieldemitter"
+  ],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0005": "loa_module_ars_support_standard"
+    },
+    {
+      "WS0001": "loa_module_ars_small_standard"
+    },
+    {
+      "WS0002": "loa_module_ars_annex_standard"
+    }
+  ],
+  "wings": [
+    "ace_wing",
+    "ace_wing"
+  ]
+}

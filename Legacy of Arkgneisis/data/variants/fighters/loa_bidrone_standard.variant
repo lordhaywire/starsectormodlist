@@ -1,0 +1,21 @@
+{
+  "displayName": "Heavy Drone",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "loa_bidrone",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loa_bidrone_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "loa_fer"
+      }
+    }
+  ],
+  "wings": []
+}

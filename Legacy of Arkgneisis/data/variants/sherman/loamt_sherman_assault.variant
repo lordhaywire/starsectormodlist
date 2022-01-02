@@ -1,0 +1,35 @@
+{
+  "variantId": "loamt_sherman_assault",
+  "hullId": "loamt_sherman",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "blast_doors",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "lightag",
+        "WS0009": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "loa_can_launcher",
+        "WS0002": "loa_can_launcher",
+        "WS0007": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

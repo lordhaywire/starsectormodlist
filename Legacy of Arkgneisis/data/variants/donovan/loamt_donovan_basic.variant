@@ -1,0 +1,63 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 7,
+    "fluxVents": 50,
+    "hullId": "loamt_donovan",
+	"goalVariant": true,
+    "hullMods": [
+        "missleracks",
+        "dedicated_targeting_core"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_donovan_basic",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "heavyac",
+                "WS0018": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "loa_mosaic_torpedo",
+                "WS0010": "loa_mosaic_torpedo",
+                "WS0011": "loa_mosaic_torpedo",
+                "WS0012": "loa_mosaic_torpedo",
+                "WS0013": "loa_mosaic_torpedo",
+                "WS0014": "loa_mosaic_torpedo",
+                "WS0015": "loa_mosaic_torpedo",
+                "WS0016": "loa_mosaic_torpedo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_plasmadriver",
+                "WS0002": "al_plasmadriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_monorail",
+                "WS0006": "al_monorail",
+                "WS0007": "al_monorail",
+                "WS0008": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "dualflak",
+                "WS0004": "dualflak"
+            }
+        }
+    ]
+}

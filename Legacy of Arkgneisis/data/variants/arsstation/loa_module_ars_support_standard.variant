@@ -1,0 +1,66 @@
+{
+  "variantId": "loa_module_ars_support_standard",
+  "hullId": "loa_module_ars_support",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "al_bongo",
+        "WS0002": "al_bongo",
+        "WS0018": "al_string",
+        "WS0020": "al_string"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "loa_mosaic_torpedo",
+        "WS0014": "loa_mosaic_torpedo",
+        "WS0023": "loa_mosaic_torpedo",
+        "WS0024": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0015": "al_rod",
+        "WS0016": "al_rod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "al_bulldog",
+        "WS0010": "al_bulldog"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "loa_heavyionpike",
+        "WS0011": "loa_heavyionpike",
+        "WS0022": "loa_heavyionpike",
+        "WS0025": "loa_heavyionpike"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "duke_wing",
+    "baron_wing",
+    "jack_wing",
+    "jack_wing"
+  ]
+}

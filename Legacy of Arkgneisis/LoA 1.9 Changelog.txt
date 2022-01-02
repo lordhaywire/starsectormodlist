@@ -1,0 +1,37 @@
+- Updates the mod to Starsector 0.95a RC12
+
+- Breaks, and then fixes, version checker compatability, you will be unable to check your install's version of LoA until you have updated to V1.9
+
+- Totally re-worked campaign mechanics for the Anarakis Reparations Society, they will now exist out of procedurally generated bases in unoccupied systems, as well as one special market.
+
+- New Market condition for all ARS markets: Raid Economy: Fills the market with a selection of equipment and ships from all factions the ARS are at war with.
+
+	- MODDERS: By default, this mechanic utilizes your Prism CSV settings to determine what is whitelisted, a seperate CSV is available in the files if
+		you wish these settings to be different, mods with neither CSV are considered blacklisted and your equipment will not show up in ARS markets.
+
+- New Industry: Void Extraction: Provides an income of all basic resources (Ore, Rare ore, Food, Volatiles, Organics) In exchange for ship hulls and heavy 		machinery. Posesses a base output that makes it quite good on small markets with poor resource conditions, but scaling with market size
+		is exceptionally bad compared to farming/mining. Is also unaffected by planetary resource conditions (good or bad).
+
+- New Structure: Orbital Station (ARS) and its upgrades. A new station type utilized by the ARS, largely lowtech in doctrine, and build by stringing together 				several asteroids. These stations are buildable by the player.
+
+- ARS Markets can now be destroyed by engaging the relevant orbital station in direct combat.
+
+- Destroyed ARS markets will be rebuilt at a new location after a time, this makes the faction effectively unkillable unless certain conditions are met.
+
+- The Thatcher light destroyer and all variants have been renamed to the Taylor class. Yes this choice is politically motivated, bite me.
+
+- Added a new, hidden ship to the ARS Roster.
+
+- Numerous minor balancing tweaks to various Exodus Initiative hulls.
+
+- The Shield Lance line of weapons have had their damage values increased.
+
+- The Electron Rifle line of weapons have had their damage values increased.
+
+- The Bulldog line of weapons have had their rate of fire increased, as well as a tweak to their flux stats and a slight reduction in the Bulldog's range.
+
+- The Champion class cruiser is now the Lancer class cruiser, because Alex is a doo doo head >:(
+
+- Other minor balancing tweaks to REDACTED content.
+
+- Probably forgetting something, it's been a long update cycle.

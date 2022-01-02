@@ -1,0 +1,50 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 30,
+    "fluxVents": 30,
+    "hullId": "loamt_macnamara",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamt_macnamara_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "loa_heavyionpike",
+                "WS0006": "loa_heavyionpike"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "loa_mosaic_torpedo",
+                "WS0009": "loa_mosaic_torpedo",
+                "WS0010": "loa_mosaic_torpedo",
+                "WS0011": "loa_mosaic_torpedo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "loa_heavyionpike"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyac",
+                "WS0002": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "flak",
+                "WS0004": "flak"
+            }
+        }
+    ]
+}

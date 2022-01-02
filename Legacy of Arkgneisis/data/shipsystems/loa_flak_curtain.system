@@ -1,0 +1,22 @@
+{
+	"id":"loa_flakcurtain",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_flakcurtain_ai",
+	"statsScript":"data.scripts.shipsystems.loa_flakcurtain_stats",
+	
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"loa_flakcurtain_start",
+	"loopSound":"loa_flakcurtain_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":500,
+		"threatAmount":10,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

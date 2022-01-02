@@ -1,0 +1,12 @@
+{
+	"id":"loa_missileManufactorum",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_missileManufactorumAI",
+	"statsScript":"data.scripts.shipsystems.loa_missileManufactorumStats",
+	
+	"useSound":"loa_missilefactory_start",
+	"loopSound":"loa_missilefactory_loop",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

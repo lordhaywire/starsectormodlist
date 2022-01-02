@@ -1,0 +1,10 @@
+id,trigger,conditions,script,text,options,notes
+ome_askSkillsSelVerySkillAdmin,DialogOptionSelected,"$option == ome_askSkills
+$ome_adminTier >= 3","AddText ""You ask $personName some questions to establish where $hisOrHer skills lie. It becomes apparent that $heOrShe has extremely special talents. You wonder about their past governing experience and how they are now without a job.""
+AddText ""\""I'll expect a $ome_hiringBonus credit hiring bonus, and afterwards a salary of $ome_salary credits per month. Once the initial transfer is complete, I will await my assignment at your pleasure.\""""
+SetTextHighlightColors hColor hColor
+SetTextHighlights $ome_hiringBonus $ome_salary
+AddText ""You have $player.creditsStr credits available.""
+SetTextHighlightColors hColor
+SetTextHighlights $player.creditsStr
+FireBest HireOptionSet",,,

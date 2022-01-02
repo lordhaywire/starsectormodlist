@@ -1,0 +1,36 @@
+{
+	"id":"loa_massivethrusters",
+	"type":"ENGINE_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.scripts.ai.loa_massivethrusters_ai",
+	"statsScript":"data.scripts.shipsystems.loa_massivethrusters",
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	
+	#"engineGlowColor":[255,175,125,255],
+	#"engineGlowContrailColor":[100,165,255,25],
+	#"engineGlowLengthMult":2,
+	#"engineGlowWidthMult":1,
+	#"engineGlowGlowMult":3,
+	
+	"flameoutOnImpactChance":0.0,
+
+	"clampTurnRateAfter":false,
+	"clampMaxSpeedAfter":true,
+	"alwaysAccelerate":true,
+
+	"useSound":"loa_anarg_system_start",
+	"loopSound":"loa_anarg_system_loop",
+	#"deactivateSound":"al_emoverload_end",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":400,
+		"averageSpeedIncrease":50,
+		"threatRange":450,
+		"threatAmount":3,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}

@@ -1,0 +1,35 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 1,
+    "fluxVents": 0,
+    "hullId": "loamtp_macnamara_boss",
+    "hullMods": [
+        "safetyoverrides",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "variantId": "loamtp_macnamara_boss",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "multineedler",
+                "WS0005": "multineedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "hammerrack",
+                "WS0007": "hammerrack"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "flak"}
+        }
+    ]
+}

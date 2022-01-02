@@ -1,0 +1,37 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "loamt_sherman",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "heavyarmor",
+        "auxiliarythrusters"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_sherman_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "lightdualac",
+                "WS0009": "lightdualac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_rod",
+                "WS0002": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "loa_flashlight"}
+        }
+    ]
+}

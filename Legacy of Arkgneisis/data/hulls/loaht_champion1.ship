@@ -1,0 +1,383 @@
+{
+  "bounds": [
+    -82.5,
+    -8.5,
+    -147,
+    -24,
+    -143.5,
+    -34,
+    -81.5,
+    -41,
+    -29,
+    -55.5,
+    -64,
+    -75,
+    -43,
+    -90,
+    -6,
+    -94,
+    -16.5,
+    -86.5,
+    6,
+    -52.5,
+    45.5,
+    -29,
+    115,
+    -15.5,
+    147.5,
+    -0,
+    115,
+    15.5,
+    45.5,
+    29,
+    6,
+    52.5,
+    -16.5,
+    86.5,
+    -6,
+    94,
+    -43,
+    90,
+    -64,
+    75,
+    -29,
+    55.5,
+    -81.5,
+    41,
+    -143.5,
+    34,
+    -147,
+    24,
+    -82.5,
+    8.5
+  ],
+  "builtInMods": [
+    "loa_spatiallensing",
+    "phasefield"
+  ],
+  "builtInWeapons": {
+    "WS0001": "loa_deco_champguard_left",
+    "WS0002": "loa_deco_champguard_right",
+    "WS0003": "loa_deco_champradiator_left",
+    "WS0004": "loa_deco_champradiator_right"
+  },
+  "builtInWings": [],
+  "center": [
+    98,
+    150
+  ],
+  "collisionRadius": 164.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 12.5,
+      "location": [
+        -38,
+        55.5
+      ],
+      "style": "ARKGNEISIS_HIGH",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 12.5,
+      "location": [
+        -38,
+        -55.5
+      ],
+      "style": "ARKGNEISIS_HIGH",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 12.5,
+      "location": [
+        -64,
+        55.5
+      ],
+      "style": "ARKGNEISIS_HIGH",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 12.5,
+      "location": [
+        -64,
+        -55.5
+      ],
+      "style": "ARKGNEISIS_HIGH",
+      "width": 11
+    }
+  ],
+  "height": 300,
+  "hullId": "loaht_champion1",
+  "hullName": "Champion",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 163.5,
+  "spriteName": "graphics/arkleg/ships/champion/loa_champion.png",
+  "style": "ARKGNEISIS_HIGH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -35.5,
+        85
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -35.5,
+        -85
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -64.5,
+        55
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -64.5,
+        -55
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0005",
+      "locations": [
+        29,
+        36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0006",
+      "locations": [
+        29,
+        -36
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0007",
+      "locations": [
+        12,
+        35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0008",
+      "locations": [
+        12,
+        -35
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0009",
+      "locations": [
+        6,
+        52
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0010",
+      "locations": [
+        6,
+        -52
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0011",
+      "locations": [
+        -11,
+        57
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0012",
+      "locations": [
+        -11,
+        -57
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 115,
+      "id": "WS0013",
+      "locations": [
+        -11,
+        74
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 115,
+      "id": "WS0014",
+      "locations": [
+        -11,
+        -74
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 105,
+      "arc": 180,
+      "id": "WS0015",
+      "locations": [
+        -30,
+        92
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -105,
+      "arc": 180,
+      "id": "WS0016",
+      "locations": [
+        -30,
+        -92
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 55,
+      "arc": 135,
+      "id": "WS0017",
+      "locations": [
+        -18,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -55,
+      "arc": 135,
+      "id": "WS0018",
+      "locations": [
+        -18,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0019",
+      "locations": [
+        34,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 45,
+      "arc": 0,
+      "id": "WS0020",
+      "locations": [
+        25.5,
+        32
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -45,
+      "arc": 0,
+      "id": "WS0021",
+      "locations": [
+        25.5,
+        -32
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 196
+}

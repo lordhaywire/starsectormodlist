@@ -1,0 +1,55 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loa_arscapitol_engine",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loa_arscapitol_engine_variant",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0011": "amblaster",
+                "WS0012": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyneedler",
+                "WS0002": "heavyneedler",
+                "WS0009": "al_bulldog",
+                "WS0010": "al_bulldog"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "loa_heavyionpike",
+                "WS0005": "loa_heavyionpike"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "al_monorail",
+                "WS0014": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_bongo",
+                "WS0006": "al_bongo",
+                "WS0007": "al_bongo",
+                "WS0008": "al_bongo"
+            }
+        }
+    ]
+}

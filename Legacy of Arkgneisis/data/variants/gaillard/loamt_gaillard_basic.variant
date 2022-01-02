@@ -1,0 +1,75 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 28,
+    "fluxVents": 50,
+    "hullId": "loamt_gaillard",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "loamt_shieldcoreupgrade",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_gaillard_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_bulldog",
+                "WS0006": "al_bulldog",
+                "WS0007": "heavyac",
+                "WS0008": "heavyac",
+                "WS0013": "al_bulldog",
+                "WS0014": "heavyac",
+                "WS0015": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0022": "al_rod",
+                "WS0023": "al_rod",
+                "WS0024": "al_rod",
+                "WS0025": "al_rod",
+                "WS0026": "al_rod",
+                "WS0027": "al_rod",
+                "WS0028": "al_rod",
+                "WS0029": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0019": "arbalest",
+                "WS0020": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "al_pelletdriver",
+                "WS0010": "al_pelletdriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "al_bongo",
+                "WS0003": "al_bongo",
+                "WS0004": "pdburst",
+                "WS0005": "pdburst",
+                "WS0011": "al_bongo",
+                "WS0012": "al_bongo",
+                "WS0016": "loa_her",
+                "WS0017": "pdburst",
+                "WS0018": "pdburst",
+                "WS0021": "al_bass"
+            }
+        }
+    ]
+}

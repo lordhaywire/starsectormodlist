@@ -1,0 +1,50 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "hullId": "loamt_caswell",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loamt_caswell_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "lightdualac",
+                "WS0004": "lightdualac",
+                "WS0005": "lightdualac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "al_rod",
+                "WS0009": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "al_bongo",
+                "WS0007": "al_bongo"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "pdburst",
+                "WS0002": "pdburst"
+            }
+        }
+    ],
+    "wings": [
+        "ace_wing",
+        "ace_wing"
+    ]
+}

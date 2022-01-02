@@ -1,0 +1,36 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "hullId": "loamt_sherman",
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_sherman_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "al_monorail"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_string",
+                "WS0002": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "al_lightplasmadriver",
+                "WS0009": "al_lightplasmadriver"
+            }
+        }
+    ]
+}

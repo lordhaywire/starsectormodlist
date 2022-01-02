@@ -1,0 +1,227 @@
+{
+  "bounds": [
+    -54,
+    15,
+    -45.5,
+    26,
+    -23,
+    29,
+    -15,
+    22.5,
+    -5.5,
+    32.5,
+    21.5,
+    36.5,
+    58,
+    0,
+    21.5,
+    -36.5,
+    -5.5,
+    -32.5,
+    -15,
+    -22.5,
+    -23,
+    -29,
+    -45.5,
+    -26,
+    -54,
+    -15
+  ],
+  "builtInMods": [
+  "loamt_missilefix"
+  ],
+  "builtInWeapons": {
+    "WS0003": "loa_blinker",
+    "WS0004": "loa_blinker",
+    "WS0005": "loa_blinker",
+    "WS0006": "al_deco_sher_mid",
+    "WS0010": "loa_blinker"
+  },
+  "builtInWings": [],
+  "center": [
+    37,
+    55
+  ],
+  "collisionRadius": 71.5,
+  "engineSlots": [
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -44,
+        -10.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -44,
+        10.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -44,
+        3.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -44,
+        -3.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 113,
+  "hullId": "loamt_sherman",
+  "hullName": "Sherman",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 70.5,
+  "spriteName": "graphics/arkleg/ships/sherman/al_sherman.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -16,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 240,
+      "id": "WS0007",
+      "locations": [
+        22,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 215,
+      "id": "WS0008",
+      "locations": [
+        6,
+        -13
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 90,
+      "arc": 215,
+      "id": "WS0009",
+      "locations": [
+        6,
+        13
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -14,
+        -1.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -14,
+        1.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -33.5,
+        10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -33.5,
+        -10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        -30,
+        10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        -30,
+        -10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 74
+}

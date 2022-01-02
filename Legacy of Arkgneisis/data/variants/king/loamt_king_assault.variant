@@ -1,0 +1,53 @@
+{
+  "variantId": "loamt_king_assault",
+  "hullId": "loamt_king",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 28,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "al_heavyplasmadriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "loa_needle",
+        "WS0009": "loa_needle",
+        "WS0010": "loa_needle",
+        "WS0011": "loa_needle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightneedler",
+        "WS0002": "lightneedler",
+        "WS0005": "heavyneedler",
+        "WS0006": "heavyneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "loa_flashlight",
+        "WS0004": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

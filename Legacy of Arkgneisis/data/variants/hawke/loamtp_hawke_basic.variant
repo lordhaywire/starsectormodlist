@@ -1,0 +1,50 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 22,
+    "fluxVents": 30,
+    "hullId": "loamtp_hawke",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_hawke_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "heavyac",
+                "WS0004": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "lightmortar",
+                "WS0008": "lightmortar",
+                "WS0009": "lightmortar",
+                "WS0010": "lightmortar",
+                "WS0011": "lightmortar",
+                "WS0012": "lightmortar",
+                "WS0013": "lightmortar",
+                "WS0014": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vulcan",
+                "WS0002": "vulcan",
+                "WS0005": "vulcan",
+                "WS0006": "vulcan",
+                "WS0015": "vulcan",
+                "WS0016": "vulcan"
+            }
+        }
+    ]
+}

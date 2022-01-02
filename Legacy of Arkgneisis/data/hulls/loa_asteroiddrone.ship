@@ -1,0 +1,87 @@
+{
+  "hullName": "Regolith",
+  "hullId": "loa_asteroiddrone",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/arkleg/ships/station/ars/loa_asteroid_drone.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 116,
+  "width": 90,
+  "center": [46, 60],
+  "collisionRadius": 67.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 66.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "loamt_missilefix",
+    "supercomputer"
+  ],
+  "builtInWeapons": {
+    "WS0001": "tachyonlance",
+    "WS0002": "al_pelletdriver",
+    "WS0003": "al_pelletdriver",
+    "WS0004": "al_pelletdriver",
+    "WS0005": "al_pelletdriver"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [8, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [31, 21]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [39, -6]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [41, -25]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 70,
+      "angle": 0,
+      "locations": [22, -30]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -27, -20,
+    -55.5, -9,
+    -55.5, 9,
+    -27, 20,
+    -15, 30,
+    1, 31,
+    15, 42.5,
+    37, 39,
+    53.5, -0,
+    47.5, -28,
+    22, -41.5,
+    -13, -20
+  ]
+}

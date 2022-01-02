@@ -1,0 +1,52 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "hullId": "loamt_osmond",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "fluxbreakers",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_osmond_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "tachyonlance"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_pelletdriver",
+                "WS0005": "al_pelletdriver",
+                "WS0006": "heavyac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "railgun"}
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "loa_needle",
+                "WS0009": "loa_needle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "loa_flashlight",
+                "WS0003": "loa_flashlight"
+            }
+        }
+    ]
+}

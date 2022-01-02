@@ -1,0 +1,18 @@
+{
+  "displayName": "EMP Disc",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "al_emdrone2",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "al_emdrone_improved",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "RANGE": "al_emdroneweapon2"
+      }
+    }
+  ]
+}

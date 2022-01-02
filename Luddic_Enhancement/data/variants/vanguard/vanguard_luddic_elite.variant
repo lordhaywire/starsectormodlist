@@ -1,0 +1,53 @@
+{
+  "variantId": "vanguard_luddic_elite",
+  "hullId": "vanguard_luddic",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "blast_doors",
+    "unstable_injector",
+    "auxiliarythrusters",
+    "armoredweapons",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 000": "hammer",
+        "WS 001": "hammer",
+        "WS 002": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "railgun",
+        "WS 004": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "lightmg",
+        "WS 006": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

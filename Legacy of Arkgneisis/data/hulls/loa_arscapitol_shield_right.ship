@@ -1,0 +1,30 @@
+{
+  "hullName": "ARS Capitol Shield Right",
+  "hullId": "loa_arscapitol_shield_right",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/arkleg/ships/arscapitol/loa_arscapitol_shield_right.png",
+  "style": "ANARGAIA_MODULE",
+  "height": 60,
+  "width": 69,
+  "center": [31, 36],
+  "collisionRadius": 526,
+  "shieldCenter": [-150, 70],
+  "shieldRadius": 525,
+  "builtInMods": [
+  "reduced_explosion",
+  "advancedshieldemitter",
+  "loa_linkedhull"
+  ],
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -33, -24.5,
+    -4.5, 29.5,
+    12, 17.5,
+    21.5, -0.5,
+    20, -13.5,
+    5.5, -34,
+    -16, -35.5
+  ]
+}

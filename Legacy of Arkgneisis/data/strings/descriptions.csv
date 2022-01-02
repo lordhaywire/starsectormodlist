@@ -1,0 +1,457 @@
+id,type,text1,text2,text3,notes
+#====================================== FIGHTERS ======================================,,,,,
+,,,,,
+al_monodrone,SHIP,"A cheap, unmanned combat drone consisting of little more than an engine and a weapon bolted to a gyroscope. Due to the lack of any real maintenance profile or crew requirement, they are bar none the most cost-effective fighter-based fire support option to be found anywhere. Unfortunately they perform about as well as one would expect, struggling to do any real damage to warships and being nigh incapable of engaging other fighters in direct combat.",,,
+
+loa_baron,SHIP,"A carrier-operated gunboat best deployed to counter a fighter-heavy environment. Though slow, thick armor keeps its considerable crew compliment alive, while an omnidirectional array of laser weapons make the going tough for incomming missiles and enemy strike craft. The Baron can also harass warships with kinetic missiles and its own hulking frame, but a lack of sustained damage makes it struggle against anything larger than a frigate. Additionally, this wing is capable of supporting ground operations in a gunship role.",,,
+
+loa_jack,SHIP,"A heavy combat drone posessing a wide but unimpressive engagement profile. Capable of posing some sort of threat to just about any targer, the Jack is mostly held back by a flimsy frame exposed by a lack of shields. However, captains and crews alike pay little mind to the grevious casualties Jacks tend to suffer, since they are entirely un-manned and easy to replace.",,,
+
+loa_bidrone,SHIP,"A reasonably sturdy, appreciably dangerous, and amazingly cheap heavy combat drone. Achieving this desirable blend of traits seems to have required too many design elements specific to the context of a Hawke class drone carrier for it to be practically translated into a general-use fighter wing.",,,
+
+al_emdrone,SHIP,"Little more than an armored tesla coil built around a tidal generator. The creatively named EMP Disc"" is less of a drone than an esoteric weapon in and of itself. Directed by specialized magnetic levitation turrets housed within a host vessel", its control scheme doubles as its powersource, the magnetic pull on the internal generator powering the coils," which lash out at nearby targets once saturation is achieved."""
+
+al_ace,SHIP,"A well-rounded dogfighter from head to toe, the Ace combines sturdy hull plating with respectable maneuverability and reliable damage application. This results in a fairly wide engagement profile with extra emphasis on engaging other strike craft. Additionally, this wing is capable of supporting ground operations in an air superiority role.",,,
+
+al_earl,SHIP,"Loosely classified as a strike fighter, the Earl operates more akin to a proper bomber, the whole ship being dedicated to delivering a single devastating payload of superheated plasma. A reinforced hull and independently powered shield generator help it survive its harrowing journey.",,,
+
+al_duke,SHIP,"One of the largest ships ever launched from a flight deck, the Duke is more of a miniature warship than a strike craft. Built around a massive underslung turret and posessing a ship-grade targeting suite, this gunboat excels at harassing large targets, but remains fairly vulnerable against fighters. Additionally, this wing is capable of supporting ground operations in a gunship and troop transport role.",,,
+,,,,,
+,,,,,
+,,,,,
+#====================================== FRIGATES ======================================,,,,,
+,,,,,
+loalt_oogik_r,SHIP,"An unusual frigate refurbished from derelict status after untold centuries of lifelessness. Completely unremarkable in ability, its far more interesting as a topic of study, running novel, low technology systems while mounting high-technology weapons.",,,
+
+loalt_oogik_d,SHIP,"A tiny speck in an endless void, this broken hulk has clearly been left adrift for a thousand years, give or take a few centuries. Beneath the surface are obvious signs of a proper scuttling, everything that wasn't nailed down has been long removed, and nothing that's left is familiar to any of your engineers. A cursory analysis suggests that this ship's tactical capabilities are unlikely to justify its considerable restoration costs.",,,
+
+loalt_taath_r,SHIP,"An unusual frigate refurbished from derelict status after untold centuries of lifelessness. The total novelty of its construction asside, this enigma packs a heavy primary armament curiously mounted in reverse, and fed by a primitive power core that would struggle to run most of the guns it could concievably mount.",,,
+
+loalt_taath_d,SHIP,"A tiny speck in an endless void, this broken hulk has clearly been left adrift for a thousand years, give or take a few centuries. Beneath the surface are obvious signs of a proper scuttling, everything that wasn't nailed down has been long removed, and nothing that's left is familiar to any of your engineers. A cursory analysis suggests that this ship's tactical capabilities are unlikely to justify its considerable restoration costs.",,,
+
+loa_ike,SHIP,"A frigate sized assault shuttle with powerful secondary thrusters capable of brute forcing the craft through any gravity well. It is capable of putting it's relatively modest warship-grade arsenal into service against ground-based targets, in addition to an extensive suite of anti-surface countermeasures. 
+
+It wouldn't be entirely hyperbole to state that the Society owes its existence to the Ike, leveraging its capabilities to embark on numerous raids, pilfering supplies and loot to fund and facilitate their operations in seeming perpetuity.
+
+Perhaps most interesting however, is the spaceframe itself. Lacking many of the technological signatures typically employed by the ARS, the Ike has more in common with their export hulls than anything else they field as part of standard operations, despite being wholy absent from the former catalogue.",,,
+
+loamt_fox,SHIP,"A small, lightly armed warship mostly deployed for scouting or commerce raiding missions. The Fox is fragile, but exceptionally quick, relying on its agility to survive engagements while harrassing targets or running down non-combat ships.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtg_fox,SHIP,"One of the cheapest military grade vessels to be found anywhere, while still retaining most of its progenitor's agility. These traits mix nicely to make export Foxes the single most common Society-derived hull to be seen outside of the Society itself.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamtp_fox,SHIP,"A coffin for the insane, this export Fox has found its way into the hands of pirates, who have jury rigged its engines to hell and back in an ill-concieved quest to become one of the fastest moving objects on the battlefield, at any cost.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamt_edith,SHIP,"A support frigate carrying only token weaponry, the Edith instead carries an immense array of ultra-high-gain sensors and vector calculation software.  When positioned properly in the line of battle, it can extend the range of an entire squadron of warships well past typical limits, a distinct advantage that can turn the tide of any engagement.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_sherman,SHIP,"A slow, bulky frigate lacking in ordinance for its size. The Sherman shines when used as an anchor for more mobile ships, standing in enemy fire and making up for its light arsenal by being incredibly hard to put down.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_walsh,SHIP,"An agile attack frigate often seen escorting larger Society warships. Constructed around a hull-spanning network of ordinance management hardware, the Walsh can hurl considerable ammounts of gunfire downrange, as long as it holds together.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtg_walsh,SHIP,"An export variant of the Walsh typically employed by minor factions for use as a patrol interceptor to counter light smuggling or combat piracy as part of a larger flotilla. Low crew requirement and an easy maintenence profile mix well with high mobility and respectable firepower for this role. The resulting level of demand by legitimate parties makes this frigate impractical for pirates to acquire.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamt_reid,SHIP,"Large, imposing, and armed to the teeth, upon arriving in the Persean Sector, the Reid was mistakenly classed as a light destroyer. While a lack of heavy mounts prevents it from effectively throwing down with actual destroyers, its vast array of small, focused gun emplacements and impressive tactical speed make it incredibly deadly to other frigates.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+,,,,,
+,,,,,
+,,,,,
+#====================================== DESTROYERS ======================================,,,,,
+,,,,,
+
+loalt_nicke_r,SHIP,"An unusual destroyer refurbished from derelict status after countless centuries of lifelessness. It sports a potent battery of modular energy weapons supported by an integrated heavy railgun capable of firing two distinct types of munitions. The only other specific point of note is how crude many of its systems are compared to its intended weapon selection.",,,
+
+loalt_nicke_d,SHIP,"A diminutive speck in an endless void, this broken hulk has clearly been left adrift for a thousand years, give or take a few centuries. Beneath the surface are obvious signs of a proper scuttling, everything that wasn't nailed down has been long removed, and nothing that's left is familiar to any of your engineers. A cursory analysis suggests that this ship's tactical capabilities are unlikely to justify its considerable restoration costs.",,,
+
+loamt_victoria,SHIP,"A sight almost synonymous with the Reparations Society itself, the Victoria combines high maneuverability, respectable firepower, and dependable support functionality into a sturdy, flexible hull. Those who find themselves facing one in battle are advised to keep their shields up, lest ""the curse of victory's witch"" consign them to the void. 
+
+This ammusing story, often told by veterans heavy on drink, stems from the inclusion of a unique integrated structural analysis suite. A standard, if bulky computing rack capable of near-gamma level calculations, programmed specifically to analyze sensor data and provide unfathamobly detailed real-time structural information on the ship's target. When transmited to an entire fleet, it allows gunnery crews to crack open even the sturdiest hulls like an egg.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_osmond,SHIP,"Packing an odd layout of heavy firepower and propelled by a robust engine assembly, the pointed frame of the Osmond Heavy Destroyer is an uncommon sight commanding common respect. It is constructed around the same network of electromagnets the Alistair class battlecruiser is famous for, giving it the ability to cripple targets from a distance. However, numerous sophisticated components shared between the two ships force them to compete with one another at the drydock, making the Osmond difficult to field reliably.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_norwood,SHIP,"Combining the fuel capacity of a small tanker with a considerable stockpile of guided ordinance, the Norwood serves as an ample platform from which to hurl missiles at the enemy. Despite superstition, this combat tanker is not the powderkeg that rumors would have you believe, but a severe lack of direct fire weaponry makes it ill-suited for direct confrontation none the less.
+
+In a similar vein to the Jameson's cargo clamps, the antimatter tanks of the Norwood appear to be some sort of proprietary system unknown elsewhere in the Sector. While measures have been taken to mitigate this, it still makes restocking the ship somewhat onerous at certain drydocks.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_thatcher,SHIP,"A robust and agile light destroyer which forms the backbone for many of the Society's smaller raiding parties. Similar to the Walsh and King classes, its anemic armament is reinforced by an integrated Omni-Loader system. Despite this, the Taylor in particular suffers from a lack of available hardpoints, making weapon choice incredibly important.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtg_thatcher,SHIP,"An Export variant of the Taylor class light destroyer commonly deployed for patrol and enforcement duty with minor powers, and sometimes the Persean League. Removal of the bulky Omni-Loader has allowed this retrofit to keep its flexible primary mounts, and the installation of secondary thrusters has made it exceptionally fast for a ship of its class, if somewhat under-gunned.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamtp_thatcher,SHIP,"An export Taylor which has been obtained, legally or otherwise, by pirates, who uncharacteristically, turned it into a small, makeshift escort carrier at the cost of most of its cargo space.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamt_burke,SHIP,"Constructed primarily around a strange piece of targeting equipment, the Burke is surprisingly dangerous yet best kept within arms reach of a nimble escort. Its single oversized weapon mount allows it to fling heavy fire at great distance for a ship of its size, but technical limitations in its esoteric sensor suite as well as a poor secondary weapons package leave the lumbering destroyer fairly vulnerable if left unguarded.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtp_burke,SHIP,"An ungaingly variant of the Burke class destroyer sacrificing nearly everything for two large hardpoints. Fairly uncommon, nobody is entirely sure if these ships are the result of a custom order placed with the Society itself, or a home-grown retrofit performed directly by some insane warlord. What people are sure of however, are the unhinged personalities of those who choose to fly them.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamt_caswell,SHIP,"Unique within the Society as one of the only ships dedicated wholey to the deployment of strike craft, the Caswell none the less fills the role with flying colors. Respectable mobility at both the strategic and tactical levels allow it to harry foes from a distance with wings of strike craft while numerous overlapping turret arcs keep it safe from the same.
+
+Though surprisingly standardized from the outside, Pilots who have flown for the Society attest that on the inside, no two Caswell hangars are the same. Each ship posesses a unique mashup of stolen industrial equipment from widely varied sources, ranging from the jury-rigged nanoforges of other carriers, to the industrial vats of surface based complexes. While this serves as evidence of the Society's limited access to autoforge technology, the ship's effectiveness regardless serves as a solid testament to their ingenuity.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+#====================================== CRUISERS ======================================,,,,,
+,,,,,
+
+loalt_eylamn_r,SHIP,"An unusual cruiser refurbished from derelict status after untold centuries of lifelessness. This ship defies all commonly known historical Domain doctrines, with an eclectic combination of heavy armor, an oversized powerplant, and weapon mounts mostly designed to accomodate directed energy weapons. It's secondary thruster system is capable of propelling this hefty mass at startling speeds, but reliability is a concern during protracted engagements.",,,
+
+loalt_eylamn_d,SHIP,"An insignifigant speck in an endless void, this broken hulk has clearly been left adrift for a thousand years, give or take a few centuries. Beneath the surface are obvious signs of a proper scuttling, everything that wasn't nailed down has been long removed, and nothing that's left is familiar to any of your engineers. A cursory analysis suggests that this ship's tactical capabilities are unlikely to justify its considerable restoration costs.",,,
+
+loamt_hawke,SHIP,"The Hawke is a light cruiser specially constructed for the deployment of un-manned strike craft. While fast, it is lacking in direct firepower, even compared to other ships of similar tonnage. This is compensated for by a host of heavy drones, well regarded as far more effective than their price tag gives them any right to be.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtg_hawke,SHIP,"An export variant of the Hawke class drone carrier. Either unwilling or unable to provide logistical support for the Hawke's drones to third parties, its efficient but highly specialized manufacturies have been replaced with industrial forge-vats jury rigged to serve as fighter nanoforges. While this technically opens up a wider array of tactical possibilities, the bootleg nanoforges spill out onto the flight decks themselves, making it difficult to service more complicated types of strike craft.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamtp_hawke,SHIP,"Originally an export Hawke, pirates have completely rearranged it into a heavy gunboat, with guns poking out at every concievable angle. Lowered displacement and additional maneuvering thrusters have even left it faster than its progenitor.
+
+While not considered an industrial powerhouse, the Anarakis Reparations Society produces a steady supply of new ship hulls exclusively for export. Combining shipbreaking efforts with their own designs, these hulls are a patchwork amalgamation of parts that are far more reliable than their outward appearance would lead you to believe. As a result, they can frequently be found in the armadas of minor powers and pirate warlords the sector over.",,,
+
+loamt_king,SHIP,"A cramped hull constructed around the largest example of the Reparations Society's infamous Omni Loader, the King sacrifices endurance for raw firepower. With a bevy of weapons at all sizes, and its head crowned by a single heavy mount, the King hits hard and runs hot. On the flip side, thin armor and anemic power systems makes head to head brawls a dubious prospect.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_lyons,SHIP,"Meandering forward from behind monolithic layers of polarized ferroceremic, the Lyons strengths lie in presence and pressure. Sturdy defenses protect its modest and varied armament from reprisal as it steadily advances, driving a wedge into hostile lines for more aggressive ships to exploit.
+
+As the Society considers the operation of autoforge technology to be a luxury, the nanoforges servicing its flight decks are usually stolen, directly or otherwise from various other existing classes of carrier, then haphazardly spliced into place wherever they will fit. While this jury rig is thorough, and undoubtedly effective, representatives from the Society have been willing to admit in the past that they have no idea what the original hardware is supposed to consist of.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamt_macnamara,SHIP,"An imposting behemoth of a cruiser bristling with focused gun emplacements and posessed of the speed to apply them, The Macnamara is a predator from bow to stern. Despite its reputation, a massive aftward blind spot leaves it notably vulnerable to flanking maneuvers and fleets of smaller craft. As a result it is rarely seen un-escorted by smaller craft, particularly its sister ship, the Reid.
+
+It is widely assumed that this ship is used as a crutch to prop up the Society's limited number of Alastair class battlecruisers, given that it is often seen leading fleets far larger than most would consider flagging with a mere cruiser.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+loamtp_bigmac,SHIP,"A deranged vessel for a deranged soul, what heritage this Macnamara may have once had has since been cast into the abyss in service of a crazed lunatic's revenge quest against humanity itself for slights even Ludd cannot fathom. While its captain's ability to maintain a protracted war against the entire sector remains in question, the ship itself is not to be trifled with. A veritable Jambalaya of components spanning the entire breadth of Domain and possibly extra-Domain history, the self-styled 'Big-Mac' is a monstrous cruiser capable of outright devouring almost anything it sets its astropaint eyes on.",,,
+
+,,,,,
+loamt_jameson,SHIP,"Most often utilized as a treasure ship by the Reparations Society, the Jameson boasts respectable holds and sufficient fighter projection to serve as a competent fleet support vessel and cargo hauler.
+
+Jameson holds are typically made from permanently welding the chopped up holds of other freighters to its frame, but design aspects suggest it was originally meant to be used with detatchable, modular containers. Curiously, the implied clamping dimensions do not match any known shipping unit registered with Domain or Hegemony commerce regulations.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+,,,,,
+loaht_champion1,SHIP,"Found drifting and lifeless in the cold void of space, the Lancer is something of an enigma to engineers and historians alike. Sporting an obscene number of small guns which can be efficiently brought to bear by a network of purportedly reactionless engines, this mysterious cruiser excels at getting into and out of brawls. This is helped by a thick, contoured armor belt, a thin but remarkably strong shield, and a somewhat baffling ability to phase in short bursts. This odd menagerie of traits compliment each other with frightening efficacy and make the Lancer a uniquely fearsome opponent.
+
+Though only one is known to exist within the confines of the sector, those who find themselves engaging it in combat are advised to practice caution.",,,
+,,,,,
+#====================================== FACTIONS ======================================,,,,,
+,,,,,
+al_ars,FACTION,"Tenatively tracing their lineage back to a series of mostly forgotten anti-war protests during the earliest days of Domain history, how the Anarakis Reparations Society came to be the duplicitous band of privateers they are today is anyone's guess. They claim alliegence to an unknown entity referred to as 'Arkgneisis' and rely mostly on antiquated pre-autoforge industrial techniques that, while limiting to their capacity for war, serve as the perfect economic insulator for these trying times. History tells that they showed up on the Persean stage roughly 50 years after the collapse, and spent a few subsequent decades mostly minding their own business outside of the odd raiding party.
+
+Declared to be terrorists by the Hegemony even before the raids started, most others in the sector saw them as little more than a minor, if better organized band of pirates. It wouldnt be until shortly after the fall of Mayasura that the wider sector would appreciate the label. During this time the Society launched a short but devistating assymetric war against the Hegemony backed by financial resources from a few vengeful holdouts. This offensive would ultimately come too late to drastically change the outcome of the first AI war, and though the Society did not sign the treaty, their attacks would dwindle alongside the coffers of their benefactors.
+
+Nowadays almost every notable faction in the sector will avail themselves of the Society's primary export at one point or another. For its leadership, turning on yesterdays clients and accepting payment from todays targets are simply a matter of course, revealing no discernable political stake in anything they do. As a result, the complete lack of trust they foster is matched only by their undeniable utility to those around them, with a rare exception remaining in the Hegemony, whom they claim to detest as a matter of principle...
+
+...What that principle is however? Is 'also' anyone's guess.",,,
+,,,,,
+#====================================== STATIONS ======================================,,,,,
+,,,,,
+loa_random_market_tier1,CUSTOM,"As is Society custom, this asteroid has been turned into a small station with most of the modern facilities one would expect from an orbital installation, as well as habitation room for a viable self-contained population.",,"Ships are loosely tethered to the rocky exterior of this base, cargo and people being ferried through umbilicals as the feint glint of torch drives on patrol spark between the asteroids in the distance.",
+,,,,,
+loa_arsstation_core,SHIP,"An installation built into the substrate of a natural asteroid, these sorts of stations tend to be cheap and fairly low tech, but rugged and durable.",,,
+,,,,,
+
+loa_random_market_tier2,CUSTOM,"Several asteroids have been strung together to form the scaffolding of this facility, from which clear signs of civilization can be seen budding like blisters.",,"A massive crater has been excavated from the rockface to form a small harbor. Traffic in and out of its mouth is a bit tight, but the Society seems to be making due, with raiding parties comming and going regularly in between the odd visitor. A Society representative clears you for entry with little more than an apraising glance before walking off to attend to his other duties.",
+,,,,,
+loa_arsstation_core2,SHIP,"A substantial installation built into the substrate of a natural asteroid, these sorts of stations tend to be cheap and fairly low tech, but rugged and durable. Additional districts have been built outward from the asteroids core, providing additional space for facilities and living quarters, as well as logistical framework for defensive armaments.",,,
+,,,,,
+
+loa_random_market_tier3,CUSTOM,"Sitting large amist the field of rocks, barely even hidden anymore, this base is an ungaingly mess of rock and steel.",,"This station has a surprisingly modern harbor district embedded in one of its rockfaces. Ships of all sizes can be seen floating to and from the walls, while others are being refit, broken down, or built. Stepping off the dock you are directed by port workers toward a customs office, and quickly cleared for entry into the wider facility.",
+,,,,,
+loa_arsstation_core3,SHIP,"An extensive installation built into the substrate of a natural asteroid, these sorts of stations tend to be cheap and fairly low tech, but rugged and durable. This example has been heavily built up, with multiple districts erupting from the surface of the asteroid, as well as having annexed additional rocks. One should expect such facilities to be roughly comparable to any other star fortress in terms of firepower, and as such they should not be assaulted casually.",,,
+
+loa_random_market_tier4,CUSTOM,"Sitting large amist the field of rocks, barely even hidden anymore, this base is an ungaingly mess of rock and steel. Larger than is typical, this station has been recently expanded, serving as the new ARS headquarters after the destruction of Anargaia.",,"This station has a surprisingly modern harbor district embedded in one of its rockfaces. Ships of all sizes can be seen floating to and from the walls, while others are being refit, broken down, or built. Stepping off the dock you are directed by port workers toward a customs office, and quickly cleared for entry into the wider facility. The distinct atmosphere of chaos permeates the entire station, facilities being crammed wherever there is room, Reparators scrambling to and from all directions as they try to make this base suit a function it was never intended to serve.",
+
+
+loa_anargaia,CUSTOM,"Elusive to the point of myth, and the central pillar to the Society's web of logistics and command, Anargaia is a ship unlike any in the sector. Utterly gargantuan, and horrifically well armed, it wanders between stars on the back of an antiquated method of FTL, spreading chaos wherever it goes.",,"Your shuttle is directed into an immense canyon running down the front of the ship. You can see ships, both visitor's and the Society's own being built, serviced, and torn apart in the many bays that line its walls. After several stages of processing you are finally dropped off on the 'visitor's concourse' A huge rotating drum internalized within Anargaia's hull. Asside from the unverving movement of the cieling crawling by overhead, it's much the same as any other major port, with all the ammenities and bustle you've come to expect from this lifestyle.",
+
+#====================================== ORBITAL STATIONS ======================================,,,,,
+,,,,,
+
+loa_asteroid_orbitalstation,SHIP,"The Anarakis Reparations Society has lived as nomads for as long as records track their existence. To expedite the construction of their homes, they build these ungaingly structures into the substrate of suitable space rocks, hollowing out caverns and processing the minerals to furnish them. When one of their bases is then threatened by a foe to great to defend against, they salvage what they can and move on, soon setting up a new home somwhere else.
+
+This is a relatively recent example, with middling defenses.",,,
+,,,,,
+
+loa_asteroid_battlestation,SHIP,"The Anarakis Reparations Society has lived as nomads for as long as records track their existence. To expedite the construction of their homes, they build these ungaingly structures into the substrate of suitable space rocks, hollowing out caverns and processing the minerals to furnish them. When one of their bases is then threatened by a foe to great to defend against, they salvage what they can and move on, soon setting up a new home somwhere else.
+
+This base has been lived in for quite some time, its defenses have been built up and its host asteroid field seeded with asteroid traps.",,,
+,,,,,
+
+,,,,,
+
+loa_asteroid_starfortress,SHIP,"The Anarakis Reparations Society has lived as nomads for as long as records track their existence. To expedite the construction of their homes, they build these ungaingly structures into the substrate of suitable space rocks, hollowing out caverns and processing the minerals to furnish them. When one of their bases is then threatened by a foe to great to defend against, they salvage what they can and move on, soon setting up a new home somwhere else.
+
+The Society consider this a major port of call, equipping it with heavy defenses and likely keeping a large garrison nearby.",,,
+,,,,,
+
+,,,,,
+
+loa_arscapitol_core,SHIP,"The sheer dimensions of this vessel lend themselves to obscuring its existence in legend, a trait the Society is all too willing to embrace. None the less, Anargaia exists, and serves as the de-facto 'capitol' of the Anarakis Reparations Society. It is a mobile fortress in every sense of the word, coordinating, supplying, and defending Society operations wherever it sails. In addition to its hobsean logistical capacity, the vessel is an exceptionally lethal warship in it's own right. While the Society is largely unwilling to gamble such an irreplacable asset in a direct assault on their enemies, any who wish to enact the reverse will find themselves staring down strategic levels of firepower with very few windows of retreat should they change their minds, and that's before considering any accompanying fleets.
+
+How the Society built Anargaia is a complete mystery, given the sheer logistical scale it theoretically takes to construct such a leviathan. Structurally it is an amalgamation of novel engineering and scavenged hulls, some dating back almost 1000 years. Additionally, the hull bears the patchworked evidence of having been refurbished several hundred times, leading most to conclude that however much its operation might cost the Society, it's ability to project force across the cosmos must be worth it."
+,,,,,
+#====================================== CAPITALS ======================================,,,,,
+,,,,,
+loamt_alastair,SHIP,"An uncommon sight representing the absolute limit of the Reparation Society's antiquated industrial techniques. The Alastair barely achieves the tonnage to be called a capital ship, but is surprisingly resiliant and appreciably fast within the classification. Additionally, the frame of this vessel has been built around a unique device capable of crippling targets from great distance. Where the uninitiated see a small, unimpressive battlecruiser, the experienced see a lethal heavy interdictor.
+
+Scraps of historical data dredged up from tech mining expeditions attribute the name of this class to a Rear Admiral in the Domain navy who lived some time during the Early Epoch. Under what circumstances this came about is a popular topic of debate among historians the sector over.
+
+While not much to look at, this ship is a forest of jury rigs and redundancy that make it extremely accomodating to having its internals rearranged.",,,
+
+,,,,,
+loamt_gaillard,SHIP,"Referred to by the Society as 'Battleship One', Hegemony intelligence scrambled to identify the Gaillard shortly after its battlefield debut, and have come to the chilling conclusion that they have no idea where it came from. Adequate defenses, powerful engines for her size, and absolutely bristling with turret mounts, the Gaillard is nothing if not a well-rounded, capital-scale bullet hose.
+
+While opening up many questions, at least one has been answered, a Gaillard is, essentially, an extended Donovan, which makes up the aft portion of their considerable bulk, and explains the latter's strange prow trough. Having previously suspected it to be a mounting point for some sort of super weapon, the sector's main powers are still largely unsure if the truth is any better.",,,
+
+,,,,,
+loamt_donovan,SHIP,"Strategists the sector over have debated since the Society's arriaval whether or not the Donovan even classifies as a capital ship. What isn't debated however, is their status as priority targets in the order of battle. On the surface they seem wholly underwhelming for their size, posessing destroyer grade armaments and a passable missile complement. Its secret is the missile assembly lines lurking just under its surface, enabling the Donovan to deploy a steady stream of high-yield ordinance ad infinitum.
+
+While military minds spend their time wondering how to classify the Donovan, engineers have their own mystery to ponder. As far as anyone can tell, the massive front plow built into the ship serves no purpose, being little more than a collection of struts and sockets. Absent of any related intel from the Society itself, speculation has posited that it might be a massive weapon mount, implying that the design itself is incomplete.",,,
+
+loaht_savior,SHIP,"What a naughty thing you are, poking your nose where it doesn't belong.",,,
+,,,,,
+#====================================== SYSTEMS ======================================,,,,,
+,,,,,
+loa_warspeed,SHIP_SYSTEM,"A secondary set of high-performance thrusters collectively referred to as 'Warspeed' which run directly off the flux grid. The engines in question are specifically designed to provide maximum thrust during a minimal lifespan, presumably under the thinking that the enemy will be vanquished by the time the engines need servicing. This example is designed for boosting frigates.",Mobility,Frigate grade system which greatly increases top speed and acceleration. System performance steadily degrades with use.,
+,,,,,
+
+,,,,,
+loa_redline,SHIP_SYSTEM,"All the energy that this ship's powerplant can muster, wired up to a big, red button on the bridge. This leaves the vessel capable of such acceleration that relativistic time dilation starts to become noticeable, and the burden placed on the ship itself results in diminishing returns for each time it's used.",Mobility,Greatly increases top speed in forward and strafing directions. Slightly dialates down local time. System performance degrades with each use.,
+,,,,,
+
+,,,,,
+loa_warspeed3,SHIP_SYSTEM,"A secondary set of high-performance thrusters collectively referred to as 'Warspeed' which run directly off the flux grid. The engines in question are specifically designed to provide maximum thrust during a minimal lifespan, presumably under the thinking that the enemy will be vanquished by the time the engines need servicing. This example is designed for boosting cruisers.",Mobility,Cruiser grade system which greatly increases top speed and acceleration. System performance steadily degrades with use.,
+,,,,,
+
+,,,,,
+loa_bigmac_system,SHIP_SYSTEM,"An evolution, perhaps even the apex, of the original Macnamara's subsystem. Lacking an official name, the colloquially known 'attack' appropriately puts the Big Mac closer to its next target while showering them in dibilitating EM radiation.",Offensive,Violently force an immense ammount of power and propellant through the drive system lurching the ship forward and showering anything nearby with electromagnetic energy.,
+,,,,,
+
+,,,,,
+loa_ammo_swap,SHIP_SYSTEM,"An integraded dual-feed autoloader designed to switch between two types of ammunition in the heat of battle. Typically loaded with Kinetic and High Explosive versions of the same shell.",Offensive,Switches the main gun between Kinetic and High Explosive Damage.,
+,,,,,
+
+loa_burstphase,SHIP_SYSTEM,"When an alternating current is fed through the engine coils of the Champion's poorly understood drive systems, it creates a phase field that submerges the entire vessel into phase space much like a standard phase coil would. This can either be done at low energies over extended periods for strategic effect, or at high energies over short periods for tactical effect. Regardless of which method is being employed, the fact that the Champion's engine clusters are made of of multiple coils each means that normal engine functions can continue during the process. This actually yields higher mobility than normal once the warping of phase space is accounted for.",Phase,Temporarily submerges the ship into phase space, allowing it to safely and rapidly cover ground over short bursts. Hardflux venting disabled.
+,,,,,
+
+al_empdrone,SHIP_SYSTEM,Periodically shocks a nearby target for EMP damage.,Offensive,Periodically shocks a nearby target with EMP damage.,
+,,,,,
+
+loa_flakmine,SHIP_SYSTEM,"Designed as a mine layer first, and a dedicated carrier second, the Caswell is capable of deploying a large number of mines over an incredibly wide space. To avoid detection, the mines are deployed in a completely disarmed state, and must be armed by a remote charging device on board the host minelayer.",Offensive,Summons a Heavy Flak Mine at the point of aim which will follow the closest target until getting close enough to arm.,
+,,,,,
+
+loa_missileManufactorum,SHIP_SYSTEM,"Taking many queues from most sector bound flight decks, the Missile Autofactory is a specialized assembly line dedicated to battlefield production of guided ordinance.",Offensive,Gradually replenishes missile ammo while active. Disables weapons.,
+,,,,,
+
+,,,,,
+loa_gailardfist,SHIP_SYSTEM,"Undocumented in all of history until now, Gailard's Fist is a nickname for what is essentially an extreme implementation of the Omni Loader system common to many other Society warships. Through a delicately woven lace of machinery, the Gaillard can effectively triple its mounted firepower on command, as long as it doesn't mind the buildup of hardflux.",Offensive,Greatly increases rate of fire of weapons, increases damage of beams. Generates hardflux.,
+,,,,,
+
+
+loa_hotracks,SHIP_SYSTEM,"A horrendously complicated mechanical mess capable of storing a duplicate set of whatever missile launchers the ship is mounting, and swapping between them for a considerable tithe of flux. The sheer number of things that can go wrong with this system make it notoriously unreliable past the first couple of uses, but while it holds up it does allow one to dump overwhelming amounts of guided ordinance in a frighteningly short period.",Offensive,Swaps between seperate missile racks with their own ammo and reloads. Repeated use can cause mounts to malfunction.,
+,,,,,
+
+al_chafflauncher,SHIP_SYSTEM,"A simple piston-gun fed by a very primitive analogue to modern Autofactory technology. The forge generates shards of reflective metalglass that are kept heated until shunted into the firing chamber and catapulted out of a short tube. The shards, while effectively inert, can dazzle visual guidance systems while their retained heat can detour heat-seeking missiles, creating a cheap but effective alternative to traditional point defense.",Defensive,Launches shards that confuse and attract enemy missiles.,
+
+,,,,,
+
+loa_flakcurtain,SHIP_SYSTEM,"A vast array of short-barreled cannons poking out from underneath the secondary gunnery deck of the Burke class destroyer. Most often loaded with short-fuze flak shells, triggering the array will rapidly saturate the surrounding space in a hail of shrapnel. A simplified breach mechanism allows up to two volleys in rapid succession, but reloading is slow.",Defensive,Saturates the immediate vicinity with a barrage of flak shells.,
+
+loa_awacs,SHIP_SYSTEM,"Technologically distinct but functionally the same as ancient Earth systems of similar name. The Aerospace Warning and Control Suite utilizes an extensive bevy of high-gain sensor arrays and fleet coordination software to enhance the targeting and gunnery capabiliies of nearby ships. To prevent destructive interference, the ship's shields must be disabled whenever the system is active., the ",Utility,Buffs the range of nearby allies. Prevents the use of Shields.,
+,,,,,
+
+loa_missiletube,SHIP_SYSTEM,"This ship's missile hardpoints are overbuilt with an entire secondary feed system and a mess of servos and belts to allow the ship to swap between it and the primary racks at will. When utilized properly, these Hot-Swap racks allow the ship to dump its ordinance down range at an alarming rate.",Offensive,Allows the ship to swap between two distinct and independant racks of missile ammo. Generates flux.,
+
+al_tacticalscan,SHIP_SYSTEM,"The Structural Analyzer is little more than an oversized rack of networked computers. Paired with an appropriate sensor suite, it brute forces the immense calculations needed to judge a target's structural status in real time. This allows an accompanying fleet to track the target's weakest points, right down to hull-stressors resulting from combat maneuvers.
+
+Due to the limitations of cooling in the absence of an atmosphere, the rack tends to get rather hot, and must be shut down intermittently to prevent the hardware from melting itself.",Offensive,Increases armor and hull damage received by the target.,
+loa_moe,SHIP_SYSTEM,"The Omni Loader is a curious network of devices designed to enhance the performance of modular weapons. Unlike its contemporaries however, the Omni-Loader can work with almost any weapon given to it, short of missiles. As a downside, the hardware is comparatively bulky and outdated, leaving little room for expansive arsenals to be mounted in the first place, and resulting in rather cramped interiors for any ship mounting it.
+
+Fragmented records of this technology exist from the earliest days of the Domain's expansion, long before it was thought that the Domain could even field modular energy weapons, a point which has proven divisive among military analysts and historians.",Offensive,Doubles the rate of fire for all non missile weapons. 1.5x damage for beams. Generates hardflux while active.,
+
+al_magneticoverload,SHIP_SYSTEM,"Overloads the magnetic slabs that make up the primary component of this ship's thruster assembly, providing a substantial bonus to top speed and forward acceleration. Oversaturation creates sporadic electrical discharges hazardous to any ship that has not undergone proper insulation procedures beforehand.",Offensive,Provides a substantial bonus to top speed and forward acceleration while active. Electrical discharges are hazardous to nearby enemy vessels.,
+
+al_magplating,SHIP_SYSTEM,The armor belts of this ship have been reinforced with magnetic coils. When a current is run through them it substantially increases cohesion of the material. The strong magnetic fields produced make firing weapons ill advised and thus are disabled while this system is active.,Offensive,Greatly increases armor damage absorption when active. Disables weapons.,
+al_magneticoverloadc,SHIP_SYSTEM,"Overloads the magnetic slabs that make up the primary component of this ship's thruster assembly, providing a substantial bonus to top speed and forward acceleration. Oversaturation creates sporadic electrical discharges hazardous to any ship that has not undergone proper insulation procedures beforehand.",Offensive,Provides a substantial bonus to top speed and forward acceleration while active. Electrical discharges are hazardous to nearby enemy vessels.,
+
+al_gregorysweb,SHIP_SYSTEM,"The Discs launched by this system are technically not Drones at all, but tidal generators with high levels of magnetism surrounded by an analogue to the tesla coil. Turreted directors on-board the host ship can control the position of each disc individually, while the magnetic pull powers the tidal generator, charging the coil and flinging sporadic electrical discharges at nearby ships. While incredibly weak compared to domain-standard EMP weaponry, the brutal simplicity and advantage of range this drone suite provides should not be overlooked by logistics officers or fleet admirals alike.
+
+As the Gregory is too small to fit combat-ready autoforges capable of constructing replacement drones, a simple magazine has been loaded with backup discs it can launch should the first pair be destroyed.",Offensive,Launches drones capable of disrupting key functions of enemy vessels. This version has reduced active drone count and cannot manufacture replacement drones.,
+loa_alastairsweb,SHIP_SYSTEM,"By tying local magnetic fields in knots, Alastair's web creates electromagnetic anomalies and guides them toward a given target. Sudden introduction of solid mass or high energies can cause the anomalies to harmlesslly disperse back into space.
+
+This device is surprisingly intricate and is completely integral to the spaceframes of the Battlecruiser-01, and Destroyer-06 more commonly known as the Alastair and Osmond classes respectively. While its efficacy is hard to deny, its complexity is also the only thing preventing these ships from being fielded in larger numbers.",Support,Creates electromagnetic anomalies that slowly track a given target before exploding and showering nearby ships in EMP damage. The anomalies can be safely absorbed or dispersed by most forms of weapons fire.,
+
+loa_osmondsweb,SHIP_SYSTEM,"By tying local magnetic fields in knots, Alastair's web creates electromagnetic anomalies and guides them toward a given target. Sudden introduction of solid mass or high energies can cause the anomalies to harmlesslly disperse back into space.
+
+This device is surprisingly intricate and is completely integral to the spaceframes of the Battlecruiser-01, and Destroyer-06 more commonly known as the Alastair and Osmond classes respectively. While its efficacy is hard to deny, its complexity is also the only thing preventing these ships from being fielded in larger numbers.",Support,Creates electromagnetic anomalies that slowly track a given target before exploding and showering nearby ships in EMP damage. The anomalies can be safely absorbed or dispersed by most forms of weapons fire.,
+,,,,,
+#====================================== BUILT IN GUNS ======================================,,,,,
+,,,,,
+loa_nicke_gun_r,WEAPON,"A mostly unremarkable novelty railgun recently commissioned by an independent captain. Seemingly a downgraded Gauss Cannon, its ability to switch between multiple types of ammo serves as the only explanation as to why anyone would spend so much to have it custom-built.",Close Support,,
+
+al_cauldron,WEAPON,"A rough and ready upscaling of the Pot type Spread Mortar, the Cauldron is capable of catapulting a vast spread of chemo-explosive gel to deter enemy movements or flay armor plates at range. 
+
+While the Cauldron is functionally identical to its smaller siblings, the volumetric increase in gel to be fired was accompanied by a disproportionate increase in volatility, requiring a much longer run-up for the piston and making the weapon impractical for modular construction. The very same increase in volatility also made handling the gel before firing extremely dangerous, further restricting the weapon's use to ships with large enough autoforge vats to produce ammunition on the fly.",Close Support,,
+
+loa_siegecannon_l,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing.",Strike,,
+
+loa_siegecannon_v,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing.",Strike,,
+
+loa_siegecannon_w,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing.",Strike,,
+
+al_nuclearcannon,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing.",Strike,,
+
+al_nuclearlauncher,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing. This version posesses limited ammo.",Strike,,
+
+al_nuclearburstcannon,WEAPON,"A low-energy coilgun that fires crude, prefabricated fission warheads. The warheads are equipped with limited guidance for minor course corrections at extreme range, as long as a target is locked before firing. This version has expanded ammunition capacity and larger ordinance fabricators to stock them.",Strike,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+#====================================== MISSILES ======================================,,,,,
+,,,,,
+al_rod,WEAPON,"This fully enclosed missile launcher programs its ammunition with a ballistic trajectory prior to launch, allowing it to fire otherwise un-guided ordinance in all directions.",Close Support,,
+
+loa_mosaic_torpedo,WEAPON,"Nicknamed for the intricate grid of tungsten blocks that sit just underneath its outer sheath. The Mosaic is a crude fission warhead rigged to detonate a ways distant from its target, showering it in atomic fire and molten fragments in equal measure. Though an uncommon occurance, the delicate mechanisms that make this weapon possible tend not to trigger properly when jostled by direct impacts.",Strike,,
+
+al_sphere,WEAPON,"Little more than an armored gyroscope propelled by a tiny magnetothruster, the Sphere SRM is fed into battle by a vaccum tube, and then guided on short-range collision courses by the simplistic nav computer at its core. While it lacks any kind of warhead, the sheer heft provided by its armor is enough to stress shields and buckle some of the lightest armor belts, assuming the missile doesn't run out of fuel first.",Anti Fighter,,
+
+loa_can_launcher,WEAPON,"An anti-shield missile system consisting of a self-aiming disposable launcher and a set of inert-mass impactors. At a glance it seems a bit redundant but the first stage essentially serves to aim the actual missiles, which posess only corrective guidance.",Close Support,,
+
+al_string,WEAPON,"Named for the thread of nano-wire that trails behind it from the mothership, A swarm of string missiles is designed to seek out a target's engines and ram them, allowing a high-voltage surge of electricity to be sent from the mothership to the point of impact, disrupting the operation of any equipment local to the impact site in a manner similar to many Ion weapons.",Support,,
+
+loa_needle,WEAPON,"An unusual, low-cost, missile-based point defense weapon capable of intercepting hostile ordinance at long ranges, provided the missile's inconsistent tracking algorithms hold up.",Point Defense,,
+,,,,,
+,,,,,
+#====================================== LIGHTHOUSE ======================================,,,,,
+,,,,,
+loa_flashlight,WEAPON,"A flexible pumped beam weapon with bare-minimum engineering specifications which can harvest EM radiation from pre-charged detonators or hooked directly into the flux grid, allowing it to fit on ballistic and energy mountings alike. The cheap lensing array is prone to warping, leading to poor sustained accuracy.
+
+Its name stems from the strobe-like effect witnessed by this weapon's target when under fire.",Multipurpose,,
+,,,,,
+
+#====================================== THE GIGATON LANCE ======================================,,,,,
+,,,,,
+loa_gigaton,WEAPON,"This monolith of a gun is a generously scaled-up example of an ancient particle-weapon analogue once referred to as a 'Casaba Howitzer'. Utilizing crude but massive shaped fusion charges, it belches huge jets of atomic fire and a spray of searing hot shrapnel, making this weapon capable of strategic levels of firepower at similarly strategic ranges.",,,
+,,,,,
+
+#====================================== PELLET GUNS ======================================,,,,,
+,,,,,
+al_pelletdriver,WEAPON,"Essentially a miniaturized Pellet Gun, no small feat in its own right given the manufacturing requirements, for use on smaller weapon mounts. Lacking the capacitance of its cousins, the Micro Pellet Gun's primary selling point is accelerated firing cycle.
+
+Due to the absence of autoforge compliant production chips, the micro-coils that make up the bulk of this weapon can only be manufactured at the most advanced facilities, as a result, part canibbalization is standard practice, making these guns fairly uncommon.",Close Support,,
+al_pelletgun,WEAPON,"Operating under the basic principles of a coilgun, the Pellet Gun fires minimal mass at maximal velocity, producing sufficient magnetic shear to rip a 'pellet' into its constituent particles before exiting the barrel at a signifigant fraction of C. While this technically makes it a particle weapon, the resulting stream carries too little heat to be properly classified as an energy weapon, and it is much more effective against shields than anything else.
+
+Due to the absence of autoforge compliant production chips, the micro-coils that make up the bulk of this weapon can only be manufactured at the most advanced facilities, as a result, part canibbalization is standard practice, making these guns fairly uncommon.",Close Support,,
+al_pelletcannon,WEAPON,"A massive, ultra-dense rail of magnetic coils allows the Pellet Cannon to apply the same levels of force wielded by its cousins, to a far heavier mass, resulting in a relativistic jet capable of dealing ruinous damage to shields. Despite these immense energies, this weapon is relatively lacking against armor compared to more standard forms of mass driver.
+
+Due to the absence of autoforge compliant production chips, the micro-coils that make up the bulk of this weapon can only be manufactured at the most advanced facilities, as a result, part canibbalization is standard practice, making these guns fairly uncommon.",Close Support,,
+,,,,,
+
+#====================================== ELECTRON RIFLES ======================================,,,,,
+,,,,,
+loa_er,WEAPON,"A free-electron blaster with generous engineering tolerances, notorious for slipping through cracks in armor, though not so much for making them. Integrated sensors and a robust servo assembly also allow this weapon to serve as viable point defense.",Multipurpose,,
+
+loa_her,WEAPON,"An upscaled version of the Electron Rifle, though inefficient against shields and armor, its raw damage output is hard to ignore. Integrated sensors and a robust servo assembly also allow this weapon to serve as viable point defense.",Multipurpose,,
+,,,,,
+
+#====================================== HYPERSPACE WEAPONS ======================================,,,,,
+,,,,,
+loa_hypercannon,WEAPON,"A general-purpose, long-range energy weapon which hurls hyperspace protorifts sustained by a sheath of electroplasma. Physical impacts will generate unstable rifts that transport chunks of whatever it hit into hyperspace.
+
+The dimensions of the weapon are too small to contain all the equipment neccessary to leverage its entire throughput capacity. Requiring the installation of additional capacitor magazines within the hull of a ship to get the most out of this weapon.",Close Support,,
+,,,,,
+loa_warpshot,WEAPON,"A remarkably efficient point defense weapon that fires naked hyperspace rifts at an exceptionally high rate. While hyperspace anomalies are capable of superluminal travel, the ones generated by this strange weapon are too small and unstable to last more than a few miliseconds before collapse, resulting in poor range.",Point Defense,,
+,,,,,
+loa_hyperbeam,WEAPON,"An exotic particle weapon which streams and supercools exotic particles unknown to contemporary models of particle physics. The supercooling process causes the stream to form a continuous hyperspace tear along its length, which reacts violently to contact with regular matter. Though modified hyperdrives can passively produce these particles, production is slow and the weapon must be fed from pre-charged storage cells.",Strike,,
+,,,,,
+#====================================== ELECTROSTATIC WEAPONS ======================================,,,,,
+,,,,,
+loa_zapflak,WEAPON,"An unusual form of coilgun firing plasma coils as ammunition. The coils are pre-charged with electroplasma which lashes out at the first viable target to come close, causing moderate damage and disrupting sensitive equipment. An integrated and inscrutible point defense AI makes this a fairly efficient long-range point defense weapon.",Point Defense,,
+,,,,,
+#====================================== BULLDOG GUNS ======================================,,,,,
+,,,,,
+al_bullpup,WEAPON,"A reliable autocannon utilizing an unusual mid-bore loading action, the Bullpup scales down the success of the Bulldog into a more compact frame.
+
+The origin of the Bulldog and by extension the Bullpup is a matter of some contention. They are typically constructed by otherwise unrelated standalone parts produced at an autoforge and assembled manually, leading many to believe they are an improvisation by the Anarakis Reparations Society. Scattered and infrequent scraps of evidence however, point to the posibility of these weapons seeing widespread use since the early days of the Domain. Due to the unreliable nature of salvaged datacores however, insufficient data exists to draw any real conclusions.",Close Support,,
+al_bulldog,WEAPON,"An autocannon utilizing an unusual, but robust mid-bore loading action, long barrels ensure decent accuracy within its engagement envelope and high explosive ammunition makes it most suited for steadily stripping armor off of a target.
+
+The origin of the Bulldog and by extension the Bullpup is a matter of some contention. They are typically constructed by otherwise unrelated standalone parts produced at an autoforge and assembled manually, leading many to believe they are an improvisation by the Anarakis Reparations Society. Scattered and infrequent scraps of evidence however, point to the posibility of these weapons seeing widespread use since the early days of the Domain. Due to the unreliable nature of salvaged datacores however, insufficient data exists to draw any real conclusions.",Close Support,,
+,,,,,
+#====================================== BONGO GUNS ======================================,,,,,
+,,,,,
+al_bongo,WEAPON,"Named for its compact, cyllindrical shape, the Bongo is a point defense weapon consisitng of a tightly packed cluster of small-calibre guns that quickly saturate a cone of space with gunfire. The small shells shred missiles and occasionally lodge themselves into the more delicate portions of external equipment like guns and engines.
+
+Due to the simplicity of its construction and the undeniability of its efficacy against hostile missiles, the Bongo and its big brother the Bass Drum are some of the few weapons employed by the Reparations Society that have seen widespread use throughout the sector at large.",Point Defense,,
+al_bass,WEAPON,"A rather bluntly upscaled Bongo, the Bass Drum simply houses more guns in a bulkier frame, creating a veritable wall of gunfire that only the sturdiest of missiles can hope to survive. Effectiveness against small, armored targets like fighters remains marginal.
+
+Due to the simplicity of its construction and the undeniability of its efficacy against hostile missiles, the Bass Drum and its little brother the Bongo are some of the few weapons employed by the Reparations Society that have seen widespread use throughout the sector at large.",Point Defense,,
+,,,,,
+#====================================== PLASMA DRIVER GUNS ======================================,,,,,
+,,,,,
+al_lightplasmadriver,WEAPON,"Operating under the same principles as a railgun with only a microscopic distance between its rails, the Light Plasma Driver accelerates a short stream of pre-heated plasma to near light speed, burning through light armor and other small targets at close to medium ranges.",Point Defense,,
+
+al_plasmadriver,WEAPON,"With the addition of a second, longer barrel to distribute heat between, the Plasma driver provides notable increases to both range and rate of fire over its smaller cousin. The rigid construction of the housing does not allow the barrels to converge however, making this weapon useless for point defense.",Assault,,
+
+al_heavyplasmadriver,WEAPON,"Utilizing larger internal holding tanks for plasma, and heavier barrels to propel it, this version of the plasma driver is capable of quickly melting through medium to heavy armor at fair distances.",Assault,,
+
+al_plasmabuster,WEAPON,"Feeding off of an integrated capacitor, the Plasma Buster is capable of processing vast ammounts of plasma over a very short period of time, burning through some of the heaviest armor available. Feeding the weapon requires more plasma than can be reasonably generated during combat, so it relies on a group of large holding tanks that must be refilled after the battle is over.",Strike,,
+,,,,,
+#====================================== SHIELD PIKE WEAPONS ======================================,,,,,
+,,,,,
+loa_ionpike,WEAPON,"A suspiciously esoteric weapon by Society standards. The Shield Pike emits streams of unstable heavy ions which produce volatile interactions with shield systems.",Support,,
+loa_heavyionpike,WEAPON,"Effectively a scaled up Shield Pike, the Shield Lance boasts elevated effect against shields at dramatically improved ranges. Parts for these strange weapons are largely custom and hand-made, making examples infrequent at best.",Close Support,,
+,,,,,
+#====================================== MONOGRAM WEAPONS ======================================,,,,,
+,,,,,
+al_monorail,WEAPON,"Utilizing lightweight linear rails, this otherwise standard railgun accelerates a flurry of single-gram metalglass armatures over vast distances. The kinetic energy of each shell is mediocre, but the weapon's lax operating costs allow it to pepper targets from a safe distance without breaking the flux banks.",Close Support,,
+
+al_heavymonorail2,WEAPON,"A long range combination assault/support weapon which dramatically upscales the principles of the Monogram Railgun to release an unrelenting barrage of lightweight projectiles at long range.",Multi Purpose,,
+,,,,,
+#====================================== INCENDIARY WEAPONS ======================================,,,,,
+,,,,,
+al_chemospray,WEAPON,"A cheap and reliable, but fairly sluggish hydraulic mechanism designed to catapult skins of thermobaric compound and oxidizer. The two components of this mixture mix while in flight, violently scorching the next thing they come into contact with.",Strike,,
+al_chemoblast,WEAPON,"Utilizing a much stronger piston, the Incendiary Blaster achieves higher velocities with more mass than its cousin. This weapon remains as cheap and reliable as ever though, and remains a popular armor cracking solution among those strapped for resources.",Strike,,

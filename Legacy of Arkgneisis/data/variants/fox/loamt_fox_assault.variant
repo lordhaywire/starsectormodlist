@@ -1,0 +1,33 @@
+{
+  "variantId": "loamt_fox_assault",
+  "hullId": "loamt_fox",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 6,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "extendedshieldemitter",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "loa_ionpike"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightdualmg",
+        "WS0002": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

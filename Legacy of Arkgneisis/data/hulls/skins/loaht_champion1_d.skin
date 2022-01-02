@@ -1,0 +1,21 @@
+{
+	"baseHullId":"loaht_champion1",
+	"skinHullId":"loaht_champion1_d",
+	"hullName":"Lancer (D)",
+	"restoreToBaseHull":true,
+	"fleetPoints":9,
+	"ordnancePoints":115,
+	"systemId":"flarelauncher",
+	"descriptionPrefix":"An absolute disaster of a hull which must have been drifting through space for a very long time. Just to get it moving again its structure had to be reinforced and some rigged flare launchers were strapped to the outer hull for good measure. The ship itself might look only moderately strange from the outside, but engineers report that the inside is like nothing anyone has ever seen in a long time, perhaps ever. None of the hardware is standard to anything, its engines produce no visible reaction, its radiators seem to defy thermodynamics, and experts insist on calling its power source a 'pulsed singularity core'. To top it all off, its systems and controls are labeled in a language only your tripad seems to recognize, and its computer cores are simultaneously obfuscated by esoteric circuitry and extensive physical damage. Under all these layers of mystery there might be something worth salvaging, but given its condition, restoring this ship to any semblance of its former glory will be an expensive and manual affair not for the feint of heart, or the slight of pocketbook.",
+	"tags":[],
+    "tech":"Salvation Initiative",
+	"spriteName":"graphics/arkleg/ships/champion/loa_champion_d.png",
+	"baseValueMult":1,
+	"removeWeaponSlots":["WS0005","WS0015","WS0006","WS0005","WS0010","WS0012","WS0014","WS0018"], 	# ids
+	"removeEngineSlots":[1, 3], 			# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["loa_spatiallensing","phasefield"], 	# hullmod ids
+	"removeBuiltInWeapons":["WS0001","WS0004"], 			# weapon slot ids
+	"builtInMods":["reinforcedhull","comp_armor","comp_hull","comp_structure","degraded_engines","faulty_grid","glitched_sensors","fragile_subsystems","destroyed_mounts"],
+	"builtInWeapons":{
+    },
+}

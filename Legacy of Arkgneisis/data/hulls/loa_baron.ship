@@ -1,0 +1,148 @@
+{
+  "bounds": [
+    -19.5,
+    -5.5,
+    -4,
+    -17.5,
+    9.5,
+    -8,
+    30,
+    -0,
+    9.5,
+    8,
+    -4,
+    17.5,
+    -19.5,
+    5.5,
+    -30,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0001": "loa_flashlight_f",
+    "WS0002": "loa_flashlight_f",
+    "WS0003": "loa_flashlight_f",
+    "WS0004": "loa_flashlight_f",
+    "WS0007": "loa_cone_f",
+    "WS0008": "loa_cone_f"
+  },
+  "builtInMods": [
+    "loa_closeairsupport_fake"
+  ],
+  "builtInWings": [],
+  "center": [
+    21,
+    31
+  ],
+  "collisionRadius": 35,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 26.5,
+      "location": [
+        -16,
+        6.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 26.5,
+      "location": [
+        -16,
+        -6.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    }
+  ],
+  "height": 62,
+  "hullId": "loa_baron",
+  "hullName": "Baron",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 34.5,
+  "spriteName": "graphics/arkleg/ships/loa_baron.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 180,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        -11,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 90,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        -3,
+        8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -90,
+      "arc": 270,
+      "id": "WS0004",
+      "locations": [
+        -3,
+        -8
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 15,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        6.5,
+        9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -15,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        6.5,
+        -9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 42
+}

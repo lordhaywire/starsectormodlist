@@ -1,0 +1,77 @@
+name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
+Oogik,loalt_oogik,Patrol Ship,Colonial Initiative,loa_warspeed,5,1750,300,2000,,150,40,,120,110,90,60,90,200,OMNI,,90,0.4,1,,,15,25,30,25,1,25,10,9000,8,10,240,0.25,4,4,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
+???,loalt_oogik_r,Frigate,Colonial Initiative,loa_warspeed,5,1750,300,2000,,150,40,,120,110,90,60,90,200,OMNI,,90,0.4,1,,,15,25,30,25,1,25,10,20000,8,10,240,0.25,4,4,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
+Taath,loalt_taath,Heavy Patrol Ship,Colonial Initiative,al_chafflauncher,8,2250,500,4500,,350,50,,100,90,70,50,80,250,OMNI,,120,0.4,1.2,,,20,40,40,20,1,20,9,11000,8,10,300,0.25,5,5,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
+????,loalt_taath_r,Heavy Frigate,Colonial Initiative,al_chafflauncher,8,2250,500,4500,,350,50,,100,90,70,50,80,250,OMNI,,120,0.4,1.2,,,20,40,40,20,1,20,9,11000,8,10,300,0.25,5,5,,,,,,,HIDE_IN_CODEX,,,0.4,2,2,,204
+Nicke,loalt_nicke,Destroyer,Colonial Initiative,loa_ammo_swap,10,5000,750,7500,,450,85,,60,40,20,30,20,475,FRONT,,150,0.4,1.2,,,50,80,90,90,3,30,9,38000,5,12,420,0.25,10,10,,,,,,,HIDE_IN_CODEX,,,0.4,2,3,,303
+?????,loalt_nicke_r,Destroyer,Colonial Initiative,loa_ammo_swap,10,5000,750,7500,,450,85,,60,40,20,30,20,475,FRONT,,150,0.4,1.2,,,50,80,90,90,3,30,9,65000,5,12,420,0.25,10,10,,,,,,,HIDE_IN_CODEX,,,0.4,2,3,,303
+Eylamn,loalt_eylamn,Cruiser,Colonial Initiative,loa_warspeed3,14,8000,1200,10000,,700,150,,55,30,20,25,30,1100,FRONT,,180,0.4,1.2,,,125,150,150,150,5,30,8,120000,4,12,480,0.25,20,20,,,,,,,HIDE_IN_CODEX,,,0.5,2,3,,400
+??????,loalt_eylamn_r,Cruiser,Colonial Initiative,loa_warspeed3,14,8000,1200,10000,,700,150,,55,30,20,25,30,1100,FRONT,,180,0.4,1.2,,,125,150,150,150,5,30,8,120000,4,12,480,0.25,20,20,,,,,,,HIDE_IN_CODEX,,,0.5,2,3,,400
+#Alanqil,loalt_alanqil,Fleet Carrier,Colonial Initiative,,26,15000,1500,15000,,600,220,6,30,15,10,7,10,2250,OMNI,,180,0.4,1.2,,,700,1500,250,300,15,20,7,300000,3,15,720,0.25,40,40,,,,,,,CARRIER,,,0.5,2,3,,400
+#Thlos,loalt_thlos,Battleship,Colonial Initiative,,26,20000,1750,25000,,1200,330,,30,15,10,5,5,2750,FRONT,,180,0.4,1.2,,,500,1000,300,400,15,26,7,275000,3,15,720,0.25,40,40,,,,,,,HIDE_IN_CODEX,,,0.5,2,3,,400
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Fox,loamt_fox,Corvette,Exodus Initiative,al_magneticoverload,4,1000,100,1500,,75,35,,140,130,90,100,100,120,OMNI,,90,0.4,1,,,3,6,40,30,1,30,11,4500,5,10,200,0.25,2,2,,,,,,,,loa_ark2_bp,,0.75,2,2,,217
+Fox (SE),loamtg_fox,Corvette,Anarakis Reparations Society,maneuveringjets,4,1000,100,1500,,75,35,,140,130,90,100,100,120,OMNI,,90,0.4,1,,,3,6,40,30,1,30,11,4500,5,10,200,0.25,2,2,,,,,,,,loa_arkg_bp,,0.75,2,2,,217
+Fox (P),loamtp_fox,Corvette,Pirate,loa_redline,4,1000,200,1500,,75,45,,140,175,125,100,100,135,NONE,,0,0,0,,,3,6,40,30,1,30,11,4500,5,20,180,0.25,6,6,,,,,,,,loa_arkp_bp,,0.75,2,2,,217
+Edith,loamt_edith,AWACS Frigate,Exodus Initiative,loa_awacs,11,2000,200,1500,,100,25,,120,100,80,60,80,200,OMNI,,90,0.4,1,,,20,25,30,35,1,35,10,35000,8,10,300,0.25,10,5,,,,,,,,"loa_ark3_bp, no_autofit",,0.4,2,2,,204
+Walsh,loamt_walsh,Frigate,Exodus Initiative,loa_moe,7,1500,150,1250,,120,45,,130,125,85,60,80,200,OMNI,,90,0.4,1,,,10,15,75,35,1,35,10,12500,8,10,220,0.25,6,6,,,,,,,,loa_ark2_bp,,0.4,2,2,,204
+Walsh (SE),loamtg_walsh,Frigate,Anarakis Reparations Society,ammofeed,7,1500,150,1250,,120,45,,130,125,85,60,80,200,OMNI,,90,0.4,1,,,10,15,75,35,1,35,10,12500,8,10,220,0.25,6,6,,,,,,,,loa_arkg_bp,,0.4,2,2,,204
+Sherman,loamt_sherman,Frigate,Exodus Initiative,al_magplating,5,2250,600,1500,,100,50,,120,100,80,60,80,300,OMNI,,90,0.4,1,,,15,20,50,35,1,35,10,17500,8,10,240,0.25,4,4,,,,,,,,loa_ark1_bp,,0.4,2,2,,204
+Reid,loamt_reid,Heavy Frigate,Exodus Initiative,al_magneticoverload,8,2500,250,2000,,200,60,,120,90,50,40,55,300,OMNI,,90,0.4,1,,,25,35,50,70,2,35,10,27500,5,10,240,0.25,7,7,,,,,,,,loa_ark3_bp,0.25,0.5,2,3,,300
+Ike,loa_ike,Assault Shuttle,Anarakis Reparations Society,maneuveringjets,4,2000,100,1250,,75,40,,120,125,85,40,50,250,OMNI,,90,0.4,1,,,5,55,50,35,1,35,10,20000,8,10,220,0.25,3,3,,,,,,,,loa_ark1_bp,,0.4,2,2,,204
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Taylor,loamt_thatcher,Light Destroyer,Exodus Initiative,loa_moe,9,3500,300,4000,,150,85,,90,60,40,35,45,350,OMNI,,90,0.4,1,,,30,35,90,70,2,35,10,36000,5,12,360,0.25,8,8,,,,,,,,loa_ark1_bp,,0.4,2,3,,303
+Taylor (SE),loamtg_thatcher,Light Destroyer,Anarakis Reparations Society,maneuveringjets,9,3500,300,4000,,150,85,,90,60,40,35,45,350,OMNI,,90,0.4,1,,,30,35,90,70,2,35,10,36000,5,12,360,0.25,8,8,,,,,,,,loa_arkg_bp,,0.4,2,3,,303
+Taylor (P),loamtp_thatcher,Escort Carrier,Pirate,fastmissileracks,9,3500,300,4000,,150,90,,90,60,40,35,45,350,OMNI,,90,0.4,1,,,30,35,25,70,2,35,10,36000,5,12,360,0.25,10,10,,,,,,,,loa_arkp_bp,,0.4,2,3,,303
+Norwood,loamt_norwood,Combat Tanker,Exodus Initiative,loa_hotracks,9,4000,350,3000,,100,60,,80,50,25,25,30,400,OMNI,,90,0.4,1,,,40,45,50,300,2,150,9,36000,5,12,360,0.25,9,9,,,,,,,,loa_ark1_bp,,0.4,2,3,,303
+Burke,loamt_burke,Destroyer,Exodus Initiative,loa_flakcurtain,10,5000,700,4000,,200,95,,60,40,15,20,30,400,OMNI,,90,0.4,1,,,35,40,100,70,2,35,9,38000,5,12,420,0.25,9,9,,,,,,,,loa_ark2_bp,,0.5,2,3,,300
+Burke (P),loamtp_burke,Destroyer,Pirate,flarelauncher,10,5000,700,4000,,200,85,,60,40,15,20,30,400,OMNI,,90,0.4,1,,,35,40,100,70,2,35,9,38000,5,12,420,0.25,9,9,,,,,,,,loa_arkp_bp,0.5,0.5,2,3,,300
+Victoria,loamt_victoria,Destroyer,Exodus Initiative,al_tacticalscan,11,5000,400,4000,,250,105,,90,60,30,30,40,400,OMNI,,90,0.4,1,,,35,40,100,70,2,35,9,42500,5,12,360,0.25,10,10,,,,,,,,loa_ark1_bp,,0.5,2,3,,300
+Osmond,loamt_osmond,Heavy Destroyer,Exodus Initiative,loa_osmondsweb,12,5500,500,5000,,300,120,,85,50,25,25,30,600,OMNI,,90,0.4,1,,,50,60,120,70,2,35,9,60000,5,15,360,0.25,13,13,,,,,,,,loa_osmond_bp,0.5,0.5,2,3,,300
+Caswell,loamt_caswell,Light Carrier,Exodus Initiative,loa_flakmine,11,4500,400,3000,,150,95,2,75,40,20,20,30,450,OMNI,,90,0.4,1,,,80,130,85,70,2,35,9,51000,5,15,360,0.25,12,12,,,,,,,"CARRIER, COMBAT",loa_ark2_bp,,0.5,2,3,,318
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hawke,loamt_hawke,Drone Carrier,Exodus Initiative,reservewing,12,6000,700,6000,,300,110,1,75,50,30,30,30,1000,OMNI,,90,0.4,1,,,80,100,120,80,2.5,32,9,82500,4,12,480,0.25,15,15,,,,,,,,loa_ark2_bp,,0.5,2,3,,400
+Hawke (SE),loamtg_hawke,Light Cruiser,Anarakis Reparations Society,targetingfeed,12,6000,700,6000,,300,110,1,75,50,30,30,30,1000,OMNI,,90,0.4,1,,,80,100,120,80,2.5,32,9,82500,4,12,480,0.25,15,15,,,,,,,,loa_arkg_bp,,0.5,2,3,,400
+Hawke (P),loamtp_hawke,Light Cruiser,Pirate,maneuveringjets,12,6000,700,7500,,400,145,,85,50,30,30,30,1000,OMNI,,90,0.4,1,,,80,100,100,80,2.5,32,9,82500,4,12,480,0.25,15,15,,,,,,,,loa_arkp_bp,,0.5,2,3,,400
+Jameson,loamt_jameson,Freighter,Exodus Initiative,targetingfeed,11,7000,500,3000,,150,65,2,50,30,15,5,7,1200,OMNI,,90,0.4,1,,,150,200,600,100,3,33,8,50000,3,12,400,0.25,12,12,,,,,,,CARRIER,loa_ark1_bp,,0.5,2,3,,407
+Lyons,loamt_lyons,Cruiser,Exodus Initiative,al_magplating,15,9000,1200,7000,,300,145,2,50,30,20,10,10,1200,OMNI,,90,0.4,1,,,150,200,100,100,3,33,8,130000,3,12,450,0.25,22,22,,,,,,,,loa_ark1_bp,,0.5,2,3,,407
+King,loamt_king,Cruiser,Exodus Initiative,loa_moe,14,8000,800,9000,,400,145,,65,45,25,20,20,1000,OMNI,,90,0.4,1,,,90,110,150,100,3,33,8,115000,4,12,450,0.25,20,20,,,,,,,,loa_ark2_bp,,0.5,2,3,,400
+Macnamara,loamt_macnamara,Heavy Cruiser,Exodus Initiative,al_magneticoverloadc,17,10000,900,10000,,550,160,,60,40,20,15,20,1800,OMNI,,90,0.4,1,,,125,150,150,175,5,35,8,150000,3,12,480,0.25,25,25,,,,,,,,loa_ark3_bp,0.25,0.4,2,3,,404
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Big Mac,loamtp_macnamara_boss,Mod-Cruiser,Exodus Initiative,loa_bigmac_system,17,12000,1000,15000,,750,170,,70,60,30,30,25,1850,OMNI,,90,0.3,1,,,100,110,150,200,6,33,9,350000,3,18,480,0.25,35,35,,,,,,,HIDE_IN_CODEX,"no_autofit, no_drop, no_bp_drop",0.25,0.4,2,3,,404
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lancer,loaht_champion1,Cruiser,Salvation Initiative,loa_burstphase,18,8000,1000,10000,,900,145,,80,50,25,25,25,1500,OMNI,,90,0.5,0.6,0.2,,80,150,150,90,3,30,8,250000,4,15,425,0.25,30,30,,,,,,,HIDE_IN_CODEX,,,0.6,2,3,,405
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Donovan,loamt_donovan,Arsenal Ship,Exodus Initiative,loa_missileManufactorum,22,11000,1500,12000,,450,230,,45,15,10,6,4,2250,OMNI,,90,0.4,1,,,175,225,300,240,8,30,8,275000,3,15,600,0.25,35,35,,,,,,,ALWAYS_PANIC,loa_ark1_bp,0.5,0.5,2,4,,503
+Alastair,loamt_alastair,Battlecruiser,Exodus Initiative,loa_alastairsweb,26,12000,1000,12000,,600,285,2,55,20,15,8,5,2500,OMNI,,90,0.4,1,,,200,250,300,300,10,30,8,325000,3,15,600,0.25,40,40,,,,,,,,loa_alastair_bp,0.5,0.5,2,4,,503
+Gaillard,loamt_gaillard,Battleship,Exodus Initiative,loa_moe,28,20000,1250,20000,,800,285,,55,15,10,6,4,2250,OMNI,,90,0.4,1,,,250,300,250,400,15,26,8,400000,3,15,720,0.25,50,50,,,,,,,HIDE_IN_CODEX,no_bp_drop,0.5,0.5,2,4,,503
+Savior,loaht_savior,Battleship,Salvation Initiative,loa_savior_system,30,20000,1500,25000,,1500,320,,45,30,25,10,10,3500,OMNI,,120,0.5,0.6,,,350,800,300,400,15,26,7,0,3,15,720,0.25,60,60,,,,,,,HIDE_IN_CODEX,,0.5,0.5,2,4,,503
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jack,loa_jack,,Exodus Initiative,,,300,75,200,,25,0,,225,200,150,100,200,30,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Ace,al_ace,,Exodus Initiative,,,500,100,200,,25,0,,225,200,150,100,200,40,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Baron,loa_baron,,Exodus Initiative,,,650,200,500,,75,0,,150,175,75,40,60,100,OMNI,,180,0.2,1,,,4,4,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Duke,al_duke,,Exodus Initiative,,,850,150,800,,100,0,,200,200,75,50,70,125,OMNI,,180,0.2,0.8,,,4,4,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Earl,al_earl,,Exodus Initiative,al_chafflauncher,,600,100,800,,100,0,,175,80,40,40,180,70,FRONT,,90,0.9,1,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Monodrone,al_monodrone,,Exodus Initiative,,,150,50,50,,25,0,,275,200,100,150,200,5,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+Babyhawk,loa_bidrone,,Exodus Initiative,,,350,100,100,,50,0,,200,200,100,125,150,5,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,104
+EMP Disc,al_emdrone,,,al_empdrone,,100,40,100,,100,0,,450,350,350,300,600,5,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,HIDE_IN_CODEX,,,0,,,,104
+EMP Disc,al_emdrone2,,,al_empdrone2,,100,40,100,,100,0,,450,350,350,300,600,5,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,HIDE_IN_CODEX,,,0,,,,104
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ARS Capitol,loa_arscapitol_core,Ark,,loa_massivethrusters,2000,150000,2500,50000,2500,100,1000,,25,10,8,1,1,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,125,50,,,,,,,"SHIP_WITH_MODULES, UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0,,,,2004
+,loa_arscapitol_prow,Prow Sector,,forgevats_station,1,10000,2500,15000,30000,750,1000,,0,0,0,0,0,5000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,loa_arscapitol_main_left,Port Primary Sector,,forgevats_station,1,20000,1500,25000,30000,900,1000,4,0,0,0,0,0,1000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,loa_arscapitol_main_right,Starboard Primary Sector,,forgevats_station,1,20000,1500,25000,30000,900,1000,4,0,0,0,0,0,1000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,loa_arscapitol_shield_left,Port Shield Core,,forgevats_station,1,10000,2000,20000,30000,250,1000,,0,0,0,0,0,500,FRONT,,180,0.4,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,loa_arscapitol_shield_right,Starboard Shield Core,,forgevats_station,1,10000,2000,20000,30000,250,1000,,0,0,0,0,0,500,FRONT,,180,0.4,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,loa_arscapitol_engine,Aft Sector,,forgevats_station,1,20000,1500,12500,30000,400,1000,,0,0,0,0,0,1000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",no_autofit,,0.5,2,4,,2063
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Asteroid Station,loa_arsstation_core,Orbital Station,Anarakis Reparations Society,,100,150000,2500,50000,2500,1000,1000,2,0,10,8,1,1,6000,OMNI,,120,0.8,1,,,0,0,0,0,1,0,0,500000,10,10,,,50,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,,0,,,,2004
+Asteroid Station,loa_arsstation_core2,Battle Station,Anarakis Reparations Society,,200,150000,2500,50000,2500,1000,1000,2,0,10,8,1,1,6000,OMNI,,120,0.8,1,,,0,0,0,0,1,0,0,500000,10,10,,,75,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,,0,,,,2004
+Asteroid Station,loa_arsstation_core3,Star Fortress,Anarakis Reparations Society,loa_asteroid_drone,400,150000,2500,70000,2500,1000,1000,2,0,10,8,1,1,6000,OMNI,,120,0.8,1,,,0,0,0,0,1,0,0,500000,10,10,,,100,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,,0,,,,2004
+,loa_module_ars_small,Supplemental Module,Anarakis Reparations Society,,1,7500,750,10000,30000,500,1000,,0,0,0,0,0,5000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,,0.5,2,4,,2063
+,loa_module_ars_big,Super Module,Anarakis Reparations Society,loa_stationweb,1,20000,1750,40000,30000,1500,1000,,0,0,0,0,0,5000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,,0.5,2,4,,2063
+,loa_module_ars_support,Support Module,Anarakis Reparations Society,,1,10000,1250,12000,30000,600,1000,4,0,0,0,0,0,5000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,,0.5,2,4,,2063
+,loa_module_ars_annex,Annex Module,Anarakis Reparations Society,,1,15000,1500,17500,30000,750,1000,2,0,0,0,0,0,5000,NONE,,0,0,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,,0.5,2,4,,2063
+Regolith,loa_asteroiddrone,Drone,Anarakis Reparations Society,,,2500,1000,5000,,500,1000,,50,50,50,40,80,1000,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,,0,,,,104
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Weapons Test Platform,al_wtp,Platform,,,9001,9999999,9999999,9999999,15000,9999999,9999999,3,0,0,1000,0,1000,100000,NONE,,0,0,0,,,1,1,350,300,10,30,1,9999999,3,15,9999999,0.25,40,40,,,,,,,HIDE_IN_CODEX,,,0.5,2,4,,503

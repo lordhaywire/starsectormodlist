@@ -1,0 +1,135 @@
+{
+  "bounds": [
+    -58,
+    -7,
+    -43.5,
+    -12.5,
+    -43.5,
+    -27.5,
+    -5,
+    -32.5,
+    4.5,
+    -18.5,
+    57.5,
+    -13,
+    57.5,
+    13,
+    4.5,
+    18.5,
+    -5,
+    32.5,
+    -43.5,
+    27.5,
+    -43.5,
+    12.5,
+    -58,
+    7
+  ],
+  "builtInMods": [
+    "loa_monkeymodel"
+  ],
+  "builtInWings": [],
+  "center": [
+    34,
+    60
+  ],
+  "collisionRadius": 72,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 44,
+      "location": [
+        -42,
+        19
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 44,
+      "location": [
+        -42,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 44,
+      "location": [
+        -54,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 14
+    }
+  ],
+  "height": 120,
+  "hullId": "loamtg_walsh",
+  "hullName": "Walsh (SG)",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 71.5,
+  "spriteName": "graphics/arkleg/ships/walsh/al_walsh_g.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 260,
+      "id": "WS0001",
+      "locations": [
+        8,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 90,
+      "arc": 215,
+      "id": "WS0005",
+      "locations": [
+        -14,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 215,
+      "id": "WS0006",
+      "locations": [
+        -14,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 280,
+      "id": "WS0002",
+      "locations": [
+        39,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 68
+}

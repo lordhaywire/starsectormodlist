@@ -1,0 +1,18 @@
+{
+	"id":"loa_massivethrustershot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":40.0,
+	"hitGlowRadius":10,
+	"width":4,
+	"fadeTime":0.6,
+	"fringeColor":[0,0,0,0],
+	"coreColor":[0,0,0,0],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"noNonShieldImpactSounds":true,
+	"noShieldImpactSounds":true,
+	"bulletSprite":"graphics/arkleg/missiles/al_bullshot.png",
+}

@@ -1,0 +1,34 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 3,
+    "fluxVents": 10,
+    "hullId": "loamt_walsh",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "pointdefenseai",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_walsh_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hveldriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "loa_siegecannon_w"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_monorail",
+                "WS0006": "al_monorail"
+            }
+        }
+    ]
+}

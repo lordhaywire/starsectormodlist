@@ -1,0 +1,16 @@
+{
+	"id":"loa_nickeshot_he",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":100.0,
+	"hitGlowRadius":65,
+	"width":10,
+	"fadeTime":0.33,
+	"fringeColor":[255,150,50,255],
+	"coreColor":[255,150,100,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/arkleg/missiles/loa_nickerod_he.png",
+}

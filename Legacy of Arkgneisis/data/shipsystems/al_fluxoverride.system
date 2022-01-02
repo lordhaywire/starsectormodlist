@@ -1,0 +1,23 @@
+{
+	"id":"al_fluxoverride",
+	"type":"STAT_MOD",
+	"aiType":"ENTROPY_AMPLIFIER",
+	
+	"statsScript":"data.scripts.shipsystems.al_fluxOverrideStats",
+
+	#"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true, # unapply() never gets called
+		
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"ui_transponder_on",
+	"loopSound":"al_tacscan_loop",
+	"deactivateSound":"ui_transponder_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

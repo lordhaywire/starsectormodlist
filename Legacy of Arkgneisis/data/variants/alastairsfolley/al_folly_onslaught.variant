@@ -1,0 +1,65 @@
+{
+    "displayName": "Alastair's",
+    "fluxCapacitors": 18,
+    "fluxVents": 50,
+    "hullId": "onslaught",
+    "hullMods": [
+        "targetingunit",
+        "heavyarmor",
+        "auxiliarythrusters",
+        "magazines"
+    ],
+    "permaMods": [],
+    "quality": 1,
+    "variantId": "al_folly_onslaught",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 016": "tpc",
+                "WS 017": "tpc"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 021": "annihilatorpod",
+                "WS 022": "annihilatorpod",
+                "WS 023": "annihilatorpod",
+                "WS 024": "annihilatorpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "heavyac",
+                "WS 014": "heavyac",
+                "WS 015": "heavyac",
+                "WS 018": "hellbore",
+                "WS 019": "mark9",
+                "WS 020": "hellbore"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "flak",
+                "WS 002": "vulcan",
+                "WS 003": "flak",
+                "WS 004": "vulcan",
+                "WS 005": "vulcan",
+                "WS 006": "vulcan",
+                "WS 008": "vulcan",
+                "WS 009": "vulcan",
+                "WS 010": "flak",
+                "WS 011": "flak",
+                "WS 012": "flak",
+                "WS 013": "flak"
+            }
+        }
+    ]
+}

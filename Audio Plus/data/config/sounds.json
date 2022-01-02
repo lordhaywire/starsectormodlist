@@ -1,0 +1,127 @@
+{
+    "music":{
+        "music_campaign":[
+            # Vanilla
+            {"file":"miscallenous_corvus_campaign_music.ogg","source":"sounds/music/music.bin","volume":0.6},
+            {"file":"campaign_music_part_2_v28.ogg","source":"sounds/music/music.bin","volume":0.6},
+            # Blackrock Drive Yards
+            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.55},
+            {"file":"Stellar_Rust.ogg","source":"sounds/BR/music","volume":0.50},
+            {"file":"Seeking_Answers.ogg","source":"sounds/BR/music","volume":0.50},
+            {"file":"Starsea.ogg","source":"sounds/BR/music","volume":0.50},
+            {"file":"Atmospheric_Rise.ogg","source":"sounds/BR/music","volume":0.50},
+            # The Mayorate
+            {"file":"expanse.ogg","source":"sounds/ilk/music","volume":0.37},
+            {"file":"nebula.ogg","source":"sounds/ilk/music","volume":0.35},
+            # Exigency
+            {"file":"FearMachine.ogg","source":"sounds/exigency/music/campaign","volume":0.23},
+            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.21},
+            {"file":"DysonSphere.ogg","source":"sounds/exigency/music/campaign","volume":0.60},
+            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":1.0},
+            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.29},
+            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.23},
+            {"file":"Mobilization.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
+            {"file":"Unknown.ogg","source":"sounds/exigency/music/campaign","volume":0.50},
+            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
+            {"file":"Sovereignty.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
+            # Tiandong Heavy Industries
+            {"file":"RunningDark.ogg","source":"sounds/tiandong/music/campaign","volume":0.35},
+        ],
+        "music_campaign_hyperspace":[
+            # Vanilla
+            {"file":"miscallenous_corvus_campaign_music.ogg","source":"sounds/music/music.bin","volume":0.5},
+            {"file":"campaign_music_part_2_v28.ogg","source":"sounds/music/music.bin","volume":0.5},
+            # Blackrock Drive Yards
+            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.45},
+            {"file":"Stellar_Rust.ogg","source":"sounds/BR/music","volume":0.40},
+            {"file":"Seeking_Answers.ogg","source":"sounds/BR/music","volume":0.40},
+            {"file":"Starsea.ogg","source":"sounds/BR/music","volume":0.40},
+            # The Mayorate
+            {"file":"expanse.ogg","source":"sounds/ilk/music","volume":0.32},
+            {"file":"nebula.ogg","source":"sounds/ilk/music","volume":0.3},
+            # Exigency
+            {"file":"FearMachine.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
+            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.16},
+            {"file":"DysonSphere.ogg","source":"sounds/exigency/music/campaign","volume":0.50},
+            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":0.8},
+            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.24},
+            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
+            {"file":"Mobilization.ogg","source":"sounds/exigency/music/campaign","volume":0.15},
+            {"file":"Unknown.ogg","source":"sounds/exigency/music/campaign","volume":0.40},
+            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.15},
+            {"file":"Sovereignty.ogg","source":"sounds/exigency/music/campaign","volume":0.13},
+            # Tiandong Heavy Industries
+            {"file":"RunningDark.ogg","source":"sounds/tiandong/music/campaign","volume":0.30},
+        ],
+        "music_combat":[
+            # Vanilla
+            {"file":"battle_ambience_01.ogg","source":"sounds/music/music.bin","volume":1},
+            # The Mayorate
+            {"file":"steel_rain.ogg","source":"sounds/ilk/music","volume":0.3},
+            # Exigency
+            {"file":"Exigency(3.0Remix).ogg","source":"sounds/exigency/music/combat","volume":0.22},
+            {"file":"VeiledinDust.ogg","source":"sounds/exigency/music/combat","volume":0.20},
+            {"file":"UnidentifiedContact.ogg","source":"sounds/exigency/music/combat","volume":0.26},
+            {"file":"Condottiere.ogg","source":"sounds/exigency/music/combat","volume":0.21},
+            {"file":"Relics.ogg","source":"sounds/exigency/music/combat","volume":0.15},
+            {"file":"TheFlagship.ogg","source":"sounds/exigency/music/combat","volume":0.21},
+            {"file":"UndyingLegacy.ogg","source":"sounds/exigency/music/combat","volume":0.21},
+            {"file":"DeadGods.ogg","source":"sounds/exigency/music/combat","volume":0.25},
+            {"file":"Spacer15Seconds.ogg","source":"sounds/exigency/music/combat","volume":1.0},
+            {"file":"Fusillade.ogg","source":"sounds/exigency/music/combat","volume":0.20},
+            {"file":"TimeSensitive.ogg","source":"sounds/exigency/music/combat","volume":0.25},
+            {"file":"Panic.ogg","source":"sounds/exigency/music/combat","volume":0.24},
+            {"file":"CatastrophicSystemsFailure.ogg","source":"sounds/exigency/music/combat","volume":0.15},
+            {"file":"CloakandDagger.ogg","source":"sounds/exigency/music/combat","volume":0.29},
+            {"file":"SkeletonCrew.ogg","source":"sounds/exigency/music/combat","volume":0.25},
+        ],
+    },
+
+    "music_defeat_theme":{
+        "sounds":[
+            {"file":"sounds/exigency/music/events/YouWereDefeated.ogg","pitch":1.0,"volume":2.0},
+        ],
+    },
+
+    # HEAVY MAULER
+    "ap_heavy_mauler_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_guns/ap_heavymauler.ogg","pitch":0.97,"volume":0.74},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_heavymauler.ogg","pitch":1,"volume":0.75},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_heavymauler.ogg","pitch":1.03,"volume":0.76},
+    ],
+
+    # MJOLNIR
+    "ap_mjolnir_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_guns/ap_mjolnir.ogg","pitch":0.97,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_mjolnir.ogg","pitch":1,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_mjolnir.ogg","pitch":1.03,"volume":1.0},
+    ],
+
+    # AUTOPULSE LASER
+    "ap_autopulse_laser_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_energy/ap_autopulse.ogg","pitch":0.99,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_energy/ap_autopulse.ogg","pitch":1,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_energy/ap_autopulse.ogg","pitch":1.01,"volume":1.0},
+    ],
+
+    # THUMPER
+    "ap_thumper_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":0.96,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":0.98,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1.02,"volume":1.0},
+        {"file":"sounds/ap/sfx_wpn_guns/ap_thumper_fire.ogg","pitch":1.04,"volume":1.0},
+    ],
+
+    # PHASE LANCE
+    "ap_phase_beam_fire":
+    [
+        {"file":"sounds/ap/sfx_wpn_energy/ap_phase_beam_fire.ogg","pitch":1.03,"volume":0.98},
+        {"file":"sounds/ap/sfx_wpn_energy/ap_phase_beam_fire.ogg","pitch":1.0,"volume":0.99},
+        {"file":"sounds/ap/sfx_wpn_energy/ap_phase_beam_fire.ogg","pitch":0.97,"volume":1.0},
+    ],
+}

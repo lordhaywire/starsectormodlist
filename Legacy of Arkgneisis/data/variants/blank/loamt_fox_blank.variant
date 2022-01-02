@@ -1,0 +1,18 @@
+{
+  "displayName": "Blank",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_fox",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loamt_fox_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

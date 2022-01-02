@@ -1,0 +1,65 @@
+{
+  "variantId": "sebastian_start",
+  "hullId": "sebastian",
+  "displayName": "Balanced",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "typhoon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "sabot",
+        "WS0015": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "heavymauler",
+        "WS0004": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "hveldriver",
+        "WS0010": "hveldriver",
+        "WS0011": "hveldriver",
+        "WS0012": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "lightmg",
+        "WS0002": "lightmg",
+        "WS0007": "vulcan",
+        "WS0008": "vulcan",
+        "WS0016": "lightmg",
+        "WS0017": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "piranha_wing",
+    "piranha_wing"
+  ]
+}

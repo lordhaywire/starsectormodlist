@@ -1,0 +1,34 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
+    "hullId": "loamt_burke",
+	"quality": 0.5,
+    "hullMods": [
+        "hardenedshieldemitter",
+        "magazines",
+        "loamt_suspendedmounts",
+        "unstable_injector"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_burke_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "autopulse"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "loa_flashlight",
+                "WS0003": "loa_flashlight",
+                "WS0004": "loa_flashlight",
+                "WS0005": "loa_flashlight",
+                "WS0009": "loa_flashlight",
+                "WS0010": "loa_flashlight"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "displayName": "Derelict",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_thatcher_d",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loamt_thatcher_d_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

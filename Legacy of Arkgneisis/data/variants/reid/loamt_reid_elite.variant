@@ -1,0 +1,40 @@
+{
+  "variantId": "loamt_reid_elite",
+  "hullId": "loamt_reid",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightneedler",
+        "WS0012": "lightneedler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "al_bullpup",
+        "WS0014": "al_bullpup",
+        "WS0015": "al_bullpup",
+        "WS0016": "al_bullpup"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "al_bongo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

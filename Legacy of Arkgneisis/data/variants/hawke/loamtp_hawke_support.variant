@@ -1,0 +1,64 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 21,
+    "hullId": "loamtp_hawke",
+	"goalVariant": true,
+    "hullMods": [
+        "targetingunit",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_hawke_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "heavymauler"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0015": "annihilator",
+                "WS0016": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "hveldriver"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "railgun",
+                "WS0012": "railgun",
+                "WS0013": "railgun",
+                "WS0014": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "loa_flashlight",
+                "WS0008": "loa_flashlight",
+                "WS0009": "loa_flashlight",
+                "WS0010": "loa_flashlight"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "al_bongo",
+                "WS0002": "al_bongo",
+                "WS0005": "al_bongo",
+                "WS0006": "al_bongo"
+            }
+        }
+    ]
+}

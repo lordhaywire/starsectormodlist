@@ -1,0 +1,13 @@
+{
+	"id":"al_offensiveovercharge",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.scripts.shipsystems.al_offensiveoverchargestats",
+	
+	"weaponGlowColor":[255,50,50,155],
+	"weaponTypes":[BALLISTIC, ENERGY],
+	
+	"useSound":"al_moe_start",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

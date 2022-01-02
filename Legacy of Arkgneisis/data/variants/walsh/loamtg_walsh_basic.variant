@@ -1,0 +1,31 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
+    "hullId": "loamtg_walsh",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamtg_walsh_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyac"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "lightag"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0006": "vulcan"
+            }
+        }
+    ]
+}

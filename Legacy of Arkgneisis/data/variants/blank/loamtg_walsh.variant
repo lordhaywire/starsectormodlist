@@ -1,0 +1,18 @@
+{
+  "displayName": "Blank",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamtg_walsh",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loamtg_walsh_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

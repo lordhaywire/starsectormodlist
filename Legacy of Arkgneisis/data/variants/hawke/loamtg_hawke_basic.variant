@@ -1,0 +1,43 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 0,
+    "fluxVents": 27,
+    "hullId": "loamtg_hawke",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "missleracks",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_hawke_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "arbalest",
+                "WS0002": "arbalest"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "harpoon",
+                "WS0006": "harpoon",
+                "WS0007": "harpoon",
+                "WS0008": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vulcan",
+                "WS0004": "vulcan"
+            }
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

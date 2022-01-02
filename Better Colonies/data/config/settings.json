@@ -1,0 +1,18 @@
+{
+	"altMouseMoveToMassTransfer":true,
+	"DoesBCChangeIndustry":true,
+	
+	"adminHireTier0":5000,
+	"adminHireTier1":10000,
+	"adminHireTier2":50000,
+    "adminHireTier3":100000,
+	"adminSalaryTier0":2500,
+	"adminSalaryTier1":5000,
+	"adminSalaryTier2":25000,
+	"adminSalaryTier3":50000,
+	#This changes how much the admin should spawn rate.. give Tier 5 a higher spawn rate to see them spawn more. Simple as. In according to 0.95, I also modified its tier spawn rate as well.
+	"adminSpawnTier0":20,
+	"adminSpawnTier1":65,
+	"adminSpawnTier2":10,
+	"adminSpawnTier3":5,
+}

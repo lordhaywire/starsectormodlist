@@ -1,0 +1,35 @@
+{
+  "variantId": "loamt_norwood_assault",
+  "hullId": "loamt_norwood",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 5,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "loa_mosaic_torpedo",
+        "WS0004": "loa_mosaic_torpedo",
+        "WS0009": "loa_mosaic_torpedo",
+        "WS0010": "loa_mosaic_torpedo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

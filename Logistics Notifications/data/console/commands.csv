@@ -1,0 +1,2 @@
+command,class,tags,syntax,help
+LogNot,scripts.commands.LogisticsNotifications_LogNot,"logisticsNotifications, campaign",lognot (no arguments),Displays how many days of supply and lightyears of fuel you have remaining.

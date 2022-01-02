@@ -1,0 +1,28 @@
+Logistics Notifications
+
+Version 1.3.3
+ Updated to 0.95a
+
+Version 1.3.2
+ Added config.json options for alarm sounds
+
+Version 1.3.1
+ Migrated version file to github.com
+
+Version 1.3
+ Added a console command to check days of supply and ly of fuel
+
+Version 1.2
+ Fixed FPS drop with large fleets
+ Supply calculation now accounts for being over capacity in fuel and personnel
+
+Version 1.1
+ Moved alarm settings to config.json
+ Added alarm as soon as alarm level of supplies or fuel reached
+ Fixed on-load logistics notification
+
+Version 1.0a
+ Added missing version checker files.
+
+Version 1.0
+ Initial release

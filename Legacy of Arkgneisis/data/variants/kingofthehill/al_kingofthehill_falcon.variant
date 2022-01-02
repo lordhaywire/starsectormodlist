@@ -1,0 +1,47 @@
+{
+    "displayName": "Attack",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "goalVariant": false,
+    "hullId": "falcon",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "al_kingofthehill_falcon",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "hveldriver",
+                "WS 008": "hveldriver"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "annihilator",
+                "WS 002": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "phasebeam",
+                "WS 006": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "lrpdlaser",
+                "WS 004": "lrpdlaser",
+                "WS 009": "lrpdlaser",
+                "WS 010": "lrpdlaser"
+            }
+        }
+    ]
+}

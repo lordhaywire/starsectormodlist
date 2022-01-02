@@ -1,0 +1,138 @@
+{
+  "bounds": [
+    -36,
+    -5.5,
+    -39.5,
+    -9,
+    -25.5,
+    -21,
+    -33,
+    -30,
+    -28.5,
+    -33.5,
+    -1.5,
+    -19.5,
+    39,
+    -14,
+    43,
+    -9.5,
+    43,
+    9.5,
+    39,
+    14,
+    -1.5,
+    19.5,
+    -28.5,
+    33.5,
+    -33,
+    30,
+    -25.5,
+    21,
+    -39.5,
+    9,
+    -36,
+    5.5
+  ],
+  "builtInMods": [
+    "loa_monkeymodel",
+	"loamt_missilefix"
+  ],
+  "builtInWeapons": {
+    "WS0007": "loa_fox_g_leftmask",
+    "WS0008": "loa_fox_g_rightmask"
+  },
+  "builtInWings": [],
+  "center": [
+    34,
+    41
+  ],
+  "collisionRadius": 53.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 17,
+      "length": 48,
+      "location": [
+        -36,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 17
+    }
+  ],
+  "height": 86,
+  "hullId": "loamtg_fox",
+  "hullName": "Fox (SG)",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 53,
+  "spriteName": "graphics/arkleg/ships/fox/loa_fox_g.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0005",
+      "locations": [
+        2,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -4.5,
+        14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -4.5,
+        -14.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        -10,
+        20
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        -10,
+        -20
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 68
+}

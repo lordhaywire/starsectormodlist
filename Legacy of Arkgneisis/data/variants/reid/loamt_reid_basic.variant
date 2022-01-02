@@ -1,0 +1,45 @@
+{
+  "variantId": "loamt_reid_basic",
+  "hullId": "loamt_reid",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "targetingunit",
+    "fluxbreakers",
+    "hardened_subsystems"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightdualac",
+        "WS0012": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "al_chemospray",
+        "WS0014": "al_chemospray",
+        "WS0015": "lightmortar",
+        "WS0016": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "al_bongo"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

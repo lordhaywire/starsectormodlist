@@ -1,0 +1,293 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+	
+	"loamt_fox_basic":3,
+	"loamtg_fox_basic":3,
+	"loamtp_fox_basic":4,
+	"loamt_walsh_basic":3,	
+	"loamtg_walsh_basic":3,	
+	"loamt_sherman_basic":3,	
+	"loamt_reid_basic":3,
+	"loa_ike_basic":5,
+	
+	"loamt_fox_support":3,
+	"loamtg_fox_support":3,
+	"loamtp_fox_support":1,
+	"loamt_sherman_support":3,	
+	"loa_ike_support":5,	
+	
+	"loamt_fox_assault":3,
+	"loamtg_fox_assault":3,
+	"loamtp_fox_assault":3,
+	"loamt_walsh_assault":3,	
+	"loamtg_walsh_assault":3,	
+	"loamt_sherman_assault":3,	
+	"loamt_reid_assault":3,
+	
+	"loamt_fox_elite":1,
+	"loamtg_fox_elite":1,
+	"loamtp_fox_elite":2,
+	"loamt_walsh_elite":1,	
+	"loamtg_walsh_elite":1,	
+	"loamt_sherman_elite":1,	
+	"loamt_reid_elite":1,
+	
+	},
+	"combatSmall":{
+	
+	"loamt_fox_basic":3,	
+	"loamtg_fox_basic":3,	
+	"loamtp_fox_basic":3,
+	"loamt_walsh_basic":3,	
+	"loamtg_walsh_basic":3,	
+	"loamt_sherman_basic":3,	
+	"loamt_reid_basic":3,
+	
+	"loamt_fox_support":3,	
+	"loamtg_fox_support":3,	
+	"loamtp_fox_support":3,
+	"loamt_walsh_support":3,	
+	"loamtg_walsh_support":3,	
+	"loamt_sherman_support":3,	
+	"loamt_reid_support":3,
+	
+	"loamt_fox_assault":3,	
+	"loamtg_fox_assault":3,	
+	"loamtp_fox_assault":3,
+	"loamt_walsh_assault":3,	
+	"loamtg_walsh_assault":3,	
+	"loamt_sherman_assault":3,	
+	"loamt_reid_assault":3,
+	
+	"loamt_fox_elite":1,	
+	"loamtg_fox_elite":1,	
+	"loamtp_fox_elite":1,
+	"loamt_walsh_elite":1,	
+	"loamtg_walsh_elite":1,	
+	"loamt_sherman_elite":1,	
+	"loamt_reid_elite":1,
+	
+	"loamt_edith_basic":5,
+		
+	},
+	"combatMedium":{
+	
+	"loamt_thatcher_basic":3,	
+	"loamtg_thatcher_basic":3,	
+	"loamtp_thatcher_basic":3,	
+	"loamt_burke_basic":3,	
+	"loamtp_burke_basic":4,	
+	"loamt_victoria_basic":3,	
+	"loamt_osmond_basic":3,
+	
+	"loamt_thatcher_support":3,	
+	"loamtg_thatcher_support":3,	
+	"loamtp_thatcher_support":3,	
+	"loamt_burke_support":3,	
+	"loamt_victoria_support":3,	
+	"loamt_osmond_support":3,
+	
+	"loamt_thatcher_assault":3,	
+	"loamtg_thatcher_assault":3,	
+	"loamtp_thatcher_assault":3,	
+	"loamt_burke_assault":3,	
+	"loamtp_burke_assault":4,	
+	"loamt_victoria_assault":3,	
+	"loamt_osmond_assault":3,
+	
+	"loamt_thatcher_elite":1,	
+	"loamtg_thatcher_elite":1,	
+	"loamtp_thatcher_elite":1,	
+	"loamt_burke_elite":1,	
+	"loamtp_burke_elite":2,	
+	"loamt_victoria_elite":1,	
+	"loamt_osmond_elite":1,
+	
+	},
+	"combatLarge":{
+	
+	"loamt_hawke_basic":3,	
+	"loamtg_hawke_basic":3,	
+	"loamtp_hawke_basic":3,	
+	"loamt_king_basic":3,	
+	"loamt_lyons_basic":3,	
+	"loamt_macnamara_basic":3,	
+	
+	"loamt_hawke_support":3,	
+	"loamtg_hawke_support":3,	
+	"loamtp_hawke_support":3,	
+	"loamt_king_support":3,	
+	"loamt_lyons_support":3,	
+	"loamt_macnamara_support":3,	
+	
+	"loamt_hawke_assault":3,	
+	"loamtg_hawke_assault":3,	
+	"loamtp_hawke_assault":3,	
+	"loamt_king_assault":3,	
+	"loamt_lyons_assault":3,	
+	"loamt_macnamara_assault":3,	
+	
+	"loamt_hawke_elite":1,	
+	"loamtg_hawke_elite":1,	
+	"loamtp_hawke_elite":1,	
+	"loamt_king_elite":1,	
+	"loamt_lyons_elite":1,	
+	"loamt_macnamara_elite":1,	
+		
+	},
+	"combatCapital":{
+	
+	"loamt_alastair_basic":3,
+	"loamt_alastair_support":3,
+	"loamt_alastair_assault":3,
+	"loamt_alastair_elite":1,
+	
+	"loamt_gaillard_basic":3,
+	"loamt_gaillard_support":3,
+	"loamt_gaillard_assault":2,
+	"loamt_gaillard_elite":2,
+	
+	"loamt_donovan_basic":3,
+	"loamt_donovan_support":3,
+	"loamt_donovan_assault":2,
+	"loamt_donovan_elite":2,
+	
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+
+	},
+	"combatFreighterMedium":{
+	
+	"loamt_norwood_basic":3,	
+	
+	"loamt_norwood_support":3,
+	
+	"loamt_norwood_assault":3,
+	
+	"loamt_norwood_elite":1,
+
+	},
+	"combatFreighterLarge":{
+	
+	"loamt_jameson_basic":3,	
+	
+	"loamt_jameson_support":3,
+	
+	"loamt_jameson_assault":3,
+	
+	"loamt_jameson_elite":1,
+
+	},
+	
+	"civilianRandom":{
+
+	},
+
+	# carriers
+	"carrierSmall":{
+	
+	"loamt_caswell_basic":3,
+	
+	"loamt_caswell_support":3,
+	
+	"loamt_caswell_assault":3,
+	
+	"loamt_caswell_elite":1,
+			
+	},
+	"carrierMedium":{
+
+	},
+	"carrierLarge":{
+
+	},
+
+	# phase ships
+	"phaseSmall":{
+
+	},
+	"phaseMedium":{
+
+	},
+	"phaseLarge":{
+
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+	
+	"loa_buffalo_ars_basic":10,
+	
+	},
+	"freighterMedium":{
+
+	},
+	"freighterLarge":{
+
+	},
+	
+	"tankerSmall":{
+
+	},
+	"tankerMedium":{
+	
+	"loamt_norwood_basic":3,	
+	
+	"loamt_norwood_support":3,	
+	
+	"loamt_norwood_assault":3,	
+	
+	"loamt_norwood_elite":1,	
+
+	},
+	"tankerLarge":{
+
+	},
+	
+	"personnelSmall":{
+
+	},
+	"personnelMedium":{
+
+	},
+	"personnelLarge":{
+
+	},
+	
+	"linerSmall":{
+
+	},
+	"linerMedium":{
+
+	},
+	"linerLarge":{
+
+	},
+	
+	# utility ships
+	"tug":{
+
+	},
+	"crig":{
+
+	},
+	"utility":{
+
+	},
+	
+	"orbitalStationLowTech":{
+
+	},
+	
+	"battlestationLowTech":{
+
+	},
+	
+}

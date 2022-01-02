@@ -1,0 +1,24 @@
+{
+	"id":"loa_stationweb",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.scripts.shipsystems.loa_stationwebstats",
+
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":3000,
+		"threatAmount":7,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

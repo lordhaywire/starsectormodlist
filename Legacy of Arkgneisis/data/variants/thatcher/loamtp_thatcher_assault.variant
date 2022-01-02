@@ -1,0 +1,37 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 6,
+    "fluxVents": 20,
+    "hullId": "loamtp_thatcher",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "loamtp_thatcher_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "heavyneedler",
+                "WS0007": "heavyneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "atropos",
+                "WS0010": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "loa_flashlight",
+                "WS0006": "loa_flashlight"
+            }
+        }
+    ],
+    "wings": ["hoplon_wing"]
+}

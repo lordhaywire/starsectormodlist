@@ -1,0 +1,28 @@
+{
+  "displayName": "Derelict",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_king_d",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "loamt_king_d_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,73 @@
+{
+  "bounds": [
+    -11.5,
+    -2.5,
+    -3,
+    -3.5,
+    0,
+    -8.5,
+    2.5,
+    -3.5,
+    13.5,
+    -1.5,
+    13.5,
+    1.5,
+    2.5,
+    3.5,
+    0,
+    8.5,
+    -3,
+    3.5,
+    -11.5,
+    2.5
+  ],
+  "builtInWeapons": {
+    "WS0001": "al_monodronerail"
+  },
+  "builtInWings": [],
+  "center": [
+    9.5,
+    12.5
+  ],
+  "collisionRadius": 15.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 20,
+      "location": [
+        -5.5,
+        -0
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 4
+    }
+  ],
+  "height": 27,
+  "hullId": "al_monodrone",
+  "hullName": "Monodrone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    1,
+    0
+  ],
+  "shieldRadius": 14,
+  "spriteName": "graphics/arkleg/ships/al_monodrone.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 19
+}

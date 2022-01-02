@@ -1,0 +1,24 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 0,
+    "fluxVents": 1,
+    "hullId": "loamt_jameson",
+	"goalVariant": false,
+	"quality": 0.5,
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loamt_jameson_elite",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "pdburst",
+            "WS0002": "pdburst",
+            "WS0003": "pdburst"
+        }
+    }],
+    "wings": [
+        "duke_wing",
+        "duke_wing"
+    ]
+}

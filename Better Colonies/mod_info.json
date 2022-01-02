@@ -1,0 +1,11 @@
+{
+    "id": "timid_admins",
+    "name": "Better Colonies",
+    "author": "Techpriest",
+    "utility": "false",
+    "version": "1.63",
+    "description": "QoL for Late Game Colony Management. Simple as.",
+    "gameVersion": "0.95a-RC14",
+	"jars":["jar/Bettercolonies.jar"],
+	"modPlugin": "data.scripts.GDModPlugin",
+}

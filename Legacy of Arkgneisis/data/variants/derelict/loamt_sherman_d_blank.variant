@@ -1,0 +1,16 @@
+{
+  "displayName": "Derelict",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_sherman_d",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "loamt_sherman_d_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ]
+}

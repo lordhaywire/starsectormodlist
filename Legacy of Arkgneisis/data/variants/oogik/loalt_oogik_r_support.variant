@@ -1,0 +1,23 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 6,
+    "fluxVents": 5,
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullId": "loalt_oogik_r",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "loalt_oogik_r_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ionpulser"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "sabotpod"}
+        }
+    ]
+}

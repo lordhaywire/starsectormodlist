@@ -1,0 +1,24 @@
+{
+	"id":"loa_flakmine",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.scripts.shipsystems.loa_shrapnelmine",
+
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"loa_shrapnelmine_activate",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":1500,
+		"threatAmount":10,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

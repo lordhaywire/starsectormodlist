@@ -1,0 +1,41 @@
+{
+  "variantId": "loa_arscapitol_core_variant",
+  "hullId": "loa_arscapitol_core",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "loa_gigaton"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0001": "loa_arscapitol_main_left_variant"
+    },
+    {
+      "WS0002": "loa_arscapitol_main_right_variant"
+    },
+    {
+      "WS0005": "loa_arscapitol_shield_left_variant"
+    },
+    {
+      "WS0006": "loa_arscapitol_shield_right_variant"
+    },
+    {
+      "WS0004": "loa_arscapitol_prow_variant"
+    },
+    {
+      "WS0007": "loa_arscapitol_engine_variant"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,1110 @@
+{
+			
+			
+			
+			
+			"loa_warp_collapse":[
+        {"file":"sounds/al_fx/loa_warp_collapse.ogg","pitch":1, "volume":1},
+	 ],
+			"loa_warp_warning":[
+        {"file":"sounds/al_fx/loa_warp_warning.ogg","pitch":1, "volume":0.6},
+	 ],	 
+			
+			"loa_pike_impact":[
+        {"file":"sounds/al_fx/loa_pike_impact_1.ogg","pitch":0.5, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_1.ogg","pitch":0.75, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_1.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_2.ogg","pitch":0.5, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_2.ogg","pitch":0.75, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_2.ogg","pitch":1, "volume":0.15},
+		{"file":"sounds/al_fx/loa_pike_impact_3.ogg","pitch":1, "volume":0.15},
+	 ],
+	 
+			"loa_injector_blowout":[
+        {"file":"sounds/al_fx/loa_injector_blowout.ogg","pitch":1, "volume":0.6},
+	 ],
+	 
+			"loa_bar_cheers":[
+        {"file":"sounds/al_fx/loa_bar_cheers.ogg","pitch":1, "volume":1},
+	 ],
+			"loa_bar_fight":[
+        {"file":"sounds/al_fx/loa_bar_fight.ogg","pitch":1, "volume":1},
+	 ],
+	 
+	 			"loa_macattack_charge":[
+        {"file":"sounds/al_fx/loa_macattack_charge.ogg","pitch":1, "volume":1},
+	 ],
+	 	 		"loa_macattack_kick":[
+        {"file":"sounds/al_fx/loa_macattack_kick.ogg","pitch":1, "volume":1},
+	 ],
+	 	 		"loa_macattack_loop":[
+        {"file":"sounds/al_fx/loa_macattack_loop.ogg","pitch":1, "volume":1},
+	 ],
+	 
+				"loa_gailardfist_start":[
+        {"file":"sounds/al_fx/loa_gailardfist_start.ogg","pitch":1, "volume":0.8},
+	 ],
+	 
+	 	 	 	"loa_missilefactory_start":[
+        {"file":"sounds/al_fx/loa_missilefactory_start.ogg","pitch":1, "volume":0.5},
+	 ],
+	 	 	 	"loa_missilefactory_loop":[
+        {"file":"sounds/al_fx/loa_missilefactory_loop.ogg","pitch":1, "volume":0.5},
+	 ],
+	 	 	 	"loa_missilefactory_load":[
+        {"file":"sounds/al_fx/loa_missilefactory_load.ogg","pitch":1, "volume":1},
+	 ],
+	
+		    "al_pelletdriver_charge":[
+        {"file":"sounds/al_fx/al_pelletdriver_charge.ogg","pitch":0.85, "volume":0.75},
+        {"file":"sounds/al_fx/al_pelletdriver_charge.ogg","pitch":0.9, "volume":0.8},
+        {"file":"sounds/al_fx/al_pelletdriver_charge.ogg","pitch":0.95, "volume":0.85},
+	 ],
+			"al_pelletdriver_fire":[
+        {"file":"sounds/al_fx/al_pelletdriver_fire.ogg","pitch":0.95, "volume":1.95},
+        {"file":"sounds/al_fx/al_pelletdriver_fire.ogg","pitch":1, "volume":2},
+        {"file":"sounds/al_fx/al_pelletdriver_fire.ogg","pitch":1.05, "volume":2.05},
+	],
+			"al_pelletgun_charge":[
+        {"file":"sounds/al_fx/al_pelletgun_charge.ogg","pitch":0.85, "volume":1.25},
+        {"file":"sounds/al_fx/al_pelletgun_charge.ogg","pitch":0.9, "volume":1.3},
+        {"file":"sounds/al_fx/al_pelletgun_charge.ogg","pitch":0.95, "volume":1.35},
+    ],
+        	"al_pelletgun_fire":[
+        {"file":"sounds/al_fx/al_pelletgun_fire.ogg","pitch":0.95, "volume":1.65},
+        {"file":"sounds/al_fx/al_pelletgun_fire.ogg","pitch":1, "volume":1.7},
+        {"file":"sounds/al_fx/al_pelletgun_fire.ogg","pitch":1.05, "volume":1.75},
+	],
+        	"al_pelletcannon_charge":[
+        {"file":"sounds/al_fx/al_pelletcannon_charge.ogg","pitch":0.85, "volume":1.7},
+        {"file":"sounds/al_fx/al_pelletcannon_charge.ogg","pitch":0.9, "volume":1.75},
+        {"file":"sounds/al_fx/al_pelletcannon_charge.ogg","pitch":0.95, "volume":1.8},
+	],
+	        "al_pelletcannon_fire":[
+        {"file":"sounds/al_fx/al_pelletcannon_fire.ogg","pitch":0.95, "volume":2.15},
+        {"file":"sounds/al_fx/al_pelletcannon_fire.ogg","pitch":1, "volume":2.2},
+        {"file":"sounds/al_fx/al_pelletcannon_fire.ogg","pitch":1.05, "volume":2.25},
+	],
+	        "al_bulldog_fire":[
+        {"file":"sounds/al_fx/al_bulldog_fire.ogg","pitch":0.75, "volume":0.45},
+        {"file":"sounds/al_fx/al_bulldog_fire.ogg","pitch":0.8, "volume":0.5},
+        {"file":"sounds/al_fx/al_bulldog_fire.ogg","pitch":0.85, "volume":0.55},
+	],	
+		     "al_bulldog_aoe":[
+        {"file":"sounds/al_fx/al_bulldog_aoe.ogg","pitch":0.75, "volume":0.7},
+        {"file":"sounds/al_fx/al_bulldog_aoe.ogg","pitch":0.8, "volume":0.75},
+        {"file":"sounds/al_fx/al_bulldog_aoe.ogg","pitch":0.85, "volume":0.8},
+	],	
+			  "al_bongo_loop":[
+        {"file":"sounds/al_fx/al_bongo_loop.ogg","pitch":1, "volume":0.5},
+	],
+			  "al_bongo_start":[
+        {"file":"sounds/sfx_wpn_guns/light_machinegun_fire_01.ogg","pitch":2, "volume":0.1},
+	],
+				  "loa_bongo_start":[
+        {"file":"sounds/al_fx/loa_bass_start.ogg","pitch":1, "volume":0.2},
+	],
+				  "loa_bass_start":[
+        {"file":"sounds/al_fx/loa_bass_start.ogg","pitch":1, "volume":0.2},
+	],
+			  "al_bassdrum_loop":[
+        {"file":"sounds/al_fx/al_bassdrum_loop.ogg","pitch":1.05, "volume":0.5},
+	],	
+				  "loa_moe_loop":[
+        {"file":"sounds/al_fx/loa_moe_loop.ogg","pitch":1, "volume":0.5},
+	],	
+			     "al_ultralightplasmadriver_fire":[
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.95, "volume":0.45},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":1, "volume":0.5},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":1.05, "volume":0.55},
+	],	
+				     "al_ultralightplasmadriver_impact":[
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.45, "volume":0.15},
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.5, "volume":0.2},
+		{"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.55, "volume":0.25},
+	],	
+		     "al_lightplasmadriver_fire":[
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.85, "volume":0.65},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.9, "volume":0.7},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.95, "volume":0.75},
+	],	
+					     "al_lightplasmadriver_impact":[
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.35, "volume":0.15},
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.4, "volume":0.2},
+		{"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.45, "volume":0.25},
+	],
+			     "al_plasmadriver_fire":[
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.75, "volume":0.85},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.8, "volume":0.9},
+        {"file":"sounds/al_fx/al_lightplasmadriver_fire.ogg","pitch":0.85, "volume":0.95},
+	],	
+				"al_plasmadriver_impact":[
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.15, "volume":0.25},
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.2, "volume":0.3},
+		{"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":2.25, "volume":0.35},
+	],
+			     "al_heavyplasmadriver_fire":[
+        {"file":"sounds/al_fx/al_heavyplasmadriver_fire.ogg","pitch":0.65, "volume":0.85},
+        {"file":"sounds/al_fx/al_heavyplasmadriver_fire.ogg","pitch":0.7, "volume":0.9},
+        {"file":"sounds/al_fx/al_heavyplasmadriver_fire.ogg","pitch":0.75, "volume":0.95},
+	],	
+					"al_heavyplasmadriver_impact":[
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":1.75, "volume":0.4},
+        {"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":1.8, "volume":0.45},
+		{"file":"sounds/al_fx/al_plasmadriver_impact.ogg","pitch":1.85, "volume":0.5},
+	],
+				     "al_plasmabuster_fire":[
+        {"file":"sounds/al_fx/al_plasmabuster_fire.ogg","pitch":0.75, "volume":0.65},
+        {"file":"sounds/al_fx/al_plasmabuster_fire.ogg","pitch":0.8, "volume":0.7},
+        {"file":"sounds/al_fx/al_plasmabuster_fire.ogg","pitch":0.85, "volume":0.75},
+	],	
+				     "al_plasmabuster_loop":[
+        {"file":"sounds/al_fx/al_plasmabuster_loop.ogg","pitch":0.95, "volume":0.75},
+        {"file":"sounds/al_fx/al_plasmabuster_loop.ogg","pitch":1, "volume":0.8},
+        {"file":"sounds/al_fx/al_plasmabuster_loop.ogg","pitch":1.05, "volume":0.85},
+	],	
+				"al_ionpike_fire":[
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":0.95, "volume":0.65},
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":1, "volume":0.7},
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":1.05, "volume":0.75},
+	],	
+	
+		"loa_ionpike_fire":[
+        {"file":"sounds/al_fx/loa_ionpike_fire.ogg","pitch":1, "volume":1},
+	],
+	
+		"loa_heavyionpike_fire":[
+        {"file":"sounds/al_fx/loa_heavyionpike_fire.ogg","pitch":1, "volume":1},
+	],	
+	
+					"al_ionpike_loop":[
+        {"file":"sounds/al_fx/al_ionpike_loop.ogg","pitch":1, "volume":0.8},
+	],	
+	
+			"loa_mosaic_launch":[
+        {"file":"sounds/al_fx/loa_mosaic_launch.ogg","pitch":0.95, "volume":0.75},
+        {"file":"sounds/al_fx/loa_mosaic_launch.ogg","pitch":1, "volume":0.85},
+        {"file":"sounds/al_fx/loa_mosaic_launch.ogg","pitch":1.05, "volume":0.95},
+	],	
+	
+			"loa_mosaic_explode":[
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":0.95, "volume":0.75},
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":1, "volume":0.85},
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":1.05, "volume":0.95},
+	],	
+	
+	"loa_redline_explode":[
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":1.9, "volume":0.75},
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":2, "volume":0.85},
+        {"file":"sounds/al_fx/loa_mosaic_explode.ogg","pitch":2.1, "volume":0.95},
+	],	
+	
+						"loa_flakcurtain_loop":[
+        {"file":"sounds/al_fx/loa_flakcurtain_loop.ogg","pitch":1, "volume":0.8},
+	],	
+	
+							"loa_flakcurtain_start":[
+        {"file":"sounds/al_fx/loa_flakcurtain_start.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/al_fx/loa_flakcurtain_start.ogg","pitch":0.95, "volume":0.7},
+		{"file":"sounds/al_fx/loa_flakcurtain_start.ogg","pitch":0.9, "volume":0.7},
+	],	
+						"loa_cone_launch":[
+        {"file":"sounds/al_fx/loa_cone_launch.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/al_fx/loa_cone_launch.ogg","pitch":0.95, "volume":0.4},
+		{"file":"sounds/al_fx/loa_cone_launch.ogg","pitch":0.9, "volume":0.4},
+	],	
+			"al_heavyionpike_fire":[
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":0.65, "volume":1.05},
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":0.7, "volume":1.1},
+        {"file":"sounds/al_fx/al_ionpike_fire.ogg","pitch":0.75, "volume":1.15},
+	],	
+			"al_heavyionpike_loop":[
+        {"file":"sounds/al_fx/al_heavyionpike_loop.ogg","pitch":1, "volume":0.8},
+	],	
+				"al_monogram_fire":[
+        {"file":"sounds/al_fx/al_monogram_fire.ogg","pitch":1.47, "volume":0.53},
+        {"file":"sounds/al_fx/al_monogram_fire.ogg","pitch":1.49, "volume":0.54},
+        {"file":"sounds/al_fx/al_monogram_fire.ogg","pitch":1.5, "volume":0.55},
+        {"file":"sounds/al_fx/al_monogram_fire.ogg","pitch":1.51, "volume":0.56},
+        {"file":"sounds/al_fx/al_monogram_fire.ogg","pitch":1.53, "volume":0.57},
+	],	
+			"al_bigram_fire":[
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.98, "volume":0.58},
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.99, "volume":0.59},
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":1, "volume":0.6},
+		{"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":1.02, "volume":0.61},
+		{"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":1.05, "volume":0.62},
+	],	
+				"al_bigram2_fire":[
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.87, "volume":0.56},
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.89, "volume":0.57},
+        {"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.9, "volume":0.58},
+		{"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.91, "volume":0.59},
+		{"file":"sounds/al_fx/al_bigram_fire.ogg","pitch":0.93, "volume":0.6},
+	],	
+				"al_chemospray_fire":[
+        {"file":"sounds/al_fx/al_chemospray_fire.ogg","pitch":0.95, "volume":0.95},
+        {"file":"sounds/al_fx/al_chemospray_fire.ogg","pitch":1, "volume":1},
+        {"file":"sounds/al_fx/al_chemospray_fire.ogg","pitch":1.05, "volume":1.05},
+	],	
+				"al_chemospray_charge":[
+        {"file":"sounds/al_fx/al_chemospray_charge.ogg","pitch":0.95, "volume":0.95},
+        {"file":"sounds/al_fx/al_chemospray_charge.ogg","pitch":1, "volume":1},
+        {"file":"sounds/al_fx/al_chemospray_charge.ogg","pitch":1.05, "volume":1.05},
+	],	
+					"al_chemoblast_fire":[
+        {"file":"sounds/al_fx/al_chemoblast_fire.ogg","pitch":0.85, "volume":1.05},
+        {"file":"sounds/al_fx/al_chemoblast_fire.ogg","pitch":0.9, "volume":1.1},
+        {"file":"sounds/al_fx/al_chemoblast_fire.ogg","pitch":0.95, "volume":1.15},
+	],	
+				"al_chemoblast_charge":[
+        {"file":"sounds/al_fx/al_chemoblast_charge.ogg","pitch":0.95, "volume":0.95},
+        {"file":"sounds/al_fx/al_chemoblast_charge.ogg","pitch":1, "volume":1},
+        {"file":"sounds/al_fx/al_chemoblast_charge.ogg","pitch":1.05, "volume":1.05},
+	],	
+					"al_siegecannon_fire":[
+        {"file":"sounds/al_fx/al_siegecannon_fire.ogg","pitch":0.9, "volume":1.05},
+        {"file":"sounds/al_fx/al_siegecannon_fire.ogg","pitch":1, "volume":1},
+        {"file":"sounds/al_fx/al_siegecannon_fire.ogg","pitch":1.1, "volume":0.95},
+	],	
+	
+						"loa_rupture_fire":[
+        {"file":"sounds/al_fx/loa_rupture_fire.ogg","pitch":1.05, "volume":0.8},
+		{"file":"sounds/al_fx/loa_rupture_fire.ogg","pitch":1.1, "volume":0.8},
+		{"file":"sounds/al_fx/loa_rupture_fire.ogg","pitch":1.15, "volume":0.8},
+	],	
+							"loa_warprift_suck":[
+        {"file":"sounds/al_fx/loa_warprift_suck.ogg","pitch":0.9, "volume":0.8},
+		{"file":"sounds/al_fx/loa_warprift_suck.ogg","pitch":0.925, "volume":0.8},
+		{"file":"sounds/al_fx/loa_warprift_suck.ogg","pitch":0.95, "volume":0.8},
+	],	
+			"loa_warprift_explode_small":[
+        {"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1, "volume":0.5},
+		{"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1.2, "volume":0.5},
+		{"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1.4, "volume":0.5},
+	],	
+			"loa_warprift_explode":[
+        {"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1.2, "volume":0.7},
+		{"file":"sounds/al_fx/loa_warprift_explode.ogg","pitch":1.4, "volume":0.7},
+	],	
+			"loa_warprift_explode_large":[
+        {"file":"sounds/al_fx/loa_warprift_explode_large.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/al_fx/loa_warprift_explode_large.ogg","pitch":1.2, "volume":0.7},
+		{"file":"sounds/al_fx/loa_warprift_explode_large.ogg","pitch":1.4, "volume":0.7},
+	],	
+							"loa_hyperbeam_start":[
+        {"file":"sounds/al_fx/loa_hyperbeam_start.ogg","pitch":1, "volume":1},
+	],	
+							"loa_hyperbeam_loop":[
+        {"file":"sounds/al_fx/loa_hyperbeam_loop.ogg","pitch":1, "volume":1.5},
+	],	
+								"loa_hyperbeam_end":[
+        {"file":"sounds/al_fx/loa_hyperbeam_end.ogg","pitch":1, "volume":1},
+	],	
+								"loa_riftcannon_start":[
+        {"file":"sounds/al_fx/loa_riftcannon_start.ogg","pitch":1, "volume":1},
+	],	
+							"loa_riftcannon_loop":[
+        {"file":"sounds/al_fx/loa_riftcannon_loop.ogg","pitch":1, "volume":0.6},
+	],	
+								"loa_zapflak_fire":[
+        {"file":"sounds/al_fx/loa_zapflak_fire.ogg","pitch":1, "volume":1},
+		{"file":"sounds/al_fx/loa_zapflak_fire.ogg","pitch":1.05, "volume":1},
+		{"file":"sounds/al_fx/loa_zapflak_fire.ogg","pitch":0.95, "volume":1},
+	],	
+							"loa_hightech_zap":[
+        {"file":"sounds/al_fx/loa_hightech_zap.ogg","pitch":3, "volume":0.65},
+		{"file":"sounds/al_fx/loa_hightech_zap.ogg","pitch":3, "volume":0.65},
+		{"file":"sounds/al_fx/loa_hightech_zap.ogg","pitch":3, "volume":0.65},
+	],	
+
+								"loa_alastair_zap":[
+        {"file":"sounds/al_fx/loa_hightech_zap.ogg","pitch":1, "volume":1},
+	],	
+									"loa_warpshot_fire":[
+        {"file":"sounds/al_fx/loa_warpshot_fire.ogg","pitch":1, "volume":0.2},
+	],	
+										"loa_warpshot_loop":[
+        {"file":"sounds/al_fx/loa_warpshot_loop.ogg","pitch":1, "volume":0.7},
+	],	
+										"loa_burstphase_activate":[
+        {"file":"sounds/al_fx/loa_burstphase_activate.ogg","pitch":1, "volume":1},
+	],	
+									"loa_burstphase_deactivate":[
+        {"file":"sounds/al_fx/loa_burstphase_deactivate.ogg","pitch":1, "volume":1},
+	],	
+	
+											"loa_shockjump_start":[
+        {"file":"sounds/al_fx/loa_shockjump_start.ogg","pitch":1, "volume":1},
+	],	
+												"loa_shockjump_exit":[
+        {"file":"sounds/al_fx/loa_shockjump_exit.ogg","pitch":1, "volume":0.65},
+	],	
+	
+					"loa_her_fire":[
+        {"file":"sounds/al_fx/loa_her_fire.ogg","pitch":0.9, "volume":0.9},
+        {"file":"sounds/al_fx/loa_her_fire.ogg","pitch":1, "volume":0.9},
+        {"file":"sounds/al_fx/loa_her_fire.ogg","pitch":1.1, "volume":0.9},
+	],	
+	
+						"loa_er_fire":[
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":0.9, "volume":0.9},
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":1, "volume":0.9},
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":1.1, "volume":0.9},
+	],	
+							"loa_er_f_fire":[
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":1.1, "volume":0.3},
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":1.2, "volume":0.3},
+        {"file":"sounds/al_fx/loa_er_fire.ogg","pitch":1.3, "volume":0.3},
+	],	
+	
+				"al_rod_fire":[
+        {"file":"sounds/al_fx/al_rod_fire.ogg","pitch":1.15, "volume":0.25},
+        {"file":"sounds/al_fx/al_rod_fire.ogg","pitch":1.2, "volume":0.3},
+        {"file":"sounds/al_fx/al_rod_fire.ogg","pitch":1.25, "volume":0.35},
+	],	
+				"al_sphere_fire":[
+        {"file":"sounds/al_fx/al_sphere_fire.ogg","pitch":0.75, "volume":0.35},
+        {"file":"sounds/al_fx/al_sphere_fire.ogg","pitch":0.8, "volume":0.4},
+        {"file":"sounds/al_fx/al_sphere_fire.ogg","pitch":0.85, "volume":0.45},
+	],	
+					"al_string_fire":[
+        {"file":"sounds/al_fx/al_string_fire.ogg","pitch":0.95, "volume":0.35},
+        {"file":"sounds/al_fx/al_string_fire.ogg","pitch":1, "volume":0.4},
+        {"file":"sounds/al_fx/al_string_fire.ogg","pitch":1.05, "volume":0.45},
+	],	
+	
+			"loa_needle_fire":[
+        {"file":"sounds/al_fx/loa_needle_fire.ogg","pitch":0.95, "volume":0.25},
+        {"file":"sounds/al_fx/loa_needle_fire.ogg","pitch":1, "volume":0.3},
+        {"file":"sounds/al_fx/loa_needle_fire.ogg","pitch":1.05, "volume":0.35},
+	],	
+	
+					"al_cone_fire":[
+        {"file":"sounds/al_fx/al_cone_fire.ogg","pitch":0.95, "volume":0.45},
+        {"file":"sounds/al_fx/al_cone_fire.ogg","pitch":1, "volume":0.5},
+        {"file":"sounds/al_fx/al_cone_fire.ogg","pitch":1.05, "volume":0.55},
+	],	
+	
+			"loa_warspeed_start":[
+        {"file":"sounds/al_fx/loa_warspeed_start.ogg","pitch":1, "volume":0.3},
+	],
+	
+				"loa_warspeed_loop":[
+        {"file":"sounds/al_fx/loa_warspeed_loop.ogg","pitch":1, "volume":0.6},
+	],
+	
+						"al_emoverload_start":[
+        {"file":"sounds/al_fx/al_emoverload_start.ogg","pitch":0.6, "volume":0.6},
+	],	
+							"al_emoverload_loop":[
+        {"file":"sounds/al_fx/al_emoverload_loop.ogg","pitch":0.85, "volume":0.5},
+	],	
+								"al_emoverload_end":[
+        {"file":"sounds/al_fx/al_emoverload_end.ogg","pitch":0.85, "volume":0.8},
+	],	
+							"al_emoverload_zap":[
+        {"file":"sounds/al_fx/al_emoverload_zap.ogg","pitch":0.8, "volume":0.4},
+		{"file":"sounds/al_fx/al_emoverload_zap.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/al_fx/al_emoverload_zap.ogg","pitch":1.5, "volume":0.4},
+	],	
+	"loa_hotswap":[
+        {"file":"sounds/al_fx/loa_hotswap.ogg","pitch":1, "volume":0.8},
+	],	
+	
+		"loa_ammoswap":[
+        {"file":"sounds/al_fx/loa_ammoswap.ogg","pitch":1, "volume":1},
+	],	
+	
+			"loa_nicke_gun_fire":[
+        {"file":"sounds/al_fx/loa_nicke_gun_fire.ogg","pitch":0.95, "volume":0.7},
+        {"file":"sounds/al_fx/loa_nicke_gun_fire.ogg","pitch":1, "volume":0.7},
+        {"file":"sounds/al_fx/loa_nicke_gun_fire.ogg","pitch":1.05, "volume":0.7},
+	],	
+	
+		"loa_nicke_gun_r_fire":[
+        {"file":"sounds/al_fx/loa_nicke_gun_r_fire.ogg","pitch":0.85, "volume":0.7},
+        {"file":"sounds/al_fx/loa_nicke_gun_r_fire.ogg","pitch":0.9, "volume":0.7},
+        {"file":"sounds/al_fx/loa_nicke_gun_r_fire.ogg","pitch":0.95, "volume":0.7},
+	],	
+	
+			"loa_nicke_gun_charge":[
+        {"file":"sounds/al_fx/loa_nicke_gun_charge.ogg","pitch":1, "volume":0.7},
+	],	
+	
+				"loa_nicke_gun_r_charge":[
+        {"file":"sounds/al_fx/loa_nicke_gun_charge.ogg","pitch":1.1, "volume":0.7},
+	],	
+	
+	"loa_shrapnelmine_activate":[
+        {"file":"sounds/al_fx/loa_shrapnelmine_activate.ogg","pitch":1, "volume":0.7},
+		{"file":"sounds/al_fx/loa_shrapnelmine_activate.ogg","pitch":0.95, "volume":0.7},
+		{"file":"sounds/al_fx/loa_shrapnelmine_activate.ogg","pitch":1.05, "volume":0.7},
+		],
+		
+	"loa_shrapnelmine_boom":[
+        {"file":"sounds/al_fx/loa_shrapnelmine_boom.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/al_fx/loa_shrapnelmine_boom.ogg","pitch":0.9, "volume":0.8},
+		{"file":"sounds/al_fx/loa_shrapnelmine_boom.ogg","pitch":1.1, "volume":0.8},
+		],
+		
+	"loa_shrapnelmine_place":[
+        {"file":"sounds/al_fx/loa_shrapnelmine_place.ogg","pitch":1, "volume":0.8},
+		{"file":"sounds/al_fx/loa_shrapnelmine_place.ogg","pitch":0.95, "volume":0.8},
+		{"file":"sounds/al_fx/loa_shrapnelmine_place.ogg","pitch":1.05, "volume":0.8},
+	],	
+	"loa_hightech_thrum":[
+        {"file":"sounds/al_fx/loa_hightech_thrum.ogg","pitch":1, "volume":1},
+		{"file":"sounds/al_fx/loa_hightech_thrum.ogg","pitch":1.1, "volume":1},
+		{"file":"sounds/al_fx/loa_hightech_thrum.ogg","pitch":0.9, "volume":1},
+	],	
+	"loa_hightech_failure":[
+        {"file":"sounds/al_fx/loa_hightech_failure.ogg","pitch":1, "volume":1},
+		{"file":"sounds/al_fx/loa_hightech_failure.ogg","pitch":1.2, "volume":1},
+		{"file":"sounds/al_fx/loa_hightech_failure.ogg","pitch":0.7, "volume":1},
+	],			
+	
+	"loa_lighthouse_fire":[
+        {"file":"sounds/al_fx/loa_lighthouse_fire.ogg","pitch":0.9, "volume":0.4},
+		{"file":"sounds/al_fx/loa_lighthouse_fire.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/al_fx/loa_lighthouse_fire.ogg","pitch":1.1, "volume":0.4},
+	],	
+	
+		"loa_gigaton_ready":[
+        {"file":"sounds/al_fx/loa_gigaton_ready.ogg","pitch":1, "volume":0.35},
+	],	
+	
+			"loa_gigaton_beam":[
+        {"file":"sounds/al_fx/loa_gigaton_beam.ogg","pitch":1, "volume":0.5},
+	],	
+	
+				"loa_gigaton_fire_close":[
+        {"file":"sounds/al_fx/loa_gigaton_fire_close.ogg","pitch":0.95, "volume":0.9},
+		{"file":"sounds/al_fx/loa_gigaton_fire_close.ogg","pitch":1, "volume":0.9},
+		{"file":"sounds/al_fx/loa_gigaton_fire_close.ogg","pitch":1.05, "volume":0.9},
+	],	
+	
+				"loa_gigaton_fire_far":[
+        {"file":"sounds/al_fx/loa_gigaton_fire_far.ogg","pitch":0.65, "volume":0.3},
+		{"file":"sounds/al_fx/loa_gigaton_fire_far.ogg","pitch":0.7, "volume":0.3},
+		{"file":"sounds/al_fx/loa_gigaton_fire_far.ogg","pitch":0.75, "volume":0.3},
+	],	
+	
+	"al_moe_start":[
+        {"file":"sounds/al_fx/al_moe_start.ogg","pitch":1, "volume":0.8},
+	],	
+	"al_tacscan_loop":[
+        {"file":"sounds/al_fx/al_tacscan_loop.ogg","pitch":1, "volume":0.5},
+	],	
+	"al_chaff_fire":[
+        {"file":"sounds/al_fx/al_chaff_fire.ogg","pitch":1, "volume":0.5},
+	],	
+	"al_empcore_charge":[
+        {"file":"sounds/al_fx/al_empcore_charge.ogg","pitch":0.9, "volume":1.2},
+	],	
+	"al_empcore_loop":[
+        {"file":"sounds/al_fx/al_empcore_loop.ogg","pitch":1, "volume":1},
+	],	
+	"al_empcore_loop_2":[
+        {"file":"sounds/al_fx/al_empcore_loop.ogg","pitch":0.75, "volume":0.3},
+	],	
+	"al_empcore_explosion":[
+        {"file":"sounds/al_fx/al_empcore_explosion.ogg","pitch":1, "volume":1},
+	],	
+	"al_empcore_shutdown":[
+        {"file":"sounds/al_fx/al_empcore_shutdown.ogg","pitch":1, "volume":1.2},
+	],	
+	
+	"loa_awacs_loop":[
+        {"file":"sounds/al_fx/loa_awacs_loop.ogg","pitch":0.8, "volume":0.6},
+	],	
+	"loa_awacs_start":[
+        {"file":"sounds/al_fx/loa_awacs_start.ogg","pitch":0.9, "volume":0.7},
+	],	
+	
+	"loa_awacs_ping":[
+        {"file":"sounds/al_fx/loa_awacs_ping.ogg","pitch":1, "volume":0.4},
+		{"file":"sounds/al_fx/loa_awacs_ping.ogg","pitch":0.9, "volume":0.4},
+		{"file":"sounds/al_fx/loa_awacs_ping.ogg","pitch":1.1, "volume":0.4},
+	],	
+	"loa_awacs_2":[
+        {"file":"sounds/al_fx/loa_awacs_2.ogg","pitch":1, "volume":0.7},
+	],	
+	"loa_awacs_3":[
+        {"file":"sounds/al_fx/loa_awacs_3.ogg","pitch":1, "volume":0.7},
+	],	
+		"loa_warpshothit":[
+        {"file":"sounds/sfx_impacts/gun_hit_light_01.ogg","pitch":1, "volume":1},
+	],	
+	
+			#Legacy of Arkgneisis Music
+			
+    "music":{
+        "loa_ars_encounter_neutral":[
+            {"file":"loa_ars_encounter_neutral.ogg","source":"sounds/al_fx/music","volume":0.5,"randomStart":true}
+        ],
+        "loa_ars_encounter_hostile":[
+            {"file":"loa_ars_encounter_hostile.ogg","source":"sounds/al_fx/music","volume":0.5,"randomStart":true}
+        ],
+        "loa_ars_encounter_friendly":[
+            {"file":"loa_ars_encounter_friendly.ogg","source":"sounds/al_fx/music","volume":0.5,"randomStart":true}
+        ],
+		"loa_ars_market_neutral":[
+            {"file":"loa_ars_market_neutral.ogg","source":"sounds/al_fx/music","volume":0.3,"randomStart":true}
+        ],
+        "loa_ars_market_hostile":[
+            {"file":"loa_ars_market_hostile.ogg","source":"sounds/al_fx/music","volume":0.4,"randomStart":true}
+        ],
+        "loa_ars_market_friendly":[
+            {"file":"loa_ars_market_friendly.ogg","source":"sounds/al_fx/music","volume":0.4,"randomStart":true}
+        ],
+    },
+			# Legacy of Arkgneisis Hullstyle Sets
+			
+			
+			# Hightech
+			
+		"loa_engine_loop_hightech":{
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_engine_high_fighter_loop.ogg","pitch":1,"volume":1}, # index:  0
+			{"file":"sounds/al_fx/hightech/loa_engine_high_frigate_loop.ogg","pitch":1,"volume":1}, # index:  1
+			{"file":"sounds/al_fx/hightech/loa_engine_high_destroyer_loop.ogg","pitch":1,"volume":1}, # index:  2
+			{"file":"sounds/al_fx/hightech/loa_engine_high_cruiser_loop.ogg","pitch":1,"volume":1}, # index:  3
+			{"file":"sounds/al_fx/hightech/loa_engine_high_capital_loop.ogg","pitch":1,"volume":1}, # index:  4
+			],
+
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.1},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.3},
+		"DESTROYER":{"sounds":[2], "pitch":1, "volume":0.2},
+		"CRUISER":{"sounds":[3], "pitch":1, "volume":0.2},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":0.4},	
+		},				
+			
+		"loa_engine_high_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_engine_high_boost_01.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_engine_high_boost_02.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_engine_high_boost_03.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.2},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.5},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":0.8},		
+	},	
+			
+		"loa_shield_high_raise":{
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_shield_high_raise_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_shield_high_raise_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_shield_high_raise_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_shield_high_lower":{
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_shield_high_lower_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_shield_high_lower_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/hightech/loa_shield_high_lower_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+				"loa_shield_high_burnout":{
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_shield_high_burnout.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+		"loa_shield_high_burnout_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_shield_high_burnout_loop.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.3},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.5},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.6},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":0.8},		
+	},
+	
+			"loa_high_flux_loop":{ # played while a ship is venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_high_flux_loop.ogg","pitch":1,"volume":0.7},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	"loa_high_flux_vent":{ # played once when a ship starts venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_high_flux_vent.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},
+	
+		# Midtech
+	
+		"loa_engine_loop_midtech":{
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_fighter_loop.ogg","pitch":1,"volume":1}, # index:  0
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_frigate_loop.ogg","pitch":1,"volume":1}, # index:  1
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_destroyer_loop.ogg","pitch":1,"volume":1}, # index:  2
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_cruiser_loop.ogg","pitch":1,"volume":1}, # index:  3
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_capital_loop.ogg","pitch":1,"volume":1}, # index:  4
+			],
+
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.1},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.2},
+		"DESTROYER":{"sounds":[2], "pitch":1, "volume":0.3},
+		"CRUISER":{"sounds":[3], "pitch":1, "volume":0.3},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":0.3},	
+		},	
+	
+		"loa_engine_mid_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_boost_01.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_boost_02.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_engine_mid_boost_03.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.2},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.5},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":0.8},		
+		},	
+	
+		"loa_shield_mid_raise":{
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_raise_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_raise_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_raise_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_MID":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_shield_mid_lower":{
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_lower_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_lower_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_lower_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_MID":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_shield_mid_burnout":{
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_burnout.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_shield_mid_burnout_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_shield_mid_burnout_loop.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_HIGH":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.3},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.5},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.6},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":0.8},		
+	},
+		"loa_mid_flux_loop":{ # played while a ship is venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_mid_flux_loop.ogg","pitch":1,"volume":0.8},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	"loa_mid_flux_vent":{ # played once when a ship starts venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_mid_flux_vent.ogg","pitch":1,"volume":0.5},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},
+	
+	# Lowtech
+	
+			"loa_engine_loop_lowtech":{
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_fighter_loop.ogg","pitch":1,"volume":1}, # index:  0
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_frigate_loop.ogg","pitch":1,"volume":1}, # index:  1
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_destroyer_loop.ogg","pitch":1,"volume":1}, # index:  2
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_cruiser_loop.ogg","pitch":1,"volume":1}, # index:  3
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_capital_loop.ogg","pitch":1,"volume":1}, # index:  4
+			],
+
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.1},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.2},
+		"DESTROYER":{"sounds":[2], "pitch":1, "volume":0.3},
+		"CRUISER":{"sounds":[3], "pitch":1, "volume":0.3},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":0.3},	
+		},	
+	
+			"loa_engine_low_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_boost_01.ogg","pitch":1,"volume":0.8},
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_boost_02.ogg","pitch":1,"volume":0.8},
+			{"file":"sounds/al_fx/lowtech/loa_engine_low_boost_03.ogg","pitch":1,"volume":0.8},
+		],
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.2},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.5},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":0.8},		
+		},	
+	
+		"loa_shield_low_raise":{
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_raise_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_raise_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_raise_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_LOW":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_shield_low_lower":{
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_lower_large.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_lower_medium.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_lower_small.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_LOW":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+				"loa_shield_low_burnout":{
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_burnout.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_LOW":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+				"loa_shield_low_burnout_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_shield_low_burnout_loop.ogg","pitch":1,"volume":1},
+		],
+		"ARKGNEISIS_LOW":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.3},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.5},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.6},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":0.8},		
+	},
+	
+			"loa_low_flux_loop":{ # played while a ship is venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_low_flux_loop.ogg","pitch":1,"volume":0.5},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	"loa_low_flux_vent":{ # played once when a ship starts venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_low_flux_vent.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},
+	
+	# Anargaia
+			
+		"loa_anarg_engine_loop":{
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_loop.ogg","pitch":1,"volume":1}, # index:  0
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_loop.ogg","pitch":1,"volume":1}, # index:  1
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_loop.ogg","pitch":1,"volume":1}, # index:  2
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_loop.ogg","pitch":1,"volume":1}, # index:  3
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_loop.ogg","pitch":1,"volume":1}, # index:  4
+			],
+
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.1},
+		"FRIGATE":{"sounds":[1], "pitch":1, "volume":0.3},
+		"DESTROYER":{"sounds":[2], "pitch":1, "volume":0.2},
+		"CRUISER":{"sounds":[3], "pitch":1, "volume":0.2},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":0.4},	
+		},				
+			
+		"loa_anarg_engine_boost":{ # played when ship receives an "engine boost" from having zero flux 
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_boost_1.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_boost_2.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_engine_boost_3.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0,1,2], "pitch":1, "volume":0.2},
+		"FRIGATE":{"sounds":[0,1,2], "pitch":1, "volume":0.4},
+		"DESTROYER":{"sounds":[0,1,2], "pitch":1, "volume":0.5},
+		"CRUISER":{"sounds":[0,1,2], "pitch":1, "volume":0.6},
+		"CAPITAL_SHIP":{"sounds":[0,1,2], "pitch":1, "volume":0.8},		
+	},	
+			
+		"loa_anarg_shield_raise":{
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_raise.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_raise.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_raise.ogg","pitch":1,"volume":1},
+		],
+		"ANARGAIA":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+			"loa_anarg_shield_lower":{
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_lower.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_lower.ogg","pitch":1,"volume":1},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_lower.ogg","pitch":1,"volume":1},
+		],
+		"ANARGAIA":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+				"loa_anarg_shield_burnout":{
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_burnout.ogg","pitch":1,"volume":1},
+		],
+		"ANARGAIA":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.6},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},
+	},
+	
+		"loa_anarg_shield_burnout_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_shield_burnout_loop.ogg","pitch":1,"volume":1},
+		],
+		"ANARGAIA":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.3},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.5},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.6},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":0.8},		
+	},
+	
+			"loa_anarg_flux_loop":{ # played while a ship is venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_flux_loop.ogg","pitch":1,"volume":0.7},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},	
+	"loa_anarg_flux_vent":{ # played once when a ship starts venting flux
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_flux_vent.ogg","pitch":1,"volume":1},
+		],
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.4},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.7},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.8},
+		"CRUISER":{"sounds":[0], "pitch":1, "volume":0.9},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":1},		
+	},
+	
+			# Explosions
+			
+				"loa_explosion_low":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/al_fx/lowtech/loa_explosion_low_1.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/lowtech/loa_explosion_low_2.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/lowtech/loa_explosion_low_3.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/lowtech/loa_explosion_low_4.ogg","pitch":1,"volume":1.0},
+			],
+			
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.8},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},		
+	},
+	
+		"loa_anarg_explosion":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_explosion.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_explosion.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_explosion.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/custom/anargaia/loa_anarg_explosion.ogg","pitch":1,"volume":1.0},
+			],
+			
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.8},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},		
+	},
+			
+	"loa_explosion_mid":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/al_fx/midtech/loa_explosion_mid_1.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/midtech/loa_explosion_mid_2.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/midtech/loa_explosion_mid_3.ogg","pitch":1,"volume":1.0},
+			{"file":"sounds/al_fx/midtech/loa_explosion_mid_4.ogg","pitch":1,"volume":1.0},
+			],
+			
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.8},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},		
+	},
+	
+		"loa_explosion_high":{ # when a fighter or ship explodes
+		"sounds":[
+			{"file":"sounds/al_fx/hightech/loa_explosion_high_1.ogg","pitch":1,"volume":0.8},
+			{"file":"sounds/al_fx/hightech/loa_explosion_high_2.ogg","pitch":1,"volume":0.8},
+			{"file":"sounds/al_fx/hightech/loa_explosion_high_3.ogg","pitch":1,"volume":0.8},
+			{"file":"sounds/al_fx/hightech/loa_explosion_high_4.ogg","pitch":1,"volume":0.8},
+			],
+			
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.8},
+		"FRIGATE":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"DESTROYER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CRUISER":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},
+		"CAPITAL_SHIP":{"sounds":[0,1,3], "pitch":1.0, "volume":1.0},		
+	},
+	
+		"loa_explosionoverlay_1":[
+        {"file":"sounds/al_fx/hightech/loa_explosionoverlay_1.ogg","pitch":1, "volume":2},
+	],	
+	
+			"loa_high_death_charge":[
+        {"file":"sounds/al_fx/hightech/loa_high_death_charge.ogg","pitch":1, "volume":1},
+	],	
+	
+	"loa_anarg_system_start":[
+        {"file":"sounds/al_fx/custom/anargaia/loa_anarg_system_start.ogg","pitch":0.75, "volume":0.4},
+	],	
+	
+	"loa_anarg_system_loop":[
+        {"file":"sounds/al_fx/custom/anargaia/loa_anarg_system_loop.ogg","pitch":1, "volume":1},
+	],	
+	
+				"loa_high_death_micro":[
+        {"file":"sounds/al_fx/hightech/loa_high_death_micro.ogg","pitch":0.8, "volume":0.1},
+		{"file":"sounds/al_fx/hightech/loa_high_death_micro.ogg","pitch":1, "volume":0.1},
+		{"file":"sounds/al_fx/hightech/loa_high_death_micro.ogg","pitch":1.2, "volume":0.1},
+	],	
+					"loa_high_death_arc":[
+        {"file":"sounds/al_fx/hightech/loa_high_death_arc.ogg","pitch":0.9, "volume":0.3},
+		{"file":"sounds/al_fx/hightech/loa_high_death_arc.ogg","pitch":1, "volume":0.3},
+		{"file":"sounds/al_fx/hightech/loa_high_death_arc.ogg","pitch":1.05, "volume":0.3},
+	],	
+					"loa_high_death_arc_big":[
+        {"file":"sounds/al_fx/hightech/loa_high_death_arc_big.ogg","pitch":0.8, "volume":1.4},
+		{"file":"sounds/al_fx/hightech/loa_high_death_arc_big.ogg","pitch":0.9, "volume":1.4},
+		{"file":"sounds/al_fx/hightech/loa_high_death_arc_big.ogg","pitch":1, "volume":1.4},
+	],	
+	
+						"loa_high_death_arc_big_fire":[
+        {"file":"sounds/al_fx/hightech/loa_high_death_arc_big_fire.ogg","pitch":1, "volume":0},
+	],	
+	
+	    # Legacy of Arkgneisis UI sounds
+    "al_ui_test_mode_on":[
+        {"file":"sounds/al_fx/interface/al_ui_test_mode_on.ogg","pitch":1.0,"volume":0.35},
+    ],
+    "al_ui_test_mode_off":[
+        {"file":"sounds/al_fx/interface/al_ui_test_mode_off.ogg","pitch":1.0,"volume":0.35},
+    ],
+	 "loa_ui_test_ALL_ships_mode_on":[
+        {"file":"sounds/al_fx/interface/loa_ui_test_ALL_ships_mode_on.ogg","pitch":1.0,"volume":0.55},
+    ],
+    "loa_ui_test_ALL_ships_mode_off":[
+        {"file":"sounds/al_fx/interface/loa_ui_test_ALL_ships_mode_off.ogg","pitch":1.0,"volume":0.45},
+    ],
+	"loa_ui_admiral_AI_enabled":[
+        {"file":"sounds/al_fx/interface/loa_ui_admiral_AI_enabled.ogg","pitch":1.0,"volume":0.40},
+    ],
+    "loa_ui_admiral_AI_disabled":[
+        {"file":"sounds/al_fx/interface/loa_ui_admiral_AI_disabled.ogg","pitch":1.0,"volume":0.40},
+    ],
+    "loa_ui_difficulty_enabled":[
+        {"file":"sounds/al_fx/interface/loa_ui_difficulty_enabled.ogg","pitch":1.0,"volume":0.50},
+    ],
+    "loa_ui_difficulty_disabled":[
+        {"file":"sounds/al_fx/interface/loa_ui_difficulty_disabled.ogg","pitch":1.0,"volume":0.50},
+    ],
+	"loa_ui_fast_time_on":[
+        {"file":"sounds/al_fx/interface/loa_ui_fast_time_on.ogg","pitch":1.0,"volume":0.65},
+    ],
+    "loa_ui_fast_time_off":[
+        {"file":"sounds/al_fx/interface/loa_ui_fast_time_off.ogg","pitch":1.0,"volume":0.65},
+    ],
+}

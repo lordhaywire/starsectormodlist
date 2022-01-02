@@ -1,0 +1,63 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 28,
+    "fluxVents": 50,
+    "hullId": "loamt_alastair",
+	"quality": 0.5,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamt_alastair_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "tachyonlance",
+                "WS0002": "tachyonlance"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0043": "al_nuclearburstcannon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "al_pelletgun",
+                "WS0004": "al_pelletgun",
+                "WS0005": "al_pelletgun",
+                "WS0006": "al_monorail",
+                "WS0007": "al_monorail",
+                "WS0008": "al_monorail"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0013": "loa_needle",
+                "WS0014": "loa_needle",
+                "WS0015": "loa_needle",
+                "WS0016": "loa_needle",
+                "WS0017": "loa_needle",
+                "WS0018": "loa_needle"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "al_lightplasmadriver",
+                "WS0010": "al_lightplasmadriver",
+                "WS0011": "flak",
+                "WS0012": "flak"
+            }
+        }
+    ],
+    "wings": [
+        "duke_wing",
+        "duke_wing"
+    ]
+}

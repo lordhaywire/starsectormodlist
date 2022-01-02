@@ -1,0 +1,26 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "hullId": "loamtg_fox",
+	"goalVariant": false,
+	"quality": 0.5,
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loamtg_fox_elite",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "lightneedler",
+                "WS0002": "lightneedler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0005": "lightmortar"}
+        }
+    ]
+}

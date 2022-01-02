@@ -1,0 +1,40 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 13,
+    "fluxVents": 25,
+    "hullId": "loamtg_hawke",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "loamtg_hawke_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavyac",
+                "WS0002": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0005": "harpoon",
+                "WS0006": "harpoon",
+                "WS0007": "harpoon",
+                "WS0008": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "vulcan",
+                "WS0004": "vulcan"
+            }
+        }
+    ],
+    "wings": ["broadsword_wing"]
+}

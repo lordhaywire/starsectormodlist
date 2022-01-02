@@ -1,0 +1,38 @@
+{
+    "displayName": "Escort",
+    "fluxCapacitors": 7,
+    "fluxVents": 20,
+    "hullId": "loamt_thatcher",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loa_hill_thatcher",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "heavyac",
+                "WS0007": "heavyac"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "al_rod",
+                "WS0010": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_bongo",
+                "WS0006": "al_bongo"
+            }
+        }
+    ]
+}

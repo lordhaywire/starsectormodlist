@@ -1,0 +1,48 @@
+{
+    "variantOverrides":{
+        "dram_lp_ied_std":30,
+        "phaeton_lp_ied_std":30,
+        "prometheus_lp_ied_std":30,
+    },
+    "hullFrequency":{
+        "hulls":{
+            "le_prometheus3":5,
+			"hermes_pather":2,
+            "mule_luddic_path":0.75,
+            "venture_luddic_path":0.75,
+            "phaeton_lp":0.75,
+            "starliner_lp":0.5,
+            "dram_lp_ied":2,
+			"phaeton_lp_ied_std":2,
+			"prometheus_lp_ied_std":2,			
+        },
+	},
+		
+    "shipsWhenImporting":{
+        "hulls":[
+			"le_prometheus3",
+			"hermes_pather",
+			"mule_luddic_path",
+			"venture_luddic_path",
+			"phaeton_lp",
+			"starliner_lp",
+			"dram_lp_ied",
+			"phaeton_lp_ied",
+			"prometheus_lp_ied",
+        ],
+    },
+	
+    "knownShips":{
+        "hulls":[
+			"le_prometheus3",
+			"hermes_pather",
+			"mule_luddic_path",
+			"venture_luddic_path",
+			"phaeton_lp",
+			"starliner_lp",
+			"dram_lp_ied",
+			"phaeton_lp_ied",
+			"prometheus_lp_ied",
+        ],
+    },
+},

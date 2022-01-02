@@ -1,0 +1,52 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 9,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "starliner_lp",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "starliner_lp_strike",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "hammerrack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "harpoonpod",
+        "WS0007": "harpoonpod",
+        "WS0012": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "lightdualac",
+        "WS0010": "lightdualac",
+        "WS0011": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "lightdualmg",
+        "WS0002": "lightdualmg",
+        "WS0003": "lightdualmg",
+        "WS0004": "lightdualmg",
+        "WS0005": "lightdualmg"
+      }
+    }
+  ],
+  "wings": [
+    "talon_wing"
+  ]
+}

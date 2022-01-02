@@ -1,0 +1,26 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 10,
+    "fluxVents": 4,
+    "hullId": "loalt_taath_r",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "loalt_taath_r_assault",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "autopulse"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "sabot",
+                "WS0002": "sabot"
+            }
+        }
+    ]
+}

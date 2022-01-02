@@ -1,0 +1,40 @@
+{
+    "displayName": "Elite",
+    "fluxCapacitors": 3,
+    "fluxVents": 20,
+    "hullId": "loamtg_thatcher",
+	"goalVariant": false,
+	"quality": 0.5,
+    "hullMods": [
+        "missleracks",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "variantId": "loamtg_thatcher_elite",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0004": "heavyneedler",
+                "WS0007": "heavyneedler"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "atropos",
+                "WS0010": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "lightmortar",
+                "WS0006": "lightmortar"
+            }
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "displayName": "Savior",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "loaht_savior",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loaht_savior_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

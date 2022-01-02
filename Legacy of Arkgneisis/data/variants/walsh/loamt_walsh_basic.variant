@@ -1,0 +1,39 @@
+{
+  "variantId": "loamt_walsh_basic",
+  "hullId": "loamt_walsh",
+  "displayName": "Basic",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_siegecannon_w"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "al_bullpup",
+        "WS0006": "al_bullpup"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

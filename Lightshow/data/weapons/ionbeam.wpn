@@ -1,0 +1,10 @@
+{
+	"fringeColor":[25,200,245,255],
+	"coreColor":[205,255,255,200],
+	"glowColor":[125,255,225,255],
+	"width":20.0,
+	"hitGlowRadius":75,
+	"textureType":"WEAVE",
+	"textureScrollSpeed":300.0,
+	"pixelsPerTexel":3.0,
+}

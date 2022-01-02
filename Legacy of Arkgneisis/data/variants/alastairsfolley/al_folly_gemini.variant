@@ -1,0 +1,24 @@
+{
+    "displayName": "Converted",
+    "fluxCapacitors": 1,
+    "fluxVents": 0,
+    "goalVariant": false,
+    "hullId": "gemini",
+    "hullMods": [
+        "reinforcedhull",
+        "insulatedengine"
+    ],
+    "permaMods": [],
+    "quality": 0.75,
+    "variantId": "al_folly_gemini",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "ALTERNATING",
+        "weapons": {
+            "WS 001": "flak",
+            "WS 002": "flak",
+            "WS 003": "pilum"
+        }
+    }],
+    "wings": ["hoplon_wing"]
+}

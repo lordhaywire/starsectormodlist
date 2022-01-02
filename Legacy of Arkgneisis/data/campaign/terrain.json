@@ -1,0 +1,23 @@
+{
+	#
+	# terrain with gameplay effects
+	#
+	"loa_bombardment_zone":{
+		"plugin":"data.scripts.campaign.loa_anargaia_bombardment_terrain",
+		"musicSuppression":0.5,
+		# Sound played inside bombardment field when outside direct hit range
+		"loopOne":"terrain_magfield",
+		# Sound played inside bombardment field when within direct hit range
+		"loopTwo":"terrain_magfield",
+	},
+	"loa_alcubierre_zone":{
+		"plugin":"data.scripts.campaign.loa_new_alcubierre_ring_terrain",
+		"musicSuppression":0.5,
+		# Sound played when in the ring
+		"loopOne":"terrain_magfield",
+	},
+	"loa_fake_alcubierre_zone":{
+		"plugin":"data.scripts.campaign.loa_fake_alcubierre_ring_terrain",
+	},
+}
+

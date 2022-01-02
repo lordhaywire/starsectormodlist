@@ -1,0 +1,170 @@
+{
+  "hullName": "Big Mac",
+  "hullId": "loamtp_macnamara_boss",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/arkleg/ships/macnamara/loa_bigmac.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 335,
+  "width": 192,
+  "center": [96, 169],
+  "collisionRadius": 184.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 182.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 330,
+      "angle": 0,
+      "locations": [22, -0],
+      "renderOrderMod": 999
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -2.5,
+      "locations": [22, 39]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": -2.5,
+      "locations": [-17, 36],
+      "renderOrderMod": 150
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 2.5,
+      "locations": [22, -39]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 2.5,
+      "locations": [-17, -36],
+      "renderOrderMod": 150
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-85, 22.5]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-86, -20.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-46, 61.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": -0,
+      "locations": [-46, -61.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-73, 62.5],
+      "length": 78.5,
+      "width": 30,
+      "angle": 175,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-73, -62.5],
+      "length": 78.5,
+      "width": 30,
+      "angle": -175,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-85, 20.5],
+      "length": 39.997265,
+      "width": 15.029173,
+      "angle": 177.5,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-85, -20.5],
+      "length": 39.997265,
+      "width": 15.029173,
+      "angle": -177.5,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -166, -6,
+    -97, -18.5,
+    -87, -26,
+    -133, -36.5,
+    -138, -46.5,
+    -129.5, -54.5,
+    -75, -51.5,
+    -74.5, -63.5,
+    -92, -76,
+    -61.5, -74.5,
+    -37.5, -83,
+    -45, -95.5,
+    -1, -80.5,
+    17.5, -62.5,
+    40, -53.5,
+    47, -36,
+    162, -22.5,
+    162, 22.5,
+    47, 36,
+    40, 53.5,
+    17.5, 62.5,
+    -1, 80.5,
+    -45, 95.5,
+    -37.5, 83,
+    -61.5, 74.5,
+    -92, 76,
+    -74.5, 63.5,
+    -75, 51.5,
+    -129.5, 54.5,
+    -138, 46.5,
+    -133, 36.5,
+    -87, 26,
+    -97, 18.5,
+    -166, 6
+  ]
+}

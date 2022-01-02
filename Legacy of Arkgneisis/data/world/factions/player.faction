@@ -1,0 +1,9 @@
+{
+	"portraits":{
+		"standard_male":[
+			"graphics/arkleg/portraits/loa_portrait_society_1.png", 
+			"graphics/arkleg/portraits/loa_portrait_society_3.png", 
+			"graphics/arkleg/portraits/loa_portrait_generic_1.png", 
+		],
+	},
+},

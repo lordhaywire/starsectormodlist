@@ -1,0 +1,35 @@
+{
+    "displayName": "Derelict",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "hullId": "loaht_champion1_d",
+    "hullMods": [],
+    "permaMods": [],
+    "variantId": "loaht_champion1_d_wreck",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "loa_hypercannon",
+                "WS0013": "loa_hypercannon",
+                "WS0016": "loa_hypercannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0017": "loa_hyperbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "loa_warpshot",
+                "WS0008": "loa_warpshot",
+                "WS0011": "loa_warpshot",
+                "WS0019": "loa_zapflak"
+            }
+        }
+    ]
+}

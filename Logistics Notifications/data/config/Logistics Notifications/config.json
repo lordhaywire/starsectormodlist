@@ -1,0 +1,23 @@
+{
+	"notificationIncrement": 3, # days
+	# When warnings (orange text) and alarms (red text and sounds) start
+	# days of supply
+	"lowSupplies": 30,
+	"alarmSupplies": 10,
+	# lightyears
+	"lowFuel": 20,
+	"alarmFuel": 10,
+	
+	# Enable audio alarm
+	"soundAlarm": true,
+	# Sound IDs are found in sounds.json
+	# Supply alarms
+	"suAlarmSoundId":"cr_playership_critical", # initial alarm
+	"suFollowupSoundId":"cr_playership_critical", # followup alarm, played quietly
+	# Fuel alarms
+	"fuelAlarmSoundId":"cr_playership_critical", # initial alarm
+	"fuelFollowupSoundId":"cr_playership_critical", # followup alarm, played quietly
+	# Alarms if both
+	"alarmSoundId":"cr_playership_critical", # initial alarm
+	"followupSoundId":"cr_playership_critical", # followup alarm, played quietly
+}

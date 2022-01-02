@@ -1,0 +1,58 @@
+{
+  "variantId": "loamt_osmond_assault",
+  "hullId": "loamt_osmond",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "loamt_shieldcoreupgrade",
+    "stabilizedshieldemitter",
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "hephag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "loa_mosaic_torpedo",
+        "WS0009": "loa_mosaic_torpedo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "railgun",
+        "WS0005": "railgun",
+        "WS0006": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "al_bongo"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "al_lightplasmadriver",
+        "WS0003": "al_lightplasmadriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

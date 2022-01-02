@@ -1,0 +1,28 @@
+{
+    "displayName": "Basic",
+    "fluxCapacitors": 1,
+    "fluxVents": 20,
+    "hullId": "loamt_norwood",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "loamt_norwood_basic",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "al_plasmadriver"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_rod",
+                "WS0004": "al_rod",
+                "WS0009": "al_rod",
+                "WS0010": "al_rod"
+            }
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    -55.5,
+    -12.5,
+    -17,
+    -17,
+    -9.5,
+    -25,
+    55,
+    -19.5,
+    55,
+    19.5,
+    -9.5,
+    25,
+    -17,
+    17,
+    -55.5,
+    12.5
+  ],
+  "builtInWings": [],
+  "center": [
+    37.5,
+    57
+  ],
+  "collisionRadius": 72,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 50,
+      "location": [
+        -53.5,
+        -0.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 20,
+      "length": 20,
+      "location": [
+        -53.5,
+        -0.5
+      ],
+      "style": "ARKGNEISIS_LOW",
+      "width": 20
+    },
+    {
+      "angle": -170,
+      "contrailSize": 128,
+      "length": 46.315494,
+      "location": [
+        -10,
+        -23
+      ],
+      "style": "ARKGNEISIS_LOW_SYSTEM",
+      "width": 9.192388
+    },
+    {
+      "angle": 170,
+      "contrailSize": 128,
+      "length": 46.315494,
+      "location": [
+        -10,
+        23
+      ],
+      "style": "ARKGNEISIS_LOW_SYSTEM",
+      "width": 9.192388
+    }
+  ],
+  "height": 114,
+  "hullId": "loalt_oogik",
+  "hullName": "Oogik",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 71.5,
+  "spriteName": "graphics/arkleg/ships/oogik/loa_oogik.png",
+  "style": "ARKGNEISIS_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 180,
+      "arc": 360,
+      "id": "WS0001",
+      "locations": [
+        -15,
+        -0.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        26,
+        -0.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 76
+}

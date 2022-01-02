@@ -1,0 +1,40 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 19,
+    "fluxVents": 20,
+    "hullId": "loamt_burke",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "pointdefenseai",
+        "loamt_suspendedmounts",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_burke_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "al_pelletcannon"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "lightmortar",
+                "WS0005": "lightmortar",
+                "WS0009": "lightmortar",
+                "WS0010": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "lightmortar",
+                "WS0003": "lightmortar"
+            }
+        }
+    ]
+}

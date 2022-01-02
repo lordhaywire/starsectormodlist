@@ -1,0 +1,34 @@
+{
+    "displayName": "Hunter",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "hullId": "loamt_reid",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "variantId": "loa_hunter_reid",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "amblaster",
+                "WS0012": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "railgun",
+                "WS0014": "railgun",
+                "WS0015": "railgun",
+                "WS0016": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0011": "al_lightplasmadriver"}
+        }
+    ]
+}

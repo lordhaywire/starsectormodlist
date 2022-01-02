@@ -1,0 +1,59 @@
+{
+	"DiableAvionicsTrail":{
+		"engineColor":[107,195,210,120],
+		"contrailParticleSizeMult":10.90,
+		"contrailParticleDuration":0.12,
+		"contrailParticleFinalSizeMult":3.12,		
+		"contrailMaxSpeedMult":0.33,
+		"contrailAngularVelocityMult":0.33,
+		"contrailColor":[33,103,120,52],
+		"engineGlowGlowMult":1.45,
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	
+	"DiableAvionicsMissileTrail":{
+		"engineColor":[107,195,210,120],
+		"contrailParticleSizeMult":16.90,
+		"contrailParticleDuration":0.12,
+		"contrailParticleFinalSizeMult":4.1,		
+		"contrailMaxSpeedMult":0.33,
+		"contrailAngularVelocityMult":0.33,
+		"contrailColor":[33,103,120,92],
+		"engineGlowGlowMult":2.15,
+		"type":"GLOW" # GLOW or SMOKE
+	},
+	"DiableAvionicsMissileNoTrail":{
+		"engineColor":[107,195,210,120],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,		
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[0,0,0,0],
+		"engineGlowGlowMult":0,
+		"type":"GLOW" # GLOW or SMOKE
+	},
+        "DiableAvionicsBooster":{
+		"engineColor":[236,221,52,0],
+		"contrailParticleSizeMult":16.90,
+		"contrailParticleDuration":0.12,
+		"contrailParticleFinalSizeMult":3.12,		
+		"contrailMaxSpeedMult":0.33,
+		"contrailAngularVelocityMult":0.33,
+		"contrailColor":[33,103,120,52],
+		"engineGlowGlowMult":1.45,
+		"type":"GLOW" # GLOW or SMOKE
+	},
+        "DiableAvionicsBooster2":{
+		"engineColor":[255,150,25,0],
+		"contrailParticleSizeMult":0,
+		"contrailParticleDuration":0,
+		"contrailParticleFinalSizeMult":0,		
+		"contrailMaxSpeedMult":0,
+		"contrailAngularVelocityMult":0,
+		"contrailColor":[0,0,0,0],
+		"engineGlowGlowMult":0,
+		"type":"GLOW" # GLOW or SMOKE
+	},	
+	
+}	

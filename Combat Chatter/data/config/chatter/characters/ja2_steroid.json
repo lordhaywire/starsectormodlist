@@ -1,0 +1,54 @@
+{
+	"name":"Bobby \"Steroid\" Gontarski",
+	"personalities":["aggressive","reckless"],
+	"gender":["m"],
+	"chance":1,
+	"talkativeness":1,
+	"categoryTags":["ja2", "game", "othermedia"],
+	
+	"lines":{
+		"start":[
+			{"text":"I spy the evil people!"},
+			{"text":"Peoples of evil be here!"},
+		],
+		"start_boss":[
+			{"text":"I would not have thought such monsters existed!"},
+		],
+		"retreat":[
+			{"text":"As you say. Back to drawing board."},
+		],
+		"out_of_missiles":[
+			{"text":"Gun is empty, damn it to hell!"},
+		],
+		"need_help":[],
+		"pursuing":[
+		],
+		"running":[
+			{"text":"The hairs on the back of my neck are... upstanding..."},
+			{"text":"Oh Mary!"},
+		],
+		"hull_90":[
+			{"text":"I assume I get big bonus for this?"},
+			{"text":"Stupid fools push me too far!"},
+		],
+		"hull_50":[
+			{"text":"Damn it, damn it, damn it! This is not possible!"},
+			{"text":"Jesus and Mary!"},
+		],
+		"hull_30":[
+			{"text":"God damn it to hell!"},
+			{"text":"My life is... flashing... before my eyes..."},
+		],
+		"overload":[
+			{"text":"Damn it to hell! I do not see what is going on!"},
+			{"text":"Damn it to hell! This is broken junk!"},
+		],
+		"death":[
+
+		],
+		"victory":[
+			{"text":"At this rate, I soon be perfect!"},
+			{"text":"Ha ha ha! All evil has been lifted and separated."},
+		],
+	}
+}

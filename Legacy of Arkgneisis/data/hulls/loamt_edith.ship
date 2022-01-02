@@ -1,0 +1,236 @@
+{
+  "bounds": [
+    -31,
+    -3.5,
+    -46,
+    -6,
+    -46,
+    -21.5,
+    -34.5,
+    -27.5,
+    -11.5,
+    -28,
+    12,
+    -35,
+    28,
+    -20.5,
+    42,
+    -20,
+    42,
+    20,
+    28,
+    20.5,
+    12,
+    35,
+    -11.5,
+    28,
+    -34.5,
+    27.5,
+    -46,
+    21.5,
+    -46,
+    6,
+    -31,
+    3.5
+  ],
+  "builtInMods": [
+    "ecm",
+	"nav_relay"
+  ],
+  "builtInWeapons": {
+    "WS0001": "loa_edith_leftmask",
+    "WS0002": "loa_edith_rightmask",
+    "WS0005": "loa_blinker",
+    "WS0006": "loa_blinker",
+    "WS0008": "loa_blinker",
+    "WS0009": "loa_edith_glow",
+    "WS0011": "loa_blinker"
+  },
+  "builtInWings": [],
+  "center": [
+    42,
+    47
+  ],
+  "collisionRadius": 62.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -36,
+        17.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -36,
+        -17.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -36,
+        10.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -36,
+        -10.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 94,
+  "hullId": "loamt_edith",
+  "hullName": "Edith",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 62,
+  "spriteName": "graphics/arkleg/ships/edith/loa_edith.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0007",
+      "locations": [
+        22,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        31.5,
+        12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        31.5,
+        -12.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -10,
+        17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        -10,
+        -17.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        35,
+        15
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        35,
+        -15
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        7.5,
+        10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        7.5,
+        -10.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 84
+}

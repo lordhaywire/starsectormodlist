@@ -1,0 +1,48 @@
+{
+	"id":"al_chaff",
+	"specClass":"missile",	
+	"missileType":"FLARE",
+	"sprite":"graphics/arkleg/missiles/al_chaffshard.png",
+	"size":[8,8],	
+	"center":[4,4],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_NO_FF",
+	#"collisionClass":"FIGHTER",
+	"explosionColor":[255,125,75,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	#"maxFlightTime":3,
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration
+	#"collisionClassAfterFlameout":"MISSILE_NO_FF",
+	"behaviorSpec":{"behavior":"CUSTOM",
+					"effectRange":300,
+					"effectChance":0.1,
+				   },	
+	"engineSpec":{"turnAcc":600,
+				  "turnRate":400,
+				  #"maxSpeed":200,
+				  "acc":0,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[0, 0],
+				    #"style":"MISSILE_HIGH_TECH",
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[100,100,100,100],
+						"contrailDuration":0,
+						"contrailWidthMult":0,
+						"contrailWidthAddedFractionAtEnd":0,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0f,
+						"contrailColor":[0,0,0,0],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":4.0,
+				    "angle":180.0},
+				    ]
+
+}

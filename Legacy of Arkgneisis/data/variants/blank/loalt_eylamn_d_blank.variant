@@ -1,0 +1,14 @@
+{
+  "variantId": "loalt_eylamn_d_blank",
+  "hullId": "loalt_eylamn_d",
+  "displayName": "Derelict",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

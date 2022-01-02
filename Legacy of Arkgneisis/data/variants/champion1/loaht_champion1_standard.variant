@@ -1,0 +1,53 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "loaht_champion1",
+    "hullMods": [
+        "targetingunit",
+        "magazines",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loaht_champion1_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "loa_hypercannon",
+                "WS0006": "loa_hypercannon",
+                "WS0009": "loa_hypercannon",
+                "WS0010": "loa_hypercannon",
+                "WS0013": "loa_hypercannon",
+                "WS0014": "loa_hypercannon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "loa_hyperbeam",
+                "WS0018": "loa_hyperbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0019": "loa_zapflak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "loa_warpshot",
+                "WS0008": "loa_warpshot",
+                "WS0011": "loa_warpshot",
+                "WS0012": "loa_warpshot",
+                "WS0015": "loa_warpshot",
+                "WS0016": "loa_warpshot"
+            }
+        }
+    ]
+}

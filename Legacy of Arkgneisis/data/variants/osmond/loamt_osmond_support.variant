@@ -1,0 +1,46 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "hullId": "loamt_osmond",
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "hardened_subsystems"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_osmond_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "al_heavymonorail2",
+                "WS0008": "al_string",
+                "WS0009": "al_string"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "heavymauler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "al_pelletdriver",
+                "WS0005": "al_pelletdriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "vulcan",
+                "WS0002": "vulcan",
+                "WS0003": "vulcan"
+            }
+        }
+    ]
+}

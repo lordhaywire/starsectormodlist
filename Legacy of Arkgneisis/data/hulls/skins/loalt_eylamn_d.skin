@@ -1,0 +1,20 @@
+{
+	"baseHullId":"loalt_eylamn_r",
+	"skinHullId":"loalt_eylamn_d",
+	"hullName":"?????? (D)",
+	"descriptionId":"loalt_eylamn_d",  # optional
+	"restoreToBaseHull":true,
+	#"descriptionPrefix":"",
+	"systemId":"",
+	"tags":[],
+	"tech":"Colonial Initiative",
+	"fleetPoints":12,
+	"spriteName":"graphics/arkleg/ships/eylamn/loa_eylamn_d.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["reinforcedhull","comp_armor","comp_hull","comp_structure","degraded_engines","faulty_grid","glitched_sensors","fragile_subsystems"],
+	"builtInWeapons":{
+    },
+}

@@ -1,0 +1,111 @@
+{
+  "hullName": "Burke (P)",
+  "hullId": "loamtp_burke",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/arkleg/ships/burke/al_burke_p.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 176,
+  "width": 92,
+  "center": [46, 93],
+  "collisionRadius": 120,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 118.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "loa_monkeymodel"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [-2, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 80,
+      "locations": [-4, 42]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -80,
+      "locations": [-4, -42]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [41, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-53, 36.5],
+      "length": 47,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, -36.5],
+      "length": 47,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, 29.5],
+      "length": 47,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, -29.5],
+      "length": 47,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -92, -14.5,
+    -54, -23.5,
+    -54, -41.5,
+    11, -42.5,
+    12, -31.5,
+    24, -31,
+    27, -28,
+    72.5, -23,
+    71.5, -6,
+    52.5, -3.5,
+    52.5, 3.5,
+    71.5, 6,
+    72.5, 23,
+    27, 28,
+    24, 31,
+    12, 31.5,
+    11, 42.5,
+    -54, 41.5,
+    -54, 23.5,
+    -92, 14.5
+  ]
+}

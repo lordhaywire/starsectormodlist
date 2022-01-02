@@ -1,0 +1,49 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 28,
+    "hullId": "loamt_macnamara",
+	"goalVariant": true,
+	"quality": 0.5,
+    "hullMods": [
+        "targetingunit",
+        "loamt_modulatedinjectors"
+    ],
+    "permaMods": [],
+    "variantId": "loamt_macnamara_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "al_pelletgun",
+                "WS0006": "al_pelletgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "heavymauler",
+                "WS0002": "heavymauler",
+                "WS0003": "heavymauler",
+                "WS0004": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0008": "loa_needle",
+                "WS0009": "loa_needle",
+                "WS0010": "loa_needle",
+                "WS0011": "loa_needle"
+            }
+        }
+    ]
+}

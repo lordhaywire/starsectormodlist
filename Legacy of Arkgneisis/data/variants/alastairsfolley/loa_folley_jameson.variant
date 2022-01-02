@@ -1,0 +1,22 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 0,
+    "fluxVents": 4,
+    "hullId": "loamt_jameson",
+    "hullMods": ["expanded_deck_crew"],
+    "permaMods": [],
+    "variantId": "loa_folley_jameson",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "loa_er",
+            "WS0002": "loa_er",
+            "WS0003": "loa_er"
+        }
+    }],
+    "wings": [
+        "duke_wing",
+        "duke_wing"
+    ]
+}

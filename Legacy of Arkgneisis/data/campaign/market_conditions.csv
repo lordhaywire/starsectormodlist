@@ -1,0 +1,2 @@
+name,id,planetary,decivRemove,script,desc,icon,order
+Raid Economy,loa_raid_economy,,TRUE,data.scripts.campaign.loa_raid_economy,"Raiding constitutes an appreciable portion of this station's economy, resulting in a lot of foreign equipment stocking its markets.",graphics/arkleg/icons/markets/loa_raideconomy.png,142

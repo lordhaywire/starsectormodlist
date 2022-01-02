@@ -1,0 +1,41 @@
+{
+	"id":"al_cone_missile",
+	"specClass":"missile",
+	#"missileType":"ROCKET",
+	"missileType":"MISSILE",
+	"sprite":"graphics/arkleg/missiles/al_conemissile.png",
+	"size":[8,15],	
+	"center":[4,7],
+	"collisionRadius":15,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[200,200,255,235],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":85, # purely visual
+	"flameoutTime":1, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{"turnAcc":500,
+				  "turnRate":50,
+				  "acc":2000,
+				  "dec":2000},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-4, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[50,150,255,255],
+						"contrailDuration":.5,
+						"contrailWidthMult":1,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[75,75,75,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":50.0,
+				    "angle":180.0}]
+}
+
+			

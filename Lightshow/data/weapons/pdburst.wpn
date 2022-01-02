@@ -1,0 +1,9 @@
+{
+	"fringeColor":[0,0,175,255],
+	"coreColor":[225,225,255,255],
+	"glowColor":[100,100,255,255],
+	"width":17.0,
+	"textureType":ROUGH,
+	"textureScrollSpeed":128.0,
+	"pixelsPerTexel":5.0,
+}

@@ -1,0 +1,56 @@
+{
+  "variantId": "loamt_lyons_assault",
+  "hullId": "loamt_lyons",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "loamt_suspendedmounts"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0021": "loa_siegecannon_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "heavyneedler",
+        "WS0014": "heavyneedler",
+        "WS0019": "al_string",
+        "WS0020": "al_string"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "al_bulldog",
+        "WS0012": "al_bulldog"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "al_bongo",
+        "WS0016": "loa_flashlight",
+        "WS0017": "loa_flashlight",
+        "WS0018": "al_lightplasmadriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "monodrone_wing",
+    "monodrone_wing"
+  ]
+}

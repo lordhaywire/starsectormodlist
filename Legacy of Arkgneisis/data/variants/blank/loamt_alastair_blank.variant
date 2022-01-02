@@ -1,0 +1,20 @@
+{
+  "displayName": "Blank",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "loamt_alastair",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "loamt_alastair_blank",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0043": "al_nuclearburstcannon"
+      }
+    }
+  ],
+  "wings": []
+}

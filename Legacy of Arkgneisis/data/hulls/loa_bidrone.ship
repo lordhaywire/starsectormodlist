@@ -1,0 +1,76 @@
+{
+  "bounds": [
+    -7.5,
+    -7.5,
+    6,
+    -8.5,
+    11.5,
+    -0,
+    6,
+    8.5,
+    -7.5,
+    7.5,
+    -12.5,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0001": "loa_fer"
+  },
+  "builtInWings": [],
+  "center": [
+    9.5,
+    13.5
+  ],
+  "collisionRadius": 15.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 17,
+      "location": [
+        -5.5,
+        -5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 17,
+      "location": [
+        -5.5,
+        5.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 3
+    }
+  ],
+  "height": 27,
+  "hullId": "loa_bidrone",
+  "hullName": "Babyhawk",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 15,
+  "spriteName": "graphics/arkleg/ships/loa_bidrone.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0001",
+      "locations": [
+        3,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 19
+}

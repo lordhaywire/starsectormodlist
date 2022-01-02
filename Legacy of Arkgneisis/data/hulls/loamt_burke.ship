@@ -1,0 +1,363 @@
+{
+  "bounds": [
+    -92.5,
+    -14,
+    -57,
+    -22.5,
+    -57,
+    -39,
+    -45.5,
+    -42,
+    14,
+    -42,
+    14,
+    -31.5,
+    24.5,
+    -31.5,
+    28,
+    -27.5,
+    72,
+    -24,
+    74.5,
+    -20.5,
+    74.5,
+    20.5,
+    72,
+    24,
+    28,
+    27.5,
+    24.5,
+    31.5,
+    14,
+    31.5,
+    14,
+    42,
+    -45.5,
+    42,
+    -57,
+    39,
+    -57,
+    22.5,
+    -92.5,
+    14
+  ],
+  "builtInMods": [
+    "al_microgravmast"
+  ],
+  "builtInWeapons": {
+    "WS0006": "loa_blinker",
+    "WS0007": "loa_blinker",
+    "WS0008": "loa_blinker",
+    "WS0011": "al_burke_mask",
+    "WS0014": "loa_blinker",
+    "WS0015": "loa_blinker",
+    "WS0016": "loa_blinker"
+  },
+  "builtInWings": [],
+  "center": [
+    44,
+    93
+  ],
+  "collisionRadius": 120,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -47,
+        34.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -47,
+        -34.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -47,
+        27.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 55,
+      "location": [
+        -47,
+        -27.5
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 176,
+  "hullId": "loamt_burke",
+  "hullName": "Burke",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 118.5,
+  "spriteName": "graphics/arkleg/ships/burke/al_burke.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 260,
+      "id": "WS0001",
+      "locations": [
+        -14,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        88.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        1,
+        40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        1,
+        -40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 180,
+      "id": "WS0009",
+      "locations": [
+        -16,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 180,
+      "id": "WS0010",
+      "locations": [
+        -16,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 65,
+      "arc": 160,
+      "id": "WS0002",
+      "locations": [
+        1,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -65,
+      "arc": 160,
+      "id": "WS0003",
+      "locations": [
+        1,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 115,
+      "arc": 160,
+      "id": "WS0004",
+      "locations": [
+        -33,
+        31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -115,
+      "arc": 160,
+      "id": "WS0005",
+      "locations": [
+        -33,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -54,
+        9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -54,
+        -9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -62,
+        9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0014",
+      "locations": [
+        -62,
+        -9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0015",
+      "locations": [
+        -58,
+        9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0016",
+      "locations": [
+        -58,
+        -9.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0017",
+      "locations": [
+        -16,
+        40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0018",
+      "locations": [
+        -16,
+        -40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0019",
+      "locations": [
+        -33,
+        40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0020",
+      "locations": [
+        -33,
+        -40.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 88
+}

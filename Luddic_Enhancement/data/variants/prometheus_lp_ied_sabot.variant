@@ -1,0 +1,49 @@
+{
+  "variantId": "prometheus_lp_ied_sabot",
+  "hullId": "prometheus_lp_ied",
+  "displayName": "Flood",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "locust",
+        "WS0010": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "shredder",
+        "WS0009": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "harpoonpod",
+        "WS0004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sabot",
+        "WS0006": "sabot",
+        "WS0007": "sabot",
+        "WS0008": "sabot"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

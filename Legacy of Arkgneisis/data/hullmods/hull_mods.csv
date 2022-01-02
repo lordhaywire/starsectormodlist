@@ -1,0 +1,123 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+,,,,,,,,,,,,,,,,,,
+Electromagnetic Mastery,al_hfmounts,,,Exodus Initiative,,,,,TRUE,,0,0,0,0,data.hullmods.al_hfweaponmounts,"Though rather crudely constructed, the design of this vessel displays an almost unparalleled understanding of electromagnetism. 
+
+Suspended weapon mounts increase weapon range by %s and reduce weapon recoil and spread by %s
+
+Ionic thrusters can more effectively utilize excess flux dissipation compared to most other forms of propulsion, yielding a %s/%s/%s/%s bonus to zero-flux speed boost, scaling up with hullsize. This feature has to be manually throttled whenever %s is installed to prevent catastrophic failure of the thrusters.",,graphics/arkleg/hullmods/loa_emm.png
+Gravimetric Targeting Mast,al_microgravmast,,,Exodus Initiative,,,,,TRUE,,0,0,0,0,data.hullmods.al_microgravmast,"A large, tesselating plate of sensitive graviton detectors tied into a highly specialized targeting suite extends the range of this ship's weapons by %s. As a side effect, rapid shifts in the user's geometric profile tend to disrupt the sensors, requiring the traverse speed of any mounted weapons to be limited by %s, likely explaining why this technology never saw widespread adoption within the domain of man.
+",,graphics/arkleg/hullmods/al_microgravmast.png
+Spatial Lensing,loa_spatiallensing,,,Salvation Initiative,,,,,TRUE,,0,0,0,0,data.hullmods.loa_spatiallensing,"A networked subsystem which focuses and extends the effective range of directed energy weapons by warping the fabric of spacetime. High-yield weapons will suffer diminishing returns as the array struggles to contain their destructive energies.
+
+Range of energy weapons increased by %s.
+Incompatible with Advanced Optics.",,graphics/arkleg/hullmods/loa_spatialensing.png
+HULLMOD CONFLICT,al_errormod,,,,,,,,TRUE,,0,0,0,0,data.hullmods.al_errormod,"%s, this hullmod cannot be intalled on this ship or conflict with another previously installed hullmod.",,graphics/icons/intel/investigation.png
+Monkey Model,loa_monkeymodel,,,,,,,,TRUE,,0,0,0,0,data.hullmods.loa_monkeymodel,"This ship was constructed for the purpose of export, many of the highest spec subsystems have been replaced with cheaper alternatives, and any classified hardware has been removed. On the plus side, the lower-end hardware requires %s/%s/%s/%s fewer supplies to deploy than a typical example of this class.",,graphics/arkleg/hullmods/loa_monkeymodel.png
+Integrated Mount Clusters,loa_integratedmounts,,,Exodus Initiative,offensive,Weapons,,,TRUE,,0,0,0,0,data.hullmods.loa_integratedmounts,"Careful grouping of this ship's weapon mounts allows much of the internal infrastructure to be shared between them.
+Reduces the Ordinance Point cost of mounting medium weapons by %s",,graphics/arkleg/hullmods/loa_clustermounts.png
+Reinforced Mount Suspension,loamt_suspendedmounts,1,,Exodus Initiative,offensive,Weapons,5000,,,,3,5,7,10,data.hullmods.loamt_suspendedmounts,"Reinforces the existing turret suspension with additional magnetic shocks.
+
+Reduces weapon recoil by %s.
+
+Can only be installed on Exodus Initiative hulls.",,graphics/arkleg/hullmods/loa_mountsuspension.png
+Up-Scaled Shield Core,loamt_shieldcoreupgrade,1,,Exodus Initiative,defensive,Shields,10000,,,,4,8,12,20,data.hullmods.loamt_shieldcoreupgrade,"Replaces the hull's undersized shield core with one more appropriate for its tonnage.
+
+Improves shield efficiency by %s.
+Increases shield upkeep by %s.
+
+Can only be installed on Exodus Initiative hulls.",,graphics/arkleg/hullmods/loa_shieldcore.png
+Modulated Injector,loamt_modulatedinjectors,1,,Exodus Initiative,engines,Engines,7500,,TRUE,,3,9,15,30,data.hullmods.loamt_modulatedinjectors,"Advanced flow regulators and a comprehensive re-tuning of the sub-light fuel injectors to enhance combat performance at the expense of cruising speed.
+
+Increases top speed by %s su/second.
+Decreases zero-flux speed bonus by %s su/second.
+
+Can only be installed on Exodus Initiative hulls.",,graphics/arkleg/hullmods/loa_modulatedinjector.png
+Society Riggers,loa_societyriggers,,,Anarakis Reparations Society,,,12000,,TRUE,,0,0,0,0,data.hullmods.loa_societyriggers,"Some members of the ARS go their entire lives without ever touching solid ground. With this lifestyle comes a slew of unique insights into keeping a starship running, even when it shouldn't be.
+
+Reduces the chance of malfunctions caused by low combat readiness by %s and increases the rate malfunctions are repaired by %s.",,graphics/arkleg/hullmods/loa_societyriggers.png
+Tandem Flux Grid,loamt_tandemcore,1,,Exodus Initiative,special,Special,,,,,8,15,20,35,data.hullmods.loamt_fluxfilling,"Installs a subordinate flux core, %s the effectiveness of Vents and Capacitors.
+
+Introduces a chance for short %s when generating roughly %s of your total flux capacity over a 3s period.
+
+Reduces cargo space by %s/%s/%s/%s depending on hull size to house the new core.
+
+Can only be installed on Exodus Initiative hulls.",,graphics/arkleg/hullmods/loa_tandemcore.png
+Flooded Injectors,loamt_floodedinjectors,1,,Exodus Initiative,engines,Engines,12500,,,,5,10,15,25,data.hullmods.loamt_floodedinjectors,"Overrides solenoid limiters and saturates them with ions, dramatically improving flight characteristics at the cost of thruster longevity. Additionally, the excess of charged particles dumped into the surrounding space make resolving targeting data at extended ranges almost impossible.
+
+Allows the zero-flux speed boost to take effect regardless of flux level.
+Increases top speed by %s/%s/%s/%s depending on hull size, with a corresponding increase in acceleration.
+Heavily restricts weapon ranges past %s su.
+Reduces peak performance time by %s.
+Engine malfunctions begin as soon as CR starts to decay.
+
+Incompatible with %s.
+
+Can only be installed on Exodus Initiative hulls.",,graphics/arkleg/hullmods/loa_floodedinjectors.png
+Linked Hull,loa_linkedhull,,,,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.loa_LinkedHull,Mirrors certain aspects between the parent and child hulls.,,graphics/hullmods/vast_bulk.png
+Secondary Containment Field,loa_secondaryfield,,,Colonial Initiative,,,,,TRUE,,0,0,0,0,data.hullmods.loa_secondaryfield,Increases the range of non-PD projectile energy weapons by %s.,,graphics/arkleg/hullmods/loa_secondaryfield.png
+Exodus Missile Fix,loamt_missilefix,,,Exodus Initiative,,,,,TRUE,TRUE,0,0,0,0,data.hullmods.loamt_missilefix,Slightly improves the live-time of missiles to compensate for the ARS tendency to mount them sideways.,,graphics/arkleg/hullmods/loa_emm.png
+Linked Hull,,,,,,,,,,,,,,,,,,
+Internal Drydocks,loa_ship_factory,,,Exodus Initiative,logistic,Logistic,,,TRUE,,0,0,0,0,data.hullmods.loa_ship_factory,Periodically launches ships to reinforce allied fleets.,,graphics/arkleg/hullmods/loa_emm.png
+Ramming Prow,loa_supermassiveram,,,Exodus Initiative,defensive,Armor,,,TRUE,,0,0,0,0,data.hullmods.loa_supermassiveram,Causes the prow module to take minimal damage when Massive Burn is activated.,,graphics/arkleg/hullmods/loa_emm.png
+Capital Missile Launcher,loa_fakemissiletubes,,,Exodus Initiative,offensive,Missiles,,,TRUE,TRUE,0,0,0,0,data.hullmods.loa_fakemissiletubes,This ship is equipped with a set of built-in missile tubes that can deploy a variety of ordinance depending on the situation.,,graphics/arkleg/hullmods/loa_emm.png
+Enigmatic Targeting Computer,loa_enigmacomputer,,,Exodus Initiative,offensive,Targeting,,,TRUE,,0,0,0,0,data.hullmods.loa_enigmacomputer,"A targeting suite operated by Anargaia's Enigma Core. Nobody is entirely certain about how it works, but the results speak for themselves.",,graphics/arkleg/hullmods/loa_emm.png
+Asteroid Manipulator,loa_AsteroidChucker,,,Exodus Initiative,offensive,Weapons,,,TRUE,,0,0,0,0,data.hullmods.loa_AsteroidChucker,"A magnetic web is spread all across the asteroid field this base inhabits. Using them, it can fling far off rocks at incoming hostiles, forcing them to contend with projectiles from all angles.",,graphics/arkleg/hullmods/loa_emm.png
+Close Aerospace Support,loa_closeairsupport,,,Common,,,,,TRUE,,0,0,0,0,data.hullmods.loa_closeairsupport,The fighter wings deployed by this ship can provide support for ground operations.,,graphics/arkleg/hullmods/loa_closeairsupport.png
+Close Aerospace Support,loa_closeairsupport_fake,,,Common,,,,,TRUE,,0,0,0,0,data.hullmods.loa_integratedmounts,This fighter wing can provide support for ground operations.,,graphics/arkleg/hullmods/loa_closeairsupport.png
+#Cushioned Auxiliary Fuel Tanks,loa_fuel_boobs,1,,Skypeon Special,logistic,Logistic,69,,,,0,0,0,0,data.hullmods.loa_fuel_boobs,"The captain of this vessel has taken it upon herself to put her impressive bust to good use by stashing away emergency fuel.
+
+Increases the fuel storage of this ship by %s units.",,graphics/arkleg/hullmods/loa_fuel_boobs.png
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+# permanent ship debuffs,,,,,,,,,,,,,,,,,,

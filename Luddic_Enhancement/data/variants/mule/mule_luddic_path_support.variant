@@ -1,0 +1,40 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "mule_luddic_path",
+  "hullMods": [
+    "armoredweapons",
+    "unstable_injector",
+    "blast_doors"
+  ],
+    "variantId": "mule_luddic_path_support",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+		"WS 002": "chaingun",
+        "WS 003": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS 001": "heavymg"
+	  }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+  ]
+}

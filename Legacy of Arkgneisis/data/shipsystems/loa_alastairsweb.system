@@ -1,0 +1,24 @@
+{
+	"id":"loa_alastairsweb",
+	"type":"STAT_MOD",
+	"aiType":"MINE_STRIKE",
+	
+	"statsScript":"data.scripts.shipsystems.loa_alastairsweb2stats",
+
+	"canUseWhileRightClickSystemOn":true,
+	"runScriptWhileIdle":true,
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"system_interdictor",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"threatRange":1600,
+		"threatAmount":7,
+		"threatAngle":0,
+		"threatArc":360,
+	}
+}
+
+
+
+

@@ -1,0 +1,111 @@
+{
+  "bounds": [
+    -31.5,
+    -8,
+    -1.5,
+    -21.5,
+    9.5,
+    -13,
+    27.5,
+    -11.5,
+    27.5,
+    11.5,
+    9.5,
+    13,
+    -1.5,
+    21.5,
+    -31.5,
+    8
+  ],
+  "builtInWeapons": {
+    "WS0001": "al_deco_duke",
+    "WS0002": "al_bongo_f",
+    "WS0003": "al_pelletgun_f",
+    "WS0004": "al_rod_f"
+  },
+  "builtInMods": [
+    "loa_closeairsupport_fake"
+  ],
+  "builtInWings": [],
+  "center": [
+    23,
+    33
+  ],
+  "collisionRadius": 41.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 70,
+      "location": [
+        -15,
+        -0
+      ],
+      "style": "ARKGNEISIS_MID",
+      "width": 6
+    }
+  ],
+  "height": 66,
+  "hullId": "al_duke",
+  "hullName": "Duke",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 41,
+  "spriteName": "graphics/arkleg/ships/duke/al_duke.png",
+  "style": "ARKGNEISIS_MID",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0002",
+      "locations": [
+        0,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0003",
+      "locations": [
+        0,
+        0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        29,
+        -1.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 46
+}

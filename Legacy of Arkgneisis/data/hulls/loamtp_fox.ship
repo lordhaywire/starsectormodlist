@@ -1,0 +1,104 @@
+{
+  "hullName": "Fox (P)",
+  "hullId": "loamtp_fox",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/arkleg/ships/fox/loa_fox_p.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 115,
+  "width": 68,
+  "center": [34, 57],
+  "collisionRadius": 70.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 69.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "loa_monkeymodel"
+  ],
+  "builtInWeapons": {
+    "WS0007": "loa_fox_p_leftmask",
+    "WS0008": "loa_fox_p_rightmask"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [15, -0]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8.5, 14.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [8.5, -14.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3, 20]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [3, -20]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, -0],
+      "length": 72,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, 27],
+      "length": 54.5,
+      "width": 16,
+      "angle": 155,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, -27],
+      "length": 54.5,
+      "width": 16,
+      "angle": -155,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -46, -9.5,
+    -30.5, -32,
+    51.5, -14,
+    56, -9.5,
+    56, 9.5,
+    51.5, 14,
+    -30.5, 32,
+    -46, 9.5
+  ]
+}

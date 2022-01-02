@@ -1,0 +1,55 @@
+{
+  "variantId": "loamt_hawke_assault",
+  "hullId": "loamt_hawke",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 23,
+  "fluxVents": 30,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "loamt_floodedinjectors"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "loa_needle",
+        "WS0006": "loa_needle",
+        "WS0007": "loa_needle",
+        "WS0008": "loa_needle"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "al_bullpup"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "loa_flashlight"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

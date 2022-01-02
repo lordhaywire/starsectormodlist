@@ -1,0 +1,36 @@
+{
+	"id":"loa_warpshot",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":250,
+	"everyFrameEffect": "data.scripts.weapons.loa_warpshot_everyframescript",
+	"turretSprite":"graphics/arkleg/weapons/warpshot/loa_warpshot_turret_base00.png",
+	"turretGlowSprite":"graphics/arkleg/weapons/warpshot/loa_warpshot_turret_glow.png",
+	"hardpointSprite":"graphics/arkleg/weapons/warpshot/loa_warpshot_hardpoint_base00.png",
+	"hardpointGlowSprite":"graphics/arkleg/weapons/warpshot/loa_warpshot_hardpoint_glow.png",
+	"numFrames":4,	
+	"frameRate":60,
+	"glowColor":[150,200,255,255],
+	"visualRecoil":1.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[11, 0],
+	"turretAngleOffsets":[],
+	"hardpointOffsets":[14, 0],
+	"hardpointAngleOffsets":[],
+	"noNonShieldImpactSounds":true,
+	"renderHints":[RENDER_BARREL_BELOW],
+	"barrelMode":"LINKED", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW_AND_FLASH",
+	"separateRecoilForLinkedBarrels":true,
+	"interruptibleBurst":false,
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":60.0,
+					   "particleSizeMin":2.0,
+					   "particleSizeRange":9.0,
+					   "particleDuration":0.1,
+					   "particleCount":10,
+					   "particleColor":[150,200,255,255]},
+	"projectileSpecId":"loa_warpshotproj",  # projectile that will be fired
+	#"fireSoundOne":"light_machinegun_intro",
+	#"fireSoundTwo":"loa_warpshot_fire",
+}

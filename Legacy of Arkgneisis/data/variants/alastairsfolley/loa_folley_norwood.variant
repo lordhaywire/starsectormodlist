@@ -1,0 +1,35 @@
+{
+    "displayName": "Unknown",
+    "fluxCapacitors": 4,
+    "fluxVents": 0,
+    "hullId": "loamt_norwood",
+    "hullMods": [
+        "missleracks",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "loa_folley_norwood",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "al_pelletgun"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0001": "al_rod",
+                "WS0004": "al_rod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "al_string",
+                "WS0010": "al_string"
+            }
+        }
+    ]
+}

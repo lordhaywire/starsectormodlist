@@ -1,0 +1,11 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,num,role,role desc,refit,base value
+jack_wing,loa_jack_standard,"fighter2, loa_ark1_bp",0,,7,8,CLAW,3000,500,3,FIGHTER,Combat Drone,7.5,8000
+ace_wing,al_ace_standard,"interceptor3, interceptor, loa_ark2_bp",1,,9,10,CLAW,4000,500,3,INTERCEPTOR,Interceptor,10,10000
+duke_wing,al_duke_standard,"support3,fighter,mid, loa_ark2_bp",2,,12,14,BOX,5000,1000,1,FIGHTER,Heavy Gunboat,20,12000
+baron_wing,loa_baron_standard,"support3,fighter,mid, loa_ark2_bp",2,,11,12,BOX,5000,1000,2,FIGHTER,Gunboat,20,10000
+earl_wing,al_earl_standard,"bomber3, bomber, mid, loa_ark1_bp",2,,12,12,BOX,3000,500,2,BOMBER,Strike Fighter,15,11500
+monodrone_wing,al_monodrone_standard,"fighter1, fighter, mid, loa_ark1_bp",0,,3,0,CLAW,4000,500,4,INTERCEPTOR,Combat Drone,5,2000
+loa_bidrone_wing,loa_bidrone_standard,"fighter2, fighter, mid, no_sell, no_drop",0,,8,0,CLAW,4000,500,5,FIGHTER,Combat Drone,5,999999
+emp_wing,al_emdrone_standard,"no_sell, no_drop",,,3,0,BOX,1500,450,1,FIGHTER,EMP Drone,10,999999
+al_no_wing,al_emdrone_standard,"no_sell, no_drop",,,3,0,BOX,1500,450,0,FIGHTER,EMP Drone,10,999999
+loa_emp_extended,al_emdrone_standard,"no_sell, no_drop",,,3,0,BOX,1500,450,4,FIGHTER,EMP Drone,10,999999

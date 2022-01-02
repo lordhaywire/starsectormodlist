@@ -1,0 +1,159 @@
+{
+  "hullName": "Thatcher (P)",
+  "hullId": "loamtp_thatcher",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/arkleg/ships/thatcher/al_thatcher_p.png",
+  "style": "ARKGNEISIS_MID",
+  "height": 143,
+  "width": 84,
+  "center": [42, 71],
+  "collisionRadius": 85.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 84.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "loa_monkeymodel",
+    "loamt_missilefix",
+    "converted_hangar"
+  ],
+  "builtInWeapons": {
+    "WS0001": "al_deco_thatcher_p_mask"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": 65,
+      "locations": [13, 16]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 250,
+      "angle": -65,
+      "locations": [13, -16]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-8, 10.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-8, -10.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": 130,
+      "locations": [-31, 24]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 260,
+      "angle": -130,
+      "locations": [-31, -24]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-6, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        60, -0,
+        60, 9,
+        60, -9
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-59, 16],
+      "length": 43.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59, -16],
+      "length": 43.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59, 8],
+      "length": 43.5,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-59, -8],
+      "length": 43.5,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -67.5, -21.5,
+    -55.5, -21.5,
+    -43, -33,
+    -53.5, -35,
+    -49, -41.5,
+    -18, -41.5,
+    -7.5, -29,
+    3, -35.5,
+    57, -36,
+    67.5, -26.5,
+    65.5, -12,
+    71, -0,
+    65.5, 12,
+    67.5, 26.5,
+    57, 36,
+    3, 35.5,
+    -7.5, 29,
+    -18, 41.5,
+    -49, 41.5,
+    -53.5, 35,
+    -43, 33,
+    -55.5, 21.5,
+    -67.5, 21.5
+  ]
+}
