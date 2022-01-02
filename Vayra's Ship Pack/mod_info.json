@@ -1,0 +1,10 @@
+{
+	"id":"vayrashippack",
+	"name":"Vayra's Ship Pack",
+	"author":"Vayra",
+	"version":"1.2.3", # GO UPDATE YOUR VERSION FILE (as the last thing you do before uploadin cuz otherwise... heh)
+	"description":"Ships and weapons for your combat & campaign pleasure. Integrates with Vayra's Sector for additional content. Requires LazyLib.",
+	"gameVersion":"0.95a-RC8",
+	"jars":["jars/VayraShipPack.jar"],
+	"modPlugin":"data.scripts.VayraShipPackModPlugin",
+}

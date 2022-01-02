@@ -1,0 +1,26 @@
+{
+  "displayName": "Close Support",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "TADA_pinnace",
+  "hullMods": [],
+  "quality": 0,
+  "variantId": "TADA_pinnace_standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "TADA_gravitonBolterR",
+        "WS0002": "TADA_gravitonBolterL",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {        
+        "WS0003": "TADA_lightIonBeam"
+      }
+    }
+  ]
+}

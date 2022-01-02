@@ -1,0 +1,14 @@
+{
+    "id":"TADA_gravHook",
+    "type":"STAT_MOD",
+    "aiType":"CUSTOM",
+    "aiScript":"data.shipsystems.scripts.ai.TADA_gravHookAI",
+
+    "statsScript":"data.shipsystems.scripts.TADA_gravHookStats",
+
+    "useSound":"TADA_gravHook",
+    "outOfUsesSound":"gun_out_of_ammo",
+
+    "aiHints":{
+    }
+}

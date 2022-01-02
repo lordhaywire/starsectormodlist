@@ -1,0 +1,112 @@
+{
+
+
+        # DIOSCURI
+
+        "TADA_dioscuri_fire":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire01.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire02.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire03.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire04.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire05.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire06.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire07.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire08.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire09.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire10.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire11.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire12.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire13.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire14.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_dioscuri_fire15.ogg","pitch":1,"volume":0.7},
+	], 
+	
+        # Pest
+
+        "TADA_plasma_fire":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_plasma_fire.ogg","pitch":0.8,"volume":0.2},
+		{"file":"sounds/TORCHSHIPS/TADA_plasma_fire.ogg","pitch":0.75,"volume":0.2},
+		{"file":"sounds/TORCHSHIPS/TADA_plasma_fire.ogg","pitch":0.75,"volume":0.2},
+	], 
+        "TADA_plasma_loop":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_plasma_loop.ogg","pitch":1,"volume":0.7},
+	], 
+
+        # Urchin
+
+        "TADA_urchin_fire":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_01.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_01.ogg","pitch":1.05,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_01.ogg","pitch":0.95,"volume":0.7},
+
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_02.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_02.ogg","pitch":1.05,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_02.ogg","pitch":0.95,"volume":0.7},
+
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_03.ogg","pitch":1,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_03.ogg","pitch":1.05,"volume":0.7},
+		{"file":"sounds/TORCHSHIPS/TADA_urchin_03.ogg","pitch":0.95,"volume":0.7},
+	], 
+
+        # Whirlwind
+
+        "TADA_gravHook":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_gravHook.ogg","pitch":1,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_gravHook.ogg","pitch":1.05,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_gravHook.ogg","pitch":0.95,"volume":1},
+	],  
+	
+        # Long Range Arbalest
+        
+        "TADA_LRA":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_LRA_fire.ogg","pitch":1,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_LRA_fire.ogg","pitch":1.05,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_LRA_fire.ogg","pitch":1.1,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_LRA_fire.ogg","pitch":0.95,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_LRA_fire.ogg","pitch":0.9,"volume":1},
+	],  
+
+        # Spike thrower
+
+        "TADA_spike":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_spike_fire01.ogg","pitch":1,"volume":1}
+	],  
+        "TADA_spikeEmpty":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_spike_empty01.ogg","pitch":1,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_spike_empty01.ogg","pitch":1.1,"volume":1},
+		{"file":"sounds/TORCHSHIPS/TADA_spike_empty01.ogg","pitch":0.9,"volume":1},
+	],  
+ 
+        #Graviton Bolter
+
+        "TADA_gravBolter":
+	[
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire01.ogg","pitch":1,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire01.ogg","pitch":0.9,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire01.ogg","pitch":1.1,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire02.ogg","pitch":1,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire02.ogg","pitch":0.9,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire02.ogg","pitch":1.1,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire03.ogg","pitch":1,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire03.ogg","pitch":0.9,"volume":0.3},
+		{"file":"sounds/TORCHSHIPS/TADA_gravBolter_fire03.ogg","pitch":1.1,"volume":0.3},
+	], 
+
+#HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_HULL_
+
+}
+
+
+
+
+
+
+

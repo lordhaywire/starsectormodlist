@@ -1,0 +1,70 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 7,
+    "fluxVents": 50,
+    "hullId": "uw_renegade",
+    "hullMods": [
+        "heavyarmor",
+        "reinforcedhull"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_renegade_ass",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "locust"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0003": "breachpod",
+                "WS0008": "breach"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0009": "annihilator",
+                "WS0010": "annihilator",
+                "WS0011": "annihilator",
+                "WS0012": "annihilator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "mjolnir"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "shredder"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "chaingun",
+                "WS0005": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "dualflak",
+                "WS0013": "vulcan",
+                "WS0014": "vulcan",
+                "WS0015": "vulcan",
+                "WS0016": "vulcan",
+                "WS0017": "vulcan",
+                "WS0018": "vulcan"
+            }
+        }
+    ],
+    "wings": ["mining_drone_wing"]
+}

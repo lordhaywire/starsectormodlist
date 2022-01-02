@@ -1,0 +1,60 @@
+{
+    "displayName": "Advanced",
+    "fluxCapacitors": 0,
+    "fluxVents": 49,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall",
+    "hullMods": ["targetingunit"],
+    "permaMods": [],
+    "quality": 0.75,
+    "variantId": "TADA_gunwall_advanced",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "heavymauler",
+                "WS0008": "heavymauler",
+                "WS0009": "heavymauler",
+                "WS0010": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "hveldriver",
+                "WS0002": "hveldriver",
+                "WS0003": "hveldriver",
+                "WS0004": "hveldriver",
+                "WS0005": "hveldriver",
+                "WS0006": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0017": "salamanderpod",
+                "WS0018": "salamanderpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "dualflak",
+                "WS0012": "dualflak",
+                "WS0013": "heavymg",
+                "WS0014": "heavymg",
+                "WS0015": "dualflak",
+                "WS0016": "dualflak",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["warthog_wing"]
+}

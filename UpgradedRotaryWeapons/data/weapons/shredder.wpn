@@ -1,0 +1,7 @@
+{
+	"turretSprite":"graphics/URW/weapons/shredder/chaingun2_turret_base00.png",
+	"hardpointSprite":"graphics/URW/weapons/shredder/chaingun2_hardpoint_base00.png",	
+	"numFrames":21,	
+	"frameRate":30,
+        "everyFrameEffect":"data.scripts.weapons.URW_rotaryAnimation",
+}

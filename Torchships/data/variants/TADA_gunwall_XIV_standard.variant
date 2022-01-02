@@ -1,0 +1,53 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 22,
+    "fluxVents": 50,
+    "hullId": "TADA_gunwall_XIV",
+    "hullMods": ["heavyarmor"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_gunwall_XIV_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "annihilatorpod",
+                "WS0018": "annihilatorpod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "TADA_dioscuri",
+                "WS0010": "TADA_dioscuri"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "mark9",
+                "WS0008": "mark9"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0013": "shredder",
+                "WS0014": "shredder",
+                "WS0015": "dualflak",
+                "WS0016": "dualflak",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["TADA_firespitter_wing"]
+}

@@ -1,0 +1,145 @@
+{
+  "hullName": "Whirlwind",
+  "hullId": "TADA_whirlwind",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_whirlwind.png",
+  "style": "HIGH_TECH",
+  "height": 228,
+  "width": 180,
+  "center": [90, 100],
+  "collisionRadius": 144,
+  "shieldCenter": [8, -0],
+  "shieldRadius": 134,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "SYSTEM": "TADA_whirlwindSystem"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [60, -18]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [26, 25]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 310,
+      "angle": -135,
+      "locations": [-21, -22]
+    },
+    {
+      "id": "SYSTEM",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [80, 17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-87.5, 72],
+      "length": 50,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-87.5, -72],
+      "length": 50,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-95, -37.5],
+      "length": 78,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-95, 37.5],
+      "length": 78,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-86.5, 56.5],
+      "length": 36,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-86.5, -56.5],
+      "length": 36,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-93, 26.5],
+      "length": 36,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-93, -26.5],
+      "length": 36,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    94.5, 48.5,
+    35, 86.5,
+    29, 81.5,
+    -4, 84.5,
+    -38.5, 73.5,
+    -54.5, 84.5,
+    -81, 78.5,
+    -94.5, 0,
+    -81, -78.5,
+    -54.5, -84.5,
+    -38.5, -73.5,
+    -4, -84.5,
+    29, -81.5,
+    35, -86.5,
+    75, -62,
+    110, -33,
+    103, -28,
+    71.5, -25,
+    68.5, 7.5,
+    98, 3.5,
+    125.5, 25.5,
+    110.5, 29.5
+  ]
+}

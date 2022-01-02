@@ -1,0 +1,23 @@
+{
+    "displayName": "Advanced",
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_tinnitus_xiv",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_tinnitus_xiv_advanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyneedler"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "ioncannon"}
+        }
+    ]
+}

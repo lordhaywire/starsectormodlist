@@ -1,0 +1,4 @@
+{
+        "frameRate":25,
+        "everyFrameEffect":"data.scripts.weapons.URW_rotaryAnimation",
+}

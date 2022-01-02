@@ -1,0 +1,51 @@
+{
+    "displayName": "BBQ",
+    "fluxCapacitors": 4,
+    "fluxVents": 50,
+    "hullId": "TADA_gunwall_pirate",
+    "hullMods": [
+        "targetingunit",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_gunwall_pirate_bbq",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "TADA_plasma",
+                "WS0002": "TADA_plasma",
+                "WS0003": "TADA_plasma",
+                "WS0004": "TADA_plasma",
+                "WS0005": "TADA_plasma",
+                "WS0006": "TADA_plasma",
+                "WS0007": "TADA_plasma",
+                "WS0008": "TADA_plasma",
+                "WS0009": "TADA_plasma",
+                "WS0010": "TADA_plasma"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "heavymg",
+                "WS0016": "heavymg"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["perdition_wing"]
+}

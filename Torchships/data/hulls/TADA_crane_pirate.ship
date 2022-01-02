@@ -1,0 +1,326 @@
+{
+  "bounds": [
+    119.5,
+    7,
+    97.5,
+    14.5,
+    98.5,
+    35.5,
+    3,
+    64.5,
+    -43.5,
+    64.5,
+    -57.5,
+    46.5,
+    -85.5,
+    52.5,
+    -93.5,
+    15.5,
+    -60.5,
+    12.5,
+    -60.5,
+    -12.5,
+    -93.5,
+    -15.5,
+    -85.5,
+    -52.5,
+    -57.5,
+    -46.5,
+    -43.5,
+    -64.5,
+    3,
+    -64.5,
+    98.5,
+    -35.5,
+    97.5,
+    -14.5,
+    119.5,
+    -7
+  ],
+  "builtInMods": [
+    "ground_support",
+    "expanded_deck_crew"
+  ],
+  "center": [
+    71,
+    97
+  ],
+  "collisionRadius": 140,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -95,
+        -20
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -95,
+        20
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -94,
+        31
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -94,
+        -31
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -93,
+        42
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -93,
+        -42
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 158,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -58.5,
+        53
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": -158,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -58.5,
+        -53
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": 148.5,
+      "contrailSize": 128,
+      "length": 25,
+      "location": [
+        -54.5,
+        58
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": -148.5,
+      "contrailSize": 128,
+      "length": 25,
+      "location": [
+        -54.5,
+        -58
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": 141,
+      "contrailSize": 128,
+      "length": 20,
+      "location": [
+        -50.5,
+        62
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": -141,
+      "contrailSize": 128,
+      "length": 20,
+      "location": [
+        -50.5,
+        -62
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    }
+  ],
+  "height": 221,
+  "hullId": "TADA_crane_pirate",
+  "hullName": "Crane (P)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    5.5,
+    -0
+  ],
+  "shieldRadius": 135,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_crane_pirate.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0001",
+      "locations": [
+        50,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        48.5,
+        -34
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        48.5,
+        34
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -43.5,
+        -64.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -43.5,
+        64.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        44.5,
+        35.5,
+        55.5,
+        26,
+        63.5,
+        38
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        48,
+        -26,
+        50.5,
+        -39,
+        64.5,
+        -30
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 143,
+      "id": "WS0002",
+      "locations": [
+        85,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 135,
+      "arc": 143,
+      "id": "WS0007",
+      "locations": [
+        -72,
+        30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -135,
+      "arc": 143,
+      "id": "WS0008",
+      "locations": [
+        -72,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    }
+  ],
+  "width": 142
+}

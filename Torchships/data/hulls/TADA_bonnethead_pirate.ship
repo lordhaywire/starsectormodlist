@@ -1,0 +1,242 @@
+{
+  "bounds": [
+    84.5,
+    23.5,
+    78.5,
+    31.5,
+    92.5,
+    35.5,
+    92.5,
+    60.5,
+    62,
+    74,
+    42.5,
+    63.5,
+    32.5,
+    39.5,
+    9,
+    45.5,
+    -6.5,
+    68.5,
+    -72,
+    89.5,
+    -90,
+    80,
+    -94.5,
+    29.5,
+    -41.5,
+    8.5,
+    -41.5,
+    -8.5,
+    -94.5,
+    -29.5,
+    -90,
+    -80,
+    -72,
+    -89.5,
+    -6.5,
+    -68.5,
+    9,
+    -45.5,
+    32.5,
+    -39.5,
+    42.5,
+    -63.5,
+    62,
+    -74,
+    92.5,
+    -60.5,
+    92.5,
+    -35.5,
+    78.5,
+    -31.5,
+    84.5,
+    -23.5
+  ],
+  "builtInMods": [
+    "unstable_injector",
+    "augmentedengines",
+    "fragile_subsystems"
+  ],
+  "builtInWings": [],
+  "center": [
+    93,
+    98
+  ],
+  "collisionRadius": 144,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 26,
+      "length": 65.5,
+      "location": [
+        -97,
+        36.5
+      ],
+      "style": "MIDLINE",
+      "width": 26
+    },
+    {
+      "angle": -180,
+      "contrailSize": 26,
+      "length": 65.5,
+      "location": [
+        -97,
+        -36.5
+      ],
+      "style": "MIDLINE",
+      "width": 26
+    },
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 40.5,
+      "location": [
+        -96,
+        55
+      ],
+      "style": "MIDLINE",
+      "width": 14
+    },
+    {
+      "angle": -180,
+      "contrailSize": 14,
+      "length": 40.5,
+      "location": [
+        -96,
+        -55
+      ],
+      "style": "MIDLINE",
+      "width": 14
+    },
+    {
+      "angle": 176,
+      "contrailSize": 10,
+      "length": 30,
+      "location": [
+        -95,
+        66.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -176,
+      "contrailSize": 10,
+      "length": 30,
+      "location": [
+        -95,
+        -66.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 173,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -92,
+        77
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -173,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        -92,
+        -77
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": 145,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        43,
+        69.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -156,
+      "contrailSize": 128,
+      "length": 30,
+      "location": [
+        43,
+        -69.5
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    }
+  ],
+  "height": 196,
+  "hullId": "TADA_bonnethead_pirate",
+  "hullName": "Bonnethead (P)",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    5,
+    -0
+  ],
+  "shieldRadius": 135.5,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_bonnethead_pirate.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5.01,
+      "id": "WS0001",
+      "locations": [
+        79,
+        -48
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        79,
+        48
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 135,
+      "arc": 235,
+      "id": "WS0009",
+      "locations": [
+        -26,
+        29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -135,
+      "arc": 235,
+      "id": "WS0010",
+      "locations": [
+        -26,
+        -29
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 186
+}

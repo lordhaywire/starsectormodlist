@@ -1,0 +1,19 @@
+{
+	"tada":{
+		"%":"%",
+		"su":"su",
+		"op":"OP",
+		"/":"/",
+		"-":"-",
+		"+":"+",
+
+                ammo:"AMMO EXPLOSION!",
+                maneuverability:"improved maneuverability",
+                speed:"top speed increased by ",
+                hook:"gravitic hook deployment",
+                ready:"READY",
+                range:"OUT OF RANGE",
+                target:"NO TARGET",
+                engine:"increased engine power",
+        }
+}

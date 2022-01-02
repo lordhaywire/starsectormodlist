@@ -1,0 +1,87 @@
+{
+  "hullName": "Firespitter",
+  "hullId": "TADA_firespitter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_firespitter.png",
+  "style": "LOW_TECH",
+  "coversColor": "",
+  "height": 38,
+  "width": 38,
+  "center": [19, 17],
+  "collisionRadius": 28,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 26.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [6, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 45,
+      "locations": [4, 15]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -45,
+      "locations": [4, -15]
+    },
+#    {
+#      "id": "WS0005",
+#      "size": "SMALL",
+#      "type": "SYSTEM",
+#      "mount": "HIDDEN",
+#      "arc": 0,
+#      "angle": 180,
+#      "locations": [-8, -0]
+#    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, 10.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-16, -10.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    20, -0,
+    3, 17,
+    -13, 14,
+    -13, -14,
+    3, -17
+  ]
+}

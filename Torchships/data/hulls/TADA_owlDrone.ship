@@ -1,0 +1,109 @@
+{
+  "bounds": [
+    2.5,
+    -10.5,
+    -11.5,
+    -8.5,
+    -11.5,
+    8.5,
+    2.5,
+    10.5,
+    18.5,
+    -0
+  ],
+  "builtInWeapons": {
+    "WS0001": "TADA_owlFlak",
+    "WS0002": "swarmer"
+  },
+  "builtInWings": [],
+  "center": [
+    12,
+    14
+  ],
+  "collisionRadius": 32.5,
+  "engineSlots": [
+    {
+      "angle": 170,
+      "contrailSize": 6,
+      "length": 11,
+      "location": [
+        -12.5,
+        2.5
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": -170,
+      "contrailSize": 6,
+      "length": 11,
+      "location": [
+        -12.5,
+        -2.5
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 17,
+      "location": [
+        -13,
+        7
+      ],
+      "style": "MIDLINE",
+      "width": 4
+    },
+    {
+      "angle": -180,
+      "contrailSize": 4,
+      "length": 17,
+      "location": [
+        -13,
+        -7
+      ],
+      "style": "MIDLINE",
+      "width": 4
+    }
+  ],
+  "height": 34,
+  "hullId": "TADA_owlDrone",
+  "hullName": "Beak",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    6,
+    -0
+  ],
+  "shieldRadius": 26.5,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_owlDrone.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        -2.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 24
+}

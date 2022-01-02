@@ -1,0 +1,8 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Attitude Jets,TADA_attitudejets,,,,,,,,3,0.05,0.5,1,0.5,0,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
+Missile Ready-racks,TADA_readyracks,,,,,,0.15,,2,0.0166,1,0,0,20,,,,,,,,,,,,,graphics/icons/hullsys/missile_autoforge.png
+Twin Burn Chamber,TADA_burn,,,,,,,,,,2,,1,5,TRUE,TRUE,,,,,,,,,,,graphics/icons/hullsys/burn_drive.png
+Gravitic Hook,TADA_gravHook,,,,,,0.2,,2,0.05,0.2,,0.8,1,,,,TRUE,,,,,,,,,graphics/icons/hullsys/recall_device.png
+Sensor Drones Bay,TADA_drone_sensor,,,,,,,,5,0.05,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_sensor.png
+Decoy Flare Launcher (Single),TADA_flarelauncher,,,,,,,,2,0.05,,,,4,,,,,,,,,,,,,graphics/icons/hullsys/flare_launcher.png

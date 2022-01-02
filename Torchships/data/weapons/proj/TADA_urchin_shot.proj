@@ -1,0 +1,17 @@
+{
+	"id":"TADA_urchin_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"hitGlowRadius":75,
+	"length":200.0,
+	"width":8,
+	"fadeTime":0.3,
+	"fringeColor":[255,75,50,150],
+	"coreColor":[255,255,200,255],
+        "textureType":"CHUNKY",	
+	"textureScrollSpeed":3.0,
+	"pixelsPerTexel":10.0,
+	"bulletSprite":"graphics/missiles/shell_small_yellow.png",
+}

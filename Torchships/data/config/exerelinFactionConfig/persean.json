@@ -1,0 +1,10 @@
+{
+
+    "startShipsCombatLarge":[
+        ["TADA_bonnethead_standard", "TADA_owl_standard"]
+    ],
+
+    "startShipsTradeLarge":[
+        ["TADA_crane_standard", "wayfarer_Standard", "wayfarer_Standard"]
+    ],
+}

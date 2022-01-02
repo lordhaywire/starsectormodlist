@@ -1,0 +1,5 @@
+{
+    "startShipsSolo":[["TADA_challenger_pather_combat"]],
+    "startShipsCombatSmall":[["TADA_bully_pather_brawler", "TADA_challenger_assault", "TADA_challenger_brawler"]],
+    "startShipsCombatLarge":[["TADA_foray_pather_standard", "TADA_bully_pather_support", "TADA_challenger_pather_combat"]],    
+}

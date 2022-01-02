@@ -1,0 +1,22 @@
+{
+    "displayName": "Fortress",
+    "fluxCapacitors": 0,
+    "fluxVents": 3,
+    "goalVariant": true,
+    "hullId": "uw_palace_right",
+    "hullMods": [
+        "magazines",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "variantId": "uw_palace_right_for",
+    "weaponGroups": [{
+        "autofire": true,
+        "mode": "LINKED",
+        "weapons": {
+            "WS0001": "dualflak",
+            "WS0002": "pdburst",
+            "WS0003": "pdburst"
+        }
+    }]
+}

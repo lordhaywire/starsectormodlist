@@ -1,0 +1,30 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 4,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_challenger_pirate",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "variantId": "TADA_challenger_pirate_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyac"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "TADA_triplemortar",
+                "WS0003": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "vulcan"}
+        }
+    ]
+}

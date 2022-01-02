@@ -1,0 +1,16 @@
+{
+    "startShipsSolo":[
+        ["TADA_challenger_pirate_standard"]
+    ],
+
+    "startShipsCombatSmall":[
+        ["TADA_tinnitus_plasma_standard", "TADA_tinnitus_plasma_standard", "TADA_tinnitus_plasma_standard", "TADA_tinnitus_plasma_standard"],
+        ["TADA_bully_pirate_combat", "TADA_scalper_pirate_escort", "TADA_tinnitus_p_standard"]
+    ],
+
+    "startShipsCombatLarge":[
+        ["TADA_bonnethead_pirate_outdated", "TADA_hightide_pirate_combat"],
+        ["TADA_foray_pirate_improvised", "TADA_bully_pirate_assault", "TADA_challenger_pirate_standard"]
+    ],
+
+}

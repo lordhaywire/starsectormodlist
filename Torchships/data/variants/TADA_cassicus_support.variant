@@ -1,0 +1,41 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 8,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "TADA_cassicus",
+    "hullMods": [
+        "advancedoptics",
+        "turretgyros"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_cassicus_support",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "tachyonlance"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "taclaser",
+                "WS0003": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "taclaser",
+                "WS0005": "taclaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0006": "pdburst"}
+        }
+    ]
+}

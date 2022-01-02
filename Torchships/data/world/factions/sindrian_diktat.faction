@@ -1,0 +1,87 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_challenger":1,
+            "TADA_tinnitus":1,
+
+            "TADA_bully":0.5,
+            "TADA_scalper":1,
+            "TADA_cassicus":0.25,
+
+            "TADA_foray":0.5,
+            "TADA_hightide":0.25,
+            "TADA_attrition":1,
+            "TADA_bonnethead":1,
+            "TADA_whirlwind":0.5,
+            "TADA_owl":1,
+
+            "TADA_crane":1,
+
+            "TADA_herald":1,
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "TADA_challenger",
+            "TADA_tinnitus",
+
+            "TADA_bully",
+            "TADA_scalper",
+
+            "TADA_foray",
+            "TADA_hightide",
+            "TADA_owl",
+
+            "TADA_crane",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_challenger",
+            "TADA_tinnitus",
+
+            "TADA_bully",
+            "TADA_scalper",
+            "TADA_cassicus",
+
+            "TADA_foray",
+            "TADA_hightide",
+            "TADA_bonnethead",
+            "TADA_owl",
+            "TADA_whirlwind",
+            "TADA_crane",
+
+            "TADA_herald",
+        ],
+    },
+
+    # listing ships here will make the faction mostly use them even if other hulls become available
+    "priorityShips":{
+        "hulls":[
+            #"drover",
+            #"conquest",
+            "TADA_herald",
+        ],
+    },
+
+    "knownFighters":{
+        "fighters":[
+            "TADA_pinnace_wing",
+        ],
+    },
+
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

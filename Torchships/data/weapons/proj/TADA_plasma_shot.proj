@@ -1,0 +1,32 @@
+{
+	"id":"TADA_plasma_shot",
+	"specClass":"projectile",
+
+	"hitGlowRadius":20,
+	"fadeTime":0.25,
+	"onHitEffect":"data.scripts.weapons.TADA_plasma_hitEffect",
+
+	"spawnType":"BALLISTIC",
+        "collisionClass":"PROJECTILE_FF",
+        "collisionClassByFighter":"PROJECTILE_FF",
+	#"bulletSprite":"graphics/TORCHSHIPS/missiles/TADA_plasma_shot.png",
+	"length":192.0,
+	"width":64.0,
+	"fringeColor":[255,100,25,150],
+	"coreColor":[255,200,150,250],
+	"textureScrollSpeed":-1,
+	"pixelsPerTexel":1.0,
+
+
+	#"spawnType":"BALLISTIC_AS_BEAM",
+	#"collisionClass":"RAY",
+	#"collisionClassByFighter":"RAY_FIGHTER",
+	#"bulletSprite":"graphics/TORCHSHIPS/missiles/TADA_plasma_shot3.png",
+	#"length":192.0,
+	#"width":64.0,
+	#"fringeColor":[255,100,25,50],
+	#"coreColor":[255,200,150,250],
+	#"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	#"textureScrollSpeed":5,
+	#"pixelsPerTexel":0.25,
+}

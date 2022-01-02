@@ -1,0 +1,41 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 13,
+    "goalVariant": true,
+    "hullId": "TADA_bully_pather",
+    "hullMods": ["converted_hangar"],
+    "permaMods": [],
+    "variantId": "TADA_bully_pather_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "sabot"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "devastator"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "TADA_triplemortar",
+                "WS0004": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "vulcan",
+                "WS0006": "vulcan",
+                "WS0007": "vulcan",
+                "WS0008": "vulcan"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

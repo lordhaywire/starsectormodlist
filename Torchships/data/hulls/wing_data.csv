@@ -1,0 +1,4 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+TADA_pinnace_wing,TADA_pinnace_standard,"support3, fighter, high, leader_no_swarm, wingmen_no_swarm, attack_at_an_angle, rare_bp, merc",2,0.25,7,9,V,4000,700,,1,FIGHTER,Gunship,15,10000,,,,,,,,,,,,,1
+TADA_owlDrone_wing,TADA_owlDrone_flak,"support2, fighter, mid, auto_fighter, rare_bp, merc",1,0.5,2,4,BOX,1000,500,-100,1,SUPPORT,Escort drone,15,4000,,,,,,,,,,,,,
+TADA_firespitter_wing,TADA_firespitter_defender,"support2, fighter, low, lowtech_bp, pirate_bp, rare_bp, merc",0,,3,3,BOX,4000,500,-200,1,SUPPORT,Escort,15,3000,,,,,,,,,,,,,3

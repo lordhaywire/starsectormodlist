@@ -1,0 +1,169 @@
+Torchships And Deadly Armament
+
+0.16
+
+BALANCING:
+ - Pest-class frigate:
+   . Regular Pest now has the Maneuvering Jet system instead of basic Flares.
+   . Pest Pirate (new) is pretty much the old regular Pest with Flares, but can be restored into the new regular Pest. 
+   . Pest XIVth now has the Accelerated Ammo Feeder system instead of Flares.
+   . Pest Cutter (formerly Pest Pirate) is now a rarer pirate variant, has High Energy Focus instead of Flares.
+   . Catalyzed Chemical Torch damage increased to 800 HE dps from 600.
+
+ - Tempest MK.II-class frigate: Now has Active Flares instead of basic Flares.
+
+
+ - Scalper-class destroyer: Shield efficiency nerfed to 0.9 from 0.8.
+
+ - Bonnethead-class cruiser:
+   . System switched to Accelerated Ammo Feeder from Burst Jets.
+   . Speed increased to 70 from 60.
+
+ - Whirlwind-class cruiser:
+   . Weapon arcs significantly widened, all three large weapons now converge.
+   . Large hardpoint is now a Missile type, from Synergy.
+   . Flux capacity reduced to 12000 from 16000.
+   . Gravitic Pull system charges reduced to 2 from 3 (because the System Expertise skill is ludicrous)
+
+ - High-tide-class cruiser: Increased the Pilum Wave launcher regen rate by 20% from 85s to 63.
+
+ - Shine-class cruiser: OP available reduced to 150 from 170
+
+ - Owl-class cruiser:
+   . System switched to Burst Jets from Ammo Feeder.
+   . Flight decks are now modular.
+   . Stats adjusted to fit between the Eagle and the Heron.
+
+ - Beak-wing: no longer built-in the Owl and now available as an escort fighter.
+
+ - Pinnace-wing:
+   . OP cost reduced to 9 from 11.
+   . Graviton Blasters dps increased to 125 energy dps from 100.
+
+ - Firespiter-wing:
+   . Fixed ludicrous LPC price.
+   . OP cost reduced to 3 from 6.
+   . Hullpoints increased to 750 from 400
+
+
+ - Mining Pike:
+   . Stuck pikes waiting detonation can no longer be removed with flares.
+   . Pikes now have a small extra frag damage AOE.
+
+ - Dioscuri recoiless rifle:
+   . Damage per shot reduced to 340 from 375.
+   . Firerate raised to 53 rmp from 48.
+   . DPS and flux efficiency unchanged.
+
+BUGFIXES/IMPROVEMENTS:
+
+ - Lasher(TT)-class frigate: removed the skirt and moved the hardpoints inward to streamline the silhouette.
+
+ - Rarity/blueprint adjusted for most weapons.
+
+ - Some ships frequencies have been lowered, notably the Foray-classes and the High-tide-classes.
+
+0.15
+
+Basic compatibility update with Starsector 0.95a
+
+0.14
+
+NEW CONTENT:
+ - Dioscuri Recoilless Rifle:
+   . Large Ballistic weapon,
+   . Very accurate, but slightly flux inefficient.
+
+ - Triple Mortar:
+   . Nobody looked twice at the humble Light Mortar,
+   . They brought their two siblings and now you are in trouble.
+
+ - Firespitter defense wing:
+   . Solo support wing,
+   . Full PD solution for the cheap captain.
+
+BALANCING:
+ - Removed the stat debuff of the Pather and Pirate variants of the Bonnethead-class cruiser.
+
+BUGFIXES/IMPROVEMENTS:
+ - Pinnace is now affected by Converted Hangars cost increase.
+ - Forray-class flare launchers can no longer be disabled.
+
+0.13
+
+NEW CONTENT:
+ - Added Scalper-class escort destroyer (midline)
+   . A reverse Sunder: smaller mounts but wide coverage all around.
+
+ - Added Cassicus-class escort destroyer (high-tech)
+   . TT's answer to the Monitor, but with a lot more bite.
+
+ - Added Herald-class battle-carrier (midline)
+   . An armor-less Legion with quick feet.
+
+BUGFIXES/IMPROVEMENTS:
+ - Updated the hulls frequencies to make some of the ships less uncommon.
+ - Updated support for Version Checker.
+
+0.12
+
+BUGFIXES/IMPROVEMENTS:
+ - Fixed several description issues.
+
+0.11
+
+NEW CONTENT:
+ - Added Owl-class cruiser (from Seeker's ship pack)
+   . A Hammerhead, but also an Eagle.
+   . Mostly moved because it fits better in this mod.
+
+BALANCING:
+ - Shine-class
+   . Small arcs slightly tweaked to leave an opening for counter strikes.
+
+BUGFIXES/IMPROVEMENTS:
+ - Externalized all compiled strings to help with translation.
+
+0.10
+
+INITIAL RELEASE
+
+NEW CONTENT:
+ Weapons
+ - Mining Pike Thrower
+ - Long Range Arbalest
+ - Urchin Suppressor
+
+ Wings
+ - Pinnace support wing
+
+ Ships
+ - Challenger-class frigate
+ - Challenger (P)-class frigate
+ - Challenger (LP)-class frigate
+ - Pest-class frigate
+ - Pest (XIV)-class frigate
+ - Pest (P)-class frigate
+ - Lasher (TT)-class frigate
+ - Tempest MK.II-class frigate
+ - Bully-class destroyer
+ - Bully (P)-class destroyer
+ - Bully (LP)-class destroyer
+ - Scintilla X-class destroyer
+ - Foray-class cruiser
+ - Foray (P)-class cruiser
+ - Foray (LP)-class cruiser
+ - Attrition-class cruiser
+ - Crane-class cruiser
+ - Crane (P)-class cruiser
+ - High-tide-class cruiser
+ - High-tide (P)-class cruiser
+ - Bonnethead-class cruiser
+ - Bonnethead (P)-class cruiser
+ - Bonnethead (LP)-class cruiser
+ - Whirlwind-class cruiser
+ - Shine-class cruiser
+ - Brillant X-class cruiser
+ - Niagara-class battelship
+ - Niagara (XIV)-class battelship
+ - Niagara (P)-class battelship

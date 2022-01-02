@@ -1,0 +1,40 @@
+{
+    "displayName": "Rave",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": true,
+    "hullId": "uw_palace_rear",
+    "hullMods": [
+        "advancedoptics",
+        "turretgyros",
+        "pointdefenseai"
+    ],
+    "permaMods": [],
+    "variantId": "uw_palace_rear_rav",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "gravitonbeam",
+                "WS0004": "gravitonbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "ionbeam",
+                "WS0002": "ionbeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "taclaser",
+                "WS0006": "taclaser"
+            }
+        }
+    ]
+}

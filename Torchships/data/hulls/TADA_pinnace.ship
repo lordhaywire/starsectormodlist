@@ -1,0 +1,181 @@
+{
+  "bounds": [
+    -5.5,
+    -13,
+    -19.5,
+    -11,
+    -19.5,
+    11,
+    -5.5,
+    13,
+    29.5,
+    5,
+    29.5,
+    -5
+  ],
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "A_WEAPON_L": "TADA_pinnace_leftGun",
+    "A_WEAPON_R": "TADA_pinnace_rightGun",
+    "B_WING_L": "TADA_pinnace_leftWing",
+    "B_WING_R": "TADA_pinnace_rightWing",
+    "C_COVER": "TADA_pinnace_cover",
+    "WS0001": "TADA_gravitonBolterR",
+    "WS0002": "TADA_gravitonBolterL",
+    "WS0003": "TADA_lightIonBeam"
+  },
+  "builtInWings": [],
+  "center": [
+    29.5,
+    24
+  ],
+  "collisionRadius": 45,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -23,
+        -0
+      ],
+      "style": "HIGH_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 19,
+      "location": [
+        -21,
+        8.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 19,
+      "location": [
+        -21,
+        -8.5
+      ],
+      "style": "HIGH_TECH",
+      "width": 6
+    }
+  ],
+  "height": 58,
+  "hullId": "TADA_pinnace",
+  "hullName": "Pinnace",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    5,
+    0
+  ],
+  "shieldRadius": 40,
+  "spriteName": "graphics/TORCHSHIPS/ships/TADA_pinnace/TADA_pinnace.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -15,
+      "arc": 360,
+      "id": "A_WEAPON_L",
+      "locations": [
+        0,
+        8.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 15,
+      "arc": 360,
+      "id": "A_WEAPON_R",
+      "locations": [
+        0,
+        -8.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 65,
+      "arc": 360,
+      "id": "B_WING_R",
+      "locations": [
+        -5.5,
+        -1
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -65,
+      "arc": 360,
+      "id": "B_WING_L",
+      "locations": [
+        -5.5,
+        1
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 20,
+      "id": "WS0001",
+      "locations": [
+        2,
+        -8.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 20,
+      "id": "WS0002",
+      "locations": [
+        2,
+        8.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "C_COVER",
+      "locations": [
+        -6.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 360,
+      "id": "WS0003",
+      "locations": [
+        -5.5,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 59
+}

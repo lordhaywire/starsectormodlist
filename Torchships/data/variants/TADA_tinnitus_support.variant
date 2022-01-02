@@ -1,0 +1,26 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 1,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_tinnitus",
+    "hullMods": [
+        "fluxbreakers",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "quality": 0.25,
+    "variantId": "TADA_tinnitus_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "heavyac"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "lrpdlaser"}
+        }
+    ]
+}

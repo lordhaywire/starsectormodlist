@@ -1,0 +1,43 @@
+{
+    "baseHullId":"TADA_scalper",
+    "skinHullId":"TADA_scalper_pirate",
+    "hullName":"Scalper (P)",
+    "descriptionId":"TADA_scalper",
+    "descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+    "spriteName":"graphics/TORCHSHIPS/ships/TADA_scalper_pirate.png",
+    "baseValueMult":1,
+    "restoreToBaseHull":true,
+    "addHints":[],
+    "tags":["pirate_bp"],
+    "tech":"Pirate",
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[], 		# hullmod ids
+    "removeBuiltInWeapons":[], 		# weapon slot ids
+    "builtInMods":[],
+    "builtInWeapons":{},
+    "weaponSlotChanges":{
+       "WS0004":{
+            #"angle": 0,
+            #"arc": 5,
+            #"mount": "HARDPOINT",
+            #"size": "SMALL",
+            "type": "BALLISTIC"
+       },
+       "WS0005":{
+            #"angle": 0,
+            #"arc": 5,
+            #"mount": "HARDPOINT",
+            #"size": "SMALL",
+            "type": "BALLISTIC"
+       },
+       "WS0006":{
+            #"angle": 0,
+            #"arc": 5,
+            #"mount": "HARDPOINT",
+            #"size": "SMALL",
+            "type": "BALLISTIC"
+       },
+    },
+    "systemId":"fastmissileracks",
+}

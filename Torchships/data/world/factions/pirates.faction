@@ -1,0 +1,63 @@
+{
+    # variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+    # multiplier for how often hulls show up in the faction's fleets
+    "hullFrequency":{
+        "hulls":{
+            "TADA_challenger_pirate":1,
+            "TADA_tinnitus_p":1,
+            "TADA_tinnitus_plasma":0.25,
+            "TADA_tempest_pirate":0.5,
+
+            "TADA_bully_pirate":1,
+            "TADA_scalper_pirate":0.5,
+
+            "TADA_foray_pirate":0.25,
+            "TADA_hightide_pirate":0.25,
+            "TADA_bonnethead_pirate":0.25,
+            "TADA_crane_pirate":0.25,
+
+            "TADA_gunwall_pirate":1,
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "hulls":[
+            "TADA_challenger_pirate",
+            "TADA_tinnitus_p",
+            "TADA_bully_pirate",
+            "TADA_foray_pirate",
+            "TADA_hightide_pirate",
+
+            "TADA_crane_pirate",
+        ],
+    },
+
+    "knownShips":{
+        "hulls":[
+            "TADA_challenger_pirate",
+            "TADA_tinnitus_p",
+            "TADA_tinnitus_plasma",
+            "TADA_tempest_pirate",
+
+            "TADA_bully_pirate",
+            "TADA_scalper_pirate",
+            
+            "TADA_foray_pirate",
+            "TADA_hightide_pirate",
+            "TADA_bonnethead_pirate",
+            "TADA_gunwall_pirate",
+
+            "TADA_crane_pirate",
+        ],
+    },
+    "knownWeapons":{
+        "weapons":[
+            "TADA_pike",
+            "TADA_LRA",
+            "TADA_urchin",
+        ],
+    },
+},

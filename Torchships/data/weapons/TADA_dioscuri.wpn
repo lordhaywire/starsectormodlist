@@ -1,0 +1,48 @@
+{
+	"id":"TADA_dioscuri",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":1200,
+	"turretSprite":"graphics/TORCHSHIPS/weapons/dioscuri/TADA_dioscuriT_00.png",
+	"turretGunSprite":"graphics/TORCHSHIPS/weapons/dioscuri/TADA_dioscuriT_recoil.png",
+	"hardpointSprite":"graphics/TORCHSHIPS/weapons/dioscuri/TADA_dioscuriH_00.png",
+	"hardpointGunSprite":"graphics/TORCHSHIPS/weapons/dioscuri/TADA_dioscuriH_recoil.png",	
+	"numFrames":9,	
+	"frameRate":0,
+	"visualRecoil":1.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[SUSPEND_RECOIL],
+	"turretOffsets":[44, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[55, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING",
+	#"animationType":"MUZZLE_FLASH",
+	#"muzzleFlashSpec":{
+        #    "length":15.0, 
+        #    "spread":15.0,
+        #    "particleSizeMin":15.0,
+        #    "particleSizeRange":30.0,
+        #    "particleDuration":0.75,
+        #    "particleCount":15,
+        #    "particleColor":[30,20,20,150]
+        #},
+
+	"animationType":"SMOKE",
+	"smokeSpec":{
+            "particleSizeMin":10.0,
+            "particleSizeRange":15.0,
+            "cloudParticleCount":5,
+            "cloudDuration":1,
+            "cloudRadius":10.0,
+            "blowbackParticleCount":15,
+            "blowbackDuration":1.5,
+            "blowbackLength":-20.0,
+            "blowbackSpread":10.0,
+            "particleColor":[45,45,45,150]
+        },
+
+	"projectileSpecId":"TADA_dioscuri_shot",
+	"fireSoundTwo":"TADA_dioscuri_fire",
+	"everyFrameEffect":"data.scripts.weapons.TADA_dioscuriEffect",
+}

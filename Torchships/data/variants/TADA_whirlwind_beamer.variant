@@ -1,0 +1,32 @@
+{
+    "displayName": "Beamer",
+    "fluxCapacitors": 8,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_whirlwind",
+    "hullMods": [
+        "targetingunit",
+        "advancedoptics",
+        "fluxbreakers"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_whirlwind_beamer",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hil"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "tachyonlance"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "guardian"}
+        }
+    ]
+}

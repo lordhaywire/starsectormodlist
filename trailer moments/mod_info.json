@@ -1,0 +1,16 @@
+{
+	"id":"$$$_trailermoments", # internal id
+	"name":"$$$ Trailer Moments", # displayed to the player
+	"author":"Nia",
+	"version":"1.2",
+	"description":"Bringing Nicke's magical trails to vanilla !requires LazyLib and MagicLib!",
+	"gameVersion":"0.95a-RC10",
+	"utility":true,
+	"dependencies": [
+		{
+			"id": "MagicLib",
+			"name": "MagicLib",
+			#"version": "0.32rc2" # If a specific version is NOT required, comment out this line
+		}
+	]
+}

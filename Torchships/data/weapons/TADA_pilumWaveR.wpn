@@ -1,0 +1,52 @@
+{
+	"id":"TADA_pilumWaveR",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"LARGE",
+	"turretSprite":"graphics/TORCHSHIPS/weapons/TADA_pilumWaveR.png",
+	"hardpointSprite":"",
+	"hardpointOffsets":[
+35.5,-5,
+27.5,-5,
+19.5,-5,
+11.5,-5,
+3.5,-5
+],
+	"turretOffsets":[
+20.5,-5,
+12.5,-5,
+4.5,-5,
+-3.5,-5,
+-11.5,-5
+],
+	"hardpointAngleOffsets":[
+-45,
+-45,
+-45,
+-45,
+-45
+],
+	"turretAngleOffsets":[
+-45,
+-45,
+-45,
+-45,
+-45
+],
+	"barrelMode":"ALTERNATING",
+	"animationType":"SMOKE",
+	"renderHints":[RENDER_LOADED_MISSILES],
+	"interruptibleBurst":false,
+	"smokeSpec":{"particleSizeMin":20.0,
+				 "particleSizeRange":20.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":1.0,
+				 "cloudRadius":10.0,
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":2.0,
+				 "blowbackLength":30.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[100,100,100,200]},
+	"projectileSpecId":"TADA_pilumMissile",
+	"fireSoundTwo":"pilum_lrm_fire",
+}

@@ -1,0 +1,46 @@
+{
+    "displayName": "Disco",
+    "fluxCapacitors": 3,
+    "fluxVents": 30,
+    "hullId": "uw_climax",
+    "hullMods": [
+        "high_scatter_amp",
+        "advancedshieldemitter",
+        "targetingunit",
+        "stabilizedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "uw_climax_dis",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "atropos",
+                "WS 006": "atropos",
+                "WS 007": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 009": "hil"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 008": "ionbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "gravitonbeam",
+                "WS 002": "gravitonbeam",
+                "WS 003": "gravitonbeam",
+                "WS 004": "taclaser"
+            }
+        }
+    ]
+}

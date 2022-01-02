@@ -1,0 +1,59 @@
+{
+    "displayName": "Bomber",
+    "fluxCapacitors": 0,
+    "fluxVents": 45,
+    "goalVariant": true,
+    "hullId": "TADA_herald",
+    "hullMods": ["missleracks"],
+    "permaMods": [],
+    "variantId": "TADA_herald_bomber",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "mark9"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "hurricane"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0005": "pulselaser",
+                "WS0006": "pulselaser",
+                "WS0007": "pulselaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0003": "hveldriver",
+                "WS0004": "hveldriver"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0008": "pdburst",
+                "WS0009": "pdburst",
+                "WS0010": "pdburst",
+                "WS0011": "pdburst",
+                "WS0012": "pdburst",
+                "WS0013": "pdburst",
+                "WS0014": "pdburst"
+            }
+        }
+    ],
+    "wings": [
+        "broadsword_wing",
+        "broadsword_wing",
+        "hoplon_wing",
+        "hoplon_wing",
+        "hoplon_wing"
+    ]
+}

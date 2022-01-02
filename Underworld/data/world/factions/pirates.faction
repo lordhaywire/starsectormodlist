@@ -1,0 +1,41 @@
+{
+    "hullFrequency":{
+        "tags":{
+            "uw_post_collapse_bp":1.5,
+            "uw_hack_job_bp":1.5,
+            "uw_junker_bp":1.5,
+        },
+        "hulls":{
+            "uw_venomx":1.5,
+            "uw_predator_x":2,
+            "uw_stalker":1.5,
+            "uw_renegade":1.5,
+            "uw_dragon":1.5,
+        },
+    },
+    "shipsWhenImporting":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp", "uw_junker_bp"],
+        "hulls":[
+            "uw_venomx",
+            "uw_predator_x",
+            "uw_stalker",
+            "uw_infernus",
+            "uw_renegade",
+            "uw_dragon",
+        ],
+    },
+    "knownShips":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp", "uw_junker_bp"],
+        "hulls":[
+            "uw_venomx",
+            "uw_predator_x",
+            "uw_stalker",
+            "uw_infernus",
+            "uw_renegade",
+            "uw_dragon",
+        ],
+    },
+    "knownFighters":{
+        "tags":["uw_post_collapse_bp", "uw_hack_job_bp", "uw_junker_bp"],
+    },
+}

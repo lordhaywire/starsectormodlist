@@ -1,0 +1,30 @@
+{
+    "displayName": "Assault",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_whirlwind",
+    "hullMods": [
+        "safetyoverrides",
+        "hardened_subsystems",
+        "hardenedshieldemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_whirlwind_assault",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "plasma"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "ionpulser",
+                "WS0003": "ionpulser"
+            }
+        }
+    ]
+}

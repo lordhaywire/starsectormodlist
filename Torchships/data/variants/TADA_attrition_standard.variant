@@ -1,0 +1,63 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 6,
+    "fluxVents": 30,
+    "goalVariant": true,
+    "hullId": "TADA_attrition",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "variantId": "TADA_attrition_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "typhoon",
+                "WS0003": "typhoon"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0020": "heatseeker",
+                "WS0021": "heatseeker"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0006": "railgun",
+                "WS0007": "railgun",
+                "WS0008": "railgun",
+                "WS0009": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightag",
+                "WS0012": "lightag",
+                "WS0013": "lightag",
+                "WS0014": "lightag",
+                "WS0015": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "vulcan",
+                "WS0005": "vulcan",
+                "WS0010": "vulcan",
+                "WS0011": "vulcan",
+                "WS0016": "vulcan",
+                "WS0017": "vulcan",
+                "WS0018": "vulcan",
+                "WS0019": "vulcan"
+            }
+        }
+    ]
+}

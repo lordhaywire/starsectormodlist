@@ -1,0 +1,26 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 7,
+    "goalVariant": true,
+    "hullId": "TADA_tinnitus_p",
+    "hullMods": [
+        "hardenedshieldemitter",
+        "magazines"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "TADA_tinnitus_p_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "TADA_pike"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "pdlaser"}
+        }
+    ]
+}

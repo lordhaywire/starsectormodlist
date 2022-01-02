@@ -1,0 +1,57 @@
+{
+    "displayName": "Outdated",
+    "fluxCapacitors": 0,
+    "fluxVents": 49,
+    "goalVariant": true,
+    "hullId": "TADA_gunwall_XIV",
+    "hullMods": [
+        "magazines",
+        "heavyarmor",
+        "reinforcedhull"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_gunwall_XIV_outdated",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0017": "typhoon",
+                "WS0018": "typhoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "TADA_urchin",
+                "WS0008": "TADA_urchin",
+                "WS0009": "TADA_urchin",
+                "WS0010": "TADA_urchin"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0011": "flak",
+                "WS0012": "flak",
+                "WS0013": "flak",
+                "WS0014": "flak"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0015": "vulcan",
+                "WS0016": "vulcan",
+                "WS0019": "vulcan",
+                "WS0020": "vulcan",
+                "WS0021": "vulcan",
+                "WS0022": "vulcan"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

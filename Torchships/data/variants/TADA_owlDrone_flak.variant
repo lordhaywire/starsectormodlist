@@ -1,0 +1,28 @@
+{
+  "displayName": "Flak",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": false,
+  "hullId": "TADA_owlDrone",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "TADA_owlDrone_flak",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "TADA_owlFlak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "swarmer"
+      }
+    }
+  ],
+  "wings": []
+}

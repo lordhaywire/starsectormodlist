@@ -1,0 +1,25 @@
+{
+    "displayName": "Advanced",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "TADA_lasherTT",
+    "hullMods": ["hardenedshieldemitter"],
+    "permaMods": [],
+    "variantId": "TADA_lasherTT_advanced",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS_001": "amblaster",
+                "WS_002": "amblaster"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0007": "pdburst"}
+        }
+    ]
+}

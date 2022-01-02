@@ -1,0 +1,50 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 2,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "TADA_scalper",
+    "hullMods": ["fluxbreakers"],
+    "permaMods": [],
+    "variantId": "TADA_scalper_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0007": "railgun",
+                "WS0008": "railgun"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS0002": "harpoon",
+                "WS0003": "harpoon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0009": "railgun",
+                "WS0010": "railgun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0004": "ioncannon",
+                "WS0005": "TADA_triplemortar",
+                "WS0006": "TADA_triplemortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "dualflak"}
+        }
+    ]
+}

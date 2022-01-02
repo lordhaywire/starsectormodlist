@@ -1,0 +1,48 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "TADA_scintillaX",
+    "hullMods": [
+        "fluxbreakers",
+        "missleracks"
+    ],
+    "permaMods": [],
+    "variantId": "TADA_scintillaX_standard",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "heavyblaster"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0002": "harpoonpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "sabotpod"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 007": "ioncannon",
+                "WS 008": "ioncannon"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 000": "pdburst",
+                "WS 001": "pdburst",
+                "WS 002": "pdburst",
+                "WS 003": "pdburst"
+            }
+        }
+    ]
+}

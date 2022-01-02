@@ -1,0 +1,17 @@
+{
+	"id":"TADA_spike_rod",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"size":[7,19],	
+	"center":[3.5,11],
+	"collisionRadius":9,
+	"collisionClass":"NONE",
+	"explosionColor":[255,100,100,255],
+	"explosionRadius":100,
+	"engineSpec":{"turnAcc":0,
+                      "turnRate":0,
+                      "acc":0,
+                      "dec":0},
+	"sprite":"graphics/TORCHSHIPS/missiles/TADA_spikeM.png",
+	"onHitEffect":"data.scripts.weapons.TADA_spikeSecondaryEffect",
+}

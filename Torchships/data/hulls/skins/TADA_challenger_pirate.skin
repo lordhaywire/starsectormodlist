@@ -1,0 +1,19 @@
+{
+	"baseHullId":"TADA_challenger",
+	"skinHullId":"TADA_challenger_pirate",
+	"hullName":"Challenger (P)",
+	"descriptionId":"TADA_challenger",
+	"descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+	"spriteName":"graphics/TORCHSHIPS/ships/TADA_challenger_pirate.png",
+	"baseValueMult":1,
+	"addHints":[],
+        "tags":["pirate_bp"],
+	"tech":"Pirate",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":[],
+	"builtInWeapons":{
+    },
+}

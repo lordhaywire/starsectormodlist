@@ -1,0 +1,31 @@
+{
+    "displayName": "Support",
+    "fluxCapacitors": 0,
+    "fluxVents": 29,
+    "goalVariant": true,
+    "hullId": "TADA_whirlwind",
+    "hullMods": [
+        "eccm",
+        "missleracks",
+        "magazines",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "TADA_whirlwind_support",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {"WS0001": "locust"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "guardian",
+                "WS0003": "guardian"
+            }
+        }
+    ]
+}

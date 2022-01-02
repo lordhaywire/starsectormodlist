@@ -1,0 +1,7 @@
+trail,projectile,sprite,minLength,fadeIn,duration,fadeOut,sizeIn,sizeOut,colorIn,colorOut,opacity,textLength,textScroll,distance,dispersion,drift,fadeOnFadeOut,angleAdjustment,additive,velocityIn,velocityOut,randomVelocity,angle,rotationIn,rotationOut,randomRotation
+TADA_spike_shot,TADA_spike_shot,base_trail_mild,20,0.1,0.25,1.5,12,24,"[175,128,75]","[128,128,128]",0.5,256,-256,0,0,0,FALSE,FALSE,TRUE,50,0,0,180,45,0,true
+TADA_plasma_shot_fire,TADA_plasma_shot,base_trail_heavyBurn,5,0.1,0.2,0.3,50,75,"[255,100,50]","[150,50,10]",0.5,500,-700,20,5,0.75,TRUE,FALSE,TRUE,0,0,0,0,0,0,false
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+TADA_dioscuri_shot_smokeA,TADA_dioscuri_shot,base_trail_heavySmoke,10,0,0.05,0.5,20,40,"[150,75,75]","[60,60,60]",0.5,512,1024,0,0,1,TRUE,FALSE,FALSE,0,0,0,180,0,0,false
+TADA_dioscuri_shot_smokeB,TADA_dioscuri_shot,base_trail_heavySmoke,10,0.1,0.05,0.5,20,40,"[60,50,50]","[30,30,30]",0.5,512,1024,0,0,1,TRUE,FALSE,FALSE,90,60,0,180,90,0,true
+TADA_dioscuri_shot_fire,TADA_dioscuri_shot,base_trail_heavyBurn,10,0,0.05,0.2,10,30,"[255,100,50]","[150,50,10]",1,512,1024,0,0,1,TRUE,FALSE,TRUE,0,0,0,180,0,0,false

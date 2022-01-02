@@ -1,0 +1,29 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 0,
+    "goalVariant": true,
+    "hullId": "uw_palace_left",
+    "hullMods": [
+        "magazines",
+        "eccm",
+        "heavyarmor"
+    ],
+    "permaMods": [],
+    "variantId": "uw_palace_left_sta",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0002": "pdburst",
+                "WS0003": "pdburst"
+            }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "harpoonpod"}
+        }
+    ]
+}

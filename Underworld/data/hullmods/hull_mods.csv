@@ -1,0 +1,11 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Cabal Upgrades,uw_cabal_upgrades,3,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.UW_CabalUpgrades,"Armor and hull are improved by %s. Flux dissipation and capacity are boosted by %s. Engine performance is increased by %s. Shield performance is improved by %s.
+ Certain mounts are made more flexible.
+
+These improvements come at a %s cost to the ship's maintainability.","Slightly improves hull, armor, flux, engines, and shields at the cost of maintenance cost.",graphics/uw/hullmods/uw_cabalupgrades.png
+Infernal Minefield,uw_minefield,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.UW_Minefield,Mines attack enemy ships within a range of %s during battle.,Mines attack enemy ships during battle.,graphics/hullmods/stealth_mines.png
+Infernal Shield,uw_infernal_shield,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.UW_InfernalShield,Allows the ship to dissipate hard flux at %s of the normal rate while shields are on. Converts shields to omni-directional and %s the arc. %s the turn rate and extension speed of the ship's shields. Reduces the amount of damage taken by shields by %s.,"Allows dissipation of hard flux while shields are up, converts shield to 360-degree omni, increases shield turn rate and extension speed, and reduces damage taken by shields.",graphics/uw/hullmods/uw_infernal_shield.png
+Temporal Curse,uw_temporalcurse,,,,,,,,TRUE,,0,0,0,0,data.scripts.hullmods.UW_TemporalCurse,"Oh God, what have we done?","Oh God, what have we done?",graphics/hullmods/temporal_shell.png
+,,,,,,,,,,,,,,,,,,
+Remove Decks,uw_remove_decks,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.UW_RemoveDecks,Removes all flight decks.,,graphics/hullmods/converted_hangar.png
+Linked Hull,uw_linkedhull,,,,,,,,TRUE,TRUE,0,0,0,0,data.scripts.hullmods.UW_LinkedHull,Mirrors certain aspects between the parent and child hulls.,,graphics/hullmods/vast_bulk.png
