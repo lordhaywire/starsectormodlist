@@ -34,7 +34,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Lightshow](https://fractalsoftworks.com/forum/index.php?topic=11528.0)
 
-[Trailer Moments](https://fractalsoftworks.com/forum/index.php?topic=14047.0)
+<!-- [Trailer Moments](https://fractalsoftworks.com/forum/index.php?topic=14047.0) -->
 
 ## Sound
 
@@ -58,7 +58,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Transfer All Items](https://fractalsoftworks.com/forum/index.php?topic=17210.0)
 
-[Unknown Skies](https://fractalsoftworks.com/forum/index.php?topic=12041.0)
+<!-- [Unknown Skies](https://fractalsoftworks.com/forum/index.php?topic=12041.0) -->
 
 [Upgraded Rotary Weapons](https://fractalsoftworks.com/forum/index.php?topic=9446.0)
 
@@ -98,6 +98,8 @@ I have included all the mods I use in this repository.  You can just extract all
 ### Notes
 
 Just notes for mods people tell me about.  If I am streaming while someone in the community suggests something it may appear here.
+
+Unknown Skies and Trailer moments current seem to have an issue.  Will check later.
 
 
 
