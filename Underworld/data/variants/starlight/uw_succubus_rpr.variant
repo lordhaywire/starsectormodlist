@@ -1,6 +1,6 @@
 {
     "displayName": "Reaper",
-    "fluxCapacitors": 6,
+    "fluxCapacitors": 8,
     "fluxVents": 50,
     "hullId": "uw_succubus",
     "hullMods": [

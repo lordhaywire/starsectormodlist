@@ -1,6 +1,6 @@
 {
     "displayName": "Cursed",
-    "fluxCapacitors": 4,
+    "fluxCapacitors": 6,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "uw_boss_metastasis",

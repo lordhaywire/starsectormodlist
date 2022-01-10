@@ -4,7 +4,7 @@
     "hullName":"Starlight Fury",
     "descriptionId":"fury",
     "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
-    "tags":["uw_cabal_bp"],
+    "tags":["uw_cabal_bp", "no_dealer"],
     "tech":"Starlight Cabal",
     "fleetPoints":15,
     "ordnancePoints":126,

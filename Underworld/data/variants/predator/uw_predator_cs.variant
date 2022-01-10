@@ -1,6 +1,6 @@
 {
     "displayName": "Close Support",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 3,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_predator",
