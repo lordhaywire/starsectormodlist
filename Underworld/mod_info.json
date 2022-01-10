@@ -2,9 +2,9 @@
     "id": "underworld",
     "name": "Underworld",
     "author": "DarkRevenant",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "description": "Adds ships to flesh out the ubiquitous Pirate faction. Also introduces the Starlight Cabal faction.\nFeatures original content, as well as ships from the Infernal Machine and Pirates Plus.",
-    "gameVersion": "0.95.1a-RC5",
+    "gameVersion": "0.95.1a-RC6",
     "jars":["jars/Underworld.jar"],
     "modPlugin":"data.scripts.UnderworldModPlugin",
     "dependencies": [
@@ -16,7 +16,7 @@
         {
             "id": "shaderLib",
             "name": "GraphicsLib",
-            "version": "1.6.0"
+            "version": "1.6.1"
         },
     ],
 }

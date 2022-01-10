@@ -1,11 +1,12 @@
 {
     "displayName": "Rave",
     "fluxCapacitors": 0,
-    "fluxVents": 3,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_palace_front",
     "hullMods": ["magazines"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_front_rav",
     "weaponGroups": [
         {
@@ -40,6 +41,6 @@
     ],
     "wings": [
         "xyphos_wing",
-        "xyphos_wing"
+        "wasp_wing"
     ]
 }

@@ -10,6 +10,7 @@ import com.fs.starfarer.api.campaign.rules.MemKeys;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Commodities;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.Misc.Token;
 import data.scripts.util.UW_Util;
@@ -64,6 +65,9 @@ public class CabalCargoCalc extends BaseCommandPlugin {
                 }
                 totalCreditsValue += unadjustedValue;
             } else if (stack.isSpecialStack() && (stack.getSpecialItemSpecIfSpecial() != null)) {
+                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                    continue;
+                }
                 float value = stack.getSpecialItemSpecIfSpecial().getBasePrice() * stack.getSize();
                 totalCreditsValue += value;
             }
@@ -121,6 +125,9 @@ public class CabalCargoCalc extends BaseCommandPlugin {
                     biggestCreditsValue = value;
                 }
             } else if (stack.isSpecialStack() && (stack.getSpecialItemSpecIfSpecial() != null)) {
+                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                    continue;
+                }
                 float value = stack.getSpecialItemSpecIfSpecial().getBasePrice() * stack.getSize();
                 if (value > biggestCreditsValue) {
                     biggestCreditsValue = value;
@@ -216,6 +223,9 @@ public class CabalCargoCalc extends BaseCommandPlugin {
             } else if (stack.isSpecialStack()) {
                 float value = stack.getSize();
                 if (stack.getSpecialItemSpecIfSpecial() != null) {
+                    if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                        continue;
+                    }
                     value *= stack.getSpecialItemSpecIfSpecial().getBasePrice();
                 }
                 float stability = 0f;

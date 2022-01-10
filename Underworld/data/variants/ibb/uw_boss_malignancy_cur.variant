@@ -1,6 +1,6 @@
 {
     "displayName": "Cursed",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 4,
     "fluxVents": 50,
     "hullId": "uw_boss_malignancy",
     "hullMods": ["targetingunit"],

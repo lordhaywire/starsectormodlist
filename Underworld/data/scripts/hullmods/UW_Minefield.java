@@ -21,7 +21,8 @@ public class UW_Minefield extends BaseHullMod {
 
     public static String MINEFIELD_DATA_KEY = "uw_minefield_data_key";
 
-    private static final float MINELAYING_RANGE = 4000f;
+    private static final float MINELAYING_MIN_RANGE = 1000f;
+    private static final float MINELAYING_MAX_RANGE = 4000f;
 
     public static class IncomingMine {
 
@@ -98,8 +99,7 @@ public class UW_Minefield extends BaseHullMod {
                 continue;
             }
 
-            /* Slightly less likely */
-            if ((float) Math.random() > 0.2f) {
+            if ((float) Math.random() > 0.3f) {
                 continue;
             }
 
@@ -111,7 +111,7 @@ public class UW_Minefield extends BaseHullMod {
             }
 
             float distToMothership = MathUtils.getDistance(ship.getLocation(), mineLoc);
-            if (distToMothership > MINELAYING_RANGE) {
+            if ((distToMothership > MINELAYING_MAX_RANGE) || (distToMothership < MINELAYING_MIN_RANGE)) {
                 continue;
             }
 
@@ -123,8 +123,7 @@ public class UW_Minefield extends BaseHullMod {
             picker.add(inc);
         }
 
-        /* Saturates more easily */
-        int numToSpawn = Math.max(1, Math.min(new Random().nextInt(4) + 3, picker.getItems().size()));
+        int numToSpawn = Math.max(1, Math.min(new Random().nextInt(5) + 4, picker.getItems().size()));
 
         for (int i = 0; i < numToSpawn && !picker.isEmpty(); i++) {
             IncomingMine inc = picker.pickAndRemove();
@@ -184,7 +183,7 @@ public class UW_Minefield extends BaseHullMod {
     @Override
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) {
-            return "" + (int) Math.round(MINELAYING_RANGE);
+            return "" + (int) Math.round(MINELAYING_MAX_RANGE);
         }
         return null;
     }

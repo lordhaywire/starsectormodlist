@@ -39,6 +39,11 @@ public class CabalTransferShip extends BaseCommandPlugin {
             return false;
         }
 
+        if (match.getCaptain() != null) {
+            if (match.getCaptain().isAICore() && (fleet.getCargo() != null)) {
+                fleet.getCargo().addCommodity(match.getCaptain().getAICoreId(), 1);
+            }
+        }
         match.setCaptain(null);
         Global.getSector().getPlayerFleet().getFleetData().removeFleetMember(match);
         fleet.getFleetData().addFleetMember(match);

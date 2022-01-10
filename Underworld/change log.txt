@@ -1,3 +1,9 @@
+Version 1.7.1 (January 5, 2022):
+- Updated for Starsector 0.95.1a RC6
+- Slightly buffed TIM's minefield upgrade, also made it less likely to mine yourself
+- Cabal cannot take ships that can't be scuttled (such as Ziggurat) or those that have unremovable captains (such as integrated AI cores)
+- Cabal cannot take mission items (such as Janus Device)
+
 Version 1.7.0 (December 13, 2021):
 - Updated for Starsector 0.95.1a
 - Added Cabal skin for the Fury

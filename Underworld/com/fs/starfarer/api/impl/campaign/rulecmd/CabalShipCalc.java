@@ -6,6 +6,7 @@ import com.fs.starfarer.api.campaign.InteractionDialogAPI;
 import com.fs.starfarer.api.campaign.rules.MemKeys;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.util.Misc.Token;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.Map;
 import org.lazywizard.lazylib.MathUtils;
 
 import static com.fs.starfarer.api.impl.campaign.rulecmd.CabalPickExtortionMethod.extortionAmount;
+import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.UW_Util;
 
 /**
@@ -23,6 +25,9 @@ public class CabalShipCalc extends BaseCommandPlugin {
     public static float bestShipValue(CampaignFleetAPI fleet, float maxValue) {
         float bestShipValue = 0f;
         for (FleetMemberAPI member : fleet.getFleetData().getMembersListCopy()) {
+            if (!shipValidToTake(member)) {
+                continue;
+            }
             float value = member.getBaseValue();
 
             if (value > bestShipValue && value <= maxValue) {
@@ -35,6 +40,9 @@ public class CabalShipCalc extends BaseCommandPlugin {
     public static float totalShipsValue(CampaignFleetAPI fleet) {
         float totalShipValue = 0f;
         for (FleetMemberAPI member : fleet.getFleetData().getMembersListCopy()) {
+            if (!shipValidToTake(member)) {
+                continue;
+            }
             float value = member.getBaseValue();
             totalShipValue += value;
         }
@@ -47,9 +55,19 @@ public class CabalShipCalc extends BaseCommandPlugin {
             if (member.isFighterWing()) {
                 continue;
             }
+            if (!shipValidToTake(member)) {
+                continue;
+            }
             usableShips++;
         }
         return usableShips;
+    }
+
+    private static boolean shipValidToTake(FleetMemberAPI member) {
+        if (member.getVariant().hasTag(Tags.SHIP_CAN_NOT_SCUTTLE)) {
+            return false;
+        }
+        return !Misc.isUnremovable(member.getCaptain());
     }
 
     @Override
@@ -74,8 +92,14 @@ public class CabalShipCalc extends BaseCommandPlugin {
         float thresholdForMultipleChoice = Math.max((float) minimumToTake, totalCreditsValue / 2f);
         FleetMemberAPI bestShip = null;
         float bestShipValue = 0f;
+        int validShips = 0;
         List<FleetMemberAPI> multipleChoice = new ArrayList<>(Global.getSector().getPlayerFleet().getFleetData().getNumMembers());
         for (FleetMemberAPI member : Global.getSector().getPlayerFleet().getFleetData().getMembersListCopy()) {
+            if (!shipValidToTake(member)) {
+                continue;
+            }
+            validShips++;
+
             float value = member.getBaseValue();
             if (value > valueToTake) {
                 continue;
@@ -88,6 +112,9 @@ public class CabalShipCalc extends BaseCommandPlugin {
             if (value > thresholdForMultipleChoice) {
                 multipleChoice.add(member);
             }
+        }
+        if (validShips <= 1) {
+            return false;
         }
 
         if (!multipleChoice.isEmpty()) {

@@ -58,11 +58,11 @@ public class UW_LinkedHull extends BaseHullMod {
             }
         }
 
-        float amount = Global.getCombatEngine().getElapsedInLastFrame();
+        float objectiveAmount = Global.getCombatEngine().getElapsedInLastFrame();
         if (Global.getCombatEngine().isPaused()) {
-            amount = 0f;
+            objectiveAmount = 0f;
         }
-        amount *= Global.getCombatEngine().getTimeMult().getModifiedValue();
+        objectiveAmount *= Global.getCombatEngine().getTimeMult().getModifiedValue();
         StatMod stat = child.getMutableStats().getZeroFluxMinimumFluxLevel().getFlatStatMod("uw_linkedhull");
         float currLevel = 0f;
         if (stat != null) {
@@ -70,12 +70,12 @@ public class UW_LinkedHull extends BaseHullMod {
         }
         if ((parent.getFluxLevel() > parent.getMutableStats().getZeroFluxMinimumFluxLevel().getModifiedValue())
                 || ((parent.getMutableStats().getZeroFluxMinimumFluxLevel().getModifiedValue() == 0f) && (parent.getCurrFlux() > 0f))) {
-            currLevel -= amount * 2f;
+            currLevel -= objectiveAmount * 2f;
             if (currLevel < -2f) {
                 currLevel = -2f;
             }
         } else {
-            currLevel += amount * 2f;
+            currLevel += objectiveAmount * 2f;
             if (currLevel > 2f) {
                 currLevel = 2f;
             }

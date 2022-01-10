@@ -4,7 +4,7 @@
     "hullName":"Starlight Medusa",
     "descriptionId":"medusa",
     "descriptionPrefix":"Upgraded by the Starlight Cabal, this ship represents the materialistic glitz and glamour of the high life.",
-    "tags":["uw_cabal_bp", "uw_cabal_minibp"],
+    "tags":["uw_cabal_bp", "uw_cabal_minibp", "no_dealer"],
     "tech":"Starlight Cabal",
     "fleetPoints":12,
     "ordnancePoints":100,

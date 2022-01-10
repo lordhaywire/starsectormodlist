@@ -20,7 +20,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Required
 
-[GraphicsLib](https://fractalsoftworks.com/forum/index.php?topic=10982.0)
+[GraphicsLib 1.6.1](https://fractalsoftworks.com/forum/index.php?topic=10982.0)
 
 [LazyLib](https://fractalsoftworks.com/forum/index.php?topic=5444.0)
 
@@ -48,7 +48,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Combat Chatter](https://fractalsoftworks.com/forum/index.php?topic=10399.0)
 
-[Commissioned Crews](https://fractalsoftworks.com/forum/index.php?topic=16677.0)
+[Commissioned Crews 1.9.99999ggg](https://fractalsoftworks.com/forum/index.php?topic=16677.0)
 
 [Logistics Notifications](https://fractalsoftworks.com/forum/index.php?topic=17379.0)
 
@@ -80,7 +80,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Shadowyards](https://fractalsoftworks.com/forum/index.php?topic=3491.0)
 
-[Underworld](https://fractalsoftworks.com/forum/index.php?topic=11002.0)
+[Underworld 1.7.1](https://fractalsoftworks.com/forum/index.php?topic=11002.0)
 
 ## Factions Enhancements
 
