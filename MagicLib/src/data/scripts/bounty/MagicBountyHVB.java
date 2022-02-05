@@ -7,7 +7,6 @@ package data.scripts.bounty;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
-import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.campaign.FleetAssignment;
 import com.fs.starfarer.api.campaign.TextPanelAPI;
 import com.fs.starfarer.api.characters.FullName;
@@ -17,7 +16,6 @@ import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Skills;
-//import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import static data.scripts.bounty.MagicBountyData.BOUNTIES;
 import data.scripts.util.MagicSettings;
@@ -66,45 +64,13 @@ public class MagicBountyHVB {
         
         try {
             JSONArray uniqueBountyDataJSON = Global.getSettings().getMergedSpreadsheetDataForMod("bounty_id", VAYRA_UNIQUE_BOUNTIES_FILE, MAGICLIB_ID);
-
+            
+            int hvb =0;
+            
             for (int i = 0; i < uniqueBountyDataJSON.length(); ++i) {
                 JSONObject row = uniqueBountyDataJSON.getJSONObject(i);
                 if (row.has("bounty_id") && row.getString("bounty_id") != null && !row.getString("bounty_id").isEmpty()) {
-                    
-                    //HVB validation
-                    boolean skip=false;
-                    //check for factions
-                    if((!row.getString("faction").equals("hvb_hostile") && Global.getSector().getFaction(row.getString("faction"))==null) || Global.getSector().getFaction(row.getString("postedByFaction"))==null){
-                        if(verbose){
-                            LOG.info("Skipping HVB " + row.getString("bounty_id") + ", missing either "+row.getString("faction")+" or "+row.getString("postedByFaction"));
-                        }
-                        skip=true;
-                    } else   
-                        //check for flagship variant
-                    if(Global.getSettings().getVariant(row.getString("flagshipVariantId"))==null ){
-                        if(verbose){
-                            LOG.info("Skipping HVB " + row.getString("bounty_id") + ", missing "+row.getString("flagshipVariantId")+" flagship variant.");
-                        }
-                        skip=true;
-                    } else  
-                        //check for other ships variants
-                    if(row.optString("fleetVariantIds")!=null){
-                        List<String> fleetList = new ArrayList<>(Arrays.asList(row.optString("fleetVariantIds").split("\\s*(,\\s*)+")));
-                         if(!fleetList.isEmpty()){
-                            for(String id : fleetList){
-                                if(!id.isEmpty() && Global.getSettings().getVariant(id)==null){
-                                    if(verbose){
-                                        LOG.info("Skipping HVB " + row.getString("bounty_id") + ", missing "+row.getString("flagshipVariantId")+" fleet variant.");
-                                    }
-                                    skip=true;
-                                }
-                            }
-                        }
-                    }                      
-                    if(skip){
-                        continue;
-                    }
-                    
+                                        
                     String bountyId = row.getString("bounty_id");
                     
                     if(verbose){
@@ -212,15 +178,11 @@ public class MagicBountyHVB {
                         faction=MagicVariables.BOUNTY_FACTION;
                         LOG.info("Replacing hvb_hostile with ML_bounty");
                     }
-                    if(Global.getSector().getFaction(faction)==null){
-                        LOG.info("Faction "+ faction +" cannot be found, attempting to fix typo");
-                        FactionAPI f = StringMatcher.findBestFactionMatch(faction);
-                        if(f!=null){
-                            faction = f.getId();
-                            LOG.info("Faction replaced with"+ faction);
-                        } else {
-                            LOG.info("Faction unavailable, skipping bounty");
-                        }                        
+                    
+                    int level=row.getInt("neverSpawnBeforeLevel");
+                    if(level>15){
+                        //if min level is superior to 15, it is divided by 2 (old level cap was 30) to avoid outdated bounties from being un-triggerable
+                        level*=0.5f;
                     }
                     
                     MagicBountyData.bountyData this_bounty = new MagicBountyData.bountyData(
@@ -237,9 +199,9 @@ public class MagicBountyHVB {
                             //int trigger_market_minSize,
                             3,
                             //int trigger_player_minLevel,
-                            row.getInt("neverSpawnBeforeLevel"),
+                            level,
                             //int trigger_min_days_elapsed,
-                            row.getInt("neverSpawnBeforeCycle")*365,
+                            (row.getInt("neverSpawnBeforeCycle")-206)*365,
                             //int trigger_min_fleet_size,
                             row.getInt("neverSpawnBeforeFleetPoints"),
                             //float trigger_weight_mult,
@@ -247,9 +209,9 @@ public class MagicBountyHVB {
                             //Map <String,Boolean> trigger_memKeys_all,
                             memKeyAll,
                             //Map <String,Boolean> trigger_memKeys_any,
-                            null,
+                            new HashMap <String,Boolean>(),
                             //Map <String,Boolean> trigger_memKeys_none,
-                            null,
+                            new HashMap <String,Boolean>(),
                             //Map <String,Float> trigger_playerRelationship_atLeast,
                             relationshipAtLeast,
                             //Map <String,Float> trigger_playerRelationship_atMost,
@@ -359,6 +321,8 @@ public class MagicBountyHVB {
                             2,
                             //boolean fleet_transponder,
                             false,
+                            //boolean fleet_no_retreat,
+                            true,
                             //FleetAssignment fleet_behavior,
                             FleetAssignment.DEFEND_LOCATION,
                             //List<String> location_marketIDs,
@@ -385,6 +349,7 @@ public class MagicBountyHVB {
                         BOUNTIES.put(bountyId, this_bounty);
                         if(verbose){
                             LOG.info("SUCCESS");
+                            hvb++;
                         }
                     } else if(verbose){
                         LOG.info("SKIPPED");
@@ -393,8 +358,10 @@ public class MagicBountyHVB {
                     if(verbose){
                         LOG.info("hit empty line, unique bounty loading ended");
                     }
-                }
-                
+                }                
+                if(verbose){
+                    LOG.info("Successfully converted "+hvb+" HVBs");
+                }                
             }
         } catch (IOException | JSONException exception) {
             LOG.error("MagicLib - Failed to load HighValueBountyData! - ",exception);

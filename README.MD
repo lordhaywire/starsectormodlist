@@ -20,11 +20,11 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Required
 
-[GraphicsLib 1.6.1](https://fractalsoftworks.com/forum/index.php?topic=10982.0)
+[GraphicsLib v1.6.1](https://fractalsoftworks.com/forum/index.php?topic=10982.0)
 
 [LazyLib](https://fractalsoftworks.com/forum/index.php?topic=5444.0)
 
-[MagicLib](https://fractalsoftworks.com/forum/index.php?topic=13718.0)
+[MagicLib v0.42rc6](https://fractalsoftworks.com/forum/index.php?topic=13718.0)
 
 ## Expanded Universe
 
@@ -48,7 +48,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Combat Chatter](https://fractalsoftworks.com/forum/index.php?topic=10399.0)
 
-[Commissioned Crews 1.9.99999ggg](https://fractalsoftworks.com/forum/index.php?topic=16677.0)
+[Commissioned Crews v1.9.99999ggg](https://fractalsoftworks.com/forum/index.php?topic=16677.0)
 
 [Logistics Notifications](https://fractalsoftworks.com/forum/index.php?topic=17379.0)
 
