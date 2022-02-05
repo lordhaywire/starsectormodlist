@@ -1,0 +1,62 @@
+{
+  "hullName": "Bentu",
+  "hullId": "filgap_bentu",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/filgap/ships/filgap_bentu.png",
+  "style": "HIGH_TECH",
+  "height": 27,
+  "width": 28,
+  "center": [14, 13.5],
+  "collisionRadius": 29.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10.5, 2.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [10.5, -2.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-13, 8],
+      "length": 11.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-13, -8],
+      "length": 11.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    13.5, -6,
+    -6, -12.5,
+    -13, -9,
+    -9, -3,
+    -9, 3,
+    -13, 9,
+    -6, 12.5,
+    13.5, 6
+  ]
+}

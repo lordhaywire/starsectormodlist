@@ -16,8 +16,9 @@
 	"tier2StationOfficerLevel":2,
 	"tier3StationOfficerLevel":4,
 	
-	"adminHireTier2":20000,		#50000,
-	"adminSalaryTier2":10000,	#25000,
+	# no longer used, vanilla settings keeps only for reverse compat
+	#"adminHireTier2":20000,		#50000,
+	#"adminSalaryTier2":10000,	#25000,
 	
 	"basePirateRaidTimeoutMonths":[3, 7],	#[6, 18],
 	
@@ -28,7 +29,7 @@
 	
 	"nex_enableVersionChecker":true,
 	# if true, locations in Academy quest aren't marked as story-critical, so they can be decivilized and such
-	# (and the "go to Academy" quest doesn't appear)
+	# (and the "go to Academy" bar quest doesn't appear)
 	"nex_noStoryCriticalMarkets":false,
 	
 	"nex_keepSModsForRecoveredShips":true,	# note: only affects enemy ships, friendly ships already keep their mods
@@ -48,6 +49,8 @@
 	"nex_invasionBaseDefenseMult":1.4,	# legacy invasions only
 	"nex_useGroundBattleIndustryMap":true,	# new invasions only
 	"nex_gbUseFleetSupportEstimate":false,	# if true, will include estimated fleet support bonuses in units' displayed attack power
+	"nex_gbTurnDaysPlayer":1,	# when player is participating
+	"nex_gbTurnDaysNPC":1,	# when player is not participating
 	
 	"nex_disruptMissionRewardMult":25000,	# no longer used
 	
@@ -63,7 +66,7 @@
 	
 	"nex_fleetRequestOrganizeTimeMult":0.75,	# default 0.75
 	
-	"nex_vultureSpawnRateMult":1,	# unsure what this actually does tbh
+	"nex_vultureSpawnRateMult":1,	# setting it to zero should prevent vultures from spawning, but I have not personally confirmed this
 	
 	"nex_spacerDebtMult":1,
 	
@@ -95,13 +98,15 @@
 		
 	"nex_aiCoreAndPrisonerCooldownAfterInvasion":61,	# cannot turn in prisoners or AI cores for this long after a successful invasion of that faction's markets
 	
-	"nex_bonusAdminLevels":[0, 10, 25, 50, 80, 120, 200, 300],
+	"nex_bonusAdminLevels":[0, 10, 25, 40, 60, 80, 100, 125, 160, 200, 250, 300],
 	
 	"nex_insurance_newDHullMult":0.2,
 	
 	"nex_factionBounty_issuedByEnemies":true,
 	
 	"nex_milestones":true,	# enable milestones system?
+	
+	"nex_spawnHypershuntComplication":true,
 	
 	"nex_vicVirusBombChance":0.5,	# at 0.5, half of sat bomb expeditions by VIC will be converted to virus bomb expeditions
 	
@@ -169,8 +174,13 @@
 		"agentOrderSuccess":0.5,
 		"agentOrderDetection":0.75,
 		"agentOrderBoth":0,
+		
 		"nex_hireMerc":0.75,
 		"nex_gb_inspire":0,
+		
+		"nex_remFragments_threaten":1,
+		"nex_remBrawl_smoothtalk":0.75,
+		"nex_remBrawl_betray":0,	# since cost is zero SP
 	},
 	
 	"graphics":{
@@ -193,6 +203,7 @@
 			"icon_grounddefenses":"graphics/exerelin/icons/groundbattle/groundefenses.png",
 			"icon_heavybatteries":"graphics/exerelin/icons/groundbattle/heavybatteries.png",
 			"icon_inspire":"graphics/icons/skills/leadership.png",
+			"icon_ignisPluvia":"graphics/exerelin/icons/groundbattle/ignispluvia.png",
 			
 			"help_unitCard":"graphics/exerelin/help/gb_unitcard.png",
 		},
@@ -224,6 +235,7 @@
 			"trait_irredentist":"graphics/factions/crest_domain.png",
 			"trait_stalwart":"graphics/icons/skills/leadership2.png",
 			"trait_weak-willed":"graphics/exerelin/icons/intel/white_flag.png",
+			"trait_foreverwar":"graphics/exerelin/icons/intel/corinthian_helmet.png",
 			"trait_temperamental":"graphics/exerelin/icons/intel/double_exclamation.png",
 			"trait_dislikesAI":"graphics/exerelin/icons/intel/bannedcore1.png",
 			"trait_hatesAI":"graphics/exerelin/icons/intel/bannedcore2.png",

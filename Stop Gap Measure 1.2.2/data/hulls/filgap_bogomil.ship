@@ -1,0 +1,144 @@
+{
+  "hullName": "Bogomil",
+  "hullId": "filgap_bogomil",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/filgap/ships/filgap_bogomil.png",
+  "style": "LOW_TECH",
+  "height": 195,
+  "width": 104,
+  "center": [51.5, 79.5],
+  "collisionRadius": 146,
+  "shieldCenter": [17.5, -0.5],
+  "shieldRadius": 120,
+  "viewOffset": 0,
+  "builtInMods": [
+    "filgap_luddic_refit",
+    "ballistic_rangefinder"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 315,
+      "angle": 0,
+      "locations": [99, 20.5]
+    },
+    {
+      "id": "WS 002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [44, -20.5]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 0,
+      "locations": [57.5, 23.5]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [11.5, -19.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -90,
+      "locations": [-33.5, -29.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [-42.5, 36]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-79, 18.5],
+      "length": 75,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, -18.5],
+      "length": 75,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-73, -0.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-76, 27.5],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-77, -28.5],
+      "length": 50,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    108, 12,
+    74, 8,
+    33, 2,
+    39.5, -3.5,
+    39.5, -36.5,
+    31.5, -38,
+    13, -41,
+    -7.5, -41,
+    -19.5, -51,
+    -48, -51,
+    -60.5, -35.5,
+    -78, -30,
+    -81, 18,
+    -74, 31,
+    -61, 33,
+    -56, 45,
+    -36, 50,
+    -22.5, 44,
+    6.5, 44,
+    12.5, 39,
+    20, 43,
+    37, 45,
+    49, 45,
+    60.5, 43,
+    83, 42.5,
+    106, 31.5
+  ]
+}

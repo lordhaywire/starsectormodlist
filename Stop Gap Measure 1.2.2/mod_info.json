@@ -1,0 +1,11 @@
+{
+	"id":"StopGapMeasures3",
+	"name":"Stop Gap Measures",
+	"author":"MajorTheRed",
+	"version":"v 1.2.2",
+	"description":"Pack of ships to flesh in vanilla campaign",
+	"gameVersion":"0.95.1a-RC5",
+	"jars":["jars/Stop Gap Measure.jar"],
+	"modPlugin":"data.scripts.FilgapModPlugin",
+
+}

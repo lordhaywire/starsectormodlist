@@ -1,7 +1,7 @@
 {
     "playableFaction":true,
     "corvusCompatible":true,
-    "hostileToAll":2,
+    #"hostileToAll":2,	# no need, just use pirate logic? idk
     "pirateFaction":true,
     "showIntelEvenIfDead":true,
     
@@ -28,7 +28,7 @@
         "militarist":1,
         "ideological":1,
     },
-    "diplomacyTraits":["paranoid", "stalwart", "hates_ai", "anarchist"],
+    "diplomacyTraits":["paranoid", "foreverwar", "hates_ai", "anarchist"],
     "morality":"evil",
     
     "freeMarket":true,

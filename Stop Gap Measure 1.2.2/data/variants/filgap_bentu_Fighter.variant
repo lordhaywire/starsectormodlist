@@ -1,0 +1,23 @@
+{
+  "variantId": "filgap_bentu_Fighter",
+  "hullId": "filgap_bentu",
+  "displayName": "Assault fighter",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse_fighter",
+        "WS0002": "ioncannon_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

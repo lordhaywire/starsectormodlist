@@ -163,7 +163,7 @@ public final class ActiveBounty {
                 }
             }
         }
-
+        
         // Flag fleet as important so it has a target icon
         Misc.makeImportant(getFleet(), "magicbounty");
         // Add comm reply if needed
@@ -172,6 +172,7 @@ public final class ActiveBounty {
             getFleet().getMemoryWithoutUpdate().set("$MagicLib_Bounty_comm_reply", MagicBountyUtils.replaceStringVariables(this, spec.job_comm_reply));
         }
         
+        getFleet().getMemoryWithoutUpdate().set(MemFlags.FLEET_FIGHT_TO_THE_LAST, spec.fleet_no_retreat);
         getFleet().getMemoryWithoutUpdate().set("$MagicLib_Bounty_target_fleet", true);
         getFleet().getMemoryWithoutUpdate().set(spec.job_memKey, true);
         
@@ -256,6 +257,7 @@ public final class ActiveBounty {
             stage = Stage.ExpiredWithoutAccepting;
         } else if (result instanceof BountyResult.DismissedPermanently) {
             stage = Stage.Dismissed;
+            getFleet().despawn();
             //set the relevant outcome memkey
             if (MagicTxt.nullStringIfEmpty(spec.job_memKey) != null) {
                 Global.getSector().getMemoryWithoutUpdate().set(spec.job_memKey, true);
@@ -283,7 +285,10 @@ public final class ActiveBounty {
         if (intel != null) {
             intel.sendUpdateIfPlayerHasIntel(new Object(), false);
 
-            despawn();
+            if(spec.existing_target_memkey==null || spec.existing_target_memkey.isEmpty() || stage != Stage.ExpiredAfterAccepting){  
+                //Do not despawn bounties placed on existing fleets if it simply expired
+                despawn();
+            }
         }
     }
 
