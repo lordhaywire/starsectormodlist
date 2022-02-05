@@ -1,5 +1,5 @@
 {
-    "directoryDialogKey": 44,   # integer, default 44 (Z)
+    "directoryDialogKey": 45,   # integer, default 45 (X)
     
     "ceasefireNotificationPopup": true,
     # 0 = no filter, 1 = popup only events affecting player/commissioner faction, 2 = filter out all events
@@ -58,7 +58,7 @@
     "invasionPointEconomyMult": 0.5, # multiplier for invasion point gains from economic assets
     "creditLossOnColonyLossMult": 0.4,
     "allowNPCSatBomb": true,	# NPC factions can launch saturation bombardment missions in place of some invasions, raids and vengeance fleets
-    "allowRepeatBlueprintsFromRaid": false,	# if false, each blueprint can only appear in raid loot once
+    "groundBattleDamageMult":1,	# modifier to damage dealt during ground battle resolution; lower this to make battles last longer
     
     "allianceGracePeriod": 120,  # no alliances can form for this long at start
     "allianceFormationInterval": 30,    # try to form a new alliance every N days on average
@@ -67,6 +67,7 @@
     
     "baseTariffMult": 0.6,  # 1.0 = base tariff (usually 30%)
     "freeMarketTariffMult": 0.5,    # 0.5 = halved tariffs
+	"doubleSubmarketWeapons": false,	# if true, double the amount of weapons generated on most submarkets (old behavior)
     
     "prismInHyperspace": false,	# if false, Prism will get its own star system (but not if added midgame)
     "prismMaxWeapons": 27,
@@ -74,7 +75,7 @@
     "prismNumWings": 6,
     "prismNumBossShips": 3,    # int; boss ships being the IBB super ships seen in Ship/Weapon Pack
     "prismRenewBossShips": false,   # if false, once a boss ship is bought or captured it won't appear in the market again
-    "prismUseIBBProgressForBossShips": true,    # must progress through the IBB (famous bounty) sidequest in SWP to unlock new boss ships for sale
+    "prismUseIBBProgressForBossShips": true,    # must progress through the IBB (famous bounty) sidequest in SWP to unlock new boss ships for sale; also applies to HVBs
     "prismTariff": 2.0,  # float, 1.0 = 100% tariff; modified by relationship with independents
     "prismBlueprintPriceMult":1.5,
     
@@ -118,6 +119,7 @@
     "corvusModeLandmarks": false,	# adds some decorative landmarks in non-random Sector (will always be present in random Sector)
     "useEnhancedStartRelations": true,	# nicer starting relations between factions in non-random sector; e.g. League and Diktat are now only welcoming instead of cooperative
     "useEnhancedCoreWorlds": true,	# increases defenses and/or economic capacity of some core worlds in non-random sector
+    "useEnhancedAdmins": true,	# gives named NPC admins some special skills
     
     "useCustomBattleCreationPlugin": true,	# affects things like map size and number of objectives
     

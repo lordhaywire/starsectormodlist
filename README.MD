@@ -28,7 +28,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Expanded Universe
 
-[Nexerelin](https://fractalsoftworks.com/forum/index.php?topic=9175.0)
+[Nexerelin v0.10.4b](https://fractalsoftworks.com/forum/index.php?topic=9175.0)
 
 ## Graphics
 
@@ -60,39 +60,39 @@ I have included all the mods I use in this repository.  You can just extract all
 
 <!-- [Unknown Skies](https://fractalsoftworks.com/forum/index.php?topic=12041.0) -->
 
-[Upgraded Rotary Weapons](https://fractalsoftworks.com/forum/index.php?topic=9446.0)
+[Upgraded Rotary Weapons v1.50](https://fractalsoftworks.com/forum/index.php?topic=9446.0)
 
 ## Factions
 
 [Dassault-Mikoyan Engineering](https://fractalsoftworks.com/forum/index.php?topic=11322.0)
 
-[Diable Avionics](https://fractalsoftworks.com/forum/index.php?topic=10046.0) - Currently not enabled until I start a new game
+[Diable Avionics v2.64rc1](https://fractalsoftworks.com/forum/index.php?topic=10046.0)
 
 [Kadur Remnants](https://fractalsoftworks.com/forum/index.php?topic=6649.0)
 
 [Legacy of Arkgneisis](https://fractalsoftworks.com/forum/index.php?topic=13667.0)
 
-[prv Starworks](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
+[prv Starworks v22](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
 
-[Roider Union](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
+[Roider Union v1.3.10](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
 
-[Scy Nation](https://fractalsoftworks.com/forum/index.php?topic=8010.0)
+[Scy Nation v1.65rc1](https://fractalsoftworks.com/forum/index.php?topic=8010.0)
 
-[Shadowyards](https://fractalsoftworks.com/forum/index.php?topic=3491.0)
+[Shadowyards v0.95rc4](https://fractalsoftworks.com/forum/index.php?topic=3491.0)
 
-[Underworld 1.7.1](https://fractalsoftworks.com/forum/index.php?topic=11002.0)
+[Underworld v1.7.1](https://fractalsoftworks.com/forum/index.php?topic=11002.0)
 
 ## Factions Enhancements
 
-[Luddic Enhancements](https://fractalsoftworks.com/forum/index.php?topic=15084.0)
+[Luddic Enhancements v1.2.5j](https://fractalsoftworks.com/forum/index.php?topic=15084.0)
 
 ## Ship Packs
 
-[Stop Gap Measures](https://fractalsoftworks.com/forum/index.php?topic=13083.0)
+[Stop Gap Measures v1.2.2](https://fractalsoftworks.com/forum/index.php?topic=13083.0)
 
-[Torchships and Deadly Armaments](https://fractalsoftworks.com/forum/index.php?topic=17856.0)
+[Torchships and Deadly Armaments v0.16rc2](https://fractalsoftworks.com/forum/index.php?topic=17856.0)
 
-[Vayra's Ship Pack](https://fractalsoftworks.com/forum/index.php?topic=16059.0)
+[Vayra's Ship Pack v1.2.3](https://fractalsoftworks.com/forum/index.php?topic=16059.0)
 
 
 ### Notes

@@ -1,0 +1,78 @@
+{
+  "hullName": "Maringuin",
+  "hullId": "filgap_maringuin",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/filgap/ships/filgap_maringuin.png",
+  "style": "LOW_TECH",
+  "height": 36,
+  "width": 26,
+  "center": [13, 18],
+  "collisionRadius": 29,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 26,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [9, 7.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [9, -7.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17, 8.5],
+      "length": 14,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17, -8.5],
+      "length": 14,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, 5],
+      "length": 14,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, -5],
+      "length": 14,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    17, -3,
+    7, -12.5,
+    -3, -9,
+    -17, -10.5,
+    -17, 10.5,
+    -3, 9,
+    7, 12.5,
+    17, 3
+  ]
+}

@@ -11,6 +11,8 @@
 		"colonies":"colonies",
 		"conquest":"conquest",
 		"continue":"continue",
+		"cost":"cost",
+		"CR":"CR",
 		"credits":"credits",
 		"designType":"design type",
 		"diplomacy":"diplomacy",
@@ -18,6 +20,7 @@
 		"disrupted":"disrupted",
 		"disruption":"disruption",
 		"done":"done",
+		"elite":"elite",
 		"expedition":"expedition",
 		"theExpedition":"the expedition",
 		"faction":"faction",
@@ -43,6 +46,7 @@
 		"stats":"stats",
 		"status":"status",
 		"target":"target",
+		"transfer":"transfer",
 		"unknown":"unknown",
 		"use":"use",
 		"vote":"vote",
@@ -59,6 +63,7 @@
 		"abort":"abort",
 		"pass":"pass",
 		"fail":"fail",
+		"lost":"lost",
 
 		"friendly":"friendly",
 		"neutral":"neutral",
@@ -125,6 +130,7 @@
 		"are":"are",
 		"has":"has",
 		"have":"have",
+		"youHave":"you have %s",
 
 		"improvedBy":"improved by $amount",
 		"reducedBy":"reduced by $amount",
@@ -186,6 +192,7 @@
 		"intelFormedPoint":"Founded by: $faction1, $faction2",	# not used
 		"intelJoinedPoint":"$Faction joined",
 		"intelLeftPoint":"$Faction left",
+		"intelMergedPoint":"Merged with $alliance",
 		"intelDissolvedPoint":"Dissolved",
 		
 		"intelStrengthPoint":"$num members; size $size",
@@ -223,6 +230,7 @@
 		"allianceDissolved":"Alliance $OldAlliance has been dissolved",
 		"invitedToAlliance":"$TheFaction has joined $NewAlliance",
 		"formedAlliance":"Formed $NewAlliance with $theFaction",
+		"mergedAlliance":"Merged $OldAlliance into $NewAlliance",
 		
 		"voteIntroLineWar":"Alliance vote: War between $Faction1 and $Faction2",
 		"voteIntroLinePeace":"Alliance vote: Peace between $Faction1 and $Faction2",
@@ -230,7 +238,9 @@
 		"voteNoAllysLine2":"Size rating: $factionSize",
 		"voteAllianceHeader":"Alliance $allianceName: size rating $allianceSize",
 		"voteQuestionLine":"How does $myFaction vote?",
-		"voteConfirm":"Confirm vote?"
+		"voteConfirm":"Confirm vote?",
+		
+		"memberPermanentSuffix":"(permanent)"
 	},
 	"nex_agents":{
 		"agentLevel":"operative level",
@@ -958,6 +968,7 @@
 		"stageActionRetreated":"The defenses of the $location have caused $theForceType to retreat without a fight. $TheAction is now over.",
 	},
 	"exerelin_fleetAssignments":{
+		"assembling":"assembling at $target",
 		"preparingFor":"preparing for $missionType at $target",
 		"preparingForShort":"preparing for $missionType",
 		"returningTo":"returning to $target",
@@ -977,9 +988,12 @@
 		"bombarding":"bombarding $target",
 		"movingInToBombard":"moving in to bombard $target",
 		"colonizing":"colonizing $target",
+		"counteringGroundBattle":"countering ground battle at $target",
 		"movingInToColonize":"moving in to colonize $target",
 		"onColonyExpedition":"on colony expedition",
 		"defending":"defending $target",
+		"defendingVs":"defending vs. $target",
+		"defendingVsPlayer":"defending vs. player in $target",
 		"movingToDefend":"moving to defend $target",
 		"deliveringRelief":"delivering relief package to $target",
 		"unloadingRelief":"unloading relief package at $target",
@@ -994,15 +1008,20 @@
 		"invading":"invading $target",
 		"movingInToInvade":"moving in to invade $target",
 		"movingToScavenge":"moving to scavenge $target",
+		"raiding":"raiding",
 		"mining":"mining $target",
 		"miningUnload":"unloading cargo and disbanding",
-		"resupplying":"resupplying at $target",
 		"reconstituting":"reconstituting fleet at $target",
+		"resupplying":"resupplying at $target",
 		"scavenging":"scavenging $target",
 		"suppressingRebellion":"suppressing rebellion at $target",
 		"wandering":"wandering $target",
 		"operatingIn":"operating in $target",
 		"buildingBase":"constructing base",
+		"following":"following $target",
+		"holding":"holding",
+		
+		"idle":"idle",
 
 		"missionStrike":"strike mission",
 		"missionInvasion":"invasion",
@@ -1212,6 +1231,7 @@
 		"btnGovernorship":"Purchase governorship",
 		"btnGovernorshipConfirmPrompt":"You can purchase governorship of $market for %s. You have %s credits.",
 		"btnLoot":"Loot",
+		"btnLootTooltip":"Sends special items on this industry to your fleet.",
 		"btnLootConfirmPrompt":"This will send the special items on this industry to your fleet. Proceed?",
 		"btnJoinAttacker":"Join attacker",
 		"btnJoinDefender":"Join defender",
@@ -1224,7 +1244,7 @@
 		"unitPanel_movementPoints_tooltip2":"Deploying a unit also costs supplies, but moving it after it lands does not.",
 		"unitPanel_movementPoints_tooltip3":"Current contributions to max points:",
 		
-		"commandPanel_header1":"Special abilities",		
+		"commandPanel_header1":"Special abilities",
 		
 		"industryPanel_header_industry":"Industry",
 		"industryPanel_header_heldBy":"Held by",
@@ -1422,6 +1442,7 @@
 		"helpPara2-1":"The unit card displays each unit's stats and its current location.",
 		"helpPara2-2":"Click on the Action button on the unit card to give it an order.",
 		"helpPara2-3":"The enemy commander will also move their units around in response to your attack. You can check their troop movements in the log.",
+		"helpPara2-4":"Each side has limited movement points per turn (increases with market size and ground support hullmods).",
 		
 		"helpPara3Title":"Unit types",
 		"helpPara3-1":"%s: General combat type.",
@@ -1437,10 +1458,13 @@
 		"helpPara5-1":"Several special abilities are available to turn the tide of battle in your favor. Enemies can also use them under certain circumstances.",
 		"helpPara5-2":"Each ability has certain requirements for use, an ability-specific cooldown, and a global cooldown that prevents use of all abilities for a number of turns.",
 		
-		"ability_cooldown":"Cooldown: %s turns",
-		"ability_cooldownGlobal":"Global cooldown: %s turns",
+		"ability_confirm":"Confirm?",
+		
+		"ability_cooldown":"Cooldown: %s turn(s)",
+		"ability_cooldownGlobal":"Global cooldown: %s turn(s)",
 		"ability_outOfRange":"Out of range",
 		"ability_alreadyUsed":"Already used this battle",
+		"ability_cannotSupport":"Fleet support blocked",
 		
 		"ability_inspire_blurb":"An inspiring battle speech by the leader at the right time can turn the tide of battle.",
 		"ability_inspire_tooltip":"Raises morale of all units by %s, and removes one turn of the reorganizing state. Can be used once per battle.",
@@ -1468,6 +1492,19 @@
 		"ability_bombard_insufficientFuel":"Insufficient fuel: %s",
 		"ability_bombard_enemyPresence":"Excessive enemy presence: %s vs. %s",
 		
+		"ability_ignisPluvia_invalidConfig":"Invalid configuration",
+		"ability_ignisPluvia_noMembers":"No Olympi available",
+		"ability_ignisPluvia_prevented":"Attack prevented",
+		"ability_ignisPluvia_resultDisrupt":"Disrupted industries: %s",
+		"ability_ignisPluvia_tooltip1":"Deploys an Olympus in MIRV configuration to unleash FIRE RAIN upon the target.",
+		"ability_ignisPluvia_tooltip2":"Distributes %s bombardments with %s damage each on all industries with an enemy presence. Damage is reduced by $market's drop attrition of %s, and increased by %s if combat is ongoing on the target industry.",
+		"ability_ignisPluvia_tooltip3":"The Titan delivery system and the sheer volume of fire ensure that most ground defenses cannot prevent the attack, and cannot even defend their immediate area from more than one bombardment.",
+		"ability_ignisPluvia_tooltip4":"The selected Olympus will consume %s CR to conduct this attack.",
+		
+		"noLootReasonNotHeld":"Industry not held",
+		"noLootReasonOwnMarket":"Can't loot from own market",
+		"noLootReasonStrength":"Player strength must be half of total strength or more (when invasion is not player-initiated)",
+		
 		"responseStr":"responding to invasion",
 		"responseTravelStr":"moving in response to invasion",
 	},
@@ -1494,12 +1531,13 @@
 		"museumShip":"Museum Ship ($name)",
 	},
 
-	"exerelin_markets":{		
+	"exerelin_markets":{
 		"marketDirectoryEntry":"$market, $location (size $size)",
 		"marketDirectoryEntryNoLocation":"$market (size $size)",
 		"marketDirectoryEntryForTrade":"$market, $location ($faction, $distance LY)",
 		"marketDirectoryEntryDistOnly":"$market ($distance LY)",
 		"marketDirectoryEntryForPicker":"$market ($faction, size $size, $distance LY)",
+		"marketDirectoryEntryForPickerNoMarket":"$target ($distance LY)",
 		"marketDirectoryEntryForPickerNoDist":"$market ($faction, size $size)",
 		"marketDirectoryHidden":"$num hidden markets",
 				
@@ -1649,9 +1687,10 @@
 		
 		"infoCustomPanel":"Mouse over option titles for more information",
 		
-		"btnRandomRelations0":"none",
-		"btnRandomRelations1":"non-pirate",
-		"btnRandomRelations2":"all",
+		"btnStartingRelations0":"default",
+		"btnStartingRelations1":"flatten",
+		"btnStartingRelations2":"random",
+		"btnStartingRelationsPirate":"Apply to\npirates",
 		
 		"btnFactionWeights0":"none",
 		"btnFactionWeights1":"default",
@@ -1661,9 +1700,13 @@
 		"btnFactionRespawn1":"starting",
 		"btnFactionRespawn2":"all",
 		
+		"btnHomeworldPickMode0":"any",
+		"btnHomeworldPickMode1":"core",
+		"btnHomeworldPickMode2":"non-core",
+		
 		# migrated from rules.csv
-		"optionRandomRelations":"Random starting faction relations",
-		"tooltipRandomRelations":"Will also disable faction relationship clamping, and randomize diplomacy traits",
+		"optionStartingRelations":"Starting faction relations",
+		"tooltipStartingRelations":"Non-default settings will also disable faction relationship clamping. If random, will randomize diplomacy traits. 'Flatten' sets all relations to zero.",
 		"optionFactionRespawn":"Faction respawn",
 		"tooltipFactionRespawn":"- %s: Do not use faction respawn mechanic.\n- %s: Factions present at the start of the game can respawn.\n- %s: Also allow entry of new factions not present at the start of the game.",
 		"optionFactionWeights":"Use faction weights",
@@ -1680,6 +1723,8 @@
 		"tooltipRandomStartLocation":"Start at a random colony of your faction, instead of the faction's predefined starting location.",
 		"optionStartingDMods":"Starting D-mods",
 		"tooltipStartingDMods":"May not apply to all custom starts.",
+		"optionHomeworldPick":"Own faction start location",
+		"tooltipHomeworldPick":"Start in a core system, non-core system, or either when using the own faction start.\nIn random sector, 'Any' mode is the same as 'Core'.",
 		"optionRandomAntioch":"Antioch in random sector",
 		"optionSkipStory":"Skip story",
 		"tooltipSkipStory":"Marks the Academy missions as completed, and grant gate travel, Transverse Jump and Neutrino Detector at start.",
@@ -2024,8 +2069,13 @@
 		"allowRespawn":"Allow faction respawn",
 		"allowRespawnNonOriginal":"Allow respawn for factions not currently present",
 		"hardMode":"Starfarer Mode",
-		"randomizeRelationships":"Randomize faction relationships",
-		"randomizeRelationshipsPirate":"Randomize relationships for pirate factions"
+		"startRelationsMode":"Reset relations",
+		"startRelationsMode_default":"no",
+		"startRelationsMode_random":"randomize",
+		"startRelationsMode_flatten":"flatten",
+		"startRelationsModePirate":"Apply relationship change to pirate factions",
+		
+		
 	},
 	"nex_reliefFleet":{		
 		"intelTitle":"Relief Fleet: $market",
@@ -2090,7 +2140,11 @@
 		"headerPopulation":"Population",
 		"headerHeavyIndustry":"Heavy industry",
 		"headerDiplomacy":"Diplomacy",
-		"headerRequired":"Req."
+		"headerRequired":"Req.",
+		
+		"tooltipReqPop":"The winning faction or alliance must control at least %s of the Sector's total market size, and have %s the runner-up's total size.",
+		"tooltipReqHI":"The winning faction or alliance must control at least %s of the total heavy industries in the Sector.",
+		"tooltipReqFriend":"The winning faction must be friendly or better with every other competing faction in the Sector.",
 	},
 	
 	"nex_specialForces":{
@@ -2099,25 +2153,78 @@
 		"intelTitle":"Special Task Group",
 		"intelTag":"Special forces",
 		
+		"intelBulletArrived":"Arrived at %s",
+		"intelBulletDestroyed":"Fleet destroyed",
+		
 		"intelDesc1":"The $faction special task group $fleetName is present in the Sector.",
 		"intelDesc1NoName":"A $faction special task group is present in the Sector.",
 		"intelDescCommander":"The fleet is known to be commanded by $rank $name, in the $flagship.",
 		"intelDescCommanderNoFlagship":"The fleet is known to be commanded by $rank $name.",
 		"intelDescStr":"The fleet's estimated strength is %s fleet points (damage %s).",
 		"intelDescFleetStatus":"The fleet is physically alive and is currently in the %s.",
+		"intelDescLostShips":"Lost ships",
 		"intelDescAction":"Current action: $action",
 		"intelDescActionPriority":"Priority: %s",
 		"intelDescRouteSegmentInfo":"Route segment: from %s to %s (%s of %s days elapsed)",
+		"intelDescETA":"ETA to system: %s day(s)",
 		"intelDescOver":"The $faction special task group $fleetName is no longer operational.",
 		"intelDescDebug":"This intel is displayed only for debugging. You should not be seeing it under normal conditions.",
 		
+		"intelButtonCommand":"Give orders",
+		"intelButtonDisband":"Disband",
 		"intelButtonDebug":"Debug",
+		"intelButtonCheckIndependent":"Independent mode",
 		
 		"bountyBulletLocation":"Target is in the %s",
 		"bountyBulletDestination":"Target is headed to %s in the %s",
 		"bountyBulletUnknown":"Target location details are unknown (this should not happen, please report)",
 		"bountyParaLocation":"The target is located in the %s.",
 		"bountyParaDestination":"The target is headed to %s in the %s.",
+		
+		"dialogButtonAssign":"Assign",
+		"dialogTooltipMaxPSF":"You can only have one special task group at a time.",
+		"dialogTooltipNoShipsToRevive":"No ships to revive!",
+		"dialogTooltipNoMarketForRevive":"Fleet must be near a non-inhospitable market.",
+		"dialogMsgTaskAssigned":"task assigned",
+		"dialogMsgRevivingShips":"reviving ships",
+		"dialogButtonViewRaid":"View",
+		"dialogButtonJoinRaid":"Join",
+		
+		"reportNode_commander":"Commander's fee",
+		"reportNode_officer":"Officer payroll",
+		"reportNode_crew":"Crew payroll",
+		"reportNode_supplies":"Supply cost",
+		"reportNode_fuel":"Fuel cost",
+	},
+	
+	"nex_splitFleet":{
+		"dialog_headerMain":"Fleet configuration",
+		"dialog_headerShips":"Ships",
+		"dialog_headerOfficers":"Officers",
+		"dialog_headerShipPick":"Select ships",
+		"dialog_headerOfficerPick":"Select officers",
+		"dialog_headerOfficerAssign":"Assign officers",
+		"dialog_headerTrainCommander":"Train commander skills",
+		"dialog_maxSkillPoints":"Points spent: ",
+		"dialog_commander":"commander",
+		"dialog_level":"level %s",
+		
+		"dialog_playerFleet":"player fleet",
+		"dialog_otherFleet":"other fleet",
+	},
+	
+	"nex_skills":{
+		"tacticalDrillsEx":"Tactical Drills EX",
+		"tacticalDrillsExDesc1":"+%s effectiveness of ground defenses",
+		"tacticalDrillsExDesc2":"-%s morale damage taken during invasions",
+		
+		"auxiliarySupportEx":"Auxiliary Support EX",
+		"auxiliarySupportExDesc1":"+%s fleet size",
+		"auxiliarySupportExDesc2":"+%s accessibility",
+		"auxiliarySupportExDesc3":"+%s effectiveness of ground defenses",
+		
+		"bulkTransportEx":"Bulk Transport EX",
+		"bulkTransportExDesc1":"+%s accessibility",
 	},
 	
 	"exerelin_superweapon":{
@@ -2247,6 +2354,7 @@
 		"prismSystem_name":"Sitnalta",	# 'Atlantis backwards' because I have no imagination
 		"prismSystem_jumpName":"Twilight Gate",
 		"prismSystem_stationName":"Prism Freeport",
+		"prismSystem_gateName":"Lostgate",
 	},
 	
 	"nex_remnantQuest":{
@@ -2259,6 +2367,39 @@
 		"m1_stage2Desc":"Return the Beta Cores you've recovered to %s at %s. Alternatively, you might choose to bring them to either the %s or the %s.",
 		"m1_stage1NextStep":"Recover the Beta Cores from %s",
 		"m1_stage2NextStep":"Return the Beta Cores to %s",
+		
+		"fragments_name":"Fragments",
+		"fragments_boilerplateDesc":"An associate of $name has found some unusual things that require a deft resolution.",
+		"fragments_startDesc":"Go to the marked location in the %s.",
+		"fragments_pursueDesc":"Whatever the object in %s was, it seems to have moved away. Head towards the marked location and you should find it.",
+		"fragments_fightDesc":"Defeat the interloping fleet so you can salvage the mothership at your leisure.",
+		"fragments_salvageDesc":"With the enemy fleet defeated, return to the mothership to salvage it.",
+		"fragments_returnDesc":"Return to $name on %s to report the situation.",
+		
+		"fragments_startNextStep":"Go to marked location in %s",
+		"fragments_fightNextStep":"Defeat enemy fleet",
+		"fragments_salvageNextStep":"Salvage the mothership",
+		"fragments_returnNextStep":"Return to %s and talk to $name",
+		
+		"fragments_fleetName":"Mysterious Allies",
+		
+		"brawl_name":"Showdown",
+		"brawl_boilerplateDesc":"A large Hegemony and allied operation is planned against the Remnants. $name has asked you to prevent it from succeeding.",
+		"brawl_startDesc":"Go to %s and track the late Hegemony fleet to what is likely the allied forces' staging area.",
+		"brawl_foundStagingAreaDesc":"You've found the staging area for the Hegemony forces. Its location suggests that their target is in the %s; you should proceed there quickly.\n\nOr if you're so inclined, you could speak with the one of the fleet commanders before they move out...",
+		"brawl_scoutDesc":"Reconnoiter the %s system for the Hegemony; travel to the marked location on the map to transmit the data.",
+		"brawl_battleDesc":"The Hegemony forces will try to destroy the Remnant station in the %s. Protect it at all costs.",
+		"brawl_battleDescUnknown":"The Hegemony forces will try to destroy a nearby Remnant station, but you do not know which one. Protect it as best as you can.",
+		"brawl_battleBetrayDesc":"You have betrayed the Remnants and transmitted reconnaissance data to the Hegemony. Their fleets will now attempt to destroy the Remnant station in the %s. Hopefully they'll get the job done; if not, finish it yourself.",
+		
+		"brawl_startNextStep":"Go to %s and follow Hegemony fleet",
+		"brawl_foundStagingAreaUpdate":"AI analysis indicates most probable target is %s",
+		"brawl_foundStagingAreaNextStep":"Prepare to defend %s",
+		"brawl_foundStagingAreaNextStep2":"Or negotiate with Hegemony commander before attack commences",
+		"brawl_scoutNextStep":"Go to specified location in %s",
+		"brawl_battleNextStep":"Defend Remnant station in %s",
+		"brawl_battleNextStepUnknown":"Defend Remnant station in unknown location",
+		"brawl_battleBetrayNextStep":"Destroy Remnant station in %s",
 		
 		"deadDropItem1":"a crate of exotic optronic components",
 		"deadDropItem2":"a data chip containing Hegemony deployment schedules",
@@ -2286,6 +2427,9 @@
 		"alreadyKnown":"known",
 
 		"deliverCommodities":"Deliver $num $commodity",
+		
+		"campaignEntityPicker_destination":"Destination: ",
+		"campaignEntityPicker_selectDestination":"Select destination",
 
 		"counterInsurgencyRep":"At your current relationship with $theFaction, payment for deliveries is $mult of current per-unit price.",
 		"counterInsurgencyRepFixed":"Payment for deliveries is $mult of current per-unit price.",

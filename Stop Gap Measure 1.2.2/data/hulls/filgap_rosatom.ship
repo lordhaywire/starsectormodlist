@@ -1,0 +1,141 @@
+{
+  "hullName": "Rosatom",
+  "hullId": "filgap_rosatom",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/filgap/ships/filgap_rosatom.png",
+  "style": "HIGH_TECH",
+  "height": 93,
+  "width": 102,
+  "center": [50, 50],
+  "collisionRadius": 90,
+  "shieldCenter": [0.5, -0],
+  "shieldRadius": 79,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 115,
+      "locations": [-8, 31]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -115,
+      "locations": [-8, -31]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [26, 14]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [35.5, -19]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -45,
+      "locations": [20.5, -43]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 115,
+      "locations": [-12.5, 51]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -115,
+      "locations": [-12.5, -51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-50, 20],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-50, -20],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49.5, 8.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49.5, -8.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-51, 14],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-51, -14],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    24, -11.5,
+    33, -32,
+    23.5, -52,
+    -19, -49,
+    -50.5, -22,
+    -50.5, 22,
+    -19, 49,
+    21.5, 49,
+    41.5, 31,
+    41, -2
+  ]
+}

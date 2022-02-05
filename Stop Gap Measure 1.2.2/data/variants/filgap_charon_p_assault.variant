@@ -1,0 +1,67 @@
+{
+  "displayName": "Assault",
+  "fluxCapacitors": 10,
+  "fluxVents": 22,
+  "goalVariant": true,
+  "hullId": "filgap_charon_p",
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_charon_p_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0016": "hammer",
+        "WS0017": "hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "harpoonpod",
+        "WS0004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "arbalest",
+        "WS0002": "arbalest",
+        "WS0011": "lightmortar",
+        "WS0012": "lightmortar",
+        "WS0013": "lightmortar",
+        "WS0014": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "heavyac",
+        "WS0006": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightmg",
+        "WS0008": "lightmg",
+        "WS0009": "lightmg",
+        "WS0010": "lightmg"
+      }
+    }
+  ],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing",
+    "asp_wing",
+    "asp_wing"
+  ]
+}

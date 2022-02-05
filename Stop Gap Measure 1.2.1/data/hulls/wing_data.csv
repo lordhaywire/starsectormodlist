@@ -1,5 +1,0 @@
-id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
-asp_wing,filgap_asp_Bomber,"bomber3,bomber,low,lowtech_bp",0,,4,6,V,4000,2000,600,3,BOMBER,Bomber,10,5000,,,,,,,,,,
-ethon_wing,filgap_ethon_Interceptor,"interceptor2, interceptor, mid, midline_bp",1,,4,4,CLAW,4000,200,600,3,INTERCEPTOR,Interceptor,8,6000,,,,,,,,,,,,,8
-
-
