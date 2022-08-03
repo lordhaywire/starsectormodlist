@@ -10,7 +10,11 @@
 	"knownWeapons":{
 		"tags":["prv_bp","prv_adv_bp"],
 	},
-	
+	"hullFrequency":{
+		"tags":{
+			"prv_midline_bp":0.33,
+		},
+	},	
 	"custom":{
 		"syndicateName": "Umbra Shipping",
 	}

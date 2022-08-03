@@ -1,0 +1,39 @@
+Bounty trigger requirements:
+
+Göran Fridén
+- 25 FP player fleet size.
+- Market owner: Rust Belt, Pirates, or an ally of either.
+
+Sanna, The Green Devil
+- 50 FP player fleet size.
+- Market: Ryak High-Energy Labs.
+-- If the HEL is not present in the sector, Market owner: prv.
+
+Fristaten Lasse
+- 50 FP player fleet size.
+- Market owner: Independent, Pirates or an ally of either.
+
+Flight Into the Unknown
+- 75 FP player fleet size.
+- Market owner: prv or prv ally.
+
+Lost Property
+- 75 FP player fleet size.
+- Market owner: prv.
+
+Fool's Gold
+- 100 FP player fleet size.
+- Market owner: Pirates, Independent, Rust Belt, Persean League or the Sindrian Diktat.
+
+Ivar Balke
+- 100 FP player fleet size.
+- Market owner: Hegemony.
+
+Precariously Precocious
+- 100 FP player fleet size.
+- prv relation at least +50.
+- Market owner: prv.
+
+Andra Perseiska Kompaniet
+- 150 FP player fleet size.
+- Market owner: Hegemony.

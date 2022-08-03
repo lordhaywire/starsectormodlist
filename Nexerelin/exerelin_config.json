@@ -14,6 +14,9 @@
     #if false, missions are added directly. if true, missions are delivered when in relay range.
     "queuedNexMissions":false,
     
+    "enableVictory":true,	# set to false to disable victory conditions (does not affect 'story-based' victories by any mod)
+    
+    # Random sector settings
     "minimumPlanets": 3,
     #"minimumStations": 3,
     "forcePiratesInSystemChance": 0.3,  # this proportion of systems will always be seeded with at least one pirate market
@@ -41,7 +44,7 @@
     
     # if false, replaces NPC invasions (including revenge counter-invasion mechanic) with raids
     "enableInvasions": true,
-    "legacyInvasions": false,	# old invasion system before v0.10.3 revamp (if I haven't released v0.10.3 yet, this is a beta feature)
+    "legacyInvasions": false,	# old invasion system before v0.10.3 revamp
     "allowInvadeStoryCritical":false,    # block NPC invasions from targeting story-critical markets
     "allowPirateInvasions": false,
     "retakePirateMarkets": true,	# allow factions to invade markets that pirates currently hold but didn't at start of game, even if allowPirateInvasions is false
@@ -51,13 +54,14 @@
     "invasionFleetSizeMult": 1,
     "responseFleetSizeMult": 1,
     "invasionGracePeriod": 90,  # factions won't accumulate invasion points for this many days at start
-    "pointsRequiredForInvasionFleet": 27000,    # bigger = longer delay between invasion fleets
+    "pointsRequiredForInvasionFleet": 27000,    # name is a bit misleading, but anyway bigger number = longer delay between invasion fleets
     # invasion points are added daily
     "baseInvasionPointsPerFaction": 30,
     "invasionPointsPerPlayerLevel": 1.5,
     "invasionPointEconomyMult": 0.5, # multiplier for invasion point gains from economic assets
     "creditLossOnColonyLossMult": 0.4,
     "allowNPCSatBomb": true,	# NPC factions can launch saturation bombardment missions in place of some invasions, raids and vengeance fleets
+    "permaHateFromPlayerSatBomb": 0.24f,	# sat bombing permanently lowers max relationship with relevant factions by this much (doubled for actual victim)
     "groundBattleDamageMult":1,	# modifier to damage dealt during ground battle resolution; lower this to make battles last longer
     
     "allianceGracePeriod": 120,  # no alliances can form for this long at start
@@ -67,13 +71,13 @@
     
     "baseTariffMult": 0.6,  # 1.0 = base tariff (usually 30%)
     "freeMarketTariffMult": 0.5,    # 0.5 = halved tariffs
-	"doubleSubmarketWeapons": false,	# if true, double the amount of weapons generated on most submarkets (old behavior)
+    "doubleSubmarketWeapons": false,	# if true, double the amount of weapons generated on most submarkets (old behavior)
     
-    "prismInHyperspace": false,	# if false, Prism will get its own star system (but not if added midgame)
+    #"prismInHyperspace": false,	# if false, Prism will get its own star system (but not if added midgame). Likely to crash, not recommended
     "prismMaxWeapons": 27,
     "prismNumShips": 14,
     "prismNumWings": 6,
-    "prismNumBossShips": 3,    # int; boss ships being the IBB super ships seen in Ship/Weapon Pack
+    "prismNumBossShips": 0,    # int; boss ships being the IBB super ships seen in Ship/Weapon Pack
     "prismRenewBossShips": false,   # if false, once a boss ship is bought or captured it won't appear in the market again
     "prismUseIBBProgressForBossShips": true,    # must progress through the IBB (famous bounty) sidequest in SWP to unlock new boss ships for sale; also applies to HVBs
     "prismTariff": 2.0,  # float, 1.0 = 100% tariff; modified by relationship with independents
@@ -98,14 +102,16 @@
     "allyVictories":true,	# player gets victory screen if they are Friendly or Cooperative with actual winner
     "countPiratesForVictory": false,
     "useRelationshipBounds": true,  # if false, disregard min/max faction relationships in faction config
+    "useConfigRelationshipsInNonRandomSector": false,	# use relations defined in the faction config. Specific factions can set this to true for themselves as well
     "leaveEliminatedFaction": true, # if our faction is wiped out, leave it
-	
-	"allowRandomDiplomacyTraits":true,	# randomize diplomacy traits when faction relations are randomized
+    
+    "allowRandomDiplomacyTraits":true,	# randomize diplomacy traits when faction relations are randomized
     
     "enableRevengeFleets": 2,  # 0 = disabled, 1 = only on hard mode, 2 = always (point generation halved on not-hard)
     "revengePointsPerEnemyFP": 0.05,
     "revengePointsForMarketCaptureMult": 2,
     "vengeanceFleetSizeMult": 0.8,
+    "useNewVengeanceEncounters": false,
     
     "specialForcesPointMult": 1,	# rate at which factions spawn special task groups
     "specialForcesSizeMult": 1,

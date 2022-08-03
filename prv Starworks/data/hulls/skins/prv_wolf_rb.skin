@@ -1,0 +1,50 @@
+{
+  "baseHullId": "wolf",
+  "baseValueMult": 0.8,
+  "ordnancePoints":50,
+  "suppliesToRecover":4,
+  "suppliesPerMonth":4,
+  "builtInMods": [
+    "blast_doors"
+  ],
+  "tags":["prv_rare_wolf_rb"],
+  "tech":"Rust Belt",
+  "descriptionId": "prv_wolf_rb",
+  "descriptionPrefix": "This appears to be a Wolf constructed using Rust Belt techniques.",
+  "addHints":[HIDE_IN_CODEX],
+  "hullName": "Wolf (RB)",
+  "systemId":"ammofeed",
+  "weaponSlotChanges":{
+	"WS 001":{
+	  "type": "BALLISTIC",
+	  "arc": 270,
+	},
+	"WS 002":{
+	  "type": "HYBRID",
+	},
+	"WS 003":{
+	  "type": "HYBRID",
+	},
+	"WS 004":{
+	  "type": "BALLISTIC",
+	  "size": "SMALL",
+	  "mount": "TURRET",
+	  "arc": 270,
+	},
+	"WS 005":{
+	  "type": 	"COMPOSITE",
+	},
+	"WS 006":{
+	  "type": 	"COMPOSITE",
+	},
+  },
+  "restoreToBaseHull": false,
+  "style": "PRV_LOW",
+  "skinHullId": "prv_wolf_rb",
+  "spriteName": "graphics/prv/ships/rare/prv_wolf_rb.png",
+	"engineSlotChanges":{
+		"0":{"style":"PRV_LOW"},
+		"1":{"style":"PRV_LOW"},
+		"2":{"style":"PRV_LOW"},
+	},    
+}

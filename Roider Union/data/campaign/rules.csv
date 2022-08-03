@@ -164,45 +164,71 @@ roider_swRetrofitStraight,DialogOptionSelected,"$option == roider_swRetrofitStra
 roider_aprDefaultStart,BeginFleetEncounter,"$roider_aprIsRetrofitting score:100
 $player.transponderOn
 RepIsAtWorst $faction.id NEUTRAL
-!$ignorePlayerCommRequests","Roider_APRHail",,,
+!$ignorePlayerCommRequests
+!$cfai_makeHostile
+!$cfai_makeAggressive
+!$cfai_makeAggressiveLastsOneBattle","Roider_APRHail",,,
 roider_aprIndieStart,BeginFleetEncounter,"$roider_aprIsRetrofitting score:100
 $roider_aprIgnoreTransponder score:100
 !$roider_aprIgnoreRep
 RepIsAtWorst $faction.id NEUTRAL
-!$ignorePlayerCommRequests","Roider_APRHail",,,
+!$ignorePlayerCommRequests
+!$cfai_makeHostile
+!$cfai_makeAggressive
+!$cfai_makeAggressiveLastsOneBattle","Roider_APRHail",,,
 roider_aprPirateStart,BeginFleetEncounter,"$roider_aprIsRetrofitting score:100
 $roider_aprIgnoreTransponder score:100
 $roider_aprIgnoreRep
-!$ignorePlayerCommRequests","Roider_APRHail",,,
+!$cfai_makeHostile
+!$cfai_makeAggressive
+!$cfai_makeAggressiveLastsOneBattle","unset $ignorePlayerCommRequests
+Roider_APRHail",,,
 roider_aprDefaultGreeting,OpenCommLink,"$entity.roider_aprIsRetrofitting score:100
 $player.transponderOn
 RepIsAtWorst $faction.id NEUTRAL
-!$ignorePlayerCommRequests","Roider_APRAccess catalog
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle","Roider_APRAccess catalog
 AddText ""\""We can convert your civilian ships into pristine warships right here, right now. Interested?\"" $heOrShe asks.""
 FireAll PopulateOptions",,,
 roider_aprIndieGreeting,OpenCommLink,"$entity.roider_aprIsRetrofitting score:100
 $entity.roider_aprIgnoreTransponder score:100
 !$entity.roider_aprIgnoreRep
-RepIsAtWorst $faction.id NEUTRAL","Roider_APRAccess catalog
+RepIsAtWorst $faction.id NEUTRAL
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle","Roider_APRAccess catalog
 AddText ""\""We can convert your civilian ships into pristine warships, if you'd like. Are you interested?\"" $heOrShe asks.""
 FireAll PopulateOptions",,,
 roider_aprPirateGreeting,OpenCommLink,"$entity.roider_aprIsRetrofitting score:100
 $entity.roider_aprIgnoreTransponder score:100
-$entity.roider_aprIgnoreRep","Roider_APRAccess catalog
+$entity.roider_aprIgnoreRep
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle","Roider_APRAccess catalog
 AddText ""\""We can convert junk civvy stuff into real warships for you. Wanna make a deal?\"" $heOrShe asks.""
 FireAll PopulateOptions",,,
 roider_aprAddDefaultRetrofitOption,PopulateOptions,"$entity.roider_aprIsRetrofitting score:100
 !$entity.roider_aprIgnoreTransponder
 $player.transponderOn
 RepIsAtWorst $faction.id NEUTRAL
-!$ignorePlayerCommRequests",,,"roider_aprRetrofit:Talk retrofits",
+!$ignorePlayerCommRequests
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle",,,"roider_aprRetrofit:Talk retrofits",
 roider_aprAddIndieRetrofitOption,PopulateOptions,"$entity.roider_aprIsRetrofitting score:100
 $entity.roider_aprIgnoreTransponder score:100
 !$entity.roider_aprIgnoreRep
-RepIsAtWorst $faction.id NEUTRAL",,,"roider_aprRetrofit:Talk retrofits",
+RepIsAtWorst $faction.id NEUTRAL
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle",,,"roider_aprRetrofit:Talk retrofits",
 roider_aprAddPirateRetrofitOption,PopulateOptions,"$entity.roider_aprIsRetrofitting score:100
 $entity.roider_aprIgnoreTransponder score:100
-$entity.roider_aprIgnoreRep",,,"roider_aprRetrofit:Talk retrofits",
+$entity.roider_aprIgnoreRep
+!$entity.cfai_makeHostile
+!$entity.cfai_makeAggressive
+!$entity.cfai_makeAggressiveLastsOneBattle",,,"roider_aprRetrofit:Talk retrofits",
 roider_aprRetrofitOptionSelected,DialogOptionSelected,"$option == roider_aprRetrofit","Roider_APRAccess retrofit",,,
 roider_aprReturn,DialogOptionSelected,"$option == roider_argosFinishedConverting","ShowPersonVisual
 AddText ""Return"" buttonText
@@ -274,22 +300,214 @@ $sourceMarket.smugglingScanTimeout = true 30",,,
 "#END Fringe HQ free transponder warning",,,,,,
 ,,,,,,
 # Tech Expeditions,,,,,,
-roider_expeditionScavengeDebris,OpenInteractionDialog,"$tag:salvageable
-$customType == debris_field_shared score:100
+roider_expeditionDefaultDetails,ShowSalvageEntityDetails,"$roider_expeditionLoot score:100","ShowDefaultVisual
+PrintDescription 1","There are roider claim markers on the $shortName and it is emitting neutrinos at a high rate.",,
+roider_expeditionWreckDetails,ShowSalvageEntityDetails,"$customType == wreck
 $roider_expeditionLoot score:100","ShowDefaultVisual
-Roider_ExpeditionLoot descDebris
-FireBest Roider_SalvageCheckHostile","Your $shipOrFleet assumes a stable orbit relative to the debris field.",,
+PrintWreckDescription","There are roider claim markers on the $shortName and it is emitting neutrinos at a high rate.",,
+roider_expeditionLootInitialMajor,OpenInteractionDialog,"$tag:roider_expLootMajor score:100","Roider_ExpeditionLoot printDesc
+FireBest Roider_SalvageCheckHostile","Your $shipOrFleet approaches $aOrAn $nameInText. It is emitting neutrinos at a high rate.",,
 roider_expeditionHostileNearby,Roider_SalvageCheckHostile,"HostileFleetNearbyAndAware","SetShortcut defaultLeave ESCAPE","A nearby hostile fleet is tracking your movements, making exploration impossible.","100:defaultLeave:Leave",
 roider_expeditionNoHostileNearby,Roider_SalvageCheckHostile,"!HostileFleetNearbyAndAware","$salvageLeaveText = Leave 0
 FireBest Roider_PopulateExpeditionOptions",,,
-roider_expeditionAssessMinor,Roider_PopulateExpeditionOptions,"$customType == debris_field_shared
-$roider_expeditionLoot score:100",,,"0:roider_expeditionExplore:Scan the debris field
+roider_expeditionAssessMajor,Roider_PopulateExpeditionOptions,"$tag:roider_expLootMajor score:100","SetStoryOption roider_expeditionDisableMinefield ui_char_spent_story_point ""Robbed a Roider loot stash""",,"0:roider_expeditionDisableMinefield:Disable the minefield
 100:defaultLeave:Leave",
-roider_expeditionAssessMajor,Roider_PopulateExpeditionOptions,"$customType == debris_field_shared
-$roider_expeditionLootMajor score:101","SetStoryOption roider_expeditionDisableMinefield ui_char_spent_story_point ""Found a major loot stash""
-",,"0:roider_expeditionDisableMinefield:Disable the minefield
-100:defaultLeave:Leave",
-roider_expeditionDisableMinefield,DialogOptionSelected,"$option == roider_expeditionDisableMinefield","Roider_ExpeditionLoot minefieldDisable","The mines are a Hegemony export type with known vulnerabilities. Your sensors officer tries different variations of several exotic sensor sweeps before getting lucky - weak IFF signatures appear across the display and turn green as the minefield stands down for disposal. Your $shipOrFleet is clear to scan the debris field.","0:roider_expeditionExplore:Proceed to scan",
+roider_expeditionDisableMinefield,DialogOptionSelected,"$option == roider_expeditionDisableMinefield","Roider_ExpeditionLoot minefieldDisable","The mines are a Hegemony export type with known vulnerabilities. Your sensors officer tries different variations of several exotic sensor sweeps before getting lucky - weak IFF signatures appear across the display and turn green as the minefield stands down for disposal. Your $shipOrFleet is clear to scan the volume.","0:roider_expeditionExplore:Proceed to scan",
 roider_expeditionScanResult,DialogOptionSelected,"$option == roider_expeditionExplore","Roider_ExpeditionLoot scanDebris",,"100:defaultLeave:Continue",
 "#END Tech Expeditions",,,,,,
+,,,,,,
+# Asteroid Impact Compensation (unused),,,,,,"Roider Union offers insurance for asteroid impacts."
+,,,,,,
+# Intro & Exit,,,,,,
+roider_insuranceBlurbBar,roider_insurance_blurbBar,,,"You spot a Roider Union insurance agent.",,
+roider_insuranceOfferOptionBar,roider_insurance_optionBar,,,,"roider_insurance_startBar:Talk to the INSURANCE agent",
+roider_insuranceOfferTextBar,DialogOptionSelected,"$option == roider_insurance_startBar
+!$player.roider_insuranceSPDenied
+$roider_insuranceSum >= 0","$missionId = roider_insurance
+FireBest Roider_InsuranceDisplayCredits
+FireBest Roider_InsuranceDisplayCredits2
+AddText ""You would be paid $roider_insuranceSumString.""
+SetTextHighlights $roider_insuranceSumString
+FireAll Roider_Insurance_PopulateOptions","""Here's what I can offer you.""",,
+roider_insuranceOfferOweTextBar,DialogOptionSelected,"$option == roider_insurance_startBar
+!$player.roider_insuranceSPDenied
+$roider_insuranceSum < 0","$missionId = roider_insurance
+FireBest Roider_InsuranceDisplayCredits
+FireBest Roider_InsuranceDisplayCredits2
+AddText ""You would have to pay $roider_insuranceSumString. It would look good on your record, at least.""
+SetTextHighlights $roider_insuranceSumString
+FireAll Roider_Insurance_PopulateOptions","""Here's what I can offer you.""",,
+roider_insuranceOfferSPDeclinedTextBar,DialogOptionSelected,"$option == roider_insurance_startBar
+$player.roider_insuranceSPDenied
+$roider_insuranceSum >= 0","$missionId = roider_insurance
+FireBest Roider_InsuranceDisplayCredits
+FireBest Roider_InsuranceDisplayCredits2
+AddText ""You would be paid $roider_insuranceSumString.""
+SetTextHighlights $roider_insuranceSumString
+FireAll Roider_Insurance_PopulateOptions","""Here's the best I can offer you.""",,
+roider_insuranceOfferSPDeclinedOweTextBar,DialogOptionSelected,"$option == roider_insurance_startBar
+$player.roider_insuranceSPDenied
+$roider_insuranceSum < 0","$missionId = roider_insurance
+FireBest Roider_InsuranceDisplayCredits
+FireBest Roider_InsuranceDisplayCredits2
+AddText ""You would have to pay $roider_insuranceSumString. It would look good on your record, at least.""
+SetTextHighlights $roider_insuranceSumString
+FireAll Roider_Insurance_PopulateOptions","""Here's the best I can offer you.""",,
+roider_insuranceExit,DialogOptionSelected,"$option == roider_insurance_declineBarNoContinue","BarCMD returnFromEvent false",,,
+roider_insuranceEnd,DialogOptionSelected,"$option == roider_insurance_acceptNoText","unset $player.roider_insuranceSPDenied
+Call $roider_insurance_ref clearData
+BarCMD accept $missionId
+FireBest ContactPostAccept
+BarCMD returnFromEvent false",,,
+roider_insuranceDisplayCredits,Roider_InsuranceDisplayCredits,,"AddTextSmall ""- $roider_insuranceClaims as compensation for asteroid impacts and other hazards."" good
+SetTextHighlights $roider_insuranceClaims
+AddTextSmall ""- $roider_insuranceMIDAS for minimizing environmental damage with MIDAS."" good
+SetTextHighlights $roider_insuranceMIDAS
+AddTextSmall ""- $roider_insuranceFees for ship registration and $roider_insurancePeriod $roider_insuranceMonthOrS fees."" bad
+SetTextHighlights $roider_insuranceFees $roider_insurancePeriod
+AddTextSmall ""  - $roider_insuranceFrigateFee/$roider_insuranceDestroyerFee/$roider_insuranceCruiserFee/$roider_insuranceCapitalFee monthly registration fee by ship class.""
+SetTextHighlightColors bad hColor hColor hColor hColor bad
+SetTextHighlights ""  -"" $roider_insuranceFrigateFee $roider_insuranceDestroyerFee $roider_insuranceCruiserFee $roider_insuranceCapitalFee ""monthly registration fee by ship class.""",,,
+roider_insuranceDisplayDamages,Roider_InsuranceDisplayCredits2,,"AddTextSmall ""- $roider_insuranceDamages for damages to resource zones."" bad
+SetTextHighlights $roider_insuranceDamages",,,
+"#END Intro & Exit",,,,,,
+,,,,,,
+# Payment Branch,,,,,,
+roider_insuranceLumpOffer,Roider_Insurance_PopulateOptions,"$roider_insuranceSum >= 0",,,"1:roider_insurance_acceptLumpSum:Accept $roider_insuranceSumString credits",
+roider_insuranceLumpOfferOwe,Roider_Insurance_PopulateOptions,"$roider_insuranceSum < 0","DoCanAffordCheck $roider_insuranceSum roider_insurance_acceptLumpSum",,"1:roider_insurance_acceptLumpSum:Pay $roider_insuranceSumString credits",
+roider_insuranceLumpOfferSelected,DialogOptionSelected,"$option == roider_insurance_acceptLumpSum
+!$roider_insuranceLoop","$roider_insurancePaid = true
+$roider_insuranceTerminate = true","""This is the price.""","roider_insurance_declineShowEnroll:Continue",
+roider_insuranceLumpOfferSelectedEnd,DialogOptionSelected,"$option == roider_insurance_acceptLumpSum
+$roider_insuranceLoop","$roider_insurancePaid = true","""This is the price.""","roider_insurance_acceptNoText:Continue",
+roider_insuranceTake,DialogOptionSelected,"$option == roider_insurance_take
+!$roider_insuranceTerminate","$roider_insurancePaid = true
+$roider_insuranceTerminate = true","You pay the price","roider_insurance_declineShowEnroll:Continue",
+roider_insuranceTakeEnd,DialogOptionSelected,"$option == roider_insurance_take
+$roider_insuranceTerminate","$roider_insurancePaid = true","You pay the price","roider_insurance_acceptNoText:Continue",
+roider_insuranceDeclineExit,Roider_Insurance_PopulateOptions,"!$roider_insuranceTerminate
+$roider_insuranceLoop","$roider_insuranceLoop = false",,"3:roider_insurance_declineBarNoContinue:Decline",
+roider_insuranceDeclineEnd,Roider_Insurance_PopulateOptions,"$roider_insuranceTerminate",,,"3:roider_insurance_acceptNoText:Decline",
+roider_insuranceDeclineShowEnroll,Roider_Insurance_PopulateOptions,"!$roider_insuranceTerminate
+!$roider_insuranceLoop",,,"3:roider_insurance_declineShowEnroll:Decline",
+roider_insuranceDeclineShowEnrollSelected,DialogOptionSelected,"$option == roider_insurance_declineShowEnroll","FireBest roider_insurance_OfferEnroll",,,
+,,,,,,
+# SP Branch,,,,,,
+roider_insuranceSPReduceCosts,Roider_Insurance_PopulateOptions,"!$player.roider_insuranceSPDenied","SetStoryColor roider_insurance_submitDoctoredData",,"2:roider_insurance_submitDoctoredData:Pay damages!?",
+roider_insuranceSPCheckNegative,Roider_Insurance_PopulateOptions,"!$player.roider_insuranceSPDenied
+$roider_insuranceSPSum <= 0","DoCanAffordCheck $roider_insuranceSPSum roider_insurance_takeSP",,,
+roider_insuranceSPReduceCostsSelected,DialogOptionSelected,"$option == roider_insurance_submitDoctoredData","FireBest Roider_InsuranceDisplayCredits
+AddText ""You would be paid $roider_insuranceSPSumString.""
+SetTextHighlights $roider_insuranceSPSumString
+FireAll roider_insuranceSPOptions","""This is as good as you can get.""",,
+roider_insuranceSPDenied,DialogOptionSelected,"$option == roider_insurance_submitDoctoredData
+$player.roider_insuranceSPDenied","$player.roider_insuranceSPDenied = true
+SetStoryOption roider_insurance_SPDenied 1 roider_insurance ui_char_spent_story_point ""Was denied relief from asteroid damage fee""","""Yes.""","roider_insurance_SPDenied:Continue",
+roider_insuranceSPDeniedCont,DialogOptionSelected,"$option == roider_insurance_SPDenied","FireAll Roider_Insurance_PopulateOptions",,,
+roider_insuranceSPLumpOfferOption,roider_insuranceSPOptions,,"SetStoryOption roider_insurance_takeSP 1 roider_insurance ui_char_spent_story_point ""Talked your way out of paying asteroid damages""",,"roider_insurance_takeSP:Accept $roider_insuranceSPSumString credits",
+roider_insuranceSPLumpOfferDecline,roider_insuranceSPOptions,"!$roider_insuranceLoop",,,"roider_insurance_declineShowEnroll:Decline",
+roider_insuranceSPLumpOfferExit,roider_insuranceSPOptions,"$roider_insuranceLoop
+!$roider_insuranceTerminate",,,"roider_insurance_declineBarNoContinue:Decline",
+roider_insuranceSPLumpOfferEnd,roider_insuranceSPOptions,"$roider_insuranceTerminate",,,"roider_insurance_acceptNoText:Decline",
+roider_insuranceTakeSP,DialogOptionSelected,"$option == roider_insurance_takeSP
+!$roider_insuranceTerminate","$roider_insurancePaid = true
+$roider_insuranceTerminate = true","You pay the price","roider_insurance_declineShowEnroll:Continue",
+roider_insuranceTakeSPEnd,DialogOptionSelected,"$option == roider_insurance_takeSP
+$roider_insuranceTerminate","$roider_insurancePaid = true","You pay the price","roider_insurance_acceptNoText:Continue",
+"#END SP Branch",,,,,,
+"#END Payment Branch",,,,,,
+,,,,,,
+# Enroll Branch,,,,,,
+roider_insuranceEnrollmentOffer,roider_insurance_OfferEnroll,"!$roider_insuranceTerminate",,,"roider_insurance_offerEnroll:Enroll
+roider_insurance_declineBarNoContinue:Decline",
+roider_insuranceEnrollmentOfferEnd,roider_insurance_OfferEnroll,"$roider_insuranceTerminate",,,"roider_insurance_offerEnroll:Enroll
+roider_insurance_acceptNoText:Decline",
+roider_insuranceEnrollmentAcceptedReturn,DialogOptionSelected,"$option == roider_insurance_offerEnroll
+!$roider_insuranceTerminate","$roider_insuranceTerminate = true
+$roider_insuranceLoop = true
+Call $roider_insurance_ref enroll
+FireBest Roider_InsuranceDisplayCredits
+FireBest Roider_InsuranceDisplayCredits2
+AddText ""You would be paid $roider_insuranceSumString.""
+SetTextHighlights $roider_insuranceSumString
+FireAll Roider_Insurance_PopulateOptions","Alright, you are enrolled. Do you want to get a payout for the last XXX months?",,
+roider_insuranceEnrollmentAcceptedEnd,DialogOptionSelected,"$option == roider_insurance_offerEnroll
+$roider_insuranceTerminate","Call $roider_insurance_ref enroll","Alright, you're enrolled.","roider_insurance_acceptNoText:Continue",
+"#END Enroll Branch",,,,,,
+"#END Asteroid Impact Compensation (unused)",,,,,,
+,,,,,,
+# Nexerelin Intro,,,,,,
+roider_nex_NGCPickStartingShips,ExerelinNGCStep3,"$playerFaction == roider
+!$roider_ChangeMind","AddText ""The Roider Union was forged by strong, self-reliant captains like you. Bring derelicts to Union HQs for retrofit and we'll provide you the warships you need.""
+SetTextHighlightColors ""242,208,141,255"" ""242,208,141,255"" good
+SetTextHighlights ""Roider Union"" ""Union HQs"" retrofit
+
+AddText ""While most roiders are still nomadic miners, a few have settled on fringe outposts across the Sector. Only some of them are Unionists, but they'll welcome you nonetheless.""
+SetTextHighlightColors ""150,150,150,255"" good ""242,208,141,255""
+SetTextHighlights ""nomadic miners"" ""fringe outposts"" Unionists
+$roider_ChangeMind = true 0",,,
+roider_nex_NGCPickStartingShips2,ExerelinNGCStep3,"$playerFaction == roider
+Roider_HasModId timid_commissioned_hull_mods","AddText ""Commissioned Crews Bonus: Faster combat repairs and reduced crew losses.""
+SetTextHighlights Commissioned Crews Bonus",,,
+"#END Nexerelin Intro",,,,,,
+,,,,,,
+# Mad Rockpiper,,,,,,"Adds free built-in MIDAS hullmod to a ship"
+roider_mRPBlurbFirst,roider_madRockpiper_blurbBar,,,"An unkempt $manOrWoman wearing a finely polished medal rants and raves to $roider_mrp_himselfOrHerself at a corner table.",,
+roider_mRPBlurb,roider_madRockpiper_blurbBar,"$player.roider_metMadRockpiper",,"You see the mad Rockpiper besotted and rambling to $roider_mrp_himselfOrHerself at a corner table.",,
+roider_mRPBarOptionFirst,roider_madRockpiper_optionBar,,,,"roider_madRockpiper_startBar:Approach the $roider_mrp_madmanOrWoman with the medal",
+roider_mRPBarOption,roider_madRockpiper_optionBar,"$player.roider_metMadRockpiper",,,"roider_madRockpiper_startBar:Talk to the Mad Rockpiper",
+roider_mRPStart,DialogOptionSelected,"$option == roider_madRockpiper_startBar","$missionId = roider_madRockpiper
+FireBest Roider_MRPMet
+$player.roider_metMadRockpiper = true
+FireBest Roider_MRPRant
+FireAll Roider_MRPOptions",,,
+roider_mRPMetBeforeText,Roider_MRPMet,"$player.roider_metMadRockpiper",,"The mad Rockpiper doesn't seem to recognize you.",,
+roider_mRPNotMetText,Roider_MRPMet,,,"By $hisOrHer medal, you can tell the $roider_mrp_madmanOrWoman is, or was, a distinguished member of the Rockpiper Engineering Society.",,
+roider_mRPPickShip,Roider_MRPOptions,"!$roider_mrp_requiresSP
+!$roider_mrp_isInhosp","Call $roider_madRockpiper_ref canPick",,"roider_mRPShowPicker:Show $roider_mrp_himOrHer to one of your ships",
+roider_mRPDecline,Roider_MRPOptions,"!$roider_mrp_isInhosp
+!$roider_mrp_requiresSP",,,"100:contact_declineBarNoContinue:Decline",
+roider_mRPShowPickerSelected,DialogOptionSelected,"$option == roider_mRPShowPicker","Call $roider_madRockpiper_ref showPicker",,,
+roider_mRPPostTextDefault,Roider_MRPPostText,,,"The mad Rockpiper finishes $hisOrHer work. A superb job! $HeOrShe takes the crew bar crawling to celebrate, but by the time you catch up $heOrShe is nowhere to be found and no one seems to know when $heOrShe got separated.",,
+roider_mRPPostTextComplication,Roider_MRPPostText,"$roider_mRPIllAdvised","Roider_ShowHullModDesc ill_advised","The mad Rockpiper finishes $hisOrHer work and slips off with some of the crew to go bar crawling. Shortly after, your chief engineer reports that the MIDAS installation has caused subtle but severe damage to the weapon systems and engines! You search high and low, but the Rockpiper is long gone.",,
+roider_mRPExit,Roider_MRPPicked,"!$roider_mRPPicked","BarCMD returnFromEvent false",,,
+roider_mRPEnd,Roider_MRPPicked,"$roider_mRPPicked",,,"contact_acceptBarNoText:Continue",
+,,,,,,
+# MRP SP Branch,,,,,,
+roider_mRPConvinceOption,Roider_MRPOptions,"$roider_mrp_requiresSP
+!$roider_mrp_isInhosp","SetStoryOption roider_mRPConvince 1 roider_mrp ui_char_spent_story_point ""Convinced mad Rockpiper to work with you""",,"roider_mRPConvince:Convince $roider_mrp_himOrHer to work with you",
+roider_mRPConvinceSelected1,DialogOptionSelected,"$option == roider_mRPConvince","Call $roider_madRockpiper_ref spentSP
+FireBest Roider_MRPRant
+FireAll Roider_MRPOptions","You calm the $roider_mrp_madmanOrWoman. Very carefully. $HeOrShe stares off into the distance for a few moments, like an android rebooting, before launching into a more coherent rant. It takes you a minute to get $roider_mrp_himOrHer back on track.",,
+roider_mRPSPRant1,Roider_MRPRant,"$roider_mrp_requiresSP
+!$roider_mrp_isInhosp
+Roider_MadRockpiperRants sp","Roider_MadRockpiperRants sp set","""... is how they got my crew! No crew! No eyes! No hands!"" $heOrShe frantically whispers, almost catatonic.
+
+$HeOrShe suddenly looks at you, startled, ""You! You have ships! I can build in MIDAS on them!"" $HeOrShe cowers, covering $hisOrHer face. ""No! The rockmen! I can't! Not again!""",,
+roider_mRPSPLeave,Roider_MRPOptions,"$roider_mrp_requiresSP",,,"100:contact_declineBarNoContinue:Leave",
+"#END MRP SP Branch",,,,,,
+,,,,,,
+# Standard Rants,,,,,,
+roider_mRPRant1,Roider_MRPRant,"!$roider_mrp_isInhosp
+!$roider_mrp_requiresSP
+Roider_MadRockpiperRants","Roider_MadRockpiperRants set
+Roider_ShowHullModDesc roider_midas","""For decades I've done good by them!"" $heOrShe shrieks. $HeOrShe slams $hisOrHer mug down, glares into the distance, and is ignored by the rest of the bar. ""I ironed out the Gambit cruiser conversion, you know?! They didn't listen to me about the rock crabs. 'Has to be built from the ground up,' they say! 'Can't put MIDAS onto any old hull like that,' they say!""
+
+""'Seamless!' I say!"" $HeOrShe finally acknowledges you, a manic look in $hisOrHer eyes, and says, ""Give me a work crew and I'll prove it. I'll build in MIDAS on one of your ships, nice as you please. And for free!""",,
+roider_mRPRant2,Roider_MRPRant,"!$roider_mrp_isInhosp
+!$roider_mrp_requiresSP
+Roider_MadRockpiperRants","Roider_MadRockpiperRants set
+Roider_ShowHullModDesc roider_midas","$HeOrShe turns to you at your approach and starts chanting whimsically, ""The crabs. The crabs! Rock crabs! Who'd have thought?!""
+
+""The Rockpipers don't believe me,"" $heOrShe explains. ""We have to stop the rockmen's machines. That's why I figured out how to build MIDAS in on any ship. Any roid could be crabby! Give me a work crew and I'll prove I can do it."" $HeOrShe suddenly starts shouting. ""No cost! Crabs everywhere!"" The rest of the bar ignores $roider_mrp_himOrHer.",,
+"#END Standard Rants",,,,,,
+,,,,,,
+# Inhospitable Rants,,,,,,
+roider_mRPInhospRant1,Roider_MRPRant,"$roider_mrp_isInhosp score:100
+Roider_MadRockpiperRants inhosp","Roider_MadRockpiperRants inhosp set","Apparently lucid for the moment, $heOrShe addresses you, ""Give me a chance. I can build in MIDAS on your ships. I'll work for just room and board!""
+
+Then $heOrShe seems to vaguely recognize you. $HeOrShe suddenly shouts, ""Enemy! I can smell the rock men on you! Stay away!"" No one else pays attention.",,
+roider_mRPInhospLeave,Roider_MRPOptions,"$roider_mrp_isInhosp",,,"100:contact_declineBarNoContinue:Leave",
+"#END Inhospitable Rants",,,,,,
+"#END Mad Rockpiper",,,,,,
 

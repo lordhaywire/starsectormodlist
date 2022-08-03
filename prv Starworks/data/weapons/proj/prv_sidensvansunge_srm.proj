@@ -35,6 +35,6 @@
 			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
 		},
 		"width":4.0,
-		"length":20.0,
+		"length":10.0,
 		"angle":180.0}],
 }

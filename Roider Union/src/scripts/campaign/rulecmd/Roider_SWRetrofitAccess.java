@@ -58,14 +58,14 @@ public class Roider_SWRetrofitAccess extends BaseCommandPlugin {
 
         // Get retrofit manager
         Roider_ShipworksRetrofitManager manager;
-        if (memory.get(Roider_MemFlags.RETROFITTER) != null) {
-            manager = (Roider_ShipworksRetrofitManager) memory.get(Roider_MemFlags.RETROFITTER);
+        if (memory.get(Roider_MemFlags.SW_RETROFITTER) != null) {
+            manager = (Roider_ShipworksRetrofitManager) memory.get(Roider_MemFlags.SW_RETROFITTER);
         } else {
             manager = new Roider_ShipworksRetrofitManager(
-                        Roider_Fitters.FULL,
+                        Roider_Fitters.ALL,
                         market.getPrimaryEntity(), faction);
 
-            market.getMemoryWithoutUpdate().set(Roider_MemFlags.RETROFITTER, manager);
+            market.getMemoryWithoutUpdate().set(Roider_MemFlags.SW_RETROFITTER, manager);
             Global.getSector().addScript(manager);
         }
 

@@ -1,44 +1,45 @@
 {
-  "displayName": "Long Haul",
-  "fluxCapacitors": 9,
-  "fluxVents": 10,
-  "goalVariant": true,
-  "hullId": "prv_visent",
-  "hullMods": [
-    "efficiency_overhaul",
-    "expanded_cargo_holds"
-  ],
-  "permaMods": [],
-  "quality": 0,
   "variantId": "prv_visent_lh",
+  "hullId": "prv_visent",
+  "displayName": "Long Haul",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds",
+    "efficiency_overhaul"
+  ],
   "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightac",
+        "WS0006": "lightac"
+      }
+    },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "swarmer"
+        "WS0001": "breachpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "sabot_single"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_akc"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0005": "lightmortar"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "prv_pskd",
-        "WS0004": "prv_pskd"
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
       }
     },
     {
@@ -47,5 +48,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

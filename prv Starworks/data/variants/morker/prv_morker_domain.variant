@@ -1,0 +1,88 @@
+{
+  "variantId": "prv_morker_domain",
+  "hullId": "prv_morker",
+  "displayName": "Domain-Era",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics",
+    "stabilizedshieldemitter",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "phasebeam",
+        "WS0009": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_jursla",
+        "WS0003": "prv_jursla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_bounder",
+        "WS0005": "prv_bounder",
+        "WS0025": "prv_bounder",
+        "WS0026": "prv_bounder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "phasebeam",
+        "WS0024": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_vakt",
+        "WS0018": "prv_vakt",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightmg",
+        "WS0007": "lightmg",
+        "WS0027": "lightmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "pdburst",
+        "WS0011": "pdburst",
+        "WS0012": "pdburst",
+        "WS0013": "pdburst",
+        "WS0014": "pdburst",
+        "WS0015": "pdburst",
+        "WS0016": "pdburst",
+        "WS0017": "pdburst",
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_ovasen_wing",
+    "prv_ovasen_wing"
+  ]
+}

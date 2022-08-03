@@ -1,7 +1,7 @@
 {
     "displayName": "Balanced",
-    "fluxCapacitors": 13,
-    "fluxVents": 30,
+    "fluxCapacitors": 12,
+    "fluxVents": 15,
     "goalVariant": true,
     "hullId": "roider_gambit",
     "hullMods": ["dedicated_targeting_core"],
@@ -20,11 +20,8 @@
         },
         {
             "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS 004": "harpoon",
-                "WS 005": "harpoon"
-            }
+            "mode": "LINKED",
+            "weapons": {"WS 005": "hammerrack"}
         },
         {
             "autofire": true,
@@ -33,6 +30,11 @@
                 "WS 006": "lightag",
                 "WS 007": "lightag"
             }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "vulcan"}
         }
     ]
 }

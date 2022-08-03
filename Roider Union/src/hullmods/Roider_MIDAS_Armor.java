@@ -49,23 +49,38 @@ public class Roider_MIDAS_Armor extends BaseHullMod {
                 // Switch to armor module version if hullmod uses
                 // size-dependant changes.
                 if (HULLMOD_SWITCH.containsKey(mod)) {
-                    variant.addPermaMod(HULLMOD_SWITCH.get(mod));
+                    variant.addPermaMod(HULLMOD_SWITCH.get(mod), sMods.contains(mod));
                     continue;
                 }
 
                 variant.addPermaMod(mod, sMods.contains(mod));
             }
         } else {
-            //<editor-fold defaultstate="collapsed" desc="Unused">
             // Get parent's hullmods
-            Collection<String> mods = parent.getVariant().getNonBuiltInHullmods();
-            mods.remove(Roider_Hullmods.FIGHTER_CLAMPS);
-            mods.remove(Roider_Hullmods.EXTREME_MODS);
+            Set<String> mods = new HashSet<>();
+            Set<String> sMods = new HashSet<>();
+            for (String mod : parent.getVariant().getNonBuiltInHullmods()) {
+    //            if (!Roider_MIDAS_Armor.ALLOWED.contains(mod)) continue;
+                if (Roider_MIDAS_Armor.BLOCKED.contains(mod)) continue;
+
+                mods.add(mod);
+            }
 
             for (String mod : parent.getVariant().getPermaMods()) {
+    //            if (!Roider_MIDAS_Armor.ALLOWED.contains(mod)) continue;
+                if (Roider_MIDAS_Armor.BLOCKED.contains(mod)) continue;
+
                 HullModSpecAPI modSpec = Global.getSettings().getHullModSpec(mod);
 
                 if (modSpec.hasTag(Tags.HULLMOD_DAMAGE)) mods.add(mod);
+            }
+
+            for (String mod : parent.getVariant().getSMods()) {
+    //            if (!Roider_MIDAS_Armor.ALLOWED.contains(mod)) continue;
+                if (Roider_MIDAS_Armor.BLOCKED.contains(mod)) continue;
+
+                mods.add(mod);
+                sMods.add(mod);
             }
 
             // Remove old hullmods
@@ -80,9 +95,18 @@ public class Roider_MIDAS_Armor extends BaseHullMod {
 
             // Add new hullmods
             for (String mod : mods) {
-                variant.addPermaMod(mod);
+//                if (!Roider_MIDAS_Armor.ALLOWED.contains(mod)) continue;
+                if (Roider_MIDAS_Armor.BLOCKED.contains(mod)) continue;
+
+                // Switch to armor module version if hullmod uses
+                // size-dependant changes.
+                if (HULLMOD_SWITCH.containsKey(mod)) {
+                    variant.addPermaMod(HULLMOD_SWITCH.get(mod), sMods.contains(mod));
+                    continue;
+                }
+
+                variant.addPermaMod(mod, sMods.contains(mod));
             }
-//</editor-fold>
         }
 
         variant.computeHullModOPCost();

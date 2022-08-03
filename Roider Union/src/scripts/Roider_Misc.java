@@ -2,6 +2,7 @@ package scripts;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
+import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.fleets.FleetFactoryV3;
@@ -17,6 +18,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
+import org.lwjgl.util.vector.Vector2f;
 
 /**
  * Author: SafariJohn
@@ -179,5 +181,13 @@ public class Roider_Misc {
 
     public static float clamp(float x, float min, float max) {
         return Math.min(max, Math.max(x, min));
+    }
+
+    public static float getDistanceSquared(SectorEntityToken from, SectorEntityToken to) {
+        return getDistanceSquared(from.getLocation(), to.getLocation());
+    }
+
+    public static float getDistanceSquared(Vector2f v1, Vector2f v2) {
+        return (v1.x - v2.x) * (v1.x - v2.x) + (v1.y - v2.y) * (v1.y - v2.y);
     }
 }

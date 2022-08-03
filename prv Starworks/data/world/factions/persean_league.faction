@@ -15,7 +15,11 @@
 	"knownFighters":{
 		"tags":["prv_bp"],
 	},
-	
+	"hullFrequency":{
+		"tags":{
+			"prv_midline_bp":0.33,
+		},
+	},	
 	"custom":{
 		"syndicateName": "Kanni front groups",
 	}

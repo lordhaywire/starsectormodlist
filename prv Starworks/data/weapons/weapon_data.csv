@@ -1,10 +1,5 @@
 name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-#Pureflame Lance,prv_agni_pureflame_lance,2,0.1,1500,500,1452,,,40,13,13,,,,ENERGY,,2498,0.1,0.6,0.8,6,0,0,0,0,1000,,,,,,,,"prv_agni, restricted, SR, strike14, he17, beam10",,Detached Agni Organ,,Assault,,,,,"Dissipates quickly, only dealing full damage at close range. 
-
-Explodes when reaching a target or full range, dealing %s additional high explosive damage to nearby ships.
-
-Burns the target with %s on hull hits, dealing up to %s additional high explosive damage over time.",100 | pureflame | 750,,,,8801
 Pureflame Lance,prv_agni_pureflame_lance,2,0.1,1500,500,1452,,,40,13,13,,,,ENERGY,,2002,0.1,0.6,0.8,4.5,0,0,0,0,1000,,,,,,,,"prv_agni, restricted, SR, strike14, he17, beam10",,Detached Agni Organ,,Assault,,,,,"Dissipates quickly, only dealing full damage at close range. 
 
 Explodes when reaching a target or upon reaching full range, engulfing nearby ships in %s, immediately dealing up to %s high explosive damage and applying a burn of up to %s additional high explosive damage over time.",pureflame | 350 | 700,,,,8801
@@ -33,16 +28,19 @@ prv_agni_d_cover_buck_r,prv_agni_d_cover_buck_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,S
 prv_agni_d_cover_doe_l,prv_agni_d_cover_doe_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_agni_d_cover_doe_r,prv_agni_d_cover_doe_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_agni_d_fin_large,prv_agni_d_fin_large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_tail,prv_agni_d_tail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 SIPD Laser,prv_sipdlaser,2,,350,500,40,,,0,100,4,,,,ENERGY,,70,0.1,0.10,,,,,,,2400,,,,,,,"PD, PD_ALSO, ANTI_FTR","prv_adv_bp, prv_hel_bp, pd7, energy7, beam9, merc",,prv Starworks,,Close Defense,,,,,"Bursts for %s energy damage after %s second of focusing on the target.
 
 Will target missiles if no other targets are in range.",80 | 1,,,,8790
 Fusion Burst Laser,prv_fusion_burster,1,0.5,450,500,530,,,0,7,6,,,,HIGH_EXPLOSIVE,,500,0.7,0.7,0.1,2.5,,,,,2000,,,,,,,STRIKE,"prv_rb_bp, strike0, he7, SR",,Rust Belt,,Anti Armor,,,,,,,,,,8701
-Spattergun,prv_spattergun,1,,275,400,,60,,20,10,5,,,,ENERGY,60,,,1.85,4,0.05,3,21,6,8,,600,,,,,,,"prv_bp,  prv_stjarngard_bp, energy8",,prv Starworks,,General (Area),,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
+Spattergun,prv_spattergun,1,,275,400,,60,,20,10,5,,,,ENERGY,60,,,1.85,4,0.05,3,15,3,8,,600,,,,,,,"prv_bp,  prv_stjarngard_bp, energy8",,prv Starworks,,General (Area),,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
 
 Shield hits spread additional plasma particles which will hit any other target for %s to %s energy damage.",Spatterfire | 60 | 75 | 125,,,,8703
 Spattergun Goop,prv_spattergun_1,0,,0,75,,125,,5,10,,,,,ENERGY,0,,,2,,,0,10,1,2,,200,,,,,,SYSTEM,,,,,Byproduct,,,,,,,,,,8703a
 Spattergun Goop,prv_spattergun_2,0,,0,50,,75,,3,10,,,,,ENERGY,0,,,2,,,0,10,1,2,,100,,,,,,SYSTEM,,,,,Byproduct,,,,,,,,,,8703b
-Heavy Spattergun,prv_heavyspattergun,3,0.65,2100,600,,120,,40,8,12,,,,ENERGY,120,,,4.15,8,0.05,2,14,4,8,,600,,,,,,,"prv_adv_bp, prv_stjarngard_bp, energy14, merc",,prv Starworks,,General (Area),,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
+Heavy Spattergun,prv_heavyspattergun,3,0.65,2100,600,,120,,40,8,12,,,,ENERGY,120,,,4.15,8,0.05,2,10,2,8,,600,,,,,,,"prv_adv_bp, prv_stjarngard_bp, energy14, merc",,prv Starworks,,General (Area),,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
 
 Shield hits spread additional plasma particles which will hit any other target for %s to %s energy damage.",Spatterfire | 120 | 75 | 125,,,,8703.1
 Fräsare,prv_frasare,1,,1200,900,1681,,,40,34,13,,,,FRAGMENTATION,,1681,0.25,1.5,0.25,1.5,0,0,0,0,20000,,,,,,,ANTI_FTR,"prv_adv_bp, prv_hel_bp, beam13, kinetic9, LR, merc",,prv Starworks,,Finisher (Area),,,,,Generates %s anomalies which deal %s fragmentation damage to nearby targets.,27 | 60,,,,8785.5
@@ -50,14 +48,13 @@ Fräs,prv_frasare_1,0,,0,0,,60,,0,34,13,,,,FRAGMENTATION,30,,,0.2,,,0,0,0,0,,100
 Svepfräsare,prv_svepfrasare,2,0.5,4200,750,1690,,,40,34,20,,,,FRAGMENTATION,,1668,0.05,0.05,1.15,3.75,0,0,0,0,200000,,,,,,,FIRE_WHEN_INEFFICIENT,"prv_adv_bp, prv_hel_bp, beam17, kinetic13, merc",,prv Starworks,,General (Area),,,,,"Fires in a sweeping arc, generating %s anomalies which deal %s fragmentation damage to nearby targets.",numerous | 150,,,,8785.52
 Fräs,prv_svepfrasare_1,0,,0,0,,150,,0,34,13,,,,FRAGMENTATION,50,,,0.3,,,0,0,0,0,,1000,,,,,,SYSTEM,,,prv Starworks,,Byproduct,,,,,,,,,,8785.53
 Vakt Flicker Beam,prv_vakt,2,0.3,5000,600,350,,,0,90,18,,,,ENERGY,,350,0.1,0.1,,,,,,,200000,,,,,,,"PD, ANTI_FTR, NO_TURN_RATE_BOOST_WHEN_IDLE","prv_adv_bp, prv_hel_bp, pd15, beam13",,prv Starworks,,Point Defense,,,,,,,,,,8726
-Belt Blaster,prv_belt_blaster,0,,2100,800,,600,,0,6,20,,,,ENERGY,975,,,5.1,4,0.3,0,0,0,0,,1000,,,,,,,"prv_rb_bp, energy15",,Rust Belt,,General,,,,,,,,,,8722125
+Belt Blaster,prv_belt_blaster,0,,2100,900,,600,,0,6,20,,,,ENERGY,900,,,5.1,4,0.3,0,0,0,0,,1000,,,,,,,"prv_rb_bp, energy15",,Rust Belt,,General,,,,,,,,,,8722125
 Jursla Graviton Emitter,prv_jursla,3,0.3,5000,750,250,,,30,60,25,,,,KINETIC,,400,0.1,0.33,,,0,0,0,0,2000,,,,,,,NO_TURN_RATE_BOOST_WHEN_IDLE,"prv_adv_bp, prv_stjarngard_bp, kinetic20, energy16, LR, merc",,prv Starworks,,Anti Shield,,,,,"Generates %s particles per second while firing, each of which deals %s kinetic damage.
 
 Gravitic effects slow and push target off-course. The effect is minor and is most noticeable vs fighters and missiles.",3 | 75,,,,8785.5
 Jursla Blast,prv_jursla_1,3,,0,750,,75,,0,12,,,,,KINETIC,75,,,1,,,0,0,0,0,,700,,,,,,SYSTEM,,,prv Starworks,,Anti Shield,,,,,,,,,,8785.6
-Ljungeld,prv_ljungeld,3,,5000,900,869.38,,,0,18,24,7,0.03666667,,HIGH_EXPLOSIVE,,1070,0.1,0.1,3.8,2,0,0,0,0,2000,,,,,,,"STRIKE, USE_VS_FRIGATES, CONSERVE_2","prv_adv_bp, prv_hel_bp, strike19, energy16, LR, merc",,prv Starworks,,Strike,,,,,"Hits on shields cause the beam to fracture, giving it a chance based on the target's hard flux level to pierce the shield with high explosive arcs of energy.",,,,,8786
-Ljungeld (Prototype),prv_ljungeld_conquest_prototype,3,0,15000,900,,300,,90,2,,42,1.1,14,HIGH_EXPLOSIVE,300,,0.333333,3.366667,7,0.05,0,21,2.5,4,,1400,,,,,,SYSTEM,"strike21, he21, LR",prv_ljungeld,prv Starworks,,Strike,,,,,"Hits on shields cause the charge to fracture, piercing the shield and dealing energy damage based on target hull size and flux level.",,,,,8786o
-Ljungeld (Damaged),prv_ljungeld_damaged,1,,0,900,434.69,,,0,18,,2,,,HIGH_EXPLOSIVE,,214,0.1,0.1,3.8,23,0,0,0,0,2000,,,,,,,"SYSTEM, STRIKE, USE_VS_FRIGATES, CONSERVE_2","strike17, energy14",,Rust Belt,,Strike,,,,,"Hits on shields cause the beam to fracture, giving it a chance based on the target's hard flux level to pierce the shield with high explosive arcs of energy. May backfire.",,,,,8786s
+Ljungeld,prv_ljungeld,3,,5000,900,869.38,,,0,18,24,7,0.03666667,,HIGH_EXPLOSIVE,,1070,0.1,0.1,3.8,2,0,0,0,0,2000,,,,,,,"CONSERVE_2, USE_VS_FRIGATES, STRIKE","prv_adv_bp, prv_hel_bp, strike19, energy16, LR, merc",,prv Starworks,,Strike,,,,,"Hits on shields cause the beam to fracture, giving it a chance based on the target's hard flux level to pierce the shield with high explosive arcs of energy.",,,,,8786
+Ljungeld (Damaged),prv_ljungeld_damaged,1,,0,900,434.69,,,0,18,,2,,,HIGH_EXPLOSIVE,,214,0.1,0.1,3.8,23,0,0,0,0,2000,,,,,,,"SYSTEM, CONSERVE_2, USE_VS_FRIGATES, STRIKE","strike17, energy14",,Rust Belt,,Strike,,,,,"Hits on shields cause the beam to fracture, giving it a chance based on the target's hard flux level to pierce the shield with high explosive arcs of energy. May backfire.",,,,,8786s
 HFL Array,prv_hfl_array,1,,1800,650,,50,,0,21,16,,,,ENERGY,35,,0.3,0.3,14,0.05,0,14,0.5,8,,1000,,,,,,,"prv_rb_bp, energy16, SR",,Rust Belt,,General,,,,,,,,,,8787
 HFL,prv_hfl_array_single,1,,900,650,,50,,0,14,,,,,ENERGY,35,,0.3,0.35,7,0.10,0,14,0.25,4,,1000,,,,,,SYSTEM,"energy10, SR",,Rust Belt,,General,,,,,,,,,,8787
 UVIR Pulse Laser,prv_uvir,1,,3700,700,,200,,0,15,16,,,,ENERGY,220,,0.333333,,,,,,,,,1000,,,,,,,"prv_bp, prv_stjarngard_bp, energy18",,prv Starworks,,General,,,,,,,,,,8788
@@ -67,26 +64,23 @@ AKC c67,prv_akc,2,,1000,500,,30,,2,36,10,54,9,27,KINETIC,20,,0,0.0555555,3,0.055
 Light Thumper,prv_lightthumper,2,,250,700,,100,,1,35,3,,,,FRAGMENTATION,30,,0,3.1,10,0.10,0,9,2,10,,800,,,30,,,,"kinetic7, energy7, prv_rb_bp",,Rust Belt,,General,,,,,,,,,,873.8
 Overdriven Thumper,prv_lightthumper_oc,3,,700,700,,100,,1,25,7,,,,FRAGMENTATION,30,,0,1.55,10,0.05,0,7,1.5,20,,800,,,30,,,,"kinetic9, energy9, rare_bp, merc",,Rust Belt,,General,,,,,,,,,,873.87
 Light Triple Autocannon,prv_lighttripleac,2,,450,500,,50,,3,20,6,,,,KINETIC,40,,0,0.3,3,0.3,0,20,3,9,,800,,,20,,,,"kinetic8, prv_rb_bp",,Rust Belt,,Anti Shield,,,,,,,,,,8703
-Light Akers,prv_akers,1,,400,425,,20,10,4,24,4,,,,KINETIC,12,,0,0.11,2,0.11,0,7,0.6,10,,600,,,10,,,,"prv_bp, prv_kratul_bp, kinetic7, SR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
+Light Akers,prv_akers,1,,400,425,,30,15,4,24,4,,,,KINETIC,18,,0,0.2333333333,2,0.1,0,7,0.6,10,,750,,,10,,,,"prv_bp, prv_kratul_bp, kinetic7, SR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
 
-The EMP arcs are less effective against fighters.",12.5% | 80,,,,8712
-Akers Nova (Single),prv_akers_nova_fighter,3,,600,850,,60,60,5,24,7,,,,KINETIC,70,,0.146,0.520,,,0,5,0.5,10,,1200,,,25,,,,"prv_lab_bp, kinetic12, LR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
+The EMP arcs are less effective against fighters.",12.5% | 120,,,,8712
+Akers Nova (Single),prv_akers_nova_fighter,3,,600,850,,60,60,6,24,7,,,,KINETIC,70,,0.075,0.5916666,,,0,5,0.5,10,,900,,,25,,,,"prv_lab_bp, kinetic12, LR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
 
 The EMP arcs are less effective against fighters.",25% | 240,,,,8714a
-Heavy Akers,prv_heavyakers,1,,1200,675,,45,20,5,18,10,,,,KINETIC,45,,0,0.33,2,0.11,0,7,0.6,10,,900,,,20,,,,"prv_bp, prv_kratul_bp, kinetic14",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
+Heavy Akers,prv_heavyakers,1,,1200,675,,50,25,5,18,10,,,,KINETIC,45,,0,0.375,2,0.125,0,7,0.6,10,,750,,,20,,,,"prv_bp, prv_kratul_bp, kinetic14",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
 
-The EMP arcs are less effective against fighters.",20% | 100,,,,8713
-Akers Nova,prv_akers_nova,3,0.3,2300,850,,60,60,6,24,12,,,,KINETIC,70,,0.146,1.764,6,0.146,0,5,0.5,10,,1200,,,25,,,,"prv_adv_bp, prv_hel_bp, kinetic15, LR, merc",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
+The EMP arcs are less effective against fighters.",20% | 125,,,,8713
+Akers Nova,prv_akers_nova,3,0.3,2300,850,,60,60,6,24,12,,,,KINETIC,70,,0.075,1.95,6,0.075,0,5,0.5,10,,900,,,25,,,,"prv_adv_bp, prv_hel_bp, kinetic15, LR, merc",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage.
 
 The EMP arcs are less effective against fighters.",25% | 240,,,,8714
 Akers Denova,prv_akers_denova,3,0.3,2700,750,,75,,6,12,14,700,,,KINETIC,125,,,0.25,,,0,5,0.5,10,,750,,,,,,,"prv_lab_bp, kinetic15, LR, hist1t, merc",,prv Starworks,,Anti Shield,,,,,Hits generate anomalies which deal up to %s fragmentation damage to nearby targets.,75,,,,8714.5
 Fräs,prv_akers_denova_1,0,,0,0,,75,,6,12,,,,,FRAGMENTATION,125,,,0.25,,,0,5,0.5,10,,750,,,,,,SYSTEM,,,prv Starworks,,Anti Shield,,,,,,,,,,8714.51
-Siege Akers,prv_siege_akers,1,,3500,750,,240,120,25,8,22,8,1.5,8,KINETIC,270,,,0.2222222,,,0,9,1.75,10,,900,,,100,,,,"prv_adv_bp, prv_kratul_bp, kinetic18",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage spread over two locations. Hits on shields have a chance to generate a shield-penetrating arc based on the target's hard flux level.
+Siege Akers,prv_siege_akers,1,,3500,750,,120,60,15,8,22,,,8,KINETIC,135,,,1.0333333333,4,0.1,0,7,0.6,10,,750,,,100,,,,"prv_adv_bp, prv_kratul_bp, kinetic18",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage spread over two locations. Hits on shields have a chance to generate a shield-penetrating arc based on the target's hard flux level.
 
-The EMP arcs are less effective against fighters.",33% | 360,,,,8716
-Siege Akers (Prototype),prv_siege_akers_sunder_prototype,2,,6500,750,,240,120,25,8,,,,,KINETIC,180,,,0.6667,,,0,9,1.75,10,,900,,,100,,,SYSTEM,"kinetic15, SR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage spread over two locations. Hits on shields have a chance to generate a shield-penetrating arc based on the target's hard flux level.
-
-The EMP arcs are less effective against fighters.",33% | 360,,,,8716a
+The EMP arcs are less effective against fighters.",33% | 180,,,,8716
 #Jursla,prv_jursla,3,0.3,5000,900,,400,,175,12,25,,,,KINETIC,520,,,2.17,2,0.33,0,5,0.33,1,,1200,,,200,,,,"prv_lab_bp, kinetic20, LR, rare_bp",,prv Starworks,,Anti Shield,,,,,,,,,,8786
 Spatterflamer,prv_spatterflamer,1,,2500,600,,50,,25,27,24,120,8,60,ENERGY,50,,,0.05,5,0.05,1,1,0,0,,600,,,,,,"DO_NOT_CONSERVE, NO_TURN_RATE_BOOST_WHEN_IDLE","prv_rb_bp, energy18, he17, beam12, SR",,Rust Belt,,Anti Hull,,,,Poor,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
 
@@ -110,14 +104,12 @@ Svala-class Torpedo Launcher,prv_svala,3,0.33,900,1500,,1000,,30,10,4,3,,,ENERGY
 Svala Antimatter Blast,prv_svala_amblast,0,0,0,700,,225,,0,30,,,,,ENERGY,275,,0.25,10,,,0,0,0,,,650,,,35,,,"SYSTEM, STRIKE",strike1,,prv Starworks,,Submunition,,,,,,,,,,8720.1
 Rörsångare-class Torpedo Rack,prv_rorsangare,3,0.33,2300,1500,,2000,,40,10,14,8,,,ENERGY,0,,0.75,8,,,0,0,0,,,250,50,5.25,450,,,"DO_NOT_AIM, STRIKE","prv_lab_bp, strike16, missile14, hist1t, merc",,prv Starworks,,Torpedo,Slow,Good,,,,,,,TRUE,8721.5
 Linjär PK,prv_lpk,3,,750,750,,100,,0,21,8,12,1,3,ENERGY,50,,,0.2,3,0.2,0,17,2,4,,350,350,6,75,,,"DO_NOT_AIM, ANTI_FTR, DO_NOT_CONSERVE, MISSILE_SPREAD","prv_lab_bp, energy13, he7, SR",,prv Starworks,,General,,Excellent,,,Recharge rate increases by up to %s based on current flux level.,400%,,,,8785
-Linjär PK-sökare REMOVE,prv_lpk_seeker,0,,,525,,100,,0,21,,12,1,,ENERGY,70,,0.2,,,,17,34,4,4,,600,,,,,,"GUIDED_POOR, SYSTEM",,,prv Starworks,,Byproduct,,Excellent,,,,,,,,8785.125
-Partikelsplitter REMOVE,prv_lpk_1,0,,,525,,5,30,0,21,,12,1,,ENERGY,21,,0.2,,,,17,34,4,4,,400,,,,,,"DO_NOT_AIM, SYSTEM",,,prv Starworks,,Byproduct,,Excellent,,,,,,,,8785.25
 Kaja MRM Launcher,prv_kaja,1,0.65,300,3000,,350,,15,30,5,1,0.1,,HIGH_EXPLOSIVE,175,,0,3,,,0,0,0,,,300,1000,10,140,,,GROUP_LINKED,"prv_bp, prv_stjarngard_bp, missile7, strike2",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8721
 Kaja MRM Array,prv_kaja_quint,2,0,1200,3000,,350,,15,30,,5,0.5,5,HIGH_EXPLOSIVE,175,,0,3,,,0,0,0,,,300,1000,10,140,,,"GROUP_LINKED, SYSTEM","missile17,strike8",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8721s
 Kråka MRM Launcher,prv_kraka,1,0.65,1200,3000,,450,,20,20,10,4,0.2,2,HIGH_EXPLOSIVE,225,,0,3,,,0,0,0,,,300,1000,10,175,,,GROUP_LINKED,"prv_bp, prv_stjarngard_bp, missile14, strike4",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8722
 Kråka MRM Autolauncher,prv_kraka_auto,3,0,5600,3000,,450,,20,10,,9,0.6,1,HIGH_EXPLOSIVE,225,,0,0.3333333,,,0,0,0,,,300,1000,10,175,,,"GROUP_LINKED, SYSTEM, SHOW_IN_CODEX","missile21, strike14",,prv Starworks,,Anti Armor,Fast,Variable,,,,,,,,8723a
 Korp MRM Launcher,prv_korp,2,,3800,3000,,600,,25,10,20,9,0.3,3,HIGH_EXPLOSIVE,300,,0,3,,,0,0,0,,,300,1000,10,210,,,GROUP_LINKED,"prv_bp, prv_stjarngard_bp, missile17, strike8",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8723
-Annihilator Burst Launcher,prv_kraka_auto_burst,3,0,5600,1500,,200,,5,10,,280,,,HIGH_EXPLOSIVE,0,,0,6.65,28,0.05,3,10,1,,,400,50,3.75,50,,,"SYSTEM, CONSERVE_3, STRIKE","rocket21, strike14",,Pirate,,Anti Armor,Fast,Variable,,,,,,,,8723b
+Annihilator Burst Launcher,prv_kraka_auto_burst,3,0,5600,1500,,200,,5,10,,320,,,HIGH_EXPLOSIVE,0,,0,6.05,40,0.05,3,10,1,,,400,50,3.75,50,,,"SYSTEM, CONSERVE_3, STRIKE","rocket21, strike14",,Pirate,,Anti Armor,Fast,Variable,,,,,,,,8723b
 Skata LRM Launcher,prv_skata,3,0.5,3600,5000,,300,,15,3,18,135,,,ENERGY,,,,6.762,3,0.219,0,10,2,2,,1200,200,9,65,,,GUIDED_POOR,"prv_adv_bp, prv_kratul_bp, rocket18, strike4",,prv Starworks,,Pressure,Medium,Very Poor,,,,,,,,8724
 Berguv Torpedo,prv_berguv_rack,2,,200,1200,,2000,,30,10,3,2,,,ENERGY,,,,1,,,0,0,0,0,,300,50,5,500,,,"STRIKE, USE_VS_FRIGATES","prv_adv_bp, prv_stjarngard_bp, strike8, rocket2",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
 
@@ -125,7 +117,7 @@ The torpedoes are volatile and may detonate prematurely if damaged.",severe | sp
 Berguv Torpedo Launcher,prv_berguv,2,,4800,1200,,2000,,30,10,25,27,,,ENERGY,,,,16,3,0.33333,0,0,0,0,,300,50,5,500,,,"STRIKE, USE_VS_FRIGATES, CONSERVE_3","prv_adv_bp, prv_stjarngard_bp, strike16, rocket14",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
 
 The torpedoes are volatile and may detonate prematurely if damaged.",severe | spatterfire,,,TRUE,8724.5
-Berguv MIRV Launcher,prv_berguv_mirv,3,,1900,1200,,1500,,30,20,12,7,,,ENERGY,,,,10,,,0,0,0,0,,300,150,4,500,,,"GUIDED_POOR, USE_VS_FRIGATES","prv_adv_bp, rare_bp, strike14, rocket7, hist1t, merc",,prv Starworks,,Finisher,Medium,None,,,"Submunitions will detonate when close to a target, causing %s %s energy burns on nearby ships.
+Berguv MIRV Launcher,prv_berguv_mirv,3,,1900,1800,,1500,,30,20,12,7,,,ENERGY,,,,10,,,0,0,0,0,,300,150,6,500,,,"GUIDED_POOR, USE_VS_FRIGATES","prv_adv_bp, rare_bp, strike14, rocket7, hist1t, merc",,prv Starworks,,Finisher,Medium,Medium,,,"Submunitions will detonate when close to a target, causing %s %s energy burns on nearby ships.
 
 The submunitions are volatile and may detonate prematurely if damaged.",moderate | spatterfire,,,TRUE,8724.6
 Brytare Rocket Launcher,prv_brytare_rack,1,,600,1500,,250,,15,20,4,12,,,HIGH_EXPLOSIVE,0,,0,0.375,,,0,0,0,0,,450,-225,6.5,300,,,"STRIKE, MISSILE_SPREAD, CONSERVE_ALL","prv_rb_bp, rocket7, strike_3",,Rust Belt,,Anti Armor,Fast,Special,,,Unguided after a brief initial aiming stage.,,,,,8724.65
@@ -144,7 +136,7 @@ Will target missiles if no other targets are in range.",80 | 1,,,,8790
 Inget Flicker Lance,prv_uvbeam_fighter,2,,350,350,360,,,0,70,,,,,ENERGY,,540,0.1675,0.335,0.6667,4.8333,,,,,20000,,,,,,,SYSTEM,"beam9, SR",,prv Starworks,,Strike,,,,,,,,,,8791
 Intet Flickerpulse Laser,prv_uvpulse_fighter,1,,250,400,,50,,0,40,,,,,ENERGY,50,,0.33,2.34,4,0.11,0,9,1,2,,1000,,,,,,"SYSTEM, PD, PD_ALSO","energy8, SR",,prv Starworks,,General,,,,,,,,,,8719.3
 Fusion Burst Cutter,prv_fusion_burster_fighter,0,,450,150,397.5,,,0,70,,,,,HIGH_EXPLOSIVE,,366,0.7,0.7,0.1,3,,,,,20000,,,,,,,"SYSTEM, STRIKE, USE_VS_FRIGATES","he4, SR",,Rust Belt,,Anti Armor,,,,,,,,,,8701
-Light Spattergun,prv_spattergun_fighter,1,,150,350,,90,,10,60,,8,,,ENERGY,110,,,1.95,2,0.05,5,21,2,2,,600,,,,,,SYSTEM,"energy2, strike1, SR",,prv Starworks,,Strike,,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
+Light Spattergun,prv_spattergun_fighter,1,,150,350,,90,,10,60,,8,,,ENERGY,110,,,1.95,2,0.05,5,15,2,2,,600,,,,,,SYSTEM,"energy2, strike1, SR",,prv Starworks,,Strike,,,,,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
 
 Shield hits spread additional plasma particles which will hit any other target for %s to %s energy damage.",Spatterfire | 90 | 25 | 10,,,,87101
 Light Spattergun Goop,prv_spattergun_fighter_1,0,,0,50,,25,,5,10,,,,,ENERGY,0,,,2,,,0,10,1,2,,200,,,,,,SYSTEM,,,,,Byproduct,,,,,,,,,,87101a
@@ -157,7 +149,6 @@ Akers Repeater,prv_akers_fighter,1,,400,375,,180,45,30,24,,,,,KINETIC,100,,,2.17
 
 The EMP arcs are less effective against fighters.",20% | 225,,,,87103
 Karbidsåg,prv_karbid_saw,2,,100,10,,500,0,500,10,,,,,ENERGY,250,,2.5,,,,0,0,0,0,200000,,,,,,,SYSTEM,,,Rust Belt,,Terror,,,,,Impacts with great force.,,,,,87136
-Karbidsåg REMOVE,prv_karbid_saw_codex,2,,100,50,,500,0,500,10,,,,,ENERGY,250,,2.5,,,,0,0,0,0,200000,,,,,,,SYSTEM,,,Rust Belt,,Terror,,,,,Impacts with great force.,,,,,87136.1
 #Akers Nova (Single),prv_akers_nova_fighter,3,,1300,850,,60,60,5,24,,,,,KINETIC,70,,0,0.44,,,0,5,0.5,10,,1200,,,25,,,SYSTEM,"kinetic12, LR",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP disruption and %s energy damage.",50% | 20 | 6,,,,8714a
 Target Designator,prv_tardes,0,,25,450,5,,25,0,90,,,,,ENERGY,,10,0.1,0.1,,,,,,,20000,,,,,,,"SYSTEM, FIRE_WHEN_INEFFICIENT",beam0,,prv Starworks,,Utility,,,,,"Increases the damage taken by the target by %s and interferes with its targeting systems, reducing target leading accuracy for autofiring weapons %s.
 
@@ -168,7 +159,6 @@ Skatunge SRM Launcher,prv_skatunge,1,,200,1000,,200,,15,30,,8,0.16667,8,ENERGY,,
 Skatunge SRM Pack,prv_skatunge_fighter,1,,200,1000,,200,,15,30,,8,,,ENERGY,,,,5.73,2,0.27,0,,,,,600,50,4,75,,25,"SYSTEM, DO_NOT_CONSERVE, DO_NOT_AIM","missile2, strike0",,prv Starworks,,Pressure,Medium,Very Poor,,,,,,,TRUE,87105
 Råka-class Torpedo Launcher (Twin),prv_raka_fighter,2,,400,800,,600,,25,10,,2,,,HIGH_EXPLOSIVE,0,,0,3,2,,0,0,0,0,,300,800,2.5,210,,,"SYSTEM, STRIKE","strike5, rocket1, missile6",,prv Starworks,,Strike,Fast,Variable,,,,,,,TRUE,87106
 Råka-class Torpedo Launcher,prv_raka_fighter_codex,2,,400,800,,600,,25,10,,1,,,HIGH_EXPLOSIVE,0,,0,1,,,0,0,0,0,,300,800,2.5,210,,,"SYSTEM, STRIKE","strike5, rocket1, missile6",,prv Starworks,,Strike,Fast,Variable,,,,,,,TRUE,87106x
-Hammer-class Torpedo REMOVE,prv_hammer_single_fighter,0,,75,1200,,1500,,30,10,,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,0,,500,40,4,350,,,"SYSTEM, STRIKE","strike6, rocket2",,Luddic Path,,Torpedo,Fast,None,,,,,,,TRUE,87107
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 prv_d_cover_drone_missile,prv_d_cover_drone_missile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_cover_jammer,prv_d_cover_jammer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
@@ -183,6 +173,7 @@ prv_d_emitter_gryning,prv_d_emitter_gryning,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTE
 prv_d_emitter_eld,prv_d_emitter_eld,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_emitter_skymning,prv_d_emitter_skymning,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_emitter_brand,prv_d_emitter_brand,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_d_emitter_bergtagen,prv_d_emitter_bergtagen,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_blinker_ljus,prv_d_blinker_ljus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_blinker_sunder_ryak,prv_d_blinker_sunder_ryak,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 prv_d_gauge_dominator_rb,prv_d_gauge_dominator_rb,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
@@ -194,8 +185,8 @@ prv_u_ramshield,prv_u_ramshield,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Fracture Packet,prv_fracturer_system,3,,0,2000,,150,,0,12,,,,,ENERGY,150,,,1,,,0,0,0,0,,700,,,,,,SYSTEM,,,prv Starworks,,Anti Flux,,,,,,,,,,87137
 EMP Cluster Minelayer,prv_mine_emp_cluster,0,,75000,1000,,150,750,15,30,,60,,,ENERGY,0,,0,8,5,0.33,0,0,0,0,,150,50,20,220,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87138
-Gravity Minelayer,prv_mine_gravity,0,,75000,1000,,300,,15,30,,12,,,KINETIC,0,,0,6,1,,0,0,0,0,,150,50,20,300,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87139
-Gravity Well,prv_mine_gravitywell,0,,150000,1500,,450,,25,30,,15,,,KINETIC,0,,0,10,1,,0,0,0,0,,150,50,20,330,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87140
+Gravity Minelayer,prv_mine_gravity,0,,75000,1000,,300,,30,30,,12,,,KINETIC,0,,0,6,1,,0,0,0,0,,150,50,20,300,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87139
+Gravity Well,prv_mine_gravitywell,0,,150000,1500,,450,,50,30,,15,,,KINETIC,0,,0,10,1,,0,0,0,0,,150,50,20,330,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87140
 Disruption Minelayer,prv_mine_disruption,0,,150000,1500,,4000,,15,30,,9,,,FRAGMENTATION,0,,0,9,1,,0,0,0,0,,150,50,20,500,,,"SYSTEM, BOMB",,,,,,,,,,,,,,,87141
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #EMP Cluster Minelayer,prv_mine_emp_cluster,0,,1200,700,,150,750,8,10,7,60,,,ENERGY,0,,0,5.36,5,0.66,0,0,0,0,,150,250,10,100,,,DO_NOT_AIM,"prv_lab_bp, utility14, energy8",,prv Starworks,,Suppression,,,,,"Hits on hull arc to weapons and engines, dealing an additional %s EMP damage to %s locations.",250 | 3,,,TRUE,87138

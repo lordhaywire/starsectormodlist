@@ -24,6 +24,7 @@ import scripts.campaign.retrofit.Roider_BaseRetrofitPlugin;
 import scripts.campaign.retrofit.Roider_RetrofitsKeeper.RetrofitData;
 
 /**
+ * Argos Paid Retrofitting
  * Author: SafariJohn
  */
 public class Roider_APRAccess extends BaseCommandPlugin {

@@ -18,6 +18,8 @@
     "prv_agni_toughhide"
   ],
   "builtInWeapons": {
+    "DC01": "prv_agni_d_fin_large",
+    "FR01": "prv_agni_d_tail",
     "WS0004": "prv_agni_eye",
     "WS0005": "prv_agni_eye",
     "WS0008": "prv_agni_d_cover_hatchling"
@@ -98,40 +100,58 @@
       "angle": -0,
       "locations": [16, -0],
       "renderOrderMod": -120
+    },
+    {
+      "id": "DC01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "FR01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-5, -0]
     }
   ],
   "engineSlots": [
     {
       "location": [-37, 15],
-      "length": 13,
-      "width": 13,
+      "length": 17,
+      "width": 6,
       "angle": 180,
-      "contrailSize": 13,
-      "style": "PRV_LOW"
+      "contrailSize": 6,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-37, -15],
-      "length": 13,
-      "width": 13,
+      "length": 17,
+      "width": 6,
       "angle": -180,
-      "contrailSize": 13,
-      "style": "PRV_LOW"
+      "contrailSize": 6,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-31, 22.5],
-      "length": 13,
-      "width": 13,
+      "length": 17,
+      "width": 6,
       "angle": 145,
-      "contrailSize": 13,
-      "style": "PRV_LOW"
+      "contrailSize": 6,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-31, -22.5],
-      "length": 13,
-      "width": 13,
+      "length": 17,
+      "width": 6,
       "angle": -145,
-      "contrailSize": 13,
-      "style": "PRV_LOW"
+      "contrailSize": 6,
+      "style": "PRV_AGNI"
     }
   ],
   "bounds": [

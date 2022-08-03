@@ -559,7 +559,7 @@ public class Roider_PhasenetAI implements ShipSystemAIScript {
                 speed = tShip.getMaxSpeed() + MAX_PULL_SPEED;
             }
 
-            if (tShip.isFighter()) speed /= 10f;
+//            if (tShip.isFighter()) speed /= 10f;
         }
 
         return speed;

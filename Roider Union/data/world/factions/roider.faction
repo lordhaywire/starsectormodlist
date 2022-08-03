@@ -1,5 +1,5 @@
 {
-	id:"roider",
+	"id":"roider",
 	"color":[242,208,141,255], #150,150,130
         "secondaryUIColor":[150,150,150,255], #Gold 255,215,0,255
         "secondarySegments":6,
@@ -48,6 +48,10 @@
 			
 			# Not a conversion, so it should be rarer
 			"roider_sheriff":0.5,
+			
+			# Just say no
+			"roider_gambit_early":0,
+			"roider_gambit_p_early":0,
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
@@ -60,6 +64,7 @@
 		"tags":["base_bp", "lowtech_bp", "roider_bp", "roider"],
 		"hulls":[
             "falcon",
+			"roider_sheriff",
             #"starliner",
 			"valkyrie",
 		],
@@ -72,6 +77,7 @@
 			"tarsus",
 			"mule",
 			"mora",
+			"roider_sheriff",
 		],
 	},
 	"knownFighters":{

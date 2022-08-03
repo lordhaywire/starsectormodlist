@@ -1,12 +1,11 @@
 {
     "displayName": "Escort",
     "fluxCapacitors": 16,
-    "fluxVents": 4,
+    "fluxVents": 5,
     "goalVariant": true,
     "hullId": "roider_jane",
     "hullMods": [
-        "pointdefenseai",
-        "escort_package"
+        "pointdefenseai"
     ],
     "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],
     "permaMods": [],

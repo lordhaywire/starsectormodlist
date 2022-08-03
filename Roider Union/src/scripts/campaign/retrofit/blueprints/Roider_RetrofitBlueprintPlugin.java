@@ -266,7 +266,7 @@ public class Roider_RetrofitBlueprintPlugin extends BaseSpecialItemPlugin implem
                 double time, RepLevel rep, boolean commission) {
         if (!target.equals(ship.getBaseHullId())) return null;
 
-        return new RetrofitData(id, Roider_Fitters.FULL, source,
+        return new RetrofitData(id, Roider_Fitters.ALL, source,
                     target, cost, time, rep, commission);
     }
 

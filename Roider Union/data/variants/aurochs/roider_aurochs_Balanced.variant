@@ -1,7 +1,7 @@
 {
     "displayName": "Balanced",
-    "fluxCapacitors": 10,
-    "fluxVents": 9,
+    "fluxCapacitors": 12,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "roider_aurochs",
     "modules": [{"PROW ARMOR": "roider_aurochs_armor_Standard"}],

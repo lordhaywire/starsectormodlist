@@ -1,7 +1,7 @@
 {
     "displayName": "Strike",
     "fluxCapacitors": 10,
-    "fluxVents": 14,
+    "fluxVents": 16,
     "goalVariant": true,
     "hullId": "roider_cowboy",
     "hullMods": [],

@@ -1,139 +1,124 @@
 {
-  "bounds": [
-    -73.5,
-    17.5,
-    -39,
-    34,
-    -35,
-    50,
-    -22,
-    50,
-    -22,
-    41,
-    36.5,
-    40,
-    75,
-    -0,
-    36.5,
-    -40,
-    -4.5,
-    -41.5,
-    -11,
-    -56.5,
-    -34,
-    -50.5,
-    -46,
-    -26,
-    -73.5,
-    -19.5
-  ],
+  "hullName": "Visent",
+  "hullId": "prv_visent",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_visent.png",
+  "style": "PRV_LOW",
+  "height": 154,
+  "width": 116,
+  "center": [58, 92.5],
+  "collisionRadius": 112.5,
+  "shieldCenter": [-12, -0],
+  "shieldRadius": 99,
+  "viewOffset": 0,
   "builtInMods": [
     "civgrade",
     "rugged"
   ],
-  "builtInWings": [],
-  "center": [
-    58,
-    77
-  ],
-  "collisionRadius": 100.5,
-  "engineSlots": [
-    {
-      "angle": 180,
-      "contrailSize": 15,
-      "length": 54,
-      "location": [
-        -40.5,
-        38.5
-      ],
-      "style": "PRV_LOW",
-      "width": 15
-    },
-    {
-      "angle": -180,
-      "contrailSize": 15,
-      "length": 54,
-      "location": [
-        -40.5,
-        -38.5
-      ],
-      "style": "PRV_LOW",
-      "width": 15
-    }
-  ],
-  "height": 154,
-  "hullId": "prv_visent",
-  "hullName": "Visent",
-  "hullSize": "DESTROYER",
-  "shieldCenter": [
-    0,
-    0
-  ],
-  "shieldRadius": 99,
-  "spriteName": "graphics/prv/ships/prv_visent.png",
-  "style": "PRV_LOW",
-  "viewOffset": 0,
   "weaponSlots": [
     {
-      "angle": 0,
-      "arc": 5,
       "id": "WS0001",
-      "locations": [
-        43,
-        -28
-      ],
-      "mount": "HARDPOINT",
       "size": "MEDIUM",
-      "type": "COMPOSITE"
-    },
-    {
-      "angle": 0,
-      "arc": 5,
-      "id": "WS0002",
-      "locations": [
-        43,
-        28
-      ],
+      "type": "COMPOSITE",
       "mount": "HARDPOINT",
-      "size": "SMALL",
-      "type": "COMPOSITE"
-    },
-    {
-      "angle": 120,
-      "arc": 210,
-      "id": "WS0003",
-      "locations": [
-        20,
-        26
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "BALLISTIC"
-    },
-    {
-      "angle": -90,
-      "arc": 210,
-      "id": "WS0004",
-      "locations": [
-        -13,
-        -47
-      ],
-      "mount": "TURRET",
-      "size": "SMALL",
-      "type": "BALLISTIC"
-    },
-    {
+      "arc": 5,
       "angle": 0,
-      "arc": 240,
-      "id": "WS0005",
-      "locations": [
-        68,
-        -0
-      ],
-      "mount": "TURRET",
+      "locations": [27.5, -28]
+    },
+    {
+      "id": "WS0002",
       "size": "SMALL",
-      "type": "BALLISTIC"
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [27.5, 28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 120,
+      "locations": [4.5, 26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-28.5, -47]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -60,
+      "locations": [21.5, -11]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 60,
+      "locations": [21.5, 11]
     }
   ],
-  "width": 116
+  "engineSlots": [
+    {
+      "location": [-56, 38.5],
+      "length": 54,
+      "width": 15,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-56, -38.5],
+      "length": 54,
+      "width": 15,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-89, 19.5],
+      "length": 21,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-89, -19.5],
+      "length": 21,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -87.5, 24,
+    -46.5, 22,
+    -49, 51,
+    -37.5, 50,
+    -37.5, 41,
+    19, 40,
+    48.5, 16.5,
+    48.5, -16.5,
+    19, -40,
+    -20, -41.5,
+    -21, -53,
+    -49, -51,
+    -46.5, -22,
+    -87.5, -24
+  ]
 }

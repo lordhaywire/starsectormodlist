@@ -1,0 +1,164 @@
+{
+  "hullName": "Gambit (Early)",
+  "hullId": "roider_gambit_early",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/roider_gambit.png",
+  "style": "ROIDER_HULL",
+  "height": 183,
+  "width": 150,
+  "center": [75, 96],
+  "collisionRadius": 130,
+  "shieldCenter": [-3, -0],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "builtInMods": [
+    "roider_midas",
+	"ill_advised",
+	"comp_structure"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [79, -0]
+    },
+    {
+      "id": "WS 002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [15, 54]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [15, -54]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [52, -0]
+    },
+    {
+      "id": "WS 005",
+      "size": "LARGE",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 30,
+      "angle": 0,
+      "locations": [21, -0]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 130,
+      "locations": [-30, 49]
+    },
+    {
+      "id": "WS 007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -130,
+      "locations": [-30, -49]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-92, -36.5],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-92, 35.5],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-85, -59],
+      "length": 42,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-85, 59],
+      "length": 42,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-92, 48.5],
+      "length": 64,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-92, -48.5],
+      "length": 64,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 64,
+      "style": "ROIDER_ENGINE"
+    }
+  ],
+  "bounds": [
+    -58, -10,
+    -47, -11,
+    -50, -27,
+    -91, -22,
+    -80, -64,
+    -55, -64,
+    -49, -71,
+    -31, -69,
+    -7, -72,
+    16, -66,
+    12, -42,
+    7, -33,
+    58, -31,
+    76, -18,
+    76, 18,
+    58, 31,
+    7, 33,
+    12, 42,
+    16, 66,
+    -7, 72,
+    -31, 69,
+    -49, 71,
+    -55, 64,
+    -80, 64,
+    -91, 22,
+    -50, 27,
+    -47, 11,
+    -58, 10
+  ]
+}

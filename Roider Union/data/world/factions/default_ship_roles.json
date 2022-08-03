@@ -65,8 +65,21 @@
 	},
 	"combatLarge":{
 		
-		"roider_gambit_Balanced":5,
-		"roider_gambit_Assault":5,
+		"roider_gambit_Balanced":4,
+		"roider_gambit_Assault":2,
+		"roider_gambit_Elite":3,
+		"roider_gambit_Storm":1,
+		
+		"roider_gambit_early_Balanced":4,
+		"roider_gambit_early_Assault":1,
+		"roider_gambit_early_Salvaged":5,
+		
+		"roider_gambit_p_Assault":5,
+		"roider_gambit_p_Overdriven":5,
+		
+		"roider_gambit_p_early_Scavenged":5,
+		"roider_gambit_p_early_Assault":2,
+		"roider_gambit_p_early_Overdriven":3,
 		
 		"roider_wrecker_Assault":3,
 		"roider_wrecker_CS":4,

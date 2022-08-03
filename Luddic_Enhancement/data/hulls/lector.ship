@@ -12,6 +12,7 @@
   "shieldRadius": 74.5,
   "viewOffset": 0,
   "builtInMods": [
+	"rugged",
     "luddenhance_shieldblock"
   ],
   "weaponSlots": [

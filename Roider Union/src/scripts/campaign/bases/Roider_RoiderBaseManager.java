@@ -9,6 +9,7 @@ import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.intel.BaseEventManager;
+import com.fs.starfarer.api.impl.campaign.intel.bases.PirateBaseManager;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import scripts.campaign.bases.Roider_RoiderBaseIntelV2.RoiderBaseTier;
 import com.fs.starfarer.api.util.Misc;
@@ -17,6 +18,7 @@ import com.thoughtworks.xstream.XStream;
 import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Settings;
 import java.util.*;
+import scripts.world.Roider_Gen;
 
 public class Roider_RoiderBaseManager extends BaseEventManager {
     public static void aliasAttributes(XStream x) {
@@ -80,7 +82,7 @@ public class Roider_RoiderBaseManager extends BaseEventManager {
 	protected EveryFrameScript createEvent() {
 		if (random.nextFloat() < CHECK_PROB) return null;
 
-		StarSystemAPI system = pickSystemForRoiderBase();
+		StarSystemAPI system = Roider_Gen.pickSystemForRoiderBase();
 		if (system == null) return null;
 
 		RoiderBaseTier tier = pickTier();
@@ -159,79 +161,13 @@ public class Roider_RoiderBaseManager extends BaseEventManager {
 		return picker.pick();
 	}
 
-	public static String RECENTLY_USED_FOR_BASE = "$core_recentlyUsedForBase";
 	public static float genBaseUseTimeout() {
 		return 120f + 60f * (float) Math.random();
 	}
 	public static void markRecentlyUsedForBase(StarSystemAPI system) {
 		if (system != null && system.getCenter() != null) {
-			system.getCenter().getMemoryWithoutUpdate().set(RECENTLY_USED_FOR_BASE, true, genBaseUseTimeout());
+			system.getCenter().getMemoryWithoutUpdate().set(PirateBaseManager.RECENTLY_USED_FOR_BASE, true, genBaseUseTimeout());
 		}
-	}
-
-	protected StarSystemAPI pickSystemForRoiderBase() {
-		WeightedRandomPicker<StarSystemAPI> far = new WeightedRandomPicker<>(random);
-		WeightedRandomPicker<StarSystemAPI> picker = new WeightedRandomPicker<>(random);
-
-		for (StarSystemAPI system : Global.getSector().getStarSystems()) {
-			float days = Global.getSector().getClock().getElapsedDaysSince(system.getLastPlayerVisitTimestamp());
-			if (days < 45f) continue;
-			if (system.getCenter().getMemoryWithoutUpdate().contains(RECENTLY_USED_FOR_BASE)) continue;
-
-			float weight = 0f;
-			if (system.hasTag(Tags.THEME_MISC_SKIP)) {
-				weight = 1f;
-			} else if (system.hasTag(Tags.THEME_MISC)) {
-				weight = 3f;
-			} else if (system.hasTag(Tags.THEME_REMNANT_NO_FLEETS)) {
-				weight = 3f;
-			} else if (system.hasTag(Tags.THEME_RUINS)) {
-				weight = 5f;
-			} else if (system.hasTag(Tags.THEME_CORE_UNPOPULATED)) {
-				weight = 1f;
-			}
-			if (weight <= 0f) continue;
-
-			float usefulStuff = system.getCustomEntitiesWithTag(Tags.OBJECTIVE).size() +
-								system.getCustomEntitiesWithTag(Tags.STABLE_LOCATION).size();
-			if (usefulStuff <= 0) continue;
-
-			if (Misc.hasPulsar(system)) continue;
-			if (Misc.getMarketsInLocation(system).size() > 0) continue;
-
-            LinkedHashMap<BaseThemeGenerator.LocationType, Float> weights = new LinkedHashMap<>();
-            weights.put(BaseThemeGenerator.LocationType.IN_ASTEROID_BELT, 1f);
-            weights.put(BaseThemeGenerator.LocationType.IN_ASTEROID_FIELD, 1f);
-            weights.put(BaseThemeGenerator.LocationType.IN_RING, 1f);
-            weights.put(BaseThemeGenerator.LocationType.PLANET_ORBIT, 1f);
-
-            WeightedRandomPicker<BaseThemeGenerator.EntityLocation> locs
-                        = BaseThemeGenerator.getLocations(random, system, new HashSet<SectorEntityToken>(), 200f, weights);
-            if (locs.isEmpty()) continue;
-
-
-			float dist = system.getLocation().length();
-
-
-
-//			float distMult = 1f - dist / 20000f;
-//			if (distMult > 1f) distMult = 1f;
-//			if (distMult < 0.1f) distMult = 0.1f;
-
-			float distMult = 1f;
-
-			if (dist > 36000f) {
-				far.add(system, weight * usefulStuff * distMult);
-			} else {
-				picker.add(system, weight * usefulStuff * distMult);
-			}
-		}
-
-		if (picker.isEmpty()) {
-			picker.addAll(far);
-		}
-
-		return picker.pick();
 	}
 
 	public int getNumDestroyed() {

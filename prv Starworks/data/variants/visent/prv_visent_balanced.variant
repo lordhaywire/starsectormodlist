@@ -1,43 +1,44 @@
 {
-  "displayName": "Balanced",
-  "fluxCapacitors": 15,
-  "fluxVents": 10,
-  "goalVariant": false,
+  "variantId": "prv_visent_balanced",
   "hullId": "prv_visent",
+  "displayName": "Balanced",
+  "goalVariant": false,
+  "fluxCapacitors": 12,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
   "hullMods": [
     "unstable_injector"
   ],
-  "permaMods": [],
-  "quality": 0,
-  "variantId": "prv_visent_balanced",
   "weaponGroups": [
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "annihilatorpod"
+        "WS0005": "lightac",
+        "WS0006": "lightac"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "swarmer"
+        "WS0002": "reaper"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "breachpod"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "lightac",
-        "WS0005": "lightac"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "vulcan"
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
       }
     },
     {
@@ -46,5 +47,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

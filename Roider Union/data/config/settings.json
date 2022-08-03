@@ -3,9 +3,12 @@
 		"roider_armorCleaner":"scripts.combat.Roider_ArmorCleaner",
 		"roider_armorNoEscort":"scripts.combat.Roider_ArmorNoEscort",
 		#"roider_moduleRetreatCleaner":"scripts.combat.Roider_ModuleRetreatCleaner"
+		"roider_phasenetMan":"scripts.combat.Roider_PhasenetEffectManager",
 	},
 	
 	"roider_dev":true, #unused
+	
+	"roider_techExpDebug":false,
 
 	"ruleCommandPackages":[
 		"scripts.campaign.rulecmd"
@@ -21,7 +24,9 @@
 		},
 	
 		"characters":{
-			"roider_maggie":"graphics/portraits/portrait14.png"
+			"roider_maggie":"graphics/portraits/portrait14.png",
+			"roider_madRockpiperMale":"graphics/portraits/characters/roider_madman_male.png",
+			"roider_madRockpiperFemale":"graphics/portraits/characters/roider_madman_female.png",
 		},
 		
 		"intel":{
@@ -35,8 +40,20 @@
 			"roider_package":"graphics/factions/roider_flag.png"
 		},
 		"roider_combat":{
-			"wrecker_glow1":"graphics/ships/wrecker/roider_wrecker_glow1.png",
-			"wrecker_glow2":"graphics/ships/wrecker/roider_wrecker_glow2.png",
-		}
-    }
+			"wrecker_glow1":"graphics/ships/wrecker/roider_wrecker_glow101.png",
+			"wrecker_glow2":"graphics/ships/wrecker/roider_wrecker_glow201.png",
+			
+			"phasenet":"graphics/icons/hullsys/roider_phasenet.png",
+		},
+		"roider_stashMines": {
+			"mine4": "graphics/mines/mine4.png",
+			"mineGlow": "graphics/mines/mineGlow.png",
+		},
+    },
+	
+	# Bonus XP values for SP actions
+	"bonusXP":{
+		"roider_insurance":1,
+		"roider_mrp":1,
+	},
 }

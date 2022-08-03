@@ -2,7 +2,7 @@
   "displayName": "Raider",
   "fluxCapacitors": 9,
   "fluxVents": 15,
-  "goalVariant": true,
+  "goalVariant": false,
   "hullId": "prv_visent",
   "hullMods": [
     "unstable_injector"

@@ -1,0 +1,31 @@
+{
+  "hullName": "Armor Belt",
+  "hullId": "prv_module_armor_bergtagen_l",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/modules/prv_bergtagen_armor_l.png",
+  "style": "PRV_LOW",
+  "height": 80,
+  "width": 50,
+  "center": [32.5, 38.5],
+  "collisionRadius": 44.5,
+  "shieldCenter": [0, 0.5],
+  "shieldRadius": 44,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -48,
+    1
+  ],
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    37, -14,
+    30.5, 14,
+    -3, 27.5,
+    -35, 16.5,
+    -38, 4.5
+  ]
+}

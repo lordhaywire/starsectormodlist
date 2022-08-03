@@ -1,16 +1,15 @@
 {
-  "displayName": "Standard",
-  "fluxCapacitors": 6,
-  "fluxVents": 20,
-  "goalVariant": true,
-  "hullId": "prv_gnejs",
-  "hullMods": [
-    "blast_doors"
-  ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 0,
   "variantId": "prv_gnejs_standard",
+  "hullId": "prv_gnejs",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ballistic_rangefinder"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -39,8 +38,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "prv_pskd",
-        "WS0007": "prv_pskd"
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
       }
     },
     {
@@ -49,5 +48,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

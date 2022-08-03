@@ -7,7 +7,7 @@ import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.thoughtworks.xstream.XStream;
 import data.scripts.util.MagicSettings;
-import ids.Roider_Ids;
+import ids.Roider_Ids.Roider_Settings;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -226,8 +226,8 @@ public class Roider_RetrofitsKeeper {
         cost -= sellPrice - sellPrice * (tariff - 1f);
 
         // The total is multiplied by the conversion mult
-        float convMult = MagicSettings.getFloat(Roider_Ids.Roider_Settings.MAGIC_ID,
-                    Roider_Ids.Roider_Settings.CONVERSION_PRICE_MULT);
+        float convMult = MagicSettings.getFloat(Roider_Settings.MAGIC_ID,
+                    Roider_Settings.CONVERSION_PRICE_MULT);
         cost *= convMult;
 
         // Round to nearest 1k if over 100k

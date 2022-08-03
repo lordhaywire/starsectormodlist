@@ -13,13 +13,13 @@
 	"removeBuiltInWeapons":[], 		# weapon slot ids
 	"weaponSlotChanges":{
 	   "WS 001":{
-		  "type": "MISSILE"
+		  "type": "COMPOSITE"
 	   },
 	   "WS 002":{
-		  "type": "MISSILE"
+		  "type": "COMPOSITE"
 	   },
 	   "WS 003":{
-		  "type": "MISSILE"
+		  "type": "COMPOSITE"
 	   },	   
 	   "WS 004":{
 		  "angle": 30,

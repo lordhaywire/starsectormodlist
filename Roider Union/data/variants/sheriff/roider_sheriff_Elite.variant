@@ -1,10 +1,10 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 8,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "roider_sheriff",
-    "hullMods": [],
+    "hullMods": ["fluxdistributor"],
     "permaMods": [],
     "variantId": "roider_sheriff_Elite",
     "weaponGroups": [

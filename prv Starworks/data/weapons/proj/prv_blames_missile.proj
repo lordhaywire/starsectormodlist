@@ -3,7 +3,7 @@
 	"specClass":"missile",
 	#"missileType":"ROCKET",
 	"missileType":"MISSILE",
-	"onHitEffect":"data.scripts.weapons.prv_mine_emp_OnHitEffect",
+	"onHitEffect":"scripts.weapons.prv_blames_OnHitEffect",
 	"sprite":"graphics/prv/missiles/prv_missile_blames.png",
 	"size":[8,20],	
 	"center":[4,10],

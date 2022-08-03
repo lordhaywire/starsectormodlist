@@ -2,7 +2,7 @@
   "displayName": "Balanced",
   "fluxCapacitors": 8,
   "fluxVents": 20,
-  "goalVariant": true,
+  "goalVariant": false,
   "hullId": "prv_gissel",
   "hullMods": [
     "missleracks",

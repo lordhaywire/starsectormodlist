@@ -32,6 +32,8 @@
 	# (and the "go to Academy" bar quest doesn't appear)
 	"nex_noStoryCriticalMarkets":false,
 	
+	"nex_skipStoryDefault":false,
+	
 	"nex_keepSModsForRecoveredShips":true,	# note: only affects enemy ships, friendly ships already keep their mods
 	
 	"nex_enableMiningHarass":true,
@@ -42,7 +44,7 @@
 	"nex_pirateRageIncrement":0.04,
 	"nex_expeditionDelayPerExistingColony":15,
 	"nex_faction_respawn_cooldown":150,
-	"nex_counterInvasionPointsToSpawn":125,
+	"nex_revengeInvasionPointsToSpawn":125,
 	# if false, other factions will not attack Templars; recommend combining with "canInvade" tag in Templars' faction config to make them not invade others
 	"nex_invade_and_raid_templars":true,
 	"nex_invasionStabilizeTimeoutMult":1,
@@ -63,6 +65,7 @@
 	"nex_tributePopulationMult":0.5,
 	
 	"nex_governorship_maxSize":4,	# tooltip will not be updated to reflect changes to this
+	"nex_governorship_industryValueMult":0.8,
 	
 	"nex_fleetRequestOrganizeTimeMult":0.75,	# default 0.75
 	
@@ -84,6 +87,10 @@
 	"nex_officerSurviveChance":0.75,	# only if officer does not escape and ship is disabled rather than destroyed
 	
 	"nex_insuranceFraudCheck":true,		# legacy insurance only
+	
+	"nex_merc_company_contract_period":365,
+	
+	"nex_killCellsForCommissioner":false,
 	
 	"nex_playerOutpost_metals":400,
 	"nex_playerOutpost_supplies":75,
@@ -167,6 +174,8 @@
 		"coreLifecyclePlugin":"exerelin.plugins.NexCoreLifecyclePlugin",
 		"newGameCreationEntryPoint":"exerelin.world.ExerelinNewGameSetup",
 		#"newGameSectorProcGen":"exerelin.world.ExerelinSectorProcGen",
+		
+		"nex_restoreCommanderPlugin":"exerelin.combat.RestoreCommanderPlugin",
 	},
 	
 	# Bonus XP values for most story-point-using actions
@@ -192,6 +201,7 @@
 			"fly_away":"graphics/illustrations/fly_away.jpg",
 			"corporate_lobby":"graphics/illustrations/corporate_lobby.jpg",
 			"victory_apostate":"graphics/exerelin/illustrations/victory_apostate.jpg",
+			"omega_blueprint":"graphics/exerelin/illustrations/omega_blueprint.png",
 		},
 		
 		"characters":{
@@ -283,6 +293,9 @@
 			"nex_plant":"graphics/exerelin/icons/plant.png",
 			"nex_population_upsize":"graphics/exerelin/icons/population.png",
 			"nex_factionsetup_industry_frame":"graphics/exerelin/ui/factionsetup_industry_frame.png",
+			
+			"nex_arrow_right":"graphics/exerelin/ui/arrow_right.png",
+			"nex_arrow_left":"graphics/exerelin/ui/arrow_left.png",
 		},
 	}
 }

@@ -2,31 +2,39 @@
   "variantId": "prv_bergtagen_standard",
   "hullId": "prv_bergtagen",
   "displayName": "Standard",
-  "goalVariant": true,
-  "fluxCapacitors": 10,
+  "goalVariant": false,
+  "fluxCapacitors": 25,
   "fluxVents": 50,
-  "quality": 1,
+  "quality": 2,
   "permaMods": [],
   "hullMods": [
-    "targetingunit",
-    "reinforcedhull",
-    "turretgyros",
-    "autorepair"
+    "dedicated_targeting_core",
+    "armoredweapons",
+    "missleracks"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "prv_spatterflamer"
+        "WS0002": "hellbore",
+        "WS0004": "hellbore"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "pilum",
-        "WS0024": "pilum"
+        "WS0001": "sabotpod",
+        "WS0024": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "prv_brytare_pod",
+        "WS0023": "prv_brytare_pod"
       }
     },
     {
@@ -34,38 +42,48 @@
       "mode": "LINKED",
       "weapons": {
         "WS0003": "mark9",
-        "WS0004": "mark9",
-        "WS0015": "hil"
+        "WS0015": "mark9"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0008": "heavymortar",
-        "WS0009": "heavymortar"
+        "WS0006": "arbalest",
+        "WS0007": "arbalest",
+        "WS0008": "arbalest",
+        "WS0009": "arbalest"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "pdlaser",
-        "WS0006": "heavymg",
-        "WS0007": "heavymg",
-        "WS0010": "vulcan",
-        "WS0011": "vulcan",
-        "WS0012": "vulcan",
-        "WS0013": "vulcan",
-        "WS0014": "pdlaser",
-        "WS0016": "lightmg",
-        "WS0017": "lightmg",
-        "WS0018": "pdlaser",
-        "WS0019": "pdlaser",
-        "WS0023": "pdlaser"
+        "WS0005": "dualflak",
+        "WS0012": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "lrpdlaser",
+        "WS0011": "lrpdlaser",
+        "WS0014": "lrpdlaser",
+        "WS0016": "lrpdlaser",
+        "WS0017": "lrpdlaser",
+        "WS0018": "lrpdlaser",
+        "WS0019": "lrpdlaser"
       }
     }
   ],
-  "modules": [],
+  "modules": [
+    {
+      "M01": "prv_module_armor_bergtagen_l_standard"
+    },
+    {
+      "M02": "prv_module_armor_bergtagen_r_standard"
+    }
+  ],
   "wings": []
 }

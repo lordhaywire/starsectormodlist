@@ -42,7 +42,7 @@
       "width": 3,
       "angle": -155,
       "contrailSize": 3,
-      "style": "PRV_LOW"
+      "style": "PRV_AGNI"
     },
     {
       "location": [-8.5, 4],
@@ -50,7 +50,7 @@
       "width": 3,
       "angle": 155,
       "contrailSize": 3,
-      "style": "PRV_LOW"
+      "style": "PRV_AGNI"
     },
     {
       "location": [-6.5, 0],
@@ -58,7 +58,7 @@
       "width": 5,
       "angle": 180,
       "contrailSize": 5,
-      "style": "PRV_LOW"
+      "style": "PRV_AGNI"
     }
   ],
   "bounds": [

@@ -12,8 +12,9 @@
   "shieldRadius": 125,
   "viewOffset": 0,
   "builtInMods": [
-    "civgrade",
-    "militarized_subsystems",
+    #"civgrade",
+    #"militarized_subsystems",
+    "ballistic_rangefinder",
     "roider_midas1"
   ],
   "builtInWeapons": {

@@ -1,7 +1,4 @@
 {
-
-#collapseopen MUSIC
-	
 	"music":{
 		"roider_encounter":[
 			{"file":"roider_encounter.ogg","source":"sounds/music/factions","volume":0.2}, 
@@ -11,6 +8,9 @@
 		],
 		"roider_market":[
 			{"file":"roider_market.ogg","source":"sounds/music/factions","volume":0.2}, 
+		],
+		"roider_star_system":[
+			{"file":"roider_star_system.ogg","source":"sounds/music","volume":0.6}, 
 		],
 	},
 	"roider_blastinglaser":[
@@ -66,6 +66,23 @@
 	],
 	"roider_system_dread_loaders_loop":[ 
 		{"file":"sounds/systems/roider_dread_loaders_loop.ogg","pitch":1,"volume":0.9},
+	],
+	
+	"roider_rhl_click":[ 
+		{"file":"sounds/systems/roider_reloading_click.ogg","pitch":1,"volume":0.15},
+	],
+	"roider_rhl_clack":[ 
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":1.03,"volume":0.15},
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":1,"volume":0.15},
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":0.97,"volume":0.15},
+	],
+	"roider_rhl_clickLoud":[ 
+		{"file":"sounds/systems/roider_reloading_click.ogg","pitch":1,"volume":0.6},
+	],
+	"roider_rhl_clackLoud":[ 
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":1.03,"volume":0.6},
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":1,"volume":0.6},
+		{"file":"sounds/systems/roider_reloading_clack.ogg","pitch":0.97,"volume":0.6},
 	],
 }
 

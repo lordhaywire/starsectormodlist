@@ -1,5 +1,5 @@
 {
-  "beamEffect": "data.scripts.weapons.prv_sipdlaser_BeamEffect",
+  "beamEffect": "scripts.weapons.prv_sipdlaser_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "coreColor": [
@@ -38,13 +38,13 @@
     PROJECTILE_NO_FF,
     PROJECTILE_FIGHTER
   ],
-  "pixelsPerTexel": 5,
+  "pixelsPerTexel": 1,
   "size": "SMALL",
   "specClass": "beam",
-  "textureScrollSpeed": 64,
+  "textureScrollSpeed": 0,
   "textureType": [
-    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
-    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+    "graphics/prv/fx/prv_beam_faint_fringe.png",
+    "graphics/prv/fx/prv_beam_faint_core.png"
   ],
   "turretAngleOffsets": [
     0
@@ -56,5 +56,5 @@
   ],
   "turretSprite": "graphics/prv/weapons/prv_sipdlaser_turret.png",
   "type": "ENERGY",
-  "width": 7.5
+  "width": 9
 }

@@ -25,7 +25,6 @@ prv_tystnad_p_pirate
 
 prv_eld_hunter
 prv_eld_midline_attack
-prv_eld_rb_assault
 
 prv_sorl_strike
 prv_sorl_midline_escort
@@ -67,10 +66,6 @@ prv_munsbit_lc_converted
 prv_ilbud_flicker
 prv_ilbud_h_spec
 
-prv_shade_aux_support
-prv_afflictor_aux_strike
-prv_harbinger_aux_attack
-
 prv_condor_aux_b
 prv_gemini_aux_s
 prv_tarsus_aux
@@ -91,13 +86,13 @@ prv_basalt_attack
 prv_gremlin_rb_attack
 
 prv_gnejs_assault
-prv_gnejs_p_pirate
 
 prv_skara_elite
 
-prv_gissel_balanced
-
 prv_gabbro_standard
+
+prv_gissel_balanced
+prv_gissel_p_rocket
 
 prv_hornfels_belt
 prv_hornfels_pather_pather
@@ -109,5 +104,3 @@ prv_kvarts_militia
 prv_andesit_belt
 
 prv_bergtagen_assault
-
-prv_mora_pather_gs

@@ -1,6 +1,6 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 30,
+    "fluxCapacitors": 28,
     "fluxVents": 12,
     "goalVariant": true,
     "hullId": "roider_argos",

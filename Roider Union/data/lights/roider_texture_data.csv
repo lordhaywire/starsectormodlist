@@ -30,6 +30,8 @@ roider_jane,ship,,1,normal,graphics/normal/ships/roider_jane_normal.png
 ,,,,,
 roider_gambit,ship,,1,normal,graphics/normal/ships/roider_gambit_normal.png
 roider_gambit_armor,ship,,1,normal,graphics/normal/ships/roider_gambit_mantle_normal.png
+roider_gambit_p,ship,,1,normal,graphics/normal/ships/roider_gambit_p_normal.png
+roider_gambit_p_armor,ship,,1,normal,graphics/normal/ships/roider_gambit_p_mantle_normal.png
 roider_colossus2,ship,,1,normal,graphics/normal/ships/roider_colossus2_normal.png
 roider_ranch,ship,,1,normal,graphics/normal/ships/roider_ranch_normal.png
 roider_ranch_armor,ship,,1,normal,graphics/normal/ships/roider_ranch_prow_normal.png

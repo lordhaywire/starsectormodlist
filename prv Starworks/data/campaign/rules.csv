@@ -1,0 +1,20 @@
+id,trigger,conditions,script,text,options,notes
+# relationship level descriptions,,,,,,
+relLevelNeutralPirates,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == rb",,"At ease with life in the belts, you’ve learned enough about Ruster habits to pass unnoticed as you go about your business.",,
+relLevelFavorablePirates,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == rb",,"You've been around belt salvors, smugglers, syndicate enforcers and other types of Rusters often enough, and know how to act so they see you as one of their own.",,
+relLevelWelcomingPirates,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == rb",,"You've gained a measure of notoriety among the major syndicates, and know who to bribe and whom to bully to get what you want.",,
+relLevelFriendlyPirates,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == rb",,"A dear friend of fringe spacers, you find yourself greeted warmly in any Ruster port, and you rarely need to pay for your own drinks.",,
+relLevelCooperativePirates,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == rb",,"You're familiar to some of the movers and shakers of the Great Belt Alliance, and there is talk of extending the membership charter to include your fleet.",,
+relLevelSuspiciousPirates,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == rb",,"While still considered an outsider, Rusters understand that you’re not as bad as most core-dwellers.",,
+relLevelInhospitablePirates,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == rb",,"Rusters immediately figure you for an outside and are unlikely to offer you much hospitality. As long as you’re discrete your credits are still welcome, however.",,
+relLevelHostilePirates,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == rb",,"You’ve left a mark on the GBA, who in turn have put a mark on your head. Rusters consider you an enemy and are likely to attack (or evade) you on sight.",,
+relLevelVengefulPirates,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == rb",,"Worse than even the prv, Rusters curse your name for your countless crimes against their life and liberty and will go out of their way to cause you the slightest bit of harm.",,

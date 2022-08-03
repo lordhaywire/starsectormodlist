@@ -419,7 +419,7 @@ public class Roider_BaseRetrofitPlugin implements InteractionDialogPlugin {
         for (ShipHullSpecAPI spec : specs) {
             if (included.contains(spec)) continue;
 
-            retrofitHulls.getFleetData().addFleetMember(spec.getBaseHullId() + "_Hull");
+            retrofitHulls.getFleetData().addFleetMember(spec.getHullId() + "_Hull");
             included.add(spec);
         }
 

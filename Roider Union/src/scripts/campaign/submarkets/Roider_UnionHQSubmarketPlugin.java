@@ -31,9 +31,7 @@ import ids.Roider_Ids.Roider_Items;
 import ids.Roider_Ids.Roider_Settings;
 import ids.Roider_MemFlags;
 import java.awt.Color;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import scripts.Roider_ModPlugin;
 import scripts.campaign.retrofit.Roider_RetrofitsKeeper.RetrofitData;
 import scripts.campaign.retrofit.Roider_UnionHQRetrofitManager;
@@ -55,6 +53,15 @@ public class Roider_UnionHQSubmarketPlugin extends MilitarySubmarketPlugin {
 
         loadShipRequirements();
 	}
+
+    @Override
+    public void advance(float amount) {
+        super.advance(amount);
+
+        if (!submarket.getFaction().getId().equals(Roider_Factions.ROIDER_UNION)) {
+            submarket.setFaction(Global.getSector().getFaction(Roider_Factions.ROIDER_UNION));
+        }
+    }
 
     protected void loadShipRequirements() {
         reqReps = new HashMap<>();
@@ -180,6 +187,7 @@ public class Roider_UnionHQSubmarketPlugin extends MilitarySubmarketPlugin {
 
         int added = 0;
         int tries = 0;
+        Set<String> alreadyAdded = new HashSet<>();
         while (added < num) {
             tries++;
             if (tries > num * 3) break;
@@ -191,19 +199,30 @@ public class Roider_UnionHQSubmarketPlugin extends MilitarySubmarketPlugin {
             }
             if (pick.isNothing()) continue;
 
-            if (Global.getSector().getPlayerFaction().knowsShip(pick.getSpecialItemData())) continue;
-            if (Global.getSector().getPlayerFaction().knowsFighter(pick.getSpecialItemData())) continue;
+            String dataId = pick.getSpecialItemData();
 
-            if (pick.getSpecialItemId().equals(Roider_Items.ROIDER_PACKAGE)) {
+            if (dataId == null) continue;
+
+            if (Global.getSector().getPlayerFaction().knowsShip(dataId)) continue;
+            if (Global.getSector().getPlayerFaction().knowsFighter(dataId)) continue;
+            if (Global.getSector().getPlayerFaction().knowsWeapon(dataId)) continue;
+
+            if (dataId.equals(Roider_Items.ROIDER_PACKAGE)) {
                 BlueprintProviderItem bpi = (BlueprintProviderItem) pick.getSpecialItemSpec().getNewPluginInstance(null);
                 if (allBPsKnown(bpi)) continue;
             }
 
-            SpecialItemData data = new SpecialItemData(pick.getSpecialItemId(),
-                        pick.getSpecialItemData());
+            if (dataId.isEmpty() && alreadyAdded.contains(pick.getSpecialItemId())) continue;
+            else if (alreadyAdded.contains(dataId)) continue;
+
+
+            SpecialItemData data = new SpecialItemData(pick.getSpecialItemId(), dataId);
 
             cargo.addItems(CargoItemType.SPECIAL, data, 1);
             added++;
+
+            alreadyAdded.add(dataId);
+
         }
     }
 

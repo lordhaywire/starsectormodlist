@@ -3,7 +3,7 @@
   "hullId": "prv_andesit",
   "displayName": "Syndicate",
   "goalVariant": true,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 10,
   "fluxVents": 40,
   "quality": 2,
   "permaMods": [],
@@ -12,6 +12,13 @@
     "missleracks"
   ],
   "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "locust"
+      }
+    },
     {
       "autofire": false,
       "mode": "ALTERNATING",
@@ -32,8 +39,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0004": "annihilatorpod",
-        "WS0008": "annihilatorpod"
+        "WS0004": "harpoonpod",
+        "WS0008": "harpoonpod"
       }
     },
     {
@@ -47,32 +54,26 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "lightag",
-        "WS0012": "lightag",
+        "WS0007": "lightac",
+        "WS0015": "lightac"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_kartesch",
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
+        "WS0003": "dualflak",
         "WS0005": "vulcan",
         "WS0006": "vulcan",
         "WS0013": "vulcan",
         "WS0014": "vulcan"
       }
-    },
+    }
   ],
   "modules": [],
   "wings": [
-    "claw_wing",
-    "broadsword_wing",
+    "prv_buddy_wing",
+    "prv_buddy_wing",
     "prv_buddy_wing"
   ]
 }

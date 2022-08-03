@@ -1,6 +1,6 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 13,
+    "fluxCapacitors": 17,
     "fluxVents": 50,
 	"goalVariant": true,
     "hullId": "roider_telamon",

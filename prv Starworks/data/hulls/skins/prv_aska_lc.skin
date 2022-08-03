@@ -4,14 +4,15 @@
 	"tags":["rare_bp"],
 	#"tech":"Luddic Church (prv)",
 	"tech":"Luddic Church",
-	"baseValueMult": 1.2,
-	"fleetPoints":19,
+	#"baseValueMult": 1,
+	#"fleetPoints":19,
 	"ordnancePoints":150,
-	"builtInWeapons": {
-		"BI01": "hammerrack"
-	},
+	#"builtInWeapons": {
+	#	"BI01": "hammerrack"
+	#},
 	"removeBuiltInWeapons":["BI03"],
 	"removeWeaponSlots":[
+		"BI01",
 		"BI03",
 		#"WS0005"
 	],
@@ -24,12 +25,6 @@
 	"skinHullId": "prv_aska_lc",
 	"spriteName": "graphics/prv/ships/prv_aska_lc.png",
 	"weaponSlotChanges":{
-		#center BI
-		"BI01":{
-		  "size": "LARGE",
-		  "type": "BUILT_IN",
-		  "mount": "HARDPOINT",
-		},
 		#main gun
 		"WS0001":{
 		  "type": "MISSILE",

@@ -18,6 +18,8 @@ import org.json.JSONObject;
  */
 public class LogisticsNotifications_NotificationScript implements EveryFrameScript {
     // These are specified in data/config/Logistics Notifications/config.json
+    // Whether to use this display method
+    private final boolean DISPLAY_NOTIFICATIONS;
     // How often supply/fuel status is displayed
     private final int INCREMENT;
     // Warning (orange text) and alarm times in days of supply
@@ -44,6 +46,7 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
     private final float INTERVAL = 1;
 
 
+
     public LogisticsNotifications_NotificationScript() {
         lastDay = -1;
         counter = 0;
@@ -53,6 +56,8 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
 
         // Load settings from config.json
         // Defaults
+        boolean notifications = false;
+
         int increment = 3;
         int lowSupplies = 30;
         int alarmSupplies = 10;
@@ -71,6 +76,8 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         String fuelFollowupId = "cr_playership_critical";
         try {
             JSONObject obj = Global.getSettings().loadJSON("data/config/Logistics Notifications/config.json");
+            notifications = obj.getBoolean("useNotifications");
+
             increment = obj.getInt("notificationIncrement");
             lowSupplies = obj.getInt("lowSupplies");
             alarmSupplies = obj.getInt("alarmSupplies");
@@ -97,6 +104,8 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         if (lowSupplies < alarmSupplies) lowSupplies = alarmSupplies;
         if (alarmFuel < 0) alarmFuel = -1;
         if (lowFuel < alarmFuel) lowFuel = alarmFuel;
+
+        DISPLAY_NOTIFICATIONS = notifications;
 
         INCREMENT = increment;
         LOW_SUPPLIES = lowSupplies;
@@ -141,14 +150,17 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
             return;
         }
 
+
         // First update
-        if (first && delay <= 0f) {
-            first = false;
-            firstUpdate();
-            return;
-        } else if (first) {
-            delay -= amount;
-            return;
+        if (DISPLAY_NOTIFICATIONS) {
+            if (first && delay <= 0f) {
+                first = false;
+                firstUpdate();
+                return;
+            } else if (first) {
+                delay -= amount;
+                return;
+            }
         }
 
         // if paused, return
@@ -184,8 +196,10 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         counter = 0;
 
         // Display messages
-        showSupplyDays();
-        showFuelLY();
+        if (DISPLAY_NOTIFICATIONS) {
+            showSupplyDays();
+            showFuelLY();
+        }
 
         // Play alarm if danger
         alarmed = checkForDanger();
@@ -212,6 +226,9 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         boolean suAlarm = isSupplyAlarm();
         boolean fuelAlarm = isFuelAlarm();
         soundAlarm(suAlarm, fuelAlarm);
+
+        if (suAlarm) showSupplyDays();
+        if (fuelAlarm) showFuelLY();
 
         return suAlarm || fuelAlarm;
     }
@@ -263,7 +280,10 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         // Cut off past tenths place
         float suDisplay = (int) (suDays * 10f) / 10f;
 
-        Global.getSector().getCampaignUI().addMessage("You have about " + suDisplay + " days of supply left.", Misc.getTextColor(), "" + suDisplay, "", suColor, Misc.getTextColor());
+        Global.getSector().getCampaignUI().addMessage("You have about "
+                    + suDisplay + " days of supply left.",
+                    Misc.getTextColor(), "" + suDisplay, "",
+                    suColor, Misc.getTextColor());
     }
 
     /**
@@ -299,7 +319,7 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
             maintPerDay += logistics.getExcessFuelCapacitySupplyCost();
 
             // And finally: compute!
-            suDays = (recoveryCost / totalPerDay) + ((supplies - recoveryCost) / maintPerDay);
+            suDays = (recoveryCost / totalPerDay) + ((supplies - (int) recoveryCost) / maintPerDay);
         }
 
         return suDays;
@@ -334,7 +354,10 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
         // Cut off past tenths place
         float lyDisplay = (int) (ly * 10f) / 10f;
 
-        Global.getSector().getCampaignUI().addMessage("You have enough fuel to travel about " + lyDisplay + " lightyears.", Misc.getTextColor(), "" + lyDisplay, "", lyColor, Misc.getTextColor());
+        Global.getSector().getCampaignUI().addMessage("You have enough fuel to travel about "
+                    + lyDisplay + " lightyears.",
+                    Misc.getTextColor(), "" + lyDisplay, "",
+                    lyColor, Misc.getTextColor());
     }
 
     /**
@@ -370,6 +393,6 @@ public class LogisticsNotifications_NotificationScript implements EveryFrameScri
     @Override
     public boolean isDone() { return false; }
     @Override
-    public boolean runWhilePaused() { return true; }
+    public boolean runWhilePaused() { return false; }
 
 }
