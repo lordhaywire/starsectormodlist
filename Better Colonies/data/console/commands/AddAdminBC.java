@@ -9,7 +9,7 @@ import com.fs.starfarer.api.campaign.FactionAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.FullName.Gender;
 import com.fs.starfarer.api.characters.PersonAPI;
-import data.scripts.OfficerManagerEvent;
+import com.fs.starfarer.api.impl.campaign.events.OfficerManagerEvent;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import org.lazywizard.console.BaseCommand;
 import org.lazywizard.console.CommonStrings;

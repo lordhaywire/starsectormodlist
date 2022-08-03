@@ -9,19 +9,20 @@ import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase;
 import com.fs.starfarer.api.impl.campaign.ids.*;
+import com.fs.starfarer.api.impl.campaign.intel.bases.PirateBaseManager;
 import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import data.scripts.util.MagicSettings;
 import exerelin.campaign.ExerelinSetupData;
 import static ids.Roider_Ids.DESC;
+import ids.Roider_Ids.Roider_Entities;
 import ids.Roider_Ids.Roider_Factions;
 import ids.Roider_Ids.Roider_Industries;
 import ids.Roider_Ids.Roider_Settings;
 import ids.Roider_MemFlags;
 import java.util.*;
 import scripts.Roider_ModPlugin;
-import static scripts.campaign.bases.Roider_RoiderBaseManager.RECENTLY_USED_FOR_BASE;
 import scripts.campaign.bases.Roider_RoiderHQBaseIntel;
 import scripts.world.systems.*;
 import static scripts.world.systems.Roider_Atka.ROCKPIPER_PERCH;
@@ -80,6 +81,8 @@ public class Roider_Gen {
 
         // Various pirate mod factions and the like
         roider.setRelationship(Roider_Factions.CABAL, -1f);
+        roider.setRelationship(Roider_Factions.ARS, RepLevel.HOSTILE);
+        roider.setRelationship(Roider_Factions.COLONIAL_PIRATES, RepLevel.HOSTILE);
         roider.setRelationship(Roider_Factions.SCY, RepLevel.HOSTILE);
         roider.setRelationship(Roider_Factions.BLADE_BREAKERS, RepLevel.VENGEFUL);
         roider.setRelationship(Roider_Factions.EXIPIRATED, RepLevel.HOSTILE);
@@ -324,7 +327,7 @@ public class Roider_Gen {
 
             // Add Rockpiper Perch and hook it up
             SectorEntityToken roiderStation = planet.getStarSystem().addCustomEntity(ROCKPIPER_PERCH.id,
-                        ROCKPIPER_PERCH.name, "roider_station_rockpiper", Roider_Factions.ROIDER_UNION);
+                        ROCKPIPER_PERCH.name, Roider_Entities.ROCKPIPER_PERCH, Roider_Factions.ROIDER_UNION);
 
             roiderStation.setCircularOrbit(planet, 145, planet.getRadius() + 160f, Float.MAX_VALUE);
 //            roiderStation.setCircularOrbitPointingDown(korovin, 45 + 120, 380, 28);
@@ -360,7 +363,7 @@ public class Roider_Gen {
             }
 
             // Remove the old entity
-            primary.getStarSystem().removeEntity(primary);
+            Misc.fadeAndExpire(primary);
         }
 
         // Make sure battlestation attaches
@@ -398,7 +401,7 @@ public class Roider_Gen {
         return true;
     }
 
-	private static StarSystemAPI pickSystemForRoiderBase() {
+	public static StarSystemAPI pickSystemForRoiderBase() {
         Random random = new Random();
 		WeightedRandomPicker<StarSystemAPI> far = new WeightedRandomPicker<>(random);
 		WeightedRandomPicker<StarSystemAPI> picker = new WeightedRandomPicker<>(random);
@@ -406,7 +409,7 @@ public class Roider_Gen {
 		for (StarSystemAPI system : Global.getSector().getStarSystems()) {
 			float days = Global.getSector().getClock().getElapsedDaysSince(system.getLastPlayerVisitTimestamp());
 			if (days < 45f) continue;
-			if (system.getCenter().getMemoryWithoutUpdate().contains(RECENTLY_USED_FOR_BASE)) continue;
+			if (system.getCenter().getMemoryWithoutUpdate().contains(PirateBaseManager.RECENTLY_USED_FOR_BASE)) continue;
 
 			float weight = 0f;
 			if (system.hasTag(Tags.THEME_MISC_SKIP)) {
@@ -417,8 +420,6 @@ public class Roider_Gen {
 				weight = 3f;
 			} else if (system.hasTag(Tags.THEME_RUINS)) {
 				weight = 5f;
-			} else if (system.hasTag(Tags.THEME_CORE_UNPOPULATED)) {
-				weight = 1f;
 			}
 			if (weight <= 0f) continue;
 

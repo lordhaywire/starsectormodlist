@@ -12,7 +12,6 @@
   "hardpointSprite": "graphics/prv/weapons/prv_vakt_hardpoint_main.png",
   "hardpointGlowSprite": "graphics/prv/weapons/prv_vakt_hardpoint_glow.png",
   "hardpointUnderSprite": "graphics/prv/weapons/prv_vakt_hardpoint_under.png",
-  "renderAboveAllWeapons": 0,
   "glowColor": [
     153,
     102,
@@ -52,14 +51,13 @@
     128,
     128
   ],
-  "darkCore": true,
   "width": 12,
   "textureType": [
-    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
-    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+    "graphics/prv/fx/prv_beam_interrupted_fringe.png",
+    "graphics/prv/fx/prv_beam_interrupted_core.png"
   ],
-  "textureScrollSpeed": -96,
-  "pixelsPerTexel": 5,
+  "textureScrollSpeed": 0,
+  "pixelsPerTexel": 1,
   "pierceSet": [
     PROJECTILE_FF,
     PROJECTILE_NO_FF,

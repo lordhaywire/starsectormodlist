@@ -4,11 +4,12 @@
 		"hulls":[
 			"roider_cyclops",
 			"roider_pepperbox",
-			#"roider_dram",
+			"roider_jane",
 			"roider_onager",
 			"roider_bombard",
 			#"roider_phaeton",
 			"roider_colossus2",
+			"roider_gambit_early",
 		],
     },
     "knownFighters":{

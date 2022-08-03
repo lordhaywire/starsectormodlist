@@ -20,7 +20,7 @@
 		"SPACE":1,
 		"GENERAL":1,
 		"MERCANTILE":2,
-		"PRV":7,
+		"PRV":9,
 		"PRV_MET":3,
 		"PRV_TEK":3,
 		"PRV_ICH":2,
@@ -55,6 +55,7 @@
 			"condor":0,
 			"prv_condor":2,
 			"prv_gryning":0.075,
+			"prv_sinne":0.5,			#elite ship
 			### phase
 			"prv_fasnod":1.5,
 			"shade":0.33,
@@ -77,18 +78,11 @@
 	"knownShips":{
 		"tags":["prv_bp", "prv_adv_bp", "prv_cap_bp", "base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "independent"],
 		"hulls":[
-			#"atlas",		#blown up
 			"kite_original",
-			#"doom",
 			"afflictor",
-			#"prometheus",	#RIP
 			"omen",
 			"shade",
 			"tempest",
-			#"conquest",
-			"prv_conquest_ryak", #rare_bp
-			#"gryphon",
-			#"eagle",
 			"valkyrie",
 			"harbinger",
 		],
@@ -98,9 +92,9 @@
 		"tags":["prv_bp","prv_adv_bp","prv_cap_bp","prv_swarm_bp"],
 		"hulls":[
 			"prv_ballebo",
-			#"shade",		#aux variant added
-			#"afflictor",	#aux variant added
-			#"harbinger",	#aux variant added
+			"shade",		#aux variant added
+			"afflictor",	#aux variant added
+			"harbinger",	#aux variant added
 		],
 	},
 	"knownFighters":{

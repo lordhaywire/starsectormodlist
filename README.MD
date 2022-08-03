@@ -28,7 +28,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Expanded Universe
 
-[Nexerelin v0.10.4b](https://fractalsoftworks.com/forum/index.php?topic=9175.0)
+[Nexerelin v0.10.5](https://fractalsoftworks.com/forum/index.php?topic=9175.0)
 
 ## Graphics
 
@@ -44,17 +44,17 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Game Improvements
 
-[Better Colonies](https://fractalsoftworks.com/forum/index.php?topic=17103.0)
+[Better Colonies v1.73](https://fractalsoftworks.com/forum/index.php?topic=17103.0)
 
-[Combat Chatter](https://fractalsoftworks.com/forum/index.php?topic=10399.0)
+[Combat Chatter v1.12](https://fractalsoftworks.com/forum/index.php?topic=10399.0)
 
 [Commissioned Crews v1.9.99999ggg](https://fractalsoftworks.com/forum/index.php?topic=16677.0)
 
-[Logistics Notifications](https://fractalsoftworks.com/forum/index.php?topic=17379.0)
+[Logistics Notifications v1.4.4](https://fractalsoftworks.com/forum/index.php?topic=17379.0)
 
 [Speedup](https://fractalsoftworks.com/forum/index.php?topic=13394.0)
 
-[Starship Legends](https://fractalsoftworks.com/forum/index.php?topic=15321.0)
+[Starship Legends v2.1.2](https://fractalsoftworks.com/forum/index.php?topic=15321.0)
 
 [Transfer All Items](https://fractalsoftworks.com/forum/index.php?topic=17210.0)
 
@@ -72,9 +72,9 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Legacy of Arkgneisis](https://fractalsoftworks.com/forum/index.php?topic=13667.0)
 
-[prv Starworks v22](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
+[prv Starworks v23](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
 
-[Roider Union v1.3.10](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
+[Roider Union v1.4.3](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
 
 [Scy Nation v1.65rc1](https://fractalsoftworks.com/forum/index.php?topic=8010.0)
 
@@ -84,7 +84,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Factions Enhancements
 
-[Luddic Enhancements v1.2.5j](https://fractalsoftworks.com/forum/index.php?topic=15084.0)
+[Luddic Enhancements v1.2.5l](https://fractalsoftworks.com/forum/index.php?topic=15084.0)
 
 ## Ship Packs
 

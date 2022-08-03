@@ -7,6 +7,7 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
+import com.fs.starfarer.api.util.JitterUtil;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.util.MagicRender;
 import ids.Roider_Ids.Roider_Categories;
@@ -77,8 +78,45 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
             return;
         }
 
+        // Copied visuals code with permission from MesoTroniK's tiandong_fluxOverrideStats.java
+        WeaponAPI glowDeco1 = null;
+        WeaponAPI glowDeco2 = null;
+        for (WeaponAPI weapon : ship.getAllWeapons())
+        {
+            if (weapon.getId().endsWith("_glow1") && weapon.getId().startsWith("roider_"))
+            {
+                glowDeco1 = weapon;
+            }
+            if (weapon.getId().endsWith("_glow2") && weapon.getId().startsWith("roider_"))
+            {
+                glowDeco2 = weapon;
+            }
+        }
+
+        ship.setJitter(ship, GLOW_1_COLOR, effectLevel / 30f, 2, 20f);
+        ship.setJitterUnder(ship, GLOW_1_COLOR, effectLevel / 8f, 4, 30f);
+        ship.setJitter(ship, GLOW_2_COLOR, effectLevel / 30f, 6, 30f);
+        ship.setJitterUnder(ship, GLOW_2_COLOR, effectLevel / 8f, 10, 50f);
+        if (glowDeco1 != null && glowDeco1.getAnimation() != null)
+        {
+            glowDeco1.getSprite().setAdditiveBlend();
+            glowDeco1.getSprite().setColor(GLOW_1_COLOR);
+            glowDeco1.getAnimation().setAlphaMult(effectLevel);
+            glowDeco1.getAnimation().setFrame(1);
+            renderWithJitter(glowDeco1.getSprite(), 0, 0, 10, 1);
+        }
+        if (glowDeco2 != null && glowDeco2.getAnimation() != null)
+        {
+            glowDeco2.getSprite().setAdditiveBlend();
+            glowDeco2.getSprite().setColor(GLOW_2_COLOR);
+            glowDeco2.getAnimation().setAlphaMult(effectLevel);
+            glowDeco2.getAnimation().setFrame(1);
+            renderWithJitter(glowDeco2.getSprite(), 0, 0, 10, 1);
+        }
+
         SpriteAPI sprite1 = Global.getSettings().getSprite(Roider_Categories.GRAPHICS_COMBAT, GLOW_1_SPRITE_ID);
         SpriteAPI sprite2 = Global.getSettings().getSprite(Roider_Categories.GRAPHICS_COMBAT, GLOW_2_SPRITE_ID);
+        CombatEngineLayers layer = CombatEngineLayers.ABOVE_SHIPS_LAYER;
 
         if (state == State.IN && !hasSpawnedFadeInGlow) {
             hasSpawnedFadeInGlow = true;
@@ -90,7 +128,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     PHASE_TIME * 0.666f, 0, PHASE_TIME * 0.333f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite2, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite2.getWidth(), sprite2.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_2_COLOR, true,
@@ -98,7 +136,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     PHASE_TIME * 0.666f, 0, PHASE_TIME * 0.333f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
 
             // Fade up
             MagicRender.objectspace(sprite1, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
@@ -108,7 +146,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     PHASE_TIME, 0, 0.1f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite2, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite2.getWidth(), sprite2.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_2_COLOR, true,
@@ -116,7 +154,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     PHASE_TIME, 0, 0.1f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
 
         }
 
@@ -186,7 +224,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
 
         float forceMult = getForceMult(state, effectLevel);
 
-        applyForce(focus, ship, target, forceMult, interval.getElapsed());
+        applyForce(id, focus, ship, state, target, forceMult, interval.getElapsed());
 
 
         if (state == State.ACTIVE) {
@@ -197,7 +235,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0, 0.02f, 0,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite1, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite1.getWidth(), sprite1.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_1_COLOR, true,
@@ -205,7 +243,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0, 0.02f, 0,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite2, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite2.getWidth(), sprite2.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_2_COLOR, true,
@@ -213,7 +251,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0, 0.02f, 0,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
         }
 
         if (state == State.OUT && hasSpawnedFadeInGlow) {
@@ -225,7 +263,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0f, 0f, 1f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite1, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite1.getWidth(), sprite1.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_1_COLOR, true,
@@ -233,7 +271,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0f, 0f, 1f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
             MagicRender.objectspace(sprite2, ship, new Vector2f(0f, 0f), new Vector2f(0f, 0f),
                     new Vector2f(sprite2.getWidth(), sprite2.getHeight()), new Vector2f(0f, 0f),
                     180f, 0f, true, GLOW_2_COLOR, true,
@@ -241,9 +279,19 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     0f, 0f,
                     0f,
                     0f, 0f, 1f,
-                    true, CombatEngineLayers.ABOVE_SHIPS_LAYER);
+                    true, layer);
         }
     }
+
+	public void renderWithJitter(SpriteAPI s, float x, float y, float maxJitter, int numCopies) {
+		for (int i = 0; i < numCopies; i++) {
+			Vector2f jv = new Vector2f();
+			jv.x = (float) Math.random() * maxJitter - maxJitter/2f;
+			jv.y = (float) Math.random() * maxJitter - maxJitter/2f;
+			//if (jv.lengthSquared() != 0) jv.normalise();
+			s.render(x + jv.x, y + jv.y);
+		}
+	}
 
 	protected List<WeaponSlotAPI> findArcSlots(ShipAPI ship) {
         List<WeaponSlotAPI> arcEmitters = new ArrayList<>();
@@ -256,15 +304,15 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
         return arcEmitters;
 	}
 
-	protected void applyForce(Vector2f focus, ShipAPI ship,
+	protected void applyForce(String id, Vector2f focus, ShipAPI ship, State state,
                 CombatEntityAPI target, float forceMult, float amount) {
         if (!isTargetInRange(ship, target)) return;
 
 //        float distMult = 1f + dist / RANGE;
 
-		float acceleration;
-        if (target.getMass() < 1) acceleration = MAX_FORCE;
-        else acceleration = MAX_FORCE / getNormalizedMass(target.getMass());
+		float targetSpeed;
+        if (target.getMass() < 1) targetSpeed = MAX_FORCE;
+        else targetSpeed = MAX_FORCE / getNormalizedMass(target.getMass());
 
         Vector2f loc = target.getLocation();
 
@@ -349,16 +397,18 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
                     || !tShip.isAlive();
 
             // Cap pull speed
-            if (noEngines && acceleration > MAX_PULL_SPEED) {
-                    acceleration = MAX_PULL_SPEED;
-            } else if (acceleration > tShip.getMaxSpeed() + MAX_PULL_SPEED) {
-                    acceleration = tShip.getMaxSpeed() + MAX_PULL_SPEED;
+            if (noEngines && targetSpeed > MAX_PULL_SPEED) {
+                targetSpeed = MAX_PULL_SPEED;
+            } else if (targetSpeed > tShip.getMaxSpeed() + MAX_PULL_SPEED) {
+                targetSpeed = tShip.getMaxSpeed() + MAX_PULL_SPEED;
             }
         }
 
-		Vector2f dir = Misc.getUnitVectorAtDegreeAngle(targetAngle);
-		dir.scale(acceleration);
+		Vector2f targetVector = Misc.getUnitVectorAtDegreeAngle(targetAngle);
+		targetVector.scale(targetSpeed * forceMult);
 
+        target.setCustomData(Roider_PhasenetEffectManager.KEY, true);
+        target.setCustomData(Roider_PhasenetEffectManager.EFFECT_KEY + id, targetVector);
 
         Vector2f vel = target.getVelocity();
 
@@ -368,8 +418,8 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
             ((ShipAPI) target).addAfterimage(GLOW_1_COLOR,
                         0,
                         0,
-                        dir.x * forceMult,
-                        dir.y * forceMult,
+                        targetVector.x * forceMult,
+                        targetVector.y * forceMult,
                         5f, 0.1f, 0.5f, 0.5f, true,
                         false, false);
 
@@ -384,7 +434,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
 
         // Create arcs to target
         arcInterval.advance(amount);
-        if (arcInterval.intervalElapsed()) {
+        if (arcInterval.intervalElapsed() && state != State.OUT) {
             List<WeaponSlotAPI> arcEmitters = findArcSlots(ship);
             Random rand = new Random();
 
@@ -419,13 +469,9 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
             Global.getSoundPlayer().playSound(ARC_START_SOUND, 1f, 1f, slotLoc, ship.getVelocity());
         }
 
-        // Needs to adjust target's velocity a static amount
-        // i.e. not accelerating it past a certain point
-        // Max = target's max + force / mass when target is moving itself straight towards focus
-        // But how can it tell how target is moving itself???
 //		if (Math.abs(loc.x - focus.x) > 100 || Math.abs(loc.y - focus.y) > 100) {
-            loc.x += dir.x * forceMult * amount;
-            loc.y += dir.y * forceMult * amount;
+//            loc.x += targetVector.x * forceMult * amount;
+//            loc.y += targetVector.y * forceMult * amount;
 //        } else {
 //            vel.x += dir.x * forceMult / 100f;
 //            vel.y += dir.y * forceMult / 100f;
@@ -434,10 +480,12 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
         if (vel.lengthSquared() == 0) return;
 
 //        if (noEngines && (Math.abs(vel.x) > acceleration / 2 || Math.abs(vel.y) > acceleration / 2)) {
-        if (noEngines) {
+        if (!(target instanceof ShipAPI)) {
             // Add source ship's velocity to movement
 //            loc.x += ship.getVelocity().x * amount;
 //            loc.y += ship.getVelocity().y * amount;
+            loc.x += targetVector.x * forceMult * amount;
+            loc.y += targetVector.y * forceMult * amount;
 
             // Reduce target's velocity to 0
             if (vel.x > 0) vel.x -= 1;
@@ -481,7 +529,7 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
         if (target instanceof ShipAPI) {
             ShipAPI tShip = (ShipAPI) target;
             if (index == 0) return new StatusData("Dragging "
-                        + tShip.getHullSpec().getHullName() + " at " + speed + " speed", false);
+                        + tShip.getHullSpec().getHullName() + " at " + speed + " su/sec", false);
         } else {
             if (index == 0) return new StatusData("Dragging asteroid at "
                         + speed + " speed", false);
@@ -679,7 +727,8 @@ public class Roider_PhasenetStats extends BaseShipSystemScript {
 
     public static float getNormalizedMass(float mass) {
         if (MAX_FORCE / mass > MAX_PULL_SPEED / 2f) {
-            return mass + (MAX_FORCE / (MAX_PULL_SPEED / 2f) - mass) / 2f;
+            float result = mass + (MAX_FORCE / (MAX_PULL_SPEED / 2f) - mass) / 2f;
+            return result;
         } else if (MAX_FORCE / mass < MAX_PULL_SPEED / 5f) {
             return mass - (mass - MAX_FORCE / (MAX_PULL_SPEED / 5f)) / 2f;
         }

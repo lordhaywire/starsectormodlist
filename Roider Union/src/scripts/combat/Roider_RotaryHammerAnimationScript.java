@@ -1,5 +1,6 @@
 package scripts.combat;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.util.IntervalUtil;
 import com.fs.starfarer.api.util.Pair;
@@ -14,6 +15,11 @@ import java.util.Random;
 public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffectPlugin, OnFireEffectPlugin {
     public static final float SLOW_MULT = 1.25f; // 25% slower
     public static final float SPEED_MULT = 1f / 1.5f; // 50% faster
+
+    public static final String CLICK_SOUND = "roider_rhl_click";
+    public static final String CLACK_SOUND = "roider_rhl_clack";
+    public static final String LOUD_CLICK_SOUND = "roider_rhl_clickLoud";
+    public static final String LOUD_CLACK_SOUND = "roider_rhl_clackLoud";
 
     private static final List<List<Pair<Integer, Float>>> FRAMES = new ArrayList<>();
     static {
@@ -78,6 +84,7 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
     private boolean animating;
     private boolean repeat;
     private boolean outOfAmmo;
+    private boolean regenCycle;
     private int frame;
     private float playSpeed;
     private IntervalUtil tracker;
@@ -89,6 +96,7 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
         animating = false;
         repeat = false;
         outOfAmmo = false;
+        regenCycle = false;
         frame = 0;
         playSpeed = 1f;
         tracker = new IntervalUtil(0, 0);
@@ -113,16 +121,21 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
             return;
         }
 
+        // When ammo goes from 0 -> 1
         if (outOfAmmo && weapon.getAmmo() > 0) {
             outOfAmmo = false;
+            regenCycle = true;
             animating = true;
             repeat = true;
             animation = FRAMES.get(new Random().nextInt(FRAMES.size()));
             playSpeed = getRandomSpeedMult();
         }
 
+        // End of cycle
         if (!animating && !fired) {
             reloadAnimationFrames();
+
+            regenCycle = false;
 
             weapon.getAnimation().pause();
             frame = 0;
@@ -131,13 +144,6 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
         }
 
         if (weapon.isDisabled()) return;
-
-        // Seems too primitive.
-        // Better to accelerate as remaining approaches 0
-        // with simply a very fast animation if it reaches 0.
-//        if (weapon.getCooldownRemaining() == 0) {
-//            frame = 0;
-//        }
 
         if (fired) {
             fired = false;
@@ -150,10 +156,13 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
         ShipAPI ship = weapon.getShip();
         if (ship == null) return;
 
+        // Accelerate animation
         float mult = 1f;
+        // Random mult for current animation
         mult *= playSpeed;
+        // Mult from modified weapon rate of fire
         mult *= ship.getMutableStats().getMissileRoFMult().getModifiedValue();
-
+        // Mult from rapid cooldown (Fast Missile Racks and the like)
         if (weapon.getCooldownRemaining() <= weapon.getCooldown() / 2f) {
             mult *= (weapon.getCooldownRemaining() + (weapon.getCooldown() / 3)) / weapon.getCooldown();
         }
@@ -165,17 +174,26 @@ public class Roider_RotaryHammerAnimationScript implements EveryFrameWeaponEffec
 
         frame++;
 
+        // End of current animation
         if (frame == animation.size()) {
+            if (regenCycle) Global.getSoundPlayer().playSound(LOUD_CLACK_SOUND, 1f, 1f, weapon.getLocation(), ship.getVelocity());
+            else Global.getSoundPlayer().playSound(CLACK_SOUND, 1f, 1f, weapon.getLocation(), ship.getVelocity());
+
             frame = 0;
             if (repeat) {
                 repeat = false;
             } else {
                 animating = false;
             }
+        } else {
+            // Play ratchet sound each frame
+            if (regenCycle) Global.getSoundPlayer().playSound(LOUD_CLICK_SOUND, 1f, 1f, weapon.getLocation(), ship.getVelocity());
+            else Global.getSoundPlayer().playSound(CLICK_SOUND, 1f, 1f, weapon.getLocation(), ship.getVelocity());
         }
 
         weapon.getAnimation().setFrame(animation.get(frame).one);
 
+        // Set delay until next frame
         if (animating && !repeat && frame == 0) {
             tracker.setInterval(0.3f, 0.6f);
         } else {

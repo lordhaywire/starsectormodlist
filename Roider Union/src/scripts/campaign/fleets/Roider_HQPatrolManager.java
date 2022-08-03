@@ -186,61 +186,89 @@ public class Roider_HQPatrolManager implements RouteFleetSpawner, FleetEventList
 			break;
 		}
 
-        // Get half the ships from Roider Union's choices
-		FleetParamsV3 params = new FleetParamsV3(
-				market,
-				null, // loc in hyper; don't need if have market
-				Roider_Factions.ROIDER_UNION,
-				route.getQualityOverride(), // quality override
-				fleetType,
-				combat / 2, // combatPts
-				freighter / 2, // freighterPts
-				tanker / 2, // tankerPts
-				0f, // transportPts
-				0f, // linerPts
-				0f, // utilityPts
-				0f // qualityMod
-        );
-		params.timestamp = route.getTimestamp();
-		params.random = random;
-//		params.modeOverride = Misc.getShipPickMode(market);
-		params.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
-		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
+        CampaignFleetAPI fleet;
+        if (!route.getFactionId().equals(Roider_Factions.ROIDER_UNION)) {
+            // Get half the ships from Roider Union's choices
+            FleetParamsV3 params = new FleetParamsV3(
+                    market,
+                    null, // loc in hyper; don't need if have market
+                    Roider_Factions.ROIDER_UNION,
+                    route.getQualityOverride(), // quality override
+                    fleetType,
+                    combat / 2, // combatPts
+                    freighter / 2, // freighterPts
+                    tanker / 2, // tankerPts
+                    0f, // transportPts
+                    0f, // linerPts
+                    0f, // utilityPts
+                    0f // qualityMod
+            );
+            params.timestamp = route.getTimestamp();
+            params.random = random;
+    //		params.modeOverride = Misc.getShipPickMode(market);
+            params.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
+            fleet = FleetFactoryV3.createFleet(params);
 
-		if (fleet == null || fleet.isEmpty()) return null;
+            if (fleet == null || fleet.isEmpty()) return null;
 
 
-        // Get the other half from the market's faction
-		FleetParamsV3 params2 = new FleetParamsV3(
-				market,
-				null, // loc in hyper; don't need if have market
-				null,
-				null, // quality override
-				fleetType,
-				combat / 2, // combatPts
-				freighter / 2, // freighterPts
-				tanker / 2, // tankerPts
-				0f, // transportPts
-				0f, // linerPts
-				0f, // utilityPts
-				0f // qualityMod
-        );
-		params2.timestamp = Global.getSector().getClock().getTimestamp();
-		params2.random = random;
-//		params.modeOverride = Misc.getShipPickMode(market);
-		params2.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
-		CampaignFleetAPI fleet2 = FleetFactoryV3.createFleet(params2);
+            // Get the other half from the market's faction
+            FleetParamsV3 params2 = new FleetParamsV3(
+                    market,
+                    null, // loc in hyper; don't need if have market
+                    null,
+                    null, // quality override
+                    fleetType,
+                    combat / 2, // combatPts
+                    freighter / 2, // freighterPts
+                    tanker / 2, // tankerPts
+                    0f, // transportPts
+                    0f, // linerPts
+                    0f, // utilityPts
+                    0f // qualityMod
+            );
+            params2.timestamp = Global.getSector().getClock().getTimestamp();
+            params2.random = random;
+    //		params.modeOverride = Misc.getShipPickMode(market);
+            params2.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
+            CampaignFleetAPI fleet2 = FleetFactoryV3.createFleet(params2);
 
-		if (fleet2 != null && !fleet2.isEmpty()) {
-            for (FleetMemberAPI member : fleet2.getMembersWithFightersCopy()) {
-                if (member.isFighterWing()) continue;
+            if (fleet2 != null && !fleet2.isEmpty()) {
+                for (FleetMemberAPI member : fleet2.getMembersWithFightersCopy()) {
+                    if (member.isFighterWing()) continue;
 
-                fleet.getFleetData().addFleetMember(member);
+                    member.setCaptain(null);
+                    if (member.isFlagship()) member.setFlagship(false);
+
+                    fleet.getFleetData().addFleetMember(member);
+                }
             }
-        }
 
-        Roider_Misc.sortFleetByShipSize(fleet);
-        FleetFactoryV3.addCommanderAndOfficers(fleet, params, random);
+            FleetFactoryV3.addCommanderAndOfficers(fleet, params, random);
+            Roider_Misc.sortFleetByShipSize(fleet);
+        } else {
+            FleetParamsV3 params = new FleetParamsV3(
+                    market,
+                    null, // loc in hyper; don't need if have market
+                    Roider_Factions.ROIDER_UNION,
+                    route.getQualityOverride(), // quality override
+                    fleetType,
+                    combat, // combatPts
+                    freighter, // freighterPts
+                    tanker, // tankerPts
+                    0f, // transportPts
+                    0f, // linerPts
+                    0f, // utilityPts
+                    0f // qualityMod
+            );
+            params.timestamp = route.getTimestamp();
+            params.random = random;
+    //		params.modeOverride = Misc.getShipPickMode(market);
+            params.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
+            fleet = FleetFactoryV3.createFleet(params);
+
+            if (fleet == null || fleet.isEmpty()) return null;
+        }
 
 		fleet.setFaction(market.getFactionId(), true);
         fleet.setName(market.getFaction().getFleetTypeName(fleetType));

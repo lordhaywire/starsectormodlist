@@ -1,11 +1,10 @@
 {
     "displayName": "Attack",
     "fluxCapacitors": 18,
-    "fluxVents": 10,
+    "fluxVents": 13,
     "goalVariant": true,
     "hullId": "roider_jane",
     "hullMods": [
-        "assault_package",
         "roider_trackerSwap"
     ],
     "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],

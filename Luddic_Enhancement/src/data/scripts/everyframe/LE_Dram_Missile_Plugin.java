@@ -59,20 +59,20 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
     public static final float EXPANSION_BLAST_DPS = 9000f;
     public static final float EXPANSION_RATE = 185f;
     public static final float EXPANSION_TIME = 6f;
-    public static final float INITIAL_BLAST_DAMAGE = 17500f;
-    public static final float INITIAL_BLAST_RADIUS = 800f;
+    public static final float INITIAL_BLAST_DAMAGE = 12000f;
+    public static final float INITIAL_BLAST_RADIUS = 700f;
 
     public static final float EXPANSION_BLAST_DPS_PHAETON = 12000f;
     public static final float EXPANSION_RATE_PHAETON = 195f;
     public static final float EXPANSION_TIME_PHAETON = 8f;
-    public static final float INITIAL_BLAST_DAMAGE_PHAETON = 20000f;
-    public static final float INITIAL_BLAST_RADIUS_PHAETON = 1000f;
+    public static final float INITIAL_BLAST_DAMAGE_PHAETON = 16000f;
+    public static final float INITIAL_BLAST_RADIUS_PHAETON = 800f;
 
     public static final float EXPANSION_BLAST_DPS_PROM = 14000f;
     public static final float EXPANSION_RATE_PROM = 205f;
     public static final float EXPANSION_TIME_PROM = 9f;
-    public static final float INITIAL_BLAST_DAMAGE_PROM = 40000f;
-    public static final float INITIAL_BLAST_RADIUS_PROM = 1000f;
+    public static final float INITIAL_BLAST_DAMAGE_PROM = 20000f;
+    public static final float INITIAL_BLAST_RADIUS_PROM = 900f;
 
     public static final float EXPANSION_RATE_ELITE = 400f;
     public static final float INITIAL_BLAST_RADIUS_ELITE = 1750f;
@@ -140,7 +140,7 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
             if (!target.isAlive()) {
                 continue;
             }
-            if (!target.isPhased()) {
+            if (target.isPhased()) {
                 continue;
             }
 
@@ -265,7 +265,7 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
             if (!target.isAlive()) {
                 continue;
             }
-            if (!target.isPhased()) {
+            if (target.isPhased()) {
                 continue;
             }
 
@@ -393,7 +393,7 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
             if (!target.isAlive()) {
                 continue;
             }
-            if (!target.isPhased()) {
+            if (target.isPhased()) {
                 continue;
             }
 

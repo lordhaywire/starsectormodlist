@@ -92,7 +92,7 @@ public class Roider_PiratesLearnBPsScript implements EconomyUpdateListener, Roid
         Set<String> targets = new HashSet<>();
 
         // Get retrofits
-        List<RetrofitData> retrofits = Roider_RetrofitsKeeper.getRetrofits(this, Roider_Fitters.FULL);
+        List<RetrofitData> retrofits = Roider_RetrofitsKeeper.getRetrofits(this, Roider_Fitters.ALL);
 
         // Get targets
         for (RetrofitData data : retrofits) {

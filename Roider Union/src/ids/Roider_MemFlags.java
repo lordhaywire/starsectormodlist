@@ -33,6 +33,9 @@ public class Roider_MemFlags {
     public static final String EXPEDITION_LOOT_MAJOR = "$roider_expeditionLootMajor";
     public static final String EXPEDITION_FACTION = "$roider_expeditionFaction";
     public static final String EXPEDITION_MARKET = "$roider_expeditionSource";
+    public static final String THIEF_KEY = "$roider_thief";
+
+    public static final String EXPEDITION_WRECK_PLUGIN = "$roider_expeditionWreckPlugin";
 
     // Conversion fleets
     public static final String APR_OFFERINGS = "$roider_aprOfferings"; // List<String>

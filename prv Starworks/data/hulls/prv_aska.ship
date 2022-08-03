@@ -16,7 +16,7 @@
     "prv_ramshield"
   ],
   "builtInWeapons": {
-    "BI03": "prv_kaja_quint",
+    #"BI03": "prv_kaja_quint",
     "prv_ramshield": "prv_u_ramshield"
   },
   "weaponSlots": [
@@ -108,7 +108,7 @@
       "id": "BI03",
       "size": "MEDIUM",
       "type": "BUILT_IN",
-      "mount": "HARDPOINT",
+      "mount": "HIDDEN",
       "arc": 0,
       "angle": 0,
       "locations": [-1, -66.5]

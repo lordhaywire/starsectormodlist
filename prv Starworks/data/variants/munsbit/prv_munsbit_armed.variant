@@ -1,36 +1,38 @@
 {
+  "variantId": "prv_munsbit_armed",
+  "hullId": "prv_munsbit",
   "displayName": "Armed",
+  "goalVariant": false,
   "fluxCapacitors": 5,
   "fluxVents": 15,
-  #"goalVariant": true,
-  "hullId": "prv_munsbit",
-  "hullMods": [],
-  "permaMods": [],
   "quality": 0,
-  "variantId": "prv_munsbit_armed",
+  "permaMods": [],
+  "hullMods": [],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_akers",
-        "WS0004": "prv_akers"
+        "WS0001": "irpulse",
+        "WS0002": "irpulse",
+        "WS0003": "irpulse",
+        "WS0004": "irpulse"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0011": "lrpdlaser"
+        "WS0009": "prv_pskd",
+        "WS0011": "prv_pskd"
       }
     },
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0009": "pdburst"
-      }
+      "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

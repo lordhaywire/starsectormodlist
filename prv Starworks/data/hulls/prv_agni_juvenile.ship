@@ -7,7 +7,7 @@
   "height": 181,
   "width": 130,
   "center": [65, 90.5],
-  "collisionRadius": 120,
+  "collisionRadius": 96.5,
   "shieldCenter": [0, 0],
   "shieldRadius": 113.5,
   "viewOffset": 0,
@@ -18,6 +18,9 @@
     "prv_agni_toughhide"
   ],
   "builtInWeapons": {
+    "DC01": "prv_agni_d_fin_large",
+    "FR01": "prv_agni_d_tail",
+    "FR02": "prv_agni_d_tail",
     "WS0008": "prv_agni_eye",
     "WS0009": "prv_agni_eye",
     "WS0014": "prv_agni_d_cover_juvenile"
@@ -150,56 +153,83 @@
       "arc": 120,
       "angle": 0,
       "locations": [46, -0]
+    },
+    {
+      "id": "DC01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, 0]
+    },
+    {
+      "id": "FR01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 135,
+      "locations": [-55, 10]
+    },
+    {
+      "id": "FR02",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -135,
+      "locations": [-55, -10]
     }
   ],
   "engineSlots": [
     {
       "location": [-63, 40],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": 135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-63, -40],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": -135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-72, 28],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": 135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-72, -28],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": -135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-42, 47.5],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": 135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     },
     {
       "location": [-42, -47.5],
-      "length": 19,
-      "width": 19,
+      "length": 25,
+      "width": 6.5,
       "angle": -135,
-      "contrailSize": 19,
-      "style": "PRV_LOW"
+      "contrailSize":6.5,
+      "style": "PRV_AGNI"
     }
   ],
   "bounds": [

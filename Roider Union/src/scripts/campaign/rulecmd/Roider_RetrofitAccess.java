@@ -22,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import scripts.campaign.econ.Roider_Dives;
 import scripts.campaign.retrofit.Roider_BaseRetrofitPlugin;
+import scripts.campaign.retrofit.Roider_ShipworksRetrofitManager;
 
 /**
  * Author: SafariJohn
@@ -95,10 +96,23 @@ public class Roider_RetrofitAccess extends BaseCommandPlugin {
         MemoryAPI memory = market.getMemoryWithoutUpdate();
 
         // Get retrofit manager
-        Roider_UnionHQRetrofitManager manager;
+        Roider_UnionHQRetrofitManager manager = null;
         if (memory.get(Roider_MemFlags.RETROFITTER) != null) {
-            manager = (Roider_UnionHQRetrofitManager) memory.get(Roider_MemFlags.RETROFITTER);
-        } else {
+            Object test = memory.get(Roider_MemFlags.RETROFITTER);
+
+            // Heal erroneous assignment
+            if (test instanceof Roider_ShipworksRetrofitManager) {
+                if (memory.get(Roider_MemFlags.SW_RETROFITTER) == null) {
+                    memory.set(Roider_MemFlags.SW_RETROFITTER, test);
+                }
+            }
+
+            if (test instanceof Roider_UnionHQRetrofitManager) {
+                manager = (Roider_UnionHQRetrofitManager) test;
+            }
+        }
+
+        if (manager == null) {
             if (market.hasIndustry(Industries.HEAVYINDUSTRY)
                         || market.hasIndustry(Industries.ORBITALWORKS)
                         || entity.getMarket().hasIndustry(Roider_Industries.SHIPWORKS)) {
@@ -113,7 +127,7 @@ public class Roider_RetrofitAccess extends BaseCommandPlugin {
                             getRoiders());
             }
 
-            market.getMemoryWithoutUpdate().set(Roider_MemFlags.RETROFITTER, manager);
+            memory.set(Roider_MemFlags.RETROFITTER, manager);
             Global.getSector().addScript(manager);
         }
 
@@ -277,7 +291,7 @@ public class Roider_RetrofitAccess extends BaseCommandPlugin {
             Global.getSector().getPlayerFleet().getCargo().getCredits().subtract(fee);
 
         }
-        
+
         getRoiders().getMemoryWithoutUpdate().set(Roider_MemFlags.FEE_PAID, true);
         ((StoragePlugin) Misc.getStorage(market)).setPlayerPaidToUnlock(true);
 

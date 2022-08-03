@@ -166,7 +166,7 @@ public class Roider_ConversionFleetIntel extends BaseIntelPlugin implements Flee
     public Set<String> getIntelTags(SectorMapAPI map) {
         Set<String> tags = super.getIntelTags(map);
         tags.add(Roider_Factions.ROIDER_UNION);
-        tags.add(Tags.FLEET_LOG);
+        tags.add(Tags.INTEL_FLEET_LOG);
 
         CampaignFleetAPI fleet = (CampaignFleetAPI) Global.getSector().getEntityById(fleetId);
         if (fleet != null) tags.add(fleet.getFaction().getId());

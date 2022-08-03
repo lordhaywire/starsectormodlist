@@ -487,9 +487,11 @@ public class Roider_RoiderBaseIntelV2 extends BaseIntelPlugin implements EveryFr
             if (fleet != null) fleet.despawn();
 
             entity.setMarket(null);
-            entity.getStarSystem().removeEntity(entity);
-
             market.getConnectedEntities().remove(entity);
+
+            Misc.fadeAndExpire(entity);
+//            entity.getStarSystem().removeEntity(entity);
+
         }
 
 		Global.getSector().getEconomy().removeMarket(market);

@@ -1,5 +1,271 @@
 prv Starworks
 
+###
+
+v22
+
+Added the Agni
+- Strange creatures found in remote parts of the Persean sector. Heed the warning beacons.
+
+Added the Andesit carrier
+- Rust Belt capital carrier mixing fighter wings with a wide assortment of missiles.
+- Not at all a brawler.
+
+Added the Bitumen combat tanker
+- Durable, but still far from a competent warship. Can offer missile support in an emergency.
+
+Spatterfire effects
+- Tooltip overhaul. 
+
+Gravity Well
+- Minimum mine spawn distance from the target increased by 33%.
+- Now has a new explosion sound effect.
+- Now causes a small visual distortion while phasing in.
+
+Flicker Core
+- Completely overhauled
+-- Now gives a large but brief boost to the time rate of the ship as it enters or exits phased space.
+-- The boost is reduced based on the ship's hard flux level.
+
+Plasma Agitators
+- Will no longer convert existing Spatterfire agglomerations into Doomfire.
+
+Phase Ships
+- Inheriting across the board durability buffs from the 0.95.1a changes:
+
+Kvarts
+- Hull integrity increased to 12000.
+- Armor increased to 1400.
+
+Fasvinge
+- Hull integrity increased to 8000
+- Sprite updated.
+- Weapon mounts updated, now uses 2 large energy mounts for its primary armament.
+- Removed built in "Defense In Depth" hullmod.
+
+Fasklot
+- Hull integrity increased to 4500.
+- Armor increased to 650.
+- EMP Cluster Mine Strike system recharge time increased by 11%.
+
+Fasnod
+- Removed built-in Defense In Depth and Improved PD AI hullmods.
+- Hull integrity increased to 1750.
+- Armor increased to 350.
+
+Ilbud
+- Hull integrity increased to 4700.
+- Armor increased to 700.
+- Cargo capacity increased to 250.
+
+Stillhet fighter
+- Sprite updated.
+- Flux capacity increased by 100%.
+- Flux dissipation increased by 33%.
+- Armor increased by 75.
+- Added Adaptive Phase Coils hullmod.
+
+Kalk fighter
+- Flux capacity increased by 100%.
+- Flux dissipation increased by 33%.
+- Armor increased by 50.
+
+Bergtagen
+- Added Rugged Construction.
+
+Dominator (RB)
+- Inheriting buffs from the base Dominator.
+-- Increased OP to 200.
+-- Increased hull integrity to 14000.
+-- Increased flux dissipation to 400.
+-- Reduced shield upkeep to 0,4.
+
+Brand
+- Absolute Territory Zone 
+-- Push force adjusted.
+-- Projectile slowdown effect is now much cleaner and moderately less effective.
+- OP increased by 10.
+
+Hornfels
+- Sprite updated.
+- Nose turret arc increased to 210°.
+
+Sorl
+- Maintenance and deployment cost increased to 17.
+- Adjusted weapon arcs, now have much better convergence.
+
+Sorl (Midline)
+- Adjusted weapon arcs, now have much better convergence.
+- Removed non-functional Ramshield dummy mod.
+- Added built-in Ramshield Adjunct.
+
+Venture (RB), (RB-Mod)
+- Inheriting buffs from the base Venture.
+-- Maintenance and recovery cost reduced to 14 / 21 respectively.
+-- OP increased to 115.
+-- Minimum crew reduced to 80.
+-- Maximum crew reduced to 300.
+-- Cargo capacity increased to 800.
+-- Fuel capacity increased to 270.
+-- Base cost reduced to 90 000.
+
+Fasnod (P), Flock (RB), Fågeljävel
+- Removed Remanualized.
+
+Sinne
+- Shield Efficiency reduced to 0,9.
+- Turn rate reduced by 12,5%.
+- Turn acceleration reduced by ~40%.
+- Flux Fracturer
+-- Fracture bolts will now have a moderate amount of randomness in what homing target they pick.
+-- Made the AI more aggressive in activating the system.
+--- Note that the flux-management habits of Aggressive and Reckless officers will generally lead to better usage of the Fracturer.
+
+Eld (Midline) 
+- Ramshield replaced with Ramshield Adjunct.
+- Recovery and maintenance cost reduced to 12.
+
+Skära
+- Flux Capacity increased by ~15%
+- Ljungeld (Damaged) glow color shifted towards red.
+
+Tystnad, Tystnad (League)
+- Sprite updated.
+- Mounts updated, now frontally focused again.
+- Kaja Gun Pods replaced with Kaja Missile Drones.
+-- New sprite.
+-- Faster, less durable, and with a narrower shield.
+- Deployment and recovery cost reduced to 7.
+- Replaced Ramshield with Ramshield Adjunct (League only)
+
+Flamma (P)
+- Ordinance points increased to 40.
+- Price increased slightly.
+
+Basalt
+- Added Rugged Construction.
+- Corrected hit bounds; shrunk to match sprite.
+
+Gremlin (RB)
+- Hull integrity increased to 2600.
+- Armor increased to 350
+
+Visent
+- Added Rugged Construction.
+- Maintenance and recovery cost recovery cost reduced to 4.
+- Increased hull integrity to 4100.
+
+Broadsword (LP) fighter
+- Overhauled to better differentiate it from the 3-fighter Perdition wing.
+-- Wing size reduced to 2.
+-- OP cost reduced to 12.
+-- Refit time reduced to 15.
+-- Top speed increased to 200.
+
+Additional Skin cost changes:
+- Tiger (LC) recovery and maintenance cost increased to 8.
+- Flock (Midline)  recovery and maintenance cost increased to 20.
+- Gryning (TT) and Egnejserhead recovery and maintenance cost is now set in the .skin definition, and not with a hidden hullmod.
+
+Jursla
+- Range reduced to 750.
+- Projectile spawn sound volume reduced slightly.
+
+Spatterflamer
+- Damage per shot reverted to 50.
+-- With the improved flame cohesion there is no need for the previous buff.
+
+Fräsare, Svepfräsare
+- Svepfräsare refire delay reduced by 5%.
+- Svepfräsare sweep distance now locks in once the weapon starts firing.
+- Tweaked the formula for Svepfräsare anomaly count.
+- Properly corrected tooltip errors.
+- Fräsare anomaly damage reduced to 60.
+- Fräsare nebula vfx tweaked.
+
+Rörsångare
+- Blasts now have a moderate inaccuracy.
+- Now always fires the full amount of shots regardless of target hullsize.
+- Missile size increased slightly.
+
+Svala
+- Blasts now have a slight inaccuracy.
+- Missile size increased slightly.
+
+Brytare Launcher, Pod
+- AI will now require the enemy to be in a narrow forward arc from the weapon before firing it.
+- Damage reduced by 33%.
+- Rate of fire reduced by 20% (pod only).
+- Ammunition reduced by 25%.
+- Increased flameout time.
+
+Brytare Pack (Fighter)
+- Damage reduced by 33%.
+- Ammunition increased by 20%.
+- Increased flameout time.
+
+Kartesch
+- Sprite updated.
+
+Remission EMP Mortar 
+- EMP arc effect will now also affect Synergy and Hybrid weapons.
+- Rate of fire increased by 25%.
+
+Light Triple Autocannon
+- Range reduced to 500.
+- Flux per shot reduced by 20%.
+
+SIPD Laser
+- Flux cost increased to 70/s.
+- Bursts now have a small area of effect.
+- Burst damage reduced to 80.
+- Burst delay will now be affected by rate of fire buffs and debuffs.
+
+Nexerelin
+- Added "Low Profile" diplomatic trait to the Rust Belt.
+
+Campaign
+- Updated officer skill selections.
+- Added access to some of the new hullmods to the prv and RB factions.
+- Renamed large Ruster fleets.
+- Rust Belt no longer use the Prometheus Mk.II.
+- Reduced the maximum size of Debris Belt ambush fleets by ~17%.
+
+Added a config file, prvSettings.json, that can be used to disable certain features:
+- The Agni.
+- War Syndicate spread.
+- prv Doctrine switching.
+- Randomly generated Debris Belts.
+- Rust Belt raiding when Vayra's Mod is also enabled.
+-- Consider these toggles somewhat experimental.
+
+Heavy Spattergun is now less rare.
+Disruption Zone will now be better at detecting ships that are fully inside the zone.
+Disruption Zone vfx tweaked.
+Added clarifying text to several weapons and hullmods.
+Adjusted the fits on certain HVB ships.
+Reduced Siege Akers magazine fire rate by ~1%.
+Spattergun onhiteffect code hardening.
+Corrected Tiger collision bounds.
+Reduced the volume of Phase Cloak sfx for the Stillhet and Kalk fighters.
+Improved Kartesch splitting logic.
+Improved Gissel variants.
+Time Freeze now unapplies if the target is somehow very far away.
+Clicking on an Arc Smelter notification will no longer open the Intel window.
+Removed Linjär PK SYSTEM tag, added to prv_lab_bp blueprint group.
+Improved Berguv MIRV mirvlet target picking in source retargeting scenarios.
+Fixed a misaligned Ljus Lykta arc point offset.
+Fixed a HVB variant id typo.
+Fixed a problem with variant files in deep paths.
+Fixed a rare crash related to markets being destroyed after having recently spawned a Ruster industry intel notification.
+Fixed an error where Siege Akers shield-piercing EMP arcs would not pierce shields.
+Fixed a misaligned small ballistic turret on the Rök (P)
+Fixed an a/an error when downgrading from an Armed Community.
+Fixed an error causing the static star systems to be added even during Nex random sector generation.
+- Whoops.
+
+Split the 3k-line patchnotes file into latest and legacy versions.
+
 ####
 
 v21

@@ -1,7 +1,4 @@
-{	
-	# multiplier for how often hulls show up in the faction's fleets
-	"hullFrequency":{
-	},
+{
 	"knownWeapons":{
 		"tags":[
 			"prv_lp_bp",
@@ -12,7 +9,6 @@
 		"hulls":[
 			"prv_gnista_lc",
 			"prv_ljus",
-			"mora",
 		],
 	},
 	"knownShips":{
@@ -20,17 +16,10 @@
 		"hulls":[
 			"prv_gnista_lc",
 			"prv_ljus",
-			"mora",
 		],
 	},
 	"knownFighters":{
 		"tags":["prv_lp_bp"],
-	},
-	"priorityFighters":{
-		"fighters":[
-			"prv_broadsword_pather_wing",
-			"prv_talon_pather_wing",
-		],
 	},
 	
 	"custom":{

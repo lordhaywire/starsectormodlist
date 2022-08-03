@@ -4,7 +4,7 @@
 		"alliance":"alliance",
 		"alliances":"alliances",
 		"alliance(s)":"alliance(s)",
-		"base":"base",
+		"base":"base",	# as in "base value",
 		"cabal":"Cabal",
 		"close":"close",
 		"colony":"colony",
@@ -179,10 +179,11 @@
 		"alignment":"alignment",
 		"alignment_corporate":"corporate",
 		"alignment_technocratic":"technocratic",
-		"alignment_hierarchial":"hierarchial",
+		"alignment_hierarchical":"hierarchical",
 		"alignment_militarist":"militarist",
 		"alignment_diplomatic":"diplomatic",
 		"alignment_ideological":"ideological",
+		"alignmentModifierPlayerSet":"Set by player",
 		
 		"intelDesc":"The $alliance alliance is present in the Sector. It has $numMembers members, with $numMarkets markets of total size $marketSizeSum.",
 		"intelMemberEntry":"$faction: $num markets (total size $size)",
@@ -253,6 +254,8 @@
 		"verbSuccess":"success",
 		"verbFailed":"failed",
 		
+		"specialization":"specialization",
+		
 		"recruited":"recruited",
 		"arrived":"arrived",
 		"lost":"lost",
@@ -266,6 +269,7 @@
 		"intelAborted":"Mission aborted",
 		"intelRecovered":"Recovered from injuries",
 		"intelCellKill":"Removing Pather cell on $market for $cost",
+		"intelRepeatRelations":"Repeating $action with $faction1, $faction2 for $cost",
 		"intelDescName":"$name is a level %s operative.",
 		"intelDescLost":"Operative $name has been captured or killed.",
 		"intelDescDismissed":"Operative $name has been dismissed from your service.",
@@ -287,6 +291,8 @@
 		"intelButtonUnlockMasteryWithLevel":"Unlock mastery (level %s)",
 		"intelButtonCellKill":"Internal security mode",
 		"intelButtonCellKillTooltip":"When operative is idle, will periodically travel to player or commissioning faction colonies with Pather cells, and destroy them. Will also find unlocated pirate bases if no relevant cells exist.\n\nShould only be used on one operative at a time, as nothing prevents multiple operatives from trying to remove the same cell.",
+		"intelButtonRepeatRelations":"Repeat relation actions",
+		"intelButtonRepeatRelationsTooltip":"After completing a raise/lower relations action, repeat it until reaching the maximum effect or ordered to abort (or you run out of money).",
 		"intelHeaderLocalReport":"Local report",
 		"intelDescLocalReport1":"%s is a size %s market, of stability %s.",
 		"intelDescLocalReport2":"Space patrol strength: %s, ground defence strength: %s",
@@ -362,6 +368,7 @@
 		"intelStatus_procureShip":"Procuring $ship, delivering to $market",
 		"intelStatus_findPirateBase":"Finding pirate base",
 		"intelStatus_instigateRebellion":"Instigating rebellion",
+		"intelStatus_recruitAgent":"Recruiting %s agent",
 		
 		"intelDesc_raiseRelations_success":"An operative from $theAgentFaction has subverted the $faction political process to improve relations with their own faction.",
 		"intelDesc_raiseRelations_successPlayer":"Your operative $agentName has successfully subverted the $faction political process to improve relations with $theThirdFaction.",
@@ -427,6 +434,8 @@
 		"intelDesc_instigateRebellion_failureDetected":"$TheAgentFaction was thwarted in their attempt to instigate a rebellion $onOrAt $market. $TheFaction is certainly planning reprisals.",
 		"intelDesc_instigateRebellion_failureDetectedPlayer":"$Faction authorities have broken up $agentName's attempted rebellion $onOrAt $market. They will not overlook $theAgentFaction's crime.",
 		
+		"intelDesc_recruitAgent_successPlayer":"Your operative $agentName has recruited a new colleague $onOrAt $market.",
+		
 		"intel_lastMessage_travel_success":"\"Arrived at $market. Awaiting further directions.\"",
 		"intel_lastMessage_raiseRelations_success":"\"$TheFaction likes us rather more now.\"",
 		"intel_lastMessage_raiseRelations_failure":"\"Political interference with $theFaction was unsuccessful.\"",
@@ -446,6 +455,7 @@
 		"intel_lastMessage_instigateRebellion_failure":"\"Our efforts to start a rebellion on $market have been suppressed.\"",
 		"intel_lastMessage_injury_success":"\"Recovered from injuries. Ready for duty once more.\"",
 		"intel_lastMessage_findPirateBase_success":"\"Found the base supporting the pirate activity on $market.\"",
+		"intel_lastMessage_recruitAgent_success":"\"Recruited a new operative from $market.\"",
 		
 		"destabilizeText1":"poisoned the water supply",
 		"destabilizeText2":"fired into a crowd at a public venue",
@@ -485,9 +495,12 @@
 		"dialogShipPickerHeader":"Ship to procure",
 		
 		"dialogTooltipAlreadyModifyingRelations":"Another operative is currently already manipulating this faction.",
+		"dialogTooltipRecruitTooLowLevel":"Requires operative level %s or higher.",
+		"dialogTooltipRecruitMaxAgents":"Already at maximum number of agents.",
 		#"dialogTooltipModifyingRelationsCooldown":"This faction has already been recently manipulated. It will take $cooldown before further such actions can be executed.",
 		"dialogInfoModifyingRelationsCooldown":"This faction has already been manipulated in the recent past. Further such actions will take longer.",
 		"dialogInfoSabotageIndustryMission":"Warning: operative sabotage may not be considered a legitimate manner of completing industry disruption missions.",
+		"dialogInfoRecruitAgentSpecialization":"Cross-specialization recruitment will cost more and take longer.",
 		
 		"dialogProcureShipIntro":"A single ship can be procured from a faction, but persuading officials to \"lose\" a military-grade warship through a judicious combination of bribes, blackmail and forgery requires an expense considerably in excess of the market price. It should only be used for hulls which have proven difficult to obtain through other channels.",
 		"dialogProcureShipIntro2":"Ship will have a random variant and be subject to D-mods. Not all ships known to the faction may be available.",
@@ -503,6 +516,7 @@
 		"dialogInfoHeaderSabotageIndustry":"Sabotage %s on %s",
 		"dialogInfoHeaderProcureShip":"Procure %s",
 		"dialogInfoHeaderInstigateRebellion":"Instigate rebellion on %s",
+		"dialogInfoHeaderRecruitAgent":"Recruit %s operative",
 		"dialogInfoSuccessChance":"Success chance: %s",
 		"dialogInfoEffect":"Effect: %s – %s",
 		"dialogInfoRebellionStability":"Current stability: %s (maximum allowed %s)",
@@ -623,8 +637,8 @@
 		"intelDescNoRefund":"Due to your poor relationship with $theFaction, no refund has been issued.",
 		
 		"dialogCost":"Requires %s credits. You have %s credits.",
-		"costFactorIndustry":"industry value",
-		"costFactorIncome":"income",
+		"costFactorIndustry":"industry value (%s price modifier)",
+		"costFactorIncome":"income (6 months)",
 		"costFactorSizeAndStability":"market size and stability",
 		"costFactorPlayerFounded":"player-founded colony",
 		"costFactorRecentlyCapturedByPlayer":"recently captured by player",
@@ -829,7 +843,11 @@
 		
 		"stabilizationCommodity":"Stabilization commodities: %s",
 		
+		"alignmentConfigHeader":"Modify faction alignments",
+		"alignmentConfigWarning":"Changing alignments after the first time will cost %s story point(s).",
+		
 		"dispTableHeader":"Dispositions towards other factions",
+		"dispTableHeaderInwards":"Dispositions of other factions towards us",
 		"dispTableOverall":"Overall",
 		"dispTableBase":"Base",
 		"dispTableRelationship":"Relation",
@@ -842,6 +860,7 @@
 		"dispTableHardMode":"Difficulty",
 		"dispTableTraits":"Traits",
 		
+		"dispButtonDir":"Show others' disposition to us",
 		"dispFootnoteHardMode":"Starfarer mode: $penalty disposition towards $faction",
 		
 		"traitsHeader":"Traits",
@@ -1031,6 +1050,16 @@
 		"missionSuppression":"rebel suppression",
 		"missionColony":"colony expedition"
 	},
+	"nex_fleetPool":{
+		"title":"Fleet Pool",
+		"tableHeader":"Faction breakdown",
+		"tablePool":"Fleet pool",
+		"tableIncrement":"Last daily increment",
+		"tablePool2":"Invasion points",
+		"desc":"The fleet pool is generated by a faction's markets based on availability of %s, modified by stability. Imports count for less, local (on-market) production counts for a lot more. Each faction also receives a flat number of points for existing, and another flat number based on the current player level. The pool is spent on various fleet-related events in Nexerelin.",
+		"desc2":"Invasion points are generated similarly, but also count %s, and have some modifiers to handle factions which are hostile to everyone. They also stop accumulating if the faction is at peace.",
+	},
+	
 	"nex_fleetRequest":{
 		"fleetRequest":"fleet request",
 		
@@ -1100,14 +1129,21 @@
 		"respawnInvasionForce":"resurgence force",
 		"theRespawnInvasionForce":"the resurgence force",
 		
+		"counterInvasion":"counter-invasion",
+		"theCounterInvasion":"the counter-invasion",
+		"counterInvasionForce":"counter-invasion force",
+		"theCounterInvasionForce":"the counter-invasion force",
+		
 		"invadeBlocked":"Any orbital station and interfering fleets must be removed before an invasion is possible.",
 		
 		"intelTitleSuffixDeployed":"deployed",
 		
 		"intelDesc":"$TheFaction $isOrAre invading $market in the $location, held by $theTargetFaction. The invasion forces are projected to be $strDesc and are likely comprised of $numFleets $fleetsStr.",
 		"intelDescRespawn":"Remnants of the $theFaction have gathered to invade $market in the $location, held by $theTargetFaction, in a bid to revive their power. The invasion forces are projected to be $strDesc and are likely comprised of $numFleets $fleetsStr.",
+		"intelDescCounterInvasion":"$TheFaction $isOrAre dispatching a force in response to the invasion of $market in the $location, held by $theTargetFaction. The counter-invasion forces are projected to be $strDesc and are likely comprised of $numFleets $fleetsStr.",
 		"intelPredictionBombard":"The invasion force is likely to resort to tactical bombardment.",
 		"intelBrawl":"$TheTargetFaction will likely deploy a large defense force to meet the invasion.",
+		"intelCounterInvasionStrength":"The force is carrying an estimated %s marines.",
 		
 		"intelStealPenalty":"The operation was pre-empted by player forces of $thePlayerFaction. $TheFaction has lodged an official protest over your meddling intervention.",
 		"intelStealBulletReason":"Target stolen",
@@ -1177,6 +1213,8 @@
 		"dialogNoEngage_def":"The attackers are in disarray and not currently attempting to engage the station.",
 		"dialogNoEngage_noEnemy":"There are no defenders to engage.",
 		"dialogNoEngage_avoid":"The defenders are refusing to give battle to defend the colony.",
+		
+		"captureAntiExploitMsg":"Due to %s being captured again by player in a short span of time, industry construction/upgrades have been cancelled",
 	},
 	"nex_industry":{
 		"effect_synchrotron":"Increases fuel production output by %s units.",
@@ -1190,6 +1228,7 @@
 		"intelTitleSuffixDefenderVictory":"Defender Victory",
 		"intelDesc_intro":"Ground forces of $theAttacker are invading $market in the $location, held by $theDefender.",
 		"intelDesc_round":"Turn %s",
+		"intelDesc_roundDaysRemaining":"%.0f hours to next turn",
 		"intelDesc_unitSize":"Unit size: %s (troop count: %s min, %s typical, %s max; damage mult %s)",
 		"intelDesc_headerAttackerMod":"Attacker modifiers",
 		"intelDesc_headerDefenderMod":"Defender modifiers",
@@ -1209,6 +1248,7 @@
 		"bulletLossesLastTurn":"Losses last turn: %s",
 		"bulletAbilityUsed":"%s used ability: %s",
 		"bulletMilitiaUnleashed":"Militia unleashed!",
+		"bulletDaysToTakeControl":"%s day(s) to take personal control",
 		
 		"btnViewUnits":"Units",
 		"btnViewAbilities":"Abilities",
@@ -1406,6 +1446,7 @@
 		"modifierMovementPointsFleetSupport":"Fleet support last turn",
 		"modifierMovementPointsTurn1":"Turn 1 bonus",
 		"modifierMovementPointsSneakAttack":"Sneak attack (turn 1)",
+		"modifierGroundDefShortageMult":"Effects reduced by commodity shortage: %s",
 		
 		"modifierGroundSupport":"Ground Support",
 		"modifierGroundSupportEstimate":"Ground Support (estimated)",
@@ -1620,6 +1661,7 @@
 
 		"miningToolsListHeader":"The following mining ships and weapons exist in the Sector:",
 		"miningToolsListAddendum":"Fighter wings and modules with the appropriate weapons count towards their parent ship's mining strength. Built-in weapons are also counted.",
+		"miningToolsError":"Invalid mining entry: %s",
 		"insufficientMachineryWarning":"Your $shipOrFleet does not have enough heavy machinery to work at full capacity.",
 
 		"cacheFound":"Hidden cache found!",
@@ -1842,6 +1884,7 @@
 		"entryDescPotentialAmount":"Can insure for %s",
 		"entryDescAmountPaid":"Paid out %s on $day-$month-$year",
 		"entryDescPremium":"Premium: %s",
+		"entryDescRequireRepairs":"Must be fully repaired to insure",
 		"entryDescDaysRemaining":"%s day(s) remaining",
 		"entryDescLost":"Ship lost; paying for base value",
 		"entryDescRecovered":"Ship recovered: had %s D-mods, now has %s",
@@ -2142,8 +2185,10 @@
 		"headerDiplomacy":"Diplomacy",
 		"headerRequired":"Req.",
 		
-		"tooltipReqPop":"The winning faction or alliance must control at least %s of the Sector's total market size, and have %s the runner-up's total size.",
-		"tooltipReqHI":"The winning faction or alliance must control at least %s of the total heavy industries in the Sector.",
+		"textAllyContrib":"+%s from allies",
+		
+		"tooltipReqPop":"The winning faction must control at least %s of the Sector's total market size, and have %s the runner-up's total size.",
+		"tooltipReqHI":"The winning faction must control at least %s of the total heavy industries in the Sector.",
 		"tooltipReqFriend":"The winning faction must be friendly or better with every other competing faction in the Sector.",
 	},
 	
@@ -2171,7 +2216,14 @@
 		"intelDescDebug":"This intel is displayed only for debugging. You should not be seeing it under normal conditions.",
 		
 		"intelButtonCommand":"Give orders",
+		"intelTooltipCommandInBattle":"Fleet is currently in battle and cannot receive orders.",
 		"intelButtonDisband":"Disband",
+		"intelButtonRecreate":"Revive flagship (experimental)",
+		"intelButtonRecreateAll":"Revive all (experimental)",
+		"intelConfirmPromptRecreate":"Reviving the flagship will cost %s. You have %s.",
+		"intelConfirmPromptRecreateAll":"Reviving all ships will cost %s. You have %s.",
+		"intelTooltipDisbandNotDocked":"Must be docked at a market.",
+		"intelTooltipRecreateNotEnoughCredits":"Requires %s credits.",
 		"intelButtonDebug":"Debug",
 		"intelButtonCheckIndependent":"Independent mode",
 		
@@ -2184,6 +2236,8 @@
 		"dialogButtonAssign":"Assign",
 		"dialogTooltipMaxPSF":"You can only have one special task group at a time.",
 		"dialogTooltipNoShipsToRevive":"No ships to revive!",
+		"dialogTooltipFleetNull":"Fleet does not exist (this should not happen, please report)",
+		"dialogTooltipFleetInBattle":"Fleet is in battle",
 		"dialogTooltipNoMarketForRevive":"Fleet must be near a non-inhospitable market.",
 		"dialogMsgTaskAssigned":"task assigned",
 		"dialogMsgRevivingShips":"reviving ships",
@@ -2195,6 +2249,10 @@
 		"reportNode_crew":"Crew payroll",
 		"reportNode_supplies":"Supply cost",
 		"reportNode_fuel":"Fuel cost",
+		
+		"warnMsg":"Player special task group has despawned without being killed in battle!\n\nIf this was expected (e.g. fleet was killed with console), everything is fine and you can ignore this message.\n\nOtherwise, please report to Histidine with a description of what the task group is currently doing and where it is (also consider making a save copy in case it's needed for debugging).",
+		"warnMsgButton1":"I understand",
+		"warnMsgButton2":"Remain ignorant",
 	},
 	
 	"nex_splitFleet":{
@@ -2364,7 +2422,7 @@
 		
 		"m1_name":"Captive Cores",
 		"m1_stage1Desc":"Recover the Beta Cores stored on %s. You could hit the secure facility where they're stored, or talk to someone in authority who can help you.",
-		"m1_stage2Desc":"Return the Beta Cores you've recovered to %s at %s. Alternatively, you might choose to bring them to either the %s or the %s.",
+		"m1_stage2Desc":"Return the Beta Cores you've recovered to %s at %s. Alternatively, you might choose to bring them to either %s or %s.",
 		"m1_stage1NextStep":"Recover the Beta Cores from %s",
 		"m1_stage2NextStep":"Return the Beta Cores to %s",
 		
@@ -2385,14 +2443,16 @@
 		
 		"brawl_name":"Showdown",
 		"brawl_boilerplateDesc":"A large Hegemony and allied operation is planned against the Remnants. $name has asked you to prevent it from succeeding.",
-		"brawl_startDesc":"Go to %s and track the late Hegemony fleet to what is likely the allied forces' staging area.",
+		"brawl_startDesc":"Go to %s and wait for the delayed Hegemony fleet, which will lead you to to what is likely the allied forces' staging area.",
+		"brawl_followStragglerDesc":"The Hegemony fleet has departed %s, follow it to the expected staging area of the allied forces.",
 		"brawl_foundStagingAreaDesc":"You've found the staging area for the Hegemony forces. Its location suggests that their target is in the %s; you should proceed there quickly.\n\nOr if you're so inclined, you could speak with the one of the fleet commanders before they move out...",
 		"brawl_scoutDesc":"Reconnoiter the %s system for the Hegemony; travel to the marked location on the map to transmit the data.",
 		"brawl_battleDesc":"The Hegemony forces will try to destroy the Remnant station in the %s. Protect it at all costs.",
 		"brawl_battleDescUnknown":"The Hegemony forces will try to destroy a nearby Remnant station, but you do not know which one. Protect it as best as you can.",
 		"brawl_battleBetrayDesc":"You have betrayed the Remnants and transmitted reconnaissance data to the Hegemony. Their fleets will now attempt to destroy the Remnant station in the %s. Hopefully they'll get the job done; if not, finish it yourself.",
 		
-		"brawl_startNextStep":"Go to %s and follow Hegemony fleet",
+		"brawl_startNextStep":"Go to %s and wait for Hegemony fleet to depart",
+		"brawl_followStragglerNextStep":"Follow Hegemony fleet to staging area",
 		"brawl_foundStagingAreaUpdate":"AI analysis indicates most probable target is %s",
 		"brawl_foundStagingAreaNextStep":"Prepare to defend %s",
 		"brawl_foundStagingAreaNextStep2":"Or negotiate with Hegemony commander before attack commences",

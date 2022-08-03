@@ -1,6 +1,6 @@
 {
   "displayName": "Converted",
-  "fluxCapacitors": 15,
+  "fluxCapacitors": 17,
   "fluxVents": 20,
   "goalVariant": false,
   "hullId": "prv_hornfels_pather",
@@ -58,5 +58,5 @@
       }
     }
   ],
-  "wings": ["prv_talon_pather_wing",]
+  "wings": ["talon_wing"]
 }

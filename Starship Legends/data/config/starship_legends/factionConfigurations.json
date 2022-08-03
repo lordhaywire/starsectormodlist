@@ -13,6 +13,7 @@
 		"derelictFrequency":{
 			"wolf":1.0,
 			"hound":1.0,
+			"vanguard":1.0,
 			"hyperion":1.0,
 			"lasher":1.0,
 			"omen":1.0,
@@ -30,7 +31,8 @@
 			"scarab":1.0,
 			"wayfarer":1.0,
 			"gremlin":1.0,
-
+			
+			"manticore":1.0,
 			"hammerhead":1.0,
 			"sunder":1.0,
 			"condor":1.0,
@@ -45,6 +47,9 @@
 			"drover":1.0,
 			"shrike":1.0,
 
+			
+			"eradicator":1.0,
+			"champion":1.0,
 			"falcon":1.0,
 			"eagle":1.0,
 			"venture":1.0,

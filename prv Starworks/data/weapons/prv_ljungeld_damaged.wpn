@@ -18,7 +18,7 @@
     64,
     196
   ],
-  "hitGlowRadius": 0,
+  "hitGlowRadius": 25,
   "turretOffsets": [
     27,
     -0.5

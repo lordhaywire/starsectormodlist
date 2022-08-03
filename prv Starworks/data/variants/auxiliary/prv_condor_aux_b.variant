@@ -1,7 +1,7 @@
 {
   "displayName": "Auxiliary-B",
   "fluxCapacitors": 0,
-  "fluxVents": 9,
+  "fluxVents": 4,
   "goalVariant": false,
   "hullId": "prv_condor",
   "hullMods": [],
@@ -27,7 +27,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 003": "pilum"
+        "WS 003": "prv_berguv_mirv"
       }
     }
   ],

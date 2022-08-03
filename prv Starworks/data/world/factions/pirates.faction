@@ -2,7 +2,6 @@
 	"knownShips":{
 		"tags":["prv_pirate_bp"],
 		"hulls":[
-			"prv_eld_rb",
 			"prv_gnista_p",
 			"prv_tystnad_p",
 			"prv_flamma_p",
@@ -20,6 +19,7 @@
 	},
 	"hullFrequency":{
 		"hulls":{
+			"prv_gissel_p":0.35,
 			"prv_bergslag_p":0.35, #should be just an occasional thing
 			"prv_rok_p":0.15, #very uncommon in non-RB fleets
 		},

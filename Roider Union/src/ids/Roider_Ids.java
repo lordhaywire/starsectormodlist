@@ -43,6 +43,13 @@ public class Roider_Ids {
         public static final String PIRATE_COM_CREW = "roider_CHM_pirate_xiv";
     }
 
+    public static class Roider_Entities {
+        public static final String LOOT_STASH = "roider_loot_stash";
+        public static final String LOOT_STASH_MAJOR = "roider_loot_stash_major";
+
+        public static final String ROCKPIPER_PERCH = "roider_station_rockpiper";
+    }
+
     public static class Roider_Factions {
         public static final String ROIDER_UNION = "roider";
         public static final String THI = "tiandong";
@@ -64,9 +71,12 @@ public class Roider_Ids {
         public static final String NULL_ORDER = "nullorder";
         public static final String TEMPLARS = "templars";
         public static final String CARTEL = "the_cartel";
+        public static final String ARS  ="al_ars";
+        public static final String COLONIAL_PIRATES = "loa_colonialpirates";
     }
 
     public static class Roider_Fitters {
+        public static final String ALL = "roider_all";
         public static final String FULL = "roider_full";
         public static final String LIGHT = "roider_light";
         public static final String ARGOS = "roider_argos";
@@ -127,6 +137,8 @@ public class Roider_Ids {
 
         public static final String RETROFIT = "roider_retrofit";
         public static final String ROIDER = "roider";
+
+        public static final String TECH_EXPEDITION = "roider_techExpedition";
     }
 
     public static class Roider_Settings {
@@ -149,6 +161,12 @@ public class Roider_Ids {
 
         public static final String UNION_HQ_SHIP_REP_REQ = "roider_unionHQShipRepReq";
         public static final String UNION_HQ_SHIP_COM_NOT_REQ = "roider_unionHQShipComNotReq";
+
+        public static final String LOOT_STASH_MINE_IMAGES = "roider_stashMines";
+        public static final String LOOT_STASH_MINE = "mine4";
+        public static final String LOOT_STASH_MINE_GLOW = "mineGlow";
+
+        public static final String ICON_PHASENET = "phasenet";
     }
 
     public static class Roider_Equipment {

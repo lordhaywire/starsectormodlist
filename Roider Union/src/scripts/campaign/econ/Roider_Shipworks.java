@@ -114,7 +114,9 @@ public class Roider_Shipworks extends BaseIndustry {
     protected void disruptionFinished() {
         super.disruptionFinished();
         market.getMemoryWithoutUpdate().set(Roider_MemFlags.SHIPWORKS_FUNCTIONAL, isFunctional());
-        market.getMemoryWithoutUpdate().set(Roider_MemFlags.SHIPWORKS_ALPHA, getAICoreId().equals(Commodities.ALPHA_CORE));
+
+        boolean alphaCore = getAICoreId() == null ? false : getAICoreId().equals(Commodities.ALPHA_CORE);
+        market.getMemoryWithoutUpdate().set(Roider_MemFlags.SHIPWORKS_ALPHA, alphaCore);
     }
 
     @Override

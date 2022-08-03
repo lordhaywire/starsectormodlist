@@ -4,7 +4,6 @@
 		"hulls":[
 			"prv_tiger",
 			"prv_gremlin_rb",
-			"prv_gremlin_hr",
 			"prv_flock_midline",
 			"prv_flock_rb",
 		],
@@ -14,7 +13,6 @@
 		"hulls":[
 			"prv_tiger",
 			"prv_gremlin_rb",
-			"prv_gremlin_hr",
 			"prv_flock_midline",
 			"prv_flock_rb",
 		],

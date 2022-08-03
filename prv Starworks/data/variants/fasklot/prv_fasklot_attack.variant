@@ -1,24 +1,24 @@
 {
-  "displayName": "Attack",
-  "fluxCapacitors": 13,
-  "fluxVents": 20,
-  "goalVariant": false,
-  "hullId": "prv_fasklot",
-  "hullMods": [
-    "heavyarmor",
-    "targetingunit"
-  ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 1,
   "variantId": "prv_fasklot_attack",
+  "hullId": "prv_fasklot",
+  "displayName": "Attack",
+  "goalVariant": false,
+  "fluxCapacitors": 14,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxbreakers",
+    "adaptive_coils",
+    "autorepair"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "pulselaser",
-        "WS0002": "pulselaser"
+        "WS0001": "prv_heavyspattergun",
+        "WS0002": "prv_heavyspattergun"
       }
     },
     {
@@ -42,5 +42,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

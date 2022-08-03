@@ -17,6 +17,8 @@
 		
 		"tiandong":0.15,					# Once mining rivals, now trade partners
 		"SCY":-0.6,							# Dirty pirates!
+		"al_ars":-0.6,						# Pirates, and mining rivals to boot!
+		"loa_colonialpirates":-0.6,			# Literally pirates
 		"cabal":-1,							# The worst of the worst of TriTachyon
 		
 		# Copied from Tiandong Heavy Industries' file
@@ -97,16 +99,16 @@
 	#"customStations":["tiandong_outpost"],
 
 	"startShipsSolo":[
-		["hound_Starfarer"],
-		#["roider_nolasher_Balanced"],
+		["roider_hound_Starfarer"],
+		["roider_cyclops_Outdated"]
 	],
 	"startShipsCombatSmall":["roider_onager_Balanced", "roider_cyclops_Balanced", "hound_Standard"],
     "startShipsCarrierSmall":["roider_cowboy_Strike", "roider_nolasher_Assault", "roider_pepperbox_Escort"],
-    "startShipsTradeSmall":["roider_tarsus_Roider", "roider_cyclops_Balanced", "hound_Starfarer"],
+    "startShipsTradeSmall":["roider_jane_Attack", "roider_cyclops_Balanced", "roider_hound_Starfarer"],
     "startShipsCombatLarge":["roider_gambit_Assault", "roider_onager_Rocket", "roider_bombard_CS"],
     "startShipsExplorerLarge":["roider_argos_Outdated", "shepherd_Frontier"],
-    "startShipsCarrierLarge":["roider_ranch_Attack", "roider_colossus2_Roider", "roider_pepperbox_Escort"],
-    "startShipsSuper":["roider_roach_Assault"],
+    "startShipsCarrierLarge":["roider_ranch_Attack", "roider_firestorm_Patrol", "roider_cyclops_Escort"],
+    "startShipsSuper":["roider_roach_Attack"],
 
 	# Defense stations used in random sector
 	"defenceStations":[

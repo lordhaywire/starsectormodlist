@@ -38,8 +38,9 @@
             ###5
 		"prv_gremlin_rb_attack":3,
 		"prv_gremlin_rb_balanced":2,
-		###3
-		"prv_gremlin_hr_elite":3,
+		###10
+		"prv_wolf_rb_syndicate":5,
+		"prv_wolf_rb_breaker":5,
 	},
 	"combatSmall":{
 		###10
@@ -114,10 +115,9 @@
             "prv_gremlin_rb_balanced":2,
             "prv_gremlin_rb_support":1,
             "prv_gremlin_rb_strike":1,
-            ###6
-            "prv_gremlin_hr_elite":6,
-            ### Ryak ###
-            #"brawler_ryak":3,
+		###10
+		"prv_wolf_rb_syndicate":5,
+		"prv_wolf_rb_breaker":5,
 	},
 	"combatMedium":{
 		###10
@@ -131,16 +131,10 @@
 		###10
 		"prv_ballebo_domain":5,
 		"prv_ballebo_legacy":5,
-		###10
-		"prv_eld_lg_elite":10,
             ###10
             "prv_eld_midline_attack":5,
             "prv_eld_midline_elite":5,
-            ###10
-            "prv_eld_rb_assault":2.5,
-            "prv_eld_rb_belt":2.5,
-            "prv_eld_rb_pirate":2.5,
-            "prv_eld_rb_converted":2.5,
+
             ###10
             "prv_shrike_attack":2.5,
             "prv_shrike_support":2.5,
@@ -156,22 +150,15 @@
             "prv_gnejs_belt":2.5,
             "prv_gnejs_missile":2.5,
             "prv_gnejs_standard":2.5,
-            ###8
-            "prv_gnejs_p_pirate":2,
-            "prv_gnejs_p_privateer":2,
-            "prv_gnejs_p_raider":2,
-            "prv_gnejs_p_ambush":2,
             ###10
             "prv_gissel_attack":4,
             "prv_gissel_balanced":3,
             #"prv_gissel_support":4,	RETIRED
             "prv_gissel_siege":3,
             #"prv_gissel_elite":2.5,	RETIRED
-            ###5
-            "prv_sunder_ryak_assault":1,
-            "prv_sunder_ryak_overdriven":1,
-            "prv_sunder_ryak_core":2,
-            "prv_sunder_ryak_strike":1,
+            ###8
+            "prv_gissel_p_rocket":4,
+            "prv_gissel_p_missile":4,
 	},
 	"combatLarge":{
 		###10
@@ -194,8 +181,6 @@
 		"prv_flock_attack":2.5,
 		"prv_flock_ryak":2.5,
 		###10
-		"prv_flock_lg_elite":10,
-		###10
 		"prv_flock_midline_balanced":2.5,
 		"prv_flock_midline_support":2.5,
 		"prv_flock_midline_artillery":2.5,
@@ -217,8 +202,6 @@
 		"prv_aska_lc_fire":2,
 		"prv_aska_lc_sword":2,
 		###10
-		"prv_aska_lg_elite":10,
-		###10
 		"prv_dominator_rb_line":2.5,
 		"prv_dominator_rb_artillery":2.5,
 		"prv_dominator_rb_attack":2.5,
@@ -228,24 +211,21 @@
 		#"eagle_ryak":3,
 	},
 	"combatCapital":{
+		###5
+		"prv_morker_grav":5,
+		"prv_morker_domain":5,
 		###10
 		"prv_skymning_tensor":2.5,
 		"prv_skymning_advanced":2.5,
 		"prv_skymning_elite":2.5,
 		"prv_skymning_ryak":2.5,
-		### Ryak ###
-		###8
-		#"prv_conquest_ryak_alfa":2,
-		#"prv_conquest_ryak_beta":2,
-		#"prv_conquest_ryak_gamma":2,
-		#"prv_conquest_ryak_delta":2,
 		###10
 		"prv_rok_grav":2.5,
 		"prv_rok_fast":2.5,
 		"prv_rok_assault":2.5,
 		"prv_rok_adv":2.5,
 		###8
-		"prv_bergtagen_standard":4,
+		"prv_bergtagen_belt":4,
 		"prv_bergtagen_assault":4,
 		###10
 		"prv_rok_p_stolen":2.5,
@@ -265,10 +245,10 @@
 	},
 	"combatFreighterMedium":{
 		###10
-		"prv_visent_raider":2.5,
-		"prv_visent_primitive":2.5,
-		"prv_visent_smuggler":2.5,
-		"prv_visent_lh":2.5,
+		#"prv_visent_raider":2.5,
+		#"prv_visent_primitive":2.5,
+		"prv_visent_smuggler":5,
+		"prv_visent_lh":5,
 		#"prv_visent_balanced":2,	RETIRED
 		###10
 		"prv_gemini_aux_i":4,
@@ -305,14 +285,6 @@
 		"prv_venture_rb_belt":2.5,
 		"prv_venture_rb_merch":2.5,
 		"prv_venture_rb_standard":2.5,
-		###9
-		#"prv_fika_attack":3,
-		#"prv_fika_balanced":3,
-		#"prv_fika_prv":3,
-		###9
-		#"prv_middag_prv":3,
-		#"prv_middag_elite":3,
-		#"prv_middag_balanced":3,
 	},
 	
 	"civilianRandom":{
@@ -371,18 +343,11 @@
 		###12
 		"prv_condor_aux_f":6,
 		"prv_condor_aux_b":6,
-		###4
-		"prv_kite_aux_strike":2,
-		"prv_kite_aux_attack":2,
 	},
 	"carrierMedium":{
             ###3
             "prv_gast_strike":1.5,
             "prv_gast_grav":1.5,
-		###10
-		#"prv_mora_pather_oldreliable":3,
-		"prv_mora_pather_gs":5,
-		"prv_mora_pather_deliverance":5,
 		###10
 		"prv_flock_rb_attack":2.5,
 		"prv_flock_rb_support":2.5,
@@ -425,12 +390,6 @@
 
 	# phase ships
 	"phaseSmall":{
-		##6
-		"prv_afflictor_aux_strike":3,
-		"prv_afflictor_aux_missile":3,
-		##6
-		"prv_shade_aux_strike":3,
-		"prv_shade_aux_support":3,
 		#10
 		"prv_fasnod_support":3,
 		#"prv_fasnod_standard":2,
@@ -444,15 +403,12 @@
 		"prv_fasnod_p_strike":2,
 	},
 	"phaseMedium":{
-		##6
-		"prv_harbinger_aux_attack":3,
-		"prv_harbinger_aux_support":3,
             ###10
-            "prv_fasklot_attack":2.5,
+            "prv_fasklot_attack":5,
+            "prv_fasklot_flicker":5,
             #"prv_fasklot_standard":3,
-            "prv_fasklot_flicker":2.5,
-            "prv_fasklot_overdriven":2.5,
-            "prv_fasklot_elite":2.5,
+            #"prv_fasklot_overdriven":2.5,
+            #"prv_fasklot_elite":2.5,
 		###8
             #"prv_ilbud_assault":3,
             #"prv_ilbud_strike":2,
@@ -562,4 +518,3 @@
 	"battlestationLowTech":{
 	},
 }
-4

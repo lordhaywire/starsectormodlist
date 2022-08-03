@@ -2,7 +2,7 @@
 	"starSystem":"prv_stjarngard",
 	"markets":[
 		{
-			"entities":["prv_stjarngard_strand"],
+			"entities":["prv_stjarngard_strand","prv_stjarngard_strand_station"],
 			"faction":"prv",
 			"size":5,
 			"startingConditions":[
@@ -25,6 +25,7 @@
 				"commerce",
 				"grounddefenses",
 				"spaceport",
+				#"prv_station1",
 			],
 		},
 		{
@@ -52,7 +53,7 @@
 				["orbitalworks", "corrupted_nanoforge"],
 				"spaceport",
 				"militarybase",
-				"prv_station3",
+				"prv_station2",
 			],
 		},
 		{

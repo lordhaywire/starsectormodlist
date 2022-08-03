@@ -30,7 +30,7 @@ import ids.Roider_Ids.Roider_Settings;
 import ids.Roider_Ids.Roider_Tags;
 import ids.Roider_MemFlags;
 import java.util.*;
-import static scripts.campaign.fleets.Roider_TechExpeditionFleetRouteManager.createScavenger;
+import scripts.campaign.fleets.expeditions.Roider_ExpeditionFleetFactory;
 import scripts.campaign.intel.Roider_ConversionFleetIntel;
 
 /**
@@ -149,7 +149,7 @@ public class Roider_ConversionFleetRouteManager extends BaseRouteFleetManager im
             if (loc == null) return;
 
             // orbit focus must not be hostile to fleet faction
-        } while (loc.orbit.getFocus().getFaction().isHostileTo(factionId));
+        } while (loc.orbit != null && loc.orbit.getFocus().getFaction().isHostileTo(factionId));
 
         if (loc.location == null) loc.location = loc.orbit.getFocus().getLocation();
 
@@ -250,8 +250,11 @@ public class Roider_ConversionFleetRouteManager extends BaseRouteFleetManager im
 
         Random random = new Random(route.getSeed());
 
-		CampaignFleetAPI fleet = createScavenger(route.getExtra().fleetType, system.getLocation(),
+		CampaignFleetAPI fleet = Roider_ExpeditionFleetFactory.createExpedition(
+                    route.getExtra().fleetType, system.getLocation(),
                     route, route.getMarket(), false, random);
+
+        if (fleet == null) return null;
 
         if (!hasAnArgos(fleet)) {
             List<String> argosVariants = new ArrayList<>();

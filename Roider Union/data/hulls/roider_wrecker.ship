@@ -11,11 +11,33 @@
   "shieldCenter": [-2, -0],
   "shieldRadius": 148,
   "viewOffset": 0,
+  "builtInWeapons": {
+    "GLOW1": "roider_wrecker_glow1",
+    "GLOW2": "roider_wrecker_glow2",
+  },
   "builtInMods": [
     "roider_midas1",
     "roider_phasenetTowPattern"
   ],
   "weaponSlots": [
+    {
+      "id": "GLOW1",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, 0]
+    },
+    {
+      "id": "GLOW2",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, 0]
+    },
     {
       "id": "WS 001",
       "size": "SMALL",

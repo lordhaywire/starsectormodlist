@@ -51,14 +51,27 @@
 			"prv_kakafoni_p":0.25,
 			"prv_basalt":1.33,
 			#"prv_bitumen":0.33, #got spammed for some reason #might be fixed
+			"prv_gissel_p":0, #use the base model
 			"prv_rok_p":0.5, #uncommon
 			"prv_bergtagen":0.5, #uncommon
 		},
 	},
 	# ships the faction gets access to when importing S&W out-of-faction
 	"shipsWhenImporting":{
-		"tags":["prv_rb_bp", "prv_pirate_bp", "pirate_bp", "base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "independent"],
+		"tags":[
+			"prv_rb_bp",  
+			"prv_rb_cap_bp", 
+			"prv_pirate_bp", 
+			"base_bp", 
+			"pirate_bp", 
+			"pirates"
+		],
 		"hulls":[
+			"atlas",
+			"atlas2",
+			"afflictor_d_pirates",
+			"shade_d_pirates",
+			###
 			"prv_tiger",
 		],
 	},
@@ -67,47 +80,33 @@
 			"prv_rb_bp",  
 			"prv_rb_cap_bp", 
 			"prv_pirate_bp", 
-			"pirate_bp", 
 			"base_bp", 
-			"lowtech_bp", 
-			"midline_bp", 
-			"hightech_bp", 
-			"independent"
+			"pirate_bp", 
+			"pirates"
 		],
 		"hulls":[
 			"atlas",
 			"atlas2",
-			"kite_original",
-			#"doom",
-			"afflictor",
 			"afflictor_d_pirates",
-			"prometheus",
-			#"prometheus2",
-			"shade",
 			"shade_d_pirates",
-			"tempest",
-			#"conquest",
-			"gryphon",
-			"valkyrie",
-			"harbinger",
 			###
 			"prv_tiger",
 		],
 	},
-	# listing ships here will make the faction mostly use them even if other hulls become available
-	"priorityShips":{
-		"tags":["prv_rb_bp","prv_pirate_bp","prv_rb_cap_bp", "pirate_bp","low_tech","midline"],
-		"hulls":[
-			"atlas2",
-			#"prometheus2",
-			"condor",
-			"mule",
-			"hound",
-			"cerberus",
-			"shepherd",
-			"venture",
-		],
-	},
+#	# listing ships here will make the faction mostly use them even if other hulls become available
+#	"priorityShips":{
+#		"tags":["prv_rb_bp","prv_pirate_bp","prv_rb_cap_bp", "pirate_bp","low_tech","midline"],
+#		"hulls":[
+#			"atlas2",
+#			#"prometheus2",
+#			"condor",
+#			"mule",
+#			"hound",
+#			"cerberus",
+#			"shepherd",
+#			"venture",
+#		],
+#	},
 	"knownFighters":{
 		"tags":["prv_rb_bp"],
 		"fighters":[
@@ -191,6 +190,7 @@
 			"hurricane",
 			"locust",
 			"prv_skata",
+			"squall"
 		],
 	},
 	"priorityWeapons":{
@@ -210,15 +210,16 @@
 #			"hephag",
 #			"mark9",
 			###e
-			"prv_lpk",
+#			"prv_lpk",
 			"irpulse",
 			###m
 			"harpoon",
+			"harpoon_single",
 			"harpoonpod",
 			"prv_brytare_rack",
 			"prv_brytare_pod",
 			"hammer",
-			"hammerrack",
+			"hammer_single"
 		],
 	},
 	"knownHullMods":{

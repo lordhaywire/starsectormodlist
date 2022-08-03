@@ -148,9 +148,9 @@ public class Roider_RoiderHQBaseIntel extends BaseIntelPlugin implements EveryFr
 		market.setPrimaryEntity(entity);
 		entity.setMarket(market);
 
-		entity.setSensorProfile(1f);
+//		entity.setSensorProfile(1f);
 		entity.setDiscoverable(true);
-		entity.getDetectedRangeMod().modifyFlat("gen", 5000f);
+//		entity.getDetectedRangeMod().modifyFlat("gen", 5000f);
 
 		market.setEconGroup(market.getId());
 		market.getMemoryWithoutUpdate().set(DecivTracker.NO_DECIV_KEY, true);
@@ -205,6 +205,10 @@ public class Roider_RoiderHQBaseIntel extends BaseIntelPlugin implements EveryFr
 		if (getPlayerVisibleTimestamp() == null && entity.isInCurrentLocation() && isHidden()) {
 			makeKnown();
 			sendUpdateIfPlayerHasIntel(DISCOVERED_PARAM, false);
+
+            market.setEconGroup(null);
+            market.setHidden(false);
+            entity.setDiscoverable(false);
 		}
 
 		CampaignFleetAPI fleet = Misc.getStationFleet(market);
@@ -464,7 +468,13 @@ public class Roider_RoiderHQBaseIntel extends BaseIntelPlugin implements EveryFr
 			curr = Math.round(mod.value);
 		}
 
-		int a = com.getAvailable() - curr;
+		int avWithoutPenalties = (int) Math.round(com.getAvailableStat().getBaseValue());
+		for (MutableStat.StatMod m : com.getAvailableStat().getFlatMods().values()) {
+			if (m.value < 0) continue;
+			avWithoutPenalties += (int) Math.round(m.value);
+		}
+		
+		int a = avWithoutPenalties - curr;
 		int d = com.getMaxDemand();
 		if (d > a) {
 			//int supply = Math.max(1, d - a - 1);

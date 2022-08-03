@@ -24,6 +24,12 @@
   "hardpointAngleOffsets": [
     0
   ],
+  "glowColor": [
+    225,
+    96,
+    0,
+    255
+  ],
   "barrelMode": "ALTERNATING",
   "animationType": "MUZZLE_FLASH",
   "autocharge": true,

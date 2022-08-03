@@ -24,6 +24,7 @@ import com.fs.starfarer.api.impl.campaign.rulecmd.salvage.special.BaseSalvageSpe
 import com.fs.starfarer.api.util.Misc;
 import com.thoughtworks.xstream.XStream;
 import java.util.Random;
+import scripts.campaign.fleets.expeditions.Roider_ExpeditionFleetFactory;
 
 public class Roider_ExpeditionTrap extends BaseSalvageSpecial {
 
@@ -289,8 +290,8 @@ public class Roider_ExpeditionTrap extends BaseSalvageSpecial {
             boolean pirate = data.params.factionId.equals(Factions.INDEPENDENT)
                         && random.nextBoolean();
 
-			CampaignFleetAPI fleet = Roider_TechExpeditionFleetRouteManager
-                        .createScavenger(type, entity.getLocationInHyperspace(), source, pirate, random);
+			CampaignFleetAPI fleet = Roider_ExpeditionFleetFactory
+                        .createExpedition(type, entity.getLocationInHyperspace(), source, pirate, random);
 
 			if (fleet == null || fleet.isEmpty()) return;
 

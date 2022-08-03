@@ -11,7 +11,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "shredder"}
+            "weapons": {"WS 001": "hveldriver"}
         },
         {
             "autofire": true,

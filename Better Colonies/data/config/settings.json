@@ -1,18 +1,12 @@
 {
-	"altMouseMoveToMassTransfer":true,
-	"DoesBCChangeIndustry":true,
+	"altMouseMoveToMassTransfer":true, #(default: false in vanilla, but I like it enough to be true)
+	#"maxColonySize":6, # maximum size to which a player colony can grow (delete the # in front of "maxColonySize" to change colony size, this is a vanilla setting and might be changed by other mods!)
 	
-	"adminHireTier0":5000,
-	"adminHireTier1":10000,
-	"adminHireTier2":50000,
-    "adminHireTier3":100000,
-	"adminSalaryTier0":2500,
-	"adminSalaryTier1":5000,
-	"adminSalaryTier2":25000,
-	"adminSalaryTier3":50000,
-	#This changes how much the admin should spawn rate.. give Tier 5 a higher spawn rate to see them spawn more. Simple as. In according to 0.95, I also modified its tier spawn rate as well.
-	"adminSpawnTier0":20,
-	"adminSpawnTier1":65,
-	"adminSpawnTier2":10,
-	"adminSpawnTier3":5,
+	"BCAutoImproveIndustry": true, #vanilla factions will auto-improve industries with SP over time (default: true)
+	"BCLoseSPImprovements": true, #Only for Nex, invasions will unimprove industries that were disrupted at the end of an invasion (default: true)
+	"BCIgnoreFactionWhiteflag": false, #Makes ALL alive markets be eligible for SP Improvements regardless. (default: false)
+	"BCDebugText": false, #for me unless you want to know what industry got improved (default: false)
+	
+	"BCChangeIndustrySize":true, #at size 9 and 10, this will increase industry size by 1. (default: true)
+	"BCCryosanctum": false, #enable this to allow cryosanctum to be constructed (default: false)
 }

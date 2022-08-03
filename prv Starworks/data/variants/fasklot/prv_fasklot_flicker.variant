@@ -3,14 +3,13 @@
   "hullId": "prv_fasklot",
   "displayName": "Flicker",
   "goalVariant": true,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 10,
   "fluxVents": 20,
   "quality": 0,
   "permaMods": [],
   "hullMods": [
-    "magazines",
     "prv_flickercore",
-    "hardened_subsystems"
+    "fluxbreakers"
   ],
   "weaponGroups": [
     {

@@ -1,5 +1,5 @@
 name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
-MIDAS,roider_midas,1,,,"special, roider","Special, Defenses",5000,FALSE,,,4,8,12,20,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+MIDAS,roider_midas,1,,,"special, roider","Special, Defenses",5000,FALSE,,,4,8,12,20,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
 
 The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
 Fighter Clamps,roider_fighterClamps,0,,,"special, non_phase, roider",Fighters,5000,TRUE,,,2,4,8,10,hullmods.Roider_FighterClamps,"An old and discredited trick, deploying fighters from simple hull clamps was reinvented by roiders and has proliferated among independents and pirates.
@@ -14,15 +14,15 @@ EVA Expertise,roider_commissionCrew,,,Roider Union,,,,,TRUE,,0,0,0,0,hullmods.Ro
 MIDAS,roider_midas_fighter,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS_Fighter,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
 
 The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
-MIDAS-1,roider_midas1,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+MIDAS-1,roider_midas1,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
 
-The improved hull and armor receive %s less EMP damage, increase the ship's effective mass by %s, and include an armor module.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
-MIDAS-2,roider_midas2,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS-2,roider_midas2,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
 
-The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s. Two armor modules provide increased survivability.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
-MIDAS-3,roider_midas3,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships. Reduces the effect of asteroid impacts on the fleet's drive field and the risk of damaging impacts by up to %s, proportional to the number of ships equipped with MIDAS.
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+MIDAS-3,roider_midas3,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS,"The Massive Impact Deflection/Ablation System is a formalization of various ad-hoc protection schemes for mining ships.
 
-The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s. Three armor modules form a tough outer shell.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
+The improved hull and armor receive %s less EMP damage and increase the ship's effective mass by %s.",Reduces effect of collisions and EMP.,graphics/hullmods/roider_midas.png
 MIDAS Armor,roider_midas_armor,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_MIDAS_Armor,Massive Impact Deflection/Ablation System armor modules inherit their parent ship's relevant hullmods.,Copies parent's hullmods.,graphics/hullmods/roider_midas.png
 Firestorm Integration,roider_firestormmod,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_FirestormMod,Reduces the ordnance point cost of small and medium ballistic weapons by %s.,Reduces ordnance point cost of ballistic weapons.,graphics/hullmods/roider_firestorm_integration.png
 Dedicated Targeting Core (Cruiser),roider_bombardmentmod,,,,,,,FALSE,TRUE,,0,0,0,0,hullmods.Roider_BombardmentMod,"This cruiser-grade targeting core increases the range of ballistic and energy weapons by %s percent.

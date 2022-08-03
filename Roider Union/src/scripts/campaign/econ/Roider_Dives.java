@@ -438,10 +438,14 @@ public class Roider_Dives extends BaseIndustry implements MarketImmigrationModif
     public static List<MarketAPI> getHarvestTargetsInRange(MarketAPI market, float ly) {
         Vector2f loc = market.getLocationInHyperspace();
 
+        if (loc == null) return new ArrayList<>();
+
         // What systems are in range?
         List<PlanetAPI> pTargets = new ArrayList<>();
         pTargets.addAll(market.getStarSystem().getPlanets());
         for (StarSystemAPI s : Global.getSector().getStarSystems()) {
+            if (s.getHyperspaceAnchor() == null) continue;
+            if (s.getHyperspaceAnchor().getLocationInHyperspace() == null) continue;
             if (s.getId().equals(market.getStarSystem().getId())) continue;
             if (s.hasTag(Tags.THEME_UNSAFE)) continue;
             if (s.hasTag(Tags.THEME_HIDDEN)) continue;

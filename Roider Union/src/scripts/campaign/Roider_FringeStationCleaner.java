@@ -41,10 +41,13 @@ public class Roider_FringeStationCleaner {
             if (fleet != null) fleet.despawn();
 
             MarketAPI market = entity.getMarket();
-            entity.setMarket(null);
-            entity.getStarSystem().removeEntity(entity);
-
             market.getConnectedEntities().remove(entity);
+
+            entity.setMarket(null);
+
+            Misc.fadeAndExpire(entity);
+//            entity.getStarSystem().removeEntity(entity);
+
         }
     }
 }

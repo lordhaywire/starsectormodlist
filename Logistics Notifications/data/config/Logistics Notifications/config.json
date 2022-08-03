@@ -1,4 +1,7 @@
 {
+	"useHintsDisplay": true,
+	"useNotifications": false,
+	
 	"notificationIncrement": 3, # days
 	# When warnings (orange text) and alarms (red text and sounds) start
 	# days of supply

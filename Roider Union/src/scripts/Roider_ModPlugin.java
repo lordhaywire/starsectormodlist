@@ -1,5 +1,7 @@
 package scripts;
 
+import scripts.campaign.fleets.expeditions.*;
+import scripts.campaign.cleanup.Roider_MinerTokenCleaner;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
@@ -7,6 +9,7 @@ import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.procgen.Roider_StarSystemGenerator;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
+import com.fs.starfarer.api.impl.campaign.shared.SharedData;
 import com.thoughtworks.xstream.XStream;
 import exerelin.campaign.ExerelinSetupData;
 import exerelin.campaign.PlayerFactionStore;
@@ -18,7 +21,9 @@ import org.dark.shaders.util.TextureData;
 import scripts.campaign.Roider_ArmatureSingleBPAdderScript;
 import scripts.campaign.Roider_FringeStationCleaner;
 import scripts.campaign.Roider_IndieRepMatcher;
+import scripts.campaign.cleanup.Roider_MadMIDASHealer;
 import scripts.campaign.bases.*;
+import scripts.campaign.cleanup.Roider_ExpeditionLootCleaner;
 import scripts.campaign.econ.Roider_Dives;
 import scripts.campaign.econ.Roider_Shipworks;
 import scripts.campaign.econ.Roider_ShipworksBlueprint;
@@ -31,8 +36,10 @@ import scripts.campaign.intel.bar.Roider_RetrofitBarEvent;
 import scripts.campaign.intel.bar.Roider_RoiderBaseRumorBarEvent;
 import scripts.campaign.retrofit.*;
 import scripts.campaign.retrofit.blueprints.*;
+import scripts.campaign.rulecmd.expeditionSpecials.Roider_PingTrapScript;
 import scripts.campaign.submarkets.*;
 import scripts.world.Roider_Gen;
+import scripts.world.Roider_SystemMusicScript;
 
 public class Roider_ModPlugin extends BaseModPlugin {
     public static transient boolean hasNexerelin = false;
@@ -68,6 +75,8 @@ public class Roider_ModPlugin extends BaseModPlugin {
 
         Roider_Gen.initFactionRelationships(sector);
 
+        SharedData.getData().getPersonBountyEventData().addParticipatingFaction(Roider_Factions.ROIDER_UNION);
+
         // Fixing vanilla bug
         StarSystemAPI vanillaBroken = Global.getSector().getStarSystem("Unknown Location");
         if (vanillaBroken != null) vanillaBroken.setType(StarSystemGenerator.StarSystemType.NEBULA);
@@ -87,11 +96,6 @@ public class Roider_ModPlugin extends BaseModPlugin {
 
             Roider_Gen.assignCustomAdmins();
             Roider_Gen.assignRandomAdmins();
-        }
-
-        if (!sector.hasScript(Roider_PiratesLearnBPsScript.class)) {
-            sector.getEconomy().addUpdateListener(new Roider_PiratesLearnBPsScript(Global.
-                        getSector().getFaction(Factions.PIRATES)));
         }
 
         if (nexerelinRoidersEnabled()) {
@@ -118,20 +122,37 @@ public class Roider_ModPlugin extends BaseModPlugin {
 
     @Override
     public void onGameLoad(boolean newGame) {
+        SectorAPI sector = Global.getSector();
         if (!newGame) {
-            Roider_FringeStationCleaner.removeOrphanedFringeStations(Global.getSector());
+            Roider_FringeStationCleaner.removeOrphanedFringeStations(sector);
         }
 
-        if (!Global.getSector().getCharacterData().getAbilities().contains("roider_retrofit")) {
-            Global.getSector().addTransientScript(new Roider_ArgosAbilityAdderScript());
+        if (!sector.getCharacterData().getAbilities().contains("roider_retrofit")) {
+            sector.addTransientScript(new Roider_ArgosAbilityAdderScript());
         }
 
-        if (!Global.getSector().hasScript(Roider_ConversionFleetRouteManager.class)) {
-            Global.getSector().addScript(new Roider_ConversionFleetRouteManager(15, 30));
-//            Global.getSector().addScript(new Roider_ConversionFleetRouteManager(1, 2));
+        if (!sector.hasScript(Roider_ConversionFleetRouteManager.class)) {
+//            sector.addScript(new Roider_ConversionFleetRouteManager(15, 30));
+//            sector.addScript(new Roider_ConversionFleetRouteManager(1, 2));
         }
 
-        Global.getSector().addTransientScript(new Roider_ArmatureSingleBPAdderScript());
+        if (!sector.hasScript(Roider_PiratesLearnBPsScript.class)) {
+            sector.getEconomy().addUpdateListener(new Roider_PiratesLearnBPsScript(Global.
+                        getSector().getFaction(Factions.PIRATES)));
+        }
+
+//        if (!sector.hasScript(Roider_InsuranceTracker.class)) {
+//            Roider_InsuranceTracker insurance = Roider_InsuranceTracker.getInsurance();
+//            sector.addScript(insurance);
+//            sector.getListenerManager().addListener(insurance);
+//
+////            Roider_InsuranceTracker.setPlayerInsured(true);
+//        }
+
+        sector.addTransientScript(new Roider_ArmatureSingleBPAdderScript());
+
+        sector.addTransientScript(new Roider_MadMIDASHealer());
+        sector.addTransientScript(new Roider_SystemMusicScript());
     }
 
     /**
@@ -187,6 +208,9 @@ public class Roider_ModPlugin extends BaseModPlugin {
         x.alias("roider_mineAI", Roider_MinerRouteAI.class);
         Roider_MinerRouteAI.aliasAttributes(x);
 
+        x.alias("roider_mTClean", Roider_MinerTokenCleaner.class);
+        Roider_MinerTokenCleaner.aliasAttributes(x);
+
         x.alias("roider_hqPMan", Roider_HQPatrolManager.class);
         Roider_HQPatrolManager.aliasAttributes(x);
 
@@ -206,7 +230,7 @@ public class Roider_ModPlugin extends BaseModPlugin {
         Roider_RetrofitsKeeper.aliasAttributes(x);
 
 
-        x.alias("roider_pirLrn", Roider_PiratesLearnBPsScript.class);
+        x.alias("roider_pirLrnBP", Roider_PiratesLearnBPsScript.class);
         Roider_PiratesLearnBPsScript.aliasAttributes(x);
 
         x.alias("roider_retBP", Roider_RetrofitBlueprintPlugin.class);
@@ -270,6 +294,23 @@ public class Roider_ModPlugin extends BaseModPlugin {
         x.alias("roider_expFleetAI", Roider_TechExpeditionFleetAssignmentAI.class);
         Roider_TechExpeditionFleetAssignmentAI.aliasAttributes(x);
 
+        x.alias("roider_expPickup", Roider_ExpeditionStashPickupScript.class);
+        Roider_ExpeditionStashPickupScript.aliasAttributes(x);
+
+        x.alias("roider_expIntel", Roider_TechExpeditionIntel.class);
+        Roider_TechExpeditionIntel.aliasAttributes(x);
+
+        x.alias("roider_expMajorLoot", Roider_MajorLootStashPlugin.class);
+
+        x.alias("roider_expLootClnr", Roider_ExpeditionLootCleaner.class);
+        Roider_ExpeditionLootCleaner.aliasAttributes(x);
+
+        x.alias("roider_expPingTrap", Roider_PingTrapScript.class);
+        Roider_PingTrapScript.aliasAttributes(x);
+
+
+        x.alias("roider_sysMusic", Roider_SystemMusicScript.class);
+
 
         x.alias("roider_aAbil", Roider_ArgosConversionAbility.class);
         Roider_ArgosConversionAbility.aliasAttributes(x);
@@ -282,5 +323,11 @@ public class Roider_ModPlugin extends BaseModPlugin {
 
         x.alias("roider_cfrIntel", Roider_ConversionFleetIntel.class);
         Roider_ConversionFleetIntel.aliasAttributes(x);
+
+        x.alias("roider_armBPAdder", Roider_ArmatureSingleBPAdderScript.class);
+        Roider_ArmatureSingleBPAdderScript.aliasAttributes(x);
+
+        x.alias("roider_madHealer", Roider_MadMIDASHealer.class);
+        Roider_MadMIDASHealer.aliasAttributes(x);
     }
 }

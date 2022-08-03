@@ -4,7 +4,7 @@
 		"roider_maxIndieRoiderBases":3,
 		"roider_maxRoiderFringeHQs":1,
 		
-		"roider_maxExpeditions":10,
+		"roider_maxExpeditions":5,
 		"roider_expeditionDelay":90, # days after tutorial finishes, 90 default
 		"roider_expeditionLootFactions":[ # factions for shipwreck selection
 			"independent",

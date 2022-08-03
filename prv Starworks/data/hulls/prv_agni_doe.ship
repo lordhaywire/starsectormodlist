@@ -20,6 +20,10 @@
   "builtInWeapons": {
     "DC01": "prv_agni_d_cover_doe_l",
     "DC02": "prv_agni_d_cover_doe_r",
+    "DC03": "prv_agni_d_fin_large",
+    "FR01": "prv_agni_d_tail",
+    "FR02": "prv_agni_d_tail",
+    "FR03": "prv_agni_d_tail",
     "WS0012": "prv_agni_eye",
     "WS0013": "prv_agni_eye",
     "WS0014": "prv_agni_eye",
@@ -216,72 +220,108 @@
       "arc": 5,
       "angle": -0,
       "locations": [-28, -38.5]
+    },
+    {
+      "id": "DC03",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-4, 0]
+    },
+    {
+      "id": "FR01",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 135,
+      "locations": [-70, 15]
+    },
+    {
+      "id": "FR02",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-70, -15]
+    },
+    {
+      "id": "FR03",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-100, -0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-57.5, 80],
-      "length": 23,
-      "width": 23,
+      "location": [-58.5, 81],
+      "length": 30,
+      "width": 7.5,
       "angle": 155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-57.5, -80],
-      "length": 23,
-      "width": 23,
+      "location": [-58.5, -81],
+      "length": 30,
+      "width": 7.5,
       "angle": -155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-66, 65.5],
-      "length": 23,
-      "width": 23,
+      "location": [-67, 66.5],
+      "length": 30,
+      "width": 7.5,
       "angle": 155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-66, -65.5],
-      "length": 23,
-      "width": 23,
+      "location": [-67, -66.5],
+      "length": 30,
+      "width": 7.5,
       "angle": -155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-101, 23],
-      "length": 23,
-      "width": 23,
+      "location": [-103, 24],
+      "length": 30,
+      "width": 7.5,
       "angle": 155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-101, -23],
-      "length": 23,
-      "width": 23,
+      "location": [-103, -24],
+      "length": 30,
+      "width": 7.5,
       "angle": -155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-80, 48.5],
-      "length": 23,
-      "width": 23,
+      "location": [-82, 50],
+      "length": 30,
+      "width": 7.5,
       "angle": 155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     },
     {
-      "location": [-80, -48.5],
-      "length": 23,
-      "width": 23,
+      "location": [-82, -50],
+      "length": 30,
+      "width": 7.5,
       "angle": -155,
-      "contrailSize": 23,
-      "style": "PRV_LOW"
+      "contrailSize": 7.5,
+      "style": "PRV_AGNI"
     }
   ],
   "bounds": [

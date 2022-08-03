@@ -1,7 +1,7 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 4,
-    "fluxVents": 10,
+    "fluxCapacitors": 5,
+    "fluxVents": 16,
     "hullId": "roider_onager",
     "hullMods": ["expanded_deck_crew"],
     "modules": [{"PROW ARMOR": "roider_onager_armor_Standard"}],

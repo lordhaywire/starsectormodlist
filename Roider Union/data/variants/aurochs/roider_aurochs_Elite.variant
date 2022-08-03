@@ -1,6 +1,6 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 13,
+    "fluxCapacitors": 15,
     "fluxVents": 18,
     "goalVariant": true,
     "hullId": "roider_aurochs",

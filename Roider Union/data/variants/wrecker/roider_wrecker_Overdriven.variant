@@ -1,6 +1,6 @@
 {
     "displayName": "Overdriven",
-    "fluxCapacitors": 17,
+    "fluxCapacitors": 15,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "roider_wrecker",

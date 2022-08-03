@@ -5,7 +5,6 @@
 		"Rust Belt":[189,66,0,255],
 		"Detached Agni Organ":[196,0,32,255],
 		"Agni":[196,0,32,255],
-		"Lion's Guard":[160,0,95,255],
 	},
 	### Graphics ###
 	"graphics":{
@@ -20,10 +19,12 @@
 			"prv_lp_package":"graphics/prv/icons/cargo/prv_lp_bp.png",
 			
 			"prv_rare_package_gnejserhead":"graphics/prv/icons/cargo/prv_rare_bp_gnejserhead.png",
+			"prv_rare_package_wolf_rb":"graphics/prv/icons/cargo/prv_rare_bp_wolf_rb.png",
 		},
 		"status":{
 			"prv_agni_web": "graphics/prv/icons/status/prv_agni_web.png",
 			"prv_agni_cocoon":"graphics/prv/icons/hullsys/prv_agni_cocoon.png",
+			"prv_flickercore_status":"graphics/prv/icons/hullsys/prv_flickercore.png",
 		},
 		"industry":{
 			"prv_rb_pirate_3_generic": "graphics/prv/icons/industry/prv_war_syndicate_hq_generic.png",
@@ -37,6 +38,7 @@
 			"prv_strand":"graphics/prv/planets/prv_planet_strand.png",
 		},
 		"fx":{
+			"prv_targetingpulse":"graphics/prv/fx/prv_targeting_pulse.png",
 			"prv_beam_ljungeld_core":"graphics/prv/fx/prv_beam_ljungeld_core.png",
 			"prv_beam_ljungeld_fringe":"graphics/prv/fx/prv_beam_ljungeld_fringe.png",
 			"prv_diamond_beam_core_cut":"graphics/prv/fx/prv_diamond_beam_core_cut.png",
@@ -45,6 +47,12 @@
 			"prv_overlay_diszone":"graphics/prv/fx/prv_overlay_diszone.png",
 			"prv_agni_tooth":"graphics/prv/missiles/prv_shell_agni_tooth.png",
 			"prv_agni_web":"graphics/prv/fx/prv_agni_web_fx_small.png",
+			"prv_agni_fin_large_l":"graphics/prv/fx/prv_agni_fin_large_l.png",
+			"prv_agni_fin_large_r":"graphics/prv/fx/prv_agni_fin_large_r.png",
+			"prv_agni_tail":"graphics/prv/fx/prv_agni_tail.png",
+		},
+		"illustrations":{
+			"prv_strand_embassy":"graphics/illustrations/corporate_lobby.jpg",
 		},
 	},
 	### Plugins

@@ -1,11 +1,9 @@
 {
 	"baseHullId": "prv_munsbit",
 	"baseValueMult": 1,
-	#"fleetPoints":6,
 	"descriptionId": "prv_munsbit",
 	"descriptionPrefix": "Built-to-Order for the Luddic Church, this ship has been modified to better match Church fleet (and ecclesiastic) doctrine.",
 	"tags":["LC_bp"],
-	#"tech":"Luddic Church (prv)",
 	"tech":"Luddic Church",
 	"hullName": "Munsbit (LC)",
 	"restoreToBaseHull": false,
@@ -19,11 +17,17 @@
 		"3":{"style":"MIDLINE"},
 	}, 
 	"weaponSlotChanges":{
+		"WS0001":{
+		  "type": "BALLISTIC",
+		},
+		"WS0002":{
+		  "type": "BALLISTIC",
+		},
 		"WS0003":{
-		  "type": "COMPOSITE"
+		  "type": "BALLISTIC",
 		},
 		"WS0004":{
-		  "type": "COMPOSITE",
+		  "type": "BALLISTIC",
 		},
 		"WS0009":{
 		  "type": "BALLISTIC",

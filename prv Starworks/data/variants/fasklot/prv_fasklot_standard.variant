@@ -1,24 +1,30 @@
 {
-  "displayName": "Standard",
-  "fluxCapacitors": 13,
-  "fluxVents": 20,
-  #"goalVariant": true,
+  "variantId": "prv_fasklot_standard",
   "hullId": "prv_fasklot",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
   "hullMods": [
     "targetingunit",
     "magazines",
     "eccm"
   ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 0,
-  "variantId": "prv_fasklot_standard",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_sidensvans_array"
+        "WS0001": "phasebeam"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pilum"
       }
     },
     {
@@ -26,13 +32,6 @@
       "mode": "LINKED",
       "weapons": {
         "WS0002": "prv_akc"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "prv_lpk"
       }
     },
     {
@@ -49,5 +48,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }
