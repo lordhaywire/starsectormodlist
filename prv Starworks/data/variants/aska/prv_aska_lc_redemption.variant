@@ -15,9 +15,8 @@
   "weaponGroups": [
     {
       "autofire": false,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        #"BI01": "hammerrack",
         "WS0001": "hammerrack",
       }
     },

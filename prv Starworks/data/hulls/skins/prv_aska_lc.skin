@@ -7,18 +7,7 @@
 	#"baseValueMult": 1,
 	#"fleetPoints":19,
 	"ordnancePoints":150,
-	#"builtInWeapons": {
-	#	"BI01": "hammerrack"
-	#},
-	"removeBuiltInWeapons":["BI03"],
-	"removeWeaponSlots":[
-		"BI01",
-		"BI03",
-		#"WS0005"
-	],
-	#"removeBuiltInMods":["prv_did"],
 	"addHints":[ALWAYS_PANIC,HIDE_IN_CODEX],
-	#"builtInMods":["prv_reman"],
 	"descriptionId": "prv_aska",
 	"hullName": "Aska (LC)",
 	"restoreToBaseHull": false,

@@ -1,2 +1,2 @@
 name,id,planetary,decivRemove,script,desc,icon,order
-Luddic Shrine,bc_luddicfaith,,TRUE,com.fs.starfarer.api.impl.campaign.econ.LuddicFaith,"The polity of $market holds a shrine sacred to the Church of Galactic Redemption. Conforming to the teachings grant bonuses, swaying grants penalties.",graphics/icons/markets/luddic_majority.png,142
+Luddic Shrine,bc_luddicfaith,,TRUE,com.fs.starfarer.api.impl.campaign.econ.LuddicFaith,"$market holds a shrine established under the guidance of the Church of Galactic Redemption.",graphics/icons/markets/luddic_majority.png,142

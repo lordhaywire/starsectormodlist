@@ -1,37 +1,22 @@
 {
+  "variantId": "prv_module_hangar4_standard",
+  "hullId": "prv_module_hangar4",
   "displayName": "Standard",
+  "goalVariant": true,
   "fluxCapacitors": 10,
   "fluxVents": 10,
-  "goalVariant": true,
-  "hullId": "prv_module_hangar4",
-  "hullMods": [],
-  "modules": [],
-  "permaMods": [],
   "quality": 0,
-  "variantId": "prv_module_hangar4_standard",
+  "permaMods": [],
+  "hullMods": [],
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_lpk",
-        "WS0004": "prv_lpk"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
         "WS0001": "prv_kraka",
-        "WS0002": "prv_kraka"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0009": "prv_spattergun",
-        "WS0010": "prv_spattergun"
+        "WS0002": "prv_kraka",
+        "WS0003": "prv_kraka",
+        "WS0004": "prv_kraka"
       }
     },
     {
@@ -40,16 +25,30 @@
       "weapons": {
         "WS0005": "prv_sipdlaser",
         "WS0006": "prv_sipdlaser",
-        "WS0007": "prv_pskd",
-        "WS0008": "prv_pskd",
-        "WS0011": "pdburst"
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0012": "prv_sipdlaser"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
+  "modules": [],
   "wings": [
+    "prv_diskordant_wing",
     "prv_missljud_wing",
-    "prv_ovasen_wing",
-    "prv_stilllhet_wing",
+    "prv_skran_wing",
     "prv_skran_wing"
   ]
 }

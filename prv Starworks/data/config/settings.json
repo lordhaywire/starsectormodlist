@@ -38,6 +38,7 @@
 			"prv_strand":"graphics/prv/planets/prv_planet_strand.png",
 		},
 		"fx":{
+			"prv_towcable":"graphics/prv/fx/prv_towcable.png",
 			"prv_targetingpulse":"graphics/prv/fx/prv_targeting_pulse.png",
 			"prv_beam_ljungeld_core":"graphics/prv/fx/prv_beam_ljungeld_core.png",
 			"prv_beam_ljungeld_fringe":"graphics/prv/fx/prv_beam_ljungeld_fringe.png",

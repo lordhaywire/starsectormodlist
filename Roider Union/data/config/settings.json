@@ -6,7 +6,7 @@
 		"roider_phasenetMan":"scripts.combat.Roider_PhasenetEffectManager",
 	},
 	
-	"roider_dev":true, #unused
+	"roider_dev":false, #unused
 	
 	"roider_techExpDebug":false,
 

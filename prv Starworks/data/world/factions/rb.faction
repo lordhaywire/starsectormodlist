@@ -166,7 +166,7 @@
 			"heavyblaster",
 			"ionpulser",
 		#energy large
-			"plasma",
+			#"plasma",
 			"hil",
 			"autopulse",
 		#missile small

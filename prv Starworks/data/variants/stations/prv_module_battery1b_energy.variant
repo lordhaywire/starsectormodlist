@@ -1,0 +1,51 @@
+{
+  "variantId": "prv_module_battery1b_energy",
+  "hullId": "prv_module_battery1b",
+  "displayName": "Energy",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "prv_missile_plating"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_heavyspattergun",
+        "WS0002": "prv_heavyspattergun",
+        "WS0003": "prv_heavyspattergun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "prv_sidensvans_array",
+        "WS0009": "prv_sidensvans_array"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_pskd",
+        "WS0005": "prv_pskd",
+        "WS0006": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

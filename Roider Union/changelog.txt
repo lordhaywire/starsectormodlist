@@ -1,3 +1,30 @@
+Version 1.4.4
+ New Features
+ - New music!
+ - Added pirate skin of Wrecker
+ - Added zapping mechanic for Zap SRMs
+ - Redesigned Firestorm's mount arcs - can now focus forward
+
+ Changes
+ - Reworked Zap SRM
+   - Reduced EMP damage from 180 to 70
+   - Added 280 bonus EMP damage versus fighters
+   - Increased damage from 50 to 60
+ - Nerfed Bolt interceptor into a specialized anti-fighter
+   - Reduced hull from 500 to 450
+   - Reduced armod from 75 to 50
+   - Increased refit time from 6 to 10
+   - Reduced Zap SRM's missiles per burst from 4 to 2
+ - Spike Driver and Pile Driver
+   - Buffed initial accuracy from 5 degrees to 0
+   - Nerfed initial rate of fire - starts at 50% and reaches normal at worst accuracy
+   - Changed recoil per shot (to smooth rate of fire spin-up) from 5 degrees to 3
+   - Increased range of Spike Driver from 600 to 650
+ 
+ Bug Fixes
+ - Fixed Expedition crashes and save leak
+
+
 Version 1.4.3
  Bug Fixes
  - Fixed some null pointer crashes from Roider Dives

@@ -2,6 +2,228 @@ prv Starworks
 
 ###
 
+NOT SAVEGAME COMPATIBLE
+
+v23
+
+Mora (LP), Broadsword (LP), Talon (LP)
+- Moved to a stand-alone mod, prv Path.
+
+Ships: Kite (prv), Afflictor (prv), Shade (prv), Harbinger (prv), Gnejs (P), Eldsjäl, 
+Aska (LG), Eld (LG), Flock (LG), Fika, Middag, Conquest (Ryak), Sunder (Ryak)
+Bounties: Friend of Ludd, Gudalik Trial Group
+Missions: At the gates of HEL, Fasfasa
+- Moved to a sub-mod, prv Extraworks.
+
+Added the Gissel (P)
+- Large missile turret. Enjoy responsibly.
+
+Added a high-end rare bounty
+- Visit Hegemony bars once you're well-prepared.
+
+Agni
+- Agni did not look weird enough. This has been rectified.
+- Reduced the intensity of several particle effects.
+- Agni star systems may now contain small prv research fleets.
+- Agni will no longer politely answer commlink requests.
+- Agni fleets will now prefer slightly smaller ships.
+- Adjusted Agni death vfx.
+- Greatly reduced the strength of Agni salvage guard fleets in low-danger systems.
+- Slighly increased the minimum size of Agni shoals in low-danger systems.
+
+Bergtagen
+- Sprite updated.
+- Mount layout updated.
+- Ship system replaced with Targeting Pulse.
+-- Briefly increases weapons range and accuracy significantly.
+- Added two armor modules.
+- Flux capacity increased by 50%.
+- Shield upkeep reduced by 33%.
+- OP increased to 340.
+- Deployment and maintenance cost reduced to 35.
+- Credit cost reduced to 280 000.
+
+Andesit
+- Added a large missile hardpoint.
+- Turn rate and turn acceleration reduced by 15%.
+- OP increased by 20.
+- Deployment and maintenance cost increased to 35.
+- Credit cost increased to 250 000.
+- Sprite touchups.
+
+Fasvinge
+- OP increased to 175.
+-- Missing change from v22.
+
+Aska
+- Deployment and maintenance cost reduced to 25.
+- Removed Kaja MRM Array built-in.
+-- (LC) Removed Hammer Barrage built-in.
+-- (LC) skin value modifier reduced to 100%
+- (AU) sprite coloring adjusted.
+
+Dominator (RB)
+- Sprite touched up.
+
+Flock (P-mod)
+- Annihilator Burst Launcher
+-- Burst size increased by 42%.
+-- Ammunition count increased by 15%.
+
+Gissel
+- Sprite updated.
+
+Gabbro
+- Deployment and maintenance cost reduced to 10.
+
+Gnejs
+- Armor increased to 700.
+- Hull integrity increased to 5500.
+- Shield efficiency reduced to 1,1.
+
+Gremlin (HR)
+- Removed.
+
+Munsbit, Munsbit (LC)
+- Sprite updated
+- Weapon mounts updated.
+- Max OP increased to 50.
+
+Tarsus (prv), Condor (prv), Gemini (prv), Kite (prv)
+- New sprites.
+
+Tystnad
+- Credit value reduced to 34000.
+
+Belt Blaster
+- Sprite updated.
+- Range increased by 100.
+- Flux per shot reduced by 8%.
+-- Flux efficiency is now 1,5.
+
+Ljungeld
+- Vfx updated.
+- Pierce chance formula rewritten; net change should be minor.
+
+Vakt Flicker Beam
+- Vfx updated.
+
+Gravkan, Gravpjäs
+- Gravity blast area of effect increased 50%.
+- Gravity blast peak force reduced by 25%.
+
+Siege Akers
+- Magazine removed, now fires a rapid 4-shot volley.
+- Damage and EMP per shot reduced by 50%.
+-- Maintains 360 net DPS.
+- Recoil significantly reduced.
+- EMP arcs are now more likely to punch through shields.
+-- Previous chance was (hardflux - 0,5), now simply (hardflux).
+- Projectile speed reduced by 17%.
+
+Heavy Akers
+- Projectile speed reduced by 17%.
+- Damage per shot increased by 11%.
+- Flux per shot reduced by 5%.
+- Rate of fire reduced by 13%.
+-- Now 200 DPS at 0,9 efficiency.
+
+Akers Nova
+- Projectile speed reduced by 25%.
+- Rate of fire increased by 9%.
+-- Now 150 DPS, maintaining 1,17 efficiency.
+
+Light Akers
+- Projectile speed increased by 25%.
+- Damage per shot increased by 50%.
+- Rate of fire reduced by 33%.
+-- Net DPS unchanged.
+
+Spattergun, Heavy Spattergun
+- Recoil reduced.
+
+Berguv MIRV
+- Range (nominal) increased by 50%.
+- Missile lifetime increased by 2 seconds.
+
+SIPD Laser
+- Vfx updated.
+
+Intet Flickerbeam
+- Vfx updated.
+
+Missile Chaff
+- Lowered the missiles-in-flight AI use threshold.
+
+Gravity Shield
+- Fixed a bug that allowed unlimited use of Gravity Shield for shielded ships that did not turn the shield on.
+- Overloading a Gravity Shield will now cause it to go on a cooldown equal to its regular chargedown duration.
+- Gravity Shield can no longer be activated while over 90% flux.
+- Added a UI infotext for the chargedown state.
+
+Flicker Core
+- Now needs to build charge by spending a short time unphased. 
+- Hardflux penalty cut in half.
+- Venting or overloading will now cancel the effect.
+- Added a status info to track the core state.
+
+Campaign
+- Added custom intel relationship descriptions for the Rusters.
+- Updated prv faction flag.
+- Stjärngård system
+-- The Works over Utbo has been downgraded to a Battlestation.
+-- Strand now has a commercial orbital station operated by the prv.
+-- Strand and Utbo now belong to the Independents. Formally speaking, anyway. 
+--- Market control remains with the prv.
+- Added access to the Squall MLRS for the Rust Belt.
+- Reduced the occurrence rate of Sinne frigates in prv fleets.
+- Reduced the occurrence rate of prv export hulls in League and Diktat fleets by half.
+- Debris Belt 
+-- Terrain tooltip colors updated to better indicate that it is a danger zone.
+-- The encounter size calculation will now put much less weight to civilian ships, scaled based on the fleet's civilian to military ratio.
+--- ie fleets with a few tankers will not attract attention based on their trade ships, but from the size of their military contingent.
+--- But a large trade convoy may still attract a sizable pirate fleet.
+-- Reduced the average and maximum encounter size slightly.
+- Cleaned up Rust Belt ship access, now contains a much smaller set of unprioritized ships.
+
+Industry
+- Laboratory Complex
+-- Now requires a commission for most trade.
+-- Added a bar event allowing you to purchase some access even if you are not commissioned and well-liked by the market owner.
+--- Still requires a relationship of at least Suspicious.
+-- Fixed an error where s-mods on offered ships would sometimes not carry over between game reloads.
+-- Fixed an error where installing an Alpha Core would increase commodity production in addition to improving the market selection.
+
+Rare Bounties
+- Added bounties for the Flock (P-mod), Ballebo, and to hunt an Agni shoal.
+- Reduced officer levels.
+- Ported all bounties to use the MagicBounty library instead of the Vayra's Mod interface.
+- Some minor bounty reward and requirements adjustments.
+- Added a cheatsheet, "bounty reference.txt", with bounty names and requirements.
+
+Flicker Core isApplicable() now checks for hullspec.isPhase() instead of id literal.
+Adjusted some projectile trail effects.
+Updated Light Triple Autocannon codex description to match the new statline.
+Fixed an issue that would cause the Tide Vanes hullmod to update weapon glow in the fitting screen.
+Fixed a Tiger sprite alignment error.
+Fixed a bug that would cause prv doctrine shifts to not persist beyond the current session.
+Fixed a bug that would cause prv doctrine shifts to always have an autofit randomization probability of 0 or less.
+Fixed a bug that would repeat a line in the Debris Belt terrain tooltip.
+Fixed a bug where the Microburn (Fighter) AI would sometimes misjudge if it was facing the correct direction.
+Fixed missing Conflagration glow color.
+Fixed Berguv MIRV tracking description, now correctly states "Medium".
+Fixed various typos.
+Added a new rendering API for Spatterfire effects, bypassing a MagicLib regression issue.
+Oklang (4), Down and Scale fighter wings now properly have the "restricted" tag.
+Fixed Blåmes missile onhit explosion color.
+Added a viewport check for the Karbid renderer.
+Expanded the codex descriptions of the Fasvinge, Kvarts and Visent.
+Increased the impact (mass) of Gravity Well mines, they will now push each other a little less.
+Arc Smelter OP cost now matches Augmented Drive Field 8/16/24/40, net change 0/+1/-1/0.
+Various polish.
+
+###
+
 v22
 
 Added the Agni

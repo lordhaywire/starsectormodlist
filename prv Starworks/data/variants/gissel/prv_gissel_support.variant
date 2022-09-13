@@ -15,14 +15,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "harpoonpod",
+        "WS0002": "harpoonpod"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "swarmer"
+        "WS0001": "swarmer",
       }
     },
     {
@@ -46,15 +46,15 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "prv_lighttripleac",
-        "WS0007": "prv_lighttripleac"
+        "WS0005": "ioncannon",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "ioncannon",
+        "WS0006": "prv_lighttripleac",
+        "WS0007": "prv_lighttripleac"
       }
     },
     {

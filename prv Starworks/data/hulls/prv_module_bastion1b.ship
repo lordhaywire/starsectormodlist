@@ -1,0 +1,112 @@
+{
+  "hullName": "Light Bastion Module",
+  "hullId": "prv_module_bastion1b",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_module_bastion1b.png",
+  "style": "PRV_MID",
+  "height": 200,
+  "width": 220,
+  "center": [110, 100],
+  "collisionRadius": 120,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 115,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    0,
+    0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "prv_hypergenerators",
+    "never_detaches"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 30,
+      "locations": [15, 74]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [64, 46]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -30,
+      "locations": [46.5, -44]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -30,
+      "locations": [51, 14]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -30,
+      "locations": [49, -13]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": -45,
+      "locations": [34, -70]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -19, 44.5,
+    -13, 28,
+    3, 23,
+    26.5, 41,
+    38, 26.5,
+    38, -26.5,
+    26.5, -41,
+    3, -23,
+    -13, -28,
+    -19.5, -48.5,
+    6.5, -76.5,
+    6.5, -83.5,
+    18.5, -95,
+    30.5, -95,
+    57.5, -66.5,
+    57.5, -55.5,
+    63.5, -51.5,
+    71, -17,
+    63, -6,
+    63, 21,
+    54.5, 29.5,
+    63, 46,
+    45, 63.5,
+    40, 77.5,
+    39, 89,
+    21, 107,
+    8.5, 107,
+    -11, 88
+  ]
+}

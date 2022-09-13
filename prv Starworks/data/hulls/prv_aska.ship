@@ -105,24 +105,6 @@
       "locations": [-58, -70]
     },
     {
-      "id": "BI03",
-      "size": "MEDIUM",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-1, -66.5]
-    },
-    {
-      "id": "BI01",
-      "size": "LARGE",
-      "type": "SYSTEM",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [10, -60]
-    },
-    {
       "id": "WS0005",
       "size": "SMALL",
       "type": "ENERGY",

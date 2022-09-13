@@ -40,14 +40,24 @@
         {
             "autofire": true,
             "mode": "LINKED",
+            "weapons": {"WS 022": "mjolnir"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
                 "WS 001": "heavymauler",
-                "WS 002": "heavymauler",
+                "WS 002": "heavymauler"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS 007": "railgun",
                 "WS 008": "railgun",
                 "WS 019": "railgun",
-                "WS 020": "railgun",
-                "WS 022": "mjolnir"
+                "WS 020": "railgun"
             }
         },
         {

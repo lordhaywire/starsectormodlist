@@ -13,10 +13,10 @@
       "WS 007": "prv_module_hangar4_standard"
     },
     {
-      "WS 004": "prv_module_bastion1_missile"
+      "WS 005": "prv_module_bastion1a_pd"    
     },
     {
-      "WS 005": "prv_module_bastion1_ballistic"
+      "WS 004": "prv_module_bastion1a_ballistic"
     },
     {
       "WS0001": "prv_module_shield_center_standard"

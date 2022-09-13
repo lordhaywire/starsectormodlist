@@ -1,0 +1,188 @@
+{
+  "hullName": "Skans",
+  "hullId": "prv_station_drone_rb_skans",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_station_drone_skans.png",
+  "style": "PRV_LOW",
+  "height": 104,
+  "width": 104,
+  "center": [52, 52],
+  "collisionRadius": 90,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 80,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missile_reload",
+    "supercomputer",
+    "armoredweapons",
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -0,
+      "locations": [25, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 90,
+      "locations": [-4, 26]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -90,
+      "locations": [-4, -26]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [31, 23]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [31, -23]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -90,
+      "locations": [-4, -26]
+    },
+    {
+      "id": "SYS01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "SYS05",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 45,
+      "locations": [16.5, 31.5]
+    },
+    {
+      "id": "SYS02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -45,
+      "locations": [16.5, -31.5]
+    },
+    {
+      "id": "SYS04",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 135,
+      "locations": [-22.5, 30]
+    },
+    {
+      "id": "SYS03",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-22.5, -30]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26.5, 33],
+      "length": 14,
+      "width": 7,
+      "angle": 140,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-26.5, -33],
+      "length": 14,
+      "width": 7,
+      "angle": 220,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [10.5, -34.5],
+      "length": 12,
+      "width": 6,
+      "angle": -60,
+      "contrailSize": 18,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [10.5, 34.5],
+      "length": 12,
+      "width": 6,
+      "angle": 60,
+      "contrailSize": 18,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-41, 7],
+      "length": 14,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-41, -7],
+      "length": 14,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -26, 33.5,
+    20, 32.5,
+    44, -0,
+    20, -32.5,
+    -26, -33.5,
+    -39.5, -0
+  ]
+}

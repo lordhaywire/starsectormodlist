@@ -250,7 +250,7 @@
         
         #LOCATION
         "location_distance": "FAR",
-        "location_themes": ["theme_prv_agni_presence",],
+        #"location_themes": ["theme_prv_agni_presence",],
         "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
         "location_prioritizeUnexplored": true,
         "location_defaultToAnyEntity": true,

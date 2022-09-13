@@ -13,7 +13,7 @@ Basalt,prv_basalt,Heavy Frigate,Rust Belt,prv_rb_bp,prv_plasmamanjets,4,3000,500
 Gremlin (RB),prv_gremlin_rb,Frigate,Rust Belt,prv_rb_bp,flarelauncher,6,2600,350,2400,2000,160,45,,90,120,90,45,90,200,OMNI,,240,0.2,1.2,,,5,12,20,30,1,20,9,8000,8,10,240,0.25,6,6,,,,,,,,,0.7,2,3,,8703
 Skära,prv_skara,Heavy Frigate,Rust Belt,"prv_rb_cap_bp, rare_bp",prv_erfield_p,9,3700,500,3750,3437,275,60,,140,210,140,40,80,275,FRONT,,270,0.3,1,,,18,45,40,40,2,20,10,36000,8,15,300,0.25,10,10,,,,,,,,,0.35,2,4,,8704
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Gnista,prv_gnista,Light Frigate,prv Starworks,"prv_bp, prv_kratul_bp",flarelauncher_active,3,900,200,1500,1125,90,32,,160,110,90,70,45,140,OMNI,,120,0.4,0.8,,,8,16,25,35,1,35,10,7500,8,12,180,0.25,3,3,,,,,,,,,0.5,2,2,,8706
+Gnista,prv_gnista,Light Frigate,prv Starworks,"prv_bp, prv_kratul_bp",flarelauncher_active,3,1000,200,1800,1375,110,32,,160,110,90,70,90,140,OMNI,,120,0.45,0.8,,,8,16,25,35,1,35,10,7500,8,12,180,0.25,3,3,,,,,,,,,0.5,2,2,,8706
 Ljus,prv_ljus,Frigate,prv Starworks,"prv_bp, prv_hel_bp",prv_lykta,5,1400,250,2250,2875,230,50,,105,90,70,55,80,200,OMNI,,120,0.4,0.8,,,15,30,45,35,1,35,10,15000,12,20,240,0.25,5,5,,,,,,,,,0.5,2,2,,8707
 Flamma,prv_flamma,Heavy Frigate,prv Starworks,"prv_bp, prv_stjarngard_bp",prv_gravity_shield,6,2400,300,2350,1875,180,55,,110,90,60,60,90,275,OMNI,,90,0.3,1,,,20,40,30,25,1,25,10,12000,8,10,240,0.25,6,6,,,,,,,,,0.5,2,2,,8708
 Fasnod,prv_fasnod,Phase Frigate,prv Starworks,"prv_adv_bp, prv_hel_bp, rare_bp",prv_gravitywell,9,1750,350,3000,3750,300,45,,150,170,100,50,100,225,PHASE,phasecloak,,,,0.04,0.04,7,11,25,40,1,40,10,41000,10,20,210,0.25,9,9,,,,,,,,,0.5,2,2,,8709
@@ -96,11 +96,15 @@ Gun Pod,prv_gunpod,,prv Starworks,,,,250,100,300,,150,20,,150,150,150,60,60,75,O
 Orbital Station,prv_station1,Orbital Station,prv Starworks,,,100,40000,1600,1000,2500,100,0,,30,200,200,10,0.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,50,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87102
 Battlestation,prv_station2,Battlestation,prv Starworks,,prv_mine_strike_emp_cluster_station,200,80000,2000,1000,2500,100,0,,30,200,200,10,0.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,75,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87103
 Star Fortress,prv_station3,Star Fortress,prv Starworks,,prv_station_drone_redan,400,160000,2400,1000,2500,100,0,,30,200,200,10,0.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,100,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87104
+Orbital Station,prv_station1_rb,Orbital Station,Rust Belt,,prv_station_drone_skans_light,100,40000,1600,1000,2500,100,0,,30,200,200,1.5,1.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,50,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87104.1
+Battlestation,prv_station2_rb,Battlestation,Rust Belt,,prv_station_drone_skans_light,200,80000,2000,1000,2500,100,0,,30,200,200,1.5,1.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,75,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87104.2
+Star Fortress,prv_station3_rb,Star Fortress,Rust Belt,,prv_station_drone_skans,400,160000,2400,1000,2500,100,0,,30,200,200,1.5,1.5,5000,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,100,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87104.3
 Nest,prv_agni_station1_nest,Mining Station,Agni,,,100,40000,1600,1000,2500,100,0,,30,200,200,2,2,2500,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,50,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87115
 Hive,prv_agni_station2_hive,Mining Complex,Agni,,,200,80000,2000,1000,2500,100,0,,30,200,200,2,2,2500,NONE,,0,0,0,,,0,0,0,0,1,0,0,500000,10,10,,,75,50,,,,,,,"STATION, UNBOARDABLE, HIDE_IN_CODEX",,0,,,,87116
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Redan,prv_station_drone_redan,Phase Drone,prv Starworks,,prv_mine_strike_emp_cluster,,2000,500,1000,3125,400,60,,250,400,300,60,90,300,PHASE,phasecloak,,,,0.06,0.06,0,0,,,,,,,,,,,,,,,,,,,ALWAYS_PANIC,,0.5,2,2,,87105
-#Cocoon,prv_agni_station_drone_cocoon,Ensnared Drone,Agni,,prv_agni_cocoon,,4000,1000,2000,3750,300,50,,200,100,100,45,60,500,NONE,,,,,,,0,0,,,,,,,,,,,,,,,,,,,,,0.5,2,3,,87119
+Redan,prv_station_drone_redan,Phase Drone,prv Starworks,no_dealer,prv_mine_strike_emp_cluster,,3000,600,1000,3125,350,55,,250,400,300,60,90,300,PHASE,phasecloak,,,,0.1,0.1,0,0,,,,,,,,,,,,,,,,,,,"ALWAYS_PANIC, UNBOARDABLE",,0.5,2,2,,87105
+Skans,prv_station_drone_rb_skans,Scrap Drone,Rust Belt,no_dealer,canister_flak,,4000,500,2000,1875,150,60,,150,200,150,45,45,250,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,UNBOARDABLE,,0.3,2,3,,87105.5
+#Cocoon,prv_agni_station_drone_cocoon,Ensnared Drone,Agni,no_dealer,prv_agni_cocoon,,4000,1000,2000,3750,300,50,,200,100,100,45,60,500,NONE,,,,,,,0,0,,,,,,,,,,,,,,,,,,,,,0.5,2,3,,87119
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,prv_agni_module_battery,Smelter,Agni,,,1,20000,2000,30000,15000,600,1000,,0,0,0,10,10,1750,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,0.5,2,4,,87114
 ,prv_agni_module_cocoons,Wharf,Agni,,reservewing,1,10000,1500,10000,6250,250,1000,2,0,0,0,10,10,1250,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,0.5,2,4,,87113
@@ -109,13 +113,23 @@ Redan,prv_station_drone_redan,Phase Drone,prv Starworks,,prv_mine_strike_emp_clu
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,prv_agni_module_armor,Station Armor,Agni,,prv_agni_cocoon,1,5000,250,0,2500,100,0,,0,0,0,10,10,100,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,3,,87111
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,prv_module_hangar4,Hangar Module,prv Starworks,,forgevats_station,1,15000,1500,5000,10625,425,1000,4,0,0,0,10,10,2500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,1,2,4,,87106
-,prv_module_battery2,Heavy Battery Module,prv Starworks,,forgevats_station,1,15000,1500,10000,21250,850,1000,,0,0,0,10,10,2500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,1,2,4,,87107
-,prv_module_battery1,Battery Module,prv Starworks,,forgevats_station,1,10000,1200,5000,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.33,2,4,,87108
-,prv_module_bastion1,Bastion Module,prv Starworks,,forgevats_station,1,10000,1200,5000,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.5,2,2,,87109
-,prv_module_shield_center,Shield Module,prv Starworks,,fortressshield,1,3000,500,3750,5000,200,0,,0,0,0,3,3,500,OMNI,,90,0.75,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,2,,87110
+,prv_module_hangar4,Hangar Module,prv Starworks,,forgevats_station,1,15000,1500,8750,10625,425,1000,4,0,0,0,10,10,2500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,1,2,4,,87106
+,prv_module_battery2,Heavy Battery Module,prv Starworks,,forgevats_station,1,15000,1500,17500,21250,850,1000,,0,0,0,10,10,2500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,1,2,4,,87107
+,prv_module_battery1a,Battery Module,prv Starworks,,forgevats_station,1,10000,1200,8750,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.33,2,4,,87108.5
+,prv_module_battery1b,Battery Module,prv Starworks,,forgevats_station,1,10000,1200,8750,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.33,2,4,,87108
+,prv_module_bastion1a,Bastion Module,prv Starworks,,forgevats_station,1,10000,1200,8750,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.5,2,2,,87109
+,prv_module_bastion1b,Bastion Module,prv Starworks,,forgevats_station,1,10000,1200,8750,15000,425,1000,,0,0,0,10,10,1500,NONE,,,,,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.5,2,2,,87109.5
+,prv_module_shield_center,Shield Module,prv Starworks,,fortressshield,1,3000,350,5000,5000,200,0,,0,0,0,3,3,500,OMNI,,90,0.5,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,2,,87110
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,prv_module_rb_battery3,Heavy Battery Module,Rust Belt,,forgevats_station,1,25000,2000,12000,25000,1000,1000,,0,0,0,10,10,3000,FRONT,,150,0.4,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,1,2,4,,87120
+,prv_module_rb_hangar3,Hangar Module,Rust Belt,,forgevats_station,1,15000,1500,8000,12500,500,1000,2,0,0,0,10,10,2250,FRONT,,150,0.4,1,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, ALWAYS_PANIC",,0.5,2,4,,87121
+,prv_module_rb_freeport1,Freeport Module,Rust Belt,,,1,5000,750,1500,2500,100,1000,1,0,0,0,10,10,500,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,4,,87122
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,prv_module_armor_bergtagen_l,Armor Belt,Rust Belt,,,,1000,750,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,0,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,3,,87111
 ,prv_module_armor_bergtagen_r,Armor Belt,Rust Belt,,,,1000,750,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,0,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,3,,87111
 ,prv_module_armor_v,Station Structural Spur,prv Starworks,,,1,5000,1500,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,3,,87111
-,prv_module_strut,Station Extension,prv Starworks,,,1,5000,1500,0,2500,100,0,,0,0,0,3,10,500,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, UNDER_PARENT",,1,2,3,,87112
+,prv_module_armor_short,Station Structural Spur,prv Starworks,,,1,5000,1500,0,2500,100,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX",,1,2,3,,87112
+,prv_module_strut,Station Extension,prv Starworks,,,1,5000,1500,0,2500,100,0,,0,0,0,3,10,500,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, UNDER_PARENT",,1,2,3,,87113
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,prv_module_rb_armor,Station Armor,Rust Belt,module_hull_bar_only,,1,5000,1500,0,2500,0,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, UNDER_PARENT",,1,2,3,,87113.2
+,prv_module_rb_armor_light,Station Armor,Rust Belt,module_hull_bar_only,,1,5000,1500,0,2500,0,0,,0,0,0,10,10,300,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX, UNDER_PARENT",,1,2,3,,87113.3

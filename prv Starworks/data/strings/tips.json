@@ -1,15 +1,12 @@
 {
 	tips:[
-		"Fact: Rusters are the most powerful race in the universe.",
+#		"Fact: Rusters are the most powerful race in the universe.",
 		"Rust Belt ships are grungy but durable, and often carry more energy weapons than you'd find on a Low-Tech hull.",
 		"prv naval doctrine emphasises aggression, initiative and disruption. It either breaks the enemy, or it breaks itself.",
-		"[Commissioned Crews] The prv elite make effective use of cybernetics to enhance their abilities. Unfortunately these implants tend to leave them somewhat unstable.",
-		"[Commissioned Crews] Rusters are an unruly lot, but there's no denying that they know how to fix up a ship.",
+#		"[Commissioned Crews] The prv elite make effective use of cybernetics to enhance their abilities. Unfortunately these implants tend to leave them somewhat unstable.",
+#		"[Commissioned Crews] Rusters are an unruly lot, but there's no denying that they know how to fix up a ship.",
 		"The tough hide of the Agni is equally resistant to kinetic and high explosive attacks, and provides excellent insulation from EMP effects.",
 		"An Agni shoal's attack is ferocious, but the creatures will back off if you hurt them enough.",
 		"Spatterfire sticks to ships and burns them over time. Doomfire explodes instead. Pureflame melts armor, but deals less damage overall.",
-		#"If you remove this tip, you will be hurting my feelings.",
-		#"Add this tip. Do it.",
-		#"    ICARUS FOUND YOU!!!\n      ICARUS FOUND YOU!!!\n      RUN WHILE YOU CAN!!!\n    RUN WHILE YOU CAN!!!\nDaedalus:DomainNode:TRIIND//USERWEB//NODE.34@78/Tips",
      ],
 }

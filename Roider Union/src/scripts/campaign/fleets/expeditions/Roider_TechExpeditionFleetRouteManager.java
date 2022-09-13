@@ -452,6 +452,8 @@ public class Roider_TechExpeditionFleetRouteManager extends BaseRouteFleetManage
 
         for (StarSystemAPI system : Global.getSector().getStarSystems()) {
             if (Global.getSector().getPlayerFleet().getContainingLocation() == system) continue;
+            if (system.getHyperspaceAnchor() == null) continue;
+            if (system.hasTag(Tags.SYSTEM_CUT_OFF_FROM_HYPER)) continue;
             if (system.getJumpPoints().isEmpty()) continue;
             if (!system.isProcgen()) continue;
             if (!system.hasTag(Tags.THEME_REMNANT)) continue;
@@ -460,7 +462,7 @@ public class Roider_TechExpeditionFleetRouteManager extends BaseRouteFleetManage
             if (system.getType() != StarSystemGenerator.StarSystemType.NEBULA
                         && system.getStar() == null) continue;
 
-            picker.add(system, getVeryApproximateSalvageValue(system) + 1);
+            picker.add(system, getVeryApproximateSalvageValue(system) + 1f);
         }
 
         StarSystemAPI pick = picker.pick();
@@ -471,6 +473,8 @@ public class Roider_TechExpeditionFleetRouteManager extends BaseRouteFleetManage
         picker.clear();
         for (StarSystemAPI system : Global.getSector().getStarSystems()) {
             if (Global.getSector().getPlayerFleet().getContainingLocation() == system) continue;
+            if (system.getHyperspaceAnchor() == null) continue;
+            if (system.hasTag(Tags.SYSTEM_CUT_OFF_FROM_HYPER)) continue;
             if (system.getJumpPoints().isEmpty()) continue;
             if (!system.isProcgen()) continue;
             if (system.hasTag(Tags.THEME_HIDDEN)) continue;
@@ -478,7 +482,7 @@ public class Roider_TechExpeditionFleetRouteManager extends BaseRouteFleetManage
             if (system.getType() != StarSystemGenerator.StarSystemType.NEBULA
                         && system.getStar() == null) continue;
 
-            picker.add(system, getVeryApproximateSalvageValue(system) + 1);
+            picker.add(system, getVeryApproximateSalvageValue(system) + 1f);
         }
 
         pick = picker.pick();

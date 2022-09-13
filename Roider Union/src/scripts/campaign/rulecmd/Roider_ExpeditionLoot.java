@@ -1,6 +1,5 @@
 package scripts.campaign.rulecmd;
 
-import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
@@ -24,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import org.lwjgl.util.vector.Vector2f;
+import scripts.campaign.cleanup.Roider_ExpeditionMajorLootCleaner;
 import scripts.campaign.fleets.expeditions.Roider_ExpeditionStashPickupScript;
 import scripts.campaign.fleets.expeditions.Roider_MajorLootStashPlugin;
 import scripts.campaign.rulecmd.expeditionSpecials.Roider_PingTrapSpecial.Roider_PingTrapSpecialData;
@@ -33,19 +33,19 @@ import scripts.campaign.rulecmd.expeditionSpecials.Roider_ThiefTrapSpecial.Roide
  * Author: SafariJohn
  */
 public class Roider_ExpeditionLoot extends BaseCommandPlugin {
-	private InteractionDialogAPI dialog;
+//	private InteractionDialogAPI dialog;
 	protected TextPanelAPI text;
 	private SectorEntityToken entity;
-	private Map<String, MemoryAPI> memoryMap;
+//	private Map<String, MemoryAPI> memoryMap;
     private Random random;
 //    private boolean major;
 
     @Override
     public boolean execute(String ruleId, InteractionDialogAPI dialog,
                 List<Misc.Token> params, Map<String, MemoryAPI> memoryMap) {
-		this.dialog = dialog;
+//		this.dialog = dialog;
         text = dialog.getTextPanel();
-		this.memoryMap = memoryMap;
+//		this.memoryMap = memoryMap;
 
 		String command = params.get(0).getString(memoryMap);
 		if (command == null) return false;
@@ -196,44 +196,7 @@ public class Roider_ExpeditionLoot extends BaseCommandPlugin {
         entity.getOrbitFocus().getCustomData().put(Roider_ExpeditionStashPickupScript.STASH_ENTITY_KEY, entity);
 
         // Need to clean up orbit focus when the loot entity expires
-        entity.addScript(new EveryFrameScript() {
-            private SectorEntityToken entity;
-            private SectorEntityToken token;
-
-            public EveryFrameScript init(SectorEntityToken entity) {
-                this.entity = entity;
-                token = entity.getOrbitFocus();
-                return this;
-            }
-
-            @Override
-            public boolean isDone() {
-                return entity == null && token == null;
-            }
-
-            @Override
-            public boolean runWhilePaused() {
-                return false;
-            }
-
-            @Override
-            public void advance(float amount) {
-                if (entity == null) {
-                    if (token != null) {
-                        Misc.fadeAndExpire(token);
-                        token = null;
-                    }
-
-                    return;
-                }
-
-                if (entity.isExpired() || entity.getContainingLocation() == null) {
-                    entity = null;
-                    Misc.fadeAndExpire(token);
-                    token = null;
-                }
-            }
-        }.init(entity));
+        entity.addScript(new Roider_ExpeditionMajorLootCleaner(entity));
     }
 
     private AddedEntity createLootDrop(StarSystemAPI system) {

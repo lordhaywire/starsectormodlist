@@ -44,7 +44,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Game Improvements
 
-[Better Colonies v1.73](https://fractalsoftworks.com/forum/index.php?topic=17103.0)
+[Better Colonies v1.85](https://fractalsoftworks.com/forum/index.php?topic=17103.0)
 
 [Combat Chatter v1.12](https://fractalsoftworks.com/forum/index.php?topic=10399.0)
 
@@ -72,9 +72,9 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Legacy of Arkgneisis](https://fractalsoftworks.com/forum/index.php?topic=13667.0)
 
-[prv Starworks v23](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
+[prv Starworks v24.1](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
 
-[Roider Union v1.4.3](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
+[Roider Union v1.4.4](https://fractalsoftworks.com/forum/index.php?topic=9547.0)
 
 [Scy Nation v1.65rc1](https://fractalsoftworks.com/forum/index.php?topic=8010.0)
 

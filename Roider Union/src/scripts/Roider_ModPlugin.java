@@ -127,6 +127,10 @@ public class Roider_ModPlugin extends BaseModPlugin {
             Roider_FringeStationCleaner.removeOrphanedFringeStations(sector);
         }
 
+        if (!sector.hasScript(Roider_Savebreak.class)) {
+            sector.addScript(new Roider_Savebreak());
+        }
+
         if (!sector.getCharacterData().getAbilities().contains("roider_retrofit")) {
             sector.addTransientScript(new Roider_ArgosAbilityAdderScript());
         }
@@ -174,6 +178,9 @@ public class Roider_ModPlugin extends BaseModPlugin {
 
     @Override
     public void configureXStream(XStream x) {
+        // Backwards compatible
+        x.alias("roider_savebreak_1_4_1", Roider_Savebreak.class);
+
         x.alias("roider_ssg", Roider_StarSystemGenerator.class);
 
         x.alias("roider_baseIntel", Roider_RoiderBaseIntel.class);

@@ -1,6 +1,6 @@
 {
     "displayName": "Patrol",
-    "fluxCapacitors": 15,
+    "fluxCapacitors": 12,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "roider_firestorm",
@@ -13,16 +13,29 @@
     "variantId": "roider_firestorm_Patrol",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS 001": "arbalest"}
+            "weapons": {"WS 000": "arbalest"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 002": "hammer",
-                "WS 003": "hammer"
+                "WS 010": "hammer",
+                "WS 011": "hammer"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "shredder"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "lightdualac",
+                "WS 003": "lightdualac"
             }
         },
         {
@@ -35,14 +48,6 @@
                 "WS 007": "lightmortar",
                 "WS 008": "lightmortar",
                 "WS 009": "lightmortar"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 010": "lightdualac",
-                "WS 011": "lightdualac"
             }
         },
         {

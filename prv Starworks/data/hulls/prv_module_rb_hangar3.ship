@@ -1,0 +1,194 @@
+{
+  "hullName": "Hangar Module",
+  "hullId": "prv_module_rb_hangar3",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_module_rb_hangar3.png",
+  "style": "PRV_LOW",
+  "height": 200,
+  "width": 380,
+  "center": [190, 50],
+  "collisionRadius": 210,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 210,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "chassis_storage"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        80.5, 43.5,
+        68, 64.5,
+        73, 83
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        80, -45,
+        69, -63.5,
+        73.5, -81.5
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [92, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [61, -0],
+      "renderOrderMod": 125
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [46, 69]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [41, -66]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [93, 32]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [93, -32]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 30,
+      "locations": [60, 48]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [60, -48]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [64, -109]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [113, -31]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [121, -0]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 60,
+      "locations": [38, 30]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -60,
+      "locations": [38, -30]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    17.5, 73,
+    28, 82.5,
+    44.5, 129,
+    75.5, 129,
+    75.5, 89,
+    98.5, 41,
+    115.5, 20,
+    132.5, 20,
+    132.5, -40,
+    98.5, -41,
+    75.5, -89,
+    75.5, -129,
+    44.5, -129,
+    17.5, -73,
+    17.5, -50,
+    -0.5, -38.5,
+    -4.5, -29,
+    2, -21.5,
+    -18.5, -20.5,
+    -31.5, 0,
+    -18.5, 20.5,
+    2, 21.5,
+    -4.5, 29,
+    -0.5, 38.5,
+    17.5, 50
+  ]
+}

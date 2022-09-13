@@ -33,10 +33,11 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 002": "heavymortar",
                 "WS 011": "lightag",
                 "WS 013": "lightag",
-                "WS 017": "heavymortar"
+                "WS 016": "lightac",
+                "WS 017": "heavymortar",
+                "WS 020": "lightac"
             }
         },
         {
@@ -45,10 +46,18 @@
             "weapons": {
                 "WS 001": "arbalest",
                 "WS 007": "lightac",
-                "WS 008": "lightac",
-                "WS 016": "lightac",
-                "WS 020": "lightac"
+                "WS 008": "lightac"
             }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "heavymortar"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 010": "devastator"}
         },
         {
             "autofire": true,
@@ -58,7 +67,6 @@
                 "WS 004": "flak",
                 "WS 005": "vulcan",
                 "WS 006": "vulcan",
-                "WS 010": "devastator",
                 "WS 012": "lightmg",
                 "WS 014": "lightmg",
                 "WS 015": "lightmg",

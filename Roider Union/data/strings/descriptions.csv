@@ -62,6 +62,9 @@ The Ranch's drone bays and long flight decks are carved from the hull of a Starl
 roider_wrecker,SHIP,"A heavily armored war tug, skirmishers beware the Wrecker-class cruiser! It pulls ships in with its mysterious Phasenet system and smashes them on its guns and shock-absorbing armor module.
 
 Built on the ruins of an Eagle or Falcon cruiser, some consider the Wrecker's design reminiscent of a hawk about to leap into flight. It is a recent but popular design integrating component designs found by tech-mining expeditions. Especially beloved by junkyard dogs for both creating derelicts and neatly arranging them.",,,
+roider_wrecker_p,SHIP,"A heavily armored war tug, skirmishers beware the Wrecker-class cruiser! It pulls ships in with its mysterious Phasenet system and smashes them on its guns and shock-absorbing armor module. This ship has been heavily modified - and poorly maintained - by its pirate crew.
+
+Built on the ruins of an Eagle or Falcon cruiser, some consider the Wrecker's design reminiscent of a hawk about to leap into flight. It is a recent but popular design integrating component designs found by tech-mining expeditions. Especially beloved by junkyard dogs for both creating derelicts and neatly arranging them.",,,
 ,,,,,
 roider_telamon,SHIP,"The Telamon-class battleship is proof of the Roider Union's industrial maturity. It has an unconventional broadside design, supplemented by fighters and armor modules, which makes it very effective against swarms of small ships.
 

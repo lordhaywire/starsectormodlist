@@ -19,13 +19,15 @@
     "reduced_explosion",
     "always_detaches",
     "advancedshieldemitter",
-    #"prv_arcfault_insulator"
+    "fluxshunt",
+    "prv_damage_on_overload"
   ],
   "center": [
     40,
     40
   ],
-  "collisionRadius": 80,
+  "collisionRadius": 400,
+  #"collisionRadius": 80,
   "engineSlots": [],
   "height": 80,
   "hullId": "prv_module_shield_center",
@@ -40,7 +42,7 @@
     0
   ],
   #"shieldRadius": 475,
-  "shieldRadius": 375,
+  "shieldRadius": 400,
   "spriteName": "graphics/prv/ships/stations/prv_module_shield_center.png",
   "style": "PRV_MID",
   "viewOffset": 0,

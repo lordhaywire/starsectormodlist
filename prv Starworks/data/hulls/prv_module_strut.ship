@@ -31,7 +31,7 @@
         0
     ],
     "shieldRadius": 110,
-    "spriteName": "graphics/ships/stations/module_hightech_understrut.png",
+    "spriteName": "graphics/prv/ships/stations/prv_module_strut.png",
     "style": "HIGH_TECH",
     "viewOffset": 0,
     "width": 160
