@@ -1,6 +1,6 @@
 {
     "displayName": "Defense",
-    "fluxCapacitors": 20,
+    "fluxCapacitors": 10,
     "fluxVents": 16,
     "goalVariant": true,
     "hullId": "roider_firestorm",
@@ -13,34 +13,51 @@
     "variantId": "roider_firestorm_Defense",
     "weaponGroups": [
         {
-            "autofire": true,
+            "autofire": false,
             "mode": "LINKED",
-            "weapons": {
-                "WS 010": "lightag",
-                "WS 011": "lightag",
-                "WS 012": "lightag",
-                "WS 013": "lightag"
-            }
+            "weapons": {"WS 000": "harpoonpod"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 002": "roider_zap",
-                "WS 003": "roider_zap"
+                "WS 010": "roider_zap",
+                "WS 011": "roider_zap"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "heavymg"}
+            "weapons": {
+                "WS 002": "lightag",
+                "WS 003": "lightag"
+            }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 004": "roider_marksman",
-                "WS 005": "roider_marksman",
+                "WS 004": "lightac",
+                "WS 005": "lightac"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 012": "lightmortar",
+                "WS 013": "lightmortar"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "dualflak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
                 "WS 006": "roider_marksman",
                 "WS 007": "roider_marksman",
                 "WS 008": "roider_marksman",

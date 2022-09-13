@@ -16,7 +16,6 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        #"BI01": "hammerrack",
         "WS0001": "cyclone",
       }
     },

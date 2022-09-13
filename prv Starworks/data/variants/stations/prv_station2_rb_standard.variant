@@ -1,0 +1,27 @@
+{
+  "variantId": "prv_station2_rb_standard",
+  "hullId": "prv_station2_rb",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0004": "prv_module_rb_hangar3_standard"
+    },
+    {
+      "WS0005": "prv_module_rb_hangar3_alt"
+    },
+    {
+      "WS0006": "prv_module_rb_battery3_standard"
+    },
+    {
+      "WS0007": "prv_module_rb_battery3_alt"
+    }
+  ],
+  "wings": []
+}

@@ -1,43 +1,42 @@
 {
-  "displayName": "Ballistic",
+  "variantId": "prv_module_bastion1a_ballistic",
+  "hullId": "prv_module_bastion1a",
+  "displayName": "Gravitic",
+  "goalVariant": true,
   "fluxCapacitors": 10,
   "fluxVents": 10,
-  "goalVariant": true,
-  "hullId": "prv_module_bastion1",
-  "hullMods": [],
-  "modules": [],
-  "permaMods": [],
   "quality": 0,
-  "variantId": "prv_module_bastion1_ballistic",
+  "permaMods": [],
+  "hullMods": [],
   "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_heavygravkan"
+      }
+    },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "mjolnir"
+        "WS0002": "prv_sidensvans"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "prv_spattergun",
-        "WS0005": "prv_spattergun"
+        "WS0007": "prv_gravkan"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "prv_akc"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0002": "prv_pskd",
-        "WS0003": "prv_pskd"
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser"
       }
     },
     {
@@ -46,10 +45,6 @@
       "weapons": {}
     }
   ],
-  "wings": [
-    "prv_missljud_wing",
-    "prv_ovasen_wing",
-    "prv_stilllhet_wing",
-    "prv_diskordant_wing"
-  ]
+  "modules": [],
+  "wings": []
 }

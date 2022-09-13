@@ -25,7 +25,14 @@ public class Roider_ArcOnHitEffect implements OnHitEffectPlugin {
 
         if (target instanceof ShipAPI) {
             ShipAPI ship = (ShipAPI) target;
+
+            float emp = projectile.getWeapon().getDamage().getFluxComponent();
+
             boolean hitShield = target.getShield() != null && target.getShield().isWithinArc(point);
+
+            // Deal extra EMP (minus amount already dealt) to fighters at point of impact
+            if (!hitShield && ship.isFighter()) engine.applyDamage(target, point, 0, DamageType.ENERGY, emp * 5f - emp, false, false, projectile.getSource());
+
             float pierceChance = ((ShipAPI)target).getHardFluxLevel() - 0.4f;
 
             pierceChance *= ship.getMutableStats().getDynamic().getValue(Stats.SHIELD_PIERCED_MULT);
@@ -37,7 +44,8 @@ public class Roider_ArcOnHitEffect implements OnHitEffectPlugin {
             int brightness = (int) (255f * Math.max(Math.min((range - distance) / distance, 0f), 1f));
 
             if ((!hitShield && (float) Math.random() < 0.75f) || piercedShield) {
-                float emp = projectile.getWeapon().getDamage().getFluxComponent() * 0.2f;
+                emp *= 0.2f;
+                if (ship.isFighter()) emp *= 5f;
 //                        float dam = projectile.getWeapon().getDamage().getDamage() * 0.05f;
                 engine.spawnEmpArcPierceShields(
                            projectile.getSource(), projectile.getLocation(), projectile.getDamageTarget(), projectile.getDamageTarget(),
@@ -45,7 +53,7 @@ public class Roider_ArcOnHitEffect implements OnHitEffectPlugin {
                            0f, // damage
                            emp, // emp
                            100000f, // max range
-                           "tachyon_lance_emp_impact",
+                           "roider_zap_arc",
                            20f,
                            new Color(100, 125, 200, brightness),
                            new Color(240, 250, 255, brightness)

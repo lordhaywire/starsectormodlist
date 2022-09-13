@@ -31,6 +31,13 @@ roider_wrecker_eagle_xiv,"roider_full, roider_all",eagle_xiv,roider_wrecker,,0,3
 roider_wrecker_falcon,"roider_full, roider_all",falcon,roider_wrecker,,0,3,TRUE
 roider_wrecker_falcon_xiv,"roider_full, roider_all",falcon_xiv,roider_wrecker,,0,3,TRUE
 roider_wrecker_falcon_p,"roider_full, roider_all",falcon_p,roider_wrecker,,0,3,TRUE
+roider_wrecker_wrecker_p,"roider_full, roider_all",roider_wrecker_p,roider_wrecker,,0,3,TRUE
+roider_wrecker_p_eagle,roider_all,eagle,roider_wrecker_p,,0,3,TRUE
+roider_wrecker_p_eagle_xiv,roider_all,eagle_xiv,roider_wrecker_p,,0,3,TRUE
+roider_wrecker_p_falcon,roider_all,falcon,roider_wrecker_p,,0,3,TRUE
+roider_wrecker_p_falcon_xiv,roider_all,falcon_xiv,roider_wrecker_p,,0,3,TRUE
+roider_wrecker_p_falcon_p,roider_all,falcon_p,roider_wrecker_p,,0,3,TRUE
+roider_wrecker_p_wrecker,"roider_full, roider_all",roider_wrecker,roider_wrecker_p,,0,3,TRUE
 roider_telamon_atlas,"roider_full, roider_all",atlas,roider_telamon,,0,4,TRUE
 roider_telamon_atlas2,"roider_full, roider_all",atlas2,roider_telamon,,0,4,TRUE
 ,,,,,,,

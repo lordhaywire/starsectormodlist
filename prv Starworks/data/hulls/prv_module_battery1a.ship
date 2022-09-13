@@ -1,0 +1,142 @@
+{
+  "hullName": "Light Battery Module",
+  "hullId": "prv_module_battery1a",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_module_battery1a.png",
+  "style": "PRV_MID",
+  "height": 200,
+  "width": 200,
+  "center": [100, 100],
+  "collisionRadius": 103,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 102,
+  "viewOffset": 0,
+  "moduleAnchor": [
+    -43,
+    0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "prv_hypergenerators"
+  ],
+  "weaponSlots": [
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -43.5, 35,
+        -57.5, 50,
+        -20.5, 31.5,
+        -6.5, 47.5,
+        8, 32,
+        22, 25,
+        37, 4
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 30,
+      "locations": [4, 57]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -30,
+      "locations": [4, -57]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 60,
+      "locations": [35, 58]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -60,
+      "locations": [35, -58]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [26, 42]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -45,
+      "locations": [26, -42]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 30,
+      "locations": [37, 27]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [37, -27]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    74, 11.5,
+    65, 24,
+    60, 42,
+    50.5, 51.5,
+    38.5, 67,
+    4.5, 90.5,
+    -22, 69,
+    -29, 28,
+    -22.5, 10,
+    0, 10,
+    18.5, 30.5,
+    45, 2,
+    45, -2,
+    18.5, -30.5,
+    0, -10,
+    -22.5, -10,
+    -29, -28,
+    -22, -69,
+    4.5, -90.5,
+    38.5, -67,
+    50.5, -51.5,
+    60, -42,
+    65, -24,
+    74, -11.5
+  ]
+}

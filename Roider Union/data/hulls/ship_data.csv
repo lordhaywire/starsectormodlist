@@ -1,6 +1,6 @@
 name,id,designation,tech/manufacturer,system id,fleet pts,hitpoints,armor rating,max flux,8/6/5/4%,flux dissipation,ordnance points,fighter bays,max speed,acceleration,deceleration,max turn rate,turn acceleration,mass,shield type,defense id,shield arc,shield upkeep,shield efficiency,phase cost,phase upkeep,min crew,max crew,cargo,fuel,fuel/ly,range,max burn,base value,cr %/day,CR to deploy,peak CR sec,CR loss/sec,supplies/rec,supplies/mo,c/s,c/f,f/s,f/f,crew/s,crew/f,hints,tags,rarity,breakProb,minPieces,maxPieces,travel drive,number
 Breaker,roider_drone_breaker,,Roider Union,,,400,75,600,,100,0,,200,300,250,90,180,30,NONE,,0,0,0,,,0,0,,,,,,,,,,,,,,,,,,,,,,0,,,,101
-Bolt,roider_bolt,,Roider Union,,,500,75,200,,30,0,,500,300,400,90,180,30,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,102
+Bolt,roider_bolt,,Roider Union,,,450,50,200,,30,0,,500,300,400,90,180,30,NONE,,0,0,0,,,1,1,,,,,,,,,,,,,,,,,,,,,,0,,,,102
 Duster,roider_duster,,Roider Union,,,750,100,50,,14,0,,220,350,300,60,120,40,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,103
 Dragline,roider_dragline,,Roider Union,,,1000,150,200,,80,0,,160,300,250,45,90,75,NONE,,0,0,0,,,4,4,,,,,,,,,,,,,,,,,,,,,,0,,,,104
 Hopskip Mk.II,roider_hopskip2,,Roider Union,,,400,50,200,,30,0,,300,350,300,90,180,50,NONE,,0,0,0,,,2,2,,,,,,,,,,,,,,,,,,,,,,0,,,,105
@@ -39,6 +39,9 @@ Ranch,roider_ranch,Carrier,Roider Union,reservewing,14,6000,700,5000,4000,180,10
 ,roider_ranch_armor,Prow Armor,,,2,1200,1050,100,2500,100,0,,0,0,0,10,10,400,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_refit_bright, roider_armor",,1,2,3,,403.1
 Wrecker,roider_wrecker,Cruiser,Roider Union,roider_phasenet,15,9000,1100,10000,10500,500,150,,45,30,20,15,20,1500,FRONT,,240,0.5,1.1,,,180,300,150,120,4,30,8,125000,3,12,480,0.25,24,24,,,,,,,SHIP_WITH_MODULES,"rare_bp, roider, roider_retrofit, no_drop, merc",,0.5,2,3,,404
 ,roider_wrecker_armor,Prow Armor,,,2,1800,1650,100,2500,100,0,,0,0,0,10,10,600,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_refit_bright, roider_armor",,1,2,3,,404.1
+Wrecker (P),roider_wrecker_p,Cruiser,Pirate,roider_phasenet,15,9000,1100,10000,10500,500,150,,45,30,20,15,20,1500,FRONT,,240,0.5,1.1,,,180,300,150,120,4,30,8,125000,3,12,480,0.25,24,24,,,,,,,SHIP_WITH_MODULES,"rare_bp, roider, roider_retrofit, no_drop, merc",,0.5,2,3,,404
+,roider_wrecker_p_armor,Prow Armor,,,2,1800,1650,100,2500,100,0,,0,0,0,10,10,600,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_refit_bright, roider_armor",,1,2,3,,404.1
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Telamon,roider_telamon,Battleship,Roider Union,burndrive,28,16000,1250,16000,15000,400,320,2,35,15,14,6,6,3500,OMNI,,180,0.6,1,,,600,1250,350,500,15,33,7,350000,3,12,720,0.25,40,40,,,,,,,SHIP_WITH_MODULES,"rare_bp, roider, roider_retrofit, merc",,0.6,2,4,,500
 ,roider_telamon_front,Prow Armor,,,8,2500,2000,100,2500,100,0,,0,0,0,10,10,1000,NONE,,0,0,0,,,0,0,0,0,1,0,,500000,,1,,,0,0,,,,,,,"UNBOARDABLE, HIDE_IN_CODEX","module_hull_bar_only, module_refit_bright, roider_armor",,1,2,3,,500.1

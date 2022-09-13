@@ -78,9 +78,9 @@ Akers Nova,prv_akers_nova,3,0.3,2300,850,,60,60,6,24,12,,,,KINETIC,70,,0.075,1.9
 The EMP arcs are less effective against fighters.",25% | 240,,,,8714
 Akers Denova,prv_akers_denova,3,0.3,2700,750,,75,,6,12,14,700,,,KINETIC,125,,,0.25,,,0,5,0.5,10,,750,,,,,,,"prv_lab_bp, kinetic15, LR, hist1t, merc",,prv Starworks,,Anti Shield,,,,,Hits generate anomalies which deal up to %s fragmentation damage to nearby targets.,75,,,,8714.5
 Fräs,prv_akers_denova_1,0,,0,0,,75,,6,12,,,,,FRAGMENTATION,125,,,0.25,,,0,5,0.5,10,,750,,,,,,SYSTEM,,,prv Starworks,,Anti Shield,,,,,,,,,,8714.51
-Siege Akers,prv_siege_akers,1,,3500,750,,120,60,15,8,22,,,8,KINETIC,135,,,1.0333333333,4,0.1,0,7,0.6,10,,750,,,100,,,,"prv_adv_bp, prv_kratul_bp, kinetic18",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage spread over two locations. Hits on shields have a chance to generate a shield-penetrating arc based on the target's hard flux level.
+Siege Akers,prv_siege_akers,1,,3500,750,,120,60,15,8,22,,,8,KINETIC,135,,,1.0333333333,4,0.1,0,7,0.6,10,,750,,,100,,,,"prv_adv_bp, prv_kratul_bp, kinetic18",,prv Starworks,,Anti Shield,,,,,"Shell hits on hull or armor have a %s chance to arc to weapons and engines, inflicting %s EMP damage spread over %s locations. Hits on shields have a chance to generate a shield-penetrating arc based on the target's hard flux level.
 
-The EMP arcs are less effective against fighters.",33% | 180,,,,8716
+The EMP arcs are less effective against fighters.",33% | 180 | 2,,,,8716
 #Jursla,prv_jursla,3,0.3,5000,900,,400,,175,12,25,,,,KINETIC,520,,,2.17,2,0.33,0,5,0.33,1,,1200,,,200,,,,"prv_lab_bp, kinetic20, LR, rare_bp",,prv Starworks,,Anti Shield,,,,,,,,,,8786
 Spatterflamer,prv_spatterflamer,1,,2500,600,,50,,25,27,24,120,8,60,ENERGY,50,,,0.05,5,0.05,1,1,0,0,,600,,,,,,"DO_NOT_CONSERVE, NO_TURN_RATE_BOOST_WHEN_IDLE","prv_rb_bp, energy18, he17, beam12, SR",,Rust Belt,,Anti Hull,,,,Poor,"%s clings to the target on hull hits, dealing an additional %s energy damage over time. 
 
@@ -109,12 +109,12 @@ Kaja MRM Array,prv_kaja_quint,2,0,1200,3000,,350,,15,30,,5,0.5,5,HIGH_EXPLOSIVE,
 Kråka MRM Launcher,prv_kraka,1,0.65,1200,3000,,450,,20,20,10,4,0.2,2,HIGH_EXPLOSIVE,225,,0,3,,,0,0,0,,,300,1000,10,175,,,GROUP_LINKED,"prv_bp, prv_stjarngard_bp, missile14, strike4",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8722
 Kråka MRM Autolauncher,prv_kraka_auto,3,0,5600,3000,,450,,20,10,,9,0.6,1,HIGH_EXPLOSIVE,225,,0,0.3333333,,,0,0,0,,,300,1000,10,175,,,"GROUP_LINKED, SYSTEM, SHOW_IN_CODEX","missile21, strike14",,prv Starworks,,Anti Armor,Fast,Variable,,,,,,,,8723a
 Korp MRM Launcher,prv_korp,2,,3800,3000,,600,,25,10,20,9,0.3,3,HIGH_EXPLOSIVE,300,,0,3,,,0,0,0,,,300,1000,10,210,,,GROUP_LINKED,"prv_bp, prv_stjarngard_bp, missile17, strike8",,prv Starworks,,Strike,Fast,Variable,,,,,,,,8723
-Annihilator Burst Launcher,prv_kraka_auto_burst,3,0,5600,1500,,200,,5,10,,320,,,HIGH_EXPLOSIVE,0,,0,6.05,40,0.05,3,10,1,,,400,50,3.75,50,,,"SYSTEM, CONSERVE_3, STRIKE","rocket21, strike14",,Pirate,,Anti Armor,Fast,Variable,,,,,,,,8723b
+Annihilator Burst Launcher,prv_kraka_auto_burst,3,0,5600,1500,,200,,5,10,,320,,,HIGH_EXPLOSIVE,0,,0,6.05,40,0.05,3,10,1,,,400,50,3.75,50,,,"SYSTEM, CONSERVE_3, STRIKE","rocket21, strike14",,Pirate,,Anti Armor,Fast,None,,,,,,,,8723b
 Skata LRM Launcher,prv_skata,3,0.5,3600,5000,,300,,15,3,18,135,,,ENERGY,,,,6.762,3,0.219,0,10,2,2,,1200,200,9,65,,,GUIDED_POOR,"prv_adv_bp, prv_kratul_bp, rocket18, strike4",,prv Starworks,,Pressure,Medium,Very Poor,,,,,,,,8724
-Berguv Torpedo,prv_berguv_rack,2,,200,1200,,2000,,30,10,3,2,,,ENERGY,,,,1,,,0,0,0,0,,300,50,5,500,,,"STRIKE, USE_VS_FRIGATES","prv_adv_bp, prv_stjarngard_bp, strike8, rocket2",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
+Berguv Torpedo,prv_berguv_rack,2,,200,1800,,2000,,30,10,3,2,,,ENERGY,,,,1,,,0,0,0,0,,300,50,6,500,,,"STRIKE, USE_VS_FRIGATES","prv_adv_bp, prv_stjarngard_bp, strike8, rocket2",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
 
 The torpedoes are volatile and may detonate prematurely if damaged.",severe | spatterfire,,,TRUE,8724.65
-Berguv Torpedo Launcher,prv_berguv,2,,4800,1200,,2000,,30,10,25,27,,,ENERGY,,,,16,3,0.33333,0,0,0,0,,300,50,5,500,,,"STRIKE, USE_VS_FRIGATES, CONSERVE_3","prv_adv_bp, prv_stjarngard_bp, strike16, rocket14",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
+Berguv Torpedo Launcher,prv_berguv,2,,4800,1800,,2000,,30,10,25,27,,,ENERGY,,,,16,3,0.33333,0,0,0,0,,300,50,6,500,,,"STRIKE, USE_VS_FRIGATES, CONSERVE_3","prv_adv_bp, prv_stjarngard_bp, strike16, rocket14",,prv Starworks,,Torpedo,Medium,None,,,"Will detonate when close to a target, causing %s %s energy burns on nearby ships.
 
 The torpedoes are volatile and may detonate prematurely if damaged.",severe | spatterfire,,,TRUE,8724.5
 Berguv MIRV Launcher,prv_berguv_mirv,3,,1900,1800,,1500,,30,20,12,7,,,ENERGY,,,,10,,,0,0,0,0,,300,150,6,500,,,"GUIDED_POOR, USE_VS_FRIGATES","prv_adv_bp, rare_bp, strike14, rocket7, hist1t, merc",,prv Starworks,,Finisher,Medium,Medium,,,"Submunitions will detonate when close to a target, causing %s %s energy burns on nearby ships.

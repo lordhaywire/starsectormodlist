@@ -8,6 +8,7 @@ prv_oklang_wing,prv_oklang_beam,"interceptor4, fighter, high, prv_lab_bp, auto_f
 prv_ovasen_wing,prv_ovasen_escort,"support3, interceptor, high, prv_adv_bp, prv_kratul_bp, merc",2,,5,10,V,4000,1000,,3,SUPPORT,Companion Fighter,15,9000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 prv_buddy_wing,prv_buddy_utility,"fighter2, fighter, low, prv_rb_bp, auto_fighter",1,,4,6,CLAW,4000,500,,3,FIGHTER,Utility Craft,15,3000,,,,,,,,,,,,,
+prv_buddy_recovery_wing,prv_buddy_utility,"restricted, no_drop, no_sell",0,,0,0,BOX,4000,500,,1,FIGHTER,Utility Craft,15,1000,,,,,,,,,,,,,
 prv_stilllhet_wing,prv_stillhet_phase,"fighter5, fighter, high, prv_adv_bp, prv_hel_bp, rare_bp",3,,7,18,BOX,4000,350,-200,2,FIGHTER,Phase Fighter,15,16000,,,,,,,,,,,,,
 prv_karbid_wing,prv_karbid_assault,"fighter3, fighter, low, prv_rb_bp",2,,5,8,BOX,4000,400,-400,2,FIGHTER,Fighter,12,5000,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,

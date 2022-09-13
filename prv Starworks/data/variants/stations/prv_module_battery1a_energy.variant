@@ -1,0 +1,37 @@
+{
+  "variantId": "prv_module_battery1a_energy",
+  "hullId": "prv_module_battery1a",
+  "displayName": "Energy",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_ljungeld",
+        "WS0002": "prv_ljungeld"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_pskd",
+        "WS0004": "prv_pskd",
+        "WS0005": "prv_pskd",
+        "WS0006": "prv_pskd",
+        "WS0007": "prv_pskd",
+        "WS0008": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

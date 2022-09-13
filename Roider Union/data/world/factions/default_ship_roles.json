@@ -85,6 +85,11 @@
 		"roider_wrecker_CS":4,
 		"roider_wrecker_Shieldbreaker":1,
 		"roider_wrecker_Overdriven":2,
+		
+		"roider_wrecker_p_Assault":3,
+		"roider_wrecker_p_CS":4,
+		"roider_wrecker_p_Shieldbreaker":1,
+		"roider_wrecker_p_Overdriven":2,
 	},
 	"combatCapital":{
 		"roider_telamon_Balanced":7,

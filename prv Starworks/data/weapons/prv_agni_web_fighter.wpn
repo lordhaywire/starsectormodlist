@@ -3,7 +3,7 @@
   "specClass": "projectile",
   "projectileSpecId": "prv_agni_web_shot",
   "type": "BALLISTIC",
-  "size": "LARGE",
+  "size": "SMALL",
   "turretSprite": "graphics/prv/weapons/prv_agni_spinneret_fighter.png",
   "hardpointSprite": "graphics/prv/weapons/prv_agni_spinneret_fighter.png",
   "renderHints": [

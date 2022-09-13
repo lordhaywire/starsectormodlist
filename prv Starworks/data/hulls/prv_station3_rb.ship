@@ -1,0 +1,191 @@
+{
+  "hullName": "Star Fortress, Ruster",
+  "hullId": "prv_station3_rb",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/prv/ships/stations/prv_station1_rb.png",
+  "style": "PRV_LOW",
+  "height": 512,
+  "width": 512,
+  "center": [256, 256],
+  "collisionRadius": 200,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 200,
+  "viewOffset": 0,
+  "builtInMods": [
+    "vastbulk",
+    "axialrotation",
+    "supercomputer",
+    "shared_flux_sink",
+    "prv_fetchdrone"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-198, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [198, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 90,
+      "locations": [0, 198]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -90,
+      "locations": [0, -198]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 60,
+      "locations": [120, 300]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -120,
+      "locations": [-120, -300]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 120,
+      "locations": [-118, 298]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -60,
+      "locations": [118, -298]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 180,
+      "locations": [-336, -0]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 0,
+      "locations": [336, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -90,
+      "locations": [263, -136]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 90,
+      "locations": [263, 136]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -90,
+      "locations": [-263, -136]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 90,
+      "locations": [-263, 136]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": -90,
+      "locations": [-17, -321]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 8,
+      "angle": 90,
+      "locations": [17, 321]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    192, 146,
+    199.5, 121,
+    194, -0,
+    194, -66,
+    206, -129.5,
+    181.5, -132.5,
+    134.5, -175.5,
+    99, -170.5,
+    0, -194,
+    -69, -195.5,
+    -111, -145,
+    -199.5, -133,
+    -181.5, -58.5,
+    -194, -0,
+    -176.5, 139,
+    -154.5, 163,
+    0, 194,
+    86, 188.5,
+    90.5, 177.5,
+    116, 175.5,
+    128, 139.5
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "variantId": "prv_station3_rb_standard",
+  "hullId": "prv_station3_rb",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "WS0004": "prv_module_rb_hangar3_standard"
+    },
+    {
+      "WS0005": "prv_module_rb_hangar3_alt"
+    },
+    {
+      "WS0006": "prv_module_rb_battery3_standard"
+    },
+    {
+      "WS0007": "prv_module_rb_battery3_alt"
+    },
+    {
+      "WS0008": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0009": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0010": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0011": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0014": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0015": "prv_module_rb_armor_standard"
+    },
+    {
+      "WS0001": "prv_module_rb_armor_light_standard"
+    },
+    {
+      "WS0002": "prv_module_rb_armor_light_standard"
+    },
+    {
+      "WS0012": "prv_module_rb_armor_light_standard"
+    },
+    {
+      "WS0003": "prv_module_rb_armor_light_standard"
+    },
+    {
+      "WS0013": "prv_module_rb_armor_light_standard"
+    },
+    {
+      "WS0016": "prv_module_rb_armor_light_standard"
+    }
+  ],
+  "wings": []
+}

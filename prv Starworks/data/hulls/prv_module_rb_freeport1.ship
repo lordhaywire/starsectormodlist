@@ -1,0 +1,64 @@
+{
+  "hullName": "Freeport Module",
+  "hullId": "prv_module_rb_freeport1",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/stations/prv_module_rb_freeport.png",
+  "style": "PRV_LOW",
+  "height": 200,
+  "width": 180,
+  "center": [90, 50],
+  "collisionRadius": 105,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 105,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "do_not_fire_through",
+    "chassis_storage",
+    "reduced_explosion"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": 90,
+      "locations": [35, 42.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 155,
+      "angle": -90,
+      "locations": [35, -42.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        66, 23.5,
+        57.5, 16,
+        60, -1,
+        62.5, -22
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    71, -31,
+    48, -54,
+    17, -54,
+    -31, -0,
+    17, 54,
+    48, 54,
+    71, 31
+  ]
+}

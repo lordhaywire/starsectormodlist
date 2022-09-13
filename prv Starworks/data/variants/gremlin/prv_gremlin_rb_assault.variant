@@ -1,7 +1,7 @@
 {
   "displayName": "Assault",
-  "fluxCapacitors": 3,
-  "fluxVents": 2,
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
   "goalVariant": false,
   "hullId": "prv_gremlin_rb",
   "hullMods": [],
@@ -13,14 +13,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "plasma"
+        "WS0002": "prv_uvir"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 002": "sabot_single",
+        "WS 002": "sabot",
         "WS 003": "sabot_single"
       }
     },

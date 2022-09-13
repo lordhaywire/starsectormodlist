@@ -1,0 +1,47 @@
+{
+  "variantId": "prv_station_drone_rb_skans_standard",
+  "hullId": "prv_station_drone_rb_skans",
+  "displayName": "Artillery",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kartesch",
+        "WS0002": "prv_kartesch"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "harpoon_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "annihilator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "mininglaser",
+        "WS0007": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

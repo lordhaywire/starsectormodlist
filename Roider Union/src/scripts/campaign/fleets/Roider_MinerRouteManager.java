@@ -458,9 +458,11 @@ public class Roider_MinerRouteManager extends BaseRouteFleetManager {
         // What systems are in range?
         WeightedRandomPicker<StarSystemAPI> targets = new WeightedRandomPicker<>();
         for (StarSystemAPI s : Global.getSector().getStarSystems()) {
+            if (s.getHyperspaceAnchor() == null) continue;
             if (alreadyTried.contains(s)) continue;
             if (s.hasTag(Tags.THEME_UNSAFE)) continue;
             if (s.hasTag(Tags.THEME_HIDDEN)) continue;
+            if (s.hasTag(Tags.SYSTEM_CUT_OFF_FROM_HYPER)) continue;
             if (s.getType() != StarSystemGenerator.StarSystemType.NEBULA
                         && s.getStar() == null) continue;
 //            if (s.getId().equals(market.getStarSystem().getId())) {

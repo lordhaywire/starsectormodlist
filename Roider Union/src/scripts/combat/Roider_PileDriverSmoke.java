@@ -52,6 +52,9 @@ public class Roider_PileDriverSmoke implements EveryFrameWeaponEffectPlugin {
        slotIds.add("WS0006");
        PROHIBITED_REAR.put("loamt_macnamara", slotIds);
        slotIds = new ArrayList<>();
+       slotIds.add("WS 000");
+       PROHIBITED_REAR.put("roider_firestorm", slotIds);
+       slotIds = new ArrayList<>();
        slotIds.add("WS 006");
        slotIds.add("WS 007");
        PROHIBITED_REAR.put("roider_wrecker", slotIds);
