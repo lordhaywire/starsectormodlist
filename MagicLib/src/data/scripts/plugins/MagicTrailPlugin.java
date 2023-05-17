@@ -11,22 +11,23 @@ import com.fs.starfarer.api.util.IntervalUtil;
 import data.scripts.util.MagicTrailObject;
 import data.scripts.util.MagicTrailTracker;
 import org.jetbrains.annotations.Nullable;
+import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
 import java.util.List;
 import java.util.*;
 import java.util.Map.Entry;
-import org.lazywizard.lazylib.MathUtils;
 
 import static org.lwjgl.opengl.GL11.*;
 
+@Deprecated
 public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
-    public static final String PLUGIN_KEY = "MagicTrailPlugin";
+    public static final String PLUGIN_KEY = "MagicTrailPlugin_pre1.0";
     //Tracker for unique ID getting. Only use for this script, though: it's dangerous to use for other ID purposes, since it is so simple
     //NOTE: IDs should be bigger than 0; lower than 0 IDs are used by the script for "cut" trails
-    private static float usedIDs = 1f;
-    private static float usedCutterIDs = -1f;
+    private static float usedIDs = 50f;
+    private static float usedCutterIDs = -50f;
 
     private static final int ANIM_KEY = -1;
 
@@ -36,7 +37,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
     //Map for "cutting" trails: if a trail belongs to an entity (it hasn't already been cut) its ID is here
     //if tex id =-1, it's animated cutting map
-    private Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>> cuttingMap = new EnumMap<>(CombatEngineLayers.class);
+    private final Map<CombatEngineLayers, Map<Integer, Map<CombatEntityAPI, List<Float>>>> cuttingMap = new EnumMap<>(CombatEngineLayers.class);
 
 
     //clean the main map and cutting map per second
@@ -161,11 +162,11 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, 0f, 0f,
-                                                            opacity, srcBlend, destBlend,
-                                                            speed, speed, color, color,
-                                                            angle, position,
-                                                            -1f, 0, new Vector2f(),
-                                                            0f, 0);
+                opacity, srcBlend, destBlend,
+                speed, speed, color, color,
+                angle, position,
+                -1f, 0, new Vector2f(),
+                0f, 0);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -269,8 +270,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(0f, 0f, duration, startSize, endSize, 0f, 0f,
-                                                            opacity, srcBlend, destBlend, speed, speed, color, color, angle, position, -1f, 0, offsetVelocity,
-                                                            0f, 0);
+                opacity, srcBlend, destBlend, speed, speed, color, color, angle, position, -1f, 0, offsetVelocity,
+                0f, 0);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -282,7 +283,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
     // ADVANCED DECLARATION
     // ADVANCED DECLARATION
     // ADVANCED DECLARATION
-    
+
 
     /**
      * Spawns a trail piece, which links up with other pieces with the same ID
@@ -372,8 +373,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
         int blendModeDEST = additive ? GL_ONE : GL_ONE_MINUS_SRC_ALPHA;
 
         AddTrailMemberAdvanced(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize,
-                               startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, textureOffset,
-                               offsetVelocity, advancedOptions, layerToRenderOn, frameOffsetMult);
+                startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, textureOffset,
+                offsetVelocity, advancedOptions, layerToRenderOn, frameOffsetMult);
     }
 
     /**
@@ -512,23 +513,23 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
             shipVelPerAdvance.scale(mult);
             Vector2f.sub(position, shipVelPerAdvance, correctedPosition);
         }
-        
+
         //check for specific texture offset or a random one
         float textOffset = 0;
-        if(textureOffset==-1){
+        if (textureOffset == -1) {
             //the texture tracker keep a fixed random texture offset
-            if(tracker.textureOffset==-1){
+            if (tracker.textureOffset == -1) {
                 tracker.textureOffset = MathUtils.getRandomNumberInRange(0, textureLoopLength);
             }
             textOffset = tracker.textureOffset;
-        } else if (textureOffset!=0){
+        } else if (textureOffset != 0) {
             textOffset = textureOffset;
         }
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, textOffset, offsetVel,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, textOffset, offsetVel,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -624,8 +625,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
         int blendModeDEST = additive ? GL_ONE : GL_ONE_MINUS_SRC_ALPHA;
 
         AddTrailMemberAdvanced(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize,
-                               startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed,
-                               offsetVelocity, advancedOptions, layerToRenderOn, frameOffsetMult);
+                startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed,
+                offsetVelocity, advancedOptions, layerToRenderOn, frameOffsetMult);
     }
 
     /**
@@ -767,13 +768,13 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, 0, offset,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, 0, offset,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
     }
-    
+
     /**
      * Spawns a trail piece, which links up with other pieces with the same ID
      * to form a smooth trail. This function has all available functions; if you
@@ -853,8 +854,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
             float textureLoopLength, float textureScrollSpeed,
             Vector2f offsetVelocity, @Nullable Map<String, Object> advancedOptions) {
         AddTrailMemberAdvanced(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize,
-                               startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed,
-                               offsetVelocity, advancedOptions, CombatEngineLayers.CONTRAILS_LAYER, 1f);
+                startColor, endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed,
+                offsetVelocity, advancedOptions, CombatEngineLayers.CONTRAILS_LAYER, 1f);
     }
 
     /**
@@ -968,8 +969,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, position, textureLoopLength, 0, offsetVelocity,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, position, textureLoopLength, 0, offsetVelocity,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -982,7 +983,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
     // ANIMATED DECLARATION
     // ANIMATED DECLARATION
     // ANIMATED DECLARATION
-    
+
 
     /**
      * Spawns a trail piece, which links up with other pieces with the same ID
@@ -1071,10 +1072,10 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
         //Converts our additive/non-additive option to true openGL stuff
         int blendModeSRC = GL_SRC_ALPHA;
         int blendModeDEST = additive ? GL_ONE : GL_ONE_MINUS_SRC_ALPHA;
-        
+
         AddTrailMemberAnimated(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize, startColor,
-                               endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, textureOffset, offsetVelocity,
-                               advancedOptions, layerToRenderOn, frameOffsetMult);
+                endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, textureOffset, offsetVelocity,
+                advancedOptions, layerToRenderOn, frameOffsetMult);
     }
 
 
@@ -1203,29 +1204,29 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
         int texID = sprite.getTextureId();
         tracker.isAnimated = true;
         tracker.currentAnimRenderTexture = texID;
-        
+
         Vector2f offsetVel = new Vector2f();
-        if(offsetVelocity!=null){
+        if (offsetVelocity != null) {
             offsetVel = offsetVelocity;
         }
 
         //check for specific texture offset or a random one
         float textOffset = 0;
-        if(textureOffset==-1){
+        if (textureOffset == -1) {
             //the texture tracker keep a fixed random texture offset
-            if(tracker.textureOffset==-1){
+            if (tracker.textureOffset == -1) {
                 tracker.textureOffset = MathUtils.getRandomNumberInRange(0, textureLoopLength);
             }
             textOffset = tracker.textureOffset;
-        } else if (textureOffset!=0){
+        } else if (textureOffset != 0) {
             textOffset = textureOffset;
         }
-        
-        
+
+
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, textOffset ,offsetVel,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, textOffset, offsetVel,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -1233,6 +1234,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
 
     // DEPRECATED
+
     /**
      * Spawns a trail piece, which links up with other pieces with the same ID
      * to form a smooth trail. This function is similar to the Advanced function, but
@@ -1315,8 +1317,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
         int blendModeDEST = additive ? GL_ONE : GL_ONE_MINUS_SRC_ALPHA;
 
         AddTrailMemberAnimated(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize, startColor,
-                               endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, offsetVelocity,
-                               advancedOptions, layerToRenderOn, frameOffsetMult);
+                endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, offsetVelocity,
+                advancedOptions, layerToRenderOn, frameOffsetMult);
     }
 
 
@@ -1449,13 +1451,13 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, 0, offsetVelocity,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, correctedPosition, textureLoopLength, 0, offsetVelocity,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
     }
-    
+
     /**
      * Spawns a trail piece, which links up with other pieces with the same ID
      * to form a smooth trail. This function is similar to the Advanced function, but
@@ -1536,8 +1538,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
             float textureLoopLength, float textureScrollSpeed,
             Vector2f offsetVelocity, @Nullable Map<String, Object> advancedOptions) {
         AddTrailMemberAnimated(linkedEntity, ID, sprite, position, startSpeed, endSpeed, angle, startAngularVelocity, endAngularVelocity, startSize, endSize, startColor,
-                               endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, offsetVelocity,
-                               advancedOptions, CombatEngineLayers.BELOW_INDICATORS_LAYER, 1f);
+                endColor, opacity, inDuration, mainDuration, outDuration, blendModeSRC, blendModeDEST, textureLoopLength, textureScrollSpeed, offsetVelocity,
+                advancedOptions, CombatEngineLayers.BELOW_INDICATORS_LAYER, 1f);
     }
 
     /**
@@ -1657,8 +1659,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Creates the custom object we want
         MagicTrailObject objectToAdd = new MagicTrailObject(inDuration, mainDuration, outDuration, startSize, endSize, startAngularVelocity, endAngularVelocity,
-                                                            opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, position, textureLoopLength, 0, offsetVelocity,
-                                                            sizePulseWidth, sizePulseCount);
+                opacity, blendModeSRC, blendModeDEST, startSpeed, endSpeed, startColor, endColor, angle, position, textureLoopLength, 0, offsetVelocity,
+                sizePulseWidth, sizePulseCount);
 
         //And finally add it to the correct location in our maps
         tracker.addNewTrailObject(objectToAdd);
@@ -1670,7 +1672,8 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
     /**
      * A small function to get a unique ID for the trail member: *must* be saved in the function that generates the
      * trail, since if it changes it counts as a new trail altogether
-     * @return 
+     *
+     * @return
      */
     public static float getUniqueID() {
         //Gets a value 0.1f higher than the previous maximum ID, and marks that as our previous maximum ID
@@ -1745,7 +1748,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 
         //Stores our plugins in easy-to-reach locations, so we can access it in different places
         engine.getCustomData().put(PLUGIN_KEY, this);
-        engine.getCustomData().put("MagicTrailRenderer", renderer);
+        engine.getCustomData().put("MagicTrailRenderern_pre1.0", renderer);
 
         usedIDs = 1f;
         usedCutterIDs = -1f;
@@ -1836,7 +1839,7 @@ public class MagicTrailPlugin extends BaseEveryFrameCombatPlugin {
 //Handles all rendering of the trails, since this now has to be done on a separate plugin to use render layers
 class MagicTrailRenderer extends BaseCombatLayeredRenderingPlugin {
     //Our parent plugin, which handles all trail activity *except* rendering
-    private MagicTrailPlugin parentPlugin;
+    private final MagicTrailPlugin parentPlugin;
 
     //No render distance limit!
     @Override

@@ -12,17 +12,18 @@ import com.fs.starfarer.api.combat.EveryFrameWeaponEffectPlugin;
 import com.fs.starfarer.api.combat.WeaponAPI;
 import data.scripts.util.MagicInterference;
 
+@Deprecated
 public class MagicBasicInterferenceEffect implements EveryFrameWeaponEffectPlugin {
 
-    private boolean runOnce=false;      
-    
+    private boolean runOnce = false;
+
     @Override
     public void advance(float amount, CombatEngineAPI engine, WeaponAPI weapon) {
-        
-        if(!runOnce){
-            runOnce=true;
+
+        if (!runOnce) {
+            runOnce = true;
             //only affect non built-in
-            if(weapon.getShip().getOriginalOwner()<0 && !weapon.getSlot().isBuiltIn()){
+            if (weapon.getShip().getOriginalOwner() < 0 && !weapon.getSlot().isBuiltIn()) {
                 MagicInterference.ApplyInterference(weapon.getShip().getVariant());
             }
         }

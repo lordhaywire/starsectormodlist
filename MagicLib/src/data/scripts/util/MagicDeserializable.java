@@ -8,6 +8,7 @@ package data.scripts.util;
  * (`readResolve`) that is used by Starsector.
  * Implementing `readResolve` without using `MagicDeserializable` will work exactly the same.
  */
+@Deprecated
 public interface MagicDeserializable {
 
     /**

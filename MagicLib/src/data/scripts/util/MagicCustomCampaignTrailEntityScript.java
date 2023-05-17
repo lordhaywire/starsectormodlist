@@ -3,13 +3,12 @@
 package data.scripts.util;
 
 import com.fs.starfarer.api.campaign.CampaignEngineLayers;
-import com.fs.starfarer.api.campaign.CustomCampaignEntityPlugin;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.combat.ViewportAPI;
 import com.fs.starfarer.api.impl.campaign.BaseCustomEntityPlugin;
-import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import data.scripts.plugins.MagicCampaignTrailPlugin;
 
+@Deprecated
 public class MagicCustomCampaignTrailEntityScript extends BaseCustomEntityPlugin {
 
     //Which plugin does this script belong to?
@@ -25,7 +24,7 @@ public class MagicCustomCampaignTrailEntityScript extends BaseCustomEntityPlugin
     @Override
     public void init(SectorEntityToken entity, Object params) {
         if (params instanceof MagicCampaignTrailPlugin) {
-            associatedPlugin = (MagicCampaignTrailPlugin)params;
+            associatedPlugin = (MagicCampaignTrailPlugin) params;
         }
     }
 

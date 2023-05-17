@@ -26,403 +26,432 @@ import com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin;
 import com.fs.starfarer.api.impl.campaign.terrain.DebrisFieldTerrainPlugin.DebrisFieldSource;
 import com.fs.starfarer.api.impl.campaign.terrain.HyperspaceTerrainPlugin;
+import com.fs.starfarer.api.loading.WeaponGroupSpec;
+import com.fs.starfarer.api.loading.WeaponGroupType;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.lazywizard.lazylib.MathUtils;
+import org.lazywizard.lazylib.VectorUtils;
+import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.campaign.MagicCaptainBuilder;
+import org.magiclib.campaign.MagicFleetBuilder;
+import org.magiclib.util.MagicStringMatcher;
 
 import java.util.*;
 
-import com.fs.starfarer.api.loading.WeaponGroupSpec;
-import com.fs.starfarer.api.loading.WeaponGroupType;
 import static com.fs.starfarer.api.util.Misc.MAX_OFFICER_LEVEL;
 import static data.scripts.util.MagicTxt.nullStringIfEmpty;
 import static data.scripts.util.MagicVariables.MAGICLIB_ID;
 import static data.scripts.util.MagicVariables.verbose;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.lazywizard.lazylib.VectorUtils;
-import org.lwjgl.util.vector.Vector2f;
 
+@Deprecated
 public class MagicCampaign {
-    
+
     public static Logger log = Global.getLogger(MagicCampaign.class);
-    
-       
+
+
     /////////////////////////
     //                     //
     //   FLEET GEN STUFF   //
     //                     //
     /////////////////////////
-    
-    
+
+    public static MagicFleetBuilder createFleetBuilder() {
+        return new MagicFleetBuilder();
+    }
+
     /**
      * Creates a fleet with a defined flagship and optional escort
-     * 
-     * @param fleetName
-     * @param fleetFaction
-     * @param fleetType
-     * campaign.ids.FleetTypes, default to FleetTypes.PERSON_BOUNTY_FLEET
-     * @param flagshipName
-     * Optional flagship name
-     * @param flagshipVariant
-     * @param captain
-     * PersonAPI, can be NULL for random captain, otherwise use createCaptain() 
-     * @param supportFleet
-     * map <variantId, number> Optional escort ship VARIANTS and their NUMBERS
-     * @param minFP
-     * Minimal fleet size, can be used to adjust to the player's power,         set to 0 to ignore
-     * @param reinforcementFaction
-     * Reinforcement faction,                                                   if the fleet faction is a "neutral" faction without ships
-     * @param qualityOverride
-     * Optional ship quality override, default to 2 (no D-mods) if null or <0
-     * @param spawnLocation
-     * Where the fleet will spawn, default to assignmentTarget if NULL
-     * @param assignment
-     * campaign.FleetAssignment, default to orbit aggressive
-     * @param assignementTarget
-     * where the fleet will go to execute its order, it will not spawn if NULL
-     * @param isImportant
-     * @param transponderOn
-     * @return 
+     *
+     * @param fleetType            campaign.ids.FleetTypes, default to FleetTypes.PERSON_BOUNTY_FLEET
+     * @param flagshipName         Optional flagship name
+     * @param captain              PersonAPI, can be NULL for random captain, otherwise use createCaptain()
+     * @param supportFleet         map <variantId, number> Optional escort ship VARIANTS and their NUMBERS
+     * @param minFP                Minimal fleet size, can be used to adjust to the player's power,         set to 0 to ignore
+     * @param reinforcementFaction Reinforcement faction,                                                   if the fleet faction is a "neutral" faction without ships
+     * @param qualityOverride      Optional ship quality override, default to 2 (no D-mods) if null or <0
+     * @param spawnLocation        Where the fleet will spawn, default to assignmentTarget if NULL
+     * @param assignment           campaign.FleetAssignment, default to orbit aggressive
+     * @param assignmentTarget     where the fleet will go to execute its order, it will not spawn if NULL
+     * @deprecated Please move to MagicCampaign.createFleetBuilder() when possible. The logic is unchanged.
      */
     public static CampaignFleetAPI createFleet(
-            String fleetName,
-            String fleetFaction,
+            @Nullable String fleetName,
+            @Nullable String fleetFaction,
             @Nullable String fleetType,
             @Nullable String flagshipName,
-            String flagshipVariant,
+            @Nullable String flagshipVariant,
             @Nullable PersonAPI captain,
             @Nullable Map<String, Integer> supportFleet,
             int minFP,
-            String reinforcementFaction,
+            @Nullable String reinforcementFaction,
             @Nullable Float qualityOverride,
             @Nullable SectorEntityToken spawnLocation,
             @Nullable FleetAssignment assignment,
-            @Nullable SectorEntityToken assignementTarget,
+            @Nullable SectorEntityToken assignmentTarget,
             boolean isImportant,
             boolean transponderOn
     ) {
-        CampaignFleetAPI result = createFleet(fleetName, fleetFaction, fleetType, flagshipName, flagshipVariant, false, false,
+        return createFleet(fleetName, fleetFaction, fleetType, flagshipName, flagshipVariant, false, false,
                 captain, supportFleet, true, minFP, reinforcementFaction, qualityOverride,
-                spawnLocation, assignment, assignementTarget, isImportant, transponderOn, null);
-        return result;
+                spawnLocation, assignment, assignmentTarget, isImportant, transponderOn, null);
     }
-    
+
     /**
      * Creates a fleet with a defined flagship and optional escort
-     * 
-     * @param fleetName
-     * @param fleetFaction
-     * @param fleetType
-     * campaign.ids.FleetTypes, default to FleetTypes.PERSON_BOUNTY_FLEET
-     * @param flagshipName
-     * Optional flagship name
-     * @param flagshipVariant
-     * @param captain
-     * PersonAPI, can be NULL for random captain, otherwise use createCaptain() 
-     * @param supportFleet
-     * map <variantId, number> Optional escort ship VARIANTS and their NUMBERS
-     * @param minFP
-     * Minimal fleet size, can be used to adjust to the player's power,         set to 0 to ignore
-     * @param reinforcementFaction
-     * Reinforcement faction,                                                   if the fleet faction is a "neutral" faction without ships
-     * @param qualityOverride
-     * Optional ship quality override, default to 2 (no D-mods) if null or <0
-     * @param spawnLocation
-     * Where the fleet will spawn, default to assignmentTarget if NULL
-     * @param assignment
-     * campaign.FleetAssignment, default to orbit aggressive
-     * @param assignementTarget
-     * where the fleet will go to execute its order, it will not spawn if NULL
-     * @param isImportant
-     * @param transponderOn
-     * @param variantsPath
-     * If not null, the script will try to find missing variant files there. 
-     * Used to generate fleets using cross-mod variants that won't be loaded otherwise to avoid crashes.
-     * The name of the variant files must match the ID of the variant.
-     * @return 
+     *
+     * @param fleetType            campaign.ids.FleetTypes, default to FleetTypes.PERSON_BOUNTY_FLEET
+     * @param flagshipName         Optional flagship name
+     * @param captain              PersonAPI, can be NULL for random captain, otherwise use createCaptain()
+     * @param supportFleet         map <variantId, number> Optional escort ship VARIANTS and their NUMBERS
+     * @param minFP                Minimal fleet size, can be used to adjust to the player's power,         set to 0 to ignore
+     * @param reinforcementFaction Reinforcement faction,                                                   if the fleet faction is a "neutral" faction without ships
+     * @param qualityOverride      Optional ship quality override, default to 2 (no D-mods) if null or <0
+     * @param spawnLocation        Where the fleet will spawn, default to assignmentTarget if NULL
+     * @param assignment           campaign.FleetAssignment, default to orbit aggressive
+     * @param assignmentTarget     where the fleet will go to execute its order, it will not spawn if NULL
+     * @param variantsPath         If not null, the script will try to find missing variant files there.
+     *                             Used to generate fleets using cross-mod variants that won't be loaded otherwise to avoid crashes.
+     *                             The name of the variant files must match the ID of the variant.
+     * @deprecated Please move to MagicCampaign.createFleetBuilder() when possible. The logic is unchanged.
      */
     public static CampaignFleetAPI createFleet(
-            String fleetName,
-            String fleetFaction,
+            @Nullable String fleetName,
+            @Nullable String fleetFaction,
             @Nullable String fleetType,
             @Nullable String flagshipName,
-            String flagshipVariant,
+            @Nullable String flagshipVariant,
             boolean flagshipRecovery,
             boolean flagshipAutofit,
             @Nullable PersonAPI captain,
             @Nullable Map<String, Integer> supportFleet,
             boolean supportAutofit,
             int minFP,
-            String reinforcementFaction,
+            @Nullable String reinforcementFaction,
             @Nullable Float qualityOverride,
             @Nullable SectorEntityToken spawnLocation,
             @Nullable FleetAssignment assignment,
-            @Nullable SectorEntityToken assignementTarget,
+            @Nullable SectorEntityToken assignmentTarget,
             boolean isImportant,
             boolean transponderOn,
             @Nullable String variantsPath
-    ){
-        //cleanup previous generation
+    ) {
+        // Clean up previous generation
         MagicVariables.presetShipIdsOfLastCreatedFleet.clear();
 
-        if(verbose){
-            log.error(" ");
-            log.error("SPAWNING " + fleetName);
-            log.error(" ");
+        if (fleetName == null) {
+            FactionAPI faction = null;
+
+            if (fleetFaction != null) {
+                faction = MagicStringMatcher.findBestFactionMatch(fleetFaction);
+            } else if (reinforcementFaction != null) {
+                faction = MagicStringMatcher.findBestFactionMatch(reinforcementFaction);
+            }
+
+            if (faction != null) {
+                fleetName = faction.getDisplayName() + " Fleet";
+            } else {
+                fleetName = "Unknown Fleet";
+            }
         }
-        
+
+        if (verbose) {
+            log.info(" ");
+            log.info("SPAWNING " + fleetName);
+            log.info(" ");
+        }
+
         //Setup defaults
         String type = FleetTypes.PERSON_BOUNTY_FLEET;
-        if(fleetType!=null && !fleetType.equals("")){
-            type=fleetType;
-        } else if(verbose){
-            log.error("No fleet type defined, defaulting to bounty fleet.");
+        if (fleetType != null && !fleetType.equals("")) {
+            type = fleetType;
+        } else if (verbose) {
+            log.info("No fleet type defined, defaulting to bounty fleet.");
         }
-        
+
         String extraShipsFaction = fleetFaction;
-        if(reinforcementFaction!=null){
-            extraShipsFaction=reinforcementFaction;
-        } else if(verbose){
-            log.error("No reinforcement faction defined, defaulting to fleet faction.");
+
+        if (reinforcementFaction != null) {
+            extraShipsFaction = reinforcementFaction;
+        } else if (verbose) {
+            log.info("No reinforcement faction defined, defaulting to fleet faction.");
         }
-        
-        SectorEntityToken location = assignementTarget;
-        if(spawnLocation!=null){
-            location=spawnLocation;
-        } else if(verbose){
-            log.error("No spawn location defined, defaulting to assignment target.");
+
+        SectorEntityToken location = assignmentTarget;
+        if (spawnLocation != null) {
+            location = spawnLocation;
+        } else if (verbose) {
+            log.info("No spawn location defined, defaulting to assignment target.");
         }
-        
+
         FleetAssignment order = FleetAssignment.ORBIT_AGGRESSIVE;
-        if(assignment!=null){
-            order=assignment;
-        } else if(verbose){
-            log.error("No assignment defined, defaulting to aggressive orbit.");
+
+        if (assignment != null) {
+            order = assignment;
+        } else if (verbose) {
+            log.info("No assignment defined, defaulting to aggressive orbit.");
         }
-        
-        Float quality = 1f;
-        if(qualityOverride!=null && qualityOverride>=-1){
-            quality=qualityOverride;
-        } else if(verbose){
-            log.error("No quality override defined, defaulting to highest quality.");
+
+        float quality = 1f;
+
+        if (qualityOverride != null && qualityOverride >= -1) {
+            quality = qualityOverride;
+        } else if (verbose) {
+            log.info("No quality override defined, defaulting to highest quality.");
         }
-        
-        //EMPTY FLEET
-        CampaignFleetAPI bountyFleet = FleetFactoryV3.createEmptyFleet(extraShipsFaction, type, null);
-        
-        //ADDING FLAGSHIP
+
+        // EMPTY FLEET
+        CampaignFleetAPI newFleet = FleetFactoryV3.createEmptyFleet(extraShipsFaction, type, null);
+
+        // ADDING FLAGSHIP
         FleetMemberAPI flagship = generateShip(flagshipVariant, variantsPath, flagshipAutofit, verbose);
-        if (flagship==null){
-            log.error("Aborting "+fleetName+" generation");
-            return null;
+
+        if (flagship == null) {
+            log.warn("Warning during " + fleetName + " generation." +
+                    "\n\tReason: flagshipVariant " + flagshipVariant + " and variantsPath " + variantsPath + " was specified, but flagship could not be created." +
+                    "\n\tWill try to fall back to the first ship in the fleet.");
+        } else {
+            newFleet.getFleetData().addFleetMember(flagship);
         }
-        bountyFleet.getFleetData().addFleetMember(flagship);
-        //renaming the ship if needed
-        if(flagshipName!=null && !flagshipName.isEmpty()){
-            flagship.setShipName(flagshipName);
-        }        
-        flagship.setFlagship(true);
-        if(flagshipRecovery){
-            flagship.getVariant().addTag(Tags.VARIANT_ALWAYS_RECOVERABLE);
-        }
-        MagicVariables.presetShipIdsOfLastCreatedFleet.add(flagship.getId());
-        
-        //ADDING PRESET SHIPS IF REQUIRED
-        if(supportFleet!=null && !supportFleet.isEmpty()){
+
+        // ADDING PRESET SHIPS IF REQUIRED
+        if (supportFleet != null && !supportFleet.isEmpty()) {
             List<FleetMemberAPI> support = generatePresetShips(supportFleet, variantsPath, supportAutofit, verbose);
-            for (FleetMemberAPI m : support){
-                bountyFleet.getFleetData().addFleetMember(m);
-                MagicVariables.presetShipIdsOfLastCreatedFleet.add(m.getId());                
+            for (FleetMemberAPI m : support) {
+                newFleet.getFleetData().addFleetMember(m);
+                MagicVariables.presetShipIdsOfLastCreatedFleet.add(m.getId());
             }
         }
-        
-        int coreFP = bountyFleet.getFleetPoints();
-        
-        //ADDING PROCGEN SHIPS IF REQUIRED
-        if(minFP>0){
-            if(verbose){
-                if(minFP<coreFP){
-                    log.info("Preset FP: "+coreFP+", requested FP: "+minFP+". No reinforcements required.");
+
+        int coreFP = newFleet.getFleetPoints();
+
+        // ADDING PROCGEN SHIPS IF REQUIRED
+        if (minFP > 0) {
+            if (verbose) {
+                if (minFP < coreFP) {
+                    log.info("Preset FP: " + coreFP + ", requested FP: " + minFP + ". No reinforcements required.");
                 } else {
-                    log.info("Preset FP: "+coreFP+", requested FP: "+minFP+". Adding "+(minFP-coreFP)+" FP worth of "+Global.getSector().getFaction(extraShipsFaction).getDisplayName()+" reinforcements.");
+                    log.info("Preset FP: " + coreFP + ", requested FP: " + minFP + ". Adding " + (minFP - coreFP) + " FP worth of " + Global.getSector().getFaction(extraShipsFaction).getDisplayName() + " reinforcements.");
                 }
             }
-            
-            if(minFP>coreFP){
-                CampaignFleetAPI reinforcements = generateRandomFleet(extraShipsFaction, quality, type, (minFP-coreFP), 0.2f );                
-                if(reinforcements!=null){
+
+            if (minFP > coreFP) {
+                CampaignFleetAPI reinforcements = generateRandomFleet(extraShipsFaction, quality, type, (minFP - coreFP), 0.2f);
+                if (reinforcements != null) {
                     //KEEP THOSE DMODS!
-                    if(reinforcements.getInflater()!=null){
-                        bountyFleet.setInflater(reinforcements.getInflater());
+                    if (reinforcements.getInflater() != null) {
+                        newFleet.setInflater(reinforcements.getInflater());
                     }
-                    if(verbose){
-                        log.info("Fleet quality set to "+bountyFleet.getInflater().getQuality());
+                    if (verbose) {
+                        log.info("Fleet quality set to " + newFleet.getInflater().getQuality());
                     }
-                    
+
                     //check for empty reinforcement fleet (the empty fleet is kept just for the quality stuff)
-                    if(!reinforcements.isEmpty()){
+                    if (!reinforcements.isEmpty()) {
                         List<FleetMemberAPI> membersInPriorityOrder = reinforcements.getFleetData().getMembersInPriorityOrder();
-                        if (membersInPriorityOrder!=null && !membersInPriorityOrder.isEmpty()){
+                        if (membersInPriorityOrder != null && !membersInPriorityOrder.isEmpty()) {
                             for (FleetMemberAPI m : membersInPriorityOrder) {
                                 m.setCaptain(null);
-                                bountyFleet.getFleetData().addFleetMember(m);
-                                if(verbose){
-                                    log.info("adding "+m.getHullId());
+                                newFleet.getFleetData().addFleetMember(m);
+                                if (verbose) {
+                                    log.info("adding " + m.getHullId());
                                 }
                             }
                         } else {
-                            log.error("FAILED reinforcement generation");
+                            log.warn("FAILED reinforcement generation");
                         }
                     }
                 }
             }
         }
-        
-        //ensuring the flagship is properly set
-        bountyFleet.getFleetData().setFlagship(flagship);
-        
-        //ADDING OFFICERS
+
+        // FINALIZE FLAGSHIP
+        // Choose a flagship if one wasn't specified
+        if (flagship == null) {
+            newFleet.getFleetData().sort();
+            // If there is no flagship, this will return the first ship in the sorted fleet.
+            flagship = newFleet.getFlagship();
+        }
+
+        if (flagship == null) {
+            log.warn("Aborting " + fleetName + " generation. Reason: no flagshipVariant was specified and none could be automatically chosen.");
+            return null;
+        }
+
+        // Rename the flagship if needed
+        if (flagshipName != null && !flagshipName.isEmpty()) {
+            flagship.setShipName(flagshipName);
+        }
+
+        flagship.setFlagship(true);
+
+        if (flagshipRecovery) {
+            flagship.getVariant().addTag(Tags.VARIANT_ALWAYS_RECOVERABLE);
+        }
+
+        MagicVariables.presetShipIdsOfLastCreatedFleet.add(flagship.getId());
+
+        // Ensure the flagship is properly set
+        newFleet.getFleetData().setFlagship(flagship);
+
+        // ADDING OFFICERS
         FleetParamsV3 fleetParams = new FleetParamsV3(
                 null,
                 new Vector2f(),
                 fleetFaction,
                 quality,
                 type,
-                bountyFleet.getFleetPoints(),
+                newFleet.getFleetPoints(),
                 0f, 0f, 0f, 0f, 0f, 0f
         );
-        FleetFactoryV3.addCommanderAndOfficersV2(bountyFleet, fleetParams, new Random());
-        
-        //ensuring the flagship is properly set AGAIN!
-        bountyFleet.getFleetData().setFlagship(flagship);
-        
-        //I swear those sneaky officers are messing up the flagship tags
-        if(verbose){
-            log.warn("Fleet flagship is "+bountyFleet.getFlagship().getHullId());
-            for(FleetMemberAPI m : bountyFleet.getMembersWithFightersCopy()){
-                if(m.isFlagship()){
-                    log.warn(m.getHullId()+" has the Flagship tag");
+        FleetFactoryV3.addCommanderAndOfficersV2(newFleet, fleetParams, new Random());
+
+        // Ensure the flagship is properly set AGAIN!
+        newFleet.getFleetData().setFlagship(flagship);
+
+        // I swear those sneaky officers are messing up the flagship tags
+        if (verbose) {
+            log.warn("Fleet flagship is " + newFleet.getFlagship().getHullId());
+            for (FleetMemberAPI m : newFleet.getMembersWithFightersCopy()) {
+                if (m.isFlagship()) {
+                    log.warn(m.getHullId() + " has the Flagship tag");
                 }
             }
-        } 
-        for (FleetMemberAPI m : bountyFleet.getMembersWithFightersCopy()) {
-            if (m==flagship){
-                if(!m.isFlagship()){
+        }
+        for (FleetMemberAPI m : newFleet.getMembersWithFightersCopy()) {
+            if (m == flagship) {
+                if (!m.isFlagship()) {
                     m.setFlagship(true);
-                    if(verbose){
-                        log.warn("Adding flagship tag to "+m.getHullId());
+                    if (verbose) {
+                        log.warn("Adding flagship tag to " + m.getHullId());
                     }
                 }
-            } else if(m.isFlagship()){
+            } else if (m.isFlagship()) {
                 m.setFlagship(false);
-                if(verbose){
-                    log.warn("Removing flagship tag from "+m.getHullId());
+                if (verbose) {
+                    log.warn("Removing flagship tag from " + m.getHullId());
                 }
             }
-        }    
-        
-        //add the defined captain to the flagship if needed
-        if(captain!=null){
-            bountyFleet.getFlagship().setCaptain(captain);
-            bountyFleet.setCommander(flagship.getCaptain());
-            if(verbose){
-                log.warn("Assigning "+captain.getNameString()+" to the Flagship");
+        }
+
+        // add the defined captain to the flagship if needed
+        if (captain != null) {
+            newFleet.getFlagship().setCaptain(captain);
+            newFleet.setCommander(flagship.getCaptain());
+            if (verbose) {
+                log.warn("Assigning " + captain.getNameString() + " to the Flagship");
             }
         } else {
-            bountyFleet.getFlagship().setCaptain(bountyFleet.getCommander());
-            if(verbose){
+            newFleet.getFlagship().setCaptain(newFleet.getCommander());
+            if (verbose) {
                 log.warn("Moving random commander to the Flagship");
             }
         }
-        
-        //apply skills to the fleet
-        FleetFactoryV3.addCommanderSkills(bountyFleet.getCommander(), bountyFleet, fleetParams, new Random());
-        if(verbose){
-            int admiral=0;
-            int elite=0;
-            for (SkillLevelAPI skill : bountyFleet.getCommander().getStats().getSkillsCopy()) {
+
+        // apply skills to the fleet
+        FleetFactoryV3.addCommanderSkills(newFleet.getCommander(), newFleet, fleetParams, new Random());
+        if (verbose) {
+            int admiral = 0;
+            int elite = 0;
+
+            for (SkillLevelAPI skill : newFleet.getCommander().getStats().getSkillsCopy()) {
                 if (skill.getSkill().isAdmiralSkill()) {
                     admiral++;
-                    if(skill.getLevel()>1){
+                    if (skill.getLevel() > 1) {
                         elite++;
                     }
                 }
             }
-            log.info("Applied "+admiral+" admiral skills ( "+elite+" elite ones) to the fleet.");
+
+            log.info("Applied " + admiral + " admiral skills ( " + elite + " elite ones) to the fleet.");
         }
-                
+
         //cleanup name and faction
-        bountyFleet.setNoFactionInName(true);
-        bountyFleet.setFaction(fleetFaction, true);
-        if(fleetName!=null && !fleetName.isEmpty()) bountyFleet.setName(fleetName);
+        newFleet.setNoFactionInName(true);
+        newFleet.setFaction(fleetFaction, true);
+        if (fleetName != null && !fleetName.isEmpty()) newFleet.setName(fleetName);
 
         //set standard 70% CR
-        List<FleetMemberAPI> members = bountyFleet.getFleetData().getMembersListCopy();
+        List<FleetMemberAPI> members = newFleet.getFleetData().getMembersListCopy();
         for (FleetMemberAPI member : members) {
             member.getRepairTracker().setCR(0.7f);
         }
-        
+
         //FINISHING
-        bountyFleet.getFleetData().sort();
-        bountyFleet.getFleetData().setSyncNeeded();
-        bountyFleet.getFleetData().syncIfNeeded();
-//        bountyFleet.getFleetData().syncMemberLists();
-//        bountyFleet.setInflated(true);
-//        bountyFleet.inflateIfNeeded();
-        
-        //SPAWN if needed
+        newFleet.getFleetData().sort();
+        newFleet.getFleetData().setSyncNeeded();
+        newFleet.getFleetData().syncIfNeeded();
+//        newFleet.getFleetData().syncMemberLists();
+//        newFleet.setInflated(true);
+//        newFleet.inflateIfNeeded();
+
+        // SPAWN if needed
         if (location != null) {
-            spawnFleet(
-                bountyFleet,
-                location,
-                order,
-                assignementTarget,
-                isImportant,
-                transponderOn,
-                verbose
-            );
+            if (assignmentTarget == null) {
+                //prevent a crash when the fleet is spawned at a location but without a target
+                spawnFleet(
+                        newFleet,
+                        location,
+                        order,
+                        location,
+                        isImportant,
+                        transponderOn,
+                        verbose
+                );
+            } else {
+                spawnFleet(
+                        newFleet,
+                        location,
+                        order,
+                        assignmentTarget,
+                        isImportant,
+                        transponderOn,
+                        verbose
+                );
+            }
         }
-        
-        if(verbose){
-            log.warn(fleetName+" creation completed");
+
+        if (verbose) {
+            log.warn(fleetName + " creation completed.");
         }
-        
-        return bountyFleet;
+
+        return newFleet;
     }
-    
+
+    /**
+     * Creates a captain PersonAPI.
+     *
+     * @since 0.46.1
+     */
+    public static MagicCaptainBuilder createCaptainBuilder(@NotNull String factionId) {
+        return new MagicCaptainBuilder(factionId);
+    }
+
     /**
      * Creates a captain PersonAPI
-     * 
+     *
      * @param isAI
-     * @param AICoreType
-     * AI core from campaign.ids.Commodities
+     * @param AICoreType          AI core from campaign.ids.Commodities
      * @param firstName
      * @param lastName
-     * @param portraitId
-     * id of the sprite in settings.json/graphics/characters
-     * @param gender, any is gender-neutral, null is random male/female to avoid oddities and issues with dialogs and random portraits
+     * @param portraitId          id of the sprite in settings.json/graphics/characters
+     * @param gender,             any is gender-neutral, null is random male/female to avoid oddities and issues with dialogs and random portraits
      * @param factionId
-     * @param rankId
-     * rank from campaign.ids.Ranks
-     * @param postId
-     * post from campaign.ids.Ranks
-     * @param personality
-     * personality from campaign.ids.Personalities
-     * @param level
-     * Captain level, pick random skills according to the faction's doctrine
-     * @param eliteSkillsOverride
-     * Overrides the regular number of elite skills, set to -1 to ignore.
-     * @param skillPreference
-     * GENERIC, PHASE, CARRIER, ANY from OfficerManagerEvent.SkillPickPreference
-     * @param skillLevels
-     * Map <skill, level> Optional skills from campaign.ids.Skills and their appropriate levels, OVERRIDES ALL RANDOM SKILLS PREVIOUSLY PICKED
-     * @return 
-     */    
+     * @param rankId              rank from campaign.ids.Ranks
+     * @param postId              post from campaign.ids.Ranks
+     * @param personality         personality from campaign.ids.Personalities
+     * @param level               Captain level, pick random skills according to the faction's doctrine
+     * @param eliteSkillsOverride Overrides the regular number of elite skills, set to -1 to ignore.
+     * @param skillPreference     GENERIC, PHASE, CARRIER, ANY from OfficerManagerEvent.SkillPickPreference
+     * @param skillLevels         Map <skill, level> Optional skills from campaign.ids.Skills and their appropriate levels, OVERRIDES ALL RANDOM SKILLS PREVIOUSLY PICKED
+     * @deprecated Please switch to {@code MagicCampaign.createCaptainBuilder("factionId")}
+     */
     public static PersonAPI createCaptain(
             boolean isAI,
             @Nullable String AICoreType,
@@ -434,130 +463,140 @@ public class MagicCampaign {
             @Nullable String rankId,
             @Nullable String postId,
             @Nullable String personality,
-            Integer level,
-            Integer eliteSkillsOverride,
+            @Nullable Integer level,
+            @Nullable Integer eliteSkillsOverride,
             @Nullable OfficerManagerEvent.SkillPickPreference skillPreference,
             @Nullable Map<String, Integer> skillLevels
-    ){
-        
-        if(skillLevels!=null && !skillLevels.isEmpty() && level<1){
+    ) {
+
+        if (eliteSkillsOverride == null)
+            eliteSkillsOverride = 0;
+
+        if (skillLevels != null && !skillLevels.isEmpty() && (level == null || level < 1)) {
             level = skillLevels.size();
-            eliteSkillsOverride=0;
-            for(String s : skillLevels.keySet()){
-                if(skillLevels.get(s)==2)eliteSkillsOverride++;
+            eliteSkillsOverride = 0;
+            for (String s : skillLevels.keySet()) {
+                if (skillLevels.get(s) == 2) eliteSkillsOverride++;
             }
         }
-        
+
+        if (level == null)
+            level = 1;
+
+        if (skillPreference == null) {
+            skillPreference = OfficerManagerEvent.SkillPickPreference.ANY;
+        }
+
         PersonAPI person = OfficerManagerEvent.createOfficer(
                 Global.getSector().getFaction(factionId),
                 level,
                 skillPreference,
-                false, 
+                false,
                 null,
                 true,
-                eliteSkillsOverride!=0,
+                eliteSkillsOverride != 0,
                 eliteSkillsOverride,
                 Misc.random
         );
-        
+
         //try to create a default character of the proper gender if needed
-        if(gender!=null && gender!=FullName.Gender.ANY && person.getGender()!=gender){
-            for(int i=0;i<10;i++){
+        if (gender != null && gender != FullName.Gender.ANY && person.getGender() != gender) {
+            for (int i = 0; i < 10; i++) {
                 person = OfficerManagerEvent.createOfficer(
                         Global.getSector().getFaction(factionId),
                         level,
                         skillPreference,
-                        false, 
+                        false,
                         null,
                         true,
-                        eliteSkillsOverride!=0,
+                        eliteSkillsOverride != 0,
                         eliteSkillsOverride,
                         Misc.random
                 );
-                if(person.getGender()==gender)break;
+                if (person.getGender() == gender) break;
             }
         }
-        
-        if(gender!=null && gender==FullName.Gender.ANY){
+
+        if (gender != null && gender == FullName.Gender.ANY) {
             person.setGender(FullName.Gender.ANY);
         }
 
-        if(isAI){
-            person.setAICoreId(AICoreType);  
+        if (isAI) {
+            person.setAICoreId(AICoreType);
             person.setGender(FullName.Gender.ANY);
         }
-        
-        if(firstName!=null){
+
+        if (firstName != null) {
             person.getName().setFirst(firstName);
         }
-        
-        if(lastName!=null){
+
+        if (lastName != null) {
             person.getName().setLast(lastName);
         }
-        
-        if(verbose){
-            log.error(" ");
-            log.error(" Creating captain " + person.getNameString());
-            log.error(" ");
+
+        if (verbose) {
+            log.info(" ");
+            log.info(" Creating captain " + person.getNameString());
+            log.info(" ");
         }
-        
-        if (nullStringIfEmpty(portraitId) != null){
-            if(portraitId.startsWith("graphics")){
-                if(Global.getSettings().getSprite(portraitId)!=null){
+
+        if (nullStringIfEmpty(portraitId) != null) {
+            if (portraitId.startsWith("graphics")) {
+                if (Global.getSettings().getSprite(portraitId) != null) {
                     person.setPortraitSprite(portraitId);
                 } else {
-                    log.error("Missing portrait at "+portraitId);
+                    log.warn("Missing portrait at " + portraitId);
                 }
             } else {
-                if(Global.getSettings().getSprite("characters", portraitId)!=null){
+                if (Global.getSettings().getSprite("characters", portraitId) != null) {
                     person.setPortraitSprite(Global.getSettings().getSpriteName("characters", portraitId));
                 } else {
-                    log.error("Missing portrait id "+portraitId);
+                    log.warn("Missing portrait id " + portraitId);
                 }
             }
         }
-        
-        if(nullStringIfEmpty(personality)!=null){
+
+        if (nullStringIfEmpty(personality) != null) {
             person.setPersonality(personality);
         }
-        if(verbose){
-            log.error("     They are " + person.getPersonalityAPI().getDisplayName());
+        if (verbose) {
+            log.info("     They are " + person.getPersonalityAPI().getDisplayName());
         }
-        
-        if(nullStringIfEmpty(rankId)!=null){
+
+        if (nullStringIfEmpty(rankId) != null) {
             person.setRankId(rankId);
         } else {
             person.setRankId(Ranks.SPACE_COMMANDER);
         }
-        
-        if(nullStringIfEmpty(postId)!=null){
+
+        if (nullStringIfEmpty(postId) != null) {
             person.setPostId(postId);
         } else {
             person.setPostId(Ranks.POST_FLEET_COMMANDER);
         }
-        
+
         //reset and reatribute skills if needed
-        if(skillLevels!=null && !skillLevels.isEmpty()){
-            if(verbose){
-                
+        if (skillLevels != null && !skillLevels.isEmpty()) {
+            if (verbose) {
+
                 //reset
-                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()){
-                    if(!skillLevels.keySet().contains(skill.getSkill().getId())){
+                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()) {
+                    if (!skillLevels.containsKey(skill.getSkill().getId())) {
                         person.getStats().setSkillLevel(skill.getSkill().getId(), 0);
                     }
                 }
                 //reassign
-                for (String skill : skillLevels.keySet()){
-                    person.getStats().setSkillLevel(skill,skillLevels.get(skill));
+                for (String skill : skillLevels.keySet()) {
+                    person.getStats().setSkillLevel(skill, skillLevels.get(skill));
                 }
                 //log
-                
-                log.error("     "+"level effective: "+ person.getStats().getLevel());
-                log.error("     "+"level requested: "+ level);
-                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()){
-                    if(skill.getSkill().isAptitudeEffect())continue;
-                    if(skill.getLevel()>0){
-                        log.info("     "+ skill.getSkill().getName() +" ("+skill.getSkill().getId()+") : "+ skill.getLevel());
+
+                log.info("     " + "level effective: " + person.getStats().getLevel());
+                log.info("     " + "level requested: " + level);
+                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()) {
+                    if (skill.getSkill().isAptitudeEffect()) continue;
+                    if (skill.getLevel() > 0) {
+                        log.info("     " + skill.getSkill().getName() + " (" + skill.getSkill().getId() + ") : " + skill.getLevel());
                     }
                 }
                 
@@ -565,21 +604,21 @@ public class MagicCampaign {
                 for (SkillLevelAPI skill : person.getStats().getSkillsCopy()){
                     if(skillLevels.keySet().contains(skill.getSkill().getId())){
                         person.getStats().setSkillLevel(skill.getSkill().getId(),skillLevels.get(skill.getSkill().getId()));
-                        log.error("     "+ skill.getSkill().getName() +" : "+ skillLevels.get(skill.getSkill().getId()));
+                        log.info("     "+ skill.getSkill().getName() +" : "+ skillLevels.get(skill.getSkill().getId()));
                     } else {
                         person.getStats().setSkillLevel(skill.getSkill().getId(),0);                        
-                        log.error("     "+ skill.getSkill().getName() +" : 0");
+                        log.info("     "+ skill.getSkill().getName() +" : 0");
                     }
                 }
                 */
             } else {
                 //reset
-                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()){
+                for (SkillLevelAPI skill : person.getStats().getSkillsCopy()) {
                     person.getStats().setSkillLevel(skill.getSkill().getId(), 0);
-                } 
+                }
                 //reassign
-                for (String skill : skillLevels.keySet()){
-                    person.getStats().setSkillLevel(skill,skillLevels.get(skill));
+                for (String skill : skillLevels.keySet()) {
+                    person.getStats().setSkillLevel(skill, skillLevels.get(skill));
                 }
                 /*
                 for (SkillLevelAPI skill : person.getStats().getSkillsCopy()){
@@ -592,23 +631,24 @@ public class MagicCampaign {
                 */
             }
             person.getStats().refreshCharacterStatsEffects();
-        } else if(verbose){
+        } else if (verbose) {
             // list assigned random skills
-            log.error("     "+"level: "+ person.getStats().getLevel());
-            for(MutableCharacterStatsAPI.SkillLevelAPI skill : person.getStats().getSkillsCopy()){
-                if(skill.getSkill().isAptitudeEffect())continue;
-                if(skill.getLevel()>0){
-                    log.info("     "+ skill.getSkill().getName() +" ("+skill.getSkill().getId()+") : "+ skill.getLevel());
+            log.info("     " + "level: " + person.getStats().getLevel());
+            for (MutableCharacterStatsAPI.SkillLevelAPI skill : person.getStats().getSkillsCopy()) {
+                if (skill.getSkill().isAptitudeEffect()) continue;
+                if (skill.getLevel() > 0) {
+                    log.info("     " + skill.getSkill().getName() + " (" + skill.getSkill().getId() + ") : " + skill.getLevel());
                 }
             }
         }
-        
+
         return person;
     }
-    
+
     /**
      * Creates a ship variant from a regular variant file.
      * Used to create variants that requires different mods to be loaded.
+     *
      * @param path variant file full path.
      * @return ship variant object
      */
@@ -623,25 +663,29 @@ public class MagicCampaign {
             boolean goalVariant = false;
             try {
                 goalVariant = obj.getBoolean("goalVariant");
-            } catch (JSONException ignored) {}
+            } catch (JSONException ignored) {
+            }
             String hullId = obj.getString("hullId");
             JSONArray hullMods = obj.getJSONArray("hullMods");
             JSONArray modules = null;
             try {
                 modules = obj.getJSONArray("modules");
-            } catch (JSONException ignored) {}
+            } catch (JSONException ignored) {
+            }
             JSONArray permaMods = obj.getJSONArray("permaMods");
             JSONArray sMods = null;
             try {
                 sMods = obj.getJSONArray("sMods");
-            } catch (JSONException ignored) {}
+            } catch (JSONException ignored) {
+            }
             //float quality = (float) obj.getDouble("quality"); not used/available in API
             String variantId = obj.getString("variantId");
             JSONArray weaponGroups = obj.getJSONArray("weaponGroups");
             JSONArray wings = null;
             try {
                 wings = obj.getJSONArray("wings");
-            } catch (JSONException ignored) {}
+            } catch (JSONException ignored) {
+            }
 
             variant = Global.getSettings().createEmptyVariant(variantId, Global.getSettings().getHullSpec(hullId));
             variant.setVariantDisplayName(displayName);
@@ -657,19 +701,19 @@ public class MagicCampaign {
                     variant.addMod(sModId);
                 }
             }
-            if(permaMods != null){
+            if (permaMods != null) {
                 for (int j = 0; j < permaMods.length(); j++) {
                     String permaModId = hullMods.getString(j);
                     variant.addPermaMod(permaModId);
-                    if(!variant.getHullMods().contains(permaModId)){
+                    if (!variant.getHullMods().contains(permaModId)) {
                         variant.addMod(permaModId);
                     }
                 }
             }
-            if(hullMods != null){
+            if (hullMods != null) {
                 for (int i = 0; i < hullMods.length(); i++) {
                     String hullModId = hullMods.getString(i);
-                    if(!variant.getHullMods().contains(hullModId)){
+                    if (!variant.getHullMods().contains(hullModId)) {
                         variant.addMod(hullModId);
                     }
                 }
@@ -713,103 +757,104 @@ public class MagicCampaign {
                 }
             }
         } catch (Exception e) {
-            log.info("could not load ship variant at " + path);
+            log.warn("could not load ship variant at " + path, e);
         }
-        
+
         //Maintain the S-mods through salvage
-        if(variant!=null){
+        if (variant != null) {
             variant.addTag(Tags.VARIANT_ALWAYS_RETAIN_SMODS_ON_SALVAGE);
         }
-        
+
         return variant;
     }
-    
-    private static FleetMemberAPI generateShip(String variant, @Nullable String variantsPath, boolean autofit, boolean verbose) {        
+
+    private static FleetMemberAPI generateShip(@Nullable String variant, @Nullable String variantsPath, boolean autofit, boolean verbose) {
         ShipVariantAPI thisVariant = Global.getSettings().getVariant(variant);
         //if the variant doesn't exist but a custom variant path is defined, try loading it
-        if (thisVariant == null && variantsPath!=null) {
-            thisVariant = loadVariant(variantsPath+variant+".variant");
+        if (thisVariant == null && variantsPath != null) {
+            thisVariant = loadVariant(variantsPath + variant + ".variant");
         }
-        if(thisVariant==null){
+        if (thisVariant == null) {
             return null;
-        }        
-        FleetMemberAPI ship = Global.getFactory().createFleetMember(FleetMemberType.SHIP, thisVariant);  
-        
-        if (ship!=null) {
+        }
+        FleetMemberAPI ship = Global.getFactory().createFleetMember(FleetMemberType.SHIP, thisVariant);
+
+        if (ship != null) {
             ship.getVariant().addTag(Tags.VARIANT_ALWAYS_RETAIN_SMODS_ON_SALVAGE);
             //attempt at keeping the variants intact
-            if(!autofit){
+            if (!autofit) {
                 ship.getVariant().addTag("no_autofit");
             }
-            if(verbose) log.warn("Created "+variant);            
+            if (verbose) log.info("Created " + variant);
             return ship;
         }
-        
-        log.error("Failed to create "+variant);
+
+        log.warn("Failed to create " + variant);
         return null;
     }
 
     private static List<FleetMemberAPI> generatePresetShips(Map<String, Integer> supportFleet, @Nullable String variantsPath, boolean autofit, boolean verbose) {
         List<FleetMemberAPI> fleetMemberList = new ArrayList<>();
         for (String shipVariantId : supportFleet.keySet()) {
-            for(int i=0; i<supportFleet.get(shipVariantId); i++){
+            for (int i = 0; i < supportFleet.get(shipVariantId); i++) {
                 FleetMemberAPI fleetMember = generateShip(shipVariantId, variantsPath, autofit, verbose);
-                if(fleetMember!=null) fleetMemberList.add(fleetMember);
+                if (fleetMember != null) fleetMemberList.add(fleetMember);
             }
         }
         return fleetMemberList;
     }
-    
-    private static CampaignFleetAPI generateRandomFleet(String factionId, float qualityOverride, String fleetType, float fleetPoints, float freightersAndTankersFraction ) {
-        
+
+    private static CampaignFleetAPI generateRandomFleet(String factionId, float qualityOverride, String fleetType, float fleetPoints, float freightersAndTankersFraction) {
+
         FleetParamsV3 params = new FleetParamsV3(
                 null,
                 //fakeMarket(factionId, qualityOverride), //Fake market are actually not needed, one will be created by the FleetFactory
                 new Vector2f(),
                 factionId,
-                qualityOverride, //this is supposed to everride the default fleet quality without market of 0.5
+                qualityOverride, //this is supposed to override the default fleet quality without market of 0.5
                 fleetType,
-                fleetPoints*(1-freightersAndTankersFraction),
-                fleetPoints*(freightersAndTankersFraction/3),
-                fleetPoints*(freightersAndTankersFraction/3), 
-                fleetPoints*(freightersAndTankersFraction/3),
+                fleetPoints * (1 - freightersAndTankersFraction),
+                fleetPoints * (freightersAndTankersFraction / 3),
+                fleetPoints * (freightersAndTankersFraction / 3),
+                fleetPoints * (freightersAndTankersFraction / 3),
                 0f, 0f,
                 0 //DO NOT SET A QUALITY MOD, it is added to the market quality
         );
-        
+
         params.ignoreMarketFleetSizeMult = true;
         params.maxNumShips = 50;
         params.modeOverride = FactionAPI.ShipPickMode.PRIORITY_THEN_ALL;
-        
+
         //add S mods?
-        if(qualityOverride>1){
-            params.averageSMods = Math.round(qualityOverride-1);
+        if (qualityOverride > 1) {
+            params.averageSMods = Math.round(qualityOverride - 1);
         } else {
-            params.averageSMods=0;
+            params.averageSMods = 0;
         }
-        
+
         CampaignFleetAPI tempFleet = FleetFactoryV3.createFleet(params);
-        if (tempFleet==null) {
+        if (tempFleet == null) {
             log.warn("Failed to create procedural Support-Fleet");
             return null;
         }
-        
-        if(tempFleet.isEmpty()){
-            log.warn("Procedural Support-Fleet is empty, requested fleet size is too small");
+
+        if (tempFleet.isEmpty()) {
+            log.warn("Procedural Support-Fleet is empty, requested fleet size is too small (" + fleetPoints + "fp)");
         }
-        
+
         return tempFleet;
     }
-    
+
     /**
      * Spawn a fleet in its intended location with the proper order and target
+     *
      * @param fleet
-     * @nullable @param spawnLocation
-     * @nullable @param assignment
      * @param target
      * @param isImportant
      * @param transponderOn
      * @param verbose
+     * @nullable @param spawnLocation
+     * @nullable @param assignment
      */
     public static void spawnFleet(
             CampaignFleetAPI fleet,
@@ -819,23 +864,23 @@ public class MagicCampaign {
             boolean isImportant,
             boolean transponderOn,
             boolean verbose
-            ){
-        
+    ) {
+
         //defaults
         FleetAssignment order = FleetAssignment.ORBIT_AGGRESSIVE;
-        if(assignment!=null){
-            order=assignment;
-        }        
-        SectorEntityToken location = target;
-        if(spawnLocation!=null){
-            location=spawnLocation;
+        if (assignment != null) {
+            order = assignment;
         }
-        
+        SectorEntityToken location = target;
+        if (spawnLocation != null) {
+            location = spawnLocation;
+        }
+
         //spawn placement and assignement
         LocationAPI systemLocation = location.getContainingLocation();
         systemLocation.addEntity(fleet);
         fleet.setLocation(location.getLocation().x, location.getLocation().y);
-        if(order == FleetAssignment.PATROL_SYSTEM){
+        if (order == FleetAssignment.PATROL_SYSTEM) {
             fleet.addAssignment(order, target.getStarSystem().getStar(), 1000000f);
         } else {
             fleet.addAssignment(order, target, 1000000f);
@@ -844,69 +889,70 @@ public class MagicCampaign {
         fleet.forceSync();
         fleet.getFleetData().setSyncNeeded();
         fleet.getFleetData().syncIfNeeded();
-        
+
         //ancillary stuff
-        fleet.getMemoryWithoutUpdate().set(MemFlags.ENTITY_MISSION_IMPORTANT, isImportant);        
+        fleet.getMemoryWithoutUpdate().set(MemFlags.ENTITY_MISSION_IMPORTANT, isImportant);
         fleet.setTransponderOn(transponderOn);
-        
-        if(verbose){
-            log.warn("Spawned "+fleet.getName()+" around "+location.getId()+" in the "+location.getStarSystem().getId()+" system.");
-            log.warn("Order: "+order.name()+", target: "+target.getId()+" in the "+target.getStarSystem().getId()+" system.");
+
+        if (verbose) {
+            log.info("Spawned " + fleet.getName() + " around " + location.getId() + " in the " + location.getStarSystem().getId() + " system.");
+            log.info("Order: " + order.name() + ", target: " + target.getId() + " in the " + target.getStarSystem().getId() + " system.");
         }
     }
-    
-    
+
+
     /////////////////////////
     //                     //
     //  STAR SYSTEM STUFF  //
     //                     //
     /////////////////////////
-       
-    
+
+
     /**
      * Removes hyperspace clouds around the system, up to the outer-most jump point radius
-     * 
-     * @param system 
-     * StarSystemAPI that needs cleanup
+     *
+     * @param system StarSystemAPI that needs cleanup
      */
-    public static void hyperspaceCleanup(StarSystemAPI system){
+    public static void hyperspaceCleanup(StarSystemAPI system) {
         HyperspaceTerrainPlugin plugin = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
-	NebulaEditor editor = new NebulaEditor(plugin);        
+        NebulaEditor editor = new NebulaEditor(plugin);
         float minRadius = plugin.getTileSize() * 2f;
-        
+
         float radius = system.getMaxRadiusInHyperspace();
         editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius * 0.5f, 0, 360f);
-        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f, 0.25f);	     
+        editor.clearArc(system.getLocation().x, system.getLocation().y, 0, radius + minRadius, 0, 360f, 0.25f);
     }
-    
+
     /**
-     * Place an object on a stable orbit similar to the most approaching existing one that can be found 
+     * Place an object on a stable orbit similar to the most approaching existing one that can be found
+     *
      * @param object
-     * @param spin 
+     * @param spin
      */
-    public static void placeOnStableOrbit(SectorEntityToken object, boolean spin){
+    public static void placeOnStableOrbit(SectorEntityToken object, boolean spin) {
         //prevent crash in hyperspace
-        if(object.isInHyperspace()){
+        if (object.isInHyperspace()) {
             object.setFixedLocation(object.getLocation().x, object.getLocation().y);
             object.setFacing(MathUtils.getRandomNumberInRange(0, 360));
             return;
         }
-        
+
         StarSystemAPI system = object.getStarSystem();
         Vector2f location = object.getLocation();
-        
+
         //find a reference for the orbit
-        SectorEntityToken referenceObject=null;
+        SectorEntityToken referenceObject = null;
         float closestOrbit = 999999999;
         //find nearest orbit to match
-        for(SectorEntityToken e : system.getAllEntities()){
-            
+        for (SectorEntityToken e : system.getAllEntities()) {
+
             //skip self
-            if(e==object)continue;
+            if (e == object) continue;
             //skip stars
-            if(e.isStar())continue;            
+            if (e.isStar()) continue;
             //skip non orpiting objects
-            if(e.getOrbit()==null || e.getOrbitFocus()==null || e.getCircularOrbitRadius()<=0 || e.getCircularOrbitPeriod()<=0)continue;
+            if (e.getOrbit() == null || e.getOrbitFocus() == null || e.getCircularOrbitRadius() <= 0 || e.getCircularOrbitPeriod() <= 0)
+                continue;
 
             //find closest point on orbit for the tested object
             Vector2f closestPointOnOrbit = MathUtils.getPoint(
@@ -916,55 +962,47 @@ public class MagicCampaign {
             );
 
             //closest orbit becomes the reference
-            if(MathUtils.getDistanceSquared(closestPointOnOrbit, location)<closestOrbit){
-                referenceObject=e;
+            if (MathUtils.getDistanceSquared(closestPointOnOrbit, location) < closestOrbit) {
+                referenceObject = e;
                 closestOrbit = MathUtils.getDistanceSquared(closestPointOnOrbit, location);
             }
         }
 
         SectorEntityToken orbitCenter;
-        Float angle,radius,period;
-        
-        if(referenceObject!=null){
-            orbitCenter=referenceObject.getOrbitFocus();
-            angle=VectorUtils.getAngle(referenceObject.getOrbitFocus().getLocation(),location);
-            radius=MathUtils.getDistance(referenceObject.getOrbitFocus().getLocation(),location);
-            period=referenceObject.getCircularOrbitPeriod()*(MathUtils.getDistance(referenceObject.getOrbitFocus().getLocation(),location)/referenceObject.getCircularOrbitRadius());                   
+        Float angle, radius, period;
+
+        if (referenceObject != null) {
+            orbitCenter = referenceObject.getOrbitFocus();
+            angle = VectorUtils.getAngle(referenceObject.getOrbitFocus().getLocation(), location);
+            radius = MathUtils.getDistance(referenceObject.getOrbitFocus().getLocation(), location);
+            period = referenceObject.getCircularOrbitPeriod() * (MathUtils.getDistance(referenceObject.getOrbitFocus().getLocation(), location) / referenceObject.getCircularOrbitRadius());
         } else {
-            orbitCenter=system.getCenter();
-            angle=VectorUtils.getAngle(system.getCenter().getLocation(),location);
-            radius=MathUtils.getDistance(system.getCenter(),location);
-            period=MathUtils.getDistance(system.getCenter(),location)/2;
+            orbitCenter = system.getCenter();
+            angle = VectorUtils.getAngle(system.getCenter().getLocation(), location);
+            radius = MathUtils.getDistance(system.getCenter(), location);
+            period = MathUtils.getDistance(system.getCenter(), location) / 2;
         }
-        if(spin){
-            object.setCircularOrbitWithSpin(orbitCenter,angle,radius,period,-10,10);
-        } else{
-            object.setCircularOrbit(orbitCenter,angle,radius,period);
+        if (spin) {
+            object.setCircularOrbitWithSpin(orbitCenter, angle, radius, period, -10, 10);
+        } else {
+            object.setCircularOrbit(orbitCenter, angle, radius, period);
         }
     }
-        
+
     /**
-     * Creates a derelict ship at the desired emplacement
-     * 
-     * @param variantId
-     * spawned ship variant
-     * @param condition
-     * condition of the derelict,                                               better conditions means less D-mods but also more weapons from the variant
-     * @param discoverable
-     * awards XP when found
-     * @param discoveryXp 
-     * XP awarded when found (<0 to use the default)
-     * @param recoverable
-     * can be salvaged
-     * @param orbitCenter
-     * entity orbited
-     * @param orbitStartAngle
-     * orbit starting angle
-     * @param orbitRadius
-     * orbit radius
-     * @param orbitDays
-     * orbit period
-     * @return 
+     * Creates a derelict ship at the desired emplacement.
+     *
+     * @param variantId       Spawned ship variant
+     * @param condition       Condition of the derelict. Better conditions means fewer D-mods but also more weapons from the variant
+     * @param discoverable    Awards XP when found
+     * @param discoveryXp     XP awarded when found (<0 to use the default)
+     * @param recoverable     Can be salvaged as long as the hull it's possible for the player to salvage this hull
+     *                        (eg Automated ships still require the skill).
+     * @param orbitCenter     Entity orbited
+     * @param orbitStartAngle Orbit starting angle
+     * @param orbitRadius     Orbit radius
+     * @param orbitDays       Orbit period
+     * @return
      */
     public static SectorEntityToken createDerelict(
             String variantId,
@@ -972,16 +1010,17 @@ public class MagicCampaign {
             boolean discoverable,
             Integer discoveryXp,
             boolean recoverable,
-            SectorEntityToken orbitCenter, 
+            SectorEntityToken orbitCenter,
             float orbitStartAngle,
             float orbitRadius,
             float orbitDays
-    ){
-        DerelictShipEntityPlugin.DerelictShipData params = new DerelictShipEntityPlugin.DerelictShipData(new ShipRecoverySpecial.PerShipData(variantId, condition), false);
+    ) {
+        ShipRecoverySpecial.PerShipData shipData = new ShipRecoverySpecial.PerShipData(variantId, condition);
+        DerelictShipEntityPlugin.DerelictShipData params = new DerelictShipEntityPlugin.DerelictShipData(shipData, false);
         SectorEntityToken ship = BaseThemeGenerator.addSalvageEntity(orbitCenter.getStarSystem(), Entities.WRECK, Factions.NEUTRAL, params);
         ship.setDiscoverable(discoverable);
-        if(discoveryXp!=null && discoveryXp>=0){
-            ship.setDiscoveryXP((float)discoveryXp);
+        if (discoveryXp != null && discoveryXp >= 0) {
+            ship.setDiscoveryXP((float) discoveryXp);
         }
 
         ship.setCircularOrbit(orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
@@ -990,46 +1029,30 @@ public class MagicCampaign {
             SalvageSpecialAssigner.ShipRecoverySpecialCreator creator = new SalvageSpecialAssigner.ShipRecoverySpecialCreator(null, 0, 0, false, null, null);
             Misc.setSalvageSpecial(ship, creator.createSpecial(ship, null));
         }
-        
+
         return ship;
     }
-    
+
     /**
-     * Creates a debris field with generic commodity loot to salvage 
-     * 
-     * @param id
-     * field ID
-     * @param radius
-     * field radius in su (clamped to 1000)
-     * @param density
-     * field visual density
-     * @param duration
-     * field duration in days (set to a negative value for a permanent field)
-     * @param glowDuration
-     * time in days with glowing debris
-     * @param salvageXp
-     * XP awarded for salvaging (<0 to use the default)
-     * @param defenderProbability
-     * chance of an enemy fleet guarding the debris field (<0 to ignore)
-     * @param defenderFaction
-     * defender's faction
-     * @param defenderFP
-     * defender fleet's size in Fleet Points
-     * @param detectionMult
-     * detection distance multiplier (<0 to use the default)
-     * @param discoverable
-     * awards XP when found
-     * @param discoveryXp 
-     * XP awarded when found (<0 to use the default)
-     * @param orbitCenter
-     * entity orbited
-     * @param orbitStartAngle
-     * orbit starting angle
-     * @param orbitRadius
-     * orbit radius
-     * @param orbitDays
-     * orbit period
-     * @return 
+     * Creates a debris field with generic commodity loot to salvage
+     *
+     * @param id                  field ID
+     * @param radius              field radius in su (clamped to 1000)
+     * @param density             field visual density
+     * @param duration            field duration in days (set to a negative value for a permanent field)
+     * @param glowDuration        time in days with glowing debris
+     * @param salvageXp           XP awarded for salvaging (<0 to use the default)
+     * @param defenderProbability chance of an enemy fleet guarding the debris field (<0 to ignore)
+     * @param defenderFaction     defender's faction
+     * @param defenderFP          defender fleet's size in Fleet Points
+     * @param detectionMult       detection distance multiplier (<0 to use the default)
+     * @param discoverable        awards XP when found
+     * @param discoveryXp         XP awarded when found (<0 to use the default)
+     * @param orbitCenter         entity orbited
+     * @param orbitStartAngle     orbit starting angle
+     * @param orbitRadius         orbit radius
+     * @param orbitDays           orbit period
+     * @return
      */
     public static SectorEntityToken createDebrisField(
             String id,
@@ -1048,51 +1071,51 @@ public class MagicCampaign {
             float orbitStartAngle,
             float orbitRadius,
             float orbitDays
-    ){
+    ) {
 
         float theDuration;
-        if(duration<=0){
-            theDuration=999999;
+        if (duration <= 0) {
+            theDuration = 999999;
         } else {
             theDuration = duration;
-        }        
+        }
         float theGlowDuration;
-        if(glowDuration<0){
-            theGlowDuration=0;
+        if (glowDuration < 0) {
+            theGlowDuration = 0;
         } else {
             theGlowDuration = glowDuration;
         }
-        
+
         DebrisFieldTerrainPlugin.DebrisFieldParams params = new DebrisFieldTerrainPlugin.DebrisFieldParams(
-				Math.min(radius,1000), // field radius - should not go above 1000 for performance reasons
-				density, // density, visual - affects number of debris pieces
-				theDuration, // duration in days 
-				theGlowDuration); // days the field will keep generating glowing pieces
-        params.source = DebrisFieldSource.MIXED;     
-        params.baseDensity=density;     
-        if(salvageXp!=null && salvageXp>=0){
+                Math.min(radius, 1000), // field radius - should not go above 1000 for performance reasons
+                density, // density, visual - affects number of debris pieces
+                theDuration, // duration in days
+                theGlowDuration); // days the field will keep generating glowing pieces
+        params.source = DebrisFieldSource.MIXED;
+        params.baseDensity = density;
+        if (salvageXp != null && salvageXp >= 0) {
             params.baseSalvageXP = salvageXp; // base XP for scavenging in field
         }
-        if(defenderProbability>0 && defenderFaction!=null && defenderFP!=null && defenderFP>0){
-            params.defFaction=defenderFaction;
-            params.defenderProb=defenderProbability;
-            params.maxDefenderSize=defenderFP;
-        }   
+        if (defenderProbability > 0 && defenderFaction != null && defenderFP != null && defenderFP > 0) {
+            params.defFaction = defenderFaction;
+            params.defenderProb = defenderProbability;
+            params.maxDefenderSize = defenderFP;
+        }
         SectorEntityToken generatedDebris = Misc.addDebrisField(orbitCenter.getStarSystem(), params, StarSystemGenerator.random);
         generatedDebris.setId(id);
-        if(detectionMult>0){
+        if (detectionMult > 0) {
             generatedDebris.setSensorProfile(detectionMult);
         }
         generatedDebris.setDiscoverable(discoverable);
-        if(discoveryXp!=null && discoveryXp>=0){
-            generatedDebris.setDiscoveryXP((float)discoveryXp);
+        if (discoveryXp != null && discoveryXp >= 0) {
+            generatedDebris.setDiscoveryXP((float) discoveryXp);
         }
         generatedDebris.setCircularOrbit(orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
-        
+
         return generatedDebris;
     }
-    
-    public static enum lootType{
+
+    public enum lootType {
         SUPPLIES,
         FUEL,
         CREW,
@@ -1103,33 +1126,23 @@ public class MagicCampaign {
         HULLMOD,
         SPECIAL,
     }
-    
+
     /**
-     * Adds items to a salvageable entity such as a debris field, a recoverable ship or a wreck. 
-     * 
-     * @param cargo
-     * cargo to add salvage to, creates a new cargo if NULL
-     * 
-     * @param carrier
-     * entity with the loot
-     * 
-     * @param type
-     * MagicSystem.lootType, type of loot added,  
-     * 
-     * @param lootID
-     * specific ID of the loot found, NULL for supplies, fuel, crew, marines,   trade commodities can use campaign.ids.Commodities
-     * 
+     * Adds items to a salvageable entity such as a debris field, a recoverable ship or a wreck.
+     *
+     * @param cargo   cargo to add salvage to, creates a new cargo if NULL
+     * @param carrier entity with the loot
+     * @param type    MagicSystem.lootType, type of loot added,
+     * @param lootID  specific ID of the loot found, NULL for supplies, fuel, crew, marines,   trade commodities can use campaign.ids.Commodities
      * @param amount
-     * 
-     * @return 
-     * The resulting cargo you can still add to. 
+     * @return The resulting cargo you can still add to.
      */
-    public static CargoAPI addSalvage(@Nullable CargoAPI cargo, SectorEntityToken carrier, lootType type, @Nullable String lootID, int amount){
+    public static CargoAPI addSalvage(@Nullable CargoAPI cargo, SectorEntityToken carrier, lootType type, @Nullable String lootID, int amount) {
         CargoAPI theCargo = Global.getFactory().createCargo(true);
-        if(cargo!=null){
+        if (cargo != null) {
             theCargo = cargo;
         }
-        switch(type){
+        switch (type) {
             case SPECIAL:
                 theCargo.addItems(CargoAPI.CargoItemType.SPECIAL, lootID, amount);
                 break;
@@ -1158,28 +1171,54 @@ public class MagicCampaign {
                 theCargo.addMarines(amount);
                 break;
         }
-	BaseSalvageSpecial.addExtraSalvage(theCargo, carrier.getMemoryWithoutUpdate(), -1);
+        BaseSalvageSpecial.addExtraSalvage(theCargo, carrier.getMemoryWithoutUpdate(), -1);
         return theCargo;
     }
-        
+
+    /**
+     * Shorthand to add custom jump-point.
+     * Make sure to call `system.autogenerateHyperspaceJumpPoints` after this to generate the hyperspace side.
+     *
+     * @param id              jump point's internal ID
+     * @param name            jump point's displayed name
+     * @param linkedPlanet    planet displayed from hyperspace, can be null
+     * @param orbitCenter     entity orbited
+     * @param orbitStartAngle orbit starting angle
+     * @param orbitRadius     orbit radius
+     * @param orbitDays       orbit period
+     * @since 0.46.0
+     */
+    public static SectorEntityToken addJumpPoint(
+            @NotNull String id,
+            @NotNull String name,
+            @Nullable SectorEntityToken linkedPlanet,
+            @NotNull SectorEntityToken orbitCenter,
+            float orbitStartAngle,
+            float orbitRadius,
+            float orbitDays
+    ) {
+        JumpPointAPI jumpPoint = Global.getFactory().createJumpPoint(id, name);
+        if (linkedPlanet != null) {
+            jumpPoint.setRelatedPlanet(linkedPlanet);
+        }
+        jumpPoint.setStandardWormholeToHyperspaceVisual();
+        jumpPoint.setCircularOrbit(orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
+        orbitCenter.getStarSystem().addEntity(jumpPoint);
+
+        return jumpPoint;
+    }
+
     /**
      * Shorthand to add custom jump-point
-     * 
-     * @param id
-     * jump point's internal ID
-     * @param name
-     * jump point's displayed name
-     * @param linkedPlanet
-     * planet displayed from hyperspace, can be null
-     * @param orbitCenter
-     * entity orbited
-     * @param orbitStartAngle
-     * orbit starting angle
-     * @param orbitRadius
-     * orbit radius
-     * @param orbitDays
-     * orbit period
-     * @return 
+     *
+     * @param id              jump point's internal ID
+     * @param name            jump point's displayed name
+     * @param linkedPlanet    planet displayed from hyperspace, can be null
+     * @param orbitCenter     entity orbited
+     * @param orbitStartAngle orbit starting angle
+     * @param orbitRadius     orbit radius
+     * @param orbitDays       orbit period
+     * @deprecated Renamed to `addJumpPoint`.
      */
     public static SectorEntityToken createJumpPoint(
             String id,
@@ -1189,21 +1228,13 @@ public class MagicCampaign {
             float orbitStartAngle,
             float orbitRadius,
             float orbitDays
-    ){
-        JumpPointAPI jumpPoint = Global.getFactory().createJumpPoint(id, name);
-        if(linkedPlanet!=null){
-            jumpPoint.setRelatedPlanet(linkedPlanet);
-        }
-        jumpPoint.setStandardWormholeToHyperspaceVisual();
-        jumpPoint.setCircularOrbit(orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
-        orbitCenter.getStarSystem().addEntity(jumpPoint);
-        
-        return jumpPoint;
+    ) {
+        return addJumpPoint(id, name, linkedPlanet, orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
     }
-    
+
     /**
      * Adds a simple custom market to a system entity
-     * 
+     *
      * @param entity
      * @param id
      * @param name
@@ -1211,18 +1242,15 @@ public class MagicCampaign {
      * @param faction
      * @param isFreeport
      * @param isHidden
-     * @param conditions
-     * list of conditions from campaign.ids.Conditions
-     * @param industries
-     * list of industries from campaign.ids.Industries
+     * @param conditions         list of conditions from campaign.ids.Conditions
+     * @param industries         list of industries from campaign.ids.Industries
      * @param hasStorage
-     * @param paidForStorage
-     * is storage already paid for
+     * @param paidForStorage     is storage already paid for
      * @param hasBlackmarket
      * @param hasOpenmarket
      * @param hasMilitarymarket
      * @param isAbandonedStation
-     * @return 
+     * @return
      */
     public static MarketAPI addSimpleMarket(
             SectorEntityToken entity,
@@ -1231,86 +1259,76 @@ public class MagicCampaign {
             Integer size,
             String faction,
             boolean isFreeport,
-            boolean isHidden,            
-            List <String> conditions,
-            List <String> industries,            
+            boolean isHidden,
+            List<String> conditions,
+            List<String> industries,
             boolean hasStorage,
             boolean paidForStorage,
             boolean hasBlackmarket,
             boolean hasOpenmarket,
             boolean hasMilitarymarket,
             boolean isAbandonedStation
-    ){
-        
+    ) {
+
         MarketAPI market = Global.getFactory().createMarket(id, name, size);
         market.setPrimaryEntity(entity);
         market.setFactionId(faction);
         market.setFreePort(isFreeport);
         market.setHidden(isHidden);
-        
+
         //add conditions and industries
-        if(!conditions.isEmpty()){
-            for(String c : conditions){
+        if (!conditions.isEmpty()) {
+            for (String c : conditions) {
                 market.addCondition(c);
             }
         }
-        if(!industries.isEmpty()){
-            for(String i : industries){
+        if (!industries.isEmpty()) {
+            for (String i : industries) {
                 market.addIndustry(i);
             }
         }
-        
+
         //add submarkets
-        if(hasStorage){
+        if (hasStorage) {
             market.addSubmarket(Submarkets.SUBMARKET_STORAGE);
-            if(paidForStorage){
-                ((StoragePlugin)market.getSubmarket(Submarkets.SUBMARKET_STORAGE).getPlugin()).setPlayerPaidToUnlock(true);
+            if (paidForStorage) {
+                ((StoragePlugin) market.getSubmarket(Submarkets.SUBMARKET_STORAGE).getPlugin()).setPlayerPaidToUnlock(true);
             }
         }
-        if(hasBlackmarket){
+        if (hasBlackmarket) {
             market.addSubmarket(Submarkets.SUBMARKET_BLACK);
         }
-        if(hasOpenmarket){
+        if (hasOpenmarket) {
             market.addSubmarket(Submarkets.SUBMARKET_OPEN);
         }
-        if(hasMilitarymarket){
+        if (hasMilitarymarket) {
             market.addSubmarket(Submarkets.GENERIC_MILITARY);
         }
-        
+
         market.setSurveyLevel(MarketAPI.SurveyLevel.FULL);
-        if(isAbandonedStation){
+        if (isAbandonedStation) {
             entity.getMemoryWithoutUpdate().set("$abandonedStation", true);
         }
-        entity.setMarket(market);  
-        
+        entity.setMarket(market);
+
         return market;
     }
-    
+
     /**
      * Adds a custom character to a given market
-     * 
-     * @param market
-     * MarketAPI the person is added to
-     * @param firstName
-     * person's first name
-     * @param lastName
-     * person's last name
-     * @param portraitId
-     * id of the sprite in settings.json/graphics/characters
-     * @param gender
-     * FullName.Gender
-     * @param factionId
-     * person's faction
-     * @param rankId
-     * rank from campaign.ids.Ranks
-     * @param postId
-     * post from campaign.ids.Ranks
+     *
+     * @param market                   MarketAPI the person is added to
+     * @param firstName                person's first name
+     * @param lastName                 person's last name
+     * @param portraitId               id of the sprite in settings.json/graphics/characters
+     * @param gender                   FullName.Gender
+     * @param factionId                person's faction
+     * @param rankId                   rank from campaign.ids.Ranks
+     * @param postId                   post from campaign.ids.Ranks
      * @param isMarketAdmin
-     * @param industrialPlanning_level
-     * skill level for market admin
-     * @param commScreenPosition
-     * position order in the comm screen, 0 is the admin position
-     * @return 
+     * @param industrialPlanning_level skill level for market admin
+     * @param commScreenPosition       position order in the comm screen, 0 is the admin position
+     * @return
      */
     @Deprecated
     public static PersonAPI addCustomPerson(
@@ -1327,51 +1345,39 @@ public class MagicCampaign {
             Integer spaceOperation_level,
             Integer groundOperations_level,
             Integer commScreenPosition
-    ){
+    ) {
         return addCustomPerson(
-            market,
-            firstName,
-            lastName,
-            portraitId,
-            gender,
-            factionId,
-            rankId,
-            postId,
-            isMarketAdmin,
-            industrialPlanning_level,
-            commScreenPosition
+                market,
+                firstName,
+                lastName,
+                portraitId,
+                gender,
+                factionId,
+                rankId,
+                postId,
+                isMarketAdmin,
+                industrialPlanning_level,
+                commScreenPosition
         );
     }
-    
+
     /**
      * Adds a custom character to a given market
-     * 
-     * @param market
-     * MarketAPI the person is added to
-     * @param firstName
-     * person's first name
-     * @param lastName
-     * person's last name
-     * @param portraitId
-     * id of the sprite in settings.json/graphics/characters
-     * @param gender
-     * FullName.Gender
-     * @param factionId
-     * person's faction
-     * @param rankId
-     * rank from campaign.ids.Ranks
-     * @param postId
-     * post from campaign.ids.Ranks
+     *
+     * @param market                   MarketAPI the person is added to
+     * @param firstName                person's first name
+     * @param lastName                 person's last name
+     * @param portraitId               id of the sprite in settings.json/graphics/characters
+     * @param gender                   FullName.Gender
+     * @param factionId                person's faction
+     * @param rankId                   rank from campaign.ids.Ranks
+     * @param postId                   post from campaign.ids.Ranks
      * @param isMarketAdmin
-     * @param industrialPlanning_level
-     * skill level for market admin
-     * @param spaceOperation_level
-     * skill level for market admin
-     * @param groundOperations_level
-     * skill level for market admin
-     * @param commScreenPosition
-     * position order in the comm screen, 0 is the admin position
-     * @return 
+     * @param industrialPlanning_level skill level for market admin
+     * @param spaceOperation_level     skill level for market admin
+     * @param groundOperations_level   skill level for market admin
+     * @param commScreenPosition       position order in the comm screen, 0 is the admin position
+     * @return
      */
     public static PersonAPI addCustomPerson(
             MarketAPI market,
@@ -1385,326 +1391,330 @@ public class MagicCampaign {
             boolean isMarketAdmin,
             Integer industrialPlanning_level,
             Integer commScreenPosition
-    ){
-        
+    ) {
+
         PersonAPI person = Global.getFactory().createPerson();
         person.getName().setFirst(firstName);
         person.getName().setLast(lastName);
         person.setPortraitSprite(Global.getSettings().getSpriteName("characters", portraitId));
         person.setGender(gender);
         person.setFaction(factionId);
-        
+
         person.setRankId(rankId);
         person.setPostId(postId);
-        
+
         person.getStats().setSkillLevel(Skills.INDUSTRIAL_PLANNING, industrialPlanning_level);
 //        person.getStats().setSkillLevel(Skills.SPACE_OPERATIONS, spaceOperation_level);
 //        person.getStats().setSkillLevel(Skills.PLANETARY_OPERATIONS, groundOperations_level);
 
-        if(isMarketAdmin){
+        if (isMarketAdmin) {
             market.setAdmin(person);
         }
         market.getCommDirectory().addPerson(person, commScreenPosition);
         market.addPerson(person);
-            
+
         return person;
     }
 
 
-    
-    //BOUNTY CHECKS THAT MAY PROVE USEFULL FOR OTHER THINGS:    
-    
-    
+    //BOUNTY CHECKS THAT MAY PROVE USEFULL FOR OTHER THINGS:
+
+
     /**
-     * 
-     * @param market
-     * checked market for triggers
-     * @param market_id
-     * list of preferred market IDs, bypass all other checks 
-     * @param marketFaction_any
-     * list of suitable faction IDs, any will do
-     * @param marketFaction_alliedWith
-     * market is suitable if least FAVORABLE with ANY of the required factions
-     * @param marketFaction_none
-     * list of unsuitable faction IDs
-     * @param marketFaction_enemyWith
-     * market is unsuitable if it is not HOSTILE with EVERY blacklisted factions
-     * @param market_minSize
-     * minimal market size
-     * @return 
+     * @param market                   checked market for triggers
+     * @param market_id                list of preferred market IDs, bypass all other checks
+     * @param marketFaction_any        list of suitable faction IDs, any will do
+     * @param marketFaction_alliedWith market is suitable if least FAVORABLE with ANY of the required factions
+     * @param marketFaction_none       list of unsuitable faction IDs
+     * @param marketFaction_enemyWith  market is unsuitable if it is not HOSTILE with EVERY blacklisted factions
+     * @param market_minSize           minimal market size
+     * @return
      */
     public static boolean isAvailableAtMarket(
             MarketAPI market,
-            @Nullable List <String> market_id,
-            @Nullable List <String> marketFaction_any,            
+            @Nullable List<String> market_id,
+            @Nullable List<String> marketFaction_any,
             boolean marketFaction_alliedWith,
-            @Nullable List <String> marketFaction_none,           
+            @Nullable List<String> marketFaction_none,
             boolean marketFaction_enemyWith,
             int market_minSize
-            ){
+    ) {
 
         List<String> marketBlacklist = MagicSettings.getList(MAGICLIB_ID, "bounty_market_blacklist");
 
         if (marketBlacklist.contains(market.getId())) {
             return false;
         }
-        
+
         //exact id match beats everything
-        if(market_id!=null && !market_id.isEmpty()){
-            for (String m : market_id){
-                if (market.getId().equals(m))return true;
+        if (market_id != null && !market_id.isEmpty()) {
+            for (String m : market_id) {
+                if (market.getId().equals(m)) return true;
             }
-            
-            for (String id : market_id){    
+
+            for (String id : market_id) {
                 //if at least one of the priority market exists, stop here as the bounty shall only be offered there
-                if(Global.getSector().getEntityById(id)!=null){
+                if (Global.getSector().getEntityById(id) != null) {
                     return false;
                 }
             }
         }
-        
+
         //checking trigger_market_minSize
-        if(market_minSize>0 && market.getSize()<market_minSize)return false;
-                
+        if (market_minSize > 0 && market.getSize() < market_minSize) return false;
+
         //checking trigger_marketFaction_none and trigger_marketFaction_enemyWith
-        if(marketFaction_none!=null && !marketFaction_none.isEmpty()){
-            for(String f : marketFaction_none){
+        if (marketFaction_none != null && !marketFaction_none.isEmpty()) {
+            for (String f : marketFaction_none) {
                 //skip non existing factions
-                if(Global.getSector().getFaction(f)==null) {
-                    if(verbose){
+                if (Global.getSector().getFaction(f) == null) {
+                    if (verbose) {
                         log.warn(String.format("Unable to find faction %s.", f), new RuntimeException());
                     }
                     continue;
                 }
-                
+
                 FactionAPI this_faction = Global.getSector().getFaction(f);
-                if(market.getFaction()==this_faction){
+                if (market.getFaction() == this_faction) {
                     return false; //is one of the excluded factions
-                } else if(marketFaction_enemyWith && market.getFaction().isAtBest(this_faction, RepLevel.HOSTILE)){
+                } else if (marketFaction_enemyWith && market.getFaction().isAtBest(this_faction, RepLevel.HOSTILE)) {
                     return true; //is hostile with one of the excluded factions
                 }
             }
         }
-        
+
         //checking trigger_marketFaction_any and trigger_marketFaction_alliedWith
-        if(marketFaction_any!=null && !marketFaction_any.isEmpty()){
-            
-            for(String f : marketFaction_any){
+        if (marketFaction_any != null && !marketFaction_any.isEmpty()) {
+
+            for (String f : marketFaction_any) {
                 //skip non existing factions
-                if(Global.getSector().getFaction(f)==null) {
-                    if(verbose){
+                if (Global.getSector().getFaction(f) == null) {
+                    if (verbose) {
                         log.warn(String.format("Unable to find faction %s.", f), new RuntimeException());
                     }
                     continue;
                 }
-                
+
                 FactionAPI this_faction = Global.getSector().getFaction(f);
-                if(market.getFaction()==this_faction){
+                if (market.getFaction() == this_faction) {
                     return true; //is one of the required factions
-                } else if(marketFaction_alliedWith && market.getFaction().isAtWorst(this_faction, RepLevel.WELCOMING)){
+                } else if (marketFaction_alliedWith && market.getFaction().isAtWorst(this_faction, RepLevel.WELCOMING)) {
                     return true;  //is friendly toward one of the required factions
                 }
             }
             return false; //the loop has not exited earlier, therefore it failed all of the market faction checks
         }
-        
+
         //failed none of the tests, must be good then
         return true;
     }
-    
-    /**
-     * 
-     * @param player_minLevel
-     * @param min_days_elapsed
-     * @param min_fleet_size
-     * @param memKeys_all
-     * @param memKeys_any
-     * @param memKeys_none
-     * @param playerRelationship_atLeast
-     * @param playerRelationship_atMost
-     * @return 
-     */
+
     public static boolean isAvailableToPlayer(
             int player_minLevel,
             int min_days_elapsed,
             int min_fleet_size,
-            @Nullable Map <String,Boolean> memKeys_all,          
-            @Nullable Map <String,Boolean> memKeys_any,
-            @Nullable Map <String,Boolean> memKeys_none,
-            @Nullable Map <String,Float> playerRelationship_atLeast,
-            @Nullable Map <String,Float> playerRelationship_atMost
-    ){
-        
+            @Nullable Map<String, Boolean> memKeys_all,
+            @Nullable Map<String, Boolean> memKeys_any,
+            @Nullable Map<String, Boolean> memKeys_none,
+            @Nullable Map<String, Float> playerRelationship_atLeast,
+            @Nullable Map<String, Float> playerRelationship_atMost
+    ) {
+
         //checking trigger_min_days_elapsed
 //        if(min_days_elapsed>0 && Global.getSector().getClock().getDay()<min_days_elapsed)return false;
-        if(min_days_elapsed>0 && Global.getSector().getClock().getDay()+(Global.getSector().getClock().getCycle()-206)*365<min_days_elapsed)return false;
-        
+        if (min_days_elapsed > 0 && Global.getSector().getClock().getDay() + (Global.getSector().getClock().getCycle() - 206) * 365 < min_days_elapsed)
+            return false;
+
         //checking trigger_player_minLevel
-        if(player_minLevel>0 && Global.getSector().getPlayerStats().getLevel()<player_minLevel)return false;
-        
+        if (player_minLevel > 0 && Global.getSector().getPlayerStats().getLevel() < player_minLevel) return false;
+
         //checking trigger_min_fleet_size
-        if(min_fleet_size>0){
-            CampaignFleetAPI playerFleet=Global.getSector().getPlayerFleet(); 
+        if (min_fleet_size > 0) {
+            CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
 //            float effectiveFP = playerFleet.getEffectiveStrength();
             float effectiveFP = playerFleet.getFleetPoints();
-            if (min_fleet_size > effectiveFP){
-                if(verbose){
-                    log.info(String.format("Requirement not met: min fleet size of %s requested, currently %s.", min_fleet_size,effectiveFP));
+            if (min_fleet_size > effectiveFP) {
+                if (verbose) {
+                    log.info(String.format("Requirement not met: min fleet size of %s requested, currently %s.", min_fleet_size, effectiveFP));
                 }
                 return false;
             }
         }
-        
+
         //checking trigger_playerRelationship_atLeast
-        boolean relation=false;
-        if(playerRelationship_atLeast!=null && !playerRelationship_atLeast.isEmpty()){
-            for(String f : playerRelationship_atLeast.keySet()){
+        boolean relation = false;
+        if (playerRelationship_atLeast != null && !playerRelationship_atLeast.isEmpty()) {
+            for (String f : playerRelationship_atLeast.keySet()) {
                 //skip non existing factions
-                if(Global.getSector().getFaction(f)==null) {
-                    if(verbose){
+                if (Global.getSector().getFaction(f) == null) {
+                    if (verbose) {
                         log.warn(String.format("Unable to find faction %s.", f), new RuntimeException());
                     }
                     continue;
                 }
-                if(Global.getSector().getPlayerFaction().isAtWorst(f, RepLevel.getLevelFor(playerRelationship_atLeast.get(f))))relation=true;
+                if (Global.getSector().getPlayerFaction().isAtWorst(f, RepLevel.getLevelFor(playerRelationship_atLeast.get(f))))
+                    relation = true;
             }
         } else {
-            relation=true;
+            relation = true;
         }
 
         //checking trigger_playerRelationship_atMost
-        boolean hostility=false;
-        if(playerRelationship_atMost!=null && !playerRelationship_atMost.isEmpty()){
-            for(String f : playerRelationship_atMost.keySet()){
+        boolean hostility = false;
+        if (playerRelationship_atMost != null && !playerRelationship_atMost.isEmpty()) {
+            for (String f : playerRelationship_atMost.keySet()) {
                 //skip non existing factions
-                if(Global.getSector().getFaction(f)==null) {
-                    if(verbose){
+                if (Global.getSector().getFaction(f) == null) {
+                    if (verbose) {
                         log.warn(String.format("Unable to find faction %s.", f), new RuntimeException());
-                    }                    
+                    }
                     continue;
                 }
-                if(Global.getSector().getPlayerFaction().isAtBest(f, RepLevel.getLevelFor(playerRelationship_atMost.get(f)))) relation=true;
+                if (Global.getSector().getPlayerFaction().isAtBest(f, RepLevel.getLevelFor(playerRelationship_atMost.get(f))))
+                    hostility = true;
             }
         } else {
-            hostility=true;
+            hostility = true;
         }
-        
-        if(!relation || !hostility){
+
+        if (!relation || !hostility) {
+            if (verbose) {
+                if (!relation && playerRelationship_atLeast != null && !playerRelationship_atLeast.isEmpty())
+                    log.info(String.format("Requirement not met: Relationship too low with %s ", playerRelationship_atLeast.keySet()));
+                if (!hostility && playerRelationship_atMost != null && !playerRelationship_atMost.isEmpty())
+                    log.info(String.format("Requirement not met: Relationship too high with %s ", playerRelationship_atMost.keySet()));
+            }
             return false;
         }
-        
+
         //checking trigger_memKeys_all
-        if(memKeys_all!=null && !memKeys_all.isEmpty()){
-            for(String f : memKeys_all.keySet()){
+        if (memKeys_all != null && !memKeys_all.isEmpty()) {
+            for (String f : memKeys_all.keySet()) {
                 //check if the memKey exists 
-                if(!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f))return false;
+                if (!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f)) {
+                    if (verbose) {
+                        log.info(String.format("Requirement not met: memKeys_all %s key not fount.", f));
+                    }
+                    return false;
+                }
                 //check if it has the proper value
-                if(memKeys_all.get(f)!=Global.getSector().getMemoryWithoutUpdate().getBoolean(f))return false;
-            }
-        }
-        
-        //checking trigger_memKeys_any
-        if(memKeys_any!=null && !memKeys_any.isEmpty()){
-            for(String f : memKeys_any.keySet()){
-                //check if the memKey exists 
-                if(!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f)){
-                    //check if it has the proper value
-                    if(memKeys_any.get(f)==Global.getSector().getMemoryWithoutUpdate().getBoolean(f))return true;
+                if (memKeys_all.get(f) != Global.getSector().getMemoryWithoutUpdate().getBoolean(f)) {
+                    if (verbose) {
+                        log.info(String.format("Requirement not met: memKeys_all %s key is not %s.", f, memKeys_all.get(f)));
+                    }
+                    return false;
                 }
             }
-            //the loop has not been exited therefore some key is missing
-            return false;
         }
-        
+
         //checking memKeys_none
-        if(memKeys_none != null && !memKeys_none.isEmpty()) {
+        if (memKeys_none != null && !memKeys_none.isEmpty()) {
             for (Map.Entry<String, Boolean> entry : memKeys_none.entrySet()) {
                 if (Global.getSector().getMemoryWithoutUpdate().contains(entry.getKey())) {
                     if (Global.getSector().getMemoryWithoutUpdate().getBoolean(entry.getKey()) == entry.getValue()) {
-                        if(verbose){
-                            log.info(String.format("Requirement not met: memKeys_none %s value %s.", entry.getKey(), entry.getValue()));
+                        if (verbose) {
+                            log.info(String.format("Requirement not met: memKeys_none %s value %s is present.", entry.getKey(), entry.getValue()));
                         }
                         return false;
                     }
                 }
             }
         }
-        
+
+        //checking trigger_memKeys_any
+        if (memKeys_any != null && !memKeys_any.isEmpty()) {
+            for (String f : memKeys_any.keySet()) {
+                //check if the memKey exists 
+                if (!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f)) {
+                    //check if it has the proper value
+                    if (memKeys_any.get(f) == Global.getSector().getMemoryWithoutUpdate().getBoolean(f)) {
+                        return true;
+                    }
+                }
+            }
+            //the loop has not been exited therefore some key is missing
+            if (verbose) {
+                log.info(String.format("Requirement not met: none of the memKeys_any is present with the proper value: %s ", memKeys_any.keySet()));
+            }
+            return false;
+        }
+
         //failed none of the tests, must be good then
         return true;
     }
-    
-    public static Float PlayerFleetSizeMultiplier(float enemyBaseFP){ //base FP is the min FP of the enemy fleet with reinforcements.
-        CampaignFleetAPI playerFleet=Global.getSector().getPlayerFleet(); 
+
+    public static Float PlayerFleetSizeMultiplier(float enemyBaseFP) { //base FP is the min FP of the enemy fleet with reinforcements.
+        CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
 //        float effectiveFP = playerFleet.getEffectiveStrength();
         float effectiveFP = playerFleet.getFleetPoints();
         return effectiveFP / enemyBaseFP;
     }
-    
-    public static Float RelativeEffectiveStrength(CampaignFleetAPI enemyFleet){
-        
-        CampaignFleetAPI playerFleet=Global.getSector().getPlayerFleet(); 
-        
-        if(enemyFleet==null || enemyFleet.getFleetData()==null || playerFleet==null || playerFleet.getFleetData()==null)return null;
-        
+
+    public static Float RelativeEffectiveStrength(CampaignFleetAPI enemyFleet) {
+
+        CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
+
+        if (enemyFleet == null || enemyFleet.getFleetData() == null || playerFleet == null || playerFleet.getFleetData() == null)
+            return null;
+
         float playerEffectiveStrength = 0f;
         float enemyEffectiveStrength = 0f;
-        
-        if(verbose){
+
+        if (verbose) {
             log.info("\n");
             log.info("PLAYER strength");
         }
-        
-        for(FleetMemberAPI m : playerFleet.getFleetData().getMembersListCopy()){
+
+        for (FleetMemberAPI m : playerFleet.getFleetData().getMembersListCopy()) {
             float strength = EffectiveFleetMemberStrength(m);
-            if(verbose){
-                log.info(m.getHullId()+" strength = "+ strength);
+            if (verbose) {
+                log.info(m.getHullId() + " strength = " + strength);
             }
             playerEffectiveStrength += strength;
         }
-        
-        if(verbose){
-            log.info("Effective player strength = "+playerEffectiveStrength+"\n");
+
+        if (verbose) {
+            log.info("Effective player strength = " + playerEffectiveStrength + "\n");
             log.info("ENEMY strength");
         }
-        
-        for(FleetMemberAPI m : enemyFleet.getFleetData().getMembersListCopy()){
+
+        for (FleetMemberAPI m : enemyFleet.getFleetData().getMembersListCopy()) {
             float strength = EffectiveFleetMemberStrength(m);
-            if(verbose){
-                log.info(m.getHullId()+" strength = "+ strength);
+            if (verbose) {
+                log.info(m.getHullId() + " strength = " + strength);
             }
             enemyEffectiveStrength += strength;
         }
-        
-        float relativeStrength = playerEffectiveStrength/enemyEffectiveStrength;
-        
-        if(verbose){
-            log.info("Effective enemy strength = "+enemyEffectiveStrength+"\n");
-            log.info("Relative strength = "+relativeStrength);
+
+        float relativeStrength = playerEffectiveStrength / enemyEffectiveStrength;
+
+        if (verbose) {
+            log.info("Effective enemy strength = " + enemyEffectiveStrength + "\n");
+            log.info("Relative strength = " + relativeStrength);
         }
-        
+
         return relativeStrength;
     }
-    
+
     private static float EffectiveFleetMemberStrength(FleetMemberAPI member) {
-        
-        float str = Math.max(1f,member.getMemberStrength());
+
+        float str = Math.max(1f, member.getMemberStrength());
 
         float quality = 0.8f;
-        
+
         if (member.getFleetData() != null && member.getFleetData().getFleet() != null) {
-            if(member.getFleetData().getFleet().getInflater()!=null && !member.getFleetData().getFleet().isInflated()){
-                quality = 1 + (member.getFleetData().getFleet().getInflater().getQuality()-1)/2;
+            if (member.getFleetData().getFleet().getInflater() != null && !member.getFleetData().getFleet().isInflated()) {
+                quality = 1 + (member.getFleetData().getFleet().getInflater().getQuality() - 1) / 2;
             } else {
                 float dmods = DModManager.getNumDMods(member.getVariant());
                 quality = Math.max(0.25f, 1f - 0.1f * dmods);
             }
         }
-        
+
         if (member.isStation()) quality = 1f;
 
         float damageMult = 0.5f + 0.5f * member.getStatus().getHullFraction();
-        
+
         float captainMult = 1f;
         if (member.getCaptain() != null) {
             float captainLevel = (member.getCaptain().getStats().getLevel() - 1f);
@@ -1713,47 +1723,25 @@ public class MagicCampaign {
             else
                 captainMult += captainLevel / (MAX_OFFICER_LEVEL * 2f);
         }
-        
-        
-        if(Global.getSector().getPlayerFleet().getFlagship() == member){
+
+
+        if (Global.getSector().getPlayerFleet().getFlagship() == member) {
             //PLAYER multiplier
             captainMult = Global.getSector().getPlayerStats().getLevel();
             captainMult /= 20;
             captainMult += 1;
         }
-        
-        
+
+
         str *= quality;
         str *= damageMult;
         str *= captainMult;
-        
+
 //        if(member.isCivilian())str*=0.5f;
-        
+
         return str;
     }
-    
-    /**
-     * Returns a random target SectorEntityToken given the following parameters:
-     * @param entityIDs
-     * List of IDs of preferred markets to target, supercedes all,              default to other parameters if none of those markets exist
-     * @param marketFactions
-     * List of faction to pick a market from, supercedes all but market ids,    default to other parameters if none of those markets exist
-     * @param distance
-     * "CORE", "CLOSE", "FAR", preferred range band for the target system if any
-     * @param seek_themes
-     * List of preferred system themes TAGS from campaign.ids.Tags,             plus "PROCGEN_NO_THEME" and "PROCGEN_NO_THEME_NO_PULSAR_NO_BLACKHOLE"
-     * @param avoid_themes
-     * List of blacklisted system themes
-     * @param entities
-     * List of preferred entity types from campaign.ids.Tags
-     * @param defaultToAnyEntity
-     * If none of the systems in the required range band has any of the required entities, will the script default to any entity within a system with the proper range and themes instead of looking into a different range band
-     * @param prioritizeUnexplored
-     * Will the script target unexplored systems first before falling back to ones that have been visited by the player
-     * @param verbose
-     * Log some debug messages
-     * @return 
-     */
+    /*
     @Nullable
     public static SectorEntityToken findSuitableTarget(
             @Nullable List<String> entityIDs,
@@ -1765,102 +1753,130 @@ public class MagicCampaign {
             boolean defaultToAnyEntity,
             boolean prioritizeUnexplored,
             boolean verbose){
-        
-        if(verbose){
-            log.error("Find Suitable Target log");
-            log.error("Checking marketIDs");
+        return findSuitableTarget(entityIDs,marketFactions,distance,seek_themes,avoid_themes,entities,false,defaultToAnyEntity,prioritizeUnexplored,verbose);
+    }
+    */
+
+    /**
+     * Returns a random target SectorEntityToken given the following parameters:
+     *
+     * @param entityIDs            List of IDs of preferred markets to target, supercedes all,              default to other parameters if none of those markets exist
+     * @param marketFactions       List of faction to pick a market from, supercedes all but market ids,    default to other parameters if none of those markets exist
+     * @param distance             "CORE", "CLOSE", "FAR", preferred range band for the target system if any
+     * @param seek_themes          List of preferred system themes TAGS from campaign.ids.Tags,             plus "PROCGEN_NO_THEME" and "PROCGEN_NO_THEME_NO_PULSAR_NO_BLACKHOLE"
+     * @param avoid_themes         List of blacklisted system themes
+     * @param entities             List of preferred entity types from campaign.ids.Tags
+     * @param defaultToAnyEntity   If none of the systems in the required range band has any of the required entities, will the script default to any entity within a system with the proper range and themes instead of looking into a different range band
+     * @param prioritizeUnexplored Will the script target unexplored systems first before falling back to ones that have been visited by the player
+     * @param verbose              Log some debug messages
+     * @return
+     */
+    @Nullable
+    public static SectorEntityToken findSuitableTarget(
+            @Nullable List<String> entityIDs,
+            @Nullable List<String> marketFactions,
+            @Nullable String distance,
+            @Nullable List<String> seek_themes,
+            @Nullable List<String> avoid_themes,
+            @Nullable List<String> entities,
+            //boolean defaultToAnySystem,
+            boolean defaultToAnyEntity,
+            boolean prioritizeUnexplored,
+            boolean verbose) {
+
+        if (verbose) {
+            log.info("Find Suitable Target log");
+            log.info("Checking marketIDs");
         }
         //first priority, check if the preset location(s) exist(s)
-        if(entityIDs!=null && !entityIDs.isEmpty()){
+        if (entityIDs != null && !entityIDs.isEmpty()) {
             //if there is just one location and it exist, lets use that.
-            if(entityIDs.size()==1 && Global.getSector().getEntityById(entityIDs.get(0))!=null){
-                if(verbose){
+            if (entityIDs.size() == 1 && Global.getSector().getEntityById(entityIDs.get(0)) != null) {
+                if (verbose) {
                     SectorEntityToken t = Global.getSector().getEntityById(entityIDs.get(0));
-                    log.error("Selecting "+t.getName()+", in the "+t.getContainingLocation().getName()+" system, "+ t.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), t.getContainingLocation().getLocation()) +" LY) from the sector's center");
-                }   
+                    log.info("Selecting " + t.getName() + ", in the " + t.getContainingLocation().getName() + " system, " + t.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), t.getContainingLocation().getLocation()) + " LY) from the sector's center");
+                }
                 return Global.getSector().getEntityById(entityIDs.get(0));
             }
             //if there are multiple possible location, pick a random one
             WeightedRandomPicker<SectorEntityToken> picker = new WeightedRandomPicker<>();
-            for(String loc : entityIDs){
-                if(Global.getSector().getEntityById(loc)!=null) picker.add(Global.getSector().getEntityById(loc));
+            for (String loc : entityIDs) {
+                if (Global.getSector().getEntityById(loc) != null) picker.add(Global.getSector().getEntityById(loc));
             }
-            
-            if(verbose){
-                log.error("There are "+picker.getTotal()+" available market ids for pick");
+
+            if (verbose) {
+                log.info("There are " + picker.getTotal() + " available market ids for pick");
             }
-            
-            if(!picker.isEmpty()){
-                if(verbose){
+
+            if (!picker.isEmpty()) {
+                if (verbose) {
                     SectorEntityToken picked = picker.pick();
-                    log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                    log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                     return picked;
                 } else return picker.pick();
             }
         }
-        
-            
-        if(verbose){
-            log.error("Checking market factions");
+
+
+        if (verbose) {
+            log.info("Checking market factions");
         }
         //second priority is faction markets
-        if(marketFactions!=null && !marketFactions.isEmpty()){
+        if (marketFactions != null && !marketFactions.isEmpty()) {
             WeightedRandomPicker<SectorEntityToken> picker = new WeightedRandomPicker<>();
-            for(MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()){
-                if(marketFactions.contains(m.getFaction().getId()) && !picker.getItems().contains(m.getPrimaryEntity())){
+            for (MarketAPI m : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (marketFactions.contains(m.getFaction().getId()) && !picker.getItems().contains(m.getPrimaryEntity())) {
                     picker.add(m.getPrimaryEntity());
                 }
             }
-            
-            if(verbose){
-                log.error("There are "+picker.getTotal()+" available faction markets for pick");
+
+            if (verbose) {
+                log.info("There are " + picker.getTotal() + " available faction markets for pick");
             }
-            
-            if(!picker.isEmpty()){
-                if(verbose){
+
+            if (!picker.isEmpty()) {
+                if (verbose) {
                     SectorEntityToken picked = picker.pick();
-                    log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                    log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                     return picked;
                 } else return picker.pick();
             }
         }
-        
-        if(
-                (distance==null||distance.equals("")) && 
-                (seek_themes==null||seek_themes.isEmpty()) && 
-                (entities==null||entities.isEmpty())
-                ){
+
+        if (
+                (distance == null || distance.equals("")) &&
+                        (seek_themes == null || seek_themes.isEmpty()) &&
+                        (entities == null || entities.isEmpty())
+        ) {
             //there was no fallback filters defined, this is a wrap
             return null;
         }
-        
+
         //time for some pain
-        
+
         //calculate the sector size to define range bands
-//        final HyperspaceTerrainPlugin hyper = (HyperspaceTerrainPlugin) Misc.getHyperspaceTerrain().getPlugin();
-//        final int[][] cells = hyper.getTiles();
         float sector_width = MagicVariables.getSectorSize();
-        
-        if(verbose){
-            log.error("Checking preferences");
-            log.error("Sector width = "+sector_width);
+
+        if (verbose) {
+            log.info("Checking preferences");
+            log.info("Sector width = " + sector_width);
         }
-        if(verbose){
-            log.error("Finding system with required themes");
+        if (verbose) {
+            log.info("Finding system with required themes");
         }
         //start with the themes preferences
-        List <StarSystemAPI> systems_core = new ArrayList<>();
-        List <StarSystemAPI> systems_close = new ArrayList<>();
-        List <StarSystemAPI> systems_far = new ArrayList<>();
-        if(seek_themes!=null && !seek_themes.isEmpty()){
-            for(StarSystemAPI s : Global.getSector().getStarSystems()){
-                for(String this_theme : seek_themes){
-                    if(s.hasTag(this_theme)){
+        List<StarSystemAPI> systems_core = new ArrayList<>();
+        List<StarSystemAPI> systems_close = new ArrayList<>();
+        List<StarSystemAPI> systems_far = new ArrayList<>();
+        if (seek_themes != null && !seek_themes.isEmpty()) {
+            for (StarSystemAPI s : Global.getSector().getStarSystems()) {
+                for (String this_theme : seek_themes) {
+                    if (s.hasTag(this_theme)) {
                         //sort systems by distances because that will come in handy later
                         float dist = s.getLocation().length();
-                        if(dist<sector_width*0.33f){
+                        if (dist < sector_width * 0.33f) {
                             systems_core.add(s);
-                        } else if (dist<sector_width*0.66f){
+                        } else if (dist < sector_width * 0.66f) {
                             systems_close.add(s);
                         } else {
                             systems_far.add(s);
@@ -1869,16 +1885,17 @@ public class MagicCampaign {
                     }
                 }
                 //special test for basic procgen systems without special content
-                if(seek_themes.contains(MagicVariables.SEEK_EMPTY_SYSTEM) || seek_themes.contains(MagicVariables.SEEK_EMPTY_SAFE_SYSTEM)){
-                    if(s.isProcgen()){
-                        if(seek_themes.contains(MagicVariables.SEEK_EMPTY_SAFE_SYSTEM) && (s.hasBlackHole() || s.hasPulsar()))continue;
+                if (seek_themes.contains(MagicVariables.SEEK_EMPTY_SYSTEM) || seek_themes.contains(MagicVariables.SEEK_EMPTY_SAFE_SYSTEM)) {
+                    if (s.isProcgen()) {
+                        if (seek_themes.contains(MagicVariables.SEEK_EMPTY_SAFE_SYSTEM) && (s.hasBlackHole() || s.hasPulsar()))
+                            continue;
                         //check for the 3 bland themes
-                        if(s.getTags().contains("theme_misc_skip") || s.getTags().contains("theme_misc") ||  s.getTags().contains("theme_core_unpopulated")){
+                        if (s.getTags().contains("theme_misc_skip") || s.getTags().contains("theme_misc") || s.getTags().contains("theme_core_unpopulated")) {
                             //sort systems by distances because that will come in handy later
                             float dist = s.getLocation().length();
-                            if(dist<sector_width*0.33f){
+                            if (dist < sector_width * 0.33f) {
                                 systems_core.add(s);
-                            } else if (dist<sector_width*0.66f){
+                            } else if (dist < sector_width * 0.66f) {
                                 systems_close.add(s);
                             } else {
                                 systems_far.add(s);
@@ -1889,216 +1906,235 @@ public class MagicCampaign {
             }
         } else {
             //if there isn't any THEME preference, let's add *everything*
-            for(StarSystemAPI s : Global.getSector().getStarSystems()){
+            for (StarSystemAPI s : Global.getSector().getStarSystems()) {
                 //sort systems by distances because that will come in handy later
                 float dist = s.getLocation().length();
-                if(dist<sector_width*0.33f){
+                if (dist < sector_width * 0.33f) {
                     systems_core.add(s);
-                } else if (dist<sector_width*0.66f){
+                } else if (dist < sector_width * 0.66f) {
                     systems_close.add(s);
                 } else {
                     systems_far.add(s);
                 }
             }
         }
-        
+
+        //if the lists are empty but fallback is on, add everything
+        if (systems_core.isEmpty() && systems_close.isEmpty() && systems_far.isEmpty()) {
+            if (defaultToAnyEntity) {
+                for (StarSystemAPI s : Global.getSector().getStarSystems()) {
+                    //sort systems by distances because that will come in handy later
+                    float dist = s.getLocation().length();
+                    if (dist < sector_width * 0.33f) {
+                        systems_core.add(s);
+                    } else if (dist < sector_width * 0.66f) {
+                        systems_close.add(s);
+                    } else {
+                        systems_far.add(s);
+                    }
+                }
+            } else {
+                //all lists are empty, no fallback option for systems
+                if (verbose) {
+                    log.warn("No valid system theme found");
+                }
+                return null;
+            }
+        }
+
         //cull systems with blacklisted themes
-        if(avoid_themes!=null && !avoid_themes.isEmpty()){
-            
+        if (avoid_themes != null && !avoid_themes.isEmpty()) {
+
             //merge default theme blacklist if needed 
-            if(avoid_themes.contains(MagicVariables.AVOID_OCCUPIED_SYSTEM)){
-                for(String s : MagicVariables.mergedThemesBlacklist){
-                    if(!avoid_themes.contains(s)) avoid_themes.add(s);
+            if (avoid_themes.contains(MagicVariables.AVOID_OCCUPIED_SYSTEM)) {
+                for (String s : MagicVariables.mergedThemesBlacklist) {
+                    if (!avoid_themes.contains(s)) avoid_themes.add(s);
                 }
             }
-            
-            boolean noPBH=false;
-            if(avoid_themes.contains(MagicVariables.AVOID_BLACKHOLE_PULSAR))noPBH=true;
-            boolean noPop=false;
-            if(avoid_themes.contains(MagicVariables.AVOID_OCCUPIED_SYSTEM))noPop=true;
-            
-            if(!systems_core.isEmpty()){
-                for(int i=0; i<systems_core.size(); i++){
-                    for(String t : avoid_themes){
-                        if(noPBH && (systems_core.get(i).hasBlackHole()||systems_core.get(i).hasPulsar())){
+
+            boolean noPBH = avoid_themes.contains(MagicVariables.AVOID_BLACKHOLE_PULSAR);
+            boolean noPop = avoid_themes.contains(MagicVariables.AVOID_OCCUPIED_SYSTEM);
+
+            if (!systems_core.isEmpty()) {
+                for (int i = 0; i < systems_core.size(); i++) {
+                    for (String t : avoid_themes) {
+                        if (noPBH && (systems_core.get(i).hasBlackHole() || systems_core.get(i).hasPulsar())) {
                             systems_core.remove(i);
                             i--;
                             break;
-                        } else 
-                        //manually check for markets
-                        if(noPop && !Global.getSector().getEconomy().getMarkets(systems_core.get(i)).isEmpty()){
-                            systems_core.remove(i);
-                            i--;
-                            break;
-                        } else 
-                        // check for blacklisted theme
-                        if(systems_core.get(i).getTags().contains(t)){
-                            systems_core.remove(i);
-                            i--;
-                            break;
-                        }
+                        } else
+                            //manually check for markets
+                            if (noPop && !Global.getSector().getEconomy().getMarkets(systems_core.get(i)).isEmpty()) {
+                                systems_core.remove(i);
+                                i--;
+                                break;
+                            } else
+                                // check for blacklisted theme
+                                if (systems_core.get(i).getTags().contains(t)) {
+                                    systems_core.remove(i);
+                                    i--;
+                                    break;
+                                }
                     }
                 }
             }
-            if(!systems_close.isEmpty()){
-                for(int i=0; i<systems_close.size(); i++){
-                    for(String t : avoid_themes){
-                        if(noPBH && (systems_close.get(i).hasBlackHole()||systems_close.get(i).hasPulsar())){
+            if (!systems_close.isEmpty()) {
+                for (int i = 0; i < systems_close.size(); i++) {
+                    for (String t : avoid_themes) {
+                        if (noPBH && (systems_close.get(i).hasBlackHole() || systems_close.get(i).hasPulsar())) {
                             systems_close.remove(i);
                             i--;
                             break;
-                        } else 
-                        //manually check for markets          
-                        if(noPop && !Global.getSector().getEconomy().getMarkets(systems_close.get(i)).isEmpty()){
-                            systems_close.remove(i);
-                            i--;
-                            break;
-                        } else 
-                        // check for blacklisted theme
-                        if(systems_close.get(i).getTags().contains(t)){
-                            systems_close.remove(i);
-                            i--;
-                            break;
-                        }
+                        } else
+                            //manually check for markets
+                            if (noPop && !Global.getSector().getEconomy().getMarkets(systems_close.get(i)).isEmpty()) {
+                                systems_close.remove(i);
+                                i--;
+                                break;
+                            } else
+                                // check for blacklisted theme
+                                if (systems_close.get(i).getTags().contains(t)) {
+                                    systems_close.remove(i);
+                                    i--;
+                                    break;
+                                }
                     }
                 }
             }
-            if(!systems_far.isEmpty()){
-                for(int i=0; i<systems_far.size(); i++){
-                    for(String t : avoid_themes){
-                        if(noPBH && (systems_far.get(i).hasBlackHole()||systems_far.get(i).hasPulsar())){
+            if (!systems_far.isEmpty()) {
+                for (int i = 0; i < systems_far.size(); i++) {
+                    for (String t : avoid_themes) {
+                        if (noPBH && (systems_far.get(i).hasBlackHole() || systems_far.get(i).hasPulsar())) {
                             systems_far.remove(i);
                             i--;
                             break;
-                        } else 
-                        //manually check for markets          
-                        if(noPop && !Global.getSector().getEconomy().getMarkets(systems_far.get(i)).isEmpty()){
-                            systems_far.remove(i);
-                            i--;
-                            break;
-                        } else 
-                        // check for blacklisted theme
-                        if(systems_far.get(i).getTags().contains(t)){
-                            systems_far.remove(i);
-                            i--;
-                            break;
-                        }
+                        } else
+                            //manually check for markets
+                            if (noPop && !Global.getSector().getEconomy().getMarkets(systems_far.get(i)).isEmpty()) {
+                                systems_far.remove(i);
+                                i--;
+                                break;
+                            } else
+                                // check for blacklisted theme
+                                if (systems_far.get(i).getTags().contains(t)) {
+                                    systems_far.remove(i);
+                                    i--;
+                                    break;
+                                }
                     }
                 }
             }
         }
-        
-        if(verbose){
-                log.error("There are "+systems_core.size()+" themed systems in the core");
-                log.error("There are "+systems_close.size()+" themed systems close to the core");
-                log.error("There are "+systems_far.size()+" themed systems far from the core");
+
+        if (verbose) {
+            log.info("There are " + systems_core.size() + " themed systems in the core");
+            log.info("There are " + systems_close.size() + " themed systems close to the core");
+            log.info("There are " + systems_far.size() + " themed systems far from the core");
         }
-                        
-        //TO DO: check if ALL lists are empty
-        
+
         //now order the selected system lists by distance preferences
-        List <List<StarSystemAPI>> distance_priority = new ArrayList<>();
-        if(distance==null || distance.equals("")){
+        List<List<StarSystemAPI>> distance_priority = new ArrayList<>();
+        if (distance == null || distance.equals("")) {
             //random distance 
             distance_priority.add(0, systems_core);
             distance_priority.add(1, systems_close);
             distance_priority.add(2, systems_far);
-            Collections.shuffle(distance_priority);            
-        } else switch (distance){
-            case "CORE":{
+            Collections.shuffle(distance_priority);
+        } else switch (distance) {
+            case "CORE": {
                 distance_priority.add(0, systems_core);
                 distance_priority.add(1, systems_close);
                 distance_priority.add(2, systems_far);
                 break;
             }
-            case "CLOSE":{
+            case "CLOSE": {
                 distance_priority.add(0, systems_close);
                 distance_priority.add(1, systems_far);
                 distance_priority.add(2, systems_core);
                 break;
             }
-            case "FAR":{
+            case "FAR": {
                 distance_priority.add(0, systems_far);
                 distance_priority.add(1, systems_close);
                 distance_priority.add(2, systems_core);
                 break;
             }
-            default :{
+            default: {
                 //random distance if the field wasn't properly filled
                 distance_priority.add(0, systems_core);
                 distance_priority.add(1, systems_close);
                 distance_priority.add(2, systems_far);
-                Collections.shuffle(distance_priority);    
+                Collections.shuffle(distance_priority);
             }
         }
-        
+
         //make sure the target entities list has something to look for
         List<String> desiredEntities = new ArrayList<>();
-        if(entities==null || entities.isEmpty()){
+        if (entities == null || entities.isEmpty()) {
             desiredEntities.add(Tags.STABLE_LOCATION);
             desiredEntities.add(Tags.PLANET);
             desiredEntities.add(Tags.JUMP_POINT);
         } else {
-            desiredEntities=entities;
+            desiredEntities = entities;
         }
-        
+
         //lets check the system lists in order by prefered distances
-        for(int i=0; i<3; i++){
+        for (int i = 0; i < 3; i++) {
             //check if the system list has anything, and shuffle it to ensure proper randomization
-            if(distance_priority.get(i).isEmpty()){
+            if (distance_priority.get(i).isEmpty()) {
                 continue;
             } else {
                 Collections.shuffle(distance_priority.get(i));
             }
-            
+
             //now check if any valid system got the required entity in this range band
             //starting with unexplored systems if required
-            if(prioritizeUnexplored){                
-                for(StarSystemAPI s : distance_priority.get(i)){
+            if (prioritizeUnexplored) {
+                for (StarSystemAPI s : distance_priority.get(i)) {
                     //skip visited systems
-                    if(s.isEnteredByPlayer()){
+                    if (s.isEnteredByPlayer()) {
                         continue;
                     }
                     //add all valid entities to the picker
                     WeightedRandomPicker<SectorEntityToken> validEntities = new WeightedRandomPicker<>();
-                    for(SectorEntityToken e : s.getAllEntities()){
-                        for(String t : desiredEntities){
-                            if(e.hasTag(t)){
+                    for (SectorEntityToken e : s.getAllEntities()) {
+                        for (String t : desiredEntities) {
+                            if (e.hasTag(t)) {
                                 validEntities.add(e);
                             }
                         }
                     }
                     //check it this system contains any target entity
-                    if(!validEntities.isEmpty()){
-                        if(verbose){
+                    if (!validEntities.isEmpty()) {
+                        if (verbose) {
                             SectorEntityToken picked = validEntities.pick();
-                            log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                            log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                             return picked;
                         } else return validEntities.pick();
                     }
                     //otherwise, the loop continues
                 }
-                
+
                 //unexplored systems failed to offer the required entities, lets try the explored ones now
-                for(StarSystemAPI s : distance_priority.get(i)){
+                for (StarSystemAPI s : distance_priority.get(i)) {
                     //skip unexplored systems this time
-                    if(!s.isEnteredByPlayer()){
+                    if (!s.isEnteredByPlayer()) {
                         continue;
                     }
                     //add all valid entities to the picker
                     WeightedRandomPicker<SectorEntityToken> validEntities = new WeightedRandomPicker<>();
-                    for(SectorEntityToken e : s.getAllEntities()){
-                        for(String t : desiredEntities){
-                            if(e.hasTag(t)){
+                    for (SectorEntityToken e : s.getAllEntities()) {
+                        for (String t : desiredEntities) {
+                            if (e.hasTag(t)) {
                                 validEntities.add(e);
                             }
                         }
                     }
                     //check it this system contains any target entity
-                    if(!validEntities.isEmpty()){
-                        if(verbose){
+                    if (!validEntities.isEmpty()) {
+                        if (verbose) {
                             SectorEntityToken picked = validEntities.pick();
-                            log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                            log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                             return picked;
                         } else return validEntities.pick();
                     }
@@ -2106,50 +2142,50 @@ public class MagicCampaign {
                 }
             } else {
                 //unexplored systems isn't required, lets to ALL systems         
-                for(StarSystemAPI s : distance_priority.get(i)){
+                for (StarSystemAPI s : distance_priority.get(i)) {
                     //add all valid entities to the picker
                     WeightedRandomPicker<SectorEntityToken> validEntities = new WeightedRandomPicker<>();
-                    for(SectorEntityToken e : s.getAllEntities()){
-                        for(String t : desiredEntities){
-                            if(e.hasTag(t)){
+                    for (SectorEntityToken e : s.getAllEntities()) {
+                        for (String t : desiredEntities) {
+                            if (e.hasTag(t)) {
                                 validEntities.add(e);
                             }
                         }
                     }
                     //check it this system contains any target entity
-                    if(!validEntities.isEmpty()){
-                        if(verbose){
+                    if (!validEntities.isEmpty()) {
+                        if (verbose) {
                             SectorEntityToken picked = validEntities.pick();
-                            log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                            log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                             return picked;
                         } else return validEntities.pick();
                     }
                     //otherwise, the loop continues
                 }
             }
-                        
+
             //we exhausted all valid systems in the desired range band for the desired entities, then we can fallback to any entities
-            if(defaultToAnyEntity){
+            if (defaultToAnyEntity) {
                 WeightedRandomPicker<StarSystemAPI> randomSystemFallback = new WeightedRandomPicker<>();
-                if(prioritizeUnexplored){
+                if (prioritizeUnexplored) {
                     //Lets try for unexplored systems in the desired range band and add the required entity there
-                    for(StarSystemAPI s : distance_priority.get(i)){
-                        if(s.isEnteredByPlayer()){
+                    for (StarSystemAPI s : distance_priority.get(i)) {
+                        if (s.isEnteredByPlayer()) {
                             randomSystemFallback.add(s);
                         }
                     }
                     //no unexplored systems? Let's include ones that have not been visited in a while
-                    if(randomSystemFallback.isEmpty()){
-                        for(StarSystemAPI s : distance_priority.get(i)){
-                            if(s.getDaysSinceLastPlayerVisit()>365){
+                    if (randomSystemFallback.isEmpty()) {
+                        for (StarSystemAPI s : distance_priority.get(i)) {
+                            if (s.getDaysSinceLastPlayerVisit() > 365) {
                                 randomSystemFallback.add(s);
                             }
                         }
                     }
                 }
                 //if there is not unexplored priority or if somehow every system in the required range band has been visited within the year... Somehow...
-                if(randomSystemFallback.isEmpty()){
-                    for(StarSystemAPI s : distance_priority.get(i)){
+                if (randomSystemFallback.isEmpty()) {
+                    for (StarSystemAPI s : distance_priority.get(i)) {
                         randomSystemFallback.add(s);
                     }
                 }
@@ -2157,384 +2193,25 @@ public class MagicCampaign {
                 StarSystemAPI selectedSystem = randomSystemFallback.pick();
                 //and pick any entity
 
-                if(verbose){
-                    SectorEntityToken picked = selectedSystem.getAllEntities().get(MathUtils.getRandomNumberInRange(0, selectedSystem.getAllEntities().size()-1));
-                    log.error("Selecting "+picked.getName()+", in the "+picked.getContainingLocation().getName()+" system, "+ picked.getContainingLocation().getLocation().length()+ " ("+ Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) +" LY) from the sector's center");
+                if (verbose) {
+                    SectorEntityToken picked = selectedSystem.getAllEntities().get(MathUtils.getRandomNumberInRange(0, selectedSystem.getAllEntities().size() - 1));
+                    log.info("Selecting " + picked.getName() + ", in the " + picked.getContainingLocation().getName() + " system, " + picked.getContainingLocation().getLocation().length() + " (" + Misc.getDistanceLY(new Vector2f(), picked.getContainingLocation().getLocation()) + " LY) from the sector's center");
                     return picked;
-                } else return selectedSystem.getAllEntities().get(MathUtils.getRandomNumberInRange(0, selectedSystem.getAllEntities().size()-1));
-                
+                } else
+                    return selectedSystem.getAllEntities().get(MathUtils.getRandomNumberInRange(0, selectedSystem.getAllEntities().size() - 1));
+
             }
             //and if that wasn't enough to find one single suitable system, use the next range band
         }
         //apparently none of the systems had any suitable target for the given filters, looks like this is a fail
-        if(verbose){
-            log.error("No valid system found");
+        if (verbose) {
+            log.warn("No valid system found");
         }
         return null;
     }
-    
-    
-    
-    
+
     ////////////////////////////////////////////////////////////////////////////
     //DUMPSTER
     ////////////////////////////////////////////////////////////////////////////
-    
-    
-    
-    
-    
-//    private static FleetMemberAPI FLAGSHIP=null;
-    
-    /**
-     * Creates a fleet with a defined flagship and optional escort
-     * 
-     * @param fleetName
-     * @param fleetFaction
-     * @param fleetType
-     * campaign.ids.FleetTypes, default to FleetTypes.PERSON_BOUNTY_FLEET
-     * @param flagshipName
-     * Optional flagship name
-     * @param flagshipVariant
-     * @param captain
-     * PersonAPI, can be NULL for random captain, otherwise use createCaptain() 
-     * @param supportFleet
-     * map <variantId, number> Optional escort ship VARIANTS and their NUMBERS
-     * @param minFP
-     * Minimal fleet size, can be used to adjust to the player's power,         set to 0 to ignore
-     * @param reinforcementFaction
-     * Reinforcement faction,                                                   if the fleet faction is a "neutral" faction without ships
-     * @param qualityOverride
-     * Optional ship quality override, default to 2 (no D-mods) if null or <0
-     * @param spawnLocation
-     * Where the fleet will spawn, default to assignmentTarget if NULL
-     * @param assignment
-     * campaign.FleetAssignment, default to orbit aggressive
-     * @param assignementTarget
-     * @param isImportant
-     * @param transponderOn
-     * @param variantsPath
-     * If not null, the script will try to find missing variant files there. 
-     * Used to generate fleets using cross-mod variants that won't be loaded otherwise to avoid crashes.
-     * The name of the variant files must match the ID of the variant.
-     * @return 
-     */
-//    public static CampaignFleetAPI createFleet(
-//            String fleetName,
-//            String fleetFaction,
-//            @Nullable String fleetType,
-//            @Nullable String flagshipName,
-//            String flagshipVariant,
-//            @Nullable PersonAPI captain,
-//            @Nullable Map<String, Integer> supportFleet,
-//            int minFP,
-//            String reinforcementFaction,
-//            @Nullable Float qualityOverride,
-//            @Nullable SectorEntityToken spawnLocation,
-//            @Nullable FleetAssignment assignment,
-//            @Nullable SectorEntityToken assignementTarget,
-//            boolean isImportant,
-//            boolean transponderOn,
-//            @Nullable String variantsPath
-//    ) {
-//        
-//        
-//        
-//        
-//        
-//        
-//        /*
-//        //enforce clean generation
-//        theSupportFleet.clear();
-//        presetShipIdsOfLastCreatedFleet.clear();
-//        theFlagshipVariant=null;
-//        theFlagship=null;
-//        theFleet=null;
-//        */
-//        MagicVariables.presetShipIdsOfLastCreatedFleet.clear();
-//        boolean verbose = Global.getSettings().isDevMode();
-//
-//        if(verbose){
-//            log.error(" ");
-//            log.error("SPAWNING " + fleetName);
-//            log.error(" ");
-//        }
-//    
-//        String type = FleetTypes.PERSON_BOUNTY_FLEET;
-//        if(fleetType!=null && !fleetType.equals("")){
-//            type=fleetType;
-//        } else if(verbose){
-//            log.error("No fleet type defined, defaulting to bounty fleet.");
-//        }
-//        
-//        String extraShipsFaction = fleetFaction;
-//        if(reinforcementFaction!=null){
-//            extraShipsFaction=reinforcementFaction;
-//        } else if(verbose){
-//            log.error("No reinforcement faction defined, defaulting to fleet faction.");
-//        }
-//        
-//        SectorEntityToken location = assignementTarget;
-//        if(spawnLocation!=null){
-//            location=spawnLocation;
-//        } else if(verbose){
-//            log.error("No spawn location defined, defaulting to assignment target.");
-//        }
-//        
-//        FleetAssignment order = FleetAssignment.ORBIT_AGGRESSIVE;
-//        if(assignment!=null){
-//            order=assignment;
-//        } else if(verbose){
-//            log.error("No assignment defined, defaulting to aggressive orbit.");
-//        }
-//        
-//        Float quality = 2f;
-//        if(qualityOverride!=null && qualityOverride>=0){
-//            quality=qualityOverride;
-//        } else if(verbose){
-//            log.error("No quality override defined, defaulting to highest quality.");
-//        }
-//        
-//        ////////////////////////////
-//        //NON RANDOM FLEET ELEMENT//
-//        ////////////////////////////       
-//        
-//        /*
-//        theFlagshipVariant=flagshipVariant;
-//        if(supportFleet!=null && !supportFleet.isEmpty()){
-//            theSupportFleet=supportFleet;
-//        } 
-//        */
-//        
-//        FleetParamsV3 params = new FleetParamsV3(
-//                null,
-//                assignementTarget != null ? assignementTarget.getLocationInHyperspace() : null,
-//                fleetFaction,
-//                //2f, // qualityOverride
-//                qualityOverride,
-//                type,
-//                0f, 0f, 0f, 0f, 0f, 0f, 0f
-//        );
-//        params.ignoreMarketFleetSizeMult = true;
-//
-//        //create a fleet using the defined flagship variant and escort ships if any
-//        CampaignFleetAPI newFleet = generateFleet(params, flagshipVariant, supportFleet, variantsPath); // nonrandom fleet, flagship and preset variants
-//        if (newFleet == null || newFleet.isEmpty()) {
-//            if(verbose){
-//                log.error("Fleet spawned empty, possibly due to missing flagship - aborting");
-//            }
-//            return null;
-//        }
-////        FleetMemberAPI flagship = newFleet.getFlagship();
-//
-//        ////////////////////////////
-//        // RANDOM SHIPS ADDITIONS //
-//        ////////////////////////////  
-//        
-//        //calculate missing portion of the fleet
-//        int currPts = newFleet.getFleetPoints();
-//        int extraPts = 0;        
-//        if(verbose){
-//            log.warn("pregenerated fleet is " + currPts + " FP, minimum fleet FP is " + minFP);
-//            if (currPts < minFP) {
-//                extraPts = minFP - currPts;
-//                log.warn("adding " + extraPts + " extra FP of random ships to hit minimum");
-//            }
-//        } else {
-//            if (currPts < minFP) {
-//                extraPts = minFP - currPts;
-//            }
-//        }
-//        
-//        //tweak the existing fleet generation to add random ships
-//        params.combatPts = extraPts;
-//        params.doNotPrune = true;
-//        params.factionId=extraShipsFaction;
-//        params.quality = quality;
-//        params.qualityOverride = quality;
-//        CampaignFleetAPI extraFleet = FleetFactoryV3.createFleet(params);
-//
-//        //only add the proper amount of ships, starting by the larger ones
-//        /*
-//        List<FleetMemberAPI> holding = new ArrayList<>();
-//        for (FleetMemberAPI mem : extraFleet.getFleetData().getMembersInPriorityOrder()) {
-//            holding.add(mem);
-//        }
-//        for (FleetMemberAPI held : holding) {
-//            extraFleet.getFleetData().removeFleetMember(held);
-//            newFleet.getFleetData().addFleetMember(held);
-//        }
-//        */
-//        
-//        //making sure there is no flagship override there 
-//        for (FleetMemberAPI mem : extraFleet.getFleetData().getMembersInPriorityOrder()) {
-//            if(mem.isFlagship())mem.setFlagship(false);
-//            newFleet.getFleetData().addFleetMember(mem);
-//        }
-//        
-//        ///////////////////////////
-//        //FINISH FLEET GENERATION//
-//        ///////////////////////////
-//        
-//        
-//        //add the defined captain to the flagship, apply skills to the fleet
-//        if(captain!=null){
-//            newFleet.getFlagship().setCaptain(captain);
-//        }
-//        
-//        if(flagshipName!=null){
-//            newFleet.getFlagship().setShipName(flagshipName);
-//        }
-//        newFleet.setCommander(newFleet.getFlagship().getCaptain());
-//        FleetFactoryV3.addCommanderSkills(newFleet.getCommander(), newFleet, Misc.random);
-//
-//        //cleanup name and faction
-//        newFleet.setNoFactionInName(true);
-//        newFleet.setFaction(fleetFaction, true);
-//        newFleet.setName(fleetName);
-//
-//        //spawn placement and assignement
-//        if (location != null) {
-//            LocationAPI systemLocation = location.getContainingLocation();
-//            systemLocation.addEntity(newFleet);
-//            newFleet.setLocation(location.getLocation().x, location.getLocation().y);
-//            newFleet.getAI().addAssignment(order, assignementTarget, 1000000f, null);
-//        }
-//
-//        //set standard 70% CR
-//        List<FleetMemberAPI> members = newFleet.getFleetData().getMembersListCopy();
-//        for (FleetMemberAPI member : members) {
-//            member.getRepairTracker().setCR(0.7f);
-//        }
-//        
-//        //radius fix
-//        newFleet.forceSync();
-//        newFleet.getFleetData().setSyncNeeded();
-//        newFleet.getFleetData().syncIfNeeded();
-//        
-//        newFleet.getMemoryWithoutUpdate().set(MemFlags.ENTITY_MISSION_IMPORTANT, isImportant);        
-//        newFleet.setTransponderOn(transponderOn);
-//        /*
-//        //Triple down on enforcing the proper flagship
-//        for (FleetMemberAPI m : newFleet.getMembersWithFightersCopy()) {
-//            if (m==FLAGSHIP){
-//                m.setFlagship(true);
-//            } else {
-//                m.setFlagship(false);
-//            }
-//        }
-//        FLAGSHIP=null;
-//        */
-//        return newFleet;
-//    }
-    
-    
-    /*
-    private static CampaignFleetAPI generateFleet(
-            FleetParamsV3 params,
-            String flagshipVariant,
-            @Nullable Map<String, Integer> supportFleet,
-            @Nullable String variantsPath
-    ) {
 
-        boolean verbose = Global.getSettings().isDevMode();
-        
-        // create fake market and set ship quality
-        MarketAPI market = Global.getFactory().createMarket("fake", "fake", 5);
-        market.getStability().modifyFlat("fake", 10000);
-        market.setFactionId(params.factionId);
-        SectorEntityToken token = Global.getSector().getHyperspace().createToken(0, 0);
-        market.setPrimaryEntity(token);
-        market.getStats().getDynamic().getMod(Stats.FLEET_QUALITY_MOD).modifyFlat("fake", BASE_QUALITY_WHEN_NO_MARKET);
-        market.getStats().getDynamic().getMod(Stats.COMBAT_FLEET_SIZE_MULT).modifyFlat("fake", 1f);
-        params.source = market;
-
-        // set faction
-        String factionId = params.factionId;
-
-        // create the fleet object
-        CampaignFleetAPI newFleet = createEmptyFleet(factionId, params.fleetType, market);
-        //theFleet = newFleet;
-//        newFleet.getFleetData().setOnlySyncMemberLists(true);
-
-        Random random = new Random();
-        if (params.random != null) {
-            random = params.random;
-        }
-        
-        // add boss
-        FleetMemberAPI flag = addToFleet(flagshipVariant, newFleet, random, variantsPath, true);
-        if (flag == null) {
-            if(verbose){
-                log.error(flagshipVariant + " does not exist, aborting");
-            }
-            return null;
-        }
-        MagicVariables.presetShipIdsOfLastCreatedFleet.add(flag.getId());
-        
-        FLAGSHIP=flag;
-        
-        // add support
-        if (supportFleet!=null && !supportFleet.isEmpty()) {
-            for (String v : supportFleet.keySet()) {
-                for(int i=0; i<supportFleet.get(v); i++){
-                    FleetMemberAPI test = addToFleet(v, newFleet, random, variantsPath, false);
-                    if (test == null && verbose) {
-                        log.warn(v + " not found, skipping that variant");
-                    } else if (test != null) {
-                        MagicVariables.presetShipIdsOfLastCreatedFleet.add(test.getId());
-                        //just to make sure
-                        if(test.isFlagship())test.setFlagship(false);
-                    }
-                }
-            }
-        }
-        
-        //enforcing proper flagship just to be sure
-//        if ( newFleet.getFlagship() != flag ) {
-//            newFleet.getFlagship().setFlagship(false);
-//            flag.setFlagship(true);
-//        }
-        
-        if (params.withOfficers) {
-            addCommanderAndOfficers(newFleet, params, random);
-        }
-
-        newFleet.forceSync();
-
-        if (newFleet.getFleetData().getNumMembers() <= 0
-                || newFleet.getFleetData().getNumMembers() == newFleet.getNumFighters()) {
-        }
-        params.source = null;
-
-        newFleet.setInflater(null); // no autofit
-
-        newFleet.getFleetData().setOnlySyncMemberLists(false);
-        
-        return newFleet;
-    }
-    */
-    
-    /*
-    protected static FleetMemberAPI addToFleet(String variant, CampaignFleetAPI fleet, Random random, @Nullable String variantsPath, boolean flagship) {
-
-        FleetMemberAPI member;
-        ShipVariantAPI test = Global.getSettings().getVariant(variant);
-        //if the variant doesn't exist but a custom variant path is defined, try loading it
-        if (test == null && variantsPath!=null) {
-            test = loadVariant(variantsPath+variant+".variant");
-        }
-        if(test==null){
-            return null;
-        }
-
-        member = Global.getFactory().createFleetMember(FleetMemberType.SHIP, test);
-        String name = fleet.getFleetData().pickShipName(member, random);
-        member.setShipName(name);
-        member.setFlagship(flagship);
-        fleet.getFleetData().addFleetMember(member);
-        return member;
-    }
-    */
-    
 }

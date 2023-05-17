@@ -10,6 +10,7 @@ import com.fs.starfarer.api.input.InputEventAPI;
 import com.fs.starfarer.api.loading.ProjectileSpawnType;
 import com.fs.starfarer.api.util.IntervalUtil;
 import data.scripts.util.MagicSettings;
+import data.scripts.util.MagicVariables;
 import org.apache.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,11 +24,9 @@ import java.io.IOException;
 import java.util.List;
 import java.util.*;
 
-import static data.scripts.util.MagicSettings.toColor3;
-import static data.scripts.util.MagicVariables.MAGICLIB_ID;
-import static data.scripts.util.MagicVariables.verbose;
 import static org.lwjgl.opengl.GL11.*;
 
+@Deprecated
 public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
 
     private static final Logger LOG = Global.getLogger(MagicAutoTrails.class);
@@ -35,10 +34,10 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
     private static final Map<String, List<trailData>> PROJ_TRAILS = new HashMap<>();
 
     //A map for known projectiles and their IDs: should be cleared in init
-    private Map<DamagingProjectileAPI, List<Float>> slowProjTrailIDs = new WeakHashMap<>();
-    private Map<DamagingProjectileAPI, List<Float>> fastProjTrailIDs = new WeakHashMap<>();
+    private final Map<DamagingProjectileAPI, List<Float>> slowProjTrailIDs = new WeakHashMap<>();
+    private final Map<DamagingProjectileAPI, List<Float>> fastProjTrailIDs = new WeakHashMap<>();
     //A map to check the minimal length of everyframe projectiles and avoid issues with time warps
-    private Map<DamagingProjectileAPI, Vector2f> fastProjLoc = new WeakHashMap<>();
+    private final Map<DamagingProjectileAPI, Vector2f> fastProjLoc = new WeakHashMap<>();
 
     //timer for slow projectiles
     private final IntervalUtil timer = new IntervalUtil(0.06f, 0.07f);
@@ -60,7 +59,7 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
 
     @Override
     public void advance(float amount, List<InputEventAPI> events) {
-        
+
         CombatEngineAPI engine = Global.getCombatEngine();
         if (
 //                engine == null || 
@@ -226,7 +225,7 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
                     null,
                     trailData.layer,
                     trailData.frameOffsetMult
-                                                   );
+            );
         }
     }
 
@@ -234,19 +233,19 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
         //clear up the trash
         PROJ_TRAILS.clear();
 
-        List<String> trailFiles = MagicSettings.getList(MAGICLIB_ID, "magicTrail_files");
+        List<String> trailFiles = MagicSettings.getList(MagicVariables.MAGICLIB_ID, "magicTrail_files");
         trailFiles.add("data/config/modFiles/magicTrail_data.csv");
 
         for (String path : trailFiles) {
 
-            if(verbose)LOG.error("Merging trails from " + path);
+            if (MagicVariables.verbose) LOG.error("Merging trails from " + path);
 
             //merge all the trail
             JSONArray trailData = new JSONArray();
             try {
-                trailData = Global.getSettings().getMergedSpreadsheetDataForMod("trail", path, MAGICLIB_ID);
+                trailData = Global.getSettings().getMergedSpreadsheetDataForMod("trail", path, MagicVariables.MAGICLIB_ID);
             } catch (IOException | JSONException | RuntimeException ex) {
-                LOG.error("unable to read " + path,ex);
+                LOG.error("unable to read " + path, ex);
             }
 
             for (int i = 0; i < trailData.length(); i++) {
@@ -281,8 +280,8 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
 
                     float textureOffset = 0;
                     try {
-                        if(row.getBoolean("randomTextureOffset")){
-                            textureOffset=-1;
+                        if (row.getBoolean("randomTextureOffset")) {
+                            textureOffset = -1;
                         }
                     } catch (JSONException ignored) {
 //                            LOG.error("missing random texture offset boolean for " + thisProj);
@@ -300,8 +299,8 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
                                         (float) row.getDouble("fadeOut"),
                                         (float) row.getDouble("sizeIn"),
                                         (float) row.getDouble("sizeOut"),
-                                        toColor3(row.getString("colorIn")),
-                                        toColor3(row.getString("colorOut")),
+                                        MagicSettings.toColor3(row.getString("colorIn")),
+                                        MagicSettings.toColor3(row.getString("colorOut")),
                                         (float) row.getDouble("opacity"),
                                         blend,
                                         (float) row.getDouble("textLength"),
@@ -335,8 +334,8 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
                                         (float) row.getDouble("fadeOut"),
                                         (float) row.getDouble("sizeIn"),
                                         (float) row.getDouble("sizeOut"),
-                                        toColor3(row.getString("colorIn")),
-                                        toColor3(row.getString("colorOut")),
+                                        MagicSettings.toColor3(row.getString("colorIn")),
+                                        MagicSettings.toColor3(row.getString("colorOut")),
                                         (float) row.getDouble("opacity"),
                                         blend,
                                         (float) row.getDouble("textLength"),
@@ -360,10 +359,10 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
                         PROJ_TRAILS.put(
                                 thisProj,
                                 list
-                                       );
+                        );
                     }
                 } catch (JSONException ex) {
-                    if(verbose)LOG.error("Invalid line, skipping");
+                    if (MagicVariables.verbose) LOG.error("Invalid line, skipping");
                 }
             }
 
@@ -441,7 +440,7 @@ public class MagicAutoTrails extends BaseEveryFrameCombatPlugin {
                 boolean randomRotation,
                 CombatEngineLayers layer,
                 float frameOffsetMult
-                        ) {
+        ) {
             this.sprite = sprite;
             this.minLength = minLength;
             this.fadeIn = fadeIn;

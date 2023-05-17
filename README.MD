@@ -16,15 +16,17 @@ I use the 6 gig vmparams file to fix the RAM issues.  You can find it on the uno
 
 ## Mods
 
+A bunch of these mods are currently outdated, so I am waiting for them to get updated before I can update them here.
+
 I have included all the mods I use in this repository.  You can just download them all here, and then extract all of them into your mod folder in your Starsector directory.  You should really set it all up yourself though.
 
 ## Required
 
-[GraphicsLib v1.6.1](https://fractalsoftworks.com/forum/index.php?topic=10982.0)
+[GraphicsLib v1.7.0](https://fractalsoftworks.com/forum/index.php?topic=10982.0) Updated 5/17/23
 
-[LazyLib](https://fractalsoftworks.com/forum/index.php?topic=5444.0)
+[LazyLib v2.8](https://fractalsoftworks.com/forum/index.php?topic=5444.0) Updated 5/17/23
 
-[MagicLib v0.42rc6](https://fractalsoftworks.com/forum/index.php?topic=13718.0)
+[MagicLib v1.1.1](https://fractalsoftworks.com/forum/index.php?topic=25868.0) Updated 5/17/23
 
 ## Expanded Universe
 
