@@ -1,5 +1,9 @@
 {
+    # Note: With LunaLib, most (but not all) of these settings can be modified and saved ingame, in which case this file only serves to provide the default values
+    
     "directoryDialogKey": 45,   # integer, default 45 (X)
+    
+    "enableStrategicAI":false,	# new experimental strategic AI for NPC factions
     
     "ceasefireNotificationPopup": true,
     # 0 = no filter, 1 = popup only events affecting player/commissioner faction, 2 = filter out all events
@@ -24,8 +28,8 @@
     "fleetBonusFpPerPlayerLevel": 1,	# not actually used, except for vengeance and mining harassment fleets
     
     "prisonerRepatriateRepValue": 0.04,
-    "prisonerBaseRansomValue": 5000,
-    "prisonerRansomValueIncrementPerLevel": 500,
+    "prisonerBaseRansomValue": 10000,
+    "prisonerRansomValueIncrementPerLevel": 2000,
     "prisonerLootChancePer10Fp": 0.025,
     
     "crewLootMult": 0.02,   # loot about this many crew per enemy crew in killed ships
@@ -45,7 +49,9 @@
     # if false, replaces NPC invasions (including revenge counter-invasion mechanic) with raids
     "enableInvasions": true,
     "legacyInvasions": false,	# old invasion system before v0.10.3 revamp
+    "invasionsOnlyAfterPlayerColony": false,	# if true, factions will only invade after player faction is configured (as happens upon first having a colony)
     "allowInvadeStoryCritical":false,    # block NPC invasions from targeting story-critical markets
+    "allowInvadeStartingMarkets":true,	# if false, markets that exist at the start of the game cannot be invaded by NPCs, only by player
     "allowPirateInvasions": false,
     "retakePirateMarkets": true,	# allow factions to invade markets that pirates currently hold but didn't at start of game, even if allowPirateInvasions is false
     "fleetRequestCostPerFP": 400,  # used for player-requested fleets
@@ -73,7 +79,7 @@
     "freeMarketTariffMult": 0.5,    # 0.5 = halved tariffs
     "doubleSubmarketWeapons": false,	# if true, double the amount of weapons generated on most submarkets (old behavior)
     
-    #"prismInHyperspace": false,	# if false, Prism will get its own star system (but not if added midgame). Likely to crash, not recommended
+    #"prismInHyperspace": false,	# if false, Prism will get its own star system. Setting to true is likely to crash, not recommended
     "prismMaxWeapons": 27,
     "prismNumShips": 14,
     "prismNumWings": 6,
@@ -111,6 +117,8 @@
     "revengePointsPerEnemyFP": 0.05,
     "revengePointsForMarketCaptureMult": 2,
     "vengeanceFleetSizeMult": 0.8,
+    # old vengeance fleets have the intel item, spawn at a location, then chase you around the map
+    # new vengeance fleets just appear outside a system and try to catch you, like some vanilla encounters
     "useNewVengeanceEncounters": false,
     
     "specialForcesPointMult": 1,	# rate at which factions spawn special task groups
@@ -130,7 +138,7 @@
     "useCustomBattleCreationPlugin": true,	# affects things like map size and number of objectives
     
     "officerDeaths": false,	# officer permadeath (may be buggy)
-    "officerDaredevilBonus": true,	# 50% experience bonus for officers in a frigate, 25% in a destroyer
+    "officerDaredevilBonus": false,	# 50% experience bonus for officers in a frigate, 25% in a destroyer
     
     "stabilizePackageEffect": 2,
     "rebellionMult": 1,	# higher mult means unrest will boil over into rebellion more quickly

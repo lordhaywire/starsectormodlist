@@ -43,6 +43,7 @@
 	"nex_disruptMissionIntervalRateMult":0.125,
 	"nex_pirateRageIncrement":0.04,
 	"nex_expeditionDelayPerExistingColony":15,
+	"nex_colonyExpeditionOnlyAfterGalatia":false,
 	"nex_faction_respawn_cooldown":150,
 	"nex_revengeInvasionPointsToSpawn":125,
 	# if false, other factions will not attack Templars; recommend combining with "canInvade" tag in Templars' faction config to make them not invade others
@@ -66,6 +67,9 @@
 	
 	"nex_governorship_maxSize":4,	# tooltip will not be updated to reflect changes to this
 	"nex_governorship_industryValueMult":0.8,
+	"nex_autonomousIncomeMult":0.2,
+	"nex_rulerIncomeMult":0.2,	# making it same as autonomous income mult saves me the trouble of rewriting the tooltip for it
+	"nex_xpPerProfitMargin":4000,	# passive XP income from profitable colonies administered by player
 	
 	"nex_fleetRequestOrganizeTimeMult":0.75,	# default 0.75
 	
@@ -168,14 +172,14 @@
 	"nex_expandCoreLength":0,
 	"nex_expandCoreMult":1,
 	
+	"nex_customStartFleetThresholds":[0, 80000, 160000, 240000, 500000, 1000000],
+	
 	"nex_factionSetupNumFont":"graphics/fonts/insignia21LTaa.fnt",
 	
 	"plugins":{
 		"coreLifecyclePlugin":"exerelin.plugins.NexCoreLifecyclePlugin",
 		"newGameCreationEntryPoint":"exerelin.world.ExerelinNewGameSetup",
 		#"newGameSectorProcGen":"exerelin.world.ExerelinSectorProcGen",
-		
-		"nex_restoreCommanderPlugin":"exerelin.combat.RestoreCommanderPlugin",
 	},
 	
 	# Bonus XP values for most story-point-using actions
@@ -185,11 +189,13 @@
 		"agentOrderBoth":0,
 		
 		"nex_hireMerc":0.75,
-		"nex_gb_inspire":0,
+		"nex_gb_inspire":0.25,
 		
 		"nex_remFragments_threaten":1,
 		"nex_remBrawl_smoothtalk":0.75,
 		"nex_remBrawl_betray":0,	# since cost is zero SP
+		
+		"nex_RACA_persuade":0.25,
 	},
 	
 	"graphics":{
@@ -206,6 +212,8 @@
 		
 		"characters":{
 			"nex_dissonant":"graphics/exerelin/portraits/dissonant.png",
+			"nex_towering":"graphics/exerelin/portraits/towering.png",
+			"nex_argent":"graphics/exerelin/portraits/argent_v3.png",
 			"volta":"graphics/portraits/characters/volta.png",
 		},
 		
@@ -282,6 +290,8 @@
 			"command_experience":"graphics/icons/skills/command_experience.png",
 			
 			"nex_station_render":"graphics/exerelin/station_render_wireframe2.png",
+			
+			"nex_luna_icon":"graphics/exerelin/icons/nex_icon_nobg.png",
 		},
 		
 		"raidObjectives":{  # icons displayed at 26x26

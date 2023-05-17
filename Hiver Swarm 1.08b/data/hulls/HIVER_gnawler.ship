@@ -1,0 +1,53 @@
+{
+  "hullName": "Gnawler",
+  "hullId": "HIVER_gnawler",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/HIVER_gnawler.png",
+  "style": "HIGH_TECH",
+  "height": 36,
+  "width": 28,
+  "center": [15, 18.5],
+  "collisionRadius": 23.5,
+  "shieldCenter": [0, -0.5],
+  "shieldRadius": 22.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "HIVER_biohull"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14.5, -3],
+      "length": 15.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-14.5, 3],
+      "length": 15.5,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    9, -13.5,
+    23.5, -0.5,
+    11, 16,
+    -18.5, 13.5,
+    -18.5, -14
+  ]
+}

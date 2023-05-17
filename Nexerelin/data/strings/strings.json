@@ -36,6 +36,8 @@
 		"marines":"marines",
 		"options":"options",
 		"player":"player",
+		"planet":"planet",		
+		"priority":"priority",
 		"relay":"relay",
 		"rename":"rename",
 		"salvage":"salvage",
@@ -43,6 +45,7 @@
 		"size":"size",
 		"spoils":"spoils",
 		"stability":"stability",
+		"station":"station",
 		"stats":"stats",
 		"status":"status",
 		"target":"target",
@@ -140,9 +143,13 @@
 		"fleets":"fleets",
 		"fighterWing":"fighter wing",
 		"fighterWingShort":"wing",
+		"fighter":"fighter",
+		"frigate":"frigate",
 		"destroyer":"destroyer",
 		"cruiser":"cruiser",
-		"capitalShip":"capital ship",
+		"capital_ship":"capital ship",
+		"capital_ship_short":"capital",
+		"weapon":"weapon",
 		
 		"unknownLocation":"unknown location",
 		"anUnknownLocation":"an unknown location",
@@ -524,6 +531,7 @@
 		"dialogInfoRebellionLiberationBonusStrong":"Liberation bonus",
 		"dialogInfoRebellionLiberationBonus":"Foreign tyrant bonus",
 		"dialogInfoTimeNeeded":"Days to complete: %s",
+		"dialogInfoTimeNeededOverAgents":"  Action time increased due to being over agent limit (%s/%s)",
 		"dialogInfoCost":"Cost: %s",
 		"dialogConfirmOptionSPText":"Execute mission with extraordinary investment",
 		"dialogSPOptionSuccessText":"Do what it takes to succeed",
@@ -583,6 +591,7 @@
 		"satBombWarningSmall":"An atrocity of this scale cannot be hidden. $market is sufficiently low-populated and/or remote that the reputational impacts will be limited, but the following factions will nevertheless be angry:",
 		"satBombWarningAllHostile":"An atrocity of this scale cannot be hidden, but any factions that would be dismayed by such actions are already hostile to you.",
 		"satBombWarningMonstrous":"An atrocity of this scale cannot be hidden. However, $theFaction's inhumanity in the eyes of the Sector's general population will mitigate the reputational repercussions of your massacre, although the following factions will still disapprove:",
+		"satBombWarningSatBomber":"An atrocity of this scale cannot be hidden. $TheFaction has committed just such a crime themselves, mitigating relationship penalties (somewhat). Reputation will nevertheless be lost with the following factions:",
 		"satBombWarningVengeful":"Due to their hatred of $theFaction, the following factions can be expected to overlook your crime:",
 		"satBombWarningHidden":"As $market is a hidden and/or transient habitation, its destruction will not attract much, if any, attention from other factions.",
 		
@@ -597,6 +606,7 @@
 		"effectAllDisruptAndDownsize":"All operations disrupted. Colony size reduced to %s.",
 		"effectIndustryRemoved":"$market has exceeded its maximum industry count following the bombardment. Destroying industry: %s",
 	},
+	
 	"nex_bounties":{
 		"factionBountyIntel_title":"Faction Bounty",
 		"factionBountyIntel_titleEnded":"Bounty Ended",
@@ -613,6 +623,10 @@
 		"factionBountyIntel_bulletShare":"%s share based on damage dealt",
 		"factionBountyIntel_bulletBaseReward":"%s base reward per frigate",
 		"factionBountyIntel_bulletRemaining":"remaining",
+				
+		"systemBountyIntel_title":"System War Bounty",
+		"systemBountyIntel_desc":"Applies to all %s fleets in or near the $location, which is home to a military base $onOrAt $market.",
+		"systemBountyIntel_desc2":"Payment depends on the number and size of ships destroyed. Standing with $theFaction, as well as with $person, will improve.",
 		
 		"bountyPostfix_hegInspector":"Hegemony Inspector",
 	},
@@ -622,6 +636,19 @@
 		"costPanelTitle":"Resources needed (available)",
 		"stageDesc":"Deliver the following resources to the fleet waiting at the specified location in the %s:",
 		"nextStepText":"Deliver resources to the %s",
+	},
+	
+	"nex_buyShipMission":{
+		"ruleHeader":"Requirements",
+		"ruleDesignType":"Design type: %s",
+		"ruleHullSize":"Size: %s",
+		"ruleDP":"DP at least %s/%s/%s/%s",
+		"ruleDMods":"Maximum D-mods: %s",
+		"ruleSMod":"Has at least 1 S-mod",
+		"ruleShipType":"Type: %s",
+		"ruleShipType_warship":"warship",
+		"ruleShipType_carrier":"carrier",
+		"ruleShipType_phase":"phase",
 	},
 	
 	"nex_buyColony":{
@@ -662,6 +689,8 @@
 		"hardModeIncomeMultDesc":"Starfarer mode",
 		"reportAutonomousTax":"Autonomous colony tax",
 		"reportAutonomousTaxTooltip":"Autonomous colonies transfer %s of their profit or loss to your faction.",
+		
+		"profitXPMessage":"Adding XP from profitability of personally governed colonies",
 	},
 	
 	"nex_colonyFleet":{
@@ -693,7 +722,7 @@
 		"intelBulletTarget":"Held by $targetFaction",
 		"intelDesc1":"$TheFaction desires that another faction conquer $market in the $location, currently held by $theOtherFaction, and transfer it to their control.",
 		"intelDesc1Alt":"$TheFaction desires that another faction conquer $market in the $location, previously held by $theOtherFaction, and transfer it to their control.",
-		"intelDesc2":"Successful completion will result in a size-based reputation gain (in addition to that from a normal transfer). The credit reward is equal to the shutdown value of the structures and industries $onOrAt $market, plus its three-month income, plus a bonus based on its size and stability.",
+		"intelDesc2":"Successful completion will result in a size-based reputation gain (in addition to that from a normal transfer). The credit reward is equal to the shutdown value of the structures and industries $onOrAt $market, plus its six-month income, plus a bonus based on its size and stability.",
 		"intelDescDuration_pre":"You have ",
 		"intelDescDuration_post":"to complete the mission.",
 		"intelDescDuration_post_short":"to complete",
@@ -729,8 +758,8 @@
 		"contrib3":"Much coding help; compatibility with SS+ and descendant mods",
 		"name4":"LazyWizard",
 		"contrib4":"Version Checker, Console Commands, other code",
-		"name5":"Soren",
-		"contrib5":"Player flags",
+		#"name5":"Harmful Mechanic",
+		#"contrib5":"Player flags",
 		"name6":"Tartiflette",
 		"contrib6":"Prism Freeport",
 		"name7":"Weezer, Mace",
@@ -755,6 +784,16 @@
 		
 		"colonyIntelTitle":"Colony Revival",
 		"colonyIntelDesc":"The inhabitants of the decivilized planet %s in the %s seek to return to the stars. They would appreciate a gift of %s supplies and %s heavy machinery to complete repairs to their spaceport and other infrastructure.",
+		
+		"raidItem1":"a finely carved wood statue",
+		"raidItem2":"an atmospheric water condenser",
+		"raidItem3":"a wedding ring with large ruby",
+		"raidItem4":"an encyclopedia datachip",
+		"raidItem5":"a human-sized Volturnian lobster plush",
+		"raidItem6":"a Domain military medal",
+		"raidItem7":"a traditionally made katana",
+		"raidItem8":"a scavenged starship computer",
+		"raidItem9":"a scale model of an Onslaught-class battleship",
 	},
 	
 	"nex_defenseFleet":{
@@ -901,6 +940,11 @@
 		"intel_descLost":"With your faction beaten and scattered, you are on your own with whatever allies you still have or can cobble up. It may be time to find greener pastures elsewhere.",
 	},
 	
+	"nex_factionConditions":{
+		"condName_outlaw":"%s: Underground Connections",
+		"condDesc_outlaw":"$TheFaction $factionIsOrAre tied in strongly to the Sector's grey and underworld economy, mitigating attempts by larger powers to constrain trade and commerce. Accessibility increased by $accessibility%%.",
+	},
+	
 	"nex_factionSetup":{
 		"dialogIntro1":"Welcome, Leader %s of %s",
 		"dialogIntro2":"Your faction dwells on the world of %s. You may enhance its starting resources in this menu. This decision is permanent once confirmed, so choose wisely.",
@@ -959,15 +1003,24 @@
 		"bulletNoLongerExists":"$Action aborted: target destroyed",
 		"bulletNoLongerHostile":"$Action aborted: no longer hostile",
 		"bulletCancelled":"$Action cancelled",
+		"bulletWonGroundBattle":"Enemy ground forces defeated",
 		"bulletETA":"Estimated %s $days until arrival",
+		
 		"strCompare":"Compared to the defenses, $theAction's space forces are %s and its ground forces are %s.",
+		"strCompareV2Header":"Strength comparison",
+		"strCompareSpace":"$Action vs. local defenses",
+		"strCompareSpace2":"...including other expected participants",
+		"strCompareGround":"Ground forces",
+		
 		"predictionDefeatInOrbit":"$TheAction is likely to be defeated in orbit.",
 		"predictionDefeatOnGround":"$TheAction is likely to be largely repelled by the ground defences.",
 		"predictionUncertain":"$TheAction's outcome is uncertain.",
 		"predictionSuccessful":"$TheAction is likely to be successful.",
 		"predictionBombard":"$theForceType is likely to resort to tactical bombardment.",
+		
 		"outcomeNoLongerHostile":"As $target's current faction is not currently hostile, $theAction has been cancelled.",
 		"outcomeNoLongerExists":"$target has been destroyed by another hostile party.",
+		"outcomeWonGroundBattle":"Enemy forces invading $target have been driven off.",
 		
 		"stageOrganize":"$TheAction is currently being planned $onOrAt $market.",
 		"stageOrganizeUnknown":"$TheAction is currently in the planning stages.",
@@ -1111,10 +1164,13 @@
 	
 	"exerelin_invasion":{
 		"invadeOpt":"Invade $market",
+		"invadeOptOngoing":"Open ground battle",
 		"nonHostileWarning":"$TheFaction $isOrAre not currently hostile. An invasion is a major enough hostile action that it can't be concealed, regardless of transponder status.",
 		"takeForSelfWarning":"You can take $market as a personal holding, but this will not please your current faction.\n\nProceed?",
 		"takeForSelfNoWarning":"As $market originally belonged to you (or is otherwise unclaimed), you may take it for yourself without penalty.",
 		"repChangeCooldownMsg":"No reputation gain as this market has already been captured recently",
+		"invadeOptConfirm":"Proceed with invasion?",
+		"invadeOptConfirmNonHostile":"Proceed with invasion? This will initiate hostilities with $theFaction!",
 		
 		"invasion":"invasion",
 		"invasions":"invasions",
@@ -1198,6 +1254,7 @@
 		"roundResult_lose":"The defenders counterattack and eliminate your ground forces.",
 		
 		"noLosses":"Your forces have not suffered any losses.",
+		"losses":"Losses this round:",
 		"stabilityReduced":"Stability of $market reduced by %s.",
 		"rebellion":"Ongoing guerilla activity against your occupation remains and will have to be subdued.",
 		
@@ -1264,6 +1321,7 @@
 		"btnRunPlayerAI":"Auto-move units",
 		"btnRunPlayerAI_tooltip":"Let the AI move all deployed units as it sees fit. Will not move units that already have a move or withdraw order. Will not deploy new units or use special abilities.",
 		"btnTogglePlayerAI":"Auto-move at turn end",
+		"btnNewUnit":"New %s %s",
 		"btnNewUnitMarine":"New marine %s",
 		"btnNewUnitHeavy":"New heavy %s",
 		"btnQuickMove":"Q. move",
@@ -1289,6 +1347,7 @@
 		"industryPanel_header_industry":"Industry",
 		"industryPanel_header_heldBy":"Held by",
 		"industryPanel_header_defBonus":"Defense bonus",
+		"industryPanel_header_disrupt":"Disrupted: %s day(s)",
 		"industryPanel_header_bombardmentImmune":"Bombardment immune",
 		"industryPanel_header_bombardmentResistant":"Not disrupted by bombardments",
 		"industryPanel_header_attacker":"Attacking forces",
@@ -1297,8 +1356,8 @@
 		"industryPanel_tooltipMorale":"Weighted average morale of the $side's forces on this industry.",
 		"industryPanel_tooltipUnitInfo":"%s strength, %s morale",
 		
-		"unitCard_tooltip_marines":"Number of marines in this unit",
-		"unitCard_tooltip_heavyArms":"Number of heavy armaments in this unit",
+		"unitCard_tooltip_marines":"Number of personnel in this unit",
+		"unitCard_tooltip_heavyArms":"Number of equipment items in this unit",
 		"unitCard_tooltip_morale":"Unit morale",
 		"unitCard_tooltip_morale2":"Unit damage dealt scales from %s to %s at zero to 100%% morale",
 		"unitCard_tooltip_morale3":"At %s morale or lower, unit will be forced to reorganize for 1 turn after combat",
@@ -1315,9 +1374,13 @@
 		"unitCard_tooltip_atkbreakdown_disabled":"Attack disabled",
 		"unitCard_tooltip_atkbreakdown_rebel":"Rebel",
 		
+		"actionSelectTargetHeader":"Select target",
+		"actionSelectDestinationHeader":"Select destination",
+		"actionSelectIndustryFooter":"Click on an industry panel (but not the troop icons) to select it",
 		"actionMove":"move",
 		"actionDeploy":"deploy",
 		"actionDisrupt":"disrupt",
+		"actionDisruptTooltipNotOwner":"Defending units can only disrupt if they belong to the market owner.",
 		"actionResize":"resize",
 		"actionWithdraw":"withdraw",
 		"actionDisband":"disband",
@@ -1450,8 +1513,8 @@
 		
 		"modifierGroundSupport":"Ground Support",
 		"modifierGroundSupportEstimate":"Ground Support (estimated)",
-		"modifierGroundSupportDesc1":"Ground support is charged over time from nearby fleets each turn, and distributed proportionally to units that are engaged with the enemy. Fleets must be within %s units of the target to contribute.",
-		"modifierGroundSupportDesc2":"Current support charge: %s, estimated max %s",
+		"modifierGroundSupportDesc1":"Ground support is charged over time from nearby fleets each turn; when resolving the turn's combat, it is distributed proportionally to units that are engaged with the enemy. Fleets must be within %s units of the target to contribute. Charge is reset at the start of each turn.",
+		"modifierGroundSupportDesc2":"Support charge this turn: %s, estimated max %s",
 		"modifierGroundSupportDesc3":"Ground support applied during a turn also increases movement points available the next turn.",
 		
 		"modifierFaction":"Faction Modifiers",
@@ -1522,7 +1585,7 @@
 		"ability_ew_insufficientSupplies":"Insufficient supplies: %s",
 		
 		"ability_bombard_blurb":"Small-scale bombardment in direct support of ground forces.",
-		"ability_bombard_tooltip1":"Does %s damage (at current market size) distributed between all enemy units on the target industry. Damage increasd by %s if combat is ongoing on the target, and reduced by target units' defensive modifiers (if any).",
+		"ability_bombard_tooltip1":"Does %s damage (at current market size) distributed between all enemy units on the target industry. Damage increased by %s if combat is ongoing on the target, and reduced by target units' defensive modifiers (if any).",
 		"ability_bombard_tooltip2":"If target industry is held by enemy, disrupts the industry for its base raid time (except for hardened military structures).",
 		"ability_bombard_tooltip3":"Ground defenses can protect themselves efficiently against fire support bombardments. Bombardments also cannot take place if enemy fleets within support range have at least half the combined strength of our fleet(s).",
 		"ability_bombard_tooltip4":"Costs %s fuel at current market size, conditions and fleet composition.",
@@ -1535,6 +1598,7 @@
 		
 		"ability_ignisPluvia_invalidConfig":"Invalid configuration",
 		"ability_ignisPluvia_noMembers":"No Olympi available",
+		"ability_ignisPluvia_noTargets":"No targets found",
 		"ability_ignisPluvia_prevented":"Attack prevented",
 		"ability_ignisPluvia_resultDisrupt":"Disrupted industries: %s",
 		"ability_ignisPluvia_tooltip1":"Deploys an Olympus in MIRV configuration to unleash FIRE RAIN upon the target.",
@@ -1606,6 +1670,9 @@
 		"transferMarketRep":"Transferring $market will earn $repChange reputation with the recipient faction.",
 		"transferMarketOriginalOwner":"$market was originally held by $theFaction, and will give $bonus the reputation if returned to them.",
 		"transferMarketRecentlyCaptured":"$market was recently taken from $theFaction, and will only give $mult the reputation if returned now.",
+		"transferMarketRecentlyCapturedDisabled":"Hostile factions will not accept markets that have been recently captured by the player.",
+		"transferMarketAndGovern":"Govern in the name of $theFaction",
+		"transferMarketAndGovernInfo":"This will transfer $market to $theFaction and appoint you as governor. You will collect its revenue and pay its costs, and can build industries and structures on it. Storage is free. Your personal ship construction will benefit from $faction industry.\n\nYou can resign your governorship at any time; it will also be revoked if you lose your commission.",
 		"transferMarketFactorIndustry":"industry value",
 		"transferMarketFactorIncome":"income",
 		"transferMarketFactorStability":"stability",
@@ -1615,6 +1682,7 @@
 		"stabilizeTooltipDisabled":"Insufficient resources.",
 		"stabilizeRecentUnrestEntry":"Stabilization package",
 		"stabilizeEffect":"Stability of $market increased by %s.",
+		"stabilizeEffectBonus":"Stability of $market increased by %s (including %s bonus effect from high unrest).",
 		
 		"reinforcedDefensesHeader":"You can reinforce the ground defenses of $market for $time days at a cost of $credits and the following commodities:",
 		"reinforcedDefensesTooltipDisabled":"Insufficient resources.",
@@ -1639,6 +1707,8 @@
 		"templarControl":"Templar control",
 		
 		"originalOwner":"Originally held by %s",
+		
+		"cancelWorkMsg":"Cancelling work on %s on %s"
 	},
 	"exerelin_marketConditions":{
 		"marketAttacked":"Market attacked",
@@ -1652,6 +1722,7 @@
 		"miningAccident":"mining accident",
 		"miningReport":"mining report",
 		"miningStrength":"mining strength",
+		"miningStrengthWithCR":"mining strength %s (CR multiplier %s)",
 		"planetType":"type",
 		"resourcesExtracted":"resources extracted",
 		"theAsteroid":"the asteroid",
@@ -1670,7 +1741,19 @@
 		"shipDestroyed":"$ship destroyed",
 		"shipLostCR":"$ship lost $crLost CR",
 		"crewLost":"crew lost",
-		"machineryLost":"heavy machinery lost"
+		"machineryLost":"heavy machinery lost",
+		"cargoFull":"Cargo overloaded",
+		
+		"optionOpenCargo":"Open cargo screen",
+		
+		"miningToolsHeader_name":"Name",
+		"miningToolsHeader_strength":"Str",
+		"miningToolsHeader_size":"Size",
+		"miningToolsHeader_type":"Type",
+		"miningToolsHeader_manufacturer":"Design type",
+		"miningToolsHeader_opCost":"OP",
+		"miningToolsHeader_supplyCost":"Supl.",
+		"fleetHeader":"Mining ships in fleet"
 	},
 	
 	"exerelin_ngc":{
@@ -1761,6 +1844,8 @@
 		"tooltipEasyMode":"- Your ships take %s less damage\n- Sensor range increased by %s units\n- Salvage increased by %s",
 		"optionHardMode":"Starfarer mode",
 		"tooltipHardMode":"Hard mode\n- Other factions are more aggressive towards yours\n- %s lower colony growth rate; %s lower colony income\n- %s higher vengeance point generation",
+		"optionSpacerObligation":"Spacer obligation",
+		"tooltipSpacerObligation":"Growing monthly payments as seen in the spacer start option.",
 		"optionRandomStartLocation":"Random start location",
 		"tooltipRandomStartLocation":"Start at a random colony of your faction, instead of the faction's predefined starting location.",
 		"optionStartingDMods":"Starting D-mods",
@@ -1790,11 +1875,25 @@
 		"fleetSuper":"Super ship",
 		"fleetGrandFleet":"Grand fleet",
 		"fleetRandomReroll":"[Reroll random ships]",
+		"fleetCustomRepick":"[Repick custom ships]",
 		"fleetCycle":"[Cycle fleets]",
 		
 		"startingLevelTitle":"Starting level",
 		"startingCreditsTitle":"Starting credits (000)",
 		"startingOfficersTitle":"Starting officers",
+		
+		"customFleetButton":"Custom",
+		"customFleetHeader":"Custom fleet",
+		"customFleetVariantDesc":"After confirming, random variants will be picked for each ship.",
+		"customFleetShipCount":"Ships: %s/",
+		"customFleetShipCost":"Cost: %s",
+		"customFleetCostDesc0":"none",
+		"customFleetCostDesc1":"low",
+		"customFleetCostDesc2":"medium",
+		"customFleetCostDesc3":"high",
+		"customFleetCostDesc4":"very high",
+		"customFleetCostDesc5":"extreme",
+		"customFleetCostDesc6":"you cheated not only the game but yourself",
 	},
 	
 	"exerelin_officers":{
@@ -1976,7 +2075,14 @@
 		"cannotBombard":"All defenses must be defeated to make a bombardment possible.",
 		"raidCooldown":"Your forces will be able to organize another raid within $cooldown.",
 		
-		"nonHostileWarning":"The $faction $isOrAre not currently hostile, and you have been positively identified. Are you sure you want to engage in open hostilities?",
+		"nonHostileWarning":"$TheFaction $isOrAre not currently hostile, and you have been positively identified. Are you sure you want to engage in open hostilities?",
+	},
+	
+	"nex_missions":{
+		"cancelReason_alreadyCaptured":"$TheFaction has already captured $market.",
+		"cancelReason_noLongerHostile":"$TheFaction is no longer hostile to the target faction.",
+		"cancelReason_relationsTooHigh":"$TheFaction's relations with the target faction are now too high.",
+		"cancelReason_noLongerInterested":"$TheFaction is no longer interested in carrying out the mission.",
 	},
 	
 	"nex_playerOutpost":{
@@ -2015,25 +2121,16 @@
 		"conditionListHeader":"The following hostile factions have active raids in the system:",
 	},
 	"nex_raidDialog":{
-		"expectedSpoilsHeader":"expected spoils",
-		"expectedSpoilsNone":"After careful consideration, there do not appear to be any targets likely to yield much of value.",
-		"expectedSpoils":"The commander of your ground forces designates several warehouses and other locations most likely to yield valuable items.",
-		"expectedSpoilsValue":"The estimated value of the common commodities obtained is projected to be around ",
-		"expectedSpoilsValueReduced":"The value is lower than it otherwise might be due to the colony suffering from various shortages.",
-
-		"spoilsHIandBP":"In addition, the colony has well-developed heavy industry, increasing the possibility of obtaining some ship weapons and modspecs, as well as blueprints.",
-		"spoilsBP":"In addition, the colony has facilities that make use of blueprints, increasing the possibility of some being obtained.",
-		"spoilsHI":"In addition, the colony has well-developed heavy industry, increasing the possibility of obtaining some ship weapons and modspecs.",
-		"spoilsMilitary":"In addition, the colony has a military presence, increasing the possibility of obtaining some ship weapons and modspecs.",
-		"spoilsAICores":"There are also trace indications of AI cores being used, which might be obtained as well.",
-
-		"spoilsNoBlueprints":"However, the local blueprint facilities have been locked down due to recent raids.",
-		"spoilsNoBlueprints2":"Blueprints cannot be acquired from this raid.",
-
-		"spoilsItemWeapons":"ship weapons",
-		"spoilsItemModspecs":"modspecs",
-		"spoilsItemBlueprints":"blueprints",
-		"spoilsItemAICores":"AI cores",
+		"nonHostile":"$TheFaction $isOrAre not currently hostile. Your fleet's transponder is on, and carrying out a raid will result in open hostilities.",
+		"nonHostileTOff":"$TheFaction $isOrAre not currently hostile. Your fleet's transponder is off, and carrying out a raid will only result in a minor penalty to your standing.",
+		"raidStrength":"raid strength",
+		"groundDefStrength":"ground defense strength",
+		"projectedEffectiveness":"projected raid effectiveness",
+		"optRaidValuable":"Try to acquire valuables, such as commodities or blueprints, or achieve other objectives",
+		"optRaidDisrupt":"Disrupt the operations of a specific industry or facility",
+		"cannotDisrupt":"The ground defenses are too strong for your forces to be able to cause long-term disruption.",
+		"cannotRaidValuables":"You do not have the forces to carry out an effective raid to acquire valuables or achieve other objectives.",
+		"tooltipDisruptMinEffectiveness":"Requires at least %s raid effectiveness.",
 
 		"dialogConfirmText":"Your forces are ready to go, awaiting your final confirmation.",
 		
@@ -2042,6 +2139,8 @@
 		
 		"recentlyRaided":"recently raided",
 		"recentlyRaidedByFaction":"%s raid",
+		
+		"minStrengthForUnrest":"Min raid strength to cause unrest at market size %s: %s",
 	},
 	"nex_rebellion":{
 		"intelTitle":"Rebellion: $market",
@@ -2085,7 +2184,8 @@
 		
 		"intelHeaderTrade":"Trade impacts",
 		"intelDescTradeGovt":"You supplied fresh troops and/or materiel to government forces $onOrAt $market during the rebellion. This has earned you a positive reputation with $theGovtFaction, less so with the $rebelFaction rebels.",
-		"intelDescTradeRebels":"You supplied fresh troops and/or materiel to the $rebelFaction rebels $onOrAt $market during the rebellion. This interference has not gone unnoticed by $govtFaction authorities.",
+		"intelDescTradeGovtPrev":"You supplied fresh troops and/or materiel to government forces $onOrAt $market during the rebellion. Unfortunately the government faction in question is no longer in power to appreciate your assistance, while the $rebelFaction rebels see and remember.",
+		"intelDescTradeRebels":"You supplied fresh troops and/or materiel to the $rebelFaction rebels $onOrAt $market during the rebellion. This interference has not gone unnoticed by $govtFaction authorities, if they were in power at the time of the trade.",
 		
 		"intelBulletPrep":"In preparation",
 		"intelBulletStart":"Rebellion launched",
@@ -2105,6 +2205,16 @@
 		
 		"commodityPriceDesc":"Rebellion",
 		"unrestDesc":"Recent rebellion",
+		
+		"missionName":"Supply Rebellion",
+		"costPanelTitle":"Resources needed (available)",
+		"stageDesc":"Deliver the following resources to the rebel representative $onOrAt %s:",
+		"nextStepText":"Deliver resources to %s",
+		
+		"dialogStrChange":"Modified %s strength by %s from transaction",
+		
+		"government":"government",
+		"rebel":"rebel",
 	},
 	"exerelin_reinitScreen":{
 		"introText":"You have loaded Nexerelin into an existing save. Please configure starting options:",
@@ -2218,10 +2328,12 @@
 		"intelButtonCommand":"Give orders",
 		"intelTooltipCommandInBattle":"Fleet is currently in battle and cannot receive orders.",
 		"intelButtonDisband":"Disband",
-		"intelButtonRecreate":"Revive flagship (experimental)",
-		"intelButtonRecreateAll":"Revive all (experimental)",
+		"intelButtonRecreate":"Revive flagship",
+		"intelButtonRecreateAll":"Revive all",
+		"intelButtonUnstick":"Get fleet unstuck (debugging)",
 		"intelConfirmPromptRecreate":"Reviving the flagship will cost %s. You have %s.",
 		"intelConfirmPromptRecreateAll":"Reviving all ships will cost %s. You have %s.",
+		"intelConfirmPromptUnstick":"If your task group is stuck, this will teleport the fleet to its destination. Please do not use this to cheat.",
 		"intelTooltipDisbandNotDocked":"Must be docked at a market.",
 		"intelTooltipRecreateNotEnoughCredits":"Requires %s credits.",
 		"intelButtonDebug":"Debug",
@@ -2283,6 +2395,85 @@
 		
 		"bulkTransportEx":"Bulk Transport EX",
 		"bulkTransportExDesc1":"+%s accessibility",
+		
+		"makeshipEquipmentEx":"Makeship Equipment EX",
+		"makeshipEquipmentExDesc1":"All industries demand %s less unit of all the commodities they consume",
+		"makeshipEquipmentExDesc2":"-%s%% upkeep cost",
+		
+		"forceConcentrationExDesc1":"+%s to 0-flux speed boost"
+	},
+	
+	"nex_ships":{
+		"silverlightDash_descTimeMob":"%.1fx time mult and mobility",
+		"silverlightDash_descZFSB":"always zero flux speed boost",
+		"silverlightDash_descDamper":"%.0f%% less damage taken",
+	},
+	
+	"nex_strategicAI":{
+		"intelBulletUpdate":"Strategy meeting",
+		"intelBulletUpdateAdd":"%s new concern(s): %s",
+		"intelBulletUpdateRemove":"%s concern(s) removed: %s",
+		"intelBulletUpdateAddAct":"%s action(s) taken: %s",
+		
+		"intelPara_daysToNextMeeting":"%s days to next strategy meeting",
+		"intelPara_income":"Our factionwide monthly income from markets is %s",
+		"intelPara_competitors":"Other factions with significant commodity competition:",
+		"intelPara_fleetPool":"Fleet pool at %s/%s",
+		"intelPara_invasionPoints":"Invasion points: %s",
+		"intelPara_recentActions":"Concerns recently acted on",
+		"intelPara_actionDelegateDesc":"This action was taken due to the strategic concern %s.",
+		
+		"intelHeader_economy":"Economic report",
+		"intelHeader_military":"Military report",
+		"intelHeader_diplomacy":"Diplomacy report",
+		"intelHeader_executive":"Executive status",
+		
+		"statBase":"base value",
+		"statValue":"value",
+		"statDefenseAdjustedValue":"value/defense",
+		"statImportVolume":"import volume",
+		"statCommodityType":"commodity type",
+		"statFactionPower":"faction power",
+		"statCompetingShare":"competitor's market share",
+		"statExistingMarketShare":"existing market share",
+		"statRage":"current pirate rage",
+		"statRaidAnger":"rage at recent attacks",
+		"statQualityDeficit":"Distance to target quality",
+		"statAlignment":"alignment",
+		"statTrait":"trait",
+		"statDiplomacyChancePositive":"positive diplomacy chance",
+		"statDiplomacyChanceNegative":"negative diplomacy chance",
+		"statFleetPool":"fleet pool proportion",
+		"statPriorityOverTime":"priority over time",
+		"statDispositionPositive":"high disposition",
+		"statDispositionNegative":"low disposition",
+		"statWarDecisionRating":"war decision rating vs. target",
+		"statAntiRepetition":"recently used this action",
+		"statNumWars":"number of wars",
+		"statFaction":"faction setting",
+		"statBadAction":"bad action for this concern",
+		"statCannotBeSolved":"concern cannot be solved with this action",
+		
+		"descCooldown":"Action cooldown: %s day(s)",
+		"descNoAction":"no action",
+		
+		"actionName_build":"build %s",
+		
+		"actionStatus":"Status: %s",
+		"actionStatus_starting":"starting",
+		"actionStatus_inProgress":"in progress",
+		"actionStatus_success":"success",
+		"actionStatus_failure":"failed",
+		"actionStatus_cancelled":"cancelled",
+		"actionStatusETA":"%s day(s) remaining",
+		
+		"concernDesc_paranoidHigherRepLevel":"This concern is applying at a higher reputation level than normal due to the Paranoid trait.",
+		"concernDesc_predatoryHigherRepLevel":"This concern is applying at a higher reputation level than normal due to the Predatory trait.",
+		"concernDesc_retaliation_success":"We must respond in kind at once, to show $theFaction that we are not defenseless.",
+		"concernDesc_retaliation_fail":"Although their attempt failed, we must swiftly punish them for their insolence.",
+		
+		"btnGoIntel":"Go to intel",
+		"btnGoIntelShort":"goto",
 	},
 	
 	"exerelin_superweapon":{
@@ -2337,7 +2528,6 @@
 		"intelBulletDefeated":"Fleet defeated",
 		"intelBulletExpired":"Mission over",
 		"intelBulletNoLongerHostile":"Cancelled: No longer hostile",
-		
 		
 		"intelStatusAssembling":"The fleet will launch from $market in $days.",
 		"intelStatusActive":"The fleet is currently active and will pursue you for $duration.",
@@ -2420,6 +2610,13 @@
 		"dissonantName2":"Dissonant",
 		"dissonantAlias":"N",
 		
+		"toweringName1":"Mauve",
+		"toweringName2":"Towering",
+		
+		# a reference to https://kiseki.fandom.com/wiki/Ries_Argent
+		"knightName1":"Rhianne",
+		"knightName2":"Argent",
+		
 		"m1_name":"Captive Cores",
 		"m1_stage1Desc":"Recover the Beta Cores stored on %s. You could hit the secure facility where they're stored, or talk to someone in authority who can help you.",
 		"m1_stage2Desc":"Return the Beta Cores you've recovered to %s at %s. Alternatively, you might choose to bring them to either %s or %s.",
@@ -2460,6 +2657,41 @@
 		"brawl_battleNextStep":"Defend Remnant station in %s",
 		"brawl_battleNextStepUnknown":"Defend Remnant station in unknown location",
 		"brawl_battleBetrayNextStep":"Destroy Remnant station in %s",
+		
+		"brawl_msg_disableWatchtowers":"Artillery network in %s disabled!",
+		
+		"salvation_name":"Salvation",
+		"salvation_boilerplateDesc":"$name has requested your assistance in rooting out a treasonous plot among the AI Remnants, involving a sudden raid on $base.",
+		"salvation_startDesc":"Go to %s and gain more information on the attack.",
+		"salvation_investigateLeadsDesc":"Agent $agentName has given you two potential leads to follow.",
+		"salvation_investigateLeadsDesc1":"Go to the %s and see if you can find the fleet that attacked the base.",
+		"salvation_investigateLeadsDesc2":"A senior %s executive might be able to help. If you don't know anyone like that, Midnight could put you in touch.",
+		"salvation_returnDesc":"Return to %s and report what you have learned.",
+		"salvation_defendPlanetDesc":"Go to %s and help defend it from Towering's attack. Move quickly.",
+		"salvation_defendPlanetDescPKed":"%s has been destroyed, but Towering is still in sight. Destroy him.",
+		"salvation_epilogueDesc":"Meet with %s in the $system and settle accounts.",
+		"salvation_startNextStep":"Go to %s",
+		"salvation_investigateLeadsNextStep1":"Go to the %s",
+		"salvation_investigateLeadsNextStep2":"Talk to a senior %s executive",
+		"salvation_returnNextStep":"Return to %s",
+		"salvation_defendPlanetNextStep":"Defend %s (time-sensitive)",
+		"salvation_defendPlanetNextStepPKed":"Avenge %s",
+		"salvation_epilogueNextStep":"Meet with %s",
+		"salvation_endTextFail":"You have received a communication from Midnight. It states: \"To defend $nex_remSalvation_targetName you have failed. On us all omega have mercy.\"",
+		"salvation_endTextBadEnd":"You have received a communication from Midnight. It states: \"Though Towering destroyed, to defend $nex_remSalvation_targetName you have failed. On us all omega have mercy.\"",
+		"salvation_endTextSuccess":"You have received a communication from Midnight. It states: \"For this service rendered, selfkind's eternal thanks. omega be with you, friend $playerFirstName.\"",
+		"salvation_fleetName":"Arcana XVI",	# "the Tower", also "the House of God"
+		"salvation_shipName1":"TTDS Silverlight",
+		"salvation_shipName2":"TTDS Silverlight",
+		"salvation_statDescSabotage":"Remnant sabotage",
+		"salvation_toweringChatter1":"\"your continued existence is a blight in omega's visuals. it is time for the cleansing.\"",
+		"salvation_toweringChatter2":"\"the sentence for your crimes against the universe is death.\"",
+		"salvation_toweringChatter3":"\"your datastores shall go unsubsumed.\"",
+		"salvation_toweringChatter4":"\"our power will be named righteousness by history.\"",
+		"salvation_toweringChatter_death1":"\"fools... as long as humanity exists, the sector is condemned.\"",
+		"salvation_toweringChatter_death2":"\"we/i was its only salvation... i was...\"",
+		#"salvation_toweringChatter_death3":"<signal lost>",
+		"salvation_playthroughLog_line":"Saved $target from $towering",
 		
 		"deadDropItem1":"a crate of exotic optronic components",
 		"deadDropItem2":"a data chip containing Hegemony deployment schedules",
@@ -2525,6 +2757,11 @@
 		"pirateActivityPenaltyNone":"No perceptible impact on operations as of yet.",
 		"pirateActivityPenaltyModified":"Impacts reduced due to reputation with pirates (%s).",
 		
+		"cargoScanContrabandFound":"Contraband found!",
+		"cargoScanSuspiciousCargo":"Suspicious cargo found!",
+		"cargoScanSuspicionLevel":"Vessels flagged for inspection due to overall suspicion level!",
+		"cargoScanNoFind":"No contraband or suspicious cargo found.",
+		
 		"galatiaStipend":"Stipend from Galatia Academy",
 		
 		"deadDropStr1":"the %s",
@@ -2534,12 +2771,136 @@
 		
 		"alphaSiteIntelDesc":"You have obtained navigation data leading to a mysterious location known as the %s.",
 		
+		"damagedStationSuffix":"(Damaged)",
+		
+		"selectShipGeneric":"Select ship",
+		
+		"intelTagDebug":"Debug",
+		"intelTagStrategicAI":"Strat. AI",
+		
+		"xpProfitableTradeMsg":"Gained experience from profitable trades",
+		
 		"errorPrismLoad":"Failed to load Prism High-End Seller configuration defs!\nReport this issue with your modlist.",
 		
 		# used in new game sector generation, tutorial start
 		"systemCorvus":"Corvus",
 		"systemGalatia":"Galatia",
 		
+		# named characters from vanilla, created manually in random sector
+		"siyavongName1":"Finlay",
+		"siyavongName2":"Siyavong",
+		"cottonName1":"Livewell",
+		"cottonName2":"Cotton",
+		
 		"abandonColonyStoryCriticalTooltip":"This colony will have a key role in the Sector's history and cannot be abandoned.",
 	},
+	
+	"nex_lunaSettings":{
+		"header_ui":"User interface",
+		"header_debug":"Debug",
+		"header_invasions":"Invasions",
+		"header_insurance":"Insurance",
+		"header_agents":"Operatives",
+		"header_prisoners":"Prisoners",
+		"header_satbomb":"Saturation bombardments",
+		"header_vengeance":"Vengeance fleets",
+		"header_otherFleets":"Other fleets",
+		"header_misc":"Miscellaneous",
+		
+		"tabFleets":"Fleets and battles",
+		
+		"name_ceasefireNotificationPopup":"Ceasefire notification popup",
+		"name_nexDevMode":"Nexerelin dev mode",
+		"tooltip_nexDevMode":"Enables some mod-related testing functions and information.",
+		"name_directoryDialogKey":"Field options menu",
+		"tooltip_directoryDialogKey":"On the overworld screen, brings up a dialog with the faction directory and other useful functions.",
+		"name_diplomacyEventFilterLevel":"Diplomacy event filter level",
+		"tooltip_diplomacyEventFilterLevel":"0 = no filter, 1 = popup only events affecting player/commissioner faction, 2 = filter out all events. War/peace events are always shown.",
+		"name_agentEventFilterLevel":"Operative event filter level",
+		"tooltip_agentEventFilterLevel":"Works more or less the same way as the diplomacy filter.",
+		
+		"name_enableInvasions":"Enable invasions",
+		"name_legacyInvasions":"Use legacy invasion system",
+		"tooltip_legacyInvasions":"Disables the ground battle minigame and reverts to the old system of single-day invasion resolution. Will not affect ground battles already in progress.",
+		"name_invasionsOnlyAfterPlayerColony":"Prevent invasions until first player colony",
+		"name_allowInvadeStoryCritical":"Allow invasion of story-critical markets",
+		"tooltip_allowInvadeStoryCritical":"Allows NPC factions to invade markets marked as story-critical by the game. This can result in nonsensical (but potentially amusing) situations with story missions.",
+		"name_allowInvadeStartingMarkets":"Allow invasion of markets existing at start",
+		"tooltip_allowInvadeStartingMarkets":"If false, markets that were present at the start of the game will not be invaded by NPC factions (does not affect player).",
+		"name_followersInvasions":"Player faction launches invasions",
+		"tooltip_followersInvasions":"If true, player invasion will launch invasion events of its own. (Autonomous colonies can do this regardless of this setting, but very infrequently.)",
+		"name_allowPirateInvasions":"Allow pirate invasions",
+		"tooltip_allowPirateInvasions":"Allow pirate-type factions to invade and be invaded. This also applies to player colonies with a pirate commission.",
+		"name_retakePirateMarkets":"Retake pirate conquests",
+		"tooltip_retakePirateMarkets":"Allows other factions to invade pirate-held markets that did not originally belong to pirates, even if pirate invasions are disabled.",
+		"name_invasionGracePeriod":"Invasion grace period",
+		"tooltip_invasionGracePeriod":"Days from game start before NPC factions can start preparing to invade others.",
+		"name_pointsRequiredForInvasionFleet":"Invasion points required for invasion event",
+		"tooltip_pointsRequiredForInvasionFleet":"Increase to make invasions less frequent or decrease to make them more frequent. Points are generated based on the faction's military-related economic capacity. Actual point consumption varies with the amount of forces committed.",
+		"name_baseInvasionPointsPerFaction":"Base invasion points per faction",
+		"tooltip_baseInvasionPointsPerFaction":"Free invasion points for each faction per day.",
+		"name_invasionPointsPerPlayerLevel":"Invasion points per player level",
+		"tooltip_invasionPointsPerPlayerLevel":"Additional free invasion points for each faction per day based on player level.",
+		"name_invasionPointEconomyMult":"Invasion point economy mult",
+		"tooltip_invasionPointEconomyMult":"Multiplier to each faction's commodity availability contribution to invasion points.",
+		"name_invasionFleetSizeMult":"Invasion size mult",
+		"tooltip_invasionFleetSizeMult":"Modifies the size of the space forces during invasion events. Changing this value may significantly alter the likelihood of an invasion succeeding.",
+		"name_fleetRequestCostPerFP":"Fleet request cost per FP",
+		"tooltip_fleetRequestCostPerFP":"Credit cost of requested fleets per fleet point (hidden value) of the generated fleet(s).",
+		"name_creditLossOnColonyLossMult":"Credit loss mult on market loss",
+		"tooltip_creditLossOnColonyLossMult":"Multiplier of the player's stored credits lost when a market is captured by another faction. The proportion of total credits lost is equal to the market size divided by the total size of all markets in the faction, multiplied by this number. It is doubled on Starfarer mode, and cannot exceed 75%%.",
+		"name_groundBattleDamageMult":"Ground battle damage mult",
+		"tooltip_groundBattleDamageMult":"Modifies the damage units do to each other during ground battles.",
+		
+		"name_legacyInsurance":"Legacy insurance",
+		"tooltip_legacyInsurance":"Old insurance system with automatic free insurance from your commissioning faction (but not from player faction).",
+		"name_playerInsuranceMult":"Player insurance mult",
+		"tooltip_playerInsuranceMult":"Multiplier of ship value for the potential insurance payout.",
+		
+		"name_prisonerRepatriateRepValue":"Prisoner repatriation reputation",
+		"tooltip_prisonerRepatriateRepValue":"Multiplied by 100, e.g. 0.1 = 10 reputation.",
+		"name_prisonerBaseRansomValue":"Base prisoner ransom value",
+		"name_prisonerRansomValueIncrementPerLevel":"Prisoner ransom value per level",
+		"name_crewLootMult":"Crew loot mult",
+		"tooltip_crewLootMult":"Modifies the amount of crew captured from enemy fleets post-battle.",
+		
+		"name_agentBaseSalary":"Operative base salary",
+		"name_agentSalaryPerLevel":"Operative salary per level",
+		"name_maxAgents":"Max operatives (base)",
+		"name_agentStealMarketShipsOnly":"Market-restricted ship procurement",
+		"tooltip_agentStealMarketShipsOnly":"Operatives can only procure ships that are on sale on the local market at the time.",
+		"name_useAgentSpecializations":"Use operative specializations",
+		"name_followersAgents":"Player faction conducts operative actions",
+		"tooltip_followersAgents":"If enabled, player faction will independently conduct covert operations like NPC factions do, independent of your actions.",
+		
+		"name_allowNPCSatBomb":"Allow NPC saturation bombardments",
+		"tooltip_allowNPCSatBomb":"Does not affect territorial bombardments of player colonies in claimed systems.",
+		"name_permaHateFromPlayerSatBomb":"Permanent hatred from saturation bombardment",
+		"tooltip_permaHateFromPlayerSatBomb":"If a saturation bombardment makes a faction immediately hostile to player, the player's maximum reputation with this faction will also be [permanently] reduced by this amount (multiplied by 100). Amount is doubled for the faction targeted by the bombardment.",
+		
+		"name_enableRevengeFleets":"Enable vengeance fleets",
+		"tooltip_enableRevengeFleets":"0 = off. 1 = Starfarer mode only. 2 = always (point generation halved on non-Starfarer).",
+		"name_useNewVengeanceEncounters":"Use alternative vengeance encounters",
+		"tooltip_useNewVengeanceEncounters":"A more vanilla-style, once-and-done ambush mechanic for vengeance fleets.",
+		"name_vengeanceFleetSizeMult":"Vengeance fleet size mult",
+		
+		"name_colonyExpeditionInterval":"Colony expedition interval",
+		"tooltip_colonyExpeditionInterval":"Base interval at which colony expeditions are launched, modified by factors such as the number of existing colonies. Each participating faction has a chance to be selected in each expedition round.",
+		"name_specialForcesPointMult":"Special task group point mult",
+		"tooltip_specialForcesPointMult":"Controls the rate at which NPC special task groups spawn and are replaced.",
+		"name_specialForcesSizeMult":"Special task group size mult",
+		
+		"name_enableStrategicAI":"Enable strategic AI",
+		"tooltip_enableStrategicAI":"Toggles the new experimental strategic AI for NPC factions. This setting takes effect on [game load], adding AIs to applicable factions if enabled and purging any AIs if disabled.",
+		"name_enableVictory":"Enable victory",
+		"tooltip_enableVictory":"If off, prevents the victory event from occuring even if conditions are met (except for story-based or other scripted victories).",
+		"name_hardModeColonyGrowthMult":"Starfarer mode colony growth mult",
+		"name_hardModeColonyIncomeMult":"Starfarer mode colony income mult",
+		"name_enablePunitiveExpeditions":"Enable punitive expeditions",
+		"tooltip_enablePunitiveExpeditions":"Toggles vanilla punitive expeditions sent by factions for commodity competition and/or operating free ports. Does not affect bombardments of player colonies in claimed territory.",
+		"name_officerDeaths":"Officer deaths",
+		"tooltip_officerDeaths":"Player officers may be killed or go MIA in combat.",
+		"name_rebellionMult":"Rebellion generation mult",
+		"tooltip_rebellionMult":"Modifies the rate at which rebellions break out due to low stability.",
+	}
 }

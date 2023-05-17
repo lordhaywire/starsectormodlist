@@ -16,7 +16,7 @@ I use the 6 gig vmparams file to fix the RAM issues.  You can find it on the uno
 
 ## Mods
 
-I have included all the mods I use in this repository.  You can just extract all of them into your mod folder in your Starsector directory.  You should really set it all up yourself though.
+I have included all the mods I use in this repository.  You can just download them all here, and then extract all of them into your mod folder in your Starsector directory.  You should really set it all up yourself though.
 
 ## Required
 
@@ -28,7 +28,7 @@ I have included all the mods I use in this repository.  You can just extract all
 
 ## Expanded Universe
 
-[Nexerelin v0.10.5](https://fractalsoftworks.com/forum/index.php?topic=9175.0)
+[Nexerelin v0.10.6z](https://fractalsoftworks.com/forum/index.php?topic=9175.0) Updated 5/17/23
 
 ## Graphics
 
@@ -52,9 +52,13 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Logistics Notifications v1.4.4](https://fractalsoftworks.com/forum/index.php?topic=17379.0)
 
+<!-- [Realistic Combat v1.23.4](https://fractalsoftworks.com/forum/index.php?topic=24855.0) Added 5/17/23 -->
+
+[Space Truckin' v1.3](https://www.patreon.com/posts/space-truckin-v1-82648770) Added 5/17/23
+
 [Speedup](https://fractalsoftworks.com/forum/index.php?topic=13394.0)
 
-[Starship Legends v2.1.2](https://fractalsoftworks.com/forum/index.php?topic=15321.0)
+[Starship Legends v2.3.0](https://fractalsoftworks.com/forum/index.php?topic=15321.0) Updated 5/17/23
 
 [Transfer All Items](https://fractalsoftworks.com/forum/index.php?topic=17210.0)
 
@@ -68,9 +72,13 @@ I have included all the mods I use in this repository.  You can just extract all
 
 [Diable Avionics v2.64rc1](https://fractalsoftworks.com/forum/index.php?topic=10046.0)
 
+[Hiver Swarm - v1.08b](https://fractalsoftworks.com/forum/index.php?topic=22965.0) Added 5/17/23
+
 [Kadur Remnants](https://fractalsoftworks.com/forum/index.php?topic=6649.0)
 
 [Legacy of Arkgneisis](https://fractalsoftworks.com/forum/index.php?topic=13667.0)
+
+[Osiris Alliance v4.0.2](https://fractalsoftworks.com/forum/index.php?topic=22163.0) Added 5/17/23
 
 [prv Starworks v24.1](https://fractalsoftworks.com/forum/index.php?topic=12553.0)
 

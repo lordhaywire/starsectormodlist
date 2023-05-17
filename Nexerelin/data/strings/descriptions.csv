@@ -33,6 +33,21 @@ nex_memorial_beacon,CUSTOM,"This beacon marks the location of a major battle som
 ,,,,,
 nex_playerOutpost,CUSTOM,"A small space station of modular design, favored by explorers as a semi-permanent means of stashing supplies and the like in out-of-the-way locations. Has minimal security and relies on stealth to avoid looters.",,,
 ,,,,,
+nex_silverlight,SHIP,"> designation VOX_OMEGA
+core volition primed for subsumption
+CONFIRM RESPONSE",Unidentified Vessel,"# An unexpected error has been detected by Combat Analysis VM:
+#
+# EXCEPTION_ACCESS_VIOLATION (0xc0000005) 
+# $%&'()*+,-./:;<=>@[\]^`{|}~￠￡\§¨≪￢￣°±´¶・，≫×÷
+#
+# Tri-Tachyon Pad: Tri-OS 11™ Client Pad (11.1-internal debug mode)
+# Problematic frame:
+# V  [Combat_Analysis+0x69d77]",
+nex_alicorn,WEAPON,"""if you wish to live, then you must let go of your life!""","- Mauve Towering, during encirclement at [REDACTED] post-AIW1",,
+nex_silverlight_dash,SHIP_SYSTEM,"Synchronizes all systems for a powerful forward dash, suited to Mauve Towering's love of the chase. Doubles timeflow and mobility stats, and halves damage taken. The system disables shield, weapons and deceleration while active, so it is most useful for aggressive repositioning. Summons Aspects and detaches the ship's parasite Shards if in combat.",Special,"Doubles timeflow and mobility stats. Halves damage taken. Disables shield, weapons and deceleration while active. Summons Aspects and detaches Shards if in combat.",
+,,,,,
+,,,,,
+,,,,,
 ,,,,,
 # captured planet custom descs,,,,,
 ,,,,,
@@ -107,6 +122,7 @@ planet_gilead_pirates,CUSTOM,"The once beautiful garden world of Gilead has been
 planet_gilead_sindrian_diktat,CUSTOM,"The promised land is wrapped in a shawl of smoke, heavy industry pushing out the communes, the Ministry of Environment finding new ways to exploit the natural wonder of Gilead in the name of productivity. Images of Ludd have been brought into the street and shattered, replaced with concrete forms of the Lion of Sindria. As native fauna and flora die out, they are replaced by new hybrid specimens from the labs of the Ministry of Science and Technology. This is worse than the End Times for the faithful, for this new era shows no end in sight. God help us all.",,,
 planet_gilead_tritachyon,CUSTOM,"Shining pillars of glass and steel erupt from the planet like cancerous growths, as the devils within repeat the desecration that exiled humanity from Old Earth. Farms are bought out by new oligarchs, and corporate citizens of Gilead find themselves pushed towards extreme action to keep their homes, their very way of life. Corporate Pacification Forces now regularly exchange fire with fresh Pather cells, with no end in sight to the conflict.",,,
 planet_gilead_neutral,CUSTOM,"Crown of the Pilgrim's Path and cherished by the Luddic faithful, Gilead is a paradise rumoured to rival that of Old Earth - that which was given to humanity by God; which humanity desecrated; from which humanity was, in sin, exiled to suffer amongst the stars. Small tribes of humanity exist in simple conditions upon its surface, leaving the greater world pristine. From the view of orbit, one could truly believe the planet to be untouched by human hands.",,,
+nex_planet_gilead_pked,CUSTOM,"Crown of the Pilgrim's Path and cherished by the Luddic faithful, Gilead was once a paradise rumoured to rival that of Old Earth, whose fate it now shares. Dust storms wash over the ruins of Luddic dwellings and cathedrals alike, bleaching the bones of the fallen, the innocent punished for the sins of the guilty.",,,
 ,,,,,
 planet_asher_hegemony,CUSTOM,"Asher is a deathly cold and dry world of penance and labour. Apocalyptic dust storms cloud the cruel sky, turning the sun first blood-red before rendering it a directionless glow which offers neither warmth nor comfort. The entire heavy industrial base of Gilead was moved here during the Luddic Awakening by the Church, ever practical. Temples of the faith remain, personal shrines are intact under Hegemony rule, but no allusions have been made as to the repurpose of Asher's shipyards. Those who refuse to build vessels of war are dismissed from their places of work, yet none are arrested as this would disturb the peace. Only through unity of purpose can the eternal war be won, for the sector, for humanity.",,,
 planet_asher_independent,CUSTOM,"Asher is a deathly cold and dry world of penance and labour. Apocalyptic dust storms cloud the cruel sky, turning the sun first blood-red before rendering it a directionless glow which offers neither warmth nor comfort. The entire heavy industrial base of Gilead was moved here during the Luddic Awakening by the Church, ever practical. These factories and laboratories have since been claimed by CyberSun Industries, a highly competitive research and fabrication company whose designs have led some to claim intellectual theft, but as the company motto goes, there is nothing new under the sun.",,,

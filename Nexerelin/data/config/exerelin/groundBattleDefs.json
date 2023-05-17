@@ -40,6 +40,7 @@
 			"tags":["noBombard", "preventBombardment", "preventBombardmentSuper", "preventEW", "preventInspire", "preventCAS"],
 			"enemyDropCostMult":2,
 			"dropAttritionMult":2,
+			"icon":"graphics/icons/intel/red_planet.png",
 		},
 		"patrolhq":{
 			"tags":["resistBombard"],
@@ -187,6 +188,76 @@
 	#		},
 	#	},
 	#},
+	
+	"unitTypes":{
+		"marine":{
+			"name":"marine",
+			"type":"MARINE",	# legacy setting, may remove later
+			#"sprite":"optional/path_to/sprite.png",
+			"playerCanCreate":true,
+			"strength":1,
+			"personnel":{
+				"commodityId":"marines",
+				"crewReplacerJobId":"nex_groundBattle_marines",
+				"mult":1,	# integer, at least for now
+			},
+			"tags":["marine"],
+			"sortOrder":1,
+		},
+		"heavy":{
+			"name":"heavy",
+			"type":"HEAVY",
+			"playerCanCreate":true,
+			"strength":5.5,
+			"unitSizeMult":0.166667,
+			"dropCostMult":7.5,
+			"offensiveStrMult":1.25,
+			"crampedStrMult":0.75,
+			"equipment":{
+				"commodityId":"hand_weapons",
+				"crewReplacerJobId":"nex_groundBattle_heavyarms",
+				"mult":1,
+			},
+			"personnel":{
+				"commodityId":"marines",
+				"crewReplacerJobId":"nex_groundBattle_tankCrew",
+				"mult":2,
+			},
+			"tags":["heavy"],
+			"sortOrder":2,
+		},
+		"militia":{
+			"name":"militia",
+			"type":"MILITIA",
+			"playerCanCreate":false,
+			"strength":0.4,
+			"moraleMult":0.6,
+			"dropCostMult":0.7,
+			"personnel":{
+				"commodityId":"crew",
+				"crewReplacerJobId":"nex_groundBattle_militia",
+				"mult":1,
+			},
+			"tags":["militia"],
+			"sortOrder":3,
+		},
+		"rebel":{
+			"name":"rebel",
+			"type":"REBEL",
+			"playerCanCreate":false,
+			"strength":0.5,
+			"moraleMult":0.7,
+			"dropCostMult":0.7,
+			"personnel":{
+				"commodityId":"crew",
+				"crewReplacerJobId":"nex_groundBattle_rebel",
+				"mult":1,
+			},
+			"tags":["rebel"],
+			"sortOrder":4,
+		}
+	},
+	
 	
 	"natoAlphabet":[
 		"Alfa", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", 

@@ -28,6 +28,19 @@
 	"nex_sfx_gb_ignispluvia":[
 		{"file":"sounds/nexerelin/sfx_interface/explosion_chained.ogg","pitch":1.2,"volume":0.8},
 	],
+	"nex_sfx_gb_victory":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/victory.ogg","pitch":1.1,"volume":0.25},
+	],
+	"nex_sfx_gb_defeat":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/defeat.ogg","pitch":1,"volume":0.5},
+	],
+	"nex_sfx_gb_draw":[
+		{"file":"sounds/nexerelin/sfx_interface/groundbattle/draw.ogg","pitch":1,"volume":0.5},
+	],
+	
+	"nex_sfx_explosion":[
+		{"file":"sounds/nexerelin/sfx_interface/explosion.ogg","pitch":1,"volume":1},
+	],
 	
 	"nex_alarm":[
 		{"file":"sounds/nexerelin/sfx_interface/alarm.wav","pitch":1,"volume":1.0}
@@ -38,5 +51,23 @@
 	],},
 	"nex_ui_cargo_prisoner_drop":{"sounds":[
 		{"file":"sounds/nexerelin/sfx_cargo/steel_cage_close.ogg","pitch":1,"volume":0.6},
-	],}
+	],},
+	"nex_ui_ceasefire_prompt":{
+		"sounds":[
+			{"file":"sounds/sfx_interface/ui_channel_colony alert.ogg","pitch":1,"volume":0.4},
+		],
+	},	
+	
+	"nex_alicorn_fire": [
+		{"file":"sounds/nexerelin/weapons/plasma_cannon_fire_01.ogg","pitch":1,"volume":3},
+	],
+	"nex_alicorn_split": [
+		{"file":"sounds/nexerelin/weapons/plasma_gun_fire_01.ogg","pitch":1,"volume":2.4},
+	],
+	"nex_alicorn_impact": [
+		{"file":"sounds/nexerelin/weapons/plasma_cannon_kaboom_01.ogg","pitch":0.6,"volume":3.5},
+	],
+	"nex_alicorn_impact_light": [
+		{"file":"sounds/nexerelin/weapons/plasma_cannon_kaboom_01.ogg","pitch":0.7,"volume":2.7},
+	],
 }
