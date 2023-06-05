@@ -1,12 +1,12 @@
 {
     "displayName": "Close Support",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 4,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_predator",
     "hullMods": [
         "targetingunit",
-        "fluxdistributor"
+        "missleracks"
     ],
     "permaMods": [],
     "sMods": [],
@@ -15,7 +15,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "ionbeam"}
+            "weapons": {"WS0001": "gravitonbeam"}
         },
         {
             "autofire": false,
@@ -28,7 +28,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "railgun"}
+            "weapons": {"WS0004": "lightdualac"}
         },
         {
             "autofire": true,

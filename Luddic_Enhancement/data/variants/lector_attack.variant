@@ -1,14 +1,17 @@
 {
   "variantId": "lector_attack",
   "hullId": "lector",
-  "displayName": "Overdriven",
+  "displayName": "Attack",
   "goalVariant": true,
   "fluxCapacitors": 0,
-  "fluxVents": 6,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "safetyoverrides"
+    "missile_autoloader",
+    "armoredweapons",
+    "heavyarmor",
+    "unstable_injector"
   ],
   "weaponGroups": [
     {
@@ -23,15 +26,15 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "chaingun"
+        "WS0005": "shredder"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "heavymg",
-        "WS0002": "heavymg"
+        "WS0001": "arbalest",
+        "WS0002": "arbalest"
       }
     }
   ],

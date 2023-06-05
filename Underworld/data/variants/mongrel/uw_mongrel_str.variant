@@ -1,7 +1,7 @@
 {
     "displayName": "Strike",
-    "fluxCapacitors": 0,
-    "fluxVents": 28,
+    "fluxCapacitors": 5,
+    "fluxVents": 30,
     "goalVariant": true,
     "hullId": "uw_mongrel",
     "hullMods": ["missleracks"],
@@ -29,7 +29,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "gauss"}
+            "weapons": {"WS0001": "mark9"}
         },
         {
             "autofire": true,

@@ -2,7 +2,7 @@
   "variantId": "prv_skara_interceptor",
   "hullId": "prv_skara",
   "displayName": "Assault",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 7,
   "fluxVents": 10,
   "quality": 1,

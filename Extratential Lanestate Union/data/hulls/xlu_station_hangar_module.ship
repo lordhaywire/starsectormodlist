@@ -1,0 +1,186 @@
+{
+  "bounds": [
+    -13,
+    17,
+    -29,
+    45,
+    27,
+    140,
+    86,
+    140,
+    95,
+    131,
+    77,
+    107,
+    84,
+    74,
+    63,
+    74,
+    44,
+    42,
+    64,
+    24,
+    54,
+    -0,
+    64,
+    -24,
+    44,
+    -42,
+    63,
+    -74,
+    84,
+    -74,
+    77,
+    -107,
+    95,
+    -131,
+    86,
+    -140,
+    27,
+    -140,
+    -29,
+    -45,
+    -13,
+    -17,
+    -20,
+    -0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "hbi",
+    "chassis_storage",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "xlu_armorclad"
+  ],
+  "builtInWings": [],
+  "center": [
+    143,
+    32
+  ],
+  "collisionRadius": 324,
+  "engineSlots": [],
+  "height": 130,
+  "hullId": "xlu_station_hangar_module",
+  "hullName": "Hangar Module",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    33,
+    0
+  ],
+  "shieldRadius": 274,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_station_hangar_module.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        51.5,
+        -94,
+        67,
+        -94,
+        67,
+        -110,
+        51,
+        -110
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        67,
+        94,
+        51,
+        94,
+        51,
+        110,
+        67,
+        110
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": -10,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        3,
+        -49
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 10,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        3,
+        49
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -10,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        33,
+        -66
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 10,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        33,
+        66
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -10,
+      "arc": 120,
+      "id": "WS0005",
+      "locations": [
+        10,
+        -85
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 10,
+      "arc": 120,
+      "id": "WS0006",
+      "locations": [
+        10,
+        85
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 286
+}

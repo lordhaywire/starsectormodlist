@@ -1,6 +1,6 @@
 {
   "displayName": "Sword",
-  "fluxCapacitors": 2,
+  "fluxCapacitors": 0,
   "fluxVents": 30,
   "goalVariant": false,
   "hullId": "prv_aska_lc",
@@ -17,16 +17,16 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-	  "WS0001": "locust",
+        "WS0002": "prv_remission",
+        "WS0003": "prv_remission",
+        "WS0004": "prv_remission",
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "prv_remission",
-        "WS0003": "prv_remission",
-        "WS0004": "prv_remission",
+	  "WS0001": "hammerrack",
       }
     },
     {

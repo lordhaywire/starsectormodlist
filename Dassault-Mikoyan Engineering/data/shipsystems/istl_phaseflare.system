@@ -1,7 +1,0 @@
-{
-	"id":"istl_phaseflare",
-	"type":"WEAPON",
-	"aiType":"FLARE_JAMMER",
-	"weaponDataId":"istl_BBDflare",
-	"outOfUsesSound":"gun_out_of_ammo",
-}

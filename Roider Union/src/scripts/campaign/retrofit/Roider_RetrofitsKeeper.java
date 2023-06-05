@@ -6,7 +6,6 @@ import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import com.thoughtworks.xstream.XStream;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Settings;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,6 +15,7 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.magiclib.util.MagicSettings;
 
 /**
  * Author: SafariJohn

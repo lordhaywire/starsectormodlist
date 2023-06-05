@@ -1,7 +1,9 @@
 {
 	"id":"prv_heavygravkan_shot",
 	"onHitEffect":"scripts.weapons.prv_gravkan_OnHitEffect",
-	"passThroughMissiles":true,
+	"passThroughMissiles":true,	
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,	
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",
@@ -27,7 +29,7 @@
 			"explosionColor":[102,255,153,75],  # purely visual, will get a white additively blended core on top of this color
 			"explosionRadius":21, #14 # purely visual
 			"radius":35, #14
-			"coreRadius":7, #3 # full damage within core radius
+			"coreRadius":17.5, #3 # full damage within core radius
 			"collisionClass":HITS_SHIPS_AND_ASTEROIDS,
 			"collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
 			"particleSizeMin":7.0,

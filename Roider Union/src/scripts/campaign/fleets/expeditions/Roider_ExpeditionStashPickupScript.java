@@ -16,10 +16,10 @@ import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import com.thoughtworks.xstream.XStream;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids;
 import java.util.List;
 import java.util.Random;
+import org.magiclib.util.MagicSettings;
 
 /**
  * Author: SafariJohn

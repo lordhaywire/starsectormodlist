@@ -1,0 +1,22 @@
+{
+	"id":"prv_blaster_charge_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY_FIGHTER",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"passThroughMissiles":true,	
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"length":45.0,
+	"width":7,
+	"fadeTime":0.3,
+	### belt blaster
+	"fringeColor":[255,64,0,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[255,64,0,125],
+	"glowRadius":45,
+	"hitGlowRadius":90,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

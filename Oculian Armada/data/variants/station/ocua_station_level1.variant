@@ -1,0 +1,51 @@
+{
+  "variantId": "ocua_station_level1",
+  "hullId": "ocua_station_lvl1",
+  "displayName": "Orbital Station",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "BS 01": "ocua_station_module_hangar_medium_Standard"
+    },
+    {
+      "BS 04": "ocua_station_module_hangar_medium_Standard"
+    },
+    {
+      "SGS 01": "ocua_station_module_gun_small_Standard"
+    },
+    {
+      "SGS 02": "ocua_station_module_gun_small_Standard"
+    },
+    {
+      "SGS 04": "ocua_station_module_gun_small_Standard"
+    },
+    {
+      "SGS 03": "ocua_station_module_gun_small_Standard"
+    },
+    {
+      "BS 03": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "BS 02": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "PS 01": "ocua_station_pillar_short_Standard"
+    },
+    {
+      "PS 02": "ocua_station_pillar_short_Standard"
+    },
+    {
+      "PS 03": "ocua_station_pillar_short_Standard"
+    },
+    {
+      "PS 04": "ocua_station_pillar_short_Standard"
+    }
+  ],
+  "wings": []
+}

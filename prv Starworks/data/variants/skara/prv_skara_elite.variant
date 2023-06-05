@@ -2,8 +2,8 @@
   "variantId": "prv_skara_elite",
   "hullId": "prv_skara",
   "displayName": "Elite",
-  "goalVariant": false,
-  "fluxCapacitors": 9,
+  "goalVariant": true,
+  "fluxCapacitors": 7,
   "fluxVents": 10,
   "quality": 1,
   "permaMods": [],
@@ -43,8 +43,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "lightdualmg",
-        "WS0002": "lightdualmg"
+        "WS0001": "prv_lighttripleac",
+        "WS0002": "prv_lighttripleac"
       }
     }
   ],

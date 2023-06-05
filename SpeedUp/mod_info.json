@@ -2,10 +2,10 @@
     "id": "speedUp",
     "name": "SpeedUp",
     "author": "DarkRevenant",
-    "version": "0.7.2",
+    "version": "1.0.0",
     "utility": "true",
     "description": "Adds a key binding to speed the game up. Hold the middle mouse button or press the caps lock key. Controls are fully customizable.",
-    "gameVersion": "0.95.1a-RC5",
+    "gameVersion": "0.96a-RC8",
     "jars":["jars/SpeedUp.jar"],
     "modPlugin":"org.dark.speedup.SUModPlugin"
 }

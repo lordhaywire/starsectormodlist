@@ -7,7 +7,6 @@
     "tags":["uw_cabal_bp", "no_dealer"],
     "tech":"Starlight Cabal",
     "fleetPoints":27,
-    "ordnancePoints":294,
     "coversColor":[175,50,230,255],
     "baseValueMult":1.5,
     "spriteName":"graphics/uw/ships/odyssey/odyssey_cabal.png",

@@ -1,0 +1,44 @@
+{
+  "bounds": [
+    -76,
+    0,
+    -84,
+    -16,
+    -78,
+    -20,
+    -2,
+    -17,
+    81,
+    3,
+    72,
+    21,
+    -6,
+    1
+  ],
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches",
+    "xlu_armorclad"
+  ],
+  "builtInWings": [],
+  "center": [
+    24,
+    87
+  ],
+  "collisionRadius": 81.5,
+  "engineSlots": [],
+  "height": 174,
+  "hullId": "xlu_station_blocker_armor_right",
+  "hullName": "Armor Module",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 81.5,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_station_blocker_right_armor.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 48
+}

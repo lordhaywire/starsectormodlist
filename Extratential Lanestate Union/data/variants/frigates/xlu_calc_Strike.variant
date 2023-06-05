@@ -1,0 +1,48 @@
+{
+  "variantId": "xlu_calc_Strike",
+  "hullId": "xlu_calc",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 6,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "breach",
+        "WS0002": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "xlu_stubbon",
+        "WS 004": "xlu_stubbon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "xlu_shotcannon_m",
+        "WS 002": "xlu_shotcannon_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

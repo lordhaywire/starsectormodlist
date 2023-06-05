@@ -55,5 +55,5 @@
   },
   "textureType": ROUGH,
   "fireSoundOne": "thumper_spinup",
-  "fireSoundTwo": "prv_korp_fire"
+  #"fireSoundTwo": "prv_korp_fire"
 }

@@ -1,7 +1,7 @@
 {
     "displayName": "Fortress",
     "fluxCapacitors": 0,
-    "fluxVents": 3,
+    "fluxVents": 5,
     "goalVariant": true,
     "hullId": "uw_palace_right",
     "hullMods": [
@@ -9,6 +9,7 @@
         "heavyarmor"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_right_for",
     "weaponGroups": [{
         "autofire": true,

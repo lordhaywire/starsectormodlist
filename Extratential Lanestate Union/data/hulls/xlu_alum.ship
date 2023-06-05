@@ -1,0 +1,129 @@
+{
+  "hullName": "Alum",
+  "hullId": "xlu_alum",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_alum/xlu_alum.png",
+  "style": "MIDLINE",
+  "height": 90,
+  "width": 90,
+  "center": [45, 30],
+  "collisionRadius": 98,
+  "shieldCenter": [15, -0],
+  "shieldRadius": 74,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "xlu_weapons_overhaul",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [48, -0]
+    },
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-23, -9]
+    },
+    {
+      "id": "S 02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-23, 9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 45,
+      "locations": [43, 30]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": -45,
+      "locations": [43, -30]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": 75,
+      "locations": [2, 37]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -75,
+      "locations": [2, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30, -22],
+      "length": 34,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-30, 22],
+      "length": 34,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-30, 14],
+      "length": 34,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-30, -14],
+      "length": 34,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    55, -24,
+    46, -32,
+    -8, -41,
+    -24, -22,
+    -24, 22,
+    -8, 41,
+    46, 32,
+    55, 24
+  ]
+}

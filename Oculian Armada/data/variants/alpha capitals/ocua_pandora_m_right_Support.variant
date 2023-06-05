@@ -1,0 +1,43 @@
+{
+  "variantId": "ocua_pandora_m_right_Support",
+  "hullId": "ocua_pandora_m_right",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 14,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_prima",
+        "WS0003": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_kea"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_breeze_basic_h_wing",
+    "ocua_breeze_basic_h_wing",
+    "ocua_breeze_basic_h_wing"
+  ]
+}

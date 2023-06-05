@@ -1,0 +1,194 @@
+{
+  "hullName": "Espron",
+  "hullId": "xlu_espron",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_espron/xlu_espron.png",
+  "style": "MIDLINE",
+  "height": 116,
+  "width": 142,
+  "center": [71, 50],
+  "collisionRadius": 145.5,
+  "shieldCenter": [20, -0],
+  "shieldRadius": 100,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "xlu_gretchin_hullmod"
+  ],
+  "builtInWeapons": {
+    "BW 01": "xlu_gattler",
+    "BW 02": "xlu_gattler",
+    "BW 03": "xlu_gattler"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [54, 24]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [54, -24]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [54, 48]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [54, -48]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -0,
+      "locations": [28, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [54, -0]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [5, -57]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [5, 57]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 45,
+      "locations": [29, 50]
+    },
+    {
+      "id": "BW 03",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -45,
+      "locations": [29, -50]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-32, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 37],
+      "length": 56,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -37],
+      "length": 56,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -32],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, 32],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, -43],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-49, 43],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -36, 24,
+    -47, 31.5,
+    -47, 44,
+    -26, 52,
+    -32.5, 60.5,
+    8, 54,
+    26, 67,
+    61.5, 58.5,
+    61.5, -58.5,
+    26, -67,
+    8, -54,
+    -32.5, -60.5,
+    -26, -52,
+    -47, -44,
+    -47, -31.5,
+    -36, -24,
+    -48, 0
+  ]
+}

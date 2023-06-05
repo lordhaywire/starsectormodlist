@@ -1,0 +1,121 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "customRebelFaction":"",
+    "customRebelFleetId":"",
+    "rebelFleetSuffix":"Rogues",
+
+    "crewExpereinceLevelIncreaseChance":0.2, # Double, 0 - 1.0
+    "baseFleetCostMultiplier":1.2, # Double
+	
+    "invasionPointMult": 1.1,
+
+    "positiveDiplomacyExtra":0,
+    "negativeDiplomacyExtra":0,
+	
+    "startRelationships":{
+        "hegemony":-0.8, #Abandoned and forgotten like some stuff animal. Really gets on the XLU's nerves
+        "luddic_church":-0.25, #Seen the deep hatred it does to the Hegemony, doesn't want to be next
+		"luddic_path": -1.00, #Has been spreading terror cells ever since entry, so No.
+		"pirates": -0.1,  #Soften since thieves were left for dead in centuries
+        "blade_breakers": -0.5, #Pirates with honor, a rather distasteful honor
+		"tritachyon": -0.1, #CanIHasCores
+        "sindrian_diktat":-0.25, #Can't stand the overloaded ship production the XLU does
+        "persean":-0.5, #No payment, no comment
+        "tiandong": -0.1, #XLU thinks like competition, but really an oblivious corporation against a long lost system colony.
+        "fob": -0.25, #Let them fight. Let them fight. Let them fight.
+		"remnant": -1.0, #The reason why the Union was in such a mess
+        "dassault_mikoyan": -0.1, #Blockbuddies
+        "blackrock_driveyards": -0.1, #Blockbuddies
+        "fringe_defence_syndicate": 0.1, #Spacewedges, more like, SPACEWEDGIES
+		"interstellarimperium": 0.25, #Supply and demand. Even if it isn't really much
+        "sylphon": -0.25, #Needs a new haircut
+		"independent": 0.25,  #Couldn't ask for a better freeloader
+        "sad": 0, #Wished luck for the bodies they'd make
+        "ORA":0.1, #Both outer rim factions that have adapted to their surroundings
+        "diableavionics": 0.25, #Would rather see Hegemony bodies on the floor
+        "Coalition": 0.5, #Massive spacefarers, needs context
+        "ocua": 0.5, #Speak nothing of this; honestly, these girl scouts would get nuked instantly for standing next close to them.
+        "vass_shipyards": 0.1, #Really needs those engines
+        "anvil_industries":-0.25, #
+		"kingdom_of_terra":-0.1, #Grug does not no diz people are
+    },
+
+	"maxRelationships":{
+		"hegemony": -0.25, #Either jealousy or justice these two always bring up
+		"luddic_path": -0.50, #No more cells, period.
+	},
+	
+	"diplomacyPositiveChance":{
+		"hegemony": 0.25, #Needed to axe a quesCHIN
+		"luddic_path": 0.1, #Dude, no more cells please
+	};
+	"diplomacyNegativeChance":{
+		"hegemony": 2, #AAAAAAAAAAAAAAAAXE
+		"luddic_path": 3.0, #Dude, NOMORECELLSPLEASE
+        "ocua": 1.25,
+	};
+	
+    "morality":"neutral",
+    
+    "alignments":{
+        "diplomatic":-0.5,
+        "hierarchial":-1,
+        "technocratic":0.25,
+        "militarist":1,
+        "ideological":0.5,
+    },
+	"diplomacyTraits":["stalwart", "paranoid", "anarchist", "selfrighteous"],
+    
+    "vengeanceFleetNames":["Brickstorm", "Hardsmacker", "Armorclan"],
+    "vengeanceFleetNamesSingle":["a Brickstorm", "a Hardsmacker", "an Armorclan"],
+    
+    "startShipsSolo":[
+		["xlu_alum_Balanced"],
+		["xlu_tin_Standard"],
+		["xlu_zinc_Assault"],
+	],
+    "startShipsCombatSmall":[
+      ["xlu_stibium_Assault", "xlu_alum_Assault", "xlu_zinc_Strike"],
+      ["xlu_espron_Picket", "xlu_tin_Standard", "xlu_alum_Strike"]
+    ],
+	"startShipsCombatMedium":[
+      ["xlu_ferros_Assault", "xlu_espron_Attack", "xlu_zinc_Assault"],
+      ["xlu_macrolloy_Shock", "xlu_espron_Picket", "xlu_stibium_Support"]
+	],
+    "startShipsCombatLarge":[
+      ["xlu_kaolinite_x_Balanced", "xlu_ferros_Balanced", "xlu_carbide_Support"],
+      ["xlu_gadolinite_Balanced", "xlu_espron_Attack", "xlu_stibium_Support"]
+    ],
+    "startShipsCarrierSmall":[["xlu_colossus_Standard", "xlu_stibium_Support", "xlu_zinc_Assault"]],
+    "startShipsTradeSmall":[["xlu_alum_Balanced", "xlu_cobble_Standard", "xlu_tin_Standard"]],
+    "startShipsTradeLarge":[
+      ["xlu_duralumin_Standard", "xlu_cobble_Standard", "xlu_brass_Assault", "xlu_lead_Shock"],
+      ["xlu_carbide_Support", "xlu_cobble_Standard", "xlu_cobble_Standard", "xlu_espron_Attack"],
+	],
+    
+	#"miningVariantsOrWings":["xlu_colossus_Standard"]
+	
+    "defenceStations":[
+        {"ids":["xlu_orbitalstation", "xlu_battlestation", "xlu_starfortress"]},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.5},
+    ],
+	
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1, "count":1, "roundUp":true},
+        #{"id":"xlu_battle_yards", "mult":0.1, "count":1, "roundUp":true},
+    ],
+    
+    "startSpecialItems":[
+        [["xlu_basic_package", ""]],
+    ],
+	
+    "bonusSeeds":[
+        {"id":"nanoforge_corrupted", "count":1},
+        {"id":"aiCore_military", "mult":0.25},
+        {"id":"aiCore_heavyindustry", "count":1},
+        {"id":"aiCore_any", "mult":0.5},
+    ],
+    
+}

@@ -1,0 +1,63 @@
+{
+  "variantId": "ocua_basilix_Standard",
+  "hullId": "ocua_basilix",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_chemical",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ocua_reselplus",
+        "WS0003": "ocua_reselplus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_freya",
+        "WS0005": "ocua_freya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_prima",
+        "WS0007": "ocua_prima",
+        "WS0008": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "WS0009": "ocua_glint",
+        "WS0010": "ocua_glint",
+        "WS0011": "ocua_glint",
+        "WS0012": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

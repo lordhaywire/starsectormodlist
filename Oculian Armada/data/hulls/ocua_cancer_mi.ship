@@ -1,0 +1,119 @@
+{
+  "hullName": "Cancer",
+  "hullId": "ocua_cancer_mi",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_cancer_mi.png",
+  "style": "OCULUS",
+  "height": 32,
+  "width": 32,
+  "center": [16, 11],
+  "collisionRadius": 34.121109,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 28.30636,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_mi_mod",
+    "ocua_drone_mod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [10, -8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [10, 8]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 135,
+      "angle": 0,
+      "locations": [13, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [5, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 135,
+      "angle": 0,
+      "locations": [14, 8]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 135,
+      "angle": -0,
+      "locations": [14, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-6, -0],
+      "length": 15,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-6, 0],
+      "length": 15,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-8, -6],
+      "length": 8,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-8, 6],
+      "length": 8,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    15, 13,
+    -4.5, 10.5,
+    -4.5, -10.5,
+    15, -13
+  ]
+}

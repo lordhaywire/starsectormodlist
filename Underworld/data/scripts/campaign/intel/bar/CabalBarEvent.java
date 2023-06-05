@@ -51,7 +51,7 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
         if (!super.shouldShowAtMarket(market)) {
             return false;
         }
-        if (!UnderworldModPlugin.Module_StarlightCabal) {
+        if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
             return false;
         }
         regen(market);

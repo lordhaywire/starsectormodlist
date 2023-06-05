@@ -21,7 +21,6 @@ import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator.Loca
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import com.thoughtworks.xstream.XStream;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Equipment;
 import ids.Roider_Ids.Roider_Factions;
 import ids.Roider_Ids.Roider_FleetTypes;
@@ -30,6 +29,7 @@ import ids.Roider_Ids.Roider_Settings;
 import ids.Roider_Ids.Roider_Tags;
 import ids.Roider_MemFlags;
 import java.util.*;
+import org.magiclib.util.MagicSettings;
 import scripts.campaign.fleets.expeditions.Roider_ExpeditionFleetFactory;
 import scripts.campaign.intel.Roider_ConversionFleetIntel;
 

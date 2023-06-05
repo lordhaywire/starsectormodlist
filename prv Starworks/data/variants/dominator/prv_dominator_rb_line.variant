@@ -3,14 +3,13 @@
   "hullId": "prv_dominator_rb",
   "displayName": "Line",
   "goalVariant": true,
-  "fluxCapacitors": 13,
+  "fluxCapacitors": 22,
   "fluxVents": 30,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "missleracks",
     "dedicated_targeting_core",
-    "autorepair"
   ],
   "weaponGroups": [
     {
@@ -24,9 +23,9 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 014": "sabotpod",
-        "WS 015": "sabotpod",
-        "WS 016": "sabotpod"
+        "WS 014": "prv_blaster_charge_cluster",
+        "WS 015": "prv_blaster_charge_cluster",
+        "WS 016": "prv_blaster_charge_cluster"
       }
     },
     {
@@ -40,18 +39,18 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 001": "irpulse",
-        "WS 002": "irpulse",
-        "WS 005": "lightag",
-        "WS 007": "lightmortar"
+        "WS 005": "lightag"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
+        "WS 001": "pdlaser",
+        "WS 002": "pdlaser",
         "WS 004": "vulcan",
         "WS 006": "vulcan",
+        "WS 007": "vulcan",
         "WS 008": "vulcan",
         "WS 009": "vulcan",
         "WS 011": "dualflak"

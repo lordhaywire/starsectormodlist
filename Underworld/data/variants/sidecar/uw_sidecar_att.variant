@@ -1,10 +1,13 @@
 {
     "displayName": "Attack",
-    "fluxCapacitors": 4,
-    "fluxVents": 6,
+    "fluxCapacitors": 0,
+    "fluxVents": 2,
     "goalVariant": true,
     "hullId": "uw_sidecar",
-    "hullMods": ["missleracks"],
+    "hullMods": [
+        "missleracks",
+        "missile_autoloader"
+    ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_sidecar_att",

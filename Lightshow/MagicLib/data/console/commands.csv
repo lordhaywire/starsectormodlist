@@ -1,3 +1,0 @@
-command,class,tags,syntax,help
-MagicLib_ListBounties,data.scripts.bounty.console.ListBountiesCommand,"MagicLib,campaign",MagicLib_ListBounties [optionalBountyId],Lists bounties loaded on MagicLib's Bounty Board.
-MagicLib_ResetBounty,data.scripts.bounty.console.ResetBountyCommand,"MagicLib,campaign",MagicLib_ResetBounty <bountyId>,Resets a MagicLib bounty.

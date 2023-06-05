@@ -1,0 +1,37 @@
+{
+  "variantId": "ocua_galalixia_m_mid_left_Support",
+  "hullId": "ocua_galalixia_m_mid_left",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 15,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_glint",
+        "WS0003": "ocua_glint",
+        "WS0004": "ocua_glint",
+        "WS0005": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_elite_wing"
+  ]
+}

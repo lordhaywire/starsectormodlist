@@ -1,0 +1,195 @@
+{
+
+# WEAPONS
+##### Ballistics
+
+	# PHALANX MACHINEGUN
+	"xlu_phalanx_machinegun_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_phalanx_machinegun_fire_01.ogg","pitch":1.0,"volume":0.4},
+	],
+
+	# LIGHT SHOTCANNON
+	"xlu_shotcannon_s_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_01.ogg","pitch":1,"volume":0.3},
+	],	
+	
+	# HEAVY SHOTCANNON
+	"xlu_shotcannon_m_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_02.ogg","pitch":0.95,"volume":0.35},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_02.ogg","pitch":0.975,"volume":0.35},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_02.ogg","pitch":1,"volume":0.35},
+	],	
+	
+	# SUPERHEAVY SHOTCANNON
+	"xlu_shotcannon_l_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_03.ogg","pitch":0.95,"volume":0.4},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_03.ogg","pitch":0.975,"volume":0.4},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_shotcannon_fire_03.ogg","pitch":1.0,"volume":0.4},
+	],	
+
+	# GASKILO GATTLING CANNON
+	"xlu_gaskilo_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaskilo_fire_01.ogg","pitch":0.9,"volume":0.5},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaskilo_fire_01.ogg","pitch":0.875,"volume":0.5},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaskilo_fire_01.ogg","pitch":0.925,"volume":0.5},
+	],
+
+	# GASTON GATTLING CANNON
+	"xlu_gaston_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaston_fire_01.ogg","pitch":1.0,"volume":0.7},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaston_fire_01.ogg","pitch":0.975,"volume":0.7},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_gaston_fire_01.ogg","pitch":1.025,"volume":0.7},
+	],
+
+	# STRATUS CANNON
+	"xlu_stratus_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_stratus_fire1.ogg","pitch":0.7,"volume":1.3},
+	],
+
+	# STRATUS CANNON
+	"xlu_manganate_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_stratus_fire1.ogg","pitch":1.1,"volume":1.3},
+	],
+	# RODSTORM TURBOCANNON
+	"xlu_rodstorm_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_rodstorm_fire1.ogg","pitch":1,"volume":0.8},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_rodstorm_fire1.ogg","pitch":1.05,"volume":0.8},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_rodstorm_fire1.ogg","pitch":0.95,"volume":0.8},
+	],	
+
+	# BOLTCAN
+	"xlu_bolton_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_bolton_fire_01.ogg","pitch":1,"volume":0.7},
+	],
+	
+	# THUNDERSLUG
+	"xlu_thunderslug_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderslug_fire1.ogg","pitch":1,"volume":1.2},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderslug_fire1.ogg","pitch":0.975,"volume":1.175},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderslug_fire1.ogg","pitch":0.95,"volume":1.15},
+	],
+
+
+	# THUNDERFIST
+	"xlu_thunderfist_fire":
+	[
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderfist_fire1.ogg","pitch":1,"volume":0.5},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderfist_fire1.ogg","pitch":0.975,"volume":0.475},
+		{"file":"sounds/sfx_wpn_ballistics/xlu_thunderfist_fire1.ogg","pitch":0.95,"volume":0.45},
+	],
+
+##### Missile
+
+	# QUAFF SHOTS
+	"xlu_quilfling_s_fire":
+	[
+		{"file":"sounds/sfx_wpn_missile/xlu_watusi_fire_01.ogg","pitch":1.2,"volume":0.4},
+	],
+
+	# WATUSI LRM
+	"xlu_watusi_fire":
+	[
+		{"file":"sounds/sfx_wpn_missile/xlu_watusi_fire_01.ogg","pitch":0.8,"volume":0.5},
+	],
+
+
+
+##### Energy
+
+	# AUGMENTED LASER
+	"xlu_aug_laser_loop":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_aug_laser_loop.ogg","pitch":1.0,"volume":0.7},
+	],
+
+	# GRAVITON BEAM
+	"xlu_magpulse_beam_charge":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_magpulse_beam_charge1.ogg","pitch":1,"volume":0.4},
+	],
+	"xlu_magpulse_beam_fire":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_magpulse_beam_fire1.ogg","pitch":1,"volume":0.4},
+	],
+	"xlu_magpulse_beam_loop":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_magpulse_beam_loop.ogg","pitch":1,"volume":0.6},
+	],
+	
+	# KOWBAC LASER
+	"xlu_light_laser_fire":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_01.ogg","pitch":1.2,"volume":0.25},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_02.ogg","pitch":1.2,"volume":0.25},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_03.ogg","pitch":1.2,"volume":0.25},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_04.ogg","pitch":1.2,"volume":0.25},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_05.ogg","pitch":1.2,"volume":0.25},		
+	],
+	"xlu_rapid_laser_fire":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_01.ogg","pitch":1.3,"volume":0.2},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_02.ogg","pitch":1.3,"volume":0.2},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_03.ogg","pitch":1.3,"volume":0.2},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_04.ogg","pitch":1.3,"volume":0.2},
+		{"file":"sounds/sfx_wpn_energy/xlu_light_laser_fire_05.ogg","pitch":1.3,"volume":0.2},		
+	],
+	
+ 	
+ 	# GEEZER BEAMS
+	"xlu_geezer_m_loop":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_geezer_m_loop.ogg","pitch":1.1,"volume":0.7},
+	],
+	"xlu_geezer_l_loop":
+	[
+		{"file":"sounds/sfx_wpn_energy/xlu_geezer_l_loop.ogg","pitch":0.8,"volume":0.65},
+	],
+	
+#### SYSTEMS	
+	
+	# FRENZIED AMMO FEEDER
+	"xlu_system_frenzied_feeder":[ 
+		{"file":"sounds/sfx_systems/xlu_frenzied_feeder_oneshot.ogg","pitch":1,"volume":0.5},
+	],
+	
+	# CHARGED BUSTER FEED
+	"xlu_system_buster_feed":[ 
+		{"file":"sounds/sfx_systems/xlu_buster_feed_oneshot.ogg","pitch":1,"volume":0.5},
+	],
+	
+	# DILATION DAMPER
+	"xlu_system_dilationdamper":[ 
+		{"file":"sounds/sfx_systems/xlu_dilation_shell_activate.ogg","pitch":1.0,"volume":0.7},
+	],
+	"xlu_system_dilationdamper_loop":[
+		{"file":"sounds/sfx_systems/xlu_dilation_shell_loop.ogg","pitch":1.0,"volume":0.7},
+	],
+	"xlu_system_dilationdamper_off":[
+		{"file":"sounds/sfx_systems/xlu_dilation_shell_deactivate.ogg","pitch":1,"volume":1.0},
+	],
+	
+	# Ullanagh Drive
+	"xlu_system_ullanaghdrive_loop":[
+		{"file":"sounds/sfx_systems/xlu_dilation_shell_loop.ogg","pitch":1.0,"volume":0.3},
+	],
+	
+	# Curator's Overloader
+	"xlu_system_curatoroverloader":[ 
+		{"file":"sounds/sfx_systems/xlu_curator_overloader_activate.ogg","pitch":1.0,"volume":0.7},
+	],
+}
+
+
+
+

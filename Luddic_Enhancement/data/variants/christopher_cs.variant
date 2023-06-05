@@ -3,25 +3,34 @@
   "hullId": "christopher",
   "displayName": "Close Support",
   "goalVariant": true,
-  "fluxCapacitors": 9,
-  "fluxVents": 30,
+  "fluxCapacitors": 13,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "dedicated_targeting_core"
+    "missleracks",
+	"converted_hangar"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "heavymauler",
-        "WS0002": "heavymauler"
+        "WS0001": "annihilatorpod",
+        "WS0002": "annihilatorpod"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "swarmer",
+        "WS0008": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
       "weapons": {
         "WS0005": "salamanderpod",
         "WS0006": "salamanderpod"
@@ -29,26 +38,24 @@
     },
     {
       "autofire": true,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        "WS0003": "heavyac",
-        "WS0004": "heavyac"
+        "WS0011": "heavymortar"
       }
     },
     {
       "autofire": true,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        "WS0007": "vulcan",
-        "WS0008": "vulcan",
+        "WS0003": "flak",
+        "WS0004": "flak",
         "WS0009": "vulcan",
-        "WS0010": "vulcan",
-        "WS0011": "vulcan"
+        "WS0010": "vulcan"
       }
     }
   ],
   "modules": [],
   "wings": [
-    "talon_wing"
+    "perdition_wing"
   ]
 }

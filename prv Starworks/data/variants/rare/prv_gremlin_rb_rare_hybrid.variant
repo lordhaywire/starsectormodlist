@@ -3,14 +3,14 @@
   "hullId": "prv_gremlin_rb_rare",
   "displayName": "Hybrid",
   "goalVariant": true,
-  "fluxCapacitors": 22,
+  "fluxCapacitors": 26,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "dedicated_targeting_core",
     "stabilizedshieldemitter",
-    "reinforcedhull",
+    "reinforcedhull"
   ],
   "weaponGroups": [
     {
@@ -36,11 +36,17 @@
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS 006": "prv_fusion_burster",
         "WS 007": "prv_fusion_burster",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0002": "prv_lighttripleac",
         "WS0003": "prv_lighttripleac"
       }

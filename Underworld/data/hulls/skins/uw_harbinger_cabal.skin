@@ -7,7 +7,6 @@
     "tags":["uw_cabal_bp", "no_dealer"],
     "tech":"Starlight Cabal",
     "fleetPoints":16,
-    "ordnancePoints":100,
     "coversColor":[175,50,230,255],
     "baseValueMult":1.5,
     "spriteName":"graphics/uw/ships/harbinger/harbinger_cabal.png",

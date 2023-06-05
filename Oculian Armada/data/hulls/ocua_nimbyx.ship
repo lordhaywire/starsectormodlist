@@ -1,0 +1,277 @@
+{
+  "hullName": "Nimbyx",
+  "hullId": "ocua_nimbyx",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_nimbyx/ocua_nimbyx.png",
+  "style": "OCULUS",
+  "height": 246,
+  "width": 162,
+  "center": [81, 112],
+  "collisionRadius": 174,
+  "shieldCenter": [9, -0],
+  "shieldRadius": 155,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_external_carriage",
+    "civgrade"
+  ],
+  "builtInWings": [
+    "ocua_breeze_basic_h_wing"
+  ],
+  "builtInWeapons": {
+    "BW 01": "ocua_glint",
+    "BW 02": "ocua_glint",
+    "HNG 01": "ocua_hangar_slot",
+    "HNG 02": "ocua_hangar_slot",
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot",
+    "LIT 03": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "S 1",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [26, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [79, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        28, -9,
+        28, 9,
+        21, -9,
+        21, 9,
+        21, -0,
+        28, -0
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [108, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -0,
+      "locations": [116, -28]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [116, 28]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 195,
+      "angle": 180,
+      "locations": [-65, -0]
+    },
+    {
+      "id": "LIT 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [75, -8]
+    },
+    {
+      "id": "LIT 03",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [75, 8]
+    },
+    {
+      "id": "HNG 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [86, -19]
+    },
+    {
+      "id": "HNG 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [86, 19]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        86, 19,
+        95, 19,
+        86, -19,
+        94, -19
+      ]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [26, 66]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [26, -66]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-106, -14],
+      "length": 32,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-106, 14],
+      "length": 32,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-105, 30],
+      "length": 32,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-105, -30],
+      "length": 32,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-103, 46],
+      "length": 32,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-103, -46],
+      "length": 32,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-82, 61],
+      "length": 22,
+      "width": 10,
+      "angle": 165,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-82, -61],
+      "length": 22,
+      "width": 10,
+      "angle": -165,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-80, 68],
+      "length": 22,
+      "width": 10,
+      "angle": 165,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-80, -68],
+      "length": 22,
+      "width": 10,
+      "angle": -165,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    126, 36,
+    93, 68,
+    -56, 71,
+    -98, 49,
+    -102, 15,
+    -85, -0,
+    -102, -15,
+    -98, -49,
+    -56, -71,
+    93, -68,
+    126, -36,
+    132, 0
+  ]
+}

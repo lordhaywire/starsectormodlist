@@ -1,0 +1,29 @@
+{
+	"id":"xlu_contrada",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":400,
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_contrada_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_contrada_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_contrada_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_contrada_hardpoint_recoil.png",	
+	"visualRecoil":8.0,  # the gun sprites are only used if this is non-0
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[28, -5, 28, 5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[40, -5, 40, 5],
+	"hardpointAngleOffsets":[0, 0],
+	"interruptibleBurst":true,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":40.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":25.0,
+					   "particleSizeMin":8.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.12,
+					   "particleCount":46,
+					  "particleColor":[255,155,75,245]},
+	"projectileSpecId":"flak_shot",  # projectile that will be fired	
+	"fireSoundTwo":"flak_fire",	
+}

@@ -1,0 +1,53 @@
+{
+  "variantId": "xlu_zinc_Assault",
+  "hullId": "xlu_zinc",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "hardenedshieldemitter",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "sabot_single",
+        "WS0008": "sabot_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightag",
+        "WS0003": "lightag",
+        "WS0004": "lightag",
+        "WS0005": "lightag",
+        "WS0006": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_stubbon",
+        "BW 02": "xlu_stubbon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

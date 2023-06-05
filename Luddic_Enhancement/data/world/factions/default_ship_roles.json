@@ -5,10 +5,7 @@
 		"brawler_luddic_standard":10,
 
 		"cerberus_luddic_Shielded":4,
-		"cerberus_luddic_Standard":6,
-		
-		"hermes_pather_mg":5,
-		"hermes_pather_mortar":5,			
+		"cerberus_luddic_Standard":6,	
 	},
 	"combatSmall":{
 
@@ -19,11 +16,6 @@
 		
 		"hermes_pather_mg":10,
 		"hermes_pather_mortar":5,
-
-		"dram_lp_ied_std":10,
-		
-		"vanguard_luddic_std":8,
-		"vanguard_luddic_elite":2,
 		
 		"vanguard_lp_std":5,
 		"vanguard_lp_attack":5,		
@@ -31,7 +23,6 @@
 	},
 	"combatMedium":{
 		"mule_luddic_path_support":10,
-		"enforcer_Balanced_luddic":15,
 		
 		"fasces_cs":1,
 		"fasces_attack":3,
@@ -39,34 +30,32 @@
 		"fasces_so":1,
 		
 		"lector_outdated":3,
-		"lector_attack":4,
-		"lector_escort":2,
+		"lector_attack":2,
+		"lector_escort":1,
 		"lector_std":4,
 		
-		"phaeton_lp_ied_std":10,
+		"jude_cs":3,
+		"jude_so":2,
+		"jude_std":5,
 		
 		"mule_lp_x_armour":3,
 		"mule_lp_x_assault":3,
 		"mule_lp_x_std":4,	
-		
-		"manticore_luddic_std":10,
-		
+			
+		"phaeton_lp_attack":7,
+		"phaeton_lp_cs":2,
+		"phaeton_lp_strike":3,		
 	},
 	"combatLarge":{
-		"dominator_luddic_standard":10,
 		
 		"christopher_outdated":2,		
 		"christopher_cs":1,		
 		"christopher_attack":1,
 		"christopher_std":6,		
 		
-		"venture_luddic_path_overdriven":10,
-		
 		"sebastian_cs":1,
-		"sebastian_attack":2,
+		"sebastian_attack":3,
 		"sebastian_std":4,
-
-		"prometheus_lp_ied_std":2,
 		
 		"starliner_lp_x_assault":3,
 		"starliner_lp_x_armour":3,
@@ -74,14 +63,10 @@
 		
 		"eagle_le_lp_std":5,
 		
-		"eradicator_luddic_std":7,
-		"eradicator_luddic_old":3,
-		
 		"eradicator_lp_std":10,	
-	},
-	"combatCapital":{
-		"onslaught_lc_Outdated":2,
-		"onslaught_lc_attack":1,
+		
+		"revolt_cs":2,
+		"revolt_defensive":4,
 	},
 		
 		
@@ -92,49 +77,21 @@
 	},
 	"combatFreighterMedium":{
 		"mule_luddic_support":10,
-		"mule_luddic_path_support":10,
+		"mule_luddic_path_support":6,
+		"mule_luddic_path_strike":4,
 	},
 	"combatFreighterLarge":{
-		"venture_luddic_support":10,
-		"venture_luddic_path_overdriven":10,		
+		"venture_luddic_support":10,	
 	},
 	
 	"carrierSmall":{
-	
 			"fidem_cs":2,
 			"fidem_attack":2,
 			"fidem_std":5,	
-			"fidem_strike":1,
-			
-			"phaeton_lp_attack":7,
-			"phaeton_lp_cs":2,
-			"phaeton_lp_strike":3,
-
-	},
-	"carrierMedium":{	
-			"starliner_lp_attack":4,
-			"starliner_lp_strike":4,
-			"starliner_lp_support":1,
+			"fidem_strike":1,	
 	},
 			
 	"carrierLarge":{
-		
-		"legion_lc_Assault":2.5,
-		"legion_lc_Escort":2.5,
-		"legion_lc_FS":2.5,
-		"legion_lc_Strike":2.5,
-		
-		"le_prometheus3_std":5,
+		"le_prometheus3_std":10,
 	},
-	    "tankerSmall":{
-			"dram_lp_ied_std":5,
-    },
-		"tankerMedium":{
-			"phaeton_lp_ied_std":5,
-    },
-	    "linerMedium":{
-			"starliner_lp_attack":2,
-			"starliner_lp_strike":2,
-			"starliner_lp_support":1,
-    },
 }

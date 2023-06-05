@@ -1,0 +1,54 @@
+{
+  "variantId": "ocua_ignix_Pulse",
+  "hullId": "ocua_ignix",
+  "displayName": "Pulse",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 6,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "ocua_core_pulse"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ocua_shimakaze",
+        "WS0003": "ocua_shimakaze",
+        "WS0004": "ocua_shimakaze",
+        "WS0005": "ocua_shimakaze"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_pixie"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "WS0006": "ocua_blita",
+        "WS0007": "ocua_blita"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

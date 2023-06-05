@@ -1,12 +1,13 @@
 {
     "displayName": "Widowmaker",
-    "fluxCapacitors": 5,
-    "fluxVents": 9,
+    "fluxCapacitors": 6,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_tiger",
     "hullMods": [
         "advancedoptics",
-        "turretgyros"
+        "turretgyros",
+        "pointdefenseai"
     ],
     "permaMods": [],
     "sMods": [],
@@ -15,14 +16,14 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "railgun"}
+            "weapons": {"WS0001": "lightdualac"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
                 "WS0002": "pdlaser",
-                "WS0003": "pdburst",
+                "WS0003": "pdlaser",
                 "WS0004": "pdlaser",
                 "WS0005": "pdlaser"
             }

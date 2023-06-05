@@ -1,0 +1,37 @@
+{
+  "id": "ocua_lamella_station",
+  "specClass": "projectile",
+  "projectileSpecId": "ocua_lamella_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_base.png",
+  "turretGunSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_recoil.png",
+  #"turretUnderSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_under.png",
+  "hardpointSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_base.png",
+  "hardpointGunSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_recoil.png",
+  #"hardpointUnderSprite": "graphics/Oculian Armada/weapons/lamella/ocua_lamella_station_under.png",
+  "renderAboveAllWeapons": 0,
+  "visualRecoil": 10,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [ 169,35, 169,28, 169,21, 169,14, 169,7, 169,0, 169,-7, 169,-14, 169,-21, 169,-28, 169,-35 ],
+  "turretAngleOffsets": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  "hardpointOffsets": [ 256,35, 256,28, 256,21, 256,14, 256,7, 256,0, 256,-7, 256,-14, 256,-21, 256,-28, 256,-35 ],
+  "hardpointAngleOffsets": [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+  "barrelMode": "ALTERNATING", #LINKED
+  "animationType": "MUZZLE_FLASH",
+  "interruptibleBurst":false,
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": -34,
+    "spread": 15,
+    "particleSizeMin": 15,
+    "particleSizeRange": 15,
+    "particleDuration": 0.15,
+    "particleCount": 30,
+    "particleColor": [ 255, 100, 150, 255 ]
+  },
+  "textureType": ROUGH,
+  "fireSoundTwo": "ocua_lamella_fire"
+}

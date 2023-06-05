@@ -5,33 +5,27 @@
     "goalVariant": true,
     "hullId": "uw_scythe",
     "hullMods": [
-        "targetingunit",
-        "hardened_subsystems"
+        "hardened_subsystems",
+        "missleracks"
     ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_scythe_sta",
     "weaponGroups": [
         {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {"WS0001": "chaingun"}
-        },
-        {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0004": "swarmer",
-                "WS0005": "swarmer"
+                "WS0002": "sabot",
+                "WS0003": "sabot",
+                "WS0004": "sabot",
+                "WS0005": "sabot"
             }
         },
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS0002": "railgun",
-                "WS0003": "railgun"
-            }
+            "weapons": {"WS0001": "chaingun"}
         }
     ]
 }

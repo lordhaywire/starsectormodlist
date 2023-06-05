@@ -1,0 +1,39 @@
+{
+  "hullName": "Pillar",
+  "hullId": "ocua_station_pillar_tall",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Oculian Armada/ships/station/ocua_station_pillar_tall.png",
+  "style": "OCULUS",
+  "height": 426,
+  "width": 230,
+  "center": [115, 47],
+  "collisionRadius": 438,
+  "shieldCenter": [116, 0],
+  "shieldRadius": 284,
+  "viewOffset": 0,
+  "builtInMods": [
+    "reduced_explosion",
+    "vastbulk",
+    "never_detaches",
+    "do_not_fire_through",
+    "ocua_oculus_mod"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    369, 26,
+    351, 38,
+    355, 68,
+    325, 68,
+    315, 109,
+    256, 33,
+    12, 45,
+    12, -45,
+    256, -33,
+    315, -109,
+    325, -68,
+    355, -68,
+    351, -38,
+    369, -26
+  ]
+}

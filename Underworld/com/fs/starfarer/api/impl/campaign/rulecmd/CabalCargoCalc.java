@@ -277,27 +277,27 @@ public class CabalCargoCalc extends BaseCommandPlugin {
         float finalValue = amountToTake * (biggestCreditsValue / effectiveSize);
         float repImpact;
         if (finalValue <= 25000f) {
-            repImpact = 0.01f;
-        } else if (finalValue <= 50000f) {
             repImpact = 0.02f;
-        } else if (finalValue <= 75000f) {
-            repImpact = 0.03f;
-        } else if (finalValue <= 125000f) {
+        } else if (finalValue <= 50000f) {
             repImpact = 0.04f;
-        } else if (finalValue <= 200000f) {
-            repImpact = 0.05f;
-        } else if (finalValue <= 325000f) {
+        } else if (finalValue <= 75000f) {
             repImpact = 0.06f;
-        } else if (finalValue <= 525000f) {
-            repImpact = 0.07f;
-        } else if (finalValue <= 850000f) {
+        } else if (finalValue <= 125000f) {
             repImpact = 0.08f;
-        } else if (finalValue <= 1375000f) {
-            repImpact = 0.09f;
-        } else {
+        } else if (finalValue <= 200000f) {
             repImpact = 0.10f;
+        } else if (finalValue <= 325000f) {
+            repImpact = 0.12f;
+        } else if (finalValue <= 525000f) {
+            repImpact = 0.14f;
+        } else if (finalValue <= 850000f) {
+            repImpact = 0.16f;
+        } else if (finalValue <= 1375000f) {
+            repImpact = 0.18f;
+        } else {
+            repImpact = 0.20f;
         }
-        float repNegImpact = repImpact;
+        float repNegImpact = repImpact * 0.5f;
         switch (Global.getSector().getFaction("cabal").getRelToPlayer().getLevel()) {
             default:
             case VENGEFUL:

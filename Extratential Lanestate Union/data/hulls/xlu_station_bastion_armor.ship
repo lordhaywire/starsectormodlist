@@ -1,0 +1,42 @@
+{
+  "bounds": [
+    -15,
+    -53,
+    27,
+    -77,
+    33,
+    -70,
+    33,
+    70,
+    27,
+    77,
+    -15,
+    53
+  ],
+  "builtInMods": [
+    "reduced_explosion",
+    "always_detaches",
+    "xlu_armorclad"
+  ],
+  "builtInWings": [],
+  "center": [
+    79,
+    36
+  ],
+  "collisionRadius": 94,
+  "engineSlots": [],
+  "height": 72,
+  "hullId": "xlu_station_bastion_armor",
+  "hullName": "Station Bastion Armor",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 92,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_station_bastion_armor.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "width": 158
+}

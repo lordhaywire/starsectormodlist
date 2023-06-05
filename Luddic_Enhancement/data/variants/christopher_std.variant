@@ -1,39 +1,46 @@
 {
   "variantId": "christopher_std",
   "hullId": "christopher",
-  "displayName": "Standard",
+  "displayName": "Escort",
   "goalVariant": true,
-  "fluxCapacitors": 2,
-  "fluxVents": 20,
+  "fluxCapacitors": 14,
+  "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "heavyarmor"
+    "heavyarmor",
+    "missleracks",
+	"converted_hangar"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "harpoonpod",
-        "WS0006": "harpoonpod",
-        "WS0011": "harpoon"
+        "WS0001": "jackhammer",
+        "WS0002": "jackhammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "hammer",
+        "WS0008": "hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sabotpod",
+        "WS0006": "sabotpod"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "hveldriver",
-        "WS0002": "hveldriver"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0007": "vulcan",
-        "WS0008": "vulcan",
         "WS0009": "vulcan",
         "WS0010": "vulcan"
       }
@@ -42,8 +49,9 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "dualflak",
-        "WS0004": "dualflak"
+        "WS0003": "flak",
+        "WS0004": "flak",
+        "WS0011": "flak"
       }
     }
   ],

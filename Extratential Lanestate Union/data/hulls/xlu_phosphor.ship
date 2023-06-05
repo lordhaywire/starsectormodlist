@@ -1,0 +1,203 @@
+{
+  "bounds": [
+    -26,
+    53,
+    21,
+    32,
+    47,
+    0,
+    21,
+    -31,
+    -24,
+    -52,
+    -52,
+    0
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "xlu_armorclad"
+  ],
+  "builtInWings": [],
+  "center": [
+    83,
+    82
+  ],
+  "collisionRadius": 60,
+  "engineSlots": [
+    {
+      "angle": 160,
+      "contrailSize": 24,
+      "length": 18,
+      "location": [
+        -46,
+        13
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 200,
+      "contrailSize": 24,
+      "length": 18,
+      "location": [
+        -46,
+        -13
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 110,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        -31,
+        53
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": 250,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        -31,
+        -52
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": 40,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        23,
+        40
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": -40,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        23,
+        -40
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": -40,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        42,
+        -21
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": 40,
+      "contrailSize": 24,
+      "length": 16,
+      "location": [
+        42,
+        21
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    }
+  ],
+  "height": 160,
+  "hullId": "xlu_phosphor",
+  "hullName": "Phosphor",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    2,
+    -0
+  ],
+  "shieldRadius": 88,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_phosphor.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS 000",
+      "locations": [
+        53,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 200,
+      "id": "WS 001",
+      "locations": [
+        -2,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 140,
+      "id": "WS 002",
+      "locations": [
+        17,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 140,
+      "id": "WS 003",
+      "locations": [
+        17,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 190,
+      "id": "WS 004",
+      "locations": [
+        -14,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 190,
+      "id": "WS 005",
+      "locations": [
+        -14,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 166
+}

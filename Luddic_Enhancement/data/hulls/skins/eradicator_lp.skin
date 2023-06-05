@@ -3,7 +3,7 @@
 	"skinHullId":"eradicator_lp",
 	"hullName":"Eradicator (LP)",
 	"descriptionId":"eradicator",  # optional
-	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
+	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, transforming it into a haphazard vehicle of holy war.",
 	"tags":["LP_bp"],
 	"tech":"Luddic Path",
 	"spriteName":"graphics/ships/eradicator/eradicator_lp.png",

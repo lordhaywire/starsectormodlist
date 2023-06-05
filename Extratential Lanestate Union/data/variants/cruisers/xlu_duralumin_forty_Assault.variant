@@ -1,0 +1,71 @@
+{
+  "variantId": "xlu_duralumin_forty_Assault",
+  "hullId": "xlu_duralumin_forty",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "xlu_crew_warshots",
+    "xlu_weapons_overhaul"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_bente",
+        "WS0002": "xlu_bente",
+        "WS0003": "xlu_bente"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "xlu_mortar_s",
+        "WS0005": "xlu_mortar_s",
+        "WS0006": "xlu_mortar_s",
+        "WS0007": "xlu_mortar_s",
+        "WS0008": "xlu_mortar_s",
+        "WS0009": "xlu_mortar_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "xlu_light_triac",
+        "WS0012": "xlu_light_triac",
+        "WS0013": "xlu_light_triac",
+        "WS0014": "xlu_light_triac",
+        "WS0015": "xlu_light_triac",
+        "WS0016": "xlu_light_triac",
+        "WS0017": "xlu_light_triac",
+        "WS0018": "xlu_light_triac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

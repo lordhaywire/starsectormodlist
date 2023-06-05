@@ -1,0 +1,54 @@
+{
+  "variantId": "ocua_sophis_Quantix",
+  "hullId": "ocua_sophis",
+  "displayName": "Quantix",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_quantix"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_resel",
+        "WS0002": "ocua_resel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_shecina",
+        "WS0005": "ocua_shecina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_prima",
+        "WS0006": "ocua_fouette",
+        "WS0007": "ocua_fouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_glint",
+        "WS0009": "ocua_glint",
+        "WS0011": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_wing"
+  ]
+}

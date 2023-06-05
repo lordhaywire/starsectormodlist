@@ -1,6 +1,6 @@
 {
   "displayName": "Raider",
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 5,
   "fluxVents": 5,
   "goalVariant": true,
   "hullId": "prv_ljus_pather",
@@ -17,7 +17,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_hammer_mag"
+        "WS0001": "jackhammer"
       }
     },
     {

@@ -1,11 +1,12 @@
 {
   "displayName": "Support",
-  "fluxCapacitors": 11,
-  "fluxVents": 30,
+  "fluxCapacitors": 0,
+  "fluxVents": 27,
   "goalVariant": false,
   "hullId": "venture_luddic",
   "hullMods": [
-    "targetingunit"
+    "heavyarmor",
+	"missleracks"
   ],
   "permaMods": [],
   "quality": 0,
@@ -15,15 +16,15 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 002": "heavyac"
+        "WS 002": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 004": "sabot",
-        "WS 007": "sabot"
+                "WS 004": "sabot",
+                "WS 007": "sabot"
       }
     },
     {

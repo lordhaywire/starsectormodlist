@@ -1,0 +1,17 @@
+{
+  "variantId": "xlu_gadolinite_shield_Denial",
+  "hullId": "xlu_gadolinite_shield",
+  "displayName": "Denial",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "advancedshieldemitter",
+    "fluxbreakers"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

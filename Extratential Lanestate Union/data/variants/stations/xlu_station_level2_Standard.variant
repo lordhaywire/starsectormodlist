@@ -1,0 +1,40 @@
+{
+  "displayName": "Battlestation",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_level2",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_level2_Standard",
+  "weaponGroups": [],
+  "modules": [
+	
+	# under armour
+	{"SA 01": "xlu_station_hangar_armor_left_Standard"},
+	{"SA 02": "xlu_station_hangar_armor_right_Standard"},
+	{"SA 03": "xlu_station_hangar_armor_right_Standard"},
+	{"SA 04": "xlu_station_hangar_armor_left_Standard"},
+		
+	# gun batteries
+	{"BS 01": "xlu_station_bastion_module_Standard"},
+	{"BS 02": "xlu_station_bastion_module_Standard"},
+	
+	# missile batteries
+	{"BS 05": "xlu_station_missile_module_Standard"},
+	{"BS 06": "xlu_station_missile_module_Standard"},
+	
+	# hangar
+	{"BS 03": "xlu_station_hangar_module_Standard"},
+	{"BS 04": "xlu_station_hangar_module_Standard"},
+		
+	# armour spurs
+	{"BM 01": "xlu_station_blocker_right_Standard"},
+	{"BM 02": "xlu_station_blocker_left_Standard"},
+	{"BM 03": "xlu_station_blocker_left_Standard"},
+	{"BM 04": "xlu_station_blocker_right_Standard"},
+	
+  ],
+  "wings": []
+}

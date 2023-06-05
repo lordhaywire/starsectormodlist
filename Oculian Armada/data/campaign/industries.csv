@@ -1,0 +1,25 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+ocua_food_industry,Food Processing Plant,60,60,,10,,,"ocua_food_industry, industry, rural",,graphics/Oculian Armada/icons/industry/ocua_food_industry.png,data.scripts.campaign.econ.impl.ocua_food_industry,"An innovative, but not particularly efficient, method of producing food where agriculture is not present on the colony. Inefficiently uses Organics and Volatiles in order to produce Food and minimal Supplies. ",201,LOW
+ocua_cookie_industry,Oculian Bakery Complex,150,60,,8,,,"ocua_food_industry, industry, industrial",,graphics/Oculian Armada/icons/industry/ocua_cookie_industry.png,data.scripts.campaign.econ.impl.ocua_cookie_industry,"Massive sprawling belts of distribution platforms and manufacturing centers built specifically to produce the notorious Oculian cookies, waiting to be shared throughout the sector. Requires Organics and Volatiles in order to produce Food, Supplies and an unusual amount of Oculian cookies.",202,HIGH
+ocua_orbital_matrix,Orbital Assembly Matrix,200,240,,10,,,"ocua_assembly, heavyindustry, uses_blueprints, industry, industrial",,graphics/Oculian Armada/icons/industry/ocua_orbital_matrix.png,data.scripts.campaign.econ.impl.ocua_orbital_matrix,"A one of a kind Synchronized manufacturing complex meant to support the production for heavy industrial equipment, supplies, and weapons on the industrial sector below. Also capable of producing spaceworthy starships; a nanoforge is no longer needed for this overly complex monstrosity.",1701,EXTREME
+ocua_station_lvl1,Orbital Station - Oculian,50,90,,3,,ocua_station_lvl2,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:ocua_station_level1,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.scripts.campaign.econ.impl.OCUA_orbitalStationChecker,"An Oculian space station, featuring heavy wing squadrons and energy weapon barrages.
+
+Must be reduced before invasions or bombardment can be attempted.",2180,
+ocua_station_lvl2,Battlestation - Oculian,100,120,,4,ocua_station_lvl1,ocua_station_lvl3,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:ocua_station_level2,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"A sturdy Oculian battlestation, augmented with extended pillars with additional firepower and four Lamella plasma wall barrage section.
+
+Must be reduced before invasions or bombardment can be attempted.",2181,
+ocua_station_lvl3,Star Fortress - Oculian,200,180,,5,ocua_station_lvl2,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:ocua_station_level3,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"A heavily-fortified Oculian fortress, featuring Cucumber-class drones, shield modules, heavier Lamella rings and an extended hangar for a much larger wing support.
+
+Must be reduced before invasions or bombardment can be attempted.",2182,

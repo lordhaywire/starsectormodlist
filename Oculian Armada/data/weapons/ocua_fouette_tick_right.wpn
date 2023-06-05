@@ -1,0 +1,30 @@
+{
+	"id":"ocua_fouette_tick_right",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/Oculian Armada/weapons/fighter/ocua_fouette_tick_hardpoint_base_right.png",
+	"turretGunSprite":"graphics/Oculian Armada/weapons/fighter/ocua_fouette_tick_hardpoint_recoil_right.png",
+	"hardpointSprite":"graphics/Oculian Armada/weapons/fighter/ocua_fouette_tick_hardpoint_base_right.png",
+	"hardpointGunSprite":"graphics/Oculian Armada/weapons/fighter/ocua_fouette_tick_hardpoint_recoil_right.png",	
+	"visualRecoil":7.0,
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[11, -0.5, 11, 3.5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[11, -0.5, 11, 3.5],
+	"hardpointAngleOffsets":[0, 0],
+	"specialWeaponGlowWidth":6,
+	"specialWeaponGlowHeight":12,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":10.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":12.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.2,
+					   "particleCount":8,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"ocua_pirouette_shot",  # projectile that will be fired
+	"fireSoundTwo":"ocua_pirouette_fire",
+}

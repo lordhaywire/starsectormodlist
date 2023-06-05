@@ -1,0 +1,72 @@
+{
+  "hullName": "Cancer",
+  "hullId": "ocua_cancer_elite",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_cancer_elite.png",
+  "style": "OCULUS",
+  "height": 32,
+  "width": 28,
+  "center": [14, 24],
+  "collisionRadius": 32.202484,
+  "shieldCenter": [-6, -0],
+  "shieldRadius": 24.274471,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 135,
+      "angle": 0,
+      "locations": [3, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1, 8]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [1, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17, -0],
+      "length": 15,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-17, 0],
+      "length": 15,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    5, 13,
+    -19, 6,
+    -19, -6,
+    5, -13
+  ]
+}

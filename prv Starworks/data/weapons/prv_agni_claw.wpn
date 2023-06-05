@@ -1,0 +1,29 @@
+{
+  "id": "prv_agni_claw",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_claw_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/prv/weapons/prv_agni_claw_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_claw_hardpoint.png",
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    7.5,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    9.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "NONE",
+  "fireSoundTwo": "salamander_fire"
+}

@@ -1,0 +1,86 @@
+{
+  "variantId": "ocua_amina_Pulse",
+  "hullId": "ocua_amina",
+  "displayName": "Pulse",
+  "goalVariant": true,
+  "fluxCapacitors": 31,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_pulse",
+    "hardened_subsystems",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_pixelplux",
+        "WS0002": "ocua_pixelplux"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "ocua_sazanami",
+        "WS0015": "ocua_sazanami",
+        "WS0016": "ocua_sazanami",
+        "WS0017": "ocua_sazanami"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_kaina",
+        "WS0007": "ocua_kaina",
+        "WS0008": "ocua_kaina",
+        "WS0009": "ocua_kaina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_nicor",
+        "WS0004": "ocua_nicor",
+        "WS0005": "ocua_nicor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "ocua_blita",
+        "WS0011": "ocua_blita",
+        "WS0012": "ocua_blita",
+        "WS0013": "ocua_blita"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "BW 05": "ocua_glint",
+        "BW 06": "ocua_glint",
+        "BW 07": "ocua_glint",
+        "BW 08": "ocua_glint",
+        "BW 09": "ocua_glint",
+        "BW 10": "ocua_glint",
+        "BW 11": "ocua_glint",
+        "BW 12": "ocua_glint",
+        "BW 13": "ocua_glint",
+        "BW 14": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

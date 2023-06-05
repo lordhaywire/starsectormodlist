@@ -1,0 +1,40 @@
+{
+  "variantId": "ocua_prily_mi_Assault",
+  "hullId": "ocua_prily_mi",
+  "displayName": "Assault",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 2,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_mi_pulse"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_pixelplus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_mi_frappe",
+        "WS0003": "ocua_mi_frappe"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_kaina",
+        "WS0005": "ocua_kaina"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

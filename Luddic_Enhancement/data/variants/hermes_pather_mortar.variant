@@ -1,20 +1,19 @@
 {
-  "displayName": "Mortar",
-  "fluxCapacitors": 1,
-  "fluxVents": 10,
-  "goalVariant": true,
-  "hullId": "hermes_pather",
-  "hullMods": [
-  ],
-  "permaMods": [],
-  "quality": 0.5,
   "variantId": "hermes_pather_mortar",
+  "hullId": "hermes_pather",
+  "displayName": "Jackhammer",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "heavymortar"
+        "WS0001": "jackhammer"
       }
     },
     {
@@ -23,5 +22,6 @@
       "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

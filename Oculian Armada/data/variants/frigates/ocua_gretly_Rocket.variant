@@ -1,0 +1,31 @@
+{
+  "variantId": "ocua_gretly_Rocket",
+  "hullId": "ocua_gretly",
+  "displayName": "Rocket",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_shimakaze"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

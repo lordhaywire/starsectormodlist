@@ -1,0 +1,353 @@
+{
+	# Musci WIP
+	# I have no idea how to handle this one, but okay.
+	"music":{
+		# Oculian Encounter hostile
+		# Credits to Mayu for both hostile musics
+		"music_ocua_encounter_hostile":[
+			{"file":"ocua_encounter_hostile.ogg","source":"sounds/Oculian Armada/music","volume":0.20,"randomStart":true},
+		],
+		# Oculian Encounter neutral/friendly
+		# Oculian Market music
+		"music_ocua_market_friendly":[
+			{
+				"source":"sounds/Oculian Armada/music",
+				"volume":0.2,
+				"files":[
+					#cut portion of royalty-free Descent 2 Revelation Remix - ocremix
+					"ocua_market_friendly.ogg",
+				],
+				"randomStart":true, 
+			},
+		],
+		# Oculian Market hostile
+		"music_ocua_market_hostile":[
+			{
+				"source":"sounds/Oculian Armada/music",
+				"volume":0.2,
+				"files":[
+					"ocua_market_hostile.ogg",
+				],
+				"randomStart":true, 
+			},
+		],
+	},
+	
+	# Prima
+	"ocua_prima_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":1.94,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":1.98,"volume":0.37},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":2.02,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":2.06,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":2.10,"volume":0.36},
+		],
+	},
+	# Leia
+	"ocua_leia_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":0.94,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":0.98,"volume":0.32},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":1.02,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":1.06,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_leia_fire1.wav","pitch":1.10,"volume":0.31},
+		],
+	},
+	# Luna
+	"ocua_luna_intro":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_charge1.wav","pitch":0.94,"volume":0.6},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_charge1.wav","pitch":0.98,"volume":0.6},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_charge1.wav","pitch":1.02,"volume":0.6},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_charge1.wav","pitch":1.04,"volume":0.6},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_charge1.wav","pitch":1.06,"volume":0.6},
+		],
+	},
+	"ocua_luna_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_fire1.wav","pitch":0.94,"volume":0.8},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_fire1.wav","pitch":0.98,"volume":0.8},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_fire1.wav","pitch":1.02,"volume":0.8},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_fire1.wav","pitch":1.04,"volume":0.8},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_luna_fire1.wav","pitch":1.06,"volume":0.8},
+		],
+	},
+	# Ruby
+	"ocua_ruby_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_ruby_fire1.wav","pitch":0.94,"volume":0.45},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_ruby_fire1.wav","pitch":0.98,"volume":0.47},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_ruby_fire1.wav","pitch":1.02,"volume":0.45},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_ruby_fire1.wav","pitch":1.06,"volume":0.45},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_ruby_fire1.wav","pitch":1.10,"volume":0.46},
+		],
+	},
+	# Pixie
+	"ocua_pixie_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":0.94,"volume":0.25},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":0.98,"volume":0.275},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":1.02,"volume":0.225},
+		],
+	},
+	# Pixie
+	"ocua_lamella_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":1.94,"volume":0.15},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":1.98,"volume":0.165},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pixie_fire1.wav","pitch":2.02,"volume":0.135},
+		],
+	},
+	# Glare
+	"ocua_glistal_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glistal_fire1.wav","pitch":1.1,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glistal_fire1.wav","pitch":1.05,"volume":0.27},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glistal_fire1.wav","pitch":1,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glistal_fire1.wav","pitch":0.95,"volume":0.27},
+		],
+	},
+	# Gleam
+	"ocua_gleam_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_gleam_fire1.wav","pitch":1.1,"volume":0.28},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_gleam_fire1.wav","pitch":1.05,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_gleam_fire1.wav","pitch":1,"volume":0.28},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_gleam_fire1.wav","pitch":0.95,"volume":0.3},
+		],
+	},
+	# Glint
+	"ocua_glint_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glint_fire1.wav","pitch":1.1,"volume":0.18},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glint_fire1.wav","pitch":1.05,"volume":0.19},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glint_fire1.wav","pitch":1,"volume":0.18},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_glint_fire1.wav","pitch":0.95,"volume":0.19},
+		],
+	},
+	# pirouette
+	"ocua_pirouette_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":0.94,"volume":0.2},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":0.98,"volume":0.22},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":1.02,"volume":0.25},
+		],
+	},
+	# frappe
+	"ocua_frappe_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":0.74,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":0.78,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_pirouette_fire1.wav","pitch":0.82,"volume":0.3},
+		],
+	},
+	# Shiredain
+	"ocua_shiredain_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shiredain_fire1.wav","pitch":0.94,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shiredain_fire1.wav","pitch":0.98,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shiredain_fire1.wav","pitch":1.02,"volume":0.3},
+		],
+	},
+	# Challenger
+	"ocua_kurtina_loop":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":2.05,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":2.0,"volume":0.35},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":1.95,"volume":0.35},
+		],
+	},
+	# Flandrey
+	"ocua_flandrey_loop":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":3.05,"volume":0.65},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":3.0,"volume":0.65},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kurtina_loop1.wav","pitch":2.95,"volume":0.65},
+		],
+	},
+	# Blita
+	"ocua_blita_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_blita_fire1.wav","pitch":1.1,"volume":0.29},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_blita_fire1.wav","pitch":1.05,"volume":0.30},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_blita_fire1.wav","pitch":1,"volume":0.29},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_blita_fire1.wav","pitch":0.95,"volume":0.30},
+		],
+	},
+	# Vira
+	"ocua_vira_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_vira_fire1.wav","pitch":1.1,"volume":0.09},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_vira_fire1.wav","pitch":1.05,"volume":0.10},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_vira_fire1.wav","pitch":1,"volume":0.09},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_vira_fire1.wav","pitch":0.95,"volume":0.10},
+		],
+	},
+	# Katalina
+	"ocua_katalina_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_katalina_fire1.wav","pitch":1.0,"volume":0.55},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_katalina_fire1.wav","pitch":0.95,"volume":0.5},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_katalina_fire1.wav","pitch":0.95,"volume":0.55},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_katalina_fire1.wav","pitch":1.0,"volume":0.5},
+		],
+	},
+	# Kaina
+	"ocua_kaina_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kaina_fire1.wav","pitch":1.1,"volume":0.4},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kaina_fire1.wav","pitch":1.05,"volume":0.37},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kaina_fire1.wav","pitch":1,"volume":0.4},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kaina_fire1.wav","pitch":0.95,"volume":0.37},
+		],
+	},
+	# Kea
+	"ocua_kea_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kea_fire1.wav","pitch":1.1,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kea_fire1.wav","pitch":1.05,"volume":0.32},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kea_fire1.wav","pitch":1,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_kea_fire1.wav","pitch":0.95,"volume":0.32},
+		],
+	},
+	# Shena
+	"ocua_shena_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shena_fire1.wav","pitch":1.2,"volume":0.19},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shena_fire1.wav","pitch":1.1,"volume":0.2},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shena_fire1.wav","pitch":1,"volume":0.19},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shena_fire1.wav","pitch":0.9,"volume":0.2},
+		],
+	},
+	# Shecina
+	"ocua_shecina_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shecina_fire1.wav","pitch":1.2,"volume":0.19},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shecina_fire1.wav","pitch":1.1,"volume":0.2},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shecina_fire1.wav","pitch":1,"volume":0.19},
+			{"file":"sounds/Oculian Armada/sfx_wpn_energy/ocua_shecina_fire1.wav","pitch":0.9,"volume":0.2},
+		],
+	},
+	
+	
+	
+	# Shimakaze
+	"ocua_shimakaze_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":2.05,"volume":0.15},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":2.0,"volume":0.15},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":1.95,"volume":0.15},
+		],
+	},
+	# Pixel
+	"ocua_pixel_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":3.05,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":3.0,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_shimakaze_fire1.wav","pitch":2.95,"volume":0.3},
+		],
+	},
+	# Sazanami/Suzuya
+	"ocua_light_mrm_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":1.05,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":1.0,"volume":0.3},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":0.95,"volume":0.3},
+		],
+	},
+	# Resel
+	"ocua_resel_fire":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":2.05,"volume":0.2},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":2.0,"volume":0.2},
+			{"file":"sounds/Oculian Armada/sfx_wpn_missile/ocua_light_mrm_fire1.wav","pitch":1.95,"volume":0.2},
+		],
+	},
+	
+	
+	
+	"ocua_engine_loop":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_engine.wav","pitch":1,"volume":0.7}, # index:  20
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_engine.wav","pitch":1,"volume":0.75},   # index:  21
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_engine.wav","pitch":1,"volume":0.8},  # index:   22
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_engine.wav","pitch":1,"volume":0.85},   # index:   23
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_engine.wav","pitch":1,"volume":0.9},  # index::  24
+	
+			],
+
+		"OCULUS":{"sounds":[0,1,2,3,4], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":2, "volume":0.2},
+		"FRIGATE":{"sounds":[1], "pitch":1.7, "volume":0.3},
+		"DESTROYER":{"sounds":[2], "pitch":1.4, "volume":0.5},
+		"CRUISER":{"sounds":[3], "pitch":1.2, "volume":0.8},
+		"CAPITAL_SHIP":{"sounds":[4], "pitch":1, "volume":0.8},
+	
+	},
+	"ocua_shield_raise":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_shield_up_large.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_shield_up_medium.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_hull/ocua_shield_up_small.wav","pitch":1,"volume":1},
+		],
+		"OCULUS":{"sounds":[0,1,2], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[2], "pitch":1, "volume":0.1},
+		"FRIGATE":{"sounds":[2], "pitch":1, "volume":0.3},
+		"DESTROYER":{"sounds":[1], "pitch":1, "volume":0.5},
+		"CRUISER":{"sounds":[1], "pitch":1, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":1, "volume":0.9},
+	},
+	
+	"ocua_system_energy_feeder":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_energy_feeder.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_energy_feeder.wav","pitch":1,"volume":1},
+		],
+		"OCULUS":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.75},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.75},
+		"CRUISER":{"sounds":[0], "pitch":0.85, "volume":0.75},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":0.75, "volume":1},
+	},
+	
+	"ocua_system_madmans_feeder":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_madmans_feeder.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_madmans_feeder.wav","pitch":1,"volume":1},
+		],
+		"OCULUS":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.75},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.75},
+		"CRUISER":{"sounds":[0], "pitch":0.85, "volume":0.75},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":0.75, "volume":1},
+	},
+	
+	"ocua_system_temporal_overclock":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_temporal_overclock.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_temporal_overclock.wav","pitch":1,"volume":1},
+		],
+		"OCULUS":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.5},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.75},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.75},
+		"CRUISER":{"sounds":[0], "pitch":0.85, "volume":0.75},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":0.75, "volume":1},
+	},
+	
+	"ocua_system_ionburstdrive_activate":{
+		"sounds":[
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_ionburstdrive.wav","pitch":1,"volume":1},
+			{"file":"sounds/Oculian Armada/sfx_systems/ocua_ionburstdrive.wav","pitch":1,"volume":1},
+		],
+		"OCULUS":{"sounds":[0], "pitch":1, "volume":1},
+		"FIGHTER":{"sounds":[0], "pitch":1, "volume":0.3},
+		"FRIGATE":{"sounds":[0], "pitch":1, "volume":0.5},
+		"DESTROYER":{"sounds":[0], "pitch":1, "volume":0.6},
+		"CRUISER":{"sounds":[0], "pitch":0.85, "volume":0.7},
+		"CAPITAL_SHIP":{"sounds":[0], "pitch":0.75, "volume":1},
+	},
+	
+}

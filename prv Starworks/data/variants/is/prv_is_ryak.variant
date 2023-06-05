@@ -3,7 +3,7 @@
   "hullId": "prv_is",
   "displayName": "Ryak",
   "goalVariant": true,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 14,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],

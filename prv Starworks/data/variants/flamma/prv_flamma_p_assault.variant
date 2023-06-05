@@ -5,7 +5,7 @@
   "fluxVents": 10,
   "hullId": "prv_flamma_p",
   "hullMods": ["heavyarmor"],
-  "quality": 2,
+  "quality": 0.5,
   "variantId": "prv_flamma_p_assault",
   "weaponGroups": [
     {

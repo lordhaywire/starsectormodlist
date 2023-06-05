@@ -1,0 +1,55 @@
+{
+  "variantId": "xlu_espron_forty_Overdriven",
+  "hullId": "xlu_espron_forty",
+  "displayName": "Overdriven",
+  "goalVariant": false,
+  "fluxCapacitors": 12,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "xlu_crew_warshots",
+    "safetyoverrides",
+    "shield_shunt"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_gattling_m",
+        "WS0005": "xlu_gattling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "chaingun",
+        "WS0002": "chaingun",
+        "WS0003": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heatseeker",
+        "WS0008": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "WS0006": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

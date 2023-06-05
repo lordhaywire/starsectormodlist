@@ -1,27 +1,13 @@
 {
 	"knownShips":{
 		"tags":["prv_bp"],
-		"hulls":[
-			"prv_tiger",
-			"prv_gremlin_rb",
-			"prv_flock_midline",
-			"prv_flock_rb",
-		],
-	},
-	"shipsWhenImporting":{
-		"tags":["prv_bp"],
-		"hulls":[
-			"prv_tiger",
-			"prv_gremlin_rb",
-			"prv_flock_midline",
-			"prv_flock_rb",
-		],
 	},
 	"knownWeapons":{
 		"tags":["prv_bp"],
 		"weapons":[
 			"prv_fusion_burster",
 			"prv_spatterflamer",
+			"prv_massdriver",
 		]
 	},
 	"knownFighters":{
@@ -30,11 +16,6 @@
 	"hullFrequency":{
 		"tags":{
 			"prv_bp":0.5,
-			"prv_rb_bp":0.5,
-		},
-		"hulls":{
-			"prv_flock_midline":0.5,
-			"prv_brand":0.25,
 		},
 	},
 }

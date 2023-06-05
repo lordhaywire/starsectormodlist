@@ -1,6 +1,6 @@
 {
     "displayName": "Attack",
-    "fluxCapacitors": 1,
+    "fluxCapacitors": 5,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_shark",
@@ -36,7 +36,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0006": "lightneedler"}
+            "weapons": {"WS0006": "lightac"}
         },
         {
             "autofire": true,

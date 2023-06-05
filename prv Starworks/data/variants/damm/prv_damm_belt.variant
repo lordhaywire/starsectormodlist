@@ -3,7 +3,7 @@
   "hullId": "prv_damm",
   "displayName": "Belt",
   "goalVariant": true,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 7,
   "fluxVents": 6,
   "quality": 1,
   "permaMods": [],

@@ -1,0 +1,152 @@
+{
+  "hullName": "Cobble",
+  "hullId": "xlu_cobble",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_cobble/xlu_cobble.png",
+  "style": "MIDLINE",
+  "height": 154,
+  "width": 118,
+  "center": [59, 67],
+  "collisionRadius": 118,
+  "shieldCenter": [20, -0],
+  "shieldRadius": 93,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "civgrade"
+  ],
+  "builtInWeapons": {
+    "BW 01": "xlu_gattler",
+    "BW 02": "xlu_gattler"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [78, 45]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [78, -45]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": 60,
+      "locations": [59, 45]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -60,
+      "locations": [59, -45]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 120,
+      "locations": [-30, 38]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -120,
+      "locations": [-30, -38]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [55, -0]
+    },
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-7, 52]
+    },
+    {
+      "id": "S 02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-7, -52]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-66, -31],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66, 31],
+      "length": 30,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66, 23],
+      "length": 30,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-66, -23],
+      "length": 30,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -52, 18,
+    -63, 27,
+    -43, 47,
+    73, 54,
+    81, 20,
+    81, -20,
+    73, -54,
+    -43, -47,
+    -63, -27,
+    -52, -18
+  ]
+}

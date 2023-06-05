@@ -1,0 +1,86 @@
+{
+  "variantId": "ocua_amina_Assault",
+  "hullId": "ocua_amina",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_crystalline",
+    "targetingunit",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_shimakaze",
+        "WS0002": "ocua_shimakaze"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0014": "ocua_shizuka",
+        "WS0015": "ocua_shizuka",
+        "WS0016": "ocua_shizuka",
+        "WS0017": "ocua_shizuka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_leia",
+        "WS0004": "ocua_leia",
+        "WS0005": "ocua_leia"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_prima",
+        "WS0007": "ocua_prima",
+        "WS0008": "ocua_prima",
+        "WS0009": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "ocua_pixie",
+        "WS0011": "ocua_pixie",
+        "WS0012": "ocua_pixie",
+        "WS0013": "ocua_pixie"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "BW 05": "ocua_glint",
+        "BW 06": "ocua_glint",
+        "BW 07": "ocua_glint",
+        "BW 08": "ocua_glint",
+        "BW 09": "ocua_glint",
+        "BW 10": "ocua_glint",
+        "BW 11": "ocua_glint",
+        "BW 12": "ocua_glint",
+        "BW 13": "ocua_glint",
+        "BW 14": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

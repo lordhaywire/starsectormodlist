@@ -1,0 +1,64 @@
+{
+  "variantId": "xlu_rhodochrosite_Fleet",
+  "hullId": "xlu_rhodochrosite",
+  "displayName": "Fleet",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 25,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "insulatedengine",
+    "expanded_cargo_holds",
+    "augmentedengines",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "typhoon",
+        "WS0002": "typhoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_gattling_m",
+        "WS0004": "xlu_gattling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "BW 05": "xlu_gattler",
+        "BW 06": "xlu_gattler",
+        "BW 07": "xlu_gattler",
+        "BW 08": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 02": "xlu_rhodochrosite_e_l_Fleet"
+    },
+    {
+      "SM 03": "xlu_rhodochrosite_e_r_Fleet"
+    },
+    {
+      "SM 01": "xlu_rhodochrosite_rear_Fleet"
+    }
+  ],
+  "wings": [
+    "xlu_lantaka_wing",
+    "xlu_mattock_wing"
+  ]
+}

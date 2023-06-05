@@ -3,7 +3,7 @@
   "hullId": "prv_kakafoni_rb",
   "displayName": "Belt",
   "goalVariant": true,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 9,
   "fluxVents": 30,
   "quality": 2,
   "permaMods": [],
@@ -17,42 +17,45 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "hil"
+        "WS0004": "prv_massdriver"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "harpoonpod",
-        "WS0002": "harpoonpod"
+        "WS0001": "prv_blaster_charge_cluster",
+        "WS0002": "prv_blaster_charge_cluster"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "prv_lighttripleac",
-        "WS0013": "prv_lighttripleac"
+        "WS0005": "lightag",
+        "WS0013": "lightag"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0008": "dualflak",
-        "WS0009": "vulcan"
+        "WS0008": "dualflak"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "pdlaser",
-        "WS0007": "mininglaser",
+        "WS0006": "mininglaser",
         "WS0010": "mininglaser",
         "WS0011": "mininglaser"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
   "modules": [],

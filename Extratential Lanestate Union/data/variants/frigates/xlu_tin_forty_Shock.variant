@@ -1,0 +1,40 @@
+{
+  "variantId": "xlu_tin_forty_Shock",
+  "hullId": "xlu_tin_forty",
+  "displayName": "Shock",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 7,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "targetingunit",
+    "xlu_crew_warshots"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_40th_thunderslug"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "xlu_mortar_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

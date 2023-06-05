@@ -14,7 +14,7 @@
   "builtInMods": [
     "blast_doors",
     "prv_badtar",
-    "rugged"
+    #"rugged"
   ],
   "builtInWeapons": {
     "DEC01": "prv_d_emitter_bergtagen"

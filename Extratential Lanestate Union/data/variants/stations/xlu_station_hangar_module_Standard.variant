@@ -1,0 +1,41 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_hangar_module",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_hangar_module_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_shotcannon_l",
+        "WS0002": "xlu_shotcannon_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_momus",
+        "WS0004": "xlu_momus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dualflak",
+        "WS0006": "dualflak"
+      }
+    }
+  ],
+  "wings": [
+    "xlu_kalis_wing",
+    "xlu_kampilan_wing"
+  ]
+}

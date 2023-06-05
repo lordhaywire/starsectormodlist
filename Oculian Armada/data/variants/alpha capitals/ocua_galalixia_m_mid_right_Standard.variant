@@ -1,0 +1,38 @@
+{
+  "variantId": "ocua_galalixia_m_mid_right_Standard",
+  "hullId": "ocua_galalixia_m_mid_right",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 19,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_glint",
+        "WS0003": "ocua_glint",
+        "WS0004": "ocua_glint",
+        "WS0005": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_kaleido_elite_wing",
+    "ocua_kaleido_elite_wing"
+  ]
+}

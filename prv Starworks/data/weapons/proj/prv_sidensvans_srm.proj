@@ -7,7 +7,7 @@
 	"size":[6,14],	
 	"center":[3,7],
 	"collisionRadius":14,
-	"collisionClass":"MISSILE_FF",
+	"collisionClass":"MISSILE_NO_FF",
 	#"explosionColor":[165,225,100,255], #nasty green  # purely visual, will get a white additively blended core on top of this color
 	"explosionColor":[100,100,255,255],
 	"explosionRadius":60, # purely visual
@@ -18,7 +18,7 @@
 	"engineSpec":{"turnAcc":1440,
 				  "turnRate":420,		#240
 				  "acc":500,
-				  "dec":500},				  
+				  "dec":1000},				  
 	"engineSlots":[{"id":"ES1",
 		"loc":[-9, 0],
 		"style":"CUSTOM",
@@ -32,7 +32,8 @@
 			"contrailMaxSpeedMult":0.5f,
 			"contrailAngularVelocityMult":0.5f,
 			"contrailColor":[102,232,255,60],
-			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
+			"type":"GLOW", 					# GLOW or SMOKE; additive or regular blend mode
+			"glowSizeMult":1.25,
 		},
 		"width":4.0,
 		"length":20.0,

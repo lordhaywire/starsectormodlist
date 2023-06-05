@@ -1,0 +1,10 @@
+{
+	"designTypeColors":{
+		"Midline":[240,215,130,200],
+	},
+	"graphics":{
+		"blueprint_packages":{
+			"mod_package_missileships":"graphics/icons/cargo/mod_package_midline.png",
+		},
+	}
+}

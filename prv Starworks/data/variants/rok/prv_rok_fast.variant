@@ -3,9 +3,9 @@
   "hullId": "prv_rok",
   "displayName": "Fast",
   "goalVariant": true,
-  "fluxCapacitors": 11,
+  "fluxCapacitors": 10,
   "fluxVents": 50,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
@@ -34,15 +34,15 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_heavygravkan",
-        "WS0002": "prv_heavygravkan"
+        "WS0001": "mjolnir",
+        "WS0002": "mjolnir"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_jursla"
+        "WS0003": "prv_svepfrasare"
       }
     },
     {
@@ -51,12 +51,18 @@
       "weapons": {
         "WS0006": "lightdualmg",
         "WS0007": "lightdualmg",
+        "WS0012": "lightdualmg",
+        "WS0013": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0008": "prv_sipdlaser",
         "WS0009": "prv_sipdlaser",
         "WS0010": "prv_sipdlaser",
         "WS0011": "prv_sipdlaser",
-        "WS0012": "lightdualmg",
-        "WS0013": "lightdualmg"
       }
     }
   ],

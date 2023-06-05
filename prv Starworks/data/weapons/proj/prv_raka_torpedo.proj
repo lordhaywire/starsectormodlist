@@ -2,6 +2,7 @@
 	"id":"prv_raka_torpedo",
 	"specClass":"missile",	
 	"missileType":"MISSILE",
+	"onFireEffect":"scripts.weapons.prv_kaja_OnFireEffect",
 	"sprite":"graphics/prv/missiles/prv_missile_raka.png",
 	"size":[11,17],	
 	"center":[5.5,8.5],

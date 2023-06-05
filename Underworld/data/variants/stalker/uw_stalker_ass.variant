@@ -1,9 +1,10 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 13,
     "fluxVents": 30,
+    "goalVariant": true,
     "hullId": "uw_stalker",
-    "hullMods": ["targetingunit"],
+    "hullMods": ["ballistic_rangefinder"],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_stalker_ass",
@@ -12,8 +13,6 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "lightdualac",
-                "WS0006": "lightdualac",
                 "WS0007": "lightdualac",
                 "WS0008": "lightdualac"
             }
@@ -26,14 +25,22 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "shredder"}
+            "weapons": {
+                "WS0005": "lightag",
+                "WS0006": "lightag"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "miningblaster"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "ionbeam",
-                "WS0003": "ionbeam"
+                "WS0002": "gravitonbeam",
+                "WS0003": "gravitonbeam"
             }
         },
         {

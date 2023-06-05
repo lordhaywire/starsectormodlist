@@ -1,0 +1,17 @@
+{
+	"id":"ocua_manndie_shot",
+	"specClass":"projectile",
+	#"spawnType":"BEAM",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":30.0,
+	"width":12.0,
+	"hitGlowRadius":30,
+	"fadeTime":0.25,
+	"fringeColor":[255,0,100,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0
+}

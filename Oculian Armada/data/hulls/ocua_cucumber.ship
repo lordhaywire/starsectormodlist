@@ -1,0 +1,183 @@
+{
+  "hullName": "Cucumber",
+  "hullId": "ocua_cucumber",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_cucumber.png",
+  "style": "OCULUS",
+  "height": 90,
+  "width": 86,
+  "center": [43, 45],
+  "collisionRadius": 162,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 116,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "fluxshunt"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-16, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        3, 57,
+        3, 50,
+        3, 43,
+        10, 57,
+        10, 50,
+        10, 43
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        3, -57,
+        3, -50,
+        3, -43,
+        10, -57,
+        10, -50,
+        10, -43
+      ]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [23, -0]
+    },
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 75,
+      "locations": [-19, 28]
+    },
+    {
+      "id": "S 02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -75,
+      "locations": [-19, -28]
+    },
+    {
+      "id": "S 03",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 75,
+      "locations": [-5, 26]
+    },
+    {
+      "id": "S 04",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -75,
+      "locations": [-5, -26]
+    },
+    {
+      "id": "S 05",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [40, 9]
+    },
+    {
+      "id": "S 06",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [40, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44, -0],
+      "length": 18,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-44, 8],
+      "length": 18,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-44, -8],
+      "length": 18,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-44, 16],
+      "length": 18,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-44, -16],
+      "length": 18,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    40, 18,
+    22, 32,
+    -31, 38,
+    -41, -0,
+    -31, -38,
+    22, -32,
+    40, -18
+  ]
+}

@@ -5,7 +5,7 @@
   "goalVariant": false,
   "fluxCapacitors": 14,
   "fluxVents": 50,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
@@ -51,12 +51,18 @@
       "weapons": {
         "WS0006": "prv_pskd",
         "WS0007": "prv_pskd",
+        "WS0012": "prv_pskd",
+        "WS0013": "prv_pskd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0008": "prv_sipdlaser",
         "WS0009": "prv_sipdlaser",
         "WS0010": "prv_sipdlaser",
         "WS0011": "prv_sipdlaser",
-        "WS0012": "prv_pskd",
-        "WS0013": "prv_pskd"
       }
     }
   ],

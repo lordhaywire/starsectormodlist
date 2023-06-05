@@ -1,0 +1,170 @@
+{
+  "hullName": "Prily",
+  "hullId": "ocua_prily",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_prily/ocua_prily.png",
+  "style": "OCULUS",
+  "height": 56,
+  "width": 94,
+  "center": [47, 15],
+  "collisionRadius": 84,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 54,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_drone_mod",
+    "rugged"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [10, -34]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [10, 34]
+    },
+    {
+      "id": "S 1",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [22, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6, -0]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [26, -22]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [26, 22]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [31, -8]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [9, -18]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [9, 18]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [31, 8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, -0],
+      "length": 24,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-13, -11],
+      "length": 22,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-13, 11],
+      "length": 22,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-12, -18],
+      "length": 22,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-12, 18],
+      "length": 22,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    33, 26,
+    21, 26,
+    0, 43,
+    -11, -0,
+    0, -43,
+    21, -26,
+    33, -26
+  ]
+}

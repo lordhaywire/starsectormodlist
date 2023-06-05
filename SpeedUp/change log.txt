@@ -1,3 +1,9 @@
+Version 1.0.0 (May 10, 2023)
+- Updated for Starsector 0.96a
+- Now works in the campaign!  Thanks Histidine!
+- Caps Lock for 2x speed-up in campaign
+- F1 for 6x speed-up in campaign
+
 Version 0.7.2 (December 12, 2021):
 - Updated for Starsector 0.95.1a
 - Fixed rare no-bullet-time bug

@@ -6,8 +6,7 @@
     "hullId": "uw_torch",
     "hullMods": [
         "frontshield",
-        "auxiliarythrusters",
-        "targetingunit"
+        "auxiliarythrusters"
     ],
     "permaMods": [],
     "sMods": [],
@@ -16,14 +15,16 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "heavymauler"}
+            "weapons": {"WS0001": "miningblaster"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "lightdualac",
-                "WS0005": "lightdualac"
+                "WS0004": "lightac",
+                "WS0005": "lightac",
+                "WS0006": "lightac",
+                "WS0007": "lightac"
             }
         },
         {

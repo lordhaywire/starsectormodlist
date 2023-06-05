@@ -1,0 +1,211 @@
+{
+  "hullName": "Pumpmaster",
+  "hullId": "xlu_pumpmaster",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_kaolinite/xlu_pumpmaster.png",
+  "style": "LOW_TECH",
+  "height": 352,
+  "width": 210,
+  "center": [105, 159],
+  "collisionRadius": 250,
+  "shieldCenter": [9, -0],
+  "shieldRadius": 217,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hbi",
+    "xlu_robust_construct"
+  ],
+  "builtInWeapons": {
+    "WS0001": "pusherplate_lt"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-142, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [88, 51]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [88, -51]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [139, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 30,
+      "locations": [49, 67]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -30,
+      "locations": [49, -67]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -150,
+      "locations": [-63, -75]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 150,
+      "locations": [-63, 75]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 0,
+      "locations": [130, -47]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -0,
+      "locations": [130, 47]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 118,
+      "angle": -90,
+      "locations": [26, -77]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 118,
+      "angle": 90,
+      "locations": [26, 77]
+    },
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-150, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-33, -101],
+      "length": 32,
+      "width": 14,
+      "angle": -160,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-33, 101],
+      "length": 32,
+      "width": 14,
+      "angle": 160,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-149, 78],
+      "length": 48,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-149, -78],
+      "length": 48,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-163, 63],
+      "length": 82,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-163, -63],
+      "length": 82,
+      "width": 32,
+      "angle": -180,
+      "contrailSize": 32,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -149, 35,
+    -127, 45,
+    -151, 55,
+    -151, 71,
+    -57, 92,
+    -27, 74,
+    -26, 99,
+    67, 95,
+    150, 66,
+    187, 0,
+    150, -66,
+    67, -95,
+    -26, -99,
+    -27, -74,
+    -57, -92,
+    -151, -71,
+    -151, -55,
+    -127, -45,
+    -149, -35
+  ]
+}

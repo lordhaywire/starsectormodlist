@@ -1,0 +1,30 @@
+{
+    "variantOverrides":{
+        "dram_lp_ied_std":30,
+        "phaeton_lp_ied_std":30,
+        "prometheus_lp_ied_std":30,
+    },
+    "hullFrequency":{
+        "hulls":{	
+            "dram_lp_ied":2,
+			"phaeton_lp_ied_std":2,
+			"prometheus_lp_ied_std":2,			
+        },
+	},
+		
+    "shipsWhenImporting":{
+        "hulls":[
+			"dram_lp_ied",
+			"phaeton_lp_ied",
+			"prometheus_lp_ied",
+        ],
+    },
+	
+    "knownShips":{
+        "hulls":[
+			"dram_lp_ied",
+			"phaeton_lp_ied",
+			"prometheus_lp_ied",
+        ],
+    },
+},

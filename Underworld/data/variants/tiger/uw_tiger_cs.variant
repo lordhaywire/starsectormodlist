@@ -1,22 +1,17 @@
 {
     "displayName": "Close Support",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 4,
     "fluxVents": 10,
+    "goalVariant": true,
     "hullId": "uw_tiger",
     "hullMods": [
-        "advancedoptics",
-        "turretgyros",
-        "pointdefenseai"
+        "missleracks",
+        "eccm"
     ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_tiger_cs",
     "weaponGroups": [
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {"WS0001": "lightneedler"}
-        },
         {
             "autofire": true,
             "mode": "LINKED",
@@ -26,6 +21,11 @@
                 "WS0004": "taclaser",
                 "WS0005": "taclaser"
             }
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS0001": "harpoon"}
         }
     ]
 }

@@ -3,63 +3,68 @@
   "hullId": "prv_rok",
   "displayName": "Gravitic",
   "goalVariant": true,
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 12,
   "fluxVents": 50,
-  "quality": 0,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
-    "turretgyros",
-    "advancedoptics"
+    "unstable_injector"
   ],
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_heavygravkan",
-        "WS0002": "prv_siege_akers"
+        "WS0001": "mjolnir",
+        "WS0002": "mjolnir"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0014": "reaper",
-        "WS0015": "reaper",
-        "WS0016": "reaper",
-        "WS0017": "reaper"
+        "WS0014": "sabot",
+        "WS0015": "sabot",
+        "WS0016": "sabot",
+        "WS0017": "sabot"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_jursla"
+        "WS0003": "prv_svepfrasare"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "phasebeam",
-        "WS0005": "phasebeam"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0006": "prv_pskd",
-        "WS0007": "prv_pskd",
         "WS0008": "prv_sipdlaser",
         "WS0009": "prv_sipdlaser",
         "WS0010": "prv_sipdlaser",
         "WS0011": "prv_sipdlaser",
-        "WS0012": "prv_pskd",
-        "WS0013": "prv_pskd"
       }
-    }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightdualmg",
+        "WS0007": "lightdualmg",
+        "WS0012": "lightdualmg",
+        "WS0013": "lightdualmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "heavyburst",
+        "WS0005": "heavyburst"
+      }
+    },
   ],
   "modules": [],
   "wings": []

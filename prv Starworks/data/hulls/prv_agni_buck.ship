@@ -33,7 +33,7 @@
     {
       "id": "WS0001",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 105,
       "angle": 45,
@@ -42,7 +42,7 @@
     {
       "id": "WS0002",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 105,
       "angle": -45,

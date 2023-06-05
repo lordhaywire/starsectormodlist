@@ -1,0 +1,64 @@
+{
+  "variantId": "xlu_stibium_Strike",
+  "hullId": "xlu_stibium",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_trustybay_slot_1",
+    "missleracks",
+    "expanded_deck_crew",
+    "unstable_injector",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_gyropult_s",
+        "WS0006": "xlu_gyropult_s"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "reaper",
+        "WS0008": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightac",
+        "WS0003": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "lightmortar",
+        "WS0010": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "WS0004": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_lantaka_wing"
+  ]
+}

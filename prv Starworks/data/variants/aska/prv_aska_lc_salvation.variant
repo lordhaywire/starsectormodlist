@@ -1,13 +1,12 @@
 {
   "displayName": "Salvation",
-  "fluxCapacitors": 12,
-  "fluxVents": 12,
-  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 25,
+  "goalVariant": true,
   "hullId": "prv_aska_lc",
   "hullMods": [
     "dedicated_targeting_core",
     "missleracks",
-    "eccm",
   ],
   "permaMods": [],
   "quality": 1,
@@ -24,8 +23,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
+	  "WS0003": "breachpod",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
 	  "WS0002": "heavyac",
-	  "WS0003": "heavymortar",
         "WS0004": "heavyac",
       }
     },
@@ -33,16 +38,16 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-	  "WS0007": "lightac",
-	  "WS0008": "lightac",
+        "WS0005": "lightag",
+        "WS0006": "lightag",
+	  "WS0007": "lightag",
+	  "WS0008": "lightag",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "vulcan",
-        "WS0006": "vulcan",
         "WS0009": "vulcan",
         "WS0010": "vulcan"
       }

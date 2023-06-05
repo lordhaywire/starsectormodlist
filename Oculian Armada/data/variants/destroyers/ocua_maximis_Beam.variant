@@ -1,0 +1,38 @@
+{
+  "variantId": "ocua_maximis_Beam",
+  "hullId": "ocua_maximis",
+  "displayName": "Beam",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_crystalline",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kurtina",
+        "WS0002": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "WS0003": "ocua_glint",
+        "WS0004": "ocua_glint",
+        "WS0005": "ocua_glint",
+        "WS0006": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -35,9 +35,9 @@ public class MissionDefinition implements MissionDefinitionPlugin {
         api.addToFleet(FleetSide.PLAYER, "uw_harbinger_cabal_cus", FleetMemberType.SHIP, "STAR Leggings", false);
         api.addToFleet(FleetSide.PLAYER, "uw_medusa_cabal_cus", FleetMemberType.SHIP, "STAR Chemise", false);
         api.addToFleet(FleetSide.PLAYER, "uw_afflictor_cabal_cus", FleetMemberType.SHIP, "STAR Chopine", false);
-        api.addToFleet(FleetSide.PLAYER, "uw_scarab_cabal_cus", FleetMemberType.SHIP, "STAR Nightgown", false);
+        api.addToFleet(FleetSide.PLAYER, "uw_wolf_cabal_cus", FleetMemberType.SHIP, "STAR Nightgown", false);
         api.addToFleet(FleetSide.PLAYER, "uw_tempest_cabal_cus", FleetMemberType.SHIP, "STAR Thigh Highs", false);
-        api.addToFleet(FleetSide.PLAYER, "uw_wolf_cabal_cus", FleetMemberType.SHIP, "STAR Heels", false);
+        api.addToFleet(FleetSide.PLAYER, "uw_wolf_cabal_tri", FleetMemberType.SHIP, "STAR Heels", false);
 
         api.defeatOnShipLoss("STAR Corset");
 
@@ -49,7 +49,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
         member.setShipName(hegemony.pickRandomShipName());
         member = api.addToFleet(FleetSide.ENEMY, swp ? "swp_gryphon_xiv_eli" : "gryphon_FS", FleetMemberType.SHIP, false);
         member.setShipName(hegemony.pickRandomShipName());
-        member = api.addToFleet(FleetSide.ENEMY, swp ? "swp_vanguard_sta" : "enforcer_Balanced", FleetMemberType.SHIP, false);
+        member = api.addToFleet(FleetSide.ENEMY, swp ? "swp_caliber_sta" : "enforcer_Balanced", FleetMemberType.SHIP, false);
         member.setShipName(hegemony.pickRandomShipName());
         member = api.addToFleet(FleetSide.ENEMY, swp ? "swp_albatross_sta" : "mule_Standard", FleetMemberType.SHIP, false);
         member.setShipName(hegemony.pickRandomShipName());

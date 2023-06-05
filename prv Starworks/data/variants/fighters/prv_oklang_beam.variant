@@ -5,7 +5,7 @@
 	"variantId":"prv_oklang_beam",
 	"fluxVents":0,
 	"fluxCapacitors":0,
-	#"hullMods":["turretgyros"], # array of strings
+	"hullMods":["prv_subspace_charge"], # array of strings
 	#"hullMods":["no_weapon_flux", "low_powered_beams"], # array of strings
 	
 	# mode is either LINKED or ALTERNATING
@@ -18,7 +18,7 @@
 		},
 		{"mode":"LINKED",
 		 "weapons":{
-		 			#"WS 002":"fragbomb",
+		 			"WS 002":"prv_frasare_bomb",
 		 		   },
 		},
 	],

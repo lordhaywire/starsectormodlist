@@ -1,0 +1,17 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 6,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "ocua_nadia_m_front",
+  "hullMods": [
+    "ocua_core_crystalline",
+    "hardenedshieldemitter"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "ocua_nadia_m_front_Standard",
+  "weaponGroups": [],
+  "wings": []
+}

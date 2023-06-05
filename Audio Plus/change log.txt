@@ -1,3 +1,9 @@
+Version 1.2.0 (May 10, 2023)
+- Updated for Starsector 0.96a
+- Added music track from Star Federation (credit to MesoTroniK): Labyrinthine Nebula
+- Significantly more differentiation between music tracks that play near the core worlds, out in non-core space, and in hyperspace
+- Tweaked volume balance
+
 Version 1.1.3 (March 29, 2021)
 - Updated for Starsector 0.95a
 - Migrated version file to custom host (sigh)
@@ -5,7 +11,7 @@ Version 1.1.3 (March 29, 2021)
 Version 1.1.2 (July 8, 2020):
 - Updated for Starsector 0.9.1a
 - Marked utility
-- Added new music track for BRDY: Atmospheric Rise
+- Added new music track from BRDY: Atmospheric Rise
 - Migrated version file to BitBucket
 
 Version 1.1.1 (November 16, 2018):

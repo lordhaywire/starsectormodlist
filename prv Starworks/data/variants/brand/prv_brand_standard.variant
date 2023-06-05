@@ -3,12 +3,11 @@
   "hullId": "prv_brand",
   "displayName": "Advanced",
   "goalVariant": true,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 11,
   "fluxVents": 20,
   "quality": 0,
   "permaMods": [],
   "hullMods": [
-    "prv_agiplasma",
     "unstable_injector"
   ],
   "weaponGroups": [
@@ -31,7 +30,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "autopulse"
+        "WS0002": "prv_uvir"
       }
     },
     {

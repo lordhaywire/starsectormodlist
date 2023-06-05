@@ -1,7 +1,7 @@
 {
   "displayName": "Converted",
-  "fluxCapacitors": 5,
-  "fluxVents": 6,
+  "fluxCapacitors": 7,
+  "fluxVents": 9,
   "goalVariant": true,
   "hullId": "prv_munsbit_lc",
   "hullMods": [

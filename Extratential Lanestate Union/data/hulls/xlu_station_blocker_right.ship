@@ -1,0 +1,110 @@
+{
+  "bounds": [
+    -60,
+    -31,
+    -35,
+    -56,
+    103,
+    -54,
+    186,
+    -31,
+    103,
+    -8,
+    38,
+    -7,
+    47,
+    24,
+    43,
+    51,
+    18,
+    58,
+    -22,
+    58,
+    -56,
+    32,
+    -56,
+    12,
+    -38,
+    -2
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "never_detaches",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "xlu_armorclad"
+  ],
+  "builtInWeapons": {
+    "WS0001": "hellbore"
+  },
+  "builtInWings": [],
+  "center": [
+    61,
+    62
+  ],
+  "collisionRadius": 232.5,
+  "engineSlots": [],
+  "height": 250,
+  "hullId": "xlu_station_blocker_right",
+  "hullName": "Blocker",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    8,
+    -56
+  ],
+  "shieldRadius": 185.5,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_station_blocker_right_module.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        -14,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        94,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        26,
+        10
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        26,
+        38
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 122
+}

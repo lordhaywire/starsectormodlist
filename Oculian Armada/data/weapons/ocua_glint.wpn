@@ -1,0 +1,31 @@
+{
+	"id":"ocua_glint",
+	"specClass":"beam",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"collisionClass":"RAY",
+	
+	"beamEffect":"data.scripts.weapons.ocua_glint_beam_effect",
+	
+	"displayArcRadius":550,
+	
+	"turretSprite":"graphics/Oculian Armada/weapons/ocua_glint_turret_base.png",
+	"hardpointSprite":"graphics/Oculian Armada/weapons/ocua_glint_hardpoint_base.png",
+	
+	"turretOffsets":[5, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[11, 0],
+	"hardpointAngleOffsets":[0],
+	
+	"fringeColor":[100,255,100,225],
+	"coreColor":[255,255,255,255],
+	"glowColor":[155,255,155,255],
+	"width":6.0,
+	
+	"textureType":SMOOTH,
+	"textureScrollSpeed":72.0,
+	"pixelsPerTexel":5.0,
+	
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER],
+	"fireSoundOne":"ocua_glint_fire",
+}

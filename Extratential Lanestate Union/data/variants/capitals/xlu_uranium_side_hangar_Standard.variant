@@ -1,0 +1,32 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 12,
+  "goalVariant": true,
+  "hullId": "xlu_uranium_side_hangar",
+  "hullMods": [
+    "turretgyros",
+    "heavyarmor"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_uranium_side_hangar_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "flak",
+        "WS0002": "flak",
+        "WS0003": "vulcan",
+        "WS0004": "vulcan"
+      }
+    }
+  ],
+  "wings": [
+    "xlu_guna_wing",
+    "xlu_lantaka_wing",
+    "xlu_kalis_wing"
+  ]
+}

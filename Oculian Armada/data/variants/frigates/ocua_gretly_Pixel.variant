@@ -1,0 +1,32 @@
+{
+  "variantId": "ocua_gretly_Pixel",
+  "hullId": "ocua_gretly",
+  "displayName": "Pixel",
+  "goalVariant": false,
+  "fluxCapacitors": 9,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_gretly_explosion",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_pixelplux"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

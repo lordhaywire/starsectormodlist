@@ -1,12 +1,14 @@
 {
   "displayName": "Attack",
-  "fluxCapacitors": 25,
-  "fluxVents": 25,
-  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 24,
+  "goalVariant": true,
   "hullId": "prv_hornfels_pather",
   "hullMods": [
-    "blast_doors",
-    "reinforcedhull"
+    "magazines",
+    "heavyarmor",
+    "missleracks",
+    "shield_shunt"
   ],
   "modules": [],
   "permaMods": [],
@@ -17,8 +19,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "prv_hammer_mag",
-        "WS0010": "prv_hammer_mag"
+        "WS0009": "jackhammer",
+        "WS0010": "jackhammer"
       }
     },
     {
@@ -35,17 +37,29 @@
       "weapons": {
         "WS0001": "shredder",
         "WS0002": "shredder",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "chaingun"
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0004": "lightdualac",
         "WS0005r": "lightdualac",
-        "WS0011": "irpulse",
-        "WS0012": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "lightag",
+        "WS0012": "lightag"
       }
     },
     {

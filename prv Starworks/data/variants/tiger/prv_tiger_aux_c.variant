@@ -3,7 +3,7 @@
   "hullId": "prv_tiger",
   "displayName": "Auxiliary-C",
   "goalVariant": false,
-  "fluxCapacitors": 3,
+  "fluxCapacitors": 8,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],

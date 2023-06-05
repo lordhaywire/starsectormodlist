@@ -27,8 +27,8 @@
 	"noEngineGlowTime":0.5,
 	"fadeTime":0.5,
 	"behaviorSpec":{"behavior":"MIRV",
-					"splitRange":350,
-					"minTimeToSplit":1,
+					"splitRange":500,
+					"minTimeToSplit":0.75,
 					"canSplitEarly":false,
 					"splitSound":"hurricane_mirv_fire",
 					"numShots":3,
@@ -36,7 +36,7 @@
 					"impact":10,
 					"emp":0,
 					"damageType":ENERGY,
-					"hitpoints":200,
+					"hitpoints":140,
 					"arc":210,
 					"arcOffset":180,
 					"evenSpread":true,
@@ -55,8 +55,8 @@
 								 "particleColor":[199,102,255,50]}
 					},
 	"engineSpec":{
-		"turnAcc":150,
-		"turnRate":75,
+		"turnAcc":300,
+		"turnRate":150,
 		"acc":350,
 		"dec":350},
 	"engineSlots":[

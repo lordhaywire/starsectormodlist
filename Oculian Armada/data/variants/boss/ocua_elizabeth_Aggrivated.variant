@@ -1,0 +1,82 @@
+{
+  "variantId": "ocua_elizabeth_Aggrivated",
+  "hullId": "ocua_elizabeth",
+  "displayName": "Aggrivated",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 39,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_chemical",
+    "solar_shielding"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_flandrey"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "harpoonpod",
+        "WS0006": "harpoonpod",
+        "WS0007": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_ruby",
+        "WS0002": "ocua_ruby",
+        "WS0003": "ocua_ruby",
+        "WS0004": "ocua_ruby"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_prima",
+        "WS0009": "ocua_prima",
+        "WS0010": "ocua_prima",
+        "WS0011": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "BW 05": "ocua_glint",
+        "BW 06": "ocua_glint",
+        "BW 07": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 02": "ocua_elizabeth_m_left_Aggrivated"
+    },
+    {
+      "SM 01": "ocua_elizabeth_m_right_Aggrivated"
+    },
+    {
+      "WS0012": "ocua_elizabeth_m_engine_Aggrivated"
+    }
+  ],
+  "wings": [
+    "ocua_breeze_mi_h_wing",
+    "ocua_breeze_mi_h_wing",
+    "ocua_tick_elite_wing",
+    "ocua_tick_elite_wing",
+    "ocua_cancer_wing"
+  ]
+}

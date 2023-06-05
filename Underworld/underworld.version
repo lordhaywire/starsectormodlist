@@ -2,10 +2,11 @@
     "masterVersionFile":"https://www.sc2mafia.com/Starsector/version/underworld.version",
     "modName":"Underworld",
     "modThreadId":11002,
+    "directDownloadURL": "https://bitbucket.org/modmafia/underworld/downloads/Underworld_1.8.1.7z",
     "modVersion":
     {
         "major":1,
-        "minor":7,
+        "minor":8,
         "patch":1
     },
 }

@@ -1,0 +1,64 @@
+{
+  "variantId": "xlu_cobalt_Barrage",
+  "hullId": "xlu_cobalt",
+  "displayName": "Barrage",
+  "goalVariant": false,
+  "fluxCapacitors": 21,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "targetingunit",
+    "fluxdistributor",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_warbore",
+        "WS0002": "xlu_warbore",
+        "WS0003": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heatseeker",
+        "WS0007": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_shotcannon_m",
+        "WS0005": "xlu_shotcannon_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "xlu_hovlet",
+        "WS0011": "xlu_hovlet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "vulcan",
+        "WS0009": "vulcan",
+        "WS0012": "flak",
+        "WS0013": "pdlaser",
+        "WS0014": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

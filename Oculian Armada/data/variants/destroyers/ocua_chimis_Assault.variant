@@ -1,0 +1,45 @@
+{
+  "variantId": "ocua_chimis_Assault",
+  "hullId": "ocua_chimis",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 9,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0006": "ocua_shizuka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_glint",
+        "WS0002": "ocua_glint",
+        "WS0004": "ocua_glint",
+        "WS0005": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_breeze_basic_wing",
+    "ocua_kaleido_wing",
+    "ocua_kaleido_wing"
+  ]
+}

@@ -1,30 +1,33 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 0,
-    "fluxVents": 24,
+    "fluxCapacitors": 10,
+    "fluxVents": 22,
     "goalVariant": true,
     "hullId": "uw_doom_cabal",
-    "hullMods": ["phase_anchor"],
+    "hullMods": [
+        "phase_anchor",
+        "magazines"
+    ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_doom_cabal_cus",
     "weaponGroups": [
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
-                "WS 001": "chaingun",
-                "WS 002": "chaingun"
+                "WS 003": "amblaster",
+                "WS 004": "amblaster",
+                "WS 005": "amblaster",
+                "WS 006": "amblaster"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 003": "railgun",
-                "WS 004": "railgun",
-                "WS 005": "railgun",
-                "WS 006": "railgun"
+                "WS 001": "ionpulser",
+                "WS 002": "ionpulser"
             }
         },
         {
@@ -33,16 +36,6 @@
             "weapons": {
                 "WS 007": "heavyburst",
                 "WS 008": "heavyburst"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 009": "pdburst",
-                "WS 010": "pdburst",
-                "WS 011": "pdburst",
-                "WS 012": "pdburst"
             }
         }
     ]

@@ -16,13 +16,13 @@ import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator.Loca
 import com.fs.starfarer.api.impl.campaign.rulecmd.BaseCommandPlugin;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Settings;
 import ids.Roider_MemFlags;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.util.MagicSettings;
 import scripts.campaign.cleanup.Roider_ExpeditionMajorLootCleaner;
 import scripts.campaign.fleets.expeditions.Roider_ExpeditionStashPickupScript;
 import scripts.campaign.fleets.expeditions.Roider_MajorLootStashPlugin;

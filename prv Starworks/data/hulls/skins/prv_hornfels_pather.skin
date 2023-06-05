@@ -20,17 +20,28 @@
 	"weaponSlotChanges":{
 	   "WS0009":{
 		  "type": "BUILT_IN",
+		  "size": "MEDIUM",
 	   },
 	   "WS0010":{
-		  "type": "BUILT_IN"
+		  "type": "BUILT_IN",
+		  "size": "MEDIUM",
+	   },
+	   "WS0003":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0011":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0012":{
+		  "type": "BALLISTIC",
 	   },
     },
 	"builtInMods":[
 		"ill_advised",
 		"safetyoverrides"],
 	"builtInWeapons":{
-		"WS0009": "prv_hammer_mag",
-		"WS0010": "prv_hammer_mag",
+		"WS0009": "jackhammer",
+		"WS0010": "jackhammer",
     },
 	"engineSlotChanges":{
 		"0":{"style":"LOW_TECH"},

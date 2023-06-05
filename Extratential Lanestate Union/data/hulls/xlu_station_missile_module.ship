@@ -1,0 +1,168 @@
+{
+  "bounds": [
+    -26,
+    13,
+    -18,
+    24,
+    3,
+    24,
+    3,
+    41,
+    -38,
+    43,
+    -20,
+    74,
+    77,
+    80,
+    90,
+    66,
+    90,
+    54,
+    103,
+    51,
+    103,
+    23,
+    86,
+    20,
+    117,
+    -0,
+    86,
+    -20,
+    103,
+    -23,
+    103,
+    -51,
+    90,
+    -54,
+    90,
+    -66,
+    77,
+    -80,
+    -20,
+    -74,
+    -38,
+    -43,
+    3,
+    -41,
+    3,
+    -24,
+    -18,
+    -24,
+    -26,
+    -13
+  ],
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "do_not_fire_through",
+    "xlu_armorclad",
+    "xlu_industrial_tracker",
+    "xlu_weapons_overhaul"
+  ],
+  "builtInWings": [],
+  "center": [
+    83,
+    40
+  ],
+  "collisionRadius": 172,
+  "engineSlots": [],
+  "height": 160,
+  "hullId": "xlu_station_missile_module",
+  "hullName": "Missile Module",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    40,
+    0
+  ],
+  "shieldRadius": 105,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_station/xlu_station_missile_module.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        93,
+        -37
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        93,
+        37
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 45,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        30,
+        46
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 120,
+      "id": "WS0004",
+      "locations": [
+        30,
+        -46
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 120,
+      "id": "WS0005",
+      "locations": [
+        85,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 30,
+      "arc": 120,
+      "id": "WS0006",
+      "locations": [
+        54,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -30,
+      "arc": 120,
+      "id": "WS0007",
+      "locations": [
+        54,
+        -21
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 166
+}

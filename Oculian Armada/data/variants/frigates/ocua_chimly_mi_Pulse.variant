@@ -1,0 +1,35 @@
+{
+  "variantId": "ocua_chimly_mi_Pulse",
+  "hullId": "ocua_chimly_mi",
+  "displayName": "Pulse",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_mi_pulse"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kea",
+        "WS0002": "ocua_kea"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_breeze_elite_mi_wing"
+  ]
+}

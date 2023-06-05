@@ -1,12 +1,13 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 7,
+    "fluxCapacitors": 6,
     "fluxVents": 10,
     "goalVariant": false,
     "hullId": "cerberus_luddic",
     "hullMods": [
-        "insulatedengine",
-        "heavyarmor"
+        "armoredweapons",
+        "heavyarmor",
+		"blast_doors"
     ],
     "permaMods": [],
     "variantId": "cerberus_luddic_Standard",
@@ -14,19 +15,19 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 004": "heavyac"}
+            "weapons": {"WS 004": "heavymortar"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 003": "lightag"}
+            "weapons": {"WS 003": "lightdualac"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "vulcan",
-                "WS 002": "vulcan"
+                "WS 001": "lightdualmg",
+                "WS 002": "lightdualmg"
             }
         }
     ]

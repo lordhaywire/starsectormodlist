@@ -1,0 +1,29 @@
+{
+  "variantId": "ocua_gretly_Assault",
+  "hullId": "ocua_gretly",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 7,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_nicor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

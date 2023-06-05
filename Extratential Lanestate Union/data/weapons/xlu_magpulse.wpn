@@ -1,0 +1,36 @@
+{
+	"specClass":"beam",
+	"id":"xlu_magpulse",
+	"type":"ENERGY",
+	"size":"MEDIUM",
+	"collisionClass":"RAY",
+	
+	#"beamEffect":"data.scripts.weapons.xlu_magpulse_beam_effect",
+	
+	"displayArcRadius":450,
+	
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_magpulse_turret_base.png",
+	"turretGlowSprite":"graphics/Extratential Lanestate Union/weapons/xlu_magpulse_turret_glow.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_magpulse_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/Extratential Lanestate Union/weapons/xlu_magpulse_hardpoint_glow.png",
+	
+	"turretOffsets":[15, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[23, 0],
+	"hardpointAngleOffsets":[0],
+	
+	"fringeColor":[5,135,175,255],
+	"coreColor":[200,225,255,255],
+	"glowColor":[25,215,255,255],
+	"width":24.0,
+	
+	"textureType":ROUGH,
+	"textureScrollSpeed":260.0,
+	"pixelsPerTexel":5.0,
+	
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	"fireSoundOne":"xlu_magpulse_beam_fire",
+	#"fireSoundOne":"xlu_magpulse_beam_charge",
+	#"fireSoundTwo":"xlu_magpulse_beam_fire",
+	#"fireSoundTwo":"xlu_magpulse_beam_loop",
+}

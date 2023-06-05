@@ -1,0 +1,75 @@
+{
+  "variantId": "ocua_station_level2",
+  "hullId": "ocua_station_lvl2",
+  "displayName": "Battlestation",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "BS 08": "ocua_station_module_hangar_medium_Standard"
+    },
+    {
+      "BS 07": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "BS 06": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "BS 05": "ocua_station_module_hangar_medium_Standard"
+    },
+    {
+      "SBS 01": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 02": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 04": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 03": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 05": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 06": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 08": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 07": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "RS 03": "ocua_station_ring_Standard"
+    },
+    {
+      "RS 01": "ocua_station_ring_Standard"
+    },
+    {
+      "RS 02": "ocua_station_ring_Standard"
+    },
+    {
+      "RS 04": "ocua_station_ring_Standard"
+    },
+    {
+      "PS 01": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 02": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 03": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 04": "ocua_station_pillar_tall_Standard"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,110 @@
+{
+  "hullName": "Brass",
+  "hullId": "xlu_brass",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_brass/xlu_brass.png",
+  "style": "MIDLINE",
+  "height": 70,
+  "width": 122,
+  "center": [61, 24],
+  "collisionRadius": 108,
+  "shieldCenter": [4, -0],
+  "shieldRadius": 85,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "xlu_gretchin_hullmod",
+    "turretgyros"
+  ],
+  "builtInWeapons": {
+    "WS0004": "xlu_hovlet"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [38, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [36, -36]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [36, 36]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-24, -26],
+      "length": 52,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24, 26],
+      "length": 52,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24, -50],
+      "length": 42,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-24, 50],
+      "length": 42,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -14, 11,
+    -18, 19,
+    -15, 58,
+    39, 50,
+    44, 28,
+    19, 19,
+    41, 0,
+    19, -19,
+    44, -28,
+    39, -50,
+    -15, -58,
+    -18, -19,
+    -14, -11
+  ]
+}

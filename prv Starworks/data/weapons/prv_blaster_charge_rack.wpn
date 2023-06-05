@@ -1,0 +1,40 @@
+{
+	"id":"prv_blaster_charge_rack",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	"turretSprite":"graphics/weapons/missile_rack_open_m_3x_turret_base.png",
+	"hardpointSprite":"graphics/weapons/missile_rack_open_m_3x_hardpoint_base.png",
+	"hardpointOffsets":[
+		8,5, 8,0, 8,-5,
+	],
+	"turretOffsets":[
+		3,5, 3,0, 3,-5,
+		
+	],
+	"hardpointAngleOffsets":[
+		0,0,0,
+	],
+	"turretAngleOffsets":[
+		0,0,0,
+	],	
+	"renderHints": [
+		RENDER_LOADED_MISSILES
+	],
+	"barrelMode":"ALTERNATING",
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"displayArcRadius":500,
+	"smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":16.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":0.9,
+				 "cloudRadius":8.0,
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":1.1,
+				 "blowbackLength":20.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[170,160,150,100]},
+	"projectileSpecId":"prv_blaster_charge",
+	"fireSoundTwo":"prv_blaster_charge_fire",
+}

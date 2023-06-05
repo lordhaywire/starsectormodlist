@@ -1,0 +1,80 @@
+{
+  "variantId": "xlu_kaolinite_litho_Support",
+  "hullId": "xlu_kaolinite_litho",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics",
+    "xlu_crew_waymakers"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "xlu_bente",
+        "WS0016": "xlu_bente"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hil",
+        "WS0002": "hil",
+        "WS0003": "hil"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "gravitonbeam",
+        "WS0005": "gravitonbeam",
+        "WS0006": "gravitonbeam",
+        "WS0007": "gravitonbeam",
+        "WS0008": "gravitonbeam",
+        "WS0009": "gravitonbeam",
+        "WS0010": "gravitonbeam",
+        "WS0011": "gravitonbeam",
+        "WS0012": "gravitonbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "heavymauler",
+        "WS0014": "heavymauler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "flak",
+        "WS0018": "vulcan",
+        "WS0019": "vulcan",
+        "WS0020": "vulcan",
+        "WS0021": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

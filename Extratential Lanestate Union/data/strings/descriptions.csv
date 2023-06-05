@@ -1,0 +1,351 @@
+id,type,text1,text2,text3,notes
+xlu_gattler,WEAPON,"A heavy-rotary loaded minigun that releases an intense hail of fragmentation bullets against missiles and strike craft. The weapon must be reloaded periodically.
+
+Fired simultaneously the from top and bottom barrels, the Gattler achieves a firing speed unlike any other. Granted by its unusual autoload mechanism, that feeds in on both ends of the rotary cannon, the Gattler depletes its munition quickly enough that it requires constant feeding of box-magazines in order to stay into combat properly.",Point Defense,,
+xlu_shotcannon_s,WEAPON,"Fires a group of metal pellets in a single, inaccurate blast. The Shotcannon is designed to either overwhelm flux shields or destroy remote munitions.",Close Support,,
+xlu_light_triac,WEAPON,A triple barreled version of the Light AC. A high-end burst cannon the comes off with a similar shock effect of the more capable Heavy AC.,Close Support,,
+xlu_mortar_s,WEAPON,"A modern revision of the Light Mortar, it fires anti-armor shell in a sized burst at a relatively moderate range.
+
+A weapon not typically seen in common eyes, this mortar variant is often used for remote bombardment options should glassing a small area deemed an exact decision. Otherwise, its slow projectiles are easily avoidable in direct combat if the mounted weapon happens to be dealing with frigates of user's size. Warshots tend to resort on this weapon, should the budget be too endearing to set up.",Assault,,
+xlu_stubbon,WEAPON,"A small, belt-fed rotatory cannon, designed to be carried by frigates to puncture opened holes on enemy ships. The Stubbon is often fielded in large numbers with suppressing fire in mind, pressuring strike craft and having a bare minimum armament without asking too much.
+
+A lost technology that is forcibly removed because of too much practicality built around this weapon. Often scrubbed from Domain tech files, as this weapon was very likely to be used by rebels and dissidents who know how to build it even almost by hand. As the earliest Waymakers defragged the deliberately forgotten device, the usage became obvious.
+
+Now every fleet in the Union uses this weapon, and is often celebrated with for its reliability and ubiquity. Down to every Lanestate crew member, told what were its basic components and tweaks are, often answered in a complete, detailed description. The Stubbon inevitably led to newer, more powerful rotary cannons. Often asking the question, ""Is it enough?""",General,,
+xlu_gyropult_s,WEAPON,"An intrinsicly simple pneumatic bomb bay with a munition nanoforge to extend its limited purpose from its original design. Gyropults are the spacefaring equivalent of painstakingly throwing anvils from a rooftop.
+
+More or less a half-open turret emplacement with a shielded pnuematic arm to push the bombs out once they are loaded into the firing position. The munition forge is a part of the weapon system. Much like most of the weapons that use ballistics, the lack of such a technology in spite being readily available even for the Pilum models seemed the ammo storage was more of an afterthought.
+
+Much like the Stubbon rotary cannon, Gyropults can even be assembled by hand but, also like the Stubbon, the LPC for the forge has to be purchased in order to assemble the bombs specifically for the turret of this bore. A moderate explosive yield normally seen with the Bolton cannon or the Maul, but the size difference is noticeably smaller due to its lack of the ignition casing that protects the projectiles before leaving the barrel.",Strike,,
+xlu_40th_mortar_s,WEAPON,"A heavily modified Assault gun that boasts its already rapid firing speed with more damage and efficiency, at the cost of requiring a powerful loading mechanism.",Assault,,
+xlu_40th_railgun,WEAPON,"A substantial upgrade of the expansion Railgun, this twin-barreled cannon excels at great efficiency and a higher shield-bursting output.",,,
+,,,,,
+xlu_hyperflak,WEAPON,An unusual point-defense platform that is capable of unloading specialized shells capable of blasting off missiles and strikecraft from a distance.,Point Defense,,
+xlu_momus,WEAPON,"A stubier, more compatible weapon of the Hephaestus assault gun. This lightweight weapon platform is designed for ships that lack direct firepower of the capital-class vessels.",Assault,,
+xlu_quad_ac,WEAPON,"Essentially an upgrade to the Heavy Autocannon, this quad-regulated counterpart allows ships fire a more saturated burst of shells adept at destroying enemy shields.",Close Support,,
+xlu_shotcannon_m,WEAPON,"Extending the capable blast of one shotcannon, this heavier variant can clear out what densely packed formations it is direct at.",Close Support,,
+xlu_bolton,WEAPON,"A light extension of the infamous Hellbore, Bolton cannons free smaller ships by accommodating an ordnance that can punish larger more rigorous bulkheads with their powerful rounds.",Support,,
+xlu_gattling_m,WEAPON,"A tradition to many fast-firing weapons, bringing hail of lead from a very powerful rotary cannon. The Gaskilo gattling fulfills such capacity.
+
+There is nothing exceptional about having moving barrels to compensate the heat generated from discharging every bullet from the chassis, but the Lanestate Union, a gattling cannon of such size was more of a necessity.",Denial,,
+xlu_hovlet,WEAPON,"Not the proudest weapon of the Union, but it gets the job done for its irreplaceable reliability and low emissions output which keep the Hovlet a competent fallback for any ship.
+
+Just after the completion of the Stubbon's industrial production, the use of non-composite barrels went an all-time low for not meeting the bleeding edge of firepower the Warshots were hoping for. Thus, a standard template had to be designed, a technology that is mundane and easy to produce, easy to fire, relatively convinient and robust to maintain even at the harshest conditions. The Hovlet LPC was finished in record time, with little known variances as military expansion of the Union went on.
+
+While Lanestate markets often profit from stronger, more monstrous bores and rotary cannons, the humble Hovlet becomes a common pick for any aspiring gunner or earnest defender in the core worlds.",,,
+xlu_mulleter,WEAPON,"A heavier, stubborn thumper with a locked dual-chamber mechanism that offloads its myriad of bullets with only a single push of a button.
+
+Due to its permanently interlocked feed system, the Mulleter was fairly discarded during the Domain expansion for its limiting aspect and convoluted weapon input plugin where only the equally complex Lanestate warships could accept it. Thus, such a weapon was easily adopted within the Union's ranks and was left mostly unchanged besides its fresh blue paint.",,,
+xlu_40th_autocannon_m,WEAPON,"A heavy autocannon made into objective engineering perfection, carrying a larger caliber for every barrel that propels at a lower heat cost.",,,
+,,,,,
+xlu_amboss,WEAPON,"Doubling the already reliable rotatory cannon, the Amboss is a gunner's dream with the intent of delivering the finishing blow upon its deployment.",Assault,,
+xlu_hyvel,WEAPON,"Powered by its built-in reactor, the Hyvel is adept on release a flow of cerametallic rounds that punishes shielded enemies and disable weapon systems from a distance.
+
+The secret to the Hyvel's recoil management is more sinisterly simpler than it usually thought. The magnetic coils surrounding the barrel are not meant to fire the projectile at all, but are equally charged at great intensity to match the chassis coils to force the barrel outward after releasing its backblast from the ballistic load it fired. Surrounded with a ceramic-metallic composites, the Hyvel is as rudimentary as it is brutal in the battlefield.
+
+The payload, however, is also composed of metal-ceramic hybrid filling that doubles as a fragmentation to ship systems as it is physically stressing to energy shields. The round design is not new by any chance, but something that even the Domain itself have come up as far as the Union expects it be all the same.",Close Support,,
+xlu_mortar,WEAPON,"Like its smaller variant, the Bracken unloads a hail of subtle, yet dangerous pellets of high explosives at its enemies.
+
+One of the few Domain-era weapons that the Lanestate refined for Barrage-class uses, Bracken is a farcry of the poorly used predecessor that still uses pre-Collapse war technology. Simple, but effective.",Close Support,,
+xlu_warbore,WEAPON,"A modernized take of the Hellbore cannon, this powerful double-barrel cannon unloads high explosive rounds at a rapid succession thanks to its reliable heat-sensitive pressure loaders.",Assault,,
+xlu_contrada,WEAPON,A very rugged and prized anti-gunship deterrent system flexing its powerful autoloader system that provides a wide firing solution at a relative conjunction.,Point Defense,,
+xlu_phalanx_mg,WEAPON,"An even larger variant of the most commonly used rapid-firing weapon, the high-powered Phalanx is made to unleash a storm of pellets aimed against anything but the toughest adversaries.
+
+Keen to supplement defense measures, a massive variant of the Gatler cannon was put into the works. Designed with four rotary vulcan barrels with multiple belt loaders for each makes the minigun array a terrifying sight to behold for every fighter pilot that gets to see one up close.",Point Defense,,
+xlu_shotcannon_l,WEAPON,"A versatile weapon mounted on a large platform compliment firing a myriad of pellets fired from a massive bore, the Superheavy version strikes fear to many with just a hush of time.",Close Support,,
+xlu_gattling_l,WEAPON,"A larger caliber and another cylinder compared to its lighter brother, there is no other weapon that unleash a storm than this gattling cannon.",Denial,,
+xlu_40th_thunderslug,WEAPON,"A custom Hellbore, calibrated to fire heavy slugs of hard metal against the general direction. An intimidating diameter with the kinetic energy powerful enough to leave holes on any armored vessel in its wake.",General,,
+,,,,,
+xlu_quilfling_s,WEAPON,"Fires the entire rack of unguided rockets immediately in a straight path. Quilfling rocket racks are meant to tear through armor with a sudden flush of rockets.
+
+The philosophy within the Quilfling design remains unchanged compared to its Annihilator counterpart, a support weapon without intention of destroying its target but has the potential if otherwise. Same cannot be said with its unloading mechanism, as all the bays are immediately fired once the ""big red button"" has been pressed.",Assault,,
+,,,,,
+xlu_quilfling_m,WEAPON,"Fires a concentrated burst of unguided rockets with a short delay in between, this twin pod of rocket racks is constantly loaded in order to generate prolonged stress towards its victim.
+
+The divide between the Annihilator series starts with this model, two multi-cylinder racks fired in a rapid succession is what makes this Quilfling a distinct delivery system. Such a system is easily betrayed for its compact amassment that makes it easy for Flak systems to destroy the volley so quickly.
+
+If left unattended, however, it can arrive in disastrous results as weaker point defense systems will fail to keep up against this dense hail of rockets.",Assault,,
+xlu_watusi,WEAPON,"A once commemorative means of entertainment turned into a potent deliverance weapon, the LRMs fired from the weapon use their remaining fuel reserves to ignite their powerful, charged bullets.",Fire Support,,
+xlu_bente,WEAPON,"A heavy rack of short range guided missiles that can be used to ward off fighters or a tough finisher against ships experiencing defensive stress.
+
+Essentially the same technology that made the Swarmer launcher but missiles are given shaped armor to extend their flight time until they hit their intended target. Not only this simple improvement made it difficult to unshielded ships to avoid, but it also made an indirect pressure that interferes both large vessels and fighter crafts while the missiles remain in flight. This of course comes with the cost of losing some space to accomodate more missiles, but they do make every missile do a count once a Bente launcher starts firing its twenty salvo.",General,,
+,,,,,
+xlu_quilfling_l,WEAPON,"Firing a massive array of rockets in a straight path. This Barrage-class rocket launcher tests the limitations of the target's defense systems should they sustain throughout this weapon's onslaught.
+
+Not too long after the development of its smaller variants, this rocket launcher is a very compelling design to come up with. Meant to poke over the meek laser defense systems that keep the even more minute torpedo and LRM weaponry at bay.
+
+This large Quilfling launcher doubles as a very rugged and reliable torpedo armament due to its destructive potential in a short span of time. Not even the largest ships without its needed Flak turrets could survive the aftermath from this relatively simple design.",Assault,,
+xlu_watusi_l,WEAPON,"As with all Lanestate philosophy, this Watusi variant is jam-packed with a rack of long-range two-stage explosives for its larger ships, fitting for the most aggressive pushes their doctrine would ever encourage.
+
+Banned in its earnest in the Domain cruiser schools for its destructive potential of stray debris generated in a once very crowded star systems, the Watusi is met with valid expectations once uncovered from several techmining sites in the Lanestate sector. Less of a sabot round but more of a rocket attached on another rocket- missile, the Watusi entered its combat service with amazing results against the AIs of old.
+
+Now, this weapon is seen in many sightings in the Persean sector as clashes between the two remnant Domain factions, pushing the offensive with a variety even the Hegemony has not expected in centuries.",Fire Support,,
+xlu_lusis_l,WEAPON,"Fires a lingering missile that deploys multiple warheads in waves, constantly breaching the target. Effective at harassing new targets should the initial target has already been destroyed.
+
+The Lusis is a variant of the Hurricane MIRV technology that the XLU had safeguarded for some time before their assault to the Persean sector. Its guidance systems used rapidly fabricated Delta core modules in order for the firing mechanism to operate, along with every wave of submunitions launched from its load. Such a weapon was never used for the destructive leisure Lanestate members would normally practice. Instead, it was used an actual intent of decimating their targets should their stance was needed to uphold.",Fire Support,,
+,,,,,
+xlu_auglaser,WEAPON,"A heavier compliment of the common Tactical laser, boasting increased damage output for increased expenses and energy requirements.",Close Support,,
+,,,,,
+xlu_magpulse,WEAPON,"A heavily defocused beam weapon designed to ripple shields at short to mid-range. A lost relative to the Graviton cannon that utilizes blasting power through its rapidly dissipating kinetic pulse.
+
+It's been obvious already that this technology was founded by the Waymakers as they scavenge lost pieces of old Domain relics across the interstellar-spanning ruins. An outfitted Graviton cannon reduced to a Magnetic pulse projector would have usually meant a loss in efficiency, but it did not. Instead, it shoots a powerful beam of energy like a traditional projectile weapon then dispersed after a short distance apart. Warshots almost considered it heretical by design, but it was later adopted due to its gun-like performance in the field.
+
+Due its magnetic properties, a directed shot would also mean disabled electronics once the beam touches any piece of machinery. Making it a powerful short-ranged tool for disarmament and a deadly weapon for anything that wants to be blasted across the empty space.",Close Support,,
+xlu_kowbac_m,WEAPON,"A wicked emplacement infrared weaponry firing at short range. While not as intimidating as its large caliber cousin, it compensates with its reliably fast firing capability.
+
+The Kowbac pattern is not great in its introductory, a complementary set of infrared pulse lasers into a single weapon. The issue was it cannot expel the excessive heat as its original designers desperately attempted in looking for a solution. Thus it exceeded its budget and the design was archived for study.
+
+Waymakers however implemented a loop modification that allows the system remove the extreme calidity produced from the weapon, with each barrel absorping most of heat residue as a firing output while reciprocating its recoil with a rejective coolant pressing inwards.",,,
+xlu_geezer_m,WEAPON,"Less of an actual weapon and more of a scavenging tool in the hand of a Lanestate shipbreaker. Appropriate for its incredible efficiency in cutting armor, if they are in range of it.
+
+Geezer beams provide the bulk of the Union's industrial arm thanks to its high density plate melting strength. Due to its variable heat point and horizontal flexibility, it has no problem being handled at any emplacement so long as the user would care about workplace safety.",,,
+,,,,,
+xlu_kowbac_l,WEAPON,"A large weapon to match its massive firing stream of energy pulses through its opening. A stock alternative for the typical needs of covering a wide area with volatile projectiles.
+
+It was not long until the Lanestate Union upsizes such a predictable armament, a rapid firing pulse cannon capable of enforcing an aggressive fire support scheme with nothing more than a push of a button.",,,
+xlu_geezer_l,WEAPON,"A very wide calidity flush point array meant to tear through the toughest armor for salvage. A cleaner's weapon for those who really want to get rid of those hard to reach stains.
+
+There is nothing unusual to see about gigantic giga-watt laser cannon converted into a salvage beam cutter, especially when the target hulks meant for the job are too large and heavy to break through. An upscaled Geezer laser pattern was issued in order to accomodate salvage scales too difficult to be done by hand. Retrofitted with a precise crystal lock to avoid distant refraction of the beams and the dangerous overheat scale that follows, ensuring the device runs safe even at the hands of a Tin-class pilot.
+
+Funnily enough, it was found far useful in the battlefield as well, melting down the hardest metal on the spot. It never felt more satisfying for a hardcore salvage mate to open an occupied vessel and continue bristle through without a thought. At the hands of a Waymaker, it becomes a terrifying precision tool for joint-strike operations, because nobody expected a running madman with beaming down on a cutting tool while the rest gets gunned down by hardy pirates who would want to take them down a peg.",,,
+,,,,,
+xlu_colossus_miningblaster,WEAPON,This XLU-issued colossus mining bolt blaster is designed to dematerialize non-metallic compounds that surround the natural alloys for extraction. Amplified with enough flux and this blaster can destroy heavy alloys in seconds.,Assault,,
+xlu_thunderfist,WEAPON,"A powerful mashup of the speed of a Devastator and the size of the Hellbore shells, the Thunderfist roars in space with its massive area clearing burst shells.",Close Support,,
+xlu_stratus,WEAPON,"An unnecessary step-up to the already large Hellbore, the Stratus cannon unleashes gigantic explosive rounds that rip solid armor and destroy small ships outright.",Assault,,
+xlu_stratus_h,WEAPON,"A glaring follow-up of the single mounted hyperbore, this dual barrel Stratus class cannon fires its massive rounds at an unusually steady flow, meant to leave large holes on flagships.",Support,,
+xlu_rodstorm,WEAPON,"A weapon system that carries long spearheaded explosive rounds, the Rodstorm multi-barrel cannon eases armored oppositions through its intimidating wall of uranium.",Assault,,
+xlu_manganate_cannon,WEAPON,"An exceedingly massive rod bore, for an exceedingly heavy dreadnought. This Ultraheavy spinal weapopn is meant to unload its shield-breaking payload for its largest targets.",Close Support,,
+,,,,,
+xlu_vulcan_interceptor,WEAPON,"Not particularly outstanding on a larger vessel, but as fighter-based weaponry, this fragmenting shotgun can spell heavy damage against an unprotected ship. Provided if the holes on the armor are present.",Point Defense,,
+xlu_guna_ac,WEAPON,"A modified autocannon designed to fit Guna fighter models. High caliber for a weapon of its size, capable enough to leave sizeable dents to even durable armor.",,,
+xlu_annihilator_interceptor,WEAPON,Fires an unguided rocket. Typically used to strip away enemy armor once shields are down.,,,
+xlu_gattler_fighter,WEAPON,A heavy-rotary loaded minigun that releases an intense hail of fragmentation bullets against missiles and strike craft. Used extensively by XLU strikecraft.,,,
+,,,,,
+,,,,,
+xlu_mattock,SHIP,"A heavier model of the standard Mining drone. Mattocks provide additional strain to the opposing forces with the help of tougher armor and additional mining lasers.
+
+Designed to overcome the increasing demand for manless mining operations, Lanestate mechanics take apart existing mining rigs and rebuild them with a stronger reactor that maintains three mining lasers. The drones are then mounted with a micro-fabricator dedicated for their own rocket launchers to used for asteroids deemed too difficult to cut open with focused heat lensing. And due to the prolonging Metal-rush core worlds experienced, they are accomodated with a vulcan as defense against competition.
+
+Mattocks require a keen controller to oversee its performance on the asteroid or within the battlefield. Otherwise, it would rather be a hard waste to lose a heavily armed drone.",,,
+xlu_kalis,SHIP,"The long-range XLU corvettes that assists larger ships by having a weapon compliment that would normally describe as a powerful gunship.
+
+Lanestate Warshots are volunteers who have fought in their homeworlds through space gauntlets of tourneys that use this particular vessel. Trading the rather bulky warp field drive with a reactor and a shield generator to match, Kalis corvettes are portable space bunkers for the XLU that accomodate the pilot and their savvy gunner in attempts that would have been considered a deathwish. First time Warshots usually rode several vehicles and manned at least a turret in their lives, but never a Kalis due to its unfamiliar control scheme and are usually barred off by other Warshots who almost always rushes into the vessel in time.
+
+Tournaments of War are typically clunky junkyard battles tied to a double-elimination, should the riders survive their first lost.",,,
+xlu_kampilan,SHIP,"Built for speed, the Kampilan takes up the role as a powerful interceptor designed to swat down its competitors through a hail of bullets.",,,
+xlu_guna,SHIP,Strong armor plating and heavy kinetic armaments is what makes the Guna a strong pressure unit to anything that dares to attack its host.,,,
+xlu_lantaka,SHIP,"A demolitionist's dream, that unloads an unguided torpedo, assisted by a volley of explosives. Should anything survive from the onslaught, are mowed down by its finishing ballistics.",,,
+xlu_drone_ytty,SHIP,A modified borer drone equipped with basic projectile armaments and a defense program that support which ship digitally owns it. Simple and usually safe. ,,,
+,,,,,
+xlu_alum,SHIP,"An industrial cut introduced by the XLU, the Alum's ubiquity in the frontlines is a result of its incredible survivability and mobility in a variety of roles.
+
+The most ship common and typical design ever flown in Lanestate space, the Alum is the closest resemblance of Plastic, a true human ingenuity, translated to a Unioner. Never a single spaceborne Union household is possible to not own a single Alum, due to its relative affordability. Even its sheer ruggedness can survive the harshest asteroid belts and the poorest piloting skills the Lanestate Union could ever offer.",,,
+xlu_brass,SHIP,"Trading off its overbearing armor turns to an interceptor frigate, harnessing the potential from multiple large weaponry loaded on its carriage. The Brass is a hunter-killer warship where it is expected to count.
+
+Composed of nothing more but guns, engines and a bridge that connects all the pieces together, the grizzled Brass is a design not all too uncommon to Union to make. Left out with a meek amount of protection to prevent the overburdening load of its weapon systems that would further lower its potential speed to a crawl. The ship is very telling of its pirated origins.",,,
+xlu_calc,SHIP,"More well-known captains of the Lanestate Union fly the more rugged and dangerous variants in their sector, the Calc is no exception. A powerful assault frame with the greasiest slug throwers to ever seen, the Calc falls nothing short but a sign of warning.
+
+A once relic design, the Calc is repurposed as a heavy weapons assault platform from remains of a once crude auxiliary orbital mostly used for lunar mining; its recreation only visualized during the Lanestate salvage after the Collapse, such fragments of seemingly random data were scattered plenty across the unknown sector. Not many were so dear to approached a once violent wasteland in space.
+
+Like many 40th outfits, cladded with bulkier armor and a distinct ordnance system, the Calc's performance in the field is absurd. A rare defense emplacement at the rear of the ship has proven valuable along with turreted emplacements on the sides ensure a frigate of such size was able to quell such perils not even the Hegemony could predict. Strong but just.",,,
+xlu_gaul,SHIP,"Not commonly recognized by outsiders as a Lanestate combat frigate, due to its non-linear weapon scheme, the Gaul instead hones its prowess through the use of energy weapons to supplement its allies' focus on heavy ballistics.",,,
+xlu_lead,SHIP,"Despite its flawed phase technology, the Lead competes against its more advanced competition with nothing else but raw ballistic firepower.
+
+Founded on the principle that low-end ships typically being unable to enter phase space because of reactors not being powerful enough for the job. Hence, it was an opportunity for the reformed pirates to scavenge what they knew about the Gremlin design; a hull that has the capacity to do so. With the template in place, modifications and armor improvements allow phase field to accept the hull more efficiently. With the ship on display, the completion was obvious.
+
+Soon, Lead frigates were able to leave secured Lanestate space able to venture with regular crew on-board who are at least able to understand the hazards involved being thrown out of the ship while inside the altered void.",,,
+xlu_nickle,SHIP,A plethora of armored turrets on such a large frigate can easily spell disaster to any light carrier fielded in the open. Nickles are almost a staple to any XLU fleet that needs to squeeze any bit of its logistics to spare for a picket.,,,
+xlu_zinc,SHIP,"An economically dominant frigate in terms of its terrifying mass of weapons, the Zinc is a go-getter of a ship that never stops unloading its plethora of ballistics to its enemies.
+
+An actual ""death ball"" of a ship, as armor pieces slope firm around its seemingly exposed platform of hardpoints. Commanded by its hardy captain who is often expected to be capable of holding its impulses when commanding such a beast of a hull. The Zinc is a work of art on its own, that would otherwise be an ugly end to anything that comes in front of its deadly barrage.",,,
+xlu_tin,SHIP,"Inspired by the reformed pirates annexed in the XLU, this militia frigate is recognized as a desire for any ship savvy who wanted to install what is effectively an overwhelming firepower.
+
+Not many welcome the Tin-class frigate for its singular large ballistic emplacement as the majority of the ship, unless it came from the Unioners. A profound inspiration that brought forth the desire to build the largest arsenal the Lanestate Union could wish they accomplish. The Tin is stands out as a box outside the personal perspective of the human condition, in which one would cherish such a fine arsenal in their bare hands with only a worthy ship capable of completely such a goal.",,,
+xlu_kite,SHIP,"More than a flashy standard of showing off in the edges of space, this Kite is retrofitted with a Lithos Lanestate schematic that allows an expecting combative force from an unusual base design.
+
+Highly advanced vessels were not usually suspect in the Union, but with threats constantly looming within the outer rims of the Lanestate sector, some homeholds improvised high-tech derelicts that usually uselessly drift in a very low-end environment. Thus the more powerful Litho variants were formed, reactor-heavy response ships capable of using whatever arsenal the enemy throws at the Union, from their lifeless vessels.",,,
+xlu_mercury,SHIP,"Modified to handle the stress in the outer rim of the sector, this Mercury comes with an additional defenses for short-term travellers who need to move between systems under fire.",,,
+xlu_tin_forty,SHIP,"Listed as a staple bombard frigate for the Ultra fleets, this Tin underwent the Fortieth Battlegroup overhaul. Turning the lowly gunboat into a self-reliant gunship that can easily turn the tide of a battle.",,,
+,,,,,
+xlu_bromius,SHIP,"A proposed safe design that accomodates a wide range of weapons under a single bridge, the Bromius is designed to keep the sidelines of the battlefield in check while being capable of hunkering down against the harshest picket squads could throw at it.",,,
+xlu_cobble,SHIP,"Buffalos are not very welcomed in the Lanestate sector due to their reputation as coffin ships. The Cobble was a recovered freighter design that defeats this hurdle with its ability to brace even the worst conditions such a role could endure in the Persean sector.
+
+Cobble-class freighters were derived from the Colossus soon after its predecessor's release to the common trader folk before the Collapse, with specifications akin to its monstrous sibling, the Juggernaut. Due to its size, the Cobble sits between the necessities of the small private companies and the larger industrial corporations withheld within XLU territories.
+
+An up-armored freighter that still has its civilian signature for clearance purposes and to keep pirates from extensively using it as a resorted weapon.",,,
+xlu_espron,SHIP,"Once a makeshift destroyer jam-packed with a bulky arsenal, outfitted with a sustaining weapon system that can amass damage output if approached too close. The Espron is a boxer ship that can throw off opponents that dare to linger within its deadly range.
+
+An odd-ball design in an era that far outpassed the concept of the monitor ships. The Espron is a militants' destroyer outfitted by Lanestate pirates and residence alike. 
+
+Through its modest size, its tough, shaped armor coupled with armaments handled by a very crowded group of crew members, the Espron is very well considered like a highwayman who would like to dig into his victims with a knife or two.",,,
+xlu_gypsum,SHIP,"An armored mining rig that acts as a solemn fortress for its working forces. Accustomed with the intentionally numerous defensible sections, the Gypsum is commandeers asteroid clusters by this rather simplistic engineering decision.
+
+To maintain sustainable profit gains without pouring budget for much large armaments, the Gypsum has to be built under the construction of modular armor plating and cargo containers dropped off by the assembly organizers from the remote home sectors.",,,
+xlu_lithium,SHIP,"An XLU destroyer designed for long-distance pursuits, the Lithium hones its prowess with its explosive ordinance and a reliable hangar to keep its territory in clear order.
+
+First to be built under a vastly lighter frame, the Lithium is considered to be the ""Carbon-light"" fist of the Union by some of the higher house officials and with its speed that only few destroyers can match. Family houses and sub-corporates alike favor the Lithium as well due to its ease of construction, need much less heavier metals and less specialized shipyard printers without risking the Lanestate standard for weaponry.",,,
+xlu_stibium,SHIP,"A common XLU destroyer for the harsh environment of the post-Collpase era. Designed to suit every role possibly conceived, the Stibium is a match for any spacefaring startup.
+
+The Stibium was once thought to be inspired by the pirated Mudskipper outfit, expanded upon with every inch of metal framework it could possibly hold. Several core weapon systems are seemingly bolted on for improved firepower, to the point it manifests a bulk design beyond the recognition of its predecessor.
+
+Thanks to its newfound hollow chassis, the Stibium can fulfill any purpose its captain would see fit. A self-sufficient munition bay that doubles as an LPC nanoforge or even as a condensed flux compensator to utilize whatever energy weapon the Stibium is able to coffer from.",,,
+xlu_buffalo,SHIP,"Extratential Lantestate Shipfaring Yards (XL) puts this Buffalo model through an extensize hull modification, improving most of its existing system through robust means. The changes include additional weapon platforms, modernized primary thrusters, a unique shield module and thicker armor plating, at the cost of manueverability, high maintenance and larger crew assembly.
+
+The go-to choice for medium cargo hauling in the Sector, the Buffalo-class freighter exemplifies the 'Load-n-Pray' principle prevalent in Sector shipping.
+
+Unlike the standardized model of the central Domain, this Extratential variant is adjusted to meet demands of a high powered freighter; giving a more powerful reactor, additional engines and solid defensive emplacements. Due to this, the value of the freighter escalated to the level of a light combat destroyer, a cost that seemed to be issue to many stingy traders in the depths of the sector, though it isn't enough to disallow its common use by the outsiders due to the design's unusually self-reliant defenses.",,,
+xlu_butane,SHIP,"XLU ships tend to be heavier than standard ship designs, often resulting greater propulsion requirements than that of Hegemony models, which is where Butane comes in. A reliable ship with huge engine compartments that propel at longer periods.
+
+The Butane's history was very unwelcomed due to its obvious necessity of antimatter in the largest of quantities despite its size, at a time. The glaring engine noise it produces that can be sense from afar by both the fleet's allies and enemies, right down to its maintenance issues where the Ox would be certainly be considered with but three. Made even worse with its earliest design that would make a Conquest look like a frigate of its energy signature in comparison.
+
+Several modifications have been made since, accomodating a high-density locking cable in order to pride its powerful thrusts. Now, it is considered to be the fastest ship in the fleet, or in every Lanestate fleet that any opponent would think of.",,,
+xlu_butane_litho,SHIP,"Discarding its baseline role as a utility craft, Litho Butanes come to aid with a wide open firing arc, aiming for picket and interception roles. This variant has an incredible track record of annoying the hell out of strikecrafts.
+
+Common deduction of Butane retrofits were out of immediate recycling of Tri-Tachyon components drifting in derelict clusters. With no cargo holds to fit the pieces, Unioners tend strip apart their own Butanes and replace them with more efficient high-tech devices typically out of convenience.
+
+This desire grew as more parts get turned, until there is nothing left of the hull but curvier bulkheads and glowing reactor pumps. From there, weapons started to root into the ship as its own crew grew tired of struggling to fend off hostile scavengers turning the ship into a valid combatant.",,,
+xlu_sunder,SHIP,"A Lanestate modification of the post-Domain era Sunder, this variation excels in direct combat with its refurbished weapons array and reinforced armor technology. Two robust ballistic weapons in tandem with its powerful main gun allows the Sunder to focus fire while maintaining its defensive position from behind with a more flexible defensive setup.
+
+Clearly the work of a ""rogue"" family whose intentions sought nothing but the creation of more Sunders, simply to spite the Warshots' cohesion of mandating Ballistics-only philosophy. The design was forcefully fed into the Lanestate shipyard servers, replacing one of the old Bromius destroyer models in the process.
+
+The resulting Sunder was, of course, met with criticism with blockades in an attempt to stop Sunders from ever surfacing from the yards. It was only until the Second AI war erupted at the edge of the Lanestate fringe worlds that immediates its use. After the action and the results, the core engineers decided to throw it in the doctrine standards but will not allow the mysterious family, whom brought up the design, to ever receive the reception for its success.",,,
+xlu_espron_forty,SHIP,"Equipped with tougher armor and even more powerful radiators, this Espron compels its enemies with a destructive loadout that never seem to run out of munitions.",,,
+,,,,,
+xlu_azurim,SHIP,"A recognized armscorp vessel of the belligerent 40th Battlegroup, the Azurim is a flagship cruiser of its kind. Strong armaments and durable frontal armor make it too suitable in just about every role it can find. For its costs, it is very well worth of its fit.
+
+Many of the first 40th Battlegroup ships stayed to fend off the remaining AI menace, that were almost successful in purging the Union home system, happened to be Ventures for its invaluable versatility that kept the defenders from being undergunned. Thanks to its ubiquity as a Domain-era civilian ship, the production of such vessels were easy to put up and conventional means to ""improve"" its allowance for such armaments meant it can stay in service for years.
+
+Decades later, the remaining ancestors of said battlegroup request revisions of the model as industrial means of modifying LPCs and creating new ones become a reality in the Union. The Azurim was made, with tougher armor, powerful engines and a mount for a Barrage-type main gun that materialize in Lanestate space. The first of the modern Ultra battlegroup, which help rebuild the lost colonies into a thriving federation it is today.",,,
+xlu_cobalt,SHIP,"A primary mean for the Lanestate Union to commit in frontline confrontation, the Cobalt is a must-have battlecruiser for those who pursue firepower above many necessities.
+
+The pioneering object of Lanestate engineering, the Cobalt was fictitiously made by an old pirate crew who thought of it since the after Collapse as they dig within the planet named Omanir, a Lanestate ruins that was once uninhabited for decades, within the core union cluster. Upon their capture, engineers took the curiousity and the flown architecture from the crew's hands and blissfully piece together a housing that was soon to be the first of the Cobalt's kind.
+
+The first LPC from the wreckage was integrated with the Union's core figures. A Dominator of sorts, but replacing the conventional modules with fully forged Lanestate-issued shells and massive rotary gears. Three very hollow compartments where the barrage-class weapons are soon to be placed. One piece below the bridge is a particularly large reactor sitting behind its spinal mount.
+
+""It's ***king massive"", mentioned by the Hegemony salvage crew as they discover charred armories of the Cobalt's remains. It is difficult to understand whether the Unioners are ever the same with the locals. But their desire for any Domain blood in their onslaught never ceases to amaze spacefaring engineers.",,,
+xlu_duralumin,SHIP,"A recent response design in an attempt to raid the former Domain planets of the Persean sector, the Duralumin excels in the role for its overall attack capacity that no other transport ship could able to muster.
+
+Basically a Valkyrie overhauled with too many weapons designs permitted by the Hardy Boys doctrine of the Union. No other refit deemed can be truly enlisted besides its massive carrying capacity of armed soldiers ready to deploy in the midst of the battle.
+
+As the result of the clutter, the raider transport is a collective of armaments that can contest to any situation; land, air, sea and in space with as many guns as the shuttle could possibly use in every situation. Truly a remarkable desire for such innovation so depraved that guns could only be a true solution to everything.",,,
+xlu_ferros,SHIP,"A go-to design that defines the XLU doctrines, the Ferros is a cutting-edge warship with an engineering standard that compels its battleship-sized might in the open front.
+
+Competing with the Cobalt's rise, Warshots begin to group up for a design field that promises muscle and mobility, the Ferros became a reality but at a cost losing durability the Cobalt prides on. Armed to the sharpest of teeth in the union, the first working prototype flown in the non-existent territorial waters, orbitting the newly founded Phosmon.
+
+A recent innovation the Hegemony did not anticipate, as they send their Persean counterpart, the Eagle, into action. The result was less than spectacular, as the bullet-ridden cruiser flagship befell by the might of the hilariously overgunned Ferros.",,,
+xlu_macrolloy,SHIP,"A relic from a much older era, the Macrolloy is rebuilt and refurbished in order to retake its former glory with its gruesome arsenal. The XLU's primary means for sieging fortified defenses.
+
+Formerly, a once outdated utility vessel meant for its salvage capability and carrying large loads through what is considered now its massive weapons bay, the Macrolloy has certainly become the stuff of oddball stories that would otherwise be unmentioned in the dark.
+
+Strategically called for as a long-ranged ""murder hole"" to every fortified position, the siege cruiser is will continue its way into the Persean sector where such its role now plague several fronts. Armed with a powerful targeting computer, not even the most secured station could ever see a bullet coming from that far away. For a time.",,,
+xlu_sulfate,SHIP,"Heralded for its amassment of an arsenal on its own, the Sulfate is a slow moving hulk of metal that brings the hail of lead to its enemies from both a distance and up close.
+
+No doctrine in the Persean sector made a dedicated carrier with main guns heavily affiliated than the Sulfate-class. A gunship and a fighter dock platform in a single sitting, crammed with many munitions and armor cladding to almost like they are pushing it. The Sulfate has it all, but a terrible mobility that even the Mora could outperform it.",,,
+xlu_carbide,SHIP,"A suitable combatant and a hardy freight convoy, the Carbide tends to the needed support as a middle-grade missile and gun platform thanks to its flexible engineering.
+
+Carbide freighters have a fair share of complacency within the Persean market due to its opposing prospect to Tarsus model as its designated purpose to deliver ordinance directly to the frontlines than just petty merchandising. Its reputation fell short to notice by the public due to lack of necessity in bringing planets to arms before the Collapse, thus shelving its original designs within the Lanestate territory where it was much needed which was then released on further on further notice.",,,
+xlu_colossus,SHIP,"A heavily modified Colossus that comes with a dedicated mining platform, an improvised but effective design due to the help of its dedicated mining blaster. Along with its mounted hangar of Mattocks, this variant becomes a valid asset to many private companies under the Lanestate Union.
+
+Arguably the oldest redesign of XLU ships since the Collapse, this Colossus variant assisted the Union on braving the harshest scarcity they have experienced as a sector throughout its long decades of service. With the help of the design chip reprogramming, the unit was modernized but the hull remains largely unchanged for the Union's customs as a proud upbringer.
+
+Standards of it were revised several times, that includes the eventual energy Mining Cannon and a mining squadron for routine combat-ready mining operations.",,,
+xlu_colossus_litho,SHIP,"An unusual sight for a particularly unfamiliar vessel, Litho Colossi are attuned to be heavy, hard-hitting warships with a power scale that is unprecedent relative to its original design. Such a preposterous monstrosity has yet to see common admissions but the ship has definitely affected the Union's enemies with such a conversion flex.",,,
+xlu_oxide,SHIP,"Ever since the constant harassment of tankers became increasingly dire, fuel ships started to form teeth. The Oxide is the product of that struggle, armed with a respectable amount of armaments to deal the growing issue.
+
+Due to the nature of Union ships being antimatter hungry, such Antimatter Rush occur so often in the Lanestate sector to meet such a massive demand which thankfully got met in every request. The demand for such fuel pods were so high that pirates simply existed in the sector for such purpose.
+
+Unioners came up with a solution of adding additional firepower on the Oxide to quell the blaze of antimatter greed. Larger guns replace the standard Phaeton specifications while retrofitting the entire hull with a Colossus-grade casing. As the ship is shown, the improvement results speak for themselves.",,,
+xlu_scheelite,SHIP,"While standard salvage rigs remain conventional to the public, Scheelite models are fielded for those who require distant and more robust recovery assets. This variant comes along with an available cargo hold and standard defensive measures allowing deep space directives.
+
+A sufficient, self-sustaining model was introduced into the Union when their growth has started to reach its peak. Scheelite models are known for its large array of tools and incredible durability due to its often accidents occur when handling large metal hulks that could interfere terribly in a salvage run. Large engines are hoisted into the bulk, with enough speed to spare its unneeded acceleration, cargo holds took place in between. Making the salvage rigs a solid standard in spite of its upfront costs.",,,
+xlu_starcrusher,SHIP,"The combat intergration of the Starliner from the Lanestate Union, an armored homestead for the same warsmiths who brought its conversion. The Starcrusher is a transport cruiser that has the capacity to assault other ships with contrasting designations.
+
+Curiously identified as a Civilian ship, the Starcrusher hails from the Warshots' techyards as a common residence for prolonged periods in deep space. Its capability of carrying abnormally large weaponry was originally intended as a firing range for various reasons. The gun-riding cruiser was notorious in the sector for a few cycles, being able to slip through typically secured areas in the Persean proper, often mistaken by its Starliner signature, its transport of weaponry as cargo and not threatening its pursuers at gunpoint.",,,
+xlu_starliner,SHIP,"A passenger liner from a more civilized age, the Huan-Gogel 440 ""Starliner"" was built to travel between the systems of the Domain in speed and comfort. The Starliner features private first-class cabins, two classes of food service, a zero-G theatre, and even a small landing/launch bay for exclusive use by executive-class passengers. (Being a civilian ship there are, of course, no facilities for fighter repair and rearmament).
+
+This Starliner model remained unchanged for several cycles, with minor changes that reflect with standard Lanestate specifications, along with sleek finishes and lighter components. The model has also retained most of its low-opacity windows providing a view through its virtuous holodeck which can even be seen from outside. A pristine model from a bygone era, waving the vast voids of space merely to spite at the Domain's catastrophic failure.",,,
+xlu_duralumin_forty,SHIP,"Outfitted with a very radicalized chassis, 40th Duralumins excel in its role as a modern Picket cruiser due to its massive armaments of low-end ordinances.",,,
+,,,,,
+xlu_anthracite_old,SHIP,"Juggernaughts were always called for its impracticality, a size of a large city shoved into space with the largest amassment of weapons that breeds dreams on every military admiral who desires for firepower, this dream is kept long enough to produce one of the most massive spacecrafts ever conceived in deep space.
+
+The Anthracite is the XLU's pride and joy, an escape with the most unusual reasons behind it, almost like it was to satisfy a deep hatred that was never there. A piece of sterner stuff, particularly a large one, left in the hidden depths of old Domain space, unfinished, uncared and untouched for centuries.
+
+Thanks to the Lanestate's spacefaring culture, this beast of a weapon was able to be fielded for the first time, and soon after many more as resources continue to be recovered and exploited to its remarkable capability of spreading fear with its size and its ability to prove its strength.",,,
+xlu_anthracite,SHIP,"If an Overslaught is too much of a threat already, a Lanestate-issued variant comes with even tougher armor and the ballistics overhaul compatibility that make it even more destructive. It comes with a powerful Burn system, built-in Warbores and a specialized Devastator module that can rip entire ships in half.",,,
+xlu_chrominus,SHIP,"No other arsenal ship could hardpress through the fight with both speed and durability, which is where the Chrominus comes in with advanced missile systems that accommodate Lanestate armorclad standards and powerful engines that would do the job.",,,
+xlu_diaboleite,SHIP,"A large weapons array platform that can decide the fate of its fleet between a decisive victory and a very embarassing defeat. The Diaboleite is a core pillar of Lanestate ingenuity and military might.
+
+Awkwardly, built specifically to hold multiple weapons in its cargo holds, the design truly begins when multiple turrets are visually arranged in a formation. One developer quickly drew out the schematics to the eventual nightmare to any other engineering outsider. Shortly after it came out of the yards, the desire for its production is very typical.
+
+Frustration of excess, unused ballistics finally came to an end as Diaboleites continue to fill the sector, with mounting guns a plenty roaring as bullets slowly becoming scarce by the day. When a Diaboleite should enter battle in the Persean sector, its inhabitants will gawk in confusion as multiple eager gunners of the Union collectively aim their weapons to their targets.",,,
+xlu_gadolinite,SHIP,"A flying castle, as some would view it, built under the demand for solid security within the colony orbits of Lanestate territory. The Gadolinite earned its place in the outer sectors for its extreme rigidity and its supportive role in every fleet.
+
+Lanestate core worlds argued over sustainability of its recently claimed colonies with powerful security forces that can provide a significant threshold against outsiders that refuse to keep their proximity. A blueprint of a large-scale artillery developed in that instance, but the lack of mobility leaves so much to be desired. As new engineers come aboard the Union with more creative ideas, the Gadolinite would soon meet its inception.
+
+Not as regretfully massive as the makeshift planetoid vessels the pirates would likely commandeer themselves, the Gadolinite's relatively modest size allows a concentrated firepower not seen in the Lanestate sector for centuries. With its planetary-derived mounted gun at the ready, the first Warsentinels that entered service easily brought resistance in the fringe worlds to negligible standards overnight.",,,
+xlu_kaolinite,SHIP,"An unrelenting guardian, equipped with powerful shields and a very strong bulkhead, the Kaolinite is spearheads the Lanestate's protection armada against the continuous hoard of outsiders.
+
+The Kaolinite battleship was the one of the many iterations of the Onslaught prior to its succeeding deployment, a pale reflection of an experimental battleship that never came to fruition. Techmined from the ruined Domain archives, the Kaolinite returns as a formidable warship, unhindered by the outdated Thermal Pulse technology that the Onslaught had to bear with its weight.
+
+These guard ships set a cornerstone to the Lanestate doctrine, due to its remarkable mobility despite its size and outdated engine technology.",,,
+xlu_kaolinite_x,SHIP,"Standard Kaolinite models are distributed to the public as means of protecting themselves from the ever growing threat outside the Union sector, armored hulks that designed for both evacuations and direct confrontations. This Kaolinite has been updated with additional defensive measures for unmissed perimeters.
+
+Core XLU variants are serviced in the frontlines primarily for the forward sectors and the original colonies of the Lanestate Union. They often stood up as a necessity to every tournament the union upheld because of its above average flexibility in every role it is assigned to. Thanks to its updated engine setup, the Voccor drives, the Kaolinite can burn excessive heat right off its system and continue fighting regardless of the pressure.",,,
+xlu_kaolinite_litho,SHIP,"Even modernized Kaolinites see their ends of service in Lanestate space, instead of being left out unused, the Litho corps ""improves"" most of the aspects of the battleship into a powerhouse only seen in their home territory. At least what the corps would think.",,,
+xlu_pumpmaster,SHIP,"Trading its outdated engines with an equally outdated primary drive that allows it to thrust itself upon its unsuspecting enemies, this modified Kaolinite is designed to keep up with unrelenting standoffs while still maintaining a massive presence where the fleet would otherwise not be.
+
+It is a rarity for pirates nowadays to exist within the union's influence as opportunities to raid relics of old wars became too easily unavoidable. However, a decade long appearance within the Persean sector allowed a new breed of pirates to take arms, specifically of the Lanestate kind and its very compatible doctrine.
+
+Humorously called the Pumpmaster pattern, this Kaolinite conversion makes use of the once unusable Orion drive technology thanks to its very reliable armor components that allow the best kinetic absorption such shaping provides. With a freehand who would be willing to throw a volatile payload from the rear and a triggerhappy captain on deck, this fast battleship is a fear that not many are particularly fond of seeing.",,,
+xlu_onslaught,SHIP,"Extratential Lantestate Shipfaring Yards (XL) puts this Onslaught model through an extensize hull modification, improving most of its existing system through robust means. The changes include additional weapon platforms, modernized primary thrusters and thicker armor plating, at the cost of manueverability, high maintenance and larger crew assembly.
+
+This Onslaught is overhauled to handle massive stress with its amassment of heavy ballistics and rigorous armor, sacrificing what little maneuverability left in order to attain maximized firepower. The ship also comes with a custom-made Rodstorm cannon that unloads massive explosive shells at excelling speeds.",,,
+xlu_pyridoxate,SHIP,"Introduction of the Kaolinite into XLU armada has greatly influenced the minds of many military advocates who sought power through the bulk of their ships. The Pyridoxate is a massive carrier unlike any other, fielding a strength of what is described as a small fleet, this glorified mobile spaceyard is meant to cloud the battlefield with cold, hardened metal.
+
+A supercarrier priding its massive service of six strike wings, a call of the Lanestate pride to its armory assortment philosophy. A Lanestate commander that brings this in a fight is a sign that a battle is either dire or simply asking for a proper fight that they will never forget.",,,
+xlu_rhodochrosite,SHIP,"One of the XLU's primary means of transportation, the Rhdochrosite stays as the dominating freighter all thanks to its admirable size, tough armor, reliable weapons array and a very large cargo capacity.
+
+Not particularly the latest design invented by the Union. More over, by the late Domain in their last exploration efforts as resources slowly dwindle and the upcoming AI war in the horizon. Large transports were sought out to collaborate with the Hyperspace Gate constructions, and this freighter was the one kind of the many experimental vessels. Formerly named as the Juggernaut, freighters of this kind were heavily armed to secure mining and trade operations, and as a last-ditch effort to secure a foothold that had failed to materialized since.
+
+Since recently, design chips of this breed are scavenged from the very remains of the war that happened twice, the Juggernaut is now redesignated as the Rhodochrosite under the Union's grace. Means to not confuse the categorization of the Lanestate's Uranium and the recently discovered Anthracite as juggernaught type vessels. These mighty freighters were soon to fly once more in very large numbers as the facilities to accomodate the juggernaughts finally finish.",,,
+xlu_tritanite,SHIP,"There are no words to describe how unfathomably determined Lanestate engineers are during the creation of such a weapon. Impractical in several ways, yet it holds enough on its own as an oversized warship that carries such hamfisted design. The Tritanite may have only existed with the mere purpose of imposing its structural might over its competitors.",,,
+xlu_uranium,SHIP,"Carrying, of what is described by far, the largest volume of fuel ever conceived, this juggernaught-class tanker is designed specifically to lift enough volatile fluids in order to service a small armada for months. Like the Prometheus, the Uranium comes protected with a sizable arsenal, support wings and a powerful burn drive to protect its liquid cargo.
+
+Incredibly large and unbearably ugly, Uranium's dependable utility dates back long before the great Collapse have hit the sector, when the Lanestate Union improvised star travelling techniques with gratiutous projects involving a vessel of an obscene scale being shot into space, Uranium was one of those projects. Construction on further Uranium models halted when the first AI war broke out due to its impracticality. Only since the Union finally expands were such titans were able to be built again.
+
+Moving fuel about a size of a small moon, Uranium becomes a recognizable staple to Lanestate forces as it provides more than enough fuel to hold for several missions and an additional for those unforeseeable activities.",,,
+xlu_manganate,SHIP,"Built under the jurisdiction of the Ultra battlegroup, the Manganate is a very heavily armed dreadnought with the most audacious arsenal its chassis could physically carry and use with the sole purpose of riddling its foes beyond recognition.
+
+A near impossible feat of engineering marvel, the Manganate is a mobile armory that knows how to carry its own weight around. Massive rampart build up, an armored bridge, carrier bays, missile systems and a ludicrously massive bore in its spinal section, designed with the intent of leaving nothing alive. Derived from its older, smaller sibling, the Conquest-class battlecruiser, this dreadnought holds no punches as every gun on both its platforms has the capacity to fire upon sight of their targets.",,,
+,,,,,
+xlu_phosphor,SHIP,"The Phosphor is a heavy station support drone focused on defensive fire. Due to its available space as a station defense drone, it comes with a Devastator cannon and multiple point-defense systems.",,,
+,,,,,
+xlu_powerburn,SHIP_SYSTEM,Temporarily shifts Lanestate engines to a full Flux burn. Provides a relative boost of speed for a fixed time at the expense of being able to use shields. The ship runs the risk of full engine flameout on any significant collision.,Movement,Temporarily burn more Flux and increase maximum ship speed at the expense of being unable to turn or use shields. Collisions can cause a flameout while the system is active.,
+xlu_gyrothrust,SHIP_SYSTEM,Activates one of three flux-charged internal structure motors and thrusters that gives the ship's maximum acceleration and rotation speed in a brief period. Also provides a small increase to the ship's top speed.,Movement,Provides small charged boosts to acceleration and maneuverability.,
+xlu_vectorpunch,SHIP_SYSTEM,"Ignites a reactor-sustained charged Burn capsule within the ship, increasing Top speed and Acceleration for a brief time. Residual heat is then recycled into the ship's weapons, increasing projectile speed significantly.",Movement,"Provides near-instant charged boosts for top speed, acceleration and weapon projectile speed.",
+xlu_frenziedfeed,SHIP_SYSTEM,"Diverts shield power straight to ordnance autoloaders, coolant systems and targeting system, significantly accelerates the ship's ballistic weapon emplacements. The mechanism must be re-calibrated and cooled before it can be used again.",Offensive,Deactivates ship's shield then provides a flux cost reduction and a brief but significant boost to the rate of fire of all ballistic weapons.,
+xlu_madmansfeed,SHIP_SYSTEM,"Aggitates targeting systems and reactor power, result an effect that accelerates the ship's ballistic and energy weapon emplacements. The mechanism must be re-calibrated and cooled before it can be used again.",Offensive,Provides a brief boost to the rate of fire and flux reduction of all non-missile weapons.,
+xlu_curatoroverloader,SHIP_SYSTEM,"Deploys overloader systems between the ship's engines to weapon batteries, increasing damage, projectile speed and range at the cost of near immobility and less turning speed.",Offensive,"Boosts weapon damage, range and projectile speed while immobilizing the ship.",
+xlu_dilationdamper,SHIP_SYSTEM,"Forcibly decouples the ship within an unknown variable in a drive field bubble, slowing down its own flow of time whilst speeding up the dilation around it. Any damage to the ship that entered this state will take significantly less damage.",Special,Lowers down the flow of time slow enough to reduce damage taken by the ship.,
+xlu_ullanaghdrive,SHIP_SYSTEM,"Broadcasts an inspiring roar throughout the entire crew and its hosting fighters, driving them in a fit of rage that makes them fight faster, hit harder and immediately launching fighter replacements to make a statement.",Special,"Drives the entire crew mad, slightly increases time flow while fighters replace lost units, engage faster and deal more damage.",
+xlu_drone_oxide,SHIP_SYSTEM,"Releases rotationally-locked combat drones that follow their host's direction, unloading light mortars and vulcan fire within the direction of 135 degrees. If destroyed, a replacement can be built within the duration of battle.",Defensive,Deploys four rotational dependent drones to assist the host for covering fire and point-defense.,
+,,,,,
+xlu,FACTION,"Previously a dying stellar colony since the first AI war, stationed from the far reaches outside the Persean sector, the Extratential Lanestate Union was ravaged with terrible misfortune, discontent and utter disgust by the Domain because of the planets they originally reside in, rocky, arid and empty. A mistake that the Domain did not took lightly.
+
+Few centuries had passed and when luck seemed to finally ran out, the Union discovered a metallurgy rush and a reason to thrive above their cold, desolate colony hubs. Rich minerals finally arose to the surface as the planets emitted volcanic activity at an mysterious scale, easy to exploit with due to the Explornarium tools they possessed. Shortly after, the Lanestate Union finally became an industrial powerhouse of metallurgy and military might.
+
+With their size, the resulting Union is comprised by the majority of the three sectors: the Hardy Boys, the Warshots and the Waymakers.
+
+The Hardy Boys are the original Unioners that took the major role in rebuilding the unity of the core Lanestate worlds and are the bulk of the rustbelt sector, dedicated their manpower and resources to develop residences, commerce and opportunities to take to the stars. Their name is earned through their hardships of the dusty hubs that were nearly wiped out, only to crawl out once more to make a civilization for themselves.
+
+The Warshots were the hardies that majorly reside for the military aspect and the famous Tournaments of War. Veteran gunners, captains and former pirates alike in the Union typically belong in this sector but not without their titles, nicknames and achievements that allow them to earn their right as a Warshot.
+
+The Waymakers were much like the Warshots, but took the path of longing for adventure. Comprised of scientists, scouts and inspired admirals, Waymakers are pioneers of the new journeys that the Lanestate Union, and are primarily the reason why they appear in the Persean sector.
+
+As far the Union knows, they were abandoned and thrown to the brink of death in the metallic clutches of the AI menace. Now, a massive armada with ships scaling the size of cities have moved within the untouched remnants of the Nemvis system. Hundreds of millions of souls sought for an unreasonably burning vengeance for the strife of their ancestors against those who belong to the Domain, in which the Persean sector happens to be. A woe that the Hegemony would ever wish to become.",,,
+,,,,,
+xlu_planet_hixon,CUSTOM,"A hot burning mess, Hixon is one of those planets that sits too close to the star's surface, most of its atmosphere was wiped clean from the excessive heat and gravitational forces. It serves as the Lanestate's frontier foundry in order to build its industrial warships.",,"Constant bombardment of the worst a star would do to a planet makes Hixon nothing more but a burning husk begging to tell anyone not to set foot on its hellish surface. But due to its incredibly rich metals, however, makes the planet too beneficial to be left untouched. And with the Lanestate's technology to hold massive hot metal, it shouldn't be a problem.",
+xlu_planet_vargan,CUSTOM,"Once a thriving Domain colony went array, Vargan sat closely to the brink of collapse until the Lanestate Union's arrival for expansion merely a decade ago. Completely rebuilt with a new massive orbital base, Vargan holds as the Union's capital forward facilities by orders originating from their core worlds light years away.",,"Endorsed for its unusually available infrastructure after the Domain's disappearance, Vargan is currently holding a widely livable landscape with rich resources enough to supply the Lanestate's frontier armada. With the help of its massive starbase, the planet has a sizable anarchage to hold many of its largest ships ever to be fielded in the Sector.",
+,,,,,
+,,,,,
+xlu_unknown,CUSTOM,"All Ballistic Fragmentation weapons gain s even more damage, s for PD versions.",,,

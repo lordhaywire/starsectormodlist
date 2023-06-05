@@ -2,7 +2,7 @@
   "variantId": "prv_brand_hunter",
   "hullId": "prv_brand",
   "displayName": "Hunter",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 15,
   "fluxVents": 20,
   "quality": 3,

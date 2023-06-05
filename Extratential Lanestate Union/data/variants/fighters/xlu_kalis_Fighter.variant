@@ -1,0 +1,60 @@
+{
+  "variantId": "xlu_kalis_Fighter",
+  "hullId": "xlu_kalis",
+  "displayName": "Corvette",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "swarmer_fighter",
+        "WS0011": "swarmer_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_guna_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_guna_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_vulcan_interceptor",
+        "WS0007": "xlu_vulcan_interceptor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_vulcan_interceptor",
+        "WS0003": "xlu_vulcan_interceptor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_gattler_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

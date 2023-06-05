@@ -56,23 +56,23 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
     private static final String DATA_KEY = "LE_Dram_Missile_Plugin";
     private final Object STATUSKEY1 = new Object();
 
-    public static final float EXPANSION_BLAST_DPS = 9000f;
+    public static final float EXPANSION_BLAST_DPS = 10000f;
     public static final float EXPANSION_RATE = 185f;
     public static final float EXPANSION_TIME = 6f;
-    public static final float INITIAL_BLAST_DAMAGE = 12000f;
-    public static final float INITIAL_BLAST_RADIUS = 700f;
+    public static final float INITIAL_BLAST_DAMAGE = 6000f;
+    public static final float INITIAL_BLAST_RADIUS = 400f;
 
-    public static final float EXPANSION_BLAST_DPS_PHAETON = 12000f;
+    public static final float EXPANSION_BLAST_DPS_PHAETON = 13000f;
     public static final float EXPANSION_RATE_PHAETON = 195f;
     public static final float EXPANSION_TIME_PHAETON = 8f;
-    public static final float INITIAL_BLAST_DAMAGE_PHAETON = 16000f;
-    public static final float INITIAL_BLAST_RADIUS_PHAETON = 800f;
+    public static final float INITIAL_BLAST_DAMAGE_PHAETON = 8000f;
+    public static final float INITIAL_BLAST_RADIUS_PHAETON = 500f;
 
-    public static final float EXPANSION_BLAST_DPS_PROM = 14000f;
+    public static final float EXPANSION_BLAST_DPS_PROM = 16000f;
     public static final float EXPANSION_RATE_PROM = 205f;
     public static final float EXPANSION_TIME_PROM = 9f;
-    public static final float INITIAL_BLAST_DAMAGE_PROM = 20000f;
-    public static final float INITIAL_BLAST_RADIUS_PROM = 900f;
+    public static final float INITIAL_BLAST_DAMAGE_PROM = 10000f;
+    public static final float INITIAL_BLAST_RADIUS_PROM = 600f;
 
     public static final float EXPANSION_RATE_ELITE = 400f;
     public static final float INITIAL_BLAST_RADIUS_ELITE = 1750f;
@@ -132,7 +132,9 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
         float expansionTime = EXPANSION_TIME * attenuate;
         float expansionRate = EXPANSION_RATE * (attenuate / (float) Math.sqrt(attenuate));
 
+
         for (ShipAPI target : targets) {
+
             if (target == ship) {
                 continue;
             }
@@ -279,7 +281,7 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
 
                     if (CollisionUtils.isPointWithinBounds(point, target)) {
                         engine.applyDamage(target, point,
-                                0.6f * blastDamage * (blastRadius - MathUtils.getDistance(target, loc)) / blastRadius,
+                                0.2f * blastDamage * (blastRadius - MathUtils.getDistance(target, loc)) / blastRadius,
                                 DamageType.HIGH_EXPLOSIVE, 0f, true, false, source);
                         break;
                     }
@@ -407,7 +409,7 @@ public class LE_Dram_Missile_Plugin extends BaseEveryFrameCombatPlugin {
 
                     if (CollisionUtils.isPointWithinBounds(point, target)) {
                         engine.applyDamage(target, point,
-                                1.2f * blastDamage * (blastRadius - MathUtils.getDistance(target, loc)) / blastRadius,
+                                0.2f * blastDamage * (blastRadius - MathUtils.getDistance(target, loc)) / blastRadius,
                                 DamageType.HIGH_EXPLOSIVE, 0f, true, false, source);
                         break;
                     }

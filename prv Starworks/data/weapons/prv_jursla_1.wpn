@@ -21,7 +21,7 @@
 					   "particleSizeRange":10.0,
 					   "particleDuration":0.12,
 					   "particleCount":12,
-					   "particleColor":[51,0,153,196]},
+					   "particleColor":[128,255,255,196]},
 	#"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
 	#"requiresFullCharge":true,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
 	"projectileSpecId":"prv_jursla_1_shot",  # projectile that will be fired

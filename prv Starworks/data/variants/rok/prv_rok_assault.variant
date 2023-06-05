@@ -3,7 +3,7 @@
   "hullId": "prv_rok",
   "displayName": "Assault",
   "goalVariant": true,
-  "fluxCapacitors": 5,
+  "fluxCapacitors": 15,
   "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
@@ -16,8 +16,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_heavybounder",
-        "WS0002": "prv_heavybounder"
+        "WS0001": "prv_heavybounder"
       }
     },
     {
@@ -34,16 +33,23 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "prv_akers",
-        "WS0007": "prv_akers"
+        "WS0002": "prv_siege_akers"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0012": "railgun",
-        "WS0013": "railgun"
+        "WS0006": "prv_akers",
+        "WS0007": "prv_akers",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "prv_akers",
+        "WS0013": "prv_akers"
       }
     },
     {
@@ -53,6 +59,12 @@
         "WS0003": "prv_vakt",
         "WS0004": "heavyburst",
         "WS0005": "heavyburst",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0010": "prv_sipdlaser",
         "WS0011": "prv_sipdlaser"
       }

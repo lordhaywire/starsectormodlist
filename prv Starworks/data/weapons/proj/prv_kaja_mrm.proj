@@ -2,6 +2,7 @@
 	"id":"prv_kaja_mrm",
 	"specClass":"missile",	
 	"missileType":"MISSILE",
+	"onFireEffect":"scripts.weapons.prv_kaja_OnFireEffect",
 	"sprite":"graphics/prv/missiles/prv_missile_kaja.png",
 	"size":[7,18],	
 	#"center":[3.5,10],

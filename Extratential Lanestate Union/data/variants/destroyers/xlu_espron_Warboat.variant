@@ -1,0 +1,53 @@
+{
+  "variantId": "xlu_espron_Warboat",
+  "hullId": "xlu_espron",
+  "displayName": "Warboat",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_crew_warshots",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_gattling_m",
+        "WS0002": "xlu_gattling_m",
+        "WS0003": "xlu_gattling_m",
+        "WS0004": "xlu_gattling_m",
+        "WS0005": "xlu_gattling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "breach",
+        "WS0008": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_hovlet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

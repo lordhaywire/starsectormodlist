@@ -1,0 +1,83 @@
+{
+  "variantId": "ocua_utena_Assault",
+  "hullId": "ocua_utena",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 19,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "ocua_core_chemical"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BW S01": "ocua_kea",
+        "BW S02": "ocua_kea",
+        "BW S03": "ocua_kea",
+        "BW S04": "ocua_kea",
+        "BW S05": "ocua_kea",
+        "BW S06": "ocua_kea",
+        "BW S07": "ocua_kea",
+        "BW S08": "ocua_kea",
+        "BW S09": "ocua_kea",
+        "BW S10": "ocua_kea",
+        "BW S11": "ocua_kea",
+        "BW S12": "ocua_kea",
+        "BW S13": "ocua_kea",
+        "BW S14": "ocua_kea",
+        "BW S15": "ocua_kea",
+        "BW S16": "ocua_kea"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_shizuka",
+        "WS0009": "ocua_shizuka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_nicor",
+        "WS0003": "ocua_nicor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW G01": "ocua_glint",
+        "BW G02": "ocua_glint",
+        "BW G03": "ocua_glint",
+        "BW G04": "ocua_glint",
+        "BW G05": "ocua_glint",
+        "BW G06": "ocua_glint",
+        "BW G07": "ocua_glint",
+        "BW G08": "ocua_glint",
+        "WS0004": "ocua_blita",
+        "WS0005": "ocua_blita",
+        "WS0006": "ocua_blita",
+        "WS0007": "ocua_blita",
+        "WS0010": "ocua_glint",
+        "WS0011": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,50 @@
+{
+  "hullName": "Shield Generator",
+  "hullId": "ocua_doris_shield",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_doris/ocua_doris_shield.png",
+  "style": "OCULUS",
+  "height": 52,
+  "width": 62,
+  "center": [31, 23],
+  "collisionRadius": 40,
+  "shieldCenter": [-25, -0],
+  "shieldRadius": 110,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_baseless_module"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "S 1",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-2, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    27, -11,
+    7, -28,
+    -16, -25,
+    -16, 25,
+    7, 28,
+    27, 11
+  ]
+}

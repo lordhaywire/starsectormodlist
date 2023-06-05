@@ -1,6 +1,6 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 16,
+    "fluxCapacitors": 11,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_harbinger_cabal",
@@ -18,16 +18,16 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 004": "atropos",
-                "WS 005": "atropos"
+                "WS 004": "sabot",
+                "WS 005": "sabot"
             }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {
-                "WS 002": "ionpulser",
-                "WS 003": "ionpulser"
+                "WS 002": "irautolance",
+                "WS 003": "irautolance"
             }
         }
     ]

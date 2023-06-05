@@ -1,0 +1,89 @@
+{
+  "bounds": [
+    46,
+    -15,
+    46,
+    45,
+    37,
+    50,
+    0,
+    50,
+    -24,
+    39,
+    -37,
+    39,
+    -37,
+    4,
+    -47,
+    -6,
+    -47,
+    -47,
+    14,
+    -47
+  ],
+  "builtInMods": [
+    "hbi",
+    "xlu_armorclad",
+    "xlu_juggernaught_hullmod",
+    "reduced_explosion",
+    "xlu_baseless_module",
+    "xlu_closed_shell"
+  ],
+  "center": [
+    56,
+    53
+  ],
+  "collisionRadius": 86,
+  "engineSlots": [],
+  "height": 106,
+  "hullId": "xlu_uranium_right_gun",
+  "hullName": "Gun Platform",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    -34,
+    -0
+  ],
+  "shieldRadius": 182,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_uranium/xlu_uranium_right_gun.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        0,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -90,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        -22,
+        -19
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS0003",
+      "locations": [
+        -22,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    }
+  ],
+  "width": 112
+}

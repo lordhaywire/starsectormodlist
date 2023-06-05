@@ -1,30 +1,32 @@
 {
   "variantId": "sebastian_attack",
   "hullId": "sebastian",
-  "displayName": "Attack",
+  "displayName": "Overdriven",
   "goalVariant": true,
   "fluxCapacitors": 0,
-  "fluxVents": 22,
+  "fluxVents": 21,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "heavyarmor",
-    "reinforcedhull",
-    "safetyoverrides"
+    "safetyoverrides",
+    "shield_shunt",
+    "armoredweapons",
+    "blast_doors"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0013": "annihilatorpod"
+        "WS0013": "annihilatorpod",
+        "WS0014": "annihilator"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0014": "annihilator",
         "WS0015": "annihilator"
       }
     },
@@ -32,18 +34,18 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "chaingun",
-        "WS0010": "chaingun",
-        "WS0011": "chaingun",
-        "WS0012": "chaingun"
+        "WS0003": "heavymortar",
+        "WS0004": "heavymortar",
+        "WS0009": "heavymortar",
+        "WS0010": "heavymortar"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "heavyac",
-        "WS0004": "heavyac"
+        "WS0011": "arbalest",
+        "WS0012": "arbalest"
       }
     },
     {
@@ -60,5 +62,8 @@
     }
   ],
   "modules": [],
-  "wings": []
+  "wings": [
+    "talon_wing",
+    "talon_wing"
+  ]
 }

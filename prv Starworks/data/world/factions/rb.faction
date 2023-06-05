@@ -36,6 +36,10 @@
 	},
 	# variantOverrides restricts hulls to listed variants and adjusts their probability
 	"variantOverrides":{
+		"prv_atlas2_belt":10,
+		"prv_venture_p_syndicate":10,
+		"prv_rok_p_belt":5,
+		"prv_rok_p_syndicate":5,
 	},
 	# multiplier for how often hulls show up in the faction's fleets
 	"hullFrequency":{
@@ -46,51 +50,46 @@
 		},
 		"hulls":{
 			"venture":0.25,		#prv_venture_rb
+			"venture_p":0.25,		#prv_venture_rb
 			"atlas2":0.5,
-			#"prometheus2":0.20,
 			"prv_kakafoni_p":0.25,
 			"prv_basalt":1.33,
-			#"prv_bitumen":0.33, #got spammed for some reason #might be fixed
-			"prv_gissel_p":0, #use the base model
+			"prv_gissel_p":0.15, #use the base model
 			"prv_rok_p":0.5, #uncommon
 			"prv_bergtagen":0.5, #uncommon
+			"prv_bergtagen_p":0.5, #uncommon
 		},
-	},
-	# ships the faction gets access to when importing S&W out-of-faction
-	"shipsWhenImporting":{
-		"tags":[
-			"prv_rb_bp",  
-			"prv_rb_cap_bp", 
-			"prv_pirate_bp", 
-			"base_bp", 
-			"pirate_bp", 
-			"pirates"
-		],
-		"hulls":[
-			"atlas",
-			"atlas2",
-			"afflictor_d_pirates",
-			"shade_d_pirates",
-			###
-			"prv_tiger",
-		],
 	},
 	"knownShips":{
 		"tags":[
 			"prv_rb_bp",  
 			"prv_rb_cap_bp", 
 			"prv_pirate_bp", 
-			"base_bp", 
 			"pirate_bp", 
 			"pirates"
 		],
 		"hulls":[
-			"atlas",
 			"atlas2",
 			"afflictor_d_pirates",
 			"shade_d_pirates",
-			###
-			"prv_tiger",
+			
+			"crig",
+			"ox",
+			"dram",
+			"phaeton",
+			"prometheus",
+			"gemini",
+			"atlas",
+			"mercury",
+			"hermes",
+			"kite_original",
+			"mudskipper",
+			"wayfarer",
+			"nebula",
+			"valkyrie",
+			"starliner",
+			"buffalo",
+			"colossus",
 		],
 	},
 #	# listing ships here will make the faction mostly use them even if other hulls become available
@@ -126,7 +125,7 @@
 #		],
 #	},
 	"knownWeapons":{
-		"tags":["prv_bp","prv_rb_bp","prv_pirate_bp"],
+		"tags":["prv_rb_bp","prv_pirate_bp"],
 		"weapons":[
 		#ballistic small
 			"lightmg",
@@ -136,22 +135,18 @@
 			"lightag",
 			"lightmortar",
 			"vulcan",
-			#"lightneedler", #replaced with triple light autocannon
 		#ballistic medium
 			"prv_akc",
 			"prv_remission",
 			"arbalest",
+			"flak",
 			"dualflak",
 			"chaingun",
 			"heavyac",
 			"heavymortar",
-			#"heavyneedler", #not replaced...
 		#ballistic large
-			#"prv_siege_akers",
-			"multineedler",
 			"devastator",
 			"hellbore",
-			#"hephag",
 			"mark9",
 		#energy small
 			"mininglaser",
@@ -160,42 +155,34 @@
 			"irpulse",
 			"ioncannon",
 		#energy medium
-			#"prv_lpk",
 			"pulselaser",
 			"miningblaster",
 			"heavyblaster",
 			"ionpulser",
+			"irautolance",
 		#energy large
-			#"plasma",
 			"hil",
 			"autopulse",
 		#missile small
-			"sabot",
 			"harpoon",
 			"harpoon_single",
 			"hammer",
 			"hammer_single",
 			"swarmer",
 			"heatseeker",
-			"reaper",
 		#missile medium
-			"annihilatorpod",
 			"salamanderpod",
-			"typhoon",
-			"sabotpod",
 			"pilum",
+			"jackhammer",
 			"harpoonpod",
 		#missile large
 			"hammerrack",
 			"hurricane",
-			"locust",
-			"prv_skata",
-			"squall"
 		],
 	},
-	"priorityWeapons":{
+#	"priorityWeapons":{
 #		"tags":["prv_rb_bp","prv_pirate_bp",],
-		"weapons":[
+#		"weapons":[
 #			###b
 #			"lightac",
 #			"lightdualac",
@@ -209,22 +196,24 @@
 #			"hellbore",
 #			"hephag",
 #			"mark9",
-			###e
+#			###e
 #			"prv_lpk",
-			"irpulse",
-			###m
-			"harpoon",
-			"harpoon_single",
-			"harpoonpod",
-			"prv_brytare_rack",
-			"prv_brytare_pod",
-			"hammer",
-			"hammer_single"
-		],
-	},
+#			"irpulse",
+#			###m
+#			"harpoon",
+#			"harpoon_single",
+#			"harpoonpod",
+#			"prv_brytare_rack",
+#			"prv_brytare_pod",
+#			"hammer",
+#			"hammer_single"
+#		],
+#	},
 	"knownHullMods":{
 		"tags":["prv_bp","prv_adv_bp","base_bp","independent"],
 		"hullMods":[
+			### 0.96
+			"missile_autoloader",
 			###0.95.1
 			"ballistic_rangefinder",
 			### older
@@ -286,13 +275,15 @@
 		"combatFreighterCombatUseFractionWhenPriority":0.35,  	# as part of normal combat lineup, when marked as priority ship
 		"autofitRandomizeProbability":0.5,
 
+		"officerSkillsShuffleProbability":0f,
+		"officerSkills":[
+			"combat_endurance",
+		],
+
 		"commanderSkillsShuffleProbability":1,
 		"commanderSkills":[
+			"derelict_contingent",
 			"support_doctrine",
-			#"wolfpack_tactics",
-			"crew_training",
-			#"carrier_group",
-			"derelict_contingent",		
 		],
 	},
 	"illegalCommodities":[

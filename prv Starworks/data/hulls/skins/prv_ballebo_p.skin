@@ -4,20 +4,13 @@
 	"hullName":"Ballebo (P)",
 	"descriptionId":"prv_ballebo",
 	"descriptionPrefix":"This ship has been fitted with an especially unstable fuel injector. Additionally the entire front piece is covered in guns.",
-	#"tags":["prv_pirate_bp"],
-	#"tech":"Pirate (prv)",
 	"tech":"Pirate",
 	"restoreToBaseHull":false,
 	"addHints":[HIDE_IN_CODEX],
 	"ordnancePoints":95,
-	#"fleetPoints":9,
 	"baseValueMult":.85,
 	"spriteName":"graphics/prv/ships/rare/prv_ballebo_p.png",
 	"systemId":"prv_plasmamanjets_overtuned",
-	"removeWeaponSlots":[], 		# ids
-	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
-	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
-	"removeBuiltInWeapons":[], 		# weapon slot ids
 	"weaponSlotChanges":{
 	   "WSML01":{
 		  "size": "SMALL",
@@ -55,12 +48,9 @@
 	   },
 	   "WS0008":{
 		  "type": "BALLISTIC",
-		  #"arc": "90",
 	   },
     },
 	"builtInMods":[
-		#"degraded_engines",
-		#"faulty_grid",
 		"unstable_injector"],
 	"builtInWeapons":{
 	"WSML01": "lightac",
@@ -80,8 +70,5 @@
 		"9":{"style":"LOW_TECH"},
 		"10":{"style":"LOW_TECH"},
 		"11":{"style":"LOW_TECH"},
-		#"12":{"style":"LOW_TECH"},
-		#"13":{"style":"LOW_TECH"},
-		#"14":{"style":"LOW_TECH"},
 	},    
 }

@@ -2,12 +2,9 @@
 	"baseHullId": "prv_aska",
 	"descriptionPrefix":"By all accounts this ship does not exist. The prv do not export heavy warships to the Church of Galactic Redemption, the CGR do not permit phase teleporters, the Knights of Ludd do not import advanced armaments, and no party has any records of Aska-class warships being transferred to the Luddic Church.",
 	"tags":["rare_bp"],
-	#"tech":"Luddic Church (prv)",
 	"tech":"Luddic Church",
-	#"baseValueMult": 1,
-	#"fleetPoints":19,
 	"ordnancePoints":150,
-	"addHints":[ALWAYS_PANIC,HIDE_IN_CODEX],
+	"addHints":[HIDE_IN_CODEX],
 	"descriptionId": "prv_aska",
 	"hullName": "Aska (LC)",
 	"restoreToBaseHull": false,
@@ -17,8 +14,8 @@
 		#main gun
 		"WS0001":{
 		  "type": "MISSILE",
-		  "mount": "HARDPOINT",
-		  "arc": 0,
+		  #"mount": "HARDPOINT",
+		  #"arc": 5,
 		},
 		#left clutch
 		"WS0002":{

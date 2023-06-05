@@ -1,0 +1,22 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "xlu_starliner",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_starliner_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightdualmg",
+        "WS 006": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

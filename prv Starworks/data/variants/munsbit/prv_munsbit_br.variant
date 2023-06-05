@@ -3,7 +3,7 @@
   "hullId": "prv_munsbit",
   "displayName": "Blockade Runner",
   "goalVariant": true,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 2,
   "fluxVents": 8,
   "quality": 0,
   "permaMods": [],

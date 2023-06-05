@@ -1,0 +1,5 @@
+id,name,order,tier,reqPoints,reqPointsPerExtraSkill,description,author,combat officer,admiral,admin,tags,icon
+# Misc non-player,,,,,,,,,,,,
+ocua_Arc_Cognition,Arc Mother's cognition,10059,0,,,"A remarkable specimen beyond machine, beyond human, as far as the eye can see.
+Yet, she refuse to speak in her own local dialect but would rather in our limited, putrid flesh.
+A regretfully discarded treasure, worth billions of losses.","Analytical comment, [REDACTED] Tri-Tachyon log",,,TRUE,"npc_only, deprecated",graphics/Oculian Armada/icons/skills/ocua_arc_cognition.png

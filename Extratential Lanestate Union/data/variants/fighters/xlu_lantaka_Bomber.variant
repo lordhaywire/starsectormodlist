@@ -1,0 +1,32 @@
+{
+  "variantId": "xlu_lantaka_Bomber",
+  "hullId": "xlu_lantaka",
+  "displayName": "Bomber",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "hammer_single",
+        "WS 002": "bomb",
+        "WS 003": "bomb",
+        "WS 005": "xlu_vulcan_interceptor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

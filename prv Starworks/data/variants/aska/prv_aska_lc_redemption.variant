@@ -1,7 +1,7 @@
 {
   "displayName": "Redemption",
-  "fluxCapacitors": 8,
-  "fluxVents": 18,
+  "fluxCapacitors": 12,
+  "fluxVents": 14,
   "goalVariant": true,
   "hullId": "prv_aska_lc",
   "hullMods": [
@@ -32,7 +32,15 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "chaingun",
+        "WS0003": "annihilatorpod",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_lighttripleac",
+        "WS0008": "prv_lighttripleac"
       }
     },
     {
@@ -41,8 +49,6 @@
       "weapons": {
         "WS0005": "lightag",
         "WS0006": "lightag",
-        "WS0007": "prv_lighttripleac",
-        "WS0008": "prv_lighttripleac"
       }
     },
     {

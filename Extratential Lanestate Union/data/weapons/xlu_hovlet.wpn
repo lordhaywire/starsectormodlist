@@ -1,0 +1,30 @@
+{
+	"id":"xlu_hovlet",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_hovlet_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_hovlet_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_hovlet_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_hovlet_hardpoint_recoil.png",
+	"visualRecoil":4.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[20, -4, 20, 4],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[26, -4, 26, 4],
+	"hardpointAngleOffsets":[0, 0],
+	"specialWeaponGlowWidth":10,
+	"specialWeaponGlowHeight":30,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	#"separateRecoilForLinkedBarrels":true,
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":16.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":16.0,
+					   "particleDuration":0.15,
+					   "particleCount":8,
+					   "particleColor":[255,140,125,200]},	
+	"projectileSpecId":"xlu_hovlet_shot",  # projectile that will be fired
+	"fireSoundTwo":"vulcan_cannon_fire",
+}

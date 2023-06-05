@@ -1,0 +1,42 @@
+{
+  "variantId": "ocua_storkis_Standard",
+  "hullId": "ocua_storkis",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 8,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "ocua_suzuya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_resel",
+        "WS0002": "ocua_resel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "WS0004": "ocua_glint",
+        "WS0005": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -12,22 +12,13 @@
   "shieldRadius": 140,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "prv_ramshield"
   ],
   "builtInWeapons": {
     "DC01": "prv_d_emitter_eld",
-    "prv_ramshield": "prv_u_ramshield"
   },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, 0]
-    },
     {
       "id": "WSML01",
       "size": "SMALL",

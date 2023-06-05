@@ -3,45 +3,44 @@
   "hullId": "sebastian",
   "displayName": "Balanced",
   "goalVariant": true,
-  "fluxCapacitors": 16,
+  "fluxCapacitors": 17,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "heavyarmor"
+    "heavyarmor",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0013": "typhoon"
+        "WS0013": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0014": "sabot",
-        "WS0015": "sabot"
+        "WS0014": "hammer",
+        "WS0015": "hammer"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "heavymauler",
-        "WS0004": "heavymauler"
+        "WS0011": "arbalest",
+        "WS0012": "arbalest"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "hveldriver",
-        "WS0010": "hveldriver",
-        "WS0011": "hveldriver",
-        "WS0012": "hveldriver"
+        "WS0009": "heavymortar",
+        "WS0010": "heavymortar"
       }
     },
     {
@@ -50,6 +49,8 @@
       "weapons": {
         "WS0001": "lightmg",
         "WS0002": "lightmg",
+        "WS0003": "flak",
+        "WS0004": "flak",
         "WS0007": "vulcan",
         "WS0008": "vulcan",
         "WS0016": "lightmg",
@@ -59,7 +60,7 @@
   ],
   "modules": [],
   "wings": [
-    "piranha_wing",
-    "piranha_wing"
+    "perdition_wing",
+    "perdition_wing"
   ]
 }

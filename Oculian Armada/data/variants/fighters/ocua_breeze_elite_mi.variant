@@ -1,0 +1,27 @@
+{
+  "variantId": "ocua_breeze_elite_mi",
+  "hullId": "ocua_breeze_elite_mi",
+  "displayName": "Drone",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "advancedoptics",
+    "ocua_drone_mod",
+    "ocua_elite_mod"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_glint",
+        "WS0002": "ocua_blita_breeze"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

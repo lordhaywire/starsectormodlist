@@ -1,6 +1,6 @@
 {
   "displayName": "Attack",
-  "fluxCapacitors": 2,
+  "fluxCapacitors": 7,
   "fluxVents": 10,
   "goalVariant": true,
   "hullId": "prv_gremlin_rb",
@@ -20,14 +20,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 002": "reaper"
+        "WS 002": "hammer"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 003": "prv_sidensvans"
+        "WS 003": "prv_blaster_charge_rack"
       }
     },
     {
@@ -35,7 +35,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS 000": "vulcan",
-        "WS 001": "prv_pskd"
+        "WS 001": "vulcan"
       }
     },
     {

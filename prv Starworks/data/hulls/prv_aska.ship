@@ -13,22 +13,10 @@
   "viewOffset": 0,
   "builtInMods": [
     #"prv_did",
-    "prv_ramshield"
+    "prv_ramshield",
+    "prv_volatiledrivecore",
   ],
-  "builtInWeapons": {
-    #"BI03": "prv_kaja_quint",
-    "prv_ramshield": "prv_u_ramshield"
-  },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, 0]
-    },
     {
       "id": "WS0001",
       "size": "LARGE",

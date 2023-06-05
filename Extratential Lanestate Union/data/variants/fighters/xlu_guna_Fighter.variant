@@ -1,0 +1,39 @@
+{
+  "variantId": "xlu_guna_Fighter",
+  "hullId": "xlu_guna",
+  "displayName": "Fighter",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_guna_ac",
+        "WS0003": "xlu_guna_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_guna_ac",
+        "WS0004": "xlu_guna_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "xlu_annihilator_interceptor",
+        "WS 002": "xlu_annihilator_interceptor"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

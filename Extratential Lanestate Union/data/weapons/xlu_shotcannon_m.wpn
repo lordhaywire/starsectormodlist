@@ -1,0 +1,36 @@
+{
+	"id":"xlu_shotcannon_m",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"displayArcRadius":800,
+	"everyFrameEffect":"data.scripts.weapons.xlu_shotcannon_effect",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_m_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_m_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_m_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_m_hardpoint_recoil.png",	
+	"visualRecoil":9.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	#"turretOffsets": [2,-4, 7,-4, 12,-4, 17,-4, 22,-4, 27,-4,		2,4, 7,4, 12,4, 17,4, 22,4, 27,4],
+	#"turretAngleOffsets":[0, 0, 0, 0, 0, 0,		 0, 0, 0, 0, 0, 0],
+	#"hardpointOffsets":[10,4, 15,4, 20,4, 25,4, 30,4, 35,4, 		10,-4, 15,-4, 20,-4, 25,-4, 30,-4, 35,-4],
+	#"hardpointAngleOffsets":[0, 0, 0, 0, 0, 0,		 0, 0, 0, 0, 0, 0],
+	"turretOffsets":[17, 4, 17, -4],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[23, 4, 23, -4],
+	"hardpointAngleOffsets":[0, 0],
+	"specialWeaponGlowWidth":12,
+	"specialWeaponGlowHeight":6,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":36.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":32.0,
+					   "particleDuration":0.13,
+					   "particleCount":5,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"xlu_shotcannon_test_m_shot",  # projectile that will be fired
+	"fireSoundTwo":"xlu_shotcannon_m_fire",
+}

@@ -12,6 +12,7 @@
   "shieldRadius": 140.5,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "phasefield",
     "prv_flickercore",
     "delicate",

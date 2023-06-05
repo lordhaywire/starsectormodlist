@@ -15,7 +15,7 @@
   "builtInMods": [
     "hiressensors",
     "surveying_equipment",
-    "prv_exposed_flux_transport",
+    "prv_exposed_flux_transport"
   ],
   "builtInWeapons": {
     "WS0001": "prv_hfl_array",
@@ -69,7 +69,7 @@
     },
     {
       "id": "WS 006",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "ENERGY",
       "mount": "HARDPOINT",
       "arc": 10,

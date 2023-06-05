@@ -1,0 +1,41 @@
+{
+  "hullName": "Segment",
+  "hullId": "ocua_nadia_m_front",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_nadia/ocua_nadia_m_front.png",
+  "style": "OCULUS",
+  "height": 60,
+  "width": 44,
+  "center": [22, 30],
+  "collisionRadius": 28,
+  "shieldCenter": [-136, 0],
+  "shieldRadius": 280,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_baseless_module",
+    "ocua_absolutenoshields"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [2, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    24, -16,
+    -27, -14,
+    -27, 14,
+    24, 16,
+    27, -0
+  ]
+}

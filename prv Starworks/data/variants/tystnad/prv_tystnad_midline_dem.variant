@@ -1,0 +1,38 @@
+{
+  "displayName": "Strike",
+  "fluxCapacitors": 5,
+  "fluxVents": 20,
+  "hullId": "prv_tystnad_midline",
+  "hullMods": ["missleracks"],
+  "goalVariant": false,
+  "wings": [
+	"gladius_wing",
+  ],
+  "quality": 1,
+  "variantId": "prv_tystnad_midline_dem",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightdualac",
+        "WS0006": "lightdualac",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dragon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightag",
+        "WS0004": "lightag"
+      }
+    }
+  ]
+}

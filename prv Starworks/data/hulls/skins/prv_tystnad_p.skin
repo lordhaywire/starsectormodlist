@@ -5,18 +5,11 @@
 	"descriptionId":"prv_tystnad",
 	"descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
 	"tags":["prv_pirate_bp"],
-	#"tech":"Pirate (prv)",
 	"tech":"Pirate",
 	"ordnancePoints":75,
-	#"fleetPoints":12,
-	#"baseValueMult":.75,
 	"spriteName":"graphics/prv/ships/prv_tystnad_p.png",
-	"systemId":"reservewing",
-	"removeWeaponSlots":[], 		# ids
-	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
-	"removeBuiltInMods":["prv_companion_integration"], 		# hullmod ids
-	"removeBuiltInWeapons":[], 		# weapon slot ids
-	#"removeBuiltInWings": ["prv_ovasen_wing"],
+	"systemId":"ammofeed",
+	"removeBuiltInMods":["prv_companion_integration"],
 	"weaponSlotChanges":{
 	   "WS0001":{
 		  "type": "BALLISTIC",
@@ -34,11 +27,6 @@
 	   "WS0006":{
 		  "type": 	"COMPOSITE",
 	   },
-    },
-	"builtInMods":[
-	],
-	"builtInWeapons":{
-		#"WS0003": "reaper",
     },
 	"engineSlotChanges":{
 		"0":{"style":"LOW_TECH"},

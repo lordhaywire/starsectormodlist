@@ -1,0 +1,43 @@
+{
+  "variantId": "ocua_pandora_m_right_Quantix",
+  "hullId": "ocua_pandora_m_right",
+  "displayName": "Quantix",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 17,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_quantix"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_pixelplus",
+        "WS0003": "ocua_pixelplus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_ruby"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_wing"
+  ]
+}

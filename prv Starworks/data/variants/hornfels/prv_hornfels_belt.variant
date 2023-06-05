@@ -1,62 +1,73 @@
 {
+  "variantId": "prv_hornfels_belt",
+  "hullId": "prv_hornfels",
   "displayName": "Belt",
+  "goalVariant": true,
   "fluxCapacitors": 11,
   "fluxVents": 30,
-  "goalVariant": true,
-  "hullId": "prv_hornfels",
+  "quality": 1,
+  "permaMods": [],
   "hullMods": [
     "dedicated_targeting_core",
     "heavyarmor"
   ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 2,
-  "variantId": "prv_hornfels_belt",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0008": "prv_brytare_rack",
+        "WS0008": "prv_blaster_charge_rack",
+        "WS0013": "prv_blaster_charge_rack"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
         "WS0009": "hammer",
-        "WS0010": "hammer",
-        "WS0013": "prv_brytare_rack"
+        "WS0010": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_kartesch",
+        "WS0002": "prv_kartesch"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "lightac",
+        "WS0012": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0005": "vulcan",
+        "WS0005r": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
-      "weapons": {
-        "WS0003": "miningblaster"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0001": "heavyac",
-        "WS0002": "heavyac",
-        "WS0004": "lightdualac",
-        "WS0005r": "lightdualac"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0011": "prv_spattergun",
-        "WS0012": "prv_spattergun"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0005": "vulcan",
-        "WS0006": "vulcan",
-        "WS0007": "vulcan"
-      }
+      "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

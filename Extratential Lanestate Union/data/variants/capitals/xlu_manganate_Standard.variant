@@ -1,0 +1,118 @@
+{
+  "variantId": "xlu_manganate_Standard",
+  "hullId": "xlu_manganate",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_crew_warshots",
+    "fluxdistributor",
+    "armoredweapons",
+    "pointdefenseai"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BWM 01": "xlu_manganate_cannon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_lusis_l",
+        "WS0002": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "xlu_quilfling_m",
+        "WS0008": "xlu_quilfling_m",
+        "WS0009": "xlu_quilfling_m",
+        "WS0010": "xlu_quilfling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_magpulse",
+        "WS0004": "xlu_magpulse",
+        "WS0005": "xlu_magpulse",
+        "WS0006": "xlu_magpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "xlu_mortar_s",
+        "WS0016": "xlu_mortar_s",
+        "WS0017": "xlu_mortar_s",
+        "WS0018": "xlu_mortar_s",
+        "WS0029": "xlu_mortar_s",
+        "WS0030": "xlu_mortar_s",
+        "WS0031": "xlu_mortar_s",
+        "WS0032": "xlu_mortar_s",
+        "WS0033": "xlu_mortar_s",
+        "WS0034": "xlu_mortar_s",
+        "WS0035": "xlu_mortar_s",
+        "WS0036": "xlu_mortar_s",
+        "WS0037": "xlu_mortar_s",
+        "WS0038": "xlu_mortar_s",
+        "WS0039": "xlu_mortar_s",
+        "WS0040": "xlu_mortar_s",
+        "WS0041": "xlu_mortar_s",
+        "WS0042": "xlu_mortar_s",
+        "WS0043": "xlu_mortar_s",
+        "WS0044": "xlu_mortar_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "xlu_light_triac",
+        "WS0020": "xlu_light_triac",
+        "WS0021": "xlu_light_triac",
+        "WS0022": "xlu_light_triac",
+        "WS0023": "xlu_light_triac",
+        "WS0024": "xlu_light_triac",
+        "WS0025": "xlu_light_triac",
+        "WS0026": "xlu_light_triac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "BW 05": "xlu_gattler",
+        "BW 06": "xlu_gattler",
+        "BW 07": "xlu_gattler",
+        "BW 08": "xlu_gattler",
+        "WS0011": "flak",
+        "WS0012": "flak",
+        "WS0013": "flak",
+        "WS0014": "flak",
+        "WS0027": "xlu_gattler",
+        "WS0028": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_kampilan_wing",
+    "xlu_kampilan_wing"
+  ]
+}

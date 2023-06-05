@@ -1,0 +1,59 @@
+{
+	"id":"prv_massdriver_1_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":50.0,
+	"hitGlowRadius":25,
+	"width":7.0,
+	"fadeTime":0.5,
+	
+	## color
+	# blue 200°
+	"fringeColor":[178,229,255,127],
+	"coreColor":[217,242,255,200],	
+	"glowColor":[178,229,255,25],
+	# green 160°
+	#"fringeColor":[204,255,238,127],
+	#"coreColor":[229,255,247,200],	
+	#"glowColor":[204,255,238,25],
+	# yellow 40°
+	#"fringeColor":[235,180,60,127],
+	#"coreColor":[255,255,255,255],	
+	#"glowColor":[235,220,180,25],
+	## end color
+	
+	"glowRadius":14,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":0.5,
+	"bulletSprite":"graphics/missiles/flechette_med.png",
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":0.25,
+					"probOfVariance":0.5,
+					"range":0,
+					"explosionSpec":{"duration":0.12f,
+									 "radius":15,
+									 "coreRadius":0, # full damage within core radius - also equal to proximity fuse range
+									 "collisionClass":NONE,
+									 "collisionClassByFighter":NONE,
+									 "particleSizeMin":3.0,
+									 "particleSizeRange":2.0,
+									 "particleDuration":2,
+									 "particleCount":11,
+									 #"sound":"vpdriver_explode_before_max_range"
+									 
+									 ## color
+									 # blue 200°
+									 "particleColor":[217,242,255,255],
+									 "explosionColor":[178,229,255,125],
+									 # green 160°
+									 #"particleColor":[229,255,247,255],
+									 #"explosionColor":[204,255,238,125],
+									 # yellow 40°
+									 #"particleColor":[235,220,180,255],
+									 #"explosionColor":[235,180,60,127,125],
+									 ## end color
+									 },	
+	},
+}

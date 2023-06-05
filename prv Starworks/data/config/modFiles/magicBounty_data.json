@@ -70,7 +70,7 @@
         
         #BOUNTY DESCRIPTION        
         "job_name": "Andra Perseiska Kompaniet",
-        "job_description": "While idly browsing the underground bounty boards on an open terminal, you hear the chime of a new message arriving on your personal PDA. Which is curious, since it was turned off. It reads:\n\"Hey check this out - the Heg’s are putting up an outrageously high internal bounty for the destruction of some secret battlegroup operated by the prv. In return for a small fee on the bounty, I’ve made sure that you’re eligible for it. Go blow up that ship!\"\nThe message is unsigned, but you have your suspicions about who it might be. Comsec must be livid.",
+        "job_description": "While idly browsing the underground bounty boards on an open terminal, you hear the chime of a new message arriving on your personal PDA. Which is curious, since it was turned off. It reads:\n\"Hey check this out - the Heg’s are putting up an outrageously high internal bounty for the destruction of some secret battlegroup operated by the prv. In return for a small fee on the bounty, I’ve made sure that you’re eligible for it. Go blow up that ship!\"\nThe message is unsigned, but you have your suspicions about who it might be. COMSEC must be livid.",
         "job_comm_reply": "I see that Pariabyrån has failed us again. Before you do anything rash, you should know that my fleet has never been defeated in battle. Weigh your chances carefully.",
         "job_intel_success": "Pride goes before the fall, and fallen the prv's trump card now has. You wonder what this will mean for the balance of power in the sector.",
         #"job_intel_failure": "",

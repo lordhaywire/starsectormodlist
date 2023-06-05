@@ -1,0 +1,60 @@
+{
+  "id": "prv_blaster_charge_launcher",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_blaster_charge",
+  "type": "MISSILE",
+  "size": "LARGE",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/prv/weapons/prv_blaster_charge_launcher_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_blaster_charge_launcher_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    16,
+    7,
+    18,
+    0,
+    16,
+    -7
+  ],
+  "turretAngleOffsets": [
+    -2,
+    1,
+    2
+  ],
+  "hardpointOffsets": [
+    21.5,
+    7,
+    25.5,
+    0,
+    21.5,
+    -7
+  ],
+  "hardpointAngleOffsets": [
+    -2,
+    1,
+    2
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 16,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.9,
+    "cloudRadius": 8,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      170,
+      160,
+      150,
+      100
+    ]
+  },
+  #"fireSoundTwo": "gorgon_fire"
+  "fireSoundTwo": "prv_blaster_charge_fire"
+}

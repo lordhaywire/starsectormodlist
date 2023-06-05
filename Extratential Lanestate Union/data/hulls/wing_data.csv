@@ -1,0 +1,10 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+xlu_kalis_wing,xlu_kalis_Fighter,"fighter0, fighter, mid, xlu_heavy_bp, xlu",3,,14,18,V,3000,500,,1,FIGHTER,Corvette,40,18000,,,,,,,,,,,,,1
+xlu_kampilan_wing,xlu_kampilan_Interceptor,"interceptor0, interceptor, mid, xlu_basic_bp, xlu",0,,6,9,V,4000,500,600,3,INTERCEPTOR,Interceptor,15,8000,,,,,,,,,,,,,1
+xlu_guna_wing,xlu_guna_Fighter,"fighter1, fighter, mid, xlu_basic_bp, xlu",2,,9,14,V,4000,500,300,2,FIGHTER,Heavy Fighter,25,12000,,,,,,,,,,,,,5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+xlu_lantaka_wing,xlu_lantaka_Bomber,"bomber0, bomber, mid, xlu_heavy_bp, xlu",1,,8,12,V,5000,2000,700,1,BOMBER,Heavy Bomber,20,14000,,,,,,,,,,,,,4
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+xlu_mattock_wing,xlu_mattock_Standard,"support0, drone, mid, xlu_basic_bp, xlu",0,,6,6,BOX,0,600,,3,FIGHTER,Drone,10,9000,,,,,,,,,,,,,17
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+xlu_drone_ytty_wing,xlu_drone_ytty_Defense,"no_drop, no_sell, mid, restricted",3,,6,0,BOX,0,300,,2,SUPPORT,Anti Fighter,20,6000,,,,,,,,,,,,,19

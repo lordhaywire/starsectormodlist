@@ -2,7 +2,7 @@
   "displayName": "Armed",
   "fluxCapacitors": 24,
   "fluxVents": 30,
-  "goalVariant": true,
+  "goalVariant": false,
   "hullId": "prv_bergslag",
   "hullMods": [
     "dedicated_targeting_core",

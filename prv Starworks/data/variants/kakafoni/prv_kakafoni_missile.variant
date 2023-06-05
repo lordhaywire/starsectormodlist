@@ -3,7 +3,7 @@
   "hullId": "prv_kakafoni",
   "displayName": "Missile",
   "goalVariant": false,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 8,
   "fluxVents": 25,
   "quality": 0,
   "permaMods": [],

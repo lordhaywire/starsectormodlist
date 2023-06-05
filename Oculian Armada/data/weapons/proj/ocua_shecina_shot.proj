@@ -1,0 +1,18 @@
+{
+	"id":"ocua_shecina_shot",
+	"specClass":"projectile",
+	"onHitEffect":"data.scripts.weapons.ocua_shena_effect",
+	"onFireEffect":"data.scripts.weapons.ocua_shena_effect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":28.0,
+	"width":12.0,
+	"hitGlowRadius":24,
+	"fadeTime":0.5,
+	"fringeColor":[255,120,200,185],
+	"coreColor":[255,180,220,255],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":5.0
+}

@@ -1,0 +1,13 @@
+{
+	"id":"ocua_madmansfeed",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.shipsystems.scripts.OCUA_MadMansFeedStats",
+	
+	"weaponGlowColor":[255,200,120,155],
+	"weaponTypes":[BALLISTIC, ENERGY],
+	
+	"useSound":"ocua_system_madmans_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

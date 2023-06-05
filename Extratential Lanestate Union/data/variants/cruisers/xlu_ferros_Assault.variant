@@ -1,0 +1,68 @@
+{
+  "variantId": "xlu_ferros_Assault",
+  "hullId": "xlu_ferros",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_momus",
+        "WS0006": "xlu_momus",
+        "WS0007": "xlu_momus",
+        "WS0008": "xlu_momus",
+        "WS0009": "xlu_momus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "arbalest",
+        "WS0003": "arbalest",
+        "WS0004": "arbalest",
+        "WS0005": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "heatseeker",
+        "WS0011": "heatseeker",
+        "WS0012": "heatseeker",
+        "WS0013": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "xlu_hovlet",
+        "WS0015": "xlu_hovlet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "WS0016": "flak",
+        "WS0017": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

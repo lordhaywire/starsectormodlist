@@ -13,10 +13,10 @@
   ],
   "weaponGroups": [
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "ionpulser"
+        "WS0004": "amblaster",
       }
     },
     {
@@ -30,22 +30,24 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
+        "WS0001": "phasebeam"
+      }
+    },
+
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0002": "prv_akc"
       }
     },
     {
       "autofire": true,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        "WS0004": "pdburst",
         "WS0005": "pdburst"
       }
     },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {}
-    }
   ],
   "modules": [],
   "wings": []

@@ -1,7 +1,7 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 6,
-    "fluxVents": 7,
+    "fluxCapacitors": 8,
+    "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_boar",
     "hullMods": [
@@ -30,7 +30,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "heavyneedler"}
+            "weapons": {"WS0002": "heavyac"}
         },
         {
             "autofire": true,

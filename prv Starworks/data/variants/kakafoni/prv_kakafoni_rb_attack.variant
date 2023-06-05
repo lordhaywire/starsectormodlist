@@ -3,13 +3,12 @@
   "hullId": "prv_kakafoni_rb",
   "displayName": "Attack",
   "goalVariant": true,
-  "fluxCapacitors": 3,
+  "fluxCapacitors": 22,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "dedicated_targeting_core",
-    "expanded_deck_crew",
     "heavyarmor"
   ],
   "weaponGroups": [
@@ -24,8 +23,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "annihilatorpod",
-        "WS0002": "annihilatorpod"
+        "WS0001": "prv_blaster_charge_cluster",
+        "WS0002": "prv_blaster_charge_cluster"
       }
     },
     {
@@ -47,9 +46,15 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
+        "WS0009": "vulcan",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0006": "mininglaser",
         "WS0007": "mininglaser",
-        "WS0009": "vulcan",
         "WS0010": "mininglaser",
         "WS0011": "mininglaser"
       }

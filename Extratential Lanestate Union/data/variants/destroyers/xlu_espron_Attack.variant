@@ -1,0 +1,59 @@
+{
+  "variantId": "xlu_espron_Attack",
+  "hullId": "xlu_espron",
+  "displayName": "Attack",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 18,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyac",
+        "WS0006": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heatseeker",
+        "WS0008": "heatseeker"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_momus",
+        "WS0005": "xlu_momus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_hovlet",
+        "WS0003": "xlu_hovlet"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

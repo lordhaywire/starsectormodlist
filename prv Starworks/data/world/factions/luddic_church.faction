@@ -1,17 +1,10 @@
 {
 	"hullFrequency":{
 		"hulls":{
-			"prv_aska_lc":0.33,
+			"prv_aska_lc":0.25,
 		},
 	},
 	"knownShips":{
-		"hulls":[
-			"prv_aska_lc",
-			"prv_tiger_lc",
-			"prv_aska_lc",
-		],
-	},
-	"shipsWhenImporting":{
 		"hulls":[
 			"prv_aska_lc",
 			"prv_tiger_lc",
@@ -25,6 +18,7 @@
 		"weapons":[
 			"prv_lightthumper",
 			"prv_lighttripleac",
+			"prv_massdriver",
 		]
 	},
 	"knownFighters":{

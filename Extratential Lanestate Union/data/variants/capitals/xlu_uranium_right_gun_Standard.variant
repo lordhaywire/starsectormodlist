@@ -1,0 +1,41 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 17,
+  "goalVariant": true,
+  "hullId": "xlu_uranium_right_gun",
+  "hullMods": [
+    "turretgyros",
+    "armoredweapons",
+    "reinforcedhull",
+    "heavyarmor"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_uranium_right_gun_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hephag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_quad_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_gattler"
+      }
+    }
+  ],
+  "wings": []
+}

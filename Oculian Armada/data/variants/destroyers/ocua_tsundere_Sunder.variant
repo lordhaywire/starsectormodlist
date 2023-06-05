@@ -1,0 +1,57 @@
+{
+  "variantId": "ocua_tsundere_Sunder",
+  "hullId": "ocua_tsundere",
+  "displayName": "Sunder",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 2,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_chemical",
+    "ocua_clockoverdrive"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "ocua_pixel",
+        "WS0005": "ocua_pixel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "tachyonlance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_pirouette",
+        "WS0003": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_pirouette",
+        "WS0007": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

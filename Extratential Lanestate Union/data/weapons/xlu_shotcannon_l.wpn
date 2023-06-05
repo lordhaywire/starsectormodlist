@@ -1,0 +1,44 @@
+{
+	"id":"xlu_shotcannon_l",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"everyFrameEffect":"data.scripts.weapons.xlu_shotcannon_effect",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_l_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_l_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_l_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_l_hardpoint_recoil.png",	
+	"visualRecoil":10.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	#"turretOffsets":[	28, 0, 28, 0, 28, 0, 28, 0, 28, 0, 28, 0, 28, 0, 28, 0,
+	#					32, 0, 32, 0, 32, 0, 32, 0, 32, 0, 32, 0, 32, 0, 32, 0,
+	#					36, 0, 36, 0, 36, 0, 36, 0, 36, 0, 36, 0, 36, 0, 36, 0], #24
+	#"turretAngleOffsets":[	0, 0, 0, 0, 0, 0, 0, 0,		 
+	#						0, 0, 0, 0, 0, 0, 0, 0,		 
+	#						0, 0, 0, 0, 0, 0, 0, 0],
+	#"hardpointOffsets":[34, 0, 34, 0, 34, 0, 34, 0, 34, 0, 34, 0, 34, 0, 34, 0,		 
+	#					38, 0, 38, 0, 38, 0, 38, 0, 38, 0, 38, 0, 38, 0, 38, 0,		 
+	#					42, 0, 42, 0, 42, 0, 42, 0, 42, 0, 42, 0, 42, 0, 42, 0],
+	#"hardpointAngleOffsets":[	0, 0, 0, 0, 0, 0, 0, 0,		 
+	#							0, 0, 0, 0, 0, 0, 0, 0,		 
+	#							0, 0, 0, 0, 0, 0, 0, 0],
+	"turretOffsets":[32, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[38, 0],
+	"hardpointAngleOffsets":[0],
+	"specialWeaponGlowWidth":20,
+	"specialWeaponGlowHeight":6,
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":36.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":32.0,
+					   "particleDuration":0.13,
+					   "particleCount":3,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"xlu_shotcannon_test_l_shot",  # projectile that will be fired
+	"fireSoundTwo":"xlu_shotcannon_l_fire",	
+}

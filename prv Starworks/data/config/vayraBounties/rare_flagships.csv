@@ -2,10 +2,6 @@ bounty,variant,factions,weight,source
 prv_ljus_rare,prv_ljus_rare,"prv, independent",1,reckless snooping in
 prv_fasnod_rare,prv_fasnod_rare,"prv, pirates",1,public endangerment and bowling with intent in
 prv_skymning_rare,prv_skymning_rare,prv,0.5,gunboat diplomacy using
-prv_tystnad_mod,prv_tystnad_mod_starter,"prv, tritachyon",0.1,violating domain causaility statutes using
-prv_valnad_rare_a,prv_valnad_beam,prv,0.33,frightening of children using a
-prv_valnad_rare_b,prv_valnad_strike,prv,0.33,trick-or-treating as an adult. Last seen in
-prv_valnad_rare_c,prv_valnad_sustained,prv,0.33,leaving nanofoam all over the hangar. Usually found in
 prv_ballebo,prv_ballebo_experimental,prv,1,usage of an unapproved Tri-Tachyon data transmission service. Last seen in
 prv_skara_rare,prv_skara_rare,"rb, independent, pirates",1,cheating in races with
 prv_gissel_rare,prv_gissel_rare,"rb, pirates",0.95,"violation of penal code paragraphs §113a, §184c and §713c4 and flight in"
@@ -25,6 +21,12 @@ prv_ballebo_p,prv_ballebo_p_pirate,"pirates, rb",1,murder most foul in
 #prv_conquest_ryak_beta,prv_conquest_ryak_beta,prv,0.25,attempting to desert in a
 #prv_conquest_ryak_gamma,prv_conquest_ryak_gamma,prv,0.25,theft of a
 #prv_conquest_ryak_delta,prv_conquest_ryak_delta,prv,0.25,technological espionage and theft of a
+,,,,
+#prv_tystnad_mod,prv_tystnad_mod_starter,"prv, tritachyon",0.1,violating domain causaility statutes using
+#prv_valnad_rare_a,prv_valnad_beam,prv,0.33,frightening of children using a
+#prv_valnad_rare_b,prv_valnad_strike,prv,0.33,trick-or-treating as an adult. Last seen in
+#prv_valnad_rare_c,prv_valnad_sustained,prv,0.33,leaving nanofoam all over the hangar. Usually found in
+,,,,
 ,,,,
 # NOTES,,,,
 # bounty : line ID. Must be unique across all mods. I recommend a prefix,,,,

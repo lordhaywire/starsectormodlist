@@ -1,0 +1,94 @@
+{
+  "variantId": "xlu_diaboleite_Strike",
+  "hullId": "xlu_diaboleite",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 35,
+  "fluxVents": 21,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "magazines",
+    "targetingunit",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "MW 01": "xlu_stratus"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "sabotpod",
+        "WS0002": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "harpoonpod",
+        "WS0004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_gyropult_s",
+        "WS0006": "xlu_gyropult_s",
+        "WS0007": "xlu_gyropult_s",
+        "WS0008": "xlu_gyropult_s",
+        "WS0009": "xlu_gyropult_s",
+        "WS0010": "xlu_gyropult_s",
+        "WS0011": "xlu_gyropult_s",
+        "WS0012": "xlu_gyropult_s",
+        "WS0013": "xlu_gyropult_s",
+        "WS0014": "xlu_gyropult_s",
+        "WS0015": "xlu_gyropult_s",
+        "WS0016": "xlu_gyropult_s",
+        "WS0017": "xlu_gyropult_s",
+        "WS0018": "xlu_gyropult_s",
+        "WS0019": "xlu_gyropult_s",
+        "WS0020": "xlu_gyropult_s",
+        "WS0021": "xlu_gyropult_s",
+        "WS0022": "xlu_gyropult_s",
+        "WS0023": "xlu_gyropult_s",
+        "WS0024": "xlu_gyropult_s",
+        "WS0025": "xlu_gyropult_s",
+        "WS0026": "xlu_gyropult_s",
+        "WS0027": "xlu_gyropult_s",
+        "WS0028": "xlu_gyropult_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0029": "xlu_light_triac",
+        "WS0030": "xlu_light_triac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_lantaka_wing",
+    "xlu_mattock_wing"
+  ]
+}

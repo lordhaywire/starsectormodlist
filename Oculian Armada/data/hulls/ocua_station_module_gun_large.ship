@@ -1,0 +1,172 @@
+{
+  "hullName": "Weapon Substation",
+  "hullId": "ocua_station_module_gun_large",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Oculian Armada/ships/station/ocua_station_module_gun_large.png",
+  "style": "OCULUS",
+  "height": 178,
+  "width": 194,
+  "center": [97, 31],
+  "collisionRadius": 268,
+  "shieldCenter": [37, 0],
+  "shieldRadius": 169,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "ocua_oculus_mod",
+    "ocua_core_chemical",
+    "ocua_baseless_module"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot",
+    "LIT 03": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 30,
+      "locations": [78, 62]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -30,
+      "locations": [78, -62]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [84, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [51, -0]
+    },
+    {
+      "id": "LIT 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "LIT 03",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [29, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [44, 33]
+    },
+    {
+      "id": "WS0005",
+      "size": "LARGE",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [44, -33]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [101, 33]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [101, -33]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [127, 33]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [127, -33]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [113, 62]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [113, -62]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    115, -0,
+    139, 22,
+    135, 71,
+    115, 91,
+    69, 91,
+    31, 74,
+    23, 43,
+    9, 41,
+    9, -41,
+    23, -43,
+    31, -74,
+    69, -91,
+    115, -91,
+    135, -71,
+    139, -22
+  ]
+}

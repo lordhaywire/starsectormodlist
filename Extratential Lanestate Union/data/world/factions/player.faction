@@ -1,0 +1,9 @@
+{
+	"portraits":{
+		"standard_male":[
+			"graphics/Extratential Lanestate Union/portraits/xlu_portrait_01.png",
+		],
+		"standard_female":[
+		],
+	},
+}

@@ -1,0 +1,64 @@
+{
+  "variantId": "ocua_dorothyx_Strike",
+  "hullId": "ocua_dorothyx",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 14,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedshieldemitter",
+    "ocua_core_chemical"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_pixel",
+        "WS0002": "ocua_pixel",
+        "WS0003": "ocua_pixel",
+        "WS0004": "ocua_pixel",
+        "WS0005": "ocua_pixel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_freya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "ocua_prima",
+        "WS0008": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "WS0009": "ocua_glint",
+        "WS0010": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 01": "ocua_dorothyx_shield_Pulse"
+    }
+  ],
+  "wings": [
+    "ocua_cancer_wing",
+    "ocua_cancer_wing"
+  ]
+}

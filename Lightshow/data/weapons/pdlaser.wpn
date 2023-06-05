@@ -1,9 +1,0 @@
-{
-	"fringeColor":[175,125,0,255],
-	"coreColor":[255,255,255,255],
-	"glowColor":[255,205,100,255],
-	"width":10.0,
-	"textureType":LASER,
-	"textureScrollSpeed":64.0,
-	"pixelsPerTexel":5.0,
-}

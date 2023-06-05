@@ -1,0 +1,24 @@
+{
+  "displayName": "Orbital Station",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_level1",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_level1_Standard",
+  "weaponGroups": [],
+  "modules": [
+	
+	# gun batteries
+	{"BS 01": "xlu_station_bastion_module_Standard"},
+	{"BS 02": "xlu_station_bastion_module_Standard"},
+	
+	# hangar
+	{"BS 03": "xlu_station_hangar_module_Standard"},
+	{"BS 04": "xlu_station_hangar_module_Standard"},
+		
+  ],
+  "wings": []
+}

@@ -2,6 +2,592 @@ prv Starworks
 
 ###
 
+v26.4
+
+Updated for game version 0.96a.
+
+Added SMod-effects to several hullmods.
+
+Added faction skins for many fighters.
+
+Considerably reduced prv ship and weapon exports.
+- Factions will use only a few hand-picked prv ships and guns in addition to their regular lineup.
+
+Gremlin (RB)
+- Increased hull integrity by 500.
+- Increased armor by 100.
+- Added Rugged Construction hullmod.
+- System replaced with Decoy Flare Launcher
+- Engine and system offset fixes.
+
+Gremlin-Apogee (RB-mod)
+- Nose HFL Array built-in removed, can now take any large energy weapon.
+- One nose small hardpoint upsized to medium.
+- OP increased by 15.
+- Maintenance and recovery cost increased to 25.
+
+Tystnad (P)
+- Ship system replaced with Accelerated Ammo Feeder.
+
+Jursla Graviton Emitter
+- Now counts as one Graviton Beam for shield disruption.
+
+Added USE_LESS_VS_SHIELDS AI hint to several weapons.
+- Large usability boost for several of them, especially the Fusion Burst Laser.
+- Notably Berguv torpedoes and the Ljungeld will be more hesitant to fire at a shield, and will behave much better on autofire.
+Shots from the Gravpjäs, Belt Blaster and the main shot of the Shard Driver will now pass through missiles and destroyed fighters.
+Reduced prv combat freighter usage.
+
+Fixed application order for Eld (Diktat) max speed boost, it will now properly show up on the ship's infocard.
+Removed outdated volatility warning from Berguv torpedoes.
+Added SR autofit tag to the Triple Light Autocannon.
+Updated MagicLib classpaths.
+Console command "checkvariantopusage" now sorts the output list alphabetically.
+
+###
+
+v26.3 - Savegame compatible with v26 and later.
+
+----------------
+- Weapons
+----------------
+
+Linjär PK
+- Base range reduced to 600
+- Now benefits from energy weapon range and projectile velocity bonuses.
+-- eg Integrated Targeting Unit
+
+Berguv
+- Removed premature detonation chance for <50% hull missiles without Hallbar plating.
+-- Too obscure.
+- Reduced missile hitpoints by 30%.
+-- Now roughly in line with standard torpedoes.
+- Berguv MIRVlets now use vanilla AI.
+
+Fixed crash when firing Jursla without Extraworks being enabled.
+
+###
+
+v26.2 - Savegame compatible with v26 and later.
+
+Added the forceKratul flag to prvSettings.json
+- Adds the Kratul star system even when Nexerelin is generating a random sector.
+- Defaults to false.
+
+Fixed Shock Detonators not being properly applied to eligible fighters.
+Fixed a potential error related to Nexerelin industry seeds.
+Fixed a crash related to Vayra's Mod raider integration.
+VM Ruster raider bases will now use Ruster-style stations.
+Removed outdated variants from the VM rare flagship list.
+
+###
+
+v26.1 - Savegame compatible with v26.
+
+Fixed an error related to Nexerelin random sector generation.
+
+###
+
+v26 - NOT SAVEGAME COMPATIBLE
+
+----------------
+- Agni
+----------------
+
+- Added three new Agni weapons.
+- Improved warning beacon handling.
+- Increased Agni autofit randomization probability.
+- Removed Agni ship name prefix.
+
+Agni Solar Carapace hullmod
+- Beam and EMP protection reduced to 40%.
+
+Agni Scale Symbiote fighters
+- Death explosion radius reduced by 60%.
+- Death explosion damage increased by 50%.
+
+Agni Spinneret weapon
+- Ammunition reload time reduced by 5%.
+
+Agni Cocoon
+- Damage absorption is now inversely proportional to the remaining armor at the point of impact.
+-- ie 30% armor remaining means the cocoon is 70% effective, and undamaged ships are not protected at all.
+-- Absorption is capped at 95%.
+-- Shouldn't affect the overall potency of the ability much, but may improve readability (if it bleeds...).
+- Dust cloud particle effect will now scale in size in relation to the damage of the shot absorbed.
+- Adjusted overall dust particle size and intensity.
+- Adjusted cobweb sprite overlay size and opacity.
+- Shifted absorbed damage text color from slightly blue to slightly green.
+
+Agni Eye weapon
+- Added an auto-installed hullmod which displays your current range bonus.
+- No longer reduces flux dissipation.
+- Range bonus reduced to 5% on non-Agni hulls.
+
+Agni Nest & Hive stations
+- Now carry much fewer armaments, and have to rely on recalling Agni fleets for protection.
+- Will now leave behind a significant amount of commodity goods when destroyed.
+-- All in all, an enticing target - but how will you get a freight fleet past all the roaming shoals?
+- Adjusted texture materials, should now be much less shiny.
+
+Tail fronds will now waft slightly.
+Tail frond sprite adjusted.
+Tail frond length now has individual variance.
+Agni bleeding will now come primarily from areas with damaged armor.
+Adjusted Agni Web vfx.
+
+----------------
+- Industry
+----------------
+
+War Syndicate
+- Now has only two tiers and no longer requires a matching military industry.
+- Spread chance is reduced by high target colony stability, down to a minimum of 9%/month.
+- Can now only attempt to spread to one new colony per month per HQ.
+- Pirate reputation threshold reduced to Inhospitable or better.
+
+Fixed high relations incorrectly bypassing the Laboratory Complex R&D Market access checks.
+
+----------------
+- Ships
+----------------
+
+Bergtagen, Basalt
+- Removed Rugged Construction hullmod.
+
+Is
+- OP increased to 140.
+
+Hornfels
+- Armor increased to 1000.
+- Maintenance and recovery cost reduced to 15.
+
+Skära
+- Ljungeld (Damaged) 
+-- Can no longer backfire.
+-- Damage and flux per shot doubled
+--- Now deals as much damage as a regular Ljungeld, at half the flux cost - but can (still) only fire twice.
+
+Increased phase ship CR% cost per deployment:
+- Fasnod 20% -> 30%
+- Fasklot 20% -> 30%
+- Fasvinge 15% -> 25%
+- Ilbud 20% -> 30%
+- Kvarts 15% -> 25%
+
+Destroyed prv ships will now leave behind a damage cloud.
+- Volatile drive cores? Anything to get an edge.
+
+Slightly reduced the shield radius on the following ships:
+- Flock and derived variants
+- Rök and derived variants
+- Is
+
+Reduced the credit multiplier for the Ilbud (H) and Gnista (P) to 1x.
+
+--------------------
+- Ship Systems
+--------------------
+
+Time Freeze
+- Can no longer be activated when out of range.
+-- This would previously lead to an automatic cancelling of the effect.
+- Vfx improved.
+- Mouseover target picking improved.
+
+Phase Chainer
+- Mouseover target picking improved.
+
+Tensor Drive
+- Now has a custom AI, significantly improving how the system is used.
+- Adjusted the push effect, it Will now do a better job of displacing other ships while there is an overlap.
+
+Targeting Pulse AI will now be slightly more conservative about activating the system.
+
+----------------
+- Fighters
+----------------
+
+Oväsen
+- Sprite touched up.
+- Support range reduced to 0.
+
+Oklang Drone
+- Now carry a Subspace Charge that is detonated when the fighter is destroyed, leaving behind a zone of warped space.
+- Flux dissipation increased to 45.
+
+Skrål
+- Sprite updated.
+- Top speed increased to 200.
+- Turning rate massively increased.
+- Improved Plasma Burn system AI.
+
+Stillhet 
+- Flickerpulse Laser flux efficiency improved to 0,8 
+-- Aesthetic change; Stillhet only tracks phase flux.
+
+----------------
+- Weapons
+----------------
+
+UVIR Pulse Laser
+- Flux per shot reduced by 30%
+-- Now 480 flux/second, 0,8 flux/damage.
+
+Kaja, Kråka, Korp, Råka, Blåmes missiles
+- Launch velocity is now affected by missile acceleration modifiers such as the ECCM hullmod.
+- Will now launch at reduced velocity when fired away from the target.
+- Added GUIDED_POOR AI hint to all launchers but the Råka and Blåmes (fighter weapons).
+
+Fräsare, Svepfräsare, Akers Denova
+- Will now leave behind a zone of warped space that periodically damages anything caught in the area.
+-- AI ships will put an appropriate (ie small) amount of effort into avoiding the area.
+- Vfx updated.
+- Tooltips updated.
+- Added an enhancing hullmod, 4D-Lensing.
+- Fixed the Svepfräsare often incorrectly piercing ships and shields.
+
+Skata LRM, Skatunge SRM
+- Will now leave behind a zone of warped space that periodically damages anything caught in the area, as above.
+- Missile durability increased to 90 (Skata +35%, Skatunge +20%).
+- Damage per missile set to 225 (Skata -25%, Skatunge +12,5%).
+-- A best-case particle soup hit will deal an additional 600 fragmentation damage spread over 6 ticks.
+-- This gives the missiles an energy-equivalent damage range of 225-375, tending towards the lower end.
+- Missile trail color shifted towards green.
+
+Jursla
+- Beam style overhauled.
+- No longer pierces fighters.
+
+Studsare & Automatstudsare
+- Improved bounce aim behavior, now intelligently rebounds up to 5 times, with each successive bounce being less responsive.
+-- Bounces now lose a fraction of their range and velocity, rather than gaining the same.
+-- Shells will now terminate on hit if they do not have a valid rebound target. 
+
+Automatstudsare
+- Burst size reduced by 1.
+- Spread decay rate improved slightly.
+- Refire delay increased by 11%.
+- Damage per shot increased by 11%.
+- Flux per shot reduced by 11%.
+-- Now 600 DPS at 0.8 flux per damage.
+
+Studsare
+- Projectile and trail size reduced.
+
+Berguv MIRV
+- Ammunition increased to 9.
+- Now splits slightly earlier
+- Significantly reduced submunition arming delay.
+- Submunitions can now be distracted by flares.
+
+Sidensvans MRM
+- Slightly increased engine visual glow.
+- Will now halt and reacquire its target on misses, instead of splitting. 
+-- This can be done repeatedly, up to a limit of 2 times, 3 with ECCM.
+- No longer hits friendly ships.
+
+Punktskydd Cluster
+- Now benefits from fire rates over 100%, such as Accelerated Ammo Feeder.
+- Proximity fuze will now also trigger against ships, reducing overall damage.
+- Fuze trigger radius adjusted.
+- Explosion radius (full damage) reduced slightly.
+- Explosion radius (half damage) increased slightly.
+- Particle color adjusted.
+
+AKC c67, AKC rb-f
+- Now benefit from fire rates over 100%, such as Accelerated Ammo Feeder.
+
+Light Triple Autocannon
+- Flux per shot reduced to 25 (0,5 flux / damage).
+
+Light Akers
+- Flux per shot reduced to 15 (0,5 flux / damage).
+
+SIPD Laser visual effect updated.
+Ljungeld energy arc origin points will now follow the tip of the beam.
+AI will now fire Berguv MIRV from any facing.
+Berguv MIRV missile turning rate increased.
+Swapped Heavy Spattergun and Fräsare tier, price and rarity.
+Fixed Siege Akers ignoring Hardened Shields pierce protection.
+Fixed Skata & Kråka Autolauncher missile swarms not timing out when the source ship is dead.
+Fixed a bug that prevented Skata super-ready missiles from orienting towards their target.
+
+----------------
+- Hullmods
+----------------
+
+Swarm Host
+- Overhauled particle effect.
+-- Glow effect will now also apply to linked fighters.
+-- Each individual swarm host will now have a slightly different color.
+- Improved tooltip description.
+- Improved performance.
+
+Shock Detonators
+- Tooltip will now clearly list which of the ship's equipped guns and wings are eligible.
+- Now also applies to fighters launched by the ship.
+- Cleaned up qualifying rules, now affects Ballistic guns that deal HE damage.
+
+Plasma Agitators
+- Tooltip will now clearly list which of the ship's equipped guns and wings are eligible.
+- Doomfire explosion radius reduced significantly.
+- Visual explosion style adjusted to better match actual size.
+
+Ramshield Adjunct sorting category changed to Shields.
+Agitated Plasma (Doomfire) is now implemented as a dynamic mutablestat.
+Fixed incorrect value display in the Arc Smelter tooltip for unfinalized ship variants.
+Fixed Blast Heater not applying its ROF/flux bonus. Vfx updated.
+
+---------------------
+- Miscellaneous
+---------------------
+
+Added the showAoEBounds flag to prvSettings.json
+- Adds an outline to certain effects, showing the area affected.
+- Defaults to false.
+
+Added the enableHallar flag to prvSettings.json
+- Enables the spawning of a prv-themed ruined star system on the Persean fringe.
+- Defaults to true.
+
+Added bar event requirements to the bounty reference.
+
+Cleared out many deprecated ids.
+
+###
+
+v25.1 - SAVEGAME COMPATIBLE
+
+Fixed an infinite loop error with Skata and Kaja Autolauncher missiles when joining an in-progress battle.
+Skata missile lifetime increased by 1 second.
+
+###
+
+v25
+
+Added the Shard Driver
+- A large kinetic cannon of Ruster provenance which fires heavy shells that disintegrate into razor-sharp fragments as they travel.
+
+Ande, Gast, Vålnad
+-- Overhauled, maintaining the previous design spirit.
+- System on all ships set to Phase Skimmer.
+- Base flux dissipation reduced to 0.
+- Flux capacity increased by 200%.
+- Ordinance points reduced by -10/-20/-30.
+- Hitbox size increased.
+- Removed the energy weapon mounts from the Vålnad.
+-- Pre-v25 Vålnads may retain a set of invisible decorative weapons. To remove them, simply use the Strip button on the ship refit screen.
+
+Swarm Host
+- Now sets max number of flux vents to 0.
+- Every fighter wing will increase the ship's flux dissipation by 100.
+- Every fighter wing will generate up to 250 flux / second, depending on how far it is below full strength.
+-- Reloading wings no longer build flux.
+- Overload damage rate reduced by 75%.
+- Overload damage is now applied when the ship's flux level is over 90%, gradually approaching the full damage rate at 100%.
+- Added a status info tracking the current flux buildup rate.
+
+Intangible
+- Any damage will be applied to the ship's flux pool before striking its hull.
+-- This can lead to the ship temporarily taking overload damage.
+
+Added the addSwarmHosts flag to prvSettings.json
+- Adds the Ande and Gast to the prv's regular ship lineup. 
+- Defaults to false, requires a new game to take effect.
+
+Flock
+- Kråka Autolauncher
+-- Will now keep "loaded" missiles flying in a holding pattern around the launcher.
+-- When fired, the weapon will prefer to launch one of the holding pattern missiles.
+-- If none are available it will fire directly from the magazine.
+
+Eld
+- Maintenance and recovery cost reduced to 12.
+
+Eld (Diktat)
+- Added Overdrive Adapter hullmod.
+-- Increases maximum speed by 15 su/s.
+
+Skata LRM
+- Will now keep "loaded" missiles flying in a holding pattern around the launcher, unleashing the whole swarm when the weapon is fired.
+- Can now be fired in any direction.
+- Refire delay increased to 10 seconds.
+-- DPS is now 270.
+- Range reduced to 3000.
+- Acceleration increased significantly.
+- Agility increased moderately.
+- Top speed reduced significantly.
+- Added on-hit particle effect.
+- Codex updated.
+
+Punktskydd Cluster
+- Flux / second increased to 300.
+
+Sidensvans SRM
+- Significantly improved orientation stage behavior. Will now reliably head towards the target from any heading.
+- Slightly increased orientation period duration.
+- Slightly reduced MIRVlet split kickback.
+
+Diskordant Fighter
+- Light Spattergun cooldown reduced by 33%.
+- Light Spattergun range increased to 400.
+
+Stillhet Fighter
+- "Intet" Flicker Beam width increased by 66%. 
+
+Vakt
+- Beam width doubled.
+
+Brytare Rocket Pod
+- Engine appearance adjusted, should now be easier to differentiate from Annihilators.
+- Refire delay increased to 7,5 seconds.
+-- DPS is now 200.
+
+Gravanchor
+- Attraction force increased by 100%.
+- Pull particles will now track the target ship.
+
+Ramshields, Arcfault Ejector, Gravity Anchor, Sensitive Shield Core, Buddy Recovery Unit
+Flux Compressor, Hypergenerators, Temporal Core, Variable Axial Rotation
+- Performance improvements.
+
+Slightly increased Karbid hit detection range and frequency.
+Tide Vanes and Flux Compressor hullmods now display a status info.
+Reduced the AI use threshold for Missile Chaff when system ammo is high.
+Added exact numbers to the short description of many ship systems.
+Aska (LC) large missile mount now remains a narrow turret, as on the base model.
+Added access to the Sabot (Double) and Ballistic Rangefinder for the prv.
+Added access to the Light Triple Autocannon and Light Thumper for the Luddic Path.
+Removed access to several hullmods for the prv
+Improved the Arc Smelter tooltip.
+Fixed a culling error related to Spatterfire rendering.
+Fixed a typo in Ruster Syndicate intel.
+Fixed a tooltip error when viewing the Gengångare hullmod on a station module.
+Fixed Plasma Agitators not working on fighters.
+
+###
+
+v24.3
+
+Fixed a color value bounds error.
+
+###
+
+v24.2
+
+Agni
+- Increased Agni fleet sizes and Agni fleet and deployment point cost per ship by 33%.
+-- Net result should be that Agni fleets are reported as being more dangerous, with little change in actual composition.
+- Cocoon cooldown will now be counted from when it is depleted, not from when it is applied.
+- Cocoon damage text is now brighter.
+- Improved logic for when Cocoon damage texts should be displayed.
+- Beam and EMP damage reduction reduced by 33%.
+
+Fixed a crash that could occur if an R&D Market owner knows extremely few ship blueprints.
+
+###
+
+v24.1
+
+Agni Down Spinneret is now correctly tagged as a small weapon, not large.
+Temporarily removed the theming requirement for the Flight Into The Unknown bounty.
+
+###
+
+NOT SAVEGAME COMPATIBLE
+
+v24
+
+Added Rust Belt-style stations.
+- Built around sturdy citadels with plentiful armor, flanked by fighter hangars.
+- Slow rotation rate.
+- Use resilient defensive drones at all station sizes.
+
+Added a bar event which allows you to learn how to construct Rust Belt stations and syndicates.
+- War Syndicate BPs will no longer be offered on the black market.
+
+prv Stations
+- Sprites updated.
+- Should now be somewhat easier to fight.
+
+- Combat Modules
+-- Flux capacity increased by 75%.
+-- Weapon layouts updated, every module is now highly specialized.
+
+- Redan Drone
+-- Phase cloak upkeep increased by 60%.
+-- Flux dissipation reduced by ~12%.
+-- Hull integrity increased by 50%.
+-- Armor increased by 20%.
+-- Weapons updated, now 5x SIPD, 2x2 Atropos.
+
+- Shield Modules
+-- Will now take a moderate amount of damage from overloading, and suffer longer overloads while at low hull integrity.
+-- Flux capacity increased by 33%.
+-- Shield upkeep reduced by 33%.
+-- Armor reduced by 30%.
+-- Flux Shunt hullmod added.
+-- Fixed an issue where the shield would become invisible if the module was at the very edge of the screen.
+
+- Hypergenerators hullmod
+-- Now only reload a portion of energy weapon ammunition every period.
+
+Skymning
+- Narrowed slightly.
+- Fighter bays restyled.
+
+Bergtagen
+- Added additional visual asymmetry.
+- Slightly increased the arc of the small shoulder energy turrets.
+
+Fasvinge
+- Added missing Delicate Machinery hullmod.
+
+Gnista
+- Sprite updated
+- Hull integrity increased by 100.
+- Flux dissipation increased by 20.
+- Flux capacity increased by 300.
+- Turn acceleration increased to 90.
+- Shield upkeep increased to 50.
+
+Svepfräsare
+- Maximum sweep arc reduced by 33%.
+-- ie it now delivers the same total damage over a smaller area.
+- Minimum sweep arc increased by 33%.
+-- And vice versa, for very narrow mount arcs (hardpoints).
+- Beam now pierces fighters.
+- Fixed a bug where the beam end point would sometimes go past a shielded ship, asteroid, or split hulk.
+
+Berguv, Berguv Launcher
+- Range (nominal) increased by 50%.
+- Missile lifetime increased by 1 seconds.
+
+Campaign
+- Ryak High-Energy Labs Battlestation downgraded to Orbital Station.
+- Rust Station Battlestation downgraded to Orbital Station.
+- Removed Rust Belt access to the Plasma Cannon.
+
+Fixed Annihilator Burst Launcher tracking description, now correctly states "None".
+Fixed a Gissel Support variant weapon slot mixup.
+Fixed a timing error with the Dominator (RB) gauge decal effect.
+Fixed prv station axial rotation always being synchronized if there is somehow more than one station in the battle.
+Fixed Fasklot hitbox.
+Remission EMP autodischarge now uses applyDamage instead of direct hp adjustment.
+Blueprints are no longer required to downgrade prv stations.
+Adjusted Fräsare fragpoint vfx.
+Improved Kartesch target detection while the projectile is moving laterally.
+Fully removed old Aska missile mounts.
+Laboratory bar event now also gives +5 rep with the contact.
+Laboratory R&D ships can no longer roll duplicate hullmods, increasing the average number of smods slightly.
+Moved Gravpjäs turret center point up slightly. Added missing hardpoint barrel edge glow.
+Updated Siege Akers description.
+Reduced the occurence rate of the Bergslag (P) in pirate fleets.
+Typo fixes.
+
+###
+
 NOT SAVEGAME COMPATIBLE
 
 v23
@@ -815,7 +1401,7 @@ NOT SAVEGAME COMPATIBLE
 
 Added the Rök Battlecruiser
 - Combining solid armor with a gravitic shield and wide-arc gun turrets, this battlecruiser is happiest in the thick of battle. Be careful not to overtax its generator though.
-- The Rusters may have also gotten their grubby fingers on a few speciments. Or parts of them, at least.
+- The Rusters may have also gotten their grubby fingers on a few specimens. Or parts of them, at least.
 
 Added the Is Light Cruiser
 - Equipped with a device that can momentarily freeze a target in time, this sleek cruiser is designed to work with other fast craft to hunt and destroy capital ships.

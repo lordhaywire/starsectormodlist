@@ -1,0 +1,437 @@
+{
+  "hullName": "Nadia (Mi)",
+  "hullId": "ocua_nadia_mi",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_nadia/ocua_nadia_mi.png",
+  "style": "OCULUS",
+  "height": 358,
+  "width": 206,
+  "center": [103, 175],
+  "collisionRadius": 252,
+  "shieldCenter": [-4, -0],
+  "shieldRadius": 204,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_mi_mod"
+  ],
+  "builtInWeapons": {
+    "BW 01": "ocua_glint",
+    "BW 02": "ocua_glint",
+    "BW 03": "ocua_glint",
+    "BW 04": "ocua_glint",
+    "BW 05": "ocua_glint",
+    "BW 06": "ocua_glint",
+    "HNG 01": "ocua_hangar_slot",
+    "HNG 02": "ocua_hangar_slot",
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot",
+    "LIT 03": "ocua_core_slot",
+    "LIT 04": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [141, -0]
+    },
+    {
+      "id": "S 1",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-122, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        18, 57,
+        29, 57,
+        40, 57,
+        18, 49,
+        29, 49,
+        40, 49
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        18, -56,
+        30, -56,
+        39, -56,
+        18, -51,
+        30, -51,
+        39, -51
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -48, 59,
+        -39, -54,
+        -48, -54,
+        -48, 53,
+        -40, 59,
+        -48, -59,
+        -40, 53,
+        -39, -59
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        32, -30,
+        32, 37,
+        32, 30,
+        32, -37
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [79, -47]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [79, 47]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 75,
+      "locations": [146.5, 38]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -75,
+      "locations": [146.5, -38]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [23, -0]
+    },
+    {
+      "id": "LIT 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, -0]
+    },
+    {
+      "id": "LIT 03",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [1, -0]
+    },
+    {
+      "id": "LIT 04",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-10, -0]
+    },
+    {
+      "id": "HNG 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [32, 29]
+    },
+    {
+      "id": "HNG 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [32, -29]
+    },
+    {
+      "id": "BW 03",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 105,
+      "locations": [-75, 22]
+    },
+    {
+      "id": "BW 04",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -105,
+      "locations": [-75, -22]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 75,
+      "locations": [122, 38]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -75,
+      "locations": [122, -38]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [113, 67]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [113, -67]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [-11, 47]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [-11, -47]
+    },
+    {
+      "id": "WS0010",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 180,
+      "locations": [-92, -0]
+    },
+    {
+      "id": "BW 05",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 105,
+      "locations": [-75, 56]
+    },
+    {
+      "id": "BW 06",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -105,
+      "locations": [-75, -56]
+    },
+    {
+      "id": "WS0011",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [79, 87]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [79, -87]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-11, 82]
+    },
+    {
+      "id": "WS0014",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-11, -82]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-154, -46],
+      "length": 42,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-154, 46],
+      "length": 42,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-177, -0],
+      "length": 42,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-135, -60],
+      "length": 22,
+      "width": 10,
+      "angle": -135,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-135, 60],
+      "length": 22,
+      "width": 10,
+      "angle": 135,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-130, -65],
+      "length": 22,
+      "width": 10,
+      "angle": -135,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-130, 65],
+      "length": 22,
+      "width": 10,
+      "angle": 135,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    151, 12,
+    170, 16,
+    135, 74,
+    70, 98,
+    46, 60,
+    15, 60,
+    -2, 92,
+    -19, 92,
+    -41, 60,
+    -66, 72,
+    -117, 63,
+    -151, 42,
+    -126, 31,
+    -151, 27,
+    -170, 0,
+    -151, -27,
+    -126, -31,
+    -151, -42,
+    -117, -63,
+    -66, -72,
+    -41, -60,
+    -19, -92,
+    -2, -92,
+    15, -60,
+    46, -60,
+    70, -98,
+    135, -74,
+    170, -16,
+    151, -12
+  ]
+}

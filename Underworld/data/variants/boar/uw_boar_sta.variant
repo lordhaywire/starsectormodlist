@@ -1,12 +1,12 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 10,
-    "fluxVents": 15,
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_boar",
     "hullMods": [
         "fluxdistributor",
-        "reinforcedhull"
+        "autorepair"
     ],
     "permaMods": [],
     "sMods": [],
@@ -15,7 +15,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "heavymauler"}
+            "weapons": {"WS0001": "heavymortar"}
         },
         {
             "autofire": false,
@@ -33,7 +33,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "hveldriver"}
+            "weapons": {"WS0002": "heavyac"}
         },
         {
             "autofire": true,

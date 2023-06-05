@@ -1,7 +1,8 @@
 {
     "displayName": "Brawler",
-    "fluxCapacitors": 0,
-    "fluxVents": 42,
+    "fluxCapacitors": 20,
+    "fluxVents": 37,
+    "goalVariant": true,
     "hullId": "uw_dragon",
     "hullMods": [
         "expanded_deck_crew",
@@ -25,8 +26,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "breachpod",
-                "WS0006": "breachpod"
+                "WS0005": "annihilatorpod",
+                "WS0006": "annihilatorpod"
             }
         },
         {
@@ -64,7 +65,7 @@
         }
     ],
     "wings": [
-        "perdition_wing",
-        "perdition_wing"
+        "piranha_wing",
+        "piranha_wing"
     ]
 }

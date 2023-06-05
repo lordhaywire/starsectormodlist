@@ -115,18 +115,18 @@
       "id": "WS0011",
       "size": "SMALL",
       "type": "HYBRID",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": 0,
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 60,
       "locations": [60, 39]
     },
     {
       "id": "WS0012",
       "size": "SMALL",
       "type": "HYBRID",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": -0,
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -60,
       "locations": [60, -39]
     },
     {

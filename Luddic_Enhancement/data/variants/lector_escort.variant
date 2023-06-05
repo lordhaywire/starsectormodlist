@@ -8,24 +8,24 @@
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "auxiliarythrusters",
     "reinforcedhull",
-    "insulatedengine"
+    "missleracks",
+    "auxiliarythrusters"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "swarmer",
-        "WS0004": "swarmer"
+        "WS0005": "shredder"
       }
     },
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "hveldriver"
+        "WS0003": "swarmer",
+        "WS0004": "swarmer"
       }
     },
     {

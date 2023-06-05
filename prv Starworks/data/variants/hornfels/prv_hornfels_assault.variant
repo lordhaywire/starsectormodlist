@@ -1,12 +1,13 @@
 {
   "displayName": "Assault",
-  "fluxCapacitors": 23,
+  "fluxCapacitors": 18,
   "fluxVents": 30,
   "goalVariant": false,
   "hullId": "prv_hornfels",
   "hullMods": [
     "dedicated_targeting_core",
-    "unstable_injector"
+    "unstable_injector",
+    "blast_doors"
   ],
   "modules": [],
   "permaMods": [],
@@ -15,10 +16,8 @@
   "weaponGroups": [
     {
       "autofire": false,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        "WS0001": "arbalest",
-        "WS0002": "arbalest",
         "WS0004": "lightac",
         "WS0005r": "lightac"
       }
@@ -27,17 +26,31 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0008": "sabot",
+        "WS0008": "prv_blaster_charge_rack",
+	  "WS0013": "prv_blaster_charge_rack",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
         "WS0009": "hammer",
         "WS0010": "hammer",
-        "WS0013": "sabot"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "chaingun"
+        "WS0001": "arbalest",
+        "WS0002": "arbalest",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0003": "chaingun"
       }
     },
     {
@@ -52,11 +65,11 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "prv_pskd",
-        "WS0006": "prv_pskd",
-        "WS0007": "prv_pskd"
+        "WS0005": "vulcan",
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
       }
-    }
+    },
   ],
   "wings": []
 }

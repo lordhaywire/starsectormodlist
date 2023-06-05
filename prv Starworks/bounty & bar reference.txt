@@ -1,0 +1,56 @@
+Bar event trigger requirements:
+
+Grinning man at private table (Orbital Station - Ruster blueprint)
+- Market is owned by the Rust Belt.
+- Player has a colony.
+- Player has a relationship with the market owner no worse than Suspicious.
+- Player does not already know how to build a Orbital Station - Ruster.
+
+Awkward lab technician (Laboratory Complex access)
+- Market has a Laboratory Complex.
+- Market is not player owned.
+- Market owner relation to the player is at worst Suspicious.
+- Player does not have a commission and relationship is Friendly or lower.
+- Player has not already purchased access at this market.
+
+###
+
+Bounty trigger requirements:
+
+Göran Fridén
+- 25 FP player fleet size.
+- Market owner: Rust Belt, Pirates, or an ally of either.
+
+Sanna, The Green Devil
+- 50 FP player fleet size.
+- Market: Ryak High-Energy Labs.
+-- If the HEL is not present in the sector, Market owner: prv.
+
+Fristaten Lasse
+- 50 FP player fleet size.
+- Market owner: Independent, Pirates or an ally of either.
+
+Flight Into the Unknown
+- 75 FP player fleet size.
+- Market owner: prv or prv ally.
+
+Lost Property
+- 75 FP player fleet size.
+- Market owner: prv.
+
+Fool's Gold
+- 100 FP player fleet size.
+- Market owner: Pirates, Independent, Rust Belt, Persean League or the Sindrian Diktat.
+
+Ivar Balke
+- 100 FP player fleet size.
+- Market owner: Hegemony.
+
+Precariously Precocious
+- 100 FP player fleet size.
+- prv relation at least +50.
+- Market owner: prv.
+
+Andra Perseiska Kompaniet
+- 150 FP player fleet size.
+- Market owner: Hegemony.

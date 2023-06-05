@@ -2,10 +2,10 @@
   "variantId": "prv_tystnad_ryak",
   "hullId": "prv_tystnad",
   "displayName": "Ryak",
-  "goalVariant": false,
-  "fluxCapacitors": 4,
+  "goalVariant": true,
+  "fluxCapacitors": 11,
   "fluxVents": 20,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "hardenedshieldemitter"
@@ -42,6 +42,6 @@
   ],
   "modules": [],
   "wings": [
-    "xyphos_wing"
+    "prv_ovasen_wing"
   ]
 }

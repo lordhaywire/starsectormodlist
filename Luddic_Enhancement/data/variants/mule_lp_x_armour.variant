@@ -4,19 +4,20 @@
   "displayName": "Armoured",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 4,
+  "fluxVents": 3,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "heavyarmor"
+    "heavyarmor",
+    "shield_shunt"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0007": "harpoon",
-        "WS0008": "harpoon"
+        "WS0007": "hammer",
+        "WS0008": "hammer"
       }
     },
     {

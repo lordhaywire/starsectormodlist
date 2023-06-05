@@ -1,7 +1,7 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 6,
-    "fluxVents": 15,
+    "fluxCapacitors": 0,
+    "fluxVents": 23,
     "goalVariant": true,
     "hullId": "uw_fury_cabal",
     "hullMods": ["safetyoverrides"],
@@ -12,17 +12,15 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 000": "chaingun"}
+            "weapons": {
+                "WS 000": "heavyblaster",
+                "WS 001": "heavyblaster"
+            }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {"WS 002": "sabotpod"}
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {"WS 001": "heavyblaster"}
         },
         {
             "autofire": true,

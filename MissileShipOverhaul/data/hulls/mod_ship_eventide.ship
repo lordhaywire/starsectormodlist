@@ -1,0 +1,210 @@
+{
+  "hullName": "Eventide",
+  "hullId": "mod_eventide",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/mod_eventide.png",
+  "style": "HIGH_TECH",
+  "height": 280,
+  "width": 140,
+  "center": [70, 138],
+  "collisionRadius": 207.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 194,
+  "viewOffset": 0,
+  "builtInMods": [
+    "efficiency_overhaul",
+    "hiressensors",
+    "solar_shielding"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [115, 25]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [115, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 45,
+      "locations": [57, 60]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -45,
+      "locations": [57, -60]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 90,
+      "locations": [-42, 41]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [-42, -41]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 60,
+      "locations": [-79, 47]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -60,
+      "locations": [-79, -47]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [116, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-132, -32.5],
+      "length": 50,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-132, 32.5],
+      "length": 50,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-131, -44],
+      "length": 45,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-131, 44],
+      "length": 45,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-133, 14.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-133, -14.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-134, 8.5],
+      "length": 34,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-134, -8.5],
+      "length": 34,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-134, -0],
+      "length": 44,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -133, -14,
+    -120.5, -23,
+    -132.5, -31,
+    -131.5, -44,
+    -118, -56.5,
+    -98, -36.5,
+    -87.5, -63,
+    -53, -35,
+    -44, -51.5,
+    -6.5, -21,
+    50.5, -22,
+    30.5, -51,
+    57, -64,
+    60, -50,
+    86, -56.5,
+    120.5, -33,
+    120.5, 33,
+    86, 56.5,
+    60, 50,
+    57, 64,
+    30.5, 51,
+    50.5, 22,
+    -6.5, 21,
+    -44, 51.5,
+    -53, 35,
+    -87.5, 63,
+    -98, 36.5,
+    -118, 56.5,
+    -131.5, 44,
+    -132.5, 31,
+    -120.5, 23,
+    -133, 14
+  ]
+}

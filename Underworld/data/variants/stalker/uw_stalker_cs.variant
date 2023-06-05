@@ -1,10 +1,14 @@
 {
     "displayName": "Close Support",
-    "fluxCapacitors": 2,
-    "fluxVents": 20,
+    "fluxCapacitors": 5,
+    "fluxVents": 6,
     "goalVariant": true,
     "hullId": "uw_stalker",
-    "hullMods": ["targetingunit"],
+    "hullMods": [
+        "dedicated_targeting_core",
+        "magazines",
+        "missleracks"
+    ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_stalker_cs",
@@ -13,10 +17,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "railgun",
-                "WS0006": "railgun",
-                "WS0007": "railgun",
-                "WS0008": "railgun"
+                "WS0005": "lightac",
+                "WS0006": "lightac",
+                "WS0007": "lightac",
+                "WS0008": "lightac"
             }
         },
         {
@@ -27,14 +31,14 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "heavymauler"}
+            "weapons": {"WS0004": "miningblaster"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "gravitonbeam",
-                "WS0003": "gravitonbeam"
+                "WS0002": "irautolance",
+                "WS0003": "irautolance"
             }
         },
         {

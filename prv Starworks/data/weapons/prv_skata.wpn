@@ -1,5 +1,6 @@
 {
   "id": "prv_skata",
+  "everyFrameEffect": "scripts.weapons.prv_skata_EveryFrameEffect",
   "specClass": "projectile",
   "projectileSpecId": "prv_skata_lrm",
   "type": "MISSILE",
@@ -16,9 +17,9 @@
     12
   ],
   "turretAngleOffsets": [
-    -14,
     0,
-    14
+    0,
+    0
   ],
   "hardpointOffsets": [
     19,
@@ -29,13 +30,13 @@
     -12
   ],
   "hardpointAngleOffsets": [
-    14,
     0,
-    -14
+    0,
+    0
   ],
-  "barrelMode": "LINKED",
+  "barrelMode": "ALTERNATING",
   "separateRecoilForLinkedBarrels": true,
-  "animationType": "MUZZLE_FLASH",
+  "animationType": "NONE",
   "muzzleFlashSpec": {
     "length": 8,
     "spread": 9,
@@ -51,5 +52,5 @@
     ]
   },
   "textureType": ROUGH,
-  "fireSoundTwo": "sabot_srm_fire"
+  #"fireSoundTwo": "salamander_fire"
 }

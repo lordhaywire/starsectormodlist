@@ -1,0 +1,20 @@
+{
+	"ranks":{
+		"ocua_rank_sis_ter":{"name":"Sister"},
+		"ocua_rank_sis_mikan":{"name":"Mikanate Sister"},
+		"ocua_rank_sis_arc":{"name":"Arc Sister"},
+		"ocua_rank_aux":{"name":"Auxiliary"},
+		"ocua_rank_oper_andi":{"name":"Operandi Automaton"},
+		"ocua_rank_oper_mikan":{"name":"Mikanate Operandi"},
+	},
+	
+	"posts":{
+	},
+}
+
+
+
+
+
+
+

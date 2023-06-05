@@ -1,3 +1,18 @@
+Version 1.4.6
+ Changes
+ - Updated to 0.96a
+ - Removed MagicLib version requirement
+ 
+ Bug Fixes
+ - Fixed crash when tech expedition's source market is destroyed
+
+
+Version 1.4.5
+ New Features
+ - reenabled MIDAS terrain effects thanks to MagicLib update
+ - added BetterColony support
+
+
 Version 1.4.4
  New Features
  - New music!

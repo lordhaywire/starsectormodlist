@@ -1,0 +1,61 @@
+{
+  "displayName": "Star Fortress",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_level3",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "xlu_station_level3_Standard",
+  "weaponGroups": [],
+  "modules": [
+	
+	# under armour
+	{"BA 01": "xlu_station_bastion_armor_Standard"},
+	{"BA 02": "xlu_station_bastion_armor_Standard"},
+	{"BA 03": "xlu_station_bastion_armor_Standard"},
+	{"BA 04": "xlu_station_bastion_armor_Standard"},
+	{"BA 05": "xlu_station_bastion_armor_Standard"},
+	{"BA 06": "xlu_station_bastion_armor_Standard"},
+		
+	#double-sided armor would have been great, but...
+	{"WA 01": "xlu_station_blocker_armor_left_Standard"},
+	{"WA 02": "xlu_station_blocker_armor_right_Standard"},
+	{"WA 03": "xlu_station_blocker_armor_right_Standard"},
+	{"WA 04": "xlu_station_blocker_armor_left_Standard"},
+	{"WA 05": "xlu_station_blocker_armor_left_Standard"},
+	{"WA 06": "xlu_station_blocker_armor_right_Standard"},
+	{"WA 07": "xlu_station_blocker_armor_right_Standard"},
+	{"WA 08": "xlu_station_blocker_armor_left_Standard"},
+	
+	{"SA 01": "xlu_station_hangar_armor_left_Standard"},
+	{"SA 02": "xlu_station_hangar_armor_right_Standard"},
+	{"SA 03": "xlu_station_hangar_armor_right_Standard"},
+	{"SA 04": "xlu_station_hangar_armor_left_Standard"},
+	{"SA 05": "xlu_station_missile_armor_left_Standard"},
+	{"SA 06": "xlu_station_missile_armor_right_Standard"},
+	{"SA 07": "xlu_station_missile_armor_right_Standard"},
+	{"SA 08": "xlu_station_missile_armor_left_Standard"},
+		
+	# gun batteries
+	{"BS 01": "xlu_station_bastion_module_Standard"},
+	{"BS 02": "xlu_station_bastion_module_Standard"},
+	
+	# missile batteries
+	{"BS 05": "xlu_station_missile_module_Standard"},
+	{"BS 06": "xlu_station_missile_module_Standard"},
+	
+	# hangar
+	{"BS 03": "xlu_station_hangar_module_Standard"},
+	{"BS 04": "xlu_station_hangar_module_Standard"},
+		
+	# armour spurs
+	{"BM 01": "xlu_station_blocker_right_Standard"},
+	{"BM 02": "xlu_station_blocker_left_Standard"},
+	{"BM 03": "xlu_station_blocker_left_Standard"},
+	{"BM 04": "xlu_station_blocker_right_Standard"},
+	
+  ],
+  "wings": []
+}

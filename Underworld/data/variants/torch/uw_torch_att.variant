@@ -1,6 +1,6 @@
 {
     "displayName": "Attack",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 8,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_torch",
@@ -8,10 +8,10 @@
         "fluxbreakers",
         "heavyarmor",
         "unstable_injector",
-        "fluxdistributor",
-        "reinforcedhull"
+        "fluxdistributor"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_torch_att",
     "weaponGroups": [
         {

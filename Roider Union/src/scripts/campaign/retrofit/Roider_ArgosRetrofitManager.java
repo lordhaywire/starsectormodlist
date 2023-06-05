@@ -5,10 +5,10 @@ import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.thoughtworks.xstream.XStream;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Fitters;
 import ids.Roider_Ids.Roider_Settings;
 import java.util.List;
+import org.magiclib.util.MagicSettings;
 import scripts.campaign.retrofit.Roider_RetrofitsKeeper.RetrofitData;
 
 /**

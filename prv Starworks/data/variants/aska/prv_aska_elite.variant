@@ -3,9 +3,9 @@
   "hullId": "prv_aska",
   "displayName": "Elite",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 16,
   "fluxVents": 30,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",

@@ -3,9 +3,9 @@
   "hullId": "prv_shrike",
   "displayName": "Attack",
   "goalVariant": false,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 12,
   "fluxVents": 20,
-  "quality": 1,
+  "quality": 0,
   "permaMods": [],
   "hullMods": [],
   "weaponGroups": [

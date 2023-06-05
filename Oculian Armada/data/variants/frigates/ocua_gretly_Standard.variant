@@ -1,0 +1,29 @@
+{
+  "variantId": "ocua_gretly_Standard",
+  "hullId": "ocua_gretly",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_leia"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

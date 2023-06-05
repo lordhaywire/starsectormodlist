@@ -3,7 +3,7 @@
   "hullId": "prv_valljud",
   "displayName": "Elite",
   "goalVariant": true,
-  "fluxCapacitors": 26,
+  "fluxCapacitors": 30,
   "fluxVents": 50,
   "quality": 3,
   "permaMods": [],

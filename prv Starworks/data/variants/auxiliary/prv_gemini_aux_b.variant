@@ -1,6 +1,6 @@
 {
   "displayName": "Auxiliary-B",
-  "fluxCapacitors": 5,
+  "fluxCapacitors": 15,
   "fluxVents": 20,
   "goalVariant": false,
   "hullId": "prv_gemini",

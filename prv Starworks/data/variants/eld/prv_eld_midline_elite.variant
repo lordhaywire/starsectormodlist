@@ -3,11 +3,11 @@
   "hullId": "prv_eld_midline",
   "displayName": "Elite",
   "goalVariant": false,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 13,
   "fluxVents": 20,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": ["advancedoptics",],
   "weaponGroups": [
     {
       "autofire": false,
@@ -21,32 +21,26 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WSML01": "sabot",
-        "WSML02": "sabot"
+        "WSML01": "atropos",
+        "WSML02": "atropos"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "heavyneedler",
-        "WS0006": "heavyneedler"
+        "WS0005": "heavyac",
+        "WS0006": "heavyac"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "ioncannon",
-        "WS0002": "ioncannon",
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "pdlaser",
-        "WS0004": "pdlaser"
+        "WS0001": "lrpdlaser",
+        "WS0002": "lrpdlaser",
+        "WS0003": "lrpdlaser",
+        "WS0004": "lrpdlaser"
       }
     }
   ],

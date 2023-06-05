@@ -1,0 +1,29 @@
+{
+	"id":"xlu_amboss",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/amboss/xlu_amboss_turret_base00.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/amboss/xlu_amboss_hardpoint_base00.png",
+	"numFrames":4,
+	"frameRate":30,
+	"turretOffsets":[31, -11, 31, 11],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[39, -11, 39, 11],
+	"hardpointAngleOffsets":[0, 0],	
+	#"alwaysAnimate":"true",
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"interruptibleBurst":true,
+	"separateRecoilForLinkedBarrels":"TRUE",	# Allows shotgun-type blasts
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":16.0,
+					   "particleDuration":0.15,
+					   "particleCount":12,
+					   "particleColor":[255,140,125,200]},	
+	"projectileSpecId":"xlu_amboss_shot",  # projectile that will be fired
+	"fireSoundOne":"thumper_spinup",
+	"fireSoundTwo":"vulcan_cannon_fire",	
+}

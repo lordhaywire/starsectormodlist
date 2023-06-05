@@ -1,0 +1,66 @@
+{
+  "variantId": "prv_atlas2_belt",
+  "hullId": "atlas2",
+  "displayName": "Belt",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "prv_massdriver",
+        "WS 009": "prv_massdriver"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 012": "prv_blaster_charge_launcher",
+        "WS 013": "prv_blaster_charge_launcher"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 014": "prv_remission",
+        "WS 015": "prv_remission",
+        "WS 017": "prv_remission",
+        "WS 018": "prv_remission"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "mininglaser",
+        "WS 002": "mininglaser",
+        "WS 020": "mininglaser",
+        "WS 021": "mininglaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 010": "vulcan",
+        "WS 011": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

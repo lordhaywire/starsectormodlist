@@ -1,0 +1,41 @@
+{
+  "variantId": "xlu_lead_Buzzer",
+  "hullId": "xlu_lead",
+  "displayName": "Buzzer",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missile_autoloader",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_geezer_m",
+        "WS0002": "xlu_geezer_m"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_stubbon",
+        "WS0005": "xlu_stubbon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

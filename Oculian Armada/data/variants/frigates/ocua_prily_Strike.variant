@@ -1,0 +1,44 @@
+{
+  "variantId": "ocua_prily_Strike",
+  "hullId": "ocua_prily",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "ocua_core_pulse"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_pixel",
+        "WS0002": "ocua_pixel",
+        "WS0003": "ocua_pixel",
+        "WS0004": "ocua_pixel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_pirouette",
+        "BW 02": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ocua_glint",
+        "WS0006": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

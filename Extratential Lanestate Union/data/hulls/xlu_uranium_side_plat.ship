@@ -1,0 +1,120 @@
+{
+  "bounds": [
+    -39,
+    23,
+    -39,
+    -48,
+    -6,
+    -56,
+    -6,
+    -80,
+    18,
+    -73,
+    18,
+    75,
+    -5,
+    83,
+    -5,
+    36
+  ],
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_juggernaught_hullmod",
+    "reduced_explosion",
+    "xlu_baseless_module",
+    "xlu_closed_shell"
+  ],
+  "center": [
+    93,
+    43
+  ],
+  "collisionRadius": 80,
+  "engineSlots": [],
+  "height": 66,
+  "hullId": "xlu_uranium_side_plat",
+  "hullName": "Gun Platform",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    -70,
+    4
+  ],
+  "shieldRadius": 196,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_uranium/xlu_uranium_side_plat.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0001",
+      "locations": [
+        -18,
+        20
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 135,
+      "id": "WS0002",
+      "locations": [
+        -18,
+        -40
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0003",
+      "locations": [
+        5,
+        52
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0004",
+      "locations": [
+        5,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        5,
+        -16
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0006",
+      "locations": [
+        5,
+        -43
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 178
+}

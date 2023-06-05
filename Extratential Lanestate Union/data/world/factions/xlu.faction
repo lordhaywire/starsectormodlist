@@ -1,0 +1,478 @@
+{
+	"id":"xlu",
+	"color":[35,25,95,255],
+    "secondaryUIColor":[55,65,55,255],
+    "secondarySegments":3,
+	
+	"baseUIColor":[100,115,200,255],
+    #"brightUIColor":[40,65,255,255],
+	#"darkUIColor":[10,25,180,255],
+	"gridUIColor":[85,95,180,75],
+	
+	"entityNamePrefix":"Lanestate",
+	"displayName":"Lanestate Union",
+	"displayNameWithArticle":"the Lanestate Union",
+	"displayNameLong":"Extratential Lanestate Union",
+	"displayNameLongWithArticle":"the Extratential Lanestate Union",
+	"logo":"graphics/Extratential Lanestate Union/factions/xlu.png",
+	"crest":"graphics/Extratential Lanestate Union/factions/crest_xlu.png",
+	"shipNamePrefix":"XLU",
+	"shipNameSources":{
+		"BRITISH_NAVY":1,
+		"ROMAN":1,
+		"GREEK":1,
+		"SPACE":2,
+		"GENERAL":2,
+	},
+	"names":{
+		"old english":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+	},
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"xlu_basic_bp":2,
+			"xlu_heavy_bp":1.5,
+			"xlu_litho_bp":1.5,
+			"xlu_40th":1.5,
+			
+			"xlu_bp":3,
+			"xlu_rare_bp":1.25,
+			"base_bp":0.5,
+			"midline_bp":0.25,
+			"hightech_bp":0.25,
+		},
+		"hulls":{
+			"xlu_alum":2,
+			
+			"xlu_stibium":1.5,
+			
+			"xlu_kaolinite":1.2,
+			"xlu_kaolinite_x":1.2,
+		},
+	},
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "xlu_bp"],
+        "hulls":[
+			"xlu_alum",
+			"xlu_lead",
+			"xlu_zinc",
+			"xlu_tin",
+
+			"xlu_espron",
+			"xlu_butane",
+			"xlu_cobble",
+			
+			"xlu_ferros",
+			"xlu_macrolloy",
+			"xlu_duralumin",
+			"xlu_carbide",
+			"xlu_oxide",
+			"xlu_scheelite",
+			"xlu_colossus",
+			
+			"xlu_kaolinite",
+			"xlu_diaboleite",
+			"xlu_rhodochrosite",
+        ],
+    },
+	"knownShips":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "xlu_bp", "xlu_litho_bp", "xlu_rare_bp", "xlu_40th"],
+		"hulls":[
+			"xlu_alum",
+			"xlu_lead",
+			"xlu_zinc",
+			"xlu_brass",
+			"xlu_calc",
+			"xlu_tin",
+			
+			"xlu_espron",
+			"xlu_stibium",
+			"xlu_butane",
+			"xlu_cobble",
+			
+			"xlu_cobalt",
+			"xlu_ferros",
+			"xlu_azurim",
+			"xlu_macrolloy",
+			"xlu_duralumin",
+			"xlu_carbide",
+			"xlu_oxide",
+			"xlu_scheelite",
+			"xlu_starliner",
+			"xlu_starcrusher",
+			"xlu_colossus",
+			
+			"xlu_kaolinite",
+			"xlu_kaolinite_x",
+			"xlu_onslaught",
+			"xlu_diaboleite",
+			"xlu_chrominus",
+			"xlu_tritanite",
+			"xlu_pyridoxate",
+			"xlu_gadolinite",
+			"xlu_anthracite",
+			"xlu_uranium",
+			"xlu_rhodochrosite",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		# capitals are all priority - this makes it so that they will get picked for the "capital" size ship
+		# without concern for matching the doctrine, i.e. a Legion will be as likely a pick as an Onslaught
+		# despite the Legion being a carrier and the carrier portion of the doctrine being low 
+		"hulls":[
+			"xlu_kaolinite",
+			"xlu_kaolinite_x",
+			"xlu_onslaught",
+			"xlu_diaboleite",
+			"xlu_chrominus",
+			"xlu_pyridoxate",
+			"xlu_gadolinite",
+			"xlu_anthracite",
+			
+			# a
+			"xlu_colossus",
+			"xlu_cobalt",
+			"xlu_ferros",
+			"xlu_azurim",
+		],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "xlu"],
+		"fighters":[
+			"xlu_kalis_wing",
+			"xlu_kampilan_wing",
+			"xlu_guna_wing",
+			"xlu_lantaka_wing",
+			"xlu_mattock_wing",
+		],
+	},
+	"priorityFighters":{
+		"tags":[],
+		"fighters":[
+			"xlu_kalis_wing",
+			"xlu_kampilan_wing",
+			"xlu_guna_wing",
+			"xlu_lantaka_wing",
+			"xlu_mattock_wing",
+		],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "hegemony", "xlu", "xlu_40th"],
+		"weapons":[
+			"xlu_shotcannon_s",
+			"xlu_shotcannon_m",
+			"xlu_shotcannon_l",
+			
+			"xlu_gattling_m",
+			"xlu_gattling_l",
+			
+			"xlu_gattler",
+			"xlu_light_triac",
+			"xlu_mortar_s",
+			
+			"xlu_momus",
+			"xlu_hyperflak",
+			"xlu_quad_ac",
+			"xlu_bolton",
+			
+			"xlu_mortar",
+			"xlu_amboss",
+			"xlu_phalanx_mg",
+			"xlu_hyvel",
+			"xlu_warbore",
+			
+			"xlu_quilfling_s",
+			"xlu_quilfling_m",
+			"xlu_quilfling_l",
+			
+			"xlu_bente",
+			"xlu_watusi",
+			
+			"xlu_lusis_l",
+			
+			"xlu_auglaser",
+			"xlu_magpulse",
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+			"xlu_shotcannon_s",
+			"xlu_shotcannon_m",
+			"xlu_shotcannon_l",
+			
+			"xlu_gattling_m",
+			"xlu_gattling_l",
+			
+			"xlu_gattler",
+			"xlu_light_triac",
+			
+			"xlu_momus",
+			"xlu_hyperflak",
+			"xlu_quad_ac",
+			"xlu_bolton",
+			
+			"xlu_mortar",
+			"xlu_amboss",
+			"xlu_phalanx_mg",
+			"xlu_hyvel",
+			"xlu_warbore",
+			
+			"xlu_quilfling_s",
+			"xlu_quilfling_m",
+			"xlu_quilfling_l",
+			
+			"xlu_bente",
+			"xlu_watusi",
+			
+			"xlu_lusis_l",
+			
+			"xlu_auglaser",
+			"xlu_magpulse",
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "persean", "xlu_hullmods"],
+		"hullMods":[
+			"frontshield",
+			"turretgyros",
+			"armoredweapons",
+			"autorepair",
+			"auxiliarythrusters",
+			"blast_doors",
+			"dedicated_targeting_core",
+			"magazines",
+			"missleracks",
+			"hardened_subsystems",
+			"heavyarmor",
+			"insulatedengine",
+			"reinforcedhull",
+			"fluxbreakers",
+			"expanded_deck_crew",
+			"recovery_shuttles",
+			"operations_center",
+			"targetingunit",
+			"nav_relay",
+			"ecm",
+			"surveying_equipment",
+			"hiressensors",
+			"efficiency_overhaul",
+			"xlu_weapons_overhaul",
+			"xlu_breezer_rounds",
+			"xlu_heatflux_chamber",
+			"xlu_ultra_bulkheads",
+			"xlu_crew_waymakers",
+			"xlu_crew_warshots",
+			"xlu_crew_hardyboys",
+		],
+	},
+	"weaponSellFrequency":{
+		"vulcan":3,
+		"xlu_gattler":10,
+		"lightag":2,
+		"xlu_mortar_s":5,
+		"xlu_shotcannon_s":10,
+		"xlu_stubbon":30,
+		"xlu_gyropult_s":20,
+		"railgun":3,
+		"xlu_40th_mortar_s":5,
+		"xlu_40th_railgun":5,
+
+		"hveldriver":3,
+		"xlu_hyperflak":10,
+		"heavymauler":3,
+		"xlu_momus":10,
+		"xlu_shotcannon_m":15,
+		"flak":5,
+		"dualflak":5,
+		"xlu_quad_ac":10,
+		"xlu_bolton":10,
+		"xlu_gattling_m":5,
+		"xlu_mulleter":20,
+		"xlu_40th_autocannon_m":5,
+		
+		"gauss":2,
+		"hephag":3,
+		"multineedler":5,
+		"xlu_mortar":20,
+		"xlu_amboss":15,
+		"xlu_hyvel":10,
+		"xlu_phalanx_mg":15,
+		"xlu_shotcannon_l":10,
+		"xlu_warbore":15,
+		"xlu_gattling_l":7,
+		"xlu_contrada":5,
+		"xlu_40th_thunderslug":3,
+		
+		"xlu_auglaser":5,
+		
+		"xlu_magpulse":5,
+		"xlu_kowbac_m":10,
+		"xlu_geezer_m":10,
+		
+		"xlu_kowbac_l":5,
+		"xlu_geezer_l":5,
+		
+		"sabot":2,
+		"harpoon":2,
+		"reaper":2,
+		"breachpod":2,
+		"harpoonpod":2,
+		"sabotpod":2,
+		"xlu_quilfling_s":15,
+		"xlu_quilfling_m":10,
+		"xlu_quilfling_l":5,
+		"xlu_watusi":10,
+		"xlu_watusi_l":5,
+		"xlu_bente":10,
+		"xlu_lusis_l":3,
+	},
+	"fighterSellFrequency":{
+		"xlu_kalis_wing":5,
+		"xlu_kampilan_wing":5,
+		"xlu_guna_wing":5,
+		"xlu_lantaka_wing":5,
+		"xlu_mattock_wing":10,
+	},
+	"hullmodSellFrequency":{
+		"xlu_breezer_rounds":5,
+		"xlu_heatflux_chamber":5,
+		"xlu_ultra_bulkheads":5,
+	},	
+	"factionDoctrine":{
+		"warships":4,
+		"carriers":2,
+		"phaseShips":1,
+		
+		"officerQuality":4,
+		"shipQuality":1,
+		"numShips":2,
+		
+		"shipSize":4,
+		
+		"aggression":4,
+		
+		"combatFreighterProbability":0.15,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"officerSkillsShuffleProbability":1f,
+		"officerSkills":[
+			"ballistic_mastery",
+			"ordnance_expert",
+		],
+		
+		"commanderSkillsShuffleProbability":1,
+		"commanderSkills":[
+			"crew_training",
+			"coordinated_maneuvers",
+			
+			#"tactical_drills", # keep it to two skills to make sure all high-level commanders get level 6 officers
+			#"coordinated_maneuvers",
+			#"support_doctrine",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		#"ob_cookies",
+	],
+	"portraits":{
+		"standard_male":[
+			"graphics/portraits/portrait_hegemony02.png",
+			"graphics/portraits/portrait_hegemony06.png",
+			"graphics/portraits/portrait_mercenary01.png",
+			"graphics/portraits/portrait_mercenary03.png",
+			"graphics/portraits/portrait_mercenary04.png",
+			"graphics/portraits/portrait12.png",
+			"graphics/portraits/portrait13.png",
+			"graphics/portraits/portrait15.png",
+			"graphics/portraits/portrait17.png",
+			"graphics/portraits/portrait18.png",
+			"graphics/portraits/portrait20.png",
+			"graphics/portraits/portrait25.png",
+			"graphics/portraits/portrait26.png",
+			"graphics/portraits/portrait30.png",
+			"graphics/portraits/portrait31.png",
+			"graphics/portraits/portrait33.png",
+			"graphics/portraits/portrait35.png",
+			"graphics/portraits/portrait36.png",
+			"graphics/portraits/portrait40.png",
+			"graphics/Extratential Lanestate Union/portraits/xlu_portrait_01.png",
+		],
+		"standard_female":[
+			"graphics/portraits/portrait_hegemony03.png",
+			"graphics/portraits/portrait_mercenary02.png",
+			"graphics/portraits/portrait_mercenary05.png",
+			"graphics/portraits/portrait14.png",
+			"graphics/portraits/portrait16.png",
+			"graphics/portraits/portrait21.png",
+			"graphics/portraits/portrait22.png",
+			"graphics/portraits/portrait27.png",
+			"graphics/portraits/portrait28.png",
+			"graphics/portraits/portrait29.png",
+			"graphics/portraits/portrait32.png",
+			"graphics/portraits/portrait34.png",
+			"graphics/portraits/portrait37.png",
+			"graphics/portraits/portrait39.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"Frontier Lead"},
+			"spaceCommander":{"name":"Commander"},
+		},
+		"posts":{
+			"factionLeader":{"name":"Frontier Lead"},
+			"patrolCommander":{"name":"Patrol Commander"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"Base Commander"},
+		},
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"faithful":5,		
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":5,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":10,
+			"aristo":3,
+		},
+	},
+	"custom":{
+		"allowsTransponderOffTrade":false,
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":1,
+		"AICoreRepMult":0.5,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"caresAboutAtrocities":false,
+		"punitiveExpeditionData":{
+			"vsCompetitors":false,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},
+	
+},

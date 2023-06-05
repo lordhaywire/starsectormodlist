@@ -1,0 +1,29 @@
+{
+	"id":"xlu_mortar",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":450,
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_mortar_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_mortar_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_mortar_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_mortar_hardpoint_recoil.png",	
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":5.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[21, 5.5, 21, -5.5, 22, 10.5, 22, 0, 22, -10.5],
+	"turretAngleOffsets":[0, 0, 0, 0, 0],
+	"hardpointOffsets":[31, 5.5, 31, -5.5, 32, 11, 32, 0, 32, -11],
+	"hardpointAngleOffsets":[0, 0, 0, 0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE", #FALSE, this used to be in burst mode
+	"muzzleFlashSpec":{	"length":25.0,   # only used if animationType = MUZZLE_FLASH
+					"spread":20.0,
+					"particleSizeMin":12.0,
+					"particleSizeRange":16.0,
+					"particleDuration":0.5,
+					"particleCount":16,
+					"particleColor":[255,125,105,255]},
+	"projectileSpecId":"xlu_mortar_shot",  # projectile that will be fired
+	"fireSoundTwo":"heavy_mortar_fire",
+}

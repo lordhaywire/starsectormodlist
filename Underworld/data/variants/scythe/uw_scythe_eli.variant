@@ -1,6 +1,6 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 0,
+    "fluxCapacitors": 5,
     "fluxVents": 2,
     "goalVariant": true,
     "hullId": "uw_scythe",
@@ -32,7 +32,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "heavyneedler"}
+            "weapons": {"WS0001": "heavyac"}
         }
     ]
 }

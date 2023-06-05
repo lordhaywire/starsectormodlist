@@ -1,0 +1,86 @@
+{
+  "hullName": "Zeal",
+  "hullId": "mod_zeal",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/mod_zeal.png",
+  "style": "MIDLINE",
+  "height": 101,
+  "width": 63,
+  "center": [31, 50],
+  "collisionRadius": 83,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 76.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "missleracks",
+    "eccm"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [36, 15]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [36, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-18.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-46, 10],
+      "length": 18,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, -10],
+      "length": 18,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-46, -0],
+      "length": 28,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -46.5, -12,
+    -33, -18.5,
+    7, -16,
+    27, -30,
+    43, -21,
+    37, -0,
+    43, 21,
+    27, 30,
+    7, 16,
+    -33, 18.5,
+    -46.5, 12
+  ]
+}

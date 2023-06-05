@@ -8,15 +8,14 @@
   "turretGunSprite": "graphics/prv/weapons/prv_heavyakers_turret_recoil.png",
   "hardpointSprite": "graphics/prv/weapons/prv_heavyakers_hardpoint.png",
   "hardpointGunSprite": "graphics/prv/weapons/prv_heavyakers_hardpoint_recoil.png",
-  "renderAboveAllWeapons": 0,
   "visualRecoil": 11,
   "renderHints": [
     RENDER_BARREL_BELOW
   ],
   "turretOffsets": [
-    22.5,
+    23,
     2,
-    22.5,
+    23,
     -2
   ],
   "turretAngleOffsets": [
@@ -24,9 +23,9 @@
     0
   ],
   "hardpointOffsets": [
-    25,
+    26.5,
     2,
-    25,
+    26.5,
     -2
   ],
   "hardpointAngleOffsets": [
@@ -49,6 +48,5 @@
       235
     ]
   },
-  "textureType": ROUGH,
   "fireSoundTwo": "prv_heavyakers_fire"
 }

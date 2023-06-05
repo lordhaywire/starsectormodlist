@@ -13,11 +13,16 @@ import com.fs.starfarer.api.combat.ShipHullSpecAPI;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
+import org.dark.shaders.util.ShaderLib;
 import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 public class UW_Util {
+
+    public static boolean OFFSCREEN = false;
+    public static final float OFFSCREEN_GRACE_CONSTANT = 500f;
+    public static final float OFFSCREEN_GRACE_FACTOR = 2f;
 
     /* LazyLib 2.4b revert */
     public static List<DamagingProjectileAPI> getProjectilesWithinRange(Vector2f location, float range) {
@@ -117,6 +122,10 @@ public class UW_Util {
         }
 
         return entities;
+    }
+
+    public static boolean isOnscreen(Vector2f point, float radius) {
+        return OFFSCREEN || ShaderLib.isOnScreen(point, radius * OFFSCREEN_GRACE_FACTOR + OFFSCREEN_GRACE_CONSTANT);
     }
 
     public static void applyForce(CombatEntityAPI target, Vector2f dir, float force) {

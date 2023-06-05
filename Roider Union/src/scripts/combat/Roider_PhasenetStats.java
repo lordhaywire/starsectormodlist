@@ -7,15 +7,14 @@ import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.loading.WeaponSlotAPI;
 import com.fs.starfarer.api.util.IntervalUtil;
-import com.fs.starfarer.api.util.JitterUtil;
 import com.fs.starfarer.api.util.Misc;
-import data.scripts.util.MagicRender;
 import ids.Roider_Ids.Roider_Categories;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.util.MagicRender;
 import scripts.Roider_Misc;
 
 /**

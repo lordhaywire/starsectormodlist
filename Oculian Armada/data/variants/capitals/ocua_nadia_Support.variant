@@ -1,0 +1,72 @@
+{
+  "variantId": "ocua_nadia_Support",
+  "hullId": "ocua_nadia",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 36,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ocua_pixelplus",
+        "WS0004": "ocua_pixelplus"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "ocua_pixelplus",
+        "WS0005": "ocua_pixelplus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_kurtina",
+        "WS0007": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_blita",
+        "WS0009": "ocua_blita",
+        "WS0010": "ocua_blita",
+        "WS0011": "ocua_blita"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "WS0012": "ocua_glint",
+        "WS0013": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0001": "ocua_nadia_m_front_Standard"
+    }
+  ],
+  "wings": [
+    "ocua_breeze_basic_h_wing",
+    "ocua_breeze_basic_h_wing",
+    "ocua_breeze_basic_h_wing"
+  ]
+}

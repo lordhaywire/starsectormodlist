@@ -1,0 +1,72 @@
+{
+  "variantId": "ocua_nadia_Assault",
+  "hullId": "ocua_nadia",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 25,
+  "fluxVents": 41,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_chemical"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_shizukesa",
+        "WS0004": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_shizukesa",
+        "WS0005": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_leia",
+        "WS0007": "ocua_leia"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_prima",
+        "WS0009": "ocua_prima",
+        "WS0010": "ocua_prima",
+        "WS0011": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "WS0012": "ocua_glint",
+        "WS0013": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0001": "ocua_nadia_m_front_Standard"
+    }
+  ],
+  "wings": [
+    "ocua_breeze_basic_h_wing",
+    "ocua_breeze_basic_h_wing",
+    "ocua_cancer_wing"
+  ]
+}

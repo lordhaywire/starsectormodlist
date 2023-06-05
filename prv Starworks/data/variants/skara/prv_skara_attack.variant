@@ -2,7 +2,7 @@
   "variantId": "prv_skara_attack",
   "hullId": "prv_skara",
   "displayName": "Attack",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 8,
   "fluxVents": 10,
   "quality": 1,
@@ -23,7 +23,7 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "breachpod"
+        "WS0003": "prv_blaster_charge_cluster"
       }
     },
     {

@@ -3,7 +3,7 @@
   "hullId": "prv_ilbud",
   "displayName": "Strike",
   "goalVariant": false,
-  "fluxCapacitors": 3,
+  "fluxCapacitors": 5,
   "fluxVents": 11,
   "quality": 0.25,
   "permaMods": [],

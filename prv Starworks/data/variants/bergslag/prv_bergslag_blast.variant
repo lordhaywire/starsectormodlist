@@ -10,7 +10,7 @@
   ],
   "modules": [],
   "permaMods": [],
-  "quality": 2,
+  "quality": 0,
   "variantId": "prv_bergslag_blast",
   "weaponGroups": [
     {
@@ -33,23 +33,23 @@
       "weapons": {
         "WS0003": "heavymortar",
         "WS0008": "heavymortar",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0004": "prv_lightthumper",
-        "WS0009": "prv_lightthumper"
+        "WS0009": "prv_lightthumper"        
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "lightmortar"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0005": "prv_pskd",
-        "WS0007": "prv_pskd"
+        "WS0006": "vulcan",
+        "WS0005": "vulcan",
+        "WS0007": "vulcan"
       }
     }
   ],

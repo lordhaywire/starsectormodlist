@@ -1,0 +1,35 @@
+{
+	"id":"xlu_manganate_cannon",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"everyFrameEffect":"data.scripts.weapons.xlu_manganate_cannon_effect",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_base.png",
+	"turretGlowSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_glow.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_base.png",
+	"hardpointGlowSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_glow.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_manganate_cannon_recoil.png",
+	"visualRecoil":20.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[58, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[88, 0],
+	"hardpointAngleOffsets":[0],
+	"specialWeaponGlowWidth":20,
+	"specialWeaponGlowHeight":6,
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"glowColor":[195,255,165,255],
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":36.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":32.0,
+					   "particleDuration":0.13,
+					   "particleCount":3,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"xlu_manganate_shot",  # projectile that will be fired
+	"fireSoundTwo":"xlu_manganate_fire",	
+}

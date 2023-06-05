@@ -12,23 +12,14 @@
   "shieldRadius": 177.5,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "prv_ramshield"
   ],
   "builtInWeapons": {
     "D1L": "prv_d_cover_kakafoni_l",
     "D1R": "prv_d_cover_kakafoni_r",
-    "prv_ramshield": "prv_u_ramshield"
   },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, 0]
-    },
     {
       "id": "WS0001",
       "size": "MEDIUM",

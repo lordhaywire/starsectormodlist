@@ -1,0 +1,98 @@
+{
+  "hullName": "Kampilan",
+  "hullId": "xlu_kampilan",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_kampilan.png",
+  "style": "MIDLINE",
+  "height": 28,
+  "width": 28,
+  "center": [14, 14],
+  "collisionRadius": 30,
+  "shieldCenter": [1, 0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad"
+  ],
+  "weaponSlots": [
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 180,
+      "locations": [-9, -0]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [11.5, 6.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -0,
+      "locations": [11.5, -6.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [7, 9]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -0,
+      "locations": [7, -9]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -0,
+      "locations": [9, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -8],
+      "length": 14,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-14, 8],
+      "length": 14,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -16, 8,
+    -7, 17,
+    20, 0,
+    -7, -17,
+    -16, -8
+  ]
+}

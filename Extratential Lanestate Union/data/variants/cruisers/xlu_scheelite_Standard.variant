@@ -1,0 +1,67 @@
+{
+  "variantId": "xlu_scheelite_Standard",
+  "hullId": "xlu_scheelite",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 21,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "frontshield"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_geezer_m",
+        "BW 02": "xlu_geezer_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_magpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightac",
+        "WS0006": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightag",
+        "WS0004": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "xlu_gyropult_s",
+        "WS0008": "xlu_gyropult_s"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 05": "xlu_gattler",
+        "BW 06": "xlu_gattler",
+        "BW 07": "xlu_gattler",
+        "WS0002": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

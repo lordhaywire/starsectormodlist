@@ -1,0 +1,45 @@
+{
+	"id":"xlu_SurfluxShield",
+	#"type":"SHIELD_MOD",
+	#"aiType":"FORTRESS_SHIELD",
+	"type":"PHASE_CLOAK",
+	"aiType":"PHASE_CLOAK",
+
+	"statsScript":"data.shipsystems.scripts.xlu_SurfluxShieldStats",
+
+	#"phaseHighlight":"_glow1",
+	#"phaseDiffuse":"_glow2",
+
+	#"effectColor1":[255,175,255,255],
+	#"effectColor2":[255,0,255,150],
+	
+	"jitterUnderColor":[50,50,250,155],
+	#"jitterUnderColor":[255,220,220,155],
+	"jitterUnderCopies":10,
+	"jitterUnderMinRange":0,
+	"jitterUnderRange":8,
+	"jitterUnderRangeRadiusFraction":0,
+	
+	#"jitterColor":[255,165,90,55],
+	#"jitterCopies":2,
+	#"jitterMinRange":0,
+	#"jitterRange":5,
+	#"jitterRangeRadiusFraction":0,
+	
+	#"soundFilterType":"LOWPASS",
+	#"soundFilterGain":0.75,
+	#"soundFilterGainHF":0.0,
+	
+	#"useSound":"shield_raise",
+	#"loopSound":"beam_heavy_loop",
+	#"deactivateSound":"shield_lower",
+	#"outOfUsesSound":"gun_out_of_ammo",
+	
+	#"useSound":"shield_raise",
+	#"deactivateSound":"shield_lower",
+	# Stian disabled these two because the timing of activate/deactivate did not work together with the loop sound.
+	# Enable them to test the issue. The deactivateSound plays late, after the loopsound has already stopped,
+	# creating a stuttering effect. 
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"gun_out_of_ammo",	
+}

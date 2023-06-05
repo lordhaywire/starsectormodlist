@@ -1,0 +1,155 @@
+{
+  "bounds": [
+    -35,
+    110,
+    20,
+    112,
+    46,
+    95,
+    53,
+    50,
+    16,
+    40,
+    16,
+    -40,
+    53,
+    -50,
+    46,
+    -95,
+    -35,
+    -102
+  ],
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_juggernaught_hullmod",
+    "reduced_explosion",
+    "xlu_closed_shell"
+  ],
+  "center": [
+    123,
+    44
+  ],
+  "collisionRadius": 120,
+  "engineSlots": [],
+  "height": 104,
+  "hullId": "xlu_uranium_side_hangar",
+  "hullName": "Hangar Platform",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    -42,
+    -0
+  ],
+  "shieldRadius": 192,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_uranium/xlu_uranium_side_hangar.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        -6,
+        -74
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        -6,
+        76
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 150,
+      "id": "WS0003",
+      "locations": [
+        30,
+        -71
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 150,
+      "id": "WS0004",
+      "locations": [
+        30,
+        72
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        15,
+        -40,
+        6,
+        -40,
+        -5,
+        -40,
+        -5,
+        -29,
+        6,
+        -29
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        6,
+        -13,
+        -5,
+        -13,
+        -5,
+        -1,
+        6,
+        -1
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 3",
+      "locations": [
+        6,
+        14.5,
+        -5,
+        15,
+        -5,
+        31,
+        6,
+        31,
+        6,
+        42
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 246
+}

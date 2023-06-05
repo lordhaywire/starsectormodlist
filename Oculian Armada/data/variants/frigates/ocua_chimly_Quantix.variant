@@ -1,0 +1,28 @@
+{
+  "variantId": "ocua_chimly_Quantix",
+  "hullId": "ocua_chimly",
+  "displayName": "Quantix",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_quantix"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "WS0001": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_wing"
+  ]
+}

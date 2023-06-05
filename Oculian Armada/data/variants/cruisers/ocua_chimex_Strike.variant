@@ -1,0 +1,56 @@
+{
+  "variantId": "ocua_chimex_Strike",
+  "hullId": "ocua_chimex",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 7,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_chemical"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ocua_pixel",
+        "WS0003": "ocua_pixel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_kaina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_pirouette",
+        "WS0007": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_blita",
+        "WS0005": "ocua_blita",
+        "WS0008": "ocua_glint",
+        "WS0009": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_breeze_basic_h_wing",
+    "ocua_tick_wing",
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_wing"
+  ]
+}

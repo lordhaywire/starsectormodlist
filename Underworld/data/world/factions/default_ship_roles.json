@@ -23,7 +23,8 @@
         "uw_torch_shi":3,
         "uw_torch_str":2,
 
-        "uw_wolf_cabal_cus":10,
+        "uw_wolf_cabal_cus":5,
+        "uw_wolf_cabal_tri":5,
     },
     "combatSmall":{
         "uw_predator_cs":3,
@@ -34,14 +35,13 @@
         "uw_predator_x_cs":2,
         "uw_predator_x_rai":5,
 
-        #"uw_scarab_cabal_cus":10,
-
         "uw_sidecar_att":3,
         "uw_sidecar_cs":1,
         "uw_sidecar_jun":4,
         "uw_sidecar_ovd":2,
 
-        "uw_tempest_cabal_cus":10,
+        "uw_tempest_cabal_cus":5,
+        "uw_tempest_cabal_tri":5,
 
         "uw_tiger_att":3,
         "uw_tiger_cs":2,
@@ -57,31 +57,39 @@
         "uw_venomx_eli":4,
         "uw_venomx_ovd":2,
 
-        "uw_wolf_cabal_cus":10,
+        "uw_wolf_cabal_cus":5,
+        "uw_wolf_cabal_tri":5,
     },
     "combatMedium":{
         "uw_boar_ass":3,
         "uw_boar_eli":3,
         "uw_boar_sta":4,
 
-        "uw_medusa_cabal_cus":10,
-        "uw_shrike_cabal_cus":10,
+        "uw_medusa_cabal_cus":5,
+        "uw_medusa_cabal_tri":5,
+
+        "uw_shrike_cabal_cus":5,
+        "uw_shrike_cabal_tri":5,
 
         "uw_shark_att":3,
-        "uw_shark_cs":2,
+        "uw_shark_out":2,
         "uw_shark_ovd":1,
         "uw_shark_sta":4,
+        "uw_shark_ftr":0,
     },
     "combatLarge":{
-        "uw_aurora_cabal_cus":10,
+        "uw_aurora_cabal_cus":5,
+        "uw_aurora_cabal_tri":5,
 
-        "uw_fury_cabal_cus":10,
+        "uw_fury_cabal_cus":5,
+        "uw_fury_cabal_tri":5,
 
         "uw_climax_dis":2,
         "uw_climax_han":3,
         "uw_climax_sur":5,
 
         "uw_starscream_cus":5,
+        "uw_starscream_tri":5,
 
         "uw_barbarian_ass":4,
         "uw_barbarian_ovd":2,
@@ -96,7 +104,8 @@
         "uw_stalker_sta":3,
     },
     "combatCapital":{
-        "uw_odyssey_cabal_cus":10,
+        "uw_odyssey_cabal_cus":5,
+        "uw_odyssey_cabal_tri":5,
 
         "uw_succubus_ass":2,
         "uw_succubus_bea":2,
@@ -112,9 +121,9 @@
         "uw_dragon_eli":3,
         "uw_dragon_sta":4,
 
-        "uw_infernus_art":1,
-        "uw_infernus_dre":2,
-        "uw_infernus_for":2,
+        "uw_infernus_art":3,
+        "uw_infernus_dre":4,
+        "uw_infernus_for":3,
 
         "uw_renegade_ass":3,
         "uw_renegade_sta":4,
@@ -128,27 +137,33 @@
     },
 
     "carrierMedium":{
-        "uw_eos_cabal_cus":10,
+        "uw_eos_cabal_cus":5,
+        "uw_eos_cabal_tri":5,
     },
 
     "phaseSmall":{
-        "uw_afflictor_cabal_cus":10,
+        "uw_afflictor_cabal_cus":5,
+        "uw_afflictor_cabal_tri":5,
 
         "uw_scythe_cs":3,
         "uw_scythe_eli":3,
         "uw_scythe_sta":4,
     },
     "phaseMedium":{
-        "uw_harbinger_cabal_cus":10,
+        "uw_harbinger_cabal_cus":5,
+        "uw_harbinger_cabal_tri":5,
     },
     "phaseLarge":{
-        "uw_doom_cabal_cus":10,
+        "uw_doom_cabal_cus":5,
+        "uw_doom_cabal_tri":5,
     },
 
     "personnelMedium":{
-        "uw_starscream_cus":10,
+        "uw_starscream_cus":2.5,
+        "uw_starscream_tri":2.5,
     },
     "linerMedium":{
-        "uw_starscream_cus":10,
+        "uw_starscream_cus":2.5,
+        "uw_starscream_tri":2.5,
     },
 }

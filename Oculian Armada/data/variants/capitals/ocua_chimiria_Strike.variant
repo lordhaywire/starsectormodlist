@@ -1,0 +1,82 @@
+{
+  "variantId": "ocua_chimiria_Strike",
+  "hullId": "ocua_chimiria",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 4,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_pixelplux"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ocua_sazanami",
+        "WS0003": "ocua_sazanami",
+        "WS0004": "ocua_sazanami",
+        "WS0005": "ocua_sazanami"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BK 01": "ocua_nicor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_prima",
+        "WS0007": "ocua_prima",
+        "WS0010": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "BW 04": "ocua_glint",
+        "BW 05": "ocua_glint",
+        "BW 06": "ocua_glint",
+        "BW 07": "ocua_glint",
+        "BW 08": "ocua_glint",
+        "BW 09": "ocua_glint",
+        "BW 10": "ocua_glint",
+        "WS0008": "ocua_blita",
+        "WS0009": "ocua_blita"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 01": "ocua_chimiria_m_l_Support"
+    },
+    {
+      "SM 02": "ocua_chimiria_m_r_Support"
+    }
+  ],
+  "wings": [
+    "ocua_breeze_elite_wing",
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_elite_wing",
+    "ocua_cancer_elite_wing"
+  ]
+}

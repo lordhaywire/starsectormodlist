@@ -1,34 +1,34 @@
 {
-  "displayName": "Strike",
-  "fluxCapacitors": 10,
-  "fluxVents": 5,
-  "goalVariant": false,
-  "hullId": "prv_fasnod",
-  "hullMods": [
-    "fluxcoil"
-  ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 2,
   "variantId": "prv_fasnod_strike",
+  "hullId": "prv_fasnod",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "adaptive_coils"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
         "WS0001": "amblaster",
         "WS0002": "amblaster",
-        "WS0006": "amblaster"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_sipdlaser",
-        "WS0004": "prv_sipdlaser"
+        "WS0003": "pdburst",
+        "WS0004": "pdburst"
       }
-    }
+    },
   ],
+  "modules": [],
   "wings": []
 }

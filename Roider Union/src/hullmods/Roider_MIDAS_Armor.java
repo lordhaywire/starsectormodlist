@@ -8,9 +8,9 @@ import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.impl.campaign.ids.HullMods;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
-import data.scripts.util.MagicIncompatibleHullmods;
 import ids.Roider_Ids.Roider_Hullmods;
 import java.util.*;
+import org.magiclib.util.MagicIncompatibleHullmods;
 
 // Copied from SCY_armorChild and modified
 
@@ -263,7 +263,6 @@ public class Roider_MIDAS_Armor extends BaseHullMod {
         BLOCKED.add(HullMods.EXPANDED_CARGO_HOLDS);
         BLOCKED.add(HullMods.EXPANDED_DECK_CREW);
         BLOCKED.add(HullMods.EXTENDED_SHIELDS);
-        BLOCKED.add(HullMods.ESCORT_PACKAGE);
         BLOCKED.add(HullMods.FAULTY_GRID);
         BLOCKED.add(HullMods.FLUXBREAKERS);
         BLOCKED.add(HullMods.FLUX_COIL);

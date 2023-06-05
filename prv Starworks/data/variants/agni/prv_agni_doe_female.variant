@@ -7,10 +7,7 @@
   "fluxVents": 5,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [
-    #"nav_relay",
-    #"heavyarmor"
-  ],
+  "hullMods": [],
   "weaponGroups": [
     {
       "autofire": false,
@@ -33,7 +30,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS0008": "prv_agni_teeth",
-        "WS0009": "prv_agni_teeth",
+        "WS0009": "prv_agni_teeth"
       }
     },
     {
@@ -41,8 +38,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS0003": "prv_agni_spines",
-        "WS0004": "prv_agni_spines",
-        "WS0005": "prv_agni_spines",
+        "WS0005": "prv_agni_spines"
       }
     },
     {
@@ -50,9 +46,16 @@
       "mode": "LINKED",
       "weapons": {
         "WS0010": "prv_agni_flamelash",
-	  "WS0011": "prv_agni_flamelash",
+        "WS0011": "prv_agni_flamelash",
         "WS0018": "prv_agni_flamelash",
         "WS0019": "prv_agni_flamelash"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_agni_spore"
       }
     },
     {
@@ -64,7 +67,7 @@
         "WS0014": "prv_agni_eye",
         "WS0015": "prv_agni_eye",
         "WS0016": "prv_agni_eye",
-        "WS0017": "prv_agni_eye"
+        "WS0017": "prv_agni_eye",
       }
     }
   ],

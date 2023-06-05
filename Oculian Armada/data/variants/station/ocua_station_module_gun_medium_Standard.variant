@@ -1,0 +1,54 @@
+{
+  "variantId": "ocua_station_module_gun_medium_Standard",
+  "hullId": "ocua_station_module_gun_medium",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_shizukesa",
+        "WS0002": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_nicor",
+        "WS0004": "ocua_nicor"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ocua_fairy"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_fouette",
+        "WS0007": "ocua_fouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_glint",
+        "WS0009": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -7,28 +7,19 @@
   "height": 200,
   "width": 240,
   "center": [120, 95.5],
-  "collisionRadius": 151.5,
+  "collisionRadius": 140,
   "shieldCenter": [0, -0],
-  "shieldRadius": 150.5,
+  "shieldRadius": 135,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "eccm",
     "prv_ramshield"
   ],
   "builtInWeapons": {
     "BI01": "prv_kraka_auto",
-    "prv_ramshield": "prv_u_ramshield"
   },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, 0]
-    },
     {
       "id": "BI01",
       "size": "LARGE",

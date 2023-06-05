@@ -20,8 +20,8 @@
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 002": "sabot",
-        "WS 003": "sabot_single"
+        "WS 002": "prv_blaster_charge_rack",
+        "WS 003": "prv_blaster_charge_rack"
       }
     },
     {

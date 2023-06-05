@@ -1,0 +1,36 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_blocker_right",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_blocker_right_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_shotcannon_s",
+        "WS0004": "xlu_shotcannon_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dualflak"
+      }
+    }
+  ],
+  "wings": []
+}

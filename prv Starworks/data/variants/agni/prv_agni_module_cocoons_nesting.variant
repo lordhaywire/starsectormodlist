@@ -13,16 +13,16 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 000": "prv_agni_pureflame_lance",
-        "WS 004": "prv_agni_pureflame_lance"
+        "WS 000": "prv_agni_cyst",
+        "WS 004": "prv_agni_cyst"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 008": "prv_agni_spines",
-        "WS 009": "prv_agni_spines"
+        "WS 008": "prv_agni_spore",
+        "WS 009": "prv_agni_spore"
       }
     },
     {
@@ -52,7 +52,7 @@
   ],
   "modules": [],
   "wings": [
-    "prv_agni_scale_wing",
+    "prv_agni_down_wing",
     "prv_agni_down_wing"
   ]
 }

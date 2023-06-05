@@ -1,6 +1,6 @@
 {
   "displayName": "Elite",
-  "fluxCapacitors": 17,
+  "fluxCapacitors": 23,
   "fluxVents": 30,
   "goalVariant": false,
   "hullId": "prv_hornfels",
@@ -25,16 +25,16 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0008": "heatseeker",
-        "WS0013": "heatseeker"
+        "WS0008": "prv_blaster_charge_rack",
+        "WS0013": "prv_blaster_charge_rack"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "reaper",
-        "WS0010": "reaper",
+        "WS0009": "hammer",
+        "WS0010": "hammer",
       }
     },
     {
@@ -43,6 +43,12 @@
       "weapons": {
         "WS0001": "heavymortar",
         "WS0002": "heavymortar",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "ionpulser"
       }
     },
@@ -51,8 +57,14 @@
       "mode": "LINKED",
       "weapons": {
         "WS0004": "lightdualac",
-        "WS0005": "vulcan",
         "WS0005r": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
         "WS0006": "vulcan",
         "WS0007": "vulcan"
       }

@@ -1,0 +1,236 @@
+{
+  "hullName": "Bay",
+  "hullId": "xlu_rhodochrosite_rear",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_rhodochrosite/xlu_rhodochrosite_rear.png",
+  "style": "MIDLINE",
+  "height": 138,
+  "width": 270,
+  "center": [135, 62],
+  "collisionRadius": 183,
+  "shieldCenter": [-3, -0],
+  "shieldRadius": 156,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_baseless_module",
+    "xlu_closed_shell",
+    "xlu_LinkedHull",
+    "xlu_extensive_logistics",
+    "reduced_explosion",
+    "always_detaches",
+    "hbi"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [-27, 83]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [-27, -83]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 90,
+      "locations": [-34, 114]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -90,
+      "locations": [-34, -114]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [16, 108]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [16, -108]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [33, 82]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [33, -82]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        5, 13,
+        22, 13,
+        36, 13,
+        5, 6,
+        22, 6,
+        36, 6
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        5, -6,
+        22, -6,
+        36, -6,
+        36, -13,
+        22, -13,
+        5, -13
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [76, 80],
+      "length": 36,
+      "width": 10,
+      "angle": 0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [76, -80],
+      "length": 36,
+      "width": 10,
+      "angle": -0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [76, 86],
+      "length": 32,
+      "width": 10,
+      "angle": 0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [76, -86],
+      "length": 32,
+      "width": 10,
+      "angle": -0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [76, 74],
+      "length": 32,
+      "width": 10,
+      "angle": 0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [76, -74],
+      "length": 32,
+      "width": 10,
+      "angle": -0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [62, 104],
+      "length": 32,
+      "width": 10,
+      "angle": 0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [62, -104],
+      "length": 32,
+      "width": 10,
+      "angle": -0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [62, 112],
+      "length": 32,
+      "width": 10,
+      "angle": 0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [62, -112],
+      "length": 32,
+      "width": 10,
+      "angle": -0,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    46, 40,
+    0, 48,
+    29, 68,
+    73, 73,
+    73, 86,
+    53, 98,
+    59, 108,
+    38, 130,
+    -52, 126,
+    -55, 60,
+    -40, 32,
+    -40, -32,
+    -55, -60,
+    -52, -126,
+    38, -130,
+    59, -108,
+    53, -98,
+    73, -86,
+    73, -73,
+    29, -68,
+    0, -48,
+    46, -40
+  ]
+}

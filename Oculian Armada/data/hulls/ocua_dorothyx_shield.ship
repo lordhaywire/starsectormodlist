@@ -1,0 +1,86 @@
+{
+  "hullName": "Shield Generator",
+  "hullId": "ocua_dorothyx_shield",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_dorothyx/ocua_dorothyx_shield.png",
+  "style": "OCULUS",
+  "height": 196,
+  "width": 184,
+  "center": [92, 99],
+  "collisionRadius": 172,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 164,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_baseless_module"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "S 1",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-1, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-1, 47]
+    },
+    {
+      "id": "LIT 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-1, -47]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -27, 42,
+    -70, 62,
+    -89, 55,
+    -79, 73,
+    -66, 86,
+    -30, 87,
+    -48, 78,
+    -26, 55,
+    22, 55,
+    48, 78,
+    26, 88,
+    62, 87,
+    74, 80,
+    79, 48,
+    66, 62,
+    24, 42,
+    24, -42,
+    66, -62,
+    79, -48,
+    74, -80,
+    62, -87,
+    26, -88,
+    48, -78,
+    22, -55,
+    -26, -55,
+    -48, -78,
+    -30, -87,
+    -66, -86,
+    -79, -73,
+    -89, -55,
+    -70, -62,
+    -27, -42
+  ]
+}

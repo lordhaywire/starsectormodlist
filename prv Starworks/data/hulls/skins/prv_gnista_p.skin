@@ -5,18 +5,12 @@
 	"descriptionId":"prv_gnista",
 	"descriptionPrefix":"A common modification of the Gnista, augmenting its firepower with a rapid-firing pulse laser.",
 	"tags":["prv_pirate_bp"],
-	#"tech":"Pirate (prv)",
 	"tech":"Pirate",
 	"restoreToBaseHull":false,
 	"ordnancePoints":25,
-	#"fleetPoints":11,
-	"baseValueMult":1.25,
+	"baseValueMult":1,
 	"spriteName":"graphics/prv/ships/prv_gnista_p.png",
 	"systemId":"flarelauncher",
-	#"removeWeaponSlots":["WS0007"], 		# ids
-	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
-	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
-	"removeBuiltInWeapons":[], 		# weapon slot ids
 	"weaponSlotChanges":{
 	   "WS0001":{
 		  "type": "BALLISTIC",
@@ -28,7 +22,6 @@
 		  "arc":  75,
 	   },
     },
-	#"builtInMods":["degraded_engines","faulty_grid","unstable_injector"],
 	"builtInWeapons":{
 		"WS0003": "prv_hfl_array_single",
 	},

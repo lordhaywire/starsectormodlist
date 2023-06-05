@@ -25,9 +25,8 @@
 		},
 		
 	"raiderBaseTypes":{ # OPTIONAL String -> Float map, orbital station industry ID -> pick weight, default always low-tech
-		"prv_station1":1,
-		"orbitalstation":2,
-		"orbitalstation_mid":1,
+		"prv_station1_rb":3,
+		"prv_station2_rb":1,
 		},
 		
 	"raiderBaseConditionsAndIndustries":[ # OPTIONAL List<String>, default “Frontier”, “No Atmosphere”, “Population”, “Spaceport”, “Military Base”, “Orbital Works”
@@ -36,7 +35,7 @@
 		"population",
 		"spaceport",
 		"militarybase",
-		"prv_rb_pirate_2",
+		"prv_rb_syndicate_network",
 		"orbitalworks"
 		],
 

@@ -1,0 +1,20 @@
+{
+	"id":"ocua_Arc_Cognition",
+	"governingAptitude":"technology", # why not
+	"compressHullmods":false,
+	"scope":"GOVERNED_OUTPOST",
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+				{"type":"CHARACTER_STATS", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level1"},
+				{"type":"CHARACTER_STATS", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level2"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level3"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level4"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level5"},
+				{"type":"GOVERNED_OUTPOST", "script":"data.scripts.campaign.skills.ocua_Arc_Cognition$Level6"},
+			]
+		},
+	],
+}

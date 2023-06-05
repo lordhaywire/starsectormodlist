@@ -1,7 +1,7 @@
 {
-  "displayName": "Support",
+  "displayName": "Assault",
   "fluxCapacitors": 0,
-  "fluxVents": 20,
+  "fluxVents": 0,
   "goalVariant": false,
   "hullId": "mule_luddic_path",
   "hullMods": [
@@ -25,13 +25,6 @@
       "weapons": {
 	  "WS 001": "heavymg"
 	  }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS 005": "vulcan"
-      }
     }
   ],
   "modules": [],

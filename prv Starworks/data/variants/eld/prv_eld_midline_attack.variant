@@ -23,16 +23,16 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WSML01": "heatseeker",
-        "WSML02": "heatseeker"
+        "WSML01": "breach",
+        "WSML02": "breach"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "arbalest",
-        "WS0006": "arbalest"
+        "WS0005": "heavyac",
+        "WS0006": "heavyac"
       }
     },
     {

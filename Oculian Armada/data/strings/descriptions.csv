@@ -1,0 +1,464 @@
+id,type,text1,text2,text3,notes
+ocua_pirouette,WEAPON,"The smallest Laser-Canister weapon of its kind, the Pirouette is for those who require constant stream of projectiles with little footprint for firing reserves.
+
+While nowhere near the damage potential of the Prima, the Piroutte is made due to its purpose of being an autocannon replacement for the Oculians as their resources for ballistics are used elsewhere, other than bullets.",Close Support,,
+ocua_glint,WEAPON,"The basic weapon of every Oculian vessel, the Glint boasts great efficiency and accuracy through its miniscule damage output.
+
+Not particularly a fond weapon to use, especially when there are more capable weapons that can clear out military devices that were hardened for many cycles, a foreign weapon from a particularly old but familiar age. Where it stands, though, it manages to compete with various point-defense equipment due to its precise capability of disarming missiles mid-flight with its ancient, but high-end emissions of light.",Point Defense,,
+ocua_shiredain,WEAPON,"This alternative refit of the Antimatter blaster is made with impressive efficiency in mind, unloading less energy with more output in reserve. The Shiredain, as what the armada called, is adept at generating firing solutions in their compliment.
+
+The Shiredain takes complexity off the original Antimatter blaster by trading in low energy costs and high ammunition capacity against the original's significant burst output. This integration is well-suited to Oculian crafts that produce less energy than that of traditional ships in the Sector; coupled by their high mobility, the Shiredain, when fired in groups, can be used to harass even the most prepared ships.
+
+Very effective against any target.",Strike,,
+ocua_fouette,WEAPON,"A solidly built Laser-Canister projector that trades off simplicity and efficiency over additional firepower.
+
+Introduced by the Oculian Armada as their maintaining a foothold on Haelim along with the pirates assisting them against growing Tri-Tachyon advance, since none of the earlier energy devices were powerful enough to meet the military response.",Close Support,,
+ocua_kea,WEAPON,"Composed of an intentionally fractured lens and a powerful battery charge, this weapon can generate a flash pulse so potent that it punches anything within the general direction of the barrel.
+
+Also known as Flash cannons, as the name is scribed in the vein of flashlights, weapons like it would not be possible without breaking or, if not, recreate the laws of Physics through brutish computational power of the Oculian Armada. The Kea was one of the known earliest iterations of such technology, using a small ion core, radiating highly within a confines small tubular crystal. The energy is then expanded through the forementioned lens in a short, wild burst with such intensity that the lasers emitted could collide to solid objects with actual force.",Anti-Fighter,,
+ocua_mi_frappe,WEAPON,"The advanced refinement of the Laser-Canister technology of the armada, this weapon has a very demanding calculation input but with a destructive return.
+
+The first of its kind for the so-called Mikanate protocol the Oculian Armada had set up in the 200th Cycle, the Frappe is a powerhouse of a weapon that truly defy the laws of physics by having a greater damage output from a much smaller battery reserve.
+
+While a powerful computer is still needed to calculate the ""perfect"" formula to generate the energy pulses, the laser weapon is easily accepted into any Oculian vessel that can compute the blockchain.",Close Support,,
+ocua_shena,WEAPON,"An unconventional use of crystals as of means to disable electronic devices from afar. This basic projection battery is honed for its reliable discharge that would render ion weapons of its size redundant.
+
+Speculations of an advanced quartz battery discharge were proven the moment weapons like the Shena classification were put to service by the Oculian armada. While not particularly as potent as true ion-based weaponry, the contents of its quartz crystals have achieved something very surreal about its otherwise unusuable properties in the heat of battle. Concentrated piezoelectric charges help contain the electromagnetic charge long enough to make through what would easily disperse an ionic pulse and even maintain its high frequency before meeting the target for the electromagnetic pulse.
+
+A stuff that is very unreal to understand but from a maniacal AI that is capable of harnessing such a resource.",,,
+,,,,,
+ocua_prima,WEAPON,"The support compliment of every warship in red, Prima holds as a weak but accurate flow of energy that disrupts its unfortunate victims with its bizzare laser pulse technology.
+
+One of the first integrated designs when the Oculian Armada appeared to the human sector. An outcry of low-emission energy weapons dispatched by self-proclaimed ""Arc Mother"", all thanks to unwitting remnants of the Domain wars.",Close Support,,
+ocua_mi_stredia,WEAPON,"A powerful mid-range weapon that has the ability to charge a shot that throws its opponents in disarray, this Laser Canister cannon deceitfully portray its weaker sibling for an unexpected firing solution.
+
+To simply put, this weapon has been modified to charge excessive power; an additional capacitor that is accompanied by the Prima's basic components at a more advanced, minituarized scale. Such new minituarization technology of Oculian electronics became more rampant when Adalie's research facility shown a greater heat signature as time passes.
+
+Fit for more modern Oculian vessels that are still rarely seen in the current state of the sector. Though it is possible these may eventually become common. Especially when rumors about Tri-Tachyon suspected to develop new weapons or henious plots behind the scenes.",Close Support,,
+ocua_pixie,WEAPON,"Easily described as the vagrant's plasma cannon, the Pixie is hailed as the most available method of unloading high-intensity masses with smallest amount of energy possible.
+
+A laughable efficiency design that initially puts off to experienced gunners on its introduction. Its unaccounted rise in the Oculian arsenal made the aforementioned gunners into a fray. The Pixie plasma cannon is prized by most pirates whoever can install a moderate energy setup, as it does not overload power systems where the traditional Plasma cannon would have.",Assault,,
+ocua_blita,WEAPON,"A rapid hardlight cannon designed specifically to hunt down small targets with its extremely light but armor-piercing luminous projectiles.
+
+Not precisely a laser, but mystery surrounds it to an ionized bolt of solidified photons so dense that it breaks the atomic bonds of physical objects. The Blita hardlight cannon fires jets of these ionic pulses towards fighter crafts large enough to penetrate the hull then catalyze a short-circuit to adjecent electronics as it dissipates. Making such a weapon an odd but effective strike-craft killer.",Point Defense,,
+ocua_fairy,WEAPON,"A second-generation Oculian plasma weaponry, equipped with a twin barrel mount and an even more powerful reactor for deadlier output.
+
+More of a crude introduction as adding another barrel seemed appropriate for the pirates when they attempted to jam two Pixie cannons in one place.
+
+The Arc Mother noticed this attempt and decided to build it accordingly. The additional barrel would mean less cooling time and more power demand as an empty barrel would demand a charge. Thus, the Fairy was made.",,,
+ocua_kaina,WEAPON,"A battle-grade Flash cannon with an increased intensity and battery capacity, the Kaina is adept for short-mid ranged combat with great efficiency against strikecraft.",Close Support,,
+ocua_gleam,WEAPON,"Upscaled for concentrated firepower, the Gleam is typically carried by larger warships of the Oculian armada due to its reliable precision to take out armored torpedoes.
+
+Carrying the same flaws of the Glint laser cannon and more notably its strength as an anti-missile measure, the Gleam is essentially an equivalent of a microscope of the Glint comparison to a magnifying glass, taking advantage of its larger battery and a more potent crystal.",Anti-Fighter,,
+ocua_pixie_fighter,WEAPON,"An Oculian plasma cannon further miniaturized to fit into a fighter's chassis. While not as powerful, it can still blow a hole for other Oculian drones to finish off what is left.",Assault,,
+ocua_shecina,WEAPON,"The upscaled product of the Shena quartz delivery system, capable of firing a short hail of ionized crystals towards its general direction, disabling its targets reliably than its purely energy-based relatives.",,,
+,,,,,
+ocua_kurtina,WEAPON,"Understandably the weakest beam weapon of its size, the Kurtina is an Oculian combat beam that provides fire support with the smallest energy footprint ever recorded in the Persean sector.
+
+A true traditional Laser weapon in the hands of the Oculian Armada since the Collapse. As the earliest cycles when Arc Mother was establishing a foothold on Atalie Pax, Kurtina was previously used in mining operations benefitting its low emission trait that none of the Persean scanners would detect. The Kurtina is maintains a very low energy input, distributed through its three seperate barrels with intricately aligned crystals to produce the beams.",Close Support,,
+ocua_leia,WEAPON,"Many consider this as the shoddy autopulse cannon, the Leia happens to thrive in efficiency and sustainability where the original cannot.
+
+The Leia was immediately noticed as early on the Oculian conflicts when the first manned destroyers arrived for action. Short, but powerful bursts of energy endlessly pulsing within the sights of thermal detection sensors as the Hegemony fought on to claim what little territory they have on Haelim.",Assault,,
+ocua_mi_manndie,WEAPON,"A near-perfected Laser canister weapon, with the capacity to materialize photon discharges to shatter within its victims. The Manndie pulse cannon is the Mikanate mainstay weapon that excels in crippling its enemies with its walls of hardened light.
+
+After countless successes from the Leia laser canister cannon, a new variant had to be developed in order to maintain combat competitiveness against an ever evolving threat. The Manndie program was put to work which fabricated what is effectively a solid piece for the Oculian arsenal.
+
+Three barrels, more photon compressors and an advanced targeting system allowed such a weapon to perform even at the most stressful environments. Pirates took it as more of an effective conventional weapon than what Tri-Tachyon would ever put on the market but often fell short for its terrible calculation requirements. ",Assault,,
+ocua_ruby,WEAPON,"An even stronger hardlight weapon, repurposed with a goal of targeting large vessels over a longer distance, the Oculian Ruby as fondful poking tool made for the sadistic red gremlins.
+
+Surprisingly, its secret lies heavily on how the barrel forces the weightless projectile out of its cylinder similarly how a physical bullet is propelled by conventional propulsion. The Armada had made sure that the amount of energy given to each shot is precisely at the right level, which is virtually inconceivable through handmade calculations.
+
+Despite its exclusivity as an Oculian weapon, any ship who can get their hands on such a device. When it does, it can throttle as much piercing hardlight to any target with little punishment as possible from their own shooter.",Fire Support,,
+ocua_freya,WEAPON,"The penultimate conclusion of the Pixie-plasma series, the Freya is simple but powerful weapon with the intention of ejecting loads of hot plasma within its general vicinity.
+
+As if a small battery section of plasma cannons is already too much to take in, a singular but rotary platform of the entire section is produced to replicate the entire arsenal in the guise of one weapon. The Freya successfully fulfills its role as an aggressive option for captains who choose to go all in with their power design and throw as much damage to the enemy as they could think of.
+
+Clearly a design that pirates suggested over the decoded lines when going through their recent raids with the Armada.",Assault,,
+ocua_vira,WEAPON,"An industrialized step-up of the Oculian kinetic laser technology, the Vira can rip through the toughest of fighters with powerful high-intensity pulses.
+
+A design fit for battleships that have to compete with carriers whom possess a varying degree of fighter compliments and corvette escorts where its smaller counterpart begin to fail its role, this weapon uses the same bolt firing systems with the extension battery charges to maintain its power over time.",Point Defense,,
+ocua_katalina,WEAPON,"A massive battery of high-disperse laser cannons, the Katalina is designed as a cost-effective solution to spaceborne group clearing.",Close Support,,
+ocua_glistal,WEAPON,The Glistal is rigged to a deadly barrage setting due to its redundant design of synchronized high-powered lasers.,Strike,,
+ocua_nicor,WEAPON,"A triple-barrel plasma cannon, Nicor is designed for mainline warships to quickly unload accurate energy charges without straining its power systems.",Strike,,
+,,,,,
+ocua_pixel,WEAPON,"This lightweight torpedo mount is built for its disposability, a universally adaptable torpedo that requires nothing more but a small power source and a launch point.
+
+Built with a dumb-AI drone installed, a Pixel can fly straight into the fray without any substantial consequence as the payload is too minimal to even be an effective weapon in the eyes of the defender.",Strike,,
+ocua_shizuka,WEAPON,"A weapon system that boasts possibly the lowest yield of guided projectiles in its kind with the fastest and most efficient missile projection possible.
+
+What size is almost essentially lobs of personal handheld grenades throttled by morbidly cheap thrusters makes the Kaze-family an eccentric example of Oculian military engineering. Mass produced by the millions, Kaze-missile launchers are able to split into three variants which the Oculians can use enmasse.
+
+It was almost like the past has come back to haunt the modern days.",Close Support,,
+ocua_sazanami,WEAPON,"Disposable, mid-yield guided missile rack, meant to generate weakspots for other Oculian weapons to unload at.
+
+Much like its torpedo variant, this guidance-boosted missile system comes with a replacable rack and loader that compensates its low-grade design. This device so small compared to other launchers that allows a freedom of four explosive units instead of three.",Close Support,,
+ocua_resel,WEAPON,"Rapidly-grown crystals at their poorest quality do not go to waste thanks to the rocket's lightweight assembly system. The smallest unit of the Resel series allows an ease of means to unload such destructive crystals to its target.
+
+Not too long after mining procedures finished within the Adalie's inner crust, crystal farming went to full production to accomodate the supposed loss in time for military applications to reach cruiser doctrines. Such process of growing crystals in deep metal recycling often produces weak, unlinkable lenses that do little for laser amplification. With so much crystals in a poor state, the development to repurpose them obviously came to mind.
+
+One of the options was laser fractalization such weapons like the Kea was able to fulfill in great success. The other is the Resel, an improvised missile technology that forego the use of electronics for guidance and is instead loaded with worthless crystals then launch them against a target with expectations of it being destroyed from within. At first, it seemed an amusing suggestion, but then it managed to succeed on what it meant to do. As electronics of the opposing Tri-Tachyon ships implode, as crystals shatter and began rupturing vital components that inevitably led to their destruction.",General,,
+ocua_kilopixel,WEAPON,"An upscaled torpedo with the payload and tracking capability to match. Powerful enough to expose a large firepoint and do considerable damage.
+
+Mikanate Kilopixels, while simple to reproduce in an assembly matrix, has been a weighty logistics issue for many Oculian captains. Its mass alone, due to its payload being a major contributor, is enough to even make the largest ships notice a center of mass difference once the torpedo is loaded.",Strike,,
+,,,,,
+ocua_pixelplus,WEAPON,"A properly fixated payload delivery system, this Plus variant unloads Pixels at a steady degree to ensure a proper charge can deliver effective blows.",Strike,,
+ocua_shizukesa,WEAPON,"Coupled in a pair more, this propelling explosive launcher system is built to overload anti-missile systems and anticipate fighters with additional lobs.",Close Support,,
+ocua_suzuya,WEAPON,"A larger yet still disposable, low-yield guided missile rack, aimed for the purpose of maximized ballistics efficiency.
+
+An outrageous design of 16 missiles on an external rack makes the Suzuya a popular weapon choice for low-grade pirates who are stingy enough to keep an active missile array while putting strain on other weapon types. Due to its below average yield, both economically and physically, the Suzuya is doomed for the status but is never disregarded as a reasonable threat not to be pointed at with.",Close Support,,
+ocua_reselplus,WEAPON,"A moderate-scale Crystal payload launcher akin to the Annihilator rocket pod, this variant punishes poorly armored ships with its constant flow of unguided fragmenting rockets.
+
+Not much was mentioned after industrializing crystal growth not just on Adalie but for the rest of the system. New technology that allows microassembly of crystals allowed the Plus unit of the Resel to materialize. While not as powerful as the commercial factories on colonies, the unit is capable of replacing used crykets within a short timespan.",General,,
+ocua_macroxel,WEAPON,"A very large payload mix of crystals and explosives loaded into an armored shell of a torpedo. This weapon is made to inject its destruction upon a helpless vessel with a volume to match its resolution.
+
+Easily confused as an oversized Pixel torpedo, this crystal-infused warhead does little to punch armor. Moreover, it does its destruction by widening the hole of the weakened bulkhead of the larger vessels. Its also worth noting about its survivability, thanks to its payload being crystals, the Macroxel is solid enough to withstand the opposing forces with such heavy point defenses.
+
+The Oculian Armada seeks to minituarize this weapon as it provides a breathing room for cornered fleets as well, as fighters turn in horror were soon to discover a ring of crystal shards overwhelm their visuals when attempting to force a perimeter on a likely Oculian vessel.",Finisher,,
+,,,,,
+ocua_pixelplux,WEAPON,"Twin-launcher module that unloads multiple torpedoes at a sustained burst, the ++ variant of the Pixel ensures nothing will be left out a chance without getting a hit by this weapon.
+
+Using an industrial clip-magazine system that injects the necessary ammunition within the launcher grants the needed firing speed for any middle-class ship that can accomodate the load. And due to its simplicity in design, computers can easily integrate the mount surprisingly as if it were a small weapon.
+
+It is cheap, easy and designated to be an aggressive weapon, the user of the Pixel Plus can plough through the battlefield without wasting necessary logistics.",Strike,,
+ocua_shimakaze,WEAPON,"The plethora launcher of hand-sized missiles, the speed of the Shimakaze launcher componsates its pitiful explosive yield with degrees a proper barrage would be sent flying.",Close Support,,
+ocua_voxel,WEAPON,"A long-ranged MIRV with an awkward array of dazzling missiles. The Voxel has proven to be a useful deterrent tool to ensare the target with curving micromissiles that irritates defensive systems that leaves a critical opening.
+
+Often been laughed at in its earliest, the Voxel is seen as a fireworks display than a lethal threat to be desired. Little known did this Cyclone-replicant was capable of is to flash their enemies with a mild nuisance of explosives across the intended target.
+
+In this wake, the Oculian drones can set their advance to the confused victim, as shield systems struggle to depict the real target as missiles frantically fly around it, right before it was too late. Bright pink flaring torpedoes have already hit their mark, leaving what remains of the hulk a few inches closer to its destruction.",Support,,
+ocua_macroxelplus,WEAPON,The + variant of the reliable explosive crystal torpedo. This potentially nightmarish warhead pod is industrialized for its purpose to clear a path from fighter squadrons or sadistically destroy runaway vessels.,Finisher,,
+,,,,,
+ocua_flandrey,WEAPON,"A powerful beam technology that blazes through the endless skies, a single Flandrey is enough to irradiate a frigate in seconds through its size and oddity.
+
+Harnessing its energy through not massive crystals but by a wide collection of glass-like belts that forces light to loop long for the intensity to generate enough kinetic energy to be unleashed in its opening, the Flandrey is more of a work of art than out of pure engineering. Its massive motors assist the turret in keeping the belts from loosening its light charge as it continues to fire the massive beam batteries.
+
+Virtually unsalvageable by design, the Flandrey keeps its complex components tightly knit that pirates who try to dissamble instantly breaks upon opening, mostly by its vacuum configuration or its automated trigger mechanism if ever reverse engineering becomes a necessity.",Assault,,
+ocua_sagulum_elizabeth,WEAPON,"Permanently mounted Kurtina beam arrays that can cover the width of a typical frigate, this Sagulum prototype is mounted on the Elizabeth to maintain engagement against an otherwise open perimeter.",Close Support,,
+ocua_luna,WEAPON,"One of the largest weapon of the Oculian arsenal, the Luna uses full-blown electric batteries to decimate its enemies with its massive discharge.
+
+Local pirates call them ""the Mother's eyes"" as blinding flashes of light hit flagships with such force, victims watch in awe at their destruction. The Luna hardly makes an appearance in smaller ships due to its huge weight and bulky reactors to power the device, but such a weapon will often be used in attempts to overpower forces that would be too strong without, such as a Hegemony or the Tri-Tachyon.",Strike,,
+ocua_galalixia_rack,WEAPON,A rudimentary design combined with a massive factory that supplies a seemingly bottomless ordinance allows the Galalixia to push through a fleet with a hail of guided missiles.,Pressure,,
+ocua_lamella_station,WEAPON,"Also known as the Death Wall to some pirates, the Lamella is a station-mounted weapon that throws the attacker in disarray with its slow but powerful wall of plasma.",Pressure,,
+ocua_alterima,WEAPON,"Carried by the heavy weapons platform Dulcena, this rotatable missile launcher comes with a replenishable flow of ordinance which enables its deadly potential.",Finisher,,
+ocua_pixel_cancer,WEAPON,"This lightweight torpedo mount is built for its disposability, a universally adaptable torpedo that requires nothing more but a small power source and a launch point.",,,
+ocua_kilopixel_cancer,WEAPON,"An upscaled torpedo that accepts the Cancer carriage section in mind. Unlike its smaller variant, this torpedo has better targeting and thruster systems and a durable casing to ensure its purpose.",,,
+ocua_fouette_tick_d_left,WEAPON,"A resized Laser-Canister projector to fit into the Tick's chassis, capable of firing a continuous stream of pulse lasers in its general direction.",,,
+ocua_fouette_tick_d_right,WEAPON,"A resized Laser-Canister projector to fit into the Tick's chassis, capable of firing a continuous stream of pulse lasers in its general direction.",,,
+ocua_fouette_tick_left,WEAPON,"Empowered by its calculative Oculian pilot, this cannon can fire a steady pace compared to its export variant.",,,
+ocua_fouette_tick_right,WEAPON,"Empowered by its calculative Oculian pilot, this cannon can fire a steady pace compared to its export variant.",,,
+ocua_frappe_tick_left,WEAPON,"Built to allow a Mikanate pilot to make use of its destruction potential, this resized pulse projector can make short work of its rivalling opponents.",,,
+ocua_frappe_tick_right,WEAPON,"Built to allow a Mikanate pilot to make use of its destruction potential, this resized pulse projector can make short work of its rivalling opponents.",,,
+ocua_shena_fighter,WEAPON,Compacted quartz cannon with a modified crystal collector and assembler suitable for the Loach series.,,,
+,,,,,
+ocua_chimly,SHIP,"The smallest carrier unit within the ranks of the Oculian Armada, the Chimly-class prides itself not only in its numbers, but also by its efficient logistics as an extremely low-end carrier.
+
+Oculian borders were thought to be thin due to the significant performance difference between their ships and Tri-Tachyon corporate vessels. Little did the megacorporation or Terran Hegemony expect a stretched security system, which happens to have stationed Chimlies by the hundreds lying in wait for their next salvage operation. Operated by an autonomous driver, the Chimly always runs at full capacity as a fully crewed carrier normally would. Its compact factories churn out Breeze fighters as the drones collect resources for its host ship. 
+
+An efficient vessel, but not necessarily effective on its own.",,,
+ocua_chimly_mi,SHIP,"A very unlikely possibility. This Chimly carrier harnesses its powerful production capacity through its small but very reliable upgraded assembly matrix, that allows an escort of its own while it beats down its opposition.
+
+Recently referred by pirates as the Runt Hunter, this Chimly variant certainly made its title clear as it swarms its equally sized opponents with an amount of fighters that does not physically allow in human eyes. But thanks to its efficient assembly matrix, it can and will continue to be as long as the production lines are met with an equally demanding supply chain.",,,
+ocua_gretly,SHIP,"The earliest drone models ever seen on record, the Gretly-class has changed over time from a once lowly observation unit into an extremely low-cost, suicidal weapons platform. 
+
+A natural Oculian choice, the transition of the Gretly was not anticipated by the Hegemony upon their prolonged engagement with the Oculians, though not as much as others were during the first AI war. At first, the droned frigate would simply move past defenses, observe, then leave as data gathered or before oncoming pursuit by hostile units. Now, they move in at full speed, firing the largest payload this frigate could achieve and explode at a far greater yield larger than any frigate.
+
+Also known as the Frigate Killer, due to its incredible efficiency of laying waste to most ships of its own size; a simple drone design with a loaded battery cannon placed on top of it built from the cheapest components such as rapidly-fabricated plastic. As mundane as the pirates' Mudskipper variant could have wish succeeded.
+
+The Arch Mother publicly expresses its design to the pirates, astonished of what weapons it could have in the right hands. The Gretly may stand weak, but remains a bane to most of the unexpecting captains, even from the most hardened fleets.",,,
+ocua_gretly_mi,SHIP,Reinforced defensive systems with an improved weapons compatibility has turned this Gretly into a menace more ferocious than its own size. Unsuspecting admirals will struggle in fear should this drone platform remain in play for too long.,,,
+ocua_prily,SHIP,"More a corvette than a frigate, the Prily-class amasses an assortment of small weapons, fit for an automated gunner to be used in the field. Disposable and cheap, but utterly ruthless in the right hands and underestimated only by the foolhardy.
+
+The Prily is often mistaken as an oversized fighter with heavy weapons built on top of it. Thanks to the Oculian Armada's keen miniaturization techniques, the Prily can hold as many energy weapons as it can maintain its flux-levels with and carries on throughout its assigned missions.",,,
+ocua_prily_mi,SHIP,"More like the 'Prowler' for every Oculian fleet that can field one, this heavily outfitted Prily is built to compete high-end frigates in mind with its simple but staggeringly persistent low-end loadout.
+
+Ever since the failure of the Scaffoule project, that was ceased and scavanged which indirectly developed the Hyperion it is today for Tri-Tachyon, the Oculians decided to permit the last-ditched effort to 'fix' the problem. That effort was the Mikanization of the Prily.
+
+This powerful gunship was made that akins to both the Theia and the Hyperion frigate design structure, augmented with a much more superior core module to assist its shield calculations and the ability to overclock its primary processing. The upgraded bridgehead was settled to overcome the excessive momentum stress the additional mass and thruster power faulted on the chassis.
+
+The redesign was less than spectacular, but the results of the sent modded Prilies already outmanuevered the Hyperion with its raw speed and an exceedingly fragile bulkhead. A success, but from a cost of fighting an already stolen design.",,,
+ocua_huely,SHIP,"A recent discovery of what lies beyond perception, the Huely-class is a lightweight phase frigate that is very potentially responsible for most of the Oculian intelligence protocols conducted on a strategic scale.
+
+Unlike most current generation phase-craft, the Huely was designed unbeknownst even to the Tri-Tachyon Corporation, likely developed either from a stolen design or in complete discrete. Often undetected or mistaken as a pulse of unwarranted information, the Oculian-designed Huely has arguably the lowest energy profile conceived in the sector, powered by nothing more but an Ionic Power Core and chemical-based ion engines. 
+
+Such an astonishing high-tech ship bizarrely establishes how quite little the ship could even do in a direct fight, more suited to tactical strikes and flanking tactics.",,,
+,,,,,
+ocua_chimis,SHIP,"Flown by actual crew and its own captain under the Oculian flag, the Chimis-class is considered to be the first proper Oculian Armada carrier with a manned system, but with a much greater effectiveness.
+
+It was unknown at first when the Oculians infested the Persean Sector with automated drones at such great numbers that they were in fact sentient beings, as normally they would be mistaken for the automated [REDACTED] of the AI wars. Bolstering its power with a paired hangar and a weapon system of larger proportions, this loadout implies much for the Armada's attempts for a general expansion into the Persean Sector.
+
+Fighting the first vessels of this model have shown different behaviorial patterns, usually often fleeing upon the first few hits on their hulls. Signs of compromise have been shown in severe conditions. The first Chimis wreckage was shown to have signs of a struggle on what was considered to be the bridge of the ship.",,,
+ocua_chimis_mi,SHIP,"A modest upgrade for an already cost-effective carrier, this Mikanate variant comes with a unique package that easily turn this carrier into a warship when a certain demand rises for one.
+
+It is already an existing program since a decade of its construction, the Mikanate protocol comes with its intriguing development of high-end weaponry not even the Tri-Tachyon incorporate anticipated from an AI core that was previously instructed to feed the general population. Not even a word was mentioned of what happened to that same AI, now manifesting a humanoid body of the uncanny but familiar existence.
+
+When Adalie finally started to produce military response units, the decision of the program to upgrade them was setup hoping that it would not come to that point. It was until Tri-Tachyon decided to amass its forces on Hybrasil in order to curb the system and confiscate the evolving rogue. Now, such vessels exist, particularly in response to advanced threats that has a certainty to endanger the Arc Mother's existence.",,,
+ocua_sophis,SHIP,"A heavy response vessel of the Oculian Armada, the Sophis-class destroyer comes with its own modular platforms fitted with a wide degree of weaponry to be put into the heat of the fight.
+
+Tight configurations were spent on producing a hull allowing an open cavity that extends an even more flexible configuration, which can be built-in to the hull. Sophis-class destroyers are the bottleneck of any growing Oculian fleet due to such versatility.",,,
+ocua_lemphis,SHIP,"A radical design change heavily pursued for specialization, the Lemphis combat-ready design that takes away its mundane semi-modular hull to become a fully-fledged warship.
+
+Not so often an Oculian design would ran out of design configurations that easily meet the efficiency demands for certain tasks such as transport and mid-range escort. The Sophis, being one of the strongest examples, have fallen short on its role as a combat platform, easily taken out by larger ships in spite of its incredible agility even for its own class.
+
+The Lemphis program is assigned to remedy this issue. A deep retrofit of the Sophis bulkhead that includes a Mikanate protocol that greatly improves its basic role as a warship. Equipped with a spread out dissipation sinks and circulated shield-refraction plates, the Lemphis would later comes off as a powerful contender especially as a stand-off fighter against the likes of the Medusa-class.",,,
+ocua_sophis_b,SHIP,"An economic conversion of the Sophis destroyer, the ""B"" variant trades its standard arsenal with a volumetric fuel storage that enables longer travel through its simple, manueverable fuel exchanges.
+
+None of the basics of Oculian propulsion made sense upon the discovery of these vessels, as the schematics always suggest that they use ionic draws to propel the hull. Noting the fact that the drones, which hover in open air environments, share this engine design philosophy. A mystery always met with complete uncertainty.",,,
+ocua_sophis_c,SHIP,"An economic conversion of the Sophis destroyer, the ""C"" variant trades its offensive arsenal with an equally valuable cargo hold and an efficient logistics drone that maintains the majority of the ship and it's functions.
+
+It was rumored that vessels like these were used to conjoin relations with local pirates of the Persean Sector. The craft's loosened mobility allows faster escapes into hyperspace with little tension against the rupturing storms that haunt most larger vessels. Its economical configuration prevents requirements of any crew, which allows more space within the hull along with a powerful sorting mechanism and can theoretically easily hold more cargo than most of known ships of the same volume and role.
+
+A heavy response vessel of the Oculian Armada, the Sophis-class destroyer comes with its own modular platforms fitted with a wide degree of weaponry to be put into the heat of the fight.
+
+Tight configurations were spent on producing a hull allowing an open cavity that extends an even more flexible configuration, which can be built-in to the hull. Sophis-class destroyers are the bottleneck of any growing Oculian fleet due to such versatility.",,,
+ocua_sconis,SHIP,"The lithe vigor of any Oculian escort, the Sconis-class trades the Sophis assault configuration with battleship engines far beyond standard Persean Sector regulations.
+
+The Sconis has a vast configuration change over the Sophis design, thanks to the Armada's flexible assembly matrices. With this change and a reactor overhaul, the Sconis can be flown with any frigate wing whenever the captain chooses to deploy. While it is only lightly armed, it is also faster and can harass any civilian vessels with little to no consequences.
+
+A heavy response vessel of the Oculian Armada, the Sophis-class destroyer comes with its own modular platforms fitted with a wide degree of weaponry to be put into the heat of the fight.
+
+Tight configurations were spent on producing a hull allowing an open cavity that extends an even more flexible configuration, which can be built-in to the hull. Sophis-class destroyers are the bottleneck of any growing Oculian fleet due to such versatility.",,,
+ocua_maximis,SHIP,"A glaringly large threat at the heat of battle, the Maximis-class is the first truly unusual design the Oculians bare that carries not one, but two Large Energy weapons, each the size of an average destoyer.
+
+This ship was certainly inspired by pirates, with its loadout of a design. Its bulbous hull cannot hide its use of its powerful reactor,  but it allows its very large turrets to fire freely. With minimal defenses to cover its perimeter, the Maximis is preferably sitting on the sidelines, equipped with as many long-ranged weapons  it can be attached with.",,,
+ocua_doris,SHIP,"A true powerhouse relative to the power scale of every Oculian spacecraft known so far, the Doris-class has the potential to overextend where no other ship of its size or classification ever could.
+
+Equipped with two separate bridges which accomodate their own shield emitters, the Doris class destroyer is the embodiment of every known Oculian shield technology deployed in earnest. Its meek engine design betrays its actual mobility due to its lightweight plastic composites most ships usually have, coupled with emitters that keep even ships the harsh cruiser schools of the Domain away. The survivability and tactical prowess these ships display makes the Doris a force not to be taken lightly.",,,
+ocua_storkis,SHIP,"Designated as a combat transport, the Storkis has seen more action in combat due to its standard time dilating device that accelerates the process.
+
+Most Storkis vessels were not usually deployed outisde its primary design, a role that all of the Oculian sisters have experienced being in. Once a mysterious notion, this vessel was not known to be a time capsule, due to its simple and bulbous exterior much like most Oculian vessels at the time. But through closer inspection, it appeared to have been used for far longer than it supposed to, it even appeared to been there since before the Collapse.
+
+The inner workings of such a device implied a suspicious nature, a potential that may have utilized the laws of relativity as the ship has never seen combat but more over been sped up in time. Throughout its true purpose, a Storkis uses its time accelerator as the craft slows in a speed unrelative to the time dilation normally experienced in sector. Thanks to the shell's unique composition, the transport withstand the rapid aging process as time flows faster within. With this process, it had been discovered that this craft is definitively a time capsule through its own intention with interiors that permit long-term habitation. And by that, it wasn't long until the pirates knew what happened when the first crafts successfully returned to Adalie.
+
+Vacuum chambers, living spaces and virtual training areas may suggest that the sisters grew here. As time slows for everyone outside the craft, its inhabitants were released and underwent programs that would result to these soldiers, seen in action, in a much smaller time frame. While these same Storkis models may have been retrofitted for personnel transport, its former inhabitants of the ship felt a slight unease as their childhood memories now fly out of the shipyard for much more enduring tasks.",,,
+ocua_tsundere,SHIP,"An unusual conversion of Oculian technology that excels on frontal support and assault roles, the Tsundere-class benefits its lighter package with increased speed and efficiency. 
+
+Apparently, this Sunder design was appears to be of Hegemonic origins, but whether or not it was an act of betrayal or some twisted piracy that grants the Oculians technology for such a closely guarded design. At their earnest, an officer, managed to maintain anonyomity, was obliged on that goal and went with a message which was uncovered from the hull's wreckage:
+
+""I cannot say much for what you twisted abonimations have been doing. And how much it has changed since you arrived in this God-forsaken sector. But for what you, and your godawful mother, have done is very inconceivable and an unwanted blessing. While this may not affect our relationship as a whole, may this be a reminder that we are of neutral terms. It's not like we would appreciate any future endeavors or anything.""",,,
+,,,,,
+ocua_chimex,SHIP,"The third iteration of the Oculian carrier technology, the Chimex class is built both to last the tough environment and to sustain a flow of strike-craft akin to numbers greater than its own size.
+
+As with each carrier iteration being rolled out, the Arc Mother worries deliverance efforts have become more expensive due to the scale of the newer, larger ships that come out of the Oculian shipyards, along with their respective maintenance upkeep and the Oculian sister clones that each require their own sustenance and personal routines to before undergoing certain tasks.
+
+It was that day forward where most of the Oculian vessels would come with its own factory line for its own on-board crew that lessen the upkeep costs, through remote material mining and harvesting. Paired with larger antimatter tanks and more efficient ion drives, the redesigned ships lose some combat performance, but only to be mitigated by their incredible mobility that the renewed ion drives provide.
+
+Essentially, most Oculians ships today would become semi-permanent residences for most Oculians and a few pirates, later whom decided to lose their necessity requisite loot and simply join their new companions just for the desires to eliminate their rivals or forego fighting all together.",,,
+ocua_chimex_mi,SHIP,"Modified to be a true dual-purpose cruiser, this Chimex (kai-mex) comes with an upgraded kit that allows a frontal engagement should its already powerful carrier harassments fail to meet its design role.
+
+A strong response unit and a definite contender to most of the existing carrier schools, all thanks to its disposed efficiency in trade for a supreme firepower normally seen in light battlercruisers. This Chimex is proposed as an intimidating strongarm for any Oculian admiral that seeks independent strength than merely a tough fleet. Otherwise, it meets a Vapor module and remains dormant until its later use.",,,
+ocua_ignix,SHIP,"Also known as the Flatbed for many pirates willing to accommodate one in a fleet, an inexplicably affordable missile cruiser that can unleash a plethora of missiles upon deployment for many raids alike.
+
+Whether it is the influence of the pirates or by the Arc Mother's eccentricity, this tech philosophy was adopted in the heavier schools of the Oculian armada with far often in successive results. Four missile batteries that no other ship could even accomodate the controls for every launched projectile, the Ignix' cheap but efficient computer systems allow multiple remote controls held by only a dozen crew members.
+
+With each roar of a lightened purple tint combusts, captains will know that an Ignix is already deployed.",,,
+ocua_nimbyx,SHIP,"An obviously ballooned tranport with the hollowest, stable hull known in the Persean sector. The Nimbyx is built to carry out to tasks normally fit to surpass human-built freighters.
+
+Essentially an empty shell with an Oculian bridge, an assembly matrix, engines and a few turrets directly mounted on the plastic chassis, Nimbyxes can never be landed on any planetary surface due to its fragile exterior. Instead, they perform freight services only in space as the weight acts more as a floating balance than to rip out its upper section upon leaving a planet's atmosphere.
+
+Due to their traits, they are treated nothing more but airbags in Oculian space with a better carrying efficiency than those of a Colossus but bares terrible restoration costs should these bloated plastic hulls experience any physical stress.",,,
+ocua_basilix,SHIP,"Easily referred to due to its outreached wingspan, the Basilix-class is made to spread fear to its enemies with an amassed frontal weapons layout.
+
+Issued as a response to an escalating war towards the Tri-Tachyon, Basilixes are deployed to harass smaller ships with speeds belying its size. Two of every battery each ship has ramp-up scores as they tirelessly scour through the Atalie system for any remaining invading fleet along with their carrier counterparts.
+
+A very low-end ship that can peerlessly meet demands than any ship that often has far less effiency. And at the hands of an Oculian captain, she will make use of its arsenal with its variety of core systems and logistical flexibility to expand its lethality roles even further.",,,
+ocua_basilix_mi,SHIP,"Used often by the hardiest of the Oculian captains which rarely makes a visual in open space, due to their powerful arsenal being fast enough to avoid the unnecessary intervention. The Mikanate Basilix is a powerful cruiser that overwhelms its enemies with a blistering hail of plasma.
+
+An already powerful and successful cruiser design, made even worse for the Tri-Tachyon military regiments when they see three large mounted batteries on a single Basilix. Oculians were already referring to this model as ""the Tyrant"", due to its pinnacle performance and a massive energy demand.
+
+As with most Mikanate designs, the Basilix still requires a stern military input and supply demands to replace its ionic antimatter batteries and heatsinks at a frequent cycle. Nonetheless, a powerful cruiser that can be deployed where it needs to be.",,,
+ocua_beatrix,SHIP,"A moderate ship design made specifically for a hard purpose, to carry its massive laser cannon that can blast from afar and decimate anything that comes close to its respective fleet.
+
+The Beatrix is a maddening weapon for Tri-Tachyon fleets, as this mobile laser battery generates a very large threat area, too large for any unprepared combatant to enter. Because firing off high-intensity beams that melt and tear through the toughest armors with a loud roar would always terrify the opposition.
+
+Often treated by pirates as an oversized Gretly, this ship is very likely enter a support role. If anything, a massive weapon floating in space would be definite pick for any eager soul who would dare to push red button.",,,
+ocua_dorothyx,SHIP,"Much like its smaller destroyer sibling, the Dorothy-class is designed to protect itself from battles where most Oculian warships would find easily dismissable.
+
+Using an awkward oblongated shape allows the Dorothyx to withstand physical stress despite being merely a plastic hull between a terrible firepath and its vulnerable crew. The Dorothyx allows the mounting of an even larger shield emitter that improves its survivability further. With its cyclical staying power, Dorothyxes are assigned harsh conditions and fitted as powerful escorts even outside its origin armada.",,,
+ocua_evalyx,SHIP,"Designed to fill in the role as a deep-timeline stalker rather than merely a stealthy logistics transport, the Evalyx prowls its prey while being able to hold their remains for prolonged periods of time.
+
+An unusual assassin vessel, as one way to put it, the true purpose surrounding the Evalyx remains unclear as the resources used to build such a craft are too bold and too much for an investment. With phase coil technology and sizable cargo holds, it may serve itself as a contingency effort should the other Oculian vessels fail to meet their duties and required an unexpected approach to tackle with the situation. Due to this, the Evalyx is rarely found on certain fleets which only holds a very specific reason to be there.",,,
+,,,,,
+ocua_nadia,SHIP,"Agile, vicious and versatile, the Nadia-class is a battleship easily inscribed to every crimson painted fleet that has ever set foot into the open dangers of space. The backbone of every Oculian strike fleet, the Nadia is a favored warcraft dearly upheld by the Oculians ever since their military debut in the Sector.
+
+Bearing the sight of the Odyssey and Conquest philosophy, this broadside battleship is built to the task of combatting the opposition by its parallel arsenal with the commonly known poor ordinance in the sector. A hard contrast of what its offset siblings were able to achieve with a much more variable weapon batteries.
+
+To circumvent this hurdle, the Nadia comes in terms of its reduces upkeep and a frontal shield drone to brace the hostile impacts it receives from similar battleships. The resulting design is comes of cleaner than anticipated; an atypical bulbous shell that has the capacity to use battleship weaponry and drone squadrons while intimidating the pirates by its complex but versatile retrofit structure.
+
+As the first Nadia came out of the dockyards, the Arc Mother urged in dedication to build more of them as time went on.",,,
+ocua_nadia_mi,SHIP,"A menacing adaptation upgrade for the Nadia class battleship, outfitted with more weapons and a much more versatile core system. A warship that is forced to be reckoned with.
+
+Clearly an improvement to an already versatile battleship but loses its invaluable cost-effectiveness for overwhelming upgrade options. While not an extreme necessity to bring one into the common grounds due to its massive expenditures, Oculian sisters stress its usage in certain conditions that requires the absurd, a powerhouse to deal with threats that simply denies the hesitant response.",,,
+ocua_chimiria,SHIP,"A local ""hive"" of every Oculian fleet, housing a necessary production facility that provides faster strikecraft. The Chimiria-class is one of many meticulous contraptions that assists the Oculian Armada with the help of its accelerated assembly matrices.
+
+Formerly under the rendition of the Kuria program, the Chimiria underwent several modifications only because of its massive size. The Arc Mother and several Oculian engineers were skeptical of its exact design philosophy, even when its original role is meant to be a mainstay carrier and a mobile self-sustaining bakery. Its hull underwent multiple changes, almost every decade, which costs the Tri-Tachyon invasions too much to reconsider retrofits.
+
+This behavior evetnually became stagnant and inefficient for the Oculians, as every often these ships return and undergo overhaul taking additional effort where such could have been placed elsewhere. This led to its permanent design, hopefully, which came with a daunting task that took thousands of iterations in a single Chimirian cycle.
+
+The result is a hull that has the industrial strength of an outpost to produce its needed squadrons in a short timeframe with a sustained loadout that keeps its grounds as a capital.",,,
+ocua_amina,SHIP,"A true warship introduced by the Oculian Aramada, designed from the very key role that would have described an Onslaught in the heat of combat. Instead of slow, primitive wrought armor-cladding, the lightweight Amina soars into deep space with speeds so fast, that it punishes the slower, immobile fleets.
+
+Anagrammatically classified as the Amina-class, this thunderous bloat of plastic is meant to head straight to the frontlines, despite its lumbering size. With it, are powerful engines that provides massive emphasis on its speed, skimming through the seemingly frictionless vast of space with reckless abandon in very little time. The ionic drives that power the craft allowed a vast scale of armaments so large not even the mainline battleships of its class could compete.
+
+Unlike most ships that utilize slow, sustained blasts from traditional Burn Drives, the Amina uses Ion Burst Drives with their short yet powerful pulses of energy to propel them at long distances. Due to its significantly small, but dense dispersal footprint, the Ion Burst Drive is suprisingly safe to handle on either side, so long as the Amina can hold its structural integrity upon sudden force of its thrust.",,,
+ocua_etna,SHIP,"The most modest capital ship of the Oculian Armada, the Etna thrives in the battlefield with its advanced innovation of the Temporal field technology. A support loadout coupling its cruiser-level arsenal, which a daring captain could use to decimate even the most fortified fleets with its incredibly agility.
+
+An Oculian design that has just barely made an appearance in the current-day Sector, but shows great promise for the Oculian Armada's expansionist goals. A lightweight capital ship, the Etna-class is destined to explore deep space and harass anything that comes in its wake.
+
+It is also noted that Arc-mother foreseen battleships being unlikely to respond fast enough while attempting to meet demands of high-powered arsenal. As tensions of the Armada in Hybrasil continue to develop, this new series of fuel-efficient, light warships ships begin to appear along with the dreadful Mikanate project.
+
+Compared to the Nadia-class, the Etna is underequipped to compete most of the local doctrines. To circumvent this, it houses a more powerful reactor, accompanied with the same temporal device used by the Storkis models. The component would then overdrive the Etna, causing the ship to dilate much faster with a field behavior much more violent than its other counterparts. As the machine runs, time suddenly stands still from the outside, which the Etna now experiences. All it now takes now is a few seconds for the Etna to unleash her onslaught upon the helpless foes in the vicinity.",,,
+ocua_utena,SHIP,"An unexpected development of the hyperspace technology on a massive scale, the Utena is the Oculian phase warship made to carve through the open field with its barrage of antimatter weapons with precision appearances from nowhere.
+
+Four wings with a gallery of antimatter weapons on each one, as two pairs are connected by the long, powerful Phase columns which manifest in the shell of what Utena has become. A brutally simple, but ingenious design not even the likes of what Tri-Tachyon could draw from their section.",,,
+,,,,,
+ocua_pandora,SHIP,"A carrier designed specfically as a flagship for every Oculian mainline fleet. The Pandora is a massive anchor of a warship that holds several arsenal bays no other carrier school could easily match.
+
+A rare sight of such a juggernaut of a ship, this mobile construction facility harnesses its resources from whatever objects that can come close to it, thanks to its huge fleet of drones hidden in its own bulkhead. Large, curved holes behave like hornet pathways as the Breezes store every piece of material they could find, almost like an ecosystem. Polymer composites of, still, unknown properties, safe to the touch, breatheable for hours. An Oculian sister must have born specifically for a role on this ship. Upon walking in the hallways, are smooth, red surfaces, almost pristine even on a derelict vessel.
+
+Imagining a battlefield with such a beast, made entirely of plastic and gems. A becoming of an unusual wonder. A vision of a Pandora being called, and almost every single drone falls in organized groups, each commanded by an Oculian sister. Only silence is heard in the radio channels within the Pandora's vincity. No one knew who or what are giving orders to the cloned monstrosities. Others would assume it would be the Arc Mother, but some say they communicate amongst themselves at a rapid rate.
+
+Ships that befell from the might of a Pandora seen its actions, a simulateneous terror, a scene normally a horde of locusts would make in a harvest. Cancer torpedoes, Breeze laser storms and a massive of array of hardlight puncturing through the Tri-Tachyon hallways. All at once and once its done, husks of empty metal and shattered glass adrift in the depths of deep red.",,,
+ocua_dulcena,SHIP,"Built specifically on the role to assert direct firepower into the fray, the Dulcena is a monster of a flagship capable of unleash a fury so large, it could encompass the entirety of the engagement.
+
+Successes of the modern battleship schools the Oculians adopted drew up a new intention to build more massive scale spaceborne warships in hopes to prevent system-wide blockades imposed by the Tri-Tachyon intervention. The Dulcena is more of a hidden pet project than an openly discussed forum to the pirates, as the size would be too much to handle or, let alone, grasp the concept of such a design.
+
+Disposing its traditional hangar bays, the Dulcena prides purely on arsenal build-up, enough to scale against the Paragon and the Onslaught combined. Massive laser artilleries and missile compartments ensure its long-ranged capabilities remain its strong potential. Should improvision arise, it could adopt a large squadron of its own via its massive bulkhead to provide the size. Many would argue it partook the flagship retrofit of the Amina warship, though its mass and the poor capacity of the thrusters imply otherwise.
+
+Nonetheless, a flagship that truly rivals its sister model, the Pandora, in terms of raw individual strength than utter dependency of the drone swarm technology.",,,
+ocua_elizabeth,SHIP,"An outfit that branches from its progenitor design, the Elizabeth is an expensive upgrade to an otherwise pragmatically economical Pandora. Boasting massive hangar production, this Flagship mandated modification is as rarely seen as the Mikanate Sisters who take command in one.
+
+Donning a frilly pink glow, a sight of an Elizabeth would mean disaster to any fleet admiral that engages in their battlefield. With Sagulum laser batteries on each side, the flagship makes short work with anything that comes remotely in her range long before the larger battlecruisers that are able to withstand the blinding torrent. But it was too late for such titans, as the Elizabeth has harnessed her swarm of fighters and bombers from the wreckages and weapon systems ready to set ablaze in the wake of her unfortunate victims.
+
+Woe to those who laugh at the Oculians' meek and silly exterior.",,,
+ocua_galalixia,SHIP,"More of a mobile outpost than a mere spaceborne vessel, the Galalixia is a mothership that demonstrates the Oculians' industrial might throughout the sector with its own self-sustained fleet.",,,
+,,,,,
+ocua_breeze,SHIP,"The most common unit in the Oculian Armada, the Breeze excels in several areas of combat, not with power but the size of its own numbers and its smart target tracking systems.
+
+A typical staple of every fleet, Breeze drones are the weakest military units ever deployed by the Oculian Armada, but due to their relatively low resource value and menially simple controls, they can be produced enmasse and easily become a serious threat to any opposing navies.
+
+Since it presents a small, bulbous design, the Breeze can accomodate all its necessities as a fighter, complete with a cheap and very conventional energy shield that keeps its fragile structure intact in the harsh depths of space. It comes with a standard Pulse Beam capable of tracking high-velocity missiles and speeding strike craft, which almost gurantees an accurate hit.",,,
+ocua_breeze_mi,SHIP,"An advanced iteration of the Breeze drone, with the additional power to scale up their already overwhelming disposable numbers.
+
+A slight increase of size on its bulbous frame implies that the inner workings of the Breeze has already been adjusted for the Mikanate program. The plastic frame appears to be double-layered, which is no surprise on how more expensive the electronics are in its inner workings.
+
+Ion thrusters have also been rearranged and rescaled to meet the improved agility of the craft, along with sensors and a gyro-frameworks to allow sharp turns no matter direction the drone is facing. A remarkable design for such a fragile dronecraft.
+
+The low-end ion batteries clearly help its minimal profiling, as well as the same pulse laser it keeps firing even when the probe is being carried directly into the facility. Almost as if the droid is in a struggle and that it understands. Shame it merely runs on instinctive protocols than being adaptive as the Artificial Intelligence cores.",,,
+ocua_breeze_elite,SHIP,"A heavier model of the Breeze unit, equipped with a compacted hardlight cannon. Its role is to harass other strike crafts of its size ensuring the flanks remain uninterrupted in their advance.
+
+The so-called Elite models are derived from an old-Earth title called Ace, for its accounted kill streak a pilot must accomplish in order to awarded with one. But for the Elite Breezes, these are given immediately from the factory with an advanced targeting computer manifested into its chassis.
+
+Scorned by experienced pilots for its accuracy, almost mistaken as an Intelligence core and the fact that, like Oculian drone crafts, these Breezes were also very replaceable. With all these remarkable traits make them a penchant of mania and a very cheap way to go out as an opposing pilot.",,,
+ocua_breeze_elite_mi,SHIP,"One of the most advanced variants of the Breeze unit so far, capable of accomplishing feats unlike most other fighters of their category.
+
+A true Ace in a hole for every Oculian admiral who gets to keep one. Superelites take full advantage of the Mikanate specifications while still being a digital chip that any Oculian ship can easily manufacture.",,,
+ocua_cancer,SHIP,"Typically named due to its ubiquitous nature of lobbing low-end torpedoes en-masse, the Cancer is a very reliable workhorse with its easily accessible torpedo system and returns with its much-fulfilled combat design.
+
+It was not a coincidence that components installed within this wing was derived from an ancient bomber craft encountered in the old Domain era. An eeriely similar symbol emerged as the drone was meticulously dismantled, in an attempt to reverse engineer the design. Unfortunately, it was not possible due to the encryption and the materials that brought the weak automaton to existence.
+
+Plastic components of unknown composition, which either imply reprocessed organics or something more sinister, which somehow get the Cancer afloat in space and on the planetary surface. Engines and a light chassis obviously attribute to this effect, but the torpedo it carries managed to meet allowance of its transport regardless.
+
+While no other bomber seemed capable of reaching these properties, the Cancer tend to always break under physical interference in combat. A disposability that no bomber pilot would ever want to be a part of.",,,
+ocua_cancer_elite,SHIP,"A heavier model of the Cancer unit, equipped with an additional Pixel Torpedo propelled by more simply-implanted engines providing credible amounts of bombardment. 
+
+Yet another example of the Oculian Armada's deceitful inventions, something so light yet it dictates its stressfully, heavy impact otherwise.
+
+Presented along with it, two torpedo launch tubes with a disappointingly near-similar engine as means of propulsion. With the only difference is a thrust magnitude of twenty percent. Worse, it carries a larger computer core on-board, twice the lighter model's size.
+
+And thanks to the same plastic components that piece the drone together, it is still becoming another failed attempt to reverse its design. A very unfortunate notion indeed.",,,
+ocua_cancer_mi,SHIP,"A deadlier variation of the Cancer drone equipped with more powerful hardware systems that drives the ship's performance beyond its peak at the cost of more valuable resources, time and energy.
+
+The most powerful design ever conceived in the Oculian's bombing technology so far. Despite the lack of progress with Tri-Tachyon's attempt to repurpose the bomber drone, it is no less weaker than most of the existing bombers in the battlefield.
+
+A very modest amount of resources were still enough for the Pirates to build a squad in their microforges, and due to its painfully adoptable simplicity, a sizable carrier doctrine is enough to cause chaos against fleets twice their size. A force that can easily replace itself within a small timeframe.",,,
+ocua_kaleido,SHIP,"A frustrating, tenacious automaton to deal with, the Kaleido is a recent breakthrough for its persistence to keep power where most of the Breeze series cannot.
+
+As attrition arises between Atalie Pax and Hybrasil, the Oculians look for a more efficient solution to prevent significant losses of interceptors that is still mobile and capable of carrying a strong barrier that is easily replenishable. Two battery banks and a shield generator were assembled for the template, then the chassis was built around it with the accomodation of a pair of weapon holds as the combat role still applies. Finally, two recycled Breezes were then placed next to each other in order to permit its weight above the ground, which is where the template finishes.",,,
+ocua_kaleido_elite,SHIP,"A heavier model of the Kaleido unit, this variant is meant hold a tougher strain where the idea of fielding a frigate no longer fits the criteria.
+
+A tougher, stronger iteration of an already heavy design change from the Breeze iterations the Armada manufactures. Not particularly elegant even for the wingspans it attempted to possess, though it could pronounce its landing capacity as a momentum break in atmospheric pressure. Unlike its fragile and even more replacable bomber type, it comes with an Aluminum framework to brace its integrity against physical stress.",,,
+ocua_kaleido_mi,SHIP,"A refined development of the Kaleido series, it comes with a smaller frame but a much more efficient energy system to overcome its tedious cost as a bulk drone.",,,
+ocua_mollusc,SHIP,"An intriging design for a ship merely meant to defend its master ship, the Mollusc carries thick armor plating, normally from any piece of armor that the Oculians would normally consider as garbage.
+
+Sluggish on its own, Molluscs are unmanned and almost always stay near thier controller ships as their magnetic properties allow them to simply glide through armor plating while retaining the same direction at all times. If ever the Mollusc is away from its master ship, its engines are efficient enough to allow it to veer its course, back to their designated mothership.",,,
+ocua_tick,SHIP,"The only piloted fighters in the Oculian Armada. The Ticks are a choice for any diehard pilots who are willing to fight warships head-on with the craft's sizable arsenal.
+
+It is a rarity to notice Oculians being in small spacecrafts due to having most of the operation done remotely by drones, automated turrets and anyone else who are willing to fight for the Armada's success. Once one decided to do so will likely to be in a Tick spacewalker, outfitted with a wide selection of tools that suit the pilot.
+
+Battery armaments are attached to each of the two upper limbs, directly linked into the Ion-charged batteries that carry load compatible to the systems' voltage output. Laser canister weapons are the typical choice to due its weak energy density but powerful enough to melt through thick metal alloys though it is not impactful to kill a person outright. Low energy profile weapons are indeed the staple for the Oculian armory, which shamefully brought Tri-Tachyon's attention with attempts to steal their technology physically.
+
+The Ticks can walk through one of the two modes; through its reversed bipedal legs, or the proleg hybrids hidden underneath the chassis' edges. Two movement features are substanstial for its portability, especially for ships that typically designed as carriers. As the prolegs are designed to move the walker subtly in enclosed spaces as its bulky main limbs cannot. The storage feature would have been on the carrier itself, but the designer who proposed the module required self-reliance as certain ships would not be able to perform such a task without compromising the hangars' hulls. Thus, pirates who do obtain such a craft were able to store it in unlikely places, even in their own quarters should the size allow it.",,,
+ocua_tick_elite,SHIP,"A heavier model of the Tick unit, equipped with an additional Pixie cannon to sustain its relatively effective barrage capability.
+
+The piloting threshold where an actual Oculian would prefer to ride on, much less of an expense a pirate would use due to the amount of controls a pilot must even know to assess the movement and ordinance this craft carries. Ever since the pirates take hold on to Tick fighters, an elite variant was purposely manufactured to not count the discrepancies committed by its easily accessible counterpart.
+
+Its cockpit harness is undoubtedly Oculian-restricted, as it requires two neuron nodes directly plugged into the craft to even allow its activation of its interface. Such node connectors are only found from the bunches of hair an Oculian possess which behave more like connection cables. Using normal human hair does not give a faithful result, however. Merely bursting the strands into flames as the nodes call for digital input, being that same input call happens to be electrical pulses.
+
+Luckily, a severed, on the other hand, was an Oculian sister who had her wireless nodes severed from the network. Whom which, despite of the incident, is able to activate the controls and be able to interact with the Tick's core systems. A peculiar insight though it helps to keep the fighter usable even with such specific circumstances.",,,
+ocua_tick_mi,SHIP,"A purposeful strikecraft built for every Oculian Mikanate sister, these ticks are designed to be heavily outfitted as of means to keep their exclusive pilots to fight hard in battle and a terrifying reminder of their ever increasing developments in the sector.",,,
+ocua_loach,SHIP,"A seemingly sophisticated drone that adopts a miniaturized phase technology to greatly improve its already incredible agility in the middle of a crowded battlefield.
+
+There is no other suspect of the Oculians' advanced espionage capability other than the replaceable swarms of loaches, as tensions rise between them and the Tri-Tachyon corporation. Usually sent on their own and unarmed, loaches are otherwise equipped with cameras, communication relays and micro burn drives to dive very deep within hostile territory.
+
+These drones were meant to replace the bulky Gretly frigates shortly after a decade in the first encounter, with a volume small enough not to be easily burdened by obstacles such as asteroids, debris and physical costs to assemble an actual ship only to perform such a menial task.",,,
+ocua_loach_mi,SHIP,"An advanced iteration of the Loach drone, with increased durability and firepower to match its augmented protocols.
+
+Mikanate drones are not easily dismissed as mere puppets for the Oculians. With a hastened calculation speed and improved self-presevation systems, Mikanate computers can easily assess a situation whether the task is up for its capabilities and commit when it does.
+
+Frankly, they behave more like pets as former members of the Oculian privateers experience their behavior firsthand. An odd specimen that surely has more to it now, as far as we know.",,,
+ocua_cucumber,SHIP,"A drone carrier deployed by an Oculian battlestation, featuring a Vira hardlight anti-fighter cannon, a shield generator and two wing squadrons under its manufacturing rig. A bane to most opposing wing squadrons.",,,
+,,,,,
+,,,,,
+ocua_breeze_beatrix,SHIP_SYSTEM,"Deploys an array of Breeze-category drones assigned to station in front of its host, engaging (un)guided ordinance and strikecraft alike.",Drone (defense),Deploys a group of Breeze drones that orbit in a front curved formation. Drones are slowly manufactured after loss.,
+ocua_breeze,SHIP_SYSTEM,Deploys a squad of category-Breeze drones equipped with a standard shot-laser that acts similarly as if they were a regular fighter squad.,Drone (multi-role),Deploys a small group of Breeze drones. Drones are slowly manufactured after loss.,
+ocua_breeze_x2,SHIP_SYSTEM,Deploys a squad of category-Breeze drones equipped with a standard shot-laser that acts similarly as if they were a regular fighter squad.,Drone (multi-role),Deploys a sizable group of Breeze drones. Drones are slowly manufactured after loss.,
+ocua_breeze_x4,SHIP_SYSTEM,Deploys a squad of category-Breeze drones equipped with a standard shot-laser that acts similarly as if they were a regular fighter squad.,Drone (multi-role),Deploys a large group of Breeze drones. Drones are slowly manufactured after loss.,
+ocua_chimera,SHIP_SYSTEM,"Deploys a squad of Chimera-class carriers that also deploys a small group of category-Breeze drones as a squad.
+
+A memical escalation weaponized to the point of overwhelming the enemy in large groups, Oculians are knowned and feared by this feat that even now the Tri-Tachyons are compared poorly to their amount of units deployed in the field.",Drone (multi-role),Deploys a small group of Chimeras that deploys a small group of Breeze drones.,
+ocua_chimera_x2,SHIP_SYSTEM,"Deploys a squad of Chimera-class carriers that also deploys a small group of category-Breeze drones as a squad.
+
+A memical escalation weaponized to the point of overwhelming the enemy in large groups, Oculians are knowned and feared by this feat that even now the Tri-Tachyons are compared poorly to their amount of units deployed in the field.",Drone (multi-role),Deploys a sizable group of Chimeras that deploys a small group of Breeze drones.,
+ocua_mollusc,SHIP_SYSTEM,Deploys a small group of Mollusc-class drones that protect the host with its built-in shields.,Drone (defense),Deploys a small mass of Molluscs to defend its host ship.,
+ocua_mollusc_x2,SHIP_SYSTEM,Deploys a sizable group of Mollusc-class drones that protect the host with its built-in shields.,Drone (defense),Deploys a sizable mass of Molluscs to defend its host ship.,
+ocua_mollusc_x4,SHIP_SYSTEM,Deploys a large group of Mollusc-class drones that protect the host with its built-in shields.,Drone (defense),Deploys a large mass of Molluscs to defend its host ship.,
+ocua_mollusc_x6,SHIP_SYSTEM,Deploys a large group of Mollusc-class drones that protect the host with its built-in shields.,Drone (defense),Deploys a concentrated mass of Molluscs to defend its host ship.,
+ocua_mollusc_x8,SHIP_SYSTEM,Deploys a rampant group of Mollusc-class drones that protect the host with its built-in shields.,Drone (defense),Deploys a large mass of Molluscs to defend its host ship.,
+ocua_mollusc_mi,SHIP_SYSTEM,Deploys a small group of Mikanate Mollusc-class drones that protect the host with its built-in shields and extended armor plates.,Drone (defense),Deploys a small mass of Molluscs to defend its host ship.,
+ocua_mollusc_mi_x2,SHIP_SYSTEM,Deploys a small group of Mikanate Mollusc-class drones that protect the host with its built-in shields and extended armor plates.,Drone (defense),Deploys a sizable mass of Molluscs to defend its host ship.,
+ocua_mollusc_mi_x4,SHIP_SYSTEM,Deploys a large group of Mikanate Mollusc-class drones that protect the host with its built-in shields and extended armor plates.,Drone (defense),Deploys a large mass of Molluscs to defend its host ship.,
+ocua_tick,SHIP_SYSTEM,Deploys a squad of category-Tick drones equipped with two standard laser canister cannons that acts similarly as if they were a regular fighter squad.,Drone (multi-role),Deploys a small group of Ticks. Drones are slowly manufactured after loss.,
+ocua_tick_x2,SHIP_SYSTEM,Deploys a squad of category-Tick drones equipped with two standard laser canister cannons that acts similarly as if they were a regular fighter squad.,Drone (multi-role),Deploys a sizable group of Ticks. Drones are slowly manufactured after loss.,
+ocua_energyfeed,SHIP_SYSTEM,A conduit overlapse sequence initiated to ship reactors that increases the Firing Speed of Energy weapons within a short period of time.,Offensive,Provides a brief boost to the rate of fire of all Energy weapons.,
+ocua_ionburstdrive,SHIP_SYSTEM,"Triggers a sharp, concertrated energy discharge within the Ionic engine drives of the ship, forcibly activating its primary drive for a short moment. Provides a massive burst of speed in one direction.
+
+The Ionic burst does not generate burn fluctuations that can cause an engine shutdown on impact, but it can cause significant hull damage if hits an equally or more massive object.",Movement,"Provides a small, but powerful burst of speed at the expense of being unable to turn.",
+ocua_wingoverclock,SHIP_SYSTEM,"Transmits a program to the ship's local wing that forces the wing's power management programs to run on overdrive, increasing their speed and combat tracking capabilities above their regular intervals. Speed bonus only affects Oculian wings.",Offensive,Provides a brief boost of speed to all wings and a small damage boost to all their weapons.,
+ocua_temporaloverclock,SHIP_SYSTEM,"Briefly puts the ship into a halt before speeding up the flow of time significantly on board the ship. Generates a large amount of flux when used. Affects the host's fighters.
+
+The Oculian Armada, as it turned out, have been long practiced the use of Temporal cascading as a primary means to breed new Oculian units to be dispatched for battle. This allows them to create a sustainable workhorse throughout their system within a short span of time, with such subjects possessing lifespans that can last more than a century.
+
+Though efforts to replicate such cloning design would be all but a lost cause in a midst of war.",Special,Briefly charges the Temporal Shell to generate an even greater timelapsing. Generates a significant amount of flux when used.,
+,,,,,
+,,,,,
+ocua,FACTION,"A peculiar entity with a development pattern unheard of by many technocrats after the Great Collapse, the Oculian Armada is an industrial robotics regiment that specializes in efficiency at massive numbers, harnesses the powers of the simple but practical design systems hardly seen in Tri-Tachyon facilities. Whether it is by a complete random chance or a coincidental awakening by human intervention, the Armada existed in the confines of its own purpose, to feed humanity with a produce it knew all too familiarly.
+
+The Oculian Armada's true intentions are still shrouded in mystery, much to the Hegemony's suspicion. But are at least left alone with their devices in Atalie Pax, neighboring the system of Hybrasil, as a painful reminder to Tri-Tachyon for their terrible irresponsibility. In the Armada's earnest fruit, they proposed an aggressive marketing system for their exclusive commodities, a productivity so immense and of stable quality that many people in the Sector would have believed a capacity too good to be a well-meaningful intent. The cookies, the Oculian's primary export, was cut-off from the majority of the core planets but the pirates and independents who would at least seek for sustenance.
+
+An active testament from the Luddics pressured on to distrust such heresy, of course. Even as Tri-Tachyon operations still pend on against the heart of the Armada, solely to capture the AI due to it continuing to provide human sustenance in such a welcoming persistence. Conflicts continue to clash, as the Armada attempt to reconcile to the sector, unbeknownst to the history that involved the AI wars, causing an already open gap to widen between them and the major factions. This left the Armada with its awakeners and self-made individuals to kindle what little trust they have.
+
+The AI or ""EI"" as it referred itself as, also known as the Arc Mother, remains stalwart in defense against to her ongoing pursuers and ambitious to bring the sector into its well-fed state, creating the Armada as it is today with warships and mobile bakery facilities to meet that ambition. A persona recently made flesh for the purpose of improving the marketing value of their exports, becoming the progenitor of a new specimen within the span of a century, known as the Oculians. A fittingly odd human subspecies, that now walk the sector as ambassadors to an increasingly lucid and dark society that they may have indirectly attributed.",,,
+,,,,,
+,,,,This makeshift outpost is a home for thousands of Oculian clones willingly enabled to fight for the oppressing adversaries for quite some time. The station is named only because its owner wants it that way.,
+ocua_station_fita,CUSTOM,"Once an abandoned frontier station, Fita sits on a dead colony, burned most of its hability due to the extreme gamma radiation that hits its surface. It has been urned into a makeshift auxiliary for the Pax Proper, a small feat with an unusual intention, capable of producing goods that many would seek for mere decadence.",,This makeshift outpost is a home for thousands of Oculian clones willingly enabled to fight for the oppressing adversaries for quite some time. The station is named only because its owner wants it that way.,
+ocua_station_pax_proper,CUSTOM,"The enigmatic source of the most eccentric AIs sits here. A host of millions of duplicates owned by the Oculian Arc Mother. Pax Proper is constructed in order to facilitate its sister stations and most of its claimed colonies, it rests on Adalie in order to protect its inhabitants from orbital bombardment and utilize its orbital status as a research facility for its military expansion. It also comes with the most advanced, yet fragile construction facilities.",,,
+ocua_planet_atalie2,CUSTOM,"The ambassadorial colony of the pirates, for becoming the first visitors to ever make contact with the Armada peacefully. A surprise to many, but a very genuine necessity to those who knew how desperate the individuals were, for food and shelter they have never believed to come by. Thanks to the incident, pirates of any kind are always welcomed onto this planet by the Oculians, as colonial domes provide fruitful entertainment, earnest labor and civilized freedom where even the most unfortunate were able to receive.",,,
+ocua_planet_atalie2b,CUSTOM,"While more hospitable compared to its major capital, this planet is merely home for thousands of non-Oculian residences. It acts as an access hub for foreigners to stay until they are allowed inside the headquarters. Robust farming facilities here are directly inputted to Adalie as well, as the agricultural ingredients are a necessity for its industrial export for the sector.",,,
+ocua_planet_adalie,CUSTOM,"The prime settlement of the Oculian Armada. On its surface, there is not much going on with merely a few onlookers and snow-covered wildlife roam the vast empty icesheets. Approaching closer to the frozen planet, metal portrusions are seen. An underground headquarters came in to mind. A cold, stern stronghold for the most eccentric purpose no other being was even come close to believe, a planetary bakery.",,,
+ocua_planet_atalie3a,CUSTOM,"Nothing much of interest on this planet but a mining outpost for its rich gases that are used to power most of the Oculian military armaments. While Adalie has its own self-sufficient economy, this planet is often docked by larger ships for resupply and often a coordinator for other factions that request the assist of the Armada.",,,
+ocua_planet_haelim1,CUSTOM,"A backup mining settlement should the Armada suddenly loses metallic resources for its ubiquitous electronics. It is also the commonplace for Oculian sisters to visit old friends, while secretly permitting ""attitude adjustments"" before throwing them off to the pits.",,,
+ocua_planet_darla,CUSTOM,"An Oculian forward base, contingency network and a fortified response force to the ever increasing dread the Tri-Tachyon persisted in Atalie Pax. It is also happens to be a duty-free market for foreigners that come by and purchase goods from the Oculian Armada. Philip Andrada once passed this planet.",,,
+ocua_cookies,RESOURCE,"A notoriously popular bakery product manufactured by the Oculian Armada, noted for its exotic flavor and variety that compliments the customer’s preference. The taste never seems to wear off despite prolonged consumption. Banned on multiple colonies due to its obvious addictive properties and its utilitarian nature in profiting the Armada simply to fulfill the consumer’s desire.",,,
+ocua_liquid_g,RESOURCE,"An incredibly sweet fluid enough to leave the sensory input of the human tongue dull for hours, this peculiar Oculian concoction was rumored to be what the cookies' flavor originated from. Due to the liquid's concentrated nature, it takes the nickname ""Glutton"" as many consider its taste as a sin that can leave the individual dazed in its powerful flavor.
+
+It has been considered a drug on many sectors especially within the Hegemony, as the fluid can be directly injected into the human body that can leave the person unable to eat for a month but leaves a risk of terminal disgestive disorder as foreign consumables activates the Glutton's entire compounds immediately. This disorder causes digistive tracts to clog with saturated fat from both foreign edibles and the Glutton causing death to the user within days.",,,

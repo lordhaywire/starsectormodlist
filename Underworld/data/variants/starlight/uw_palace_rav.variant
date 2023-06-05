@@ -1,7 +1,7 @@
 {
     "displayName": "Rave",
     "fluxCapacitors": 0,
-    "fluxVents": 36,
+    "fluxVents": 40,
     "goalVariant": true,
     "hullId": "uw_palace",
     "hullMods": ["advancedoptics"],
@@ -12,6 +12,7 @@
         {"WS0013": "uw_palace_rear_rav"}
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_rav",
     "weaponGroups": [
         {

@@ -13,7 +13,7 @@
   "renderAboveAllWeapons": 0,
   "glowColor": [
     220,
-    220,
+    160,
     255,
     255
   ],
@@ -46,10 +46,8 @@
     "particleDuration": 0.5,
     "particleCount": 7,
     "particleColor": [
-      180,
-      180,
-      255,
-      128
+      #180,      180,      255,      128
+      220,      160,      255,      196
     ]
   },
   "textureType": ROUGH,

@@ -5,7 +5,7 @@
   "goalVariant": false,
   "fluxCapacitors": 11,
   "fluxVents": 20,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "prv_gravanchor",

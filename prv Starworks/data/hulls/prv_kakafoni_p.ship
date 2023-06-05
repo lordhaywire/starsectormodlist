@@ -12,6 +12,7 @@
   "shieldRadius": 177.5,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "prv_ramshield_modular"
   ],
   "builtInWeapons": {

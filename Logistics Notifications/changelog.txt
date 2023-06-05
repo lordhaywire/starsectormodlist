@@ -1,5 +1,8 @@
 Logistics Notifications
 
+Version 1.4.5
+ Updated to 0.96a
+
 Version 1.4.4
  Fixed crash from IndexOutOfBoundsException
 

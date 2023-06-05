@@ -1,0 +1,10 @@
+{
+  "id":"OcuA",
+	"name":"Oculian Armada",
+	"author":"Protonus & EI",	
+	"version":"0.9.3",
+	"description":"Adds a very odd faction, that boasts fast moving horde-style plastic ships with lots of carrier compositions, placed somewhere neighboring the Hybrasil system.\n\nRequires Starsector.",
+	"gameVersion":"0.96a-RC9",
+	"jars":["jars/ocua.jar"],
+	"modPlugin":"data.scripts.OculusPlugin",
+}

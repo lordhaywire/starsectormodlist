@@ -1,0 +1,43 @@
+{
+  "variantId": "JYD_knowledgeable_standard",
+  "hullId": "JYD_knowledgeable",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "JYD_ab",
+        "WS0002": "JYD_ab",
+        "WS0007": "JYD_ab",
+        "WS0008": "JYD_ab"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "JYD_af",
+        "WS0004": "JYD_af"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "JYD_ab",
+        "WS0006": "JYD_ab"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

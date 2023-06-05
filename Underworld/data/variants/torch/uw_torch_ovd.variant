@@ -1,20 +1,18 @@
 {
     "displayName": "Overdriven",
-    "fluxCapacitors": 6,
-    "fluxVents": 10,
+    "fluxCapacitors": 5,
+    "fluxVents": 5,
     "goalVariant": true,
     "hullId": "uw_torch",
-    "hullMods": [
-        "safetyoverrides",
-        "reinforcedhull"
-    ],
+    "hullMods": ["safetyoverrides"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_torch_ovd",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "heavyblaster"}
+            "weapons": {"WS0001": "chaingun"}
         },
         {
             "autofire": true,
@@ -30,10 +28,11 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "lightmg",
-                "WS0005": "lightmg",
-                "WS0006": "lightmg",
-                "WS0007": "lightmg"
+                "WS0004": "lightdualmg",
+                "WS0005": "lightdualmg",
+                "WS0006": "lightdualmg",
+                "WS0007": "lightdualmg",
+                "WS0010": "lightdualmg"
             }
         }
     ]

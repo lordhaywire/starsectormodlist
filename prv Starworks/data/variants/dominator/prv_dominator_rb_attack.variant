@@ -3,7 +3,7 @@
   "hullId": "prv_dominator_rb",
   "displayName": "Attack",
   "goalVariant": true,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 8,
   "fluxVents": 30,
   "quality": 3,
   "permaMods": [],
@@ -25,16 +25,16 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 014": "annihilatorpod",
-        "WS 015": "annihilatorpod",
-        "WS 016": "annihilatorpod"
+        "WS 014": "harpoonpod",
+        "WS 015": "harpoonpod",
+        "WS 016": "harpoonpod"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 013": "prv_siege_akers"
+        "WS 013": "prv_massdriver"
       }
     },
     {

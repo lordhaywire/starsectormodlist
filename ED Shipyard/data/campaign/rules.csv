@@ -1,0 +1,3 @@
+id,trigger,conditions,script,text,options,notes
+edshipyard_DestroyTheWurg_rule,"edshipyard_DestroyTheWurg_completion_trigger",,"WurgandalRevengeFleetBountyCommand",,,
+edshipyard_Chupacabra_HVB_rule,"edshipyard_Chupacabra_HVB_completion_trigger",,"ChupacabraAmbushFleetsBountyCommand",,,

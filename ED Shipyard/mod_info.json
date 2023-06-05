@@ -1,0 +1,26 @@
+{
+	"id":"edshipyard",
+	"name":"ED Shipyards",
+	"author":"Ed, Nick XR",
+	"version":"2.6.1",
+	"description":"Adds some fun ships, fair and balanced!",
+	"gameVersion":"0.96a-RC7",
+	"utility": "false",
+	"source": "https://bitbucket.org/NickWWest/edshipyard/",
+	"jars":["jars/EDShipyard.jar"],
+	"dependencies": [
+		{
+			"id": "lw_lazylib",
+			"name": "LazyLib"
+		},
+		{
+			"id": "MagicLib",
+			"name": "MagicLib"
+		},
+		{
+			"id": "shaderLib",
+			"name": "GraphicsLib"
+		}
+	],
+	"modPlugin":"data.scripts.edshipyard.ED_modPlugin",
+}

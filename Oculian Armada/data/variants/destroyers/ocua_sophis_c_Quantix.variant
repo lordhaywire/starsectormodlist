@@ -1,0 +1,30 @@
+{
+  "variantId": "ocua_sophis_c_Quantix",
+  "hullId": "ocua_sophis_c",
+  "displayName": "Quantix",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_core_quantix",
+    "unstable_injector",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_glint",
+        "WS0002": "ocua_glint",
+        "WS0003": "ocua_pirouette"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_wing"
+  ]
+}

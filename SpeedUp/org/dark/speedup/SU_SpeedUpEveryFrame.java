@@ -561,7 +561,7 @@ public class SU_SpeedUpEveryFrame extends BaseEveryFrameCombatPlugin {
         this.firstFrame = true;
     }
 
-    private static final class LocalData {
+    protected static final class LocalData {
 
         boolean active[];
         boolean toggled[];
@@ -572,7 +572,7 @@ public class SU_SpeedUpEveryFrame extends BaseEveryFrameCombatPlugin {
         }
     }
 
-    private static enum Modifier {
+    protected static enum Modifier {
         CTRL, ALT, SHIFT
     }
 }

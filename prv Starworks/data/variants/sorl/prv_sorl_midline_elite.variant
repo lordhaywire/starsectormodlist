@@ -5,7 +5,7 @@
   "goalVariant": false,
   "fluxCapacitors": 5,
   "fluxVents": 20,
-  "quality": 0,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [],
   "weaponGroups": [
@@ -13,14 +13,14 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "heavymortar"
+        "WS0007": "heavymortar"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "typhoon"
+        "WS0005": "typhoon"
       }
     },
     {

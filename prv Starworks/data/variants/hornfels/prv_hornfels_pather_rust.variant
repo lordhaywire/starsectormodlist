@@ -17,8 +17,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "prv_hammer_mag",
-        "WS0010": "prv_hammer_mag"
+        "WS0009": "jackhammer",
+        "WS0010": "jackhammer"
       }
     },
     {

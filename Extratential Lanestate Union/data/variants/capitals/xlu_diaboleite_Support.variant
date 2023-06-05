@@ -1,0 +1,87 @@
+{
+  "variantId": "xlu_diaboleite_Support",
+  "hullId": "xlu_diaboleite",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 50,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "turretgyros",
+    "expanded_deck_crew"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "MW 01": "xlu_stratus"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_watusi",
+        "WS0002": "xlu_watusi",
+        "WS0003": "xlu_watusi",
+        "WS0004": "xlu_watusi"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightac",
+        "WS0006": "lightac",
+        "WS0007": "lightac",
+        "WS0008": "lightac",
+        "WS0009": "lightac",
+        "WS0010": "lightac",
+        "WS0011": "lightac",
+        "WS0012": "lightac",
+        "WS0013": "lightac",
+        "WS0014": "lightac",
+        "WS0015": "lightac",
+        "WS0016": "lightac",
+        "WS0017": "lightac",
+        "WS0018": "lightac",
+        "WS0019": "lightac",
+        "WS0020": "lightac",
+        "WS0021": "lightac",
+        "WS0022": "lightac",
+        "WS0023": "lightac",
+        "WS0024": "lightac",
+        "WS0025": "lightac",
+        "WS0026": "lightac",
+        "WS0027": "lightac",
+        "WS0028": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0029": "xlu_auglaser",
+        "WS0030": "xlu_auglaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_kalis_wing",
+    "xlu_lantaka_wing"
+  ]
+}

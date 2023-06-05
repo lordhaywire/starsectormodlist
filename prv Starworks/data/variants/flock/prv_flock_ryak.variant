@@ -3,7 +3,7 @@
   "hullId": "prv_flock",
   "displayName": "Ryak",
   "goalVariant": false,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 3,
   "fluxVents": 30,
   "quality": 3,
   "permaMods": [],

@@ -1,0 +1,29 @@
+{
+  "hullName": "Shield Generator",
+  "hullId": "xlu_gadolinite_shield",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_gadolinite/xlu_gadolinite_shield.png",
+  "style": "MIDLINE",
+  "height": 66,
+  "width": 78,
+  "center": [39, 94],
+  "collisionRadius": 342,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 300,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_baseless_module",
+    "xlu_gadolinite_shell"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -34, 28,
+    -55, 33,
+    -92, -0,
+    -55, -33,
+    -34, -28,
+    -43, -0
+  ]
+}

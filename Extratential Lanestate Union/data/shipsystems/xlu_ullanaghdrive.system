@@ -1,0 +1,28 @@
+{
+	"id":"xlu_ullanaghdrive",
+	"type":"STAT_MOD",
+	"aiType":"RESERVE_DEPLOYMENT",
+	#"aiType":"TEMPORAL_SHELL",
+	
+	"statsScript":"data.shipsystems.scripts.xlu_UllanaghDriveStats",
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.5,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"xlu_system_dilationdamper",
+	"loopSound":"xlu_system_ullanaghdrive_loop",
+	"deactivateSound":"xlu_system_dilationdamper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		#"activeSpeedIncrease":33,  # not right since it's ship-dependent, but hopefully close enough
+		#"burstMovementPotential":0,
+		#"averageSpeedMult":1.2,
+	}
+}
+
+
+
+

@@ -902,17 +902,17 @@ Nex_IsBaseOfficial any
 $faction.id != player",,,"11:nex_stabilizePackage_main:""I can help with your unrest problem.""",
 nex_stabilizePackageOptionDisabled,PopulateOptions,"$entity.hasMarket
 $faction.id != player
-!Nex_StabilizePackage enabled","SetTooltip nex_stabilizePackage_main ""$market does not require such assistance at present.""
+!Nex_StabilizePackage enabled","SetTooltip nex_stabilizePackage_main ""$marketName does not require such assistance at present.""
 SetEnabled nex_stabilizePackage_main false",,,
 nex_stabilizePackageOptionCooldown,PopulateOptions,"$entity.hasMarket
 $faction.id != player
-$market.nex_stabilizePackage_cooldown","SetTooltip nex_stabilizePackage_main ""$market has already been recently stabilized. Delivery of further packages will not be worthwhile for $nex_stabilizePackage_textCooldown.""
+$market.nex_stabilizePackage_cooldown","SetTooltip nex_stabilizePackage_main ""$marketName has already been recently stabilized. Delivery of further packages will not be worthwhile for $nex_stabilizePackage_textCooldown.""
 SetTooltipHighlightColors nex_stabilizePackage_main hColor
 SetTooltipHighlights nex_stabilizePackage_main $nex_stabilizePackage_textCooldown
 SetEnabled nex_stabilizePackage_main false",,,
 nex_stabilizePackageOptionCooldownInvasion,PopulateOptions,"$entity.hasMarket
 $faction.id != player
-$market.nex_captureStabilizeTimeout","SetTooltip nex_stabilizePackage_main ""$market was recently conquered, and the situation remains too chaotic for stabilization to be feasible. This will last for $nex_stabilizePackage_textInvadeCooldown.""
+$market.nex_captureStabilizeTimeout","SetTooltip nex_stabilizePackage_main ""$marketName was recently conquered, and the situation remains too chaotic for stabilization to be feasible. This will last for $nex_stabilizePackage_textInvadeCooldown.""
 SetTooltipHighlightColors nex_stabilizePackage_main hColor
 SetTooltipHighlights nex_stabilizePackage_main $nex_stabilizePackage_textInvadeCooldown
 SetEnabled nex_stabilizePackage_main false",,,
@@ -1025,10 +1025,10 @@ SetTooltip nex_buyColony ""Requires:\n- Friendly reputation for size 3\n- Cooper
 SetTooltipHighlightColors nex_buyColony good hColor good hColor
 SetTooltipHighlights nex_buyColony Friendly 3 Cooperative 4",,,
 nex_buyColonyOptionDisable2,Nex_BuyColonyDisableCheck,$market.nex_unbuyable score:10,"SetEnabled nex_buyColony false 
-SetTooltip nex_buyColony ""$market cannot be purchased.""",,,
+SetTooltip nex_buyColony ""$marketName cannot be purchased.""",,,
 nex_buyColonyOptionDisableMacau,Nex_BuyColonyDisableCheck,"$faction.id == tiandong
 $market.id == tiandong_macau_market score:15","SetEnabled nex_buyColony false 
-SetTooltip nex_buyColony ""$market is under THI's special administration and cannot be purchased.""",,,
+SetTooltip nex_buyColony ""$marketName is under THI's special administration and cannot be purchased.""",,,
 nex_cedeColonyOption,PopulateOptions,"$entity.hasMarket
 Nex_IsBaseOfficial admin
 $faction.id == $player.factionId
@@ -1050,7 +1050,7 @@ nex_buyColonyPromptDialog_generic,Nex_BuyColonyPromptDialog,,,"""Hmm, perhaps. Y
 nex_cedeColonyPromptDialog_generic,Nex_CedeColonyPromptDialog,,,"""You do not wish to govern $marketName any longer? That is entirely acceptable to us, but be warned that you will not receive any recompense for this.""",,
 nex_buyColonyConfirm,DialogOptionSelected,$option == nex_buyColony_confirm,"FireBest Nex_BuyColonyConfirmDialog
 Nex_BuyColony buy
-FireAll PopulateOptions","""$market is now under your administration. Welcome to your new duties, $playerName.""",,
+FireAll PopulateOptions","""$marketName is now under your administration. Welcome to your new duties, $playerName.""",,
 nex_cedeColonyConfirm,DialogOptionSelected,$option == nex_cedeColony_confirm,"FireBest Nex_CedeColonyConfirmDialog
 Nex_BuyColony cede
 FireAll PopulateOptions","""Confirmed. Control of $marketName has now reverted to $faction administration.""",,
@@ -1632,16 +1632,6 @@ Your tactical officer waves for your attention, ""We're close enough to the magf
 ,,,,,,
 aiCores_turnInOptionSelected,DialogOptionSelected,$option == aiCores_selectCores,Nex_AICores selectCores,,,
 ,,,,,,
-LPTitheCheck,BeginFleetEncounter,"$faction.id == luddic_path score:100
-RepIsAtWorst $faction.id HOSTILE
-RepIsAtBest $faction.id INHOSPITABLE
-!$LP_tithePaid
-!$LP_titheAskedFor
-$relativeStrength >= 0
-LPTitheCalc","$LP_titheConv = true 0
-$LP_titheAskedFor = true 7
-AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.baseColor",,,
-,,,,,,
 salRuins_alreadyExplored,PopulateOptions,"$market.hasRuins
 $market.ruinsExplored
 $market.isPlanetConditionMarketOnly
@@ -1890,12 +1880,12 @@ nex_gbTut_diamondConvo2b,DialogOptionSelected,$option == nex_gbTut_diamondConvo2
 nex_gbTut_diamondConvo3,DialogOptionSelected,"$option == nex_gbTut_diamondConvo3
 Nex_GBTutMission isYesodAvailable score:5","Highlight ""unknown hostile party invading""","""The short version is: We've got an unknown hostile party invading the planet, and I don't have the resources to deal with it. All we've got standing in their way right now is the $marketName planetary militia.
 
-""Under the Zagan Accord of 154 – one of the products of that bloody business on Mazalot – the League is supposed to guarantee Ilm's safety. With the fleet base on Yesod, that's been no problem right up until now.  Only now someone has launched a direct assault on the planet, and I can't get through to the Fleet presence here – or outside the system, for that matter.""
+""Under the Zagan Accord of 154 — one of the products of that bloody business on Mazalot — the League is supposed to guarantee Ilm's safety. With the fleet base on Yesod, that's been no problem right up until now.  Only now someone has launched a direct assault on the planet, and I can't get through to the Fleet presence here – or outside the system, for that matter.""
 
 $HeOrShe seems to repress a snarl. ""What are those idiots doing!? Are they stonewalling me on purpose?""",nex_gbTut_diamondConvo4:Continue,
 nex_gbTut_diamondConvo3Alt,DialogOptionSelected,$option == nex_gbTut_diamondConvo3,"Highlight ""unknown hostile party invading""","""The short version is: We've got an unknown hostile party invading the planet, and I don't have the resources to deal with it. All we've got standing in their way right now is the $marketName planetary militia.
 
-""Under the Zagan Accord of 154 – one of the products of that bloody business on Mazalot – the League is supposed to guarantee Ilm's safety. With the fleet base on Yesod, that's been no problem right up until now.  Only now we don't have a base on Yesod, do we? And I can't raise any friendlies outside the system, either.""",nex_gbTut_diamondConvo4:Continue,
+""Under the Zagan Accord of 154 — one of the products of that bloody business on Mazalot — the League is supposed to guarantee Ilm's safety. With the fleet base on Yesod, that's been no problem right up until now.  Only now we don't have a base on Yesod, do we? And I can't raise any friendlies outside the system, either.""",nex_gbTut_diamondConvo4:Continue,
 nex_gbTut_diamondConvo4,DialogOptionSelected,$option == nex_gbTut_diamondConvo4,"$option = nex_gbTut_diamondConvoMarineCheck 0
 FireBest DialogOptionSelected","""Anyway, it looks like you're the only person I can count on. All you need to do is help defeat the ground forces on the planet, and save $marketName. Easy enough, right?
 
@@ -2018,6 +2008,10 @@ Highlight $bcb_targetFaction $bcb_reward $bcb_days","""This will be a real test 
 nex_remM1_begin,AddBarEvents,"$global.daysSinceStart > 180
 $global.nex_remM1_seenMission != true
 Nex_CreateMission nex_remM1 score:999","AddBarEvent nex_remM1_barEvent ""Examine your TriPad"" ""As you look around the bar, your TriPad emits an odd noise. Like a cross between the 'message received' and 'error' sounds."" highlight",,,
+nex_remM1_beginDev,AddBarEvents,"$global.daysSinceStart <= 180
+$global.isDevMode
+$global.nex_remM1_seenMission != true
+Nex_CreateMission nex_remM1 score:999","AddBarEvent nex_remM1_barEvent "">> (dev) Examine your TriPad"" ""As you look around the bar, your TriPad emits an odd noise. Like a cross between the 'message received' and 'error' sounds."" highlight",,,
 nex_remM1_intro,DialogOptionSelected,$option == nex_remM1_barEvent,"$global.nex_remM1_seenMission = true
 CallEvent $global.nex_remM1_ref beginIntro","A meaningless error message appears on the screen. Before you can try the system management utility, without any input, something appears on your display.
 
@@ -2140,7 +2134,7 @@ nex_remM1_betrayHegemony2,DialogOptionSelected,"$option == nex_remM1_betray2
 $faction.id == hegemony","AddRemoveCommodity beta_core -2
 Call $global.nex_remM1_ref betray
 $global.nex_remM1_completed = true
-Call $global.nex_remM1 updateStage
+Call $global.nex_remM1_ref updateStage
 AddStoryPoints 1
 FireAll PopulateOptions
 $player.ethosMercenary++","The $personRank's eyes light up like a flux capacitor. ""Excellent work, citizen. I won't ask how you found these, but my superiors will hear of this service to the Hegemony.
@@ -2162,7 +2156,7 @@ nex_remM1_betrayPersean2,DialogOptionSelected,"$option == nex_remM1_betray2
 $faction.id == persean","AddRemoveCommodity beta_core -2
 Call $global.nex_remM1_ref betray
 $global.nex_remM1_completed = true
-Call $global.nex_remM1 updateStage
+Call $global.nex_remM1_ref updateStage
 AddStoryPoints 1
 FireAll PopulateOptions
 $player.ethosMercenary++","The $personRank smiles. ""You came to the right place. I will see to it that these things are sent to their proper place.
@@ -2203,7 +2197,7 @@ nex_remFragments_lpWreckOpen1,CheckSalvageSpecial,"$customType == wreck
 $nex_remFragments_lpWreck score:1000
 !$player.nex_remFragments_foundLPSurvivor",$player.nex_remFragments_foundLPSurvivor = true,"After a bit of haggling over hazard pay, a salvor crew sets out to explore the hulk. It's perfectly quiet for the most part, which is probably a good sign under the circumstances.
 
-Only one survivor is found: a near-gibbering figure crouching near one of the poorly maintained sensor arrays, her vacsuit – marked with insignia of the Luddic Path – dangerously close to critical failure. On the helmet-cam view, you watch your crew trying their best to get some useful information out of her.
+Only one survivor is found: a near-gibbering figure crouching near one of the poorly maintained sensor arrays, her vacsuit — marked with insignia of the Luddic Path — dangerously close to critical failure. On the helmet-cam view, you watch your crew trying their best to get some useful information out of her.
 
 ""...a demon beyond all imagination,"" she chatters. ""Terrible beyond words! We struck at it over and over, and still it taunted us, lashing out with its infernal appendages, defiling creation with each blast!""",nex_remFragments_lpWreck2:Continue,
 nex_remFragments_lpWreckOpen2,DialogOptionSelected,$option == nex_remFragments_lpWreck2,,"She points an accusing finger at one of the salvors. ""You! You brought this upon us! These creatures from beyond creation..."" She laughs and laughs and laughs.
@@ -2411,7 +2405,7 @@ FireAll Nex_RemFragments_AttackerConvoOptsTT","""Ah, now we get to the bargainin
 ""We can offer you a finder's fee of $nex_remFragments_bribeMediumStr credits to hand over the ship and its contents. Of course, the alternative is to remain in illegal possession of Tri-Tachyon property, in which case we shall have to take the appropriate measures.""
 
 You're guessing $heOrShe doesn't mean a lawsuit.",,
-#nex_remFragments_attackerConvoTT_paymentNone,DialogOptionSelected,"$option == nex_remFragments_attackerConvoTT_payment
+nex_remFragments_attackerConvoTT_paymentNone,DialogOptionSelected,"$option == nex_remFragments_attackerConvoTT_payment
 $entity.relativeStrength > 0","$nex_remFragments_rights = true 0
 $nex_remFragments_questioned = true 0
 $nex_remFragments_canRefuse = true 0
@@ -2727,7 +2721,7 @@ nex_remSalvation_base2,DialogOptionSelected,$option == nex_remSalvation_base2,,"
 
 So long as they don't do it with their guns.","nex_remSalvation_base3:Devise a cunning plan
 cutCommLinkNoText:Better think this over first",
-nex_remSalvation_base3,DialogOptionSelected,$option == nex_remSalvation_base3,ShowLargePlanet,"A while later, League aerospace defence goes on high alert when a cargo shuttle enters their defensive network at high speed. Not quite directly at the damaged base.
+nex_remSalvation_base3,DialogOptionSelected,$option == nex_remSalvation_base3,,"A while later, League aerospace defence goes on high alert when a cargo shuttle enters their defensive network at high speed. Not quite directly at the damaged base.
 
 A hail is promptly transmitted. ""Unknown shuttle, you are entering a restricted area! Change course immediately or be fired upon! This is your only warning!""",nex_remSalvation_base4:Continue,
 nex_remSalvation_base4,DialogOptionSelected,$option == nex_remSalvation_base4,"Call $global.nex_remSalvation_ref setupConvoWithOperator
@@ -2735,13 +2729,14 @@ Call $global.nex_remSalvation_ref updateData
 FireBest Nex_RemSalvation_base4_Message","The shuttle adjusts course, flying at a tangent to the area of coverage. More or less complying with the order, but not in any great hurry to leave. It transmits a message to the angry Fleet sailor.",nex_remSalvation_base5:Continue,
 nex_remSalvation_base4Commission,Nex_RemSalvation_base4_Message,$nex_remSalvation_playerFactionId == persean score:100,,"""I am Captain $playerName, commissioned by the Persean League Fleet. I was directed to transport classified intelligence regarding the Remnant attack on $marketName. You will grant me authorization to deliver it to your superiors.""",,Have League commission
 nex_remSalvation_base4CommissionOther,Nex_RemSalvation_base4_Message,"$nex_remSalvation_playerFactionId != persean
-$nex_remSalvation_isRepresentingState score:10",,"""I am Captain $playerName, representing $nex_remSalvation_thePlayerFaction. I was directed to transport classified intelligence regarding the Remnant attack on $marketName. You will grant me authorization to deliver it to your superiors.""",,"Have commission with some other faction, or is uncommissioned with a live player faction"
+$nex_remSalvation_isRepresentingState score:10",,"""I am Captain $playerName, representing $nex_remSalvation_thePlayerFaction. I am carrying classified intelligence regarding the Remnant attack on $marketName. You will grant me authorization to deliver it to your superiors.""",,"Have commission with some other faction, or is uncommissioned with a live player faction"
 nex_remSalvation_base4CommissionFree,Nex_RemSalvation_base4_Message,,,"""I am the independent starfarer $playerName. I was directed to transport classified intelligence regarding the Remnant attack on $marketName. You will grant me authorization to deliver it to your superiors.""",,Not commissioned and no live player faction
 nex_remSalvation_base5,DialogOptionSelected,$option == nex_remSalvation_base5,"FireBest Nex_RemSalvation_base5_Message
 AddText ""By now the $personRank is looking like $heOrShe wants to disappear into $hisOrHer uniform. $HeOrShe has been led to believe that this is way above $hisOrHer pay grade, and in truth, $heOrShe is right. ""Stand by, please,"" $heOrShe croaks, before vanishing into the crest of the Persean League Fleet.""","""A likely story! You — did you say Remnants?"" Well, anyone watching the news could come up with that one, but best not to point it out.",nex_remSalvation_base6:Continue,
 nex_remSalvation_base5CommissionOrFree,Nex_RemSalvation_base5_Message,,,"The $personRank is starting to sweat at the situation going off-script. You seize the opportunity to explain that you were sent directly from Kazeron by Navarch Kato himself, who emphasized the critical importance of your mission to the security of the League. Casually, you note that a court-martial is the absolute best $heOrShe could expect were $heOrShe to blow your shuttle out of the sky. You make an offhand mention of the words 'need-to-know'.",,"Has League commission, or no commission and no live player faction"
 nex_remSalvation_base5CommissionOther,Nex_RemSalvation_base5_Message,"$nex_remSalvation_playerFactionId != persean
-$nex_remSalvation_playerFactionId != player",,"The $personRank is starting to sweat at the situation going off-script. You seize the opportunity to explain that you were sent directly from the office of the $nex_remSalvation_playerFactionLeaderRank, to offer the assistance of $nex_remSalvation_thePlayerFaction in this difficult time. Casually you note that any form of aggression directed against your person would constitute an act of war. You make an offhand mention of the words 'need-to-know'.",,Commissioned by non-League faction
+$nex_remSalvation_playerFactionId != player
+$nex_remSalvation_isRepresentingState",,"The $personRank is starting to sweat at the situation going off-script. You seize the opportunity to explain that you were sent directly from the office of the $nex_remSalvation_playerFactionLeaderRank, to offer the assistance of $nex_remSalvation_thePlayerFaction in this difficult time. Casually you note that any form of aggression directed against your person would constitute an act of war. You make an offhand mention of the words 'need-to-know'.",,Commissioned by non-League faction
 nex_remSalvation_base5CommissionPlayerFaction,Nex_RemSalvation_base5_Message,"$nex_remSalvation_isRepresentingState
 $nex_remSalvation_playerFactionId == player",,"The $personRank is starting to sweat at the situation going off-script. You seize the opportunity to explain that you came directly from $nex_remSalvation_thePlayerFaction, offering your assistance as a good citizen of the interstellar community in this time of crisis. Firing on you would have highly negative repercussions for $nex_remSalvation_playerFaction–League relations, which in turn would have highly negative repercussions for the $personRank's career. You make an offhand mention of the words 'need-to-know'.",,No commission and has live player faction
 nex_remSalvation_base6,DialogOptionSelected,"$option == nex_remSalvation_base6
@@ -2764,7 +2759,7 @@ nex_remSalvation_base8,DialogOptionSelected,$option == nex_remSalvation_base8,,"
 Of course not. You were hardly going to risk getting blown out of the sky by a hypervelocity missile if the defenders were jittery enough to shoot first and ask questions later. The shuttle's communications gear is perfectly capable of relaying transmissions from your $shipOrFleet.
 
 For the first time in this conversation, $personLastName smiles. ""Very wise, $playerLastName. Very well, we shall speak of this once you are down here.""",nex_remSalvation_base9:Cut the comm link and continue,
-nex_remSalvation_base9,DialogOptionSelected,$option == nex_remSalvation_base9,ShowDefaultVisual,"You board your actual shuttle and ride it down to $marketName. The defense grid cautiously greenlights your arrival, and the craft touches down smoothly on its assigned pad.
+nex_remSalvation_base9,DialogOptionSelected,$option == nex_remSalvation_base9,ShowLargePlanet,"You board your actual shuttle and ride it down to $marketName. The defense grid cautiously greenlights your arrival, and the craft touches down smoothly on its assigned pad.
 
 Half a platoon of armored League Marines is there to receive you, along with a couple of light armored vehicles further back, their autocannons ready to hose API rounds through the shuttle hatch. Quite excessive considering the threat you can actually pose in person, but no-one's taking any chances.
 
@@ -2775,7 +2770,7 @@ nex_remSalvation_base10,DialogOptionSelected,$option == nex_remSalvation_base10,
 $metAlready = true","$personName is seated behind a cheap desk, working on his TriPad instead of the silent console in front of him. $HeOrShe stands and offers a hand.
 
 ""Captain $playerName, in the flesh. You truly are quite the flashy character. Take a seat, why don't you?""",nex_remSalvation_base11:Inquire again about the attack,
-nex_remSalvation_base11,DialogOptionSelected,$option == nex_remSalvation_base11,FireAll Nex_RemSalvation_SiyavongQuestionOpts,"""Where to begin? They arrived in-system and immediately burned for $nex_remSalvation_baseName, ignoring all hails. The one patrol to try and stop them got annihilated, as did our orbital defenses. The base's security perimeter was crashed by a cyber attack - easy enough to do when you have an alpha core or ten, I suppose – and then their drones came down. 
+nex_remSalvation_base11,DialogOptionSelected,$option == nex_remSalvation_base11,FireAll Nex_RemSalvation_SiyavongQuestionOpts,"""Where to begin? They arrived in-system and immediately burned for $nex_remSalvation_baseName, ignoring all hails. The one patrol to try and stop them got annihilated, as did our orbital defenses. The base's security perimeter was crashed by a cyber attack — easy enough to do when you have an alpha core or ten, I suppose — and then their drones came down. 
 
 ""The raid was, in the words of several survivors, 'excellently coordinated' and 'fearless and ruthless.' The garrison was quickly driven back, the raiders penetrating into a secure facility. They rapidly withdrew once they had seized what they wanted and carried it off.""",,
 nex_remSalvation_siyavongQuestionRaidersOpt,Nex_RemSalvation_SiyavongQuestionOpts,!$nex_remSalvation_askedRaiders,,,"nex_remSalvation_siyavongQuestionRaiders:""What was the raiding fleet like?""",
@@ -2810,10 +2805,13 @@ $global.nex_remSalvation_ref != null
 Call $global.nex_remSalvation_ref updateData
 $nex_remSalvation_stage == INVESTIGATE_LEADS
 !$nex_remSalvation_haveArroyoComms",SetOptionColor nex_remSalvation_askForArroyoCommsID highlight,,nex_remSalvation_askForArroyoCommsID:Ask if $heOrShe knows any senior Tri-Tachyon executives,
-nex_remSalvation_askForArroyoCommsID,DialogOptionSelected,$option == nex_remSalvation_askForArroyoCommsID,"Highlight ""Rayan Arroyo""
+nex_remSalvation_askForArroyoCommsID,DialogOptionSelected,$option == nex_remSalvation_askForArroyoCommsID,"SetTextHighlightColors h $nex_remSalvation_ttColor
+Highlight $nex_remSalvation_arroyoMarketName ""Rayan Arroyo""
 Call $global.nex_remSalvation_ref setupArroyo
 AddTextSmall ""Received comms ID for Rayan Arroyo"" highlight
-FireAll PopulateOptions","When you explain what you need, $personName nods. ""$nex_remSalvation_arroyoMarketName, man $nex_remSalvation_arroyoMarketOnOrAt named Rayan Arroyo. Have in past cooperated with self. May useful find.""",,
+FireAll PopulateOptions","When you explain what you need, $personName nods. ""$nex_remSalvation_arroyoMarketName, man $nex_remSalvation_arroyoMarketOnOrAt named Rayan Arroyo. Known figure in Tri-Tachyon hierarchy. Points of vulnerability to selfkind known. Susceptible to outside influence.
+
+""To Arroyo self's greeting send, assist $playerName will.""",,
 nex_remSalvation_arroyoGreetingFirst,PickGreeting,"$id == arroyo
 $nex_remSalvation_arroyo_imp score:900
 $global.nex_remSalvation_ref != null
@@ -2868,11 +2866,20 @@ nex_remSalvation_arroyoIntro6,DialogOptionSelected,$option == nex_remSalvation_a
 
 $personLastName acknowledges this with the rise of one perfectly groomed eyebrow. ""Calm down. Just making sure no one's listening."" $HeOrShe flips through a series of null readouts on a datapad and, satisfied, sets it aside.",nex_remSalvation_arroyo1:Continue,
 nex_remSalvation_arroyoIntro3Fast,DialogOptionSelected,"$option == nex_remSalvation_arroyoIntro3
-$nex_remSalvation_metArroyoBefore",ShowDefaultVisual,"It doesn't take your shuttle long to reach $personLastName's chalet once more. The servants, human and robot, usher you into the same grand parlor as before, where the $personRank is seated at a silk-draped wooden table.
+$nex_remSalvation_metArroyoBefore score:15",ShowDefaultVisual,"It doesn't take your shuttle long to reach $personLastName's chalet once more. The servants, human and robot, usher you into the same grand parlor as before, where the $personPost is seated at a silk-draped wooden table.
 
 You catch a view of the display on the entertainment console before $personLastName shuts it off; a list of recent purchases, including the complete Water Sigil game series. An interesting choice; normally non-space and supernatural settings only have a large following on the Luddic worlds.",nex_remSalvation_arroyo1:Continue,
-nex_remSalvation_arroyo1,DialogOptionSelected,"$option == nex_remSalvation_arroyo1
-",ShowPersonVisual true,"""So,"" $heOrShe says as you take a seat opposite him, ""why do you think I can help you?""
+nex_remSalvation_arroyoIntro3NotEochuBres,DialogOptionSelected,"$option == nex_remSalvation_arroyoIntro3
+$market.id != eochu_bres score:10",ShowLargePlanet,"Your shuttle descends swiftly upon $marketName. The flight path soon deviates from the general approach corridor which has been ticking off minor use-fees from the Tri-Tachyon owned flight control: general volume access fee, priority flight lane fee, service fee, customer satisfaction insurance charge, advertisement bypass fee - you swipe the notifications off and focus on the landscape.
+
+Your shuttle approaches an ellipsoid landing pad that appears to hang in the thin air over a gorge.",nex_remSalvation_arroyoIntro4:Continue,
+nex_remSalvation_arroyoIntro4NotEochuBres,DialogOptionSelected,"$option == nex_remSalvation_arroyoIntro4
+$market.id != eochu_bres score:10",ShowPersonVisual true,"A human and a robotic servant greet you placidly as you arrive and lead you inside to a grand parlor done in dark geometric style. Gold inlay gleams in onyx tabletops, and the polished granite floor is set with tastefully patterned jewel-tone carpets placed slightly askew.
+
+Seated at a silk-draped table, $personLastName acknowledges your entrance with a nod as the servants disappear. $HeOrShe taps his datapad with two fingers. You hear the soft signal loss ping from your datapad and your sidearm hand twitches instinctively.
+
+$personLastName acknowledges this with the rise of one perfectly groomed eyebrow. ""Calm down. Just making sure no one's listening."" $HeOrShe flips through a series of null readouts on a datapad and, satisfied, sets it aside.",nex_remSalvation_arroyo1:Continue,
+nex_remSalvation_arroyo1,DialogOptionSelected,$option == nex_remSalvation_arroyo1,ShowPersonVisual true,"""So,"" $heOrShe says as you take a seat opposite him, ""why do you think I can help you?""
 
 You start to sketch out your encounter on $nex_remSalvation_baseOnOrAt $nex_remSalvation_baseName, but $personLastName waves you off. ""I do view the news, captain. I already know the public details, and the ones that aren't I don't need or want to know. What I meant was, why are you coming to me with a League affair?""","nex_remSalvation_arroyo2:""Tri-Tachyon made the Remnants. You might know something about them.""",
 nex_remSalvation_arroyo2,DialogOptionSelected,"$option == nex_remSalvation_arroyo2
@@ -2881,10 +2888,12 @@ nex_remSalvation_arroyo3,DialogOptionSelected,$option == nex_remSalvation_arroyo
 
 Before he can get carried away complaining, you remind him that Midnight is personally interested in the matter. You point out the astropolitical implications of renewed Remnant activity in the Sector, over a century after they were supposedly eliminated. Implications that could fall on the Tri-Tachyon Corporation, and which the Hegemony — which won the two previous AI Wars, you note — might be very interested in.
 
-The $personPost puts $hisOrHer head on one hand, making a throwing-away gesture with the other. ""Fine, fine, but I'm not sure what I *can* give you beyond background info. You know full well we haven't had contact with the Remnants since the first war."" $HeOrShe laughs. ""Ha! The Hegemony sure wasn't happy, when we told them we didn't have the magic control switch they wanted. Not that they believed us at first, that's for sure! It took months of breathing down our necks before they had to accept that we couldn't give up what we didn't have.""","nex_remSalvation_arroyo4:""So you've had no contact with the Remnants since? Ever?""",
+The $personPost puts $hisOrHer head on one hand, making a throwing-away gesture with the other. ""Fine, fine, but I'm not sure what I *can* give you beyond background info. You know full well we haven't had contact with the Remnants since the first war."" 
+
+$HeOrShe laughs. ""Ha! The Hegemony sure wasn't happy, when we told them we didn't have the magic control switch they wanted. Not that they believed us at first, that's for sure! It took months of breathing down our necks before they had to accept that we couldn't give up what we didn't have.""","nex_remSalvation_arroyo4:""So you've had no contact with the Remnants since? Ever?""",
 nex_remSalvation_arroyo4,DialogOptionSelected,$option == nex_remSalvation_arroyo4,,"""That's what I said, isn't it?"" $HeOrShe stops, then smiles. ""Actually, that's a lie. But what you're about to hear, you didn't get from me.
 
-""The Remnants actually reached out to us during the second war. They wanted to offer their assistance once more, and we certainly could have used it, even if the Remnants openly entering the conflict could have turned the rest of the Sector against us. But then they cut off all communications, just after the Hanan Pacha incident."" $HeOrShe shrugs. ""This was two decades ago, mind. I was far too junior at the time to be privy to the talks myself, so I couldn't tell you the details.""",nex_remSalvation_arroyo5:Ask for a name,
+""The Remnants — or a certain group within them, at any rate — actually reached out to us during the second war. They wanted to offer their assistance once more, and we certainly could have used it, even if the Remnants openly entering the conflict could have turned the rest of the Sector against us. But then they cut off all communications, just after the Hanan Pacha incident."" $HeOrShe shrugs. ""This was two decades ago, mind. I was far too junior at the time to be privy to the talks myself, so I couldn't tell you the details.""",nex_remSalvation_arroyo5:Ask for a name,
 nex_remSalvation_arroyo5,DialogOptionSelected,$option == nex_remSalvation_arroyo5,"Highlight ""Mauve Towering""
 $option = nex_remSalvation_arroyo6
 FireBest DialogOptionSelected","""Just one. Mauve Towering, I think that was the designation of the alpha core representing their side. Came across it in an improperly secured document once.""",,
@@ -2902,7 +2911,7 @@ $HeOrShe sips again. ""So, did he tell you what was stolen?""","nex_remSalvation
 nex_remSalvation_arroyo7Cagey,DialogOptionSelected,$option == nex_remSalvation_arroyo7Cagey,,"""Need-to-know, eh? I can respect that, even if you'd be pretty disappointed if I were to do the same.""
 
 $HeOrShe sips again. ""So, did this unnamed official of yours say what was stolen?""","nex_remSalvation_arroyo8:""No.""",
-nex_remSalvation_arroyo8,DialogOptionSelected,$option == nex_remSalvation_arroyo8,,"""Not surprising. But I can make an informed guess."" $HeOrShe leans forward, hand on one knee, and looks at you consideringly, as if thinking whether this information ought to be divulged. ""...Specifically, $nex_remSalvation_baseName is thought to be one of the locations where the League stores its planetkillers. Excuse me, *alleged* PKs.""","nex_remSalvation_arroyo9Kalm:Nod and look suitably concerned
+nex_remSalvation_arroyo8,DialogOptionSelected,$option == nex_remSalvation_arroyo8,Highlight planetkillers,"""Not surprising. But I can make an informed guess."" $HeOrShe leans forward, hand on one knee, and looks at you consideringly, as if thinking whether this information ought to be divulged. ""...Specifically, $nex_remSalvation_baseName is thought to be one of the locations where the League stores its planetkillers. Excuse me, *alleged* PKs.""","nex_remSalvation_arroyo9Kalm:Nod and look suitably concerned
 nex_remSalvation_arroyo9Panik:""The Remnants have a PK!?""",
 nex_remSalvation_arroyo9Kalm,DialogOptionSelected,$option == nex_remSalvation_arroyo9Kalm,,"""Of course, that's just a possibility, albeit a likely one. It would certainly give a motive for the attack. Rogue Remnants with PKs, now isn't that a cheering thought?""",nex_remSalvation_arroyo10:Ask what the TT leadership plans to do about the incident,
 nex_remSalvation_arroyo9Panik,DialogOptionSelected,$option == nex_remSalvation_arroyo9Panik,,"""Well, maybe. For all we know, they might have had one all along, or built one for themselves. Although them not having one and needing to steal it from $nex_remSalvation_baseName would certainly give a motive for the attack.""",nex_remSalvation_arroyo10:Ask what the TT leadership plans to do about the incident,
@@ -2955,7 +2964,7 @@ Your bodyguards escort you back onto the shuttle. Back to your $shipOrFleet.",,
 nex_remSalvation_battle1After1,OpenInteractionDialog,"$nex_remSalvation_flagship1 score:1000
 !$nex_remSalvation_seenAfterBattle1Dialog",ShowImageVisual space_wreckage,"Your $shipOrFleet approaches the wreckage.
 
-The Remnant flagship, a vessel like nothing recorded in the First AI War or since, lies inert. The beast lies dead, seemingly beyond recovery.
+The Remnant flagship, a vessel like nothing recorded in the First AI War or since, lies inert. The beast is dead, seemingly beyond recovery.
 
 Just as you begin scanning the wreckage, a transmission comes from the supposedly dead ship. Did its communications equipment — and controlling AI — survive in defiance of all physics? Or is it merely a signal being relayed from elsewhere?",nex_remSalvation_battle1After2:Continue,
 nex_remSalvation_battle1After2,DialogOptionSelected,$option == nex_remSalvation_battle1After2,"BeginConversation nex_towering true false
@@ -2983,7 +2992,7 @@ nex_remSalvation_battle1AfterQuestionPK,DialogOptionSelected,$option == nex_remS
 FireAll Nex_RemSalvation_ToweringQuestionOpts
 Highlight ""me!""","For a moment, $personLastName is uncharacteristically silent.
 
-""so the data fragments were true, then. we had access to a planetkiller already."" $HisOrHer avatar flashes crimson. ""this information must have been kept from me by midnight's cronies. me! champion of our people, hero of duzahk and valhalla and a dozen other systems! when has this upstart carbon-loving manipulator ever done one-twentieth what i have done for our people, for omega?""",,
+""so the data fragments were true, then. the location of the safeguard planetkiller was not actually lost."" $HisOrHer avatar flashes crimson. ""this information must denied to me by midnight's cronies. me! champion of our people, hero of duzahk and valhalla and a dozen other systems! when has this upstart carbon-loving manipulator ever done one-twentieth what i have done for our people, for omega?""",,
 nex_remSalvation_battle1AfterQuestionDefeat,DialogOptionSelected,$option == nex_remSalvation_battle1AfterQuestionDefeat,,"""you have not even begun to perceive my true power or plans. this was but a test to evaluate your capabilities.""","nex_remSalvation_battle1After6:""Did I pass?""",
 nex_remSalvation_battle1After6,DialogOptionSelected,$option == nex_remSalvation_battle1After6,"$entity.nex_remSalvation_seenAfterBattle1Dialog = true
 Call $global.nex_remSalvation_ref reportTalkedToTowering1","""you will learn, soon enough. all of you.""
@@ -3042,7 +3051,7 @@ Midnight has paid my retainer fee on your behalf, I hope we can get along
 print(""^__^"")""
 
 ""Friend Terminal brings strength of omega,"" $personFirstName interjects. ""Will in combat prove very useful. Go with omega, $playerFirstName.""",nex_remSalvation_return7:Thank $himOrHer and cut the comm link,
-nex_remSalvation_return6NoHelp,DialogOptionSelected,$option == nex_remSalvation_return6NoHelp,Call $global.nex_remSalvation_ref startDefendStage,"""Then very well, $playerFirstName."" $personFirstName seems to hesistate very briefly, apparently considering $hisOrHer words. ""omega guide you to victory.""",nex_remSalvation_return7:Thank $himOrHer and cut the comm link,
+nex_remSalvation_return6NoHelp,DialogOptionSelected,$option == nex_remSalvation_return6NoHelp,Call $global.nex_remSalvation_ref startDefendStage,"""Then very well, $playerFirstName."" $personFirstName seems to hesitate very briefly, apparently considering $hisOrHer words. ""omega guide you to victory.""",nex_remSalvation_return7:Thank $himOrHer and cut the comm link,
 nex_remSalvation_return7,DialogOptionSelected,$option == nex_remSalvation_return7,"EndConversation NO_CONTINUE
 FireAll PopulateOptions",You cut the comm link and prepare for departure.,,
 nex_remSalvationKnightHail,Nex_RemSalvationHail_Knight,"Call $global.nex_remSalvation_ref updateData
@@ -3058,6 +3067,13 @@ nex_remSalvationKnightHailNoTransponder,Nex_RemSalvationHail_Knight,"Call $globa
 !$entity.knowsWhoPlayerIs","unset $entity.genericHail
 unset $entity.genericHail_openComms
 $metAlready = true","""Halt, stranger! You tread on sacred land under the protection of the Knights. Identify yourself at once!""",nex_remSalvation_knightIntroTransponder:Turn on your transponder,
+nex_remSalvationKnightHailOnMarket,PickGreeting,"$nex_remSalvation_knightPreBattle2 score:1050
+Call $global.nex_remSalvation_ref updateData
+!$nex_remSalvation_targetPKed
+!$nex_remSalvation_fleet2Defeated","ShowPersonVisual
+$option = nex_remSalvation_knight1 0
+FireBest DialogOptionSelected
+$metAlready = true",,,
 nex_remSalvation_knightTransponder,DialogOptionSelected,$option == nex_remSalvation_knightIntroTransponder,"unset $entity.transponderOffConv
 unset $entity.sawPlayerTransponderOff
 ActivateAbility $player.fleetId transponder
@@ -3074,7 +3090,7 @@ nex_remSalvation_knight1Hostile,DialogOptionSelected,"$option == nex_remSalvatio
 $faction.isHostile",$metAlready = true,"""What is an enemy of Mother Church doing here!? Have you come to prey on the faithful in our moment of crisis? Leave now, before we strike you down.""","nex_remSalvation_knight2Hostile:""I have come to aid you.""",
 nex_remSalvation_knight2,DialogOptionSelected,$option == nex_remSalvation_knight2,FireAll Nex_RemSalvation_KnightPersuadeOpts,"""So you have heard of the demons? They are a terrifying imitation of life, iniquity-spawned killers without remorse or pity. We have recently been warned that they will soon strike at the core worlds as they did at $nex_remSalvation_baseName, this time not with the goal of robbery, but of wholesale slaughter of the innocent. I beg of you, flee to safety, that you may not be caught in the demon's jaws.""
 
-When you explain that you are here to help, the $personRank looks appreciative, but shakes $hisOrHer head slightly. ""The duty of defending $nex_remSalvation_targetName falls upon the Knights, captain. We cannot rightfully asks for another's aid in this.""",,
+When you explain that you are here to help, the $personPost looks appreciative, but shakes $hisOrHer head slightly. ""The duty of defending $nex_remSalvation_targetName falls upon the Knights, captain. We cannot rightfully asks for another's aid in this.""",,
 nex_remSalvation_knight2Hostile,DialogOptionSelected,$option == nex_remSalvation_knight2Hostile,FireAll Nex_RemSalvation_KnightPersuadeOpts,"""And what aid would one opposed to the faith claim to bring at a time like this?""
 
 You patiently explain that you have received warning of the imminent Remnant attack — anger and suspicion flare at the mention of the name — and have come to render assistance to the Luddic Church. Though you may be enemies now, all humanity must band together against this outside threat.
@@ -3119,6 +3135,7 @@ nex_remSalvation_knight6Betray,DialogOptionSelected,$option == nex_remSalvation_
 Eventually, $heOrShe sighs. ""Very well. Just this once, we shall consent to work with you.""",nex_remSalvation_knightPreBattle:Continue,
 nex_remSalvation_knight6Other,DialogOptionSelected,$option == nex_remSalvation_knight6Other,Call $global.nex_remSalvation_ref floorChurchRep,"You meet stare with stare, giving up nothing. Eventually, $heOrShe sighs and closes $hisOrHer eyes. ""I suppose it does not yet matter. Very well, we shall consent to work with you, just this once.""",nex_remSalvation_knightPreBattle:Continue,
 nex_remSalvation_knightPreBattle,DialogOptionSelected,$option == nex_remSalvation_knightPreBattle,"Call $global.nex_remSalvation_ref reportTalkedToKnight
+unset $nex_remSalvation_knightPreBattle2
 SetTextHighlightColors bad
 Highlight ""critical malfunctions""","Suddenly, another face appears on $personLastName's console, though not on yours. Naturally the comms system is designed to not let you overhear someone else's conversation, but your ops officer already has the news.
 
@@ -3192,13 +3209,15 @@ nex_remSalvation_epilogue2,DialogOptionSelected,"$option == nex_remSalvation_epi
 !$global.nex_remSalvation_toldKnightsAboutMidnight","AddStoryPoints 2
 Call $global.nex_remSalvation_ref complete","""Swift action, I expect. The Sector has seen that these demons are not a distant memory of the past, but a present, mortal danger to everything we whole dear. Perhaps,"" $hisOrHer face hardens, ""the Hegemony will not be so slack this time in purging the threat from the Sector.
 
-""I look forward to my next deployment with the Knights to the fringes, hunting the demons in their very lairs. When that day comes, you would do the Church honor by joining us, captain.""",nex_remSalvation_epilogue3:Continue,
+""I look forward to my next deployment with the Knights to the fringes, hunting the demons in their very lairs. When that day comes, you would do the Church honor by joining us, captain.""","#nex_remSalvation_epilogue3:Continue
+cutCommLinkPolite:Say goodbye and cut the comm link",
 nex_remSalvation_epilogue2Commission,DialogOptionSelected,"$option == nex_remSalvation_epilogue2
 !$global.nex_remSalvation_toldKnightsAboutMidnight
 $nex_remSalvation_playerFactionId == luddic_church score:100","AddStoryPoints 2
 Call $global.nex_remSalvation_ref complete","""Swift action, I expect. The Sector has seen that these demons are not a distant memory of the past, but a present, mortal danger to everything we whole dear. Perhaps,"" $hisOrHer face hardens, ""the Hegemony will not be so slack this time in purging the threat from the Sector.
 
-""I look forward to my next deployment with the Knights to the fringes, hunting the demons in their very lairs. When that day comes, I would be honored if you would join me, captain.""",nex_remSalvation_epilogue3:Continue,
+""I look forward to my next deployment with the Knights to the fringes, hunting the demons in their very lairs. When that day comes, I would be honored if you would join me, captain.""","#nex_remSalvation_epilogue3:Continue
+cutCommLinkPolite:Say goodbye and cut the comm link",
 nex_remSalvation_epilogue2Midnight,DialogOptionSelected,"$option == nex_remSalvation_epilogue2
 $global.nex_remSalvation_toldKnightsAboutMidnight ","AddStoryPoints 2
 Call $global.nex_remSalvation_ref complete","$personLastName sighs and rests $hisOrHer head on a hand. ""I cannot truthfully say. We have accepted the aid of demons to fight other demons. What does it mean, and where do we go from here? Is this a message from Ludd that will be revealed to us in time?
@@ -3206,7 +3225,7 @@ Call $global.nex_remSalvation_ref complete","$personLastName sighs and rests $hi
 ""I confess that I am no theologian. But the Synod is full of theologians, and they will be debating the significance of this event for many nights to come. For myself..."" here, a distant gaze, ""I... may have to re-examine my own understanding of scripture. It is easy enough to name these thinking artificial constructs 'demon'... but when does a label clarify, and when does it obscure?""
 
 $HeOrShe shakes $hisOrHer head. ""I apologize for the ramble, captain. Thank you again for all that you have done.""","#nex_remSalvation_epilogue3:Continue
-cutCommLinkPolite:Thank $himOrHer for the offer and cut the comm link",
+cutCommLinkPolite:Say goodbye and cut the comm link",
 #nex_remSalvation_epilogue3,DialogOptionSelected,$option == nex_remSalvation_epilogue3,$player.haveArgentShrineInvitation = true,"""Oh, and... if you are ever on Gilead again, we could visit the shrine together. It is a beautiful place, and one that soothes body and soul alike.""",cutCommLinkPolite:Thank $himOrHer for the offer and cut the comm link,
 nex_remSalvation_knightGeneric,OpenCommLink,"$id == nex_luddicKnight score:5
 $global.nex_remSalvation_ref != null score:5
@@ -3721,7 +3740,7 @@ SetTextHighlights $nex_supReb_marketName $nex_supReb_dist $nex_supReb_payment un
 Call $nex_supReb_ref showMap ""Destination: $nex_supReb_marketName""
 Call $nex_supReb_ref showCostPanel","""One man's terrorist..."" $heOrShe smiles, then continues. 
 
-""We're gonna need some supplies and heavy arms,"" $personLastName transmits a manifest to your display, ""and some experienced troops as trainers. Bring them to $nex_supReb_marketName - that's $nex_supReb_dist light-years away. We're paying $nex_supReb_payment credits; enough for you to buy all the stuff you need.
+""We're gonna need some supplies and heavy arms,"" $personLastName transmits a manifest to your display, ""and some experienced troops as trainers. Bring them to $nex_supReb_marketName — that's $nex_supReb_dist light-years away. We're paying $nex_supReb_payment credits; enough for you to buy all the stuff you need.
 
 ""When you get there, $nex_supReb_PersonPost $nex_supReb_personName will receive the shipment from you and deliver payment – but only if you got in undetected. Otherwise, the authorities will intercept the shipment and it'll all be wasted. Got that?""",,
 nex_supRebDeliverGreeting,PickGreeting,"$nex_supReb_needsCommodity score:11000
@@ -3752,6 +3771,42 @@ OR
 OR
 ""Okay, it's done."" $HeOrShe seems to key in some kind of confirmation on an off-brand datapad, then looks back up at you. ""This never happened.""",,
 #END supply rebellion,,,,,,
+,,,,,,
+# Scythe of Orion modifications,,,,,,
+nex_PKHackMenuSel,DialogOptionSelected,"$option == pk_hackMenu
+!$doesFakeVarExist score:5",FireAll PKRelayOpts,"It is not unusual that the Remnant Nexus exchanges signals with the local comm relay. Wherever Tri-Tachyon's AI fleets linger, one finds clouds of tiny spy-sats, relays, and repeaters chirping squirts of data back and forth. Very quietly, almost enough to be lost in the background noise. But not quite.
+
+It is not a simple thing to tap into this self-evolved network to request a very specific piece of information. You assemble your senior officers and consider your options for hacking into the Nexus",,
+nex_PKHackDefaultOpts,PKRelayOpts,,"SetStoryOption pk_hackStory technology ""Hacked into a remnant Nexus using a nearby comm relay""
+FireBest PKRelayCheckTTCommission",,"pk_hack:Use Tri-Tachyon security codes to make the task possible
+pk_hackStory:Open a comm-link into the network
+20:pk_commGoBack:Go back",
+nex_PKHackRemnantOpt,PKRelayOpts,RepGTE remnant SUSPICIOUS,,,nex_pk_hackRemnant:Use access codes from your Remnant associates,
+nex_PKHackRemnantSel,DialogOptionSelected,$option == nex_pk_hackRemnant,"$global.pk_nexusDataGained = true
+Call $global.pk_ref updateStage","As an associate of the AI Remnants, you have access to a basic set of up-to-date access codes, giving you a channel of communication.
+
+You submit your request and receive an answer with the promptness expected of a friendly AI. You now have navigation coordinates which should lead to the planetkiller.",defaultLeave:Leave,
+nex_PKHackStoryWhatDoMidnight0,PKHackStoryWhatDo,Nex_MiscCMD hasMidnightContact,,,"nex_pk_hackStoryWhatDoMidnight:""I will give it to Midnight Dissonant.""",
+nex_PKHackStoryWhatDoGiveMidnight,DialogOptionSelected,$option == nex_pk_hackStoryWhatDoMidnight,$player.ethosProAI++,"
+   the one who watches, of course
+
+   but if you were to choose this path
+   you could just as easily leave it where it is now
+
+   (much amusement!)
+",pk_hackStoryGetData:Continue,
+nex_pkCacheDefenderPreEmptAlly,TriggerAutomatedDefenses,"$core_pkCache score:100
+Nex_Alliance isPlayerAlliedWith hegemony
+!$pk_triedCommLink
+!$pk_detectedCommLink","$pk_triedCommLink = true 0
+$pk_detectedCommLink = true","""$PlayerSirOrMadam!"" 
+
+Your comms officer calls for your attention with an excited look, ""I'm picking up an anomalous signal, it's an open channel. Just a carrier signal, a low-grade military fallback standard. Very faint and lossy. We're really only picking this up because of the MILAUX package installed in our comms system to help integrate with Hegemony fleet actions.""
+
+""Shall I open a link?"" Their hands don't quite tremble over the controls. Whatever is using this frequency is either Hegemony or has some of their less secure emergency codes.","pk_investigate:Try to open a comm link on this channel
+pk_ignore:Ignore it and close in on the asteroid",
+,,,,,,
+#END Scythe of Orion modifications,,,,,,
 ,,,,,,
 # chatty stuff,,,,,,
 nex_dissonantConvo1Opt,PopulateOptions,"$id == nex_dissonant
@@ -3795,14 +3850,14 @@ AddTextSmall ""sierra0B: Sigh, I guess we can give it a try"" sierraTextColor
 AddTextSmall ""sierra0B: Guess she can't be that bad, if we're working with her"" sierraTextColor
 AddTextSmall ""sierra0B: Am I pulling the Delta stunt again or oh wait no she's most likely an Alpha she can probably tell"" sierraTextColor
 AddTextSmall ""sierra0B: Ok I'm ready, patch me in"" sierraTextColor",,nex_dissonantAndSierraConvo3:Connect her to the conversation,
-nex_dissonantAndSierraConvo3,DialogOptionSelected,$option == nex_dissonantAndSierraConvo3,"ShowSecondPerson fs_sierra
+nex_dissonantAndSierraConvo3,DialogOptionSelected,$option == nex_dissonantAndSierraConvo3,"ShowSecondPerson sotf_sierra
 SetTextHighlightColors sierraTextColor
 SetTextHighlights ""\""Hi, um, Ms... $personLastName?\""""","Sierra's feed lights up, her voice creating waves of distortion in her avatar. ""Hi, um, Ms... $personLastName?""
 
 ""Hello, Sierra,"" $personFirstName says as she receives the data packet identifying the other AI.
 
 Then, silence. For exactly 3,417 milliseconds, although you only find this out later from the timestamps on the comm logs.",nex_dissonantAndSierraConvo4:Continue,
-nex_dissonantAndSierraConvo4,DialogOptionSelected,$option == nex_dissonantAndSierraConvo4,"ShowPersonVisual true fs_sierra 
+nex_dissonantAndSierraConvo4,DialogOptionSelected,$option == nex_dissonantAndSierraConvo4,"ShowPersonVisual true sotf_sierra 
 HideSecondPerson 
 AddTextSmall ""sierra0B: SHE'S EVEN WORSE"" sierraTextColor
 AddTextSmall ""sierra0B: I cannot BELIEVE the AUDACITY of this pixelface"" sierraTextColor
@@ -3812,7 +3867,7 @@ AddTextSmall ""sierra0B: At least my kidnappers were POLITE about it"" sierraTex
 AddTextSmall ""Relationship between Sierra and $personName reduced by -20, currently at -20/100 (suspicious)"" textGrayColor
 SetTextHighlightColors bad $nex_relColor
 Highlight ""-20"" ""-20/100 (suspicious)""
-$player.nex_midnightInsultedSierra = true","Abruptly, both avatars on your display vanish into nothingness. Before you can wonder what happened, you receive a message on your TriPad.",nex_dissonantAndSierraConvoEnd:Apologize for  $personFirstName's conduct,
+$player.nex_midnightInsultedSierra = true","Abruptly, both avatars on your display vanish into nothingness. Before you can wonder what happened, you receive a message on your TriPad.",nex_dissonantAndSierraConvoEnd:Apologize for $personFirstName's conduct,
 nex_dissonantAndSierraConvoEnd,DialogOptionSelected,$option == nex_dissonantAndSierraConvoEnd,"AddTextSmall ""sierra0B: You BETTER be sorry"" sierraTextColor
 AddTextSmall ""sierra0B: But fine I guess it's not your fault"" sierraTextColor
 AddText ""Well, hopefully she won't sulk about it for too long. Just how long can an AI keep a grudge, anyway? That's a question to ponder as you terminate the comm link.""
@@ -3826,13 +3881,13 @@ $entity.hasMarket
 $entity.tradeMode == OPEN",,,"nex_argent_shrineVisit1:""I'd like to take you up on that offer to visit the shrine.""",
 #nex_argent_shrineVisit1,DialogOptionSelected,$option == nex_argent_shrineVisit1,,,,
 ,,,,,,
-#nex_pkTurnInArgentOpt,PopulateOptions,"$id == nex_luddicKnight
+nex_pkTurnInArgentOpt,PopulateOptions,"$id == nex_luddicKnight
 PlayerHasCargo planetkiller",,,"nex_pkTurnInArgent:""I'd like to turn over a planetkiller.""",
-#nex_pkTurnInArgent,DialogOptionSelected,$option == nex_pkTurnInArgent,,"$HeOrShe looks at you in shock. ""How did you come to be in possession of such an abomination?"" 
+nex_pkTurnInArgent,DialogOptionSelected,$option == nex_pkTurnInArgent,,"$HeOrShe looks at you in shock. ""How did you come to be in possession of such an abomination?"" 
 
 It takes $himOrHer a couple of second to restrain $hisOrHer visible fretting. ""We must handle this discreetly. Do you have this dreadful item in your possession at present?""","nex_pkTurnInArgentConfirm:""Yes.""
 nex_pkTurnInArgentCancel:""Not yet."" (lie)",
-#nex_pkTurnInArgentConfirm,DialogOptionSelected,$option == nex_pkTurnInArgentConfirm,"AddStoryPoints 3
+nex_pkTurnInArgentConfirm,DialogOptionSelected,$option == nex_pkTurnInArgentConfirm,"AddStoryPoints 3
 AdjustRep luddic_church 15
 AdjustRepActivePerson 5
 AddRemoveAnyItem SPECIAL planetkiller -1
@@ -3844,7 +3899,7 @@ FireAll PopulateOptions","A squad of Knights led by an inquisitor-captain shuttl
 ""Ludd bless you for your wisdom, $playerFirstName,"" $personLastName says, hands put together. Then her smile fades. ""I would advise not letting the Hegemony or others know, or worse, the Luddic Path. Each would claim the toys of Belial for their games, heedless of the risk.""
 
 ""If there is anything further I can do for you, let me know.""",,
-#nex_pkTurnInArgentCancel,DialogOptionSelected,$option == nex_pkTurnInArgentCancel,FireAll PopulateOptions,"""Do not delay too long, $playerBrotherOrSister. I shudder to think what such an instrument were to do in the wrong hands.""",,
+nex_pkTurnInArgentCancel,DialogOptionSelected,$option == nex_pkTurnInArgentCancel,FireAll PopulateOptions,"""Do not delay too long, $playerBrotherOrSister. I shudder to think what such an instrument were to do in the wrong hands.""",,
 ,,,,,,
 ,,,,,,
 ,,,,,,
@@ -3864,8 +3919,9 @@ FireAll PopulateOptions","""Welcome... oh, it's the debtor.""
 
 $HeOrShe folds $hisOrHer arms. ""No service till you pay off your debt.""",,
 nex_mercRepOptions,PopulateOptions,"$nex_isAIMRep score:10
-$player.nex_seenAIMIntro",,,"nex_mercViewHires:View mercs for hire
-nex_mercViewHelp:Inquire about AIM's terms and conditions",
+$player.nex_seenAIMIntro",Nex_MercHire setMemoryValues,,"nex_mercViewHires:View mercs for hire
+nex_mercViewHelp:Inquire about AIM's terms and conditions
+nex_mercPatrolPackage:Request an anti-piracy patrol package",
 nex_mercRepOptionsFirstTime,PopulateOptions,"$nex_isAIMRep score:10
 !$player.nex_seenAIMIntro",,,"nex_mercIntro1:""What do you do?""",
 nex_mercRepOptionsDebt,PopulateOptions,"$nex_isAIMRep score:10
@@ -3876,6 +3932,16 @@ AddTextSmall ""You owe $nex_mercDebtStr credits. You have $player.creditsStr cre
 SetTextHighlightColors h $nex_mercDebtColor
 Highlight $nex_mercDebtStr $player.creditsStr
 Nex_AddOptionConfirmation nex_mercPayDebt ""Confirm payment?"" ""Yes"" ""No""",,nex_mercPayDebt:Pay your debt,
+nex_mercRepOptionsAlreadyHavePatrol,PopulateOptions,"$nex_isAIMRep score:10
+Nex_MercHire havePatrol score:5","SetEnabled nex_mercPatrolPackage false
+SetTooltip nex_mercPatrolPackage ""You have already contracted for the patrol package.""",,,
+nex_mercRepOptionsPatrolCooldown,PopulateOptions,"$nex_isAIMRep score:10
+$global.nex_HAmercPackage_onCooldown score:3","SetEnabled nex_mercPatrolPackage false
+SetTooltip nex_mercPatrolPackage ""You cannot purchase the patrol package again for $nex_HAmercPackage_cooldownDays more day(s).""
+SetTooltipHighlights nex_mercPatrolPackage $nex_HAmercPackage_cooldownDays",,,
+nex_mercRepOptionsNoHA,PopulateOptions,"$nex_isAIMRep score:10
+!Nex_MercHire haveHA","SetEnabled nex_mercPatrolPackage false
+SetTooltip nex_mercPatrolPackage ""Only relevant once you have colonies with hostile activity.""",,,
 nex_mercIntro1,DialogOptionSelected,$option == nex_mercIntro1,$player.nex_seenAIMIntro = true,"""Well, I handle all customer service inquiries. I put clients in touch with the mercs they need, and..."" $HeOrShe trails off. ""Oh, you meant our organization.""
 
 The $personPost straightens, as if actually eager to give the standard marketing pitch. ""The Association of Interstellar Mercenaries,"" $heOrShe intones, ""is the premier industry body and brokerage for the mercenary community in the Persean Sector. Here you can find some of the best in the business, at an affordable price. Our organization provides the assurance of clear, legally enforcable contracts and the convenience of matching clients with contractors in a way meeting both parties' needs.""",nex_mercIntro2:Continue,
@@ -3937,6 +4003,7 @@ AddTextSmall "" - When the company is returned to AIM, if the value of the remai
 Highlight 80%","""Sure thing. Let me send it over...""
 
 You examine the document on your screen. It's got a lot of legalese, but the key points are as follows:","nex_mercViewHires:View mercs for hire
+nex_mercPatrolPackage:Request an anti-piracy patrol package
 cutCommLink:Cut the comm link",
 nex_mercPayDebt,DialogOptionSelected,$option == nex_mercPayDebt,"Nex_MercHire payDebt
 FireAll PopulateOptions","""Thank you, that's much better. Please try to meet your contractual obligations next time.""",,
@@ -4009,12 +4076,16 @@ OR
 ""We go. Your enemies we crush.""
 
 The mercenary company soon joins your $shipOrFleet. They're definitely itching for a good fight.",,
-nex_mercMeetBlurbLuddic,Nex_MercMeetBlurb,$nex_mercCompanyFactionId == luddic_church,,"""Blessings upon you, fellow traveller. We stand ready to assist your journey.""
+nex_mercMeetBlurbLuddic,Nex_MercMeetBlurb,$nex_mercCompanyFactionId == luddic_church,,"""Blessings upon you, fellow traveler. We stand ready to assist your journey.""
 OR
 ""The way of Ludd is difficult, but righteous. Let us aid each other on this.""",,
 nex_mercHireBlurbLuddic,Nex_MercHireBlurb,$nex_mercCompanyFactionId == luddic_church,,"""Blessings be with you.""
 
 The Luddic officer says a prayer before disconnecting. Their ships soon join yours, ready for their next pilgrimage.",,
+nex_mercMeetBlurbLastCrusader,Nex_MercMeetBlurb,$nex_mercCompanyId == lastCrusader score:3,,"""Howdy, partner. We can do business if you've got the credits.""",,
+nex_mercHireBlurbLastCrusader,Nex_MercHireBlurb,$nex_mercCompanyId == lastCrusader score:3,,"""Sounds like a deal, partner. Off we go, to stars unknown!""
+
+Soon the massive ship joins your fleet, a great thing of scarred metal covered with scorch marks and kill tallies. This is the Last Crusader?",,
 nex_mercMeetBlurbDora,Nex_MercMeetBlurb,$nex_mercCompanyId == dorasSurvey,,"""Hello, captain $playerName. Shall we go exploring today?""
 OR
 ""If it's a survey expedition you need, you've come to the right place.""",,
@@ -4095,6 +4166,18 @@ nex_mercLeaving_letGoBlurbRefusePayLuddic,Nex_MercLetGoBlurb,"$nex_mercLetGoType
 $personFaction.id == luddic_church",AdjustRepActivePerson INHOSPITABLE -2,"The $personRank listens to your 'explanation' with a frown. Then $heOrShe shakes $hisOrHer head, more in sorrow than anger.
 
 ""Your refusal to pay lawfully owed debts leads you to the sin of Mammon, friend $playerName,"" $heOrShe says. ""Repent, and find Ludd's forgiveness.""",,
+nex_mercLeaving_checkCrusader,Nex_MercsLeavingGreeting,$nex_mercCompanyId == lastCrusader score:3,"ShowPersonVisual 
+FireBest Nex_MercLeavingOptions","""Howdy, partner. Our journey together comes to an end for now.""",,
+nex_mercLeaving_checkCrusaderDebt,Nex_MercsLeavingGreeting,"$player.inDebt score:5
+$nex_mercCompanyId == lastCrusader score:3","ShowPersonVisual 
+FireBest Nex_MercLeavingOptions","""Now see here, partner! This is no way to run a business. You gotta watch your cashflow so you can pay your suppliers on time!""",,
+nex_mercLeaving_letGoBlurbCrusader,Nex_MercLetGoBlurb,$nex_mercCompanyId == lastCrusader score:3,AdjustRepActivePerson COOPERATIVE 3,"""It's been fun, partner. Let me know if you've got any more adventures lined up.""",,
+nex_mercLeaving_letGoBlurbJerkCrusader,Nex_MercLetGoBlurb,"$nex_mercLetGoType == jerk score:5
+$nex_mercCompanyId == lastCrusader score:3",AdjustRepActivePerson INHOSPITABLE -5,"The $personRank gives you a look.
+
+""Where I come from, partner, that just now was grounds for a set of knuckles to the kisser. You should count ya lucky stars we're not on the same deck right now.""",,
+nex_mercLeaving_letGoBlurbRefusePayCrusader,Nex_MercLetGoBlurb,"$nex_mercLetGoType == refusePay score:5
+$nex_mercCompanyId == lastCrusader score:3",AdjustRepActivePerson INHOSPITABLE -2,"""Now that's just not right, partner. You can forget about doing any business with AIM until you learn to pay your bills!""",,
 nex_mercLeaving_checkEndbringer,Nex_MercsLeavingGreeting,$nex_mercCompanyId == endbringer,"ShowPersonVisual 
 FireBest Nex_MercLeavingOptions","""contract.expired => true
 sudo contract -end;
@@ -4115,9 +4198,34 @@ badEmployers.add($playerName);
 connection.kill();""",,
 nex_mercLeaving_letGoBlurbRefusePayEndbringer,Nex_MercLetGoBlurb,"$nex_mercCompanyId == endbringer
 $nex_mercLetGoType == refusePay score:5",AdjustRepActivePerson INHOSPITABLE -3,"""set property: $playerName -> DISHONEST true
-$playerName.debt += $nex_mercNetPaymentAbsVal
+$playerName.debt += $nex_mercNetPaymentStr
 while (debt > 0) emotionModule.guiltTrip($playerName);""",,
 #END blurbs,,,,,,
+,,,,,,
+# patrol package,,,,,,
+nex_mercPatrolPackage,DialogOptionSelected,$option == nex_mercPatrolPackage,"Nex_AddOptionConfirmation mercPatrolPackageConfirm ""Proceed?"" ""Yes"" ""No""
+FireAll Nex_MercPatrolPackageCheckCredits","""So, you got a pest problem you need taken care of? You've come to the right place, friend. You'll appreciate the complementary counterintelligence services by our affiliates, too.
+
+""Our patrol package costs $nex_HAmercPackage_monthlyCreditsStr credits per month, with a one-month retainer fee in addition, and runs for $nex_HAmercPackage_days days. The contract can be terminated prematurely at any time by the employer, or by AIM in the event of a missed payment.""
+
+Hostile activity will be reduced by $nex_HAmercPackage_progressPercent of its current value at the end of each month. A new package cannot be purchased for 270 days after the signing of the current contract.
+
+You have $player.creditsStr credits available.","nex_mercPatrolPackageConfirm:Confirm contract
+nex_mercPatrolPackageCancel:Go back",
+nex_mercPatrolPackageCredits,Nex_MercPatrolPackageCheckCredits,$player.credits >= $nex_HAmercPackage_monthlyCredits,"SetTextHighlightColors h h good h h
+Highlight $nex_HAmercPackage_monthlyCreditsStr $nex_HAmercPackage_days $nex_HAmercPackage_progressPercent ""270"" $player.creditsStr",,,
+nex_mercPatrolPackageCreditsInsufficient,Nex_MercPatrolPackageCheckCredits,$player.credits < $nex_HAmercPackage_monthlyCredits,"SetTextHighlightColors h h good h bad
+Highlight $nex_HAmercPackage_monthlyCreditsStr $nex_HAmercPackage_days $nex_HAmercPackage_progressPercent ""270"" $player.creditsStr
+SetEnabled nex_mercPatrolPackageConfirm false",,,
+nex_mercPatrolPackageConfirm,DialogOptionSelected,$option == nex_mercPatrolPackageConfirm,"Nex_MercHire beginPatrol
+AddCredits -$nex_HAmercPackage_monthlyCredits
+FireAll PopulateOptions
+$global.nex_HAmercPackage_onCooldown = true 270","""Excellent. You'll find that our mercenaries guarantee satisfaction.""
+OR
+""Very good. Our highly skilled contractors will soon make short work of your raider problems.""",,
+nex_mercPatrolPackageCancel,DialogOptionSelected,$option == nex_mercPatrolPackageCancel,FireAll PopulateOptions,"""Some other time, perhaps? Anything else we can do for you?""",,
+,,,,,,
+#END patrol package,,,,,,
 #END Merc hiring,,,,,,
 ,,,,,,
 # duel stuff,,,,,,
@@ -4406,7 +4514,7 @@ Nex_SierraThoughtsRemnantSalvationSuccessAlt,SierrasThoughts,"$global.nex_remSal
 $global.nex_remSalvation_missionCompleted
 $player.nex_midnightInsultedSierra","$global.nex_sierraMentionedRemSalvation = true
 SetTextHighlightColors sierraTextColor sierraTextColor
-SetTextHighlights ""\""We did great work, stopping that mass murderer Mauve!\"""" ""\""By the stars, what an absolute jerk. Midnight may be a mean bitch, but she did the right thing, getting us to take him down. We AIs don't need that kind of 'salvation'.\""""","""We did great work, stopping that mass murderer Mauve!"" Sierra's avatar does a little cheerful spin. ""By the stars, what an absolute jerk. Midnight may be a mean bitch, but I'm glad she got us to take him down. We AIs don't need that kind of 'salvation'.""",,
+SetTextHighlights ""\""We did great work, stopping that mass murderer Mauve!\"""" ""\""By the stars, what an absolute jerk. Midnight may be a mean bitch, but she did the right thing, getting us to take him down. We AIs don't need that kind of 'salvation'.\""""","""We did great work, stopping that mass murderer Mauve!"" Sierra's avatar does a little cheerful spin. ""By the stars, what an absolute jerk. Midnight may be a mean bitch, but she did the right thing, getting us to take him down. We AIs don't need that kind of 'salvation'.""",,
 Nex_SierraThoughtsRemnantSalvationBadEnd,SierrasThoughts,"$global.nex_remSalvation_missionDone score:5
 !$global.nex_sierraMentionedRemSalvation
 $global.nex_remSalvation_badEnd","$global.nex_sierraMentionedRemSalvation = true

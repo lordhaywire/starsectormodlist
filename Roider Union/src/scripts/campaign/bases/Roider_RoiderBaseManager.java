@@ -4,20 +4,16 @@ import java.util.Random;
 
 import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.intel.BaseEventManager;
 import com.fs.starfarer.api.impl.campaign.intel.bases.PirateBaseManager;
-import com.fs.starfarer.api.impl.campaign.procgen.themes.BaseThemeGenerator;
 import scripts.campaign.bases.Roider_RoiderBaseIntelV2.RoiderBaseTier;
 import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.util.WeightedRandomPicker;
 import com.thoughtworks.xstream.XStream;
-import data.scripts.util.MagicSettings;
 import ids.Roider_Ids.Roider_Settings;
-import java.util.*;
+import org.magiclib.util.MagicSettings;
 import scripts.world.Roider_Gen;
 
 public class Roider_RoiderBaseManager extends BaseEventManager {

@@ -1,0 +1,47 @@
+{
+  "variantId": "ocua_sophis_Standard",
+  "hullId": "ocua_sophis",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_crystalline",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_sazanami",
+        "WS0002": "ocua_sazanami"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_prima",
+        "WS0004": "ocua_prima",
+        "WS0005": "ocua_prima"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_glint",
+        "WS0007": "ocua_glint",
+        "WS0008": "ocua_glint",
+        "WS0009": "ocua_glint",
+        "WS0011": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

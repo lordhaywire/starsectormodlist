@@ -4,35 +4,36 @@
   "displayName": "Standard",
   "goalVariant": true,
   "fluxCapacitors": 0,
-  "fluxVents": 7,
+  "fluxVents": 9,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "heavyarmor",
-    "unstable_injector"
+    "unstable_injector",
+    "reinforcedhull"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "annihilator",
-        "WS0004": "annihilator"
+        "WS0005": "arbalest"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "chaingun"
+        "WS0003": "hammer",
+        "WS0004": "hammer"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "heavyac",
-        "WS0002": "heavyac"
+        "WS0001": "heavymortar",
+        "WS0002": "heavymortar"
       }
     }
   ],

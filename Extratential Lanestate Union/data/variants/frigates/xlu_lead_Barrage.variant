@@ -1,0 +1,40 @@
+{
+  "variantId": "xlu_lead_Barrage",
+  "hullId": "xlu_lead",
+  "displayName": "Barrage",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "hammer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_gattling_m",
+        "WS0002": "xlu_gattling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_stubbon",
+        "WS0005": "xlu_stubbon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

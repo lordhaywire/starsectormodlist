@@ -1,0 +1,31 @@
+{
+  "variantId": "JYD_intelligent_standard",
+  "hullId": "JYD_intelligent",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 13,
+  "fluxVents": 16,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "JYD_spe"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,53 @@
+{
+  "variantId": "xlu_espron_Saturation",
+  "hullId": "xlu_espron",
+  "displayName": "Saturation",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 13,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_bolton",
+        "WS0002": "xlu_bolton",
+        "WS0003": "xlu_bolton"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "sabot",
+        "WS0008": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_mulleter",
+        "WS0005": "xlu_mulleter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "WS0006": "xlu_hovlet"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

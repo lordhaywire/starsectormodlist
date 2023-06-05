@@ -1,0 +1,36 @@
+{
+	"id":"xlu_thunderfist",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	#"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_base00.png",
+	#"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_barrel00.png",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_base.png",
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_thunderfist/xlu_thunderfist_recoil.png",	
+	#"numFrames":4,
+	#"frameRate":30,
+	"visualRecoil":16.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	#"turretOffsets":[46, 0, 40, -19, 40, 19],
+	"turretOffsets":[38, -19, 38, 19],
+	"turretAngleOffsets":[0, 0],
+	#"hardpointOffsets":[22, 0, 16, -19, 16, 19],
+	"hardpointOffsets":[58, -19, 58, 19],
+	"hardpointAngleOffsets":[0, 0],	
+	#"alwaysAnimate":"true",
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	#"interruptibleBurst":true,
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":10.0,
+					   "particleSizeRange":16.0,
+					   "particleDuration":0.15,
+					   "particleCount":12,
+					   "particleColor":[255,140,125,200]},	
+	"projectileSpecId":"xlu_thunderfist_shot",  # projectile that will be fired
+	"fireSoundTwo":"xlu_thunderfist_fire",	
+}

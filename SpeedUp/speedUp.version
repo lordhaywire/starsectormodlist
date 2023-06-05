@@ -2,10 +2,11 @@
     "masterVersionFile":"https://www.sc2mafia.com/Starsector/version/speedUp.version",
     "modName":"SpeedUp",
     "modThreadId":13394,
+    "directDownloadURL": "https://bitbucket.org/DarkRevenant/speedup/downloads/SpeedUp_1.0.0.7z",
     "modVersion":
     {
-        "major":0,
-        "minor":7,
-        "patch":2
+        "major":1,
+        "minor":0,
+        "patch":0
     },
 }

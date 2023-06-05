@@ -1,0 +1,111 @@
+{
+  "variantId": "ocua_station_level3",
+  "hullId": "ocua_station_lvl3",
+  "displayName": "Star Fortress",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "BPS 01": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 02": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 05": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 06": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 03": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 04": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 07": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BPS 08": "ocua_station_pillar_shield_Standard"
+    },
+    {
+      "BSBS 02": "ocua_station_shield_module_Standard"
+    },
+    {
+      "BSBS 03": "ocua_station_shield_module_Standard"
+    },
+    {
+      "BSBSL 01": "ocua_station_shield_module_Standard"
+    },
+    {
+      "BSBSL 02": "ocua_station_shield_module_Standard"
+    },
+    {
+      "BS 08": "ocua_station_module_hangar_large_Standard"
+    },
+    {
+      "BS 05": "ocua_station_module_hangar_large_Standard"
+    },
+    {
+      "BS 07": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "BS 06": "ocua_station_module_gun_medium_Standard"
+    },
+    {
+      "SBS 01": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 02": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 04": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 03": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 05": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 06": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "SBS 08": "ocua_station_module_gun_small_left_Standard"
+    },
+    {
+      "SBS 07": "ocua_station_module_gun_small_right_Standard"
+    },
+    {
+      "RS 03": "ocua_station_ring_heavy_Standard"
+    },
+    {
+      "RS 01": "ocua_station_ring_heavy_Standard"
+    },
+    {
+      "RS 02": "ocua_station_ring_heavy_Standard"
+    },
+    {
+      "RS 04": "ocua_station_ring_heavy_Standard"
+    },
+    {
+      "PS 01": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 02": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 03": "ocua_station_pillar_tall_Standard"
+    },
+    {
+      "PS 04": "ocua_station_pillar_tall_Standard"
+    }
+  ],
+  "wings": []
+}

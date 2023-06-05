@@ -1,0 +1,22 @@
+{
+	"id":"xlu_hyvel_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	
+	"onHitEffect":"data.scripts.weapons.xlu_hyvel_hit_effect",
+	
+	#"spawnType":"BALLISTIC_AS_BEAM",
+	#"collisionClass":"RAY",
+	#"collisionClassByFighter":"RAY_FIGHTER",
+	"length":180.0,
+	"width":9.5,
+	"fadeTime":0.3,
+	"fringeColor":[255,220,50,255],
+	"coreColor":[105,105,255,255],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

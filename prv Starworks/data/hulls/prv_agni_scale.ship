@@ -16,9 +16,9 @@
     "prv_agni_prominence",
     "prv_agni_toughhide"
   ],
-  "builtInWeapons": {
-    "prv_agni_prominence": "prv_agni_prominence"
-  },
+  #"builtInWeapons": {
+  #  "prv_agni_prominence": "prv_agni_prominence"
+  #},
   "weaponSlots": [
     {
       "id": "WS 001",
@@ -38,15 +38,15 @@
       "angle": 0,
       "locations": [-1, -0]
     },
-    {
-      "id": "prv_agni_prominence",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 270,
-      "angle": 180,
-      "locations": [0, -0]
-    }
+    #{
+    #  "id": "prv_agni_prominence",
+    #  "size": "SMALL",
+    #  "type": "DECORATIVE",
+    #  "mount": "HIDDEN",
+    #  "arc": 270,
+    #  "angle": 180,
+    #  "locations": [0, -0]
+    #}
   ],
   "engineSlots": [
     {

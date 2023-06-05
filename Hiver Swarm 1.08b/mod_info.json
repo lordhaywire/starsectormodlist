@@ -1,9 +1,0 @@
-{
-    "id": "HIVER",
-    "name": "Hiver Swarm",
-    "author": "Dazs",
-    "version": "1.08b",
-    "description": "An AI enemy race of sentient cybernetic insects found in deep space",
-    "gameVersion": "0.96a-RC8",
-	"modPlugin":"data.scripts.HIVERmodPlugin",
-}

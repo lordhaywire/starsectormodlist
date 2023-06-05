@@ -3,9 +3,9 @@
   "hullId": "prv_fasnod",
   "displayName": "Attack",
   "goalVariant": false,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 10,
   "fluxVents": 7,
-  "quality": 0,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "prv_flickercore",
@@ -21,18 +21,11 @@
       }
     },
     {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0006": "amblaster"
-      }
-    },
-    {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_akers",
-        "WS0002": "prv_akers"
+        "WS0001": "irpulse",
+        "WS0002": "irpulse"
       }
     },
     {

@@ -1,11 +1,12 @@
 {
     "displayName": "Overdriven",
-    "fluxCapacitors": 0,
+    "fluxCapacitors": 2,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_barbarian",
     "hullMods": ["safetyoverrides"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_barbarian_ovd",
     "weaponGroups": [
         {
@@ -34,7 +35,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0003": "dualflak"}
+            "weapons": {"WS0003": "heavymg"}
         },
         {
             "autofire": true,

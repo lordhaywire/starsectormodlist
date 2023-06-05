@@ -1,11 +1,14 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 6,
-    "fluxVents": 50,
+    "fluxCapacitors": 25,
+    "fluxVents": 31,
+    "goalVariant": true,
     "hullId": "uw_renegade",
     "hullMods": [
         "heavyarmor",
-        "reinforcedhull"
+        "magazines",
+        "unstable_injector",
+        "dedicated_targeting_core"
     ],
     "permaMods": [],
     "sMods": [],
@@ -18,16 +21,14 @@
         },
         {
             "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS0003": "breachpod",
-                "WS0008": "breach"
-            }
+            "mode": "LINKED",
+            "weapons": {"WS0008": "breach"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
+                "WS0003": "annihilatorpod",
                 "WS0009": "annihilator",
                 "WS0010": "annihilator",
                 "WS0011": "annihilator",
@@ -37,7 +38,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0002": "mjolnir"}
+            "weapons": {"WS0002": "hellbore"}
         },
         {
             "autofire": true,
@@ -48,21 +49,21 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "chaingun",
-                "WS0005": "chaingun"
+                "WS0004": "miningblaster",
+                "WS0005": "miningblaster"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "dualflak",
-                "WS0013": "vulcan",
-                "WS0014": "vulcan",
-                "WS0015": "vulcan",
-                "WS0016": "vulcan",
-                "WS0017": "vulcan",
-                "WS0018": "vulcan"
+                "WS0006": "flak",
+                "WS0013": "mininglaser",
+                "WS0014": "mininglaser",
+                "WS0015": "mininglaser",
+                "WS0016": "mininglaser",
+                "WS0017": "mininglaser",
+                "WS0018": "mininglaser"
             }
         }
     ],

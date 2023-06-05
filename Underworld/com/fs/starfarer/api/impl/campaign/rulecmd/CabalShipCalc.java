@@ -129,27 +129,37 @@ public class CabalShipCalc extends BaseCommandPlugin {
 
         float repImpact;
         if (bestShipValue <= 20000f) {
-            repImpact = 0.01f;
-        } else if (bestShipValue <= 50000f) {
             repImpact = 0.02f;
-        } else if (bestShipValue <= 90000f) {
-            repImpact = 0.03f;
-        } else if (bestShipValue <= 140000f) {
+        } else if (bestShipValue <= 50000f) {
             repImpact = 0.04f;
-        } else if (bestShipValue <= 200000f) {
-            repImpact = 0.05f;
-        } else if (bestShipValue <= 270000f) {
+        } else if (bestShipValue <= 90000f) {
             repImpact = 0.06f;
-        } else if (bestShipValue <= 350000f) {
-            repImpact = 0.07f;
-        } else if (bestShipValue <= 440000f) {
+        } else if (bestShipValue <= 140000f) {
             repImpact = 0.08f;
+        } else if (bestShipValue <= 200000f) {
+            repImpact = 0.1f;
+        } else if (bestShipValue <= 270000f) {
+            repImpact = 0.12f;
+        } else if (bestShipValue <= 350000f) {
+            repImpact = 0.14f;
+        } else if (bestShipValue <= 440000f) {
+            repImpact = 0.16f;
         } else if (bestShipValue <= 540000f) {
-            repImpact = 0.09f;
+            repImpact = 0.18f;
+        } else if (bestShipValue <= 650000f) {
+            repImpact = 0.2f;
+        } else if (bestShipValue <= 770000f) {
+            repImpact = 0.22f;
+        } else if (bestShipValue <= 900000f) {
+            repImpact = 0.24f;
+        } else if (bestShipValue <= 1040000f) {
+            repImpact = 0.26f;
+        } else if (bestShipValue <= 1190000f) {
+            repImpact = 0.28f;
         } else {
-            repImpact = 0.10f;
+            repImpact = 0.30f;
         }
-        float repNegImpact = repImpact;
+        float repNegImpact = repImpact * 0.5f;
         switch (Global.getSector().getFaction("cabal").getRelToPlayer().getLevel()) {
             default:
             case VENGEFUL:

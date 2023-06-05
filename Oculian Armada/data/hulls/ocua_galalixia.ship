@@ -1,0 +1,872 @@
+{
+  "bounds": [
+    226,
+    17,
+    315,
+    18,
+    315,
+    34,
+    301,
+    56,
+    167,
+    55,
+    173,
+    69,
+    173,
+    88,
+    167,
+    94,
+    87,
+    94,
+    44,
+    118,
+    -26,
+    118,
+    -33,
+    128,
+    -117,
+    106,
+    -166,
+    116,
+    -211,
+    171,
+    -238,
+    147,
+    -258,
+    146,
+    -258,
+    132,
+    -232,
+    125,
+    -258,
+    94,
+    -281,
+    89,
+    -283,
+    81,
+    -268,
+    77,
+    -287,
+    73,
+    -287,
+    61,
+    -268,
+    56,
+    -283,
+    54,
+    -283,
+    45,
+    -254,
+    41,
+    -246,
+    27,
+    -257,
+    24,
+    -257,
+    13,
+    -246,
+    9,
+    -259,
+    6,
+    -259,
+    -6,
+    -246,
+    -9,
+    -257,
+    -13,
+    -257,
+    -24,
+    -246,
+    -27,
+    -254,
+    -41,
+    -283,
+    -45,
+    -283,
+    -54,
+    -268,
+    -56,
+    -287,
+    -61,
+    -287,
+    -73,
+    -268,
+    -77,
+    -283,
+    -81,
+    -281,
+    -89,
+    -258,
+    -94,
+    -232,
+    -125,
+    -258,
+    -132,
+    -258,
+    -146,
+    -238,
+    -147,
+    -211,
+    -171,
+    -166,
+    -116,
+    -117,
+    -106,
+    -33,
+    -128,
+    -26,
+    -118,
+    44,
+    -118,
+    87,
+    -94,
+    167,
+    -94,
+    173,
+    -88,
+    173,
+    -69,
+    167,
+    -55,
+    301,
+    -56,
+    315,
+    -34,
+    315,
+    -18,
+    226,
+    -17
+  ],
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_mothership_hull",
+    "operations_center",
+    "hiressensors"
+  ],
+  "builtInWeapons": {
+    "BSW 01": "ocua_luna",
+    "BSW 02": "ocua_galalixia_rack",
+    "HNG 01": "ocua_hangar_slot",
+    "HNG 02": "ocua_hangar_slot",
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot",
+    "LIT 03": "ocua_core_slot",
+    "LIT 04": "ocua_core_slot",
+    "LIT 05": "ocua_core_slot",
+    "LIT 06": "ocua_core_slot"
+  },
+  "center": [
+    183,
+    290
+  ],
+  "collisionRadius": 382,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 22,
+      "length": 42,
+      "location": [
+        -260,
+        -138
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 22
+    },
+    {
+      "angle": -180,
+      "contrailSize": 22,
+      "length": 42,
+      "location": [
+        -260,
+        138
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 22
+    },
+    {
+      "angle": 180,
+      "contrailSize": 22,
+      "length": 42,
+      "location": [
+        -289,
+        -67
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 22
+    },
+    {
+      "angle": -180,
+      "contrailSize": 22,
+      "length": 42,
+      "location": [
+        -289,
+        67
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 22
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -286,
+        -84
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -286,
+        84
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -286,
+        -49
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -286,
+        49
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -260,
+        -18
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": -180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -260,
+        18
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 16,
+      "length": 32,
+      "location": [
+        -262,
+        -0
+      ],
+      "style": "CUSTOM",
+      "styleId": "OCULUS",
+      "width": 16
+    }
+  ],
+  "height": 610,
+  "hullId": "ocua_galalixia",
+  "hullName": "galalixia",
+  "hullSize": "CAPITAL_SHIP",
+  "shieldCenter": [
+    15,
+    0
+  ],
+  "shieldRadius": 355,
+  "spriteName": "graphics/Oculian Armada/ships/ocua_galalixia/ocua_galalixia.png",
+  "style": "OCULUS",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "LIT 02",
+      "locations": [
+        15,
+        5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "LIT 01",
+      "locations": [
+        15,
+        -5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "LIT 03",
+      "locations": [
+        12,
+        -15
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "LIT 04",
+      "locations": [
+        12,
+        15
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "LIT 05",
+      "locations": [
+        1,
+        -21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "LIT 06",
+      "locations": [
+        1,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BSW 01",
+      "locations": [
+        211,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BSW 02",
+      "locations": [
+        161,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -127,
+        58,
+        -121,
+        58,
+        -115,
+        58,
+        -109,
+        58,
+        -127,
+        49,
+        -121,
+        49
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        -115,
+        49,
+        -109,
+        49,
+        -109,
+        40,
+        -115,
+        40,
+        -121,
+        40,
+        -127,
+        40
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 3",
+      "locations": [
+        -128,
+        -58,
+        -121,
+        -58,
+        -115,
+        -58,
+        -109,
+        -58,
+        -128,
+        -49,
+        -121,
+        -49
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 4",
+      "locations": [
+        -115,
+        -49,
+        -109,
+        -49,
+        -109,
+        -40,
+        -115,
+        -40,
+        -121,
+        -40,
+        -128,
+        -40
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 5",
+      "locations": [
+        -121,
+        -31,
+        -108,
+        -31,
+        -108,
+        31,
+        -121,
+        31,
+        -121,
+        -22,
+        -121,
+        22
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 6",
+      "locations": [
+        -108,
+        22,
+        -113,
+        22,
+        -113,
+        31,
+        -113,
+        -22.5,
+        -108,
+        -22,
+        -113,
+        -31
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": -90,
+      "arc": 120,
+      "id": "WS0001",
+      "locations": [
+        27,
+        -67
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        27,
+        67
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 90,
+      "id": "WS0003",
+      "locations": [
+        238,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 90,
+      "id": "WS0004",
+      "locations": [
+        238,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        93,
+        -34
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 135,
+      "id": "WS0006",
+      "locations": [
+        93,
+        34
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 150,
+      "id": "WS0007",
+      "locations": [
+        -45,
+        -79
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 90,
+      "arc": 150,
+      "id": "WS0008",
+      "locations": [
+        -45,
+        79
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 120,
+      "id": "WS0009",
+      "locations": [
+        -188,
+        -72
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -180,
+      "arc": 120,
+      "id": "WS0010",
+      "locations": [
+        -188,
+        72
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 0,
+      "arc": 150,
+      "id": "WS0011",
+      "locations": [
+        301,
+        -34
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -0,
+      "arc": 150,
+      "id": "WS0012",
+      "locations": [
+        301,
+        34
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -45,
+      "arc": 150,
+      "id": "WS0013",
+      "locations": [
+        282,
+        -44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 45,
+      "arc": 150,
+      "id": "WS0014",
+      "locations": [
+        282,
+        44
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 150,
+      "id": "WS0015",
+      "locations": [
+        -228,
+        -101
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -180,
+      "arc": 150,
+      "id": "WS0016",
+      "locations": [
+        -228,
+        101
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "SM 03",
+      "locations": [
+        15,
+        -201
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "SM 04",
+      "locations": [
+        15,
+        201
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "SM 05",
+      "locations": [
+        -116,
+        -182
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "SM 06",
+      "locations": [
+        -116,
+        182
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "SM 01",
+      "locations": [
+        169,
+        -150
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "SM 02",
+      "locations": [
+        169,
+        150
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 7",
+      "locations": [
+        -122,
+        12,
+        -113,
+        12,
+        -104,
+        12,
+        -125,
+        6,
+        -115,
+        6,
+        -106,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 8",
+      "locations": [
+        -123,
+        -11,
+        -125,
+        -5,
+        -115,
+        -5,
+        -113,
+        -11,
+        -104,
+        -11,
+        -106,
+        -5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 180,
+      "arc": 0,
+      "id": "HNG 02",
+      "locations": [
+        -146,
+        -60
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    },
+    {
+      "angle": -180,
+      "arc": 0,
+      "id": "HNG 01",
+      "locations": [
+        -146,
+        60
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "DECORATIVE"
+    }
+  ],
+  "width": 366
+}

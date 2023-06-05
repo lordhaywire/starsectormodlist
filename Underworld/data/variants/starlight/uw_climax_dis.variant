@@ -1,31 +1,31 @@
 {
     "displayName": "Disco",
-    "fluxCapacitors": 3,
-    "fluxVents": 30,
+    "fluxCapacitors": 0,
+    "fluxVents": 20,
+    "goalVariant": true,
     "hullId": "uw_climax",
     "hullMods": [
-        "high_scatter_amp",
-        "advancedshieldemitter",
         "targetingunit",
-        "stabilizedshieldemitter"
+        "stabilizedshieldemitter",
+        "converted_hangar"
     ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_climax_dis",
     "weaponGroups": [
         {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 005": "atropos",
-                "WS 006": "atropos",
-                "WS 007": "atropos"
-            }
-        },
-        {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {"WS 009": "hil"}
+        },
+        {
+            "autofire": false,
+            "mode": "ALTERNATING",
+            "weapons": {
+                "WS 005": "gazer",
+                "WS 006": "gazer",
+                "WS 007": "gazer"
+            }
         },
         {
             "autofire": true,
@@ -35,12 +35,21 @@
         {
             "autofire": true,
             "mode": "LINKED",
+            "weapons": {"WS 003": "gravitonbeam"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "taclaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 001": "gravitonbeam",
-                "WS 002": "gravitonbeam",
-                "WS 003": "gravitonbeam",
-                "WS 004": "taclaser"
+                "WS 001": "heavyburst",
+                "WS 002": "heavyburst"
             }
         }
-    ]
+    ],
+    "wings": ["xyphos_wing"]
 }

@@ -1,7 +1,7 @@
 id,type,frame,magnitude,map,path
 uw_infernus,ship,,,material,graphics/uw/material/ships/uw_infernalmachine_fs_material.png
 uw_barbarian,ship,,,material,graphics/uw/material/ships/uw_barbarian_cc_material.png
-uw_renegade,ship,,,material,graphics/uw/material/ships/uw_renegade_material.png
+uw_renegade,ship,,,material,graphics/uw/material/ships/renegade/uw_renegade_material.png
 uw_shark,ship,,,material,graphics/uw/material/ships/uw_shark_material.png
 uw_sidecar,ship,,,material,graphics/uw/material/ships/uw_sidecar_ff_material.png
 uw_tiger,ship,,,material,graphics/uw/material/ships/uw_tiger_material.png
@@ -31,7 +31,6 @@ uw_boss_metastasis,ship,,,material,graphics/uw/material/ships/boss/uw_boss_metas
 uw_boss_pustule,ship,,,material,graphics/uw/material/ships/boss/uw_boss_pustule_material.png
 uw_boss_tumor,ship,,,material,graphics/uw/material/ships/boss/uw_boss_tumor_material.png
 uw_boss_ulcer,ship,,,material,graphics/uw/material/ships/boss/uw_boss_ulcer_material.png
-uw_scarab_cabal,ship,,,material,graphics/uw/material/ships/scarab/scarab_cabal_material.png
 uw_wolf_cabal,ship,,,material,graphics/uw/material/ships/wolf/wolf_cabal_material.png
 uw_afflictor_cabal,ship,,,material,graphics/uw/material/ships/phase/afflictor_cabal_material.png
 uw_medusa_cabal,ship,,,material,graphics/uw/material/ships/medusa/medusa_cabal_material.png
@@ -53,7 +52,7 @@ uw_palace_right,ship,,,material,graphics/uw/material/ships/palace/uw_palace_righ
 uw_palace_rear,ship,,,material,graphics/uw/material/ships/palace/uw_palace_rear_material.png
 uw_infernus,ship,,1,normal,graphics/uw/normal/ships/uw_infernalmachine_fs_normal.png
 uw_barbarian,ship,,1,normal,graphics/uw/normal/ships/uw_barbarian_cc_normal.png
-uw_renegade,ship,,1,normal,graphics/uw/normal/ships/uw_renegade_normal.png
+uw_renegade,ship,,1,normal,graphics/uw/normal/ships/renegade/uw_renegade_normal.png
 uw_shark,ship,,1,normal,graphics/uw/normal/ships/uw_shark_normal.png
 uw_sidecar,ship,,1,normal,graphics/uw/normal/ships/uw_sidecar_ff_normal.png
 uw_tiger,ship,,1,normal,graphics/uw/normal/ships/uw_tiger_normal.png
@@ -83,7 +82,6 @@ uw_boss_metastasis,ship,,1,normal,graphics/uw/normal/ships/boss/uw_boss_metastas
 uw_boss_pustule,ship,,1,normal,graphics/uw/normal/ships/boss/uw_boss_pustule_normal.png
 uw_boss_tumor,ship,,1,normal,graphics/uw/normal/ships/boss/uw_boss_tumor_normal.png
 uw_boss_ulcer,ship,,1,normal,graphics/uw/normal/ships/boss/uw_boss_ulcer_normal.png
-uw_scarab_cabal,ship,,1,normal,graphics/uw/normal/ships/scarab/scarab_cabal_normal.png
 uw_wolf_cabal,ship,,1,normal,graphics/uw/normal/ships/wolf/wolf_cabal_normal.png
 uw_afflictor_cabal,ship,,1,normal,graphics/uw/normal/ships/phase/afflictor_cabal_normal.png
 uw_medusa_cabal,ship,,1,normal,graphics/uw/normal/ships/medusa/medusa_cabal_normal.png
@@ -105,7 +103,7 @@ uw_palace_right,ship,,1,normal,graphics/uw/normal/ships/palace/uw_palace_right_n
 uw_palace_rear,ship,,1,normal,graphics/uw/normal/ships/palace/uw_palace_rear_normal.png
 uw_infernus,ship,,,surface,graphics/uw/surface/ships/uw_infernalmachine_fs_surface.png
 uw_barbarian,ship,,,surface,graphics/uw/surface/ships/uw_barbarian_cc_surface.png
-uw_renegade,ship,,,surface,graphics/uw/surface/ships/uw_renegade_surface.png
+uw_renegade,ship,,,surface,graphics/uw/surface/ships/renegade/uw_renegade_surface.png
 uw_shark,ship,,,surface,graphics/uw/surface/ships/uw_shark_surface.png
 uw_sidecar,ship,,,surface,graphics/uw/surface/ships/uw_sidecar_ff_surface.png
 uw_tiger,ship,,,surface,graphics/uw/surface/ships/uw_tiger_surface.png
@@ -135,7 +133,6 @@ uw_boss_metastasis,ship,,,surface,graphics/uw/surface/ships/boss/uw_boss_metasta
 uw_boss_pustule,ship,,,surface,graphics/uw/surface/ships/boss/uw_boss_pustule_surface.png
 uw_boss_tumor,ship,,,surface,graphics/uw/surface/ships/boss/uw_boss_tumor_surface.png
 uw_boss_ulcer,ship,,,surface,graphics/uw/surface/ships/boss/uw_boss_ulcer_surface.png
-uw_scarab_cabal,ship,,,surface,graphics/uw/surface/ships/scarab/scarab_cabal_surface.png
 uw_wolf_cabal,ship,,,surface,graphics/uw/surface/ships/wolf/wolf_cabal_surface.png
 uw_afflictor_cabal,ship,,,surface,graphics/uw/surface/ships/phase/afflictor_cabal_surface.png
 uw_medusa_cabal,ship,,,surface,graphics/uw/surface/ships/medusa/medusa_cabal_surface.png

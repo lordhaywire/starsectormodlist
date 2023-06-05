@@ -1,0 +1,69 @@
+{
+  "variantId": "ocua_basilix_Assault",
+  "hullId": "ocua_basilix",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_crystalline",
+    "armoredweapons"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_reselplus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "ocua_suzuya",
+        "WS0003": "ocua_suzuya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "ocua_freya",
+        "WS0005": "ocua_freya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "ocua_prima",
+        "WS0009": "ocua_pirouette",
+        "WS0010": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "ocua_blita",
+        "WS0007": "ocua_blita"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "WS0011": "ocua_glint",
+        "WS0012": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

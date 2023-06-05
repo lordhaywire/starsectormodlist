@@ -1,0 +1,19 @@
+{
+	"id":"xlu_manganate_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":108.0,
+	"width":10.0,
+	"fadeTime":0.4,
+	"fringeColor":[235,255,215,235],
+	"coreColor":[225,255,200,200],	
+	"hitGlowRadius":60,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/shell_hellbore.png"
+}

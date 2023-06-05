@@ -1,19 +1,19 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 16,
+    "fluxCapacitors": 10,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "uw_stalker",
-    "hullMods": [],
+    "hullMods": ["dedicated_targeting_core"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_stalker_sta",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "lightag",
-                "WS0006": "lightag",
+                "WS0004": "heavymortar",
                 "WS0007": "lightag",
                 "WS0008": "lightag"
             }
@@ -26,14 +26,17 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "heavyac"}
+            "weapons": {
+                "WS0005": "lightdualac",
+                "WS0006": "lightdualac"
+            }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "hveldriver",
-                "WS0003": "hveldriver"
+                "WS0002": "heavyac",
+                "WS0003": "heavyac"
             }
         },
         {

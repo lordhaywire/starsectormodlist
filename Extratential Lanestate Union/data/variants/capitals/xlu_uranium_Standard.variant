@@ -1,0 +1,61 @@
+{
+  "variantId": "xlu_uranium_Standard",
+  "hullId": "xlu_uranium",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 23,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "augmentedengines",
+    "auxiliarythrusters",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_lusis_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_quad_ac",
+        "WS0003": "xlu_quad_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "flak",
+        "WS0005": "flak",
+        "WS0006": "xlu_gattler",
+        "WS0007": "xlu_gattler",
+        "WS0008": "xlu_gattler",
+        "WS0009": "xlu_gattler",
+        "WS0010": "xlu_gattler",
+        "WS0011": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "BM 01": "xlu_uranium_left_gun_Standard"
+    },
+    {
+      "BM 02": "xlu_uranium_right_gun_Standard"
+    },
+    {
+      "BM 04": "xlu_uranium_side_hangar_Standard"
+    },
+    {
+      "BM 03": "xlu_uranium_side_plat_Standard"
+    }
+  ],
+  "wings": []
+}

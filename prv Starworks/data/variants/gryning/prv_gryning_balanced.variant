@@ -2,10 +2,10 @@
   "variantId": "prv_gryning_balanced",
   "hullId": "prv_gryning",
   "displayName": "Balanced",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 7,
   "fluxVents": 10,
-  "quality": 2,
+  "quality": 0.5,
   "permaMods": [],
   "hullMods": [
     "prv_agiplasma"

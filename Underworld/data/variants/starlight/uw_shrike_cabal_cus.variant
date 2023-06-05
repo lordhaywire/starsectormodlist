@@ -1,6 +1,6 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 12,
+    "fluxCapacitors": 10,
     "fluxVents": 14,
     "goalVariant": true,
     "hullId": "uw_shrike_cabal",

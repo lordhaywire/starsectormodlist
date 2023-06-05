@@ -247,6 +247,8 @@
 		"voteAllianceHeader":"Alliance $allianceName: size rating $allianceSize",
 		"voteQuestionLine":"How does $myFaction vote?",
 		"voteConfirm":"Confirm vote?",
+		"voteDefy":"Defy vote",
+		"voteDefyTooltip":"Refuse to comply with a vote that passes, at a cost to relationship with allied factions.",
 		
 		"memberPermanentSuffix":"(permanent)"
 	},
@@ -1373,6 +1375,7 @@
 		"unitCard_tooltip_atkbreakdown_reorganizing":"Reorganizing",
 		"unitCard_tooltip_atkbreakdown_disabled":"Attack disabled",
 		"unitCard_tooltip_atkbreakdown_rebel":"Rebel",
+		"unitCard_tooltip_defbreakdown_defMult":"Unit defense mult",
 		
 		"actionSelectTargetHeader":"Select target",
 		"actionSelectDestinationHeader":"Select destination",
@@ -1453,7 +1456,8 @@
 		"log_satbomb":"%s!! Severe damage to units at all locations",
 		"log_militiaUnleashed":"Militia unleashed and can now move freely!",
 		"log_victory":"%s %s wins the battle!",
-		"log_lossesFinal":"Final player losses: %s marines, %s heavy armaments",
+		"log_lossesFinal":"Final player losses: $string",
+		"log_lossesFinalEntry": "$num $commodity",
 		"log_ended":"Battle ended",
 		"log_xp_storage":"%s marines in storage earned %s XP",
 		"log_xp_fleet":"%s marines in fleet earned %s XP",
@@ -1627,6 +1631,30 @@
 		
 		"intelBullet2":"Defeat the hostile forces invading %s",
 		"intelBullet3":"and speak with $name",
+	},
+	
+	"nex_hostileActivity":{
+		"cellDisruptName":"Cell infiltrated",
+		"cellDisruptDesc":"Your operative has infiltrated and destroyed a Luddic Path cell on one of your colonies.",
+		
+		"defensiveFleetName":"Defensive fleets",
+		"defensiveFleetDesc":"Fleets of various types can keep the spaceways safe from marauding Pathers and pirates.",
+		"defenseFleetName":"Defense fleets",
+		"defenseFleetDesc":"Requested defense fleets deter hostile activity while active. Only the strongest event is used.",
+		"specialForcesName":"Special task groups",
+		"specialForcesDesc":"Special task groups present a threat to enemy raiders even when not actively patrolling. Contribution is based on the sum of the strength of all task groups in the sector, with diminishing returns.",
+		"specialForcesDescHighlight":"sum of the strength,diminishing returns",
+		"mercPackageName":"AIM Patrol Package",
+		"mercPackageDesc":"The Association of Interstellar Mercenaries offers a highly effective (and expensive) anti-piracy patrol package.",
+		"mercPackageDescCancelled":"The contract has been terminated.",
+		"mercPackageDescCancelledDebt":"The contract has been terminated by AIM due to player debt.",
+		"mercPackageDescCompleted":"The contract has been completed.",
+		"mercPackageBulletFee":"Monthly fee: %s credits",
+		"mercPackageBulletProgress":"Estimated progress this month: %s",
+		"mercPackageBulletDays":"Days remaining: %s",
+		"mercPackageBulletDebt":"Cancelled due to debt",
+		"mercPackageBtnCancel":"Cancel contract",
+		"mercPackageConfirmPromptCancel":"Confirm contract termination?",
 	},
 	
 	"exerelin_landmarks":{
@@ -2085,6 +2113,48 @@
 		"cancelReason_noLongerInterested":"$TheFaction is no longer interested in carrying out the mission.",
 	},
 	
+	"nex_personal":{
+		"intelTitle":"Personal Info",
+		"intelHeaderMusic":"Faction music",
+		"btnChangeHonorific":"Change honorific",
+		"btnPlayMusic":"Play",
+		"btnChangeMusic":"Change",
+		
+		"tableHeaderStat":"Stat",
+		"tableHeaderEthos":"Ethos",
+		"tableHeaderLuddicAttitude":"Luddic attitude",
+		"tableHeaderValue":"Value",
+		
+		"ethosName_AntiAI":"Anti-AI",
+		"ethosName_Cocky":"Cocky",
+		"ethosName_Freedom":"Freedom",
+		"ethosName_Generous":"Generous",
+		"ethosName_Honorable":"Honorable",
+		"ethosName_Humanitarian":"Humanitarian",
+		"ethosName_Knowledge":"Knowledge",
+		"ethosName_Liar":"Liar",
+		"ethosName_Mercenary":"Mercenary",
+		"ethosName_Mercy":"Mercy",
+		"ethosName_Order":"Order",
+		"ethosName_ProAI":"Pro-AI",
+		"ethosName_Ruthless":"Ruthless",
+		"ethosName_Sarcastic":"Sarcastic",
+		"ethosName_Truth":"Truth",
+		"ethosName_UseAI":"Use AI",
+		"luddicAttitudeName_Agnostic":"Agnostic",
+		"luddicAttitudeName_Atheistic":"Atheistic",
+		"luddicAttitudeName_Cynical":"Cynical",
+		"luddicAttitudeName_Faithful":"Faithful",
+		"luddicAttitudeName_Pather":"Pather",
+		
+		"musicMap_name_encounter_friendly":"Encounter friendly",
+		"musicMap_name_market_friendly":"Market friendly",
+		"musicMap_name_encounter_neutral":"Encounter neutral",
+		"musicMap_name_market_neutral":"Market neutral",
+		"musicMap_name_encounter_hostile":"Encounter hostile",
+		"musicMap_name_market_hostile":"Market hostile",
+	},
+	
 	"nex_playerOutpost":{
 		"outposts":"outposts",
 		"outpostProperName":"Outpost",
@@ -2355,6 +2425,8 @@
 		"dialogMsgRevivingShips":"reviving ships",
 		"dialogButtonViewRaid":"View",
 		"dialogButtonJoinRaid":"Join",
+		"dialogMsgStrippedOfficer":"Over officer limit, removing officer %s from ship %s (%s)",
+		"dialogMsgOfficerOverLimitWarning":"Over officer limit after taking ships! We won't remove the officers in case it'd be inconvenient to put them back, but please refrain from using this as an exploit~",
 		
 		"reportNode_commander":"Commander's fee",
 		"reportNode_officer":"Officer payroll",
@@ -2407,6 +2479,7 @@
 		"silverlightDash_descTimeMob":"%.1fx time mult and mobility",
 		"silverlightDash_descZFSB":"always zero flux speed boost",
 		"silverlightDash_descDamper":"%.0f%% less damage taken",
+		"silverlightDash_descAspects":"%s/%s Aspects",
 	},
 	
 	"nex_strategicAI":{
@@ -2449,8 +2522,10 @@
 		"statDispositionNegative":"low disposition",
 		"statWarDecisionRating":"war decision rating vs. target",
 		"statAntiRepetition":"recently used this action",
+		"statAllianceScore":"alliance score",
 		"statNumWars":"number of wars",
 		"statFaction":"faction setting",
+		"statConcernType":"concern type",
 		"statBadAction":"bad action for this concern",
 		"statCannotBeSolved":"concern cannot be solved with this action",
 		
@@ -2777,6 +2852,7 @@
 		
 		"intelTagDebug":"Debug",
 		"intelTagStrategicAI":"Strat. AI",
+		"intelTagPersonal":"Personal",
 		
 		"xpProfitableTradeMsg":"Gained experience from profitable trades",
 		
@@ -2791,13 +2867,29 @@
 		"siyavongName2":"Siyavong",
 		"cottonName1":"Livewell",
 		"cottonName2":"Cotton",
+		"kantaName1":"Jorien",
+		"kantaName2":"Kanta",
+		"cydoniaName1":"Wyatt",
+		"cydoniaName2":"Cydonia",
+		"arroyoName1":"Rayan",
+		"arroyoName2":"Arroyo",
+		
+		# used in random sector
+		"marketKantasDen":"Kanta's Den",
 		
 		"abandonColonyStoryCriticalTooltip":"This colony will have a key role in the Sector's history and cannot be abandoned.",
+		
+		"ungp_civilianShips_tip1":"Current military DP: %s",
+		"ungp_civilianShips_tip2":"Current civilian/militarized DP: %s",
+		"ungp_civilianShips_tip3":"CR penalty: %s%%",
+		"ungp_civilianShips_tip4":"Maintenance mult: %s×",
 	},
 	
 	"nex_lunaSettings":{
 		"header_ui":"User interface",
 		"header_debug":"Debug",
+		"header_diplomacy":"Diplomacy",
+		"header_alliances":"Alliances",
 		"header_invasions":"Invasions",
 		"header_insurance":"Insurance",
 		"header_agents":"Operatives",
@@ -2808,6 +2900,7 @@
 		"header_misc":"Miscellaneous",
 		
 		"tabFleets":"Fleets and battles",
+		"tabDiplomacy":"Diplomacy and alliances",
 		
 		"name_ceasefireNotificationPopup":"Ceasefire notification popup",
 		"name_nexDevMode":"Nexerelin dev mode",
@@ -2852,6 +2945,23 @@
 		"name_groundBattleDamageMult":"Ground battle damage mult",
 		"tooltip_groundBattleDamageMult":"Modifies the damage units do to each other during ground battles.",
 		
+		"name_enableDiplomacy":"Enable diplomacy",
+		"tooltip_followersDiplomacy":"Toggles random and AI-picked diplomacy events between factions.",
+		"name_followersDiplomacy":"Player faction has diplomacy events",
+		#"tooltip_followersDiplomacy":"Toggles random and AI-picked diplomacy events for player faction.",
+		"name_diplomacyInterval":"Diplomacy interval",
+		"tooltip_diplomacyInterval":"Base interval between random diplomacy events, and (when strategic AI is disabled) between 'diplomacy brain' events. Adjusted by number of factions in the game. When modified, the interval period does not update until the current one is finished.",		
+		"name_allowRandomDiplomacyTraits":"Allow random diplomacy traits",
+		"tooltip_allowRandomDiplomacyTraits":"When faction relations are randomized, apply random diplomacy traits to each faction as well.",
+		"name_useRelationshipBounds":"Use relationship bounds",
+		"tooltip_useRelationshipBounds":"Relationship boundaries are set in faction config; e.g. some factions can never become really friendly with one another. Bounds do not apply when faction relations are randomized or flattened.",
+		
+		"name_enableAlliances":"Enable faction alliances",
+		"name_allianceGracePeriod":"Alliance grace period",
+		"tooltip_allianceGracePeriod":"Non-scripted alliances cannot form for this many days at start of game.",
+		#"name_allianceFormationInterval":"Interval for attempting to form alliances",
+		"name_ignoreAlignmentForAlliances":"Ignore faction alignments for forming/joining alliances",		
+		
 		"name_legacyInsurance":"Legacy insurance",
 		"tooltip_legacyInsurance":"Old insurance system with automatic free insurance from your commissioning faction (but not from player faction).",
 		"name_playerInsuranceMult":"Player insurance mult",
@@ -2886,6 +2996,8 @@
 		
 		"name_colonyExpeditionInterval":"Colony expedition interval",
 		"tooltip_colonyExpeditionInterval":"Base interval at which colony expeditions are launched, modified by factors such as the number of existing colonies. Each participating faction has a chance to be selected in each expedition round.",
+		"name_colonyExpeditionsOnlyAfterPlayerColony":"Colony expeditions only after player colony",
+		"tooltip_colonyExpeditionsOnlyAfterPlayerColony":"Disables NPC colony expedition until after the player faction setup screen (faction name, flag, etc.) has been seen at least once.",
 		"name_specialForcesPointMult":"Special task group point mult",
 		"tooltip_specialForcesPointMult":"Controls the rate at which NPC special task groups spawn and are replaced.",
 		"name_specialForcesSizeMult":"Special task group size mult",

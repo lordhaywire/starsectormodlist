@@ -17,16 +17,16 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_lightthumper",
-        "WS0002": "prv_lightthumper"
+        "WS0001": "swarmer",
+        "WS0002": "swarmer"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "swarmer",
-        "WS0004": "swarmer"
+        "WS0003": "prv_lightthumper",
+        "WS0004": "prv_lightthumper"
       }
     },
   ],

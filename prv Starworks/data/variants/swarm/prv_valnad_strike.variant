@@ -3,8 +3,8 @@
   "hullId": "prv_valnad",
   "displayName": "Strike",
   "goalVariant": true,
-  "fluxCapacitors": 19,
-  "fluxVents": 30,
+  "fluxCapacitors": 15,
+  "fluxVents": 0,
   "quality": 2,
   "permaMods": [],
   "hullMods": [
@@ -18,22 +18,12 @@
         "WS0001": "prv_tardes"
       }
     },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0002": "prv_spattergun",
-        "WS0003": "prv_spattergun",
-        "WS0004": "prv_spattergun",
-        "WS0005": "prv_spattergun"
-      }
-    }
   ],
   "modules": [],
   "wings": [
     "prv_jammer_wing",
     "prv_jammer_wing",
-    "prv_ovasen_wing",
+    "prv_jammer_wing",
     "prv_ovasen_wing",
     "prv_missljud_wing",
     "longbow_wing"

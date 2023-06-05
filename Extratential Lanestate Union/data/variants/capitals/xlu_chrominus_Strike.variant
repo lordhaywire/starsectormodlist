@@ -1,0 +1,67 @@
+{
+  "variantId": "xlu_chrominus_Strike",
+  "hullId": "xlu_chrominus",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 17,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "squall",
+        "WS0002": "xlu_lusis_l",
+        "WS0003": "xlu_lusis_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0004": "tachyonlance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "salamanderpod",
+        "WS0006": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "lightdualac",
+        "WS0011": "lightdualac",
+        "WS0012": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "WS0007": "flak",
+        "WS0008": "flak",
+        "WS0009": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_lantaka_wing"
+  ]
+}

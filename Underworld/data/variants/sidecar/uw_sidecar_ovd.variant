@@ -1,11 +1,12 @@
 {
     "displayName": "Overdriven",
     "fluxCapacitors": 0,
-    "fluxVents": 0,
+    "fluxVents": 1,
     "goalVariant": true,
     "hullId": "uw_sidecar",
     "hullMods": ["safetyoverrides"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_sidecar_ovd",
     "weaponGroups": [
         {
@@ -16,12 +17,7 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0002": "reaper"}
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {"WS0003": "lightmg"}
+            "weapons": {"WS0002": "annihilator"}
         }
     ]
 }

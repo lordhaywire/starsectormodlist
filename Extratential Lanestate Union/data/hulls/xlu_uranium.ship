@@ -1,0 +1,501 @@
+{
+  "bounds": [
+    314,
+    -14,
+    310,
+    0,
+    314,
+    14,
+    271,
+    96,
+    255,
+    97,
+    217,
+    153,
+    108,
+    119,
+    -94,
+    119,
+    -94,
+    160,
+    -117,
+    178,
+    -161,
+    178,
+    -187,
+    158,
+    -211,
+    146,
+    -204,
+    125,
+    -248,
+    75,
+    -248,
+    59,
+    -220,
+    51,
+    -255,
+    28,
+    -239,
+    16,
+    -266,
+    7,
+    -266,
+    -7,
+    -239,
+    -16,
+    -255,
+    -27,
+    -220,
+    -52,
+    -248,
+    -60,
+    -248,
+    -76,
+    -204,
+    -128,
+    -211,
+    -146,
+    -181,
+    -155,
+    -155,
+    -177,
+    -110,
+    -176,
+    -84,
+    -199,
+    -34,
+    -199,
+    -23,
+    -174,
+    63,
+    -174,
+    71,
+    -200,
+    159,
+    -200,
+    174,
+    -193,
+    174,
+    -148,
+    203,
+    -144
+  ],
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "xlu_juggernaught_hullmod",
+    "xlu_uranium_explosion"
+  ],
+  "center": [
+    209,
+    268
+  ],
+  "collisionRadius": 406,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 32,
+      "length": 92,
+      "location": [
+        -268,
+        0
+      ],
+      "style": "MIDLINE",
+      "width": 32
+    },
+    {
+      "angle": 180,
+      "contrailSize": 24,
+      "length": 72,
+      "location": [
+        -258,
+        -27
+      ],
+      "style": "MIDLINE",
+      "width": 24
+    },
+    {
+      "angle": -180,
+      "contrailSize": 24,
+      "length": 72,
+      "location": [
+        -258,
+        27
+      ],
+      "style": "MIDLINE",
+      "width": 24
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 48,
+      "location": [
+        -252,
+        71
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 48,
+      "location": [
+        -252,
+        -71
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -252,
+        -65
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -252,
+        -78
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -252,
+        -83
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -252,
+        -59
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -252,
+        77
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -252,
+        83
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -252,
+        65
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -252,
+        59
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -214,
+        140
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -214,
+        146
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -214,
+        134
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 40,
+      "location": [
+        -214,
+        -140
+      ],
+      "style": "MIDLINE",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -214,
+        -146
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 36,
+      "location": [
+        -214,
+        -134
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    }
+  ],
+  "height": 584,
+  "hullId": "xlu_uranium",
+  "hullName": "Uranium",
+  "hullSize": "CAPITAL_SHIP",
+  "shieldCenter": [
+    15,
+    -15
+  ],
+  "shieldRadius": 454,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_uranium/xlu_uranium.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        303,
+        0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -30,
+      "arc": 120,
+      "id": "WS0002",
+      "locations": [
+        254,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 30,
+      "arc": 105,
+      "id": "WS0003",
+      "locations": [
+        254,
+        42
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 105,
+      "id": "WS0004",
+      "locations": [
+        140,
+        -177
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 105,
+      "id": "WS0005",
+      "locations": [
+        -57,
+        -177
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 210,
+      "id": "WS0006",
+      "locations": [
+        247,
+        81
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 210,
+      "id": "WS0007",
+      "locations": [
+        247,
+        -81
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -120,
+      "arc": 165,
+      "id": "WS0008",
+      "locations": [
+        -126,
+        -152
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 165,
+      "id": "WS0009",
+      "locations": [
+        -126,
+        152
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 150,
+      "id": "WS0010",
+      "locations": [
+        -196,
+        -109
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 150,
+      "id": "WS0011",
+      "locations": [
+        -196,
+        109
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BM 01",
+      "locations": [
+        206,
+        150
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "BM 02",
+      "locations": [
+        229,
+        -155
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "BM 04",
+      "locations": [
+        24,
+        150
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "BM 03",
+      "locations": [
+        30,
+        -216
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "STATION_MODULE"
+    }
+  ],
+  "width": 448
+}

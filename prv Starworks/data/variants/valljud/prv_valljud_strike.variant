@@ -3,7 +3,7 @@
   "hullId": "prv_valljud",
   "displayName": "Strike",
   "goalVariant": true,
-  "fluxCapacitors": 13,
+  "fluxCapacitors": 21,
   "fluxVents": 50,
   "quality": 2,
   "permaMods": [],

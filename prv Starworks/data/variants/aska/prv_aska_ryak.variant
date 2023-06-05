@@ -1,6 +1,6 @@
 {
   "displayName": "Ryak",
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 10,
   "fluxVents": 30,
   "goalVariant": false,
   "hullId": "prv_aska",
@@ -10,7 +10,7 @@
   ],
   "modules": [],
   "permaMods": [],
-  "quality": 3,
+  "quality": 1,
   "variantId": "prv_aska_ryak",
   "weaponGroups": [
     {

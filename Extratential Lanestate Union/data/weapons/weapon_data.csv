@@ -1,0 +1,88 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+Lgt. Shotcannon,xlu_shotcannon_s,0,,300,500,,320,,2,10,5,,,,KINETIC,200,,0,1.2,1,,10,15,0.2,9,,800,,,20,,,,"kinetic1, xlu_basic_bp, xlu",,XLU,,Anti Shield,,,,,"Each pellet does %s Kinetic damage with a total of %s pellets, at a spread of %s degrees.",40|8|15,,,,1000
+,xlu_shotcannon_z_s,4,,100,500,,40,,2,5,,,,,KINETIC,25,,0,1,1,,10,15,0.2,9,,800,,,20,,,SYSTEM,,,,,,,,,,,,,,,1000.01
+Gatler Cannon,xlu_gattler,1,,400,250,,25,,1,75,6,100,15,100,FRAGMENTATION,4,,0,0.05,1,,5,30,1.5,15,,700,,,10,,,PD,"pd7, SR, xlu_basic_bp, xlu",,XLU,,Point Defense,,,,,,,,,,1001
+Light Tri-Autocannon,xlu_light_triac,2,,600,600,,50,,3,10,6,,,,KINETIC,40,,0,0.6,3,0.075,0,20,2,9,,800,,,20,,,,"kinetic7, xlu_basic_bp, xlu",,XLU,,Anti Shield,,,,,,,,,,1002
+Light Calf Mortar,xlu_mortar_s,1,,300,600,,75,,4,30,5,,,,HIGH_EXPLOSIVE,45,,0,1.2,4,0.1,5,20,1,10,,500,,,10,,,,"he6, xlu_basic_bp, xlu",,XLU,,Anti Armor,,,,,,,,,,1003
+Stubbon Thumper,xlu_stubbon,0,,200,600,,55,,1,15,4,30,5,30,FRAGMENTATION,20,,0,0.125,1,,0,15,0.5,20,,800,,,20,,,"PD, PD_ALSO","kinetic8, xlu_basic_bp, xlu",,XLU,,All-Purpose,,,,,,,,,,1004
+Gyropult Bomb Bay,xlu_gyropult_s,2,,600,1500,,300,,50,15,4,6,0.2,,HIGH_EXPLOSIVE,10,,0,1,1,,0,0,0,0,,500,100,20,150,,,"STRIKE, BOMB","he0, xlu_basic_bp, xlu",,,,Strike,,,,,Bombs will avoid colliding with friendly ships.,,,,,1005
+Light Assault Mortar 40th,xlu_40th_mortar_s,3,0.5,1000,700,,45,,3,40,9,,,,HIGH_EXPLOSIVE,32,,0,0.2,1,,0,5,1,5,,800,,,40,,,,"no_drop, he6, xlu, xlu_40th",,XL Ultra,,Anti Armor,,,,,,,,,,3
+Twin Railgun 40th,xlu_40th_railgun,3,0.5,1500,700,,100,10,10,30,10,,,,KINETIC,80,,0,0.9,1,,,,,,,1200,,,50,,,,"no_drop, kinetic8, xlu, xlu_40th",,XL Ultra,,Anti Shield,,,,,,,,,,3.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Momus Assault Gun,xlu_momus,1,,1500,800,,120,,5,25,10,,,,HIGH_EXPLOSIVE,150,,0,0.5,1,,0,10,2,10,,800,,,50,,,,"he18, xlu_basic_bp, xlu",,XLU,,Anti Armor,,,,,,,,,,1100
+Hypershot Flak Cannon,xlu_hyperflak,2,,2000,700,,600,,10,10,11,,,,FRAGMENTATION,80,,0,2,1,,0,10,2,10,,1000,,,200,,,PD,"pd13, SR, xlu_basic_bp, xlu",,XLU,,Point Defense (Area),,,,,,,,,,1101
+Hvy. Shotcannon,xlu_shotcannon_m,1,,1600,650,,400,,4,7,11,,,,KINETIC,300,,0,0.9,1,,15,20,1.5,5,,800,,,30,,,,"kinetic1, xlu_basic_bp, xlu",,XLU,,Anti Shield,,,,,"Each pellet does %s Kinetic damage with a total of %s pellets, at a spread of %s degrees.",40|10|20,,,,1102
+,xlu_shotcannon_z_m,4,,100,650,,40,,4,7,,,,,KINETIC,30,,0,1,1,,15,20,1.5,5,,800,,,30,,,SYSTEM,,,,,,,,,,,,,,,1102.01
+Quad Autocannon,xlu_quad_ac,1,,1800,800,,100,,10,7,12,24,1.6,8,KINETIC,80,,0,1.05,4,0.15,0,18,3,10,,800,,,30,,,,"kinetic14, xlu_basic_bp, xlu",,XLU,,Anti Shield,,,,,,,,,,1103
+Bolton Cannon,xlu_bolton,3,,2200,800,,400,,50,7,13,,,,HIGH_EXPLOSIVE,300,,0.1,3.4,1,,0,10,5,10,,500,,,200,,,,"he16, xlu_heavy_bp, xlu",,XLU,,Anti Armor,,,,,,,,,,1104
+Gaskilo Gattling Cannon,xlu_gattling_m,2,,3000,500,,20,,3,15,16,,,,KINETIC,25,,0,0.2,1,,0,15,1,10,,800,,,30,,,,"he15, SR, xlu_heavy_bp, xlu",,XLU,,Area Denial,,,,,Shortly spools up to %s its firing speed while bullet count will add up to a total of %s shots. Cools down within %s second.,double|3|1,,,,1105
+Hovlet Cannon,xlu_hovlet,0,,600,700,,85,,1,25,6,,,,FRAGMENTATION,25,,0,0.2,1,,0,0,0.2,20,,1000,,,30,,,"PD, PD_ALSO","kinetic8, xlu_basic_bp, xlu",,XLU,,All-Purpose,,,,,,,,,,1106
+Mulleter Thumper,xlu_mulleter,2,,2000,700,,100,,1,15,12,,,,FRAGMENTATION,30,,0,2.3,15,0.05,0,7,1,20,,800,,,30,,,,"kinetic8, xlu_heavy_bp, xlu",,XLU,,General,,,,,,,,,,1107
+Heavy Autocannon 40th,xlu_40th_autocannon_m,3,1,4000,800,,120,,10,7,18,,,,KINETIC,90,,0,0.9,4,0.2,0,10,1.25,10,,1200,,,40,,,,"no_drop, kinetic14, xlu, xlu_40th",,XL Ultra,,Anti Shield,,,,,,,,,,5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bracken Assault Mortar,xlu_mortar,0,,3000,800,,110,,15,15,15,,,,HIGH_EXPLOSIVE,100,,0,0.22,1,,5,20,1,20,,500,,,30,,,,"he11, xlu_basic_bp, xlu",,XLU,,Anti Armor,,,,,,,,,,1200
+Amboss Thumper,xlu_amboss,1,,4500,900,,100,,1,15,20,240,8,240,FRAGMENTATION,25,,0,0.5,15,0.05,0,7,1,20,,800,,,30,,,,"kinetic8, xlu_heavy_bp, xlu",,XLU,,General,,,,,,,,,,1201
+Phalanx Minigun Array,xlu_phalanx_mg,0,,3000,600,,30,,5,30,17,1200,80,1200,FRAGMENTATION,5,,0,0.05,1,,0,30,0.3,20,,700,,,10,,,PD,"pd7, SR, xlu_basic_bp, xlu",,XLU,,Point Defense,,,,,,,,,,1202
+Hyvel Bolt Driver,xlu_hyvel,3,0.3,10000,1100,,250,,100,5,25,,,,KINETIC,325,,0,0.75,1,,,,,,,1000,,,300,,,,"kinetic15, LR, xlu, rare_bp",,XLU,,Anti Shield,,,,,Deals %s extra damage as Fragmentation.,50%,,,,1203
+SuH. Shotcannon,xlu_shotcannon_l,1,,4000,750,,1350,,6,5,20,,,,KINETIC,900,,0,2.5,1,0.1,20,25,0.5,9,,800,,,40,,,,"kinetic1, xlu_heavy_bp, xlu",,XLU,,Anti Shield,,,,,"Each pellet does %s Kinetic damage with a total of %s pellets, at a spread of %s degrees.",45|30|25,,,,1204
+,xlu_shotcannon_z_l,1,,100,750,,45,,6,5,,,,,KINETIC,35,,0,1,1,,20,25,0.5,9,,800,,,40,,,SYSTEM,,,,,,,,,,,,,,,1204.01
+Warbore Assault Cannon,xlu_warbore,3,,12000,900,,500,,200,3,25,20,0.4,10,HIGH_EXPLOSIVE,400,,0,0.9,1,,0,15,6,10,,500,,,250,,,,"he16, xlu_heavy_bp, xlu",,XLU,,Anti Armor,,,,,,,,,,1205
+Gaston Gatttling Cannon,xlu_gattling_l,2,,10000,600,,25,,3,15,30,,,,KINETIC,35,,0,0.25,1,,0,15,1,10,,800,,,30,,,,"he15, SR, xlu_heavy_bp, xlu",,XLU,,Area Denial,,,,,Shortly spools up to %s its firing speed while bullet count will add up to a total of %s shots. Cools down within %s seconds.,double|3|1.5,,,,1206
+Contrada Flak Tower,xlu_contrada,2,,4000,700,,300,,10,30,18,60,2.5,12,FRAGMENTATION,75,,0,0.825,6,0.075,15,25,1,10,,800,,,30,,,PD,"pd15, SR, xlu_heavy_bp, xlu",,XLU,,Point Defense (Area),,,,,Burst is interruptible.,,,,,1207
+Thunderslug Hellbore,xlu_40th_thunderslug,3,,15000,900,,1500,,300,5,24,,,,KINETIC,1200,,0,3.5,1,,0,10,5,10,,500,,,400,,,,"no_drop, kinetic20, xlu, xlu_40th",,XL Ultra,,General,,,,,,,,,,8
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Quilfling Rack Launcher,xlu_quilfling_s,0,,200,1500,,200,,5,30,4,60,,,HIGH_EXPLOSIVE,0,,0,5,1,,0,0,0,0,,500,100,3.75,50,,,,"rocket7, strike0, xlu_basic_bp, xlu",,XLU,,Anti Armor,Fast,None,,,,,,,,2000
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Quilfling Rack Pod,xlu_quilfling_m,2,,1800,1500,,200,,5,20,10,120,,,HIGH_EXPLOSIVE,0,,0,2.9,8,0.075,0,0,0,0,,500,100,3.75,50,,,CONSERVE_1,"rocket13, strike8, xlu_heavy_bp, xlu",,XLU,,Pressure,Fast,None,,,,,,,,2100
+Watusi LRM Launcher,xlu_watusi,0,,1200,6000,,150,150,25,10,7,40,0.25,4,HIGH_EXPLOSIVE,0,,0,9.25,4,0.25,0,0,0,0,,100,50,80,50,,,"DO_NOT_AIM, CONSERVE_1","utility13, missile7, xlu_basic_bp, xlu",,XLU,,Long Range Support,Very Slow,Medium,,,Each missile fires its projectile payload of the displayed damage within the range of %s units.,500,,,,2101
+Bente Swarm Launcher,xlu_bente,2,,1000,1000,,100,,15,50,9,240,,,HIGH_EXPLOSIVE,0,,0,12.575,20,0.075,0,0,0,0,,300,100,5,100,,,"DO_NOT_AIM, CONSERVE_1","utility8, missile0, xlu_heavy_bp, xlu",,XLU,,General,Fast,Excellent,,,Each missile has %s of an ordinary swarmer missile.,twice the health,,,,2102
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Quilfling Rocket Barrage,xlu_quilfling_l,2,,4500,1500,,200,,5,20,23,400,,,HIGH_EXPLOSIVE,0,,0,6,40,0.05,0,0,0,0,,500,100,3.75,50,,,CONSERVE_1,"rocket13, strike8, rare_bp, xlu",,XLU,,Pressure,Fast,None,,,,,,,,2200
+Watusi LRM Barrage,xlu_watusi_l,0,,3000,6000,,150,150,25,10,16,130,0.5,13,HIGH_EXPLOSIVE,0,,0,11.1,13,0.075,0,0,0,0,,100,50,80,50,,,"DO_NOT_AIM, CONSERVE_1","utility13, missile7, xlu_basic_bp, xlu",,XLU,,Long Range Support,Very Slow,Medium,,,Each missile fires its projectile payload of the displayed damage within the range of %s units.,500,,,,2201
+Lusis MIRV Launcher,xlu_lusis_l,3,,6000,2500,,500,,75,20,26,10,,,HIGH_EXPLOSIVE,0,,0,10,1,,0,0,0,0,,250,100,12,500,,,"DO_NOT_AIM, CONSERVE_5","missile18, strike15, rare_bp, xlu",,XLU,,Finisher,Medium,Good,,,"Missile continues to split in a %s bursts, firing %s missiles in each burst. Further submunitions deal the same damage.",total of 4|6,,,TRUE,2202
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Augmented Laser,xlu_auglaser,1,,400,1000,135,,,0,12,7,,,,ENERGY,,135,0.1,0.1,,,,,,,2400,,,,,,,,"beam9, LR, xlu_basic_bp, xlu",,XLU,,General,,,,,,,,,,3000
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Magpulse Disruptor,xlu_magpulse,2,,3000,1000,1200,,400,0,20,10,,,,KINETIC,,800,0.1,0.65,0.25,2,,,,,3000,,,,,,,,"beam12, kinetic11, SR, xlu_basic_bp, xlu",,XLU,,Anti Shield,,,,,Beam will never arrive at max range in full strength.,,,,,3100
+Kowbac Pulse Battery,xlu_kowbac_m,1,,2000,500,,50,,0,30,11,,,,ENERGY,35,,0,0.125,1,,,,,,,1000,,,,,,,"energy8, xlu",,XLU,,General,,,,,,,,,,3101
+Geezer Fusor Cutter,xlu_geezer_m,1,0.25,1600,300,560,,,0,30,7,80,4,20,HIGH_EXPLOSIVE,,140,0,0,0.1,0,,,,,10000,,,,,,,USE_LESS_VS_SHIELDS,"beam12, energy10, xlu",,XLU,,Anti Armor,,,,,"The beam is spread outward and the strength of the beam depends on coverage against the target.
+
+Deals %s damage to hulks.",8x,,,,3102
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kowbac Gatling Laser,xlu_kowbac_l,1,,5000,700,,50,,0,15,20,150,9,3,ENERGY,30,,0,0.1,1,,5,15,1,15,,1000,,,,,,,"energy8, hightech_bp, xlu",,XLU,,General,,,,,,,,,,3200
+Geezer Industrial Cutter,xlu_geezer_l,2,0.25,3500,400,1560,,,0,5,16,200,8,50,HIGH_EXPLOSIVE,,390,0,0,0.05,0,,,,,10000,,,,,,,USE_LESS_VS_SHIELDS,"beam20, xlu",,,,"Anti Armor, Area Denial",,,,,"The beam is spread outward and the strength of the beam depends on coverage against the target.
+
+Deals %s damage to hulks.",8x,,,,3201
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Thunderfist,xlu_thunderfist,0,,100000,1000,,400,,200,3,,40,1,,HIGH_EXPLOSIVE,250,,0,0.3,1,,0,7,1,20,,500,,,30,,,"SYSTEM,SHOW_IN_CODEX",,,XLU,,General,,,,,"Thunderbore shots do area damage within a range of %s units at full strength down to lowest of %s units.
+
+Deals %s extra damage as Fragmentation.",35|75|75%,,,,4001
+Colossus Mining Blaster,xlu_colossus_miningblaster,1,,10000,600,,200,,0,7,,16,1.5,4,HIGH_EXPLOSIVE,150,,0.3,0.2,4,0.1,,,,,,1000,,,,,,"SYSTEM,SHOW_IN_CODEX",,,XLU,,General,,,,,Each bolt deals an additional %s damage to armor. This damage is not reduced by armor.,100,,,,4002
+Stratus Cannon,xlu_stratus,0,,10000,1400,,1500,50,500,3,,,,,HIGH_EXPLOSIVE,1350,,0.2,5.8,1,,0,0,0,0,,400,,,1000,,,"SYSTEM,SHOW_IN_CODEX",,,XLU,,Anti Armor,,,,,"Projectiles have near unstoppable mass that pass through fighters even when they are not destroyed.
+
+Explodes on hit in a small radius with %s of the damage.
+
+Hits on hull or armor have %s chances of %s to successfully arc to weapons and engines, dealing %s damage of the original projectile.",50%|2|35%|10%,,,,4003
+Dual Stratus Cannon,xlu_stratus_h,0,,10000,1400,,1500,50,500,3,,,,,HIGH_EXPLOSIVE,1350,,0.2,3.3,1,,0,0,0,0,,400,,,1000,,,"SYSTEM,SHOW_IN_CODEX",,,XLU,,Anti Armor,,,,,"Projectiles have near unstoppable mass that pass through fighters even when they are not destroyed.
+
+Explodes on hit in a small radius with %s of the damage.
+
+Hits on hull or armor have %s chances of %s to successfully arc to weapons and engines, dealing %s damage of the original projectile.",50%|2|35%|10%,,,,4004
+Rodstorm Chaincannon,xlu_rodstorm,1,,10000,1000,,350,,10,5,,60,2,30,HIGH_EXPLOSIVE,450,,0,0.2,1,,0,5,1,5,,1200,,,150,,,"SYSTEM,SHOW_IN_CODEX",,,XLU,,General,,,,,,,,,,4005
+Ultra Heavy Shotcannon,xlu_manganate_cannon,1,,10000,1000,,6000,,6,5,20,,,,KINETIC,2000,,0.2,9.8,1,,5,10,0.5,9,,700,,,100,,,"SYSTEM,SHOW_IN_CODEX",,,XL Battlegroup,,Anti Shield,,,,,"Each pellet does %s Kinetic damage with a total of %s pellets, at a spread of %s degrees.",200|30|10,,,,4006
+,xlu_manganate_cannon_z,1,,100,1000,,200,,6,5,,,,,KINETIC,100,,0,1,1,,5,10,0.5,9,,700,,,100,,,SYSTEM,,,,,,,,,,,,,,,4006.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Annihilator Rocket (Lantaka),xlu_annihilator_bomber,0,,150,2000,,200,,5,30,1,1,,,HIGH_EXPLOSIVE,0,,0,0.1,1,,30,30,15,10,,400,50,5.75,50,,,"STRIKE,SYSTEM,DO_NOT_CONSERVE","rocket13, strike8",,XLU,,Anti Armor,Fast,None,,,,,,,,5000
+Annihilator Rocket (Fighter),xlu_annihilator_interceptor,0,,150,500,,200,,5,30,2,,,,HIGH_EXPLOSIVE,0,,0,8,1,,0,0,1,5,,600,50,1.75,50,,,"STRIKE, ANTI_FTR, SYSTEM,DO_NOT_CONSERVE","rocket13, strike8",,XLU,,Anti Armor,Fast,None,,,,,,,,5001
+Vulcan Shotgun,xlu_vulcan_interceptor,0,,300,450,,40,,2,20,2,,,,FRAGMENTATION,5,,0,1,1,,20,20,0.2,9,,800,,,20,,,"PD, ANTI_FTR, SYSTEM",kinetic1,,XLU,,Anti Fighter,,,,,,,,,,5002
+Gatler Cannon (Fighter),xlu_gattler_fighter,1,,400,250,,25,,1,75,2,,,,FRAGMENTATION,2,,0,0.05,1,,5,30,1.5,15,,700,,,10,,,"PD, ANTI_FTR, SYSTEM","pd7, SR",,XLU,,Point Defense,,,,,,,,,,5003
+Guna-bore Autocannon,xlu_guna_ac,0,,125,400,,75,,3,20,1,,,,KINETIC,20,,0,1,1,,0,4,1,15,,1000,,,20,,,SYSTEM,kinetic6,,XLU,,Anti Shield,,,,,,,,,,5004
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nothing,xlu_z_sh1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,8000
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vrateltat Bullet Engine,xlu_vrateltat,3,,8000,800,,200,,6,5,25,,,,FRAGMENTATION,100,,0,6,5,0.1,20,25,0.5,9,,600,,,40,,,SYSTEM,"kinetic1, xlu_cursed",,XLU,,Point Defense (Area),,,,,"Fires a storm of Fragmentation pellets that deal %s damage. With all the barrels, they total to %s pellets in an arc of %s degrees.",25|200|25,,,,1207
+,xlu_vrateltat_z,1,,100,800,,25,,6,5,,,,,FRAGMENTATION,10,,0,1,1,,20,25,0.5,9,,600,,,40,,,SYSTEM,,,,,,,,,,,,,,,1207.01
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Trusty Hangar,xlu_hangar_stibium,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,4000

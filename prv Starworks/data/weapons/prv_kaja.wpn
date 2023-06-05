@@ -43,5 +43,5 @@
   },
   "textureType": ROUGH,
   "fireSoundOne": "thumper_spinup",
-  "fireSoundTwo": "prv_kaja_fire"
+  #"fireSoundTwo": "prv_kaja_fire"
 }

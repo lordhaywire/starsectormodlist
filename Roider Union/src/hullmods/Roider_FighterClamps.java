@@ -10,8 +10,8 @@ import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.impl.campaign.ids.HullMods;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.impl.hullmods.DefectiveManufactory;
-import data.scripts.util.MagicIncompatibleHullmods;
 import ids.Roider_Ids.Roider_Hullmods;
+import org.magiclib.util.MagicIncompatibleHullmods;
 
 public class Roider_FighterClamps extends BaseHullMod {
 

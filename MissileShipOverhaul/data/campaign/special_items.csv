@@ -1,0 +1,2 @@
+name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
+Missile Ship Overhaul Package,mod_package_missileships,package_bp,,,50000,1000,1,,/graphics/icons/cargo/mod_blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,mod_bp_missileships,Enables production of highly modified midline ships with heavy focus on missile armaments.,200

@@ -1,0 +1,292 @@
+{
+  "hullName": "Rhodochrosite",
+  "hullId": "xlu_rhodochrosite",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_rhodochrosite/xlu_rhodochrosite.png",
+  "style": "MIDLINE",
+  "height": 332,
+  "width": 250,
+  "center": [125, 118],
+  "collisionRadius": 372,
+  "shieldCenter": [13, -0],
+  "shieldRadius": 340,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "xlu_extensive_logistics",
+    "xlu_LinkedHull",
+    "civgrade",
+    "hiressensors"
+  ],
+  "builtInWeapons": {
+    "BW 01": "xlu_gattler",
+    "BW 02": "xlu_gattler",
+    "BW 03": "xlu_gattler",
+    "BW 04": "xlu_gattler",
+    "BW 05": "xlu_gattler",
+    "BW 06": "xlu_gattler",
+    "BW 07": "xlu_gattler",
+    "BW 08": "xlu_gattler"
+  },
+  "weaponSlots": [
+    {
+      "id": "S 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [193, 58]
+    },
+    {
+      "id": "S 02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [193, -58]
+    },
+    {
+      "id": "S 03",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-16, 95]
+    },
+    {
+      "id": "S 04",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-16, -95]
+    },
+    {
+      "id": "S 05",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 150,
+      "locations": [-89, 99]
+    },
+    {
+      "id": "S 06",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -150,
+      "locations": [-89, -99]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [201, 75]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [204, -75]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [168, 75]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -0,
+      "locations": [168, -75]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [182, 29]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -0,
+      "locations": [182, -29]
+    },
+    {
+      "id": "BW 03",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [88, 88]
+    },
+    {
+      "id": "BW 04",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [88, -88]
+    },
+    {
+      "id": "BW 05",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [5, 88]
+    },
+    {
+      "id": "BW 06",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [5, -88]
+    },
+    {
+      "id": "BW 07",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 90,
+      "locations": [-71, 88]
+    },
+    {
+      "id": "BW 08",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [-71, -88]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -56.5, 25.5,
+        -57, 39,
+        -45, 39,
+        -45, 25,
+        -34, 25,
+        -34, 39
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -57, -26.5,
+        -45, -26,
+        -34, -26,
+        -34, -36,
+        -45, -36,
+        -57, -36
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -51, 25,
+        -40, 25,
+        -51, -27,
+        -40, -27,
+        -45, 33,
+        -45, -31
+      ]
+    },
+    {
+      "id": "SM 02",
+      "size": "MEDIUM",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [98, 149]
+    },
+    {
+      "id": "SM 03",
+      "size": "MEDIUM",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [98, -149]
+    },
+    {
+      "id": "SM 01",
+      "size": "MEDIUM",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-156, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    -115, 35,
+    -91, 51,
+    -105, 88,
+    -63, 98,
+    -23, 91,
+    1, 99,
+    181, 99,
+    206, 75,
+    190, 58,
+    190, -58,
+    206, -75,
+    181, -99,
+    1, -99,
+    -23, -91,
+    -63, -98,
+    -105, -88,
+    -91, -51,
+    -115, -35
+  ]
+}

@@ -4,31 +4,31 @@
   "hullSize": "FIGHTER",
   "spriteName": "graphics/prv/ships/fighters/prv_skral.png",
   "style": "PRV_MID",
-  "height": 35,
-  "width": 51,
-  "center": [25.5, 15.5],
-  "collisionRadius": 28.5,
-  "shieldCenter": [0, -0],
-  "shieldRadius": 27.5,
+  "height": 56,
+  "width": 38,
+  "center": [19, 18],
+  "collisionRadius": 45,
+  "shieldCenter": [5, -0],
+  "shieldRadius": 36,
   "viewOffset": 0,
   "weaponSlots": [
     {
       "id": "WS0001",
       "size": "SMALL",
-      "type": "SYNERGY",
+      "type": "MISSILE",
       "mount": "HIDDEN",
       "arc": 10,
       "angle": 0,
-      "locations": [6, 11]
+      "locations": [4, 11.5]
     },
     {
       "id": "WS0002",
       "size": "SMALL",
-      "type": "COMPOSITE",
+      "type": "MISSILE",
       "mount": "HIDDEN",
       "arc": 10,
       "angle": 0,
-      "locations": [6, -11]
+      "locations": [4, -11.5]
     },
     {
       "id": "WS0003",
@@ -37,7 +37,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [2, -0]
+      "locations": [2, 0]
     },
     {
       "id": "WS0004",
@@ -46,30 +46,66 @@
       "mount": "HIDDEN",
       "arc": 270,
       "angle": -180,
-      "locations": [-1, -0]
+      "locations": [-2.5, 0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-13, -11],
-      "length": 27,
-      "width": 13,
-      "angle": -180,
-      "contrailSize": 13,
+      "location": [-14, -11.5],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
       "style": "PRV_MID"
     },
     {
-      "location": [-13, 11],
-      "length": 27,
-      "width": 13,
+      "location": [-14, 12.5],
+      "length": 21,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-15, 3.5],
+      "length": 10,
+      "width": 5,
       "angle": 180,
-      "contrailSize": 13,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-15, -2.5],
+      "length": 10,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-10.5, 15],
+      "length": 10,
+      "width": 5,
+      "angle": 155,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-10.5, -14],
+      "length": 10,
+      "width": 5,
+      "angle": -155,
+      "contrailSize": 5,
       "style": "PRV_MID"
     }
   ],
   "bounds": [
-    10, 23,
-    10, -23,
-    -14, -0
+    -1, -18,
+    12, -6,
+    37, 0,
+    12, 6,
+    -1, 18,
+    -15, 8,
+    -15, -8
   ]
 }

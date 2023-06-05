@@ -13,6 +13,9 @@
 		"tags":[
 			"prv_pirate_bp"
 		],
+		"weapons":[
+			"prv_fusion_burster",
+		],
 	},
 	"knownFighters":{
 		"tags":["prv_pirate_bp"],

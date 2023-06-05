@@ -1,0 +1,87 @@
+{
+  "variantId": "xlu_diaboleite_Assault",
+  "hullId": "xlu_diaboleite",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ballistic_rangefinder",
+    "turretgyros"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "MW 01": "xlu_stratus"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_mortar_s",
+        "WS0006": "xlu_mortar_s",
+        "WS0007": "xlu_mortar_s",
+        "WS0008": "xlu_mortar_s",
+        "WS0009": "xlu_mortar_s",
+        "WS0010": "xlu_mortar_s",
+        "WS0011": "xlu_mortar_s",
+        "WS0012": "xlu_mortar_s"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "lightdualac",
+        "WS0014": "lightdualac",
+        "WS0015": "lightdualac",
+        "WS0016": "lightdualac",
+        "WS0017": "lightdualac",
+        "WS0018": "lightdualac",
+        "WS0019": "lightdualac",
+        "WS0020": "lightdualac",
+        "WS0021": "lightdualac",
+        "WS0022": "lightdualac",
+        "WS0023": "lightdualac",
+        "WS0024": "lightdualac",
+        "WS0025": "lightdualac",
+        "WS0026": "lightdualac",
+        "WS0027": "lightdualac",
+        "WS0028": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "salamanderpod",
+        "WS0002": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "WS0003": "flak",
+        "WS0004": "flak",
+        "WS0029": "pdlaser",
+        "WS0030": "pdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_lantaka_wing",
+    "xlu_mattock_wing"
+  ]
+}

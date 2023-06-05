@@ -1,0 +1,10 @@
+{
+    "playableFaction":false,
+    "corvusCompatible":true,
+    "dropPrisoners":false,
+    "hostileToAll":2,
+    "startRelationships":{ "prv": -10, "agni": +75 },
+    "noRandomizeRelations":true,
+    
+    "invasionSupportFleetName":"Shoal",
+}

@@ -1,0 +1,55 @@
+{
+  "variantId": "ocua_etna_Support",
+  "hullId": "ocua_etna",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 30,
+  "fluxVents": 19,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_shizukesa",
+        "WS0002": "ocua_shizukesa",
+        "WS0010": "ocua_shizukesa"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_kurtina",
+        "WS0004": "ocua_kurtina"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ocua_mi_stredia",
+        "WS0008": "ocua_pirouette",
+        "WS0009": "ocua_pirouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "WS0006": "ocua_blita",
+        "WS0007": "ocua_blita"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

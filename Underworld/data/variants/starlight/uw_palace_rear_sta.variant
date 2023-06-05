@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 0,
+    "fluxCapacitors": 2,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_palace_rear",
@@ -9,6 +9,7 @@
         "autorepair"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_rear_sta",
     "weaponGroups": [
         {

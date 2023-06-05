@@ -1,0 +1,74 @@
+{
+  "variantId": "xlu_pyridoxate_Support",
+  "hullId": "xlu_pyridoxate",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 4,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "expanded_deck_crew",
+    "xlu_crew_hardyboys"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_watusi_l",
+        "WS0002": "xlu_watusi_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_watusi",
+        "WS0004": "xlu_watusi"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_stratus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_shotcannon_l",
+        "WS0006": "xlu_shotcannon_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "flak",
+        "WS0008": "flak",
+        "WS0009": "dualflak",
+        "WS0010": "vulcan",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "vulcan",
+        "WS0016": "vulcan",
+        "WS0017": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_kalis_wing",
+    "xlu_kalis_wing",
+    "xlu_guna_wing",
+    "xlu_guna_wing",
+    "xlu_kampilan_wing",
+    "xlu_kampilan_wing"
+  ]
+}

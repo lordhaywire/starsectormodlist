@@ -1,0 +1,44 @@
+{
+  "variantId": "ocua_prily_Mileage",
+  "hullId": "ocua_prily",
+  "displayName": "Mileage",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 3,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "ocua_clockoverdrive",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "breach",
+        "WS0002": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_kea",
+        "WS0004": "ocua_kea"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BW 01": "ocua_pirouette",
+        "BW 02": "ocua_pirouette",
+        "WS0005": "ocua_pirouette",
+        "WS0006": "ocua_pirouette"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

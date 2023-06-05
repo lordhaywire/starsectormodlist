@@ -12,23 +12,14 @@
   "shieldRadius": 85.5,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "hiressensors",
     "prv_ramshield"
   ],
   "builtInWeapons": {
-    "WS0025": "prv_d_blinker_ljus",
-    "prv_ramshield": "prv_u_ramshield"
+    "D_BLINKER": "prv_d_blinker_ljus",
   },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, -1]
-    },
     {
       "id": "WS0001",
       "size": "MEDIUM",
@@ -66,7 +57,7 @@
       "locations": [-7, -18]
     },
     {
-      "id": "WS0025",
+      "id": "D_BLINKER",
       "size": "SMALL",
       "type": "DECORATIVE",
       "mount": "TURRET",

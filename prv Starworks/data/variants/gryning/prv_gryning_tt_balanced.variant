@@ -1,7 +1,7 @@
 {
   "displayName": "Balanced",
-  "goalVariant": false,
-  "fluxCapacitors": 7,
+  "goalVariant": true,
+  "fluxCapacitors": 9,
   "fluxVents": 10,
   "hullId": "prv_gryning_tt",
   "hullMods": [

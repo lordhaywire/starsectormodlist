@@ -5,17 +5,13 @@
 	"descriptionId":"prv_gnista",
 	"descriptionPrefix": "Built-to-Order for the Luddic Church, this ship has been modified to better match Church fleet (and ecclesiastic) doctrine.",
 	"tags":["LC_bp"],
-	#"tech":"Luddic Church (prv)",
 	"tech":"Luddic Church",
 	"restoreToBaseHull":false,
-	#"ordnancePoints":25,
 	"fleetPoints":4,
 	"baseValueMult":1.33,
 	"spriteName":"graphics/prv/ships/prv_gnista_lc.png",
 	"systemId":"ammofeed",
-	"removeWeaponSlots":["WS0003"], 		# ids
-	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
-	#"removeBuiltInMods":["hiressensors"], 		# hullmod ids
+	"removeWeaponSlots":["WS0003"],
 	"removeBuiltInWeapons":[], 		# weapon slot ids
 	"weaponSlotChanges":{
 	   "WS0001":{

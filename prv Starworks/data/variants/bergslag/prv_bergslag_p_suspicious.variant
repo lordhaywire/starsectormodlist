@@ -3,7 +3,7 @@
   "hullId": "prv_bergslag_p",
   "displayName": "Suspicious",
   "goalVariant": false,
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 0,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
@@ -15,21 +15,21 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "hellbore"
+        "WS0001": "prv_massdriver"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "locust"
+        "WS0002": "hurricane"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0008": "heavyac"
+        "WS0008": "heavymortar"
       }
     },
     {
@@ -43,7 +43,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "dualflak",
+        "WS0003": "flak",
         "WS0004": "vulcan",
         "WS0005": "vulcan",
         "WS0006": "vulcan",

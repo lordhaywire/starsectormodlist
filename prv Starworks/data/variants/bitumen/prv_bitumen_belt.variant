@@ -3,7 +3,7 @@
   "hullId": "prv_bitumen",
   "displayName": "Belt",
   "goalVariant": true,
-  "fluxCapacitors": 2,
+  "fluxCapacitors": 5,
   "fluxVents": 3,
   "quality": 0,
   "permaMods": [],
@@ -20,7 +20,7 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "annihilatorpod"
+        "WS0005": "pilum"
       }
     },
     {

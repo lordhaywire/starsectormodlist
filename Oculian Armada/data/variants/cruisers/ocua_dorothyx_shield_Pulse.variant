@@ -1,0 +1,17 @@
+{
+  "variantId": "ocua_dorothyx_shield_Pulse",
+  "hullId": "ocua_dorothyx_shield",
+  "displayName": "Pulse",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "ocua_core_pulse"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,27 @@
+{
+  "variantId": "xlu_azurim_m_Overdriven",
+  "hullId": "xlu_azurim_m",
+  "displayName": "Overdriven",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "frontshield"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

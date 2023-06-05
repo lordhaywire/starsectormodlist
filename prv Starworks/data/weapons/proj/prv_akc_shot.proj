@@ -1,5 +1,6 @@
 {
 	"id":"prv_akc_shot",
+	"onFireEffect":"scripts.weapons.prv_bonusShotEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

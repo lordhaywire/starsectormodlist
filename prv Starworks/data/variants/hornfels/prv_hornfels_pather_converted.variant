@@ -1,32 +1,33 @@
 {
   "displayName": "Converted",
-  "fluxCapacitors": 17,
-  "fluxVents": 20,
+  "fluxCapacitors": 16,
+  "fluxVents": 15,
   "goalVariant": false,
   "hullId": "prv_hornfels_pather",
   "hullMods": [
     "converted_hangar",
-    "hardened_subsystems"
+    "unstable_injector",
+    "heavyarmor",
   ],
   "modules": [],
   "permaMods": [],
-  "quality": 2,
+  "quality": 1,
   "variantId": "prv_hornfels_pather_converted",
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "prv_hammer_mag",
-        "WS0010": "prv_hammer_mag"
+        "WS0009": "jackhammer",
+        "WS0010": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0008": "heatseeker",
-        "WS0013": "heatseeker"
+        "WS0008": "swarmer",
+        "WS0013": "swarmer"
       }
     },
     {
@@ -38,11 +39,17 @@
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0004": "lightdualac",
         "WS0005r": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0011": "lightag",
         "WS0012": "lightag"
       }
@@ -52,6 +59,12 @@
       "mode": "LINKED",
       "weapons": {
         "WS0003": "heavymg",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0005": "vulcan",
         "WS0006": "vulcan",
         "WS0007": "vulcan"

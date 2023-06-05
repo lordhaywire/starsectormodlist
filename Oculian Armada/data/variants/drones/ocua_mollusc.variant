@@ -1,0 +1,12 @@
+{
+  "displayName": "Basic",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "hullId": "ocua_mollusc",
+  "hullMods": [
+    "insulatedengine",
+    "fluxbreakers"
+  ],
+  "variantId": "ocua_mollusc",
+  "weaponGroups": []
+}

@@ -98,6 +98,12 @@ public class UW_LinkedHull extends BaseHullMod {
 //                }
 //            }
 //        }
+
+        /* Mirror parent's hold-fire commands */
+        child.setHoldFire(parent.isHoldFire());
+        if (parent.isHoldFire()) {
+            child.blockCommandForOneFrame(ShipCommand.FIRE);
+        }
     }
 
     private static void advanceParent(ShipAPI parent, List<ShipAPI> children) {

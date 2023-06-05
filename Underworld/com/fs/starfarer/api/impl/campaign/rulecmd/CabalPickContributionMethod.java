@@ -44,7 +44,7 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         return !extortionMethods.isEmpty();
     }
 
-    public static float playerNetWorth(CampaignFleetAPI fleet) {
+    public static float playerNetWorth() {
         float credits = Global.getSector().getPlayerFleet().getCargo().getCredits().get();
         float shieldedFraction = Misc.getShieldedCargoFraction(Global.getSector().getPlayerFleet());
         float totalCargoValue = CabalCargoCalc.totalCargoValue(Global.getSector().getPlayerFleet().getCargo(), shieldedFraction);
@@ -85,8 +85,8 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         report.computeTotals();
         float profit = Math.max(0f, report.getRoot().totalIncome - report.getRoot().totalUpkeep);
 
-        float netWorth = playerNetWorth(fleet);
-        float targetExtortion = (float) CabalPickExtortionMethod.extortionAmount(netWorth);
+        float netWorth = playerNetWorth();
+        float targetContribution = (float) CabalPickExtortionMethod.extortionAmount(netWorth);
 
         float powerLevel = UW_Util.calculatePowerLevel(fleet);
 
@@ -97,13 +97,27 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         log.info("Calculated ships value of " + totalShipsValue);
         log.info("Seen monthly profit of " + profit);
         log.info("Evaluated net worth at " + netWorth);
-        log.info("Targeting extortion value at " + targetExtortion);
-        log.info("Evaluated player power level of " + powerLevel);
+        log.info("Targeting extortion value at " + targetContribution);
+        log.info("Evaluated Cabal fleet power level of " + powerLevel);
+
+        // de-emphasize contribution for poor players
+        if ((targetContribution < 25000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
+        if ((targetContribution < 50000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
+        if ((targetContribution < 100000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
 
         float lowerThreshold = Math.min(100000f, powerLevel * 600f);
         float upperThreshold = powerLevel * 3500f;
         if (credits > lowerThreshold) {
-            float weight = (float) Math.sqrt(Math.min(credits, upperThreshold) / targetExtortion) * 1.5f;
+            float weight = (float) Math.sqrt(Math.min(credits, upperThreshold) / targetContribution) * 1.5f;
             extortionMethods.add("tithe", weight);
             log.info("Tithe extortion method at weight " + weight);
         }
@@ -113,7 +127,7 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         float cargoValue = CabalCargoCalc.valueOfBiggestStack(Global.getSector().getPlayerFleet().getCargo(), shieldedFraction);
         log.info("Calculated biggest cargo stack value of " + cargoValue);
         if (cargoValue > lowerThreshold) {
-            float weight = (float) Math.sqrt(Math.min(cargoValue, upperThreshold) / targetExtortion);
+            float weight = (float) Math.sqrt(Math.min(cargoValue, upperThreshold) / targetContribution);
             extortionMethods.add("cargo", weight);
             log.info("Cargo extortion method at weight " + weight);
         }
@@ -122,7 +136,7 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         float weaponFanciness = CabalWeaponCalc.bestWeaponFanciness(Global.getSector().getPlayerFleet(), shieldedFraction);
         log.info("Calculated best weapon fanciness of " + weaponFanciness);
         if (weaponFanciness > lowerThreshold) {
-            float weight = (float) Math.sqrt(weaponFanciness / (targetExtortion / 500f));
+            float weight = (float) Math.sqrt(weaponFanciness / (targetContribution / 500f));
             extortionMethods.add("weapon", weight);
             log.info("Weapon extortion method at weight " + weight);
         }
@@ -131,7 +145,7 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         float fighterFanciness = CabalFighterCalc.bestFighterFanciness(Global.getSector().getPlayerFleet(), shieldedFraction);
         log.info("Calculated best fighter fanciness of " + weaponFanciness);
         if (fighterFanciness > lowerThreshold) {
-            float weight = (float) Math.sqrt(fighterFanciness / (targetExtortion / 500f));
+            float weight = (float) Math.sqrt(fighterFanciness / (targetContribution / 500f));
             extortionMethods.add("fighter", weight);
             log.info("Fighter extortion method at weight " + weight);
         }
@@ -141,7 +155,7 @@ public class CabalPickContributionMethod extends BaseCommandPlugin {
         float shipValue = CabalShipCalc.bestShipValue(Global.getSector().getPlayerFleet(), upperThreshold);
         log.info("Calculated best ship value of " + shipValue);
         if (shipValue > lowerThreshold && CabalShipCalc.usableShips(Global.getSector().getPlayerFleet()) > 1) {
-            float weight = (float) Math.sqrt(Math.min(shipValue, upperThreshold) / targetExtortion) * 0.25f;
+            float weight = (float) Math.sqrt(Math.min(shipValue, upperThreshold) / targetContribution) * 0.25f;
             extortionMethods.add("ship", weight);
             log.info("Ship extortion method at weight " + weight);
         }

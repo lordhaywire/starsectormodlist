@@ -1,10 +1,13 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 1,
-    "fluxVents": 25,
+    "fluxCapacitors": 5,
+    "fluxVents": 19,
     "goalVariant": true,
     "hullId": "uw_stalker",
-    "hullMods": ["targetingunit"],
+    "hullMods": [
+        "targetingunit",
+        "unstable_injector"
+    ],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_stalker_eli",
@@ -13,10 +16,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "railgun",
-                "WS0006": "railgun",
-                "WS0007": "railgun",
-                "WS0008": "railgun"
+                "WS0005": "lightdualac",
+                "WS0006": "lightdualac",
+                "WS0007": "lightdualac",
+                "WS0008": "lightdualac"
             }
         },
         {
@@ -27,7 +30,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "heavymauler"}
+            "weapons": {"WS0004": "heavymortar"}
         },
         {
             "autofire": true,

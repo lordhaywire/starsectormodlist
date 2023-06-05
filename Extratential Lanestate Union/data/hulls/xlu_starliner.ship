@@ -1,0 +1,110 @@
+{
+  "hullName": "Starliner (XLU)",
+  "hullId": "xlu_starliner",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_starliner/xlu_starliner.png",
+  "style": "MIDLINE",
+  "height": 278,
+  "width": 96,
+  "center": [48, 109],
+  "collisionRadius": 202,
+  "shieldCenter": [30, 0],
+  "shieldRadius": 160,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 120,
+      "locations": [-53, 37]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 240,
+      "locations": [-53, -37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-108, 19],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 96,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-108, 0],
+      "length": 96,
+      "width": 32,
+      "angle": 180,
+      "contrailSize": 96,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-108, -18],
+      "length": 64,
+      "width": 24,
+      "angle": 180,
+      "contrailSize": 96,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85, 39],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-85, -38],
+      "length": 24,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-106, 26],
+      "length": 24,
+      "width": 6,
+      "angle": 170,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-106, -25],
+      "length": 24,
+      "width": 6,
+      "angle": 190,
+      "contrailSize": 32,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    168, 0,
+    152, -28,
+    125, -39,
+    -25, -43,
+    -36, -38,
+    -60, -47,
+    -105, -23,
+    -105, 24,
+    -60, 47,
+    -36, 38,
+    -25, 43,
+    125, 39,
+    152, 29
+  ]
+}

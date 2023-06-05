@@ -49,5 +49,5 @@
   },
   "textureType": ROUGH,
   "fireSoundOne": "thumper_spinup",
-  "fireSoundTwo": "prv_kraka_fire"
+  #"fireSoundTwo": "prv_kraka_fire"
 }

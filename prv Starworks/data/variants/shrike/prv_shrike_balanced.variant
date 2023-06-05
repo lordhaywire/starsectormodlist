@@ -3,9 +3,9 @@
   "hullId": "prv_shrike",
   "displayName": "Balanced",
   "goalVariant": false,
-  "fluxCapacitors": 5,
+  "fluxCapacitors": 10,
   "fluxVents": 20,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [],
   "weaponGroups": [

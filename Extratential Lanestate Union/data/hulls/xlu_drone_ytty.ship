@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    6,
+    6,
+    -5,
+    6,
+    -5,
+    -6,
+    6,
+    -6
+  ],
+  "builtInMods": [
+    "xlu_armorclad"
+  ],
+  "center": [
+    9,
+    8
+  ],
+  "collisionRadius": 24,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 8,
+      "location": [
+        -6,
+        -0
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    }
+  ],
+  "height": 16,
+  "hullId": "xlu_drone_ytty",
+  "hullName": "Ytty Drone",
+  "hullSize": "FIGHTER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 15,
+  "spriteName": "graphics/Extratential Lanestate Union/ships/drones/xlu_drone_ytty.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS 001",
+      "locations": [
+        1,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS 002",
+      "locations": [
+        1,
+        0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 18
+}

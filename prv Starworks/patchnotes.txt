@@ -2,100 +2,119 @@ prv Starworks
 
 ###
 
-v24.1
+v27
 
-Agni Down Spinneret is now correctly tagged as a small weapon, not large.
-Temporarily removed the theming requirement for the Flight Into The Unknown bounty.
+----------------
+- Weapons
+----------------
 
-###
+Added the Blaster Charge Rack, Disperser and Launcher
+- Directed energy blast missiles. Crude but flexible.
+- Used by the Rust Belt.
 
-NOT SAVEGAME COMPATIBLE
+Vakt Flicker Beam
+- Damage per second increased by 30%.
+- Flux per second increased by 3%
+-- Now 0.8 flux/damage.
 
-v24
+Svala, Rörsångare Torpedoes
+- Retired, should no longer spawn. 
+- Custom AI disabled.
 
-Added Rust Belt-style stations.
-- Built around sturdy citadels with plentiful armor, flanked by fighter hangars.
-- Slow rotation rate.
-- Use resilient defensive drones at all station sizes.
+Heavy Akers sprite updated.
+Fixed Shock Detonator tooltip.
 
-Added a bar event which allows you to learn how to construct Rust Belt stations and syndicates.
-- War Syndicate BPs will no longer be offered on the black market.
+----------------
+- Ships
+----------------
 
-prv Stations
-- Sprites updated.
-- Should now be somewhat easier to fight.
+Flamma (Diktat)
+- Medium turret mount changed from composite to ballistic.
+- Maintenance and recovery cost reduced to 5.
+- Description updated.
 
-- Combat Modules
--- Flux capacity increased by 75%.
--- Weapon layouts updated, every module is now highly specialized.
+Eld (Diktat)
+- Description updated.
 
-- Redan Drone
--- Phase cloak upkeep increased by 60%.
--- Flux dissipation reduced by ~12%.
--- Hull integrity increased by 50%.
--- Armor increased by 20%.
--- Weapons updated, now 5x SIPD, 2x2 Atropos.
+Flock (League)
+- Redesignated from Flock (Export)
+- Medium composite mounts changed to missile.
+- Small composite mounts changed to ballistic.
+- No longer used by the Sindrian Diktat.
+- Description updated.
 
-- Shield Modules
--- Will now take a moderate amount of damage from overloading, and suffer longer overloads while at low hull integrity.
--- Flux capacity increased by 33%.
--- Shield upkeep reduced by 33%.
--- Armor reduced by 30%.
--- Flux Shunt hullmod added.
--- Fixed an issue where the shield would become invisible if the module was at the very edge of the screen.
+Tystnad (League)
+- Medium composite mount changed to missile.
 
-- Hypergenerators hullmod
--- Now only reload a portion of energy weapon ammunition every period.
+Sorl (League)
+- Front medium turrets changed to missile.
+- Rear medium turret changed to hybrid.
+- Small mounts changed to energy.
+- Removed Gengångare Reversion Core hullmod.
+
+Fasnod
+- Built-in AM Blaster removed.
+- Mounts updated, all now converge frontally.
+- OP increased by 5.
+- Sprite updated.
+
+Fasnod (P)
+- Mounts updated.
+- Maintenance and recovery cost reduced to 7.
+- Sprite updated.
+
+Shrike (prv)
+- OP increased by 5.
 
 Skymning
-- Narrowed slightly.
-- Fighter bays restyled.
+- Shield efficiency improved to 0,8.
 
-Bergtagen
-- Added additional visual asymmetry.
-- Slightly increased the arc of the small shoulder energy turrets.
+Gabbro
+- Mounts updated, now a dedicated broadside ship.
+- OP increased by 35.
+- Shield changed to 150° Omni.
+-- Same as the base Starliner.
+- Sprite updated.
 
-Fasvinge
-- Added missing Delicate Machinery hullmod.
+Gremlin (RB)
+- Shield removed.
+- Maintenance and recovery cost reduced to 4.
 
-Gnista
-- Sprite updated
-- Hull integrity increased by 100.
-- Flux dissipation increased by 20.
-- Flux capacity increased by 300.
-- Turn acceleration increased to 90.
-- Shield upkeep increased to 50.
+Hornfels
+- Small hybrid hardpoints changed to turrets.
+- Sprite adjusted.
 
-Svepfräsare
-- Maximum sweep arc reduced by 33%.
--- ie it now delivers the same total damage over a smaller area.
-- Minimum sweep arc increased by 33%.
--- And vice versa, for very narrow mount arcs (hardpoints).
-- Beam now pierces fighters.
-- Fixed a bug where the beam end point would sometimes go past a shielded ship, asteroid, or split hulk.
+Hornfels (LP)
+- Hybrid mounts changed to ballistic.
+- Built-in Hammer Launcher replaced with Jackhammers.
+- Sprite adjusted.
 
-Berguv, Berguv Launcher
-- Range (nominal) increased by 50%.
-- Missile lifetime increased by 1 seconds.
+Ljus (LP)
+- Built-in Hammer Launcher replaced with Jackhammer.
 
-Campaign
-- Ryak High-Energy Labs Battlestation downgraded to Orbital Station.
-- Rust Station Battlestation downgraded to Orbital Station.
-- Removed Rust Belt access to the Plasma Cannon.
+Aska (LC)
+- Removed ALWAYS_PANIC AI hint.
 
-Fixed Annihilator Burst Launcher tracking description, now correctly states "None".
-Fixed a Gissel Support variant weapon slot mixup.
-Fixed a timing error with the Dominator (RB) gauge decal effect.
-Fixed prv station axial rotation always being synchronized if there is somehow more than one station in the battle.
-Fixed Fasklot hitbox.
-Remission EMP autodischarge now uses applyDamage instead of direct hp adjustment.
-Blueprints are no longer required to downgrade prv stations.
-Adjusted Fräsare fragpoint vfx.
-Improved Kartesch target detection while the projectile is moving laterally.
-Fully removed old Aska missile mounts.
-Laboratory bar event now also gives +5 rep with the contact.
-Laboratory R&D ships can no longer roll duplicate hullmods, increasing the average number of smods slightly.
-Moved Gravpjäs turret center point up slightly. Added missing hardpoint barrel edge glow.
-Updated Siege Akers description.
-Reduced the occurence rate of the Bergslag (P) in pirate fleets.
-Typo fixes.
+Many, many ship variant updates.
+
+----------------
+- Other
+----------------
+
+Agni Pureflame burn effect
+- Reduced the application rate for heavy burns, they will now linger for longer.
+-- Due to hit strength calculations this will slightly reduce the total damage.
+- Color will now shift towards blue-white at very high burn levels.
+
+Agni Scale Fighter
+- Now lists Heat Radiance as one of its weapons.
+-- Was previously displayed as a hullmod.
+- Heat Radiance damage type changed to energy.
+- Base damage reduced by 25%.
+
+Various faction equipment tweaks. 
+Significantly reduced the Rusters selection of missiles.
+Gravitic effects will now ignore DEM drones.
+Removed incorrectly listed Ramshield Adjunct S-mod bonus (was nonfunctional).
+Fixed a crash related to ships with a Ramshield listener that have their ShieldAPI nulled post-creation.
+Fixed Sindrian Diktat design type not being purple.

@@ -1,0 +1,325 @@
+{
+  "hullName": "Scheelite",
+  "hullId": "xlu_scheelite",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_scheelite/xlu_scheelite.png",
+  "style": "MIDLINE",
+  "height": 240,
+  "width": 160,
+  "center": [80, 96],
+  "collisionRadius": 176,
+  "shieldCenter": [11, -0],
+  "shieldRadius": 149,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "repair_gantry",
+    "civgrade",
+    "surveying_equipment"
+  ],
+  "builtInWings": [
+    "xlu_mattock_wing"
+  ],
+  "builtInWeapons": {
+    "BW 01": "xlu_geezer_m",
+    "BW 02": "xlu_geezer_m",
+    "BW 05": "xlu_gattler",
+    "BW 06": "xlu_gattler",
+    "BW 07": "xlu_gattler",
+    "DEC 01": "blinker_green",
+    "DEC 02": "blinker_red",
+    "DEC 03": "blinker_green",
+    "DEC 04": "blinker_red"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [101, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 180,
+      "locations": [-23, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -31, 21,
+        -14, 21,
+        -31, -21,
+        -14, -21
+      ]
+    },
+    {
+      "id": "BW 02",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -45,
+      "locations": [95, -55]
+    },
+    {
+      "id": "BW 01",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 45,
+      "locations": [95, 55]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 45,
+      "locations": [77, 19]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -45,
+      "locations": [77, -19]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 90,
+      "locations": [-2, 65]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -90,
+      "locations": [-2, -65]
+    },
+    {
+      "id": "DEC 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-62, 75]
+    },
+    {
+      "id": "DEC 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-62, -75]
+    },
+    {
+      "id": "DEC 03",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [79, 74.5]
+    },
+    {
+      "id": "DEC 04",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [79, -74.5]
+    },
+    {
+      "id": "SHW 01",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [130, 26]
+    },
+    {
+      "id": "SHW 02",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [130, -26]
+    },
+    {
+      "id": "SHW 05",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [3, -0]
+    },
+    {
+      "id": "BW 05",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [54, -0]
+    },
+    {
+      "id": "BW 06",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 135,
+      "locations": [-65, 22]
+    },
+    {
+      "id": "BW 07",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -135,
+      "locations": [-65, -22]
+    },
+    {
+      "id": "SHW 03",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-2, 77]
+    },
+    {
+      "id": "SHW 04",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-2, -77]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [120, 34]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -0,
+      "locations": [120, -34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-95, -21],
+      "length": 60,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, 21],
+      "length": 60,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, 46],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, -46],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-97, -0],
+      "length": 86,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, 38],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-95, -38],
+      "length": 48,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    103, 12,
+    113, 20,
+    97, 64,
+    74, 47,
+    56, 75,
+    -58, 75,
+    -74, 57,
+    -88.5, 51,
+    -88.5, -51,
+    -74, -57,
+    -58, -75,
+    56, -75,
+    74, -47,
+    97, -64,
+    113, -20,
+    103, -12
+  ]
+}

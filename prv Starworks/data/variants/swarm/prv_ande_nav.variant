@@ -4,7 +4,7 @@
   "displayName": "Nav",
   "goalVariant": true,
   "fluxCapacitors": 0,
-  "fluxVents": 10,
+  "fluxVents": 0,
   "quality": 2,
   "permaMods": [],
   "hullMods": [

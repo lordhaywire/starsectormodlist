@@ -1,0 +1,18 @@
+{
+  "variantId": "xlu_gadolinite_shield_Balanced",
+  "hullId": "xlu_gadolinite_shield",
+  "displayName": "Balanced",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 40,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "advancedshieldemitter",
+    "hardenedshieldemitter",
+    "extendedshieldemitter"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

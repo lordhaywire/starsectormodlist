@@ -10,6 +10,7 @@
 	"skinHullId": "prv_munsbit_lc",
 	"spriteName": "graphics/prv/ships/prv_munsbit_lc.png",
 	"systemId": "ammofeed",
+	"removeBuiltInMods":["prv_volatiledrivecore"],
 	"engineSlotChanges":{
 		"0":{"style":"MIDLINE"},
 		"1":{"style":"MIDLINE"},

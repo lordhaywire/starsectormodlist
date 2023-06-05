@@ -1,0 +1,196 @@
+{
+  "hullName": "Colossus (Litho)",
+  "hullId": "xlu_colossus_litho",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_colossus/litho.png",
+  "style": "HIGH_TECH",
+  "height": 254,
+  "width": 196,
+  "center": [98, 112],
+  "collisionRadius": 200,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 170,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_lithoframe"
+  ],
+  "builtInWeapons": {
+    "BW 01": "xlu_gattler",
+    "BW 02": "xlu_gattler"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [86, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 0,
+      "locations": [84, 56]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -0,
+      "locations": [84, -56]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 45,
+      "locations": [44, 60]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [44, -60]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [115, 26]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -0,
+      "locations": [115, -26]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 120,
+      "locations": [-39, 77]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -120,
+      "locations": [-39, -77]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": 90,
+      "locations": [1, 34]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 105,
+      "angle": -90,
+      "locations": [1, -34]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-110, 53],
+      "length": 48,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-110, -53],
+      "length": 48,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112, 61],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112, -61],
+      "length": 32,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112, 69],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-112, -69],
+      "length": 32,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    123, -17,
+    138, -26,
+    111, -46,
+    91, -83,
+    41, -83,
+    -5, -65,
+    -60, -92,
+    -108, -69,
+    -97, -38,
+    -68, -31,
+    -82, -0,
+    -68, 31,
+    -97, 38,
+    -108, 69,
+    -60, 92,
+    -5, 65,
+    41, 83,
+    91, 83,
+    111, 46,
+    138, 26,
+    123, 17,
+    135, -0
+  ]
+}

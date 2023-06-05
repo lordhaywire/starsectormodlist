@@ -1,7 +1,7 @@
 {
     "displayName": "Custom",
     "fluxCapacitors": 20,
-    "fluxVents": 27,
+    "fluxVents": 24,
     "goalVariant": true,
     "hullId": "uw_aurora_cabal",
     "hullMods": ["targetingunit"],

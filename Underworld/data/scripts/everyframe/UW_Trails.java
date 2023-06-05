@@ -8,7 +8,6 @@ import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
 import com.fs.starfarer.api.loading.ProjectileSpawnType;
 import com.fs.starfarer.api.util.IntervalUtil;
-import data.scripts.plugins.MagicTrailPlugin;
 import java.awt.Color;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -18,6 +17,7 @@ import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.plugins.MagicTrailPlugin;
 
 public class UW_Trails extends BaseEveryFrameCombatPlugin {
 
@@ -137,7 +137,7 @@ public class UW_Trails extends BaseEveryFrameCombatPlugin {
                         spawnPosition.x += offsetPoint.x;
                         spawnPosition.y += offsetPoint.y;
 
-                        MagicTrailPlugin.AddTrailMemberAdvanced(
+                        MagicTrailPlugin.addTrailMemberAdvanced(
                                 proj, /* linkedEntity */
                                 data.id, /* ID */
                                 Global.getSettings().getSprite("uw_trails", "uw_smoothtrail"), /* sprite */
@@ -165,7 +165,7 @@ public class UW_Trails extends BaseEveryFrameCombatPlugin {
                                 CombatEngineLayers.CONTRAILS_LAYER, /* layerToRenderOn */
                                 1f /* frameOffsetMult */
                         );
-                        MagicTrailPlugin.AddTrailMemberAdvanced(
+                        MagicTrailPlugin.addTrailMemberAdvanced(
                                 proj, /* linkedEntity */
                                 data.id2, /* ID */
                                 Global.getSettings().getSprite("uw_trails", "uw_zappytrail"), /* sprite */
@@ -193,7 +193,7 @@ public class UW_Trails extends BaseEveryFrameCombatPlugin {
                                 CombatEngineLayers.CONTRAILS_LAYER, /* layerToRenderOn */
                                 1f /* frameOffsetMult */
                         );
-                        MagicTrailPlugin.AddTrailMemberAdvanced(
+                        MagicTrailPlugin.addTrailMemberAdvanced(
                                 proj, /* linkedEntity */
                                 data.id3, /* ID */
                                 Global.getSettings().getSprite("uw_trails", "uw_zappytrail"), /* sprite */

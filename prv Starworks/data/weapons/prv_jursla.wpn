@@ -3,7 +3,9 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "LARGE",
-  "beamEffect": "scripts.weapons.prv_jursla_BeamEffect",
+  #"beamEffect": "scripts.weapons.prv_jursla_BeamEffect",
+  #"everyFrameEffect": "scripts.weapons.prv_jursla_burst_EveryFrameEffect",
+  "everyFrameEffect": "scripts.weapons.prv_jursla_EveryFrameEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/prv/weapons/prv_jursla_turret.png",
@@ -32,27 +34,29 @@
   "hardpointAngleOffsets": [
     0
   ],
-  "fringeColor": [
+  "coreColor": [
     128,
     255,
     255,
     128
   ],
-  "coreColor": [
+  "fringeColor": [
     51,
     0,
     153,
     191
   ],
-  "width": 30,
+  "width": 12,
   "textureType": [
-    "graphics/prv/fx/prv_beam_jursla_fringe.png",
-    "graphics/prv/fx/prv_beam_jursla_core.png"
+    #"graphics/prv/fx/prv_beam_jursla_fringe.png",
+    #"graphics/prv/fx/prv_beam_jursla_core.png"
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
   ],
-  "textureScrollSpeed": 96,
+  "textureScrollSpeed": 144,
   "pixelsPerTexel": 2,
   "pierceSet": [
-    FIGHTER,
+    #FIGHTER,
     PROJECTILE_FF,
     PROJECTILE_NO_FF,
     PROJECTILE_FIGHTER,

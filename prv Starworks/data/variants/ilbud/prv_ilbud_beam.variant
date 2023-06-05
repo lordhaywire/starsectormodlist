@@ -3,7 +3,7 @@
   "hullId": "prv_ilbud",
   "displayName": "Beam",
   "goalVariant": false,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 8,
   "fluxVents": 20,
   "quality": 0.25,
   "permaMods": [],

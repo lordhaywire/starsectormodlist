@@ -2,6 +2,7 @@
   "displayName": "Close Support",
   "fluxCapacitors": 9,
   "fluxVents": 10,
+  "goalVariant": true,
   "hullId": "prv_flamma_midline",
   "hullMods": [
     "turretgyros",
@@ -28,8 +29,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "pdlaser",
-        "WS0002": "pdlaser"
+        "WS0001": "taclaser",
+        "WS0002": "taclaser"
       }
     },
     {

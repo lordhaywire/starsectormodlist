@@ -2,7 +2,7 @@
   "displayName": "Strike",
   "fluxCapacitors": 7,
   "fluxVents": 8,
-  "goalVariant": true,
+  "goalVariant": false,
   "hullId": "prv_gryning",
   "hullMods": [
     "eccm"

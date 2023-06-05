@@ -1,0 +1,28 @@
+{
+  "variantId": "ocua_sophis_c_Standard",
+  "hullId": "ocua_sophis_c",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 6,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "reinforcedhull",
+    "targetingunit",
+    "hardenedshieldemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_glint",
+        "WS0002": "ocua_glint",
+        "WS0003": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

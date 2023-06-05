@@ -3,12 +3,13 @@
   "hullId": "prv_basalt",
   "displayName": "Attack",
   "goalVariant": true,
-  "fluxCapacitors": 10,
+  "fluxCapacitors": 7,
   "fluxVents": 10,
   "quality": 0,
   "permaMods": [],
   "hullMods": [
-    "autorepair"
+    "autorepair",
+    "armoredweapons",
   ],
   "weaponGroups": [
     {
@@ -41,11 +42,6 @@
         "WS0004": "vulcan"
       }
     },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {}
-    }
   ],
   "modules": [],
   "wings": []

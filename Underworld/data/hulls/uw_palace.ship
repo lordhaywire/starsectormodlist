@@ -13,6 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
     "uw_cabal_upgrades",
+    "uw_hyperwave_amp",
     "uw_linkedhull",
     "advancedcore",
     "advancedshieldemitter",

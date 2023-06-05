@@ -3,9 +3,9 @@
   "hullId": "prv_rok_p",
   "displayName": "Stolen",
   "goalVariant": true,
-  "fluxCapacitors": 9,
+  "fluxCapacitors": 11,
   "fluxVents": 50,
-  "quality": 0,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "dedicated_targeting_core",
@@ -16,18 +16,18 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "pilum",
-        "WS0018": "pilum"
+        "WS0001": "typhoon",
+        "WS0018": "typhoon"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0014": "annihilator",
-        "WS0015": "annihilator",
-        "WS0016": "annihilator",
-        "WS0017": "annihilator"
+        "WS0014": "sabot",
+        "WS0015": "sabot",
+        "WS0016": "sabot",
+        "WS0017": "sabot"
       }
     },
     {
@@ -35,6 +35,12 @@
       "mode": "LINKED",
       "weapons": {
         "WS0002": "hephag",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "hephag"
       }
     },
@@ -43,6 +49,12 @@
       "mode": "LINKED",
       "weapons": {
         "WS0005": "arbalest",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0012": "arbalest",
         "WS0013": "arbalest"
       }
@@ -63,5 +75,5 @@
     }
   ],
   "modules": [],
-  "wings": ["borer_wing"]
+  "wings": ["talon_wing"]
 }

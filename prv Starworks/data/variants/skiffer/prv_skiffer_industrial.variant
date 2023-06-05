@@ -1,6 +1,6 @@
 {
   "displayName": "Industrial",
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 9,
   "fluxVents": 10,
   "goalVariant": false,
   "hullId": "prv_skiffer",

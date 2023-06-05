@@ -1,0 +1,64 @@
+{
+  "variantId": "xlu_rhodochrosite_Standard",
+  "hullId": "xlu_rhodochrosite",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 23,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "heavyarmor",
+    "expanded_cargo_holds",
+    "additional_berthing",
+    "surveying_equipment"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "salamanderpod",
+        "WS0002": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "BW 05": "xlu_gattler",
+        "BW 06": "xlu_gattler",
+        "BW 07": "xlu_gattler",
+        "BW 08": "xlu_gattler"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_hyperflak",
+        "WS0004": "xlu_hyperflak"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 01": "xlu_rhodochrosite_rear_Standard"
+    },
+    {
+      "SM 02": "xlu_rhodochrosite_e_l_Standard"
+    },
+    {
+      "SM 03": "xlu_rhodochrosite_e_r_Standard"
+    }
+  ],
+  "wings": [
+    "xlu_kampilan_wing",
+    "xlu_mattock_wing"
+  ]
+}

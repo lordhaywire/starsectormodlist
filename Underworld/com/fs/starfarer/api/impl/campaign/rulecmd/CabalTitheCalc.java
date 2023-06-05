@@ -40,28 +40,28 @@ public class CabalTitheCalc extends BaseCommandPlugin {
         long realTithe = UW_Util.roundToSignificantFiguresLong(tithe, 3);
 
         float repImpact;
-        if (realTithe <= 12500f) {
-            repImpact = 0.01f;
-        } else if (realTithe <= 25000f) {
+        if (realTithe <= 20000f) {
             repImpact = 0.02f;
-        } else if (realTithe <= 50000f) {
-            repImpact = 0.03f;
-        } else if (realTithe <= 100000f) {
+        } else if (realTithe <= 40000f) {
             repImpact = 0.04f;
-        } else if (realTithe <= 200000f) {
-            repImpact = 0.05f;
-        } else if (realTithe <= 400000f) {
+        } else if (realTithe <= 80000f) {
             repImpact = 0.06f;
-        } else if (realTithe <= 800000f) {
-            repImpact = 0.07f;
-        } else if (realTithe <= 1600000f) {
+        } else if (realTithe <= 160000f) {
             repImpact = 0.08f;
-        } else if (realTithe <= 3200000f) {
-            repImpact = 0.09f;
+        } else if (realTithe <= 320000f) {
+            repImpact = 0.1f;
+        } else if (realTithe <= 640000f) {
+            repImpact = 0.12f;
+        } else if (realTithe <= 1280000f) {
+            repImpact = 0.14f;
+        } else if (realTithe <= 2560000f) {
+            repImpact = 0.16f;
+        } else if (realTithe <= 5120000f) {
+            repImpact = 0.18f;
         } else {
-            repImpact = 0.10f;
+            repImpact = 0.20f;
         }
-        float repNegImpact = repImpact;
+        float repNegImpact = repImpact * 0.5f;
         switch (Global.getSector().getFaction("cabal").getRelToPlayer().getLevel()) {
             default:
             case VENGEFUL:

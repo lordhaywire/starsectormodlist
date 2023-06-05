@@ -3,9 +3,9 @@
   "hullId": "prv_rok_p",
   "displayName": "Syndicate",
   "goalVariant": true,
-  "fluxCapacitors": 8,
+  "fluxCapacitors": 6,
   "fluxVents": 50,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "dedicated_targeting_core"
@@ -15,35 +15,47 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "pilum",
-        "WS0018": "pilum"
+        "WS0001": "jackhammer",
+        "WS0018": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "hammerrack"
+        "WS0003": "prv_blaster_charge_launcher"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "prv_lighttripleac",
+        "WS0015": "prv_lighttripleac",
+        "WS0016": "prv_lighttripleac",
+        "WS0017": "prv_lighttripleac"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "prv_spatterflamer"
+        "WS0002": "prv_massdriver"
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "prv_remission",
+        "WS0005": "prv_remission"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0012": "prv_remission",
-        "WS0013": "prv_remission",
-        "WS0014": "prv_lighttripleac",
-        "WS0015": "prv_lighttripleac",
-        "WS0016": "prv_lighttripleac",
-        "WS0017": "prv_lighttripleac"
+        "WS0013": "prv_remission"
       }
     },
     {

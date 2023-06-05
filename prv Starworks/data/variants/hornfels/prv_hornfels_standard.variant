@@ -1,16 +1,16 @@
 {
-  "displayName": "Standard",
-  "fluxCapacitors": 23,
-  "fluxVents": 30,
-  "goalVariant": true,
-  "hullId": "prv_hornfels",
-  "hullMods": [
-    "dedicated_targeting_core"
-  ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 0,
   "variantId": "prv_hornfels_standard",
+  "hullId": "prv_hornfels",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "heavyarmor"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -24,38 +24,51 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0009": "annihilator",
-        "WS0010": "annihilator"
+        "WS0009": "harpoon",
+        "WS0010": "harpoon"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_kartesch",
-        "WS0002": "prv_kartesch",
-        "WS0003": "heavyac"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0011": "lightdualac",
-        "WS0012": "lightdualac"
+        "WS0001": "heavyac",
+        "WS0002": "heavyac"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "vulcan",
+        "WS0003": "miningblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "lightag",
+        "WS0012": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightdualac",
+        "WS0005r": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0005": "vulcan",
-        "WS0005r": "vulcan",
         "WS0006": "vulcan",
         "WS0007": "vulcan"
       }
     }
   ],
+  "modules": [],
   "wings": []
 }

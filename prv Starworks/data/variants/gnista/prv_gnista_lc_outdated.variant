@@ -2,7 +2,7 @@
   "displayName": "Outdated",
   "fluxCapacitors": 5,
   "fluxVents": 10,
-  "goalVariant": false,
+  "goalVariant": true,
   "hullId": "prv_gnista_lc",
   "hullMods": [],
   "modules": [],

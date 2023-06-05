@@ -1,0 +1,68 @@
+{
+  "variantId": "xlu_ferros_Barrage",
+  "hullId": "xlu_ferros",
+  "displayName": "Barrage",
+  "goalVariant": true,
+  "fluxCapacitors": 14,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "xlu_crew_warshots"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "arbalest",
+        "WS0003": "arbalest",
+        "WS0004": "arbalest",
+        "WS0005": "arbalest",
+        "WS0006": "arbalest",
+        "WS0007": "arbalest",
+        "WS0008": "arbalest",
+        "WS0009": "arbalest"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0010": "harpoon",
+        "WS0011": "harpoon",
+        "WS0012": "harpoon",
+        "WS0013": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_magpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "xlu_bolton",
+        "WS0015": "xlu_bolton"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "WS0016": "flak",
+        "WS0017": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

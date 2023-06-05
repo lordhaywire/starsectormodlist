@@ -1,6 +1,6 @@
 {
     "displayName": "Rave",
-    "fluxCapacitors": 1,
+    "fluxCapacitors": 2,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_palace_left",
@@ -10,6 +10,7 @@
         "pointdefenseai"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_left_rav",
     "weaponGroups": [
         {

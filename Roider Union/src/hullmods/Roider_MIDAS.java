@@ -11,10 +11,10 @@ import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.loading.HullModSpecAPI;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
-//import data.scripts.terrain.MagicAsteroidBeltTerrainPlugin;
 import ids.Roider_Ids.Roider_Hullmods;
 import java.awt.Color;
 import java.util.*;
+import org.magiclib.terrain.MagicAsteroidBeltTerrainPlugin;
 import scripts.campaign.cleanup.Roider_MadMIDASHealer;
 import scripts.campaign.rulecmd.Roider_MadRockpiper;
 
@@ -43,7 +43,8 @@ public class Roider_MIDAS extends BaseHullMod implements HullModFleetEffect {
 //        boolean hadRecent = mem.is(RECENT_IMPACT, true);
 //        boolean recentlyNegated = mem.is(NEGATED_IMPACT, true);
 //
-//        boolean impactInProgress = fleet.hasScriptOfClass(AsteroidImpact.class);
+//        boolean impactInProgress = fleet.hasScriptOfClass(MagicAsteroidImpact.class)
+//                    || fleet.hasScriptOfClass(AsteroidImpact.class);
 //
 //        // Skip if there is nothing to do this advance
 //        if (!hadRecent && !impactInProgress) {
@@ -107,16 +108,16 @@ public class Roider_MIDAS extends BaseHullMod implements HullModFleetEffect {
 
         // MagicAsteroids time
         // Reduce chance of damaging impact
-//        MutableStat chanceMod = fleet.getCommanderStats().getDynamic().getStat(MagicAsteroidBeltTerrainPlugin.IMPACT_DAMAGE_CHANCE);
-//        if (chanceMod != null) {
-//            chanceMod.modifyMult(MOD_ID, 1f - contribution);
-//        }
+        MutableStat chanceMod = fleet.getCommanderStats().getDynamic().getStat(MagicAsteroidBeltTerrainPlugin.IMPACT_DAMAGE_CHANCE);
+        if (chanceMod != null) {
+            chanceMod.modifyMult(MOD_ID, 1f - contribution);
+        }
 
         // Reduce pushing effect of impact
-//        MutableStat pushMod = fleet.getCommanderStats().getDynamic().getStat(MagicAsteroidBeltTerrainPlugin.IMPACT_FORCE);
-//        if (pushMod != null) {
-//            pushMod.modifyMult(MOD_ID, magnitudeMult);
-//        }
+        MutableStat pushMod = fleet.getCommanderStats().getDynamic().getStat(MagicAsteroidBeltTerrainPlugin.IMPACT_FORCE);
+        if (pushMod != null) {
+            pushMod.modifyMult(MOD_ID, magnitudeMult);
+        }
 
 
 //        // Reduce chance of damaging impact
@@ -237,9 +238,9 @@ public class Roider_MIDAS extends BaseHullMod implements HullModFleetEffect {
 
 
     public String getDescriptionParam(int index, HullSize hullSize) {
-//        if (index == 0) return "" + (int) MAX_IMPACT_RESIST + "%";
-        if (index == 0) return "" + (int) EMP_REDUCTION + "%";
-        if (index == 1) return "" + (int) MASS_BONUS + "%";
+        if (index == 0) return "" + (int) MAX_IMPACT_RESIST + "%";
+        if (index == 1) return "" + (int) EMP_REDUCTION + "%";
+        if (index == 2) return "" + (int) MASS_BONUS + "%";
         return null;
     }
 

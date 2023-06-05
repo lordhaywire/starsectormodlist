@@ -1,0 +1,165 @@
+{
+  "hullName": "Hangar Module",
+  "hullId": "ocua_station_module_hangar_medium",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Oculian Armada/ships/station/ocua_station_module_hangar_medium.png",
+  "style": "OCULUS",
+  "height": 150,
+  "width": 176,
+  "center": [88, 31],
+  "collisionRadius": 204,
+  "shieldCenter": [48, -0],
+  "shieldRadius": 134.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "supercomputer",
+    "reduced_explosion",
+    "chassis_storage",
+    "ocua_oculus_mod",
+    "ocua_core_quantix",
+    "shared_flux_sink",
+    "chassis_storage",
+    "ocua_baseless_module"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot",
+    "LIT 02": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 165,
+      "angle": -0,
+      "locations": [65, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -30,
+      "locations": [37, -27]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 30,
+      "locations": [37, 27]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -45,
+      "locations": [41, -57]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 45,
+      "locations": [41, 57]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [39, -0]
+    },
+    {
+      "id": "LIT 02",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [28, -0]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        69, 58,
+        69, 49,
+        69, 40,
+        69, 31
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        69, -31,
+        69, -40,
+        69, -49,
+        69, -58
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        77, 58,
+        77, 49,
+        77, 40,
+        77, 31
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        77, -31,
+        77, -40,
+        77, -49,
+        77, -58
+      ]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    106, 21,
+    83, 23,
+    83, 68,
+    92, 80,
+    34, 74,
+    9, 39,
+    9, -39,
+    34, -74,
+    92, -80,
+    83, -68,
+    83, -23,
+    106, -21,
+    91, -0
+  ]
+}

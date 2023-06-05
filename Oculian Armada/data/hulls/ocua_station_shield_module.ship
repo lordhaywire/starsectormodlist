@@ -1,0 +1,45 @@
+{
+  "hullName": "Shield Module",
+  "hullId": "ocua_station_shield_module",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Oculian Armada/ships/station/ocua_station_module_shield.png",
+  "style": "OCULUS",
+  "height": 50,
+  "width": 44,
+  "center": [22, 2],
+  "collisionRadius": 216,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 188,
+  "viewOffset": 0,
+  "builtInMods": [
+    "reduced_explosion",
+    "ocua_oculus_mod",
+    "ocua_core_crystalline",
+    "shared_flux_sink",
+    "always_detaches",
+    "ocua_baseless_module"
+  ],
+  "builtInWeapons": {
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [23, -0]
+    }
+  ],
+  "engineSlots": [],
+  "bounds": [
+    44, 9,
+    22, 21,
+    1, 11,
+    1, -11,
+    22, -21,
+    44, -9
+  ]
+}

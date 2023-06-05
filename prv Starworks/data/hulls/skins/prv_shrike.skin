@@ -8,8 +8,9 @@
   "hullName": "Shrike (prv)",
   "restoreToBaseHull": false,
   "style": "PRV_MID",
-  "ordnancePoints":65,
+  "ordnancePoints":70,
   "skinHullId": "prv_shrike",
+  "builtInMods":["prv_volatiledrivecore",],
   "spriteName": "graphics/prv/ships/prv_shrike.png",
 	"engineSlotChanges":{
 		"0":{"style":"PRV_MID"},
@@ -22,10 +23,6 @@
 		"7":{"style":"PRV_MID"},
 	},    
 	"weaponSlotChanges":{
-		"WS 001":{
-			"mount": "HIDDEN",
-			"type": "DECORATIVE",
-		},
 		"WS 000":{
 			"arc":190,
 			"angle":75,
@@ -41,8 +38,5 @@
 			"type":"BALLISTIC",
 		},
 	},
-	"builtInWeapons": {
-		"WS 001": "prv_u_ramshield"
-	},
-	"builtInMods":["prv_ramshield"],
+	"removeWeaponSlots":["WS 001"],
 }

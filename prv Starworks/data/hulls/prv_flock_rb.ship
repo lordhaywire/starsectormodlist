@@ -31,14 +31,11 @@
     -54.5,
     35.5
   ],
-  #"builtInMods": [
-  #  "prv_reman"
-  #],
   "center": [
     120,
     96.5
   ],
-  "collisionRadius": 151.5,
+  "collisionRadius": 140,
   "engineSlots": [
     {
       "angle": -180,
@@ -126,7 +123,7 @@
     0,
     -0
   ],
-  "shieldRadius": 150.5,
+  "shieldRadius": 135,
   "spriteName": "graphics/prv/ships/prv_flock_rb.png",
   "style": "PRV_LOW",
   "viewOffset": 0,

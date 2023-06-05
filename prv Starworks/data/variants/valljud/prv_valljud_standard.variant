@@ -3,36 +3,36 @@
   "hullId": "prv_valljud",
   "displayName": "Standard",
   "goalVariant": true,
-  "fluxCapacitors": 13,
+  "fluxCapacitors": 7,
   "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
-    "magazines",
+    "eccm",
     "hardenedshieldemitter"
   ],
   "weaponGroups": [
     {
-      "autofire": true,
-      "mode": "LINKED",
+      "autofire": false,
+      "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "prv_siege_akers"
+        "WS0009": "prv_kraka"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0015": "prv_berguv_mirv",
-        "WS0016": "prv_berguv_mirv"
+        "WS0015": "prv_kraka",
+        "WS0016": "prv_kraka",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0009": "phasebeam"
+        "WS0001": "prv_siege_akers"
       }
     },
     {

@@ -1,0 +1,18 @@
+{
+  "variantId": "ocua_dorothyx_shield_Standard",
+  "hullId": "ocua_dorothyx_shield",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "stabilizedshieldemitter",
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

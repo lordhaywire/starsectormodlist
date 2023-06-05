@@ -1,0 +1,69 @@
+{
+  "variantId": "xlu_ferros_Balanced",
+  "hullId": "xlu_ferros",
+  "displayName": "Balanced",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliarythrusters",
+    "targetingunit",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_bente",
+        "WS0010": "swarmer",
+        "WS0011": "swarmer",
+        "WS0012": "swarmer",
+        "WS0013": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_shotcannon_m",
+        "WS0003": "xlu_shotcannon_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heavymortar",
+        "WS0007": "heavymortar",
+        "WS0008": "heavymortar",
+        "WS0009": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "shredder",
+        "WS0005": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "WS0014": "xlu_hovlet",
+        "WS0015": "xlu_hovlet",
+        "WS0016": "xlu_hovlet",
+        "WS0017": "xlu_hovlet"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

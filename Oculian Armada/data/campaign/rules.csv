@@ -1,0 +1,86 @@
+id,trigger,conditions,script,text,options,notes
+ExerelinNGCListOcua,ExerelinNGCListFactions3,,,,exerelinNGCJoinOcua:Oculian Armada,
+ExerelinNGCJoinOcua,NewGameOptionSelected,$option == exerelinNGCJoinOcua,"$playerFaction = oculus
+FireBest ExerelinNGCJoinFaction",,,
+ExerelinFactionDirectoryListOcua,ExerelinFactionDirectoryList3,$directoryFactions:ocua,,,exerelinFactionDirectoryGetOcua:Oculian Armada,
+ExerelinFactionDirectoryGetOcua,DialogOptionSelected,$option == exerelinFactionDirectoryGetOcua,"$_directoryFaction = ocua 0
+FireBest ExerelinFactionDirectorySubmit",,,
+,,,,,,
+,,,,,,
+# Trade panel flavor text,,,,,,
+flavorTextMarketOcua_Small,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == ocua
+$marketSize <= 4
+$market.id != ocua_atalie3","AddText ""Few red-tinted ships arrive in this port, some pirates and others of Oculian origin. This area appears to be merely industrial as no one but an amassed swarm of drones appear to be working in the scene. Upon disembarking, you see nothing but a pristine plastic flooring and some machinery here and there."" marketFlavorTextColor
+AddText ""An Oculian sister reluctantly shows and approaches you, confused to why such an admiral would come aboard this rather empty facility."" marketFlavorTextColor",,,
+flavorTextMarketOcua,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == ocua
+$marketSize >= 5
+$market.id != ocua_atalie3","AddText ""The port concourse is filled with bulbous red hulls of every size. Cargo containers packed with large glass tubes containing embryos are loaded into the implicated Storkis time-vessels for crew growth, as scarred variants returned with fully grown battalions walking out into the deck. Dumbfounded by the concept, you look away."" marketFlavorTextColor
+AddText ""An Oculian sister approaches you with a calm greeting as she reaches her datapad for you to oversee their market line."" marketFlavorTextColor",,,
+flavorTextMarketOcua_Adalie,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == ocua
+$market.id == ocua_atalie3","AddText ""Beneath the tundra layer is more than meets the eye, an underground industrial complex capable of housing multiple capital ships. Pink-tinted Oculian sisters are seen very often in these parts, while human ship captains appear to be calm and reserved as they offload with regular sisters monitor the site. A sweet, roasted aroma immediately enters your senses while you disembark, as fleets of transport vehicles unload their products into the spaceborne vessels for export."" marketFlavorTextColor
+AddText ""This is definitely a bakery."" marketFlavorTextColor
+AddText ""An Oculian sister with a holo-highlight 'Mikanate' approaches you with a stern gesture, preparing her datapad as her drones oversee your crew."" marketFlavorTextColor",,,
+,,,,,,
+# relationship level descriptions,,,,,,
+relLevelNeutralOcua,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == ocua",,"Your indifference towards the Oculians gives them an awkward overview to stay out of your way, unless provoked otherwise.",,
+relLevelFavorableOcua,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == ocua",,Oculian privateers sigh in relief that another of their own flesh and blood such as yourself is another unique face to work alongside with.,,
+relLevelWelcomingOcua,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == ocua",,"Oculian sisters tend to arrive in your doorstep with baked offerings and flowers, this either gives you ominous feeling unbeknownst to you or simply a kind gesture of your efforts in the armada.",,
+relLevelFriendlyOcua,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == ocua",,Your reputation with the unlikely bakery collective has been well-known even to the Arc Mother. Offering full-time services to them will grant you their experiemental arsenal or a weird coupon of some exclusive cookie assortments that you simply turn down in suspicion.,,
+relLevelCooperativeOcua,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == ocua",,"You are respected no less different to every kin sister in the armada, offering you directions and advices on every turn. While the Arc Mother cannot simply replace her daughter clones, she would certainly allow your retirement in the armada if so desired.",,
+relLevelSuspiciousOcua,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == ocua",,"Your existence is suspicious in the obviousness of things, as the Oculians see you as a possible threat that would otherwise be nuisance to their very being.",,
+relLevelInhospitableOcua,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == ocua",,"Numerical chatters are heard through the intercomms as you approach Oculian space, the sounding is erratic and very grating to listen, as some ships overhead come at you with a silent glare.",,
+relLevelHostileOcua,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == ocua",,"You are no longer welcomed in Oculian space with a commercial greeting or a casual nod, but rather at gunpoint. Oculian sisters know of your name and would gladly hunt you down if you and your forces enter their space.",,
+relLevelVengefulOcua,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == ocua",,Even the Arc Mother herself has brought her attention to you and would gladly pin the image of your face to any privateer hub to find you.,,
+,,,,,,
+# portside bar stuff,,,,,,
+bar_descOcua,BarPrintDesc,$faction.id == ocua,ShowImageVisual ouca_space_bar,"As you enter the bar-  cafe, wisps of flowery aroma begiles you as assortments of steaming tea and coffee are being served to the locals. An Oculian sister swiftly greets you with a professional bow and as she offers you a table to the establishment. Localized Oculian advertising are displayed bizzarely with fruitful, optimistic images of people showcasing bakery products, while grunting noises of pirates and privateers are overheard from afar which is, at the very least, a comforting sign of humanity having a fair time.",,
+,,,,,,
+# Oculian fleet greeting lines,,,,,,
+greetingOcuaFriendly,OpenCommLink,"$faction.id == ocua
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Digital identification confirmed. Welcome back to our sensory, kith.""
+OR
+""I don't think we'll meet each other often like this, but... care to buy off some of our goods? Just kidding.""
+OR
+""Greetings fellow sister, axuiliary or some backwater pirate who just helped us clear up some space in Hybrasil. Identity has been confirmed, by the way.""
+OR
+""Good morning/afternoon/evening, sir/madam. May we assist you walk across the street lightyears away?"" a faint laughter is heard.
+OR
+""Hello friend. I'd like to add you to my totally not a blacklist of people that we blocked from the Persean TriLink.""",,
+greetingOcuaHostileWeaker,OpenCommLink,"$faction.id == ocua
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""Attention, very large, hostile entity. If you kindly move your fleet out of our way, it would be appreciated. Or else we'll tell mom on you.""
+OR
+""Um, hello hostile entity. Please refrain from interfering with our standard protocols. A kind gesture will be appreciated.""",cutCommLink:Cut the comm link,
+greetingOcuaHostileWeakerDefiant,OpenCommLink,"$faction.id == ocua
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"The Oculian $personRank appears to be determined. ""Observation is in effect. Interfere with our procedures and we will respond."" $heOrShe says.",cutCommLink:Cut the comm link,
+greetingOcuaHostileStronger,OpenCommLink,"$faction.id == ocua
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""Greetings, hostile entity. You are within restricted Oculian space. Disperse immediately from this sector, above the burn capacity of 12 units or be pursued successfully and be destroyed.""
+OR
+""Your energy signatures appear to be above the nominal detection limit. Disperse from this sector or be recycled accordingly.""
+OR
+""Attention, hostile entity. You have attained the minimum requirements to become a threat to our protocol. Disperse or be recycled.""
+OR
+""Hostile entity. It appears your $shipOrFleet have intentionally entered our interaction sphere. Disperse or engage at your own risk.""",cutCommLink:Cut the comm link,
+greetingOcuaNeutral,OpenCommLink,"$faction.id == ocua
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""We have been interacted. Fair travels, entity.""
+OR
+""Greetings, entity. It appears your $shipOrFleet have intentionally entered our interaction sphere. Do you wish to speak to us or engage our units with a subsequent flat reduction to your relationship score.""
+OR
+""Good morning/afternoon/evening, sir/madam. Please refrain from interfering with our duties. Thank you.""",,

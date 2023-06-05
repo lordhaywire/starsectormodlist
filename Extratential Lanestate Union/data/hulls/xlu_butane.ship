@@ -1,0 +1,150 @@
+{
+  "hullName": "Butane",
+  "hullId": "xlu_butane",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_butane/xlu_butane.png",
+  "style": "MIDLINE",
+  "height": 160,
+  "width": 126,
+  "center": [63, 59],
+  "collisionRadius": 146,
+  "shieldCenter": [12, -0],
+  "shieldRadius": 114,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_bulkthrust",
+    "tow_cable",
+    "civgrade",
+    "drive_field_stabilizer"
+  ],
+  "builtInWeapons": {
+    "BG 01": "xlu_gattler"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [7, -0]
+    },
+    {
+      "id": "BG 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 300,
+      "angle": 0,
+      "locations": [47, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 194,
+      "angle": -45,
+      "locations": [68, -24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 194,
+      "angle": 45,
+      "locations": [68, 24]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-52, -24],
+      "length": 72,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-52, 24],
+      "length": 72,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, -40],
+      "length": 72,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, 40],
+      "length": 72,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, -52],
+      "length": 72,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, 52],
+      "length": 72,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, -46],
+      "length": 80,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-59, 46],
+      "length": 80,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -41, 14,
+    -49, 24,
+    -39, 32,
+    -57, 37,
+    -57, 55,
+    19, 56,
+    18, 41,
+    26, 33,
+    78, 38,
+    96, 8,
+    96, -8,
+    78, -38,
+    26, -33,
+    18, -41,
+    19, -56,
+    -57, -55,
+    -57, -37,
+    -39, -32,
+    -49, -24,
+    -41, -14
+  ]
+}

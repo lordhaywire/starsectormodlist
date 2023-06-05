@@ -3,7 +3,7 @@
   "hullId": "prv_sinne",
   "displayName": "Ryak",
   "goalVariant": true,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 7,
   "fluxVents": 10,
   "quality": 2,
   "permaMods": [],

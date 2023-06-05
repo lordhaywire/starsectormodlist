@@ -1,0 +1,41 @@
+{
+  "variantId": "xlu_brass_Elite",
+  "hullId": "xlu_brass",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_weapons_overhaul",
+    "armoredweapons",
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "chaingun",
+        "WS0003": "chaingun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_gattling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_hovlet"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

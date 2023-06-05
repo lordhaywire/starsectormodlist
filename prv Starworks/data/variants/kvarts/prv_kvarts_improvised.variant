@@ -3,8 +3,8 @@
   "hullId": "prv_kvarts",
   "displayName": "Improvised",
   "goalVariant": false,
-  "fluxCapacitors": 19,
-  "fluxVents": 18,
+  "fluxCapacitors": 23,
+  "fluxVents": 22,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -16,7 +16,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "multineedler"
+        "WS0001": "prv_massdriver"
       }
     },
     {
@@ -44,8 +44,6 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "shredder",
-        "WS0004": "shredder",
         "WS0005": "arbalest",
         "WS0006": "arbalest"
       }
@@ -54,7 +52,21 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "dualflak",
+        "WS0003": "shredder",
+        "WS0004": "shredder"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "dualflak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0010": "mininglaser",
         "WS0011": "mininglaser",
         "WS0012": "mininglaser",

@@ -1,0 +1,34 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 5,
+  "fluxVents": 14,
+  "goalVariant": true,
+  "hullId": "xlu_butane",
+  "hullMods": [
+    "reinforcedhull",
+    "unstable_injector"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_butane_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_shotcannon_s",
+        "WS0003": "xlu_shotcannon_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BG 01": "xlu_gattler",
+        "WS0001": "xlu_hyperflak"
+      }
+    }
+  ],
+  "wings": []
+}

@@ -65,7 +65,7 @@ public class CabalPickExtortionMethod extends BaseCommandPlugin {
         report.computeTotals();
         float profit = Math.max(0f, report.getRoot().totalIncome - report.getRoot().totalUpkeep);
 
-        float netWorth = CabalPickContributionMethod.playerNetWorth(fleet);
+        float netWorth = CabalPickContributionMethod.playerNetWorth();
         float targetExtortion = (float) CabalPickExtortionMethod.extortionAmount(netWorth);
 
         float powerLevel = UW_Util.calculatePowerLevel(fleet);
@@ -78,7 +78,21 @@ public class CabalPickExtortionMethod extends BaseCommandPlugin {
         log.info("Seen monthly profit of " + profit);
         log.info("Evaluated net worth at " + netWorth);
         log.info("Targeting extortion value at " + targetExtortion);
-        log.info("Evaluated player power level of " + powerLevel);
+        log.info("Evaluated Cabal fleet power level of " + powerLevel);
+
+        // de-emphasize extortion on poor players
+        if ((targetExtortion < 25000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
+        if ((targetExtortion < 50000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
+        if ((targetExtortion < 100000f) && (Math.random() > 0.5)) {
+            memoryMap.get(MemKeys.LOCAL).set("$Cabal_extortionMethod", "none", 0);
+            return false;
+        }
 
         float lowerThreshold = Math.min(200000f, powerLevel * 1500f);
         float upperThreshold = powerLevel * 3500f;

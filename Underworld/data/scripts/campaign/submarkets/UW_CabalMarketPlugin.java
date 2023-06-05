@@ -4,27 +4,55 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.Script;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.CargoAPI;
+import com.fs.starfarer.api.campaign.CargoAPI.CargoItemType;
 import com.fs.starfarer.api.campaign.CargoStackAPI;
 import com.fs.starfarer.api.campaign.CoreUIAPI;
 import com.fs.starfarer.api.campaign.FactionAPI.ShipPickMode;
 import com.fs.starfarer.api.campaign.FactionDoctrineAPI;
+import com.fs.starfarer.api.campaign.PlayerMarketTransaction;
 import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.SpecialItemData;
-import com.fs.starfarer.api.campaign.econ.MonthlyReport;
 import com.fs.starfarer.api.campaign.econ.SubmarketAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
-import com.fs.starfarer.api.impl.campaign.shared.SharedData;
+import com.fs.starfarer.api.impl.campaign.ids.Items;
 import com.fs.starfarer.api.impl.campaign.submarkets.BlackMarketPlugin;
 import com.fs.starfarer.api.util.Highlights;
 import com.fs.starfarer.api.util.Misc;
+import data.scripts.UnderworldModPlugin;
+import org.apache.log4j.Level;
 
 public class UW_CabalMarketPlugin extends BlackMarketPlugin {
 
     private static final RepLevel MIN_STANDING = RepLevel.INHOSPITABLE;
 
     private boolean playerPaidToUnlock = false;
+    private boolean boughtBPMiniPackage = false;
+    private boolean boughtAlphaCore = false;
+    private boolean boughtNanoforge = false;
+    private boolean boughtBPPackage = false;
     private float sinceLastUnlock = 0f;
+
+    @Override
+    protected Object readResolve() {
+        if ((Global.getSector() == null) || (Global.getSector().getMemoryWithoutUpdate() == null)) {
+            return this;
+        }
+        if (boughtBPMiniPackage) {
+            Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtBPMiniPackage", true);
+        }
+        if (boughtAlphaCore) {
+            Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtAlphaCore", true);
+        }
+        if (boughtNanoforge) {
+            Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtNanoforge", true);
+        }
+        if (boughtBPPackage) {
+            Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtBPPackage", true);
+        }
+        return this;
+    }
 
     @Override
     public void advance(float amount) {
@@ -121,12 +149,7 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
                 break;
         }
 
-        MonthlyReport report = SharedData.getData().getCurrentReport();
-        report.computeTotals();
-        float profit = Math.max(0f, report.getRoot().totalIncome - report.getRoot().totalUpkeep);
-        CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-
-        return Math.round((float) Math.sqrt(Math.max(playerFleet.getCargo().getCredits().get() + profit, 150000f) / 150000f) * 10f * fudge) / 100f;
+        return fudge;
     }
 
     @Override
@@ -155,55 +178,139 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
     @Override
     public void updateCargoPrePlayerInteraction() {
         sinceLastCargoUpdate = 0f;
+        boolean okToAdd = false;
 
         if (okToUpdateShipsAndWeapons()) {
             sinceSWUpdate = 0f;
+            okToAdd = true;
 
             pruneWeapons(0f);
 
-            int weapons = 20 + (market.getSize() * 3);
-            int fighters = 6 + (market.getSize() * 2);
+            int weapons = 30;
+            int fighters = 8;
 
             addWeapons(weapons, weapons + 2, 4, submarket.getFaction().getId());
+            addWeapons(weapons, weapons + 2, 4, Factions.MERCENARY);
             addFighters(fighters, fighters + 2, 3, submarket.getFaction().getId());
+            addFighters(fighters, fighters + 2, 3, Factions.MERCENARY);
 
             getCargo().getMothballedShips().clear();
 
             FactionDoctrineAPI doctrineOverride = submarket.getFaction().getDoctrine().clone();
-            doctrineOverride.setCombatFreighterProbability(1f);
-            doctrineOverride.setShipSize(4);
+            doctrineOverride.setShipSize(5);
             addShips(submarket.getFaction().getId(),
-                    300f, // combat
+                    200f, // combat
                     0f, // freighter 
                     0f, // tanker
                     0f, // transport
                     0f, // liner
                     0f, // utilityPts
-                    1.5f, // qualityOverride
+                    2f, // qualityOverride
+                    0f, // qualityMod
+                    ShipPickMode.PRIORITY_THEN_ALL,
+                    doctrineOverride
+            );
+            doctrineOverride = Global.getSector().getFaction(Factions.MERCENARY).getDoctrine().clone();
+            doctrineOverride.setShipSize(5);
+            addShips(Factions.MERCENARY,
+                    200f, // combat
+                    0f, // freighter 
+                    0f, // tanker
+                    0f, // transport
+                    0f, // liner
+                    0f, // utilityPts
+                    2f, // qualityOverride
                     0f, // qualityMod
                     ShipPickMode.PRIORITY_THEN_ALL,
                     doctrineOverride
             );
 
-            addHullMods(4, 4);
-
-            addCabalBPs();
+            addHullMods(2, 3, submarket.getFaction().getId());
+            addHullMods(2, 3, Factions.MERCENARY);
         }
 
         getCargo().sort();
+
+        if (okToAdd) {
+            addSpecialItems();
+        }
     }
 
-    private void addCabalBPs() {
+    private void addSpecialItems() {
+        boughtBPMiniPackage = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtBPMiniPackage");
+        boughtAlphaCore = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtAlphaCore");
+        boughtNanoforge = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtNanoforge");
+        boughtBPPackage = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtBPPackage");
+        boolean boughtVPCLuxuryGoods = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtVPCLuxuryGoods");
+        boolean boughtVPCDrugs = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtVPCDrugs");
+        boolean boughtTransmitter = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtTransmitter");
+        boolean boughtSimulator = Global.getSector().getMemoryWithoutUpdate().contains("$uw_boughtSimulator");
+
         CargoAPI ourCargo = getCargo();
         for (CargoStackAPI stack : ourCargo.getStacksCopy()) {
-            if ((stack.getSpecialItemSpecIfSpecial() != null)
+            if (!boughtBPPackage && !boughtBPMiniPackage && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_minipackage")) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtAlphaCore && (stack.getCommodityId() != null)
+                    && stack.getCommodityId().contentEquals(Commodities.ALPHA_CORE)) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtNanoforge && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals(Items.PRISTINE_NANOFORGE)) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtBPPackage && (stack.getSpecialItemSpecIfSpecial() != null)
                     && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_package")) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtVPCLuxuryGoods && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_luxury_goods")) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtVPCDrugs && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_drugs")) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtTransmitter && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_transmitter")) {
+                ourCargo.removeStack(stack);
+            }
+            if (!boughtSimulator && (stack.getSpecialItemSpecIfSpecial() != null)
+                    && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_simulator")) {
                 ourCargo.removeStack(stack);
             }
         }
 
-        if (!Global.getSector().getPlayerFaction().knowsShip("uw_odyssey_cabal")) {
-            ourCargo.addItems(CargoAPI.CargoItemType.SPECIAL, new SpecialItemData("uw_cabal_package", null), 1);
+        if (!boughtBPPackage && !boughtBPMiniPackage) {
+            ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("uw_cabal_minipackage", null), 1);
+        }
+        if (!boughtAlphaCore) {
+            ourCargo.addItems(CargoItemType.RESOURCES, Commodities.ALPHA_CORE, 1);
+        }
+        if (!boughtNanoforge) {
+            ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData(Items.PRISTINE_NANOFORGE, null), 1);
+        }
+        if (!boughtBPPackage) {
+            ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("uw_cabal_package", null), 1);
+        }
+        if (UnderworldModPlugin.hasIndEvo) {
+            try {
+                if (!boughtVPCLuxuryGoods) {
+                    ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("IndEvo_vpc_luxury_goods", null), 1);
+                }
+                if (!boughtVPCDrugs) {
+                    ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("IndEvo_vpc_drugs", null), 1);
+                }
+                if (!boughtTransmitter) {
+                    ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("IndEvo_transmitter", null), 1);
+                }
+                if (!boughtSimulator) {
+                    ourCargo.addItems(CargoItemType.SPECIAL, new SpecialItemData("IndEvo_simulator", null), 1);
+                }
+            } catch (Exception e) {
+                Global.getLogger(UW_CabalMarketPlugin.class).log(Level.ERROR, "Exception when adding IndEvo items: " + e.getMessage());
+            }
         }
     }
 
@@ -217,7 +324,35 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
             return true;
         }
         if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_minipackage")) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.FAVORABLE);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getCommodityId() != null)
+                && stack.getCommodityId().contentEquals(Commodities.ALPHA_CORE)) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.WELCOMING);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals(Items.PRISTINE_NANOFORGE)) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.FRIENDLY);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
                 && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_package")) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.COOPERATIVE);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_luxury_goods")) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.FAVORABLE);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_drugs")) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.WELCOMING);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_transmitter")) {
+            return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.FRIENDLY);
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_simulator")) {
             return !submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER)).isAtWorst(RepLevel.COOPERATIVE);
         }
 
@@ -234,28 +369,7 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
             return true;
         }
         RepLevel level = submarket.getFaction().getRelationshipLevel(Global.getSector().getFaction(Factions.PLAYER));
-        if (!level.isAtWorst(MIN_STANDING)) {
-            return true;
-        }
-        if (action == TransferAction.PLAYER_BUY) {
-            MonthlyReport report = SharedData.getData().getCurrentReport();
-            report.computeTotals();
-            float profit = Math.max(0f, report.getRoot().totalIncome - report.getRoot().totalUpkeep);
-            CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-            float assets = playerFleet.getCargo().getCredits().get() + profit;
-
-            if (member.isFrigate()) {
-                return assets < 100000f;
-            } else if (member.isDestroyer()) {
-                return assets < 200000f;
-            } else if (member.isCruiser()) {
-                return assets < 400000f;
-            } else if (member.isCapital()) {
-                return assets < 800000f;
-            }
-        }
-
-        return false;
+        return !level.isAtWorst(MIN_STANDING);
     }
 
     @Override
@@ -273,9 +387,36 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
     @Override
     public String getIllegalTransferText(CargoStackAPI stack, TransferAction action) {
         if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_minipackage")) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.FAVORABLE.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getCommodityId() != null)
+                && stack.getCommodityId().contentEquals(Commodities.ALPHA_CORE)) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.WELCOMING.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals(Items.PRISTINE_NANOFORGE)) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.FRIENDLY.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
                 && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_package")) {
-            return "Req: "
-                    + submarket.getFaction().getDisplayName() + " - " + RepLevel.COOPERATIVE.getDisplayName().toLowerCase();
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.COOPERATIVE.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_luxury_goods")) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.FAVORABLE.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_drugs")) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.WELCOMING.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_transmitter")) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.FRIENDLY.getDisplayName().toLowerCase();
+        }
+        if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
+                && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_simulator")) {
+            return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.COOPERATIVE.getDisplayName().toLowerCase();
         }
 
         if (!playerPaidToUnlock && submarket.getFaction().getRelToPlayer().isAtBest(RepLevel.WELCOMING)) {
@@ -286,27 +427,47 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
     }
 
     @Override
-    public String getIllegalTransferText(FleetMemberAPI member, TransferAction action) {
-        float req = 0f;
-        if (member.isFrigate()) {
-            req = 100000f;
-        } else if (member.isDestroyer()) {
-            req = 200000f;
-        } else if (member.isCruiser()) {
-            req = 400000f;
-        } else if (member.isCapital()) {
-            req = 800000f;
-        }
-        return "Req: " + Misc.getDGSCredits(req) + " assets/income";
-    }
-
-    @Override
     protected Object writeReplace() {
         if (okToUpdateShipsAndWeapons()) {
             pruneWeapons(0f);
             getCargo().getMothballedShips().clear();
         }
         return this;
+    }
+
+    @Override
+    public boolean isParticipatesInEconomy() {
+        return false;
+    }
+
+    @Override
+    public void reportPlayerMarketTransaction(PlayerMarketTransaction transaction) {
+        for (CargoStackAPI stack : transaction.getBought().getStacksCopy()) {
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_minipackage")) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtBPMiniPackage", true);
+            }
+            if ((stack.getCommodityId() != null) && stack.getCommodityId().contentEquals(Commodities.ALPHA_CORE)) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtAlphaCore", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals(Items.PRISTINE_NANOFORGE)) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtNanoforge", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_package")) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtBPPackage", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_luxury_goods")) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtVPCLuxuryGoods", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_vpc_drugs")) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtVPCDrugs", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_transmitter")) {
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtTransmitter", true);
+            }
+            if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_simulator")) {
+                Global.getSector().getMemoryWithoutUpdate().set("IndEvo_simulator", true);
+            }
+        }
     }
 
     private boolean canPlayerAffordUnlock() {
@@ -342,11 +503,6 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
                 break;
         }
 
-        MonthlyReport report = SharedData.getData().getCurrentReport();
-        report.computeTotals();
-        float profit = Math.max(0f, report.getRoot().totalIncome - report.getRoot().totalUpkeep);
-        CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
-
-        return Math.round((float) Math.sqrt(Math.max(playerFleet.getCargo().getCredits().get() + profit, 100000f) / 100000f) * 30f * fudge) * 1000;
+        return Math.round(fudge * 30000f);
     }
 }

@@ -1,7 +1,7 @@
 {
 	"id":"le_damper",
-	"type":"PHASE_CLOAK",
-	"aiType":"PHASE_CLOAK",
+	"type":"STAT_MOD",
+	"aiType":"DAMPER_FIELD",
 	
 	"statsScript":"data.shipsystems.LE_DamperFieldStats",
 	

@@ -1,0 +1,46 @@
+{
+  "variantId": "xlu_station_missile_module_Standard",
+  "hullId": "xlu_station_missile_module",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "squall",
+        "WS0002": "xlu_lusis_l"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_hyvel",
+        "WS0004": "xlu_hyvel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_hyperflak",
+        "WS0007": "xlu_hyperflak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

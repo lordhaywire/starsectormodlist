@@ -372,4 +372,47 @@ public class Roider_PhasenetTowPattern implements HullModEffect {
 		return -1;
 	}
 
+    @Override
+    public boolean hasSModEffectSection(HullSize hullSize, ShipAPI ship, boolean isForModSpec) {
+        return false;
+    }
+
+    @Override
+    public void addSModSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec, boolean isForBuildInList) {
+
+    }
+
+    @Override
+    public void addSModEffectSection(TooltipMakerAPI tooltip, HullSize hullSize, ShipAPI ship, float width, boolean isForModSpec, boolean isForBuildInList) {}
+
+    @Override
+    public boolean hasSModEffect() {
+        return false;
+    }
+
+    @Override
+    public String getSModDescriptionParam(int index, HullSize hullSize) {
+        return null;
+    }
+
+    @Override
+    public String getSModDescriptionParam(int index, HullSize hullSize, ShipAPI ship) {
+        return null;
+    }
+
+    @Override
+    public float getTooltipWidth() {
+		return 369f;
+    }
+
+    @Override
+    public boolean isSModEffectAPenalty() {
+        return false;
+    }
+
+    @Override
+    public boolean showInRefitScreenModPickerFor(ShipAPI ship) {
+        return false;
+    }
+
 }

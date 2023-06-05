@@ -1,0 +1,19 @@
+{
+	"id":"xlu_curatoroverloader",
+	"type":"STAT_MOD",
+	#"aiType":"WEAPON_BOOST",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.scripts.ai.xlu_CuratorOverloaderAI",
+	
+	"statsScript":"data.shipsystems.scripts.xlu_CuratorOverloaderStats",
+	
+	"engineGlowLengthMult":0.25,
+	"engineGlowWidthMult":0.25,
+	"engineGlowGlowMult":0.33,
+	
+	"weaponGlowColor":[10,40,150,155],
+	"weaponTypes":[BALLISTIC],
+	
+	"useSound":"xlu_system_curatoroverloader",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

@@ -13,20 +13,18 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 000": "prv_agni_teeth",
-        "WS 003": "prv_agni_teeth",
-        "WS 004": "prv_agni_teeth",
-        "WS 005": "prv_agni_teeth",
-        "WS0005": "prv_agni_flamelash",
-        "WS0006": "prv_agni_flamelash"
+        "WS 000": "prv_agni_web",
+        "WS 003": "prv_agni_web",
+        "WS 004": "prv_agni_cyst",
+        "WS 005": "prv_agni_cyst",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "prv_agni_spines",
-        "WS 002": "prv_agni_spines"
+        "WS 001": "prv_agni_spore",
+        "WS 002": "prv_agni_spore"
       }
     },
     {
@@ -34,7 +32,9 @@
       "mode": "LINKED",
       "weapons": {
         "WS0003": "prv_agni_flamelash",
-        "WS0004": "prv_agni_flamelash"
+        "WS0004": "prv_agni_flamelash",
+        "WS0005": "prv_agni_flamelash",
+        "WS0006": "prv_agni_flamelash"
       }
     },
     {
@@ -54,6 +54,6 @@
   ],
   "modules": [],
   "wings": [
-    "prv_agni_scale_wing"
+    "prv_agni_down_wing"
   ]
 }

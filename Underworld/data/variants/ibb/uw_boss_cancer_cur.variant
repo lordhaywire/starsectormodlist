@@ -1,7 +1,7 @@
 {
     "displayName": "Cursed",
     "fluxCapacitors": 0,
-    "fluxVents": 17,
+    "fluxVents": 19,
     "goalVariant": true,
     "hullId": "uw_boss_cancer",
     "hullMods": [

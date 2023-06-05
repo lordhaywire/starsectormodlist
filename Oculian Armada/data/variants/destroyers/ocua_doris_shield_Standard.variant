@@ -1,0 +1,17 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "ocua_doris_shield",
+  "hullMods": [
+    "hardenedshieldemitter",
+    "ocua_core_crystalline"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "ocua_doris_shield_Standard",
+  "weaponGroups": [],
+  "wings": []
+}

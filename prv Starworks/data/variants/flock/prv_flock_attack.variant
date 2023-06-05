@@ -3,7 +3,7 @@
   "hullId": "prv_flock",
   "displayName": "Attack",
   "goalVariant": false,
-  "fluxCapacitors": 16,
+  "fluxCapacitors": 18,
   "fluxVents": 30,
   "quality": 0,
   "permaMods": [],

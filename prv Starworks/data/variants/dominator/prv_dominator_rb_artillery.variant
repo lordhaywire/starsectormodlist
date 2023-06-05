@@ -3,7 +3,7 @@
   "hullId": "prv_dominator_rb",
   "displayName": "Artillery",
   "goalVariant": false,
-  "fluxCapacitors": 27,
+  "fluxCapacitors": 19,
   "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
@@ -16,7 +16,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 013": "hephag"
+        "WS 012": "prv_belt_blaster"
       }
     },
     {
@@ -32,14 +32,13 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 012": "prv_hfl_array"
+        "WS 013": "prv_massdriver"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 005": "prv_lighttripleac",
         "WS 011": "heavyac"
       }
     },
@@ -47,13 +46,26 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "pdlaser",
-        "WS 002": "pdlaser",
+        "WS 005": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS 004": "vulcan",
         "WS 006": "vulcan",
         "WS 007": "vulcan",
         "WS 008": "vulcan",
         "WS 009": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "pdlaser",
+        "WS 002": "pdlaser"
       }
     }
   ],

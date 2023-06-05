@@ -1,0 +1,14 @@
+{
+	"designTypeColors":{
+		"XLU":[140,160,255,255],
+		"XL Ultra":[70,80,240,255],
+		"Litho Corps":[140,140,240,255],
+	},
+
+    "graphics":{
+		"blueprint_packages":{
+			"xlu_basic_package":"graphics/Extratential Lanestate Union/icons/cargo/xlu_bp_basic.png",
+			"xlu_heavy_package":"graphics/Extratential Lanestate Union/icons/cargo/xlu_bp_heavy.png",
+		},
+    }
+}

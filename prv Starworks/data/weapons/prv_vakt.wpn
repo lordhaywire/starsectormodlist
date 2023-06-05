@@ -51,7 +51,7 @@
     128,
     128
   ],
-  "width": 12,
+  "width": 24,
   "textureType": [
     "graphics/prv/fx/prv_beam_interrupted_fringe.png",
     "graphics/prv/fx/prv_beam_interrupted_core.png"

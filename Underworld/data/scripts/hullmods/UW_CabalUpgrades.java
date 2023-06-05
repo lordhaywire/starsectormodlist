@@ -5,8 +5,10 @@ import com.fs.starfarer.api.combat.ArmorGridAPI;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.CombatEngineAPI;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
+import com.fs.starfarer.api.combat.ShieldAPI.ShieldType;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
+import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import data.scripts.util.UW_Util;
 import java.awt.Color;
 import org.lazywizard.lazylib.CollisionUtils;
@@ -14,11 +16,13 @@ import org.lwjgl.util.vector.Vector2f;
 
 public class UW_CabalUpgrades extends BaseHullMod {
 
-    private static final float ARMOR_MULT = 1.05f;
-    private static final float FLUX_MULT = 1.05f;
-    private static final float HANDLING_MULT = 1.05f;
-    private static final float LOGISTICS_PENALTY = 50f;
-    private static final float SHIELD_MULT = 1.05f;
+    private static final float ARMOR_PERCENT = 20f;
+    private static final float ARMOR_PERCENT_PHASE = 10f;
+    private static final float SHIELD_MULT = 0.9f;
+    private static final float FLUX_MULT = 0.95f;
+    private static final float CASUALTIES_PERCENT = 10f;
+    private static final float REPAIR_PERCENT = 25f;
+    private static final int EXTRA_S_MODS = 1;
 
     private static final float MAX_SPARKLE_CHANCE_PER_SECOND_PER_CELL = 0.75f;
     private static final Color SPARK_COLOR = new Color(190, 60, 255, 175);
@@ -61,7 +65,7 @@ public class UW_CabalUpgrades extends BaseHullMod {
                 Vector2f cellLoc = getCellLocation(ship, x, y);
                 cellLoc.x += cellSize * 0.1f - cellSize * (float) Math.random();
                 cellLoc.y += cellSize * 0.1f - cellSize * (float) Math.random();
-                if (CollisionUtils.isPointWithinBounds(cellLoc, ship)) {
+                if (UW_Util.isOnscreen(cellLoc, SPARK_RADIUS) && CollisionUtils.isPointWithinBounds(cellLoc, ship)) {
                     engine.addHitParticle(cellLoc, ship.getVelocity(), 0.5f * SPARK_RADIUS * (float) Math.random() + SPARK_RADIUS, 1f, SPARK_DURATION,
                             UW_Util.colorJitter(color, 50f));
                 }
@@ -71,46 +75,51 @@ public class UW_CabalUpgrades extends BaseHullMod {
 
     @Override
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
-        stats.getArmorBonus().modifyMult(id, ARMOR_MULT);
-        stats.getHullBonus().modifyMult(id, ARMOR_MULT);
+        stats.getShieldDamageTakenMult().modifyMult(id, 1 / SHIELD_MULT);
+        stats.getPhaseCloakUpkeepCostBonus().modifyMult(id, 1 / SHIELD_MULT);
+
+        if ((stats.getVariant() != null) && (stats.getVariant().getHullSpec().getDefenseType() == ShieldType.PHASE)) {
+            stats.getArmorBonus().modifyPercent(id, ARMOR_PERCENT_PHASE);
+        } else {
+            stats.getArmorBonus().modifyPercent(id, ARMOR_PERCENT);
+        }
 
         stats.getFluxCapacity().modifyMult(id, FLUX_MULT);
         stats.getFluxDissipation().modifyMult(id, FLUX_MULT);
 
-        stats.getShieldUpkeepMult().modifyMult(id, 1f / SHIELD_MULT);
-        stats.getShieldUnfoldRateMult().modifyMult(id, SHIELD_MULT);
-        stats.getShieldTurnRateMult().modifyMult(id, SHIELD_MULT);
-        stats.getShieldArcBonus().modifyMult(id, SHIELD_MULT);
-        stats.getShieldDamageTakenMult().modifyMult(id, 1 / SHIELD_MULT);
-        stats.getPhaseCloakActivationCostBonus().modifyMult(id, 1 / SHIELD_MULT);
-        stats.getPhaseCloakUpkeepCostBonus().modifyMult(id, 1 / SHIELD_MULT);
+        stats.getCrewLossMult().modifyPercent(id, CASUALTIES_PERCENT);
 
-        stats.getMaxSpeed().modifyMult(id, HANDLING_MULT);
-        stats.getAcceleration().modifyMult(id, HANDLING_MULT);
-        stats.getDeceleration().modifyMult(id, HANDLING_MULT);
-        stats.getMaxTurnRate().modifyMult(id, HANDLING_MULT);
-        stats.getTurnAcceleration().modifyMult(id, HANDLING_MULT);
+        stats.getCombatEngineRepairTimeMult().modifyPercent(id, REPAIR_PERCENT);
+        stats.getCombatWeaponRepairTimeMult().modifyPercent(id, REPAIR_PERCENT);
 
-        stats.getSuppliesPerMonth().modifyPercent(id, LOGISTICS_PENALTY);
-        stats.getSuppliesToRecover().modifyPercent(id, LOGISTICS_PENALTY);
+        stats.getDynamic().getMod(Stats.MAX_PERMANENT_HULLMODS_MOD).modifyFlat(id, EXTRA_S_MODS);
     }
 
     @Override
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) {
-            return "" + Math.round((ARMOR_MULT - 1f) * 100f) + "%";
+            return "" + Math.round(ARMOR_PERCENT) + "%";
         }
         if (index == 1) {
-            return "" + Math.round((FLUX_MULT - 1f) * 100f) + "%";
+            return "" + Math.round(ARMOR_PERCENT_PHASE) + "%";
         }
         if (index == 2) {
-            return "" + Math.round((HANDLING_MULT - 1f) * 100f) + "%";
+            return "" + Math.round((1f - SHIELD_MULT) * 100f) + "%";
         }
         if (index == 3) {
-            return "" + Math.round((SHIELD_MULT - 1f) * 100f) + "%";
+            return "" + Math.round((1f - FLUX_MULT) * 100f) + "%";
         }
         if (index == 4) {
-            return "" + Math.round(LOGISTICS_PENALTY) + "%";
+            return "" + Math.round(CASUALTIES_PERCENT) + "%";
+        }
+        if (index == 5) {
+            return "" + Math.round(REPAIR_PERCENT) + "%";
+        }
+        if (index == 6) {
+            return "upgraded";
+        }
+        if (index == 7) {
+            return "one additional built-in hullmod";
         }
         return null;
     }

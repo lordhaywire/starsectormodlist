@@ -1,0 +1,17 @@
+{
+  "variantId": "xlu_gadolinite_shield_Support",
+  "hullId": "xlu_gadolinite_shield",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 35,
+  "fluxVents": 25,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "hardenedshieldemitter",
+    "advancedshieldemitter"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

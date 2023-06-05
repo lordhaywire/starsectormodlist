@@ -1,0 +1,53 @@
+{
+  "variantId": "prv_ballebo_derelict",
+  "hullId": "prv_ballebo",
+  "displayName": "Derelict",
+  "goalVariant": false,
+  "fluxCapacitors": 3,
+  "fluxVents": 14,
+  "quality": 0,
+  "permaMods": [    
+    "degraded_engines",
+    "faulty_grid"
+  ],
+  "sMods": [
+    "eccm"
+  ],
+  "hullMods": [
+    "eccm",
+    "frontemitter",
+    "prv_missile_plating",
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_kraka"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "mininglaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

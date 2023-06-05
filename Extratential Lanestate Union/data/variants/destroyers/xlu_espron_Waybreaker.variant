@@ -1,0 +1,54 @@
+{
+  "variantId": "xlu_espron_Waybreaker",
+  "hullId": "xlu_espron",
+  "displayName": "Waybreaker",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 5,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "xlu_crew_waymakers",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_geezer_m",
+        "WS0002": "xlu_geezer_m",
+        "WS0003": "xlu_geezer_m",
+        "WS0004": "xlu_geezer_m",
+        "WS0005": "xlu_geezer_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "gazer",
+        "WS0008": "gazer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_quad_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,186 @@
+{
+  "hullName": "Starboard",
+  "hullId": "xlu_anthracite_right",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_anthracite/xlu_anthracite_right.png",
+  "style": "MIDLINE",
+  "height": 414,
+  "width": 160,
+  "center": [52, 205],
+  "collisionRadius": 280,
+  "shieldCenter": [20, -8],
+  "shieldRadius": 249,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hbi",
+    "xlu_juggernaught_hullmod",
+    "xlu_armorclad",
+    "xlu_anth_module",
+    "reduced_explosion",
+    "xlu_baseless_module",
+    "xlu_closed_shell"
+  ],
+  "builtInWeapons": {
+    "WS0001": "xlu_stratus",
+    "WS0008": "xlu_gattler",
+    "WS0009": "xlu_gattler",
+    "WS0010": "xlu_gattler",
+    "WS0011": "vulcan"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [200, -11]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -60,
+      "locations": [54, -15]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -60,
+      "locations": [-12, -35]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 45,
+      "angle": -90,
+      "locations": [-95, -41]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [134, 6]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": -45,
+      "locations": [99, -3]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -90,
+      "locations": [-73.5, -77]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -45,
+      "locations": [143, -41]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -60,
+      "locations": [75, -58]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -75,
+      "locations": [9, -74]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [-166, -64]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -9, 16,
+        -1, 25,
+        7, 36,
+        19, 36,
+        13, 25,
+        5, 17
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-165, -41.5],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-115, -18],
+      "length": 64,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-92, -97],
+      "length": 64,
+      "width": 12,
+      "angle": -150,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    201, -17,
+    201, 1,
+    164, 4,
+    147, 22,
+    22, 10,
+    43, 40,
+    -4, 44,
+    -198, -57,
+    -198, -78,
+    -25, -104,
+    157, -53
+  ]
+}

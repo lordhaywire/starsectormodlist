@@ -1,0 +1,19 @@
+{
+
+	"combatSmall":{
+		"dram_lp_ied_std":8,
+	},
+	"combatMedium":{	
+		"phaeton_lp_ied_std":4,		
+	},
+		
+	"carrierLarge":{
+		"prometheus_lp_ied_std":2,
+	},
+	"tankerSmall":{
+			"dram_lp_ied_std":5,
+    },
+		"tankerMedium":{
+			"phaeton_lp_ied_std":5,
+    },
+}

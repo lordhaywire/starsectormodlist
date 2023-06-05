@@ -1,0 +1,61 @@
+{
+  "variantId": "xlu_stibium_Shock",
+  "hullId": "xlu_stibium",
+  "displayName": "Shock",
+  "goalVariant": false,
+  "fluxCapacitors": 13,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "xlu_weapons_overhaul",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mark9"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "reaper",
+        "WS0008": "reaper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_shotcannon_s",
+        "WS0006": "xlu_shotcannon_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightag",
+        "WS0003": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "WS0004": "flak",
+        "WS0009": "lightmg",
+        "WS0010": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

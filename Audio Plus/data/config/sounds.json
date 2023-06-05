@@ -2,62 +2,66 @@
     "music":{
         "music_campaign":[
             # Vanilla
-            {"file":"miscallenous_corvus_campaign_music.ogg","source":"sounds/music/music.bin","volume":0.6},
-            {"file":"campaign_music_part_2_v28.ogg","source":"sounds/music/music.bin","volume":0.6},
+            {"file":"miscallenous_corvus_campaign_music.ogg","source":"sounds/music/music.bin","volume":1.00},
             # Blackrock Drive Yards
-            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.55},
+            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.50},
             {"file":"Stellar_Rust.ogg","source":"sounds/BR/music","volume":0.50},
-            {"file":"Seeking_Answers.ogg","source":"sounds/BR/music","volume":0.50},
-            {"file":"Starsea.ogg","source":"sounds/BR/music","volume":0.50},
             {"file":"Atmospheric_Rise.ogg","source":"sounds/BR/music","volume":0.50},
             # The Mayorate
             {"file":"expanse.ogg","source":"sounds/ilk/music","volume":0.37},
-            {"file":"nebula.ogg","source":"sounds/ilk/music","volume":0.35},
             # Exigency
-            {"file":"FearMachine.ogg","source":"sounds/exigency/music/campaign","volume":0.23},
-            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.21},
-            {"file":"DysonSphere.ogg","source":"sounds/exigency/music/campaign","volume":0.60},
-            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":1.0},
-            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.29},
-            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.23},
-            {"file":"Mobilization.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
-            {"file":"Unknown.ogg","source":"sounds/exigency/music/campaign","volume":0.50},
-            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
-            {"file":"Sovereignty.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
+            {"file":"FearMachine.ogg","source":"sounds/exigency/music/campaign","volume":0.25},
+            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":1.00},
+            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.30},
+            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.25},
+            {"file":"Sovereignty.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
             # Tiandong Heavy Industries
             {"file":"RunningDark.ogg","source":"sounds/tiandong/music/campaign","volume":0.35},
+            # Shadowyards Reconstruction Authority
+            {"file":"A_Dreaming_Sky.ogg","source":"sounds/sra/music","volume":0.45},
+        ],
+        "music_campaign_non_core":[
+            {"file":"campaign_noncore_part1.ogg","source":"sounds/music/music.bin","volume":1.00}, 
+            # Blackrock Drive Yards
+            {"file":"Stellar_Rust.ogg","source":"sounds/BR/music","volume":0.45},
+            {"file":"Seeking_Answers.ogg","source":"sounds/BR/music","volume":0.45},
+            {"file":"Starsea.ogg","source":"sounds/BR/music","volume":0.45},
+            # The Mayorate
+            {"file":"nebula.ogg","source":"sounds/ilk/music","volume":0.32},
+            # Exigency
+            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
+            {"file":"DysonSphere.ogg","source":"sounds/exigency/music/campaign","volume":0.55},
+            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":1.00},
+            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.27},
+            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.22},
+            {"file":"Unknown.ogg","source":"sounds/exigency/music/campaign","volume":0.45},
+            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
+            # Tiandong Heavy Industries
+            {"file":"RunningDark.ogg","source":"sounds/tiandong/music/campaign","volume":0.32},
+            # Star Federation
+            {"file":"Labyrinthine_Nebula.ogg","source":"sounds/FED/music","volume":0.50},
         ],
         "music_campaign_hyperspace":[
             # Vanilla
-            {"file":"miscallenous_corvus_campaign_music.ogg","source":"sounds/music/music.bin","volume":0.5},
-            {"file":"campaign_music_part_2_v28.ogg","source":"sounds/music/music.bin","volume":0.5},
+            {"file":"campaign_music_part_2_v28.ogg","source":"sounds/music/music.bin","volume":0.60},
             # Blackrock Drive Yards
-            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.45},
-            {"file":"Stellar_Rust.ogg","source":"sounds/BR/music","volume":0.40},
-            {"file":"Seeking_Answers.ogg","source":"sounds/BR/music","volume":0.40},
+            {"file":"Blackrock.ogg","source":"sounds/BR/music","volume":0.40},
             {"file":"Starsea.ogg","source":"sounds/BR/music","volume":0.40},
             # The Mayorate
-            {"file":"expanse.ogg","source":"sounds/ilk/music","volume":0.32},
             {"file":"nebula.ogg","source":"sounds/ilk/music","volume":0.3},
             # Exigency
-            {"file":"FearMachine.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
-            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.16},
-            {"file":"DysonSphere.ogg","source":"sounds/exigency/music/campaign","volume":0.50},
-            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":0.8},
-            {"file":"HostileWaters.ogg","source":"sounds/exigency/music/campaign","volume":0.24},
-            {"file":"Ambush.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
-            {"file":"Mobilization.ogg","source":"sounds/exigency/music/campaign","volume":0.15},
-            {"file":"Unknown.ogg","source":"sounds/exigency/music/campaign","volume":0.40},
-            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.15},
-            {"file":"Sovereignty.ogg","source":"sounds/exigency/music/campaign","volume":0.13},
-            # Tiandong Heavy Industries
-            {"file":"RunningDark.ogg","source":"sounds/tiandong/music/campaign","volume":0.30},
+            {"file":"StellarRemnant.ogg","source":"sounds/exigency/music/campaign","volume":0.18},
+            {"file":"Spacer20Seconds.ogg","source":"sounds/exigency/music/campaign","volume":1.00},
+            {"file":"Mobilization.ogg","source":"sounds/exigency/music/campaign","volume":0.20},
+            {"file":"Desolation.ogg","source":"sounds/exigency/music/campaign","volume":0.17},
+            # Shadowyards Reconstruction Authority
+            {"file":"A_Dreaming_Sky.ogg","source":"sounds/sra/music","volume":0.35},
         ],
         "music_combat":[
             # Vanilla
-            {"file":"battle_ambience_01.ogg","source":"sounds/music/music.bin","volume":1},
+            {"file":"battle_ambience_01.ogg","source":"sounds/music/music.bin","volume":1.00},
             # The Mayorate
-            {"file":"steel_rain.ogg","source":"sounds/ilk/music","volume":0.3},
+            {"file":"steel_rain.ogg","source":"sounds/ilk/music","volume":0.30},
             # Exigency
             {"file":"Exigency(3.0Remix).ogg","source":"sounds/exigency/music/combat","volume":0.22},
             {"file":"VeiledinDust.ogg","source":"sounds/exigency/music/combat","volume":0.20},
@@ -67,7 +71,7 @@
             {"file":"TheFlagship.ogg","source":"sounds/exigency/music/combat","volume":0.21},
             {"file":"UndyingLegacy.ogg","source":"sounds/exigency/music/combat","volume":0.21},
             {"file":"DeadGods.ogg","source":"sounds/exigency/music/combat","volume":0.25},
-            {"file":"Spacer15Seconds.ogg","source":"sounds/exigency/music/combat","volume":1.0},
+            {"file":"Spacer15Seconds.ogg","source":"sounds/exigency/music/combat","volume":1.00},
             {"file":"Fusillade.ogg","source":"sounds/exigency/music/combat","volume":0.20},
             {"file":"TimeSensitive.ogg","source":"sounds/exigency/music/combat","volume":0.25},
             {"file":"Panic.ogg","source":"sounds/exigency/music/combat","volume":0.24},

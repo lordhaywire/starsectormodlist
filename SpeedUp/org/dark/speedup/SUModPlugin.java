@@ -12,8 +12,19 @@ public class SUModPlugin extends BaseModPlugin {
     public void onApplicationLoad() {
         try {
             SU_SpeedUpEveryFrame.reloadSettings();
+            SU_SpeedUpCampaign.reloadSettings();
         } catch (IOException | JSONException e) {
             Global.getLogger(SUModPlugin.class).log(Level.ERROR, "SpeedUp load failed: " + e.getMessage());
         }
+    }
+    
+    @Override
+    public void onGameLoad(boolean newGame) {
+        Global.getSector().getListenerManager().addListener(new SU_SpeedUpCampaign(), true);
+    }
+    
+    @Override
+    public void onDevModeF8Reload() {
+        this.onApplicationLoad();
     }
 }

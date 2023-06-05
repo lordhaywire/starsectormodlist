@@ -1,0 +1,100 @@
+{
+  "variantId": "xlu_anthracite_Standard",
+  "hullId": "xlu_anthracite",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 38,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "turretgyros",
+    "fluxbreakers",
+    "insulatedengine"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_thunderfist"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0011": "xlu_quilfling_m",
+        "WS0012": "xlu_quilfling_m",
+        "WS0013": "xlu_quilfling_m",
+        "WS0014": "xlu_quilfling_m",
+        "WS0015": "xlu_quilfling_m",
+        "WS0016": "xlu_quilfling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "mark9",
+        "WS0003": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_warbore",
+        "WS0005": "xlu_warbore",
+        "WS0006": "xlu_bolton",
+        "WS0017": "xlu_bolton",
+        "WS0018": "xlu_bolton"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0031": "lightdualac",
+        "WS0032": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "flak",
+        "WS0020": "flak",
+        "WS0021": "flak",
+        "WS0022": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavymg",
+        "WS0008": "heavymg",
+        "WS0009": "xlu_hovlet",
+        "WS0010": "xlu_hovlet",
+        "WS0023": "vulcan",
+        "WS0024": "vulcan",
+        "WS0025": "lightdualmg",
+        "WS0026": "lightdualmg",
+        "WS0027": "xlu_gattler",
+        "WS0028": "xlu_gattler",
+        "WS0029": "xlu_gattler",
+        "WS0030": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "BS 01": "xlu_anthracite_left_Standard"
+    },
+    {
+      "BS 02": "xlu_anthracite_right_Standard"
+    }
+  ],
+  "wings": []
+}

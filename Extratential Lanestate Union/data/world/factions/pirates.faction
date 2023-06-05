@@ -1,0 +1,17 @@
+{
+	"knownShips":{	
+		"hulls":[
+			"xlu_pumpmaster",
+		],
+	},
+	
+	"hullFrequency":{	
+		"hulls":{
+			"xlu_pumpmaster":0.5,
+		},
+	},
+}
+
+
+
+

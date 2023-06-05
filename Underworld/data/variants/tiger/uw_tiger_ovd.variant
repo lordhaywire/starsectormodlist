@@ -1,7 +1,7 @@
 {
     "displayName": "Overdriven",
-    "fluxCapacitors": 0,
-    "fluxVents": 5,
+    "fluxCapacitors": 5,
+    "fluxVents": 6,
     "goalVariant": true,
     "hullId": "uw_tiger",
     "hullMods": ["safetyoverrides"],
@@ -12,17 +12,13 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0003": "amblaster"}
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {"WS0001": "lightneedler"}
+            "weapons": {"WS0001": "irpulse"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
+                "WS0003": "ioncannon",
                 "WS0004": "irpulse",
                 "WS0005": "irpulse"
             }

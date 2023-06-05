@@ -3,9 +3,9 @@
   "hullId": "prv_skymning",
   "displayName": "Tensor",
   "goalVariant": true,
-  "fluxCapacitors": 20,
+  "fluxCapacitors": 32,
   "fluxVents": 50,
-  "quality": 0,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
@@ -17,8 +17,15 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "autopulse",
-        "WS0002": "autopulse"
+        "WS0001": "prv_siege_akers",
+        "WS0002": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "prv_korp"
       }
     },
     {
@@ -31,19 +38,10 @@
       }
     },
     {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0012": "prv_korp"
-      }
-    },
-    {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0003": "prv_vakt",
-        "WS0007": "heavyburst",
-        "WS0008": "heavyburst"
       }
     },
     {
@@ -63,7 +61,16 @@
         "WS0020": "lrpdlaser",
         "WS0022": "lrpdlaser"
       }
-    }
+    },
+
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyburst",
+        "WS0008": "heavyburst"
+      }
+    },
   ],
   "modules": [],
   "wings": [

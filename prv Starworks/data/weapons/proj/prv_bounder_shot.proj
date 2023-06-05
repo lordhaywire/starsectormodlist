@@ -7,8 +7,8 @@
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
 	"length":75.0, 	#350
-	"width":9, 		#13
-	"center":[6.5,-12],
+	"width":6.5, 		#13
+	"center":[3.25,-8],
 	"fadeTime":0.15,
 	"fringeColor":[255,128,0,196],	#pskd cluster angry orange
 	"coreColor":[255,255,255,255],

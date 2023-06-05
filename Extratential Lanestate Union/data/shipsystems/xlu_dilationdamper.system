@@ -1,0 +1,27 @@
+{
+	"id":"xlu_dilationdamper",
+	"type":"STAT_MOD",
+	"aiType":"DAMPER_FIELD", #TEMPORAL_SHELL, NONE (?)
+	
+	"statsScript":"data.shipsystems.scripts.xlu_DilationDamperStats",
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.75,
+	"soundFilterGainHF":0.5,
+
+	"fadeActivationSoundOnChargedown":true,
+	"useSound":"xlu_system_dilationdamper",
+	"loopSound":"xlu_system_dilationdamper_loop",
+	"deactivateSound":"xlu_system_dilationdamper_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,  # not right since it's ship-dependent, but hopefully close enough
+		"burstMovementPotential":0,
+		"averageSpeedMult":0.5,
+	}
+}
+
+
+
+

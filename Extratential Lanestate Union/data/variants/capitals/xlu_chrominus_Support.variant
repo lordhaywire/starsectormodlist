@@ -1,0 +1,69 @@
+{
+  "variantId": "xlu_chrominus_Support",
+  "hullId": "xlu_chrominus",
+  "displayName": "Support",
+  "goalVariant": false,
+  "fluxCapacitors": 17,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "missleracks",
+    "eccm",
+    "ballistic_rangefinder",
+    "adaptiveshields"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_watusi_l",
+        "WS0002": "xlu_watusi_l",
+        "WS0003": "xlu_watusi_l"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "sabotpod",
+        "WS0006": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_hyvel"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "lightac",
+        "WS0011": "lightac",
+        "WS0012": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "WS0007": "flak",
+        "WS0008": "flak",
+        "WS0009": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "xlu_lantaka_wing"
+  ]
+}

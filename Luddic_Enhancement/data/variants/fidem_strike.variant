@@ -4,7 +4,7 @@
   "displayName": "Strike",
   "goalVariant": true,
   "fluxCapacitors": 0,
-  "fluxVents": 5,
+  "fluxVents": 4,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
@@ -23,8 +23,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "harpoon",
-        "WS0002": "harpoon"
+        "WS0001": "sabot_single",
+        "WS0002": "sabot_single"
       }
     },
     {

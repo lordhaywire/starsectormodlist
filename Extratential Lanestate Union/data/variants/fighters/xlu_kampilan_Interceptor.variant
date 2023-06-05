@@ -1,0 +1,30 @@
+{
+  "variantId": "xlu_kampilan_Interceptor",
+  "hullId": "xlu_kampilan",
+  "displayName": "Interceptor",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "xlu_gattler_fighter"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "swarmer_fighter",
+        "WS0004": "swarmer_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

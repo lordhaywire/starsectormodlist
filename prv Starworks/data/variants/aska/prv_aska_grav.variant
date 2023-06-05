@@ -3,9 +3,9 @@
   "hullId": "prv_aska",
   "displayName": "Hunter",
   "goalVariant": false,
-  "fluxCapacitors": 11,
+  "fluxCapacitors": 13,
   "fluxVents": 30,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",

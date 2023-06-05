@@ -1,12 +1,13 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 10,
-    "fluxVents": 50,
+    "fluxCapacitors": 20,
+    "fluxVents": 36,
     "goalVariant": true,
     "hullId": "uw_dragon",
     "hullMods": [
-        "unstable_injector",
-        "dedicated_targeting_core"
+        "magazines",
+        "dedicated_targeting_core",
+        "unstable_injector"
     ],
     "permaMods": [],
     "sMods": [],
@@ -26,8 +27,8 @@
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0005": "salamanderpod",
-                "WS0006": "salamanderpod"
+                "WS0005": "pilum",
+                "WS0006": "pilum"
             }
         },
         {
@@ -44,8 +45,10 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0010": "railgun",
-                "WS0012": "railgun"
+                "WS0010": "lightdualac",
+                "WS0011": "lightdualac",
+                "WS0012": "lightdualac",
+                "WS0013": "lightdualac"
             }
         },
         {
@@ -55,8 +58,6 @@
                 "WS0007": "lightdualmg",
                 "WS0008": "lightmg",
                 "WS0009": "lightmg",
-                "WS0011": "lightmg",
-                "WS0013": "lightmg",
                 "WS0014": "lightmg",
                 "WS0015": "lightmg",
                 "WS0016": "lightmg",

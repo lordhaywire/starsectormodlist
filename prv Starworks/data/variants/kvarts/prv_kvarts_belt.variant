@@ -1,11 +1,11 @@
 {
   "variantId": "prv_kvarts_belt",
   "hullId": "prv_kvarts",
-  "displayName": "Belt",
+  "displayName": "Syndicate",
   "goalVariant": true,
-  "fluxCapacitors": 23,
-  "fluxVents": 0,
-  "quality": 3,
+  "fluxCapacitors": 30,
+  "fluxVents": 12,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
@@ -16,7 +16,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_spatterflamer"
+        "WS0001": "hurricane"
       }
     },
     {
@@ -32,31 +32,45 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0016": "sabot",
-        "WS0017": "sabot",
-        "WS0019": "sabot"
+        "WS0016": "prv_blaster_charge_rack",
+        "WS0017": "prv_blaster_charge_rack",
+        "WS0019": "prv_blaster_charge_rack"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "heavyblaster",
-        "WS0003": "prv_remission",
-        "WS0004": "prv_remission"
+        "WS0007": "prv_fusion_burster",
+        "WS0008": "prv_fusion_burster",
+        "WS0009": "prv_fusion_burster",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "heavymg",
-        "WS0006": "heavymg",
-        "WS0007": "pdlaser",
-        "WS0008": "pdlaser",
-        "WS0009": "pdlaser",
-        "WS0010": "pdlaser",
-        "WS0011": "pdlaser"
+        "WS0002": "heavyac",
+        "WS0003": "heavyac",
+        "WS0004": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
+        "WS0006": "vulcan",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0010": "mininglaser",
+        "WS0011": "mininglaser",
+        "WS0012": "mininglaser",
+        "WS0013": "mininglaser",
       }
     }
   ],

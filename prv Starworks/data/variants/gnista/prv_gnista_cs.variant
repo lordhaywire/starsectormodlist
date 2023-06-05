@@ -7,7 +7,7 @@
   "hullMods": ["prv_missile_plating",],
   "modules": [],
   "permaMods": [],
-  "quality": 2,
+  "quality": 0,
   "variantId": "prv_gnista_cs",
   "weaponGroups": [
     {

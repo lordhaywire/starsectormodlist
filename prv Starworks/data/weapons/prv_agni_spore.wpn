@@ -1,0 +1,56 @@
+{
+  "id": "prv_agni_spore",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_spore_shot_dummy",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_agni_spore_turret_gun.png",
+  #"turretGunSprite": "graphics/prv/weapons/prv_agni_spore_turret_gun.png",
+  "turretUnderSprite": "graphics/prv/weapons/prv_agni_spore_turret_main.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_spore_hardpoint_gun.png",
+  #"hardpointGunSprite": "graphics/prv/weapons/prv_agni_spore_hardpoint_gun.png",
+  "hardpointUnderSprite": "graphics/prv/weapons/prv_agni_spore_hardpoint_main.png",
+  "turretOffsets": [
+    0,
+    0,
+    0,
+    -0.5,
+    0,
+    0.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    -45,
+    45
+  ],
+  "hardpointOffsets": [
+    16,
+    0,
+    16,
+    0.5,
+    16,
+    -0.5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    45,
+    -45
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 48,
+    "spread": 24,
+    "particleSizeMin": 1,
+    "particleSizeRange": 9,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      #64,128,48,255
+      127,196,127,255
+    ]
+  },
+  "fireSoundTwo": "prv_agni_spore_fire",
+  "mountTypeOverride": "COMPOSITE"
+}

@@ -1,0 +1,24 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order
+xlu_orbitalstation,Orbital Station - Lanestate,75,90,,4,,xlu_battlestation,"station, sub_item, unraidable, structure","{
+radius:65,
+variant:xlu_station_level1_Standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,data.campaign.econ.impl.XLU_orbitalStationChecker,"A large XLU space station, featuring heavy armor, rampant firepower and massive Stratus Cannons that shoot powerful unguided payloads from afar.
+
+Must be reduced before invasions or bombardment can be attempted.",27010
+xlu_battlestation,Battlestation - Lanestate,150,120,,5,xlu_orbitalstation,xlu_starfortress,"station, battlestation, unraidable, structure","{
+radius:75,
+variant:xlu_station_level2_Standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,data.campaign.econ.impl.XLU_orbitalStationUpgradeChecker,"An augmented space station, fitted with docking guards, armored hangar bays and missile batteries for long-ranged defense.
+
+Must be reduced before invasions or bombardment can be attempted.",27020
+xlu_starfortress,Star Fortress - Lanestate,250,180,,6,xlu_battlestation,,"station, starfortress, unraidable, structure","{
+radius:80,
+variant:xlu_station_level3_Standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,data.campaign.econ.impl.XLU_orbitalStationUpgradeChecker,"A fully armored battlestation, that features Phosphor-class flak drones and an extensive minefield.
+
+Must be reduced before invasions or bombardment can be attempted.",27030
+xlu_battle_yards,Lanestate Battleyards,300,120,,24,,,"heavyindustry, uses_blueprints, industry, industrial",,graphics/Extratential Lanestate Union/icons/industry/xlu_battle_yards.png,data.campaign.econ.impl.xlu_battle_yards,"A massive orbital foundry meant for the production of spaceborne warships at unusually large quantities. Improves the security of the planet and its local patrols with its surplus production of supplies and weapons. Incredibly taxing to build and requires removal of other Heavy Industry type in order to build. Can be fitted with a nanoforge to improve its production quantity and quality.
+(Restoring a previous Heavy Industry type would be redudant as they produce similar commodities.)",1602

@@ -1,0 +1,109 @@
+{
+  "hullName": "Tick",
+  "hullId": "ocua_tick",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_tick.png",
+  "style": "OCULUS",
+  "height": 28,
+  "width": 40,
+  "center": [20, 13],
+  "collisionRadius": 42,
+  "shieldCenter": [1, -0],
+  "shieldRadius": 29,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_z_strikecraft_hullmod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 60,
+      "angle": 0,
+      "locations": [4, -15]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 60,
+      "angle": -0,
+      "locations": [4, 15]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [11, -0]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": 60,
+      "locations": [-2, 7]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 150,
+      "angle": -60,
+      "locations": [-2, -7]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [10, 4]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": -0,
+      "locations": [10, -4]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9.5, 8.5],
+      "length": 14,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-9.5, -8.5],
+      "length": 14,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    8, 17,
+    -8, 14,
+    -8, -14,
+    8, -17
+  ]
+}

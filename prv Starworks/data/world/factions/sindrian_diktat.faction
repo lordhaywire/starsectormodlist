@@ -3,12 +3,18 @@
 		"hulls":[
 			"prv_eld_midline",
 			"prv_flamma_midline",
-			"prv_tystnad_midline",
 			"prv_flock_midline",
 		],
 	},
 	"knownWeapons":{
-		"tags":["prv_bp","prv_adv_bp"],
+		"weapons":[
+			"prv_akers",
+			"prv_heavyakers",
+			"prv_siege_akers",
+			
+			"prv_sidensvans",
+			"prv_sidensvans_array",
+		]
 	},
 	"hullFrequency":{
 		"tags":{

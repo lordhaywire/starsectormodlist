@@ -2,8 +2,8 @@
   "variantId": "prv_brand_beam",
   "hullId": "prv_brand",
   "displayName": "Beam",
-  "goalVariant": false,
-  "fluxCapacitors": 2,
+  "goalVariant": true,
+  "fluxCapacitors": 0,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
@@ -22,16 +22,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "prv_spattergun",
-        "WS0005": "prv_spattergun"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "prv_sipdlaser",
-        "WS0003": "prv_sipdlaser"
+        "WS0004": "prv_fusion_burster",
+        "WS0005": "prv_fusion_burster"
       }
     },
     {
@@ -42,10 +34,13 @@
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
-      "weapons": {}
-    }
+      "weapons": {
+        "WS0001": "prv_sipdlaser",
+        "WS0003": "prv_sipdlaser"
+      }
+    },
   ],
   "modules": [],
   "wings": []

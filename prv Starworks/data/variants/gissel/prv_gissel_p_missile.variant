@@ -1,6 +1,6 @@
 {
   "displayName": "Missile",
-  "fluxCapacitors": 5,
+  "fluxCapacitors": 10,
   "fluxVents": 20,
   "goalVariant": false,
   "hullId": "prv_gissel_p",
@@ -14,7 +14,7 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0008":"hurricane"
+        "WS0008":"prv_blaster_charge_launcher"
       }
     },
     {

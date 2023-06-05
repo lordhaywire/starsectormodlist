@@ -1,0 +1,36 @@
+{
+	"id":"xlu_vrateltat",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"everyFrameEffect":"data.scripts.weapons.xlu_vrateltat_effect",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_vrateltat_turret_base.png",
+	"turretGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_s_turret_recoil.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_vrateltat_hardpoint_base.png",	
+	"hardpointGunSprite":"graphics/Extratential Lanestate Union/weapons/xlu_shotcannon_s_hardpoint_recoil.png",	
+	"visualRecoil":7.0,  # the gun sprites are only used if this is non-0
+	"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[18, 8.5, 18, 4.5, 18, 0, 18, -4.5, 18, -8.5], #5
+	"turretAngleOffsets":[0, 0, 0, 0, 0],
+	"hardpointOffsets":[28, 8.5, 28, 4.5, 28, 0, 28, -4.5, 28, -8.5],
+	"hardpointAngleOffsets":[0, 0, 0, 0, 0],
+	#"turretOffsets":[0, 18], #5
+	#"turretAngleOffsets":[0],
+	#"hardpointOffsets":[0, 28],
+	#"hardpointAngleOffsets":[0],
+	"specialWeaponGlowWidth":20,
+	"specialWeaponGlowHeight":6,
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"muzzleFlashSpec":{"length":30.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":36.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":32.0,
+					   "particleDuration":0.13,
+					   "particleCount":3,
+					   "particleColor":[165,225,185,175]},
+	"projectileSpecId":"xlu_vrateltat_shot",  # projectile that will be fired
+	"fireSoundTwo":"vulcan_cannon_fire",	
+}

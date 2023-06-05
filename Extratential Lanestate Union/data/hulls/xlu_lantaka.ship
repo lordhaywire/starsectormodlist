@@ -1,0 +1,98 @@
+{
+  "hullName": "Lantaka",
+  "hullId": "xlu_lantaka",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_lantaka.png",
+  "style": "MIDLINE",
+  "height": 38,
+  "width": 36,
+  "center": [18, 17],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 24,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [6, -7]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [2, -7]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 30,
+      "angle": 0,
+      "locations": [0, -7]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-3, 2]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 45,
+      "angle": 0,
+      "locations": [18, 1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17, 2],
+      "length": 16,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-16, -13],
+      "length": 12,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-16, 13],
+      "length": 12,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -11, 15,
+    7, 15,
+    18, 9,
+    0, -3,
+    0, -11,
+    -11, -15
+  ]
+}

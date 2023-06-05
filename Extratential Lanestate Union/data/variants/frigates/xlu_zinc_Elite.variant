@@ -1,0 +1,60 @@
+{
+  "variantId": "xlu_zinc_Elite",
+  "hullId": "xlu_zinc",
+  "displayName": "Elite",
+  "goalVariant": false,
+  "fluxCapacitors": 5,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "shield_shunt",
+    "armoredweapons",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "reaper",
+        "WS0008": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_magpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_mortar_s",
+        "WS0005": "xlu_mortar_s",
+        "WS0006": "xlu_mortar_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_light_triac",
+        "WS0004": "xlu_light_triac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_stubbon",
+        "BW 02": "xlu_stubbon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

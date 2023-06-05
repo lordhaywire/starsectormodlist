@@ -155,25 +155,25 @@
     },
     {
       "angle": 0,
-      "arc": 15,
+      "arc": 5,
       "id": "WS0004",
       "locations": [
         31,
         19
       ],
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "size": "SMALL",
       "type": "MISSILE"
     },
     {
       "angle": 0,
-      "arc": 15,
+      "arc": 5,
       "id": "WS0005",
       "locations": [
         31,
         -19
       ],
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "size": "SMALL",
       "type": "MISSILE"
     },

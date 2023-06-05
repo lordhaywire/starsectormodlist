@@ -1,0 +1,36 @@
+{
+	"id":"prv_blaster_charge_payload",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"SMALL",
+	"turretSprite":"graphics/fx/empty.png",
+	"turretGlowSprite":"graphics/fx/empty.png",
+	"hardpointSprite":"graphics/fx/empty.png",
+	"hardpointGlowSprite":"graphics/fx/empty.png",
+	"glowColor":[255,96,0,255],
+	"turretOffsets":[0, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	#"animationType":"GLOW",
+	"animationType":"GLOW_AND_FLASH",
+	  "muzzleFlashSpec": {
+	    "length": 50,
+	    "spread": 25,
+	    "particleSizeMin": 20,
+	    "particleSizeRange": 10,
+	    "particleDuration": 0.12,
+	    "particleCount": 12,
+	    "particleColor": [
+		255,
+		100,
+		100,
+		255
+	    ]
+	  },
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"requiresFullCharge":true,  # for pulse weapons - whether the weapon will fire at a lower strength partial charge
+	"projectileSpecId":"prv_blaster_charge_shot",  # projectile that will be fired
+	"fireSoundTwo":"prv_blaster_charge_payload_fire",
+}

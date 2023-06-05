@@ -1,0 +1,63 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "xlu_station_bastion_module",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_bastion_module_Standard",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_stratus_h",
+        "WS0002": "mark9",
+        "WS0003": "mark9",
+        "WS0004": "xlu_warbore",
+        "WS0005": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_momus",
+        "WS0007": "xlu_momus",
+        "WS0010": "xlu_momus",
+        "WS0011": "xlu_momus"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "xlu_quad_ac",
+        "WS0009": "xlu_quad_ac",
+        "WS0012": "xlu_quad_ac",
+        "WS0013": "xlu_quad_ac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0014": "xlu_gattler",
+        "WS0015": "xlu_gattler",
+        "WS0016": "xlu_gattler",
+        "WS0017": "xlu_gattler",
+        "WS0018": "xlu_gattler",
+        "WS0019": "xlu_gattler",
+        "WS0020": "xlu_gattler"
+      }
+    }
+  ],
+  "wings": []
+}

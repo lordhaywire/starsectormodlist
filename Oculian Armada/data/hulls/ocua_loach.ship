@@ -1,0 +1,75 @@
+{
+  "hullName": "Loach",
+  "hullId": "ocua_loach",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_loach.png",
+  "style": "OCULUS",
+  "height": 40,
+  "width": 22,
+  "center": [11, 17],
+  "collisionRadius": 37,
+  "shieldCenter": [1.5, -0],
+  "shieldRadius": 31.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_drone_mod",
+    "phasefield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 120,
+      "angle": 0,
+      "locations": [20, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 165,
+      "angle": 0,
+      "locations": [19, 1]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 165,
+      "angle": -0,
+      "locations": [19, -1]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-16, -4],
+      "length": 12,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-16, 4],
+      "length": 12,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    13, 7,
+    -13, 7,
+    -13, -7,
+    13, -7,
+    20, -0
+  ]
+}

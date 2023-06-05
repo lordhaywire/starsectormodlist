@@ -37,7 +37,7 @@
 		#"faulty_grid",
 		"safetyoverrides"],
 	"builtInWeapons":{
-		"WS0001": "prv_hammer_mag",
+		"WS0001": "jackhammer",
     },
 	"engineSlotChanges":{
 		"0":{"style":"MIDLINE"},

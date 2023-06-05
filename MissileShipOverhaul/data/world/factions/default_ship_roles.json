@@ -1,0 +1,25 @@
+{
+	"combatMedium":{
+		"mod_aposeris_standard":8,
+	},
+	"combatLarge":{
+		"mod_kernera_standard":7,
+		"mod_ardor_standard":3,
+		"mod_eventide_standard":5,
+		"mod_vertex_standard":3,
+		"mod_ichor_standard":3,
+		"mod_atomizer_standard":4,
+		"mod_vitriol_standard":4,
+		"mod_pontiff_standard":4,
+		"mod_pillager_standard":6,
+	},
+	"combatCapital":{
+		"mod_carnage_standard":4,
+		"mod_instigator_standard":5,
+		"mod_pulsar_standard":5,
+		"mod_sepulcher_standard":3,
+	},
+	"combatSmall":{
+		"mod_zeal_standard":6,
+	},
+}

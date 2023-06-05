@@ -11,6 +11,14 @@
         ],
     },
 
+    # PALACE FLEET
+    "uw_palace_wubwub":[
+        {"file":"sounds/uw/world/palace_wubwub.ogg","pitch":1,"volume":1},
+    ],
+    "uw_palace_bitcruncher":[
+        {"file":"sounds/uw/world/palace_bitcruncher.ogg","pitch":1,"volume":1},
+    ],
+
     # PROTOTYPE GAUSS CANNON
     "uw_prototype_gauss_fire":[
         {"file":"sounds/uw/sfx_wpn_guns/uw_prototype_gauss_fire.ogg","pitch":1,"volume":1},

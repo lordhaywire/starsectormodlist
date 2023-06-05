@@ -32,6 +32,12 @@
       "mode": "LINKED",
       "weapons": {
         "WS 001": "heavyac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS 003": "prv_kartesch"
       }
     },

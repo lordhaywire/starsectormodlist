@@ -1,0 +1,147 @@
+{
+  "hullName": "Segment",
+  "hullId": "xlu_rhodochrosite_e_r",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_rhodochrosite/xlu_rhodochrosite_e_r.png",
+  "style": "MIDLINE",
+  "height": 210,
+  "width": 112,
+  "center": [56, 105],
+  "collisionRadius": 183,
+  "shieldCenter": [16, 0],
+  "shieldRadius": 146,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_armorclad",
+    "xlu_baseless_module",
+    "xlu_closed_shell",
+    "xlu_LinkedHull",
+    "xlu_extensive_logistics",
+    "reduced_explosion",
+    "always_detaches",
+    "hbi"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [94, -31]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [94, 21]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [45, -5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -120,
+      "locations": [-22, -24]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [60, -42]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [5, -42]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -90,
+      "locations": [-50, -42]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-105, -7],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105, -13],
+      "length": 36,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105, -1],
+      "length": 36,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105, -18],
+      "length": 30,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-105, 4],
+      "length": 30,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -101, 7,
+    -101, -21,
+    -67, -36,
+    -67, -50,
+    74, -50,
+    98, -37,
+    98, -25,
+    92, -19,
+    102, -5,
+    92, 9,
+    98, 14,
+    98, 28,
+    72, 43,
+    -24, 43
+  ]
+}

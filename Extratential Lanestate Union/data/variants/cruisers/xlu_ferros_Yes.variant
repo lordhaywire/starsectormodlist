@@ -1,0 +1,53 @@
+{
+  "variantId": "xlu_ferros_Yes",
+  "hullId": "xlu_ferros",
+  "displayName": "Yes",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "xlu_crew_waymakers",
+    "advancedoptics",
+    "safetyoverrides",
+    "xlu_ultra_bulkheads"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_geezer_m",
+        "WS0002": "xlu_geezer_m",
+        "WS0003": "xlu_geezer_m",
+        "WS0004": "xlu_geezer_m",
+        "WS0005": "xlu_geezer_m",
+        "WS0006": "xlu_geezer_m",
+        "WS0007": "xlu_geezer_m",
+        "WS0008": "xlu_geezer_m",
+        "WS0009": "xlu_geezer_m",
+        "WS0014": "xlu_geezer_m",
+        "WS0015": "xlu_geezer_m",
+        "WS0016": "xlu_geezer_m",
+        "WS0017": "xlu_geezer_m"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,94 @@
+{
+  "variantId": "mod_sepulcher_standard",
+  "hullId": "mod_sepulcher",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 1,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "pointdefenseai"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "squall",
+        "WS0016": "squall",
+        "WS0017": "squall",
+        "WS0018": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "mark9",
+        "WS0012": "mark9",
+        "WS0013": "mark9",
+        "WS0014": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "flak",
+        "WS0020": "flak",
+        "WS0021": "flak",
+        "WS0022": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore",
+        "WS0003": "hellbore",
+        "WS0005": "hellbore",
+        "WS0007": "hellbore",
+        "WS0009": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hellbore",
+        "WS0004": "hellbore",
+        "WS0006": "hellbore",
+        "WS0008": "hellbore",
+        "WS0010": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0023": "flak",
+        "WS0025": "vulcan",
+        "WS0028": "vulcan",
+        "WS0029": "vulcan",
+        "WS0031": "vulcan",
+        "WS0033": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0024": "flak",
+        "WS0026": "vulcan",
+        "WS0027": "vulcan",
+        "WS0030": "vulcan",
+        "WS0032": "vulcan",
+        "WS0034": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -3,24 +3,17 @@
 	"skinHullId":"prv_tystnad_midline",
 	"hullName":"Tystnad (League)",
 	"descriptionId":"prv_tystnad",
-	"descriptionPrefix":"License-produced model of the Tystnad manufactured in the Persean League. The drone bay has been exchanged for an advanced C3 suite.",
+	"descriptionPrefix":"License-produced model of the Tystnad manufactured for the Persean League. The drone bay has been exchanged for an advanced C3 suite.",
 	"tags":["prv_midline_bp","merc"],
-	#"tech":"Midline (prv)",
 	"tech":"Midline",
 	"restoreToBaseHull":false,
-	#"ordnancePoints":85,
-	#"fleetPoints":12,
-	#"baseValueMult":1.25,
 	"spriteName":"graphics/prv/ships/prv_tystnad_midline.png",
 	"systemId":"targetingfeed",
 	"builtInMods":["prv_ramshield_modular"],
-	"removeWeaponSlots":[], 		# ids
-	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
-	"removeBuiltInMods":["prv_companion_integration","prv_ramshield"], 		# hullmod ids
-	"removeBuiltInWeapons":["prv_ramshield"], 		# weapon slot ids
+	"removeBuiltInMods":["prv_companion_integration","prv_ramshield"], 
 	"weaponSlotChanges":{
 	   "WS0002":{
-		  "type": "COMPOSITE"
+		  "type": "MISSILE"
 	   },
 	   "WS0001":{
 		  "type": "BALLISTIC",
@@ -34,8 +27,6 @@
 	   "WS0006":{
 		  "type": 	"BALLISTIC",
 	   },
-    },
-	"builtInWeapons":{
     },
 	"engineSlotChanges":{
 		"0":{"style":"MIDLINE"},

@@ -3,9 +3,9 @@
   "hullId": "prv_shrike",
   "displayName": "Overdriven",
   "goalVariant": false,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 12,
   "fluxVents": 0,
-  "quality": 2,
+  "quality": 0.5,
   "permaMods": [],
   "hullMods": [
     "safetyoverrides"

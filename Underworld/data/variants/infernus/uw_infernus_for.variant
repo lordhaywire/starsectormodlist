@@ -1,7 +1,7 @@
 {
     "displayName": "Fortified",
-    "fluxCapacitors": 15,
-    "fluxVents": 40,
+    "fluxCapacitors": 25,
+    "fluxVents": 34,
     "goalVariant": true,
     "hullId": "uw_infernus",
     "hullMods": [
@@ -36,14 +36,19 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0005": "shredder",
-                "WS0006": "shredder"
+                "WS0005": "miningblaster",
+                "WS0006": "miningblaster"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0010": "shredder"}
+            "weapons": {
+                "WS0010": "shredder",
+                "WS0015": "lightdualac",
+                "WS0016": "lightdualac",
+                "WS0017": "lightdualac"
+            }
         },
         {
             "autofire": true,
@@ -54,18 +59,15 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "dualflak",
+                "WS0007": "flak",
                 "WS0008": "flak",
                 "WS0009": "flak",
-                "WS0013": "lightmg",
-                "WS0014": "lightmg",
-                "WS0015": "lightmg",
-                "WS0016": "lightmg",
-                "WS0017": "lightmg",
-                "WS0018": "lightmg",
-                "WS0019": "lightmg",
-                "WS0020": "lightmg",
-                "WS0021": "lightmg"
+                "WS0013": "mininglaser",
+                "WS0014": "mininglaser",
+                "WS0018": "mininglaser",
+                "WS0019": "mininglaser",
+                "WS0020": "mininglaser",
+                "WS0021": "mininglaser"
             }
         }
     ],

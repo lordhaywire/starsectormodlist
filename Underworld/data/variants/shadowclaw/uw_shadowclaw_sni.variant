@@ -1,7 +1,8 @@
 {
     "displayName": "Sniper",
-    "fluxCapacitors": 1,
+    "fluxCapacitors": 3,
     "fluxVents": 30,
+    "goalVariant": true,
     "hullId": "uw_shadowclaw",
     "hullMods": [
         "targetingunit",

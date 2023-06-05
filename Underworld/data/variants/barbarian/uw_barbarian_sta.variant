@@ -1,12 +1,13 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 11,
-    "fluxVents": 22,
+    "fluxCapacitors": 10,
+    "fluxVents": 24,
     "goalVariant": true,
     "hullId": "uw_barbarian",
     "hullMods": [
         "unstable_injector",
-        "converted_hangar"
+        "converted_hangar",
+        "magazines"
     ],
     "permaMods": [],
     "sMods": [],
@@ -15,17 +16,15 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0001": "heavymauler"}
+            "weapons": {
+                "WS0001": "miningblaster",
+                "WS0002": "miningblaster"
+            }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {"WS0004": "typhoon"}
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {"WS0002": "shredder"}
         },
         {
             "autofire": true,
@@ -52,8 +51,12 @@
         {
             "autofire": true,
             "mode": "LINKED",
+            "weapons": {"WS0003": "flak"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS0003": "flak",
                 "WS0005": "vulcan",
                 "WS0008": "vulcan",
                 "WS0009": "vulcan",

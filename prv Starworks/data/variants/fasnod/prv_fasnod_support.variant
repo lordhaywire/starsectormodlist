@@ -1,30 +1,24 @@
 {
   "displayName": "Support",
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 8,
   "fluxVents": 10,
-  "goalVariant": true,
+  "goalVariant": false,
   "hullId": "prv_fasnod",
   "hullMods": [
-    "hardened_subsystems"
+    "hardened_subsystems",
+    "adaptive_coils"
   ],
   "modules": [],
   "permaMods": [],
-  "quality": 0,
+  "quality": 1,
   "variantId": "prv_fasnod_support",
   "weaponGroups": [
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0006": "amblaster"
-      }
-    },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_pskd",
-        "WS0002": "prv_pskd"
+        "WS0001": "irpulse",
+        "WS0002": "irpulse"
       }
     },
     {

@@ -2,10 +2,10 @@
   "variantId": "prv_skymning_ryak",
   "hullId": "prv_skymning",
   "displayName": "Ryak",
-  "goalVariant": true,
-  "fluxCapacitors": 6,
+  "goalVariant": false,
+  "fluxCapacitors": 14,
   "fluxVents": 50,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "hardenedshieldemitter",
@@ -17,17 +17,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "prv_ljungeld",
-        "WS0002": "prv_ljungeld"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "ALTERNATING",
-      "weapons": {
-        "WS0004": "sabotpod",
-        "WS0005": "sabotpod",
-        "WS0006": "sabotpod"
+        "WS0001": "prv_siege_akers",
+        "WS0002": "prv_siege_akers"
       }
     },
     {
@@ -38,18 +29,25 @@
       }
     },
     {
-      "autofire": true,
-      "mode": "LINKED",
+      "autofire": false,
+      "mode": "ALTERNATING",
       "weapons": {
-        "WS0007": "heavyblaster",
-        "WS0008": "heavyblaster"
+        "WS0004": "prv_berguv_mirv",
+        "WS0005": "prv_berguv_mirv",
+        "WS0006": "prv_berguv_mirv"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_vakt",
+        "WS0003": "prv_vakt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0009": "prv_sipdlaser",
         "WS0010": "prv_sipdlaser",
         "WS0011": "pdburst",
@@ -62,6 +60,14 @@
         "WS0019": "prv_sipdlaser",
         "WS0020": "prv_sipdlaser",
         "WS0022": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "prv_akc",
+        "WS0008": "prv_akc"
       }
     }
   ],

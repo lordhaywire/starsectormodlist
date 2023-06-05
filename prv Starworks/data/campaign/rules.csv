@@ -13,8 +13,31 @@ $faction.id == rb",,"You're familiar to some of the movers and shakers of the Gr
 relLevelSuspiciousPirates,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
 $faction.id == rb",,"While still considered an outsider, Rusters understand that you’re not as bad as most core-dwellers.",,
 relLevelInhospitablePirates,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == rb",,"Rusters immediately figure you for an outside and are unlikely to offer you much hospitality. As long as you’re discrete your credits are still welcome, however.",,
+$faction.id == rb",,"Rusters immediately figure you for an outsider and are unlikely to offer you much hospitality. As long as you’re discrete your credits are still welcome, however.",,
 relLevelHostilePirates,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == rb",,"You’ve left a mark on the GBA, who in turn have put a mark on your head. Rusters consider you an enemy and are likely to attack (or evade) you on sight.",,
+$faction.id == rb",,"You’ve left a mark on the GBA, who in turn have put a mark on your head. Rusters consider you an enemy and are likely to attack you on sight.",,
 relLevelVengefulPirates,RelationshipLevelDesc,"$faction.rel == VENGEFUL
 $faction.id == rb",,"Worse than even the prv, Rusters curse your name for your countless crimes against their life and liberty and will go out of their way to cause you the slightest bit of harm.",,
+,,,,,,
+prvAgniBeaconPresenceOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniPresence","ShowDefaultVisual
+SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+
+""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
+prvAgniBeaconNestOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniNest","ShowDefaultVisual
+SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+
+""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
+prvAgniBeaconSwarmOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniSwarm","ShowDefaultVisual
+SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+
+""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
+,,,,,,
+# stable location - building stuff,,,,,,
+# NOT FUNCTIONAL,,,,,,
+#stable_buildprvAgniFeederOpt,Stable_AddBuildOptions,,,,70:SL_buildprvAgniFeeder:Construct a xenobiological outpost,
+#stable_buildprvAgniFeeder,DialogOptionSelected,$option == SL_buildprvAgniFeeder,"$slBuildType = prv_agnifeeder 0
+Objectives printCost $slBuildType
+FireBest Stable_BuildConfirmOptions",,,

@@ -1,10 +1,10 @@
 {
   "displayName": "Elite",
-  "fluxCapacitors": 5,
+  "fluxCapacitors": 7,
   "fluxVents": 20,
   "hullId": "prv_tystnad_midline",
   "hullMods": [
-	"targetingunit",
+	"missleracks",
   ],
   "wings": [
 	"gladius_wing",
@@ -24,7 +24,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "heavymauler"
+        "WS0002": "harpoonpod"
       }
     },
     {

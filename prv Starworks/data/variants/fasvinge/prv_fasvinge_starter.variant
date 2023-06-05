@@ -3,7 +3,7 @@
   "hullId": "prv_fasvinge",
   "displayName": "Custom",
   "goalVariant": false,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 12,
   "fluxVents": 30,
   "quality": 3,
   "permaMods": [],

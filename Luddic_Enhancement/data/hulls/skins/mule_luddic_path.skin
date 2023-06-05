@@ -6,8 +6,9 @@
 	"descriptionPrefix":"Fanatics of the Luddic Path have made this ship their own, stripping out all unnecessary furnishing and transforming it into a haphazard vehicle of holy war.",
 	"tags":["LP_bp"],
 	"tech":"Luddic Path",
+	"ordnancePoints":60,
 	"spriteName":"graphics/ships/mule/mule_luddic_path.png",
-	"removeWeaponSlots":["WS 004", "WS 006"], 		# ids
+	"removeWeaponSlots":["WS 004", "WS 005", "WS 006"], 		# ids
 	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
 	"removeBuiltInMods":[], 		# hullmod ids
 	"removeBuiltInWeapons":[], 		# weapon slot ids

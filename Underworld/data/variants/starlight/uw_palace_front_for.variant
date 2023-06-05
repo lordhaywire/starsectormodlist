@@ -1,11 +1,12 @@
 {
     "displayName": "Fortress",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 6,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_palace_front",
     "hullMods": ["magazines"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_front_for",
     "weaponGroups": [
         {

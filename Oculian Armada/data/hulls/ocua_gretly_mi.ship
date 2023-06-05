@@ -1,0 +1,129 @@
+{
+  "hullName": "Gretly (Mi)",
+  "hullId": "ocua_gretly_mi",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Oculian Armada/ships/ocua_gretly/ocua_gretly_mi.png",
+  "style": "OCULUS",
+  "height": 78,
+  "width": 66,
+  "center": [33, 32],
+  "collisionRadius": 56,
+  "shieldCenter": [6, -0],
+  "shieldRadius": 44,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_drone_mod",
+    "ocua_mi_mod",
+    "ocua_ruggedgretly"
+  ],
+  "builtInWeapons": {
+    "BW 01": "ocua_glint",
+    "BW 02": "ocua_glint",
+    "BW 03": "ocua_glint",
+    "LIT 01": "ocua_core_slot"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, -0]
+    },
+    {
+      "id": "LIT 01",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [25, -0]
+    },
+    {
+      "id": "S 01",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": -45,
+      "locations": [34, -17]
+    },
+    {
+      "id": "S 02",
+      "size": "LARGE",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 45,
+      "locations": [34, 17]
+    },
+    {
+      "id": "BW 01",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [39, -0]
+    },
+    {
+      "id": "BW 02",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 120,
+      "locations": [-2, 27]
+    },
+    {
+      "id": "BW 03",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -120,
+      "locations": [-2, -27]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-30, -10],
+      "length": 22,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-30, 10],
+      "length": 22,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    },
+    {
+      "location": [-32, -0],
+      "length": 24,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    30, 22,
+    -7, 28,
+    -26, 15,
+    -26, -15,
+    -7, -28,
+    30, -22,
+    40, -0
+  ]
+}

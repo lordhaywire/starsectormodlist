@@ -3,7 +3,7 @@
   "hullId": "prv_bergtagen",
   "displayName": "Belt",
   "goalVariant": true,
-  "fluxCapacitors": 25,
+  "fluxCapacitors": 0,
   "fluxVents": 50,
   "quality": 2,
   "permaMods": [],
@@ -25,8 +25,8 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "sabotpod",
-        "WS0024": "sabotpod"
+        "WS0001": "prv_blaster_charge_launcher",
+        "WS0024": "prv_blaster_charge_launcher"
       }
     },
     {
@@ -41,8 +41,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "mark9",
-        "WS0015": "mark9"
+        "WS0003": "prv_massdriver",
+        "WS0015": "prv_massdriver"
       }
     },
     {

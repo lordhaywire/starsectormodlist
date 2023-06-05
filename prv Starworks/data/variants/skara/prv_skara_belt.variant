@@ -38,8 +38,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "prv_spattergun",
-        "WS0005": "prv_spattergun"
+        "WS0004": "irpulse",
+        "WS0005": "irpulse"
       }
     }
   ],

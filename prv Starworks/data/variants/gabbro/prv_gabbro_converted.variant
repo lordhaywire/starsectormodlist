@@ -1,0 +1,71 @@
+{
+  "variantId": "prv_gabbro_converted",
+  "hullId": "prv_gabbro",
+  "displayName": "Converted",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missile_autoloader",
+    "converted_hangar"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "arbalest",
+        "WS 002": "arbalest",
+        "WS 004": "arbalest",
+        "WS0005": "arbalest"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "harpoon",
+        "WS0010": "harpoon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0008": "vulcan",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "mininglaser",
+        "WS 006": "mininglaser",
+        "WS0001": "mininglaser",
+        "WS0002": "mininglaser"
+      }
+    },
+  ],
+  "modules": [],
+  "wings": ["prv_grus_wing"]
+}

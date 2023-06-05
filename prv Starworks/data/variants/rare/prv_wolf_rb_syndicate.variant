@@ -1,6 +1,6 @@
 {
     "displayName": "Syndicate",
-    "fluxCapacitors": 7,
+    "fluxCapacitors": 9,
     "fluxVents": 10,
     "hullId": "prv_wolf_rb",
     "hullMods": ["heavyarmor","armoredweapons"],

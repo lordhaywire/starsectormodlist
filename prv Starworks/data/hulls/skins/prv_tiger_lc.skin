@@ -1,11 +1,8 @@
 {
 	"baseHullId": "prv_tiger",
-	"baseValueMult": 1,
-	#"fleetPoints":6,
 	"descriptionId": "prv_tiger",
 	"descriptionPrefix": "Built-to-Order for the Luddic Church, this ship has been modified to better match Church fleet (and ecclesiastic) doctrine.",
 	"tags":["LC_bp"],
-	#"tech":"Luddic Church (prv)",
 	"tech":"Luddic Church",
 	"suppliesToRecover":8,
 	"suppliesPerMonth":8,
@@ -14,6 +11,7 @@
 	"skinHullId": "prv_tiger_lc",
 	"spriteName": "graphics/prv/ships/prv_tiger_lc.png",
 	"systemId": "forgevats",
+	"removeBuiltInMods":["prv_volatiledrivecore"],
 	"engineSlotChanges":{
 		"0":{"style":"LOW_TECH"},
 		"1":{"style":"LOW_TECH"},

@@ -1,0 +1,50 @@
+{
+  "hullName": "Armor",
+  "hullId": "xlu_azurim_m",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/Extratential Lanestate Union/ships/xlu_azurim/xlu_azurim_m.png",
+  "style": "MIDLINE",
+  "height": 46,
+  "width": 164,
+  "center": [82, -8],
+  "collisionRadius": 162,
+  "shieldCenter": [-41, -0],
+  "shieldRadius": 163,
+  "viewOffset": 0,
+  "builtInMods": [
+    "xlu_LinkedHull",
+    "xlu_armorclad",
+    "xlu_fortieth",
+    "xlu_rampart_integration",
+    "xlu_closed_shell",
+    "always_detaches",
+    "reduced_explosion"
+  ],
+  "weaponSlots": [],
+  "engineSlots": [
+    {
+      "location": [18, 82],
+      "length": 18,
+      "width": 8,
+      "angle": 135,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [18, -82],
+      "length": 18,
+      "width": 8,
+      "angle": -135,
+      "contrailSize": 8,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    31, 59,
+    14, 79,
+    26, 0,
+    14, -79,
+    31, -59,
+    48, 0
+  ]
+}

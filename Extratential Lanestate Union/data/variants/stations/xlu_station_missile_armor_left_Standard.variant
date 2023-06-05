@@ -1,0 +1,13 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "xlu_station_missile_armor_left",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "xlu_station_missile_armor_left_Standard",
+  "weaponGroups": [],
+  "wings": []
+}

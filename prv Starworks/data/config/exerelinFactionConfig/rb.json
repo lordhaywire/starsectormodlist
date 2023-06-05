@@ -73,7 +73,7 @@
     ],
     
     "industrySeeds":[
-        {"id":"prv_rb_pirate_3", "mult":0.05},
+        {"id":"prv_rb_syndicate_hq", "mult":0.05},
         {"id":"orbitalworks", "mult":0.1},
     ],
     

@@ -2,7 +2,7 @@
   "variantId": "prv_brand_elite",
   "hullId": "prv_brand",
   "displayName": "Elite",
-  "goalVariant": true,
+  "goalVariant": false,
   "fluxCapacitors": 10,
   "fluxVents": 20,
   "quality": 2,

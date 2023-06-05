@@ -1,0 +1,27 @@
+{
+  "variantId": "ocua_sophis_c_Fleet",
+  "hullId": "ocua_sophis_c",
+  "displayName": "Fleet",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 4,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "unstable_injector",
+    "ocua_core_pulse"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "ocua_glint",
+        "WS0002": "ocua_glint",
+        "WS0003": "ocua_glint"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

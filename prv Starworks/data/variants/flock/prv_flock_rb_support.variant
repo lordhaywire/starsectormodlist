@@ -1,12 +1,13 @@
 {
   "displayName": "Support",
-  "fluxCapacitors": 12,
-  "fluxVents": 18,
-  "goalVariant": false,
+  "fluxCapacitors": 4,
+  "fluxVents": 5,
+  "goalVariant": true,
   "hullId": "prv_flock_rb",
   "hullMods": [
     "dedicated_targeting_core",
-    "nav_relay"
+    "missleracks",
+    "heavyarmor"
   ],
   "modules": [],
   "permaMods": [],
@@ -17,15 +18,14 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "prv_fusion_burster"
+        "WS0004": "swarmer"
       }
     },
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "pilum",
-        "WS0004": "heatseeker"
+        "WS0001": "harpoonpod"
       }
     },
     {
@@ -39,7 +39,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "ioncannon"
+        "WS0005": "prv_lightthumper",
+        "WS0006": "prv_lightthumper"
       }
     },
     {
@@ -52,7 +53,7 @@
     }
   ],
   "wings": [
-    "prv_grus_wing",
-    "broadsword_wing"
+    "gladius_wing",
+    "warthog_wing"
   ]
 }

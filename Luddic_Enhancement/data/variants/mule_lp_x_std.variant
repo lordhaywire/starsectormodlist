@@ -4,7 +4,7 @@
   "displayName": "Attack",
   "goalVariant": false,
   "fluxCapacitors": 0,
-  "fluxVents": 13,
+  "fluxVents": 12,
   "quality": 0.5,
   "permaMods": [],
   "hullMods": [],
@@ -13,32 +13,32 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0001": "shredder"
+        "WS0001": "jackhammer"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0007": "breach",
-        "WS0008": "breach"
+        "WS0003": "lightac",
+        "WS0004": "lightac"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0002": "chaingun"
+        "WS0002": "shredder"
       }
     },
     {
       "autofire": true,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "lightdualmg",
-        "WS0004": "lightdualmg",
         "WS0005": "lightdualmg",
         "WS0006": "lightdualmg",
+        "WS0007": "lightdualmg",
+        "WS0008": "lightdualmg",
         "WS0009": "lightdualmg",
         "WS0010": "lightdualmg"
       }

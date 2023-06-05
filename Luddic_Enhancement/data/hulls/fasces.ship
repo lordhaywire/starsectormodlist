@@ -2,7 +2,7 @@
   "hullName": "Fasces",
   "hullId": "fasces",
   "hullSize": "DESTROYER",
-  "spriteName": "graphics/ships/fasces.png",
+  "spriteName": "graphics/ships/fasces_lowtech.png",
   "style": "LOW_TECH",
   "height": 138,
   "width": 154,
@@ -14,20 +14,20 @@
   "weaponSlots": [
     {
       "id": "WS0001",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "size": "SMALL",
+      "type": "COMPOSITE",
       "mount": "TURRET",
-      "arc": 206,
-      "angle": 29.5,
+      "arc": 111,
+      "angle": 32,
       "locations": [43, 29]
     },
     {
       "id": "WS0002",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "size": "SMALL",
+      "type": "COMPOSITE",
       "mount": "TURRET",
-      "arc": 206,
-      "angle": -29.5,
+      "arc": 111,
+      "angle": -32,
       "locations": [43, -29]
     },
     {
@@ -35,8 +35,8 @@
       "size": "MEDIUM",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 175,
-      "angle": 68.5,
+      "arc": 180,
+      "angle": 62.5,
       "locations": [14.5, 46]
     },
     {
@@ -44,32 +44,32 @@
       "size": "MEDIUM",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 175,
-      "angle": -68.5,
+      "arc": 180,
+      "angle": -62.5,
       "locations": [14.5, -46]
     },
     {
       "id": "WS0005",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 80,
-      "angle": 67,
+      "angle": 93.5,
       "locations": [-13, 58.5]
     },
     {
       "id": "WS0006",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 80,
-      "angle": -67,
+      "angle": -93.5,
       "locations": [-13, -58.5]
     },
     {
       "id": "WS0007",
       "size": "LARGE",
-      "type": "MISSILE",
+      "type": "BALLISTIC",
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,

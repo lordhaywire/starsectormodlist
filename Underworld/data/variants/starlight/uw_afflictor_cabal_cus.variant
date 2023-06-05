@@ -1,12 +1,11 @@
 {
     "displayName": "Custom",
     "fluxCapacitors": 8,
-    "fluxVents": 10,
+    "fluxVents": 8,
     "goalVariant": true,
     "hullId": "uw_afflictor_cabal",
     "hullMods": [
         "missleracks",
-        "fluxbreakers",
         "adaptive_coils"
     ],
     "permaMods": [],

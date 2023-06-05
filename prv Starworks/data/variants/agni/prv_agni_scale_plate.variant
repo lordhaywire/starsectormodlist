@@ -13,9 +13,16 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS 002": "prv_agni_flamelash"
+        "WS 002": "prv_agni_prominence",
       }
-    }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_agni_flamelash"
+      }
+    },
   ],
   "modules": [],
   "wings": []

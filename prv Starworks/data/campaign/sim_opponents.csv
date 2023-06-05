@@ -1,61 +1,61 @@
 variant id
 
 prv_gnista_cs
-prv_gnista_lc_overdriven
+prv_gnista_lc_outdated
 prv_gnista_p_balanced
 
 prv_ljus_strike
-prv_ljus_pather_raider
+prv_ljus_pather_attack
 
 prv_flamma_standard
 prv_flamma_midline_cs
 prv_flamma_p_overdriven
 
 prv_fasnod_flicker
-prv_fasnod_p_strike
+prv_fasnod_p_raider
 
-prv_gryning_balanced
-prv_gryning_tt_attack
+prv_gryning_attack
+prv_gryning_tt_balanced
 
-prv_shrike_overdriven
+prv_shrike_support
 
-prv_tystnad_stock
-prv_tystnad_midline_elite
-prv_tystnad_p_pirate
+prv_tystnad_ryak
+prv_tystnad_midline_dem
+prv_tystnad_p_ambush
 
-prv_eld_hunter
-prv_eld_midline_attack
+prv_eld_missile
+prv_eld_midline_elite
 
-prv_sorl_strike
-prv_sorl_midline_escort
+prv_sorl_escort
+prv_sorl_midline_dem
 
 prv_flock_strike
-prv_flock_midline_elite
-prv_flock_rb_balanced
+prv_flock_midline_balanced
+prv_flock_rb_attack
 
-prv_sinne_assault
+prv_sinne_adv
 
-prv_fasklot_elite
+prv_fasklot_flicker
 
-prv_is_ryak
+prv_is_adv
 
-prv_brand_elite
+prv_brand_standard
 
-prv_kakafoni_balanced
-prv_kakafoni_rb_attack
-prv_kakafoni_p_strike
+prv_kakafoni_ryak
+prv_kakafoni_rb_missile
+prv_kakafoni_p_raider
 
-prv_aska_elite
+prv_aska_ryak
 prv_aska_lc_salvation
 
 prv_fasvinge_assault
 
 prv_rok_grav
-prv_rok_p_stolen
+prv_rok_p_syndicate
 
 prv_valljud_strike
 
-prv_skymning_ryak
+prv_skymning_advanced
 
 prv_tiger_support
 prv_tiger_lc_armed
@@ -74,7 +74,7 @@ prv_damm_maint
 
 prv_skiffer_belt
 
-prv_visent_raider
+prv_visent_smuggler
 
 prv_venture_rb_belt
 
@@ -85,21 +85,21 @@ prv_basalt_attack
 
 prv_gremlin_rb_attack
 
-prv_gnejs_assault
+prv_gnejs_support
 
 prv_skara_elite
 
-prv_gabbro_standard
+prv_gabbro_mil
 
 prv_gissel_balanced
 prv_gissel_p_rocket
 
-prv_hornfels_belt
-prv_hornfels_pather_pather
+prv_hornfels_standard
+prv_hornfels_pather_converted
 
-prv_dominator_rb_attack
+prv_dominator_rb_syndicate
 
-prv_kvarts_militia
+prv_kvarts_belt
 
 prv_andesit_belt
 

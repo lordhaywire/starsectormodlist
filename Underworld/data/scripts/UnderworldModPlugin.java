@@ -27,6 +27,7 @@ import data.scripts.campaign.UW_MarketRiggerScript;
 import data.scripts.campaign.econ.UW_CabalInfluence;
 import data.scripts.campaign.events.UW_EventManager;
 import data.scripts.campaign.fleets.UW_CabalFleetManager;
+import data.scripts.campaign.fleets.UW_PalaceFleet;
 import data.scripts.campaign.intel.bar.CabalBarEventCreator;
 import data.scripts.campaign.submarkets.UW_CabalMarketPlugin;
 import data.scripts.campaign.submarkets.UW_ScrapyardMarketPlugin;
@@ -38,17 +39,21 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import lunalib.lunaSettings.LunaSettings;
 import org.apache.log4j.Level;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class UnderworldModPlugin extends BaseModPlugin {
 
-    public static boolean Module_StarlightCabal = true;
+    // Both of these are used only when LunaLib is not available.
+    private static boolean isStarlightCabalEnabled = true;
+    private static float cabalFleetFactor = 1f;
 
     public static boolean hasGraphicsLib = false;
     public static boolean hasMagicLib = false;
     public static boolean hasSWP = false;
+    public static boolean hasIndEvo = false;
     public static boolean isExerelin = false;
 
     private static final String SETTINGS_FILE = "UNDERWORLD_OPTIONS.ini";
@@ -76,6 +81,9 @@ public class UnderworldModPlugin extends BaseModPlugin {
         if (!Global.getSector().hasScript(UW_MarketRiggerScript.class)) {
             Global.getSector().addScript(new UW_MarketRiggerScript());
         }
+        if (!Global.getSector().hasScript(UW_PalaceFleet.class)) {
+            Global.getSector().addScript(new UW_PalaceFleet());
+        }
     }
 
     public static void syncUnderworldScriptsExerelin() {
@@ -86,6 +94,9 @@ public class UnderworldModPlugin extends BaseModPlugin {
 
         if (!Global.getSector().hasScript(UW_MarketRiggerScript.class)) {
             Global.getSector().addScript(new UW_MarketRiggerScript());
+        }
+        if (!Global.getSector().hasScript(UW_PalaceFleet.class)) {
+            Global.getSector().addScript(new UW_PalaceFleet());
         }
     }
 
@@ -118,15 +129,16 @@ public class UnderworldModPlugin extends BaseModPlugin {
         player.setRelationship(cabal.getId(), -0.65f);
     }
 
-    private static void loadSettings() throws IOException, JSONException {
+    private static void loadSettingsFile() throws IOException, JSONException {
         JSONObject settings = Global.getSettings().loadJSON(SETTINGS_FILE);
 
-        Module_StarlightCabal = settings.getBoolean("starlightCabal");
+        isStarlightCabalEnabled = settings.getBoolean("starlightCabal");
+        cabalFleetFactor = (float) settings.getDouble("cabalFleetFactor");
     }
 
     private static void syncCabalMarkets() {
         String cabalMarkets[] = new String[]{"port_tse", "tibicena"};
-        if (Module_StarlightCabal) {
+        if (isStarlightCabalEnabled()) {
             Global.getSector().getFaction("cabal").setShowInIntelTab(true);
             for (String marketStr : cabalMarkets) {
                 MarketAPI market = Global.getSector().getEconomy().getMarket(marketStr);
@@ -156,6 +168,20 @@ public class UnderworldModPlugin extends BaseModPlugin {
         }
     }
 
+    public static boolean isStarlightCabalEnabled() {
+        if (Global.getSettings().getModManager().isModEnabled("lunalib")) {
+            return LunaSettings.getBoolean("underworld", "isStarlightCabalEnabled");
+        }
+        return isStarlightCabalEnabled;
+    }
+
+    public static float getCabalFleetFactor() {
+        if (Global.getSettings().getModManager().isModEnabled("lunalib")) {
+            return LunaSettings.getFloat("underworld", "cabalFleetFactor");
+        }
+        return cabalFleetFactor;
+    }
+
     @Override
     public void configureXStream(XStream x) {
         x.alias("UW_CabalFleetManager", UW_CabalFleetManager.class);
@@ -166,6 +192,7 @@ public class UnderworldModPlugin extends BaseModPlugin {
         x.alias("UW_DickersonAssignmentAI", UW_DickersonAssignmentAI.class);
         x.alias("UW_ScrapyardMarketPlugin", UW_ScrapyardMarketPlugin.class);
         x.alias("UW_EventManager", UW_EventManager.class);
+        x.alias("UW_PalaceFleet", UW_PalaceFleet.class);
     }
 
     @Override
@@ -176,15 +203,14 @@ public class UnderworldModPlugin extends BaseModPlugin {
         }
 
         hasMagicLib = Global.getSettings().getModManager().isModEnabled("MagicLib");
-
         isExerelin = Global.getSettings().getModManager().isModEnabled("nexerelin");
         hasSWP = Global.getSettings().getModManager().isModEnabled("swp");
+        hasIndEvo = Global.getSettings().getModManager().isModEnabled("IndEvo");
 
         try {
-            loadSettings();
-            UW_CabalFleetManager.reloadSettings();
+            loadSettingsFile();
         } catch (IOException | JSONException e) {
-            Global.getLogger(UnderworldModPlugin.class).log(Level.ERROR, "Settings loading failed! " + e.getMessage());
+            Global.getLogger(UnderworldModPlugin.class).log(Level.ERROR, "Failed to load settings file! " + e.getMessage());
         }
     }
 

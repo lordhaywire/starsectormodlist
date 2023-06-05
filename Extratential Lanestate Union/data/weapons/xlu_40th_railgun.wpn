@@ -1,0 +1,20 @@
+{
+	"id":"xlu_40th_railgun",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"SMALL",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/40th/railgun_turret_base.png",
+	"turretGlowSprite":"graphics/Extratential Lanestate Union/weapons/40th/railgun_turret_glow.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/40th/railgun_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/Extratential Lanestate Union/weapons/40th/railgun_hardpoint_glow.png",
+	"glowColor":[200,200,255,255],
+	"turretOffsets":[10, 2, 10, -2],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[15, 2, 15, -2],
+	"hardpointAngleOffsets":[0, 0],
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+	"projectileSpecId":"railgun_shot",  # projectile that will be fired
+	"fireSoundTwo":"railgun_fire",
+}

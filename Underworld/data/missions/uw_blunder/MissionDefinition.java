@@ -82,7 +82,7 @@ public class MissionDefinition implements MissionDefinitionPlugin {
         member = api.addToFleet(FleetSide.ENEMY, "enforcer_Outdated", FleetMemberType.SHIP, false);
         member.getCaptain().setPersonality(Personalities.AGGRESSIVE);
         member.setShipName(luddicChurch.pickRandomShipName());
-        member = api.addToFleet(FleetSide.ENEMY, "swp_vanguard_sta", FleetMemberType.SHIP, false);
+        member = api.addToFleet(FleetSide.ENEMY, "swp_caliber_sta", FleetMemberType.SHIP, false);
         member.getCaptain().setPersonality(Personalities.AGGRESSIVE);
         member.setShipName(luddicChurch.pickRandomShipName());
         member = api.addToFleet(FleetSide.ENEMY, "swp_archer_sta", FleetMemberType.SHIP, false);

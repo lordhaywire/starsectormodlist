@@ -1,10 +1,10 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 6,
+    "fluxCapacitors": 10,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_shark",
-    "hullMods": [],
+    "hullMods": ["ballistic_rangefinder"],
     "permaMods": [],
     "sMods": [],
     "variantId": "uw_shark_sta",
@@ -26,16 +26,16 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0002": "heavymauler",
-                "WS0003": "heavymauler"
+                "WS0002": "heavymortar",
+                "WS0003": "heavymortar"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0007": "railgun",
-                "WS0008": "railgun"
+                "WS0007": "lightdualac",
+                "WS0008": "lightdualac"
             }
         },
         {

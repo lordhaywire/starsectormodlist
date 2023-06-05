@@ -1,0 +1,75 @@
+{
+  "variantId": "xlu_azurim_Assault",
+  "hullId": "xlu_azurim",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "unstable_injector",
+    "xlu_weapons_overhaul"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_40th_autocannon_m",
+        "WS0003": "xlu_40th_autocannon_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_auglaser",
+        "WS0005": "xlu_auglaser",
+        "WS0006": "xlu_auglaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "xlu_stubbon",
+        "WS0008": "xlu_stubbon",
+        "WS0009": "xlu_stubbon",
+        "WS0010": "xlu_stubbon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "lightmortar",
+        "WS0012": "lightmortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "SM 01": "xlu_azurim_m_Assault"
+    }
+  ],
+  "wings": []
+}

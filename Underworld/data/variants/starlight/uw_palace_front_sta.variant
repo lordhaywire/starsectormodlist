@@ -6,6 +6,7 @@
     "hullId": "uw_palace_front",
     "hullMods": [],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_palace_front_sta",
     "weaponGroups": [
         {
@@ -15,7 +16,7 @@
         },
         {
             "autofire": false,
-            "mode": "LINKED",
+            "mode": "ALTERNATING",
             "weapons": {
                 "WS0004": "sabotpod",
                 "WS0005": "sabotpod"
@@ -40,6 +41,6 @@
     ],
     "wings": [
         "trident_wing",
-        "broadsword_wing"
+        "sarissa_wing"
     ]
 }

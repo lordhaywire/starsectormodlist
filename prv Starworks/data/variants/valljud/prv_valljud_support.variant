@@ -3,7 +3,7 @@
   "hullId": "prv_valljud",
   "displayName": "Support",
   "goalVariant": false,
-  "fluxCapacitors": 17,
+  "fluxCapacitors": 23,
   "fluxVents": 50,
   "quality": 0,
   "permaMods": [],

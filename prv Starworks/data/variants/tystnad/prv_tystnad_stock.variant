@@ -30,8 +30,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_fusion_burster",
-        "WS0004": "prv_fusion_burster"
+        "WS0001": "pdburst",
+        "WS0004": "pdburst"
       }
     },
     {

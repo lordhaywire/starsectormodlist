@@ -1,0 +1,121 @@
+{
+	#Generic
+	"xlu_hullmod":{
+		"good":"Perks",
+		"bad":"Quirks",
+		"feat":"Features",
+		"comp":"Irks",
+		"comp2":"Compatibilities",
+		"note":"Notes",
+		
+		"highlight_shunt":"Shield Shunt",
+		"highlight_safety":"Safety Overrides",
+		"highlight_armorclad":"Armorclad Works",
+		"roundup":"roundup",
+		
+		"comp_xlu":"Exclusive to XLU ships.%s",
+		"comp_unbased":"logistics, engine and command hull mods and improvised hangars",
+		"comp_omni":"unable to convert into Omnidirectional",
+		"comp_range":"range extension targeting hullmods",
+		"comp_range_full":"Cannot install range extension targeting hullmods.%s",
+		"comp_small_bal":"Small Ballistics by ",
+		"comp_med_bal":"Medium Ballistics by ",
+		"comp_large_bal":"Large Ballistics by ",
+	},
+
+	# Modular
+	#Weapons Overhaul
+	"xlu_mod_wep_over":{
+		"good_wep_rof":"Ballistic weapon firing speed %s.",
+		"good_wep_flux":"Ballistic weapon flux generation %s.",
+		"good_wep_ammo":"Ballistic weapon ammo capacity %s.",
+		
+		"bad_flux_diss":"Flux Dissipation %s.",
+		
+		"comp_ammo":"If ship has no Shield or Shield Shunt is installed, another Ballistic ammo bonus is incurred.%s",
+		"comp_breezer":"If Lanestate Breezer Rounds is installed, the initial ammo bonus is removed.%s",
+		"comp_breezer_h":"Lanestate Breezer Rounds",
+	},
+	
+	#Breezer Rounds
+	"xlu_mod_breezer":{
+		"uninstall":"Ballistic Fragmentations must be remove before uninstalling the manufactories",
+	},
+	
+	#Crew
+	"xlu_mod_crew":{
+		"no_automatic":"Cannot provide living space on an automated ship that does not have capacity",
+		"were_full":"Lanestate Auxilliary already settled",
+		
+		"hardy_wing":"Wing OP cost reduction %s, Bombers %s.",
+		"hardy_repair":"Weapon and Engine Repair speed %s.",
+		"hardy_refit":"Wing refit times %s.",
+		"hardy_recov":"Wing Replacement recovery %s.",
+		"hardy_ground":"Minimum Crew as Ground Support bonus %s.",
+		"hardy_crew_min":"Minimum Crew %s and %s per Deck.",
+		
+		"warshot_balls":"Ballistic Weapon Ordinance costs %s.",
+		"warshot_vent":"Vent speed %s.",
+		"warshot_turret":"Turret health %s, turn speed %s.",
+		"warshot_supply":"Supply Maintenance/Repair costs %s.",
+	},
+
+
+	# Built-ins	
+	#Armorclad
+	"xlu_mod_clad":{
+		"flavor":"\"The will of the Union is unbreaking as the armor that holds up this godforsaken ship.\"",
+		"flavor2":" - a random Hegemony officer",
+		
+		"good_wep_dur":"Weapon Durability %s.",
+		"good_arm_str":"Armor Strength %s + %s.",
+		"good_kin_rec":"Kinetic damage received to Armor %s.",
+		"good_supply":"Supply Cost for Maintenance/Repair %s.",
+		
+		"bad_he_rec":"High-Explosive damage received %s.",
+		"bad_he_rec_extra":"Total from this hullmod alone: 240% Armor, 120% Hull",
+		"bad_tur_rot":"Turret turn speed %s.",
+		
+		"comp_he_rec":"If ship has no Shield or Shield Shunt is installed, HE damage penalty is removed. %s",
+		"comp_he_rec_extra":"Initially unshielded ships receive the effect unconditionally.",
+	},
+	
+	#Lithoframe
+	"xlu_mod_litho":{
+		"flavor":"\"Great, even the fortieth battlegroup is ahead of our development. Woe this damn nightmare we live in.\"",
+		"flavor2":" - former Tri-Tachyon scientist, Dr. Cavin Greenette",
+		
+		"good_arm_str":"Armor Strength %s + %s.",
+		"good_energy_rec":"Armor and Hull resistance against Energy damage %s and against Beam damage %s. Stacks multiplicatively.",
+		"good_energy_rec_h":"Stacks multiplicatively.",
+		"good_wep_flux":"Energy weapon flux generation %s.",
+		
+		"bad_recovery":"Supply Cost for Repair %s.",
+		"bad_kinetic_rec":"Kinetic damage received %s.",
+		"bad_kineti_rec_extra":"Total from this hullmod alone: 70% Armor, 140% Hull",
+		
+		"comp_energy_rec":"If ship has no Shield or Shield Shunt is installed, Energy damage resistance is increased to %s.",
+		"comp_energy_rec_extra":"Initially unshielded ships receive the effect unconditionally.",
+		"comp_armorclad":"This modification counts as an Armorclad Works alternative and will receieve the same effects from other hullmods. %s",
+	},
+	
+	#Bulk Thrusters
+	"xlu_mod_bulkthrust":{
+		"comp_safety":"duration of gaining and losing additional speed is halved",
+	},
+	
+	#Bulk Thrusters
+	"xlu_mod_jugg":{
+		"feat_sensor":"Sensor Profile and Sensor Strength %s.",
+		"feat_sight":"Combat Sight range %s.",
+		"feat_armor":"Armor Strength %s units.",
+		"feat_wep_dur":"Weapon Durability %s.",
+	},
+	
+	#Trusty Mount
+	"xlu_mod_trusty":{
+		"hangar":"allows a Hangar bay in trade of the Large mount",
+		"speed":"20 units",
+		"converted":"prevents Converted Hangar",
+	},
+}

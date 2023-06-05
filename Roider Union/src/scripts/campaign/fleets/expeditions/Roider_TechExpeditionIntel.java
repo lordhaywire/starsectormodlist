@@ -240,7 +240,7 @@ public class Roider_TechExpeditionIntel extends BaseIntelPlugin {
         String infoParam = (String) getListInfoParam();
         if (infoParam == null) infoParam = "";
 
-		if (mode != ListInfoMode.IN_DESC) {
+		if (mode != ListInfoMode.IN_DESC && market != null) {
 			info.addPara("Faction: " + faction.getDisplayName(), initPad, tc,
 						 faction.getBaseUIColor(), faction.getDisplayName());
 			initPad = 0f;
@@ -308,20 +308,29 @@ public class Roider_TechExpeditionIntel extends BaseIntelPlugin {
         PlanetAPI star = target.getStar();
         if (star != null) starColor = star.getSpec().getIconColor();
 
-		LabelAPI label = info.addPara("Your contacts " + market.getOnOrAt() + " " + market.getName() +
-				 " let you know that " +
-				 faction.getPersonNamePrefix() + " roiders are preparing a tech expedition and will soon depart for " +
-				 target.getNameWithTypeIfNebula() + ".",
-				 opad, tc,
-				 faction.getBaseUIColor(),
-				 faction.getPersonNamePrefix());
+        if (market != null) {
+            LabelAPI label = info.addPara("Your contacts " + market.getOnOrAt() + " " + market.getName() +
+                     " let you know that " +
+                     faction.getPersonNamePrefix() + " roiders are preparing a tech expedition and will soon depart for " +
+                     target.getNameWithTypeIfNebula() + ".",
+                     opad, tc,
+                     faction.getBaseUIColor(),
+                     faction.getPersonNamePrefix());
 
-		label.setHighlight(market.getName(),
-                    faction.getPersonNamePrefix(),
-                    target.getNameWithTypeIfNebula());
-		label.setHighlightColors(market.getFaction().getBaseUIColor(),
-                    faction.getBaseUIColor(),
-                    starColor);
+            label.setHighlight(market.getName(),
+                        faction.getPersonNamePrefix(),
+                        target.getNameWithTypeIfNebula());
+            label.setHighlightColors(market.getFaction().getBaseUIColor(),
+                        faction.getBaseUIColor(),
+                        starColor);
+        } else {
+            info.addPara("Your contacts let you know that " +
+                     faction.getPersonNamePrefix() + " roiders are preparing a tech expedition and will soon depart for " +
+                     target.getNameWithTypeIfNebula() + ".",
+                     opad, tc,
+                     faction.getBaseUIColor(),
+                     faction.getPersonNamePrefix());
+        }
 
 		addBulletPoints(info, ListInfoMode.IN_DESC);
     }
@@ -340,9 +349,9 @@ public class Roider_TechExpeditionIntel extends BaseIntelPlugin {
 
 		List<ArrowData> result = new ArrayList<ArrowData>();
 
-		if (market.getContainingLocation() == target &&
+		if (market == null || (market.getContainingLocation() == target &&
 				market.getContainingLocation() != null &&
-				!market.getContainingLocation().isHyperspace()) {
+				!market.getContainingLocation().isHyperspace())) {
 			return null;
 		}
 

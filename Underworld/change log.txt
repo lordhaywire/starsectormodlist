@@ -1,3 +1,60 @@
+Version 1.8.1 (May 29, 2023):
+- The bonus items sold by the Cabal submarkets are now globally unique (you can't buy two Pristine Nanoforges anymore, just one)
+- Cabal submarkets now sell one each of IndEvo Luxury Goods VPC, Drugs VPC, Relay Hypertransmitter, and Simulation Engine
+  * No effect if Industrial Evolution is not enabled
+- Another Cabal-related crash hotfix
+
+Version 1.8.0c (May 27, 2023):
+- Attempted Cabal-related crash hotfix
+
+Version 1.8.0b (May 27, 2023):
+- Cabal-related crash hotfix
+
+Version 1.8.0 (May 26, 2023):
+- Updated for Starsector 0.96a
+- New Renegade sprite (thanks Alfonzo and MesoTroniK!)
+- Cabal only appear around larger/richer/high-tech player colonies, otherwise they don't appear outside of core
+  * This depends on Hostile Activity progress
+  * They do *not* add their own Hostile Activity factor; the Cabal does not impose a stability penalty etc.
+- Cabal skins reworked; slot changes are the same but they no longer offer bonus OP
+  * Cabal Upgrades mostly offers stat penalties and doesn't count as a d-mod (it isn't removed with hull restoration)
+  * Instead, Cabal Upgrades increases the s-mod limit of the ship by 1
+- Cabal Submarket access is easier / more consistent
+  * No longer scales in price based on assets, only by reputation
+  * Better variety of items
+  * Now has additional one-off prize items that can be purchased with enough reputation, including an Alpha Core, Pristine Nanoforge, Mini-Blueprint Package, and the full Blueprint Package
+- The Cabal's Palace will spawn periodically and roam the sector, spawning extra Cabal fleets and offering a unique challenge, should you choose to fight it
+  * Has loot equivalent to a Research Station in a Remnant system
+  * Easily detectable from afar...
+- Easier to raise reputation with the Cabal
+- Scythe CR %/deploy increased to 30
+- Revolvers now stay in front of the ship, armor increased to 125 from 60, refit time reduced to 10 from 15 seconds
+- Razors are faster (300 from 250) and have significantly improved maneuverability
+- Mongrel DP (supplies/deploy) reduced to 12 from 15
+- Amalgam DP (supplies/deploy) reduced to 24 from 30
+- Succubus armor increased to 1000 from 900, hull increased to 12000 from 11000, speed increased to 50 from 45, maneuverability improved
+- Renegade DP (supplies/deploy) reduced to 30 from 35, hull decreased to 15000 from 18000
+- Starscream DP (supplies/deploy) reduced to 15 from 18
+- Reworked or recreated numerous ship variants, tailoring them to their expected vanilla factions
+- Numerous doctrinal changes across the board:
+  * Luddic Church has access to Shark (uncommon) and Venom
+  * Luddic Path has access to:
+    - Barbarian (uncommon), Predator, Sidecar (uncommon), Shark (uncommon), Tiger (rare), and Torch
+    - Razor Fighter Wing
+  * Revamped Cabal doctrine to include exclusively Cabal-themed combat ships
+    - Few carriers, moderate number of phase ships, mostly standard combat ships
+    - Access to just about every type of non-[REDACTED] weapon, including Kinetic Blaster and Gigacannon
+  * Independents/Scavengers have access to:
+    - Barbarian, Boar, Predator, Scythe, Shark, Stalker, Tiger, and Venom
+    - Razor Fighter Wing and Revolver Support Wing
+  * Mercenaries have access to:
+    - Barbarian, Boar, Dragon, Predator, Renegade, Scythe, Shark, Stalker, Tiger, and Venom-X
+    - Razor Fighter Wing and Revolver Support Wing
+  * Pirates have access to:
+    - Amalgam (uncommon), Barbarian, Boar, Dragon (uncommon), Infernus (rare), Mongrel, Predator, Predator-X, Renegade (uncommon), Scythe, Shark, Sidecar, Stalker (uncommon), Tiger, Torch, Venom, Venom-X (rare)
+    - Razor Fighter Wing and Revolver Support Wing
+- LunaLib support
+
 Version 1.7.1 (January 5, 2022):
 - Updated for Starsector 0.95.1a RC6
 - Slightly buffed TIM's minefield upgrade, also made it less likely to mine yourself

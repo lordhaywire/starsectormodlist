@@ -1,0 +1,37 @@
+{
+	"id":"ocua_voxel_mirv",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/missiles/shell_medium_red.png",
+	"size":[6,8],	
+	"center":[3,4],
+	"collisionRadius":6,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,165,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"maxFlightTime":8,	#2.5
+	"engineSpec":{"turnAcc":120,
+				  "turnRate":150,
+				  "maxSpeed":400,
+				  "acc":600,
+				  "dec":0},			 
+	"engineSlots":[{"id":"ES1",
+					"loc":[-4, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,100,175,255],
+						"contrailDuration":.2,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":-0.5,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":.2, # how far away from engine it starts
+						"contrailColor":[255,150,150,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":20.0,
+				    "angle":180.0}]
+}

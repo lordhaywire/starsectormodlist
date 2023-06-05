@@ -1,0 +1,72 @@
+{
+  "variantId": "xlu_onslaught_Elite",
+  "hullId": "xlu_onslaught",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxdistributor",
+    "xlu_weapons_overhaul"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0008": "xlu_quilfling_m",
+        "WS0009": "xlu_quilfling_m",
+        "WS0010": "xlu_quilfling_m"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BSW 01": "xlu_rodstorm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_warbore",
+        "WS0002": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "mark9",
+        "WS0006": "hveldriver",
+        "WS0007": "hveldriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "devastator",
+        "WS0005": "devastator",
+        "WS0011": "flak",
+        "WS0012": "flak",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "lrpdlaser",
+        "WS0016": "lrpdlaser",
+        "WS0017": "lrpdlaser",
+        "WS0018": "lrpdlaser",
+        "WS0019": "xlu_gattler",
+        "WS0020": "xlu_gattler",
+        "WS0021": "vulcan",
+        "WS0022": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

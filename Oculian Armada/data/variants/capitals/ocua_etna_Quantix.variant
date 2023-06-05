@@ -1,0 +1,57 @@
+{
+  "variantId": "ocua_etna_Quantix",
+  "hullId": "ocua_etna",
+  "displayName": "Quantix",
+  "goalVariant": false,
+  "fluxCapacitors": 20,
+  "fluxVents": 19,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "ocua_core_crystalline"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "ocua_suzuya",
+        "WS0002": "ocua_suzuya",
+        "WS0010": "ocua_suzuya"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ocua_ruby",
+        "WS0004": "ocua_ruby"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "ocua_prima",
+        "WS0008": "ocua_fouette",
+        "WS0009": "ocua_fouette"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "ocua_glint",
+        "BW 02": "ocua_glint",
+        "BW 03": "ocua_glint",
+        "WS0006": "ocua_blita",
+        "WS0007": "ocua_blita"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "ocua_cancer_wing"
+  ]
+}

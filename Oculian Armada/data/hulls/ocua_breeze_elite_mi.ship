@@ -1,0 +1,66 @@
+{
+  "hullName": "Breeze",
+  "hullId": "ocua_breeze_elite_mi",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Oculian Armada/ships/fighters/ocua_breeze_elite_mi.png",
+  "style": "OCULUS",
+  "height": 30,
+  "width": 18,
+  "center": [9, 12],
+  "collisionRadius": 28,
+  "shieldCenter": [2, -0],
+  "shieldRadius": 22.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "ocua_oculus_mod",
+    "ocua_mi_mod"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [16, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": 0,
+      "locations": [14, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 90,
+      "angle": -0,
+      "locations": [14, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-10, -0],
+      "length": 12,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "CUSTOM",
+      "styleId": "OCULUS"
+    }
+  ],
+  "bounds": [
+    15, 6,
+    2, 9,
+    -11, 5,
+    -11, -5,
+    2, -9,
+    15, -6
+  ]
+}

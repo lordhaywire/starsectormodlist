@@ -3,7 +3,7 @@
   "hullId": "prv_is",
   "displayName": "Missile",
   "goalVariant": true,
-  "fluxCapacitors": 6,
+  "fluxCapacitors": 16,
   "fluxVents": 30,
   "quality": 2,
   "permaMods": [],

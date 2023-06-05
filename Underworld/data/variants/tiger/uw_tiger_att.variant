@@ -1,11 +1,12 @@
 {
     "displayName": "Attack",
-    "fluxCapacitors": 6,
+    "fluxCapacitors": 7,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_tiger",
     "hullMods": ["fluxdistributor"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_tiger_att",
     "weaponGroups": [
         {

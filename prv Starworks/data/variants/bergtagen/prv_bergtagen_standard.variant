@@ -3,7 +3,7 @@
   "hullId": "prv_bergtagen",
   "displayName": "Standard",
   "goalVariant": false,
-  "fluxCapacitors": 25,
+  "fluxCapacitors": 32,
   "fluxVents": 50,
   "quality": 2,
   "permaMods": [],

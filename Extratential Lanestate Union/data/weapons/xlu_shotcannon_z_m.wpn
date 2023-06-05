@@ -1,0 +1,16 @@
+{
+	"id":"xlu_shotcannon_z_m",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"turretSprite":"",
+	"hardpointSprite":"",
+	"hardpointOffsets":[0, 0],
+	"turretOffsets":[0, 0],
+	"hardpointAngleOffsets":[0],
+	"turretAngleOffsets":[0],
+	"barrelMode":"ALTERNATING",
+	"animationType":"NONE",
+	"interruptibleBurst":false,
+	"projectileSpecId":"xlu_shotcannon_m_shot",  # projectile that will be fired
+}

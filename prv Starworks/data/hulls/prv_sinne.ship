@@ -12,12 +12,10 @@
   "shieldRadius": 84.5,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "prv_ramshield",
     "prv_fluxcompressor"
   ],
-  "builtInWeapons": {
-    "WS0009": "prv_u_ramshield"
-  },
   "weaponSlots": [
     {
       "id": "WS0003",
@@ -90,15 +88,6 @@
         4.5, 5
       ]
     },
-    {
-      "id": "WS0009",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "TURRET",
-      "arc": 120,
-      "angle": 0,
-      "locations": [-10, -0]
-    }
   ],
   "engineSlots": [
     {

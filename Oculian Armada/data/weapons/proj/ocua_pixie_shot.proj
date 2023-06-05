@@ -1,0 +1,13 @@
+{
+	"id":"ocua_pixie_shot",
+	"specClass":"projectile",
+	"spawnType":"PLASMA",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"width":20.0,
+	"fadeTime":0.5,
+	"fringeColor":[50,0,255,255],
+	"coreColor":[255,100,150,255],
+	#"fringeColor":[255,0,0,255],
+	#"coreColor":[255,100,255,255],	
+}

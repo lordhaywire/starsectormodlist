@@ -54,7 +54,7 @@
 			"prv_gemini":1,
 			"condor":0,
 			"prv_condor":2,
-			"prv_gryning":0.075,
+			"prv_gryning":0.1,
 			"prv_sinne":0.5,			#elite ship
 			### phase
 			"prv_fasnod":1.5,
@@ -66,24 +66,29 @@
 			#"prv_gast":0.10,
 		},
 	},
-	# ships the faction gets access to when importing S&W out-of-faction
-	"shipsWhenImporting":{
-		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
-		"hulls":[
-			"shade",
-			"afflictor",
-			"harbinger",
-		],
-	},
 	"knownShips":{
-		"tags":["prv_bp", "prv_adv_bp", "prv_cap_bp", "base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "independent"],
+		"tags":["prv_bp", "prv_adv_bp", "prv_cap_bp"],
 		"hulls":[
+			"crig",
+			"ox",
+			"dram",
+			"phaeton",
+			"prometheus",
+			"gemini",
+			"atlas",
+			"mercury",
+			"hermes",
 			"kite_original",
-			"afflictor",
-			"omen",
-			"shade",
-			"tempest",
+			"mudskipper",
+			"wayfarer",
+			"nebula",
 			"valkyrie",
+			"starliner",
+			"buffalo",
+			"colossus",
+			
+			"afflictor",
+			"shade",
 			"harbinger",
 		],
 	},
@@ -124,24 +129,17 @@
 			"railgun",
 		#ballistic medium
 			"arbalest",
-			#"chaingun",
 			"heavymauler",
-			#"hveldriver",
 		#ballistic large
-			#"hellbore",
-			#"hephag",
-			#"gauss",
 			"mjolnir",
 			"prv_spatterflamer",
+			"prv_massdriver",
 		#energy small
 			"mininglaser",
-			#"pdlaser",
 			"lrpdlaser",
 			"pdburst",
 			"amblaster",
 			"irpulse",
-			#"ioncannon",
-			#"taclaser",
 			"prv_fusion_burster",
 		#energy medium
 			"pulselaser",
@@ -149,16 +147,12 @@
 			"heavyburst",
 			"phasebeam",
 			"ionpulser",
-			#"ionbeam",
-			#"gravitonbeam",
 		#energy large
-			#"hil",
-			#"plasma",
-			#"guardian",
 			"prv_vakt",
 			"autopulse",
 		#missile small
 			"sabot",
+			"sabot_single",
 			"atropos",
 			"atropos_single",
 			"reaper",
@@ -167,8 +161,7 @@
 			"sabotpod",
 			"pilum",
 		#missile large
-			#"cyclone",
-			#"hurricane",
+		
 		],
 	},
 #	"priorityWeapons":{
@@ -188,14 +181,17 @@
 	"knownHullMods":{
 		"tags":["prv_bp","prv_adv_bp","base_bp","independent"],
 		"hullMods":[
+			### 0.96
+			"missile_autoloader",
 			### 0.95.1
-			"phase_anchor",
+			#"phase_anchor",
 			"adaptive_coils",
+			"ballistic_rangefinder",
 			### older
 			"advancedshieldemitter", # accelerated
 			"turretgyros",
-			"armoredweapons",
-			"auxiliarythrusters",
+			#"armoredweapons",
+			#"auxiliarythrusters",
 			"augmentedengines",
 			"autorepair",
 			"converted_hangar",
@@ -210,7 +206,7 @@
 			"hardened_subsystems",
 			"hardenedshieldemitter",
 			"heavyarmor",
-			"pointdefenseai",
+			#"pointdefenseai",
 			"insulatedengine",
 			"targetingunit",
 			"nav_relay",
@@ -224,7 +220,7 @@
 			"auxiliary_fuel_tanks",
 			"hiressensors",
 			"efficiency_overhaul",
-			"high_scatter_amp",
+			#"high_scatter_amp",
 			###
 			"prv_arcfault_insulator",
 			"prv_flickercore",
@@ -247,20 +243,18 @@
 		
 		"aggression":4,
 		
-		"combatFreighterProbability":0.25,     				# instead of some portion of the freighters in a fleet
-		"combatFreighterCombatUseFraction":0.175,				# as part of the normal combat lineup
-		"combatFreighterCombatUseFractionWhenPriority":0.25,  	# as part of normal combat lineup, when marked as priority ship
+		"combatFreighterProbability":0.125,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0.1,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0.125,  	# as part of normal combat lineup, when marked as priority ship
 		"autofitRandomizeProbability":0.125,
 
 		"commanderSkillsShuffleProbability":1,
 		"commanderSkills":[
-			#"tactical_drills",
-			"coordinated_maneuvers",
-			"fighter_uplink",
-			"officer_training",
-			#"electronic_warfare",
-			"phase_corps",
 			"cybernetic_augmentation",
+			"coordinated_maneuvers",
+			"officer_training",
+			"phase_corps",
+			"wolfpack_tactics"
 		],
 	},
 	"illegalCommodities":[

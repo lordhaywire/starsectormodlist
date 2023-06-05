@@ -220,17 +220,17 @@ public class CabalWeaponCalc extends BaseCommandPlugin {
         float finalFanciness = amountToTake * (fanciestWeaponFanciness / fanciestWeaponCount);
         float repImpact;
         if (finalFanciness <= 50f) {
-            repImpact = 0.01f;
-        } else if (finalFanciness <= 100f) {
             repImpact = 0.02f;
-        } else if (finalFanciness <= 200f) {
-            repImpact = 0.03f;
-        } else if (finalFanciness <= 400f) {
+        } else if (finalFanciness <= 100f) {
             repImpact = 0.04f;
+        } else if (finalFanciness <= 200f) {
+            repImpact = 0.06f;
+        } else if (finalFanciness <= 400f) {
+            repImpact = 0.08f;
         } else {
-            repImpact = 0.05f;
+            repImpact = 0.1f;
         }
-        float repNegImpact = repImpact;
+        float repNegImpact = repImpact * 0.5f;
         switch (Global.getSector().getFaction("cabal").getRelToPlayer().getLevel()) {
             default:
             case VENGEFUL:

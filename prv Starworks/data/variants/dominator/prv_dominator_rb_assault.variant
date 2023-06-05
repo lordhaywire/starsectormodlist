@@ -3,7 +3,7 @@
   "hullId": "prv_dominator_rb",
   "displayName": "Assault",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 22,
   "fluxVents": 30,
   "quality": 0,
   "permaMods": [],
@@ -24,9 +24,9 @@
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS 014": "prv_sidensvans_array",
-        "WS 015": "sabotpod",
-        "WS 016": "prv_sidensvans_array"
+        "WS 014": "prv_brytare_pod",
+        "WS 015": "prv_brytare_pod",
+        "WS 016": "prv_brytare_pod"
       }
     },
     {

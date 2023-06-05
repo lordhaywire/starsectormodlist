@@ -2,6 +2,7 @@
     "displayName": "Berserker",
     "fluxCapacitors": 0,
     "fluxVents": 20,
+    "goalVariant": true,
     "hullId": "uw_shadowclaw",
     "hullMods": [
         "safetyoverrides",

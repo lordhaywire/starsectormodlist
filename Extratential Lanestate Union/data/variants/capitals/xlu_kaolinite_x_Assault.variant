@@ -1,0 +1,69 @@
+{
+  "variantId": "xlu_kaolinite_x_Assault",
+  "hullId": "xlu_kaolinite_x",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 31,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "xlu_weapons_overhaul",
+    "turretgyros",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "xlu_bente",
+        "WS0006": "xlu_bente"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_warbore",
+        "WS0003": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_magpulse",
+        "WS0011": "taclaser",
+        "WS0012": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "BW 01": "xlu_gattler",
+        "BW 02": "xlu_gattler",
+        "BW 03": "xlu_gattler",
+        "BW 04": "xlu_gattler",
+        "BW 05": "xlu_gattler",
+        "WS0007": "flak",
+        "WS0008": "flak",
+        "WS0009": "flak",
+        "WS0010": "flak",
+        "WS0013": "vulcan",
+        "WS0014": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

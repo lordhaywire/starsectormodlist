@@ -1,0 +1,13 @@
+{
+	"id":"xlu_frenziedfeed",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.shipsystems.scripts.xlu_FrenziedFeedStats",
+	
+	"weaponGlowColor":[255,50,50,155],
+	"weaponTypes":[BALLISTIC],
+	
+	"useSound":"xlu_system_frenzied_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

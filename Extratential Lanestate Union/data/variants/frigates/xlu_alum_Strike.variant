@@ -1,0 +1,42 @@
+{
+  "variantId": "xlu_alum_Strike",
+  "hullId": "xlu_alum",
+  "displayName": "Strike",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 1,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "unstable_injector",
+    "magazines"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_gyropult_s",
+        "WS0003": "xlu_gyropult_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_stubbon",
+        "WS0005": "xlu_stubbon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

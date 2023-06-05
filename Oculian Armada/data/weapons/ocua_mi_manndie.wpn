@@ -1,0 +1,30 @@
+{
+	"id":"ocua_mi_manndie",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"everyFrameEffect":"data.scripts.weapons.ocua_manndie_effect",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"turretSprite":"graphics/Oculian Armada/weapons/mi/ocua_manndie_turret_base.png",
+	"turretGunSprite":"graphics/Oculian Armada/weapons/mi/ocua_manndie_turret_recoil.png",
+	"hardpointSprite":"graphics/Oculian Armada/weapons/mi/ocua_manndie_hardpoint_base.png",
+	"hardpointGunSprite":"graphics/Oculian Armada/weapons/mi/ocua_manndie_hardpoint_recoil.png",
+	"visualRecoil":10.0,
+	"renderHints":[RENDER_BARREL_BELOW],
+	"turretOffsets":[27, 0, 25, 8, 25, -8],
+	"turretAngleOffsets":[0, 0, 0],
+	"hardpointOffsets":[38, 0, 36, 8, 36, -8],
+	"hardpointAngleOffsets":[0, 0, 0],
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":0.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":12.0,
+					   "particleDuration":0.12,
+					   "particleCount":12,
+					   "particleColor":[255,100,100,255]},		
+	"interruptibleBurst":false,
+	"autocharge":true,
+	"projectileSpecId":"ocua_leia_shot",  # projectile that will be fired
+	"fireSoundTwo":"ocua_leia_fire",
+}

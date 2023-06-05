@@ -1,0 +1,27 @@
+{
+	"id":"xlu_gattling_m",
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"MEDIUM",
+	"everyFrameEffect":"data.scripts.weapons.xlu_gattling_effect",
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/xlu_gaskilo/xlu_gaskilo_turret_base00.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/xlu_gaskilo/xlu_gaskilo_hardpoint_base00.png",
+	"numFrames":4,	
+	"frameRate":30,
+	"turretOffsets":[18, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[29, 0],
+	"hardpointAngleOffsets":[0],	
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",  # NONE, GLOW, MUZZLE_FLASH, SMOKE
+	"muzzleFlashSpec":{"length":35.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":5.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.15,
+					   "particleCount":11,
+					   "particleColor":[255,240,165,200]},	
+	"projectileSpecId":"xlu_gattling_m_shot",  # projectile that will be fired
+	#"fireSoundOne":"thumper_spinup",
+	"fireSoundTwo":"xlu_gaskilo_fire",	
+}

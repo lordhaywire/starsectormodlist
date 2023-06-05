@@ -4,27 +4,30 @@
   "displayName": "Outdated",
   "goalVariant": true,
   "fluxCapacitors": 1,
-  "fluxVents": 20,
+  "fluxVents": 1,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "heavyarmor",
-    "armoredweapons"
+    "auxiliarythrusters",
+    "unstable_injector",
+    "magazines",
+    "armoredweapons",
+    "blast_doors"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0003": "breach",
-        "WS0004": "breach"
+        "WS0005": "shredder"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "chaingun"
+        "WS0003": "annihilator",
+        "WS0004": "annihilator"
       }
     },
     {

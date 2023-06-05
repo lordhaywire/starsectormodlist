@@ -1,14 +1,15 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 7,
+    "fluxCapacitors": 6,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_predator",
     "hullMods": [
         "stabilizedshieldemitter",
-        "fluxdistributor"
+        "hardenedshieldemitter"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_predator_sta",
     "weaponGroups": [
         {
@@ -27,12 +28,12 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0005": "taclaser"}
+            "weapons": {"WS0004": "vulcan"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0004": "vulcan"}
+            "weapons": {"WS0005": "lrpdlaser"}
         }
     ]
 }

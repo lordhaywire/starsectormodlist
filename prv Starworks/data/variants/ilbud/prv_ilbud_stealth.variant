@@ -3,7 +3,7 @@
   "hullId": "prv_ilbud",
   "displayName": "Stealth",
   "goalVariant": true,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 3,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],

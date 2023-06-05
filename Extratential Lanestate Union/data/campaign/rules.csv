@@ -1,0 +1,26 @@
+id,trigger,conditions,script,text,options,notes
+ExerelinNGCListXLU,ExerelinNGCListFactions2,,,,exerelinNGCJoinXLU:Extratential Lanestate Union,
+ExerelinNGCJoinXLU,NewGameOptionSelected,$option == exerelinNGCJoinXLU,"$playerFaction = XLU
+FireBest ExerelinNGCJoinFaction",,,
+ExerelinFactionDirectoryListXLU,ExerelinFactionDirectoryList2,$directoryFactions:XLU,,,exerelinFactionDirectoryGetXLU:Extratential Lanestate Union,
+ExerelinFactionDirectoryGetXLU,DialogOptionSelected,$option == exerelinFactionDirectoryGetXLU,"$_directoryFaction = XLU 0
+FireBest ExerelinFactionDirectorySubmit",,,
+,,,,,,
+relLevelNeutralXLU,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == xlu",,"The Unioners could not exact your existence, whether you would be a fine target practice or someone to shoot along with.",,
+relLevelFavorableXLU,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == xlu",,"You may been around in some the Lanestate pubs and had a few friends that end up remembering your visits on their locales. They could fight for you, but won't still trust you.",,
+relLevelWelcomingXLU,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == xlu",,"Minor Lanestate officials from the planetary offices know you by name, and would like fetch an order or two to keep you on your toes. Otherwise, they see you as a reliable friend.",,
+relLevelFriendlyXLU,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == xlu",,"Local news from Lanestate channels broadcast your face in a short glimpse as you enter their space, not as an adversary but as one of many known functionaries that advance their cause in the Persean sector.",,
+relLevelCooperativeXLU,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == xlu",,"You can see Lanestate grafitti written with your name on it here and there, with markings that say you will make their enemies pay. You and your crew are well-known to the Lanestate Union as warheroes to their occupation of the Persean sector.",,
+relLevelSuspiciousXLU,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == xlu",,The Warshots smell something funny about you every time you visit their quarters. Some are eager to get their firearms closer to their finger tips when they see your face.,,
+relLevelInhospitableXLU,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == xlu",,"A lot of radio channels flare up every time your fleet enters their space, some won't even bother showing their faces while making transactions to you. You have certainly made a name for yourself in the Union.",,
+relLevelHostileXLU,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == xlu",,Even the restraining Waymakers won't think twice on sounding the alarms about your presence. The Lanestate Union would like to test their massive strong-arming at you and your fleet.,,
+relLevelVengefulXLU,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == xlu",,"You made yourself irrationally unforgettable by the Union, as equally as the Hegemony who they want to put out. They will make use of their juggernaughts when you set foot on your colony, should you have one.",,

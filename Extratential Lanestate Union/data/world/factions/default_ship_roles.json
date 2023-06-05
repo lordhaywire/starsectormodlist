@@ -1,0 +1,249 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"xlu_alum_Strike":8,
+		"xlu_alum_Balanced":7,
+		"xlu_alum_Assault":15,
+		"xlu_alum_Support":7,
+		"xlu_alum_Elite":3,
+		
+		"xlu_brass_Attack":10,
+		"xlu_brass_Assault":15,
+		
+		"xlu_tin_Standard":10,
+		"xlu_tin_Bombard":10,
+		"xlu_tin_Shock":5,
+		"xlu_tin_Reaper":3,
+		"xlu_tin_Gunboss":2,
+		
+		"xlu_tin_forty_Shock":2,
+		"xlu_tin_forty_Bombard":1,
+		
+		"xlu_zinc_Shock":4,
+		"xlu_zinc_Assault":9,
+		"xlu_zinc_Balanced":7,
+		"xlu_zinc_Strike":3,
+	},
+	"combatSmall":{
+		"xlu_alum_Strike":8,
+		"xlu_alum_Balanced":10,
+		"xlu_alum_Assault":7,
+		"xlu_alum_Support":7,
+		"xlu_alum_Elite":3,
+		
+		"xlu_brass_Attack":10,
+		"xlu_brass_Assault":15,
+		
+		"xlu_tin_Standard":5,
+		"xlu_tin_Bombard":5,
+		"xlu_tin_Beamer":5,
+		"xlu_tin_Shock":5,
+		"xlu_tin_Reaper":6,
+		"xlu_tin_Gunboss":3,
+		
+		"xlu_zinc_Shock":10,
+		"xlu_zinc_Assault":5,
+		"xlu_zinc_Balanced":5,
+		"xlu_zinc_Buzzaw":5,
+		"xlu_zinc_Strike":4,
+		"xlu_zinc_Overdriven":4,
+		"xlu_zinc_Elite":2,
+		
+		"xlu_calc_Attack":4,
+		"xlu_calc_Strike":2,
+		"xlu_calc_Support":1,
+		
+		"xlu_kite_Standard":5,
+		"xlu_kite_Assault":3,
+	},
+	"combatMedium":{
+		"xlu_espron_Saturation":10,
+		"xlu_espron_Attack":10,
+		"xlu_espron_Picket":8,
+		"xlu_espron_Waybreaker":5,
+		"xlu_espron_Warboat":3,
+		
+		"xlu_espron_forty_Assault":3,
+		"xlu_espron_forty_Saturation":2,
+		"xlu_espron_forty_Overdriven":1,
+		
+		"xlu_stibium_Assault":10,
+		"xlu_stibium_Balanced":7,
+		"xlu_stibium_Shock":5,
+		"xlu_stibium_CS":5,
+		
+		"xlu_butane_litho_Standard":5,
+		"xlu_butane_litho_CS":3,
+	},
+	"combatLarge":{
+		"xlu_macrolloy_Assault":7,
+		"xlu_macrolloy_Balanced":5,
+		"xlu_macrolloy_Shock":5,
+		
+		"xlu_ferros_Assault":10,
+		"xlu_ferros_Balanced":10,
+		"xlu_ferros_Barrage":5,
+		"xlu_ferros_Yes":5,
+		
+		"xlu_cobalt_Assault":10,
+		"xlu_cobalt_Balanced":10,
+		"xlu_cobalt_CS":10,
+		"xlu_cobalt_Blast":10,
+		"xlu_cobalt_Barrage":4,
+		"xlu_cobalt_Shock":6,
+		"xlu_cobalt_Fragger":4,
+		
+		"xlu_azurim_Assault":3,
+		"xlu_azurim_Support":2,
+		"xlu_azurim_Overdriven":0.5,
+		
+		"xlu_colossus_litho_Standard":5,
+		"xlu_colossus_litho_Assault":3,
+	},
+	"combatCapital":{
+		"xlu_kaolinite_x_Assault":10,
+		"xlu_kaolinite_x_Balanced":15,
+		"xlu_kaolinite_Balanced":10,
+		"xlu_kaolinite_Assault":8,
+		"xlu_kaolinite_Scrapper":5,
+		"xlu_kaolinite_Charger":3,
+		
+		"xlu_kaolinite_litho_Support":5,
+		"xlu_kaolinite_litho_Assault":5,
+		
+		"xlu_pumpmaster_Assault":5,
+		"xlu_pumpmaster_Attack":5,
+		
+		"xlu_gadolinite_Support":10,
+		"xlu_gadolinite_Denial":5,
+		"xlu_gadolinite_Balanced":5,
+			
+		"xlu_chrominus_Standard":8,
+		"xlu_chrominus_Support":7,
+		"xlu_chrominus_Strike":5,
+		"xlu_chrominus_Daniel":5,
+		
+		"xlu_anthracite_Standard":2,
+		
+		"xlu_diaboleite_Assault":5,
+		"xlu_diaboleite_Strike":3,
+		"xlu_diaboleite_Blast":2,
+		
+		"xlu_tritanite_Breaker":3,
+			
+		"xlu_onslaught_Standard":2,
+		"xlu_onslaught_Elite":1,
+		
+		"xlu_manganate_Standard":1,
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+	},
+	"combatFreighterMedium":{
+		"xlu_carbide_Anvil":5,
+		"xlu_carbide_Assault":10,
+		"xlu_carbide_Support":10,
+		"xlu_carbide_Balanced":10,
+	},
+	"combatFreighterLarge":{
+	},
+	
+	"civilianRandom":{
+		"xlu_tin_Standard":10,
+	},
+
+	# carriers
+	"carrierSmall":{
+		"xlu_stibium_Support":10,
+		"xlu_stibium_Strike":10,
+	},
+	"carrierMedium":{
+		"xlu_colossus_CS":10,
+		"xlu_colossus_Hunter":5,
+		"xlu_colossus_Standard":10,
+		"xlu_colossus_Support":10,
+	},
+	"carrierLarge":{
+		"xlu_pyridoxate_Support":10,
+	},
+
+	# phase ships
+	"phaseSmall":{
+		"xlu_lead_Barrage":10,
+		"xlu_lead_Shock":8,
+		"xlu_lead_Strike":5,
+		"xlu_lead_Elite":2,
+		
+	},
+	"phaseMedium":{
+	},
+	"phaseLarge":{
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+		"xlu_cobble_Standard":10,
+	},
+	"freighterMedium":{
+	},
+	"freighterLarge":{
+		"xlu_rhodochrosite_Standard":2,
+		"xlu_rhodochrosite_Fleet":0.4,
+	},
+	
+	"tankerSmall":{
+	},
+	"tankerMedium":{
+		"xlu_oxide_Standard":3,
+	},
+	"tankerLarge":{
+		"xlu_uranium_Standard":0.6,
+	},
+	
+	"personnelSmall":{
+	},
+	"personnelMedium":{
+		"xlu_duralumin_Standard":10,
+		"xlu_duralumin_Combat":3,
+		
+		"xlu_duralumin_forty_Assault":1,
+		"xlu_duralumin_forty_Balanced":0.5,
+	},
+	"personnelLarge":{
+	},
+	
+	"linerSmall":{
+	},
+	"linerMedium":{
+	},
+	"linerLarge":{
+		"xlu_starliner_Standard":0.2,
+		"xlu_starcrusher_Standard":3,
+	},
+	
+	# utility ships
+	"tug":{
+		"xlu_butane_Standard":5,
+	},
+	"crig":{
+		"xlu_scheelite_Standard":8,
+		"xlu_scheelite_Improv":5,
+	},
+	"utility":{
+		"xlu_scheelite_Standard":5,
+		"xlu_butane_Standard":1,
+	},
+	
+	"orbitalStationLowTech":{
+	},
+	
+	"battlestationLowTech":{
+	},
+	
+	
+}

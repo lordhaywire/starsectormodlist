@@ -1,7 +1,8 @@
 {
     "displayName": "Beam",
-    "fluxCapacitors": 32,
+    "fluxCapacitors": 41,
     "fluxVents": 50,
+    "goalVariant": true,
     "hullId": "uw_succubus",
     "hullMods": [
         "targetingunit",

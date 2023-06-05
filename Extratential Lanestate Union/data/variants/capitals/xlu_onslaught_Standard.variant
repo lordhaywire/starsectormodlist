@@ -1,0 +1,84 @@
+{
+  "variantId": "xlu_onslaught_Standard",
+  "hullId": "xlu_onslaught",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 43,
+  "fluxVents": 50,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "insulatedengine",
+    "dedicated_targeting_core",
+    "auxiliarythrusters"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "annihilatorpod",
+        "WS0009": "annihilatorpod",
+        "WS0010": "annihilatorpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "BSW 01": "xlu_rodstorm"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mark9",
+        "WS0002": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_amboss"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "xlu_bolton",
+        "WS0007": "xlu_bolton"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "xlu_phalanx_mg",
+        "WS0005": "xlu_phalanx_mg",
+        "WS0011": "flak",
+        "WS0012": "flak"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "vulcan",
+        "WS0014": "vulcan",
+        "WS0015": "pdlaser",
+        "WS0016": "pdlaser",
+        "WS0017": "pdlaser",
+        "WS0018": "pdlaser",
+        "WS0019": "vulcan",
+        "WS0020": "vulcan",
+        "WS0021": "vulcan",
+        "WS0022": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

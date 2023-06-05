@@ -1,0 +1,30 @@
+{
+	"id":"ocua_vira",
+	"specClass":"projectile",
+	"type":"ENERGY",
+	"size":"LARGE",
+	"displayArcRadius":600,
+	"turretSprite":"graphics/Oculian Armada/weapons/ocua_vira_turret_base.png",
+	"turretGlowSprite":"graphics/Oculian Armada/weapons/ocua_vira_turret_glow.png",
+	"hardpointSprite":"graphics/Oculian Armada/weapons/ocua_vira_hardpoint_base.png",
+	"hardpointGlowSprite":"graphics/Oculian Armada/weapons/ocua_vira_hardpoint_glow.png",
+	#"renderHints":["RENDER_BARREL_BELOW"],
+	"turretOffsets":[14, 5, 14, -5],
+	"turretAngleOffsets":[0, 0],
+	"hardpointOffsets":[19, 5, 19, -5],
+	"hardpointAngleOffsets":[0, 0],
+	"glowColor":[255,155,155,255],
+	"specialWeaponGlowWidth":12,
+	"specialWeaponGlowHeight":30,
+	"barrelMode":"ALTERNATING", # or LINKED.  whether barrels fire at the same time or alternate.
+	"animationType":"GLOW",
+	"muzzleFlashSpec":{"length":5.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":12.0,
+					   "particleSizeMin":12.0,
+					   "particleSizeRange":14.0,
+					   "particleDuration":0.1,
+					   "particleCount":4,
+					   "particleColor":[255,185,185,175]},
+	"projectileSpecId":"ocua_vira_shot",  # projectile that will be fired
+	"fireSoundOne":"ocua_vira_fire",
+}

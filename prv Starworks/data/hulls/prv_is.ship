@@ -7,28 +7,19 @@
   "height": 320,
   "width": 160,
   "center": [80, 160],
-  "collisionRadius": 180,
+  "collisionRadius": 170,
   "shieldCenter": [0, -0],
-  "shieldRadius": 170,
+  "shieldRadius": 165,
   "viewOffset": 0,
   "builtInMods": [
+    "prv_volatiledrivecore",
     "prv_ramshield",
     "prv_companion_integration"
   ],
   "builtInWeapons": {
     "DC0001": "prv_d_cover_is_nose",
-    "prv_ramshield": "prv_u_ramshield"
   },
   "weaponSlots": [
-    {
-      "id": "prv_ramshield",
-      "size": "SMALL",
-      "type": "DECORATIVE",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [-10, 0]
-    },
     {
       "id": "WS0001",
       "size": "LARGE",

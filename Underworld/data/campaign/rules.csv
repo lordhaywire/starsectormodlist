@@ -50,6 +50,12 @@ MakeOtherFleetPreventDisengage cabalExtortion false
 MakeOtherFleetAggressive cabalExtortion false
 AddText ""Have you bought anything from the exchanges at $Cabal_markets, recently?""
 FireAll PopulateOptions",,,
+greetingCabalHostilePalace,OpenCommLink,"$entity.isHostile
+$entity.uwIsPalace score:100
+CabalNormalTalk","$entity.ignorePlayerCommRequests = true 1
+$menuState = fleetConvMain 0
+AddText ""We are beyond your comprehension. The value of your fleet is a paltry $Cabal_netWorthString. The stars belong only to the opulent.""
+FireAll PopulateOptions",,,
 greetingCabalHostileWeaker,OpenCommLink,"$faction.id == cabal
 $entity.isHostile
 $entity.relativeStrength < 0
@@ -106,6 +112,7 @@ $ignorePlayerCommRequests = true 1
 $Cabal_toffmad = true 7",,,
 ,,,,,,
 CabalExtortionCheck,BeginFleetEncounter,"$faction.id == cabal score:100
+!$uwIsPalace
 RepIsAtBest $faction.id HOSTILE
 !$Cabal_extortionPaid
 !$Cabal_extortionAskedFor
@@ -117,6 +124,7 @@ CabalPickExtortionMethod
 AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.baseColor
 $hailing = true 0",,,
 CabalContributionCheck,BeginFleetEncounter,"$faction.id == cabal score:100
+!$uwIsPalace
 RepIsAtWorst $faction.id INHOSPITABLE
 !$Cabal_extortionPaid
 !$Cabal_extortionAskedFor
@@ -127,28 +135,38 @@ AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.base
 $hailing = true 0",,,
 ,,,,,,
 CabalExtortionTithe,OpenCommLink,"$entity.Cabal_extortionMethod == tithe score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid
 CabalTitheCalc","SetTextHighlights $Cabal_tithe_string
 $entity.ignorePlayerCommRequests = true 1
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""I can see that you are an individual of wealth, $playerName. Perhaps you can be convinced to start on the Starlight Path for a modest contribution of $Cabal_tithe_string credits.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""I can see that you are an individual of wealth, $playerName. Perhaps you can be convinced to start on the Starlight Path for a modest contribution of $Cabal_tithe_string credits.""
 
 The $personRank in the bright suit folds $hisOrHer arms. ""Or, we could do this the hard way. It's your call.""
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""You are quite wealthy, $playerName. An individual of your stature can surely start on the Starlight Path for a contribution of $Cabal_tithe_string credits.""
 
 The Cabalero points at you through the comms-link. ""Just remember, you reap what you sow.""
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""$playerName, your coffers are large enough for an introduction to the Starlight Path. With a contribution of $Cabal_tithe_string credits, you can come one step closer to enlightenment.""
 
 The comm abruptly cuts to stark black. ""Otherwise, I think you're going to have a bad time.""","payCabalTithe:Surrender $Cabal_tithe_string credits
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalContributionTithe,OpenCommLink,"$entity.Cabal_extortionMethod == tithe score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid
 CabalTitheCalc","SetTextHighlights $Cabal_tithe_string
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""We can see that you are an individual of wealth, $playerName. Perhaps you can be convinced to continue on the Starlight Path for a modest contribution of $Cabal_tithe_string credits.""","payCabalTithe:Contribute $Cabal_tithe_string credits
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""We can see that you are an individual of wealth, $playerName. Perhaps you can be convinced to continue on the Starlight Path for a modest contribution of $Cabal_tithe_string credits.""","payCabalTithe:Contribute $Cabal_tithe_string credits
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to pay",
 CabalTithePay,DialogOptionSelected,$option == payCabalTithe,"AddText ""Lost $Cabal_tithe_string credits"" textEnemyColor
@@ -159,18 +177,25 @@ AddText ""The $personFaction $personRank smiles and ends the connection.""
 FireAll CabalPayCommon",,cutCommLink:Cut the comm link,
 ,,,,,,
 CabalExtortionCargo,OpenCommLink,"$entity.Cabal_extortionMethod == cargo score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid
 CabalCargoCalc","SetTextHighlights $Cabal_cargo_amount_string
 $entity.ignorePlayerCommRequests = true 1
-FireBest CabalExtortionCargoChoices","""You're ferrying around quite a lot of cargo, $playerName. Maybe you can be convinced to start on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name.""
+FireBest CabalExtortionCargoChoices","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""You're ferrying around quite a lot of cargo, $playerName. Maybe you can be convinced to start on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name.""
 
 ""If not, then we've got a problem. Your choice."" The $personRank gives you an exaggerated wink.
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""Oh boy, $playerName, you've got an awful lot of cargo. I think you can start on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name to the cause.""
 
 ""Not that you've got much of a choice in the matter,"" the Cabal $personRank says while shrugging.
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""That's some valuable cargo in your holds, $playerName. Why not start on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name?""
 
 Golden teeth poke out as the $personRank smiles cockily. ""It will be a lot easier on the both of us if you do.""",,
@@ -187,10 +212,13 @@ questionCabalCargo:""Fuel? Do you take me for an idiot?""
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalContributionCargo,OpenCommLink,"$entity.Cabal_extortionMethod == cargo score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid
 CabalCargoCalc","SetTextHighlights $Cabal_cargo_amount_string
-FireBest CabalContributionCargoChoices","A triangular symbol appears on the comms-line. ""You've got some valuable cargo, $playerName. Maybe you can be convinced to continue on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name.""",,
+FireBest CabalContributionCargoChoices","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""You've got some valuable cargo, $playerName. Maybe you can be convinced to continue on the Starlight Path by donating $Cabal_cargo_amount_string $Cabal_cargo_name.""",,
 CabalContributionCargoDefault,CabalContributionCargoChoices,"$Cabal_cargo_id != supplies
 $Cabal_cargo_id != fuel","SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""",,"payCabalCargo:Donate $Cabal_cargo_amount_string $Cabal_cargo_name
 avoidCabalContribution:Try to impress the $personFaction $personRank
@@ -225,32 +253,42 @@ AddText ""The $personFaction $personRank smiles and ends the connection.""
 FireAll CabalPayCommon",,cutCommLink:Cut the comm link,
 ,,,,,,
 CabalExtortionWeapon,OpenCommLink,"$entity.Cabal_extortionMethod == weapon score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid
 CabalWeaponCalc","$entity.ignorePlayerCommRequests = true 1
 FireBest CabalExtortionWeaponTirades",,,
 CabalExtortionWeaponPlural,CabalExtortionWeaponTirades,$Cabal_weapon_amount == 1,"SetTextHighlights $Cabal_weapon_name
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""That is a shiny gun, $playerName. I hope you can be convinced to start on the Starlight Path by donating your $Cabal_weapon_name to the cause.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""That is a shiny gun, $playerName. I hope you can be convinced to start on the Starlight Path by donating your $Cabal_weapon_name to the cause.""
 
 The Cabal $personRank in a brightly-colored leotard paces impatiently. ""If not, then I'll take it by force. It's up to you, really.""","payCabalWeapon:Surrender $Cabal_weapon_name
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalExtortionWeaponSingular,CabalExtortionWeaponTirades,$Cabal_weapon_amount > 1,"SetTextHighlights $Cabal_weapon_amount_string $Cabal_weapon_names
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""Those are some shiny guns, $playerName. I hope you can be convinced to start on the Starlight Path by donating your $Cabal_weapon_amount_string $Cabal_weapon_names to the cause.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""Those are some shiny guns, $playerName. I hope you can be convinced to start on the Starlight Path by donating your $Cabal_weapon_amount_string $Cabal_weapon_names to the cause.""
 
 Behind a mahogany desk, the Cabal $personRank appears to be completely nude except for a large gold chain around the neck. ""If not, then I'll take them by force. It's up to you, really.""","payCabalWeapon:Surrender $Cabal_weapon_amount_string $Cabal_weapon_names
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalContributionWeapon,OpenCommLink,"$entity.Cabal_extortionMethod == weapon score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid
 CabalWeaponCalc",FireBest CabalContributionWeaponTirades,,,
 CabalContributionWeaponSingular,CabalContributionWeaponTirades,$Cabal_weapon_amount == 1,"SetTextHighlights $Cabal_weapon_name
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""Now that is a fine weapon, $playerName. Hopefully, you can be convinced to continue on the Starlight Path by donating that $Cabal_weapon_name to a greater cause.""","payCabalWeapon:Give $Cabal_weapon_name
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""Now that is a fine weapon, $playerName. Hopefully, you can be convinced to continue on the Starlight Path by donating that $Cabal_weapon_name to a greater cause.""","payCabalWeapon:Give $Cabal_weapon_name
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to give",
 CabalContributionWeaponPlural,CabalContributionWeaponTirades,$Cabal_weapon_amount > 1,"SetTextHighlights $Cabal_weapon_amount_string $Cabal_weapon_names
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""Now those are some fine weapons, $playerName. Hopefully, you can be convinced to continue on the Starlight Path by donating $Cabal_weapon_amount_string $Cabal_weapon_names to a greater cause.""","payCabalWeapon:Give $Cabal_weapon_amount_string $Cabal_weapon_names
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""Now those are some fine weapons, $playerName. Hopefully, you can be convinced to continue on the Starlight Path by donating $Cabal_weapon_amount_string $Cabal_weapon_names to a greater cause.""","payCabalWeapon:Give $Cabal_weapon_amount_string $Cabal_weapon_names
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to give",
 CabalWeaponPaySingular,DialogOptionSelected,"$option == payCabalWeapon
@@ -269,32 +307,42 @@ AddText ""The $personFaction $personRank smiles and ends the connection.""
 FireAll CabalPayCommon",,cutCommLink:Cut the comm link,
 ,,,,,,
 CabalExtortionFighter,OpenCommLink,"$entity.Cabal_extortionMethod == fighter score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid
 CabalFighterCalc","$entity.ignorePlayerCommRequests = true 1
 FireBest CabalExtortionFighterTirades",,,
 CabalExtortionFighterPlural,CabalExtortionFighterTirades,$Cabal_fighter_amount == 1,"SetTextHighlights $Cabal_fighter_name
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""Wowie, $playerName! What a rare LPC! I hope you will start on the Starlight Path by donating your $Cabal_fighter_name to a greater cause.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""Wowie, $playerName! What a rare LPC! I hope you will start on the Starlight Path by donating your $Cabal_fighter_name to a greater cause.""
 
 The Cabal $personRank chuckles to themself, reclining on a posh sofa installed in their bridge. ""Hurry up, won't you? I'm growing impatient.""","payCabalFighter:Surrender $Cabal_fighter_name
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalExtortionFighterSingular,CabalExtortionFighterTirades,$Cabal_fighter_amount > 1,"SetTextHighlights $Cabal_fighter_amount_string $Cabal_fighter_names
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""Amazing, $playerName! What a wonderful LPC collection! You had better start on the Starlight Path by donating your $Cabal_fighter_amount_string $Cabal_fighter_names to a greater cause.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""Amazing, $playerName! What a wonderful LPC collection! You had better start on the Starlight Path by donating your $Cabal_fighter_amount_string $Cabal_fighter_names to a greater cause.""
 
 The Cabal $personRank reclines on a posh sofa installed in their bridge, inspecting a handful of credit chits. ""Hurry up, darling! I grow impatient.""","payCabalFighter:Surrender $Cabal_fighter_amount_string $Cabal_fighter_names
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalContributionFighter,OpenCommLink,"$entity.Cabal_extortionMethod == fighter score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid
 CabalFighterCalc",FireBest CabalContributionFighterTirades,,,
 CabalContributionFighterSingular,CabalContributionFighterTirades,$Cabal_fighter_amount == 1,"SetTextHighlights $Cabal_fighter_name
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""I see you are in possession of a rare LPC, $playerName. I am sure you will continue on the Starlight Path by donating that $Cabal_fighter_name to a greater cause.""","payCabalFighter:Give $Cabal_fighter_name
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""I see you are in possession of a rare LPC, $playerName. I am sure you will continue on the Starlight Path by donating that $Cabal_fighter_name to a greater cause.""","payCabalFighter:Give $Cabal_fighter_name
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to give",
 CabalContributionFighterPlural,CabalContributionFighterTirades,$Cabal_fighter_amount > 1,"SetTextHighlights $Cabal_fighter_amount_string $Cabal_fighter_names
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""My scans show that you have quite the collection of LPCs, $playerName. I am certain you will continue on the Starlight Path by donating $Cabal_fighter_amount_string $Cabal_fighter_names to a greater cause.""","payCabalFighter:Give $Cabal_fighter_amount_string $Cabal_fighter_names
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""My scans show that you have quite the collection of LPCs, $playerName. I am certain you will continue on the Starlight Path by donating $Cabal_fighter_amount_string $Cabal_fighter_names to a greater cause.""","payCabalFighter:Give $Cabal_fighter_amount_string $Cabal_fighter_names
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to give",
 CabalFighterPaySingular,DialogOptionSelected,"$option == payCabalFighter
@@ -313,28 +361,38 @@ AddText ""The $personFaction $personRank smiles and ends the connection.""
 FireAll CabalPayCommon",,cutCommLink:Cut the comm link,
 ,,,,,,
 CabalExtortionShip,OpenCommLink,"$entity.Cabal_extortionMethod == ship score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid
 CabalShipCalc","$entity.ignorePlayerCommRequests = true 1
 SetTextHighlights $Cabal_ship_name
-SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","""You have an excellent taste in ships, $playerName. I think you can start on the Starlight Path by graciously donating the $Cabal_ship_name to the cause.""
+SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-talked a Cabalero""","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""You have an excellent taste in ships, $playerName. I think you can start on the Starlight Path by graciously donating the $Cabal_ship_name to the cause.""
 
 The Cabalero looks at you through a pair of blinders. ""It would be a shame if it got damaged. But that's your choice, not mine.""
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""$playerName, that ship of yours is positively delicious! I think you can start on the Starlight Path by giving the $Cabal_ship_name to a greater cause.""
 
 The $personRank spins around on an office chair. ""Or we could just take it, you know. It's up to you.""
 OR
+Loud and obnoxious music immediately starts to play through the comms-line.
+
 ""Phew, what a beauty that ship is! $playerName, you have a great opportunity to start on the Starlight Path - by sharing the $Cabal_ship_name with the Cabal.""
 
 ""Sharing is caring, $playerName. If you're not in the caring mood, you will just have to be punished."" The Cabal $personRank waggles a ring-adorned finger at you, disapprovingly.","payCabalShip:Surrender $Cabal_ship_name, $Cabal_ship_hull_full
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalContributionShip,OpenCommLink,"$entity.Cabal_extortionMethod == ship score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid
 CabalShipCalc","SetTextHighlights $Cabal_ship_name
-SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line. ""That is an excellent fleet in your employ, $playerName. I hope you will continue on the Starlight Path by graciously donating the $Cabal_ship_name to a greater cause.""","payCabalShip:Give $Cabal_ship_name, $Cabal_ship_hull_full
+SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""That is an excellent fleet in your employ, $playerName. I hope you will continue on the Starlight Path by graciously donating the $Cabal_ship_name to a greater cause.""","payCabalShip:Give $Cabal_ship_name, $Cabal_ship_hull_full
 avoidCabalContribution:Try to impress the $personFaction $personRank
 cabalRefuse:Refuse to give",
 CabalShipPay,DialogOptionSelected,$option == payCabalShip,"AddText ""Lost $Cabal_ship_name"" textEnemyColor
@@ -345,24 +403,35 @@ AddText ""The $personFaction $personRank smiles and ends the connection.""
 FireAll CabalPayCommon",,cutCommLink:Cut the comm link,
 ,,,,,,
 CabalExtortionNoneVengeful,OpenCommLink,"$entity.Cabal_extortionMethod == none score:100
+$faction.id == cabal
 RepIsAtBest $faction.id VENGEFUL score:100
 !$entity.Cabal_extortionPaid","MakeOtherFleetPreventDisengage cabalExtortion true
 MakeOtherFleetAggressive cabalExtortion true
-$entity.ignorePlayerCommRequests = true 1","""What a loser! Your coffers are so empty that it's not even worth asking you for a contribution. Prepare to burn, lowlife scum!"" The Cabal $personRank regards you as though you are a pile of excrement.",cutCommLink:Cut the comm link,
+$entity.ignorePlayerCommRequests = true 1","Loud and obnoxious music immediately starts to play through the comms-line.
+
+""What a loser! Your coffers are so empty that it's not even worth asking you for a contribution. Prepare to burn, lowlife scum!"" The Cabal $personRank regards you as though you are a pile of excrement.",cutCommLink:Cut the comm link,
 CabalExtortionNoneHostile,OpenCommLink,"$entity.Cabal_extortionMethod == none score:100
+$faction.id == cabal
 RepIsAtBest $faction.id HOSTILE
 !$entity.Cabal_extortionPaid","MakeOtherFleetPreventDisengage cabalExtortion false
 MakeOtherFleetAggressive cabalExtortion false
 MakeOtherFleetNonHostile cabalExtortion true 7
-$entity.ignorePlayerCommRequests = true 0","A triangular symbol appears on the comms-line. ""Attention, captain: your assets are worth a paltry $Cabal_netWorthString! Poverty is a sin, as you should be well aware. You must obtain more wealth before you are worthy to start on the Starlight Path.""
+$entity.ignorePlayerCommRequests = true 0","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""Attention, captain: your assets are worth a paltry $Cabal_netWorthString! Poverty is a sin, as you should be well aware. You must obtain more wealth before you are worthy to start on the Starlight Path.""
 OR
-A laughing $personFaction $personRank appears on screen long enough to laugh at you piteously. ""I'll let you go, little pauper! Wouldn't want to cut into profits by wasting time swatting every little fly in my path, would I?"" You are given a mocking wave good-bye before the comms-line cuts out.",cutCommLink:Cut the comm link,
+Loud and obnoxious music immediately starts to play through the comms-line.
+
+A laughing $personFaction $personRank appears on screen long enough to laugh at you piteously. ""I'll let you go, little pauper! Wouldn't want to cut into profits by wasting time swatting every little fly in my path, would I?"" You are given a mocking wave good-bye before the comms-line - and the music - cuts out.",cutCommLink:Cut the comm link,
 CabalExtortionNoneFriendly,OpenCommLink,"$entity.Cabal_extortionMethod == none score:100
+$faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
 !$entity.Cabal_extortionPaid","MakeOtherFleetPreventDisengage cabalExtortion false
 MakeOtherFleetAggressive cabalExtortion false
 MakeOtherFleetNonHostile cabalExtortion true 7
-$entity.ignorePlayerCommRequests = true 0","A triangular symbol appears on the comms-line. ""You're quite... unwealthy, aren't you? Your assets are only worth $Cabal_netWorthString! You should amass some more wealth, $playerName. As you know, it's a sin to be poor.""",cutCommLink:Cut the comm link,
+$entity.ignorePlayerCommRequests = true 0","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
+
+""You're quite... unwealthy, aren't you? Your assets are only worth $Cabal_netWorthString! You should amass some more wealth, $playerName. As you know, it's a sin to be poor.""",cutCommLink:Cut the comm link,
 CabalCommFallback,OpenCommLink,$faction.id == cabal,"ShowDefaultVisual
 MakeOtherFleetPreventDisengage cabalExtortion false
 MakeOtherFleetAggressive cabalExtortion false

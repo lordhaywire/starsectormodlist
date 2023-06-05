@@ -1,12 +1,13 @@
 {
     "displayName": "Strike",
-    "fluxCapacitors": 30,
+    "fluxCapacitors": 25,
     "fluxVents": 21,
     "goalVariant": true,
     "hullId": "uw_renegade",
     "hullMods": [
-        "targetingunit",
-        "missleracks"
+        "missleracks",
+        "missile_autoloader",
+        "ballistic_rangefinder"
     ],
     "permaMods": [],
     "sMods": [],
@@ -15,14 +16,14 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS0001": "hurricane"}
+            "weapons": {"WS0001": "hammerrack"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS0003": "harpoonpod",
-                "WS0008": "harpoon"
+                "WS0003": "typhoon",
+                "WS0008": "atropos"
             }
         },
         {
@@ -38,14 +39,14 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS0007": "hveldriver"}
+            "weapons": {"WS0007": "arbalest"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0004": "hveldriver",
-                "WS0005": "hveldriver"
+                "WS0004": "arbalest",
+                "WS0005": "arbalest"
             }
         },
         {
@@ -57,7 +58,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS0006": "dualflak",
+                "WS0006": "flak",
                 "WS0013": "vulcan",
                 "WS0014": "vulcan",
                 "WS0015": "vulcan",

@@ -1,0 +1,39 @@
+{
+  "variantId": "xlu_tin_forty_Bombard",
+  "hullId": "xlu_tin_forty",
+  "displayName": "Bombard",
+  "goalVariant": true,
+  "fluxCapacitors": 5,
+  "fluxVents": 7,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "xlu_crew_warshots"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "xlu_warbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "xlu_stubbon"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_gattler"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

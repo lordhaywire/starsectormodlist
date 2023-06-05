@@ -1,0 +1,35 @@
+{
+  "variantId": "xlu_lead_Strike",
+  "hullId": "xlu_lead",
+  "displayName": "Strike",
+  "goalVariant": true,
+  "fluxCapacitors": 2,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "fluxdistributor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "xlu_shotcannon_s",
+        "WS0004": "xlu_shotcannon_s",
+        "WS0005": "xlu_shotcannon_s"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "xlu_bolton",
+        "WS0002": "xlu_bolton"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

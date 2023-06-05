@@ -1,0 +1,16 @@
+id,type,text1,text2,text3,notes
+# SHIPS SHIPS SHIPS,,,,,
+dram_lp_ied,SHIP,"An improvised explosive Dram, this stripped-back hull is filled with explosives and crewed by Martyrs, who are willing to sell their lives dearly for Ludd.
+
+This oversized improvised explosive device a simple Dram loaded with fuel and precisely placed explosives, which on activation gradual begins to leak Infernium into surrounding space, before the explosives trigger and ignite the fuel. The resulting explosion is devastating against anything in range. Luckily, the crude nature of the ship prevents the explosion from being very large, and the ship itself is incredibly fragile, meaning it can be avoided either by keeping distance or shooting the vessel before it comes too close.",,,
+phaeton_lp_ied,SHIP,"An improvised explosive Phaeton, this stripped-back hull is filled with explosives and crewed by Martyrs, who are willing to sell their lives dearly for Ludd.
+
+This oversized improvised explosive device is a simple Phaeton loaded with fuel and precisely placed explosives, which on activation gradual begins to leak Infernium into surrounding space, before the explosives trigger and ignite the fuel. The resulting explosion is devastating against anything in range. Luckily, the ship itself is incredibly fragile, meaning it can be avoided either by keeping distance or shooting the vessel before it comes too close. Unluckily, this vessel is able to pack more fuel and more explosive, greatly enhancing its destructive reach.",,,
+prometheus_lp_ied,SHIP,"An improvised explosive Prometheus, this stripped-back hull is filled with explosives and crewed by Martyrs, who are willing to sell their lives dearly for Ludd.
+
+This oversized improvised explosive device a simple Prometheus loaded with fuel and precisely placed explosives, which on activation gradual begins to leak Infernium into surrounding space, before the explosives trigger and ignite the fuel. The resulting explosion is devastating against anything in range. Luckily, the ship itself is incredibly fragile, meaning it can be avoided either by keeping distance or shooting the vessel before it comes too close - something that should be easy to accomplish considering the slow speed of the craft. Unluckily, this vessel is able to pack a frightening amount of missile armament, greatly enhancing its destructive reach.",,,
+,,,,,
+#Light of Ludd,,,,,
+le_explode_dram,SHIP_SYSTEM,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",Special,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",
+le_explode_phaeton,SHIP_SYSTEM,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",Special,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",
+le_explode_prometheus,SHIP_SYSTEM,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",Special,"The Light of Ludd is released, the lies of Moloch are laid bare, and all are purified with Divine Fire.",

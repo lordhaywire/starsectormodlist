@@ -20,28 +20,29 @@ import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.FleetTypes;
 import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
+import com.fs.starfarer.api.impl.campaign.intel.bases.LuddicPathBaseManager;
 import com.fs.starfarer.api.impl.campaign.intel.bases.PirateBaseManager;
+import com.fs.starfarer.api.impl.campaign.intel.events.HostileActivityEventIntel;
 import com.fs.starfarer.api.impl.campaign.rulecmd.CabalPickContributionMethod;
 import com.fs.starfarer.api.util.IntervalUtil;
 import com.fs.starfarer.api.util.Misc;
 import data.scripts.UnderworldModPlugin;
-import java.io.IOException;
 import java.util.List;
-import org.json.JSONException;
-import org.json.JSONObject;
+import java.util.Random;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.lazywizard.lazylib.MathUtils;
 
 public class UW_CabalFleetManager extends DisposableFleetManager {
 
-    public static float CABAL_FLEET_FACTOR = 1f;
+    private static final Logger LOG = Global.getLogger(UW_CabalFleetManager.class);
+    private static final boolean DEBUG2 = false;
+    private static final float MAX_LY_FROM_CABAL = 15f;
+    private static final float MAX_LY_FROM_PALACE = 5f;
 
-    private static final float MAX_LY_FROM_CABAL = 20f; // This effectively becomes 10 LY because of the rounding
-    private static final String SETTINGS_FILE = "UNDERWORLD_OPTIONS.ini";
-
-    public static void reloadSettings() throws IOException, JSONException {
-        JSONObject settings = Global.getSettings().loadJSON(SETTINGS_FILE);
-
-        CABAL_FLEET_FACTOR = (float) settings.getDouble("cabalFleetFactor");
+    static {
+        LOG.setLevel(Level.INFO);
     }
 
     @Override
@@ -57,7 +58,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
 
     @Override
     protected int getMaxFleets() {
-        if (!UnderworldModPlugin.Module_StarlightCabal) {
+        if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
             return 0;
         }
 
@@ -67,29 +68,114 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
 
     @Override
     protected int getDesiredNumFleetsForSpawnLocation() {
-        if (!UnderworldModPlugin.Module_StarlightCabal) {
+        if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
             return 0;
         }
 
-        MarketAPI largestMarketNearby = getLargestMarket();
-        MarketAPI closestMarket = getClosestCabal();
+        MarketAPI largestCoreMarketNearby = getLargestCoreMarket();
+        MarketAPI closestCabalMarket = getClosestCabal();
 
         float desiredNumFleets;
-        if (closestMarket == null) {
-            desiredNumFleets = 0f;
+        if (closestCabalMarket == null) {
+            if (DEBUG2) {
+                LOG.info("Cabal is destroyed.  No fleet spawns possible.");
+            }
+            return 0;
         } else {
-            float distScale = 1f - Math.min(1f, Misc.getDistanceToPlayerLY(closestMarket.getLocationInHyperspace()) / MAX_LY_FROM_CABAL);
+            float distScale = Math.max(0f, 1f - Misc.getDistanceToPlayerLY(closestCabalMarket.getLocationInHyperspace()) / MAX_LY_FROM_CABAL);
             desiredNumFleets = 1f * distScale;
         }
+        if (DEBUG2) {
+            LOG.info("Fleets from proximity to Cabal: " + desiredNumFleets);
+        }
 
-        if (largestMarketNearby != null) {
-            desiredNumFleets += Math.max(0f, (largestMarketNearby.getSize() - 3f) * 0.5f);
+        float fromNearbyMarket = 0f;
+        if (largestCoreMarketNearby != null) {
+            fromNearbyMarket = Math.max(0f, (largestCoreMarketNearby.getSize() - 4f) * 0.5f);
+            desiredNumFleets += fromNearbyMarket;
+        }
+        if (DEBUG2) {
+            LOG.info("Fleets from large nearby market: " + fromNearbyMarket);
         }
 
         int level = getCabalLevel();
         desiredNumFleets += level * 0.5f;
+        if (DEBUG2) {
+            LOG.info("Fleets from Cabal affinity nearby: " + level * 0.5f);
+        }
+        float haLevel = getHALevel();
+        desiredNumFleets += haLevel;
+        if (DEBUG2) {
+            LOG.info("Fleets from Hostile Activity: " + haLevel);
+        }
 
-        return (int) Math.round(desiredNumFleets * CABAL_FLEET_FACTOR);
+        float palaceProx = 0f;
+        for (EveryFrameScript script : Global.getSector().getScripts()) {
+            if (script instanceof UW_PalaceFleet) {
+                CampaignFleetAPI fleet = ((UW_PalaceFleet) script).getFleet();
+                if ((fleet != null) && fleet.isAlive()) {
+                    float distScale = Math.max(0f, 1f - Misc.getDistanceToPlayerLY(fleet.getLocationInHyperspace()) / MAX_LY_FROM_PALACE);
+                    palaceProx = 2f * distScale;
+                }
+            }
+        }
+        desiredNumFleets += palaceProx;
+        if (DEBUG2) {
+            LOG.info("Fleets from proximity to a Palace: " + palaceProx);
+        }
+
+        int result = (int) Math.round(desiredNumFleets * UnderworldModPlugin.getCabalFleetFactor());
+        if (DEBUG2) {
+            LOG.info("Total desired num fleets: " + result);
+        }
+        return result;
+    }
+
+    protected float getHALevel() {
+        if (currSpawnLoc == null) {
+            return 0;
+        }
+        HostileActivityEventIntel intel = HostileActivityEventIntel.get();
+        if (intel == null) {
+            return 0;
+        }
+
+        Long timestamp = intel.getPlayerVisibleTimestamp();
+        if (timestamp != null) {
+            float daysSince = Global.getSector().getClock().getElapsedDaysSince(timestamp);
+            if (daysSince < 30) {
+                return 0;
+            }
+        }
+
+        float mag = intel.getTotalActivityMagnitude(currSpawnLoc);
+        float mag2 = intel.getProgressFraction();
+        mag = Misc.interpolate(mag, mag2, 0.5f);
+
+        if (mag <= 0f) {
+            return 0;
+        }
+
+        int shinies = 0;
+        List<MarketAPI> markets = Misc.getMarketsInLocation(currSpawnLoc, Factions.PLAYER);
+        for (MarketAPI market : markets) {
+            if (market.getSize() >= 5) {
+                shinies++;
+            }
+            if (market.getSize() >= 6) {
+                shinies++;
+            }
+            shinies += Math.round(LuddicPathBaseManager.getLuddicPathMarketInterest(market) / 4f);
+            shinies += Math.round(market.getNetIncome() / 50000f);
+        }
+        mag *= (float) Math.sqrt(shinies / 4f);
+
+        float max = Global.getSettings().getFloat("maxHostileActivityFleetsPerSystem");
+        if (mag >= (max / 2f)) {
+            mag = max / 2f;
+        }
+
+        return mag;
     }
 
     protected int getCabalLevel() {
@@ -126,7 +212,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         }
 
         MarketAPI closest = null;
-        float minDistance = 100000f;
+        float minDistance = 1000000f;
         for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()) {
             if (market.isHidden()) {
                 continue;
@@ -153,8 +239,11 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         return closest;
     }
 
-    protected MarketAPI getLargestMarket() {
+    protected MarketAPI getLargestCoreMarket() {
         if (currSpawnLoc == null) {
+            return null;
+        }
+        if (!currSpawnLoc.hasTag(Tags.THEME_CORE) && !currSpawnLoc.hasTag(Tags.THEME_CORE_UNPOPULATED) && !currSpawnLoc.hasTag(Tags.THEME_CORE_POPULATED)) {
             return null;
         }
 
@@ -192,20 +281,9 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         return 20f;
     }
 
-    @Override
-    protected CampaignFleetAPI spawnFleetImpl() {
-        if (!UnderworldModPlugin.Module_StarlightCabal) {
-            return null;
-        }
-
-        StarSystemAPI system = currSpawnLoc;
-        if (system == null) {
-            return null;
-        }
-
-        float combat = MathUtils.getRandomNumberInRange(20f, MathUtils.getRandomNumberInRange(40f, MathUtils.getRandomNumberInRange(80f, 160f)));
-
-        float timeFactor = (PirateBaseManager.getInstance().getDaysSinceStart() - 180f) / (365f * 2f);
+    public static float cabalScaler(Random rand, boolean palace) {
+        float scale = 1f;
+        float timeFactor = (PirateBaseManager.getInstance().getDaysSinceStart() - 180f) / (365f * 3f);
         if (timeFactor < 0f) {
             timeFactor = 0f;
         }
@@ -215,26 +293,36 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         if (timeFactor > 2f) {
             timeFactor = 2f;
         }
-        combat *= 1f + MathUtils.getRandomNumberInRange(0f, timeFactor);
+        if (palace) {
+            scale *= 1f + (float) Math.sqrt(rand.nextFloat()) * timeFactor;
+        } else {
+            scale *= 1f + (rand.nextFloat() * timeFactor);
+        }
         float levelFactor = 0f;
         if (Global.getSector().getPlayerPerson() != null) {
-            levelFactor = Global.getSector().getPlayerPerson().getStats().getLevel() / 50f;
+            levelFactor = Math.min(15f, Global.getSector().getPlayerPerson().getStats().getLevel()) / 50f;
         }
-        combat *= 1f + MathUtils.getRandomNumberInRange(0f, levelFactor);
+        if (palace) {
+            scale *= 1f + (float) Math.sqrt(rand.nextFloat()) * levelFactor;
+        } else {
+            scale *= 1f + (rand.nextFloat() * levelFactor);
+        }
+        return scale;
+    }
 
-        float freighter = 0f;
-        float tanker = 0f;
-        float utility = 0f;
+    @Override
+    protected CampaignFleetAPI spawnFleetImpl() {
+        if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
+            return null;
+        }
 
-        if (Math.random() < (combat / 200f)) {
-            freighter = Math.round(combat * MathUtils.getRandomNumberInRange(0f, 0.1f));
+        StarSystemAPI system = currSpawnLoc;
+        if (system == null) {
+            return null;
         }
-        if (Math.random() < (combat / 400f)) {
-            tanker = Math.round(combat * MathUtils.getRandomNumberInRange(0f, 0.1f));
-        }
-        if (Math.random() < (combat / 600f)) {
-            utility = Math.round((freighter + tanker) * MathUtils.getRandomNumberInRange(0f, 0.5f));
-        }
+
+        float combat = MathUtils.getRandomNumberInRange(20f, MathUtils.getRandomNumberInRange(40f, MathUtils.getRandomNumberInRange(80f, 160f)));
+        combat *= cabalScaler(new Random(), false);
 
         String fleetType;
         if (combat < 50) {
@@ -252,52 +340,52 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
                 2f,
                 fleetType,
                 combat, // combatPts
-                freighter, // freighterPts
-                tanker, // tankerPts
+                0f, // freighterPts
+                0f, // tankerPts
                 0f, // transportPts
                 0f, // linerPts
-                utility, // utilityPts
+                0f, // utilityPts
                 0 // qualityBonus
         );
 
         FactionDoctrineAPI doctrine = Global.getSector().getFaction("cabal").getDoctrine().clone();
 
         CabalFleetType cabalFleetType;
-        if (combat < 80 && Math.random() < 0.3) {
+        if ((combat < 80) && (Math.random() < 0.3)) {
             cabalFleetType = CabalFleetType.FRIGATES;
             doctrine.setShipSize(1);
+            doctrine.setWarships(5);
+            doctrine.setCarriers(0);
+            doctrine.setPhaseShips(2);
+        } else if ((combat >= 40) && (combat < 120) && (Math.random() < 0.3)) {
+            cabalFleetType = CabalFleetType.DESTROYERS;
+            doctrine.setShipSize(2);
             doctrine.setWarships(4);
             doctrine.setCarriers(1);
             doctrine.setPhaseShips(2);
-        } else if (combat >= 40 && combat < 120 && Math.random() < 0.3) {
-            cabalFleetType = CabalFleetType.DESTROYERS;
-            doctrine.setShipSize(2);
-            doctrine.setWarships(3);
-            doctrine.setCarriers(1);
-            doctrine.setPhaseShips(3);
-        } else if (combat >= 80 && Math.random() < 0.3) {
+        } else if ((combat >= 80) && (Math.random() < 0.3)) {
             cabalFleetType = CabalFleetType.CRUISERS;
             doctrine.setShipSize(4);
-            doctrine.setWarships(3);
+            doctrine.setWarships(4);
             doctrine.setCarriers(1);
-            doctrine.setPhaseShips(3);
-        } else if (combat >= 120 && Math.random() < 0.3) {
+            doctrine.setPhaseShips(2);
+        } else if ((combat >= 120) && (Math.random() < 0.3)) {
             cabalFleetType = CabalFleetType.CAPITALS;
             doctrine.setShipSize(5);
             doctrine.setWarships(4);
             doctrine.setCarriers(1);
             doctrine.setPhaseShips(2);
-        } else if (combat >= 60 && Math.random() < 0.4) {
+        } else if ((combat >= 60) && (Math.random() < 0.4)) {
             cabalFleetType = CabalFleetType.CARRIERS;
             doctrine.setShipSize(4);
-            doctrine.setWarships(1);
+            doctrine.setWarships(2);
             doctrine.setCarriers(5);
-            doctrine.setPhaseShips(1);
-        } else if (combat >= 60 && combat <= 140 && Math.random() < 0.4) {
+            doctrine.setPhaseShips(0);
+        } else if ((combat >= 60) && (combat <= 140) && (Math.random() < 0.4)) {
             cabalFleetType = CabalFleetType.PHASE;
             doctrine.setShipSize(3);
-            doctrine.setWarships(1);
-            doctrine.setCarriers(1);
+            doctrine.setWarships(2);
+            doctrine.setCarriers(0);
             doctrine.setPhaseShips(5);
         } else {
             cabalFleetType = CabalFleetType.BALANCED;
@@ -366,14 +454,10 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
 
         fleet.addScript(new ScrewWithPlayer(fleet));
 
-        int nf = getDesiredNumFleetsForSpawnLocation();
-
         /* Avoid hyperspace build-up */
-        if (nf == 1) {
-            setLocationAndOrders(fleet, 1f, 1f);
-        } else {
-            setLocationAndOrders(fleet, 0.5f, 0.5f);
-        }
+        int nf = getDesiredNumFleetsForSpawnLocation();
+        float hyperProb = (float) Math.sqrt(0.5f / nf);
+        setLocationAndOrders(fleet, hyperProb, hyperProb);
 
         return fleet;
     }
@@ -490,7 +574,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             }
 
             if (tracker.intervalElapsed() && (timerGlobal <= 0f)) {
-                doFactionChange();
+                doFactionChange(fleet, false);
 
                 CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
                 if (playerFleet == null) {
@@ -511,7 +595,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
 
                 VisibilityLevel level = playerFleet.getVisibilityLevelTo(fleet);
                 if (level == VisibilityLevel.COMPOSITION_AND_FACTION_DETAILS) {
-                    float chance = CabalPickContributionMethod.playerNetWorth(fleet) / 1000000f;
+                    float chance = CabalPickContributionMethod.playerNetWorth() / 1000000f;
                     if (Math.random() < chance) {
                         Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_PURSUE_PLAYER, "cabalScrewWithPlayer", true, chaseDuration);
                         Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_STICK_WITH_PLAYER_IF_ALREADY_TARGET, "cabalScrewWithPlayer", true, chaseDuration);
@@ -540,7 +624,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             return false;
         }
 
-        private void doFactionChange() {
+        public static void doFactionChange(CampaignFleetAPI fleet, boolean isPalace) {
             boolean canSeePlayer = false;
             MemoryAPI mem = fleet.getMemoryWithoutUpdate();
 
@@ -566,55 +650,72 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
                 return;
             }
 
-            float cabalWeakerTotal = getWeakerTotalForFaction(Global.getSector().getFaction("cabal"));
-            float cabalStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction("cabal"));
+            float cabalWeakerTotal = getWeakerTotalForFaction(Global.getSector().getFaction("cabal"), fleet);
+            float cabalStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction("cabal"), fleet);
             float cabalDecisionLevel = 0f;
             if (cabalWeakerTotal >= 1f) {
                 cabalDecisionLevel += Math.min(1f, fleetStrength / cabalWeakerTotal);
             }
             cabalDecisionLevel -= (float) Math.sqrt(cabalStrongerTotal / fleetStrength);
-            float worthLevel = CabalPickContributionMethod.playerNetWorth(fleet) / 1000000f;
+            float worthLevel = CabalPickContributionMethod.playerNetWorth() / 1000000f;
             if (canSeePlayer) {
                 cabalDecisionLevel += 1f * Math.min(1f, worthLevel);
             }
             if (mem.getBoolean(MemFlags.MEMORY_KEY_PURSUE_PLAYER)) {
                 cabalDecisionLevel += 2f * Math.min(1f, worthLevel);
             }
+            if (isPalace) {
+                cabalDecisionLevel += 1f;
+            }
+
+            // Always Cabal in non-core
+            StarSystemAPI nearest = pickNearestPopulatedSystem();
+            if ((nearest == null) || nearest.hasTag(Tags.THEME_CORE) || nearest.hasTag(Tags.THEME_CORE_UNPOPULATED) || nearest.hasTag(Tags.THEME_CORE_POPULATED)) {
+                cabalDecisionLevel = 10f;
+            }
 
             if (cabalDecisionLevel >= 0.25f) {
                 if (!fleet.getFaction().getId().contentEquals("cabal")) {
-                    fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, true);
-                    fleet.setNoFactionInName(false);
+                    if (!isPalace) {
+                        fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, true);
+                        fleet.setNoFactionInName(false);
+                    }
                     fleet.setFaction("cabal", true);
                     Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_NO_REP_IMPACT, "cabal_disguise", false, 0);
                     Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_LOW_REP_IMPACT, "cabal_disguise", false, 0);
-                    Misc.clearFlag(mem, MemFlags.MEMORY_KEY_MAKE_HOSTILE_WHILE_TOFF);
+                    if (!isPalace) {
+                        Misc.clearFlag(mem, MemFlags.MEMORY_KEY_MAKE_HOSTILE_WHILE_TOFF);
+                    }
                 }
             } else {
-                Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_PURSUE_PLAYER, "cabalScrewWithPlayer", false, 0f);
-                Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_STICK_WITH_PLAYER_IF_ALREADY_TARGET, "cabalScrewWithPlayer", false, 0f);
-                Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_ALLOW_LONG_PURSUIT, "cabalScrewWithPlayer", false, 0f);
+                if (!isPalace) {
+                    Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_PURSUE_PLAYER, "cabalScrewWithPlayer", false, 0f);
+                    Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_STICK_WITH_PLAYER_IF_ALREADY_TARGET, "cabalScrewWithPlayer", false, 0f);
+                    Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_ALLOW_LONG_PURSUIT, "cabalScrewWithPlayer", false, 0f);
+                }
 
-                float tritachyonStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.TRITACHYON));
+                float tritachyonStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.TRITACHYON), fleet);
                 float tritachyonDecisionLevel = 1f - (tritachyonStrongerTotal / fleetStrength);
 
-                float independentStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.INDEPENDENT));
+                float independentStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.INDEPENDENT), fleet);
                 float independentDecisionLevel = 0.5f - (independentStrongerTotal / fleetStrength);
 
-                float pirateStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.PIRATES));
+                float pirateStrongerTotal = getStrongerTotalForFaction(Global.getSector().getFaction(Factions.PIRATES), fleet);
                 float pirateDecisionLevel = 0f - (pirateStrongerTotal / fleetStrength);
 
-                if ((pirateDecisionLevel > tritachyonDecisionLevel) && (pirateDecisionLevel > independentDecisionLevel)) {
+                if (!isPalace && (pirateDecisionLevel > tritachyonDecisionLevel) && (pirateDecisionLevel > independentDecisionLevel)) {
                     fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, true);
                     fleet.setNoFactionInName(true);
                     fleet.setFaction(Factions.PIRATES, true);
-                } else if (independentDecisionLevel > tritachyonDecisionLevel) {
+                } else if (!isPalace && (independentDecisionLevel > tritachyonDecisionLevel)) {
                     fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, false);
                     fleet.setNoFactionInName(false);
                     fleet.setFaction(Factions.INDEPENDENT, true);
                 } else {
-                    fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, false);
-                    fleet.setNoFactionInName(false);
+                    if (!isPalace) {
+                        fleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_PIRATE, false);
+                        fleet.setNoFactionInName(false);
+                    }
                     fleet.setFaction(Factions.TRITACHYON, true);
                 }
                 Misc.setFlagWithReason(mem, MemFlags.MEMORY_KEY_NO_REP_IMPACT, "cabal_disguise", true, 99999);
@@ -622,7 +723,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             }
         }
 
-        private float getWeakerTotalForFaction(FactionAPI faction) {
+        public static float getWeakerTotalForFaction(FactionAPI faction, CampaignFleetAPI fleet) {
             List<CampaignFleetAPI> visible = Misc.getVisibleFleets(fleet, false);
             float weakerTotal = 0f;
             for (CampaignFleetAPI other : visible) {
@@ -643,7 +744,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             return weakerTotal;
         }
 
-        private float getStrongerTotalForFaction(FactionAPI faction) {
+        public static float getStrongerTotalForFaction(FactionAPI faction, CampaignFleetAPI fleet) {
             List<CampaignFleetAPI> visible = Misc.getVisibleFleets(fleet, false);
             float strongerTotal = 0f;
             for (CampaignFleetAPI other : visible) {
@@ -662,6 +763,49 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             }
 
             return strongerTotal;
+        }
+
+        public static StarSystemAPI pickNearestPopulatedSystem() {
+            if (Global.getSector().isInNewGameAdvance()) {
+                return null;
+            }
+            CampaignFleetAPI player = Global.getSector().getPlayerFleet();
+            if (player == null) {
+                return null;
+            }
+            StarSystemAPI nearest = null;
+            float minDist = Float.MAX_VALUE;
+            for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()) {
+                if (market.isHidden()) {
+                    continue;
+                }
+
+                if (market.isPlayerOwned() && (market.getSize() <= 3)) {
+                    continue;
+                }
+                if (!market.hasSpaceport()) {
+                    continue;
+                }
+
+                float distToPlayerLY = Misc.getDistanceLY(player.getLocationInHyperspace(), market.getLocationInHyperspace());
+
+                if (distToPlayerLY > (MAX_RANGE_FROM_PLAYER_LY * 3f)) {
+                    continue;
+                }
+
+                if ((distToPlayerLY < minDist) && (market.getStarSystem() != null)) {
+                    if (market.getStarSystem().getStar() != null) {
+                        if (market.getStarSystem().getStar().getSpec().isPulsar()) {
+                            continue;
+                        }
+                    }
+
+                    nearest = market.getStarSystem();
+                    minDist = distToPlayerLY;
+                }
+            }
+
+            return nearest;
         }
     }
 

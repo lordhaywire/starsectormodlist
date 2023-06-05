@@ -1,60 +1,64 @@
 {
-  "displayName": "Residential",
-  "fluxCapacitors": 10,
-  "fluxVents": 23,
-  "goalVariant": false,
+  "variantId": "prv_gabbro_res",
   "hullId": "prv_gabbro",
+  "displayName": "Residential",
+  "goalVariant": false,
+  "fluxCapacitors": 8,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
   "hullMods": [
     "prv_crewcomforts",
     "blast_doors",
     "dedicated_targeting_core"
   ],
-  "modules": [],
-  "permaMods": [],
-  "quality": 0,
-  "variantId": "prv_gabbro_res",
   "weaponGroups": [
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 003": "arbalest",
-        "WS0003": "arbalest"
+        "WS 001": "arbalest",
+        "WS 002": "arbalest",
+        "WS 004": "arbalest",
+        "WS0001": "vulcan",
+        "WS0002": "vulcan",
+        "WS0005": "arbalest"
       }
     },
     {
       "autofire": false,
-      "mode": "LINKED",
+      "mode": "ALTERNATING",
       "weapons": {
-        "WS0004": "pilum"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "irpulse",
-        "WS0002": "irpulse"
+        "WS0009": "swarmer",
+        "WS0010": "swarmer"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "lightmortar"
+        "WS 005": "lightac",
+        "WS 006": "lightac",
+        "WS0004": "lightac",
+        "WS0008": "lightac",
+        "WS0011": "lightac",
+        "WS0012": "lightac"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 002": "vulcan",
-        "WS 004": "vulcan",
-        "WS 005": "vulcan",
-        "WS 006": "vulcan",
-        "WS0005": "mininglaser"
+        "WS 003": "flak",
+        "WS0003": "flak"
       }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
+  "modules": [],
   "wings": []
 }

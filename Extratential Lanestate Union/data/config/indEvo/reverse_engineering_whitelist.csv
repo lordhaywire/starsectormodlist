@@ -1,0 +1,38 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed by the Engineering hub (Reverse Engineering ship hulls)
+# Ships that would break the game (Balance/Technical/Lore) if the player could produce them via blueprint should not be on this list.
+xlu_alum
+xlu_lead
+xlu_zinc
+xlu_brass
+xlu_tin
+xlu_espron
+xlu_stibium
+xlu_butane
+xlu_cobble
+xlu_cobalt
+xlu_ferros
+xlu_macrolloy
+xlu_duralumin
+xlu_carbide
+xlu_oxide
+xlu_scheelite
+xlu_starcrusher
+xlu_colossus
+xlu_kaolinite
+xlu_kaolinite_x
+xlu_pyridoxate
+xlu_gadolinite
+xlu_diaboleite
+xlu_onslaught
+xlu_anthracite
+xlu_uranium
+xlu_rhodochrosite
+xlu_chrominus
+xlu_calc
+xlu_tin_forty
+xlu_espron_forty
+xlu_azurim
+xlu_duralumin_forty
+xlu_manganate

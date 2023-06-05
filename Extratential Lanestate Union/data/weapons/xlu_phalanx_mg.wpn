@@ -1,0 +1,33 @@
+{
+	"id":"xlu_phalanx_mg",  # this id must match what's in the spreadsheet
+	"specClass":"projectile",
+	"type":"BALLISTIC",
+	"size":"LARGE",
+	"displayArcRadius":300,
+	"turretSprite":"graphics/Extratential Lanestate Union/weapons/phalanx/tr_base00.png",
+	"hardpointSprite":"graphics/Extratential Lanestate Union/weapons/phalanx/hp_base00.png",
+	"numFrames":4,
+	"frameRate":30,
+	"renderHints":[RENDER_BARREL_BELOW],
+	"visualRecoil":3.0,  # the gun sprites are only used if this is non-0
+	"turretOffsets":[18, 7, 18, -7, 22, 8, 22, -8, 18, 7, 18, -7, 22, 8, 22, -8],
+	"turretAngleOffsets":[0, 0, 0, 0, 0, 0, 0, 0],
+	"hardpointOffsets":[29, 7, 29, -7, 33, 8, 33, -8, 29, 7, 29, -7, 33, 8, 33, -8],
+	"hardpointAngleOffsets":[0, 0, 0, 0, 0, 0, 0, 0],
+	"specialWeaponGlowWidth":15,
+	"specialWeaponGlowHeight":25,
+	"barrelMode":"LINKED", # or ALTERNATING.  whether barrels fire at the same time or alternate.
+	"animationType":"MUZZLE_FLASH",
+	"separateRecoilForLinkedBarrels":"TRUE",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":7.0,
+					   "particleSizeRange":9.0,
+					   "particleDuration":0.15,
+					   "particleCount":3,
+					   "particleColor":[255,120,105,250]},
+	"projectileSpecId":"vulcan_shot", #xlu_phalanx_mg_shot  # projectile that will be fired
+	#"fireSoundOne":"heavy_machinegun_intro",
+	"fireSoundTwo":"vulcan_cannon_fire",
+	#"fireSoundTwo":"xlu_phalanx_machinegun_fire",
+}

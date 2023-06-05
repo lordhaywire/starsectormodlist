@@ -5,7 +5,7 @@
   "goalVariant": true,
   "fluxCapacitors": 14,
   "fluxVents": 20,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "advancedshieldemitter"

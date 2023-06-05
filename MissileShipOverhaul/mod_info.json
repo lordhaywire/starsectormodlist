@@ -1,0 +1,9 @@
+{
+    "id":"MissileShipOverhaul",
+    "name":"Missile Ship Overhaul",
+    "author":"TheDeviL234",
+    "version":"1.2.6",
+    "description":"Adds new vanilla-based ships with heavy emphasis on missile armaments, as well as four custom hullmods to the game (type the following in console to get the blueprint (or find it in research stations): addspecial mod_package_missileships).",
+    "gameVersion":"0.96a-RC9",
+	
+}

@@ -3,7 +3,7 @@
   "hullId": "prv_gnejserhead",
   "displayName": "Pirate",
   "goalVariant": true,
-  "fluxCapacitors": 19,
+  "fluxCapacitors": 9,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],

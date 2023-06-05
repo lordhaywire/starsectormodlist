@@ -1,0 +1,72 @@
+{
+"starSystem":"phosmon",
+    "markets":[
+		{
+		"entities":["phos1"],
+		"faction":"xlu",
+		"size":6,
+		"startingConditions":[
+			"very_hot",
+			"farmland_poor",
+			"organics_common",
+			"ore_moderate",
+			"rare_ore_rich",
+			"population_6",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"farming",
+				"mining",
+				#["refining", "beta_core"],
+				["lightindustry", "alpha_core"],
+				["orbitalworks", "corrupted_nanoforge", "beta_core"],
+				"waystation",
+				"militarybase",
+				"xlu_battlestation",
+				"heavybatteries",
+			],
+		},
+		{
+		"entities":["phos2"],
+		"faction":"xlu",
+		"size":5,
+		"startingConditions":[
+			"thin_atmosphere",
+			"cold",
+			"volatiles_diffuse",
+			"ore_rich",
+			"rare_ore_ultrarich",
+			"population_5",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				["mining", "gamma_core"],
+				["fuelprod", "synchrotron", "beta_core"],
+				"waystation",
+				"grounddefenses",
+			],
+		},
+		{
+		"entities":["phos3a"],
+		"faction":"pirates",
+		"size":3,
+		"startingConditions":[
+			"cold",
+			"dark",
+			"ore_sparse",
+			"volatiles_plentiful",
+			"population_3",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+			],
+		},
+	],
+}
+
+
+

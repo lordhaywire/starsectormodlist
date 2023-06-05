@@ -3,12 +3,13 @@
   "hullId": "prv_bergslag",
   "displayName": "Belt",
   "goalVariant": true,
-  "fluxCapacitors": 25,
+  "fluxCapacitors": 9,
   "fluxVents": 30,
-  "quality": 1,
+  "quality": 0,
   "permaMods": [],
   "hullMods": [
-    "dedicated_targeting_core"
+    "dedicated_targeting_core",
+    "missleracks"
   ],
   "weaponGroups": [
     {
@@ -37,8 +38,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "heavymg",
-        "WS0008": "heavymg"
+        "WS0003": "flak",
+        "WS0008": "flak"
       }
     },
     {

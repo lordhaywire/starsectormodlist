@@ -13,8 +13,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 001": "prv_agni_conflagration",
-        "WS 014": "prv_agni_conflagration"
+        "WS 001": "prv_agni_eye",
+        "WS 014": "prv_agni_eye"
       }
     },
     {
@@ -37,12 +37,12 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS 002": "prv_agni_flamelash",
-        "WS 004": "prv_agni_spines",
-        "WS 007": "prv_agni_flamelash",
-        "WS 008": "prv_agni_flamelash",
-        "WS 010": "prv_agni_spines",
-        "WS 012": "prv_agni_flamelash"
+        "WS 002": "prv_agni_cyst",
+        "WS 004": "prv_agni_spore",
+        "WS 007": "prv_agni_cyst",
+        "WS 008": "prv_agni_cyst",
+        "WS 010": "prv_agni_spore",
+        "WS 012": "prv_agni_cyst"
       }
     },
     {

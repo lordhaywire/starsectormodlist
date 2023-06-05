@@ -7,7 +7,6 @@
 			"size":5,
 			"startingConditions":[
 				"habitable",
-				#"frontier",
 				"arid",
 				"hot",
 				"mild_climate",
@@ -17,15 +16,11 @@
 			],
 			"industries":[
 				"population",
-				#"mining",
 				"farming",
-				#"refining",
-				#"lightindustry",
 				"waystation",
 				"commerce",
 				"grounddefenses",
 				"spaceport",
-				#"prv_station1",
 			],
 		},
 		{
@@ -34,12 +29,9 @@
 			"size":7,
 			"startingConditions":[
 				"habitable",
-				#"frontier",
 				"terran",
 				"population_7",
 				"closed_immigration",
-				#"cottage_industry",
-				#"rural_polity",
 				"prv_backwater",
 				"prv_feudal",
 				"prv_keyhole_world",

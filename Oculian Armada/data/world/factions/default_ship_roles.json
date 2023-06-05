@@ -1,0 +1,286 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"ocua_gretly_Assault":10,
+		"ocua_gretly_Standard":12.5,
+		"ocua_gretly_Support":12.5,
+		"ocua_gretly_Blitz":5,
+		"ocua_gretly_Rocket":3.5,
+		"ocua_gretly_Flash":2.5,
+		"ocua_gretly_Pixel":2.5,
+		"ocua_gretly_Glasser":2,
+		"ocua_gretly_Voxel":1.5,
+		"ocua_gretly_Surprise":1,
+		
+		"ocua_gretly_mi_Standard":2,
+		
+		"ocua_prily_Assault":10,
+		"ocua_prily_Escort":5,
+		"ocua_prily_Support":5,
+		"ocua_prily_Strike":3,
+		"ocua_prily_Stunner":2,
+		"ocua_prily_Mileage":2,
+		
+		"ocua_prily_mi_Standard":2,
+		"ocua_prily_mi_Assault":0.5,
+		
+		"ocua_chimly_Pulse":5,
+		"ocua_chimly_Standard":10,
+		
+		"ocua_chimly_mi_Standard":1,
+		"ocua_chimly_mi_Support":0.5,
+		"ocua_chimly_mi_Pulse":0.2,
+	},
+	"combatSmall":{
+		"ocua_gretly_Assault":10,
+		"ocua_gretly_Standard":15,
+		"ocua_gretly_Support":10,
+		"ocua_gretly_Blitz":5,
+		"ocua_gretly_Flash":5,
+		"ocua_gretly_Pixel":5,
+		"ocua_gretly_Glasser":4,
+		"ocua_gretly_Rocket":2,
+		"ocua_gretly_Voxel":3,
+		"ocua_gretly_Surprise":2,
+		
+		"ocua_gretly_mi_Standard":3,
+		
+		"ocua_prily_Support":8,
+		"ocua_prily_Strike":5,
+		"ocua_prily_Stunner":1,
+		"ocua_prily_Mileage":2,
+		"ocua_prily_Milee":0.2,
+		
+		"ocua_prily_mi_Standard":1,
+		"ocua_prily_mi_Assault":0.3,
+		
+		"ocua_chimly_Pulse":5,
+		"ocua_chimly_Standard":15,
+		
+		"ocua_chimly_mi_Standard":0.8,
+		"ocua_chimly_mi_Support":0.4,
+		"ocua_chimly_mi_Pulse":0.2,
+		
+		"ocua_sconis_Assault":15,
+		"ocua_sconis_Picket":5,
+		
+		"ocua_sophis_Standard":20,
+		
+		"ocua_maximis_Beam":5,
+		
+		"ocua_tsundere_Standard":5,
+		"ocua_tsundere_Support":5,
+	},
+	"combatMedium":{
+		"ocua_doris_Standard":20,
+		"ocua_doris_Pulse":8,
+		
+		"ocua_maximis_Beam":15,
+		"ocua_maximis_Assault":10,
+		"ocua_maximis_Support":10,
+		"ocua_maximis_Pulse":7,
+		"ocua_maximis_Gazer":4,
+		"ocua_maximis_Mangler":3,
+		
+		"ocua_sconis_Assault":5,
+		"ocua_sconis_Picket":15,
+		"ocua_sconis_Pulse":10,
+		"ocua_sconis_Griefer":5,
+		
+		"ocua_sophis_Standard":15,
+		"ocua_sophis_Strike":10,
+		"ocua_sophis_Pulse":7,
+		"ocua_sophis_Quantix":5,
+		"ocua_sophis_Blaster":3,
+		"ocua_sophis_Mite":1,
+		
+		"ocua_lemphis_Standard":2,
+		"ocua_lemphis_Assault":1,
+		"ocua_lemphis_Pulse":0.6,
+		
+		"ocua_tsundere_Assault":10,
+		"ocua_tsundere_Pulse":5,
+		"ocua_tsundere_Standard":20,
+		"ocua_tsundere_Support":10,
+		"ocua_tsundere_Quantix":5,
+		"ocua_tsundere_Sunder":3,
+	},
+	"combatLarge":{
+		"ocua_basilix_Standard":10,
+		"ocua_basilix_Assault":10,
+		"ocua_basilix_Strike":8,
+		"ocua_basilix_Pulse":6,
+		"ocua_basilix_Quantix":6,
+		"ocua_basilix_Boxer":3,
+		
+		"ocua_basilix_mi_Standard":1,
+		
+		"ocua_beatrix_Standard":10,
+		"ocua_beatrix_Assault":10,
+		"ocua_beatrix_Racker":4,
+		
+		"ocua_dorothyx_Support":15,
+		"ocua_dorothyx_Assault":12,
+		"ocua_dorothyx_Strike":8,
+		"ocua_dorothyx_Buzzer":8,
+		
+		"ocua_ignix_Strike":15,
+		"ocua_ignix_Support":12,
+		"ocua_ignix_Pulse":10,
+		"ocua_ignix_Trickler":6,
+		"ocua_ignix_Ripper":2,
+	},
+	"combatCapital":{
+		"ocua_amina_Assault":10,
+		"ocua_amina_Pulse":4,
+		"ocua_amina_Hunter":1,
+		
+		"ocua_etna_Assault":12,
+		"ocua_etna_Support":8,
+		"ocua_etna_Pulse":6,
+		"ocua_etna_Punisher":2,
+		
+		"ocua_nadia_Assault":10,
+		"ocua_nadia_Support":8,
+		"ocua_nadia_Pulse":5,
+		"ocua_nadia_Broadsider":2,
+		
+		"ocua_nadia_mi_Assault":2,
+		
+		"ocua_pandora_Assault":1.5,
+		"ocua_pandora_Support":1,
+		"ocua_pandora_Quantix":0.5,
+		
+		"ocua_dulcena_Standard":1.5,
+		"ocua_dulcena_Picket":1,
+		
+		"ocua_galalixia_Standard":0.2,
+		"ocua_galalixia_Support":0.1,
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+	},
+	"combatFreighterMedium":{
+	},
+	"combatFreighterLarge":{
+		"ocua_evalyx_Assault":1,
+	},
+	
+	"civilianRandom":{
+	},
+
+	# carriers
+	"carrierSmall":{
+		"ocua_chimly_Quantix":10,
+		"ocua_chimis_Standard":20,
+		"ocua_chimis_Support":10,
+	},
+	"carrierMedium":{
+		"ocua_chimis_Standard":15,
+		"ocua_chimis_Support":10,
+		"ocua_chimis_Pulse":4,
+		"ocua_chimis_Assault":5,
+		
+		"ocua_chimis_mi_Standard":2,
+		"ocua_chimis_mi_Support":1,
+		
+		"ocua_chimex_Standard":10,
+		"ocua_chimex_Assault":7,
+		"ocua_chimex_Support":5,
+		"ocua_chimex_Strike":5,
+		"ocua_chimex_Quantix":3,
+		
+		"ocua_chimex_mi_Standard":1,
+		"ocua_chimex_mi_Support":0.4,
+	},
+	"carrierLarge":{
+		"ocua_chimiria_Standard":15,
+		"ocua_chimiria_Support":10,
+		"ocua_chimiria_Strike":10,
+		"ocua_chimiria_Quantix":6,
+	},
+
+	# phase ships
+	"phaseSmall":{
+		"ocua_huely_Assault":20,
+		"ocua_huely_Escort":15,
+		"ocua_huely_Strike":12,
+		"ocua_huely_Pulse":8,
+		"ocua_huely_Bricker":4,
+	},
+	"phaseMedium":{
+	},
+	"phaseLarge":{
+		"ocua_evalyx_Assault":2,
+	},
+	"phaseCapital":{
+		"ocua_utena_Standard":10,
+		"ocua_utena_Profiler":10,
+		"ocua_utena_Support":8,
+		"ocua_utena_Assault":5,
+		"ocua_utena_Quantix":2,
+	},
+
+	# freighters and such
+	"freighterSmall":{
+		"ocua_sophis_c_Standard":10,
+		"ocua_sophis_c_Fleet":5,
+		"ocua_sophis_c_Quantix":5,
+	},
+	"freighterMedium":{
+		"ocua_nimbyx_Standard":5,
+		"ocua_nimbyx_Quantix":2,
+		"ocua_nimbyx_Fleet":2,
+		"ocua_nimbyx_Salvager":1,
+	},
+	"freighterLarge":{
+	},
+	
+	"tankerSmall":{
+		"ocua_sophis_b_Standard":10,
+		"ocua_sophis_b_Fleet":5,
+		"ocua_sophis_b_Quantix":5,
+	},
+	"tankerMedium":{
+		"ocua_nimbyx_Standard":2,
+		"ocua_nimbyx_Quantix":2,
+	},
+	"tankerLarge":{
+	},
+	
+	"personnelSmall":{
+		"ocua_storkis_Standard":5,
+	},
+	"personnelMedium":{
+	},
+	"personnelLarge":{
+	},
+	
+	"linerSmall":{
+		"ocua_storkis_Standard":10,
+		"ocua_storkis_Stalker":1,
+	},
+	"linerMedium":{
+	},
+	"linerLarge":{
+	},
+	
+	# utility ships
+	"tug":{
+	},
+	"crig":{
+	},
+	"utility":{
+	},
+	
+	"orbitalStationLowTech":{
+	},
+	
+	"battlestationLowTech":{
+	},
+	
+	
+}

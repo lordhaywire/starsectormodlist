@@ -1,0 +1,34 @@
+{
+    "plugins":{
+        #"ocua_glint_hit_effect":"data.scripts.everyframe.ocua_glint_hit_effect",
+        "OCUA_BlockedHullmodDisplayScript":"data.scripts.everyframe.OCUA_BlockedHullmodDisplayScript",
+    },
+	
+	"designTypeColors":{
+		"Oculian":[250,100,175,255],
+		"Mikanate":[180,50,90,255],
+		"Ocutek":[225,50,100,255],
+	},
+
+			
+			
+    "graphics":{
+		"characters":{
+			"ocua_ei":"graphics/Oculian Armada/portraits/ocua_7.png",
+		},
+		"portraits":{
+			"ocua_boss1":"graphics/Oculian Armada/portraits/ocua_boss1.png",
+			"ocua_boss2":"graphics/Oculian Armada/portraits/ocua_boss2.png",
+		},
+		
+		"illustrations":{
+			"ouca_space_bar":"graphics/Oculian Armada/illustrations/ocua_space_bar.jpg",
+		},
+		"blueprint_packages":{
+			"ocua_basic_package":"graphics/Oculian Armada/icons/cargo/ocua_bp_basic.png",
+			"ocua_general_package":"graphics/Oculian Armada/icons/cargo/ocua_bp_general.png",
+			"ocua_weapons_package":"graphics/Oculian Armada/icons/cargo/ocua_bp_weapons.png",
+			"ocua_pirate_package":"graphics/Oculian Armada/icons/cargo/ocua_bp_pirate.png",
+		},
+    }
+}
