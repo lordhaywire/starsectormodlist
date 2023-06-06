@@ -1,0 +1,85 @@
+{
+  "hullName": "Phrag",
+  "hullId": "bee_phrag",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/bee_phrag.png",
+  "style": "MIDLINE",
+  "height": 29,
+  "width": 38,
+  "center": [19, 13],
+  "collisionRadius": 20.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "vulcan",
+    "WS0002": "vulcan"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 35,
+      "angle": 0,
+      "locations": [15, 6.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 35,
+      "angle": -0,
+      "locations": [15, -6.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12.5, 7.5],
+      "length": 16,
+      "width": 3,
+      "angle": 180,
+      "contrailSize": 3,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-12.5, -7.5],
+      "length": 16,
+      "width": 3,
+      "angle": -180,
+      "contrailSize": 3,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-9, 13.5],
+      "length": 8,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-9, -13.5],
+      "length": 8,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -12, -11.5,
+    -5.5, -18.5,
+    3, -18.5,
+    11, -9,
+    11, 9,
+    3, 18.5,
+    -5.5, 18.5,
+    -12, 11.5
+  ]
+}

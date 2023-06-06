@@ -1,0 +1,133 @@
+{
+  "hullName": "Ceraphron",
+  "hullId": "bee_ceraphron",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/bee_ceraphron.png",
+  "style": "MIDLINE",
+  "height": 159,
+  "width": 116,
+  "center": [58, 79.5],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [71.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [32.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": -50,
+      "locations": [-23.5, -35]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 160,
+      "angle": 50,
+      "locations": [-23.5, 35]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-46.5, -45]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 135,
+      "locations": [-46.5, 45]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75.5, 29.5],
+      "length": 35,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "APOCRITA"
+    },
+    {
+      "location": [-75.5, -29.5],
+      "length": 35,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "APOCRITA"
+    },
+    {
+      "location": [-79, 16.5],
+      "length": 40,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "APOCRITA"
+    },
+    {
+      "location": [-79, -16.5],
+      "length": 40,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "APOCRITA"
+    },
+    {
+      "location": [-75.5, -0],
+      "length": 45.5,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -78.5, 35.5,
+    -48.5, 39.5,
+    -24, 57,
+    12.5, 52.5,
+    62, 23.5,
+    62, 12,
+    67.5, 5.5,
+    67.5, -5.5,
+    62, -12,
+    62, -23.5,
+    12.5, -52.5,
+    -24, -57,
+    -48.5, -39.5,
+    -78.5, -35.5
+  ]
+}

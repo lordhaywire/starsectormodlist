@@ -1,0 +1,33 @@
+{
+	"starSystem":"Alyro",
+	"markets":[
+		{
+			"entities":["Oruss"],
+			"faction":"apocrita_association",
+			"size":4,
+			"freePort":true,
+			"startingConditions":[
+				"population_4",
+				"habitable",
+				"ore_sparse",
+				"farmland_poor",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"waystation",
+				"lightindustry",
+				"farming",
+				"orbitalstation_mid",
+				"patrolhq",
+				"grounddefenses",
+			],
+		},	
+	],
+
+
+}
+
+
+

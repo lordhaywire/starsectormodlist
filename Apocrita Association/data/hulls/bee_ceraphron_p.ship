@@ -1,0 +1,162 @@
+{
+  "hullName": "Ceraphron (P)",
+  "hullId": "bee_ceraphron_p",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/bee_ceraphron_p.png",
+  "style": "LOW_TECH",
+  "height": 159,
+  "width": 128,
+  "center": [64, 79.5],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "builtInMods": [
+    "unstable_injector"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [32.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -100,
+      "locations": [-23.5, -35]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 100,
+      "locations": [-23.5, 35]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -135,
+      "locations": [-46.5, -45]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 135,
+      "locations": [-46.5, 45]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [66.5, 14]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [66.5, -14]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -90,
+      "locations": [-11.5, -58]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 90,
+      "locations": [-11.5, 58]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75.5, 30],
+      "length": 35,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-75.5, -30],
+      "length": 35,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, 16.5],
+      "length": 40,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-79.5, -16.5],
+      "length": 40,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-76.5, -0],
+      "length": 45.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -78.5, 41.5,
+    -48.5, 45.5,
+    -24, 63,
+    12.5, 58.5,
+    62, 29.5,
+    62, 18,
+    67.5, 11.5,
+    67.5, 0.5,
+    62, -6,
+    62, -17.5,
+    12.5, -46.5,
+    -24, -51,
+    -48.5, -33.5,
+    -78.5, -29.5
+  ]
+}

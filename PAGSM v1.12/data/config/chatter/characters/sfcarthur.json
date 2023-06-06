@@ -1,0 +1,55 @@
+{
+  "name":"Beligar Arthur",
+  "personalities":["aggressive","reckless"],
+  "gender":["m"],
+  "chance":0,
+  "talkativeness":1,
+  "categoryTags":["original"],
+
+  "lines":{
+    "start":[
+      {"text":"May Ludd be my guide!"},
+      {"text":"By Ludd's will I shall be His sword!"}
+    ],
+    "start_boss":[
+      {"text":"The servants of Moloch shall be banished today!"},
+      {"text":"Return to your master, slaves of Moloch!"}
+    ],
+    "retreat":[
+      {"text":"Through Ludd's guidance I shall retreat today."}
+    ],
+    "out_of_missiles":[
+      {"text":"Ludd's hammer falls silent."}
+    ],
+    "engaged":[
+      {"text":"Servants of Moloch, begone!"}
+    ],
+    "need_help":[
+      {"text":"May Ludd's mercy preserve us!"}
+    ],
+    "pursuing":[
+      {"text":"We shall cast these demons out!"}
+    ],
+    "running":[
+      {"text":"Ludd's will shall hold in all times..."}
+    ],
+    "hull_90":[
+      {"text":"May Ludd preserve us!"}
+    ],
+    "hull_50":[
+      {"text":"By Ludd's will we shall hold!"}
+    ],
+    "hull_30":[
+      {"text":"I go to Ludd's mercy!"}
+    ],
+    "overload":[
+      {"text":"Ludd preserve us this day!"}
+    ],
+    "death":[
+      {"text":"I GO WITH LUD-"}
+    ],
+    "victory":[
+      {"text":"Ludd has guided us to another victory!"}
+    ]
+  }
+}

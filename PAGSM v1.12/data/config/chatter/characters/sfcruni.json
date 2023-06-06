@@ -1,0 +1,69 @@
+{
+	"name":"Yunifer Runi",
+	"personalities":["timid", "cautious"],
+	"gender":["f"],
+	"chance":0,
+	"talkativeness":1,
+	"categoryTags":["original"],
+	
+	"lines":{
+		"start":[
+			{"text":"A-ah... I mustn't let t-the others down."},
+			{"text":"I-I can do this... I h-have to!"},
+			{"text":"I-I... I w-won't l-let you stop me!"}
+		],
+		"start_boss":[
+			{"text":"I-I can do this... I-I hope..."},
+			{"text":"I-I won't f-fail this time!"},
+		],
+		"retreat":[
+			{"text":"I-I'm sorry... I j-just can't anymore..."},
+			{"text":"P-please forgive me, I c-can't stay h-here..."}
+		],
+		"out_of_missiles":[
+			{"text":"M-missiles are empty!"},
+			{"text":"S-ship is o-out of missiles!"},
+		],
+		"engaged":[
+			{"text":"E-engaing the e-enemy!"},
+			{"text":"B-battlestations! T-the enemy is h-here!"}
+		],
+		"need_help":[
+			{"text":"T-too many... I n-need assistance!"},
+			{"text":"I-I need s-some help here, p-please!"}
+		],
+		"pursuing":[
+			{"text":"C-chasing the e-enemy!"},
+			{"text":"I-I won't l-let you g-get away!"},
+			{"text":"I-I m-make sure you w-won't c-come back!"}
+		],
+		"running":[
+			{"text":"P-please forgive me..."}
+		],
+		"hull_90":[
+			{"text":"T-the hull...!"},
+			{"text":"T-the ship is h-holding...?"}
+		],
+		"hull_50":[
+			{"text":"H-hull depleted halfway!"},
+			{"text":"M-major damage! I-I need help!"}
+		],
+		"hull_30":[
+			{"text":"S-ship is c-critical! I-it c-can't keep going!"},
+			{"text":"I-I need help! The s-ship is f-falling apart!"}
+		],
+		"overload":[
+			{"text":"S-ship unresponsive! "},
+			{"text":"C-capacitors are o-overloaded!"}
+		],
+		"death":[
+			{"text":"C-CAPTAI-!"},
+			{"text":"I-I C-CAN'T HOL-!"},
+			{"text":"B-BRIDGE I-IS C-COLLAP-!"},
+		],
+		"victory":[
+			{"text":"D-did I do good?"},
+			{"text":"W-was my p-performance s-satisfactory?"}
+		],
+	}
+}

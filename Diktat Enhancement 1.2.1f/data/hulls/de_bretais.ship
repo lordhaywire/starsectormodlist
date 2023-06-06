@@ -1,0 +1,45 @@
+{
+  "hullName": "Bretais",
+  "hullId": "de_bretais",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Diktat Enhancement/ships/bretais.png",
+  "style": "MIDLINE",
+  "height": 38,
+  "width": 42,
+  "center": [21, 19],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 21.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [4, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -0],
+      "length": 15,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 6,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -16, 0,
+    -5, -12,
+    10, -11.5,
+    17.5, 0,
+    17.5, -0,
+    10, 11.5,
+    -5, 12,
+    -16, -0
+  ]
+}

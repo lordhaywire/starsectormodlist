@@ -1,0 +1,60 @@
+{
+  "id": "bee_exsecta",
+  "specClass": "projectile",
+  "projectileSpecId": "bee_exsecta_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/weapons/bee_exsecta_base.png",
+  "turretGunSprite": "graphics/weapons/bee_exsecta_recoil.png",
+  "hardpointSprite": "graphics/weapons/bee_exsecta_base.png",
+  "hardpointGunSprite": "graphics/weapons/bee_exsecta_recoil.png",
+  "visualRecoil": 3,
+  "turretOffsets": [
+    12.5,
+    0,
+    12.5,
+    1,
+    12.5,
+    -1
+  ],
+  "turretAngleOffsets": [
+    0,
+    3,
+    -3
+  ],
+  "hardpointOffsets": [
+    20,
+    0,
+    20,
+    1,
+    20,
+    -1
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    3,
+    -3
+  ],
+  
+  "barrelMode": "LINKED",
+  "renderHints":[RENDER_BARREL_BELOW],
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 3,
+    "particleSizeRange": 5,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 2,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      255,
+      255,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "heavy_mortar_fire"
+}

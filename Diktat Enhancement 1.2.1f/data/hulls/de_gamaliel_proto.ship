@@ -1,0 +1,99 @@
+{
+  "hullName": "Gamaliel(Prototype)",
+  "hullId": "de_gamaliel_proto",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/Diktat Enhancement/ships/the silly/gamaliel_proto.png",
+  "style": "MIDLINE",
+  "height": 103,
+  "width": 96,
+  "center": [48, 51.5],
+  "collisionRadius": 78,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 69.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "automated",
+    "qliphotharrayincomplete"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 20,
+      "angle": -135,
+      "locations": [-24.5, -38]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 135,
+      "locations": [-24.5, 38]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [23.5, 19]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 20,
+      "angle": 0,
+      "locations": [42.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-26, 15],
+      "length": 25,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-26, -15],
+      "length": 25,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    38, -12,
+    51, 0,
+    51, -0,
+    38, 12,
+    38, -28.5,
+    4.5, -21.5,
+    -24.5, -47.5,
+    -34.5, -39,
+    -31.5, -32,
+    -20, -22,
+    -26, -17.5,
+    -31, -4.5,
+    -37, -4,
+    -36.5, 5.5,
+    -26, 10.5,
+    -25.5, 17.5,
+    -20.5, 23,
+    -35, 39,
+    -24, 49.5,
+    -2, 26,
+    22.5, 27,
+    26.5, 13,
+    38, 12
+  ]
+}

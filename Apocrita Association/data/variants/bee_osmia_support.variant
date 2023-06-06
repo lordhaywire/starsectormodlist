@@ -1,0 +1,38 @@
+{
+  "variantId": "bee_osmia_support",
+  "hullId": "bee_osmia",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "ioncannon",
+        "WS0003": "ioncannon"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "lightmg",
+        "WS0005": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,101 @@
+{
+  "sfc_pagsm": {
+
+    "sfc_titan1":"+150 range of Ballistics and Energy weapons for Iapetus-class ships." ,
+    "sfc_titan2":"+25% projectile speed of Ballistics and Energy weapons for Iapetus-class ships." ,
+    "sfc_titan3":"+10% fire rate of Ballistics and Energy weapons for Iapetus-class ships." ,
+    "sfc_titan4":"-15% kinetic damage of Shields for Iapetus-class ships." ,
+    "sfc_titan5":"+20% unfold rate of Shields for Iapetus-class ships." ,
+    "sfc_titan6":"+10% armor for Iapetus-class ships." ,
+
+    "sfc_iapetus1":"+25% flux capacity for Iapetus-class ships." ,
+    "sfc_iapetus2":"+20% flux dissipation for Iapetus-class ships." ,
+    "sfc_iapetus3":"-25% flux firing cost of Ballistics and Energy weapons for Iapetus-class ships." ,
+    "sfc_iapetus4":"+50% ammo regen speed of Ballistics and Energy weapons for Iapetus-class ships." ,
+    "sfc_iapetus5":"+25% range for point-defense weapons for Iapetus-class ships." ,
+    "sfc_iapetus6":"-20% ship system cool down time for Iapetus-class ships." ,
+
+    "sfc_luddskill1":"+20% max speed." ,
+    "sfc_luddskill2":"+30% faster ship turn rate." ,
+    "sfc_luddskill3":"+25% faster ship acceleration and deceleration." ,
+    "sfc_luddskill4":"+25su to Zero Flux Speed Boost." ,
+
+    "sfc_hullmodDetails":"Stats Details",
+    "sfc_hullmodSpecial":"Special Ship System",
+
+    "sfc_solarlivery1":"• Decreased Solar Corona Effect: %s",
+    "sfc_solarlivery2":"• Effect On Solar Corona If Solar Shields Is Installed: %s",
+    "sfc_solarlivery3":"\"It's effective, but does it really have to be such a garish color?\"" ,
+    "sfc_solarlivery4":"         \u2014 Quote by an Ex-Sindrian Fuel Company Engineer" ,
+
+    "sfc_maxFuelText1":"• Increased Fuel Storage: %s",
+    "sfc_maxFuelText2":"• Increased Death Explosion Damage: %s",
+    "sfc_maxFuelText3":"• Increased Death Explosion Radius: %s",
+    "sfc_maxFuelText4":"• Decreased Recovery Chance: %s",
+    "sfc_maxFuelText5":"\"What do you mean, overloading the AM-fuel storage tanks is a bad idea? The Sindrian Fuel Company must be able to carry as much fuel as possible! If you're so worried about overloading the fuel tanks, there's plenty of unused space in the engine room for some extra fuel tanks!\"",
+    "sfc_maxFuelText6":"         \u2014 Junior Manager Spender Balashi",
+
+    "sfc_refitText1":"• Storage to Fuel Conversion: %s Cargo Storage to Fuel",
+    "sfc_refitText2":"• Reduced Cargo Storage: %s Storage",
+    "sfc_refitText3":"• Increased Death Explosion Damage: %s",
+    "sfc_refitText4":"• Increased Death Explosion Radius: %s",
+    "sfc_refitText5":"• Decreased Recovery Chance: %s",
+    "sfc_refitText6":"\"What do you mean, leaving unsecured Antimatter Fuel lying around the ship is a bad idea? The Sindrian Fuel Company must be able to carry as much fuel as possible, no matter where we have to put it! Why, there's so much space in the engine room, let's put some over there!\"",
+    "sfc_refitText7":"         \u2014 Junior Manager Spender Balashi",
+
+    "sfc_antiengineText1":"• Zero-Flux Bonus Effective Up To: %s Flux",
+    "sfc_antiengineText2":"• Zero-Flux Speed Bonus Increased By: %s units",
+    "sfc_antiengineText3":"• Decreased Engine Health: %s",
+    "sfc_antiengineText4":"• Increased Fuel And Supply Usage: %s",
+    "sfc_antiengineText5":"• Increased Sensor Profile: %s",
+    "sfc_antiengineText6":"\"The prototype exploded? And you're saying it's because my calculations are wrong!? Impossible! You must have built it wrong, you imbecile. Now build it again and follow my instructions to the letter, or I’ll have you thrown out of this building!\"",
+    "sfc_antiengineText7":"         \u2014 Head Researcher, Yunris Kween",
+
+    "sfc_amBoosterText1":"• Increased Missile Maneuverability Bonus: %s",
+    "sfc_amBoosterText2":"• Increased Missile Range: %s",
+    "sfc_amBoosterText3":"• Ammo Decrease If Expanded Missile Racks Is Installed: %s",
+    "sfc_amBoosterText4":"\"Sindrian-Brand Antimatter Fuel burns the best for all things! Ensure you have the best fuel today!\"",
+    "sfc_amBoosterText5":"         \u2014 Sindrian Fuel Company Advert",
+
+    "sfc_amAcceleratorText1":"• Increased Weapon Turn Speed: %s",
+    "sfc_amAcceleratorText2":"• Increased Projectile Speed: %s",
+    "sfc_amAcceleratorText3":"• Decreased Turret Health: %s",
+    "sfc_amAcceleratorText4":"\"Be careful with that! One wrong move and you’ll blow the whole thing sky high. Now hold it still, I need to make sure the calculations are correct.\"",
+    "sfc_amAcceleratorText5":"         \u2014 Lead Developer Gregory Mannfred",
+
+    "sfc_talariahullmodText1":"• Increases Energy Weapon Range: %s",
+    "sfc_talariahullmodText2":"• Increases Energy Weapon Projectile Speed: %s",
+    "sfc_talariahullmodText3":"• Increases Energy Weapon Rate of Fire if Converted Fighter Bay Installed: %s",
+    "sfc_talariahullmodText4":"• Decreases Energy Weapon Flux Cost if Converted Fighter Bay Installed: %s",
+    "sfc_talariahullmodText5":"\"Sometimes its the little things that count the most.\"",
+    "sfc_talariahullmodText6":"         \u2014 Lead Developer Gregory Mannfred",
+
+    "sfc_hwi1":"• Decreased Large Mount OP Cost: %s",
+    "sfc_hwi2":"• Increased PD Mount Range: %s",
+    "sfc_hwi3":"\"The Iapetus shall herald forth a new path for the Sindrian Fuel Company! Let none stand in its way!\"",
+    "sfc_hwi4":"         \u2014 Fleet Admiral Ruka Yenni",
+
+    "sfc_overclockTitle":"WEAPONS OVERCLOCK",
+    "sfc_overclock1":"• Vastly increases Ballistics and Energy weapon output while active.",
+    "sfc_overclock2":"• Engine output decreased while ship system is active.",
+    "sfc_overclock3":"• Ballistics and Energy RoF and projectile speed increased by: %s",
+    "sfc_overclock4":"• Ballistics and Energy weapons flux cost to fire decreased by: %s",
+    "sfc_overclock5":"• Ballistics and Energy weapons ranged increased by: %s",
+    "sfc_overclock6":"• Ship speed and maneuverability decreased by: %s",
+
+    "chm_fuelText1":"• Increased Ship Burn Level: %s",
+    "chm_fuelText2":"• Decreased Ship Fuel Consumption: %s",
+    "chm_fuelText3":"\"When you're looking for the best fuel in town, Sindrian Fuel has the best around!\"",
+    "chm_fuelText4":"         \u2014 Sindrian Fuel Company Jingle",
+
+    "sfc_ordnanceExpertiseText":"There's more to antimatter fuel than simply just fueling starships. Why, with just a bit of ingenuity, you'll find there's plenty of things which can benefit from a bit of antimatter reactions.",
+    "sfc_ordnanceExpertiseAuthor":"Chapter 15 of The Sindrian Fuel Company: From Dreams to Reality",
+
+    "sfc_lionsguardHQ":"Headquarters of the elite paramilitary branch of the Sindrian Fuel Company, under the direct control of Supreme Overlord Executive Gas Station Manager Phillip Andrada. The Lion's Guard consists of the most devoted employees, who receive top quality training and equipment to protect Sindrian Fuel assets and ensure the continued competitiveness of Sindrian Antimatter Fuel throughout the sector. Many question why a company like Sindrian Fuel would require such a heavily armed paramilitary unit when most duties are handled by regular security forces, but these questions usually are silenced by reminders of how dangerous the Persean Sector is and a note that the Lion's Guard is solely used for private defense purposes only. Any rumors of Lion's Guard operations to destabilize other markets to make way for a Sindrian Fuel franchise are completely unsubstantiated, and clearly they come from jealous rivals intending to tarnish the company's pristine public image. And for Ludd's sake, don't ask why the Guard's named for a Lion.",
+
+    "sfc_deUnpropagandaTitle":"Alternative Brand Advertisers",
+    "sfc_deUnpropagandaText":"A hub for the planet wide advertisement of alternative fuel brands, aimed at slowly weaning off the local populace's deep-rooted reliance on Sindrian Brand antimatter fuel.",
+
+    "sfc_sindrianfuelText":"The Blast Processing technology is the bleeding edge of antimatter production. Combining the secrets of Domain-era industrial might with hard work and honest labor, the Sindrian Fuel Company ensures enough fuel for all in the Persean Sector."
+  }
+}

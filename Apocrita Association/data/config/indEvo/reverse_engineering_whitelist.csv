@@ -1,0 +1,18 @@
+id
+# NOTES
+# Ship IDs entered here will be allowed by the Engineering hub (Reverse Engineering ship hulls)
+# Ships that would break the game (Balance/Technical/Lore) if the player could produce them via blueprint should not be on this list.
+
+bee_osmia
+bee_halict
+bee_synoeca
+
+bee_sceliphron
+bee_xyloc
+bee_mutill
+
+bee_vespul
+bee_polistes
+
+bee_mound
+bee_urocerus

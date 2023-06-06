@@ -1,0 +1,185 @@
+{
+  "hullName": "Dendrocerus",
+  "hullId": "bee_dendrocerus",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/HVB/bee_dendrocerus.png",
+  "style": "MIDLINE",
+  "height": 152,
+  "width": 117,
+  "center": [58, 79.5],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "bee_pykarus",
+    "WS0005": "bee_pykarus",
+    "WS0006": "bee_pykarus",
+    "WS0007": "bee_pykarus",
+    "WS0008": "bee_pykarus",
+    "WS0009": "bee_pykarus",
+    "WS0010": "bee_pykarus",
+    "WS0011": "bee_pykarus"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 125,
+      "angle": 0,
+      "locations": [32.5, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [-23.5, -35]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 45,
+      "locations": [-23.5, 35]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [67, -13]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [67, 14]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [54, -31.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [54, 31.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [38, -41.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [38, 41.5]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 45,
+      "locations": [21.5, 51]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -45,
+      "locations": [21.5, -51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-75.5, 29.5],
+      "length": 35,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    },
+    {
+      "location": [-75.5, -29.5],
+      "length": 35,
+      "width": 6,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, 16.5],
+      "length": 40,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-79, -16.5],
+      "length": 40,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-77, -0.5],
+      "length": 45.5,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 15,
+      "style": "CUSTOM",
+      "styleId": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -78, 34,
+    -48.5, 39,
+    -23.5, 56,
+    12, 51,
+    61.5, 21,
+    62, 11.5,
+    67.5, 4,
+    67.5, -6,
+    62, -13.5,
+    61.5, -23,
+    12, -53,
+    -23.5, -58,
+    -48.5, -41,
+    -78, -36
+  ]
+}

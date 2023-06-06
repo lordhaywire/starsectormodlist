@@ -1,0 +1,14 @@
+{
+ "id": "apocrita_association",
+ "name": "Apocrita Association",
+ "author": "Big Bee.png",
+ "version": "0.2.0",
+ "description": "Basic faction mod I made because I wanted to try kitbashing and figured I might as well make it into a proper mod.",
+ "gameVersion": "0.96",
+ 	"dependencies": [
+		{
+			"id": "MagicLib",
+			"name": "MagicLib",
+		}
+	]
+}

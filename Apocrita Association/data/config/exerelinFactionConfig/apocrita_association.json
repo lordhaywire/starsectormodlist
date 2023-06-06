@@ -1,0 +1,159 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+
+    "rebelFleetSuffix":"Secessionists",
+	
+	"marketSpawnWeight":0.6,
+
+    "startRelationships":{
+		
+		#vanilla factions
+        "hegemony":-0.5,              #AI core allegations. also why should YOU get to tell everyone what to do?
+        "luddic_church":-0.15,        #AI core allegations but not as aggressive
+        "persean":0.5,                #enemy to the Hegemony
+		"tritachyon":-0.1,            #they are not happy about the Urocerus
+		"pirates":-0.75,              # >:(
+		"luddic_path":-0.75,          #terrorists
+		"remnant":-0.6,               #AI can be a useful tool, but this is why we gotta avoid overusing it
+		
+		#modded factions
+		
+		"HMI":-0.5,                   #not to be trusted, probably want to steal blueprints or tech
+		"draco":-0.6,                 #evil vampires
+		"fang":-0.6,                  #evil werewolves?
+		"brighton":0.3,               #pretty chill, nice job repurposing those AI ships, also!
+
+		"interstellarimperium":0.35,  #won't get on our case about AI, and is an enemy to the Hegemony
+		"tahlan_legioinfernalis":-0.6,# >:((((((
+		"prv":0.1,                    #a bit shifty but seemingly anti-Heg/pro-league
+		"rb":-0.3,                    #untrustworthy and not very friendly in general
+		"xhanempire":-0.5,            #exactly the kinda guys we united to protect ourselves from
+		"unitedpamed":0.3,            #not so bad
+
+		"dassault_mikoyan":0.3,       #not so bad
+		"magellan_protectorate":0.15, #not an ally to the Hegemony either, but not a huge fan. live and let live?
+		"magellan_leveller":0.2,      #don't want to invite trouble suppirting them but...
+
+		"diableavionics":-0.5,        #cunts
+		"ORA":0.35,                   #they seem pretty decent
+		"SCY":0.2,                    #probably won't be a problem either
+		
+		"new_galactic_order": -1.0,   #the best place for a nazi is outside the airlock without a spacesuit
+
+	},
+	
+	"maxRelationships":{
+		
+		#vanilla factions
+        "hegemony":0.3,              #if you get off our case then cool but we won't trust you too much still
+        "luddic_church":0.5,        
+		"pirates":-0.6,              #theyre pirates, whatd you expect?
+		"luddic_path":-0.75,         #theyre terrorists, whatd you expect?
+
+		#modded factions
+		"HMI":-0.1,                   #i know how you got most of your "techmined hulls" buddy i aint turning my back on you
+		"draco":-0.3,
+		"fang":-0.3,
+		"tahlan_legioinfernalis":-0.6,
+		"xhanempire":0,
+		"magellan_protectorate":0.5,
+		"diableavionics":0,
+		"new_galactic_order": -1.0,   #your vile ass is not even fit for organ harvesting
+	},
+	
+	
+	
+
+    "diplomacyTraits":["paranoid", "helps_allies", "neutralist"],
+	
+    "diplomacyPositiveChance":{
+		"hegemony": 0.75, 
+	    "persean":1.25,
+		"HMI":0.75,
+		"draco":0.6,                 
+		"fang":0.6,                  
+		"brighton":1.25,
+		"interstellarimperium":1.25,
+		"xhanempire":0.75,
+		"diableavionics":0.5,
+		"new_galactic_order":0,
+	}, 
+	
+    "diplomacyNegativeChance":{
+		"hegemony":1.25,
+		"persean":0.75,
+		"HMI":1.25,
+		"draco":1.5,                 
+		"fang":1.5,                  
+		"brighton":0.5,
+		"interstellarimperium":0.75,
+		"xhanempire":1.25,
+		"diableavionics":-0.5,
+		"new_galactic_order":5,
+		
+	},
+
+    "alignments":{
+        "corporate":-0.5,
+		"diplomatic":1,
+        "technocratic":0.5,
+        "hierarchial":-0.5,
+    },
+
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":1,	# baseline expansion behaviour
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+
+    "startShipsSolo":[["bee_osmia_rail"]],
+	
+    "startShipsCombatSmall":[
+      ["bee_xyloc_elite", "bee_osmia_rail", "bee_osmia_attack"],
+      ["bee_sceliphron_sniper", "bee_halict_support", "bee_halict_budget"],
+	  ["bee_ceraphron_torpedo", "bee_zethus_standard", "bee_osmia_attack"],
+    ],
+
+    "startShipsCombatLarge":[
+	["bee_vespul_attack", "bee_xyloc_elite", "bee_osmia_rail"],
+	["bee_polistes_elite", "bee_sceliphron_sniper", "bee_halict_support"],
+	["bee_cteno_line", "bee_ceraphron_standard", "bee_zethus_standard"],
+	["bee_mutill_attack", "bee_sceliphron_artillery", "bee_osmia_rail", "bee_osmia_rail", "bee_halict_support"],
+    ],
+	
+	"startShipsCarrierSmall":[
+      ["bee_xyloc_elite", "bee_zethus_standard", "bee_zethus_standard", "bee_zethus_support"],
+    ],
+
+    "startShipsTradeSmall":[["buffalo_Standard", "bee_osmia_rail", "bee_osmia_support"]],
+	
+	
+	"startShipsSuper":[["bee_synoeca_assault", "hermes_Standard"]],
+
+
+    "startSpecialItems":[
+        [["bee_apocrita_package", "bee_apocrita_wpn", ""]],
+    ],
+
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.2},
+    ],
+    
+    "industrySeeds":[
+        {"id":"orbitalworks", "mult":0.1},
+        {"id":"fuelprod", "mult":0.1},
+        {"id":"lightindustry", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"aiCore_station", "count":1, "mult":0.1},
+        {"id":"aiCore_military", "mult":0.35},
+        {"id":"aiCore_heavyindustry", "count":1},
+        {"id":"aiCore_other", "mult":0.1},
+    ],
+
+
+}

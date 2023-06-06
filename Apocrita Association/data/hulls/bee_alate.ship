@@ -1,0 +1,79 @@
+{
+  "hullName": "Alate",
+  "hullId": "bee_alate",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/bee_alate.png",
+  "style": "MIDLINE",
+  "height": 21,
+  "width": 18,
+  "center": [9, 10.5],
+  "collisionRadius": 11,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 12.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0001": "lightmg",
+    "WS0002": "lightmg",
+    "WS0003": "fragbomb"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [4.5, 7.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 25,
+      "angle": 0,
+      "locations": [4.5, -7.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [9.5, -0.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-9.5, 3.5],
+      "length": 6,
+      "width": 2,
+      "angle": 180,
+      "contrailSize": 2,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-9.5, -3.5],
+      "length": 6,
+      "width": 2,
+      "angle": -180,
+      "contrailSize": 2,
+      "style": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -9.5, -4.5,
+    4.5, -8,
+    4.5, -2,
+    10, -0.5,
+    4.5, 1,
+    4.5, 8,
+    -9.5, 4.5,
+    -7, -0
+  ]
+}

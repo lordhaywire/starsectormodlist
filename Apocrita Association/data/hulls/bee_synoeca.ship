@@ -1,0 +1,143 @@
+{
+  "hullName": "Synoeca",
+  "hullId": "bee_synoeca",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/bee_synoeca.png",
+  "style": "MIDLINE",
+  "height": 150,
+  "width": 90,
+  "center": [45, 75],
+  "collisionRadius": 82.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 85.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0005": "bee_aculeus",
+    "WS0006": "bee_aculeus",
+    "WS0007": "bee_aculeus",
+    "WS0008": "bee_aculeus",
+    "WS0009": "bee_aculeus",
+    "WS0010": "bee_aculeus"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [58, 28]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [58, -28]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 0,
+      "locations": [28, 0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [19, -32]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [19, 32]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [4, -31]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [4, 31]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [-11, -29]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-11, 29]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-38.5, 19],
+      "length": 35.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-38.5, -19],
+      "length": 35.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -74, -7,
+    -39, -16.5,
+    -39, -25.5,
+    25, -29.5,
+    39, -37,
+    41, -43.5,
+    46, -43.5,
+    58.5, -19.5,
+    73, -5.5,
+    73, 5.5,
+    58.5, 19.5,
+    46, 43.5,
+    41, 43.5,
+    39, 37,
+    25, 29.5,
+    -39, 25.5,
+    -39, 16.5,
+    -74, 7
+  ]
+}

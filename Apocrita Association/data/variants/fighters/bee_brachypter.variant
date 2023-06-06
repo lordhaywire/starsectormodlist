@@ -1,0 +1,22 @@
+{
+  "variantId": "bee_brachypter",
+  "hullId": "bee_brachypter",
+  "displayName": "Standard",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "bee_tristis_f"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

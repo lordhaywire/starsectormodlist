@@ -1,0 +1,24 @@
+{
+	"id":"de_drivefieldmodulator",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"com.fs.starfarer.api.impl.combat.ai.DriveFieldModulatorAI",
+	"statsScript":"com.fs.starfarer.api.impl.combat.DriveFieldModulatorScript",
+	
+	#"engineGlowColor":[255,175,125,255],
+	#"engineGlowContrailColor":[100,165,255,25],
+	"engineGlowLengthMult":1,
+	"engineGlowWidthMult":1,
+	"engineGlowGlowMult":2,
+	
+
+	"loopSound":"system_fortress_shield_loop",
+	"outOfUsesSound":"engine_disabled",
+	
+	"aiHints":{
+		"activeSpeedIncrease":0,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":0,
+	}
+}

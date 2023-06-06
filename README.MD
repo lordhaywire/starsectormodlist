@@ -8,7 +8,7 @@ This is a list of the mods I use when I am [streaming](https://www.twitch.tv/lor
 
 This is set up how I have mine set up and it works fine. I am sure most modders don't want someone to compile a mod list/pack and distribute because if someone (me) fucks something up then people go to them asking for help, so I highly recommend setting it up yourself. 
 
-Here is a link to the [Unofficial Starsector Discord](https://discord.gg/a8AWVcPCPr) if you are going to set it up yourself.  Below are all the links to the mods so you can grab them.
+Here is a link to the [unofficial Starsector Discord](https://discord.gg/a8AWVcPCPr) if you are going to set it up yourself.  Below are all the links to the mods so you can grab them.
 
 ## Vmparams File
 
@@ -36,11 +36,15 @@ I have included all the mod files in this repository.  You can just download the
 
 [ED Shipyards v2.6.1](https://fractalsoftworks.com/forum/index.php?topic=24976.0) - Added 6/4/23
 
+[Diktat Enhancement](https://fractalsoftworks.com/forum/index.php?topic=22852.0) - Added 6/5/23
+
 [Luddic Enhancements Mod v1.2.6b](https://fractalsoftworks.com/forum/index.php?topic=15084.0) - Updated 6/4/23
 
 [Luddic Enhancements IED Ships v1.2.6](https://fractalsoftworks.com/forum/index.php?topic=15084.0) - Updated 6/4/23
 
 [Missile Ship Overhaul v1.2.5](https://fractalsoftworks.com/forum/index.php?topic=24344.0) - Added 6/4/23
+
+[Phillip Andrada Gas Station Manager v1.12](https://fractalsoftworks.com/forum/index.php?topic=24215.0) - Added 6/4/23
 
 [Space Truckin' v1.4a](https://www.patreon.com/posts/space-truckin-v1-82648770) - Updated 6/4/23
 
@@ -55,6 +59,8 @@ I have included all the mod files in this repository.  You can just download the
 [~~Vayra's Ship Pack v1.2.3~~](https://fractalsoftworks.com/forum/index.php?topic=16059.0) Outdated - Removed 6/4/23
 
 ## Faction Mods
+
+[Apocrita Association v0.2.0](https://fractalsoftworks.com/forum/index.php?topic=26535.0) - Added 6/5/23
 
 [Blue/Extratential Lanestate Union v0.8.2-RC2](https://fractalsoftworks.com/forum/index.php?topic=14041.0) - Added 6/4/23
 
@@ -74,6 +80,8 @@ I have included all the mod files in this repository.  You can just download the
 
 [Osiris Alliance v4.0.2](https://fractalsoftworks.com/forum/index.php?topic=22163.0) - Added 5/17/23
 
+[P9 Colony Group v0.54](https://fractalsoftworks.com/forum/index.php?topic=7430.0) - Added 6/5/23
+
 [prv Starworks v27](https://fractalsoftworks.com/forum/index.php?topic=12553.0) - Updated 6/4/23
 
 [Red/Oculian Armada v0.9.3](https://fractalsoftworks.com/forum/index.php?topic=9035.0) - Added 6/4/23
@@ -85,6 +93,8 @@ I have included all the mod files in this repository.  You can just download the
 [~~Shadowyards v0.95rc4~~](https://fractalsoftworks.com/forum/index.php?topic=3491.0) Outdated - Removed 6/4/23
 
 [Underworld v1.8.1](https://fractalsoftworks.com/forum/index.php?topic=11002.0) - Updated 6/4/23
+
+[Xhan Empire v2.51](https://fractalsoftworks.com/forum/index.php?topic=17972.0) - Added 6/5/23
 
 ## Miscellaneous Mods
 
@@ -98,9 +108,11 @@ I have included all the mod files in this repository.  You can just download the
 
 [Audio Plus v1.2.0](https://fractalsoftworks.com/forum/index.php?topic=10985.0) - Updated 6/4/23
 
+[~~Combat Alarm Sounds~~](https://fractalsoftworks.com/forum/index.php?topic=11253.0) Outdated - Removed 6/4/23
+
 [Combat Chatter v1.13.2](https://fractalsoftworks.com/forum/index.php?topic=10399.0) - Updated 6/4/23
 
-[~~Combat Alarm Sounds~~](https://fractalsoftworks.com/forum/index.php?topic=11253.0) Outdated - Removed 6/4/23
+[Combat Radar v3.0](https://fractalsoftworks.com/forum/index.php?topic=7526.0) - Added 6/5/23
 
 [~~Lightshow~~](https://fractalsoftworks.com/forum/index.php?topic=11528.0) Outdated - Removed 6/4/23
 

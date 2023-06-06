@@ -1,0 +1,50 @@
+{
+  "hullName": "Brachypter",
+  "hullId": "bee_brachypter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fighters/bee_brachypter.png",
+  "style": "MIDLINE",
+  "height": 24,
+  "width": 22,
+  "center": [11, 12],
+  "collisionRadius": 12,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 13.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "builtInWeapons": {
+    "WS0002": "bee_tristis_f"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [8, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-11.5, -0],
+      "length": 12.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -11, -3.5,
+    -1, -4,
+    -4, -10.5,
+    11, -0,
+    -4, 10.5,
+    -1, 4,
+    -11, 3.5
+  ]
+}

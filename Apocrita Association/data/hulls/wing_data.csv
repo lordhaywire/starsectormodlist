@@ -1,0 +1,6 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+bee_alate_wing,bee_alate,"interceptor3, interceptor, high, auto_fighter, rapid_reform, no_sell, no_drop",1,,5,7,BOX,4000,200,700,6,INTERCEPTOR,Interceptor Drone,5,9000,,,,,,,,,,,,,7
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+bee_phrag_wing,bee_phrag,"support3, fighter, high, no_sell, no_drop",3,,7,12,BOX,0,500,,2,SUPPORT,Protector Drone,12,15000,,,,,,,,,,,,,2
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+bee_brachypter_wing,bee_brachypter,"fighter3, fighter, apocrita_wpn_bp",1,,5,10,CLAW,4000,500,0,4,FIGHTER,Fighter,8,7000,,,,,,,,,,,,,

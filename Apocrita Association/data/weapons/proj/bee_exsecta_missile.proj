@@ -1,0 +1,39 @@
+{
+	"id":"bee_exsecta_missile",
+	"specClass":"missile",
+	"missileType":"ROCKET",
+	"sprite":"graphics/missiles/bee_missile_exsecta.png",
+	"size":[8,17],	
+	"center":[4,8.5],
+	"collisionRadius":7,
+	"collisionClass":"MISSILE_FF",
+	"explosionColor":[255,165,50,255],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+
+	"flameoutTime":5, # total time from flameout to full fadeout
+	"fadeTime":5, # fadeout duration					 
+	"engineSpec":{"turnAcc":0,
+				  "turnRate":0,
+				  "acc":2500,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-6, 0],
+				    "style":"CUSTOM",
+					"styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,0,127,255],
+						"contrailDuration":2,
+						"contrailWidthMult":1.5,
+						"contrailWidthAddedFractionAtEnd":1,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":0f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":0f, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"type":"SMOKE" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":3.0,
+				    "length":12.5,
+				    "angle":180.0}]
+}
+			

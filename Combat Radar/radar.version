@@ -1,0 +1,11 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/LazyWizard/combat-radar/master/mod/radar.version",
+    "modName":"Combat Radar",
+    "modThreadId":7526,
+    "modVersion":
+    {
+        "major":3,
+        "minor":0,
+        "patch":0
+    }
+}

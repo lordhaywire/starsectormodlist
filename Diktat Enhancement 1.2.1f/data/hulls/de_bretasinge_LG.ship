@@ -1,0 +1,96 @@
+{
+  "hullName": "Bretasinge(LG)",
+  "hullId": "de_bretasinge_LG",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/Diktat Enhancement/ships/bretasinge_LG.png",
+  "style": "MIDLINE",
+  "height": 81,
+  "width": 64,
+  "center": [32, 40.5],
+  "collisionRadius": 44.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 41.5,
+  "viewOffset": 0,
+  "builtInMods": ["solar_shielding"],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [24.5, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-28, 14],
+      "length": 19,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-28, -14],
+      "length": 19,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12.5, 28],
+      "length": 19,
+      "width": 7,
+      "angle": 90,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12.5, -28],
+      "length": 19,
+      "width": 7,
+      "angle": -90,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-22.5, 25.5],
+      "length": 19,
+      "width": 7,
+      "angle": 135,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-22.5, -25.5],
+      "length": 19,
+      "width": 7,
+      "angle": -135,
+      "contrailSize": 7,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -38, 0,
+    -28.5, -11.5,
+    -28.5, -17,
+    -19.5, -28,
+    -7, -27.5,
+    13.5, -16.5,
+    22.5, -16.5,
+    38.5, -11,
+    38.5, 0,
+    38.5, -0,
+    38.5, 11,
+    22.5, 16.5,
+    13.5, 16.5,
+    -7, 27.5,
+    -19.5, 28,
+    -28.5, 17,
+    -28.5, 11.5,
+    -38, -0
+  ]
+}

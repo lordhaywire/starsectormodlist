@@ -1,0 +1,126 @@
+{
+  "hullName": "Sceliphron",
+  "hullId": "bee_sceliphron",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/bee_sceliphron.png",
+  "style": "MIDLINE",
+  "height": 162,
+  "width": 110,
+  "center": [55, 66.5],
+  "collisionRadius": 97.5,
+  "shieldCenter": [21, -0],
+  "shieldRadius": 110,
+  "viewOffset": 0,
+  "builtInMods": [
+    "autorepair"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [86.5, 1]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": 76.5,
+      "locations": [-12.5, 42]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 225,
+      "angle": -76.5,
+      "locations": [-12.5, -40]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 130,
+      "locations": [-29.5, 17]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -130,
+      "locations": [-29.5, -15]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-67, 41],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-67, -39],
+      "length": 32,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-66.5, -28],
+      "length": 46.5,
+      "width": 9,
+      "angle": -180,
+      "contrailSize": 9,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-66.5, 30],
+      "length": 46.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-66.5, -17],
+      "length": 66.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "APOCRITA"
+    },
+    {
+      "location": [-66.5, 19],
+      "length": 66.5,
+      "width": 11,
+      "angle": -180,
+      "contrailSize": 11,
+      "style": "APOCRITA"
+    }
+  ],
+  "bounds": [
+    -65.5, -52.5,
+    -2.5, -52.5,
+    11, -38.5,
+    41.5, -36,
+    95.5, -15.5,
+    95.5, 17,
+    41.5, 38,
+    11, 40.5,
+    -2.5, 54.5,
+    -65.5, 54.5
+  ]
+}

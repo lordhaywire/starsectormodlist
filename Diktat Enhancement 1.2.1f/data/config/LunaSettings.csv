@@ -1,0 +1,7 @@
+modID,fieldID,fieldName,fieldType,defaultValue,fieldDescription,minValue,maxValue
+,,,,,,,
+Diktat Enhancement,de_header,,Header,DE CONFIG OPTIONS - ONLY APPLY ON NEW GAMES!,,,
+Diktat Enhancement,DEremovenondiktatfeatures,Disable Non-Diktat DE Features,Boolean,FALSE,"When set to true, prevents non-diktat DE features from spawning on new game.",,
+Diktat Enhancement,DEenablelitemode,Enable DE Lite Mode,Boolean,FALSE,"When set to true, activates a ""Lite"" mode of DE that will apply on new game. DE Lite Mode disables many of the buffs given to the Diktat by DE, including most notably the entirety of the Andor system. Will also override ""Disable Non-Diktat DE Features"" unfortunately.",,
+Diktat Enhancement,DEenablefortressmode,Enable DE Fortress Mode,Boolean,FALSE,"When set to true, activates DE Fortress Mode which replaces all non-Askonia DE-added markets with Askonia-based alternatives, among others that will apply on new game. DISCLAIMER: Fortress Askonia is incredibly fortified and powerful, rivaling Rubicon and other similar fortress systems; enable at your own risk.",,
+Diktat Enhancement,DEdisablelobers,Disable DE Lobster Content,Boolean,FALSE,"When set to true, will remove lobster-related fighters(Nephrops, Metanephrops, Homarus, Langusta) from existence(no faction spawns, or bp/chip spawns in salvage). DISCLAIMER: This will make Volturn-y and all other Volturnian Lobsters sad.",,

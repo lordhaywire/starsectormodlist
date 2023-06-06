@@ -1,0 +1,23 @@
+name,id,rarity,base_value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#builtin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Combusta Stinger,bee_combusta,0,,800,2000,,,,5,0,,,,ENERGY,,2200,0.25,0.5,1,5,,,,,10000,,,,,,,"SYSTEM, SHOW_IN_CODEX","no_bp_drop, apocrita_association",,Apocrita Association,,General,,,,,,,,,,999
+Aurifer Pulse Cannon,bee_aurifer,0,,800,,600,,,30,0,,,,ENERGY,500,,0.1,0.8,4,0.1,0,5,1,2,,900,,,,,,"STRIKE, USE_VS_FRIGATES, SYSTEM, SHOW_IN_CODEX","no_bp_drop, apocrita_association",,Apocrita Association,,General,,,,,,,,,,999
+Vivax Plasma Launcher,bee_vivax,0,,800,,4000,,,15,0,,,,ENERGY,3500,,1,10,1,,0,,,,,2000,,,500,,,"STRIKE, USE_VS_FRIGATES, SYSTEM, SHOW_IN_CODEX","no_bp_drop, apocrita_association",,Apocrita Association,,General,,,,,,,,,,999
+Aculeus SRM Tube,bee_aculeus,0,,500,,200,,15,50,0,9,0.2,,HIGH_EXPLOSIVE,0,,0,5,3,0.2,0,0,0,0,,400,150,20,100,,,"DO_NOT_AIM, DO_NOT_CONSERVE, SYSTEM, SHOW_IN_CODEX","no_bp_drop, apocrita_association",,Apocrita Association,,Anti-Armor,Fast,Excellent,,,,,,,,999
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nitor Particle Lance,bee_nitor,0,,1200,10000,,,,5,0,3,0,,ENERGY,,6000,0.25,0.25,1,30,,,,,10000,,,,,,,"SYSTEM, SHOW_IN_CODEX","no_bp_drop,",,,,Finisher,,,,,,,,,,999
+Pykarus Torch,bee_pykarus,0,,30,1000,,,15,30,0,,,,ENERGY,,100,,,,,,,,,10000,,,,,,,"SYSTEM, SHOW_IN_CODEX","no_bp_drop, apocrita_association",,Apocrita Association,,Melee,,,,,,,,,,
+Tristis Pulse Gun (Fighter),bee_tristis_f,0,,500,,100,,,50,0,,,,ENERGY,100,,0.1,1.75,1,0.2,,,,,,1200,,,,,,,"apocrita_association, no_bp_drop",,Apocrita Association,,General,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#system,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Canister Belch,bee_systemwpn_belch,0,,700,,250,,,,,,0,,HIGH_EXPLOSIVE,0,0,0,0.1,1,0,50,50,0,0,,75,400,3,300,,,SYSTEM,,,,,,,,,,,,,,,35.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#regular,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Atrox Light Cannon,bee_atrox,0,2400,1000,,250,,0,25,12,,,,ENERGY,250,,0.2,2,3,0.2,,,,,,1600,,,,,,,"apocrita_association, energy13, apocrita_wpn_bp",,Apocrita Association,,General,,,,,,,,,,
+Tristis Pulse Gun,bee_tristis,0,500,800,,100,,,50,7,,,,ENERGY,100,,0.1,2,3,0.2,,,,,,1200,,,,,,,"apocrita_association, energy8, apocrita_wpn_bp",,Apocrita Association,,General,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Exsecta Mortar,bee_exsecta,1,3500,800,,150,,15,15,12,24,1,6,KINETIC,150,,0,1.5,2,0.2,0,0,0,0,,900,,,,,,"DIRECT_AIM,","apocrita_association, ballistic13, apocrita_wpn_bp",,Apocrita Association,,Anti-Shield,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mandibula MRM,bee_mandibula,1,2800,2000,,1000,,15,10,10,12,,,HIGH_EXPLOSIVE,0,,0,4,1,,0,0,0,0,,300,50,30,400,,,"DO_NOT_AIM, HEATSEEKER","apocrita_association, missile13, strike8, apocrita_wpn_bp",,Apocrita Association,,Anti-Armor,Medium,Excellent,,,,,,,,
+Aculeus SRM Pod,bee_aculeus_pod,1,2400,1200,,200,,15,15,10,42,,,HIGH_EXPLOSIVE,0,,0,5,6,0.2,0,0,0,0,,400,150,25,100,,,"DO_NOT_AIM, ","apocrita_association, missile8, strike8, apocrita_wpn_bp",,Apocrita Association,,Anti-Armor,Fast,Excellent,,,,,,,,

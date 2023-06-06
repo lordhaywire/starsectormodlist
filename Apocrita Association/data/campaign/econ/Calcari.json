@@ -1,0 +1,61 @@
+{
+	"starSystem":"Calcari",
+	"markets":[
+		{
+			"entities":["Ymenn"],
+			"faction":"apocrita_association",
+			"size":5,
+			"freePort":true,
+			"startingConditions":[
+				"population_5",
+				"hot",
+				"tectonic_activity",
+				"thin_atmosphere",
+				"ore_rich",
+				"rare_ore_rich",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"waystation",
+				"mining",
+				"refining",
+				"lightindustry",
+				"orbitalstation_mid",
+				"grounddefenses",
+			],
+		},
+		{
+			"entities":["Apocrita"],
+			"faction":"apocrita_association",
+			"size":6,
+			"freePort":false,
+			"startingConditions":[
+				"inimical_biosphere",
+				"organics_abundant",
+				"farmland_adequate",
+				"ore_sparse",
+				"ruins_extensive",
+				"population_6",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"waystation",
+				"grounddefenses",
+				"farming",
+				"mining",
+				"militarybase",
+				"orbitalworks",
+				"battlestation_mid",
+				
+			],
+		},
+	],
+
+
+}
+
+
+

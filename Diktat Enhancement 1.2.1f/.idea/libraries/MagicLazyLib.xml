@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="MagicLazyLib">
+    <CLASSES>
+      <root url="jar:///Applications/Starsector.app/mods/MagicLib/jars/MagicLib.jar!/" />
+      <root url="file:///Applications/Starsector.app/mods/LazyLib/jars/lib" />
+      <root url="jar:///Applications/Starsector.app/mods/LazyLib/jars/LazyLib.jar!/" />
+      <root url="jar:///Applications/Starsector.app/mods/LazyLib/jars/LazyLib-Kotlin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///Applications/Starsector.app/mods/LazyLib/jars/LazyLib.jar!/" />
+      <root url="jar:///Applications/Starsector.app/mods/LazyLib/jars/LazyLib.jar!/" />
+      <root url="jar:///Applications/Starsector.app/mods/LazyLib/jars/LazyLib-Kotlin.jar!/" />
+      <root url="file:///Applications/Starsector.app/mods/MagicLib/src" />
+    </SOURCES>
+    <jarDirectory url="file:///Applications/Starsector.app/mods/LazyLib/jars/lib" recursive="false" />
+  </library>
+</component>

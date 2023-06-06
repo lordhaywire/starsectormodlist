@@ -1,0 +1,55 @@
+{
+  "id": "bee_systemwpn_belch",
+  "specClass": "projectile",
+  "projectileSpecId": "bee_belch_proj",
+  "type": "SYSTEM",
+  "size": "SMALL",
+  "turretSprite": "",
+  "hardpointSprite": "",
+  "turretOffsets": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    -1
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 10,
+    "particleSizeRange": 10,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 0,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      150
+    ]
+  },
+  "fireSoundTwo": "system_canister_flak_fire"
+}

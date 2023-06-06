@@ -1,0 +1,16 @@
+{
+
+	# each step is 3 game days
+	#"initialStepsToRun":20,
+	
+	#"maxExoticUtilityAtRange":14000,
+	#"defaultTariff":0.3,
+	
+	"starSystems":[
+		"Calcari.json",
+		"Alyro.json",
+	],
+	
+	#"map":"../starmap.json",
+
+}
