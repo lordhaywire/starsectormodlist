@@ -1,0 +1,63 @@
+{
+  "id": "prv_brytare_pod",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_brytare_srm",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "displayArcRadius": 500,
+  "turretSprite": "graphics/prv/weapons/prv_brytare_pod_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_brytare_pod_hardpoint.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    7,7,
+    7,-7,
+    ###
+    #9,7,
+    #9,-7,
+    #7,6,
+    #7,-6,
+    #5,5,
+    #5,-5,
+  ],
+  "turretAngleOffsets": [
+    0,0,
+    #0,0,0,0,0,0
+  ],
+  "hardpointOffsets": [
+    9,7,
+    9,-7,
+    ###
+    #13,7,
+    #13,-7,
+    #11,6,
+    #11,-6,
+    #9,5,
+    #9,-5,
+  ],
+  "hardpointAngleOffsets": [
+    0,0,
+    #0,0,0,0,0,0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 5,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 3,
+    "cloudDuration": 0.9,
+    "cloudRadius": 8,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackSpread": 10,
+    "particleColor": [
+      255,
+      200,
+      220,
+      100
+    ]
+  },
+  "fireSoundTwo": "swarmer_fire"
+}

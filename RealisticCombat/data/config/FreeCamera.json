@@ -1,0 +1,25 @@
+{
+    "Activate or deactivate free camera.":"",
+    "toggle":53,
+
+    "Zoom out":"",
+    "zoomOut":52,
+
+    "Zoom in":"",
+    "zoomIn":51,
+
+    "Fraction of half the height of the screen moving the mouse a distance":"", 
+    "from the center greater than which will start moving the viewport.":"",
+    "screenHalfHeightThresholdFraction":0.7,
+
+    "Fraction of half the height of screen, beyond the threshold fraction,":"",
+    "moving the mouse over which will hasten viewport movement":"",
+    "screenHalfHeightScaleFraction":0.1,
+
+    "Base number of pixels per second to move the camera":"",
+    "baseSpeed":20,
+
+    "Factor whereby to scale the viewport when the zoom in or zoom out":"",
+    "button is pressed":"",
+    "zoomFactor":0.1,
+}

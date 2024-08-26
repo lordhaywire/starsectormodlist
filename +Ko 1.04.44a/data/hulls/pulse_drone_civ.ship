@@ -1,0 +1,68 @@
+{
+    "bounds": [
+        14,
+        0,
+        -2,
+        9,
+        -5,
+        0,
+        -2,
+        -8
+    ],
+    "center": [
+        10,
+        8
+    ],
+    "collisionRadius": 40,
+    "coversColor": "",
+    "engineSlots": [{
+        "angle": 180,
+        "contrailSize": 64,
+        "length": 24,
+        "location": [
+            -4,
+            0
+        ],
+        "style": "MIDLINE",
+        "width": 12
+    }],
+    "height": 24,
+    "hullId": "pulse_drone_civ",
+    "hullName": "Drone (C)",
+    "hullSize": "FIGHTER",
+    "shieldCenter": [
+        0,
+        0
+    ],
+    "shieldRadius": 30,
+    "spriteName": "graphics/ships/pulse_drone_rade.png",
+    "style": "MIDLINE",
+    "viewOffset": 0,
+    "weaponSlots": [
+        {
+            "angle": 0,
+            "arc": 360,
+            "id": "WS 001",
+            "locations": [
+                3,
+                0
+            ],
+            "mount": "HIDDEN",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 360,
+            "id": "WS 002",
+            "locations": [
+                3,
+                0
+            ],
+            "mount": "HIDDEN",
+            "size": "SMALL",
+            "type": "ENERGY"
+        }
+    ],
+    "width": 20
+}

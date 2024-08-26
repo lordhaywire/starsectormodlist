@@ -1,0 +1,19 @@
+{
+	"id":"prv_remission_1_shot",
+	"onHitEffect":"prv.rb.weapons.prv_remission_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":14.0,
+	"hitGlowRadius":12,
+	"width":14.0, #9
+	"fadeTime":0.3,
+	"fringeColor":[128,255,255,196],
+	"coreColor":[255,255,255,235],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/prv/missiles/prv_shell_remission.png",
+	"glowColor":[128,255,255,64],
+	"glowRadius":14, #9
+}

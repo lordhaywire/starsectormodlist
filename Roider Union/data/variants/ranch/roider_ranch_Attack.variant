@@ -1,14 +1,30 @@
 {
     "displayName": "Attack",
-    "fluxCapacitors": 10,
-    "fluxVents": 6,
+    "fluxCapacitors": 16,
+    "fluxVents": 15,
     "goalVariant": true,
     "hullId": "roider_ranch",
-    "hullMods": ["missleracks"],
+    "hullMods": [
+        "dedicated_targeting_core",
+        "heavyarmor"
+    ],
     "modules": [{"PROW ARMOR": "roider_ranch_armor_Standard"}],
     "permaMods": [],
     "variantId": "roider_ranch_Attack",
     "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "arbalest",
+                "WS 004": "arbalest"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 009": "roider_spike_driver"}
+        },
         {
             "autofire": true,
             "mode": "LINKED",
@@ -18,26 +34,24 @@
             }
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 003": "harpoonpod",
-                "WS 004": "harpoonpod"
+                "WS 007": "lightmg",
+                "WS 008": "lightmg"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 007": "lightmg",
-                "WS 008": "lightmg",
                 "WS 005": "vulcan",
                 "WS 006": "vulcan"
             }
         }
     ],
     "wings": [
-        "roider_duster_wing",
-        "roider_duster_wing"
+        "roider_breaker_wing",
+        "roider_breaker_wing"
     ]
 }

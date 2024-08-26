@@ -1,0 +1,14 @@
+{
+	"baseHullId":"bodkin_esc",
+	"skinHullId":"bodkin_ass",
+	"hullName":"Geri",
+	"tags":["rare_bp", "independent", "Bhilai", "merc"],
+	"removeBuiltInMods":["assault_package"],
+	"builtInMods":["escort_package"],
+	"systemId":"damper",
+	"weaponSlotChanges":{
+	   "WS0004":{
+		  "type": "MISSILE",
+	   },
+	},
+}

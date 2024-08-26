@@ -1,0 +1,26 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "google_afflictor",
+    "hullMods": ["adaptive_coils"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "google_afflictor_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "phasebeam",
+                "WS 002": "phasebeam"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "pdburst"}
+        }
+    ]
+}

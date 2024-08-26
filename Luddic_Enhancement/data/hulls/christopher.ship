@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInMods": [
        "ablative_armor",
-       "distributed_fire_control",
+       "armoredweapons",
   ],
   "weaponSlots": [
     {

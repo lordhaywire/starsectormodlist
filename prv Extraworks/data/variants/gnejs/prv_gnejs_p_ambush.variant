@@ -1,0 +1,47 @@
+{
+  "displayName": "Ambush",
+  "fluxCapacitors": 3,
+  "fluxVents": 3,
+  "goalVariant": false,
+  "hullId": "prv_gnejs_p",
+  "hullMods": [
+	"safetyoverrides",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_gnejs_p_ambush",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0002": "irpulse",
+        "WS0003": "irpulse",
+        "WS0004": "irpulse",
+        "WS0005": "irpulse",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hammerrack"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

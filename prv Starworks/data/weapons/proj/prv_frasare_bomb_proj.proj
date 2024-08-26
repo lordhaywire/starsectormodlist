@@ -11,7 +11,8 @@
 	"explosionRadius":100, # purely visual
 	"flameoutTime":0.05, # total time from flameout to full fadeout
 	"noEngineGlowTime":0.05, # time spent without the engine glow being rendered
-	"fadeTime":0.05, # fadeout duration		
+	"fadeTime":0.05, # fadeout duration	
+	"renderTargetIndicator":false, # no target diamond in combat view, not targeted by flares	
 	"explosionSpec":{"duration":0.1f, # not visual
 					 "radius":75,
 					 "coreRadius":50, # full damage within core radius

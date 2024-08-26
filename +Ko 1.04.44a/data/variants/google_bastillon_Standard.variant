@@ -1,0 +1,41 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "google_bastillon",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "google_bastillon_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "atrops_pod",
+                "WS 002": "atrops_pod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "xpulse",
+                "WS 006": "xpulse",
+                "WS 007": "xpulse",
+                "WS 008": "xpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "flicker_pdl",
+                "WS 004": "flicker_pdl",
+                "WS 014": "flicker_pdl",
+                "WS 015": "flicker_pdl"
+            }
+        }
+    ]
+}

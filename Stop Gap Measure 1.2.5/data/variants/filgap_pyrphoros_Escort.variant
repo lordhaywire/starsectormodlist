@@ -1,0 +1,39 @@
+{
+  "variantId": "filgap_pyrphoros_Escort",
+  "hullId": "filgap_pyrphoros",
+  "displayName": "Escort",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "swarmer",
+        "WS0001": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "lightdualac",
+        "WS0005": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "vulcan",
+        "WS0004": "filgap_scattergun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

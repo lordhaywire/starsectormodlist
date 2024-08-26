@@ -16,9 +16,9 @@
     "distributed_fire_control",
     "hbi",
     "missleracks",
-    "advancedcore",
     "shield_shunt",
-    "repair_gantry"
+    "repair_gantry",
+    "advancedcore"
   ],
   "weaponSlots": [
     {

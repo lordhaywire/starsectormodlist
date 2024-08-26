@@ -1,0 +1,44 @@
+{
+	"baseHullId":"shrike",
+	"skinHullId":"shrikoc",
+	"hullName":"Shrike (KoC)",
+	"descriptionId":"shrike",  # optional
+	"descriptionPrefix":"With bare hulls aqquired through a trade deal with the Persean League, and much to the chargrin of the Hegemony, the Ko Combine have gained access to military grade hulls. Sporting modified engines, reactive armour and a revised dampener system, the Ko Combine variant offers better defensive value than the base model. Minor modifications to the turrets and hardpoints have been made to improve loadout versatility and free up flux for the more demanding systems.",
+	"tags":["rare_bp","KoC"],
+	"spriteName":"graphics/ships/shrikoc.png",
+	"builtInMods":["blockade"],
+	"systemId":"damper",
+	"weaponSlotChanges":{
+	   "WS 000":{
+		  "type": "ENERGY",
+	   },
+	   "WS 001":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 002":{
+		  "type": "ENERGY",
+	   },
+	   "WS 003":{
+		  "type": "ENERGY",
+	   },
+	   "WS 005":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS 006":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 007":{
+		  "type": "BALLISTIC",
+	   },
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+	},  
+}

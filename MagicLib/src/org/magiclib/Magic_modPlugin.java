@@ -1,16 +1,24 @@
 package org.magiclib;
 
 import com.fs.starfarer.api.BaseModPlugin;
+import com.fs.starfarer.api.EveryFrameScript;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.thoughtworks.xstream.XStream;
+import org.lwjgl.util.vector.Vector2f;
+import org.magiclib.achievements.MagicAchievementManager;
+import org.magiclib.achievements.TestingAchievementSpec;
+import org.magiclib.subsystems.MagicSubsystemsManager;
 import org.magiclib.bounty.*;
 import org.magiclib.kotlin.MagicKotlinModPlugin;
+import org.magiclib.paintjobs.MagicPaintjobManager;
 import org.magiclib.plugins.MagicAutoTrails;
 import org.magiclib.plugins.MagicCampaignTrailPlugin;
 import org.magiclib.terrain.MagicAsteroidBeltTerrainPlugin;
 import org.magiclib.terrain.MagicAsteroidFieldTerrainPlugin;
 import org.magiclib.util.*;
+
+import java.awt.*;
 
 /**
  * Master ModPlugin for MagicLib. Handles all the loading of data and scripts.
@@ -62,6 +70,11 @@ public class Magic_modPlugin extends BaseModPlugin {
         MagicVariables.loadThemesBlacklist();
         MagicVariables.verbose = Global.getSettings().isDevMode();
         MagicVariables.bounty_test_mode = MagicSettings.getBoolean(MagicVariables.MAGICLIB_ID, "bounty_board_test_mode");
+
+        MagicAchievementManager.getInstance();
+        MagicAchievementManager.getInstance().onApplicationLoad();
+
+        MagicSubsystemsManager.initialize();
     }
 
     @Override
@@ -129,6 +142,40 @@ public class Magic_modPlugin extends BaseModPlugin {
         }
 
         MagicKotlinModPlugin.INSTANCE.onGameLoad(newGame);
+
+        if (isMagicLibTestMode()) {
+            MagicAchievementManager.getInstance().addAchievementSpecs(new TestingAchievementSpec());
+//            testMagicCampaignTrailPlugin();
+        }
+
+        MagicAchievementManager.getInstance().onGameLoad();
+
+        MagicPaintjobManager.onApplicationLoad();
+//        MagicPaintjobManager.getInstance().diable$MagicLib();
+
+        MagicPaintjobManager.onGameLoad();
+    }
+
+    @Override
+    public void beforeGameSave() {
+        super.beforeGameSave();
+        if (MagicVariables.getMagicBounty()) {
+            MagicBountyCoordinator.beforeGameSave();
+        }
+
+        MagicAchievementManager.getInstance().beforeGameSave();
+        MagicPaintjobManager.beforeGameSave();
+    }
+
+    @Override
+    public void afterGameSave() {
+        super.afterGameSave();
+        if (MagicVariables.getMagicBounty()) {
+            MagicBountyCoordinator.afterGameSave();
+        }
+
+        MagicAchievementManager.getInstance().afterGameSave();
+        MagicPaintjobManager.afterGameSave();
     }
 
     /**
@@ -156,15 +203,44 @@ public class Magic_modPlugin extends BaseModPlugin {
         x.alias("AsteroidFieldTerrainPlugin", MagicAsteroidFieldTerrainPlugin.class);
     }
 
+    public static boolean isMagicLibTestMode() {
+        return Global.getSector() != null
+                && Global.getSector().getPlayerPerson().getNameString()
+                .equalsIgnoreCase("ML_Test");
+    }
+
+    private static void testMagicCampaignTrailPlugin() {
+        final float trailId = MagicCampaignTrailPlugin.getUniqueID();
+        Global.getSector().addTransientScript(new EveryFrameScript() {
+            @Override
+            public boolean isDone() {
+                return false;
+            }
+
+            @Override
+            public boolean runWhilePaused() {
+                return false;
+            }
+
+            @Override
+            public void advance(float amount) {
+                MagicCampaignTrailPlugin.addTrailMemberSimple(Global.getSector().getPlayerFleet(), trailId, Global.getSettings().getSprite("graphics/portraits/godiva.jpg"),
+                        Global.getSector().getPlayerFleet().getLocation(),
+                        1f, 0f, 500f, 550f, Color.ORANGE,
+                        1f, 6f, true, new Vector2f());
+            }
+        });
+    }
+
     //    //debugging magic bounties
 //    
 //    private static final Logger LOG = Global.getLogger(Magic_modPlugin.class);
 //    @Override
 //    public void onNewGameAfterEconomyLoad() {
 //        for(String b : MagicBountyData.BOUNTIES.keySet()){
-//            LOG.error(" ");
-//            LOG.error("Testing the "+b+" bounty");
-//            LOG.error(" ");
+//            LOG.warn(" ");
+//            LOG.warn("Testing the "+b+" bounty");
+//            LOG.warn(" ");
 //            
 //            bountyData data = MagicBountyData.getBountyData(b);
 //            for(int i=0; i<10; i++){
@@ -178,9 +254,9 @@ public class Magic_modPlugin extends BaseModPlugin {
 //                        data.location_prioritizeUnexplored,
 //                        true);
 //                if(location!=null){
-//                    LOG.error(location.getName()+ " is suitable in "+ location.getStarSystem().getName() +" at a distance of "+(int)location.getStarSystem().getLocation().length());
+//                    LOG.warn(location.getName()+ " is suitable in "+ location.getStarSystem().getName() +" at a distance of "+(int)location.getStarSystem().getLocation().length());
 //                } else {
-//                    LOG.error("CANNOT FIND SUITABLE LOCATION");
+//                    LOG.warn("CANNOT FIND SUITABLE LOCATION");
 //                }
 //            }
 //        }

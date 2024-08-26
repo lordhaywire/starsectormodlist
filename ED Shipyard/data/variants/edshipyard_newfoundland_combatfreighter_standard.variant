@@ -1,7 +1,7 @@
 {
   "displayName": "Combat",
   "fluxCapacitors": 0,
-  "fluxVents": 9,
+  "fluxVents": 11,
   "goalVariant": true,
   "hullId": "edshipyard_newfoundland_combatfreighter",
   "hullMods": [

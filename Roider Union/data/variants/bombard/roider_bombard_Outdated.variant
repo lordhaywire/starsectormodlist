@@ -1,11 +1,12 @@
 {
     "displayName": "Outdated",
     "fluxCapacitors": 10,
-    "fluxVents": 15,
+    "fluxVents": 19,
     "goalVariant": true,
     "hullId": "roider_bombard",
     "hullMods": ["armoredweapons"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_bombard_Outdated",
     "weaponGroups": [
         {
@@ -17,7 +18,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "lightac",
+                "WS 001": "lidardish",
                 "WS 002": "lightac"
             }
         },

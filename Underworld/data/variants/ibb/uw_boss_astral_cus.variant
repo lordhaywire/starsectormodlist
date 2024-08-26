@@ -1,7 +1,7 @@
 {
     "displayName": "Custom",
-    "fluxCapacitors": 5,
-    "fluxVents": 26,
+    "fluxCapacitors": 20,
+    "fluxVents": 31,
     "goalVariant": true,
     "hullId": "uw_boss_astral",
     "hullMods": [

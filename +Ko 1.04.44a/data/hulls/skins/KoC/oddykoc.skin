@@ -1,0 +1,92 @@
+{
+	"baseHullId":"odyssey",
+	"skinHullId":"oddykoc",
+	"hullName":"Odyssey (KoC)",
+	"descriptionId":"odyssey",  # optional
+	"descriptionPrefix":"With bare hulls aqquired through a trade deal with the Persean League, and much to the chargrin of the Hegemony, the Ko Combine have gained access to military grade hulls. Sporting modified engines, reactive armour and a revised dampener system, the Ko Combine variant offers better defensive value than the base model. Subtle improvements to turrets make it equally effective in both broadside and head-on engagements and an intergrated PD AI system, the same version the Ko Combine equips on their drones, is fitted as standard.",
+	"tags":["rare_bp","KoC"],
+	"spriteName":"graphics/ships/oddykoc.png",
+#	"ordnancePoints":300,
+	"suppliesToRecover":40,
+	"suppliesPerMonth":40,
+	"builtInMods":["blockade","insulatedengine"],
+	"removeBuiltInMods": ["hiressensors","eccm"],
+	"fighterBays":2,
+	"systemId":"damper",
+#	"builtInWings": ["pulse_wing_rade","pulse_wing_rade"],
+#   "systemId":"drone_strike",
+#	"builtInWings": ["pulse_wing_rade","pulse_wing_rade","pulse_wing_rade"],
+#	"builtInWeapons": {"WS 004": "heavyburst","WS 005": "heavyburst","WS 006": "heavyburst"},
+	"weaponSlotChanges":{
+	   "WS 001":{
+		  "type": "BALLISTIC",
+		  #"angle": -75,-70,-65
+		  #"arc": 150,160,170
+		  "angle": -70,
+		  "arc": 160,
+	   },
+	   "WS 002":{
+		  "type": "BALLISTIC",
+		  #"angle": 90,80,
+		  #"arc": 150,170,
+		  "angle": 80,
+		  "arc": 170,
+	   },
+	   "WS 003":{
+		  "type": "COMPOSITE",
+		  "arc": 120,
+	   },
+	   "WS 004":{
+		"type": "ENERGY"
+	   },
+	   "WS 005":{
+		"type": "COMPOSITE"
+	   },
+	   "WS 006":{
+		"type": "ENERGY"
+	   },
+	   "WS 007":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 008":{
+		  "type": "ENERGY",
+	   },
+	   "WS 009":{
+		  "type": "ENERGY",
+	   },
+	   "WS 010":{
+		  "type": "ENERGY",
+	   },
+	   "WS 011":{
+		  "type": "ENERGY",
+	   },
+	   "WS 012":{
+		  "type": "ENERGY",
+	   },
+	   "WS 013":{
+		  "type": "ENERGY",
+	   },
+	   "WS 014":{
+		  "type": "ENERGY",
+	   },
+	   "WS 015":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 016":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 017":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS 018":{
+		  "type": "BALLISTIC",
+	   },
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+	},  
+}

@@ -1,0 +1,34 @@
+{
+	"hullFrequency":{
+		"hulls":{
+			"prv_conquest_ryak":0.1,
+			"prv_sunder_ryak":0.5,
+			"prv_mule":0.5,
+			"prv_fika":0.5,
+			"prv_middag":0.25,
+		},
+	},
+	"knownShips":{
+		"hulls":[
+			"prv_conquest_ryak",
+			"prv_sunder_ryak",
+			"shade",
+			"harbinger",
+			"afflictor",
+		],
+	},
+	"priorityShips":{
+		"hulls":[
+			"prv_conquest_ryak",
+			"prv_sunder_ryak",
+			"shade",
+			"harbinger",
+			"afflictor",
+		],
+	},
+	"variantOverrides":{
+            "prv_afflictor_aux":3,
+            "prv_shade_aux":4,
+            "prv_harbinger_aux":2,
+	},
+},	

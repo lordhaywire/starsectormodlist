@@ -1,37 +1,39 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 8,
+    "fluxCapacitors": 9,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "roider_sheriff",
-    "hullMods": ["fluxdistributor"],
+    "hullMods": [],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_sheriff_Elite",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {
-                "WS 001": "railgun",
-                "WS 002": "railgun"
-            }
+            "weapons": {"WS 004": "lightag"}
         },
         {
             "autofire": false,
-            "mode": "ALTERNATING",
+            "mode": "LINKED",
+            "weapons": {"WS 003": "roider_zap"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 003": "breach",
-                "WS 004": "breach"
+                "WS 001": "roider_doldrums",
+                "WS 002": "roider_doldrums"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 005": "roider_marksman",
-                "WS 006": "roider_marksman"
+                "WS 005": "vulcan",
+                "WS 006": "vulcan"
             }
         }
-    ],
-    "wings": []
+    ]
 }

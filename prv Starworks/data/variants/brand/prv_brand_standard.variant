@@ -3,27 +3,26 @@
   "hullId": "prv_brand",
   "displayName": "Advanced",
   "goalVariant": true,
-  "fluxCapacitors": 11,
+  "fluxCapacitors": 14,
   "fluxVents": 20,
   "quality": 0,
   "permaMods": [],
-  "hullMods": [
-    "unstable_injector"
-  ],
+  "hullMods": ["targetingunit","stabilizedshieldemitter"],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "prv_heavyspattergun"
+        "WS0006": "prv_heavyakers",
+        "WS0009": "prv_heavyakers"
       }
     },
     {
       "autofire": false,
-      "mode": "ALTERNATING",
+      "mode": "LINKED",
       "weapons": {
-        "WS0004": "sabot",
-        "WS0005": "sabot"
+        "WS0004": "prv_kaja",
+        "WS0005": "prv_kaja"
       }
     },
     {
@@ -38,7 +37,9 @@
       "mode": "LINKED",
       "weapons": {
         "WS0001": "prv_sipdlaser",
-        "WS0003": "prv_sipdlaser"
+        "WS0003": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser"
       }
     },
     {

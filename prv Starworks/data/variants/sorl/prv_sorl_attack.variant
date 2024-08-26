@@ -2,9 +2,9 @@
   "variantId": "prv_sorl_attack",
   "hullId": "prv_sorl",
   "displayName": "Attack",
-  "goalVariant": true,
-  "fluxCapacitors": 8,
-  "fluxVents": 10,
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
   "hullMods": [],
@@ -13,31 +13,37 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "prv_heavyspattergun"
+        "WS0007": "pulselaser"
       }
     },
     {
       "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0005": "prv_kraka",
-        "WS0006": "prv_kraka"
+        "WS0005": "typhoon",
+        "WS0006": "typhoon",
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_sipdlaser",
-        "WS0002": "prv_sipdlaser",
+        "WS0001": "irpulse",
+        "WS0002": "irpulse",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "prv_sipdlaser",
         "WS0004": "prv_sipdlaser"
       }
-    },
+    }
   ],
   "modules": [],
   "wings": [
-    "prv_diskordant_wing",
-    "prv_diskordant_wing"
+    "prv_skran_wing",
+    "prv_skran_wing"
   ]
 }

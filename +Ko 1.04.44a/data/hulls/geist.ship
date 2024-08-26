@@ -1,0 +1,277 @@
+{
+  "bounds": [
+    -80,
+    -10,
+    -103,
+    -13,
+    -114.5,
+    -30,
+    -115,
+    -65,
+    -70,
+    -70,
+    -52,
+    -95,
+    -15,
+    -55,
+    30,
+    -25,
+    100,
+    -25,
+    113,
+    -0,
+    100,
+    25,
+    30,
+    25,
+    -15,
+    55,
+    -52,
+    95,
+    -70,
+    70,
+    -115,
+    65,
+    -114.5,
+    30,
+    -103,
+    13,
+    -80,
+    10
+  ],
+  "builtInMods": [
+    "phasefield",
+    "delicate"
+  ],
+  "builtInWings": [],
+  "center": [
+    98,
+    119
+  ],
+  "collisionRadius": 170,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -116,
+        63
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -116,
+        -62
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -119,
+        53
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -119,
+        34
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -119,
+        -33
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -119,
+        -52
+      ],
+      "style": "HIGH_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -111,
+        17
+      ],
+      "style": "HIGH_TECH",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -111,
+        -17
+      ],
+      "style": "HIGH_TECH",
+      "width": 16
+    }
+  ],
+  "height": 239,
+  "hullId": "geist",
+  "hullName": "Geist",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 155,
+  "spriteName": "graphics/ships/Geist.png",
+  "style": "HIGH_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -0,
+      "arc": 4,
+      "id": "WS0002",
+      "locations": [
+        100,
+        0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 4,
+      "id": "WS0001",
+      "locations": [
+        98,
+        23
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 4,
+      "id": "WS0003",
+      "locations": [
+        98,
+        -23
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 250,
+      "id": "WS0004",
+      "locations": [
+        8,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 60,
+      "arc": 140,
+      "id": "WS0005",
+      "locations": [
+        1,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -60,
+      "arc": 140,
+      "id": "WS0006",
+      "locations": [
+        1,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 110,
+      "arc": 230,
+      "id": "WS0007",
+      "locations": [
+        -75,
+        66
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": -110,
+      "arc": 230,
+      "id": "WS0008",
+      "locations": [
+        -75,
+        -66
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 70,
+      "arc": 360,
+      "id": "WS0009",
+      "locations": [
+        -10,
+        42
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -70,
+      "arc": 360,
+      "id": "WS0010",
+      "locations": [
+        -10,
+        -42
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 196
+}

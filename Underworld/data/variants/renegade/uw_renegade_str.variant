@@ -1,7 +1,7 @@
 {
     "displayName": "Strike",
     "fluxCapacitors": 25,
-    "fluxVents": 21,
+    "fluxVents": 25,
     "goalVariant": true,
     "hullId": "uw_renegade",
     "hullMods": [

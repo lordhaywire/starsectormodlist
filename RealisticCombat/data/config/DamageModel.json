@@ -1,0 +1,74 @@
+{
+    "DAMAGE MODEL":"",
+    "Realistic Combat replaces the vanilla damage model with one comprising":"",
+    "four surrounding parts":"",
+    "- surface armor: thin outer shell":"",
+    "- compartments: layer of non-essential workings":"",
+    "- citadel armor: thick inner shell":"",
+    "- hull: vital inner workings":"",
+
+    "ARMOR":"",
+    "The damage of a shot or missile or diffracted intensity of a beam":"",
+    "must exceed the thickness of a layer of armor to penetrate it. If the":"",
+    "shot, missile, or beam:":"",
+    "- does not penetrate the surface armor: deal only EMP damage and, if":"",
+    "it is a ballistic shot hitting steeply, ricochet.":"",
+    "- penetrates the surface armor: damage the compartments, damage to":"",
+    "each of which accumulates to damage against the hull, and which":"",
+    "slightly overflows should a compartment be destroyed.":"",
+    "- penetrates the citadel armor: additionally deal its entire damage":"",
+    "value, adjusted for damage type, directly to the hull and, if a shot":"",
+    "or missile, inflict a critical malfunction.":"",
+
+    "UI":"",
+    "The armor grid you see in-game represents the compartments rather":"",
+    "than an ablative layer, and the hull value represents the overall":"",
+    "integrity of the ship, including damage to those compartments.":"",
+
+    
+    "How many times greater the base damage of a projectile, missile, or":"",
+    "diffracted intensity of a beam, must be than the damage type":"",
+    "adjusted base thickness of a ship armor layer to penetrate regardless":"",
+    "of impact angle.":"",
+    "armorOvermatchFactor":10,
+
+    "Factor of projectile, missile, or beam damage, adjusted for damage":"",
+    "type, that becomes potential damage to compartments upon penetrating":"",
+    "at least the surface armor.":"",
+    "compartmentDamageFactor":0.33,
+
+    "Factor of damage to a compartment exceeding its integrity that":"",
+    "becomes hull damage":"",
+    "compartmentDamageOverflowFactor":0.3,
+
+    "Hull level from 0 to 1 at which CR should be 0":"",
+    "minimumCombatReadyHullLevel":0.1,
+
+    "Damage multiple of each damage type against a shield":"",
+    "shieldDamageFactors":{
+	"KINETIC":1.333,
+	"HIGH_EXPLOSIVE":0.667,
+	"FRAGMENTATION":0.1,
+	"ENERGY":1,
+	"OTHER":1
+    },
+
+    "How many times composite armor is thicker or thinner than rolled":"",
+    "homogeneous armor is against a damage type.":"",
+    "armorThicknessFactors":{
+	"KINETIC":0.667,
+	"HIGH_EXPLOSIVE":1.333,
+	"FRAGMENTATION":8,
+	"ENERGY":1,
+	"OTHER":1
+    },
+
+    "Damage multiple of each damage type against a ship":"",
+    "damageFactors":{
+	"KINETIC":0.5,
+	"HIGH_EXPLOSIVE":1.5,
+	"FRAGMENTATION":2,
+	"ENERGY":1,
+	"OTHER":1
+    }
+}

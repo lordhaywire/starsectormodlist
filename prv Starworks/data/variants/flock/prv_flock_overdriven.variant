@@ -2,10 +2,10 @@
   "variantId": "prv_flock_overdriven",
   "hullId": "prv_flock",
   "displayName": "Overdriven",
-  "goalVariant": true,
-  "fluxCapacitors": 0,
+  "goalVariant": false,
+  "fluxCapacitors": 5,
   "fluxVents": 8,
-  "quality": 2,
+  "quality": 0.5,
   "permaMods": [],
   "hullMods": [
     "safetyoverrides",
@@ -31,7 +31,14 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0002": "heavyblaster"
+        "WS0006": "irpulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pulselaser"
       }
     },
     {
@@ -46,9 +53,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS0005": "prv_sipdlaser",
-        "WS0006": "prv_sipdlaser",
-        "WS0007": "prv_sipdlaser",
-        "WS0008": "prv_sipdlaser"
+        "WS0009": "prv_sipdlaser"
       }
     }
   ],

@@ -1,11 +1,12 @@
 {
     "displayName": "Close Support",
-    "fluxCapacitors": 12,
-    "fluxVents": 14,
+    "fluxCapacitors": 13,
+    "fluxVents": 18,
     "goalVariant": true,
     "hullId": "roider_bombard",
     "hullMods": [],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_bombard_CS",
     "weaponGroups": [
         {
@@ -22,7 +23,7 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "lightag",
+                "WS 001": "lidardish",
                 "WS 003": "heavymortar"
             }
         },

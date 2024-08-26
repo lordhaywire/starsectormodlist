@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"RECALL_DEVICE",
 	
-	"statsScript":"shipsystems.prv_phaserecall",
+	"statsScript":"prv.corp.shipsystems.prv_phaserecall",
 	
 	"useSound":"system_recall_device",
 	"outOfUsesSound":"gun_out_of_ammo",

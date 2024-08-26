@@ -1,0 +1,58 @@
+{
+  "hullName": "Skarn",
+  "hullId": "prv_grus",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_grus.png",
+  "style": "PRV_LOW",
+  "height": 36,
+  "width": 39,
+  "center": [19.5, 17.5],
+  "collisionRadius": 23,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 22.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-6, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, 6]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [1, -7]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14.5, -0],
+      "length": 24,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -12.5, -6,
+    14.5, 0,
+    -12.5, 6.5
+  ]
+}

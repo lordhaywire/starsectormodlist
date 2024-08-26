@@ -1,0 +1,50 @@
+{
+  "id": "prv_belt_blaster",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_belt_blaster_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/prv/weapons/prv_belt_blaster_turret_main.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_belt_blaster_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_belt_blaster_hardpoint_main.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_belt_blaster_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    100,
+    100,
+    255
+  ],
+  "turretOffsets": [
+    15,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    22,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "interruptibleBurst": true,
+  "autocharge":true,  # whether the weapon will continue charging and fire if the LMB is tapped instead of held
+  "muzzleFlashSpec": {
+    "length": 50,
+    "spread": 25,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      255,
+      100,
+      100,
+      255
+    ]
+  },
+  "fireSoundTwo": "mining_blaster_fire"
+}

@@ -1,0 +1,81 @@
+id,type,text1,text2,text3,text4,notes
+#############################,,,,,,
+###,,,,,,
+### Agni,,,,,,
+###,,,,,,
+#############################,,,,,,
+,,,,,,
+### Weapons,,,,,,
+prv_agni_spines,WEAPON,"”Each spine group is attached to a neuron cluster, and acts independently of the main body ganglions. Their accuracy is most impressive once we consider that they are operating only on impulses from the gravitic sacs and Enholm organs.”","- Emma Sandgren, veterinary neurologist, House Gyllenhaag",,,
+prv_agni_spore,WEAPON,”No. Not going out there again. Fuck no.”,"- Torbjörn Eklund, inebriated figher pilot, Johans Bar & Grill",,,
+prv_agni_claw,WEAPON,"”While the Agni largely live on stellar energy, we’ve spotted them smashing small asteroids with a horn spike and then consuming the debris. They’re very picky, and finding a suitable rock can take weeks.","- Karl Nilsson, exobiologist, House Gyllenhaag",,,
+prv_agni_web,WEAPON,"”The organ’s structure is remarkably similar to the silk glands of cocooning insects, and we believe it is primarily used to build nests.”","- Karl Nilsson, exobiologist, House Gyllenhaag",,,
+prv_agni_web_fighter,WEAPON,"”Then it launches this webbing at me and for a moment I completely lose control of the craft, I’m tossed back and forth on an elastic pendulum. I had to hit the armor plating quick-release to get loose, letting the creature tear off the plating entirely.”","- Bengt Magnusson, Diskordant Pilot, prv teknokeramik",,,
+prv_agni_teeth,WEAPON,”It took us the better part of a day to extract the damn thing from where it had lodged itself in the bulkhead. Plasma cutters simply didn’t work on the enamel.”,"- Erik Tallberg, chief salvor, prv Begynnelsen",,,
+prv_agni_pureflame_lance,WEAPON,"”We’ve mostly seen them used in mating displays. The brightest, hottest lance attracts the most mates.”","- My Holmquist, exobiologist, House Gyllenhaag",,,
+prv_agni_flamelash,WEAPON,"”If we disturb the creatures, their first response will be a gout of flame emitted from one of their many gas nozzles. We have not yet found a way for our sample retrieval drones to survive this.”","- Karl Nilsson, exobiologist, House Gyllenhaag",,,
+prv_agni_conflagration,WEAPON,"”The agitative trial ended with the complete destruction of prv Begynnelsen. But the data is astounding, the energies involved are an order of magnitude beyond what we can account for.”","- Mikael Gyllenhaag, director of exobiology, Fältbiologiska Institutet",,,
+prv_agni_eye,WEAPON,”I’m gonna be honest. They creep me out.”,"- Björn Lidén, sensors operator, prv Saknad",,,
+prv_agni_cyst,WEAPON,"”The symbiotes that can be found burrowed into the skin of the Agni are generally dormant, leaching only a miniscule amount of blood from their host. But when they are disturbed they will emerge in a great fury and defend their host to the utmost.”","- My Holmquist, exobiologist, House Gyllenhaag",,,
+prv_agni_prominence,WEAPON,”Two separate types of droplets are emitted from the Scale creature in a constant spray. Whenever the two types meet they immediately undergo a powerful exothermic reaction. The combined fluid will easily melt standard ablative ship plating if it is applied in sufficient amounts.”,"- Göran Eskilsson, chemist, House Gyllenhaag",,,
+,,,,,,
+### Systems,,,,,,
+prv_agni_cocoon,SHIP_SYSTEM,"”We believe the silk is mostly used for nesting. Very durable material, and easily spun.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Defensive,"Coats the user in layers of defensive silk, which will absorb 2000 incoming damage. Less effective while the armor remains intact.",2000,
+prv_agni_cocoon_large,SHIP_SYSTEM,"”We believe the silk is mostly used for nesting. Very durable material, and easily spun.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Defensive,"Coats the user in layers of defensive silk, which will absorb 4000 incoming damage. Less effective while the armor remains intact.",4000,
+prv_agni_cocoon_fighter,SHIP_SYSTEM,"”We believe the silk is mostly used for nesting. Very durable material, and easily spun.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Defensive,"Coats the user in layers of defensive silk, which will absorb 1000 incoming damage. Less effective while the armor remains intact.",1000,
+prv_agni_microburn,SHIP_SYSTEM,"”They can be frightfully fast, especially the larger males, though they also tire quickly.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Movement,Quickly leaps forward at high speed.,,
+,,,,,,
+### Ships,,,,,,
+prv_agni_buck,SHIP,"”Adult bucks are generally found travelling in shoals of one to three families, jealously guarding the breeding-age females from competitors.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_doe,SHIP,"”Adult females spend most of their time rearing hatchlings. Does without young usually stay near the nest, maintaining and improving it.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_juvenile,SHIP,"”Starting to exhibit strong sex characteristics, the female juveniles develop ’silk’ spinnerets, while the capabilities of the males’ flame organs intensify greatly.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_hatchling,SHIP,"”The youngest are curious and precocious, and are generally the first to investigate any intrusions into Agni territory.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_down,SHIP,"”We find them attached to their hosts, serving as heat insulation. Once disturbed they will attempt to immobilize any threat using sticky silk strands.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_scale,SHIP,"”We find them attached to their hosts, serving as protective armor. Once disturbed they will ignite their interior gas reserves and attack the threat. In this state they live for mere minutes, but are immensely destructive.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Unidentified Creature,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_station1_nest,SHIP,"”While we have found a few asteroids showing signs of having had Agni dens in them, the creatures show a remarkable affinity for our artificial constructions, such as mining stations, which they seem to consider ready-made nests only in need of a layer of silk. The fights between nesting pairs over an abandoned station can be fiercely violent.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Infested Station,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+prv_agni_station2_hive,SHIP,"”One of the largest stations in the system has become home to dozens of the creatures, who have made every bit of it their own. Getting an intact exploration team inside the station to examine the organic growths among the nests is one of our highest priorities.” 
+
+- Agni, an executive primer, House Gyllenhaag archives.",Infested Station,"UNKNOWN ENTRY
+
+Please register your Tri-Tachyon datapad to receive the latest news and updates.",,
+,,,,,,
+#############################,,,,,,
+### Custom Entities,,,,,,
+#############################,,,,,,
+prv_agnifeeder,CUSTOM,"A scientific outpost, responsible for studying and pacifying the wild fauna found in the system.",,,,

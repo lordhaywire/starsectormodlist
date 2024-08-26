@@ -3,6 +3,7 @@ package org.magiclib.util;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.*;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.characters.FullName;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
@@ -96,6 +97,7 @@ public class MagicCampaign {
      *             .setFirstName("David")
      *             .setLastName("Rengel")
      *             .setGender(FullName.Gender.MALE)
+     *             .create();
      * </pre>
      *
      * @since 0.46.1
@@ -369,6 +371,41 @@ public class MagicCampaign {
         } else {
             object.setCircularOrbit(orbitCenter, angle, radius, period);
         }
+    }
+
+    /**
+     * Creates a derelict ship at the desired emplacement.
+     *
+     * @param variantId       Spawned ship variant
+     * @param condition       Condition of the derelict. Better conditions means fewer D-mods but also more weapons from the variant
+     * @param discoverable    Awards XP when found
+     * @param discoveryXp     XP awarded when found (<0 to use the default)
+     * @param recoverable     Can be salvaged as long as the hull it's possible for the player to salvage this hull
+     *                        (eg Automated ships still require the skill).
+     * @param orbitCenter     Entity orbited
+     * @param orbitStartAngle Orbit starting angle
+     * @param orbitRadius     Orbit radius
+     * @param orbitDays       Orbit period
+     * @param isRecoverable   Whether the derelict can be recovered by the player
+     * @since 1.3.8
+     */
+    public static SectorEntityToken createDerelict(
+            String variantId,
+            ShipRecoverySpecial.ShipCondition condition,
+            boolean discoverable,
+            Integer discoveryXp,
+            boolean recoverable,
+            SectorEntityToken orbitCenter,
+            float orbitStartAngle,
+            float orbitRadius,
+            float orbitDays,
+            boolean isRecoverable
+    ) {
+        SectorEntityToken derelict = createDerelict(variantId, condition, discoverable, discoveryXp, recoverable, orbitCenter, orbitStartAngle, orbitRadius, orbitDays);
+        if (!isRecoverable) {
+            derelict.addTag(Tags.UNRECOVERABLE);
+        }
+        return derelict;
     }
 
     /**
@@ -833,7 +870,7 @@ public class MagicCampaign {
 
         //checking trigger_min_days_elapsed
 //        if(min_days_elapsed>0 && Global.getSector().getClock().getDay()<min_days_elapsed)return false;
-        if (min_days_elapsed > 0 && Global.getSector().getClock().getDay() + (Global.getSector().getClock().getCycle() - 206) * 365 < min_days_elapsed)
+        if (min_days_elapsed > 0 && MagicMisc.getElapsedDaysSinceGameStart() < min_days_elapsed)
             return false;
 
         //checking trigger_player_minLevel
@@ -898,18 +935,20 @@ public class MagicCampaign {
             return false;
         }
 
+        MemoryAPI memory = Global.getSector().getMemoryWithoutUpdate();
+
         //checking trigger_memKeys_all
         if (memKeys_all != null && !memKeys_all.isEmpty()) {
             for (String f : memKeys_all.keySet()) {
                 //check if the memKey exists 
-                if (!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f)) {
+                if (!memory.getKeys().contains(f) || memory.get(f) == null) {
                     if (MagicVariables.verbose) {
-                        log.info(String.format("Requirement not met: memKeys_all %s key not fount.", f));
+                        log.info(String.format("Requirement not met: memKeys_all %s key not found.", f));
                     }
                     return false;
                 }
                 //check if it has the proper value
-                if (memKeys_all.get(f) != Global.getSector().getMemoryWithoutUpdate().getBoolean(f)) {
+                if (memKeys_all.get(f) != memory.getBoolean(f)) {
                     if (MagicVariables.verbose) {
                         log.info(String.format("Requirement not met: memKeys_all %s key is not %s.", f, memKeys_all.get(f)));
                     }
@@ -921,8 +960,8 @@ public class MagicCampaign {
         //checking memKeys_none
         if (memKeys_none != null && !memKeys_none.isEmpty()) {
             for (Map.Entry<String, Boolean> entry : memKeys_none.entrySet()) {
-                if (Global.getSector().getMemoryWithoutUpdate().contains(entry.getKey())) {
-                    if (Global.getSector().getMemoryWithoutUpdate().getBoolean(entry.getKey()) == entry.getValue()) {
+                if (memory.contains(entry.getKey()) && memory.get(entry.getKey()) != null) {
+                    if (memory.getBoolean(entry.getKey()) == entry.getValue()) {
                         if (MagicVariables.verbose) {
                             log.info(String.format("Requirement not met: memKeys_none %s value %s is present.", entry.getKey(), entry.getValue()));
                         }
@@ -934,11 +973,11 @@ public class MagicCampaign {
 
         //checking trigger_memKeys_any
         if (memKeys_any != null && !memKeys_any.isEmpty()) {
-            for (String f : memKeys_any.keySet()) {
+            for (String key : memKeys_any.keySet()) {
                 //check if the memKey exists 
-                if (!Global.getSector().getMemoryWithoutUpdate().getKeys().contains(f)) {
+                if (memory.getKeys().contains(key)) {
                     //check if it has the proper value
-                    if (memKeys_any.get(f) == Global.getSector().getMemoryWithoutUpdate().getBoolean(f)) {
+                    if (memKeys_any.get(key) == memory.getBoolean(key)) {
                         return true;
                     }
                 }

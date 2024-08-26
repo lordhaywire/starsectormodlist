@@ -6,6 +6,8 @@ Safety Removal,edshipyard_safetyremoval,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hu
 
 Drastically reduces weapon ranges past %s units by %s percent.
 
+Increases maneuverability by %s percent.
+
 Can not be installed on civilian ships. Incompatible with Safety Override.",Drastic improvement in performance.,graphics/hullmods/safety_removal.png
 ,,,,,,,,,,,,,,,,,,
 Greater Drive Field Stabilizer,edshipyard_greater_drive_field_stabilizer,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.GreatDriveFieldStabilizer,"Stabilizes the fleet's drive bubble, increasing the maximum burn of the fleet by %s. The effect of multiple stabilizers is cumulative.
@@ -20,7 +22,7 @@ Range of PD weapons is increased by %s and weapon turn rate increased by %s.",Po
 ,,,,,,,,,,,,,,,,,,
 Tyrant Maw Bombardment,edshipyard_tyrantmaw_bombardment,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WurgandalBombard,"Manifests orbital supremacy. Fires the Tyrant Maw and the modular weapons with Tyrant Eye active dealing massive damage to ground structures. Increases the effective strength of planetary raids by %s, up to the total number of marines in the fleet. Reduces the fuel cost of a bombardment operation by %s units.",Improves effectiveness of raids. Greatly reduces fuel cost of bombardment.,graphics/hullmods/wurgandal_bombard.png
 ,,,,,,,,,,,,,,,,,,
-Massive Hull,edshipyard_wurgandal_massivehull,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WurgandalMassiveHull,"This ship is extremely large, affording both a much larger array of sensors and a heavy sensor profile. Increases sensor strength by %s and sensor profile by %s. Due to the immense inertia of this ship the speed boost of zero flux speed is lowered to %s of the value it would have otherwise",Increases sensor strength and profile.,graphics/hullmods/wurgandal_massive.png
+Massive Hull,edshipyard_wurgandal_massivehull,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WurgandalMassiveHull,"This ship is extremely large, affording both a much larger array of sensors and a heavy sensor profile. Increases sensor strength by %s and sensor profile by %s. Due to the complexities of integrating so many systems, maintenance is increased by %s.",Increases sensor strength and profile.,graphics/hullmods/wurgandal_massive.png
 ,,,,,,,,,,,,,,,,,,
 Shield Incompatible,edshipyard_no_shields,,,ED Shipyards,"shields, defensive",Shields,5000,,TRUE,,0,0,0,0,data.hullmods.edshipyard.NoShields,"This ship or module is not compatible with shields, due to it's base design or because of the proximity of other modules.",Shield Incompatible.,graphics/hullmods/no_shield.png
 ,,,,,,,,,,,,,,,,,,
@@ -48,7 +50,7 @@ Detonator Drone,edshipyard_detonator_drone_explanation,,,ED Shipyards,special,Sp
 ,,,,,,,,,,,,,,,,,,
 Illusion Field,edshipyard_doppelfield,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.Illusion,"The ship is able to run a signature scrambler for extended periods of time, camouflaging the ship as an asteroid reducing its effective sensor profile to zero.",Reduces sensor profile.,graphics/hullmods/doppel_field.png
 ,,,,,,,,,,,,,,,,,,
-Wurgandal Module,edshipyard_wurgandal_module,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WurgandalModule,Modules of the Wurgandal have their systems coordinated by the central core.  Mali that apply to the central core are also applied to modules.,,graphics/hullmods/wurgandal_massive.png
+Wurgandal Module,edshipyard_wurgandal_module,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WurgandalModule,Modules of the Wurgandal have their systems coordinated by the central core. Flux from modules is slowly absorbed by the central core.,,graphics/hullmods/wurgandal_massive.png
 ,,,,,,,,,,,,,,,,,,
 Weapons Integration,edshipyard_weapons_integration,,,ED Shipyards,,,,,TRUE,,0,0,0,0,data.hullmods.edshipyard.WeaponsIntegrationHullMod,Reduces the ordnance point cost of weapons by %s.,,graphics/icons/skills/ordnance_expert.png
 ,,,,,,,,,,,,,,,,,,

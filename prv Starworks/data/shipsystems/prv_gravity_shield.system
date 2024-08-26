@@ -2,8 +2,8 @@
 	"id":"prv_gravity_shield",
 	"type":"STAT_MOD",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.ai.systems.prv_gravity_shield_simple_ai",
-	"statsScript":"scripts.shipsystems.prv_gravity_shield",
+	"aiScript":"prv.corp.ai.systems.prv_gravity_shield_simple_ai",
+	"statsScript":"prv.corp.shipsystems.prv_gravity_shield",
 
 	"useSound":"system_emp_emitter_activate",
 	#"loopSound":"system_emp_emitter_loop",

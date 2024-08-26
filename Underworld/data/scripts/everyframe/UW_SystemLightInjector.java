@@ -6,6 +6,7 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipEngineControllerAPI.ShipEngineAPI;
 import com.fs.starfarer.api.combat.ShipSystemAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
+import com.fs.starfarer.api.util.IntervalUtil;
 import data.scripts.util.UW_Util;
 import java.awt.Color;
 import java.util.Iterator;
@@ -23,6 +24,8 @@ public class UW_SystemLightInjector extends BaseEveryFrameCombatPlugin {
     private static final Vector2f ZERO = new Vector2f();
 
     private CombatEngineAPI engine;
+    private boolean activated = false;
+    private final IntervalUtil inactiveInterval = new IntervalUtil(1f, 2f);
 
     @Override
     public void advance(float amount, List<InputEventAPI> events) {
@@ -32,6 +35,13 @@ public class UW_SystemLightInjector extends BaseEveryFrameCombatPlugin {
 
         if (engine.isPaused()) {
             return;
+        }
+
+        if (!activated) {
+            inactiveInterval.advance(amount);
+            if (!inactiveInterval.intervalElapsed()) {
+                return;
+            }
         }
 
         final LocalData localData = (LocalData) engine.getCustomData().get(DATA_KEY);
@@ -107,6 +117,7 @@ public class UW_SystemLightInjector extends BaseEveryFrameCombatPlugin {
                                 LightShader.addLight(light);
                             }
                         }
+                        activated = true;
                         break;
                     case "uw_incubusdrive":
                         if (system.isActive()) {
@@ -164,6 +175,7 @@ public class UW_SystemLightInjector extends BaseEveryFrameCombatPlugin {
                                 LightShader.addLight(light);
                             }
                         }
+                        activated = true;
                         break;
                     default:
                         break;

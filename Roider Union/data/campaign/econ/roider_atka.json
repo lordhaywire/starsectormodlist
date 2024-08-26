@@ -17,12 +17,12 @@
 			"industries":[
 				"population",
 				"spaceport",
-				"roider_union_hq",
+				["roider_union_hq", "roider_charter"],
 				"orbitalworks",
 				"techmining",
 				"starfortress",
 				"heavybatteries"
-			],
+			]
 		},
 		{
 			"entities":["roider_coldRock", "roider_coldRock_bastion"],
@@ -42,10 +42,10 @@
 				"militarybase",
 				"battlestation",
 				"heavybatteries",
-				"roider_dives",
-			],
+				"roider_dives"
+			]
 		}
-	],
+	]
 
 }
 

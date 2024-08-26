@@ -2,9 +2,9 @@
   "variantId": "nex_silverlight_Ascendant",
   "hullId": "nex_silverlight",
   "displayName": "Ascendant",
-  "goalVariant": true,
-  "fluxCapacitors": 9,
-  "fluxVents": 42,
+  "goalVariant": false,	# will crash if player tries to fit to this goal variant
+  "fluxCapacitors": 10,
+  "fluxVents": 45,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

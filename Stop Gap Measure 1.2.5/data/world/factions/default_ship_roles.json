@@ -1,0 +1,235 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		"filgap_velite_Attack":4,
+		"filgap_velite_Pirate":5,
+		"filgap_velite_Standard":6,
+		"filgap_huntsman_Standard":3,
+		"filgap_huntsman_Strike":1,
+		"filgap_huntsman_Support":2,
+		"filgap_fulk_Attack":3,
+		"filgap_fulk_Standard":4,
+		"filgap_fulk_Support":3,
+		"filgap_pyrphoros_Escort":5,
+		"filgap_pyrphoros_Strike":5,
+		"filgap_dove_Pursuit":3,
+		"filgap_rosatom_escort":3,
+		"filgap_rosatom_balanced":3,
+		"filgap_rosatom_support":3,
+
+	},
+	"combatSmall":{
+		"filgap_velite_Attack":4,
+		"filgap_velite_Pirate":4,
+		"filgap_velite_Standard":6,
+		"filgap_huntsman_Standard":3,
+		"filgap_huntsman_Strike":1,
+		"filgap_huntsman_Support":2,
+		"filgap_fulk_Attack":3,
+		"filgap_fulk_Standard":4,
+		"filgap_fulk_Support":3,
+		"filgap_pyrphoros_Escort":5,
+		"filgap_pyrphoros_Strike":5,
+		"filgap_carcajou_support":3,
+		"filgap_carcajou_attack":3,
+		"filgap_rosatom_escort":3,
+		"filgap_rosatom_balanced":3,
+		"filgap_rosatom_support":3,
+
+
+
+
+	},
+	"combatMedium":{
+		"filgap_ballista_CS":2,
+		"filgap_ballista_Standard":3,
+		"filgap_ballista_Support":2,
+		"filgap_bogomil_Standard":5,
+		"filgap_bogomil_Support":5,
+		"filgap_hammerhead_cgr_standard":6,
+		"filgap_hammerhead_cgr_support":4,
+		"filgap_orthus_Attack":1,
+		"filgap_orthus_Escort":1,
+		"filgap_orthus_Support":1,
+		"filgap_mkII_missile":5,
+		"filgap_templar_Assault":4,
+		"filgap_templar_Standard":6,
+		"filgap_dragoon_elite":1,
+		"filgap_dragoon_support":2,
+		"filgap_dragoon_balanced":3,
+		"filgap_copernic_Support":2,
+		"filgap_copernic_Hegemony":3,
+		"filgap_copernic_Combat":2,
+		"filgap_chrysops_assault":4,
+		"filgap_chrysops_raider":4,
+		"filgap_cossack_escort":5,
+		"filgap_cossack_Attack":5,
+		"filgap_nitassinan_support":3,
+		"filgap_nitassinan_standard":3,
+
+
+
+	},
+	"combatLarge":{
+		"filgap_adjudicator_Standard":4,
+		"filgap_adjudicator_Support":4,
+		"filgap_cathar_Assault":5,
+		"filgap_cathar_Siege":5,
+		"filgap_opportunity_Assault":3,
+		"filgap_opportunity_Balanced":3,
+		"filgap_opportunity_Support":3,
+		"filgap_wagner_Elite":1,
+		"filgap_wagner_Pirate":4,
+		"filgap_wagner_Standard":2,
+		"filgap_wagner_Support":2,
+		"filgap_auspicious_assault":2,
+		"filgap_auspicious_support":2,
+		"filgap_auspicious_balanced":3,
+		"filgap_contemptor_balanced":2,
+		"filgap_contemptor_support":1,
+		"filgap_redoubt_balanced":5,
+		"filgap_era_defense":3,
+		"filgap_era_lc_Overdriven":1,
+		"filgap_formica_balanced":3,
+		"filgap_formica_support":2,
+	
+
+
+
+	},
+	"combatCapital":{
+		"filgap_bahamut_pirate":3,
+		"filgap_bahamut_runner":2,
+		"filgap_kuunlan_combat":4,	
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+	},
+	"combatFreighterMedium":{
+		"filgap_copernic_Exploration":4,
+		"filgap_wardlaw_standard":5,
+		"filgap_wardlaw_attack":3,
+		"filgap_wardlaw_overdriven":2,
+
+	},
+	"combatFreighterLarge":{
+		"filgap_era_freighter":5,
+		"filgap_bahamut_runner":5,
+	},
+	
+	"civilianRandom":{
+		"filgap_dove_Frontier":8,
+		"filgap_dove_Standard":8,
+		"filgap_foundation_Support":5,
+		"filgap_pharos_frontier":3,
+
+
+	},
+
+	# carriers
+	"carrierSmall":{
+		"filgap_herder_Attack":5,
+		"filgap_herder_Support":5,
+		"filgap_pyrrhocorax_Standard":10,
+		"filgap_pyrrhocorax_Support":10,
+
+
+	},
+	"carrierMedium":{
+
+		"filgap_starblazer_Civilian":1,
+		"filgap_starblazer_Mining":2,
+		"filgap_starblazer_Standard":7,
+		"filgap_starblazer_Overdriven":1,
+		"filgap_foundation_Support":2,
+		"filgap_era_lc_assault":4,
+		"filgap_era_lc_exploration":4,
+
+		"filgap_babel_Support":3,
+
+
+	},
+	"carrierLarge":{
+		"filgap_trajan_Assault":4,
+		"filgap_trajan_Siege":4,
+
+
+
+	},
+
+	# phase ships
+	"phaseSmall":{
+	},
+	"phaseMedium":{
+
+	},
+	"phaseLarge":{
+	},
+	"phaseCapital":{
+	},
+
+	# freighters and such
+	"freighterSmall":{
+		"filgap_chondrite_Civilian":10,
+		"filgap_traverse_Standard":10,
+
+
+
+	},
+	"freighterMedium":{
+
+
+	},
+	"freighterLarge":{
+		"filgap_era_freighter":2,
+
+	},
+	
+	"tankerSmall":{
+	},
+	"tankerMedium":{
+		"filgap_pharos_frontier":3,
+	},
+	"tankerLarge":{
+	},
+	
+	"personnelSmall":{
+	},
+	"personnelMedium":{
+	},
+	"personnelLarge":{
+	},
+	
+	"linerSmall":{
+	},
+	"linerMedium":{
+	},
+	"linerLarge":{
+		"filgap_charon_invasion":1,
+		"filgap_charon_siege":1,
+	},
+	
+	# utility ships
+	"tug":{
+	},
+	"crig":{
+		"filgap_foundation_Support":1,
+
+		"filgap_babel_Exploration":3,
+		"filgap_kuunlan_fontier":1,
+
+
+	},
+	"utility":{
+	},
+	
+	"orbitalStationLowTech":{
+	},
+	
+	"battlestationLowTech":{
+	},
+}
+

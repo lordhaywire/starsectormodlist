@@ -1,0 +1,44 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 15,
+  "fluxVents": 6,
+  "goalVariant": true,
+  "hullId": "filgap_babel",
+  "hullMods": [
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_babel_Support",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "lightdualac",
+        "WS 013": "lightdualac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "harpoonpod",
+        "WS 004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "lightmg",
+        "WS 011": "lightmg",
+        "WS 014": "lightmg"
+      }
+    }
+  ],
+  "wings": [
+    "broadsword_wing",
+    "talon_wing"
+  ]
+}

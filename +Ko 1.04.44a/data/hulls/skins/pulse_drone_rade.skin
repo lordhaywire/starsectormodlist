@@ -1,0 +1,7 @@
+{
+	"baseHullId":"pulse_drone",
+	"skinHullId":"pulse_drone_rade",
+	"hullName":"Pulse",
+	"addHints":["HIDE_IN_CODEX"],
+	"spriteName":"graphics/ships/pulse_drone_rade.png",
+}

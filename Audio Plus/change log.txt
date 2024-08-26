@@ -1,6 +1,10 @@
+Version 1.2.1 (February 3, 2024)
+- Updated for Starsector 0.97a
+
 Version 1.2.0 (May 10, 2023)
 - Updated for Starsector 0.96a
 - Added music track from Star Federation (credit to MesoTroniK): Labyrinthine Nebula
+- Added music track from Shadowyards (credit to MesoTroniK): A Dreaming Sky
 - Significantly more differentiation between music tracks that play near the core worlds, out in non-core space, and in hyperspace
 - Tweaked volume balance
 

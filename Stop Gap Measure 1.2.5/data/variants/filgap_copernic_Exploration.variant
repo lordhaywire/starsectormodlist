@@ -1,0 +1,41 @@
+{
+  "variantId": "filgap_copernic_Exploration",
+  "hullId": "filgap_copernic",
+  "displayName": "Exploration",
+  "goalVariant": true,
+  "fluxCapacitors": 15,
+  "fluxVents": 6,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "nav_relay"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_miningbeam",
+        "WS0003": "swarmer",
+        "WS0004": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "lightac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightmg",
+        "WS0006": "lightmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

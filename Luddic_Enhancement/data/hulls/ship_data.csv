@@ -6,7 +6,7 @@ Revolt,revolt,Cruiser,Low Tech,burndrive,15,14000,1500,9000,9000,325,150,1,30,20
 Fidem,fidem,Heavy Frigate,Luddic Church,ammofeed,8,2550,525,2200,2188,165,55,1,120,110,90,40,80,300,OMNI,,120,0.4,1.2,,,60,80,165,25,1,25,9,27500,3,12,240,0.25,8,8,,,,,,,,LC_bp,,0.4,2,2,,219
 Lector,lector,Destroyer,Luddic Church,ammofeed,8,5000,650,2000,3333,250,70,,120,100,90,60,90,350,PHASE,damper,,,,,,40,60,80,45,3,15,9,29000,5,6,540,0.25,7,7,,,,,,,,"LC_bp, special_allows_system_use, system_allows_special_use",0.5,0.2,2,3,,303
 Jude,jude,Destroyer,Luddic Church,ammofeed,12,4200,385,2200,3333,155,100,,60,55,50,30,45,500,FRONT,,150,0.4,1.4,,,95,115,90,40,3,12,9,38000,3,12,420,0.25,12,12,,,,,,,,LC_bp,,0.4,2,3,,303
-Christopher,christopher,Cruiser,Luddic Church,ammofeed,16,8000,6500,5000,9000,325,140,,55,30,15,16,16,1850,PHASE,canister_flak,0,0,0,,,200,280,80,80,5,16,8,110000,3,12,540,0.25,15,15,,,,,,,NEVER_DODGE_MISSILES,LC_bp,,0.4,2,3,,404
+Christopher,christopher,Cruiser,Luddic Church,ammofeed,16,9000,6800,5000,9000,320,140,,55,30,15,16,16,1850,PHASE,canister_flak,0,0,0,,,200,280,80,80,5,16,8,110000,3,12,540,0.25,15,15,,,,,,,NEVER_DODGE_MISSILES,LC_bp,,0.4,2,3,,404
 Sebastian,sebastian,Heavy Combat Carrier,Luddic Church,le_surge,25,16000,1500,8500,9000,450,200,2,35,25,15,12,12,2250,FRONT,,120,0.5,1,,,300,350,100,100,5,20,8,165000,3,12,540,0.25,26,26,,,,,,,,LC_bp,0.5,0.4,2,3,,404
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Hermes (LP),hermes_pather,Modified Shuttle,Luddic Path,maneuveringjets,3,850,150,1500,1000,100,18,,125,90,80,90,120,125,FRONT,,120,0.5,1,,,2,10,50,15,0.5,30,9,4000,5,20,180,0.25,2,2,,,,,,,,LP_bp,,0.5,2,2,,203.5

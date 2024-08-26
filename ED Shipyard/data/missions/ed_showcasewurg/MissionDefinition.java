@@ -24,36 +24,38 @@ public class MissionDefinition implements MissionDefinitionPlugin {
 		
 		// These show up as items in the bulleted list under 
 		// "Tactical Objectives" on the mission detail screen
-		api.addBriefingItem("Protect the Wurgandal until the Tyrant Maw is ready.");
-		api.addBriefingItem("Use the Tyrant Maw to destroy enemy Station.");
+		api.addBriefingItem("Protect the Wurgandal, use the Tyrant Maw to destroy enemy Station.");
 		
 		// Set up the player's fleet.  Variant names come from the
 		// files in data/variants and data/variants/fighters
-	
-			
-                api.addToFleet(FleetSide.PLAYER, "edshipyard_wurgandal_worldeater", FleetMemberType.SHIP, true);
+
+				api.addToFleet(FleetSide.PLAYER, "edshipyard_wurgandal_worldeater", FleetMemberType.SHIP, true);
 				api.addToFleet(FleetSide.PLAYER, "edshipyard_newfoundland_warfreighter", FleetMemberType.SHIP, true);
+				api.addToFleet(FleetSide.PLAYER, "edshipyard_leonberger_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "edshipyard_bullmastiff_blaster", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_groenendael_dust", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_dobermann_variant", FleetMemberType.SHIP, false); 
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_rottweiler_assault", FleetMemberType.SHIP, false); 
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_rottweiler_ranged", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_retriever_rescue", FleetMemberType.SHIP, false);	
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_carolina_gunner", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "edshipyard_saluki_assault", FleetMemberType.SHIP, false);   
+                api.addToFleet(FleetSide.PLAYER, "edshipyard_saluki_assault", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "edshipyard_basset_beamer", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_beauceron_rescue", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_beagle_assault", FleetMemberType.SHIP, false);
-                api.addToFleet(FleetSide.PLAYER, "edshipyard_beagle_assault", FleetMemberType.SHIP, false); 
+                api.addToFleet(FleetSide.PLAYER, "edshipyard_beagle_assault", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_shiba_assault", FleetMemberType.SHIP, false);                 
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_pomeranian_dust", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_pomeranian_dust", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_collie_rescue", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_collie_rescue", FleetMemberType.SHIP, false);
+				api.addToFleet(FleetSide.PLAYER, "edshipyard_bischon_assault", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_corgi_dust", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_corgi_dust", FleetMemberType.SHIP, false);
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_wolfhound_assault", FleetMemberType.SHIP, false);   
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_wolfhound_assault", FleetMemberType.SHIP, false); 
                 api.addToFleet(FleetSide.PLAYER, "edshipyard_chihuahua_assault", FleetMemberType.SHIP, false);   
-                api.addToFleet(FleetSide.PLAYER, "edshipyard_chihuahua_assault", FleetMemberType.SHIP, false); 
+                api.addToFleet(FleetSide.PLAYER, "edshipyard_chihuahua_assault", FleetMemberType.SHIP, false);
 		
 		// Set up the enemy fleet.
 		//api.addToFleet(FleetSide.ENEMY, "eagle_Assault", FleetMemberType.SHIP, false);		

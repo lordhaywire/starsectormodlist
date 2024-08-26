@@ -1,0 +1,14 @@
+{
+	"PRV_LOW":{
+		"engineColor":[255,102,51,255], #15/70
+		"contrailParticleSizeMult":8,
+		"contrailParticleDuration":3,
+		"contrailParticleFinalSizeMult":0.25,
+		"contrailMaxSpeedMult":0.5,
+		"contrailAngularVelocityMult":0.5,
+		"contrailColor":[51,40,36,40],
+		"contrailCampaignColor":[255,102,51,255],
+		"type":"SMOKE" # GLOW or SMOKE
+	},
+}
+

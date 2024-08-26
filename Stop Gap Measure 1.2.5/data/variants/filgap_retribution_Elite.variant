@@ -1,0 +1,70 @@
+{
+  "variantId": "filgap_retribution_Elite",
+  "hullId": "retribution",
+  "displayName": "Elite",
+  "goalVariant": true,
+  "fluxCapacitors": 29,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "ballistic_rangefinder",
+    "armoredweapons",
+    "fluxdistributor",
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "heavymortar",
+        "WS 006": "heavymortar"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "breach",
+        "WS 008": "breach",
+        "WS 009": "breach",
+        "WS 010": "breach",
+        "WS 020": "breach",
+        "WS 021": "breach"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 002": "multineedler",
+        "WS 011": "lightdualac",
+        "WS 012": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "devastator",
+        "WS 001": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "flak",
+        "WS 004": "flak",
+        "WS 013": "vulcan",
+        "WS 014": "vulcan",
+        "WS 015": "vulcan",
+        "WS 016": "vulcan",
+        "WS 017": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

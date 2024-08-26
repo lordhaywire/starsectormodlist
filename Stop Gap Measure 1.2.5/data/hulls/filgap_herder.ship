@@ -1,0 +1,187 @@
+{
+  "hullName": "Herder",
+  "hullId": "filgap_herder",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/filgap/ships/filgap_herder.png",
+  "style": "MIDLINE",
+  "height": 150,
+  "width": 106,
+  "center": [53, 75],
+  "collisionRadius": 114.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 97,
+  "viewOffset": 0,
+  "builtInMods": [
+    "bdeck"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 60,
+      "locations": [56.5, 22]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -60,
+      "locations": [56.5, -22]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [37, 43]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [37, -43]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-13.5, 19]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-13.5, -19]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [14.5, 8.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "LAUNCH_BAY",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [17.5, -7]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [12, 52]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -90,
+      "locations": [12, -52]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58.5, 37.5],
+      "length": 54.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-58.5, -37.5],
+      "length": 54.5,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-75, 6.5],
+      "length": 38.5,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-75, -6.5],
+      "length": 38.5,
+      "width": 12,
+      "angle": -180,
+      "contrailSize": 12,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71.5, 17.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-71.5, -17.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    49, -7.5,
+    69.5, -12.5,
+    69, -23,
+    74.5, -35,
+    10, -53,
+    -9.5, -42,
+    -17.5, -42.5,
+    -17.5, -47.5,
+    -28, -51.5,
+    -44, -52,
+    -57, -42.5,
+    -57, -33.5,
+    -74.5, -12.5,
+    -74.5, 12.5,
+    -57, 33.5,
+    -57, 42.5,
+    -44, 52,
+    -28, 51.5,
+    -17.5, 47.5,
+    -17.5, 42.5,
+    -9.5, 42,
+    10, 53,
+    74.5, 35,
+    69, 23,
+    69.5, 12.5,
+    49, 7.5
+  ]
+}

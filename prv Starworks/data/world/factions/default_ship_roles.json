@@ -3,261 +3,76 @@
 	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
 	"combatSmallForSmallFleet":{
 		###10
-		#"prv_basalt_missile":3,
-		"prv_basalt_attack":5,
-		"prv_basalt_protected":5,
-		###10
 		"prv_gnista_cs":5,
 		"prv_gnista_missile":5,
-		#"prv_gnista_escort":3,
-		###10
-		#"prv_gnista_lc_standard":3,
-		#"prv_gnista_lc_balanced":3,
-		"prv_gnista_lc_outdated":10,
-		"prv_gnista_lc_overdriven":0, #pather override
-		###6
-		"prv_gnista_p_attack":3,
-		"prv_gnista_p_balanced":3,
-		#"prv_gnista_p_strike":2,
 		###10
 		"prv_flamma_standard":5,	
-		"prv_flamma_beam":5,	
-		###3
-		"prv_flamma_p_strike":1,
-		"prv_flamma_p_support":1,
-		"prv_flamma_p_assault":1,
-		###10
-		"prv_flamma_midline_attack":5,
-		"prv_flamma_midline_cs":5,
-		#"prv_flamma_midline_standard":3,
-		#"prv_flamma_midline_missile":3,
-		###
-		"prv_ljus_pather_attack":6,
-            #"prv_ljus_pather_assault":2,
-            #"prv_ljus_pather_raider":2,
-            ###10
-            "prv_skara_belt":7,
-            "prv_skara_elite":3,
-		#"prv_skara_attack":3,
-            #"prv_skara_interceptor":2,
-            ###5
-		"prv_gremlin_rb_attack":3,
-		"prv_gremlin_rb_balanced":2,
-		###10
-		"prv_wolf_rb_syndicate":5,
-		"prv_wolf_rb_breaker":5,
+		"prv_flamma_beam":5,
 	},
 	"combatSmall":{
 		###10
-		"prv_agni_hatchling_male":6,
-		"prv_agni_hatchling_female":4,
-		###10
-		"prv_basalt_attack":5,
-		"prv_basalt_protected":5,
-		#"prv_basalt_missile":2.5,
-		#"prv_basalt_raider":2.5,
-		###10
 		"prv_gnista_cs":5,
 		"prv_gnista_missile":5,
-		#"prv_gnista_escort":2,
-		#"prv_gnista_strike":2,
-		###10
-		#"prv_gnista_lc_standard":2,
-		#"prv_gnista_lc_balanced":2,
-		"prv_gnista_lc_outdated":10,
-		"prv_gnista_lc_overdriven":0, #pather override
-		###10
-		"prv_gnista_p_attack":5,
-		"prv_gnista_p_balanced":5,
-		#"prv_gnista_p_strike":2,
-		#"prv_gnista_p_overdriven":2,
-		###10
-		#"prv_flamma_strike":2.5,		
+		###10		
 		"prv_flamma_standard":3.75,
 		"prv_flamma_overdriven":3.75,		
 		"prv_flamma_beam":2.5,	
-		###8
-		"prv_flamma_p_assault":4,
-		"prv_flamma_p_overdriven":4,
-		#"prv_flamma_p_strike":2,
-		#"prv_flamma_p_support":2,
 		###10
-		"prv_flamma_midline_attack":4,
-		"prv_flamma_midline_cs":6,
-		###10
-            #"prv_ljus_ks":3,
-            #"prv_ljus_ambush":2,
             "prv_ljus_pd":5,
             "prv_ljus_strike":5,
             ###10
-            "prv_ljus_pather_attack":10,
-            #"prv_ljus_pather_assault":3,
-            #"prv_ljus_pather_raider":3,
-            ###10
 		"prv_gryning_attack":10,
-		#"prv_gryning_strike":2.5,
-		#"prv_gryning_balanced":2.5,
-		#"prv_gryning_overdriven":2.5,
-		###10
-		#"prv_gryning_tt_attack":5,
-		"prv_gryning_tt_balanced":10,
             ###10
             "prv_sinne_adv":6,
             "prv_sinne_ryak":4,
-            #"prv_sinne_missile":1.5,
-            #"prv_sinne_assault":2.5,
-		###10
-            #"prv_skara_attack":2.5,
-            #"prv_skara_interceptor":2.5,
-            "prv_skara_belt":5,
-            "prv_skara_elite":5,
-            ###10
-            #"prv_gremlin_rb_artillery":1,
-            "prv_gremlin_rb_attack":5,
-            "prv_gremlin_rb_balanced":5,
-            #"prv_gremlin_rb_assault":1,
-            #"prv_gremlin_rb_support":1,
-            #"prv_gremlin_rb_strike":1,
-		###10
-		"prv_wolf_rb_syndicate":5,
-		"prv_wolf_rb_breaker":5,
 	},
 	"combatMedium":{
-		###10
-		"prv_agni_juvenile_male":6,
-		"prv_agni_juvenile_female":4,
             ###10
 		"prv_eld_missile":4,
 		"prv_eld_overdriven":3,
 		"prv_eld_elite":4,
-		#"prv_eld_hunter":2.5,
 		###10
 		"prv_ballebo_domain":5,
 		"prv_ballebo_legacy":5,
             ###10
-            "prv_eld_midline_attack":5,
-            "prv_eld_midline_elite":5,
-            ###10
             "prv_shrike_attack":4,
             "prv_shrike_support":3,
             "prv_shrike_overdriven":3,
-            #"prv_shrike_balanced":2.5,
             ###10
             "prv_brand_beam":5,
             "prv_brand_standard":5,
-            #"prv_brand_elite":2.5,
-            #"prv_brand_hunter":2.5,
-            ###10
-            "prv_gnejs_belt":3,
-            "prv_gnejs_support":7,
-            #"prv_gnejs_assault":2.5,
-            #"prv_gnejs_missile":2.5,
-            #"prv_gnejs_standard":2.5,
-            ###10
-            "prv_gissel_attack":4,
-            "prv_gissel_balanced":3,
-            "prv_gissel_siege":3,
-            #"prv_gissel_support":4,	RETIRED
-            #"prv_gissel_elite":2.5,	RETIRED
-            ###8
-            "prv_gissel_p_rocket":4,
-            "prv_gissel_p_missile":4,
 	},
 	"combatLarge":{
 		###10
-		"prv_agni_buck_male":10,
-		###10
-		"prv_agni_doe_female":10,
-		###10
-		"prv_hornfels_standard":5,
-		"prv_hornfels_belt":5,
-		#"prv_hornfels_assault":2.5,
-		#"prv_hornfels_elite":2.5,
-		###10
-		"prv_hornfels_pather_attack":5,
-		"prv_hornfels_pather_converted":5,
-		#"prv_hornfels_pather_pather":2.5,
-		#"prv_hornfels_pather_rust":2.5,
-		###10
 		"prv_flock_overdriven":2.5,
 		"prv_flock_strike":7.5,
-		#"prv_flock_attack":2.5,
-		#"prv_flock_ryak":2.5,
 		###10
-		"prv_flock_midline_balanced":10,
-		"prv_flock_midline_dem":0, # persean override
-		#"prv_flock_midline_support":2.5,
-		#"prv_flock_midline_artillery":2.5,
-		#"prv_flock_midline_elite":2.5,
-		###8
-		"prv_is_adv":6.5,
-		"prv_is_missile":3.5,
-		#"prv_is_ryak":2,
-		#"prv_is_overdriven":2,
+		"prv_is_adv":6,
+		"prv_is_missile":4,
 		###10
-		#"prv_aska_elite":3,
-		#"prv_aska_ha":2,
 		"prv_aska_ryak":5,
 		"prv_aska_grav":3,
 		"prv_aska_overdriven":2,
-		###10
-		"prv_aska_lc_salvation":5,
-		"prv_aska_lc_redemption":5,
-		#"prv_aska_lc_fire":2,
-		#"prv_aska_lc_sword":2,
-		###10
-		"prv_dominator_rb_line":5,
-		"prv_dominator_rb_syndicate":5,
-		#"prv_dominator_rb_attack":2.5,
-		#"prv_dominator_rb_assault":2.5,
-		### Ryak ###
-		#"falcon_ryak":3,
-		#"eagle_ryak":3,
-		###0
-		"prv_venture_p_syndicate":0, #rb override
 	},
 	"combatCapital":{
-		###5
+		###10
 		"prv_morker_grav":5,
 		"prv_morker_domain":5,
 		###10
 		"prv_skymning_tensor":3,
 		"prv_skymning_advanced":5,
 		"prv_skymning_elite":2,
-		#"prv_skymning_ryak":2.5,
 		###10
-		"prv_rok_grav":5,
-		"prv_rok_adv":5,
-		#"prv_rok_fast":2.5,
-		#"prv_rok_assault":2.5,
-		###10
-		"prv_bergtagen_belt":5,
-		"prv_bergtagen_assault":5,
-		###10
-		"prv_rok_p_stolen":5,
-		"prv_rok_p_pirate":5,
-		"prv_rok_p_belt":0,	#rb override
-		"prv_rok_p_syndicate":0,#rb override
-		###0
-		"prv_atlas2_belt":0, #rb override
+		"prv_rok_adv":4,
+		"prv_rok_grav":4,
+		"prv_rok_grav2":2,
 	},
 	
 	
 	# hybrid ships with good combat and cargo capacity
 	"combatFreighterSmall":{
-		###4
-		"prv_skiffer_belt":2,
-		"prv_skiffer_industrial":2,
-		#"prv_skiffer_strike":1,
-		#"prv_skiffer_armed":1,
 	},
 	"combatFreighterMedium":{
-		###10
-		#"prv_visent_raider":2.5,
-		#"prv_visent_primitive":2.5,
-		"prv_visent_smuggler":5,
-		"prv_visent_lh":5,
-		#"prv_visent_balanced":2,	RETIRED
 		###10
 		"prv_gemini_aux_i":4,
 		"prv_gemini_aux_s":3,
@@ -265,182 +80,67 @@
 		###4
 		"prv_ilbud_flicker":2,
 		"prv_ilbud_stealth":2,
-		###5
-		"prv_bitumen_belt":5,
             ###8
 		"prv_tiger_aux_c":4,
 		"prv_tiger_support":4,
-		###6
-		"prv_tiger_lc_armed":3,
-		"prv_tiger_lc_support":3,
 	},
 	"combatFreighterLarge":{
-		###8
-		#"prv_gabbro_res":2,
-		#"prv_gabbro_standard":2,
-		#"prv_gabbro_protected":4,
-		"prv_gabbro_converted":3,
-		"prv_gabbro_mil":7,
-		###10
-		"prv_bergslag_belt":5,
-		"prv_bergslag_blast":5,
-		#"prv_bergslag_armed":2.5,
-		#"prv_bergslag_prospect":2.5,
-		###10
-		"prv_bergslag_p_suspicious":5,
-		"prv_bergslag_p_modified":5,
-		###10
-		"prv_venture_rb_armed":2.5,
-		"prv_venture_rb_belt":2.5,
-		"prv_venture_rb_merch":2.5,
-		"prv_venture_rb_standard":2.5,
 	},
 	
 	"civilianRandom":{
-		###10
-		"prv_damm_belt":5,
-		"prv_damm_maint":5,
-		###2
-		#"prv_bergslag_prospect":0.5,
-		"prv_bergslag_blast":1,
-		"prv_bergslag_belt":1,
-		#"prv_bergslag_armed":0.5,
-		###2
-		#"prv_gabbro_res":0.5,
-		#"prv_gabbro_standard":0.5,
-		#"prv_gabbro_protected":0.5,
-		"prv_gabbro_converted":0.6,
-		"prv_gabbro_mil":1.4,
-		###3
-		"prv_visent_smuggler":1.5,
-		"prv_visent_lh":1.5,
-		###2
-		"prv_skiffer_belt":0.75,
-		"prv_skiffer_industrial":1.25,
 	},
 
 	# carriers
 	"carrierSmall":{
 		###10
-		#"prv_skiffer_belt":2.5,
-		"prv_skiffer_strike":2.5,
-		"prv_skiffer_armed":2.5,
-		#"prv_skiffer_industrial":2.5,
-		###10
             "prv_tystnad_stock":3,
-            #"prv_tystnad_overdriven":2.5,
-            #"prv_tystnad_assault":2.5,
             "prv_tystnad_ryak":7,
-            ###8
-            #"prv_tystnad_midline_missile":3,
-            #"prv_tystnad_midline_elite":3,
-            "prv_tystnad_midline_support":8,
-            "prv_tystnad_midline_dem":0,		#persean override
             ###6
             "prv_ande_nav":3,
             "prv_ande_reinforced":3,
 		###10
 		"prv_sorl_escort":5,
 		"prv_sorl_attack":5,
-		#"prv_sorl_strike":2.5,
-		#"prv_sorl_elite":2.5,
 		###10
-		"prv_sorl_midline_escort":10,
-		"prv_sorl_midline_dem":0,		#persean override
-		#"prv_sorl_midline_attack":2.5,
-		#"prv_sorl_midline_elite":2.5,
-            ###6
-		#"prv_tystnad_p_pirate":2,
-		#"prv_tystnad_p_privateer":1,
-		"prv_tystnad_p_ambush":6,
-		#"prv_tystnad_p_assault":1,
-		###12
-		"prv_condor_aux_f":6,
-		"prv_condor_aux_b":6,
+		"prv_condor_aux_f":5,
+		"prv_condor_aux_b":5,
 	},
 	"carrierMedium":{
             ###4
             "prv_gast_strike":2,
             "prv_gast_grav":2,
 		###10
-		#"prv_flock_rb_balanced":2.5,
-		#"prv_flock_rb_strike":2.5,
-		"prv_flock_rb_support":5,
-		"prv_flock_rb_attack":5,
-		###10
 		"prv_kakafoni_missile":5,
-		#"prv_kakafoni_overdriven":2.5,
-		#"prv_kakafoni_balanced":2.5,
 		"prv_kakafoni_ryak":5,
-		###8
-		"prv_kakafoni_p_pirate":4,
-		"prv_kakafoni_p_raider":4,
-		#"prv_kakafoni_p_strike":2.67,
-		###10
-		"prv_kakafoni_rb_missile":6,
-		"prv_kakafoni_rb_belt":4,
-		#"prv_kakafoni_rb_attack":3,
 	},
 	"carrierLarge":{
+		#10
+		"prv_valljud_strike":5,
+		"prv_valljud_elite":5,
 		###3 note: bp is unavailable
-		"prv_valnad_sustained":1,
-		"prv_valnad_beam":1,
-		"prv_valnad_strike":1,
-		###3
-		"prv_bergslag_belt":1.5,
-		#"prv_bergslag_armed":1,
-		#"prv_bergslag_prospect":1,
-		"prv_bergslag_blast":1.5,
-		###8
-		#"prv_valljud_support":2,
-		#"prv_valljud_standard":2,
-		"prv_valljud_strike":4,
-		"prv_valljud_elite":4,
-		###10
-		"prv_andesit_belt":3,
-		"prv_andesit_syndicate":3,
-		"prv_andesit_ms":4,
+		"prv_valnad_sustained":1.5,
+		"prv_valnad_strike":1.5,
 	},
 
 	# phase ships
 	"phaseSmall":{
-		#10
-		#"prv_fasnod_support":3,
-		#"prv_fasnod_standard":2,
-		#"prv_fasnod_elite":2,
+		###10
 		"prv_fasnod_flicker":3,
 		"prv_fasnod_strike":7,
-		#8
-		"prv_fasnod_p_raider":8,
-		#"prv_fasnod_p_pirate":2,
-		#"prv_fasnod_p_interceptor":2,
-		#"prv_fasnod_p_strike":2,
 	},
 	"phaseMedium":{
             ###10
             "prv_fasklot_attack":5,
             "prv_fasklot_flicker":5,
-            #"prv_fasklot_standard":3,
-            #"prv_fasklot_overdriven":2.5,
-            #"prv_fasklot_elite":2.5,
 		###8
-            #"prv_ilbud_assault":3,
-            #"prv_ilbud_strike":2,
 		"prv_ilbud_flicker":4,
 		"prv_ilbud_stealth":4,
-		##2
-		"prv_ilbud_h_elite":1,
-		"prv_ilbud_h_spec":1,
+
 	},
 	"phaseLarge":{
 		###10
 		"prv_fasvinge_flicker":5,
 		"prv_fasvinge_assault":5,
-		###10
-		"prv_kvarts_belt":5,
-		"prv_kvarts_attack":5,
-		#"prv_kvarts_improvised":2.5,
-		#"prv_kvarts_militia":2.5,
 	},
 	"phaseCapital":{
 
@@ -448,18 +148,12 @@
 
 	# freighters and such
 	"freighterSmall":{
-		###1
-		"prv_damm_belt":0.5,
-		"prv_damm_maint":0.5,
 	},
 	"freighterMedium":{
-		###12
-		"prv_munsbit_armed":4,
-		"prv_munsbit_br":4,
-		"prv_munsbit_standard":4,
 		###10
-		"prv_munsbit_lc_standard":5,
-		"prv_munsbit_lc_converted":5,
+		"prv_munsbit_armed":3,
+		"prv_munsbit_br":3,
+		"prv_munsbit_standard":4,
 		###10
 		"prv_tarsus_aux":10,
 	},
@@ -469,32 +163,15 @@
 	"tankerSmall":{
 	},
 	"tankerMedium":{
-		###2
-		#"prv_bitumen_belt":1,
-		###2
-		#"prv_tiger_aux_c":1,
-		#"prv_tiger_support":1,
-		###2
-		#"prv_tiger_lc_armed":1,
-		#"prv_tiger_lc_support":1,
 	},
 	"tankerLarge":{
 	},
 	
 	"personnelSmall":{
-		###1
-		"prv_damm_belt":0.5,
-		"prv_damm_maint":0.5,
 	},
 	"personnelMedium":{
 	},
 	"personnelLarge":{
-		###4
-		#"prv_gabbro_res":1,
-		#"prv_gabbro_standard":1,
-		#"prv_gabbro_protected":1,
-		"prv_gabbro_converted":0.6,
-		"prv_gabbro_mil":1.4,
 	},
 	
 	"linerSmall":{
@@ -502,30 +179,14 @@
 	"linerMedium":{
 	},
 	"linerLarge":{
-		###10
-		#"prv_gabbro_res":4,
-		#"prv_gabbro_standard":2,
-		#"prv_gabbro_protected":2,
-		#"prv_gabbro_mil":2,
 	},
 	
 	# utility ships
 	"tug":{
 	},
 	"crig":{
-		###4
-		"prv_skiffer_belt":1,
-		"prv_skiffer_industrial":1,
 	},
 	"utility":{
-		###8
-		"prv_bergslag_belt":4,
-		#"prv_bergslag_armed":2,
-		#"prv_bergslag_prospect":2,
-		"prv_bergslag_blast":4,
-		###4
-		"prv_skiffer_armed":1,
-		"prv_skiffer_industrial":1,
 	},
 	
 	"orbitalStationLowTech":{

@@ -1,0 +1,471 @@
+1.04.44a - (HOTFIX!)
+ - Fixed special character in file name borking edge downloads!
+ - Added alternate skins for google drones
+
+1.04.44a - Savebreaker alert!
+TODO!
+    - Revisit ship descriptions
+    - Revisit the (Angry) Periphery
+    - Get [REDACTED] to create Bhilais nex profile for me...
+    - Deal with complaints
+
+DONE!
+    - Astrum    - Added to default ship roles (whoops!)
+                - Various stat tweaks
+    - Valhalla  - Removed KoC Mod
+    - Valkyrie  - Removed KoC Mod
+    - Mercury   - now has KoC.desg
+                - Small Missile changed to Composite
+    - Shrike    - Removed Insulated Engine
+    - Fury      - Removed Insulated Engine
+                - Medium Energy changed to Composite
+    - OddyKoc   - Small Hybrids changed to Energy/Ballistic (No other KoC has hybrids)
+                - Medium changed to Composite
+                - Large Universal changed to Composite (Because all KoC-mil get a composite....)
+    - Atlas(C)  - Medium Universal changed to Medium Energy
+    - Geist     - Reduced deployment cost 30->26
+    - Enforcer  - (TT) changed to (EU)
+    - Hinny     - Fixed Heavy Mining Laser
+                - Fixed Mining Drones
+    - Huginn    - M.Energy to Missile
+    - Muginn    - M.Composite to Hybrid 
+
+    - Requiem   - Replaced Dynamic Stabilizer with ammofeed
+                - Removed Damper field
+                - Removed B.Rangefinder
+                - Added Distributed Fire Control
+                - Increased base dissipation by 50
+                - Reduced OP by 5
+                - Added (P) Variant
+    - Haymaker  - Increased speed from 115 to 125
+    - G.Harbinger - All mediums = Synergy
+    - G.Phantom   - L.Energy changed to Synergy
+    - G.Shade   - M.Missile changed to M.Synergy
+                - Removed S.Energy 1x
+    - G.Afflictor   - Locked -pending possible removal-
+    - Sleipnir  - Restored TPC RoF
+                - Restored Escort Package (Is it too much to ask for both?)
+                - System changed to Damper
+    - Atlas (C) - Reduced Cargo Capacity to 600 - Thank Ros for pointing out the oversight
+    - Pranker   - Increased OP to 65/150
+                - Added Distributed Fire Control
+                - (LP) Removed HBI
+                - (LP) Swapped mount types
+
+    - Added missing ship desciptions
+    - ALL SHIP VARIANTS REVISED
+
+    - New Weapon- Atropos - LARGE!
+    - AP-MG     - Reduced flux 20->18 - Reclassified as Anti Fighter
+    - Maiden    - Reduced OP cost from 5/10/15 to 4/8/15
+    - Streak    - Behaviour tweaks
+
+    - Revised starting rules
+    - Faction doctrine tweaks
+
+    - Restored Ordinance Storage and Flux Capacitors
+                - Converted OrdStor and FluxCap to S-mods
+                - Purchasable from Bhilai and Eridani
+                - Can be unlocked at start through KoC/Mbaye start option (would you like to know more?)
+    - Faction hullmods (Blockade Runner/Phase Resonator) overhauled - now S-mods
+                - Known bug: Setting them to 'Hidden' removes the ability to SMOD - Reported
+                - No faction knows them
+                - Set to no_drop/no_drop_salvage - should prevent them spawning
+                - YMMV depending on mods/cheats
+    - Eridani-Utopia ships are all listed Eridani-Utopia not Eridani Utopia
+    - Reverted Eridani Commisoned crew hull mod to range bonus
+
+    - Mbaye-Gogol [REDACTED] start now begins with Automated Ship skill
+    - Mbaye drones converted and revamped in accord:
+                - IPDAI removed
+                - Custom hullmod removed
+                - Shields added
+                - System changed Cannister->Skimmer (Because Mbaye love to phase... (And so does the [REDCATED])
+                - Defender - Hardpoint Med->Sml.Syn
+                - Bastillion - Large removed and 2xSml converted to M.Hard.Syn
+
+
+
+
+
+
+1.04.43b
+    - Added Eridani Nex profile - Thanks KMS
+    - Added Coach Cannon (XIV)
+    - Gizzard (LG) - Small mounts changed to pure energy
+    - Bhilai Ship tweaks
+        - Huginn - Removed KoC Mod - Escort Package + Damper
+        - Muninn - Removed KoC Mod - Assault Package + Dynamic Stabliser
+        - Geri - Removed KoC Mod - Escort Package + Damper
+        - Freki - Removed KoC Mod - Assault Package + Dynamic Stabliser
+        - Sleipnir - Removed KoC Mod - Escort Package + Dynamic Stabliser
+
+1.04.43a - Clearing out the crud and adding the chud - (Update for SS 0.97a) pre-released on request for >>1645943
+ - Added faces and names
+ - New Weapon - AP Machine Gun
+ - New Weapon - Streak MRM/Pod
+ - Migrated Medium Atropos across from L&L - Increased cooldown (9)
+ - Migrated Medium Hammer across from L&L - Increased cooldown (9)
+ - Migrated Gizzard across from L&L - minor tweaks
+            Gizzard (LG) - Added Coherer and converted 2x Medium Missile to Energy, increase shieled eff
+ - Adjusted weapon rarity and blueprint packages
+ - Reduced Strix Frequency and base Flux Dissipation (-30)
+ - New sprites  - Pulse Cannon
+                - X-Pulse
+                - Hammer Pod
+ - Ships System - Added desciption and reduced cooldown of Dynamic Stablisers (*unused vanilla system)
+ - Replace Damper with Burndrive/Dynamic Stablisers on Bhilai ships
+ - Coach Cannon - Increased minimum spread
+                - Decreased spread per shot
+                - Added small proximity detonation range (10) 
+ - Sleipnir - Removed Emergency Capacitors ship system
+            - Replaced with Dynamic Stablisers
+            - Added description for dynamic stablisers
+            - Reduced shield arc to 90
+            - Decreased TPC accuracy (Sleipnir only)
+            - Decreased TPC RoF (Sleipnir only)
+
+ - Removed KoC_Breaking industry
+ - Reimplemented revised systems hullmod - removed no_auto_penalty from applicable ships *buggy*
+ - Removed Ordinance Storage hullmod - Rolled into Eridani Commission
+ - Removed Flux Capacitor hullmod - Rolled into Eridani Commission
+ - Removed old/unused art assets
+ - Pulse Drone IPDAI promoted to SMod
+ - Removed Hardened Shields from Eridani ships - Shield efficency increased using new shieldEfficiency .skin tag (only works in RC10+)
+ - Eridani - Yma - reduced size
+ - Eridani - Yma - removed fuel production
+ - Eridani - Yma - added waystation
+ - Eridani - Battlestation - mid->high
+ - _wings bugfix
+
+#InDevHell
+ - Truncheon
+ - Ward 
+ - Parralax Experimental Frigate CPBF + weapon
+
+
+1.04.42a (Update for SS 0.96a) - 110-700
+ - Decreased Prospector flux stats 100/1500 (-20/-300)
+ - Increase Strix/Mun/Hun Dissipation to 150 (+30)
+ - Added S.Energy to Defender, OP Increased to 40
+ - Pulse Cannon - Damage increased to 700, flux decreased to 1050 (1.5 eff)
+ - Pulse Cannon - range reduced to 500 (-100)
+ - Pulse Cannon - rounds now detonate at +20% of max range (previously at -20% of max range)
+ - Pulse Cannon rounds penetrate destoyed fighters
+ - Gust removed EMP and reduced damage inline with 0.96a squall
+ - Restored 2x Small Energy hardpoints to Manta
+ - Bastilion/Defender - added no_auto_penalty
+ - Bastilion/Defender - removed revised system hullmod
+ - Bastilion/Defender - removed shields
+ - Defender - added Medium Energy, increased OP to 45 (+5)
+ - Added Hanger (1) to Bastillion, , OP Increased to 90 (+10)
+ - Bastilion - replaced hanger with large energy
+ - Hinny overhauled
+
+ - Added.ship Pranker
+ - Added.ship Lasher (EU)
+ - Added.ship Eridani_Gemini
+ - Added.wing Ward support fighter
+
+ - Eridani fleet and relationship tweaks
+ - Added additonal Eridani colony on Killa (Yma system)
+ - Yma - Increased to size 6
+ - Yma - Removed fullrenee spool
+ - Yma - Upgraded Spaceport -> Megaport
+ - Yma - Upgraded Military Base
+ - Nomios - removed trade centre
+ - Argeus - added headquarters
+
+ - Added.ship Truncheon destroyer
+ - Removed.Added.ship Gurkha Troop Transport
+
+
+1.03.41 - Weapons and variants? Weapons and variants!
+ - Redid GravBurst -> Pulse Detonation Cannon
+ - Redid X-pulse
+ - Added X-Pulse (fighter)
+ - Redid MK10->Mk12 Coach Cannon
+ - Removed Sleipnir TPC (duplicate) entry from codex
+ - Removed Maiden_single - (unused)
+ - Removed Pulse Drone (C) x2 wing
+ - Replaced Kites Pulse Drone (C) x2 with Pulse Drone Rade wing
+ - Changed Universal Hardpoints to Synergy on Geist (MbG)
+ - Changed L.Universal to Synergy on Phantom (MbG)
+ - Changed S.Energy to Universal on Strix
+ - Tweak and fix for Buffalo bug
+ - Removed IPDAI from Fury and Oddykoc
+ - Removed Built-in weapon from fury and restored OP to base value
+ - Removed Built-in weapons from Oddykoc and restored OP to base value
+ - Added ITU to Oddykoc
+ - REDID MOST VARIANTS!
+ - New Eridani and CHM Eridani hullmods
+ - Removed config settings
+ - Increased Atlas (C) OP to 185
+
+
+1.03.40dd
+ - Replaced KocBreaking with Waystation
+ - Organs are illegal in Eridani
+ - Added.ship Mercury (EU)
+ - Added.ship Hinny
+ - Added.ship Cerberus (EU)
+ - Added MbG start
+ - Added Phantom to MbG lineup
+ - Added Dram to Eridani lineup
+ - Added Fullrene Spool to Qaras
+ - Upgraded food and organics production on Qaras
+ - Manta - removed small mounts
+ - Manta reduced OP to 70 (-5)
+ - Manta reduced FP to 6 (-1)
+ - Manta changed ship system to Q.Disruptor
+ - Greki/Freki - Reduced Hull (-1000)
+ - Migrated Heavy Mining laser from Ludd and Lions
+
+- Removed Eridani Picket/Wolf/Vanguard
+
+1.03.40d
+ - Replaced Commerce with Light Industry on Nomios
+ - Moved Holosuite to Cryosanctum
+ - Changed Flicker PDL to Ray_Fighter
+ - Added Caseless Autocannon
+ - Geri/Freki M.Turret Energy changed to Hybrid
+
+1.03.40c
+ -[REDACTED]
+
+1.03.40b - SAVEBREAKER!!! - BREAKING ALL YOUR SAVES! - SAVEBREAKER!!!! - GONNA MAKE YOU PAY!
+ - Added Mark X Autocannon
+ - Maiden spark damage boosted 0/500 > 75/750
+ - Revamped Greki/Freki - 
+ - Muninn Shield arc reduced to 150
+ - Sleipnir Shield arc reduced to 150
+ - Prospector Shield nerfed to 150/0.4/1
+ - Atlas(C) Shield arc increased to 150/0.7/1
+ - REMOVED GREMLIN (MBG)
+ - REMOVED MIDGARD BOMBER
+ - Added.ship Requiem
+ - Added.ship Manta
+
+Added Eridani-Utopia
+ - Added Faction bones - Heavy on the Sind.
+ - Added Frigates (Cerberus (EU)/Vanguard (EU)/Picket (EU))
+ - Tweaked Yma/Qaras now EU
+ - Added Commisioned Crew bonus
+
+Angry Periphery
+ - Shifted systems (~4000 left)
+ - Swapped Lagan/Nergal posistions
+ - Removed freeport from Harvester
+ - Added headquarters to Harvester
+
+
+1.03.39 ###this planet ain't big enough for the three of us edition###
+ - Geist - Reduced flux capacity (9000 -> 8000)
+ - Geist - Reduced flux dissip. (1000 -> 800)
+ - Geist - Increased phase cost (0.05 -> 0.06)
+ - Geist - Reduced ordinance points (145 -> 135)
+ - Buffalo C - Small Missile changed to Universal
+ - KoC Fleet Doctrine tweaks
+ - MBG Fleet Doctrine tweaks
+
+ - KoC/Mbaye now offer commissions in vanilla
+ - KoC/Mbaye now engage in hostilities in vanilla
+ - MOD INTERGRATION - added commissioned crews intergration
+ - MOD INTERGRATION - nex mining - thanks ctunks
+ - MOD INTERGRATION - nex profiles - thanks vcuh666/Nyctophonik
+
+ - Bigger and better:
+     - Nomios increased to size 5 (+2 ind.) - Industries Rejiggered, added station
+     - Argeus increaed to size 6 (+1 ind.) - Industries Rejiggered
+         - Restored techmining and refining to Arcadia
+         - KoC_Breaking heavily nerfed and no longer an industry
+     - Arcadia increaed to size 5 (+1 ind.) - Industries Rejiggered, upgraded to starfortress
+
+ - Added story/lore hook to Callisto
+ - New artwork for mad maiden launchers
+ - Shrike colour tweaks
+ - FIX: Removed atropos_pod reference
+
+1.03.38
+ - Now comes bundles with Angry Periphery
+ - Colony Tweaks in combination with PPP (Angry Periphery)
+ - KoC Fleet tweaks
+        - Reduced frequency of KoC ships 1.4>1.2 (more KoC ships = less dependance on artificial bumping) 
+        - Increased frequency of Monitor/Shepherd 1.0>1.1
+
+1.03.37a/b
+ - New sprites - Fury/Shrike
+ - Added Mudskipper/Nebula/Starliner to Gogle line-up
+ - Replaced Phase Anchor with Drive Field Stabliser on MBG Phantom
+ - Increased Monthly supply cost - Phantom
+ - Increased Monthly supply cost - Geist
+ - Increased Grav Cannon RoF, Decreased (sustained) accuracy
+ - KoCFury mounts swapped S.Ballistic<--->Energy
+ - KoCFury mount change M.Universal--->Energy
+ - KoCFury variant tweak
+ - Google Drones - Added Unique H.Mod (Shield + OP +CR) - Can use google drones without Automated ships skill!
+ - Google Drones - Replace Flares with Cannister Flak
+ - Google_Shade revamp - moar missiles
+ - Added Misison - Randis Conflict
+ - Added Misison - Randy for Randis
+ - Added missing desciptions
+ - New Mbaye-Gogol faction description
+
+1.03.36
+ - Gremlin Mk2 removed (soft removal to keep save game compatible)
+ - Added Fury (KoC) (WiP)
+ - Revamped Graviton Cannon
+ - Added Flicker PDL
+ - Added Atropos Pod
+ - Reduced Blockade Runner damage reduction
+ - New Variants (Buffalo/Propsector/Strix)
+ - Upgraded (Huginn/Muninn/Geri/Freki/Sleipnir/Valkyrie/Valhalla) Small Ballistics to Hybrid and tweaked variants
+ - Added Bastillon/Defender (MbG)
+ - MbG have access to drone codes and are now considered friendly with the Derelicts (But the Remnant ain't falling for that trick).
+
+1.03.35
+ - Tweaked DPs
+ - Removed IEA from KocPest
+ - Flipped Geri/Freki Ass/Esc mods
+ - Added derelicts
+ - Perseans get Buffalo (C)
+ - Strix - Added BuiltIn IPDAI + Loadout changed
+ - Revamped Mbaye Hullmod
+ - Revamped Mbaye variants
+ - New MBaye Phantom
+ - Gremlin Mk2 removed (from default ship roles)
+
+1.03.34
+ - Nerfed Koc Breaking
+ - Colony Tweaks
+ - Various Graphical Tweaks
+ - Intergration with PPP
+ - Rolled in SP start to base KoC start
+ - Restored zoom settings...
+ - Several goal variant fixes
+ - Gremlin reskinned to Mk.II for Mbaye.
+
+1.03.33
+ - Added (Gogol) Geist
+ - Added no_bp_drop to hopefully fix that shit (again) - if this don't work, next time I'll rename all the wings which will kill save game compat
+ - Commented out max zoom adjustments - Run less mods ONI! 
+ - Intergration with Periphery Planet Pack (New release)
+	- Modified Mbaye on Nomios (immediate effect)
+	- Added Nergal.json econ file
+
+1.03.32
+ - Replaced Gogol Hmod - Attuned coils
+ - Tweaked Gogol variants
+ - Google Afflictor S>M.Mounts
+ - Added Gogle Phantom
+ - Added WING_NO_DROP to hopefully fix shit
+ - Added custom converted hangers (no penalty to fighters)
+
+1.03.31
+ - Gogol HMod fix
+ - Armstrong Station event tweak
+
+1.03.30
+ - Added new Minor Faction, Mabye-Gogol
+ - Changed Nomios to Gogol control
+ - Added ship gogol Afflictor
+ - Added ship gogol Gremlin
+ - Added ship gogol Shade
+ - Added ship gogol Harbinger
+ - Added Gogol HMod - Fighter Screen
+ - Paying the (LP) tithe now increases your rep
+ - Fixed bug in Armstrong Station event
+ - Tweaked Arcadia system settings
+
+1.03.29
+ - Maiden New missile apperance
+ - Shrikoc added
+ - Updated desciptions for import hulls (Kite/Pest/Shrike/Oddy)
+ - Updated desciptions for export hulls (Strix/Prospector/Buffalo/Atlas)
+ - Updated desciptions for military hulls (Raven/Wolf/Horse)
+ - Updated desciptions for logisitcs hulls (Valkyrie/Valhalla)
+ - Atlas added to Luddic Church markets
+ - Sleipnir added to Luddic Church markets
+ - Sleipnir added to Luddic Path markets
+ - Luddic Shrine offering also improves relation with the Path!
+ - Armstrong Station + story event added to Arcadia System - WIP
+ - GravBlaster rejigged to Graviton Pulse Cannon
+ - Weapons markets revised - GPC added
+ - Tweaked new game text
+
+1.03.28
+ - Atlas(C) Removed hullmod Fighter Bay Storage
+ - Unified OrdStor/FluxCap penalties.
+ - Buffalo (C) removed survey equipment
+ - Atlas/Buffalo (C) added militarized_subsystems
+ - Atlas (C) Crew min/max increased
+ - Buffalo (C) Reduced minimum crew
+ - Drone health reduced (500/400 -> 400/350)
+ - ShuttleKoc/OddyKoC/KoCPest removed from independant markets
+ - MaidenMRM EMP Damage reduced to 1000 (-500) and arc damage reduced to 500 (-250) 
+ - MaidenMRM 100% chance to generate arc on hit (+50%)
+ - OddyKoC Reduced OP to 265 (-15)
+ - OddyKoC Reduced Large Universal arc to 120 (-30)
+ - OddyKoC Small mounts converted to Hybrid
+ - OddyKoC Medium mounts converted to built_in HeavyBurst
+ - OddyKoC Built in wings removed
+ - OddyKoC Fighter bays reduced to 2 (-1)
+ - OddyKoC Removed Advanced Turret Gyros 
+ - OddyKoC Added Intergrated PD AI
+ - OddyKoC Burnspeed increased to 9 (+1)
+ - KoCPest Removed Efficency Overhaul
+ - KoCPest Added Insulated Engine
+ - KoCPest wing size reduced to 2 (-2)
+ - (Military) Pulse_Drone Added ECCM Package
+
+1.03.27
+ - Updated starting relatonship with KoC
+ - Additonal starting options
+ - Oddykoc Tweaks
+
+1.03.26
+Big 'ol KoC Military Ship revamp edition:
+ - Kocpest Added
+ - Oddykoc added
+ - Pulse Drone (built in) added
+ - Huginn DEAD
+ - Bodkins DEAD
+ - Valkyrie Esc DEAD
+ - 1 Frigate +var
+ - 1 Destroyer +var (art to redo)
+ - Civ Drones have Civillian grade hull and reduced HP
+ - Strix - Omni -> Front shield
+ - Buffalo (C) Front -> Omni shield
+ - Atlas (C) Depolyment cost increased 10>35
+
+1.02.25
+Reverted valkyrie-sup to base valkyrie (removed drone deck)
+Added Drone deck to Valkyrie_esc
+Added ships to simulator
+Renamed ships
+
+
+1.02.24
+Strix - +2 Small Energy Hardpoints - hardpoint fix (was turret)
+Muninn - AssPack
+Huginn - Rebuilt, fixed drone wing +2x small energy mounts
+Bodkin - Flux Shunt changed to AssPack - Set to 0 spawn
+Valkyrie_Sup - built-in pulse_wing - variant tweaked
+NEW SHIPS - Bodkin Ass/Esc
+Flux Capacitor - upkeep reduced to 30%
+Deleated testing settings  (max Perm/log mods + spac start)
+New Ships - Chicken and Squirrel!
+Custom Start - More starting options and new starting location
+
+
+1.0.23
+Midgard Harp/Maid removed
+Midgard Squall added
+Description Updates
+ShuttleKoC wing size reduced from 4 to 2 (new wing - hidden)
+
+1.0.22
+Variant tweaks
+Pulse Drone (C) Reduced armour
+Updated desciptions
+KoC Start changed to Kite/Prospector/Strix/V_Ass/Valhalla

@@ -1,0 +1,248 @@
+{
+  "bounds": [
+    -56,
+    -23,
+    0,
+    -50,
+    36,
+    -50,
+    56,
+    -38,
+    83,
+    -0,
+    56,
+    38,
+    36,
+    50,
+    0,
+    50,
+    -56,
+    23
+  ],
+  "builtInMods": ["civgrade","converted_koc","militarized_subsystems"],
+  "builtInWings": ["4c_pulse_wing","4c_pulse_wing"],
+  "center": [
+    57,
+    63
+  ],
+  "collisionRadius": 112,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -59,
+        24
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -60,
+        15
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -61,
+        6
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -61,
+        -6
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -60,
+        -15
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -59,
+        -24
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    }
+  ],
+  "height": 150,
+  "hullId": "buffalo_c",
+  "hullName": "Buffalo (C)",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    10,
+    -0
+  ],
+  "shieldRadius": 100,
+  "spriteName": "graphics/ships/buffalo_c.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 210,
+      "id": "WS 001",
+      "locations": [
+        69,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 180,
+      "arc": 5,
+      "id": "WS 002",
+      "locations": [
+        -25,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 80,
+      "arc": 210,
+      "id": "WS0001",
+      "locations": [
+        30,
+        45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -80,
+      "arc": 210,
+      "id": "WS0002",
+      "locations": [
+        30,
+        -45
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 210,
+      "id": "WS0003",
+      "locations": [
+        -4,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -120,
+      "arc": 210,
+      "id": "WS0004",
+      "locations": [
+        -4,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        66,
+        28
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        66,
+        -28
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        20,
+        20,
+        6,
+        20,
+        36,
+        20,
+        27,
+        16,
+        12,
+        16
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        20,
+        -20,
+        6,
+        -20,
+        36,
+        -20,
+        12,
+        -16,
+        27,
+        -16
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 114
+}

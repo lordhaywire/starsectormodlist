@@ -1,0 +1,24 @@
+{
+	"hullFrequency":{
+		"hulls":{
+			"prv_gnista_lc":0.65,
+			"prv_aska_lc":0.125,
+		},
+	},
+	"knownShips":{
+		"hulls":[
+			"prv_aska_lc",
+			"prv_tiger_lc",
+			"prv_aska_lc",
+			"prv_munsbit_lc",
+		],
+	},
+	"knownWeapons":{
+		"tags":[
+			"prv_lp_bp",
+		],
+	},
+	"knownFighters":{
+		"tags":["prv_lp_bp"],
+	},
+}

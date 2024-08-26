@@ -1,0 +1,18 @@
+{
+    "enabled":true,
+
+    "How many levels of zoom the radar has":"",
+    "numberOfZoomLevels":4,
+    
+    "The number of the key to zoom the radar in: defaults to '='":"",
+    "zoomInKey":13,
+    
+    "The number of the key to zoom the radar out: defaults to '-'":"",
+    "zoomOutKey":12,
+    
+    "How many seconds the zoom animation lasts":"",
+    "zoomAnimationDuration":2,
+    
+    "Radar contact opacity":"",
+    "contactAlpha":0.85
+}

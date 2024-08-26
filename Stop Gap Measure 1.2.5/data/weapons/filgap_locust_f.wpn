@@ -1,0 +1,51 @@
+{
+	"id":"filgap_locust_f",
+	"specClass":"projectile",
+	"type":"MISSILE",
+	"size":"SMALL",
+	"turretSprite":"graphics/filgap/weapons/filgap_saturation_launcher_t .png",
+	"hardpointSprite":"graphics/filgap/weapons/filgap_saturation_launcher_hp.png",
+	"turretOffsets":[      9,
+    4,
+    9,
+    -4,
+    9,
+    0
+
+],
+	"turretAngleOffsets":[0,
+    0,
+    0
+  ],
+
+	"hardpointOffsets":[
+    11,
+    4,
+    11,
+    -4,
+    11,
+    0
+  ],
+	"hardpointAngleOffsets":[
+    0,
+    0,
+    0
+  ],
+	
+	"barrelMode":"ALTERNATING",
+	"animationType":"SMOKE",
+	"interruptibleBurst":false,
+	"displayArcRadius":500,
+	"smokeSpec":{"particleSizeMin":10.0,
+				 "particleSizeRange":16.0,
+				 "cloudParticleCount":3,
+				 "cloudDuration":0.9,
+				 "cloudRadius":8.0,
+				 "blowbackParticleCount":3,
+				 "blowbackDuration":1.1,
+				 "blowbackLength":20.0,
+				 "blowbackSpread":10.0,
+				 "particleColor":[170,160,150,100]},
+	"projectileSpecId":"locust",
+	"fireSoundTwo":"swarmer_fire",
+}

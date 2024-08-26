@@ -1,0 +1,235 @@
+{
+  "bounds": [
+    -60,
+    -30,
+    -35,
+    -40,
+    -25,
+    -60,
+    5,
+    -35,
+    35,
+    -30,
+    55,
+    -0,
+    35,
+    30,
+    5,
+    35,
+    -25,
+    60,
+    -35,
+    40,
+    -60,
+    30
+  ],
+  "builtInMods": ["missleracks"],
+  "builtInWings": [],
+  "center": [
+    61,
+    69
+  ],
+  "collisionRadius": 90,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 80,
+      "location": [
+        -66,
+        -0
+      ],
+      "style": "LOW_TECH",
+      "width": 30
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 50,
+      "location": [
+        -65,
+        19
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 50,
+      "location": [
+        -65,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 40,
+      "location": [
+        -63,
+        27
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 40,
+      "location": [
+        -63,
+        -27
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": 180,
+      "contrailSize": 15,
+      "length": 60,
+      "location": [
+        -65,
+        10
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    },
+    {
+      "angle": -180,
+      "contrailSize": 15,
+      "length": 60,
+      "location": [
+        -65,
+        -10
+      ],
+      "style": "LOW_TECH",
+      "width": 15
+    }
+  ],
+  "height": 128,
+  "hullId": "gizzard",
+  "hullName": "Gizzard",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 110,
+  "spriteName": "graphics/ships/gizzard.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        50,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0002",
+      "locations": [
+        -14,
+        50
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 10,
+      "id": "WS0003",
+      "locations": [
+        -14,
+        -50
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 55,
+      "arc": 160,
+      "id": "WS0004",
+      "locations": [
+        21,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -55,
+      "arc": 160,
+      "id": "WS0005",
+      "locations": [
+        21,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 180,
+      "arc": 160,
+      "id": "WS0006",
+      "locations": [
+        -27,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+#    {
+#      "angle": 0,
+#      "arc": 0,
+#      "id": "WS0007",
+#      "locations": [
+#        42,
+#        29
+#      ],
+#      "mount": "HARDPOINT",
+#      "size": "SMALL",
+#      "type": "MISSILE"
+#    },
+#    {
+#     "angle": -0,
+#      "arc": 0,
+#      "id": "WS0008",
+#      "locations": [
+#        42,
+#        -29
+#      ],
+#      "mount": "HARDPOINT",
+#      "size": "SMALL",
+#      "type": "MISSILE"
+#    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -40,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 122
+}

@@ -1,0 +1,67 @@
+{
+  "hullName": "Kalk",
+  "hullId": "prv_kalk",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_kalk.png",
+  "style": "PRV_LOW",
+  "height": 36,
+  "width": 39,
+  "center": [19.5, 18],
+  "collisionRadius": 26.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 26,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-8, -0]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": 45,
+      "locations": [3.5, 9]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "HIDDEN",
+      "arc": 180,
+      "angle": -45,
+      "locations": [3.5, -9]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, -8.5],
+      "length": 13,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-15, 8.5],
+      "length": 13,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -2.5, 13.5,
+    15, 0,
+    -2.5, -13.5,
+    -15, -0
+  ]
+}

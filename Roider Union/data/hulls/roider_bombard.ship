@@ -12,9 +12,11 @@
   "shieldRadius": 130,
   "viewOffset": 0,
   "builtInMods": [
-    "roider_midas",
-    "roider_bombardmentmod"
+    "roider_midas"
   ],
+    "builtInWeapons": {
+        "WS 001": "lidardish"
+    },
   "weaponSlots": [
     {
       "id": "WS 002",
@@ -28,10 +30,10 @@
     {
       "id": "WS 001",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "DECORATIVE",
       "mount": "TURRET",
-      "arc": 200,
-      "angle": -45,
+      "arc": 150,
+      "angle": 0,
       "locations": [40, -17]
     },
     {

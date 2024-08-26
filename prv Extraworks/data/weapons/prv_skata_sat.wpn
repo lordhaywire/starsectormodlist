@@ -1,0 +1,27 @@
+{
+  "id": "prv_skata_sat",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_skata_sat",
+  "type": "MISSILE",
+  "size": "MEDIUM",
+  "turretSprite": "graphics/prv/weapons/prv_skata_sat_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_skata_sat_hardpoint.png",
+  "turretOffsets": [
+    16,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    21,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "separateRecoilForLinkedBarrels": true,
+  "animationType": "NONE",
+  "fireSoundTwo": "sabot_srm_fire"
+}

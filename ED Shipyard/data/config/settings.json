@@ -23,7 +23,6 @@
         },
 		"ED_portraits":{
 		    "portrait_erondust":"graphics/portraits/CEO_Eron_Dust.png",
-			"portrait_doog":"graphics/portraits/Doog_by_Kukie_nyan.png",
 		}
 	},
 	"ruleCommandPackages": [

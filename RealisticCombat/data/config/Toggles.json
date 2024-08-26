@@ -1,0 +1,42 @@
+{
+    "Reduce the Combat Readiness of ships as they become":"",
+    "damaged during combat":"",
+    "damageReducesCR":true,
+
+    "The commander of the enemy fleet, with thresholds depending on":"",
+    "personality, orders a full retreat should the total deployment points":"",
+    "of its remaining combat ships, including reserves, be too small a":"",
+    "fraction of the same total of the player fleet or too great a":"",
+    "fraction of the enemy total have been lost.":"",
+    "enemyFleetRetreats":true,
+
+    "Modify the specifications of all ships":"",
+    "modifyShipSpecs":true,
+
+    "Modify the specifications of all fighters":"",
+    "modifyFighterSpecs":true,
+
+    "Modify the specifications of all weapons":"",
+    "modifyWeaponSpecs":true,
+
+    "Change the map size and deployment offsets":"",
+    "modifyMap":true,
+
+    "Use the Realistic Combat damage model instead of the vanilla one for":"",
+    "all projectile, missile, and beam damage to ships, stations, and":"",
+    "fighters":"",
+    "replaceDamageModel":true,
+
+    "Adjust the range of every non-missile projectile weapon to one at":"",
+    "which its target could not strafe, whether horizontally or vertically":"",
+    "off the paths of a burst of projectiles before they would strike.":"",
+    "The faster the projectile, faster-firing the weapon, and larger the":"",
+    "the target, the longer the range; the greater the target's":"",
+    "acceleration the shorter the range.":"",
+    "threeDimensionalTargeting":true,
+
+    "Every non-point-defense weapon arc of the player and target, if":"",
+    "selected, should be displayed, arcs of selected groups or weapons":"",
+    "targeting the player highlighted":"",
+    "displayWeaponArc":true
+}

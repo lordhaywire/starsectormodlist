@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "LARGE",
-  "beamEffect": "scripts.weapons.prv_vakt_BeamEffect",
+  "beamEffect": "prv.corp.weapons.prv_vakt_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/prv/weapons/prv_vakt_turret_main.png",
@@ -51,7 +51,7 @@
     128,
     128
   ],
-  "width": 24,
+  "width": 48,
   "textureType": [
     "graphics/prv/fx/prv_beam_interrupted_fringe.png",
     "graphics/prv/fx/prv_beam_interrupted_core.png"

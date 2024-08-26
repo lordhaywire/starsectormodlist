@@ -1,0 +1,153 @@
+{
+  "hullName": "Gnista (P)",
+  "hullId": "prv_gnista_p",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_gnista_p.png",
+  "style": "LOW_TECH",
+  "height": 97,
+  "width": 97,
+  "center": [49, 54],
+  "collisionRadius": 80,
+  "shieldCenter": [-8, -0],
+  "shieldRadius": 70,
+  "viewOffset": 0,
+  "builtInMods": [
+    #"prv_volatiledrivecore",
+    #"prv_ramshield",
+  ],
+  "builtInWeapons": {
+    "WS0003": "prv_hfl_array_single"
+  },
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -35, 8,
+        -34.5, 15,
+        -40, 1
+      ]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [17, 19]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [11, 32]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "TURRET",
+      "arc": 75,
+      "angle": 0,
+      "locations": [6, -23]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": -30,
+      "locations": [20, -13.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 60,
+      "locations": [26, 8]
+    },
+    {
+      "id": "LCHP1",
+      "size": "MEDIUM",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 0,
+      "locations": [19, -23]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-38.5, 11.5],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-38.5, -11.5],
+      "length": 21,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-28, 22.5],
+      "length": 28,
+      "width": 14,
+      "angle": 180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-28, -22.5],
+      "length": 28,
+      "width": 14,
+      "angle": -180,
+      "contrailSize": 14,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, 33],
+      "length": 12,
+      "width": 6,
+      "angle": 150,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-17.5, -33],
+      "length": 12,
+      "width": 6,
+      "angle": -150,
+      "contrailSize": 6,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    32, -0,
+    21, -12,
+    24, -20,
+    6, -39,
+    -21.5, -42,
+    -9, -30,
+    -46, 0,
+    -9, 30,
+    -21.5, 42,
+    4, 38,
+    20, 12
+  ]
+}

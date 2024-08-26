@@ -1,0 +1,14 @@
+prv Path
+
+v1.1
+Updated signatures for Starsector v0.97a.
+
+v1.1
+Updated signatures for Starsector v0.96-RC10.
+
+v1
+Initial release
+- Split from prv Starworks v22.
+
+Mora (LP)
+- Added ALWAYS_PANIC hint.

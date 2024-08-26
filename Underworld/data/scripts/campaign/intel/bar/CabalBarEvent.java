@@ -3,23 +3,30 @@ package data.scripts.campaign.intel.bar;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CargoAPI;
 import com.fs.starfarer.api.campaign.InteractionDialogAPI;
+import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.characters.FullName.Gender;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.impl.campaign.CoreReputationPlugin;
 import com.fs.starfarer.api.impl.campaign.CoreReputationPlugin.CustomRepImpact;
 import com.fs.starfarer.api.impl.campaign.CoreReputationPlugin.RepActionEnvelope;
 import com.fs.starfarer.api.impl.campaign.ids.Commodities;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
 import com.fs.starfarer.api.impl.campaign.intel.bar.events.BarEventManager;
 import com.fs.starfarer.api.impl.campaign.intel.bar.events.BaseBarEventWithPerson;
+import com.fs.starfarer.api.impl.campaign.intel.contacts.ContactIntel;
 import com.fs.starfarer.api.impl.campaign.rulecmd.AddRemoveCommodity;
 import com.fs.starfarer.api.ui.LabelAPI;
 import com.fs.starfarer.api.util.Misc;
+import com.fs.starfarer.api.util.WeightedRandomPicker;
 import data.scripts.UnderworldModPlugin;
+import data.scripts.campaign.intel.UW_StarlightGala;
 import java.awt.Color;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 public class CabalBarEvent extends BaseBarEventWithPerson {
@@ -31,19 +38,76 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
         DRUGS,
         BLACKJACK_PROMPT,
         BLACKJACK_ACCEPT,
+        GALA,
         LEAVE
     }
 
-    public static final int DICE_WAGER = 500;
-    public static final float DICE_REP = 0.02f;
-    public static final float DICE_REP_WIN = 0.03f;
+    public static final Map<PersonImportance, Integer> DICE_WAGER = new HashMap<>();
+    public static final Map<PersonImportance, Float> DICE_REP = new HashMap<>();
+    public static final Map<PersonImportance, Float> DICE_REP_WIN = new HashMap<>();
     public static final float DRUGS_REP = 0.02f;
     public static final String HR = "-----------------------------------------------------------------------------";
+
+    static {
+        DICE_WAGER.put(PersonImportance.LOW, 500);
+        DICE_WAGER.put(PersonImportance.MEDIUM, 10000);
+        DICE_WAGER.put(PersonImportance.HIGH, 200000);
+
+        DICE_REP.put(PersonImportance.LOW, 0.02f);
+        DICE_REP.put(PersonImportance.MEDIUM, 0.04f);
+        DICE_REP.put(PersonImportance.HIGH, 0.06f);
+
+        DICE_REP_WIN.put(PersonImportance.LOW, 0.03f);
+        DICE_REP_WIN.put(PersonImportance.MEDIUM, 0.06f);
+        DICE_REP_WIN.put(PersonImportance.HIGH, 0.1f);
+    }
 
     protected String diceGameId;
     protected Boolean shouldShow = null;
 
     public CabalBarEvent() {
+    }
+
+    @Override
+    protected PersonAPI createPerson() {
+        PersonAPI newPerson = super.createPerson();
+        PersonImportance importance = pickImportance();
+        newPerson.setImportanceAndVoice(importance, random);
+        String tag = pickTag(importance);
+        newPerson.addTag(tag);
+        if (importance == PersonImportance.HIGH) {
+            if ((tag.contentEquals(Tags.CONTACT_UNDERWORLD)) && (Math.random() > 0.5)) {
+                newPerson.addTag(Tags.CONTACT_MILITARY);
+            } else if ((tag.contentEquals(Tags.CONTACT_MILITARY)) && (Math.random() > 0.5)) {
+                newPerson.addTag(Tags.CONTACT_UNDERWORLD);
+            }
+        }
+        return newPerson;
+    }
+
+    public PersonImportance pickImportance() {
+        WeightedRandomPicker<PersonImportance> picker = new WeightedRandomPicker<>(random);
+        picker.add(PersonImportance.LOW, 4f);
+        if (market != null) {
+            if (market.getFactionId().contentEquals(Factions.TRITACHYON) || market.getFactionId().contentEquals("cabal")) {
+                picker.add(PersonImportance.MEDIUM, 2f);
+                if (market.hasCondition("cabal_influence")) {
+                    picker.add(PersonImportance.HIGH, 1f);
+                }
+            }
+        }
+        return picker.pick();
+    }
+
+    public String pickTag(PersonImportance importance) {
+        WeightedRandomPicker<String> picker = new WeightedRandomPicker<>(random);
+        picker.add(Tags.CONTACT_UNDERWORLD, 4f);
+        if (importance == PersonImportance.MEDIUM) {
+            picker.add(Tags.CONTACT_MILITARY, 1f);
+        } else if (importance == PersonImportance.HIGH) {
+            picker.add(Tags.CONTACT_MILITARY, 2f);
+        }
+        return picker.pick();
     }
 
     @Override
@@ -110,8 +174,14 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
 
     protected void modifyRep(float amount) {
         CustomRepImpact impact = new CustomRepImpact();
-        impact.delta = amount;
+        impact.delta = amount * 2f;
         RepActionEnvelope envelope = new RepActionEnvelope(
+                CoreReputationPlugin.RepActions.CUSTOM, impact, dialog.getTextPanel());
+        Global.getSector().adjustPlayerReputation(envelope, person);
+
+        impact = new CustomRepImpact();
+        impact.delta = amount;
+        envelope = new RepActionEnvelope(
                 CoreReputationPlugin.RepActions.CUSTOM, impact, dialog.getTextPanel());
         Global.getSector().adjustPlayerReputation(envelope, "cabal");
     }
@@ -135,6 +205,17 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
         String heOrShe = getHeOrShe();
         String hisOrHer = getHisOrHer();
 
+        boolean galaCheck = false;
+        if (!Global.getSector().getMemoryWithoutUpdate().getBoolean("$uwCompletedStarlightGala")
+                && !Global.getSector().getMemoryWithoutUpdate().getBoolean("$uwKilledPalace") && (credits >= 100000f)) {
+            if (Global.getSector().getIntelManager().getFirstIntel(UW_StarlightGala.class) == null) {
+                galaCheck = true;
+            }
+        }
+        if (person.getImportance() == PersonImportance.LOW) {
+            galaCheck = false;
+        }
+
         CabalDiceGame game;
         int payout;
         String payoutStr;
@@ -142,20 +223,20 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
         switch (option) {
             case INIT:
                 text.addPara("\"Hey there, spacer,\" the " + mOrW + " greets you as you approach. "
-                        + "\"You look like the kind of person who appreciates the fast life.\"");
+                        + "You look like the kind of person who appreciates the fast life.\"");
                 text.addPara(Misc.ucFirst(heOrShe) + " holds up a hand, with three dice between " + hisOrHer + " fingers. "
                         + "\"Care to wager on some dice? Or if you have any mind-altering substances, "
                         + "perhaps you'd like to share them with the class?\"");
 
                 boolean haveDrugs = cargo.getCommodityQuantity(Commodities.DRUGS) >= 1;
-                boolean canDice = credits >= DICE_WAGER;
+                boolean canDice = credits >= DICE_WAGER.get(person.getImportance());
 
                 LabelAPI label = text.addPara("The dice bet will cost %s. You have %s available.",
                         h,
-                        Misc.getDGSCredits(DICE_WAGER),
+                        Misc.getDGSCredits(DICE_WAGER.get(person.getImportance())),
                         Misc.getDGSCredits(credits));
                 label.setHighlightColors(canDice ? h : n, h);
-                label.setHighlight(Misc.getDGSCredits(DICE_WAGER), Misc.getDGSCredits(credits));
+                label.setHighlight(Misc.getDGSCredits(DICE_WAGER.get(person.getImportance())), Misc.getDGSCredits(credits));
 
                 options.addOption("Bet on dice", OptionId.DICE_PROMPT);
                 if (!canDice) {
@@ -169,6 +250,7 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
                 }
                 options.addOption("Leave", OptionId.LEAVE);
                 break;
+
             case DRUGS:
                 text.addPara("You contact your fleet's watch officer and have them send down a unit of drugs. "
                         + "After handing them out to your appreciative fellow bargoers, "
@@ -180,6 +262,8 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
                 cargo.removeCommodity(Commodities.DRUGS, 1);
                 AddRemoveCommodity.addCommodityLossText(Commodities.DRUGS, 1, text);
                 modifyRep(DRUGS_REP);
+                person.setImportance(PersonImportance.LOW);
+                ContactIntel.addPotentialContact(ContactIntel.DEFAULT_POTENTIAL_CONTACT_PROB * 0.5f, person, market, dialog.getTextPanel());
 
                 BarEventManager.getInstance().notifyWasInteractedWith(this);
                 options.addOption("Continue", OptionId.LEAVE);
@@ -191,7 +275,7 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
                 }
                 game = CabalDiceGame.getGame(diceGameId);
                 String rule = game.getRuleString();
-                payout = game.getWinningsMult() * DICE_WAGER;
+                payout = game.getWinningsMult() * DICE_WAGER.get(person.getImportance());
                 payoutStr = Misc.getDGSCredits(payout);
 
                 text.addPara("\"Excellent. Now, I have a little gamble for ya...\"");
@@ -202,13 +286,13 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
 
                 text.addPara(HR);
                 text.setFontInsignia();
-                options.addOption("Bet " + Misc.getDGSCredits(DICE_WAGER), OptionId.DICE_ACCEPT);
+                options.addOption("Bet " + Misc.getDGSCredits(DICE_WAGER.get(person.getImportance())), OptionId.DICE_ACCEPT);
                 options.addOption("Decline and walk away", OptionId.LEAVE);
                 break;
 
             case DICE_ACCEPT:
-                cargo.getCredits().subtract(DICE_WAGER);
-                AddRemoveCommodity.addCreditsLossText(DICE_WAGER, text);
+                cargo.getCredits().subtract(DICE_WAGER.get(person.getImportance()));
+                AddRemoveCommodity.addCreditsLossText(DICE_WAGER.get(person.getImportance()), text);
 
                 text.addPara("The Cabalero flicks the dice onto the table.");
 
@@ -216,11 +300,11 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
                 int[] dice = CabalDiceGame.roll();
                 int sum = dice[0] + dice[1] + dice[2];
                 int product = dice[0] * dice[1] * dice[2];
-                String d1 = dice[0] + "",
-                 d2 = dice[1] + "",
-                 d3 = dice[2] + "";
-                String sumStr = sum + "",
-                 productStr = product + "";
+                String d1 = dice[0] + "";
+                String d2 = dice[1] + "";
+                String d3 = dice[2] + "";
+                String sumStr = sum + "";
+                String productStr = product + "";
                 boolean success = game.isWinner(dice);
 
                 text.setFontSmallInsignia();
@@ -238,7 +322,7 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
 
                 if (success) {
                     text.addPara("You win!", Misc.getPositiveHighlightColor());
-                    payout = DICE_WAGER * game.getWinningsMult();
+                    payout = DICE_WAGER.get(person.getImportance()) * game.getWinningsMult();
                     cargo.getCredits().add(payout);
                     AddRemoveCommodity.addCreditsGainText(payout, text);
                 } else {
@@ -251,15 +335,37 @@ public class CabalBarEvent extends BaseBarEventWithPerson {
 
                 if (success) {
                     text.addPara("The " + mOrW + " nods with a thin smile. \"Guess I lost. Well played, friend. Take your winnings, you've earned it.\"");
-                    modifyRep(DICE_REP_WIN);
+                    modifyRep(DICE_REP_WIN.get(person.getImportance()));
+                    ContactIntel.addPotentialContact(person, market, dialog.getTextPanel());
                 } else {
                     text.addPara("The " + mOrW + " grins. \"A shame, there. Better luck next time, eh?\"");
-                    modifyRep(DICE_REP);
+                    modifyRep(DICE_REP.get(person.getImportance()));
+                    galaCheck = false;
                 }
                 diceGameId = null;
+
+                if (galaCheck) {
+                    options.addOption("Continue", OptionId.GALA);
+                } else {
+                    BarEventManager.getInstance().notifyWasInteractedWith(this);
+                    options.addOption("Leave", OptionId.LEAVE);
+                }
+                break;
+
+            case GALA:
+                text.addPara("\"Say, you look like you're moving up in the world.\" The Cabalero reaches into " + hisOrHer
+                        + " coat and pulls out a small chit that looks to be made of solid platinum. \"A couple times per "
+                        + "cycle, an... event takes place. The Starlight Gala.\"");
+                text.addPara("Placing it in your hand, the " + mOrW + " says, \"The entry fee is steep. Very steep. "
+                        + "Unless you walk the shadowsphere like me, of course,\" the Cabalero chuckles. \"It's an "
+                        + "experience not soon forgotten. And you'll get to rub shoulders with some of the most powerful "
+                        + "individuals in the Sector. Think about it.\"");
+
+                Global.getSector().getIntelManager().addIntel(new UW_StarlightGala(dialog), false, dialog == null ? null : dialog.getTextPanel());
                 BarEventManager.getInstance().notifyWasInteractedWith(this);
                 options.addOption("Leave", OptionId.LEAVE);
                 break;
+
             case LEAVE:
                 noContinue = true;
                 done = true;

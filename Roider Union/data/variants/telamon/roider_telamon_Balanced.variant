@@ -1,8 +1,8 @@
 {
     "displayName": "Balanced",
-    "fluxCapacitors": 31,
+    "fluxCapacitors": 35,
     "fluxVents": 50,
-	"goalVariant": true,
+    "goalVariant": true,
     "hullId": "roider_telamon",
     "hullMods": [
         "dedicated_targeting_core",
@@ -14,6 +14,7 @@
         {"RIGHT ARMOR": "roider_telamon_right_Standard"}
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_telamon_Balanced",
     "weaponGroups": [
         {

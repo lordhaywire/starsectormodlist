@@ -1,0 +1,58 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "everyFrameEffect": "prv.rb.weapons.prv_d_SystemBlinker_Bergtagen_EveryFrameEffect",
+  "frameRate": 0,
+  "fringeColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "glowColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/decorative/prv_d_emitter_bergtagen_00.png",
+  "hitGlowRadius": 0,
+  "id": "prv_d_emitter_bergtagen",
+  "noImpactSounds": false,
+  "noNonShieldImpactSounds": false,
+  "noShieldImpactSounds": false,
+  "numFrames": 2,
+  "pixelsPerTexel": 1,
+  "renderAboveAllWeapons": 0,
+  "renderBelowAllWeapons": true,
+  "renderHints": [
+    "RENDER_ADDITIVE"
+  ],
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 1,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/decorative/prv_d_emitter_bergtagen_00.png",
+  "type": "DECORATIVE",
+  "width": 1
+}

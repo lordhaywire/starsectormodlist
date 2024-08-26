@@ -1,0 +1,152 @@
+{
+  "hullName": "Tystnad (P)",
+  "hullId": "prv_tystnad_p",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_tystnad_p.png",
+  "style": "LOW_TECH",
+  "height": 155,
+  "width": 80,
+  "center": [40, 79],
+  "collisionRadius": 110.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 108,
+  "viewOffset": 0,
+  "builtInMods": [
+    #"prv_volatiledrivecore",
+    #"prv_leanhangar_rb",
+    #"prv_companion_integration",
+    #"prv_ramshield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [67, 12]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [-43, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [51, 24]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [51, -24]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 60,
+      "locations": [-25, 17.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": -60,
+      "locations": [-25, -17.5]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -7, -18.5,
+        3, 14,
+        -8, 19,
+        3, -14
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-70.5, 32],
+      "length": 21,
+      "width": 7,
+      "angle": 160,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-70.5, -32],
+      "length": 21,
+      "width": 7,
+      "angle": -160,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-73.5, 19],
+      "length": 46.5,
+      "width": 20,
+      "angle": 180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-73.5, -19],
+      "length": 46.5,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-78.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -76.5, 10,
+    -68.5, 38,
+    -52.5, 38,
+    -5, 22.5,
+    1.5, 29.5,
+    25, 23.5,
+    55.5, 26.5,
+    55.5, 20,
+    72, 7.5,
+    72, -7.5,
+    55.5, -20,
+    55.5, -26.5,
+    25, -23.5,
+    1.5, -29.5,
+    -5, -22.5,
+    -52.5, -38,
+    -68.5, -38,
+    -76.5, -10
+  ]
+}

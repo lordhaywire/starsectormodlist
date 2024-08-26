@@ -1,0 +1,278 @@
+{
+	"id":"KoC",
+	"color":[255,255,255,175],
+	
+	"baseUIColor":[255,255,255,255],
+	"darkUIColor":[173,25,35,175],
+	"gridUIColor":[255,255,255,175],
+	"brightUIColor":[255,255,255,255],
+	
+	"entityNamePrefix":"Ko Combine",
+	"personNamePrefix":"Ko Combine",
+	"displayName":"Ko Combine",
+	"displayNameWithArticle":"the Ko Combine",
+	"displayNameIsOrAre":"are",
+	"logo":"graphics/factions/ko_combine.png",
+	"crest":"graphics/factions/crest_ko_combine.png",
+	"illegalCommodities":["drugs","organs","hand_weapons","ai_cores",],
+	"shipNamePrefix":"", 
+	"shipNameSources":{
+		"HEGEMONY":1,
+		"BRITISH_NAVY":1,
+		"ROMAN":2,
+		"GREEK":1,
+		"NORSE":1,
+		"CELTIC":1,
+	},
+	"names":{
+		"old english":1,
+		"modern":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+        "kocsuckers":2,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"KoC":1.1,
+			"KoC_Export":1.1
+		},
+		"hulls":{
+			"shepherd":1.1,
+			"monitor":0.8,
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp"],
+		"hulls":[
+			"wolf",
+			"mora",
+		],
+	},
+	"knownShips":{
+		"tags":["base_bp","KoC","KoC_Export"],
+		"hulls":[
+			"shepherd",
+			"monitor",
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["KoC","KoC_Export"],
+		"hulls":[
+		],
+	},
+	"knownFighters":{
+		"tags":["base_bp","KoC","KoC_Export"],
+		"fighters":[],
+	},
+	"priorityFighters":{
+		"tags":["KoC","KoC_Export"],
+		"fighters":[],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "hegemony", "KoC",],
+		"weapons":[
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"gauss",
+			"mjolnir",
+			"breachpod",
+			"sabotpod",
+			"phasecl",
+			"locust",
+			"hurricane",
+			"xpulse",
+			"maiden",
+			"maidenpod",
+			"madmaiden",
+			"hephag",
+			"mark9",
+			"mininglaser",
+			"miningblaster",
+			"pdburst",
+			"heavyburst",
+            "xpulse",
+            "gravburst",
+            "maiden",
+            "maidenpod",
+            "madmaiden",
+            "flicker_pdl",
+		],
+	},
+	"priorityWeapons":{
+		"tags":["KoC","KoC_Export"],
+		"weapons":["xpulse","irpulse","maiden","maidenpod","madmaiden","heavyburst","hveldriver","gravburst",],
+	},
+	"knownHullMods":{
+		"tags":["base_bp", "hegemony",],
+		"hullMods":[
+			"advancedshieldemitter",
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",
+			"heavyarmor",
+			"insulatedengine",
+			"targetingunit",
+			"nav_relay",
+			"operations_center",
+			"fluxbreakers",
+			"stabilizedshieldemitter",
+			"frontshield",  # makeshift
+			"surveying_equipment",
+			"efficiency_overhaul",
+			"escort_package",
+			"assault_package",
+			"converted_fighterbay",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":2,
+		"phaseShips":0,
+		
+		"officerQuality":2,
+		"shipQuality":4,
+		"numShips":4,
+		
+		"shipSize":3,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0.25,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.75,
+
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"crew_training",
+			"coordinated_maneuvers",
+			"auxiliary_support",
+			"support_doctrine",
+		],
+	},
+	"music":{
+		"theme":"music_hegemony_market_neutral",
+		"market_neutral":"music_hegemony_market_neutral",
+		"market_hostile":"music_hegemony_market_hostile",
+		"market_friendly":"music_hegemony_market_friendly",
+		"encounter_neutral":"music_hegemony_encounter_neutral",
+		"encounter_hostile":"music_hegemony_encounter_hostile",
+		"encounter_friendly":"music_hegemony_encounter_friendly",
+	},
+	"portraits":{
+		"standard_male":[
+"graphics/faces/AMPP_69.png",
+"graphics/faces/AMPP_78.png",
+"graphics/faces/AMPP_80.png",
+"graphics/faces/AMPP_82.png",
+"graphics/faces/AMPP_83.png",
+"graphics/faces/AMPP_84.png",
+"graphics/faces/AMPP_92.png",
+"graphics/faces/AMPP_95.png",
+"graphics/faces/AMPP_98.png",
+"graphics/faces/AMPP_106.png",
+"graphics/faces/AMPP_10.png",
+"graphics/faces/AMPP_11.png",
+"graphics/faces/AMPP_16.png",
+"graphics/faces/AMPP_41.png",
+"graphics/faces/AMPP_43.png",
+"graphics/faces/AMPP_44.png",
+"graphics/faces/AMPP_45.png",
+"graphics/faces/AMPP_47.png",
+"graphics/faces/AMPP_49.png",
+"graphics/faces/AMPP_70.png",
+"graphics/faces/AMPP_107.png",
+		],
+		"standard_female":[
+"graphics/faces/AMPP_72.png",
+"graphics/faces/AMPP_9.png",
+"graphics/faces/AMPP_48.png",
+"graphics/faces/AMPP_59.png",
+"graphics/faces/AMPP_60.png",
+"graphics/faces/AMPP_92.png",
+"graphics/faces/AMPP_93.png",
+"graphics/faces/AMPP_97.png",
+		],
+	},
+	"ranks":{
+		"ranks":{
+			"spaceCommander":{"name":"Captain"},
+		},
+		"posts":{
+			"patrolCommander":{"name":"Captain"},
+			"fleetCommander":{"name":"Fleet Commander"},
+			"baseCommander":{"name":"High Council"},
+			"stationCommander":{"name":"Security Commander"},
+			"portmaster":{"name":"Harbour Master"},
+			"administrator":{"name":"Administrator"},
+		},
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"faithful":5,		
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":5,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":10,
+			"aristo":3,
+		},
+	},	
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":2,
+		"AICoreRepMult":2,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		"caresAboutAtrocities":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},
+	"fleetTypeNames":{
+
+        "smallTrader":"Profiteer Convoy",
+        "trade":"Profiteer Convoy",
+        "tradeLiner":"Contractor Convoy",
+		"patrolSmall":"Light Patrol",
+		"patrolMedium":"Patrol",
+		"patrolLarge":"Heavy Patrol",
+		"mercScout":"Scout",
+		"mercBountyHunter":"Mercenery Contractor",
+		"mercPrivateer":"Mercenery Contractor",
+		"mercPatrol":"Mercenery Contingent",
+		"mercArmada":"Mercenery Taskforce",
+		"taskForce":"Assault Fleet",
+	}, 
+}
+
+
+
+

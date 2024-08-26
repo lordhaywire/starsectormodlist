@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"MINE_STRIKE",
 	
-	"statsScript":"scripts.shipsystems.prv_gravitywell",
+	"statsScript":"prv.corp.shipsystems.prv_gravitywell",
 
 	"canUseWhileRightClickSystemOn":true,
 

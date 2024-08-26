@@ -1,0 +1,17 @@
+{
+  "variantId": "acs_junkhubship_shield_module_standard",
+  "hullId": "acs_junkhubship_shield_module",
+  "displayName": "Shield Module",
+  "goalVariant": false,
+  "fluxCapacitors": 70,
+  "fluxVents": 62,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil"
+  ],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

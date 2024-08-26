@@ -1,0 +1,168 @@
+{
+  "hullName": "Pyrphoros",
+  "hullId": "filgap_pyrphoros",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/filgap/ships/filgap_pyrphoros.png",
+  "style": "LOW_TECH",
+  "coversColor": "255,180,170,255",
+  "height": 142,
+  "width": 142,
+  "center": [73, 67],
+  "collisionRadius": 120,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 100,
+  "viewOffset": 0,
+  "builtInMods": [
+    "civgrade",
+    "rugged"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 45,
+      "locations": [46, 22]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 275,
+      "angle": 225,
+      "locations": [-41, -20]
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [46, -26]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": 155,
+      "locations": [-45, 34]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, -42.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [4, -42.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": 90,
+      "locations": [14, 23.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 220,
+      "angle": -90,
+      "locations": [12, -18.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 5,
+      "angle": -120,
+      "locations": [-9, -21]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-58, 24],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-58, 8],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-58, -6],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-58, -18],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-58, -27],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -1.5, 27.5,
+    5, 34,
+    20.5, 33.5,
+    27, 37.5,
+    61, 38.5,
+    64, -3.5,
+    53, -14.5,
+    52, -31.5,
+    37, -32.5,
+    25, -24.5,
+    -0.5, -50.5,
+    -14, -36.5,
+    -43, -35.5,
+    -42, -29.5,
+    -57, -29.5,
+    -57, 12.5,
+    -47, 17.5,
+    -58, 19.5,
+    -57, 28.5,
+    -45, 28.5,
+    -43, 38.5,
+    -20.5, 38.5
+  ]
+}

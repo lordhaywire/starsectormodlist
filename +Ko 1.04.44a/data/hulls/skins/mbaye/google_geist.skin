@@ -1,0 +1,20 @@
+{
+	"baseHullId":"geist",
+	"skinHullId":"google_geist",
+	"hullName":"Geist (MbG)",
+	"descriptionId":"geist",
+	"descriptionPrefix":"The modified ships of Mbaye-Gogle often come as a surprise to would-be pirates and privateers who expect a conventional fight.",
+	"tags":["rare_bp", "mbaye"],
+	"tech":"Mbaye-Gogol",
+    "ordnancePoints":130,
+	"spriteName":"graphics/ships/google/Geist.png",
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInWeapons":{},
+	"builtInMods":["maybegoogle"],
+	"weaponSlotChanges":{   "WS0002":{"type": "SYNERGY"},
+                            "WS0001":{"type": "SYNERGY"},
+                            "WS0003":{"type": "SYNERGY"}
+                        }
+}

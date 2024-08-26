@@ -3,9 +3,9 @@
 	"name":"Starship Legends",
     "utility": "false",
 	"author":"Sundog",
-	"version":"2.3.0",
+	"version":"2.5.2",
 	"description":"Gives your ships and their crew personality as their reputations grow, granting traits that influence the ship's performance.",
-    "gameVersion":"0.96a-RC8",
+    "gameVersion":"0.97a-RC11",
 	"jars":["jars/StarshipLegends.jar"],
     "modPlugin":"starship_legends.ModPlugin",
 }

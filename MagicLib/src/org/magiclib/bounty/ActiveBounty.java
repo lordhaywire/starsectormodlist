@@ -235,7 +235,7 @@ public final class ActiveBounty {
                     ((BountyResult.Succeeded) result).shouldRewardCredits
                             && hasReputationReward()
             ) {
-                Global.getSector().getPlayerFaction().adjustRelationship(getRewardFaction(), getRewardReputation());
+                Global.getSector().getPlayerFaction().adjustRelationship(getRewardFactionId(), getRewardReputation());
             }
 
             //set the relevant outcome memkey
@@ -255,7 +255,7 @@ public final class ActiveBounty {
             //reputation penalty
             if (hasReputationReward()) {
                 Global.getSector().getPlayerFaction().adjustRelationship(
-                        getRewardFaction(),
+                        getRewardFactionId(),
                         getFailureReputationPenalty());
             }
             //set the relevant outcome memkey
@@ -281,7 +281,7 @@ public final class ActiveBounty {
             //reputation penalty
             if (hasReputationReward()) {
                 Global.getSector().getPlayerFaction().adjustRelationship(
-                        getRewardFaction(),
+                        getRewardFactionId(),
                         getFailureReputationPenalty());
             }
             //set the relevant outcome memkey
@@ -384,6 +384,9 @@ public final class ActiveBounty {
      * @return Float.POSITIVE_INFINITY if there is no time limit or quest hasn't been accepted.
      */
     public @NotNull Float getDaysRemainingToComplete() {
+        if (!MagicBountyCoordinator.getDeadlinesEnabled())
+            return Float.POSITIVE_INFINITY;
+
         if (getSpec().job_deadline > 0 && acceptedBountyTimestamp != null) {
             return Math.max(0, getSpec().job_deadline - Global.getSector().getClock().getElapsedDaysSince(acceptedBountyTimestamp));
         } else {
@@ -427,6 +430,14 @@ public final class ActiveBounty {
         return Math.max(-0.05f, Math.min(0.00f, -getRewardReputation()));
     }
 
+    /**
+     * @since 1.1.2
+     */
+    public @Nullable String getRewardFactionId() {
+        return rewardFaction;
+    }
+
+    @Deprecated // in 1.1.2, use getRewardFactionId()
     public @Nullable String getRewardFaction() {
         return rewardFaction;
     }
@@ -506,7 +517,7 @@ public final class ActiveBounty {
      * @param postScalingMultiplier The multiplier to apply AFTER all other scaling is applied.
      */
     @Nullable
-    Float calculateCreditReward(float preScalingMultiplier, float postScalingMultiplier) {
+    public Float calculateCreditReward(float preScalingMultiplier, float postScalingMultiplier) {
         int jobCreditReward = (int) (spec.job_credit_reward * preScalingMultiplier);
 
         if (jobCreditReward <= 0) {
@@ -607,9 +618,9 @@ public final class ActiveBounty {
 
     public boolean hasReputationReward() {
         return getRewardReputation() != null
-                && getRewardFaction() != null
-                && !getRewardFaction().isEmpty()
-                && Global.getSector().getFaction(getRewardFaction()) != null;
+                && getRewardFactionId() != null
+                && !getRewardFactionId().isEmpty()
+                && Global.getSector().getFaction(getRewardFactionId()) != null;
     }
 
     /**

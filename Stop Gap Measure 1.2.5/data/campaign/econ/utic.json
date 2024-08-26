@@ -1,0 +1,73 @@
+{
+	"starSystem":"Utic",
+	"markets":[
+		{
+			"entities":["nepheria"],
+			"faction":"independent",
+			"size":6,
+			"startingConditions":[
+				"arid",
+				"toxic_atmosphere",
+				"dense_atmosphere",
+				"population_6",
+				"organics_common",
+				#"military_base",
+				#"hydroponics_complex",
+				#"ore_complex",
+				#"light_industrial_complex",
+				#"spaceport",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"orbitalstation",
+				"grounddefenses",
+				["orbitalworks", "corrupted_nanoforge"],
+				"lightindustry",
+				"militarybase",			],
+
+		},
+		{
+			"entities":["tenas"],
+			"faction":"persean",
+			"size":4,
+			"startingConditions":[
+				"ice",
+				"thin_atmosphere",
+				"ore_rich",
+				"rare_ore_moderate",
+				"population_4",
+				"low_gravity",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"grounddefenses",
+			],
+		},
+		{
+			"entities":["chibog_station"],
+			"faction":"hegemony",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"refining",
+				"orbitalstation",
+				"grounddefenses",
+
+			],
+		},
+	],
+	
+}
+
+
+

@@ -2,9 +2,9 @@
 	"id":"prv_fracturer",
 	"type":"STAT_MOD",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.ai.systems.prv_fracturer_ai",
+	"aiScript":"prv.corp.ai.systems.prv_fracturer_ai",
 	
-	"statsScript":"scripts.shipsystems.prv_fracturer",
+	"statsScript":"prv.corp.shipsystems.prv_fracturer",
 	
 	#"soundFilterType":"LOWPASS",
 	#"soundFilterGain":0.98,

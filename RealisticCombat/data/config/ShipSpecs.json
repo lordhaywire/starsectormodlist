@@ -1,0 +1,54 @@
+{
+    "Multiplies the maximum flight range of all fighter wings":"",
+    "fighterWingRangeFactor":3,
+
+    "Increase maximum speed of corresponding ship class":"",
+    "maxSpeedBonuses":{
+	"DEFAULT":0,
+	"FIGHTER":300,
+	"FRIGATE":250,
+	"DESTROYER":175,
+	"CRUISER":125,
+	"CAPITAL_SHIP":50
+    },
+    
+    "Multiply acceleration of corresponding ship class":"",
+    "accelerationFactors":{
+	"DEFAULT":1,
+ 	"FIGHTER":2,
+	"FRIGATE":0.75,
+	"DESTROYER":0.80,
+	"CRUISER":0.85,
+	"CAPITAL_SHIP":1
+    },
+
+    "Multiply deceleration of corresponding ship class":"",
+    "decelerationFactors":{
+	"DEFAULT":1,
+	"FIGHTER":2,
+	"FRIGATE":0.65,
+	"DESTROYER":0.75,
+	"CRUISER":0.85,
+	"CAPITAL_SHIP":1
+    },
+
+    "Multiply turn acceleration of corresponding ship class":"",
+    "turnAccelerationFactors":{
+	"DEFAULT":1,
+	"FIGHTER":4,
+	"FRIGATE":0.65,
+	"DESTROYER":0.75,
+	"CRUISER":0.85,
+	"CAPITAL_SHIP":1
+    },
+
+    "Multiply max turn rate of corresponding ship class":"",
+    "maxTurnRateFactors":{
+	"DEFAULT":1,
+	"FIGHTER":4,
+	"FRIGATE":0.65,
+	"DESTROYER":0.75,
+	"CRUISER":0.85,
+	"CAPITAL_SHIP":1
+    }
+}

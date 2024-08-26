@@ -1,0 +1,37 @@
+{
+	"baseHullId": "prv_gnejserhead",
+	"descriptionPrefix":"The personal ship of the infamous pirate known as the Green Devil has had many customizations applied to it - mostly to enable it to fire as many missiles as possible, as quickly as possible.",
+	"tags":[],
+	#"tech":"Pirate (prv)",
+	"tech":"Pirate",
+	"baseValueMult": 1.5,
+	"systemId":"fastmissileracks",
+	"fleetPoints":9,
+	#"ordnancePoints":85,
+	#"builtInWeapons": {
+	#	"WS0001": "locust"
+	#},
+	#"removeBuiltInWeapons":["BI03"],
+	#"removeWeaponSlots":["BI03"],
+	#"removeBuiltInMods":["prv_did"],
+	"suppliesToRecover":10,
+	"suppliesPerMonth":10,
+	"builtInMods":["safetyoverrides"],
+	"descriptionId": "prv_gnejserhead",
+	"hullName": "Egnejserhead (P-mod)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_gnejserhead_rare",
+	"spriteName": "graphics/prv/ships/rare/prv_gnejserhead_rare.png",
+	"weaponSlotChanges":{
+		#main gun
+		"WS0001":{
+		  "type": "MISSILE",
+		},
+		"WS0002":{
+		  "type": "UNIVERSAL",
+		},
+		"WS0003":{
+		  "type": "UNIVERSAL",
+		},
+	},
+}

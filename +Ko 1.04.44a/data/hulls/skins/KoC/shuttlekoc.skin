@@ -1,0 +1,29 @@
+{
+	"baseHullId":"kite",
+	"skinHullId":"shuttlekoc",
+	"hullName":"Kite (KoC)",
+	"descriptionId":"kite",  # optional
+	"descriptionPrefix":"Produced by the Ko Combine and traditonally used for ferrying diplomats and trade delegations. The point defense drones provide a screen of protection but have also been reconfigured for more aggressive use in the modern sector.",
+	"tags":["rare_bp","KoC"],
+	"spriteName":"graphics/ships/shuttlekoc.png",
+	"ordnancePoints":25,
+	"baseValueMult":1.5,
+	"fleetPoints":2,
+	"fighterBays":1,
+	"builtInMods":["blockade","militarized_subsystems"],
+	"builtInWings": ["2c_pulse_wing"],
+	"systemId":"drone_strike",
+	"weaponSlotChanges":{
+	   "WS 001":{
+		  "type": "ENERGY",
+	   },
+	   "WS 002":{
+		  "type": "ENERGY",
+	   },
+	   "WS 003":{
+		  "mount": "HIDDEN",
+		  "size": "MEDIUM",
+		  "type": "LAUNCH_BAY",
+	   },
+	},
+}

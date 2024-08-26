@@ -1,12 +1,16 @@
 {
 	tips:[
-#		"Fact: Rusters are the most powerful race in the universe.",
-		"Rust Belt ships are grungy but durable, and often carry more energy weapons than you'd find on a Low-Tech hull.",
 		"prv naval doctrine emphasises aggression, initiative and disruption. It either breaks the enemy, or it breaks itself.",
-#		"[Commissioned Crews] The prv elite make effective use of cybernetics to enhance their abilities. Unfortunately these implants tend to leave them somewhat unstable.",
-#		"[Commissioned Crews] Rusters are an unruly lot, but there's no denying that they know how to fix up a ship.",
-		"The tough hide of the Agni is equally resistant to kinetic and high explosive attacks, and provides excellent insulation from EMP effects.",
-		"An Agni shoal's attack is ferocious, but the creatures will back off if you hurt them enough.",
 		"Spatterfire sticks to ships and burns them over time. Doomfire explodes instead. Pureflame melts armor, but deals less damage overall.",
+		#"ECCM not only increases how quickly a Sidensvans missile can reacquire its target, but also give it an extra reorientation charge",
+		#"Missile guidance bonuses allow Berguv torpedoes to detonate closer to the target, making the spatterfire warhead even more potent. In addition they will reliably detonate instead of fizzling once they reach max range.",
+		#"Laboratory Complexes can sell all manner of useful ships and weapons, drawn from the equipment pool of not only the colony owner, but his allies' as well.",
+		#"The independent status of Strand and Utbo is purely symbolic - the prv control every way in which the worlds can interact with the rest of the sector.",
+		#"The prv conglomerate of Mångtekniska Regalvarven was once seated in the ambitious terraforming station Höga Hallar. Today little remains but corroded foamsteel and acrid regret.",
+		#"[Commissioned Crews] The prv elite make effective use of cybernetics to enhance their abilities. Unfortunately these implants tend to leave them somewhat unstable.",
+		#"A Fasnod piloted by a clever crew can be worth many times its deployment cost.",
+		#"A Svepfräsare mounted in a hardpoint can be an effective direct attack weapon. Enough fragmentation damage will eat through anything.",
+		#"prv merchants and industrialists can buy membership fee - tax - exemptions by supplying ships for military service, which has lead to the nascent formation of a noble class.",
+		#"Spatterfire burns apply a fraction of their damage every half second - making heavy burns significantly more effective against armor due to the larger hit size.",
      ],
 }

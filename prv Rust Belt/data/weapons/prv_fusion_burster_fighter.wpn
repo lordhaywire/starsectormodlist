@@ -1,0 +1,60 @@
+{
+  "beamFireOnlyOnFullCharge": false,
+  "beamEffect": "prv.rb.weapons.prv_fusion_burster_Effect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "convergeOnPoint":true,
+  "coreColor": [
+    255,
+    225,
+    215,
+    255
+  ],
+  "fireSoundTwo": "high_intensity_laser_loop",
+  "fringeColor": [
+    128,
+    0,
+    85,
+    255
+  ],
+  "glowColor": [
+    100,
+    100,
+    255,
+    235
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_fusion_burster_hardpoint_glow.png",
+  "hardpointOffsets": [
+    5,
+    0
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_fusion_burster_hardpoint.png",
+  "hitGlowRadius": 0,
+  "id": "prv_fusion_burster_fighter",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 3,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureScrollSpeed": 300,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_fusion_burster_turret_glow.png",
+  "turretOffsets": [
+    1,
+    0
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_fusion_burster_turret.png",
+  "type": "ENERGY",
+  "width": 36
+}

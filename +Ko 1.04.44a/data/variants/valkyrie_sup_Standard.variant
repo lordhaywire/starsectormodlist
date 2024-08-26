@@ -1,0 +1,31 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "valkyrie_sup",
+    "hullMods": ["insulatedengine"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "valkyrie_sup_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "xpulse",
+                "WS 006": "xpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "flicker_pdl",
+                "WS 002": "flicker_pdl",
+                "WS 003": "flicker_pdl",
+                "WS 004": "flicker_pdl"
+            }
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+	"starSystem":"wurzle",
+	"markets":[
+		{
+			"entities":["scrumpy"],
+			"faction":"KoC",
+			"size":4,
+			"startingConditions":[
+				"habitable",
+				"cold",
+				"population_4",
+				"water_surface",
+				"poor_light",
+				"organics_trace",
+				"pollution",
+				"low_gravity",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"patrolhq",
+				"heavybatteries",
+				"fuelprod",
+				["orbitalworks", "corrupted_nanoforge"],
+			],
+		},
+		{
+			"entities":["little_k"],
+			"faction":"KoC",
+			"size":5,
+			#"freePort":true,
+			"startingConditions":[
+				"cold",
+				"population_5",
+                "headquarters",
+                #"free_market",
+				"low_gravity",
+				"thin_atmosphere",
+				"ore_moderate",
+				"rare_ore_moderate",
+                "ruins_extensive",
+			],
+			"industries":[
+				"population",
+				"megaport",
+				"highcommand",
+				["heavybatteries", "drone_replicator"],
+				"battlestation_mid",
+				"lightindustry",
+				"commerce",
+                "waystation",
+			],
+		},
+		{
+			"entities":["big_k_syphon"],
+			"faction":"independent",
+			"size":3,
+			"startingConditions":[
+				"population_3",
+				"volatiles_plentiful",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"patrolhq",
+			],
+		},
+	],
+
+
+}

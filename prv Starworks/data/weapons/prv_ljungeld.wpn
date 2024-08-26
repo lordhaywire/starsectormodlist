@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "LARGE",
-  "beamEffect": "data.scripts.weapons.prv_ljungeld_BeamEffect",
+  "beamEffect": "prv.corp.weapons.prv_ljungeld_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/prv/weapons/prv_ljungeld_turret.png",

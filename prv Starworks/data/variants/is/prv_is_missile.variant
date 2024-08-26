@@ -3,20 +3,20 @@
   "hullId": "prv_is",
   "displayName": "Missile",
   "goalVariant": true,
-  "fluxCapacitors": 16,
+  "fluxCapacitors": 7,
   "fluxVents": 30,
   "quality": 2,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
-    "prv_agiplasma"
+    "missleracks"
   ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0001": "prv_korp"
+        "WS0001": "prv_skata"
       }
     },
     {

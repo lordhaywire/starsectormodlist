@@ -1,7 +1,7 @@
 {
     "displayName": "Balanced",
-    "fluxCapacitors": 30,
-    "fluxVents": 8,
+    "fluxCapacitors": 50,
+    "fluxVents": 28,
     "goalVariant": true,
     "hullId": "roider_argos",
     "hullMods": [
@@ -9,8 +9,14 @@
         "missleracks"
     ],
     "permaMods": [],
-	"variantId": "roider_argos_Balanced",
+    "sMods": [],
+    "variantId": "roider_argos_Balanced",
     "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "hammerrack"}
+        },
         {
             "autofire": false,
             "mode": "ALTERNATING",
@@ -20,11 +26,11 @@
             }
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 001": "hammerrack",
-                "WS 002": "hammerrack"
+                "WS 011": "roider_spike_driver",
+                "WS 012": "roider_spike_driver"
             }
         },
         {
@@ -36,22 +42,7 @@
                 "WS 005": "roider_marksman",
                 "WS 006": "roider_marksman"
             }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 009": "arbalest",
-                "WS 010": "arbalest"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 011": "roider_spike_driver",
-                "WS 012": "roider_spike_driver"
-            }
         }
-    ]
+    ],
+    "wings": []
 }

@@ -1,0 +1,116 @@
+Version 1.1.3
+Save Compatible with 1.1.x
+
+- Increased the XP Gain of executive officers.
+- Aptitudes you already have are now a bit less likely to appear on colonies.
+- "Provisional Replacements" effect now mirrors how Derelict Operations effect works in vanilla, making it much stronger.
+- "Legitimate Salvage" now provides a 30% increase in salvage from derelict stations.
+- Neural Junction now counts the player as a 3x mult instead of 4.
+- Improved the help tooltip on the officer picker, and made it blink when you open it for the first time.
+- Made the section displaying the officers category slightly less ugly.
+- Fixed a bunch of bugs related to certain campaign related skills no longer working, mostly after the players fleets got wiped.
+
+
+
+Version 1.1.2
+Save Compatible with 1.1.x, though some stats of changed skills may remain.
+
+- Added some effects that are unlocked upon reaching certain levels, those are visible when hovering over the xp bar.
+- Replaced Officer Training & Officer Management with new effects.
+- Increased XP required for Executive officers by a small amount.
+- "Enhanced Overrides" has its range buff reduced from 150 to 100 and is now much rarer on NPC fleets.
+- Renamed "Bounty Board" to "Privateering", and reduced the base credits gained from 500 to 300.
+
+
+
+Version 1.1.1
+Save Compatible with 1.1.0
+
+- Fixed Improvisation, Smallcraft & Strikecraft Officers displaying wrong in the comm-link.
+- Added configs that make the player no longer start with abilities that are no longer provides by skills.
+
+
+
+Version 1.1.0
+NOT SAVE COMPATIBLE
+
+- Added the "Improvisation" aptitude, increasing the count of skills to 93.
+- Renamed "Support" to "Strikecraft"
+- Nerfed the "Authority" Skill from 5% to 3%.
+- Removed the "Energised" Skill and added new skills for the technical tree, also further adjusted which skills can be unlocked at which level.
+- "Flux Regulation" now improves the efficiency of vents and caps instead of increasing the maximum you can add.
+- Added a new skill to the piracy aptitude.
+- The "Improvised Raids" skill has been merged in to the "Hunting Grounds" skill.
+- "Continuous Repairs" now provides a 50% chance to not acquire d-mods on ship destruction.
+- Low-Grade-Deployment now also provides an increase in repair rate.
+- Steadfast now also boosts weapon & engine repair time and provides 5% to the combat readiness maximum.
+- Added configs for player max level, allowing an increase up to level 25.
+- Added difficulty options in the configs.
+- The "Self-Repair" skill no longer appears on NPC fleets.
+- The Executive Officer menu is now sorted based on aptitude, rather than the order you acquired them at.
+- Fixed an issue where the allies skills would apply to the player instead of their own if they joined in to a fight between two other fleets.
+- Fixed a bug related to the officer training skill leveling up certain officers multiple times.
+- Fixed skills not immediately applying on a ship that used the "Strip" option to remove all hmods and weapons
+- Fixed executive officers appearing on hidden markets.
+- Fixed a rare crash with the "Trapped Prey" Skill.
+
+
+
+Version 1.0.6
+
+- Fixed an issue that made "Limit Breaker" not apply to all cores.
+
+
+
+Version 1.0.5
+Save Compatible
+
+- Removed the +2 officer gain from the "Crew Training" skill.
+- Fixed a bug that made it possible to use two incompatible aptitudes together.
+- Fixed a bug that removed all your executive officers if your fleet got entirely defeaten. (only fixed on new saves)
+
+
+
+Version 1.0.4
+Save Compatible
+
+- Fixed accidentaly having removed a single line of the code, which made half of the skills no longer work, yup.
+- Added a LunaSettings config for lowering or inreasing the players XP gain.
+
+
+
+Version 1.0.3
+Save Compatible
+
+- Added support for aptitudes being incompatible with others, making them not pickable at the same time.
+- The Starfaring & Piracy aptitude can no longer be used both at the same time.
+- XOs in the Comm Directory now display their aptitude in the selection screen.
+- The officer slots tooltip now always mentions the keybinds for assignment and removal.
+- Rewrote the base skill and aptitude plugin to java.
+
+
+
+Version 1.0.2
+Save Compatible
+
+- Added a "Manage" button to the officer picker, allowing for renaming & dismissing officers.
+- Fixed XOs not spawning on the comm directory if the mod has been added mid-save
+- Increased the chance for XOs on Colony Comm-Links
+- There is now a chance for multiple XOs to be on the same colony.
+
+
+
+Version 1.0.1
+Save Compatible
+
+- NPC fleets should no longer spawn with vanilla admiral skills.
+- Made "Remote Survey" unlocked by default. 
+- Fixed an issue with a Lunalib configuration.
+- Made the "All-Out" skills tooltip more specific.
+- Some minor spelling fixes by "Nissa"
+
+
+
+Version 1.0.0
+
+-> Mod Release

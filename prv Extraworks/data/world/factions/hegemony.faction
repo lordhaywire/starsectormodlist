@@ -1,0 +1,15 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_ilbud_h",
+		],
+	},
+	
+	"shipRoles":{
+		"combatMedium":{
+			"includeDefault":true,
+			"prv_ilbud_h_elite":0.5,
+			"prv_ilbud_h_spec":0.5,
+		},
+	},
+}

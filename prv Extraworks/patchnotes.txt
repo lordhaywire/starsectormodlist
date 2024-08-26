@@ -1,0 +1,225 @@
+prv Extraworks
+
+###
+
+v8
+
+Added the Skata Saturation Pack, a rare medium missile weapon.
+
+Fixed a crash that could occur if a Klirr has its wing source ship set to null by malicious cosmic radiation.
+
+###
+
+v7
+
+Added the Grendel (RB)
+- Heavy gunship with neither shield nor phase systems.
+
+###
+
+v6
+
+Included no-livery sprites of most prv ships, located in the "graphics\prv\ships\no markings" subfolder. 
+- To use them, simply overwrite the standard sprites.
+
+Added the Gnista (TT)
+- The Tritachyon Corporation has installed one of its smaller and more efficient shield cores.
+
+Moved over several hull variants from Starworks:
+- Aska (LC), Gnista (LC), Munsbit (LC), Tiger (LC), Ljus (LP)
+- Sorl (League), Tystnad (League)
+- Flamma (Diktat), Eld (Diktat), Flock (Diktat)
+- Ilbud (H)
+- Gryning (TT)
+
+Flamma (Diktat), Eld (Diktat), Flock (Diktat), Sorl (League), Tystnad (League)
+- Sprites updated.
+
+Gnista (LC), Tiger (LC), Munsbit (LC), Aska (LC)
+- Sprites updated, now rusty low-tech.
+- Removed Ramshield hullmod.
+
+Ljus (LP)
+- Replaced built-in Jackhammer with a medium missile hardpoint.
+- OP increased by 10.
+
+Removed the Afflictor (prv), Shade (prv) and Harbinger (prv)
+- Replaced with variant overrides on the base hulls.
+
+Gryning (TT)
+- Sprite updated.
+- Shield efficency improved to 0,6.
+- Moved from Starworks.
+
+Ilbud (H)
+- Moved from Starworks.
+- Sprite updated.
+- Spawn rate adjusted.
+- Removed High Maintenance hullmod.
+- Added Delicate Subsystems hullmod.
+
+Sunder (prv)
+- Hull integrity increased to 5000.
+- Armor increased to 600.
+- Side energy turret arcs reduced slightly, no longer converge forwards.
+
+Conquest (prv)
+- Maintenance and recovery cost reduced to 40.
+- Flux dissipation reduced to 750.
+- Flux capacity reduced to 15 000.
+- Shield efficiency improved to 0,9.
+- Shield arc increased to 120°.
+- Credit value reduced to 300 000 (same as the standard Conquest).
+
+Aska (LG), Flock (LG)
+- Sprites updated.
+
+Eld (LG)
+- Removed the Overdrive Adapter hullmod.
+- Base speed increased to 90.
+-- No net speed change.
+- Converted medium ballistic turrets to energy.
+
+Improved the shield efficiency on Lion's Guard hulls.
+- Eld (LG) 		0,9 -> 0,8
+- Flock (LG) 	0,8 -> 0,7
+- Aska (LG) 	0,7 -> 0,6
+
+Graviton Blaster
+- Range reduced to 700.
+- Damage per shot increased to 300.
+- Flux per shot increased to 400.
+- Reload time increased to 2,25 seconds.
+-- Now 133 DPS at 1,33 flux per damage.
+
+Klirr Companion Drone
+- Wing size increased to 3.
+
+Kite (prv) Oklang drones will now prefer to fight in front of the ship.
+Reduced the occurrence rate of Fika and Middag in prv fleets.
+Removed the Flock (League) from the Sindrian Diktat.
+
+###
+
+v5
+
+Updated Lion's Guard exports:
+- Weapon layouts now focus on energy weapons, with supporting hybrid and missile slots.
+- Ramshields have been removed, replaced with Energy Bolt Coherers.
+- Sprites updated.
+
+Eld (LG)
+- Overdrive Adapter hullmod added.
+
+Flock (LG)
+- System changed to Displacer.
+-- The Lion's Guard do not use any missiles that significantly benefit from Fast Missile Racks.
+
+Klirr Companion Drone
+- Removed one Graviton Blaster (of two).
+- No longer tracks weapon flux.
+- Flux capacity increased to 600.
+- Hull Integrity increased to 550.
+- Armor increased to 100.
+
+At the Gates of HEL Mission
+- Blue Star should once again have a reasonable loadout.
+
+###
+
+v4.1
+
+Updated for game version 0.96a.
+Added faction skins for the Klirr Companion Drone
+Klirr Companion Drones will now stay in front of the ship they're escorting.
+Added missing SYSTEM tag to Sidensvans SRM Rack (fighter).
+
+###
+
+v4
+
+Added the Graviton Blaster
+- A small energy weapon that fires kinetic blasts with good range and per-shot damage.
+- The otherwise inaccurate blasts will attach to and follow nearby Jursla beam guides.
+
+Added the Klirr Companion Drone
+- Equipped with a pair of Graviton Blasters and Sidensvans SRMs, the Klirr will significantly augment the firepower of its host ship.
+- A slaved control system lets it inherit the range bonuses (and penalties) of its host.
+
+Added the Xenolab industry and associated bar event.
+- Gradually pacifies local Agni shoals.
+- Requires a colony in Agni space.
+
+Fixed a pair of codex typos.
+
+###
+
+REQUIRES prv Starworks v25
+
+v3
+Added the Enforcer (RB)
+- Some structural changes mark out this Enforcer as having been constructed by the Rusters, enabling the otherwise primitive hull to mount some energy weapons.
+
+Added the Mule (prv)
+- Impressed to bulk out the prv's depleted merchant marine, these Mules have been given a quick refit before being put on hazard duty.
+
+Conquest (prv)
+- Hull suffix changed.
+- Sprite updated.
+- Mounts updated.
+-- Pre-v3 Conquests may retain a pair of decorative weapons. To remove them, simply use the Strip button on the ship refit screen.
+
+Sunder (prv)
+- Hull suffix changed.
+- System changed to Blåmes Countermeasures.
+-- Fires two groups of light EMP missiles, which will target enemy missiles, fighters and ships within range.
+- Sprite updated.
+- Mounts updated.
+-- Built-in Siege Akers (Prototype) removed.
+- Maintenance and recovery cost reduced to 10.
+- Ordnance points increased to 105.
+- Armor increased to 500.
+- Shield arc increased to 150°.
+- Shield efficiency reduced to 0,9.
+
+Fika
+- Sprite updated.
+- Mounts updated.
+- Codex updated.
+- Removed Civilian-grade Hull and Militarized Subsystems built-in hullmods.
+- Maximum burn increased to 8.
+- Minimum crew increased to 70.
+- Fuel consumption reduced to 3 / ly.
+- Fuel capacity reduced to 120.
+
+Middag
+- Sprite updated.
+- Mounts updated, now has a broadside profile.
+- Removed Civilian-grade Hull and Militarized Subsystems built-in hullmods.
+- Acceleration reduced by 30%.
+- Ordnance points increased to 230.
+- Minimum crew increased to 180.
+- Fuel consumption reduced to 8 / ly.
+- Fuel capacity reduced to 400.
+
+###
+
+v2
+Added the Visent (XL) Frontier Freighter
+- Featuring a large shielded cargo module and some additional armaments, this hefty freighter has outgrown its powerplant by quite a bit.
+
+Removed HIDE_IN_CODEX tag from the Gnejs (P) and Middag.
+
+###
+
+v1
+Initial release
+- Split from prv Starworks v22.
+
+Aska (LG)
+- Deployment and maintenance cost reduced to 25.
+- Removed Squall built-in.
+- Skin value modifier reduced to 100%.
+
+Fika, Middag
+- Once again available.

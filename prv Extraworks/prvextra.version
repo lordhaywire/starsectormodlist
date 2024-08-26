@@ -1,0 +1,11 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/johcas/prvStarworksRelease/master/prvExtra.version",
+    "modName":"prv Extraworks",
+    "modThreadId":12553,
+    "modVersion":
+    {
+        "major":8,
+        "minor":0,
+        "patch":0,
+    },
+}

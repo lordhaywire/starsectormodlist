@@ -1,6 +1,6 @@
 {
 	"id":"prv_berguv_mirvlet",
-	#"onHitEffect":"scripts.weapons.prv_berguv_OnHitEffect",
+	#"onHitEffect":"prv.corp.weapons.prv_berguv_OnHitEffect",
 	"specClass":"missile",
 	"missileType":"MISSILE",
 	"sprite":"graphics/prv/missiles/prv_missile_berguv_mirvlet.png",

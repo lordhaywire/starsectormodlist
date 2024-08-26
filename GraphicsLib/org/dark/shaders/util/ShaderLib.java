@@ -30,6 +30,7 @@ import java.util.WeakHashMap;
 import org.apache.log4j.Level;
 import org.dark.graphics.util.Tessellate;
 import org.dark.shaders.ShaderModPlugin;
+import org.dark.shaders.light.LightShader;
 import org.dark.shaders.util.TextureData.ObjectType;
 import org.dark.shaders.util.TextureData.TextureDataType;
 import org.json.JSONException;
@@ -43,7 +44,10 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
 import org.lwjgl.opengl.GL20;
 import org.lwjgl.opengl.GL30;
+import org.lwjgl.opengl.GL43;
 import org.lwjgl.opengl.GLContext;
+import org.lwjgl.opengl.KHRDebugCallback;
+import org.lwjgl.opengl.KHRDebugCallback.Handler;
 import org.lwjgl.util.vector.Vector2f;
 
 /**
@@ -141,6 +145,7 @@ public final class ShaderLib {
     };
 
     public static final boolean VALIDATE_EVERY_FRAME = false;
+    public static final boolean DEBUG_CALLBACK = false;
 
     private static int RTTSizeX = 2048;
     private static int RTTSizeY = 2048;
@@ -544,7 +549,12 @@ public final class ShaderLib {
             return;
         }
 
-        Global.getLogger(ShaderLib.class).setLevel(Level.ERROR);
+        if (DEBUG_CALLBACK) {
+            GL11.glEnable(GL43.GL_DEBUG_OUTPUT);
+            GL43.glDebugMessageCallback(new KHRDebugCallback(new QuickHandler()));
+        }
+
+        Global.getLogger(ShaderLib.class).setLevel(Level.INFO);
 
         displayWidth = (int) Global.getSettings().getScreenWidthPixels();
         if (displayWidth <= 1024) {
@@ -584,10 +594,13 @@ public final class ShaderLib {
                 || GLContext.getCapabilities().GL_ARB_framebuffer_object) {
             if (GLContext.getCapabilities().OpenGL30) {
                 useFramebufferCore = true;
+                Global.getLogger(ShaderLib.class).log(Level.INFO, "Using Core framebuffer.");
             } else if (GLContext.getCapabilities().GL_ARB_framebuffer_object) {
                 useFramebufferARB = true;
+                Global.getLogger(ShaderLib.class).log(Level.INFO, "Using ARB framebuffer.");
             } else {
                 useFramebufferEXT = true;
+                Global.getLogger(ShaderLib.class).log(Level.INFO, "Using Extension framebuffer.");
             }
             buffersAllowed = true;
         } else {
@@ -703,7 +716,25 @@ public final class ShaderLib {
             }
         }
 
+        if (DEBUG_CALLBACK) {
+            GL11.glDisable(GL43.GL_DEBUG_OUTPUT);
+        }
+
         initialized = true;
+    }
+
+    // TODO: more error handling like parsing the i, i1, i3...
+    public static class QuickHandler implements Handler {
+
+        @Override
+        public void handleMessage(int i, int i1, int i2, int i3, String string) {
+            String trace = "\n";
+            StackTraceElement stes[] = new Throwable().getStackTrace();
+            for (StackTraceElement ste : stes) {
+                trace += ste + "\n";
+            }
+            Global.getLogger(ShaderLib.class).log(Level.ERROR, "QuickHandler: " + i + ", " + i1 + ", " + i2 + ", " + i3 + ", " + string + trace);
+        }
     }
 
     /**
@@ -1249,8 +1280,11 @@ public final class ShaderLib {
         int size = asteroids.size();
         for (int i = 0; i < size; i++) {
             final CombatEntityAPI asteroid = asteroids.get(i);
-            final Vector2f asteroidLocation = asteroid.getLocation();
+            if (asteroid.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f asteroidLocation = asteroid.getLocation();
             if (!isOnScreen(asteroidLocation, 100f)) { // You can't trust asteroid collision radius.
                 continue;
             }
@@ -1286,8 +1320,11 @@ public final class ShaderLib {
         size = ships.size();
         for (int i = 0; i < size; i++) {
             final ShipAPI ship = ships.get(i);
-            final Vector2f shipLocation = ship.getLocation();
+            if (ship.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f shipLocation = ship.getLocation();
             if (!isOnScreen(shipLocation, 1.25f * ship.getCollisionRadius())) {
                 continue;
             }
@@ -1308,8 +1345,6 @@ public final class ShaderLib {
 
             BoundsAPI bounds = ship.getVisualBounds();
             if (bounds != null) {
-                bounds.update(ship.getLocation(), ship.getFacing());
-
                 GL11.glEnable(GL11.GL_STENCIL_TEST);
                 GL11.glDisable(GL11.GL_DEPTH_TEST);
                 GL11.glDisable(GL11.GL_TEXTURE_2D);
@@ -1320,7 +1355,7 @@ public final class ShaderLib {
                 GL11.glClearStencil(0);
                 GL11.glClear(GL11.GL_STENCIL_BUFFER_BIT); // Clear stencil buffer
 
-                Tessellate.render(bounds, 1f, 1f, 1f, ship.getId());
+                Tessellate.render(bounds, 1f, 1f, 1f, ship);
 
                 GL11.glColorMask(true, true, true, true);
                 GL11.glStencilFunc(GL11.GL_EQUAL, 16, 0xFF); // Pass test if stencil value is 16
@@ -1573,8 +1608,11 @@ public final class ShaderLib {
         size = missiles.size();
         for (int i = 0; i < size; i++) {
             final MissileAPI missile = missiles.get(i);
-            final Vector2f shipLocation = missile.getLocation();
+            if (missile.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f shipLocation = missile.getLocation();
             if (!isOnScreen(shipLocation, 1.25f * missile.getCollisionRadius())) {
                 continue;
             }

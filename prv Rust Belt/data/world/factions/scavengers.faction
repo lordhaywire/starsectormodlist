@@ -1,0 +1,21 @@
+{	
+	"knownShips":{
+		"tags":["prv_rb_bp"],
+		"hulls":[
+			"prv_gnista_p",
+			"prv_venture_rb",
+		],
+	},
+	"knownWeapons":{
+		"tags":["prv_rb_bp","prv_pirate_bp"],
+		"weapons":[
+			"prv_remission",
+			"prv_spatterflamer",
+		],
+	},
+	"hullFrequency":{
+		"tags":{
+			"prv_rb_bp":0.33,
+		},
+	},
+}

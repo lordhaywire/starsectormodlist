@@ -1,0 +1,46 @@
+{
+  "variantId": "filgap_babel_Exploration",
+  "hullId": "filgap_babel",
+  "displayName": "Exploration",
+  "goalVariant": true,
+  "fluxCapacitors": 21,
+  "fluxVents": 12,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "surveying_equipment",
+    "autorepair"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "filgap_miningbeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "filgap_miningarray",
+        "WS 008": "lightmg",
+        "WS 011": "lightmg",
+        "WS 014": "lightmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "filgap_scattergun",
+        "WS 013": "filgap_scattergun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "mining_drone_wing",
+    "filum_wing"
+  ]
+}

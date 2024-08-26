@@ -1,0 +1,160 @@
+{
+  "bounds": [
+    49.5,
+    -1.5,
+    45.5,
+    -11.5,
+    32.5,
+    -20.5,
+    23.5,
+    -20,
+    15.5,
+    -27.5,
+    -22.5,
+    -28.5,
+    -30.5,
+    -16.5,
+    -54.5,
+    -16.5,
+    -56.5,
+    -7.5,
+    -63.5,
+    -5.5,
+    -63.5,
+    5.5,
+    -56.5,
+    7.5,
+    -54.5,
+    16.5,
+    -30.5,
+    16.5,
+    -22.5,
+    28.5,
+    15.5,
+    27.5,
+    23.5,
+    20,
+    32.5,
+    20.5,
+    45.5,
+    11.5,
+    49.5,
+    1.5
+  ],
+  "builtInMods": [
+    "civgrade"
+  ],
+  "builtInWings": [],
+  "center": [
+    28,
+    65
+  ],
+  "collisionRadius": 96.5,
+  "engineSlots": [
+    {
+      "angle": 128,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        28.5,
+        19
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    },
+    {
+      "angle": -128,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        28.5,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        -55.5,
+        14
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    },
+    {
+      "angle": -180,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        -55.5,
+        -14
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    },
+    {
+      "angle": -180,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        -57.5,
+        -9.5
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    },
+    {
+      "angle": 180,
+      "contrailSize": 128,
+      "length": 15.575876,
+      "location": [
+        -57.5,
+        9.5
+      ],
+      "style": "LOW_TECH",
+      "width": 7.387039
+    }
+  ],
+  "height": 115,
+  "hullId": "filgap_traverse",
+  "hullName": "Traverse",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 85.5,
+  "spriteName": "graphics/filgap/ships/filgap_traverse.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS0001",
+      "locations": [
+        19,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 178,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        -38,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 56
+}

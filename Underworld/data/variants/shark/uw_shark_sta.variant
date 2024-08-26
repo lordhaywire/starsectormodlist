@@ -1,6 +1,6 @@
 {
     "displayName": "Standard",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 14,
     "fluxVents": 20,
     "goalVariant": true,
     "hullId": "uw_shark",

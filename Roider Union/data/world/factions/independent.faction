@@ -8,7 +8,7 @@
 			"roider_onager",
 			"roider_bombard",
 			#"roider_phaeton",
-			"roider_colossus2",
+			#"roider_colossus2",
 			"roider_gambit_early",
 		],
     },

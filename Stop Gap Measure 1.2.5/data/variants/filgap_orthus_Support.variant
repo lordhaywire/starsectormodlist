@@ -1,0 +1,56 @@
+{
+  "variantId": "filgap_orthus_Support",
+  "hullId": "filgap_orthus",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 20,
+  "fluxVents": 11,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "solar_shielding"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_plasma_caster",
+        "WS0002": "filgap_plasma_caster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "filgap_plasma_caster",
+        "WS0006": "filgap_plasma_caster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pdburst",
+        "WS0004": "pdburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heatseeker",
+        "WS0008": "heatseeker"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

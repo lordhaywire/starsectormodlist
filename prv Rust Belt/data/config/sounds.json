@@ -1,0 +1,125 @@
+{
+	"prv_blaster_charge_fire": 
+	[
+		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.85,"volume":0.5},
+		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.75,"volume":0.45},
+		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.70,"volume":0.55},
+	],
+	"prv_blaster_charge_cluster_fire": 
+	[
+		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.85,"volume":0.6},
+		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.75,"volume":0.55},
+		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.70,"volume":0.65},
+	],
+	"prv_blaster_charge_payload_fire": 
+	[
+		{"file":"sounds/sfx_wpn_energy/mining_blaster_fire_01.ogg","pitch":1,"volume":0.45},
+	],
+	"prv_massdriver_fire":
+	[
+		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_01_loud.ogg","pitch":0.75,"volume":1},
+		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_02_loud.ogg","pitch":0.75,"volume":1},
+		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_03_loud.ogg","pitch":0.75,"volume":1},
+	],
+	"prv_spatterflamer_fire": 
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.75,"volume":1.25},
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.70,"volume":1.25},
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.65,"volume":1.25},
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.75,"volume":1.35},
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.70,"volume":1.35},
+		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.65,"volume":1.35},
+	],
+	"prv_ljungeld_damaged_chargeup":
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":1,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":0.9,"volume":1.8},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":1.1,"volume":1.8},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":0.9,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":1.1,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":0.9,"volume":2.2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_chargeup.ogg","pitch":1.1,"volume":2.2},
+	],
+	"prv_ljungeld_damaged_fire":
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":1,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":0.9,"volume":1.8},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":1.1,"volume":1.8},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":0.9,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":1.1,"volume":2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":0.9,"volume":2.2},
+		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_damaged_fire.ogg","pitch":1.1,"volume":2.2},
+	],
+	"prv_hfl_array_chargeup":
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_chargeup.ogg","pitch":1,"volume":0.67},
+	],
+	"prv_hfl_array_fire":
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.9,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.1,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.95,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.05,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.9,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.1,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.95,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.05,"volume":1.4},
+	],
+	"prv_akc_fighter_fire":
+	[
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.17,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.18,"volume":1.6},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.19,"volume":1.5},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.2,"volume":1.4},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.21,"volume":1.3},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.22,"volume":1.2},
+		{"file":"sounds/prv/sfx_wpn/prv_akc_fighter_fire.ogg","pitch":1.23,"volume":1.6},
+	],
+    
+      ######SYSTEMS AND HULLMODS######
+      "prv_system_phase_cloak_fighter_rb_activate":
+	[ 
+		{"file":"sounds/sfx_systems/phase_cloak_activate.ogg","pitch":1.25,"volume":0.33},
+	],
+        "prv_system_phase_cloak_fighter_rb_deactivate":
+	[ 
+		{"file":"sounds/sfx_systems/phase_cloak_deactivate.ogg","pitch":1.25,"volume":0.33},
+	],
+    
+	######ENGINES######
+	
+	"engine_loop":{
+		"PRV_LOW":{"sounds":[0,1,2,3,4], "pitch":1, "volume":0.5},
+		},
+		
+	"engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
+		"PRV_LOW":{"sounds":[0,1,2], "pitch":0.8, "volume":1},
+	},
+
+	######SHIELDS######
+	
+	"shield_burnout":{ # played when a ship overloads
+		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
+	},
+	"emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
+		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
+	},
+	"flux_loop":{ # played while a ship is venting flux
+		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},	
+	},	
+	"vent_flux":{ # played once when a ship starts venting flux
+		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
+	},	
+	
+	# Similar setup to engine loop - defines which of the two sounds to use, and
+	# what pitch/volume to use them at, depending on ship style and size
+	"shield_lower":{
+		"PRV_LOW":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+	},
+	"shield_raise":{
+		"PRV_LOW":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
+	},
+
+}

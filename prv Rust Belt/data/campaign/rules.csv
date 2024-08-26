@@ -1,0 +1,276 @@
+id,trigger,conditions,script,text,options,notes
+,,,,,,
+# Rich miners,,,,,,
+prvRichMinerHook,OpenCommLink,"!$player.prvRichMinerChat score:10
+$entity.knowsWhoPlayerIs == true
+$faction.id == rb
+$faction.friendlyToPlayer
+$entity.relativeStrength < 0
+prvIsOutsideCore",$player.prvRichMinerChat = true 720,,"prvRichMinerIntro:Answer incoming hail
+prvRichMinerIgnore:Ignore it",
+prvRichMinerIntro,DialogOptionSelected,$option == prvRichMinerIntro,,"A smiling face, somewhat grimy from months in space, appears on your comm screen. ""Friend! I have struck it big, and I must celebrate! Come over!""","prvRichMinerAccept:Accept $hisOrHer invitation
+prvRichMinerDecline:Politely excuse yourself
+prvRichMinerShipRobberyAdjutant:Charge weapons and rob $himOrHer",
+prvRichMinerShipRobberyAdjutant,DialogOptionSelected,$option == prvRichMinerShipRobberyAdjutant,,"Your executive officer leans in and quietly reminds you: ""Sir, our transponder is on.""","prvRichMinerShipRobbery:Proceed
+prvRichMinerShipRobberyReconsider:Reconsider",
+prvRichMinerShipRobberyReconsider,DialogOptionSelected,$option == prvRichMinerShipRobberyReconsider,,"Asking your executive officer to confirm the identity of the other fleet, he gracefully makes it clear that the previous provisionary ID was mistaken and the subject is friendly.",prvRichMinerShipRobberyReconsider1:Continue,
+prvRichMinerShipRobberyReconsider1,DialogOptionSelected,$option == prvRichMinerShipRobberyReconsider1,EndConversation NO_CONTINUE,"Making opaque excuses about urgent business you leave $name, who is visibly disappointed and slightly confused.",,
+prvRichMinerShipRobbery,DialogOptionSelected,$option == prvRichMinerShipRobbery,$player.prvRichMinerChat = true,"You call battle stations and instruct your master gunner to lock targets. $PersonRank $personLastName looks away from $hisOrHer screen for a moment and returns with a furious scowl. ""You... you filthy bandit! Explain yourself!""","prvRichMinerShipRobberyConfirm:Demand that $heOrShe transfer $hisOrHer cargo
+prvRichMinerShipRobberyBackOff:I think there's been a misunderstanding (let $himOrHer go)",
+,,,,,,
+prvRichMinerShipRobberyConfirm,DialogOptionSelected,$option == prvRichMinerShipRobberyConfirm,"AdjustRepActivePerson -50
+AdjustRep rb HOSTILE -50
+MakeOtherFleetHostile true
+MakeOtherFleetGoAway true","""You fiend!"" $HeOrShe spits the words at you, eyes like daggers. ""We have no choice. We will comply.""",prvRichMinerShipRobberyAddLoot:Load the cargo,
+prvRichMinerShipRobberyAddLoot,DialogOptionSelected,$option == prvRichMinerShipRobberyAddLoot,"AddCommodity rare_ore 264
+AddCommodity rare_metals 771
+AddCredits 7843
+$player.ethosRuthless++",,"prvRichMinerShipRobberyEnd:Cut the comm link
+prvRichMinerShipRobberyTakeFuel:Also take the fuel and supplies.",
+prvRichMinerShipRobberyTakeFuel,DialogOptionSelected,$option == prvRichMinerShipRobberyTakeFuel,"AdjustRepActivePerson -50
+AdjustRep rb VENGEFUL -50
+AddCommodity supplies 47
+AddCommodity fuel 270
+$player.ethosRuthless++
+$option = prvRichMinerShipRobberyEnd
+FireBest DialogOptionSelected",,,
+prvRichMinerShipRobberyEnd,DialogOptionSelected,$option == prvRichMinerShipRobberyEnd,EndConversation NO_CONTINUE,,,
+prvRichMinerShipRobberyBackOff,DialogOptionSelected,$option == prvRichMinerShipRobberyBackOff,"AdjustRepActivePerson -50
+AdjustRep rb INHOSPITABLE -25
+MakeOtherFleetNonHostile true
+MakeOtherFleetGoAway true
+EndConversation NO_CONTINUE","""I certainly hope so."" $name abruptly closes the comm channel.",,
+prvRichMinerAccept,DialogOptionSelected,$option == prvRichMinerAccept,FireAll prvRichMinerAcceptCrew,,,
+prvRichMinerAcceptCrewOrder,prvRichMinerAcceptCrew,,,,prvRichMinerAcceptCrewOrder1:Gather your finest officers and take a shuttle over,
+prvRichMinerAcceptCrewOrder1,DialogOptionSelected,$option == prvRichMinerAcceptCrewOrder1,"$player.prvBoardingOrder = true 1
+$option = prvRichMinerVisit
+FireBest DialogOptionSelected",,,
+prvRichMinerAcceptCrewRuthless,prvRichMinerAcceptCrew,,,,prvRichMinerAcceptCrewRuthless1:Gather your meanest roughs and take a shuttle over,
+prvRichMinerAcceptCrewRuthless1,DialogOptionSelected,$option == prvRichMinerAcceptCrewRuthless1,"$player.prvBoardingRuthless = true 1
+$option = prvRichMinerVisit
+FireBest DialogOptionSelected",,,
+prvRichMinerAcceptCrewFaithful,prvRichMinerAcceptCrew,$player.ethosFaithful > 0,,,prvRichMinerAcceptCrewFaithful1:Gather your most faithful brothers and take a shuttle over,
+prvRichMinerAcceptCrewFaithful1,DialogOptionSelected,$option == prvRichMinerAcceptCrewFaithful1,"$player.prvBoardingFaithful = true 1
+$option = prvRichMinerVisit
+FireBest DialogOptionSelected",,,
+prvRichMinerVisit,DialogOptionSelected,$option == prvRichMinerVisit,$player.prvRichMinerChat = true,"On boarding the flagship you are greeted by a small and casual delegation. ""Welcome! Welcome to my ship! It is not much, but it is my home and my life!"" $personLastName bellows. ""Please, join us in the mess,""  $heOrShe says after delivering a firm handshake.",prvRichMinerVisit1:Continue,
+prvRichMinerVisit1,DialogOptionSelected,$option == prvRichMinerVisit1,ShowImageVisual pirate_bar,"When you arrive in the mess the celebration is already well underway, the normally cramped compartment being filled to the brim with enthusiastic celebrants who raise a brief cheer as the captain enters the room. You are led to the officer's table (where the chairs are marginally less cramped) and get seated.",prvRichMinerVisit2:Continue,
+prvRichMinerVisit2,DialogOptionSelected,$option == prvRichMinerVisit2,,"The captain, after making some polite smalltalk with you, stands to address the room, which quiets after three firm calls for attention and a roared ""SIT DOWN AND SHUT UP!"" from an adjutant.","prvRichMinerVisitListen:Listen carefully
+prvRichMinerVisitVibe:Take in the mood",
+prvRichMinerVisitListen,DialogOptionSelected,$option == prvRichMinerVisitListen,,"""My dear companions, salvors, old hands, rogues, thieves and other assorted space detritus - we did it! Never before have our holds been this full, our fortunes this rich. It has been a long journey, and several of you have been with me since the start. Many more have joined along the way. And through perseverence and diligence we have now finally found our just reward.""",prvRichMinerVisitListen1:Continue,
+prvRichMinerVisitListen1,DialogOptionSelected,$option == prvRichMinerVisitListen1,,"""The next few weeks we will move our holds to market, count our earnings, and return to Kratul for some well-earned R&R. But tonight we celebrate! Kick back and enjoy yourselves, and make sure to spare a thought for your comrades who are stuck on watch duty.""",prvRichMinerVisitListen2:Continue,
+prvRichMinerVisitListen2,DialogOptionSelected,$option == prvRichMinerVisitListen2,,"""Oh, and when we're back at the 'yard, don't spend it all at Madam's. She's not giving me kickbacks any more!"" This earned a dutiful laugh. $HeOrShe raises his glass. ""To freedom! The only freedom that matters - freedom from taxation! Now have fun, gentlemen."" $PersonRank $personLastName sits down to a cheer that spills more than a few drinks.",prvRichMinerVisitQuestion:Continue,
+prvRichMinerVisitVibe,DialogOptionSelected,$option == prvRichMinerVisitVibe,,"The captain delivers a paternal speech about finally hitting the motherlode, the virtue of hard work, fair rewards, et cetera. You thought the ending exhortation to make sure to not spend it all on drugs and 'services' was a nice touch.",prvRichMinerVisitVibe1:Continue,
+prvRichMinerVisitVibe1,DialogOptionSelected,$option == prvRichMinerVisitVibe1,,"The speech appears to deliver what was expected, and a dutiful cheer is raised when $PersonRank $personLastName signs off with ""And as promised, triple bonuses for this season!""",prvRichMinerVisitQuestion:Continue,
+prvRichMinerVisitQuestion,DialogOptionSelected,$option == prvRichMinerVisitQuestion,"ShowPersonVisual
+SetStoryOption prvRichMinerVisitLies 1 prvRBTallTales ui_char_spent_story_point_leadership ""Told tall tales""","$PersonRank $personLastName returns $hisOrHer attention to you. ""Now, we've been out on the fringe for quite a while now. Please share whatever news you have from the core.""","prvRichMinerVisitExhaustive:Answer exhaustively
+prvRichMinerVisitVaguely:Answer vaguely
+prvRichMinerVisitLies:Tell outrageous lies",
+prvRichMinerVisitExhaustive,DialogOptionSelected,$option == prvRichMinerVisitExhaustive,"AdjustRepActivePerson 2
+$player.ethosTruth++","You give him a fair summation of public news of the last half-cycle. $HeOrShe nods along interestedly, asking the occasional question.",prvRichMinerReturnMain:Continue,
+prvRichMinerVisitVaguely,DialogOptionSelected,$option == prvRichMinerVisitVaguely,AdjustRepActivePerson -2,You give $himOrHer a brief summation of public news of the last few weeks. $HeOrShe looks like $heOrShe was hoping for more.,prvRichMinerReturnMain:Continue,
+prvRichMinerVisitLies,DialogOptionSelected,$option == prvRichMinerVisitLies,"AdjustRepActivePerson 10
+$player.ethosLiar++","You start out with some plausible untruths that has $personLastName looking first sceptical, and then annoyed. You continue telling increasingly unlikely stories about Fikenhild scandals, Eventide officers getting humiliated and a Chicomoztoc arcology switching to a 'soylent' diet as $personLastName passes from irritated to outraged to... amused. By the time you tell $himOrHer about the Tritachyon plot to replace Daud with a 'romantically enhanced' cyborg $heOrShe is roaring with laughter and slapping the table.",prvRichMinerReturnMain:Continue,
+prvRichMinerReturnMain,DialogOptionSelected,$option == prvRichMinerReturnMain,FireAll prvRichMinerReturn,As the evening draws to a close it is time to gather up your party and return to your ship.,,
+prvRichMinerReturn,prvRichMinerReturn,,,,prvRichMinerReturnEnd:Return to your ship,
+prvRichMinerReturnRobOption,prvRichMinerReturn,$player.prvBoardingRuthless,"SetStoryOption prvRichMinerReturnRob 1 prvRBMinerRobbery ui_char_spent_story_point_combat ""Told tall tales""",,prvRichMinerReturnRob:Rob them,
+prvRichMinerReturnEnd,DialogOptionSelected,$option == prvRichMinerReturnEnd,"$player.ethosHonorable++
+FireBest prvRichMinerReturnSignoff",,,
+prvRichMinerReturnEndOrder,prvRichMinerReturnSignoff,$player.prvBoardingOrder,"AdjustRepActivePerson 2
+EndConversation","$PersonRank $personLastName bids farewell: ""Thank you for joining us in this celebration, captain. Best of luck with your... business. Burn bright.""",,
+prvRichMinerReturnEndRough,prvRichMinerReturnSignoff,$player.prvBoardingRuthless,"AdjustRepActivePerson 2
+EndConversation","$PersonRank $personLastName bids farewell: ""Thank you for joining us in this celebration, captain. Best of luck with your... business. Try not to let your crew happen to anyone who doesn't deserve it.""",,
+prvRichMinerReturnEndFaithful,prvRichMinerReturnSignoff,$player.prvBoardingFaithful,"AdjustRepActivePerson 2
+EndConversation","$PersonRank $personLastName bids farewell: ""Thank you for joining us in this celebration, captain. Best of luck with your journey. Ludd protect you.""",,
+prvRichMinerReturnEndNeutral,prvRichMinerReturnSignoff,,"AdjustRepActivePerson 2
+EndConversation","$PersonRank $personLastName bids farewell: ""Thank you for joining us in this celebration, captain. Best of luck with your journey.""",,# Shouldn't fire but jic
+,,,,,,
+prvRichMinerReturnRob,DialogOptionSelected,$option == prvRichMinerReturnRob,$player.ethosHonorable--,You give a quick sign to your second.,prvRichMinerReturnRob1:Continue,
+prvRichMinerReturnRob1,DialogOptionSelected,$option == prvRichMinerReturnRob1,,In the blink of an eye your entire away team has drawn weapons and are pointing them at anyone still sober enough to understand what's going on. You inform $PersonRank $personLastName that this is a robbery and you will be taking their cargo.,prvRichMinerReturnRob2:Continue,
+prvRichMinerReturnRob2,DialogOptionSelected,$option == prvRichMinerReturnRob2,"AdjustRepActivePerson -50
+AdjustRep rb HOSTILE -50
+AdjustRep pirates 15
+MakeOtherFleetHostile true
+MakeOtherFleetGoAway true","""You fiend!"" $HeOrShe spits the words at you, eyes like daggers. Hands in the air $heOrShe says: ""We have no choice. We will comply.""",prvRichMinerReturnRob3:Continue,
+prvRichMinerReturnRob3,DialogOptionSelected,$option == prvRichMinerReturnRob3,ShowImageVisual quartermaster,You gather the officers of the ship on the bridge and oversee the transfer procedure. Things run smoothly after one of the crewmen refuse to cooperate only to get summarily gunned down.,"prvRichMinerReturnRob4:Load the cargo
+prvRichMinerReturnRob4Fuel:Take the fuel and supplies as well.",
+prvRichMinerReturnRob4Fuel,DialogOptionSelected,$option == prvRichMinerReturnRob4Fuel,"AdjustRepActivePerson -50
+AdjustRep rb VENGEFUL -50
+AddCommodity supplies 47
+AddCommodity fuel 270
+$player.ethosRuthless++
+$option = prvRichMinerReturnRob4
+FireBest DialogOptionSelected",,,
+prvRichMinerReturnRob4,DialogOptionSelected,$option == prvRichMinerReturnRob4,"AddCommodity rare_ore 264
+AddCommodity rare_metals 771
+AddCredits 7843
+$player.ethosRuthless++
+$option = prvRichMinerReturnRob5
+FireBest DialogOptionSelected",,,
+prvRichMinerReturnRob5,DialogOptionSelected,$option == prvRichMinerReturnRob5,EndConversation,"You return to your ship, which now has much fuller holds, with the feeling that this incident will have a significant effect on your reputation in the sector.",,
+,,,,,,
+prvRichMinerDecline,DialogOptionSelected,$option == prvRichMinerDecline,EndConversation,"Making opaque excuses about urgent business you leave $name, who is visibly disappointed.",,
+prvRichMinerIgnore,DialogOptionSelected,$option == prvRichMinerIgnore,EndConversation NO_CONTINUE,,,
+,,,,,,
+# Concourse firefight,,,,,,
+prvRusterFirefightHook,DialogOptionSelected,"$option == marketVisitBar
+$id == prv_kratul_oy_station
+$faction.id == rb
+$hasMarket
+$stability < 5
+RollProbability 0.6 score:20
+!$player.prvrbfirefight","$option = prvRusterFirefightHook1
+FireBest DialogOptionSelected",You take the shuttle down to the main concourse and begin looking for a likely-looking establishment.,,
+prvRusterFirefightHookHighStab,DialogOptionSelected,"$option == marketVisitBar
+$id == prv_kratul_oy_station
+$faction.id == rb
+$hasMarket
+$stability >= 5
+RollProbability 0.1 score:20
+!$player.prvrbfirefight","$option = prvRusterFirefightHook1
+FireBest DialogOptionSelected",You take the shuttle down to the main concourse and begin looking for a likely-looking establishment.,,
+prvRusterFirefightHook1,DialogOptionSelected,$option == prvRusterFirefightHook1,$player.prvrbfirefight = true,As you walk down the concourse a microgauss slug strikes the wall a meter away.,prvRusterFirefight1:Dive for cover,
+prvRusterFirefight1,DialogOptionSelected,$option == prvRusterFirefight1,ShowImageVisual raid_covert_result,"Your bodyguards, already on edge, react immediately and start laying down suppressive fire. The few civilians present scatter immediately. A few drop to the floor. You are unsure if they've been hit, or are just trying to avoid the same.","prvRusterFirefightJoin:Draw your sidearm and join in
+prvRusterFirefightAssess:Assess the situation
+prvRusterFirefightHide:Keep your head down, let them do their job",
+prvRusterFirefightJoin,DialogOptionSelected,$option == prvRusterFirefightJoin,"$player.ethosCocky++
+$player.ethosRuthless++","Not seeing any obvious targets you blast away at nothing in particular. After a minute the noise of gunfire starts to quiet and one of your men address you: ""Sir, it's over. We need to extract.""",prvRusterFirefightExtract:Continue,
+prvRusterFirefightAssess,DialogOptionSelected,$option == prvRusterFirefightAssess,"$option = prvRusterFirefightAssess1
+FireBest DialogOptionSelected",,,
+prvRusterFirefightAssess1Faithful,DialogOptionSelected,"$option == prvRusterFirefightAssess1
+$player.ethosFaithful > $player.ethosCynical score:10","$player.ethosFaithful++
+$player.ethosKnowledge++","Your men are handling things by heart, half laying down suppressive fire on all overlooks and the other half sitting clear-eyed on overwatch. Whispered prayers are punctuated by the discharge of autorifles.",prvRusterFirefightAssess2:Continue,
+prvRusterFirefightAssess1,DialogOptionSelected,$option == prvRusterFirefightAssess1,"$player.ethosOrder++
+$player.ethosKnowledge++","Your men are handling things by the book, half laying down suppressive fire on all overlooks and the other half sitting dead-eyed on overwatch while using their implants to pull up schematics and live data from your ship and the local net.",prvRusterFirefightAssess2:Continue,
+prvRusterFirefightAssess2,DialogOptionSelected,$option == prvRusterFirefightAssess2,,"After a minute it becomes clear that there is a firefight going on, but it's moving away from your group.",prvRusterFirefightAssess3:Return to the shuttle,
+prvRusterFirefightAssess3,DialogOptionSelected,$option == prvRusterFirefightAssess3,,You motion your bodyguards to move to the shuttle for extraction. They affirm silently and begin repositioning.,prvRusterFirefightExtract:Continue,
+prvRusterFirefightHide,DialogOptionSelected,$option == prvRusterFirefightHide,"$player.ethosCynical++
+$player.ethosCocky--","After a minute the sound of gunfire grows faint, now obviously coming from several corridors away, and one of your men grabs your arm and directs you back towards your shuttle. ""Sir, we need to extract.""",prvRusterFirefightExtract:Continue,
+prvRusterFirefightExtract,DialogOptionSelected,$option == prvRusterFirefightExtract,,Moving in combat formation you are shepherded back to the shuttle. By now the occasional ting and tick of cooling metal and the shuffling of combat boots are the only things disturbing the silence.,prvRusterFirefightDebrief:Continue,
+prvRusterFirefightDebrief,DialogOptionSelected,$option == prvRusterFirefightDebrief,ShowImageVisual raid_prepare,"Catching your breath back in the confines of your ship your security officer gives you a debrief: ""We believe it's a local conflict, you just happened to be nearby. The station has been having daily outbreaks of violence lately."" He flicks away a few reports from his tripad. ""Otherwise it was all by the book, sir.""",prvRusterFirefightDebrief1:Continue,
+prvRusterFirefightDebrief1,DialogOptionSelected,$option == prvRusterFirefightDebrief1,"$option = prvRusterFirefightEnd
+FireBest DialogOptionSelected","He continues: ""The local gendarmerie are securing the concourse now. The port authority reports that services will resume within the hour.""",,
+prvRusterFirefightEnd,DialogOptionSelected,$option == prvRusterFirefightEnd,"ShowDefaultVisual
+$menuState = main 0
+FireAll PopulateOptions",,,
+,,,,,,
+# relationship level descriptions,,,,,,
+# RUST BELT,,,,,,
+relLevelCooperativeRusters,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == rb",FireAll RelLevelMoreDescription,"You're familiar to some of the movers and shakers of the Great Belt Alliance, and there is talk of extending the membership charter to include your fleet.",,
+relLevelFriendlyRusters,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == rb",FireAll RelLevelMoreDescription,"A dear friend of fringe spacers, you find yourself greeted warmly in any Ruster port, and you rarely need to pay for your own drinks.",,
+relLevelWelcomingRusters,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == rb",FireAll RelLevelMoreDescription,"You've gained a measure of notoriety among the major syndicates, and know who to bribe and whom to bully to get what you want.",,
+relLevelFavorableRusters,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == rb",FireAll RelLevelMoreDescription,"You've been around belt salvors, smugglers, syndicate enforcers and other types of Rusters often enough, and know how to act so they see you as one of their own.",,
+relLevelNeutralRusters,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == rb",FireAll RelLevelMoreDescription,"At ease with life in the belts, you’ve learned enough about Ruster habits to pass unnoticed as you go about your business.",,
+relLevelSuspiciousRusters,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == rb",FireAll RelLevelMoreDescription,"While still considered an outsider, Rusters understand that you’re not as bad as most core-dwellers.",,
+relLevelInhospitableRusters,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == rb",FireAll RelLevelMoreDescription,"Rusters immediately figure you for an outsider and are unlikely to offer you much hospitality. As long as you’re discrete your credits are still welcome, however.",,
+relLevelHostileRusters,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == rb",FireAll RelLevelMoreDescription,"You’ve left a mark on the GBA, who in turn have put a mark on your head. Rusters consider you an enemy and are likely to attack you on sight.",,
+relLevelVengefulRusters,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == rb",FireAll RelLevelMoreDescription,"Worse than even the prv, Rusters curse your name for your countless crimes against their life and liberty and will go out of their way to cause you the slightest bit of harm.",,
+,,,,,,
+,,,,,,
+# RB COMMISSION,,,,,,
+CMSNTextRejectHostile_rb,CMSNTextRejectHostile,$faction.id == rb,,"""How about you come over here and ask that again face to face? I’ll show you how Rusters deal with your kind.""",,
+CMSNTextHasOther_rb,CMSNTextHasOther,$faction.id == rb,,"""I don’t even want to talk to you while you work for $theOtherCommissionFaction, throw off those shackles and maybe we can do business.""",,
+CMSNTextUnsuited_rb,CMSNTextUnsuited,$faction.id == rb,,"""I’m all business, and you kid? You’re a liability. Tighten up your ship and maybe we can come to an agreement.""",,
+CMSNTextSuitedPart1_rb,CMSNTextSuitedPart1,$faction.id == rb,,"""Oh yeah I’ve heard of you, you’re alright kid. Yeah I can set you up with a commission - are you ready to become a true spacer?
+
+I hope you don’t like your transponder, because you won’t be welcome in many ports while you’re sending out a Great Belt Alliance IFF. In fact many state thugs will shoot you on sight.
+
+If this should be too much for you, you could always resign the commission, though certainly most old boots would be less than impressed by such a thing.""",,
+CMSNTextSuitedPart2_rb,CMSNTextSuitedPart2,$faction.id == rb,,"""Can you hack it, kid? I offer you rust, rock, peril, persecution - and freedom and fellowship.""",,
+CMSNTextWelcomePart1_rb,CMSNTextWelcomePart1,$faction.id == rb,,"""Good choice! Welcome to the Great Belt Alliance, fellow traveller.""",,
+CMSNTextWelcomePart2_rb,CMSNTextWelcomePart2,$faction.id == rb,,"""Your union dues will be automatically subtracted from your stipend, and I’ll be sending a rep over to help you get your crew handling up to regulations - no, don’t worry too much about it, he’ll respond well to a modest contribution to the widows’ fund.""",,
+CMSNTextChangeMind_rb,CMSNTextChangeMind,$faction.id == rb,,"""The life’s not for everyone. Should you find yourself with a thirst for freedom, do come back here. Door’s open for any decent man.
+
+Anything else?""",,
+CMSNResignAskToConfirm_rb,CMSNResignAskToConfirm,$faction.id == rb,,"""I thought you were better than that, kid. But, if you can’t hack it I suppose it’s best that you leave. Are you sure?""",,
+CMSNResignConfirmed_rb,CMSNResignConfirmed,$faction.id == rb,,"""Ok, I’ve removed you from the rolls. You’re on your own now - I hope you haven’t made too many enemies lately. Stay alive, friend.""",,
+CMSNResignCancelled_rb,CMSNResignCancelled,$faction.id == rb,,"""That’s right, tough it out. We’re all gonna make it.""",,
+,,,,,,
+# AI CORES,,,,,,
+aiCores_turnInOptionSell_rb,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == rb",FireAll PopulateCoresTurnInOptions,"""Oh you managed to dredge up a core? Not too many of those around. I’ll set you up with the finder’s fee. Well done, friend.""",,
+aiCores_turnInResponse_rb,AICoresTurnedIn,$faction.id == rb,FireAll PopulateOptions,"$personName smiles heartily and taps on his terminal a few times. ""I’ve got a retrieval team heading over right now. It’s been a pleasure, $firstName.""",,
+,,,,,,
+bar_desc_rb,BarPrintDesc,$faction.id == rb,ShowImageVisual pirate_bar,"Large booths line the walls, most underneath the banner of some particular syndicate crew or union department. The locals sit in groups which largely keep to themselves, some glum, others cheerful, all according to how well business has been going lately. In the poorly-lit back intimidating figures eye all newcomers, but do little more than sneer. A self-serve beer tap seems to attract the majority of the business, with the youngest member at each table being responsible for service. More transient guests drink at the bar, under the dour eye of the proprietor.",,
+,,,,,,
+# GREETINGS,,,,,,
+# Ruster fleet greeting lines,,,,,,
+greetingRusterFriendly,OpenCommLink,"$faction.id == rb
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Good to see you, buddy. Found anything interesting?""
+OR
+""ID received and acknowledged, friend. Burn bright.""
+OR
+""Hey take a shuttle over if you’ve got time, I’ve got a bottle from Eventide and I need an excuse to open it.""
+OR
+""Comm open. Seen anything spooky, captain?""
+OR
+""I’ve seen some strange blips lately. Be careful, kid.""
+OR
+""Transponder on today, eh? You be careful out there.""",,
+greetingRusterHostileWeaker,OpenCommLink,"$faction.id == rb
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"""Let’s just try to get along now, what do you say? Live and let live?"" The $personRank looks more than a little worried.
+OR
+""Well shit, you got me. Hey, how about you let me go? No need to get your fine ships scratched now.""",,
+greetingRusterHostileWeakerDefiant,OpenCommLink,"$faction.id == rb
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"""I’m just the bait, you better get out of here while you still can."" You can’t tell if the $personRank believes what $HeOrShe is saying.
+OR
+""My crew, they’re good boys. They’ll put up one hell of a fight if I ask. Please, don’t hold it against them."" The Ruster looks defiant and despondent in equal measure.",,
+greetingRusterHostileStronger,OpenCommLink,"$faction.id == rb
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"""I will be taking your fleet as a prize. Your cooperation would be appreciated, but is not neccessary.""
+OR
+""Do you have any idea how large the bounty on your fleet is? You must have been very busy to make this many enemies.""
+OR
+""Fe & Ox will pay good money for your hulls. Nothing personal, buddy.""
+OR
+""This is for free spacers everywhere!""
+OR
+The commlink is filled with a low-quality holo-vid of what you believe to be a recent hit record from Fikenhild.",,
+greetingRusterNeutral,OpenCommLink,"$faction.id == rb
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""I see you. Let’s just keep our distance and go about our own business, shall we?""
+OR
+""Greetings, stranger. Good salvage in these parts.""
+OR
+The Ruster $personRank answers your hail with a curt ""Yes?""",,
+,,,,,,
+,,,,,,
+# Trade panel flavor text,,,,,,
+flavorTextMarketRBSmall,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == rb","AddText ""The port concourse is filled with industrial starcraft of every size. There is a marked lack of the usual speculators, and instead of the sussurations of impromptu trade the air is filled with the acrid smell of chemthruster exhaust and the occasional rattle of metal as salvage loads are shifted."" marketFlavorTextColor
+AddText ""The back wall of the concourse has a terraced plantation of various oxygrasses. Aside from the dockworkers it is the only thing you can see that is not made out of plastic or metal."" marketFlavorTextColor",,,
+flavorTextMarketRBLarge,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == rb
+$marketSize >= 5 score: 25","AddText ""The port concourse is filled with starcraft of every size, mercantile, industrial, even a few warships. There is a marked lack of the usual speculators, and instead of the sussurations of impromptu trade the air is filled with the acrid smell of chemthruster exhaust and the clanging of metal striking against metal as heavy salvage loads are shifted."" marketFlavorTextColor
+AddText ""A squad of grizzled dock workers start hooking your ship up to the local amenities with the routine of men who have done this a thousand times before."" marketFlavorTextColor",,,
+flavorTextMarketRBUnstable,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == rb
+$stability < 4","AddText ""The port concourse contains a few ships, mostly run down industrial craft. There is a marked lack of the usual speculators, and instead of the sussurations of impromptu trade the air is filled with the acrid smell of chemthruster exhaust and the clanging of metal striking against metal as salvage loads are shifted."" marketFlavorTextColor
+AddText ""A group of youths, most barely teens, crowd you for a moment, asking for work and trying to offer you all kinds of services before your guards shoo them off."" marketFlavorTextColor",,,
+flavorTextMarketRBSneak,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == rb
+$player.transponderOn == false
+$faction.relValue <= -0.25 score: 50","AddText ""Your adjutant has arranged docking permission at, of all things, a local pirate syndicate, whose dockyard is a busy mess of smaller vessels undergoing repairs and refits in the shadow of a larger ship of a class you can’t quite recognize."" marketFlavorTextColor
+AddText ""From a patio a motley crew of pirates watch you with the lazy restraint of a resting pride, with CP-carbines and heavier armaments strewn about but not hefted. Your bodyguards meet this examination with a somewhat uneasy swagger."" marketFlavorTextColor",,,
+,,,,,,
+greetingDefaultTOffNormalRb,OpenCommLink,"!$player.transponderOn
+$faction.id == rb
+$entity.relativeStrength >= 0",,"$PersonRank $personName looks unconcerned. ""Gonna need your callsign, chief. Flip on that transponder.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",
+greetingDefaultTOffWeakerRb,OpenCommLink,"!$player.transponderOn
+$faction.id == rb
+$entity.relativeStrength < 0",,"$PersonRank $personName looks glum. ""Activate your transponder so I know who I’m dealing with.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",

@@ -1,0 +1,62 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 20,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "oddykoc",
+    "hullMods": [
+        "frontemitter",
+        "targetingunit"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "oddykoc_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "mark10",
+                "WS 002": "mark10"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 003": "atropos_l",
+                "WS 005": "atrops_pod"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 008": "xpulse",
+                "WS 009": "xpulse",
+                "WS 010": "xpulse",
+                "WS 011": "xpulse",
+                "WS 012": "xpulse",
+                "WS 013": "xpulse",
+                "WS 014": "xpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "heavyburst",
+                "WS 006": "heavyburst",
+                "WS 007": "lightdualmg",
+                "WS 015": "lightdualmg",
+                "WS 016": "lightdualmg",
+                "WS 017": "lightdualmg",
+                "WS 018": "lightdualmg"
+            }
+        }
+    ],
+    "wings": [
+        "4m_pulse_wing",
+        "4m_pulse_wing"
+    ]
+}

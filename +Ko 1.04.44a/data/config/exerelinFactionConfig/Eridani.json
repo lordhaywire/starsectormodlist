@@ -1,0 +1,68 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Eridani Unfaithful",
+    
+    "marketSpawnWeight":0.5,
+
+    "startRelationships":{ "hegemony": -0.05, "tritachyon": -0.4, "persean":0.05, "luddic_church":0.1, "luddic_path":0.05 },
+	"maxRelationships":{ "remnant":-0.51, "tritachyon": -0.2 },
+    "diplomacyPositiveChance":{ "luddic_church":1.1, "luddic_path":1.1, "hegemony": 0.95, "persean":1.05, "tritachyon": 0.95 },
+    "diplomacyNegativeChance":{ "luddic_church":0.95, "luddic_path":0.95, "hegemony": 1.05, "persean":0.95, "tritachyon": 1.05 },
+    
+    "alignments":{
+        "corporate":0.5,	
+        "hierarchical":0.5,
+		"technocratic":-0.5,
+        "diplomatic":-0.5,
+        "ideological":0.5,
+    },
+    "diplomacyTraits":["lowprofile", "monopolist", "law_and_order", "selfrighteous", "dislikes_ai"],
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":0.8,	# we like planets
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+	
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":1.00,
+    },
+        
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.PlanetNamer",
+    
+    "startShipsSolo":[
+	  ["swp_alastor_dem"],
+	  ["brawler_Support"]
+	],
+    "startShipsCombatSmall":[
+      ["swp_archer_dem", "brawler_Support", "swp_alastor_dem"],
+      ["hammerhead_DEM", "vigilance_Support1", "monitor_Escort"]
+    ],
+    "startShipsTradeSmall":[["tarsus_Standard", "vigilance_Support1", "mercury_PD"]],
+    "startShipsCombatLarge":[
+      ["swp_eagle_black_dem", "swp_archer_dem2", "swp_alastor_dem"],
+      ["champion_DEMEscort", "hammerhead_DEM", "vigilance_Support2"]
+    ],
+    "startShipsTradeLarge":[["colossus_Standard", "mule_Standard", "shepherd_Frontier"]],
+    "startShipsExplorerLarge":[["venture_Balanced", "gemini_Standard", "wayfarer_Standard"]],
+    "startShipsCarrierSmall":[["drover_Support", "vigilance_Support2", "brawler_Support"]],
+    "startShipsCarrierLarge":[["heron_Attack1", "hammerhead_DEM", "vigilance_Support1"]],
+    
+    "startSpecialItems":[
+        [["low_tech_package", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation", "battlestation", "starfortress"], "weight":0.5},
+        {"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"]},
+    ],
+    
+    "industrySeeds":[
+        {"id":"lightindustry", "mult":0.1},
+        {"id":"farming", "mult":0.1},
+    ],
+    
+    "bonusSeeds":[
+        {"id":"soil_nanites", "count":1},
+    ],
+}

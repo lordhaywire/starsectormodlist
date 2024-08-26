@@ -2,9 +2,9 @@
   "variantId": "prv_shrike_support",
   "hullId": "prv_shrike",
   "displayName": "Support",
-  "goalVariant": false,
-  "fluxCapacitors": 5,
-  "fluxVents": 14,
+  "goalVariant": true,
+  "fluxCapacitors": 11,
+  "fluxVents": 13,
   "quality": 1,
   "permaMods": [],
   "hullMods": [

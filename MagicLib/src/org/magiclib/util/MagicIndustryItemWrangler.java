@@ -22,7 +22,7 @@ public class MagicIndustryItemWrangler extends BaseCampaignEventListener {
         Map<String, Float> items = MagicSettings.getFloatMap(MagicVariables.MAGICLIB_ID, "itemPriorities");
 
         if (items == null || items.isEmpty()) {
-            Global.getLogger(MagicIndustryItemWrangler.class).error("Error loading items priorities. ItemInstallationWrangler will not function.");
+            Global.getLogger(MagicIndustryItemWrangler.class).warn("Error loading items priorities. ItemInstallationWrangler will not function.");
             return;
         }
 
@@ -249,15 +249,18 @@ public class MagicIndustryItemWrangler extends BaseCampaignEventListener {
     }
 
     private boolean canUseItem(Industry ind, SpecialItemData item) {
-        SpecialItemSpecAPI spec = Global.getSettings().getSpecialItemSpec(item.getId());
-        String[] industries = spec.getParams().split(",");
-        Set all = new HashSet();
-        for (String industry : industries) {
-            all.add(industry.trim());
+        try {
+            SpecialItemSpecAPI spec = Global.getSettings().getSpecialItemSpec(item.getId());
+            String[] industries = spec.getParams().split(",");
+            Set<String> all = new HashSet<>();
+            for (String industry : industries) {
+                all.add(industry.trim());
+            }
+            // first part checks 'does this apply to this industry?', second part checks if the item's installation requirements are met.
+            return all.contains(ind.getId()) && new GenericInstallableItemPlugin(ind).canBeInstalled(item);
+        } catch (Exception e) {
+            throw new RuntimeException("Error checking if " + item.getId() + " can be installed in " + ind.getId(), e);
         }
-        // first part checks 'does this apply to this industry?', second part checks if the item's installation requirements are met.
-        return all.contains(ind.getId()) && new GenericInstallableItemPlugin(ind).canBeInstalled(item);
-
     }
 
     public static interface ItemPriority {

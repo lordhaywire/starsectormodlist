@@ -1,0 +1,25 @@
+{
+  "variantId": "prv_ande_phase",
+  "hullId": "prv_ande",
+  "displayName": "Stealth",
+  "goalVariant": false,
+  "fluxCapacitors": 1,
+  "fluxVents": 0,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_tardes"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "prv_stilllhet_wing",
+    "prv_skran_wing"
+  ]
+}

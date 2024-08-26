@@ -1,25 +1,4 @@
 {
-	"prv_agni_warning_beacon":{
-		"defaultName":"Warning Beacon", # used if name=null in addCustomEntity()
-		"defaultRadius":40, # used if radius<0 in addCustomEntity()
-		"detectionRange":3000, # must be >0 for discoverable/discoveryXP to be used
-		"discoverable":true,
-		"discoveryXP":500,
-		"icon":"graphics/icons/warning_beacon.png",
-		"iconColor":[196,0,32,255],
-		"iconWidth":24,
-		"iconHeight":24,
-		"spriteWidth":64,
-		"spriteHeight":64,
-		"showInCampaign":true,
-		"showIconOnMap":true,
-		"scaleIconWithZoom":true,
-		"customDescriptionId":"warning_beacon",
-		"interactionImage":"graphics/illustrations/comm_relay.jpg",
-		"tags":["has_interaction_dialog", "warning_beacon", "prv_agni_beacon", "neutrino_low"],
-		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
-		"pluginClass":"scripts.campaign.themes.AgniWarningBeaconEntityPlugin",
-	},
 	"prv_station_ryak_hel":{
 		"defaultName":"Ryak High-Energy Labs", # used if name=null in addCustomEntity()
 		"defaultRadius":75, # used if radius<0 in addCustomEntity()
@@ -31,27 +10,6 @@
 		"sprite":"graphics/prv/stations/prv_station_ryak_hel.png",
 		"spriteWidth":100, 	#200
 		"spriteHeight":100,	#200
-		"renderShadow":true,
-		"useLightColor":true,
-		"showInCampaign":true,
-		"showIconOnMap":true,
-		"showNameOnMap":false,
-		"scaleNameWithZoom":false,
-		"scaleIconWithZoom":true,
-		"tags":["station"],
-		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
-	},
-	"prv_station_oy":{
-		"defaultName":"Outer Yard", # used if name=null in addCustomEntity()
-		"defaultRadius":60, # used if radius<0 in addCustomEntity()
-		"customDescriptionId":"prv_kratul_oy_station",
-		"interactionImage":"graphics/illustrations/urban01.jpg",
-		"icon":"graphics/icons/station2.png",
-		"iconWidth":24,
-		"iconHeight":24,
-		"sprite":"graphics/prv/stations/prv_station_oy.png",
-		"spriteWidth":80,		#160
-		"spriteHeight":80,	#160
 		"renderShadow":true,
 		"useLightColor":true,
 		"showInCampaign":true,
@@ -94,6 +52,48 @@
 		"sprite":"graphics/prv/stations/prv_station_hallar.png",
 		"spriteWidth":75,
 		"spriteHeight":100,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	"prv_station_perseiska":{
+		"defaultName":"Perseiska Kompaniet", # used if name=null in addCustomEntity()
+		"defaultRadius":50, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/urban00.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/station_hightech1.png",
+		"spriteWidth":66,
+		"spriteHeight":80,
+		"renderShadow":true,
+		"useLightColor":true,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"showNameOnMap":false,
+		"scaleNameWithZoom":false,
+		"scaleIconWithZoom":true,
+		"tags":["station"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+	"prv_station_tordehus_lost":{
+		"defaultName":"Lost Station", # used if name=null in addCustomEntity()
+		"defaultRadius":50, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"orbital_station_default",
+		"interactionImage":"graphics/illustrations/abandoned_station2.jpg",
+		"icon":"graphics/icons/station0.png",
+		"iconWidth":24,
+		"iconHeight":24,
+		"sprite":"graphics/stations/station_midline1.png",
+		"spriteWidth":66,
+		"spriteHeight":80,
 		"renderShadow":true,
 		"useLightColor":true,
 		"showInCampaign":true,

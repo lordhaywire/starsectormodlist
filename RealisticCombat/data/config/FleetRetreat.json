@@ -1,0 +1,24 @@
+{
+    "The enemy fleet will retreat after combat ships of total deployment":"",
+    "points greater than this factor of the total deployment of its initial":"",
+    "combat ships retreat or are disabled or destroyed.":"",
+    "lossThresholds":{
+        "fearless":1.0,
+        "reckless":0.5,
+        "aggressive":0.4,
+        "steady":0.3,
+        "cautious":0.2,
+        "timid":0.1,
+    },
+    "The enemy fleet will retreat once the total deployment points of its":"",
+    "deployed and reserve combat ships are less than this factor of that of":"",
+    "the player fleet.":"",
+    "outnumberThresholds":{
+        "fearless":0.0,
+        "reckless":0.3,
+        "aggressive":0.4,
+        "steady":0.5,
+        "cautious":0.6,
+        "timid":0.7,
+    },
+}

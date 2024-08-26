@@ -1,0 +1,12 @@
+{
+    "Factor by which to multiply the length and width of the combat map.":"",
+    "mapSizeFactor":2,
+    
+    "The standoff between fleets on a combat map having objectives is this":"",
+    "factor of map height.":"",
+    "standOffFactorWithObjectives":0.75,
+
+    "The standoff between fleets on a combat map lacking objectives is":"",
+    "this factor of map height.":"",
+    "standOffFactorWithoutObjectives":0.75,
+}

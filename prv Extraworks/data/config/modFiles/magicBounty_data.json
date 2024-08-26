@@ -1,0 +1,129 @@
+{
+    ###########################################################################
+    "prv_conquest_rare":{
+        #TRIGGERS (ALL OPTIONAL)
+        "trigger_min_fleet_size": 125,
+        "trigger_marketFaction_any": ["tritachyon"],
+        "trigger_marketFaction_alliedWith": true,
+        
+        #BOUNTY DESCRIPTION        
+        "job_name": "Gudalik Trial Group",
+        "job_description": "Personal bounty offer - the destruction of the prv Gudalik and its taskforce is much desired according to orientation memorandum c217/34a§3.19.\nThe heavily modified Conquest-class battlecruiser is known to be performing deep-space trials of an experimental energy weapon. It can be expected to be well armed and well protected.\nA credit reward and full salvage rights will be awarded to whomever destroys the fleet and transfers a full combat recording to TRIIND//USERWEB//NODE.34@78/",
+        "job_comm_reply": "The blonde man that shows up on your viewscreen seems to be both too young and too happy to be where he is. He greets you with a cheerful \"Hello! We’re all very excited to have you join us for this lovely evening of live fire practice. Please, come, let us enjoy ourselves.\" In the moment before the feed ends you can see his smile turn into a sneer.",
+        "job_intel_success": "An impressive weapon on that battlecruiser. Somewhat unwieldy though. As you set up a tightbeam to transmit the combat recording you wonder if Andrada might be involved in this.",
+        #"job_intel_failure": "",
+        "job_intel_expired": "You recieve word from a reliable contact that a prospecting team has combed through the constellation without seeing neither hide nor hair of any secret fleets; you have to assume that the trial group has concluded their operation.",
+        "job_forFaction": "tritachyon",
+        "job_deadline": 120,
+        "job_credit_reward": 250000,
+        "job_reward_scaling": 0.7,
+        "job_reputation_reward":5,
+        "job_type":"neutralisation",
+        "job_show_type": true,
+        "job_show_captain": true,
+        "job_show_fleet": "flagshipText",
+        "job_show_distance": "exact",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+
+        #TARGET COMMANDER (OPTIONAL)        
+        "target_first_name":"Johannes",
+        "target_last_name":"Staphelius",
+        "target_portrait":"graphics/portraits/portrait_luddic02.png",
+        "target_gender":"MALE",
+        "target_rank": "spaceCommander",
+        "target_post": "spacer",
+        "target_personality": "aggressive",
+        "target_level": 5,
+        "target_elite_skills":3,
+        "target_skill_preference": "YES_ENERGY_NO_BALLISTIC_YES_MISSILE_YES_DEFENSE",
+    
+        #TARGET FLEET
+        "fleet_name":"Trial Group",
+        "fleet_faction": "prv",
+        "fleet_flagship_variant":"prv_conquest_ryak_omega",
+        "fleet_flagship_name":"prv Gudalik",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_ships": {
+		"prv_shrike_overdriven":1, "prv_flock_strike":1, "prv_is_adv":1, "prv_fasklot_flicker":1, "prv_ljus_strike":1,
+		},
+        "fleet_preset_autofit": true,
+        "fleet_scaling_multiplier": 1,
+        "fleet_min_FP": 130,
+        "fleet_composition_quality": 1,
+        "fleet_transponder": true,
+	  "fleet_no_retreat": false,
+        "fleet_behavior": "AGGRESSIVE",
+        
+        #LOCATION
+        "location_themes": ["procgen_no_theme", "procgen_no_theme_pulsar_blackhole",],
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true,
+    },
+    ###########################################################################
+    "prv_sunder_ryak_rare":{
+        #TRIGGERS (ALL OPTIONAL)
+        "trigger_min_fleet_size": 25,
+        "trigger_marketFaction_any": ["luddic_path","independent","tritachyon"],
+        
+        #BOUNTY DESCRIPTION        
+        "job_name": "Friend of Ludd",
+        "job_description": "Placed directly in your personal correspondence you find a hand-written note. It reads:\n\"Attached to this note there is a set of coordinates. At this location you will find a small group of prv ships undergoing technical trials. Save your immortal soul and strike a blow towards the abuse of technology in the sector! A small stipend will also be transferred to your account, should you be successful.\n- A friend of Ludd\"\nYou will have to find out who could have placed it there.",
+        "job_comm_reply": "As you open the comm channel to the strongest local signal, static buzzing tunes into a musical drum accompaniement. A gravelly voice says \"Check, check. This is Radio Free Kratul checking one-two. This is Radio Free Kratul, the proud and pirate station and loving it.\"\nYou seem to be picking up a Ruster radio station instead, the signal probably many years old by now. Curious. The prv ships must be running completely silent.",
+        "job_intel_success": "Still unable to determine who placed the bounty notice in your mail slot, you find yourself wondering just how many Luddic sympathizers you're carrying on your ship.",
+        #"job_intel_failure": "",
+        "job_intel_expired": "After several months of delays there is little hope of finding the fleet before it finishes its mission. You're forced to call off the 'attentat', as the prv would have called it.",
+        "job_forFaction": "luddic_path",
+        "job_deadline": 120,
+        "job_credit_reward": 75000,
+        "job_reward_scaling": 0.7,
+        "job_reputation_reward":10,
+        "job_type":"neutralisation",
+        "job_show_type": true,
+        "job_show_captain": true,
+        "job_show_fleet": "vanilla",
+        "job_show_distance": "vanilla",
+        "job_show_arrow": false,
+        "job_difficultyDescription": "auto",
+        "job_pick_option": "Keep the note",
+
+        #TARGET COMMANDER (OPTIONAL)        
+        "target_first_name":"Ida",
+        "target_last_name":"Almlöfh",
+        "target_portrait":"graphics/prv/portraits/prv_f_1.png",
+        "target_gender":"FEMALE",
+        "target_rank": "spaceCaptain",
+        "target_post": "spacer",
+        "target_personality": "steady",
+        "target_level": 4,
+        "target_elite_skills":3,
+        "target_skill_preference": "NO_ENERGY_YES_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+    
+        #TARGET FLEET
+        "fleet_name":"Trial Group",
+        "fleet_faction": "prv",
+        "fleet_flagship_variant":"prv_sunder_ryak_core",
+        "fleet_flagship_name":"prv Tämjande kraft",
+        "fleet_flagship_recoverable": true,
+        "fleet_flagship_autofit": false,
+        "fleet_preset_ships": {
+		"prv_sunder_ryak_core":2,
+		},
+        "fleet_preset_autofit": false,
+        "fleet_scaling_multiplier": 0.8,
+        "fleet_min_FP": 75,
+        "fleet_composition_quality": 1,
+        "fleet_transponder": true,
+	  "fleet_no_retreat": false,
+        "fleet_behavior": "AGGRESSIVE",
+        
+        #LOCATION
+        "location_distance": "CLOSE",
+        "location_themes": ["procgen_no_theme", "procgen_no_theme_pulsar_blackhole",],
+        "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+        "location_prioritizeUnexplored": true,
+        "location_defaultToAnyEntity": true,
+    },
+}

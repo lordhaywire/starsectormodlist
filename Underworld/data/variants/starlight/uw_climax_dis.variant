@@ -1,7 +1,7 @@
 {
     "displayName": "Disco",
     "fluxCapacitors": 0,
-    "fluxVents": 20,
+    "fluxVents": 23,
     "goalVariant": true,
     "hullId": "uw_climax",
     "hullMods": [

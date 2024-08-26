@@ -1,0 +1,180 @@
+prv Rust Belt
+
+###
+
+v1.3 - Savegame compatible.
+
+Added a couple of dialogue events with light rb-related worldbuilding.
+- Visit the Outer Yard. Trigger chance is much higher if it is at low stability.
+- Talk to small and friendly Ruster fleets in deep space.
+
+Grinning man at private table (Orbital Station - Ruster blueprint) bar event
+- Can now be triggered by owning a colony OR having one million credits on hand.
+
+Syndicate Autogun
+- Refire delay increased to 4,5 seconds.
+-- Now 160 damage/flux per second.
+
+Tweaked Debris Belt color and contrast.
+
+###
+
+v1.2 - Savegame compatible.
+
+Fixed a crash related to Debris Belts and starless procgen systems.
+
+###
+
+v1.1 - Savegame compatible.
+
+Belt Blaster
+- OP cost increased to 26.
+- Refire delay increased to 6,3 seconds (full cycle time 7,5 seconds).
+-- Now 320 damage/s, 400 flux/s.
+
+Added access to the Syndicate Autogun for Mercenaries.
+Reduced the fitting weights of some guns.
+
+###
+
+v1
+
+----------------
+- General
+----------------
+
+Initial Release, split from prv Starworks.
+
+----------------
+- Ships
+----------------
+
+Rounded off many ship deployment and maintenance costs:
+Rök (P)		31 -> 35 (-)
+Kakafoni (RB)	24 -> 22
+Kakafoni (P)	21 -> 18 (+)
+Kvarts		26 -> 25
+Bergslag		21 -> 20
+
+(+) Noteworthy buff
+(-) Noteworthy nerf
+
+Gissel
+- Skatunge launchers replaced by Sidewinder SRM Launchers.
+-- EMP/Fragmentation missiles with a similar movement pattern.
+
+Venture (RB)
+- Weapon layout updated, now more similar to the base Venture.
+- Now retains the base model's Mining Drone wing.
+- OP increased to 125.
+
+Rök (P)
+- Hull and engine style changed to LOW_TECH.
+- Widened the arc of the medium hybrid turret.
+
+Bergtagen, Kakafoni (RB)
+- Changed the types of a few smaller mounts.
+
+Gnista (P), Flamma (P), Kakafoni (P), Ballebo (P)
+- Codex updated.
+- Removed Ramshield.
+- Removed Volatile Drive Core.
+
+Tystnad (P)
+- Codex updated.
+- Removed Ramshield.
+- Removed Volatile Drive Core.
+- Removed Lean Hangar.
+- Removed Companion Integration.
+
+Skiffer
+- Removed Lean Hangar.
+
+Skära
+- Renamed Granit.
+
+Gissel
+- Renamed Dolomit.
+
+Fasnod (P)
+- Removed Volatile Drive Core.
+
+Fristaten Lasse (Venture (RB-Mod))
+- Removed built-in Skatunge launchers.
+- OP increased to 115.
+
+Egnejserhead (P-mod)
+- Replaced built-in Locust with a large missile hardpoint.
+- Value multiplier reduced to 1,5x.
+
+Gremlin (RB-mod)
+- Replaced built-in HFL Array with a large energy hardpoint.
+
+Gremlin
+- Designation changed to Gunship.
+
+----------------
+- Weapons
+----------------
+
+Rounded off many weapon ranges:
+HFL Array 		650 -> 600
+
+Added the Heavy Illuminator
+- Moderate damage beam weapon that increases the ship's range while it is painting any enemy ship.
+- Poor tracking leaves it ineffective against lighter ships.
+- Fits medium energy slots.
+
+Added the Syndicate Autocannon
+- Long range kinetic cannon with very reasonable accuracy, but poor armor penetration and a glacial traverse rate.
+- Fits medium ballistic slots.
+
+Brytare Rockets
+- Weapon sprites updated.
+- All missiles fired from a given weapon will now ignite their engine at the same time.
+- Now launch forwards from the weapon (except the Kalk bomber's rocket pack).
+- Dispersal behavior adjusted.
+- Slightly increased the range of the Kalk bomber's rocket pack.
+- Once again friendly fire-capable.
+- Launcher (small mount) ammunition count increased by 33%.
+
+HFL, HFL Array
+- Flux per shot reduced by 16%
+-- Now 0,6 flux/damage.
+
+Belt Blaster
+- Range increased to 1000.
+- Now has a 0.3 second chargeup delay before firing the first shot in a volley.
+-- Overall ROF is unchanged.
+- Flux per shot reduced by 17%.
+-- Now 1,25 flux/damage.
+
+Minehead Cluster Rocket
+- In-flight missiles now have a visual tell to indicate if they still carry bomblets.
+- Slightly increased bomblet lifetime.
+
+Light Triple Autocannon
+- Flux per shot increased to 40.
+-- Matches Single/Dual model.
+-- Now 0,8 flux/damage.
+
+Light Thumper, Overdriven Thumper
+- Flux per shot reduced to 25.
+-- Now 0,25 flux/damage.
+
+Rust Belt access to AKC c69 replaced with Heavy Machinegun.
+Adjusted some weapon tiers.
+
+----------------
+- Other
+----------------
+
+Added commission dialogue.
+Added AI core turn-in dialogue.
+Added bar descriptions.
+Added port descriptions.
+Added fleet comm dialogue.
+
+Added access to a few weapons for the Mercenaries.
+
+Fixed Targeting Pulse sometimes not rendering visuals.

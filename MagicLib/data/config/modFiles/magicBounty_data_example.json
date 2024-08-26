@@ -52,7 +52,9 @@
                                                                # $system The star system that the bounty fleet is in.
                                                                # $location The body that the bounty fleet has been placed near.
                                                                # $shipName The name of the bounty flagship.
-                                                               # $faction The name of the faction (with article) of the bounty fleet.
+                                                               # $targetFaction The name of the faction (with article) of the bounty fleet.
+                                                               # $givingFaction The name of the faction (with article) that's giving the bounty.
+                                                               # $rewardFaction The name of the faction (with article) that's giving the bounty reward (typically same as givingFaction).
                                                                # $reward The amount of credits being given as a reward.
                                                                # $name The name of the bounty commander.
                                                                # $firstName The first name of the bounty commander.
@@ -114,6 +116,7 @@
 
         #TARGET COMMANDER (OPTIONAL)
 
+        "target_importantPersonId": "your_important_person_id_optional", # Default: no value. The id of the important person to be used for the bounty commander. Replaces the rest of the target commander settings if set.
         "target_first_name":"Firstname", # Default: randomly selected based on faction.
         "target_last_name":"Lastname", # Default: randomly selected based on faction.
         "target_portrait":"portraitId", # Default: randomly selected based on faction. Id of the sprite in settings.json/graphics/characters or full file path.
@@ -177,7 +180,7 @@
 
         #LOCATION
 
-        "location_entitiesID": [  # Default: no preset. Preset locations to spawn the bounty fleet, can default to the preferences if those are defined and the location doesn't exists due to Nexerelin random mode.
+        "location_entitiesID": [  # Default: no preset. Preset locations (SectorEntityTokens) to spawn the bounty fleet, will fall back to other choices (if they are defined) and if this preset location doesn't exist (eg due to Nexerelin's random mode).
             "location1",
             "location2",
         ],

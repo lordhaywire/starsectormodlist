@@ -1,0 +1,36 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "pulse_laser_fire",
+  "glowColor": [
+    255,
+    0,
+    0,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_chargedlaser_glow_hardpoint.png",
+  "hardpointOffsets": [
+    10.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_chargedlaser_hardpoint.png",
+  "id": "filgap_chargedlaser",
+  "projectileSpecId": "filgap_chargedlaser_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_chargedlaser_glow_turret.png",
+  "turretOffsets": [
+    3,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_chargedlaser_turret.png",
+  "type": "ENERGY"
+}

@@ -1,7 +1,7 @@
 {
     "displayName": "Roider",
     "fluxCapacitors": 2,
-    "fluxVents": 1,
+    "fluxVents": 3,
     "hullId": "tarsus",
     "hullMods": [
         "roider_midas",
@@ -9,6 +9,7 @@
         "roider_fighterClamps"
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_tarsus_Roider",
     "weaponGroups": [
         {

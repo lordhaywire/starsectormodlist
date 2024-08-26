@@ -22,7 +22,7 @@
     {
       "id": "WS 000",
       "size": "MEDIUM",
-      "type": "COMPOSITE",
+      "type": "SYSTEM",
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
@@ -41,10 +41,10 @@
     {
       "id": "WS 001",
       "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "MISSILE",
       "mount": "TURRET",
-      "arc": 240,
-      "angle": 180,
+      "arc": 360,
+      "angle": 0,
       "locations": [-18, 0]
     },
     {
@@ -72,8 +72,8 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": 65,
+      "arc": 250,
+      "angle": 15,
       "locations": [60, 24],
       "renderOrderMod": 200
     },
@@ -82,8 +82,8 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": -65,
+      "arc": 250,
+      "angle": -15,
       "locations": [60, -24],
       "renderOrderMod": 200
     },
@@ -92,8 +92,8 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": 65,
+      "arc": 190,
+      "angle": 45,
       "locations": [34, 24],
       "renderOrderMod": 200
     },
@@ -102,8 +102,8 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": -65,
+      "arc": 190,
+      "angle": -45,
       "locations": [34, -24],
       "renderOrderMod": 200
     },
@@ -112,8 +112,8 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": 65,
+      "arc": 165,
+      "angle": 57.5,
       "locations": [8, 24],
       "renderOrderMod": 200
     },
@@ -122,15 +122,15 @@
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 150,
-      "angle": -65,
+      "arc": 165,
+      "angle": -57.5,
       "locations": [8, -24],
       "renderOrderMod": 200
     },
     {
       "id": "WS 010",
       "size": "SMALL",
-      "type": "COMPOSITE",
+      "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 140,
       "angle": 70,
@@ -140,7 +140,7 @@
     {
       "id": "WS 011",
       "size": "SMALL",
-      "type": "COMPOSITE",
+      "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 140,
       "angle": -70,

@@ -1,0 +1,40 @@
+{
+  "variantId": "prv_shade_aux",
+  "hullId": "shade",
+  "displayName": "Auxiliary",
+  "goalVariant": false,
+  "fluxCapacitors": 10,
+  "fluxVents": 9,
+  "quality": 0.75,
+  "permaMods": [],
+  "hullMods": [
+    "prv_flickercore"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "amblaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 001": "prv_akers",
+        "WS 002": "prv_akers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_sipdlaser",
+        "WS 005": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

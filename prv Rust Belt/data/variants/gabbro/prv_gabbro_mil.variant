@@ -1,0 +1,70 @@
+{
+  "variantId": "prv_gabbro_mil",
+  "hullId": "prv_gabbro",
+  "displayName": "Militarized",
+  "goalVariant": true,
+  "fluxCapacitors": 3,
+  "fluxVents": 30,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_synac",
+        "WS 002": "prv_synac",
+        "WS 004": "prv_synac",
+        "WS0005": "prv_synac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "harpoon_single",
+        "WS0010": "harpoon_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_heavyilluminator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_heavyilluminator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS0008": "vulcan",
+        "WS0011": "vulcan",
+        "WS0012": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "mininglaser",
+        "WS 006": "mininglaser",
+        "WS0001": "mininglaser",
+        "WS0002": "mininglaser"
+      }
+    },
+  ],
+  "modules": [],
+  "wings": []
+}

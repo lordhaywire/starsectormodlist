@@ -1,7 +1,7 @@
 {
     "displayName": "Overdriven",
     "fluxCapacitors": 10,
-    "fluxVents": 0,
+    "fluxVents": 2,
     "goalVariant": false,
     "hullId": "roider_gambit_p_early",
     "hullMods": ["safetyoverrides"],
@@ -11,15 +11,15 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS 001": "chaingun"}
+            "weapons": {
+                "WS 002": "chaingun",
+                "WS 003": "chaingun"
+            }
         },
         {
-            "autofire": false,
+            "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS 002": "shredder",
-                "WS 003": "shredder"
-            }
+            "weapons": {"WS 004": "roider_doldrums"}
         },
         {
             "autofire": true,
@@ -30,7 +30,6 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 004": "lightdualmg",
                 "WS 006": "lightmg",
                 "WS 007": "lightmg"
             }

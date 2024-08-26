@@ -1,0 +1,5 @@
+{
+	"ruleCommandPackages":[
+        "nomadic_survival.campaign.rulecmd",
+    ],
+}

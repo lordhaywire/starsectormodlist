@@ -1,4 +1,0 @@
-id,name,class,priority,special,requiredMod
-ocua_food_industry,Food Processing Plant,data.scripts.world.exerelin.industry.ocua_food_industry,,,OcuA
-ocua_cookie_industry,Oculian Bakery Complex,data.scripts.world.exerelin.industry.ocua_cookie_industry,,TRUE,OcuA
-ocua_orbital_matrix,Orbital Assembly Matrix,data.scripts.world.exerelin.industry.ocua_orbital_matrix,,TRUE,OcuA

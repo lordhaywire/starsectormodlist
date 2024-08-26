@@ -1,0 +1,14 @@
+{
+	"variantOverrides":{
+		"prv_gnista_lc_outdated":3,
+		"prv_gnista_lc_overdriven":7,
+	},
+	"knownWeapons":{
+		"tags":[
+			"prv_lp_bp",
+		],
+	},
+	"knownFighters":{
+		"tags":["prv_lp_bp"],
+	},
+}

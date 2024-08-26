@@ -1,0 +1,9 @@
+{
+	"graphics":{
+		"planets":{
+			"surface_randis":"data/scripts/world/systems/surface_randis.jpg",
+			"surface_lido":"data/scripts/world/systems/surface_lido.jpg",
+		},
+	}
+}
+

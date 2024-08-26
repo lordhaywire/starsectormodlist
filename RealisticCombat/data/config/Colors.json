@@ -1,0 +1,34 @@
+{
+    "Whether to use the settings written in the code":"",
+    "rather than the ones in this file":"",
+    "default":true,
+    
+    "Alpha from 0 to 1, of all added HUD elements":"",
+    "alpha":0.5,
+
+    "Color corresponding to flux":"",
+    "flux":[200,200,200,255],
+
+    "Color corresponding to a ship that is...":"",
+    
+    "Player-controlled":"",
+    "player":[50,100,255,255],
+
+    "Friendly":"",
+    "friendly":[0,255,0,255,255],
+
+    "Allied":"",
+    "ally":[255,255,0,255],
+
+    "Enemy":"",
+    "enemy":[255,0,0,255],
+
+    "Player-targeted":"",
+    "target":[250,0,0,255],
+
+    "Neutral":"",
+    "neutral":[75,75,75,255],
+
+    "A hulk":"",
+    "hulk":[192,192,192,255]
+}

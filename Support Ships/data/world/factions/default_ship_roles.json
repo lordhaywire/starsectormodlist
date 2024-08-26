@@ -13,8 +13,9 @@
 		"supportships_maunder_CQC":3,
 		"supportships_maunder_overclocked":3,
 		
-		"supportships_maunderp_Assault":5,
-		"supportships_maunderp_Support":5,
+		"supportships_maunderp_Assault":4,
+		"supportships_maunderp_Support":3,
+		"supportships_maunderp_Bargain":3,
 		
 		"fallback":{"combatSmall":1},
 	},
@@ -28,15 +29,17 @@
 
 		"supportships_carton(TT)_Standard":3,
 		
-		"supportships_cartonp_Barrage":5,
-		"supportships_cartonp_support":5,
+		"supportships_cartonp_Barrage":4,
+		"supportships_cartonp_support":3,
+		"supportships_cartonp_Backline":3,
 		
 		"supportships_maunder_Balanced":4,
 		"supportships_maunder_CQC":3,
 		"supportships_maunder_overclocked":3,
 		
-		"supportships_maunderp_Assault":5,
-		"supportships_maunderp_Support":5,
+		"supportships_maunderp_Assault":4,
+		"supportships_maunderp_Support":3,
+		"supportships_maunderp_Bargain":3,
 		
 		"supportships_faraday_Balanced":10,
 		
@@ -44,11 +47,16 @@
 	},
 	"combatMedium":{
 
-		"supportships_apsis_Standard":5,
-		"supportships_apsis_Support":5,
+		"supportships_apsis_Standard":4,
+		"supportships_apsis_Support":3,
+		"supportships_apsis_Supression":3,
 		
-		"supportships_lammergeier_Balanced":5,
-		"supportships_lammergeier_Overclocked":5,
+		"supportships_lammergeier_Balanced":4,
+		"supportships_lammergeier_Overclocked":3,
+		"supportships_lammergeier_Rushdown":3,
+
+		"supportships_lammergeierlg_Precision":5,
+		"supportships_lammergeierlg_Agressor":5,
 		
 		"supportships_tercio_Assault":5,
 		"supportships_tercio_Shielded":5,
@@ -90,12 +98,15 @@
 	"civilianRandom":{
 
 		"supportships_maunders_Luxury":1,
+		"supportships_hospice_Hospital":4,
 
 	},
 	"carrierMedium":{
 		
-		"supportships_parabola_Standard":5,
-		"supportships_parabola_shock":5,
+		"supportships_parabola_Standard":4,
+		"supportships_parabola_shock":3,
+		"supportships_parabola_Frontline":3,
+		"supportships_hospice_Combat":7,
 		
 	},
 	"freighterSmall":{

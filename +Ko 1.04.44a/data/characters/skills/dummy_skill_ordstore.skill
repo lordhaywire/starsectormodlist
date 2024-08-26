@@ -1,0 +1,14 @@
+{
+	"id":"dummy_skill_ordstore",
+	"governingAptitude":"industry",
+	"compressHullmods":false,
+	"effectGroups":[
+		{
+			"requiredSkillLevel":1,
+			"effectBasedOnLevel":false,
+			"effects":[
+                {"type":"HULLMOD_UNLOCK", "hullmods":{"ordstore":1}},
+            ]
+		},
+	],
+}

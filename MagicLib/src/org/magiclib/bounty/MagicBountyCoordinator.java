@@ -4,16 +4,22 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
 import com.fs.starfarer.api.campaign.SectorEntityToken;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
+import com.fs.starfarer.api.campaign.comm.IntelManagerAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
 import com.fs.starfarer.api.campaign.rules.MemoryAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
 import com.fs.starfarer.api.impl.campaign.ids.FleetTypes;
+import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
 import com.fs.starfarer.api.util.Misc;
 import org.apache.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.magiclib.LunaWrapper;
+import org.magiclib.LunaWrapperSettingsListener;
+import org.magiclib.bounty.intel.BountyBoardIntelPlugin;
+import org.magiclib.bounty.intel.BountyBoardProvider;
 import org.magiclib.util.MagicCampaign;
 import org.magiclib.util.MagicSettings;
 import org.magiclib.util.MagicTxt;
@@ -35,15 +41,79 @@ public final class MagicBountyCoordinator {
     private static MagicBountyCoordinator instance;
     private static final long MILLIS_PER_DAY = 86400000L;
     private static final Logger LOG = Global.getLogger(MagicBountyCoordinator.class);
+    private static Boolean DEADLINES_ENABLED = false;
+    private static final String isIntelImportantMemKey = "$magiclib_isBountyIntelImportant";
 
     @NotNull
     public static MagicBountyCoordinator getInstance() {
         return instance;
     }
 
+    public static void beforeGameSave() {
+        // Remember whether the intel is important.
+        if (getIntel() != null)
+            Global.getSector().getMemoryWithoutUpdate().set(isIntelImportantMemKey, getIntel().isImportant());
+        removeIntel();
+    }
+
+    public static void afterGameSave() {
+        initIntel();
+    }
+
     public static void onGameLoad() {
         instance = new MagicBountyCoordinator();
         MagicBountyLoader.validateAndCullLoadedBounties();
+
+        initIntel();
+
+        if (Global.getSettings().getModManager().isModEnabled("lunalib")) {
+            LunaWrapper.addSettingsListener(new LunaWrapperSettingsListener() {
+                @Override
+                public void settingsChanged(@NotNull String s) {
+                    DEADLINES_ENABLED = LunaWrapper.getBoolean(MagicVariables.MAGICLIB_ID, "magiclib_enableBountyDeadlines");
+
+                    if (DEADLINES_ENABLED == null) {
+                        DEADLINES_ENABLED = false;
+                    }
+                }
+            });
+        }
+    }
+
+    @Nullable
+    public static BountyBoardIntelPlugin getIntel() {
+        if (Global.getSector().getIntelManager().hasIntelOfClass(BountyBoardIntelPlugin.class)) {
+            return (BountyBoardIntelPlugin) Global.getSector().getIntelManager().getFirstIntel(BountyBoardIntelPlugin.class);
+        }
+        return null;
+    }
+
+    private static void removeIntel() {
+        if (Global.getSector() == null) return;
+        IntelManagerAPI intelManager = Global.getSector().getIntelManager();
+        while (intelManager.hasIntelOfClass(BountyBoardIntelPlugin.class))
+            intelManager.removeIntel(Global.getSector().getIntelManager().getFirstIntel(BountyBoardIntelPlugin.class));
+    }
+
+    private static void initIntel() {
+//        if (!isEnabled) return
+        if (Global.getSector() == null) return;
+        removeIntel();
+
+        // Don't show if there aren't any.
+        boolean hasBounty = false;
+        for (BountyBoardProvider provider : BountyBoardIntelPlugin.Companion.getPROVIDERS()) {
+            if (!provider.getBounties().isEmpty()) {
+                hasBounty = true;
+                break;
+            }
+        }
+        if (!hasBounty) return;
+
+        BountyBoardIntelPlugin intel = new BountyBoardIntelPlugin();
+        Global.getSector().getIntelManager().addIntel(intel, true);
+        intel.setImportant(Global.getSector().getMemoryWithoutUpdate().getBoolean(isIntelImportantMemKey));
+        intel.setNew(false);
     }
 
     @Nullable
@@ -81,8 +151,8 @@ public final class MagicBountyCoordinator {
             activeBountiesByKey = (Map<String, ActiveBounty>) Global.getSector().getMemoryWithoutUpdate().get(BOUNTIES_MEMORY_KEY);
 
             if (activeBountiesByKey == null) {
-                Global.getSector().getMemoryWithoutUpdate().set(BOUNTIES_MEMORY_KEY, new HashMap<>());
-                activeBountiesByKey = (Map<String, ActiveBounty>) Global.getSector().getMemory().get(BOUNTIES_MEMORY_KEY);
+                activeBountiesByKey = new HashMap<>();
+                Global.getSector().getMemoryWithoutUpdate().set(BOUNTIES_MEMORY_KEY, activeBountiesByKey);
             }
         }
 
@@ -101,7 +171,7 @@ public final class MagicBountyCoordinator {
             long timestampSinceBountyCreated = Math.max(0, Global.getSector().getClock().getTimestamp() - entry.getValue().getBountyCreatedTimestamp());
 
             // Clear out old bounties that were never accepted after UNACCEPTED_BOUNTY_LIFETIME_MILLIS days.
-            if (timestampSinceBountyCreated > UNACCEPTED_BOUNTY_LIFETIME_MILLIS && entry.getValue().getStage() == ActiveBounty.Stage.NotAccepted) {
+            if (timestampSinceBountyCreated > UNACCEPTED_BOUNTY_LIFETIME_MILLIS && entry.getValue().getStage() == ActiveBounty.Stage.NotAccepted && getDeadlinesEnabled()) {
                 LOG.info(
                         String.format("Removing expired bounty '%s' (not accepted after %d days), \"%s\"",
                                 entry.getKey(),
@@ -111,7 +181,7 @@ public final class MagicBountyCoordinator {
                 try {
                     iterator.remove();
                 } catch (Exception e) {
-                    LOG.error("Error removing bounty " + entry.getKey(), e);
+                    LOG.warn("Error removing bounty " + entry.getKey(), e);
                 }
             } else if (entry.getValue().getStage().ordinal() >= ActiveBounty.Stage.FailedSalvagedFlagship.ordinal()
                     && entry.getValue().getIntel() == null) {
@@ -327,7 +397,9 @@ public final class MagicBountyCoordinator {
                 return null;
             }
 
-            PersonAPI captain = MagicCampaign.createCaptainBuilder(MagicTxt.nullStringIfEmpty(spec.fleet_composition_faction))
+            PersonAPI captain = spec.target_importantPersonId != null
+                    ? Global.getSector().getImportantPeople().getPerson(spec.target_importantPersonId)
+                    : MagicCampaign.createCaptainBuilder(MagicTxt.nullStringIfEmpty(spec.fleet_composition_faction))
                     // because apparently putting null in the json shows up as "null", a string...
                     .setIsAI(spec.target_aiCoreId != null && !spec.target_aiCoreId.equals("null"))
                     .setAICoreType(spec.target_aiCoreId)
@@ -373,6 +445,9 @@ public final class MagicBountyCoordinator {
             // Add both a constant tag to the fleet as well as the bounty key that it is for.
             fleet.addTag(MagicBountyLoader.BOUNTY_FLEET_TAG);
             fleet.addTag(bountyKey);
+
+            fleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_IGNORES_OTHER_FLEETS, true);
+            fleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_DO_NOT_IGNORE_PLAYER, true);
 
             // Set fleet to max CR
             for (FleetMemberAPI member : fleet.getFleetData().getMembersListCopy()) {
@@ -449,7 +524,7 @@ public final class MagicBountyCoordinator {
 
             if (spec != null) {
                 if (MagicTxt.nullStringIfEmpty(spec.job_memKey) != null) {
-                    Global.getSector().getMemoryWithoutUpdate().set(spec.job_memKey, null);
+                    Global.getSector().getMemoryWithoutUpdate().unset(spec.job_memKey);
                 }
             } else {
                 throw new RuntimeException(String.format("Couldn't find %s.", bountyKey));
@@ -522,5 +597,9 @@ public final class MagicBountyCoordinator {
 
     public void setPostScalingCreditRewardMultiplier(float postScalingCreditRewardMultiplier) {
         this.postScalingCreditRewardMultiplier = postScalingCreditRewardMultiplier;
+    }
+
+    public static Boolean getDeadlinesEnabled() {
+        return DEADLINES_ENABLED;
     }
 }

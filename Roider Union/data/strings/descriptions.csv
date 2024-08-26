@@ -1,45 +1,49 @@
 id,type,text1,text2,text3,notes
 # ships,,,,,
 roider_drone_breaker,SHIP,"In the old days just a Blasting Laser on a basic drone chassis, the Rockpipers upgraded the Breaker into a hybrid combat/mining drone, equally adept at blasting rocks and ships.",,,
-roider_hopskip2,SHIP,"A modified version of the notorious Hopskip shuttle, the Mk.II’s high speed and long range payload can make it difficult to intercept.",,,
+roider_hopskip2,SHIP,"A modified version of the notorious Hopskip shuttle, the Mk.II's high speed and long range payload can make it difficult to intercept.",,,
 roider_bolt,SHIP,"Composed of a cockpit and missile pod crammed between several engines, the Bolt reaches its target with lightning speed.",,,
-roider_rocksaw,SHIP,"The thrilling firepower of the Rocksaw requires pilots be pried from the controls. Its chaingun, though mighty, can not fire continuously.",,,
-roider_dragline,SHIP,"Inspired by the Xyphos and resembling an air-gunship, the Dragline is big and tough. Its turrets protect nearby ships from missiles while its own rockets rain upon the unwary.",,,
-roider_duster,SHIP,"The Duster's turret and bombs, the latter stolen from Wasp blueprints, let it sweep aside fighter screens and missile barrages.",,,
-roider_drone_tracker,SHIP,"Cheap, swarming PD drones with a weak, but high dissipation shield.",,,
-roider_armature_left,SHIP,"Only the strongest PD grids can stop this tough and quick drone. Reports of its AI achieving ""uncanny"" torpedo hit rates hasn't prompted an official investigation. Yet.",,,
-roider_armature,SHIP,"Only the strongest PD grids can stop these tough and quick drones. Reports of their AI achieving ""uncanny"" torpedo hit rates hasn't prompted an official investigation. Yet.",,,
+roider_rocksaw,SHIP,The thrilling firepower of the Rocksaw requires pilots be pried from the controls.,,,
+roider_duster,SHIP,"The Duster's turret, missiles, and bombs, the latter stolen from Wasp blueprints, let it sweep aside fighter screens and missile barrages.",,,
+roider_armature_left,SHIP,"A tough and quick drone with the relentless Tracker Core at its heart. Reports of the core's AI achieving ""uncanny"" torpedo hit rates hasn't prompted an official investigation. Yet.",,,
+roider_armature,SHIP,"Tough and quick drones with the relentless Tracker Core at their hearts. Reports of the core's AI achieving ""uncanny"" torpedo hit rates hasn't prompted an official investigation. Yet.",,,
 ,,,,,
 roider_cyclops,SHIP,"The most common combat frigate of the Roider Union, the Cyclops-class's 360 degree turret coverage and all around good profile make it an excellent escort and skirmisher despite its flimsy hull.
 
 Hacked together by the Korovin shipbreakers, mainly from Hermes-class shuttles, the Cyclops has proved its worth many times over. The design was overhauled and standardized by the Rockpiper Engineering Society just in time for the Kiska Incident.",,,
 roider_pepperbox,SHIP,"Without the demands of a modular weapon system, fitting a Devastator Cannon instead, this Roider redesign of the Mudskipper Mk.II is a reliable PD boat. It even has a shield.",,,
-roider_nolasher,SHIP,"Known for its unorthodox loadouts, the Nolasher-class frigate is cheap and flexible.
-
-Derived from the Wayfarer-class combat freighter, the Rockpipers removed the cargo bay and improved the layout to make the Nolasher an efficient fighting ship.",,,
 roider_roach,SHIP,"Heavily armed but reliant on MIDAS armor and its temporal shell for protection, all bets are off when a Roach-class heavy frigate is deployed in the hands of a skilled pilot.
 
 Extremely advanced compared to other Roider technology, the Roach was made possible when the Roiders stole blueprints and other important data for the Scarab-class heavy frigate during the Kiska Incident. TriTachyon was not pleased, but had to console themselves with their loss after the showdown at Three Sisters Station.",,,
-roider_sheriff,SHIP,"An extremely advanced gunship/drone carrier, rumors abound as to the Sheriff-class frigate's true origins. A partially corrupted blueprint recovered from a pre-Collapse station? A stolen TriTachyon black project? Aliens? One thing is for sure, its uncanny hive-like interior was not designed with humans in mind.",,,
+roider_rockroach,SHIP,"Heavily armed and armored, the Rockroach-class heavy frigate is a Roach equipped with a Damper Field for extra endurance.
+
+Extremely advanced compared to other Roider technology, the Roach was made possible when the Roiders stole blueprints and other important data for the Scarab-class heavy frigate during the Kiska Incident. TriTachyon was not pleased, but had to console themselves with their loss after the showdown at Three Sisters Station.",,,
+roider_sheriff,SHIP,"An extremely advanced gunship, rumors abound as to the Desperado-class frigate's true origins. A partially corrupted blueprint recovered from a pre-Collapse station? A stolen TriTachyon black project? Aliens? One thing is for sure, its uncanny hive-like interior was not designed with humans in mind.",,,
+roider_cowboy,SHIP,"Known for its aggressive loadouts, the Cowboy-class light carrier crams a flight deck into a heavily modified Wayfarer-class combat freighter.
+
+A number of factors led the newly formed Rockpiper Engineering Society to focus on fighter superiority for the Roider Union. Seeing the effectiveness of even a few mining pods clamped to a frigate in small battles, they set their sights on the Wayfarer, common among roiders, for an audacious conversion.",,,
 ,,,,,
-roider_onager,SHIP,"The Onager-class destroyer is often found in the thick of the fighting, teaming up with its fighters to gun down adversaries.
+roider_onager,SHIP,"The Aurochs-class destroyer is often found in the thick of the fighting, teaming up with its fighters to gun down adversaries.
 
-Hastily converted from Mule-class combat freighters by the Korovin shipbreakers, early Onagers were plagued with problems. Nevertheless, they were essential in protecting the newly formed Roider Union. The design's defects were fixed and its mining utility improved by the Rockpipers.",,,
-roider_firestorm,SHIP,"Bristling with turrets and shielded by broadside MIDAS armor, the Firestorm-class gunship incinerates smaller craft. The gun batteries leave little room for other modifications.
+Hastily converted from Mule-class combat freighters by the Korovin shipbreakers, early Aurochs were plagued with problems. Nevertheless, they were essential in protecting the newly formed Roider Union. The design's defects were fixed and its mining utility improved by the Rockpipers.",,,
+roider_onager_damper,SHIP,"The Ram Aurochs leaps into battle with reckless ferocity, trusting its sophisticated doubled Damper Field system to see it through to the end.
 
-Development of a point defense destroyer based on the Tarsus-class freighter began during the Rockpipers' fighter superiority initiative. The Kiska Incident and ensuing conflict with TriTachyon prompted its completion and quick deployment.",,,
-roider_bombard,SHIP,"Designed to provide long-range support with its large ballistic hardpoint, the Bombard-class destroyer features a cruiser-grade targeting core.
+Hastily converted from Mule-class combat freighters by the Korovin shipbreakers, early Aurochs were plagued with problems. Nevertheless, they were essential in protecting the newly formed Roider Union. The design's defects were fixed and its mining utility improved by the Rockpipers.",,,
+roider_firestorm,SHIP,"Bristling with turrets and shielded by broadside MIDAS armor, the Firestorm-class destroyer incinerates smaller craft.
+
+Development of an overgunned destroyer based on the Tarsus-class freighter began before even the Kiska Incident, but was shelved in favor of the Bombard-class destroyer. Resurfacing as the gunship seen today, the Firestorm entered service despite protests from senior officials about its slow speed and short range.",,,
+roider_bombard,SHIP,"Designed to provide long-range support with its large ballistic hardpoint, the Bombard-class destroyer features an antique LIDAR Array.
 
 The Bombard is built around and integrates a Salvage Rig into its frame, making it only slightly less fragile than one might expect. It first saw combat during the Kiska Incident where it fought with distinction; its barrages draining TriTachyon shields and battering their flimsy hulls.",,,
-roider_aurochs,SHIP,"Surprisingly well-armored, the Aurochs-class destroyer wields an EMP emitter with which to fry its enemies.
-
-One of the Roider Union's acquisitions during the Kiska Incident was the design for the EMP emitter famously seen on certain high-end frigates. Unable to power it in such a small hull, the Rockpipers settled on the humble Buffalo-class freighter.",,,
-roider_cowboy,SHIP,"With its array of ballistic turrets the Cowboy-class carrier can ride herd on its drones and fighters or send them from afar to trample.
-
-A number of factors led the newly formed Rockpiper Engineering Society to focus on fighter superiority for the Roider Union. There were not enough existing carriers, however, so the Nebula-class transport, little used by roiders, was selected for conversion. The crew decks were stripped and shuttle bay exposed to make room for a large hangar. The sides were cut open and fitted with drone bays, while an unusual bridge was constructed to fit extensive targeting equipment for the fighters. The end result is equally adept at striking and assault.",,,
 roider_jane,SHIP,"The Jane-class tanker is named after a roider folk hero very similar to the ancient Robin Hood: stealing from megacorps, giving to the poor, and having legendary skill with a rifle.
 
 Deploying a tanker into combat is usually considered suicidal, but the Jane has proven capable of handling itself; unlike the Dram and Phaeton it is based on.",,,
+roider_trailboss,SHIP,"An uncommon ship, the Trailboss-class light carrier supports the battle line with its fighters.
+
+Facing a shortage of dedicated carriers, the Rockpipers selected the Nebula-class transport for conversion. The crew decks were stripped and shuttle bay exposed to make room for a large hangar, while an unusual bridge was constructed to fit extensive targeting equipment.",,,
+roider_calidor,SHIP,"The Calidor-class carrier brings a cruiser's worth of fighters along with enough firepower to protect itself from harrassment.
+
+Constructed from a Nebula-class transport and two destroyed Condor-class light carriers, rumors of a ""roider super Condor"" filtered in from the fringes before the Calidor officially entered Roider Union service. Its Interdictor Array is suspiciously similar to a device mentioned in old spacer tales about the Domain's phase corps.",,,
 ,,,,,
 roider_gambit,SHIP,"Though not very nimble, the heavy armor of the Gambit-class allows it to hold its own against full-sized cruisers. Many commanders prize having one as their flagship.
 
@@ -53,29 +57,45 @@ Early Gambits were known to literally come apart at the seams, as they were buil
 roider_gambit_p_early,SHIP,"Though not very nimble, the heavy armor of the Gambit-class allows it to hold its own against full-sized cruisers. This unfortunate example is an early version, riddled with defects, and has been poorly maintained by its pirate crew.
 
 Early Gambits were known to literally come apart at the seams, as they were built from chopped up Venture-class cruisers. Their firepower was considered worth the cost, however, and the Korovin shipbreakers worked with other corporations to build them. These cooperation agreements led to the founding of the Rockpiper Engineering Society.",,,
-roider_colossus2,SHIP,"This is a Colossus hull modified by the Roider Union into an auxiliary strike-cruiser based on Luddic Path designs. The cargo decks are collapsed and re-welded to greatly thicken the ship’s effective armor while additional turrets have been planted along the hull. At the bow, a large weapon mount capable of launching spreads of Hammer-class torpedoes has been permanently affixed. A damper field, whether stripped from some derelict Mora or built specifically for this ship, holds the whole mess together when under fire.
+roider_ranch,SHIP,"Exemplar of the Roider Union's fighter superiority doctrine, the Ranch-class heavy carrier unleashes a seemingly endless stampede of drones and fighters upon the battlespace.
 
-The Colossus heavy freighter formed the core of Domain frontier supply fleets before it was outmatched by the brutal economic efficiency of the Atlas superfreighter. Thicker than strictly necessary hull plating provides protection against cosmic hazards both natural and human.",,,
-roider_ranch,SHIP,"Exemplar of the Roider Union's fighter superiority doctrine, the Ranch-class carrier unleashes a seemingly endless stampede of drones and fighters upon the battlefield, but relies on escorts to protect itself from direct assault.
+The Ranch's huge internal flight deck and drone bays are carved from the mashed-together hulks of a Mora and Starliner. Designed as a proto-capital ship when the Roider Union's industry was limited, it was used as a testbed for formalizing the Massive Impact Deflection/Ablation System, particularly the ablative armor components.",,,
+roider_ranch_damper,SHIP,"Bullishly aggressive, the Ram Ranch-class heavy carrier trades its extensive drone bays for more engines and and its shields for a doubled Damper Field system.
 
-The Ranch's drone bays and long flight decks are carved from the hull of a Starliner-class transport. Once cleared, the former passenger compartments allow an unusually large amount of hangar space, though bulkheads restrict its efficiency. The hull was used as a testbed for formalizing the Massive Impact Deflection/Ablation System, particularly the ablative armor components.",,,
+The Ranch's huge internal flight deck and drone bays are carved from the mashed-together hulks of a Mora and Starliner. Designed as a proto-capital ship when the Roider Union's industry was limited, it was used as a testbed for formalizing the Massive Impact Deflection/Ablation System, particularly the ablative armor components.",,,
 roider_wrecker,SHIP,"A heavily armored war tug, skirmishers beware the Wrecker-class cruiser! It pulls ships in with its mysterious Phasenet system and smashes them on its guns and shock-absorbing armor module.
 
 Built on the ruins of an Eagle or Falcon cruiser, some consider the Wrecker's design reminiscent of a hawk about to leap into flight. It is a recent but popular design integrating component designs found by tech-mining expeditions. Especially beloved by junkyard dogs for both creating derelicts and neatly arranging them.",,,
-roider_wrecker_p,SHIP,"A heavily armored war tug, skirmishers beware the Wrecker-class cruiser! It pulls ships in with its mysterious Phasenet system and smashes them on its guns and shock-absorbing armor module. This ship has been heavily modified - and poorly maintained - by its pirate crew.
+roider_wrecker_p,SHIP,"A heavily armored war tug, skirmishers beware the Wrecker-class cruiser! It pulls ships in with its mysterious Phasenet system and smashes them on its guns and shock-absorbing armor module.
+ This ship has been heavily modified - and poorly maintained - by its pirate crew.
 
 Built on the ruins of an Eagle or Falcon cruiser, some consider the Wrecker's design reminiscent of a hawk about to leap into flight. It is a recent but popular design integrating component designs found by tech-mining expeditions. Especially beloved by junkyard dogs for both creating derelicts and neatly arranging them.",,,
 ,,,,,
 roider_telamon,SHIP,"The Telamon-class battleship is proof of the Roider Union's industrial maturity. It has an unconventional broadside design, supplemented by fighters and armor modules, which makes it very effective against swarms of small ships.
 
 Only recently developed by the Rockpipers, an Atlas-class superfreighter serves as an anchor for the battleship's frame and is incorporated into the final structure. Many subsystems are made using blueprints stolen from TriTachyon.",,,
-roider_argos,SHIP,"A mobile dock, the Argos-class mothership is equipped with the right tools to convert freighters and shuttles into functioning warships, if you know what you're doing. It also has giant cargo holds, plenty of crew quarters, thick armor, heavy missile armament, and, courtesy of being a converted Prometheus, generous fuel storage.
+roider_argos,SHIP,"A mobile dock, the Argos-class mothership is equipped with the right tools to convert freighters and shuttles into functioning warships, if you know what you're doing. It also has giant cargo holds, plenty of crew quarters, thick armor, swarms of drones, and, courtesy of being a converted Prometheus, generous fuel storage.
 
-It is unclear when the Argos design was first introduced. The earliest reports are from independent salvors in the fringe, where Argosi were spotted serving as hubs for tech-mining expeditions. More recently a few have been sighted in the hands of ill-reputed roiders, along with a distinct uptick in merchant insurance claims.",,,
+It is unclear when the Argos design was first introduced. The earliest reports are from independent salvors in the fringes, where Argosi were spotted serving as hubs for tech-mining expeditions. More recently a few have been sighted in the hands of ill-reputed roiders, along with a distinct uptick in merchant insurance claims.",,,
+,,,,,
+roider_frame_frigate,SHIP,A frigate frame prepared for transport to a ship conversion facility.,,,
+roider_frame_destroyer,SHIP,"A destroyer frame prepared for transport to a ship conversion facility. If converted into a frigate, the extra material can be used for a second frigate.",,,
+roider_frame_cruiser,SHIP,"A cruiser frame prepared for transport to a ship conversion facility. If converted into a smaller ship, the extra material can be used for more conversions.",,,
+roider_frame_capital,SHIP,"A capital ship frame prepared for transport to a ship conversion facility. If converted into a smaller ship, the extra material can be used for more conversions.",,,
 ,,,,,
 # ship systems,,,,,
 roider_phasenet,SHIP_SYSTEM,Pulls a target towards the front of the Wrecker. High mass and speed resist the effect.,,,
 roider_dreadLoaders,SHIP_SYSTEM,Engages negentropic devices that increase ballistic weapons' rate of fire while applying an entropic aura to their projectiles. Entropic buildup must be dissipated before the loaders disintegrate.,,,
+roider_entropyamp_lr,SHIP_SYSTEM,"Temporarily increases the damage taken by the target ship. Generates a significant amount of flux when used.
+ Extendedrange.
+
+The duration of the effect is in the reference frame of the source ship; if it phases or otherwise experiences an altered time rate, the duration of the effect will be likewise affected for outside observers.",Offensive,Increases the damage taken by the target ship. Generates a significant amount of flux when used. Extended range.,
+roider_interdictor,SHIP_SYSTEM,"Interferes with the target ship's drive field, disabling all of its engines.
+",Offensive,"Interferes with the target ship's drive field, disabling all of its engines.
+",
+roider_reservewing,SHIP_SYSTEM,"Deploys reserve fighters that can fight for a short time before returning to the carrier, temporarily increasing the number of fighters in the wing by 1.5x (at least 1).",Fighter,"Deploys reserve fighters that can fight for a short time before returning to the carrier, temporarily increasing the number of fighters in the wing by 1.5x (at least 1).",
+roider_hopskipBurn,SHIP_SYSTEM,"After launching its payload, the Mk.II uses its infamous burn to escape retribution.",,,
+roider_flareLauncher,SHIP_SYSTEM,Launches orbiting flares that distract the guidance systems of incoming missiles and PD weapons. The flares also track missiles and any missile impacting a flare will be destroyed.,Defensive,Launches orbiting flares to confuse the guidance systems of nearby enemy missiles. The flares are fast and actively track the missiles.,
 ,,,,,
 # weapons,,,,,
 roider_blastinglaser,WEAPON,"Intended for mining, this weapon is often used in an assault or point defense role.
@@ -86,7 +106,9 @@ roider_hazard_mrm,WEAPON,"Cheap, small, and less-than-safe to handle, this guide
 roider_marksman,WEAPON,"Though the Sharpshooter's mediocre rate of fire limits its utility against fighters, its long range, perfect accuracy, and high damage per shot eliminates missiles with great precision.",,,
 roider_spike_driver,WEAPON,"A powerful, short range kinetic cannon that overwhelms weak shield generators in just a few hits.",,,
 roider_pile_driver,WEAPON,"An enormous cannon that pummels its targets with huge kinetic rounds. Its range, however, is limited and its efficiency questionable.",,,
-roider_rotary_hammer,WEAPON,"This launcher's unusual rotating loader mechanism is significantly faster than standard systems and can be fed by hand if the magazine is disconnected. Some speculate it was intended to load two torpedoes at once, instead of the warhead and propulsion separately.",,,
+roider_rotary_hammer,WEAPON,This extravagent revolving launcher fires quickly and allows a discerning captain to choose precisely how many torpedoes to use.,,,
+roider_doldrums,WEAPON,"Flashy and unusually efficient, many unwitting ships have been left sitting dead in space after a barrage from this powerful chaingun.",,,
+roider_doldrums_fighter,WEAPON,"Flashy and unusually efficient, many unwitting ships have been left sitting dead in space after a barrage from this powerful chaingun.",,,
 ,,,,,
 # fighter-only weapons,,,,,
 roider_marksman_mini,WEAPON,"Though the Sharpshooter's mediocre rate of fire limits its utility against fighters, its long range, perfect accuracy, and high damage per shot eliminates missiles with great precision. This version is miniaturized for use on fighters.",,,
@@ -107,12 +129,16 @@ Features the same medium to long-range rockets found on smaller launchers. Rocke
 
 Performs well against larger targets due to the higher chance of striking with multiple rockets. A rocket attack is often used as a screen before a torpedo strike to reduce the effectiveness of Point Defense systems. ",,,
 roider_hammer_armature,WEAPON,"This dumb-fire rocket was ubiquitous in the Sector pre-Collapse due to civilian applications discovered by asteroid miners. The go-to strike weapon of the desperately under-equipped, the Hammer is most often employed by poor independent militias, Pirates, and especially the Luddic Path. This has led to the mildly blasphemous alternative name for the weapon, ""Ludd's Hammer"".",,,
+roider_fragbomb,WEAPON,"Releases a cluster of free-floating bomblets that retain the momentum of the launching craft. The bomblets are equipped with a proximity fuse.
+
+A Frag Bomb projector fires Mark VI fragmentation bomblets from three tubes. Unguided and without a propulsion system, the bomblets rely on a friend-or-foe targeting system. Their vast numbers allow them to cover a wide swath of space, effectively creating a Point Defense barrier in that location, albeit for a limited time. When the proximity fuse is triggered by an enemy craft, the bomblet will detonate, achieving similar effects to those of flak weapons.",,,
 ,,,,,
 # stuff,,,,,
 roider,FACTION,"An alliance made up of fiercely independent roiders (roaming asteroid miners) and modest corporations, it's a small wonder the Roider Union formed at all. The expertise of the Korovin shipbreakers and the innovations of the Rockpiper Engineering Society have since produced a formidable arsenal of conversions, retrofits, and entirely new materiel.
 Conversion and retrofitting services are offered at Union HQs, but the more difficult retrofits are only offered to Union members.",,,
 roider_cache,CUSTOM,A loot stash.,,,
 roider_cache_major,CUSTOM,A major loot stash.,,,
+roider_nomadBase__desc,CUSTOM,"A roider nomad base, home to a significant semi-permanent population. Trade is barely regulated, if that, and a nomad Argos-class mothership is almost always selling retrofit services.",,,
 ,,,,,
 # Ounalashka System,,,,,
 roider_amaknak_desc,CUSTOM,"Habitable in the days of the Domain, Amaknak was devestated by the Collapse. The ruins have been frequently used as target practice and their vaporized remains choke the air with a perpetual haze.",,Only a few lonely mine beacons broadcast from this ruined world.,
@@ -130,6 +156,6 @@ roider_coldRock_bastion_desc,CUSTOM,"A monument to the decline of civilization, 
 roider_attuStation_desc,CUSTOM,"Battered and beaten by asteroid strikes, Holtz Refining Complex is a notable metal supplier for the Hegemony. Roiders from all the surrounding systems come here to sell their hauls and catch some R&R.",,,
 ,,,,,
 # Kiska System,,,,,
-roider_druzhininsAnchorage_desc,CUSTOM,"Named after a local miner hero, Druzhinin’s Anchorage was liberated from pirates by the Roider Union. Rings of habitats and long, arching space docks give the station an anchor-like shape. A number of relatively new citadels and weapon platforms reflect the state of affairs.",,,
+roider_druzhininsAnchorage_desc,CUSTOM,"Named after a local miner hero, Druzhininï¿½s Anchorage was liberated from pirates by the Roider Union. Rings of habitats and long, arching space docks give the station an anchor-like shape. A number of relatively new citadels and weapon platforms reflect the state of affairs.",,,
 roider_threeSisters_desc,CUSTOM,"Run by a coalition of independent trading companies, Three Sisters Station is a hot-spot for smuggling salvaged technology to corporate buyers.",,,
 roider_zinStation_desc,CUSTOM,"A formerly-secret research station, the Zin Prototype Shipyard was discovered by the Roider Union and raided in the Kiska Incident. Experimental technology is still tested here, but now with a much heavier garrison.",,,

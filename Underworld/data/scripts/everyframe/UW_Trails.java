@@ -8,6 +8,7 @@ import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.input.InputEventAPI;
 import com.fs.starfarer.api.loading.ProjectileSpawnType;
 import com.fs.starfarer.api.util.IntervalUtil;
+import data.scripts.UnderworldModPlugin;
 import java.awt.Color;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -242,7 +243,19 @@ public class UW_Trails extends BaseEveryFrameCombatPlugin {
     @Override
     public void init(CombatEngineAPI engine) {
         this.engine = engine;
-        Global.getCombatEngine().getCustomData().put(DATA_KEY, new LocalData());
+    }
+
+    public static void createIfNeeded() {
+        if (!UnderworldModPlugin.hasMagicLib) {
+            return;
+        }
+
+        if (Global.getCombatEngine() != null) {
+            if (!Global.getCombatEngine().getCustomData().containsKey(DATA_KEY)) {
+                Global.getCombatEngine().getCustomData().put(DATA_KEY, new LocalData());
+                Global.getCombatEngine().addPlugin(new UW_Trails());
+            }
+        }
     }
 
     private static final class LocalData {

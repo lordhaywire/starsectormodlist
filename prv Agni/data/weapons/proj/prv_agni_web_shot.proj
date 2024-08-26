@@ -1,0 +1,16 @@
+{
+	"id":"prv_agni_web_shot",
+	"onHitEffect":"prv.agni.weapons.prv_agni_web_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":240,
+	"width":54,
+	"fadeTime":0.25,
+	"fringeColor":[100,100,100,255],
+	"coreColor":[255,255,255,200],
+	"textureType":"SMOOTH",  # only needed for BEAM spawnType
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+}

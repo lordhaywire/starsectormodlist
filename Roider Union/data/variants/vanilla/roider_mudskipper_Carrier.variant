@@ -2,20 +2,20 @@
     "displayName": "Carrier",
     "fluxCapacitors": 0,
     "fluxVents": 0,
-	"goalVariant":true,
+    "goalVariant": true,
     "hullId": "mudskipper",
     "hullMods": [
-		"militarized_subsystems",
-		"unstable_injector",
-		"roider_fighterClamps",
-	],
+        "militarized_subsystems",
+        "unstable_injector",
+        "roider_fighterClamps"
+    ],
     "permaMods": [],
-    "quality": 0.5,
+    "sMods": [],
     "variantId": "roider_mudskipper_Carrier",
     "weaponGroups": [{
         "autofire": false,
         "mode": "LINKED",
-        "weapons": {"WS 003": "lightmg"}
+        "weapons": {"WS 003": "vulcan"}
     }],
     "wings": ["talon_wing"]
 }

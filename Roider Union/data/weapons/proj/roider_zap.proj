@@ -7,8 +7,8 @@
 	"center":[4.5,8],
 	"collisionRadius":10,
 	"collisionClass":"MISSILE_NO_FF",
-	"onHitEffect":"scripts.weapons.Roider_ArcOnHitEffect",
-	"onFireEffect":"scripts.weapons.Roider_ZapOnFireEffect",
+	"onHitEffect":"roiderUnion.weapons.ArcOnHitEffect",
+	"onFireEffect":"roiderUnion.weapons.ZapOnFireEffect",
 	"explosionColor":[255,255,200,80],  # purely visual, will get a white additively blended core on top of this color
 	"explosionRadius":30, # purely visual
 	"fadeTime":1, # fadeout duration

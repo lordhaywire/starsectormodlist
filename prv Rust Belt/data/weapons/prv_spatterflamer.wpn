@@ -1,0 +1,40 @@
+{
+  "id": "prv_spatterflamer",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_spatterflamer_shot",
+  "type":"ENERGY",
+  "mountTypeOverride":"HYBRID",
+  "size": "LARGE",
+  "everyFrameEffect": "prv.rb.weapons.prv_spatterflamer_trail_EveryFrameEffect",
+  "turretSprite": "graphics/prv/weapons/prv_spatterflamer_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_spatterflamer_turret_glow.png",
+  "turretGunSprite": "graphics/weapons/vulcan_cannon_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_spatterflamer_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_spatterflamer_hardpoint_glow.png",
+  "hardpointGunSprite": "graphics/weapons/vulcan_cannon_hardpoint_recoil.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    202,
+    128,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    41.5,
+    -0.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    48.5,
+    -0.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "GLOW",
+  "textureType": ROUGH,
+  "fireSoundTwo": "prv_spatterflamer_fire"
+}

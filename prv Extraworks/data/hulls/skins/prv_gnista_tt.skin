@@ -1,0 +1,41 @@
+{
+    "baseHullId":"prv_gnista",
+    "skinHullId":"prv_gnista_tt",
+    "hullName":"Gnista (TT)",
+    "descriptionId":"prv_gnista",  # optional
+    "descriptionPrefix":"This ship has been thoroughly overhauled by the Tri-Tachyon corporation. Tri-Tachyon compliant software patches have been installed which are fully integrated with TriPad (R) status monitoring protocols, the shield generator has been replaced, and weapon attachment points refurbished for mounting advanced energy weapons.",
+	"tags":["rare_bp"],
+	"tech":"Tri-Tachyon",
+    "spriteName":"graphics/prv/ships/prv_gnista_tt.png",
+    "ordnancePoints":35,
+    #"baseValueMult":1.25,
+    #"systemId":"plasmajets",
+    "shieldEfficiency":0.6,
+    "removeWeaponSlots":[], 		# ids
+    "removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+    "removeBuiltInMods":[    
+	    "prv_volatiledrivecore",
+	    "prv_ramshield",
+	],
+    "removeBuiltInWeapons":[], 		# weapon slot ids
+    "builtInMods":[],
+    "builtInWeapons":{
+    },
+    "weaponSlotChanges":{
+	   "WS0003":{
+		  "type": "ENERGY"
+	   },
+    },
+	"engineSlotChanges":{
+		"0":{"style":"HIGH_TECH"},
+		"1":{"style":"HIGH_TECH"},
+		"2":{"style":"HIGH_TECH"},
+		"3":{"style":"HIGH_TECH"},
+		"4":{"style":"HIGH_TECH"},
+		"5":{"style":"HIGH_TECH"},
+	},    
+}
+
+
+
+

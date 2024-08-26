@@ -41,13 +41,29 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
     private static final float MAX_LY_FROM_CABAL = 15f;
     private static final float MAX_LY_FROM_PALACE = 5f;
 
+    private Integer prevDesiredNumFleets;
+    private IntervalUtil desiredNumFleetsTracker;
+
     static {
         LOG.setLevel(Level.INFO);
+    }
+
+    @SuppressWarnings("OverridableMethodCallInConstructor")
+    public UW_CabalFleetManager() {
+        float interval = 30f;
+        tracker = new IntervalUtil(interval * 0.75f, interval * 1.25f);
+        readResolve();
     }
 
     @Override
     protected Object readResolve() {
         super.readResolve();
+        if (prevDesiredNumFleets == null) {
+            prevDesiredNumFleets = 2;
+        }
+        if (desiredNumFleetsTracker == null) {
+            desiredNumFleetsTracker = new IntervalUtil(0.75f, 1.25f);
+        }
         return this;
     }
 
@@ -63,12 +79,26 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         }
 
         /* Don't allow going past this cap, to avoid build-up of superfleets */
-        return getDesiredNumFleetsForSpawnLocation() + 1;
+        return prevDesiredNumFleets + 1;
+    }
+
+    @Override
+    public void advance(float amount) {
+        float days = Global.getSector().getClock().convertToDays(amount);
+        desiredNumFleetsTracker.advance(days);
+        if (desiredNumFleetsTracker.intervalElapsed()) {
+            prevDesiredNumFleets = getDesiredNumFleetsForSpawnLocation();
+        }
+
+        super.advance(amount);
     }
 
     @Override
     protected int getDesiredNumFleetsForSpawnLocation() {
         if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
+            prevDesiredNumFleets = 0;
+            desiredNumFleetsTracker.forceIntervalElapsed();
+            desiredNumFleetsTracker.advance(0f);
             return 0;
         }
 
@@ -80,6 +110,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             if (DEBUG2) {
                 LOG.info("Cabal is destroyed.  No fleet spawns possible.");
             }
+            prevDesiredNumFleets = 0;
             return 0;
         } else {
             float distScale = Math.max(0f, 1f - Misc.getDistanceToPlayerLY(closestCabalMarket.getLocationInHyperspace()) / MAX_LY_FROM_CABAL);
@@ -128,6 +159,7 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
         if (DEBUG2) {
             LOG.info("Total desired num fleets: " + result);
         }
+        prevDesiredNumFleets = result;
         return result;
     }
 
@@ -169,6 +201,36 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             shinies += Math.round(market.getNetIncome() / 50000f);
         }
         mag *= (float) Math.sqrt(shinies / 4f);
+
+        FactionAPI cabal = Global.getSector().getFaction("cabal");
+        switch (cabal.getRelToPlayer().getLevel()) {
+            default:
+            case VENGEFUL:
+            case HOSTILE:
+                mag *= 1f;
+                break;
+            case INHOSPITABLE:
+                mag *= 0.8f;
+                break;
+            case SUSPICIOUS:
+                mag *= 0.6f;
+                break;
+            case NEUTRAL:
+                mag *= 0.45f;
+                break;
+            case FAVORABLE:
+                mag *= 0.3f;
+                break;
+            case WELCOMING:
+                mag *= 0.2f;
+                break;
+            case FRIENDLY:
+                mag *= 0.1f;
+                break;
+            case COOPERATIVE:
+                mag *= 0f;
+                break;
+        }
 
         float max = Global.getSettings().getFloat("maxHostileActivityFleetsPerSystem");
         if (mag >= (max / 2f)) {
@@ -486,9 +548,15 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             if (Global.getSector().getMemoryWithoutUpdate().contains("$uw_cabal_extortion_timestamp")) {
                 timestamp = Global.getSector().getMemoryWithoutUpdate().getLong("$uw_cabal_extortion_timestamp");
             }
+            CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
 
             float days = Global.getSector().getClock().convertToDays(amount);
-            tracker.advance(days);
+            float scaler = 1f;
+            if ((playerFleet == null) || (fleet.getContainingLocation() == playerFleet.getContainingLocation())) {
+                scaler *= 0.1f;
+            }
+            tracker.advance(days * scaler);
+
             if ((timerGlobal > 0f) && (timestamp != Global.getSector().getClock().getTimestamp())) {
                 timerGlobal -= Math.max(0f, Math.min(365f, Global.getSector().getClock().getElapsedDaysSince(timestamp)));
                 Global.getSector().getMemoryWithoutUpdate().set("$uw_cabal_extortion_timer", timerGlobal);
@@ -576,7 +644,6 @@ public class UW_CabalFleetManager extends DisposableFleetManager {
             if (tracker.intervalElapsed() && (timerGlobal <= 0f)) {
                 doFactionChange(fleet, false);
 
-                CampaignFleetAPI playerFleet = Global.getSector().getPlayerFleet();
                 if (playerFleet == null) {
                     return;
                 }

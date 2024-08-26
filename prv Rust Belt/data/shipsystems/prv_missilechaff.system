@@ -1,0 +1,17 @@
+{
+	"id":"prv_missilechaff",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"prv.rb.ai.systems.prv_missilechaff_ai",
+	"statsScript":"prv.rb.shipsystems.prv_missilechaff",
+	
+	#"soundFilterType":"LOWPASS",
+	#"soundFilterGain":0.98,
+	#"soundFilterGainHF":0.1,
+
+	#"fadeActivationSoundOnChargedown":true,
+	#"useSound":"system_temporalshell",
+	#"loopSound":"system_temporalshell_loop",
+	#"deactivateSound":"system_temporalshell_off",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

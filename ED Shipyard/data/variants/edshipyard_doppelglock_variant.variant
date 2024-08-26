@@ -6,8 +6,8 @@
     "hullId": "edshipyard_doppelglock",
     "hullMods": [
         "frontshield",
-        "pointdefenseai",
-        "dedicated_targeting_core"
+        "dedicated_targeting_core",
+        "reinforcedhull"
     ],
     "permaMods": [],
     "sMods": [],

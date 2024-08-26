@@ -1,0 +1,80 @@
+{
+  "variantId": "prv_grendel_rb_support",
+  "hullId": "prv_grendel_rb",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 29,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "converted_hangar",
+    "turretgyros",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hil",
+        "WS0002": "hil"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "hammer",
+        "WS 008": "hammer",
+        "WS 009": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 010": "prv_synac",
+        "WS 012": "prv_synac",
+        "WS 014": "prv_synac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "vulcan",
+        "WS 001": "mininglaser",
+        "WS 002": "mininglaser",
+        "WS 003": "mininglaser",
+        "WS 004": "mininglaser",
+        "WS 005": "vulcan",
+        "WS 006": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "flak",
+        "WS 013": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": ["mining_drone_wing"]
+}

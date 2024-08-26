@@ -1,0 +1,49 @@
+{
+
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
+        "hulls":[
+            "filgap_trajan",
+            "filgap_opportunity",
+            "filgap_foundation",
+			"filgap_wagner",
+            "filgap_auspicious",
+            "filgap_kuunlan",
+
+
+
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "independent"],
+        "hulls":[
+            "filgap_opportunity",
+			"filgap_wagner",
+
+            "filgap_auspicious",
+			"atlas",
+			"kite_original",
+			"doom",
+			"afflictor",
+			"prometheus",
+			"omen",
+			"shade",
+			"tempest",
+			"conquest",
+			"gryphon",
+			"eagle",
+			"valkyrie",
+			"harbinger",
+            "filgap_foundation",
+            "filgap_kuunlan",
+
+
+
+        ],
+    },
+
+}

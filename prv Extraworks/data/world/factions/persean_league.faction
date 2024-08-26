@@ -1,0 +1,28 @@
+{	
+	"variantOverrides":{
+		"prv_tystnad_midline_dem":8,
+		"prv_flock_midline_dem":8,
+		"prv_sorl_midline_dem":3,	# low due to carrier
+	},
+	"knownShips":{
+		"hulls":[
+			"prv_tystnad_midline",
+			"prv_sorl_midline",
+			"prv_flock_midline",
+		],
+	},
+	"knownWeapons":{
+		"weapons":[
+			"prv_pskd",
+			"prv_akc",
+			
+			"prv_jursla",
+		]
+	},
+	"shipRoles":{
+		"combatMedium":{
+			"includeDefault":true,
+			"prv_sorl_midline_dem":10,
+		},
+	},	
+}

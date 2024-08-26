@@ -1,0 +1,125 @@
+{
+	"combatSmallForSmallFleet":{
+		###10
+		"prv_gnista_tt_support":10,
+		###10
+		"prv_gnista_lc_outdated":10,
+		"prv_gnista_lc_overdriven":0, #pather override
+		###6
+		"prv_ljus_pather_attack":6,
+		###10
+		"prv_flamma_midline_attack":5,
+		"prv_flamma_midline_cs":5,
+	},
+	"combatSmall":{
+		###
+		"prv_gnista_tt_support":10,
+		###10
+		"prv_gnista_lc_outdated":10,
+		"prv_gnista_lc_overdriven":0, #pather override
+		###10
+		"prv_gryning_tt_balanced":10,
+            ###10
+            "prv_ljus_pather_attack":10,
+		###10
+		"prv_flamma_midline_attack":4,
+		"prv_flamma_midline_cs":6,
+	},
+	"combatMedium":{
+            ###10
+            "prv_eld_rb_assault":0,		#rb override
+            "prv_eld_rb_belt":0,		#rb override
+            "prv_eld_rb_pirate":5,
+            "prv_eld_rb_converted":5,
+            ###10
+            "prv_eld_midline_attack":5,
+            "prv_eld_midline_elite":5,
+            ###8
+            "prv_gnejs_p_pirate":4,
+		"prv_gnejs_p_ambush":4,
+            "prv_gnejs_p_privateer":0,	#rb override
+            ###10
+		"prv_eld_lg_elite":10,
+            ###8
+            "prv_sunder_ryak_core":5,
+            "prv_sunder_ryak_assault":5,
+            ###10
+            "prv_enforcer_rb_syndicate":6,
+            "prv_enforcer_rb_support":4,
+      },
+	"combatLarge":{
+		###10
+		"prv_flock_lg_elite":10,
+		###10
+		"prv_aska_lg_elite":10,
+		###10
+		"prv_aska_lc_salvation":5,
+		"prv_aska_lc_redemption":5,
+		###10
+		"prv_flock_midline_balanced":10,
+		"prv_flock_midline_dem":0, # persean override
+		###10
+		"prv_grendel_rb_assault":5,
+		"prv_grendel_rb_support":5,
+	},
+	"combatCapital":{
+		###8
+		"prv_conquest_ryak_alfa":4,
+		"prv_conquest_ryak_omega":4,
+	},
+	# carriers
+	"carrierSmall":{
+		###6
+		"prv_kite_aux":6,
+            ###8
+            "prv_tystnad_midline_support":8,
+            "prv_tystnad_midline_dem":0,		#persean override
+		###10
+		"prv_sorl_midline_escort":10,
+		"prv_sorl_midline_dem":0,		#persean override
+	},
+      
+	# phase ships
+	"phaseSmall":{
+		###0
+		"prv_afflictor_aux":0, 		#prv override
+		"prv_shade_aux":0,		#prv override
+	},
+	"phaseMedium":{
+		###0
+		"prv_harbinger_aux":0,		#prv override
+		###8
+		"prv_ilbud_h_elite":4,
+		"prv_ilbud_h_spec":4,
+	},
+	
+	"combatFreighterMedium":{
+		###8
+		"prv_visent_xl_armed":4,
+		"prv_visent_xl_converted":4,	
+		###10
+		"prv_mule_aux":10,
+		###8
+		"prv_tiger_lc_armed":4,
+		"prv_tiger_lc_support":4,
+	},
+	"combatFreighterLarge":{
+		###10
+		"prv_fika_standard":5,
+		"prv_fika_missile":5,
+		###10
+		"prv_middag_balanced":5,
+		"prv_middag_standard":5,
+	},
+	
+	# freighters and such
+	"freighterSmall":{
+	},
+	"freighterMedium":{
+		###10
+		"prv_munsbit_lc_standard":5,
+		"prv_munsbit_lc_converted":5,
+	},
+	"freighterLarge":{
+	},
+}

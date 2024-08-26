@@ -1,0 +1,3 @@
+command,class,tags,syntax,help
+SmeltOre,prv.rb.console.prvConsoleSmeltOre,"prv,campaign",smeltore,Forces one period of Arc Smelter processing.
+SyncRusterIndustry,prv.rb.console.prvConsoleSyncRusterIndustry,"prv,campaign",syncrusterindustry,Forces a synchronization pass for all War Syndicate industries.

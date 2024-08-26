@@ -1,0 +1,16 @@
+{
+  "id":"prvagni",
+	"name":"prv Agni",
+	"author":"Prav",	
+	"version":"v1",
+	"description":"Adds the Agni deep space hazard.",
+	"dependencies": [
+		{
+			"id": "prvlib",
+			"name": "prv Library",
+		},
+	],
+	"modPlugin":"prv.agni.AgniModPlugin", # Insert the path to your mod's implementation of ModPlugin here
+	"gameVersion":"0.97a-RC6",
+	"jars":["jar/prvagni.jar"],
+}

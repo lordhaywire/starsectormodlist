@@ -1,0 +1,13 @@
+{
+	"knownWeapons":{
+		"weapons":[
+			"prv_lightthumper",
+			"prv_lighttripleac",
+			"prv_massdriver",
+		]
+	},
+	
+	"custom":{
+		"syndicateName": "Societas Necessarius",
+	}
+}

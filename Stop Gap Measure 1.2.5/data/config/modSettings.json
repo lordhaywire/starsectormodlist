@@ -1,0 +1,17 @@
+{
+    "nexerelin":{
+		"mining_ship_strengths":{
+			"filgap_era_lc":12,
+			"filgap_era":18,
+			"filgap_babel":22,
+			"filgap_foundation":20,
+				
+		},
+		"mining_weapon_strengths":{
+			"filgap_miningbeam": 10,
+			"filgap_miningarray": 9,			
+		},
+
+    },
+	
+  }

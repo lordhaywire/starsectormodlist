@@ -1,3 +1,2 @@
 id,name,class,priority,special,requiredMod
-prv_rb_pirate ,War Syndicate HQ,scripts.campaign.prv_war_syndicate_nex,4,TRUE,
-prv_labs,Laboratory Complex,scripts.campaign.prv_labs_nex,3,TRUE,
+prv_labs,Laboratory Complex,prv.corp.campaign.prv_labs_nex,3,TRUE,

@@ -1,0 +1,38 @@
+{	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+
+			"filgap_pyrrhocorax":20,
+			"filgap_rosatom":5,
+
+
+		},
+	},
+	"knownShips":{
+		"tags":["tritachyon"],
+		"hulls":[
+			"filgap_pyrrhocorax",
+			"filgap_formica",
+			"filgap_foundation",
+			"conquest",
+
+
+		],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			"conquest",
+			"astral",
+			"odyssey",
+			"paragon",
+
+
+		],
+	},
+
+
+},
+

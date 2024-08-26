@@ -1,0 +1,51 @@
+{
+  "variantId": "filgap_foundation_Support",
+  "hullId": "filgap_foundation",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 18,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "taclaser",
+        "WS 013": "taclaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pilum",
+        "WS0006": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "salamanderpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "pdburst",
+        "WS 007": "lrpdlaser",
+        "WS 011": "lrpdlaser",
+        "WS 014": "filgap_miningarray"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

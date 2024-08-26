@@ -1,0 +1,34 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,autofireAccBonus,extraArcForAI,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pureflame Lance,prv_agni_pureflame_lance,2,0.1,1500,500,1452,,,40,13,13,,,,ENERGY,,2002,0.1,0.6,0.8,4.5,0,0,0,0,1000,,,,,,,USE_LESS_VS_SHIELDS,"prv_agni, restricted, SR, strike14, he17, beam10",,Detached Agni Organ,,Assault,,,,,"Dissipates quickly, only dealing full damage at close range. 
+
+Explodes when reaching a target or upon reaching full range, engulfing nearby ships in %s, immediately dealing up to %s high explosive damage and applying a burn of up to %s additional high explosive damage over time.",pureflame | 350 | 700,,,,8801
+Flamelash,prv_agni_flamelash,0,0.1,375,250,,20,,10,39,5,,,,ENERGY,20,,,0.65,8,0.05,1,1,0,0,,300,,,30,,,"NO_TURN_RATE_BOOST_WHEN_IDLE, PD","prv_agni, restricted, SR, energy7, pd8, beam5",,Detached Agni Organ,,Point Defense,,,,Poor,"Burns the target with %s on hull hits, dealing %s additional high explosive damage over time.",pureflame | 10,,,,8802
+Conflagration,prv_agni_conflagration,1,0.1,3000,700,,450,,80,15,27,,,,ENERGY,540,,0.5,1,,,0,10,3,4,,550,,,100,,,,"prv_agni, restricted, LR, energy20, he16",,Detached Agni Organ,,General (Area),,,,Irregular,"Explodes when near a target or upon reaching full range, engulfing nearby ships in %s, dealing %s high explosive damage over time.",pureflame | 225,,,,8803
+Tooth,prv_agni_teeth,1,0.1,300,800,,75,,15,17,7,14,0.666667,14,KINETIC,,,,1.1,3,0.2,0,7,1,7,,650,,,50,,,,"prv_agni, restricted, kinetic8",,Detached Agni Organ,,Anti Shield,,,,,Teeth regrow slower at high flux levels.,,,,,8804
+Horn,prv_agni_claw,0,0.1,2000,500,,900,,1200,20,20,,,,KINETIC,300,,,3,,,0,0,0,0,,800,,,400,,,DANGEROUS,"prv_agni, restricted, kinetic21, energy18",,Detached Agni Organ,,Assault,,,,,Impacts with great force.,,,,,8809
+Spinneret,prv_agni_web,2,0.1,2000,600,,200,,120,19,24,20,1,20,FRAGMENTATION,,,,2.3,5,0.05,0,15,3,15,,750,,,750,,,"ANTI_FTR, USE_LESS_VS_SHIELDS","prv_agni, restricted, SR, kinetic15, utility19",,Detached Agni Organ,,Anti Mobility,,,,,"Clings to the target on hull hits, holding on to them for %s seconds.
+
+Reduces the speed and agility of the affected ship by %s per attached strand. Also dampens the explosion of destroyed targets by the same amount.
+
+Webs take longer to grow at high flux levels.",5 | 10%,,,,8805
+Spinneret,prv_agni_web_fighter,0,,150,300,,200,,120,19,,,,,FRAGMENTATION,,,,7.95,2,0.05,0,15,3,15,,750,,,750,,,"SYSTEM, ANTI_FTR, USE_LESS_VS_SHIELDS",SR,,Detached Agni Organ,,Anti Mobility,,,,,"Clings to the target on hull hits, holding on to them for %s seconds.
+
+Reduces the speed and agility of the affected ship by %s per attached strand. Also dampens the explosion of destroyed targets by the same amount.",5 | 10%,,,,8805.5
+Spine Cluster,prv_agni_spines,0,0.1,700,600,,60,,10,90,11,49,1.25,49,KINETIC,,,0.33,1.07,7,0.1,0,14,3,2,,550,,,,,,PD,"prv_agni, restricted, kinetic9, pd9",,Detached Agni Organ,,Point Defense,,,,,Spines regrow slower at high flux levels.,,,,,8806
+Spore Burst,prv_agni_spore,0,0.1,700,600,,240,,10,30,11,,,,FRAGMENTATION,60,,,5.2,9,0.1,0,7,1.5,3,,250,,,,,,"PD, GUIDED_POOR, GROUP_ALTERNATING","prv_agni, restricted, energy3, pd11, SR",,Detached Agni Organ,,Point Defense (Area),,,,Saturates Area,Spreads out in an irregular pattern.,,,,,8808
+Spore Burst,prv_agni_spore_1,0,0.1,700,750,,240,,10,30,11,,,,FRAGMENTATION,60,,,5.2,9,0.1,0,7,1.5,3,,250,,,,,,SYSTEM,,,Detached Agni Organ,,,,,,,,,,,,8808a
+Eye,prv_agni_eye,3,0.025,150,1000,0.00001,,,0,43,7,,,,OTHER,,0.00000961,0.05,0.05,0.4,3,0,0,0,0,1,,,,,,,"PD, FIRE_WHEN_INEFFICIENT","prv_agni, restricted, kinetic0, pd0, energy0, he0, beam0, utility11",,Detached Agni Organ,,Target Acquisition,,,,,"Extends the range of all ballistic and energy weapons mounted on the ship by %s,",5% | 8%,,,,8807
+Cyst,prv_agni_cyst,2,0.025,150,0,0.00001,,,,,3,2,0.0222222,,OTHER,,,,,,,,,,,,,,,,,,PD,"prv_agni, restricted, kinetic0, pd0, energy0, he0, beam0, utility7",,Detached Agni Organ,,Special,,,,,Unleashes %s Scale symbiote fighters when disabled.,3,,,,8810
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Heat Radiance,prv_agni_prominence,,,0,0,0,,,0,60,,,,,ENERGY,0,,0,0,,,,,,,,,,,,,,SYSTEM,restricted,,Agni Organ,,Special,,,,,Deals %s energy damage per second to itself and any nearby ships. This radiance deals soft flux damage to shields and is reduced by effects that protect against solar coronas.,150,,,,8811
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_agni_d_cover_hatchling,prv_agni_d_cover_hatchling,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_cover_juvenile,prv_agni_d_cover_juvenile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_cover_buck_l,prv_agni_d_cover_buck_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_cover_buck_r,prv_agni_d_cover_buck_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_cover_doe_l,prv_agni_d_cover_doe_l,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_cover_doe_r,prv_agni_d_cover_doe_r,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_agni_d_fin_large,prv_agni_d_fin_large,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
+prv_agni_d_tail,prv_agni_d_tail,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,

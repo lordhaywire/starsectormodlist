@@ -1,0 +1,23 @@
+{
+  "variantId": "acs_sumpter_standard",
+  "hullId": "acs_sumpter",
+  "displayName": "Utility",
+  "goalVariant": false,
+  "fluxCapacitors": 7,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "miningblaster",
+        "WS0002": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,32 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 12,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "bodkin_esc",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "bodkin_esc_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0004": "mark10"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0003": "apmg"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "xpulse",
+                "WS0002": "xpulse"
+            }
+        }
+    ],
+    "wings": ["4m_pulse_wing"]
+}

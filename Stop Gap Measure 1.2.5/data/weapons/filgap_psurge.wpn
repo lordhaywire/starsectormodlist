@@ -1,0 +1,36 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "antimatter_blaster_fire",
+  "glowColor": [
+    255,
+    100,
+    155,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_psurge_glow_hardpoint.png",
+  "hardpointOffsets": [
+    22.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_psurge_hardpoint.png",
+  "id": "filgap_psurge",
+  "projectileSpecId": "filgap_plasma_surge_shot",
+  "size": "MEDIUM",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_psurge_glow_turret.png",
+  "turretOffsets": [
+    17,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_psurge_turret.png",
+  "type": "ENERGY"
+}

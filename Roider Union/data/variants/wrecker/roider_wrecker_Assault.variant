@@ -1,15 +1,16 @@
 {
     "displayName": "Assault",
-    "fluxCapacitors": 15,
+    "fluxCapacitors": 18,
     "fluxVents": 30,
     "goalVariant": true,
     "hullId": "roider_wrecker",
     "hullMods": [
-		"dedicated_targeting_core",
-		"pointdefenseai"
-	],
+        "dedicated_targeting_core",
+        "pointdefenseai"
+    ],
     "modules": [{"PROW ARMOR": "roider_wrecker_armor_Standard"}],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_wrecker_Assault",
     "weaponGroups": [
         {

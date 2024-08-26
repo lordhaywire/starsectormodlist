@@ -14,6 +14,8 @@ import com.fs.starfarer.api.campaign.InteractionDialogAPI;
 import com.fs.starfarer.api.campaign.StarSystemAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.listeners.FleetEventListener;
+import com.fs.starfarer.api.characters.ImportantPeopleAPI;
+import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.BattleCreationContext;
 import com.fs.starfarer.api.combat.ShipVariantAPI;
 import com.fs.starfarer.api.fleet.FleetMemberAPI;
@@ -28,7 +30,9 @@ import com.fs.starfarer.api.impl.campaign.ids.Drops;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.FleetTypes;
 import com.fs.starfarer.api.impl.campaign.ids.MemFlags;
+import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Tags;
+import com.fs.starfarer.api.impl.campaign.intel.contacts.ContactIntel;
 import com.fs.starfarer.api.impl.campaign.missions.FleetCreatorMission;
 import com.fs.starfarer.api.impl.campaign.missions.hub.HubMissionWithTriggers.FleetQuality;
 import com.fs.starfarer.api.impl.campaign.missions.hub.HubMissionWithTriggers.FleetSize;
@@ -64,10 +68,10 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
     private static final float MAX_DAYS_BEFORE_RETURN = 120f;
 
     private static final float MIN_RESPAWN_DELAY_DAYS = 90f;
-    private static final float MAX_RESPAWN_DELAY_DAYS = 120f;
+    private static final float MAX_RESPAWN_DELAY_DAYS = 150f;
 
     private static final float MIN_DEFEAT_RESPAWN_DELAY_DAYS = 270f;
-    private static final float MAX_DEFEAT_RESPAWN_DELAY_DAYS = 360f;
+    private static final float MAX_DEFEAT_RESPAWN_DELAY_DAYS = 450f;
 
     private static final float MIN_FAILED_RESPAWN_DELAY_DAYS = 10f;
     private static final float MAX_FAILED_RESPAWN_DELAY_DAYS = 20f;
@@ -149,6 +153,7 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
             if (battle.getNonPlayerSideSnapshot().contains(fleet) && (primaryWinner != null) && (battle.isOnPlayerSide(primaryWinner) || (primaryWinner == player))) {
                 if (!palaceAlive) {
                     this.fleet = null;
+                    Global.getSector().getMemoryWithoutUpdate().set("$uwKilledPalace", true);
                     currDelay = MIN_DEFEAT_RESPAWN_DELAY_DAYS
                             + (MAX_DEFEAT_RESPAWN_DELAY_DAYS - MIN_DEFEAT_RESPAWN_DELAY_DAYS) * random.nextFloat();
                 }
@@ -161,7 +166,7 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
     }
 
     public CampaignFleetAPI spawnFleet() {
-        MarketAPI market = getRandomCabal();
+        MarketAPI market = getRandomCabal(random);
         if (market == null) {
             return null;
         }
@@ -174,21 +179,35 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
 
         Vector2f loc = market.getLocationInHyperspace();
 
+        boolean killedPalaceBefore = Global.getSector().getMemoryWithoutUpdate().getBoolean("$uwKilledPalace");
+
         // Find Palace variants
         WeightedRandomPicker<ShipVariantAPI> variantPicker = new WeightedRandomPicker<>(random);
-        for (String variantId : Global.getSettings().getAllVariantIds()) {
-            ShipVariantAPI variant;
-            try {
-                variant = Global.getSettings().getVariant(variantId);
-            } catch (Exception E) {
-                LOG.error("Invalid variant ID: " + variantId);
-                continue;
-            }
+        if (killedPalaceBefore) {
+            for (String variantId : Global.getSettings().getAllVariantIds()) {
+                ShipVariantAPI variant;
+                try {
+                    variant = Global.getSettings().getVariant(variantId);
+                } catch (Exception E) {
+                    LOG.error("Invalid variant ID: " + variantId);
+                    continue;
+                }
 
-            if (!variant.isGoalVariant()) {
-                continue;
+                if (!variant.isGoalVariant()) {
+                    continue;
+                }
+                if (UW_Util.getNonDHullId(variant.getHullSpec()).contentEquals("uw_palace")) {
+                    variantPicker.add(variant);
+                }
             }
-            if (UW_Util.getNonDHullId(variant.getHullSpec()).contentEquals("uw_palace")) {
+        } else {
+            ShipVariantAPI variant = null;
+            try {
+                variant = Global.getSettings().getVariant("uw_palace_gra");
+            } catch (Exception E) {
+                LOG.error("Invalid variant ID: " + "uw_palace_gra");
+            }
+            if (variant != null) {
                 variantPicker.add(variant);
             }
         }
@@ -196,7 +215,12 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
             return null;
         }
 
+        ImportantPeopleAPI ip = Global.getSector().getImportantPeople();
+        PersonAPI zeb = ip.getPerson("uw_zeb");
         float scaler = UW_CabalFleetManager.cabalScaler(random, true) * 0.5f;
+        if (killedPalaceBefore) {
+            scaler *= 2f;
+        }
 
         m.triggerCreateFleet(FleetSize.MAXIMUM, FleetQuality.SMOD_3, "cabal", FleetTypes.PATROL_LARGE, loc);
         m.triggerSetFleetOfficers(OfficerNum.DEFAULT, OfficerQuality.HIGHER);
@@ -204,7 +228,14 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
         m.triggerSetFleetSizeFraction(scaler);
         m.triggerFleetSetNoFactionInName();
         m.triggerSetFleetMemoryValue(MemFlags.MEMORY_KEY_SOURCE_MARKET, market);
-        m.triggerFleetSetName("Starlight Enlightenment Cavalcade");
+        if (killedPalaceBefore) {
+            m.triggerFleetSetName("Starlight Gala Cavalcade");
+        } else {
+            m.triggerFleetSetName("Starlight Gala Parade");
+        }
+        if ((zeb != null) && !ContactIntel.playerHasContact(zeb, true)) {
+            m.triggerFleetSetCommander(zeb);
+        }
         m.triggerOrderFleetPatrol(market.getStarSystem());
 
         CampaignFleetAPI newFleet = m.createFleet();
@@ -214,8 +245,10 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
         newFleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_FIGHT_TO_THE_LAST, true);
         newFleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_IGNORES_OTHER_FLEETS, true);
         newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_TRADE_FLEET, true);
-        newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_NON_AGGRESSIVE, true);
-        newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_ALLOW_DISENGAGE, true);
+        if (!killedPalaceBefore) {
+            newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_NON_AGGRESSIVE, true);
+            newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_ALLOW_DISENGAGE, true);
+        }
         newFleet.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_NEVER_AVOID_PLAYER_SLOWLY, true);
         newFleet.getMemoryWithoutUpdate().set(MemFlags.FLEET_INTERACTION_DIALOG_CONFIG_OVERRIDE_GEN, new PalaceInteractionConfigGen());
         newFleet.removeScriptsOfClass(MissionFleetAutoDespawn.class);
@@ -226,11 +259,17 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
         FleetMemberAPI oldFlagship = newFleet.getFlagship();
         FleetMemberAPI palace = Global.getFactory().createFleetMember(FleetMemberType.SHIP, variantPicker.pick());
         newFleet.getFleetData().addFleetMember(palace);
+        if (!killedPalaceBefore) {
+            palace.setShipName("Transcendance");
+        }
 
         palace.setCaptain(oldFlagship.getCaptain());
         oldFlagship.setFlagship(false);
         newFleet.getFleetData().setFlagship(palace);
         newFleet.getFleetData().removeFleetMember(oldFlagship);
+        if (newFleet.getCommander() != zeb) {
+            newFleet.getCommander().setRankId(Ranks.SPACE_ADMIRAL);
+        }
 
         newFleet.getFleetData().sort();
         newFleet.updateCounts();
@@ -240,6 +279,9 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
         newFleet.removeAbility(Abilities.SUSTAINED_BURN);
         newFleet.removeAbility(Abilities.SENSOR_BURST);
         newFleet.removeAbility(Abilities.GO_DARK);
+        if (!killedPalaceBefore) {
+            newFleet.removeAbility(Abilities.EMERGENCY_BURN);
+        }
         newFleet.setTransponderOn(true);
 
         if (DEBUG) {
@@ -256,10 +298,10 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
         if (!UnderworldModPlugin.isStarlightCabalEnabled()) {
             return false;
         }
-        return getRandomCabal() != null;
+        return getRandomCabal(random) != null;
     }
 
-    protected MarketAPI getRandomCabal() {
+    public static MarketAPI getRandomCabal(Random random) {
         WeightedRandomPicker<MarketAPI> picker = new WeightedRandomPicker<>(random);
 
         for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()) {
@@ -332,16 +374,16 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
                     List<DropData> dropRandom = new ArrayList<>();
 
                     int[] counts = new int[6];
-                    String[] groups = new String[]{Drops.REM_WEAPONS2, Drops.AI_CORES3, Drops.GOODS, "any_hullmod_high", "blueprints_low", "rare_tech_low"};
+                    String[] groups = new String[]{Drops.REM_WEAPONS2, Drops.AI_CORES3, "uw_cabalgoods", "any_hullmod_high", "blueprints_low", "rare_tech_low"};
 
                     for (FleetMemberAPI member : losses) {
                         if (UW_Util.getNonDHullId(member.getHullSpec()).contains("uw_palace")) {
-                            counts[5] = 2;
-                            counts[4] = 10;
-                            counts[3] = 5;
-                            counts[2] = 5000;
-                            counts[1] = 5;
-                            counts[0] = 20;
+                            counts[5] = 4;
+                            counts[4] = 20;
+                            counts[3] = 10;
+                            counts[2] = 150000;
+                            counts[1] = 10;
+                            counts[0] = 40;
                         }
                     }
 
@@ -353,9 +395,9 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
 
                         DropData d = new DropData();
                         d.group = groups[i];
-                        if (count >= 1000) {
-                            d.chances = (int) Math.ceil(count / 1000f);
-                            d.value = 1000;
+                        if (count >= 25000) {
+                            d.chances = (int) Math.ceil(count / 25000f);
+                            d.value = 25000;
                         } else {
                             d.chances = (int) Math.ceil(count * 1f);
                         }
@@ -430,8 +472,8 @@ public class UW_PalaceFleet implements EveryFrameScript, FleetEventListener {
                     }
                     if (Global.getSector().getCampaignUI().isShowingDialog() || Global.getSector().getCampaignUI().isShowingMenu()
                             || (Global.getSector().getCampaignUI().getCurrentInteractionDialog() != null)) {
-                        vol1 = 0.01f;
-                        vol2 = 0.01f;
+                        vol1 *= 0.01f;
+                        vol2 *= 0.01f;
                     }
                     if (vol1 > 0f) {
                         vol2 = Math.max(vol2, 0.01f);

@@ -126,6 +126,7 @@ $hailing = true 0",,,
 CabalContributionCheck,BeginFleetEncounter,"$faction.id == cabal score:100
 !$uwIsPalace
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$Cabal_extortionPaid
 !$Cabal_extortionAskedFor
 !$ignorePlayerCommRequests","MakeOtherFleetPreventDisengage cabalExtortion true
@@ -162,6 +163,7 @@ cutCommLink:Cut the comm link",
 CabalContributionTithe,OpenCommLink,"$entity.Cabal_extortionMethod == tithe score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid
 CabalTitheCalc","SetTextHighlights $Cabal_tithe_string
 SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
@@ -214,6 +216,7 @@ cutCommLink:Cut the comm link",
 CabalContributionCargo,OpenCommLink,"$entity.Cabal_extortionMethod == cargo score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid
 CabalCargoCalc","SetTextHighlights $Cabal_cargo_amount_string
 FireBest CabalContributionCargoChoices","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
@@ -239,7 +242,8 @@ SetStoryOption avoidCabalExtortion 1 uw_avoidCabalExtortion leadership ""Fast-ta
 avoidCabalExtortion:Fast-talk the $personFaction $personRank
 cutCommLink:Cut the comm link",
 CabalQuestionCargoFriendly,DialogOptionSelected,"$option == questionCabalCargo
-RepIsAtWorst $faction.id INHOSPITABLE","AddText ""\""Don't fret, $playerName. You'll have $Cabal_cargo_amount_left_string $Cabal_cargo_name left over. That will be plenty!\""""
+RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY","AddText ""\""Don't fret, $playerName. You'll have $Cabal_cargo_amount_left_string $Cabal_cargo_name left over. That will be plenty!\""""
 SetTextHighlights $Cabal_cargo_amount_left_string
 SetTextHighlightColors textEnemyColor
 SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""",,"payCabalCargo:Donate $Cabal_cargo_amount_string $Cabal_cargo_name
@@ -277,6 +281,7 @@ cutCommLink:Cut the comm link",
 CabalContributionWeapon,OpenCommLink,"$entity.Cabal_extortionMethod == weapon score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid
 CabalWeaponCalc",FireBest CabalContributionWeaponTirades,,,
 CabalContributionWeaponSingular,CabalContributionWeaponTirades,$Cabal_weapon_amount == 1,"SetTextHighlights $Cabal_weapon_name
@@ -331,6 +336,7 @@ cutCommLink:Cut the comm link",
 CabalContributionFighter,OpenCommLink,"$entity.Cabal_extortionMethod == fighter score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid
 CabalFighterCalc",FireBest CabalContributionFighterTirades,,,
 CabalContributionFighterSingular,CabalContributionFighterTirades,$Cabal_fighter_amount == 1,"SetTextHighlights $Cabal_fighter_name
@@ -388,6 +394,7 @@ cutCommLink:Cut the comm link",
 CabalContributionShip,OpenCommLink,"$entity.Cabal_extortionMethod == ship score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid
 CabalShipCalc","SetTextHighlights $Cabal_ship_name
 SetStoryOption avoidCabalContribution 1 uw_avoidCabalContribution leadership ""Impressed a Cabalero""","A triangular symbol appears on the comms-line amidst a flood of loud and obnoxious music.
@@ -426,6 +433,7 @@ A laughing $personFaction $personRank appears on screen long enough to laugh at 
 CabalExtortionNoneFriendly,OpenCommLink,"$entity.Cabal_extortionMethod == none score:100
 $faction.id == cabal
 RepIsAtWorst $faction.id INHOSPITABLE
+RepIsAtBest $faction.id FRIENDLY
 !$entity.Cabal_extortionPaid","MakeOtherFleetPreventDisengage cabalExtortion false
 MakeOtherFleetAggressive cabalExtortion false
 MakeOtherFleetNonHostile cabalExtortion true 7
@@ -487,24 +495,276 @@ MakeOtherFleetAggressive cabalExtortion false
 ShowDefaultVisual
 EndConversation",,cutCommLink:Cut the comm link,
 ,,,,,,
-relLevelNeutralCabal,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == cabal",,"You are accepted as a member of the Starlight Cabal, for all the good it does you.",,
-relLevelFavorableCabal,RelationshipLevelDesc,"$faction.rel == FAVORABLE
-$faction.id == cabal",,The Starlight Cabal considers you to be an upstanding member of their society.,,
-relLevelWelcomingCabal,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == cabal",,"Somehow, you have managed to gain the trust of the Starlight Cabal.",,
-relLevelFriendlyCabal,RelationshipLevelDesc,"$faction.rel == FRIENDLY
-$faction.id == cabal",,The Starlight Cabal sees you as a peer and friend.,,
+CabalEncounterPalace,BeginFleetEncounter,"$faction.id == cabal
+$uwIsPalace score:1000
+$stillAlive
+!$global.uwCompletedStarlightGala
+!$ignorePlayerCommRequests
+!$global.uwKilledPalace","AddText ""You're being hailed by the $faction $otherShipOrFleet."" $faction.baseColor
+$hailing = true 0",,,
+CabalOpenCommPalaceDefault,OpenCommLink,"$faction.id == cabal
+$entity.uwIsPalace score:1000
+$entity.stillAlive","SetShortcut cutCommLink ""ESCAPE""","Overwhelmingly loud music blasts through the comm terminal, immediately maxing the speakers. A triangular symbol fills the screen, but no one comes to answer.
+
+The wait seems interminable. The bridge crew is glancing at you, clearly hoping for you to make the music stop.",cutCommLink:Cut the comm link,
+#CabalOpenCommPalace,OpenCommLink,"$faction.id == cabal
+$entity.uwIsPalace score:1000
+$entity.stillAlive
+$id == uw_zeb
+!$global.uwCompletedStarlightGala
+!$entity.ignorePlayerCommRequests
+!$global.uwKilledPalace
+!$entity.uwGaveIntro","$entity.uwGaveIntro = true
+UW_UpdateGalaFacts
+FireBest CabalOpenCommPalace","Overwhelmingly loud music blasts through the comm terminal, immediately maxing the speakers and rendering inaudible the fabulously well-dressed individual on the other side of the screen. He's talking, but you can't hear him. He doesn't seem to notice.
+
+His mouth keeps flapping without halt as a nearby ensign, flustered, hurriedly turns the volume down and applies a speech isolation filter.
+
+""-a real party in here. Hey, are you listening?""",,
+CabalOpenCommPalaceOptions,CabalOpenCommPalace,,$entity.ignorePlayerCommRequests = true 7,,"cabalPalaceListening:""Uh, sure, yeah.""
+cabalPalaceMusic:""Your music is too damn loud. I could hear it from the other side of the system!""
+cutCommLink:Cut the comm link",
+CabalOpenCommPalaceOptionsHyper,CabalOpenCommPalace,UW_IsInHyperspace,$entity.ignorePlayerCommRequests = true 7,,"cabalPalaceListening:""Uh, sure, yeah.""
+cabalPalaceMusic:""Your music is too damn loud. I could hear it from light-years away!""
+cutCommLink:Cut the comm link",
+CabalOpenCommPalaceOptionsHasIntel,CabalOpenCommPalace,UW_HasGalaIntel score:1000,"SetOptionColor cabalPalaceYes buttonShortcut
+SetShortcut cutCommLink ""ESCAPE""",,"cabalPalaceYes:""I'm here for the Starlight Gala.""
+cabalPalaceListening:""Uh, sure, yeah.""
+cabalPalaceMusic:""Your music is too damn loud. I could hear it from the other side of the system!""
+cutCommLink:Cut the comm link",
+CabalOpenCommPalaceOptionsHasIntelHyper,CabalOpenCommPalace,"UW_HasGalaIntel score:1000
+UW_IsInHyperspace","SetOptionColor cabalPalaceYes buttonShortcut
+SetShortcut cutCommLink ""ESCAPE""",,"cabalPalaceYes:""I'm here for the Starlight Gala.""
+cabalPalaceListening:""Uh, sure, yeah.""
+cabalPalaceMusic:""Your music is too damn loud. I could hear it from light-years away!""
+cutCommLink:Cut the comm link",
+#CabalOpenCommPalace2,OpenCommLink,"$faction.id == cabal
+$entity.uwIsPalace score:1000
+$entity.stillAlive
+$id == uw_zeb
+!$global.uwCompletedStarlightGala
+!$entity.ignorePlayerCommRequests
+!$global.uwKilledPalace
+$entity.uwGaveIntro","UW_UpdateGalaFacts
+FireBest CabalOpenCommPalace2","Overwhelmingly loud music blasts through the comm terminal, briefly maxing the speakers before the speech isolation filter kicks in.
+
+The Cabalero on the other side of the screen waves at you while flashing a winning smile while bobbing his head to the music. Some priceless gemstone glints from his ear, reflecting a spectrum of lights flashing around him.
+
+""You're back! Yay! Does that mean you're coming, little $playerBrotherOrSister?""",,
+CabalCommPalaceListening,DialogOptionSelected,$option == cabalPalaceListening,FireBest CabalOpenCommPalace2,"""Right on!"" The Cabalero grins, flashing a winning smile while bobbing his head to the music, fortunately now at a tolerable level. Some priceless gemstone glints from his ear, reflecting a spectrum of lights flashing around him.
+
+""So, are you coming or what, little $playerBrotherOrSister?""",,
+CabalCommPalaceMusic,DialogOptionSelected,$option == cabalPalaceMusic,FireBest CabalOpenCommPalace2,"""That's our hyperwave amp in action, baby! Treaty violations have never sounded so good."" The Cabalero closes his eyes and starts bobbing his head to the music, fortunately now at a tolerable level. Some priceless gemstone glints from his ear, reflecting a spectrum of lights flashing around him.
+
+""So, are you coming or what, little $playerBrotherOrSister?""",,
+CabalCommPalace2Options,CabalOpenCommPalace2,,,,"cabalPalaceWhat:""Coming to what, exactly?""
+cabalPalaceYes:""You know it."" (accept)
+cabalPalaceNo:""I'll pass."" (decline)",
+CabalCommPalace2OptionsHasIntel,CabalOpenCommPalace2,UW_HasGalaIntel,"SetOptionColor cabalPalaceYes buttonShortcut
+SetShortcut cutCommLink ""ESCAPE""",,"cabalPalaceYes:""Yes, I'm here for the Starlight Gala.""
+cutCommLink:Cut the comm link",
+CabalCommPalaceWhat,DialogOptionSelected,$option == cabalPalaceWhat,,"The Cabalero reels his head back, mouth falling agape. He looks to the side, then gesticulates at you, conveying utter bafflement to someone offscreen.
+
+""This bum! Seriously, you don't know about THE party of the Persean Arm?"" The Cabalero palms his face. ""You're invited to the Starlight Gala! Let's tear up the stars!""","cabalPalaceYes:""Sounds like fun."" (accept)
+cabalPalaceNo:""I'll pass."" (decline)",
+CabalCommPalaceNo,DialogOptionSelected,$option == cabalPalaceNo,"AdjustRepActivePerson SUSPICIOUS -2
+AdjustRep cabal HOSTILE -1
+$entity.ignorePlayerCommRequests = true 7
+SetShortcut cutCommLink ""ESCAPE""","""Lame."" The Cabalero immediately loses interest, walking away from his console without even bothing to hit the comm-link cutoff.",cutCommLink:Cut the comm link,
+CabalCommPalaceYes,DialogOptionSelected,$option == cabalPalaceYes,UW_AddGalaIntel,"""Groovy! It's a date, little $playerBrotherOrSister. After you pay the entrance fee, take a shuttle up to my Palace and tell them you're here for the Starlight Gala. You're going to have the night... Of. Your. LIFE!""
+
+The Cabalero sweeps his index finger upward, striking a dramatic pose. He seems to sparkle. It must be a trick of the camera.","cabalPalaceScam:""Oh, so this is a scam.""
+cabalPalaceNoObject:""Money is no object.""
+cabalPalaceHowMuch:""How much is it?""",
+CabalCommPalaceScam,DialogOptionSelected,$option == cabalPalaceScam,"SetTextHighlights $uwEntryFeeDGS
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+$global.uwKnowStarlightGalaFee = true
+UW_UpdateGalaIntel","""Scam?! You wound me!"" The Cabalero covers his mouth in a gesture of mock outrage. ""The $uwEntryFeeDGS credit fee covers the extreme costs of running such an excellent, exclusive, exotic, exquisite, exuberant, exalted affair.""
+
+He gives you a serious look. ""Money does grow on trees, after all, but it must first be plucked. You will find the experience to be most... rewarding.""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceScam2:""Yep, totally a scam. That price is ridiculous.""
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+CabalCommPalaceScam2,DialogOptionSelected,$option == cabalPalaceScam2,"SetStoryOption cabalPalaceStoryPay 1 uw_galaStoryPay general ""Impressed Zeb Sparks enough to waive the Starlight Gala entry fee""
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+DoCanAffordCheck $uwStoryEntryFee cabalPalaceStoryPay","""Tariffs are a scam."" The Cabalero dismissively tosses his fabulous mane of dual-tone hair. ""This... is a transaction, little $playerBrotherOrSister.""
+
+He spreads his hands in a conciliatory gesture. ""Would you prefer to be stabbed in the back with hidden costs and contractual devilry? Everyone who's who will be rubbing elbows at the Gala. Trust me, you don't want to play that game; they've been playing it a lot longer than you have, darling.""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceStoryPay:Avoid the entry fee by impressing the Cabalero ($uwStoryEntryFeeDGS credits)
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+CabalCommPalaceNoObject,DialogOptionSelected,$option == cabalPalaceNoObject,"$player.ethosCocky+
+SetTextHighlights $uwEntryFeeDGS
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+$global.uwKnowStarlightGalaFee = true
+UW_UpdateGalaIntel","The Cabalero smirks. ""Are you sure about that, darling? The entry fee is $uwEntryFeeDGS credits."" He lets that hang in the air for a moment. ""It covers the extreme costs of running such an excellent, exclusive, exotic, exquisite, exuberant, exalted affair.""
+
+Then he shrugs, pursing his luscious purple lips. ""As you know, money grows on trees, and you will find this harvest to be most rewarding. A no-brainer, really.""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceNoObject2:""Very funny. What's the real fee?""
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+CabalCommPalaceNoObject2,DialogOptionSelected,$option == cabalPalaceNoObject2,"SetStoryOption cabalPalaceStoryPay 1 uw_galaStoryPay general ""Impressed Zeb Sparks enough to waive the Starlight Gala entry fee""
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+DoCanAffordCheck $uwStoryEntryFee cabalPalaceStoryPay","""I assure you, little $playerBrotherOrSister: the fee is very real. $uwEntryFeeDGS credits buys your access to an event where everyone who's who will be rubbing elbows. Such discerning guests would hardly tolerate the company of common riff-raff.""
+
+""Of course, you should have no problem paying such a paltry sum,"" the Cabalero drawls, giving you a pointed glance while he plays with his shiny amulet. ""Right?""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceStoryPay:Avoid the entry fee by impressing the Cabalero ($uwStoryEntryFeeDGS credits)
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+CabalCommPalaceHowMuch,DialogOptionSelected,$option == cabalPalaceHowMuch,"SetTextHighlights $uwEntryFeeDGS
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+$global.uwKnowStarlightGalaFee = true
+UW_UpdateGalaIntel","""It's $uwEntryFeeDGS credits,"" the Cabalero says back-handedly, as if such a sum barely deserves mention. ""Of course, the fee covers the extreme costs of running such an excellent, exclusive, exotic, exquisite, exuberant, exalted affair.""
+
+He gives you a sultry wink. ""Money grows on trees, after all, but it must first be plucked. You will find the experience to be most... rewarding.""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceHowMuch2:""That's absurdly high.""
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+CabalCommPalaceHowMuch2,DialogOptionSelected,$option == cabalPalaceHowMuch2,"SetStoryOption cabalPalaceStoryPay 1 uw_galaStoryPay general ""Impressed Zeb Sparks enough to waive the Starlight Gala entry fee""
+DoCanAffordCheck $uwEntryFee cabalPalacePay
+DoCanAffordCheck $uwStoryEntryFee cabalPalaceStoryPay","""So will you be, if you attend the Gala,"" the Cabalero quips before chuckling. ""If you roll with the Cabal, you will soon learn to overcome weak instincts like 'sticker shock', little $playerBrotherOrSister."" He adopts a wistful expression. ""Ah, to be so young and fresh as to feel fear when seeing a mere number.""
+
+Then he refocuses on you. ""Everyone who's who will be rubbing elbows at the Gala, darling. If you can't pay the fee, then you really don't belong; they'll eat you up like a shiver of sharks.""","cabalPalacePay:Transfer $uwEntryFeeDGS credits
+cabalPalaceStoryPay:Avoid the entry fee by impressing the Cabalero ($uwStoryEntryFeeDGS credits)
+cabalPalaceNoPay:""On second thought, I'm not interested.""",
+#CabalOpenCommPalaceKnowFee,OpenCommLink,"$faction.id == cabal
+$entity.uwIsPalace score:1000
+$entity.stillAlive
+$id == uw_zeb
+!$global.uwCompletedStarlightGala
+!$entity.ignorePlayerCommRequests
+!$global.uwKilledPalace
+UW_HasGalaIntel score:1000
+$global.uwKnowStarlightGalaFee score:1000","UW_UpdateGalaFacts
+FireBest CabalOpenCommPalaceKnowFee","With a speech isolation filter already in place, the music that comes through the comms is at a pleasant volume.
+
+The Cabalero on the other side of the screen gives you a grin and a quick nod. The strobing lights all around him glint off of his jewelry.
+
+""You've returned, little $playerBrotherOrSister. Does that mean you're ready to party?""",,
+CabalOpenCommPalaceKnowFeeOptions,CabalOpenCommPalaceKnowFee,,"SetShortcut cutCommLink ""ESCAPE""",,"cabalPalacePay:""More than ready."" (transfer $uwEntryFeeDGS credits)
+cabalPalaceStoryPay:Avoid the entry fee by impressing the Cabalero ($uwStoryEntryFeeDGS credits)
+cutCommLink:Cut the comm link",
+CabalOpenCommPalaceKnowFeeOptionsNoFee,CabalOpenCommPalaceKnowFee,RepIsAtWorst cabal COOPERATIVE,"SetShortcut cutCommLink ""ESCAPE""",,"cabalPalaceYes:""Yes, I'm here for the Starlight Gala.""
+cutCommLink:Cut the comm link",
+CabalCommPalacePay,DialogOptionSelected,$option == cabalPalacePay,"RemoveCommodity credits $uwEntryFee
+AdjustRepActivePerson 20
+AdjustRep cabal 10","The Cabalero is silent for a moment, blinking rapidly as he confirms the credit transfer. He glances up at you, then back down at a console, then back at you. He slowly breaks into a wide, beaming smile.
+
+""Wow. You're a real high roller, baby!"" He leans closer to the screen, causing his jewelry to jingle. ""I'll be keeping my pretty little eye on you, my pretty little $playerBrotherOrSister,"" he purrs with a wink while he cuts off the comm-link.",cabalPalaceGoToGala:Prepare for the Starlight Gala,
+CabalCommPalaceStoryPay,DialogOptionSelected,$option == cabalPalaceStoryPay,,"During your travels, you've learned how the Starlight Cabal operates. Their reputation for avarice is well-founded, but their rapacious appetite for raw credits is... greatly exaggerated. A Cabalero won't turn down money, of course, but they value something more indefinable: opulence.
+
+You pull out all the stops. A frozen Volturnian lobster that you've been saving for a special occasion. A prime vintage of wine from Gilead, retrieved from the ""special"" cabinet in your captain's cabin. Precious metals and gemstones taken as souvenirs from the bountiful ruins of forgotten worlds. Rare recordings of ancient art and music, preserving long-dead Old Earth culture like an insect in amber. You show off and voraciously sample the bounties you have collected from a career spent among the stars.",cabalPalaceStoryPay2:Continue,
+CabalCommPalaceStoryPay2,DialogOptionSelected,$option == cabalPalaceStoryPay2,,"You don't stop there. The Cabal, like the pirates that they so outwardly disdain, respects power more than anything. So, you flex your own power. You remotely tap into the Palace's unsecured Hyperwave Amplifier and coax it into acting as an unrestricted Comm Relay. With your reach suddenly expanded, you make a deliberate series of bribes, purchases, and sales throughout the Sector, leveraging the numerous contacts you've made throughout your life.
+
+It takes a small fortune of credits to accomplish, but afterwards you direct the Cabalero to check the current market trends. As he scans across an unseen screen, you catch the glimpse of red warning lights reflected in his eyes.
+
+The price of recreational drugs has suddenly spiked across every Tri-Tachyon market in the Sector.",cabalPalaceStoryPay3:Continue,
+CabalCommPalaceStoryPay3,DialogOptionSelected,$option == cabalPalaceStoryPay3,"RemoveCommodity credits $uwStoryEntryFee
+AdjustRepActivePerson 20
+AdjustRep cabal 5","The Cabalero is silent for a moment, blinking rapidly as he witnesses your market manipulation. He glances up at you, then back down at a console, then back at you. He slowly breaks into a wide, beaming smile.
+
+""Wow. You're a real high roller, baby!"" The Cabalero leans closer to the screen, causing his jewelry to jingle. ""Forget the fee. I'll let them know that I'm expecting you, my pretty little $playerBrotherOrSister,"" he purrs with a wink while he cuts off the comm-link.",cabalPalaceGoToGala:Prepare for the Starlight Gala,
+CabalCommPalaceYesNoFee,DialogOptionSelected,"$option == cabalPalaceYes
+RepIsAtWorst cabal COOPERATIVE","$global.uwKnowStarlightGalaNoFee = true
+UW_UpdateGalaIntel
+UW_AddGalaIntel","""Groovy! It's a date, little $playerBrotherOrSister. Normally there'd be an entrance fee, but I can see that you're a fellow $playerBrotherOrSister of the shadowsphere. Take a shuttle up to my Palace and tell them you're here for the Starlight Gala. You're going to have the night... Of. Your. LIFE!""
+
+The Cabalero sweeps his index finger upward, striking a dramatic pose. He seems to sparkle. It must be a trick of the camera.",cabalPalaceYesNoFee2:Continue,"This funky scripting ensures that either an update is pushed or a new intel is created, but not both"
+CabalCommPalaceYesNoFee2,DialogOptionSelected,$option == cabalPalaceYesNoFee2,AdjustRepActivePerson 20,"The Cabalero leans his side of the terminal, getting so close that his hair bumps against the screen. ""I'll let them know that I'm expecting you, little $playerBrotherOrSister,"" he says with a wink while he cuts off the comm-link.",cabalPalaceGoToGala:Prepare for the Starlight Gala,
+CabalCommPalaceNoPay,DialogOptionSelected,"$option == cabalPalaceNoPay
+UW_CanPayGala false","AdjustRepActivePerson SUSPICIOUS -2
+AdjustRep cabal HOSTILE -1
+$entity.ignorePlayerCommRequests = true 7
+SetShortcut cutCommLink ""ESCAPE""","""Lame."" The Cabalero immediately loses interest, walking away from his console without even bothing to hit the comm-link cutoff.",cutCommLink:Cut the comm link,
+CabalCommPalaceNoPayCantPay,DialogOptionSelected,"$option == cabalPalaceNoPay
+!UW_CanPayGala false","$entity.ignorePlayerCommRequests = true 7
+SetShortcut cutCommLink ""ESCAPE""","""Oh, I see. You don't have enough coin to knock together, do you,"" the Cabalero coos in an insultingly affectionate tone. ""How adorable."" He sighs, adding, ""be sure to come back when you're worthy of my time, darling.""
+
+The feed cuts off while he's giving you a little wave goodbye.",cutCommLink:Cut the comm link,
+CabalCommPalaceGoToGala,DialogOptionSelected,$option == cabalPalaceGoToGala,"ShowDefaultVisual
+EndConversation
+SetStoryOption cabalPalaceGoToGalaMakeASplash 1 uw_galaStorySplash general ""Wore an outrageous outfit when attending the Starlight Gala""","As your $shipOrFleet prepares for your partygoing excursion to the $uwPalaceShipName, you consider how you are going to present yourself at the Starlight Gala.","cabalPalaceGoToGalaMakeASplash:Make a splash
+cabalPalaceGoToGalaWearADress:Wear a fancy dress
+cabalPalaceGoToGalaWearASuit:Wear a formal suit
+cabalPalaceGoToGalaWearAUniform:Wear your uniform",
+CabalCommPalaceGoToGalaMakeASplash,DialogOptionSelected,$option == cabalPalaceGoToGalaMakeASplash,$uwGalaOutfitSplash = true 0,"You decide to go big or go home: an outfit guaranteed to stand out, even amongst a crowd of eccentric Cabaleros.
+
+After swallowing your nervousness and burying your inhibitions, a number of possibilities come to mind...","cabalPalaceGoToGalaWearNothing:Use your body as a canvas
+cabalPalaceGoToGalaWearBling:Cover yourself in jewelry
+cabalPalaceGoToGalaWearFashion:Invent a new style of fashion",
+CabalCommPalaceGoToGalaWearNothing,DialogOptionSelected,$option == cabalPalaceGoToGalaWearNothing,$uwGalaOutfitNothing = true 0,"Retreating to your quarters, you strip down to your skivvies. Then, after a moment of hesitation, you take those off too.
+
+You then dig into the cosmetics, liberally applying them over your face, transforming your visage into a done-up mask of striking beauty. Having outdone yourself, you proceed with the body paint, carefully tracing your natural contours while you craft a suit of pigments. The process is laborious, at times requiring correction, but determination fuels you.",cabalPalaceGoToGalaWearNothing2:Continue,
+CabalCommPalaceGoToGalaWearNothing2,DialogOptionSelected,$option == cabalPalaceGoToGalaWearNothing2,,"Finally, you stand in front of the mirror to inspect your handiwork. You look like an otherwordly fey being, something both removed from and elevated over humanity. You can barely recognize yourself.
+
+From a distance, one might not even realize you're wearing nothing.
+
+It's time to make an impression.",cabalPalaceGoToGalaWearNothing3:Take a shuttle to the $uwPalaceShipName,
+CabalCommPalaceGoToGalaWearNothing3,DialogOptionSelected,$option == cabalPalaceGoToGalaWearNothing3,"$option = cabalPalaceGoToGala2 0
+FireBest DialogOptionSelected","""It's- it's- um,"" the officer overseeing the shuttle bay stammers, ""not proper protocol to, um-,"" but you wave him off, boarding the shuttle with an air of unwavering authority. Even the marines avert their eyes.",,
+CabalCommPalaceGoToGalaWearBling,DialogOptionSelected,$option == cabalPalaceGoToGalaWearBling,$uwGalaOutfitBling = true 0,"The Starlight Cabal can't get enough of their shiny baubles, so you decide to play to the crowd. You order your ship's forge crew to hammer out rings, bracelets, necklaces - anything they can produce in short order. Meanwhile, you scrounge up every last piece of jewelry in your collection and search around for the perfect outfit to accompany them.
+
+You wind up wearing some of the gaudiest robes you've ever seen - an old shame of one of your officers, who is very eager to be rid of them - and decking yourself out with enough bling to confuse a guidance algorithm.",cabalPalaceGoToGalaWearBling2:Continue,
+CabalCommPalaceGoToGalaWearBling2,DialogOptionSelected,$option == cabalPalaceGoToGalaWearBling2,,"You can't help but feel like a magpie as you inspect your reflection in the mirror. The mass of precious metal literally weighs you down, clinking and jingling with every movement you make. Gemstones strain your eyes from countless multi-faceted reflections. Your whole body sparkles like a cluster of flares.
+
+It's time to make an impression.",cabalPalaceGoToGalaWearBling3:Take a shuttle to the $uwPalaceShipName,
+CabalCommPalaceGoToGalaWearBling3,DialogOptionSelected,$option == cabalPalaceGoToGalaWearBling3,"$option = cabalPalaceGoToGala2 0
+FireBest DialogOptionSelected","You get raised eyebrows from your officers as you stride to the shuttle bay. One of the marines keeps glancing at your feet, clearly hoping to surreptitiously collect any jewelry you accidentally drop on the ground.",,
+CabalCommPalaceGoToGalaWearFashion,DialogOptionSelected,$option == cabalPalaceGoToGalaWearFashion,$uwGalaOutfitFashion = true 0,"You decide to make a fashion statement. No existing style will do; you go straight to the drawing board, deliberately concocting the most ridiculous design you can think of. After a few rounds of revision, you strike gold: a peacock-inspired gown with a low-cut V-neck, massive white frills, and an enormous multicolored fan-shaped protrusion in the back that stretches above the head and far to each side.
+
+It's hideous. It's perfect.",cabalPalaceGoToGalaWearFashion2:Continue,
+CabalCommPalaceGoToGalaWearFashion2,DialogOptionSelected,$option == cabalPalaceGoToGalaWearFashion2,,"It turns out that one of your crew was once a seamstress from Gilead. She grumbles the entire time as she crafts your monstrosity of an outfit, but the final product looks like it was made by a true professional. Rather than tell you her life's story, however, she just demands more hazard pay.
+
+After a thorough inspection in the mirror, you decide that this outfit is even worse than you had imagined. It will be a wonder if you can ever live this down.
+
+It's time to make an impression.",cabalPalaceGoToGalaWearFashion3:Take a shuttle to the $uwPalaceShipName,
+CabalCommPalaceGoToGalaWearFashion3,DialogOptionSelected,$option == cabalPalaceGoToGalaWearFashion3,"$option = cabalPalaceGoToGala2 0
+FireBest DialogOptionSelected","Heads turn and jaws drop as you make your way to the shuttle bay. En route to the $uwPalaceShipName, your escorts wear expressions of secondhand embarrassment.",,
+CabalCommPalaceGoToGalaWearADress,DialogOptionSelected,$option == cabalPalaceGoToGalaWearADress,"$uwGalaOutfitFormal = true 0
+$uwGalaOutfitDress = true 0","You take the opportunity to wear your best, digging out a long-buried black dress with a low-cut back. Shiny high-heels, thin stockings, and a necklace of Volturnian pearls complete the appearance. It's a little revealing, but it'll do.
+
+You tuck a sidearm into your skirt, just in case.
+
+The $uwPalaceShipName sends you the all-clear to approach with the shuttle and escorts.",cabalPalaceGoToGalaWearADress2:Take a shuttle to the $uwPalaceShipName,
+CabalCommPalaceGoToGalaWearADress2,DialogOptionSelected,$option == cabalPalaceGoToGalaWearADress2,"$option = cabalPalaceGoToGala2 0
+FireBest DialogOptionSelected","En route, you notice a male junior officer blushing and looking away from you.",,
+CabalCommPalaceGoToGalaWearASuit,DialogOptionSelected,$option == cabalPalaceGoToGalaWearASuit,"$uwGalaOutfitFormal = true 0
+$uwGalaOutfitSuit = true 0","You take the opportunity to get properly dressed, dusting off a sharp, black suit for the occasion. Sleek boots, ironed pants, and white gloves complete the appearance. It's a little constricting, especially around the collar, but it'll do.
+
+You tuck a sidearm into your jacket, just in case.
+
+The $uwPalaceShipName sends you the all-clear to approach with the shuttle and escorts.",cabalPalaceGoToGalaWearASuit2:Take a shuttle to the $uwPalaceShipName,
+CabalCommPalaceGoToGalaWearASuit2,DialogOptionSelected,$option == cabalPalaceGoToGalaWearASuit2,"$option = cabalPalaceGoToGala2 0
+FireBest DialogOptionSelected","En route, you catch a female junior officer staring at your butt.",,
+CabalCommPalaceGoToGalaWearAUniform,DialogOptionSelected,$option == cabalPalaceGoToGalaWearAUniform,"$player.ethosOrder++
+$uwGalaOutfitUniform = true 0","You consider your reputation. When people see you, they have certain expectations. Captain, commander, trader, privateer, spacer, starfarer. Perhaps it's best to go as-is. After all, this is who you really are.
+
+You keep your sidearm at your hip, just in case.
+
+The $uwPalaceShipName sends you the all-clear to approach with the shuttle and escorts.",cabalPalaceGoToGala2:Take a shuttle to the $uwPalaceShipName,
+#CabalCommPalaceGoToGala2,DialogOptionSelected,$option == cabalPalaceGoToGala2,,#TBD,#TBD,
+,,,#Slightly different text during the event depending on whether you're in hyperspace,,,
+,,,#$entity.sawPlayerTransponderOn = true,,,
+,,,"#Gamify it, keep the player on their toes",,,
+,,,#One night stand? Zeb is pansex,,,
+,,,"#If you accuse the Cabal of being immoral, Zeb asks you what heinous shit YOU have done (or mocks you for even daring to judge if you've committed an atrocity)",,,
+,,,"#Zeb is coldly sober about Kanta, warns the player never to underestimate the pirate queen - a vicious monster, yes, but also a calculating warlord who has kept her wit sharp despite the centuries. Few can balance delegation and personal authority like Kanta, and the immensity of charisma she must possess to command such hordes of lawless pirates...",,,
+,,,"#UW_ContactZeb, $global.uwCompletedStarlightGala = true",,,
+,,,"#Need special contact greet text for Zeb, maybe pattern after Arroyo?",,,
+,,,,,,
 relLevelCooperativeCabal,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
-$faction.id == cabal",,"Against all odds, the Starlight Cabal sees you as an authority figure. Your words hold great weight within the shadowsphere.",,
+$faction.id == cabal",,"You have become a member of the Starlight Cabal. You walk the shadowsphere with the full authority of a Cabalero. Now that you have completed the Starlight Path, no longer shall you encounter any fees, restrictions, or demands from fellow Cabaleros.",,
+relLevelFriendlyCabal,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == cabal",,"Now nearly at the terminus of the Starlight Path, you have earned probationary membership within the Starlight Cabal. Entrance fees are waived for you, and most Cabaleros will know not to overtly ask you for further contributions.",,
+relLevelWelcomingCabal,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == cabal",,You have walked further along the Starlight Path than most - a result of dedication and deep pockets. You have met important Cabaleros and have a limited level of insight into the inner workings of the organization. Full membership may be on the horizon.,,
+relLevelFavorableCabal,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == cabal",,The Starlight Cabal now sees you as an investment. You are treated with favor over other associates of the Cabal. Some Cabaleros offer you intriguing and exclusive deals.,,
+relLevelNeutralCabal,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == cabal",,"Your contributions to the Starlight Cabal have earned, though not actual membership, an associate position within the organization. The bulk of the Starlight Path still remains ahead of you.",,
 relLevelSuspiciousCabal,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == cabal",,"You have started on the Starlight Path, or so the Cabal claims.",,
+$faction.id == cabal",,"You have taken the first few steps along the Starlight Path. You are not a member of the Starlight Cabal, but you are treated with less disrespect than most are.",,
 relLevelInhospitableCabal,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == cabal",,"The Starlight Cabal sees you as something more than a worthless peasant, meaning you are effectively free from their ire. For now.",,
+$faction.id == cabal",,"You have entered into the Starlight Path, or so they claim. Although relations could quickly sour if you make a wrong move, you are now permitted to do business with the Starlight Cabal.",,
 relLevelHostileCabal,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == cabal",,"The Starlight Cabal thinks nothing of you. In other words, they'll blow you up for fun, given the chance.",,
+$faction.id == cabal",,"As with countless others, you are simply prey to the Starlight Cabal. Your wealth and hardware are free for the taking, but a Cabalero will not take your life if you comply with their demands.",,
 relLevelVengefulCabal,RelationshipLevelDesc,"$faction.rel == VENGEFUL
-$faction.id == cabal",,You have made yourself into an enemy of the Starlight Cabal. They are more than willing to leverage their considerable firepower against you.,,
+$faction.id == cabal",,"You have proven to be a willing enemy of the Starlight Cabal. To a Cabalero, your life and liberty are forfeit; compliance will not save you.",,
 ,,,,,,
 flavorTextMarketUWArigato,TradePanelFlavorText,"$global.tradePanelMode == MARKET
 $faction.id == pirates
@@ -674,6 +934,7 @@ UW_ExtortFleet alertPatrols",The $otherShipOrFleet opens their hatches and start
 uwExtortCancel,DialogOptionSelected,$option == uw_extortCancel,"$entity.ignorePlayerCommRequests = true 0
 ShowDefaultVisual
 EndConversation","""...""
+
 The $personRank quickly cuts the connection before you can change your mind.",,
 ,,,,,,
 uwGreetingTradeFleetAlreadyExtorted,OpenCommLink,"UW_ExtortFleet canExtortFleet score:20

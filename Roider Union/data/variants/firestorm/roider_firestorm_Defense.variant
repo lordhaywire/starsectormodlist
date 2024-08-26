@@ -1,44 +1,40 @@
 {
     "displayName": "Defense",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 16,
     "fluxVents": 16,
     "goalVariant": true,
     "hullId": "roider_firestorm",
-    "hullMods": ["fluxbreakers"],
+    "hullMods": [
+        "fluxbreakers",
+        "reinforcedhull"
+    ],
     "modules": [
         {"LEFT ARMOR": "roider_firestorm_left_Standard"},
         {"RIGHT ARMOR": "roider_firestorm_right_Standard"}
     ],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_firestorm_Defense",
     "weaponGroups": [
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS 000": "harpoonpod"}
+            "weapons": {"WS 001": "roider_zap"}
         },
         {
-            "autofire": false,
-            "mode": "ALTERNATING",
+            "autofire": true,
+            "mode": "LINKED",
             "weapons": {
-                "WS 010": "roider_zap",
-                "WS 011": "roider_zap"
+                "WS 002": "roider_doldrums",
+                "WS 003": "roider_doldrums"
             }
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 002": "lightag",
-                "WS 003": "lightag"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 004": "lightac",
-                "WS 005": "lightac"
+                "WS 010": "lightag",
+                "WS 011": "lightag"
             }
         },
         {
@@ -52,7 +48,10 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "dualflak"}
+            "weapons": {
+                "WS 004": "lightac",
+                "WS 005": "lightac"
+            }
         },
         {
             "autofire": true,

@@ -1,0 +1,13 @@
+{
+    "id": "Everybody loves KoC",
+    "name": "Everybody loves KoC",
+    "author": "Vikta",
+    "version": "1.04.44",
+    "description": "Adds KoC to the game; Everyone loves the KoC.",
+    "gameVersion": "0.97a",
+    "replace":	["data/campaign/econ/arcadia.json",
+		"data/campaign/econ/nergal.json",
+		"data/campaign/econ/wurzle.json",
+		"data/campaign/econ/yma.json",
+		],
+}

@@ -1,0 +1,251 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmallForSmallFleet":{
+		###10
+		"prv_basalt_attack":5,
+		"prv_basalt_protected":5,
+		###6
+		"prv_gnista_p_attack":3,
+		"prv_gnista_p_balanced":3,
+            ###10
+            "prv_granit_belt":7,
+            "prv_granit_elite":3,
+            ###5
+		"prv_gremlin_rb_attack":3,
+		"prv_gremlin_rb_balanced":2,
+		###10
+		"prv_wolf_rb_syndicate":5,
+		"prv_wolf_rb_breaker":5,
+		###0
+		"prv_cerberus_d_pirates_belt":0, #rb override
+	},
+	"combatSmall":{
+		###10
+		"prv_basalt_attack":5,
+		"prv_basalt_protected":5,
+		###10
+		"prv_gnista_p_attack":5,
+		"prv_gnista_p_balanced":5,
+		###8
+		"prv_flamma_p_assault":4,
+		"prv_flamma_p_overdriven":4,
+		###10
+            "prv_granit_belt":5,
+            "prv_granit_elite":5,
+            ###10
+            "prv_gremlin_rb_attack":5,
+            "prv_gremlin_rb_balanced":5,
+		###10
+		"prv_wolf_rb_syndicate":5,
+		"prv_wolf_rb_breaker":5,
+		###0
+		"prv_cerberus_d_pirates_belt":0, #rb override
+		"prv_hound_d_pirates_belt":0, #rb override
+		"prv_wolf_d_pirates_syndicate":0, #rb override
+	},
+	"combatMedium":{
+		###10
+		"prv_ballebo_p_pirate":10,
+            ###10
+            "prv_gnejs_belt":3,
+            "prv_gnejs_support":7,
+            ###10
+            "prv_dolomit_attack":4,
+            "prv_dolomit_balanced":3,
+            "prv_dolomit_siege":3,
+            ###8
+            "prv_dolomit_p_rocket":4,
+            "prv_dolomit_p_missile":4,
+            ###0
+            "prv_shrike_p_support":0, #rb override
+            ###0
+            "prv_manticore_pirates_syndicate":0, #rb override
+            "prv_manticore_pirates_belt":0, #rb override
+	},
+	"combatLarge":{
+		###10
+		"prv_hornfels_standard":5,
+		"prv_hornfels_belt":5,
+		###10
+		"prv_hornfels_pather_attack":5,
+		"prv_hornfels_pather_converted":5,
+		###10
+		"prv_dominator_rb_line":5,
+		"prv_dominator_rb_syndicate":5,
+		###0
+		"prv_colossus3_belt":0, #rb override #don't ask me why the col3 isn't a carrier
+		###0
+		"prv_venture_p_syndicate":0, #rb override
+	},
+	"combatCapital":{
+		###10
+		"prv_bergtagen_belt":5,
+		"prv_bergtagen_assault":5,
+		###10
+		"prv_rok_p_stolen":5,
+		"prv_rok_p_pirate":5,
+		"prv_rok_p_belt":0,	#rb override
+		"prv_rok_p_syndicate":0,#rb override
+		###0
+		"prv_atlas2_belt":0, #rb override
+	},
+	
+	
+	# hybrid ships with good combat and cargo capacity
+	"combatFreighterSmall":{
+		###4
+		"prv_skiffer_belt":2,
+		"prv_skiffer_industrial":2,
+		###10
+		"prv_wayfarer_fringe":0, #rb override
+	},
+	"combatFreighterMedium":{
+		###10
+		"prv_visent_smuggler":5,
+		"prv_visent_lh":5,
+		###5
+		"prv_bitumen_belt":5,
+	},
+	"combatFreighterLarge":{
+		###8
+		"prv_gabbro_converted":3,
+		"prv_gabbro_mil":7,
+		###10
+		"prv_bergslag_belt":5,
+		"prv_bergslag_blast":5,
+		###10
+		"prv_bergslag_p_suspicious":5,
+		"prv_bergslag_p_modified":5,
+		###10
+		"prv_venture_rb_armored":3,
+		"prv_venture_rb_belt":4,
+		"prv_venture_rb_merch":3,
+	},
+	
+	"civilianRandom":{
+		###10
+		"prv_damm_belt":5,
+		"prv_damm_maint":5,
+		###2
+		"prv_bergslag_blast":1,
+		"prv_bergslag_belt":1,
+		###2
+		"prv_gabbro_converted":0.6,
+		"prv_gabbro_mil":1.4,
+		###3
+		"prv_visent_smuggler":1.5,
+		"prv_visent_lh":1.5,
+		###2
+		"prv_skiffer_belt":0.75,
+		"prv_skiffer_industrial":1.25,
+	},
+
+	# carriers
+	"carrierSmall":{
+		###10
+		"prv_skiffer_strike":2.5,
+		"prv_skiffer_armed":2.5,
+            ###6
+		"prv_tystnad_p_ambush":6,
+	},
+	"carrierMedium":{
+		###10
+		"prv_flock_rb_support":5,
+		"prv_flock_rb_attack":5,
+		###8
+		"prv_kakafoni_p_pirate":4,
+		"prv_kakafoni_p_raider":4,
+		###10
+		"prv_kakafoni_rb_missile":6,
+		"prv_kakafoni_rb_belt":4,
+	},
+	"carrierLarge":{
+		###3
+		"prv_bergslag_belt":1.5,
+		"prv_bergslag_blast":1.5,
+		###10
+		"prv_andesit_belt":3,
+		"prv_andesit_syndicate":3,
+		"prv_andesit_ms":4,
+	},
+
+	# phase ships
+	"phaseSmall":{
+		#8
+		"prv_fasnod_p_raider":8,
+		#0
+		"prv_shade_d_pirates_pirate":0, #rb override
+	},
+	"phaseMedium":{
+	},
+	"phaseLarge":{
+		###10
+		"prv_kvarts_belt":5,
+		"prv_kvarts_attack":5,
+	},
+	"phaseCapital":{
+
+	},
+
+	# freighters and such
+	"freighterSmall":{
+		###1
+		"prv_damm_belt":0.5,
+		"prv_damm_maint":0.5,
+	},
+	"freighterMedium":{
+	},
+	"freighterLarge":{
+	},
+	
+	"tankerSmall":{
+	},
+	"tankerMedium":{
+	},
+	"tankerLarge":{
+	},
+	
+	"personnelSmall":{
+		###1
+		"prv_damm_belt":0.5,
+		"prv_damm_maint":0.5,
+	},
+	"personnelMedium":{
+	},
+	"personnelLarge":{
+		###2
+		"prv_gabbro_converted":0.6,
+		"prv_gabbro_mil":1.4,
+	},
+	
+	"linerSmall":{
+	},
+	"linerMedium":{
+	},
+	"linerLarge":{
+	},
+	
+	# utility ships
+	"tug":{
+	},
+	"crig":{
+		###4
+		"prv_skiffer_belt":1,
+		"prv_skiffer_industrial":1,
+	},
+	"utility":{
+		###8
+		"prv_bergslag_belt":4,
+		"prv_bergslag_blast":4,
+		###4
+		"prv_skiffer_armed":1,
+		"prv_skiffer_industrial":1,
+	},
+	
+	"orbitalStationLowTech":{
+	},
+	
+	"battlestationLowTech":{
+	},
+}

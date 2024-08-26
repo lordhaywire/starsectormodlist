@@ -1,0 +1,5 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Master Control,prv_slavedfirecontrol,,,prv Starworks,,,,,TRUE,,0,0,0,0,prv.extra.hullmods.prv_slavedfirecontrol,"This ship inherits all range bonuses and penalties from its host carrier.
+
+All bonuses are lost and weapon range is reduced to 50% if the host ship is disabled.",Inherits range bonuses.,,graphics/hullmods/integrated_point_defense_ai.png
+Hegemony Specialist,prv_hegemony_spec,,,Hegemony,,,,,TRUE,,0,0,0,0,data.hullmods.Fourteenth,"It is unclear if this ship has ever been on the Hegemony auxiliary list. Nonetheless it has undergone an extensive remodelling at one of the Hegemony’s naval yards, which has allowed for the mounting of heavier armor plating, increasing protection by %s standard units with only a %s reduction in speed and maneuverability. Further upgrades to the energy systems additionally increase flux throughput and capacity by %s over standard examples of this hull.",,,graphics/hullmods/militarized_hegemony_auxiliary.png

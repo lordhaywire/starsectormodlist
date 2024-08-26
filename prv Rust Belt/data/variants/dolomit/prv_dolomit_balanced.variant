@@ -1,0 +1,62 @@
+{
+  "displayName": "Balanced",
+  "fluxCapacitors": 10,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_dolomit",
+  "hullMods": [
+    "missleracks",
+    "blast_doors"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_dolomit_balanced",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_brytare_rack",
+        "WS0002": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+	  "BI01": "prv_sidewinder",
+        "BI02": "prv_sidewinder",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightag",
+        "WS0007": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "arbalest"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavymg",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

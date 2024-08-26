@@ -1,0 +1,290 @@
+{
+    "bounds": [
+        -22,
+        56,
+        19,
+        47,
+        21,
+        32,
+        32,
+        24,
+        35,
+        32,
+        74,
+        31,
+        77,
+        16,
+        92,
+        6,
+        92,
+        -6,
+        76,
+        -18,
+        72,
+        -32,
+        34,
+        -33,
+        31,
+        -22,
+        20,
+        -32,
+        19,
+        -48,
+        -22,
+        -54,
+        -22,
+        -39,
+        -33,
+        -38,
+        -36,
+        -47,
+        -57,
+        -46,
+        -70,
+        -32,
+        -80,
+        -32,
+        -72,
+        -1,
+        -79,
+        33,
+        -69,
+        33,
+        -57,
+        47,
+        -35,
+        48,
+        -31,
+        38,
+        -22,
+        40
+    ],
+    "center": [ 64, 91 ],
+    "collisionRadius": 130,
+    "coversColor": "",
+    "engineSlots": [
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 64,
+            "location": [
+                -82,
+                31
+            ],
+            "style": "HIGH_TECH",
+            "width": 16
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 48,
+            "location": [
+                -82,
+                23
+            ],
+            "style": "HIGH_TECH",
+            "width": 12
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 32,
+            "location": [
+                -82,
+                17
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 32,
+            "location": [
+                -77,
+                0
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 32,
+            "location": [
+                -82,
+                -16
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 48,
+            "location": [
+                -82,
+                -22
+            ],
+            "style": "HIGH_TECH",
+            "width": 12
+        },
+        {
+            "angle": 180,
+            "contrailSize": 64,
+            "length": 64,
+            "location": [
+                -82,
+                -30
+            ],
+            "style": "HIGH_TECH",
+            "width": 16
+        },
+        {
+            "angle": 180,
+            "contrailSize": 128,
+            "length": 16,
+            "location": [
+                -24,
+                53
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 128,
+            "length": 8,
+            "location": [
+                -24,
+                46
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 128,
+            "length": 8,
+            "location": [
+                -24,
+                -46
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        },
+        {
+            "angle": 180,
+            "contrailSize": 128,
+            "length": 16,
+            "location": [
+                -24,
+                -53
+            ],
+            "style": "HIGH_TECH",
+            "width": 8
+        }
+    ],
+    "height": 192,
+    "hullId": "eridani_mule",
+    "hullName": "Hinny",
+    "hullSize": "DESTROYER",
+    "builtInMods": ["surveying_equipment"],
+    "shieldCenter": [ 4, 0 ],
+    "shieldRadius": 125,
+    "spriteName": "graphics/ships/eridani/hinny2.png",
+    "style": "HIGH_TECH",
+    "viewOffset": 0,
+  "builtInWings": ["mining_drone_wing"],
+    "builtInWeapons": {
+        "WS 003":"heavymininglaser"
+    },
+    "weaponSlots": [
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 001",
+            "locations": [
+                21,
+                39
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "MISSILE"
+        },
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 002",
+            "locations": [
+                21,
+                -39
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "MISSILE"
+        },
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 003",
+            "locations": [
+                60,
+                0
+            ],
+            "mount": "HARDPOINT",
+            "size": "LARGE",
+            "type": "BUILT_IN"
+        },
+        {
+            "angle": 90,
+            "arc": 210,
+            "id": "WS 004",
+            "locations": [
+                -2,
+                40
+            ],
+            "mount": "TURRET",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 180,
+            "arc": 150,
+            "id": "WS 005",
+            "locations": [
+                -56,
+                0
+            ],
+            "mount": "TURRET",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": -90,
+            "arc": 210,
+            "id": "WS 006",
+            "locations": [
+                -2,
+                -40
+            ],
+            "mount": "TURRET",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [1,12,
+                    1,-12,
+                    -9,12,
+                    -9,-12,
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+    ],
+    "width": 128
+}

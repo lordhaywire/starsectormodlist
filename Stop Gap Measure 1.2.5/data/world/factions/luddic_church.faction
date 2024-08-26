@@ -1,0 +1,60 @@
+{
+   "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+            "filgap_bogomil":10,
+            "filgap_fulk":15,
+            "filgap_templar":15,
+            "filgap_cathar":10,
+            "filgap_starblazer":0,
+            "filgap_rosatom":0,
+            "filgap_era":0,
+            "filgap_era_lc":5,
+			"filgap_nitassinan":0.25,
+
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "lowtech_bp"],
+        "hulls":[
+             "filgap_adjudicator",
+
+
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "lowtech_bp", "luddic_church"],
+        "hulls":[
+            "filgap_adjudicator",
+            "filgap_fulk",
+            "filgap_templar",
+            "filgap_bogomil",
+            "filgap_cathar",
+			"atlas",
+			"prometheus",
+			"legion",
+
+
+        ],
+    },
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "luddic_church"],
+		"weapons":[
+			"heavymauler",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"amblaster",
+			"filgap_mosychlosbag",
+		],
+	},
+
+}

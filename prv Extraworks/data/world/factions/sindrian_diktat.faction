@@ -1,0 +1,23 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_eld_midline",
+			"prv_flamma_midline",
+		],
+	},
+	"knownWeapons":{
+		"weapons":[
+			"prv_akers",
+			"prv_heavyakers",
+			"prv_siege_akers",
+			
+			"prv_sidensvans",
+			"prv_sidensvans_array",
+		]
+	},
+	"hullFrequency":{
+		"tags":{
+			"prv_midline_bp":0.33,
+		},
+	},
+}

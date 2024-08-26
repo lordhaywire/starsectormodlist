@@ -1,0 +1,58 @@
+{
+  "displayName": "Support",
+  "fluxCapacitors": 7,
+  "fluxVents": 7,
+  "goalVariant": false,
+  "hullId": "prv_flock_midline",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "eccm",
+    "converted_hangar"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_flock_midline_dem",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "hydra"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "gazerpod",
+        "WS0002": "gazerpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightdualac",
+        "WS0004": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "taclaser",
+        "WS0006": "taclaser",
+        "WS0009": "taclaser",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser"
+      }
+    },
+  ],
+  "wings": ["claw_wing"]
+}

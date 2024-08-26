@@ -1,0 +1,149 @@
+{
+  "bounds": [
+    -15,
+    -15,
+    -25,
+    -40,
+    0,
+    -50,
+    25,
+    -40,
+    25,
+    40,
+    0,
+    50,
+    -25,
+    40,
+    -15,
+    15
+  ],
+  "builtInWeapons": {},
+  "builtInWings": [],
+  "builtInMods": ["rugged"],
+  "center": [
+    51,
+    31
+  ],
+  "collisionRadius": 65,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -30,
+        38
+      ],
+      "style": "LOW_TECH",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -30,
+        -38
+      ],
+      "style": "LOW_TECH",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -25,
+        29
+      ],
+      "style": "LOW_TECH",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -25,
+        -29
+      ],
+      "style": "LOW_TECH",
+      "width": 12
+    }
+  ],
+  "height": 60,
+  "hullId": "haymaker",
+  "hullName": "Haymaker",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 70,
+  "spriteName": "graphics/ships/bone_daddy.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        20,
+        15
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        20,
+        -15
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 240,
+      "id": "WS0003",
+      "locations": [
+        0,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 240,
+      "id": "WS0004",
+      "locations": [
+        0,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 270,
+      "id": "WS0005",
+      "locations": [
+        -15,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 102
+}

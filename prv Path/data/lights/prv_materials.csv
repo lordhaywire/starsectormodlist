@@ -1,0 +1,11 @@
+id,type,frame,magnitude,map,path
+prv_mora_pather,ship,,1,normal,graphics/shaders/normal/ships/mora/mora_normal.png
+prv_mora_pather,ship,,,material,graphics/shaders/material/ships/mora/mora_material.png
+,,,,,
+prv_talon_pather,ship,,1,normal,graphics/prv/ships/materials/fighters/prv_talon_pather_normal.png
+prv_talon_pather,ship,,,material,graphics/prv/ships/materials/fighters/prv_talon_pather_material.png
+prv_talon_pather,ship,,,surface,graphics/prv/ships/materials/fighters/prv_talon_pather_surface.png
+,,,,,
+prv_broadsword_pather,ship,,1,normal,graphics/prv/ships/materials/fighters/prv_broadsword_pather_normal.png
+prv_broadsword_pather,ship,,,material,graphics/prv/ships/materials/fighters/prv_broadsword_pather_material.png
+prv_broadsword_pather,ship,,,surface,graphics/prv/ships/materials/fighters/prv_broadsword_pather_surface.png

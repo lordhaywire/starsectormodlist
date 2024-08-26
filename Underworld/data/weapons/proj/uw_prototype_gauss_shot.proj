@@ -1,6 +1,7 @@
 {
     "id":"uw_prototype_gauss_shot",
     "specClass":"projectile",
+	"onFireEffect":"data.scripts.weapons.UW_TrailWeapon",
     "spawnType":"BALLISTIC_AS_BEAM",
     "collisionClass":"RAY",
     "collisionClassByFighter":"RAY_FIGHTER",

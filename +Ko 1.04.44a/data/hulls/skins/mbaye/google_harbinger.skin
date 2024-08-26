@@ -1,0 +1,24 @@
+{
+	"baseHullId":"harbinger",
+	"skinHullId":"google_harbinger",
+	"hullName":"Harbinger (MbG)",
+	"descriptionId":"harbinger",
+	"descriptionPrefix":"The modified ships of Mbaye-Gogle often come as a surprise to would-be pirates and privateers who expect a conventional fight.",
+	"tags":["rare_bp", "mbaye"],
+	"tech":"Mbaye-Gogol",
+    "ordnancePoints":90,
+	"spriteName":"graphics/ships/google/harbinger.png",
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInWeapons":{},
+	"builtInMods":["maybegoogle"],
+	"systemId":"mine_strike",
+	"weaponSlotChanges":{
+		"WS 001":{"type": "SYNERGY",},
+		"WS 002":{"type": "SYNERGY",},
+		"WS 003":{"type": "SYNERGY",},
+		"WS 004":{"type": "ENERGY",},
+		"WS 005":{"type": "ENERGY",},
+		}
+}

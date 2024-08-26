@@ -65,7 +65,8 @@ public class CabalCargoCalc extends BaseCommandPlugin {
                 }
                 totalCreditsValue += unadjustedValue;
             } else if (stack.isSpecialStack() && (stack.getSpecialItemSpecIfSpecial() != null)) {
-                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)
+                        || stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.STORY_CRITICAL)) {
                     continue;
                 }
                 float value = stack.getSpecialItemSpecIfSpecial().getBasePrice() * stack.getSize();
@@ -125,7 +126,8 @@ public class CabalCargoCalc extends BaseCommandPlugin {
                     biggestCreditsValue = value;
                 }
             } else if (stack.isSpecialStack() && (stack.getSpecialItemSpecIfSpecial() != null)) {
-                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)
+                        || stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.STORY_CRITICAL)) {
                     continue;
                 }
                 float value = stack.getSpecialItemSpecIfSpecial().getBasePrice() * stack.getSize();
@@ -161,7 +163,7 @@ public class CabalCargoCalc extends BaseCommandPlugin {
         }
 
         CargoAPI cargo = createCargoCopyWithCombinedStacks(Global.getSector().getPlayerFleet().getCargo());
-        float shieldedFraction = Misc.getShieldedCargoFraction(fleet);
+        float shieldedFraction = Misc.getShieldedCargoFraction(Global.getSector().getPlayerFleet());
         float totalCreditsValue = totalCargoValue(cargo, shieldedFraction);
         double valueToTake = extortionAmount(totalCreditsValue);
         float powerLevel = UW_Util.calculatePowerLevel(fleet);
@@ -223,7 +225,8 @@ public class CabalCargoCalc extends BaseCommandPlugin {
             } else if (stack.isSpecialStack()) {
                 float value = stack.getSize();
                 if (stack.getSpecialItemSpecIfSpecial() != null) {
-                    if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)) {
+                    if (stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.MISSION_ITEM)
+                            || stack.getSpecialItemSpecIfSpecial().getTags().contains(Tags.STORY_CRITICAL)) {
                         continue;
                     }
                     value *= stack.getSpecialItemSpecIfSpecial().getBasePrice();
@@ -268,10 +271,20 @@ public class CabalCargoCalc extends BaseCommandPlugin {
         }
         effectiveSize = (int) Math.min(effectiveSize, fleet.getCargo().getSpaceLeft());
 
-        int amountToTake = (int) UW_Util.roundToSignificantFiguresLong(Math.min(effectiveSize, valueToTake / creditsPerBiggest), 2);
+        int amountToTake;
+        if (biggestStack.isSpecialStack()) {
+            amountToTake = (int) Math.round(Math.min(effectiveSize, valueToTake / creditsPerBiggest));
+        } else {
+            amountToTake = (int) UW_Util.roundToSignificantFiguresLong(Math.min(effectiveSize, valueToTake / creditsPerBiggest), 2);
+        }
         int amountLeft = (int) (biggestStack.getSize() - amountToTake);
         if (amountToTake < 1) {
             amountToTake = 1;
+        }
+        if (effectiveSize < 1) {
+            effectiveSize = 1;
+        } else {
+            effectiveSize = Math.round(effectiveSize);
         }
 
         float finalValue = amountToTake * (biggestCreditsValue / effectiveSize);

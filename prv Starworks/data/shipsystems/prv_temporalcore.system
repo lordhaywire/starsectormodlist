@@ -3,9 +3,9 @@
 	"type":"STAT_MOD",
 	#"aiType":"TEMPORAL_SHELL",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.ai.systems.prv_lykta_ai_simple",
+	"aiScript":"prv.corp.ai.systems.prv_lykta_ai_simple",
 	
-	"statsScript":"shipsystems.prv_temporalcore",
+	"statsScript":"prv.corp.shipsystems.prv_temporalcore",
 	
 	# handled in the script instead of here
 	#"jitterUnderColor":[90,165,255,155],

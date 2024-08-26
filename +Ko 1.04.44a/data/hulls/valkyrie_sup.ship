@@ -1,0 +1,200 @@
+{
+    "bounds": [
+        -105,
+        37,
+        144,
+        21,
+        144,
+        -21,
+        -105,
+        -36
+    ],
+    "builtInMods": ["escort_package"],
+  "builtInWings": [],
+    "center": [
+        40,
+        111
+    ],
+    "collisionRadius": 200,
+    "coversColor": "",
+    "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -110,
+        28
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -109,
+        20
+      ],
+      "style": "MIDLINE",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 80,
+      "location": [
+        -109,
+        0
+      ],
+      "style": "MIDLINE",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -109,
+        -19
+      ],
+      "style": "MIDLINE",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -110,
+        -28
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    }
+    ],
+    "height": 260,
+    "hullId": "valkyrie_sup",
+    "hullName": "Valkyrie (KoC)",
+    "hullSize": "DESTROYER",
+    "shieldCenter": [
+        17,
+        0
+    ],
+    "shieldRadius": 180,
+    "spriteName": "graphics/ships/valkyrie_sup.png",
+    "style": "MIDLINE",
+    "viewOffset": 0,
+    "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 190,
+      "id": "WS 001",
+      "locations": [
+        -62,
+        27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 190,
+      "id": "WS 002",
+      "locations": [
+        -62,
+        -27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 60,
+      "arc": 150,
+      "id": "WS 003",
+      "locations": [
+        62,
+        22
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -60,
+      "arc": 150,
+      "id": "WS 004",
+      "locations": [
+        62,
+        -22
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+        {
+            "angle": 0,
+            "arc": 0,
+            "id": "WS 005",
+            "locations": [
+                140,
+                16
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 0,
+            "id": "WS 006",
+            "locations": [
+                140,
+                -15
+            ],
+            "mount": "HARDPOINT",
+            "size": "SMALL",
+            "type": "ENERGY"
+        },
+        {
+            "angle": 0,
+            "arc": 5,
+            "id": "WS 007",
+            "locations": [
+                147,
+                0
+            ],
+            "mount": "HIDDEN",
+            "size": "SMALL",
+            "type": "SYSTEM"
+        },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        10,
+        -0,
+        29,
+        -0,
+        -10,
+        -0,
+        4,
+        3,
+        4,
+        -3,
+        14.5,
+        -3,
+        15,
+        3
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+    ],
+    "width": 80
+}

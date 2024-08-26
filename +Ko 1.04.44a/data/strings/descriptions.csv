@@ -1,0 +1,186 @@
+id,type,text1,text2,text3,notes
+# Fighters and Ships,,,,,
+pulse_drone,SHIP,"An attempt to emulate the dreaded Terminator drone using off-the-shelf components. The pulse drone lacks a PD Laser but upgrades the pulse laser for one with extended range, an integrated PD AI functions as a crude substitute for the Terminators enhanced systems. Physical performance is otherwise on par.",,,
+pulse_drone_civ,SHIP,"Civilian grade pulse drones intended for export by the Ko Combine. The use of low grade military equipment has resulted in less armour protection and necessitated downgrading the pulse laser, fortunately, the the PD AI survived the conversion intact and the drone functions adequately in its role as a protector from rogue asteroids and pirate palaver.",,,
+google_ward,SHIP,A support fighter designed to bolster the damage of the escorted vessel by disrupting the enemies shields and increasing the damage taken.,,,
+,,,,,
+# KoC MILITARY SHIPS,,,,,
+muninn,SHIP,"A multirole frigate produced by the Ko Combine using components of scrapped Valkyrie Hulls after the K38-A8 foamed composite hull proved surprisingly workable. Equipped with a wide traverse turret in order to switch targets rapidly, it has gained success as a skirmisher and gunboat.
+
+Come in two variants. The Muninn is configured for more aggressive behaviour and features a composite turret whereas the Huginn is configured for defence purposes and features an Energy turret.",,,
+bodkin_esc,SHIP,"Carrier capable destroyer, produced by the Ko Combine using components of scrapped Valkyrie Hulls after the K38-A8 foamed composite hull proved surprisingly workable. Capable of direct engagement and providing fighter support. Often seen as the backbone of the Ko Combines military.
+
+Come in two variants. The Geri is configured for more aggressive behaviour and features a large ballistic hardpoint, the Freki is configured for defensive purposes and features a large missile hardpoint.",,,
+,,,,,
+valkyrie_ass,SHIP,"As part of a Hegemony sponsored buy-back program the Ko Combine acquired a significant amount of Valkyrie hulls. Rather than decommissioning them entirely as intended the Ko Combine set about refurbishing them for re-sale. First order of business was removing the infantry bays and ground support equipment that was responsible for their sales restrictions. 
+
+Originally intended for cargo duties an engineer spotted that the specifications of the internal cavity were surprising close to those necessary for a Thermal Pulse Canon, and after convincing his superiors, a number of concept units were built as showcase and technology demonstrators with the main cannon running almost two thirds the length of the ship.
+",,,
+,,,,,
+# KoC LOGISTIC SHIPS,,,,,
+valkyrie_sup,SHIP,As part of a Hegemony sponsored buy-back program the Ko Combine acquired a significant amount of Valkyrie hulls. Rather than decommissioning them entirely as intended the Ko Combine set about refurbishing them for re-sale. First order of business was removing the infantry bays and ground support equipment that was responsible for their sales restrictions. Numerous upgrades increase the defensive value of the Ko Combines variant and it is better suited for punching through enemy lines and evading pursuit.,,,
+valhalla,SHIP,"Based upon the Valkyrie, the Valhalla transport is an all in one solution for the logistical needs of military convoys. Tactically it is weak for its size, only able to defend itself at short ranges from missiles and fighters.
+
+Capable of carrying both supplies and fuel in quantity the Valhalla transport fills a niche in supply chains. Detractors often cite the lack of capacity relative to dedicated transports but the shielded holds make them a must buy for those looking to transport goods under the radar.",,,
+pranker,SHIP,"The Pranker is an update of a very old fuel tanker design from the earliest days of the Domain’s expansion into the Persean Sector. The Pranker shares some construction similarities with the Domain’s Explorarium drones, which only have significance if the ship is negligently maintained. To most operators, the Pranker merely occupies a middle ground between the Phaeton and the Prometheus, suitable for supporting cruiser-heavy task forces.",,,
+,,,,,
+# KoC EXPORT SHIPS,,,,,
+strix,SHIP,"Utilising 80% of its components from the Monitor, the Strix was pitched as a 'service upgrade' in order to circumvent trade restrictions placed upon the Ko Combine by the Hegemony. While bureaucrats continue to debate the Strixs classification the Ko Combine continues to export them to markets amongst the independents and Persean League.",,,
+prospector,SHIP,The Ko Combine r580 Prospector is the latest in the Combines lines of civilian drone tenders. Making use of a quartet of civilian grade pulse drones the Prospector offers top of the range point defence while exploring the hostile fringes of the sector.,,,
+buffalo_c,SHIP,"In a trade convoy the Buffalo is a vulnerability. Reconfiguring the cargo bays to house a swarm of point defense drones, which have been modified for more aggressive behaviour, allows the buffalo to provide fire support. Should an enemy successfully punch through the swarm, the Buffalo itself itself is capable of fending offer light harassers. 
+
+As a civilian grade hull it does not fall foul of the trade restrictions placed upon the Ko Combine by the Hegemony and can be exported to independent markets. What the 'C' designation for is anybodies guess; Carrier, Combine, Conversion?",,,
+atlas_c,SHIP,"Stripping out the cargo holds and installing two massive hanger bays, the Atlas C is capable of fielding a dizzying number of fighters and bombers. It should be noted that the improved defences are at best negligible and it is sound advice for the Captain to ensure a screen of interceptors are always operating between it and the enemy.
+
+As a civilian grade hull it does not fall foul of the trade restrictions placed upon the Ko Combine by the Hegemony and can be exported to independent markets. What the 'C' designation for is anybodies guess; Carrier, Combine, Conversion?",,,
+,,,,,
+# Mbaye Gogle SHIPS,,,,,
+,,,,,
+google_defender,SHIP,"Although automated machines of war were forbidden in core Domain space, war drones were quietly employed outside of officially incorporated volume. Frontier garrisons were often bolstered by drone ships, and they were deployed liberally against rebellious worlds to tip the terrible balance of attrition, setting the industrial might of the Domain versus the lives of 'freedom fighters'.
+
+The Defender was one of the most commonly seen war drones used by the Domain as it was deployed to harden frontier convoys and vulnerable outposts in a point defense role. The Directorates personal variant feature a significant upgrade package that raises questions about how advanced their autonomous drone development was at the time of the collapse, questions the Hegemony does not have the time to investigate.",,,
+google_bastillon,SHIP,"Although automated machines of war were forbidden in core Domain space, war drones were quietly employed outside of officially incorporated volume. Frontier garrisons were often bolstered by drone ships, and they were deployed liberally against rebellious worlds to tip the terrible balance of attrition, setting the industrial might of the Domain versus the lives of 'freedom fighters'.
+  
+The Bastillon was a hopeful project of Mbaye-Gogol to up-size its popular ""Defender""-class specialized point-defense war drone. It is bigger, tougher, more heavily armed - and rather more lucrative per-unit to the MGA bottom-line. The Directorates personal variant feature a significant upgrade package that raises questions about how advanced their autonomous drone development was at the time of the collapse, questions the Hegemony does not have the time to investigate.",,,
+google_gremlin,SHIP,"The original Gremlin was designed as a test bed for phase coils. Designed to be capable of fitting coils in various configurations the Mk.II features experimental coils of a much more modern design. The external panelling, while functionally identical has been refreshed both as a marketing tool and to help belie the fragile nature it shares with the original gremlin.  ",,,
+google_shade,SHIP,"The modified ships of Mbaye-Gogle often come as a surprise to would-be pirates and privateers who expect a conventional fight.
+
+The smallest phase ship operated in the Sector, the Shade-class is often used as a scout for larger fleets. In battle, it is valued by fleet admirals for its ability to disable enemy ships with its EMP emitter.",,,
+google_afflictor,SHIP,"The modified ships of Mbaye-Gogle often come as a surprise to would-be pirates and privateers who expect a conventional fight.
+
+A dangerous and swift phase frigate with a weapons loadout that is powerful enough to bring down much heavier ships. The Afflictor possesses a device which exploits a unique modification of its integrated phase coil array to project a field of anomalously amplified entropy. This effects a devastating increase in destructive instability in delicate or finely tuned systems when the targeted vessel experiences chaotic high-energy events ie. combat damage. Everything that can possibly go wrong does.",,,
+google_phantom,SHIP,"The modified ships of Mbaye-Gogle often come as a surprise to would-be pirates and privateers who expect a conventional fight.
+
+""The system patrols should have seen the Tachies coming, but didn't. ADA was tracking the bogey right up until it disappeared off the scope, leaving the ground guns spinning in circles trying to reacquire a target. We saw a shadow in the air, like dark wings falling on the compound. Don't remember much else. Suit rec says incoming fire already took the rest of the squad.""
+- The Fall of Bunker 58",,,
+geist,SHIP,"Designed at Mbaye-Gogol’s Shadow-Mallard production facility, the Geist is a fearsome phase cruiser intend for hit and fade tactics on priority targets. It has garnered a reputation as an assassination cruiser and, although officially denied, can often be found deployed in such a role.
+
+Numerous issues were identified during the design process of the Geist, in part due to the size of the phase coils necessary to cloak a cruiser sized vessel. Phase field intensity increases in close proximity to the coils and in order to avoid psychological upheaval Mbaye-Gogol forced crew candidates to go through multiple consecutive and prolonged phases shifts as a test of “mental fortitude” before being assigned to such a vessel. Although the practice has since been condemned as barbaric, in part due to the amount of candidates suffering psychological breaks, it became common practice as the benefits of breaking a crew member before assignment far outweigh those of one who breaks during a combat situation. ",,,
+,,,,,
+#Eridani SHIPS,,,,,
+eridani_cerberus,SHIP,"The Cerberus is prized for providing a cost-effective balance between cargo capacity and enough combat power for its size to discourage casual piracy with the happy result of lowered insurance rates compared to standard Domain-era civilian grade freighters. The Cerberus is now widely considered to be a wise choice for independent traders in the Sector. 
+
+In times past, before the fall of the gate system when Domain authority reigned, combat-enabled freighters like the Cerberus found only niche use on the edges of the rare warzone or in especially uncivilized hinterlands of the galaxy where Domain Armada patrols were stretched thinly. The crew combat training, weapon maintenance, and mass/thrust ratio loss caused by heavier armour were viewed as causing unnecessary cost overhead. But this is a new age filled with both danger and profitable opportunities; the abilities of the Cerberus have given the hull a new life in the trade lanes.",,,
+eridani_vanguard,SHIP,"An ancient and tough heavy frigate, brought up to modern standards using salvaged components. The new shields and systems suffer from degraded performance common to any equipment reclaimed from a destroyed vessel but suffice for their intended purpose.
+
+This design is old enough to be contemporary with early models of the Onslaught battleship, though unlike that illustrious pillar of the Domain Navy the Vanguard was retired from service long before the collapse of the Gate network. In the post-Collapse chaos it was a chance discovery by an enterprising arms dealer that saw relatively complete schematics of the Vanguard-class heavy frigate lifted from an overlooked museum exhibit. The atavistic and aggressive design opens an unexpected niche for the Vanguard in modern fleets - with the added advantage that all essential components have been declassified for ages, and are of simple make; even repair of catastrophic damage is relatively straightforward.",,,
+manta,SHIP,Reconnaissance vessel for deep space exploration. Intended to scout a head and broadcast navigation co-ordinates the Manta has advanced shields to endure unforeseen stellar conditions,,,
+requiem,SHIP,"The Requiem has had a long service life, arguably the longest of any vessel in the Domains armada, and that was before they attempted to decommission it. Even while critics cite a lack of modern technologies the base chassis endures.",,,
+truncheon,SHIP,"Designed under the umbrella of Project Bulldog, a systems defence program spearheaded by Eridani Utopia. Slow but deadly when properly positioned and a tactical vulnerability anywhere outside of a firing line.",,,
+haymaker,SHIP,Throwing a haymaker in to battle is either a sign of desperation or total commitment. Hitting full force and taking out the opposition before it can be overwhelmed.,,,
+eridani_mule,SHIP,"The Hinny is a modern, state-of-the-art overhaul of the Mule designed to operate in heavily irradiated environments.
+
+Some years following the destruction of Hanan Pacha during the Second AI War, the Eridani-Utopia Corporation began to investigate the possibility of terraforming irradiated or otherwise devastated worlds. Lacking the funds for a dedicated ship design project, Eridani-Utopia instead decided to undertake an extensive redesign of an existing hull. Although the venerable Venture-class cruiser was considered, Eridani-Utopia engineers felt the more-economical Mule-class hull was sufficient for operations in near-orbit of Hanan Pacha, the first candidate of “Project Restoration.”
+
+The Hinny boasts a number of improvements over the base Mule. A specialized electromagnetic shield generator allows the Hinny to operate in heavily irradiated environments for extended periods of time, with the side-effect of functioning as a hardened shield in a combat scenario. A large ballistic mount, originally designed to accommodate a superheavy mining blaster, occupies the center of the hull. A fully functional fighter bay housing a pod of mining drones completes the Hinny’s hybrid terraforming/armament package.
+
+After entering service, Eridani-Utopia found the Hinny redesign to be so effective that the Corporation began to assign ships of this class (with more generalized weaponry and fighter loadouts) to standard deep-space exploration fleets. Since the Hinny was not originally designed for this role, it lacks the efficiency overhauls that are standard on many Eridani-Utopia vessels.",,,
+cpbf,SHIP,"The Parallax was designed as a test bed for Project Seppuku, an attempt to create a beam weapon capable of damaging ships in P-space. Initial results were disastrous, in addition to the usual issues associated with prototype technology numerous unassailable technical issues were recorded.
+
+The Parallax is essentially a phase beam directly integrated into a frigate-sized vessels reactor and when properly configured was capable of firing it’s weapon directly into P-Space for a continuous period of time. On paper, results were promising, however, the carrier beam would often register ‘none-target contact’ and would be unable to acquire the designated target in P-space. Originally this was put down to P-space interference and upping the carrier gain appeared to solve the issue, the downside of upping the gain was the development of sensor ghost which would linger for prolonged periods of time. Technicians initially deemed these sensor ghosts harmless but their presence would further exacerbate the ‘none-target contact’ issue which would result in the need to further increase the carrier gain.
+
+Ultimately the project was shelved with the weapon being unable to reliably achieve its stated goal. What few prototypes remain can be found collecting dust in abandoned hangers, and while they may appear to be in good condition, those who have been aboard often complain of a foreboding feeling as they walk the empty corridors.",,,
+,,,,,
+gizzard,SHIP,"The Gizzard is a highly specialized fire support destroyer designed for short combat engagements. It functions best when operating as part of a larger task force.
+
+The Gizzard comes from a different design philosophy than traditional Domain vessels: the notion that the best fights are over quickly, as prolonged combat only leads to attrition on both sides. Thanks to its built-in missile racks, the Gizzard can produce more firepower during the opening moments of an engagement than most of its contemporaries. However, the Gizzard’s inability to provide sustained pressure against larger fleets has relegated it to convoy defense roles and mop-up duty against small-scale pirate warlords, a role in which it excels.",,,
+astrum,SHIP,"Bhilai-Astra’s Astrum battlecruiser was an anomaly among pre-Collapse capital ships, which tended towards specialized functions during the heyday of the “Cruiser School” era of Domain procurement. Originally pitched as a dedicated command ship, the Astrum was never greenlighted for production as Domain strategists viewed the design as too unfocused. Following the Collapse, an updated version of the Astrum design was again rejected by the Hegemony as incompatible with fleet doctrine, as Hegemony admirals saw “command ship” as an unnecessary niche when many Onslaughts were already outfitted with operations centers.
+
+Undaunted, Bhilai-Astra once again updated the Astrum’s design, leaning into its generalist aspects and targeting a different market segment: independent mercenary contractors. Private military companies often need their sole capital ship to perform a range of functions, including command. Due to its blend of ballistic and energy weaponry combined with the versatility afforded by its two fighter bays, the Astrum can be rapidly refitted to handle almost any adversary. Furthermore, mercenary captains appreciate the Astrum’s excellent speed, burst firepower and flux engineering, which allow it to quickly disengage from or reinforce any area of a battle line.",,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# WEAPONS,,,,,
+,,,,,
+flicker_pdl,WEAPON,A compact burst laser designed for point defence. Has excellent armour penetrating capabilities making it effective vs. fighters and small missile. The long firing cycle often means anything surviving the initial hit has ample time to reach its target. Use of multiple flickers with overlapping arcs is highly recommended.,,,
+xpulse_fighter,WEAPON,"Fighter variant of the X Pulse Laser, lacks burst fire capabilities.
+
+This weapon is identical to most combat lasers with a nitrogen gain medium fired in the n-band. A q-switched power supply permits ablation of the target which makes the weapon much more effective than a conventional beam. Most often used on fighters or frigates using kitting tactics, where the high flux of the weapon can be offset by the speed and manoeuvrability of the fitted craft.",,,
+xpulse,WEAPON,"Fires a burst of X-rays at the target from long range. Effective but not quite as flux efficient as its contemporaries.
+
+This weapon is identical to most combat lasers with a nitrogen gain medium fired in the n-band. A q-switched power supply permits ablation of the target which makes the weapon much more effective than a conventional beam. Most often used on fighters or frigates using kitting tactics, where the high flux of the weapon can be offset by the speed and manoeuvrability of the fitted craft.",,,
+apmg,WEAPON,"A tactical machine gun loaded with armour-piercing rounds. Shreds through armoured fighters with ease and, for the more daring captain, presents a credible threat to larger vessels.",,,
+phasebeam_lg,WEAPON,"“A blade that glistens like the stars themselves. A magnificent work of engineering, one of the finest humanity can muster, but above all, a worthy gift for the Lion of Sindria.”",- Recovered communications log,,
+gravburst,WEAPON,"Uses a laced-chemical shell to force charge a blaster delivering thermal pulses. Although effective the process is inefficient and the pulse quickly looses cohesion resulting in auto-detonation.
+
+A weapon from an early epoch before the collapse. Intended as a way to equip primitive vessels with energy weapons before the standardisation and proliferation of modern energy mounts, it uses a chemical “shell” to generate the energy required to fire a thermal pulse. After acquiring partial blueprints for the Pulse Cannon the Ko Combine completed the designs using components from civilian grade blasters that were derived from the original. Being a make-shift amalgamation of several systems it lacks the range and efficiency of the original however an enriched chemical shell makes it much deadlier.
+
+While its short comings are apparent, the Pulse Detonation Cannon continues to see popularity among spacers looking to throw a heavy punch. Bar tales of a particularly rugged smuggler in a Hound firing a “warning shot” and disabling a patrol vessels engines in order to make a daring escape extend the weapons reputation, however the ships name and the system in which it occurred in change with every passing of the story.",,,
+heavymininglaser,WEAPON,Delivers a hardened beam of energy in order to bore through exotic matter and expose valuable mineral deposits. Capable of destabilising shields and ablating armour in equal measures.,,,
+mark10,WEAPON,A capital-sized shotgun firing cluster munitions. Excellent vs. shields but struggles to penetrate fresh armour.,,,
+mark10_xiv,WEAPON,"""50% more buck per shot with exclusive production contracts and unique mounting opportunities. What’s the catch? Approval for a provisional application of independence…""",- Recovered communications log,,
+,,,,,
+maiden,WEAPON,"Homes in on the target and disables weapons and systems with a powerful EMP burst. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+The S33-THE (S-33 Third Harmonic EMP) Missile, unofficially referred to as the Maiden, was designed to punch through shields in order to disable weapons and engines. The arcs have a tendency to arc towards nearby components meaning that during head-on engagements the Maiden is more likely to disable weapons than engines. A well timed direct hit on the hull can be particularly devastating, disabling multiple systems in a single hit.",,,
+maidenpod,WEAPON,"Homes in on the target and disables weapons and systems with a powerful EMP burst. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+An externally mounted pod replaces the more common missile racks and allows two missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of two missiles after a short wait.
+
+The S33-THE (S-33 Third Harmonic EMP) Missile, unofficially referred to as the Maiden, was designed to punch through shields in order to disable weapons and engines. The arcs have a tendency to arc towards nearby components meaning that during head-on engagements the Maiden is more likely to disable weapons than engines. A well timed direct hit on the hull can be particularly devastating, disabling multiple systems in a single hit.",,,
+madmaiden,WEAPON,"Homes in on the target and disables weapons and systems with a powerful EMP burst. A combat-rated autoloader system ensures usefulness in protracted engagements.
+
+The S33-THE (S-33 Third Harmonic EMP) Missile, unofficially referred to as the Maiden, was designed to punch through shields in order to disable weapons and engines. The arcs have a tendency to arc towards nearby components meaning that during head-on engagements the Maiden is more likely to disable weapons than engines. A well timed direct hit on the hull can be particularly devastating, disabling multiple systems in a single hit.
+
+The Mad Maiden gained its moniker after a self-claimed pirate-lord known only as Bootyblaster staged a one-man raid on a Tri-Tachyon outpost and made off with a Medusa-class Destroyer. After several engagements Bootyblaster evaded pursuing security forces by crossing in to Hegemony territory and was promptly disabled when a large salvo of Maiden Missiles from a nearby patrol hit the ship. While the Hegemony patrol recovered the ship, much to the chagrin of Tri-Tachyon officials, the highlight of the whole ordeal was the subsequent HEGINT Security holovid that was anonymously broadcast showing Bootyblaster, alone, pacing his cell, giving a rather colorful verbal tirade about the events. The security-vid abruptly cuts out, after almost an hour, with Bootyblaster laying the floor, clutching his chest, cursing the efficiency of the weapons system against ‘his’ ship.",,,
+tpc_int,WEAPON,"A bulky energy weapon from an early epoch, the TPC is built directly into a ships hull and provides overwhelming frontal firepower.
+
+Designed before modular energy weapons were universally trusted by Domain naval architects, this weapon was coded into the Onslaught's blueprint because no other hull of the time was large enough or had reactors capable of generating the requisite power. With recent developments engineers have been able to hardwire a single Thermal Pulse Cannon into a handful of hulls.
+
+Even though it's outperformed by some of the later epoch modular designs, the Thermal Pulse Cannon remains a potent weapon.",,,
+,,,,,
+#gravburst (old),WEAPON,"The Graviton Pulse Cannon heralds from the same epoch as the Thermal Pulse Cannon. Stripped down and redesigned in order to fit into the modular mounts of the current era the GPC lacks the raw firepower of its monstrous brother.
+
+After securing the original blueprints the Ko Combine spearheaded a production run and have licensed the design to the Persean League and varying Independent bodies.",,,
+atrops_pod,WEAPON,"A pod of advanced guided torpedoes. The payload is smaller than usual to make room for the advanced guidance package and manoeuvring system's reaction mass.
+
+An externally mounted pod replaces the more common missile racks and allows multiple missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of missiles after a short wait.
+
+The Atropos torpedo is a large guided torpedo with an extended range. The AM-catalyzed nuclear warhead typically used in torpedo warheads is missing here as baryonic interference from the detonator would foul the guidance systems. It is replaced by a smaller, yet still potent chemical charge.",,,
+atropos_l,WEAPON,"A pod of advanced guided torpedoes. The payload is smaller than usual to make room for the advanced guidance package and manoeuvring system's reaction mass.
+
+An externally mounted pod replaces the more common missile racks and allows multiple missiles to be fired almost simultaneously. An autoloader extracts, arms and primes the next salvo of missiles after a short wait.
+
+The Atropos torpedo is a large guided torpedo with an extended range. The AM-catalyzed nuclear warhead typically used in torpedo warheads is missing here as baryonic interference from the detonator would foul the guidance systems. It is replaced by a smaller, yet still potent chemical charge.",,,
+streak,WEAPON,"Developed by the Bhilai Astra Group. The goal was to produce a guided missiles, that would be harder to avoid and more difficult for countermeasures to defeat. Each Streak Missile contains a number of smaller missiles that will separate and individually track the target at close range. ",,,
+streak_pod,WEAPON,"Developed by the Bhilai Astra Group. The goal was to produce a guided missiles, that would be harder to avoid and more difficult for countermeasures to defeat. Each Streak Missile contains a number of smaller missiles that will separate and individually track the target at close range. ",,,
+gustmlrs,WEAPON,"Medium-range anti-shield missile. Intended to disable the shields of an unwary opponent, opening up the opportunity for high-damage anti-armor projectiles to engage their target.",,,
+hammerpod,WEAPON,"This dumb-fire rocket was ubiquitous in the pre-Collapse Persean Sector due to applications pioneered by asteroid miners. The go-to strike weapon of the desperately under-equipped, the Hammer is often employed by poor independent militias, Pirates, and particularly the Luddic Path. This has led to the mildly blasphemous alternative name for the weapon, ""Ludd's Hammer"".
+
+When you need to channel Ludd’s Wrath and a smash an AI core, Stop! Think! It’s Hammer Time!",,,
+phasebeam_cpbf,WEAPON,"A short-range beam that causes heavy damage. Capable against armor, as far as beam weapons go.
+
+This weapon is, at base, simply a laser beam with a tripled sapphire gain medium to ensure the highest possible weaponized wavelengths. The photons are fired through a hyperdimensional filter which outputs an energy beam that exists partially in p-space. The physics of the filter are not properly understood, and in laboratory settings the p-space components of a beam exceeding 6.66 giga-watts will sometimes flicker - as if blocked. Weapon mounts never use such high energy levels to ensure reliability.",,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# SYSTEMS,,,,,
+dynamic_stabilizer,SHIP_SYSTEM,Engages internal dampeners allowing weapons to fire more accurately and at a much higher rate of fire . Also provides a slight boost to the ship's maneuverability.,Offensive,"Provides a brief boost to maneuverability, weapon accuracy and rate of fire. ",
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# FACTION,,,,,
+KoC,FACTION,"A Domain-era industrial corporation with a post-collapse presence. Creators of the civilian drone tender Shepherd, the experimental Monitor frigate, the Catalytic Core, and the Combat Drone Replicator. After purchasing the administration rights to the barren world Agreus in the Arcadia Star System and rebuilding their fortune on ship-breaking and reconstruction the Ko Combine attempted to declare independence from the Hegemony and establish themselves as an independent world.
+
+Effectively independents under the protection of the Hegemony, the Ko Combine have found themselves thrust into the tentative position of diplomatic brokers with other independent bodies. Classified as a Special Administrative Region under domain law the Ko Combine treads a fine line between autonomy and a breakaway province.",,,
+MaybeGoogle,FACTION,"Whilst it is acknowledged that a secretive fragment of the Mbaye-Gogol directorate controls Nomios, their senior members have yet to be identified. Rumours vary wildly. Some believe they are in cryosleep, interacting with the awake through the use of their Holosuite, others believe they are a proxy-company of Tri-Tachyon. The most radical believe there are no living members, governed by a rogue AI core, a claim the Hegemony have not yet been able to substantiate.
+
+What is known is that they forged their fortunes through ship construction and cryo-investment. Those who are frozen have their assets invested on their behalf by Mbaye-Gogol in the hopes of receiving significant dividends when they awake. Following the collapse, many found their investment portfolios crashed. Penniless and of no value to the company, these people are thawed and forced into hard labour as indentured servants until they have repaid their cryorevival fees.",,,
+Eridani,FACTION,"A Domain-era corporation that, pre-collapse, focused on surveying and terraforming planets to make them suitable for humans. Its subsidiaries in the Persean Sector became stranded after the Collapse and were forced into a more primitive lifestyle which they have come to embrace.
+
+Under mercenary rule, Eridani-Utopia have begun to re-establish themselves in the Persean sector and operate as a broker for competing mercenaries units. They have become intolerant of those who do not bring benefit to society; liberals, artists and free-thinkers are oppressed. They’ve struck an alliance with the sects of the Luddic Church who see their ‘rejection’ of technology and their hardline stance against depravity and hedonism as righteous.",,,
+Bhilai,FACTION,"Manufacturer of heavy weapons and a key supplier to the 200th Legion. Bhilai Astra, also known as the Bhilai Space Group or Bhilai Exospace, have served the Hegemony Navy since the early days of the collapse. The company has formed itself in to a cult dedicated to its trade, worshipping the very guns they produce. Each production line is watched over by a guru whose seal is stamped on every finished product and procurers who do not show the proper respect find themselves put to death at the receiving end of the very implements of death they seek. While there are many imitations on the market, coming in to possession of a genuine Bhilai is considered a sign of good fortune.",,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+# FEATURES,,,,,
+KoC_Chop_Shop,CUSTOM,"A Domain-era cryoship, picked for scraps and left adrift. A cursory scan indicates minimal power reserved for life support and potential life signs cluster towards the aft section. It seems it would would take the work of Ludd to preserve any life within the cryopods on board.",,,
+planet_randis,CUSTOM,"Seemingly barren, Randis has been bombarded by meteors drawn into Syrinx's gravity well, the impacts have churned the surface exposing organics that hint at a time where Randis was able to support life. A weak atmosphere clings to the surface, slowly sapped away with every passing on the ice giant, in a barely a few hundred cycles the atmosphere will be completely depleted.",,,

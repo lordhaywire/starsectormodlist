@@ -1,0 +1,79 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Runaway Indentured Servants",
+        
+    "marketSpawnWeight":0.5,
+     
+    "startRelationships":{ "hegemony": -0.05, "luddic_church":-0.3, "luddic_path":-0.4, "tritachyon": 0.1, "sindrian_diktat": 0.05 },
+    "maxRelationships":{ "luddic_church":-0.05, "luddic_path":-0.2 },
+    "diplomacyPositiveChance":{ "luddic_church":0.9, "luddic_path":0.7, "tritachyon": 1.1, "sindrian_diktat": 1.05 },
+    "diplomacyNegativeChance":{ "luddic_church":1.1, "luddic_path":1.3, "tritachyon": 0.9, "sindrian_diktat": 0.95 },
+    "morality":"amoral",
+    
+    "alignments":{
+        "corporate":1,
+        "technocratic":1,
+        "hierarchical":1,
+        "militarist":-0.5,
+        "diplomatic":-0.5,
+    },
+    "diplomacyTraits":["monopolist", "lowprofile", "devious", "temperamental"],
+    
+    # chance of the faction being picked to send a colony expedition. Default 0 (disabled)
+    "colonyExpeditionChance":0.25,	# not really their kind of thing...? I guess
+    "colonyTargetValuator":"exerelin.campaign.colony.IndustrialColonyTargetValuator",
+	
+    "groundBattleSettings":{
+        "moraleDamageTakenMult":1.05,
+    },
+    
+    #"stabilizeCommodities":["lobster", "gamma_core"],	# luckily this was a test, if not, lol
+    
+    "specialForcesNamerClass":"exerelin.campaign.intel.specialforces.namer.FactionListNamer",
+        
+    "startShipsSolo":[["wolf_Starting"]],
+    "startShipsCombatSmall":[
+      ["swp_sunder_u_sta", "shade_Assault", "swp_hecate_sta"],
+      ["medusa_Attack", "wolf_CS", "brawler_tritachyon_Standard"],
+    ],
+    "startShipsTradeSmall":[
+      ["mule_Starting", "wolf_CS", "swp_nautilus_sta"],
+      ["mule_Starting", "wolf_CS", "mercury_Standard"],
+    ],
+    "startShipsCombatLarge":[
+      ["swp_zenith_ass", "omen_PD"],
+      ["aurora_Assault_Support", "tempest_Attack"],
+    ],
+    "startShipsExplorerLarge":[
+      ["apogee_Balanced", "swp_beholder_cs", "afflictor_Strike"],
+      ["apogee_Balanced", "medusa_Attack", "omen_PD"],
+    ],
+    "startShipsTradeLarge":[
+      ["swp_circe_sta", "buffalo_tritachyon_Standard", "swp_nautilus_att"],
+      ["starliner_Standard", "buffalo_tritachyon_Standard", "mercury_Standard"],
+    ],
+    "startShipsCarrierSmall":[["swp_vortex_sta", "tempest_Attack", "swp_hecate_cs"]],
+    "startShipsCarrierLarge":[["swp_eos_sta", "swp_arachne_sta", "brawler_tritachyon_Standard"]],
+    "startShipsSuper":[["hyperion_Attack"]],
+    
+    "startSpecialItems":[
+        [["high_tech_package", ""]],
+    ],
+    
+    "defenceStations":[
+        {"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"]},
+    ],
+    
+    "industrySeeds":[
+        {"id":"cryosanctum", "mult":0.1},
+        {"id":"commerce", "mult":0.1},
+        {"id":"cryorevival", "mult":0.1},
+    ],
+	
+    "bonusSeeds":[
+        {"id":"dealmaker_holosuite", "count":1},
+        {"id":"orbital_fusion_lamp", "count":1},		
+    ],
+}

@@ -1,7 +1,7 @@
 {
     "displayName": "Hangover",
     "fluxCapacitors": 0,
-    "fluxVents": 14,
+    "fluxVents": 16,
     "goalVariant": true,
     "hullId": "uw_climax",
     "hullMods": [

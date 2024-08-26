@@ -1,0 +1,28 @@
+id,trigger,conditions,script,text,options,notes
+,,,,,,
+prvAgniBiostationOpenDialog,OpenInteractionDialog,$tag:prv_agni_biostation,"ShowDefaultVisual
+SetShortcut defaultLeave ""ESCAPE""","The glass domes of the $entityName glitter in the faint sunlight, hiding the efforts of House Gyllenhaag’s research team from the world. Your request for docking clearance is politely but firmly refused ""in accordance with §4c. of the chartering agreement."" No unscheduled inspections, indeed.",defaultLeave:Leave,
+,,,,,,
+#AGNI BEACON,,,,,,
+prvAgniBeaconPresenceOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniPresence","ShowDefaultVisual
+SetShortcut beaconLeave ESCAPE","This autonomous warning beacon emits a looping message.
+
+DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.",beaconLeave:Leave,
+prvAgniBeaconNestOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniNest","ShowDefaultVisual
+SetShortcut beaconLeave ESCAPE","This autonomous warning beacon emits a looping message.
+
+DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.",beaconLeave:Leave,
+prvAgniBeaconSwarmOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
+$prvAgniSwarm","ShowDefaultVisual
+SetShortcut beaconLeave ESCAPE","This autonomous warning beacon emits a looping message.
+
+DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.",beaconLeave:Leave,
+,,,,,,
+# stable location - building stuff,,,,,,
+# NOT FUNCTIONAL,,,,,,
+#stable_buildprvAgniFeederOpt,Stable_AddBuildOptions,,,,70:SL_buildprvAgniFeeder:Construct a xenobiological outpost,
+#stable_buildprvAgniFeeder,DialogOptionSelected,$option == SL_buildprvAgniFeeder,"$slBuildType = prv_agnifeeder 0
+Objectives printCost $slBuildType
+FireBest Stable_BuildConfirmOptions",,,

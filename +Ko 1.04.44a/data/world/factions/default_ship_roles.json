@@ -1,0 +1,91 @@
+{
+	"combatSmallForSmallFleet":{
+		"muninn_Standard":6,
+		"huginn_Standard":6,
+		"shuttlekoc_Standard":10,
+		"propsector_standard":10,
+        "eridani_cerberus_Pulsar":10,
+        "koc_mercury_Standard":10,
+        "eridani_lasher_Standard":10,
+        "google_defender_Standard":8,
+	},
+
+	"combatSmall":{
+		"muninn_Standard":6,
+		"huginn_Standard":6,
+		"shuttlekoc_Standard":10,
+		"strix_Standard":8,
+		"kocpest_Standard":8,
+		"google_afflictor_Standard":0, # disabled
+		"google_shade_Standard":10,
+        "google_defender_Standard":8,
+        "eridani_cerberus_Pulsar":10,
+        "koc_mercury_Standard":10,
+        "eridani_lasher_Standard":10,
+		"haymaker_Standard":10,
+	},
+
+	"combatMedium":{
+        "eridani_mule_Standard":10,
+		"bodkin_ass_Standard":6,
+		"bodkin_esc_Standard":6,
+		"valkyrie_ass_Standard":10,
+		"buffalo_c_standard":10,
+		"shrikoc_Standard":10,
+		"google_harbinger_Standard":10,
+		"google_phantom_Standard":6,
+        "google_bastillon_Standard":8,
+        "manta_Standard":10,
+        "requiem_Standard":10,
+        "eridani_gemini_Standard":10,
+        "snowball_enforcer_Standard":10,
+        "gizzard_Standard":8,
+        "gizzard_lion_Standard":8,
+
+	},
+
+	"combatLarge":{
+        "furykoc_Standard":10,
+		"geist_Standard":8,
+		"google_geist_Standard":10,
+	},
+
+	"combatCapital":{
+		"oddykoc_Standard":10,
+		"astrum_Standard":10,
+	},
+
+	"combatFreighterLarge":{
+	},
+
+	"freighterSmall":{
+		"valhalla_Standard":5,
+	},
+
+	"tankerSmall":{
+		"valhalla_Standard":5,
+	},
+	"tankerLarge":{
+		"pranker_standard":10,
+	},
+	"civilianRandom":{
+	},
+	"carrierSmall":{
+		"propsector_standard":10,
+	},
+	"personnelSmall":{
+	},
+	"personnelMedium":{
+		"valkyrie_sup_Standard":10,
+	},
+	"carrierMedium":{
+		"bodkin_ass_Standard":6,
+		"bodkin_esc_Standard":6,
+		"buffalo_c_standard":10,
+	},
+	"carrierLarge":{
+	},
+	"carrierCapital":{
+		"atlas_c_standard":10,
+	},
+}

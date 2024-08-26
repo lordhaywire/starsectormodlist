@@ -1,0 +1,25 @@
+{
+	"displayName":"Drone",
+	"hullId":"pulse_drone",
+	"variantId":"pulse_drone",
+	"fluxVents":0,
+	"fluxCapacitors":0,
+	"hullMods":["no_weapon_flux"],
+    "sMods": ["pointdefenseai"],
+	
+	# mode is either LINKED or ALTERNATING
+	# slot ids (WS ***) must match what's in the .ship file
+	"weaponGroups":[
+		{"mode":"LINKED",
+		 "weapons":{
+		 			"WS 001":"xpulse_fighter",
+		 		   },
+		},
+		{"mode":"LINKED",
+		 "weapons":{
+		 			#"WS 002":"maiden",
+		 			#"WS 002":"swarmer_fighter",
+		 		   },
+		},		
+	],
+}

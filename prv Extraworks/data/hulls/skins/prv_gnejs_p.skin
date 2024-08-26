@@ -1,0 +1,40 @@
+{
+	"baseHullId": "prv_gnejs",
+	"descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+	#"tags":["prv_pirate_bp"],
+	"tech":"Pirate",
+	"baseValueMult": 1.2,
+	"systemId":"burndrive",
+	"addHints":[ALWAYS_PANIC],
+	"descriptionId": "prv_gnejs",
+	"hullName": "Gnejs (P)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_gnejs_p",
+	"spriteName": "graphics/prv/ships/prv_gnejs_p.png",
+	"weaponSlotChanges":{
+		#main gun
+		"WS0001":{
+		  "type": "MISSILE",
+		},
+		"WS0002":{
+		  "type": "HYBRID",
+		},
+		"WS0003":{
+		  "type": "HYBRID",
+		},
+		"WS0004":{
+		  "type": "HYBRID",
+		},
+		"WS0005":{
+		  "type": "HYBRID",
+		},
+	}, 
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+	},   
+}

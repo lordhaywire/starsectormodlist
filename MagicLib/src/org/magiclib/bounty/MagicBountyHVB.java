@@ -265,6 +265,8 @@ public class MagicBountyHVB {
                             null,
                             //String existing_target_memkey;
                             null,
+                            // target_importantPersonId
+                            null,
                             //String target_first_name,
                             row.getString("firstName"),
                             //String target_last_name,
@@ -361,7 +363,7 @@ public class MagicBountyHVB {
                 }
             }
         } catch (IOException | JSONException exception) {
-            LOG.error("MagicLib - Failed to load HighValueBountyData! - ", exception);
+            LOG.warn("MagicLib - Failed to load HighValueBountyData! - ", exception);
         }
     }
 

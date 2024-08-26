@@ -1,6 +1,6 @@
 {
 	"id":"prv_heavybounder_1_shot",
-	#"onHitEffect":"data.scripts.weapons.prv_bounder_OnHitEffect",
+	#"onHitEffect":"prv.corp.weapons.prv_bounder_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

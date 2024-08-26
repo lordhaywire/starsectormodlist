@@ -1,5 +1,6 @@
 character
 none
+replytest
 default
 default_timid
 default_professional
@@ -35,6 +36,9 @@ ja2_fox
 ja2_miguel
 ja2_magic
 ja2_steroid
+ja3_flay
+ja3_kalyna
+ja3_livewire
 freespace_human1
 freespace_human2
 freespace_vasudan
@@ -127,3 +131,13 @@ sophisticated
 hotshot
 passionate
 warframe_cephaloncy
+dragonsdogma_pawn
+soase_tec_bb
+soase_tec_carrier
+soase_tec_colony
+soase_tec_javelin
+soase_tec_kodiak
+soase_tec_siege
+soase_tec_support
+soase_tec_titan
+soase_tec_transport

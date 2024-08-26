@@ -1,0 +1,54 @@
+{
+	"starSystem":"Byzos",
+	"markets":[
+		{
+			"entities":["lepia"],
+			"faction":"pirates",
+			"size":4,
+			"freePort":true,
+			"startingConditions":[
+				"arid",
+				"thin_atmosphere",
+				"hot",
+				"ore_moderate",
+				"population_4",
+				"farmland_poor",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"heavybatteries",
+				"farming",
+				"militarybase",
+
+			],
+
+		},
+
+		{
+			"entities":["bythinia"],
+			"faction":"luddic_church",
+			"size":6,
+			"startingConditions":[
+				"desert",
+				"rare_ore_moderate",
+				"hot",
+				"habitable",
+				"population_6",
+				"ruins_scattered",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"militarybase",
+				"refining",
+				"lightindustry",
+			],
+
+		},
+	],
+	
+}
+
+
+

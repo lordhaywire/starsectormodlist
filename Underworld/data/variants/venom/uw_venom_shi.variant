@@ -1,11 +1,12 @@
 {
     "displayName": "Shielded",
-    "fluxCapacitors": 6,
+    "fluxCapacitors": 8,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_venom",
     "hullMods": ["frontshield"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "uw_venom_shi",
     "weaponGroups": [
         {

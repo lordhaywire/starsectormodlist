@@ -1,0 +1,40 @@
+{
+  "variantId": "prv_harbinger_aux",
+  "hullId": "harbinger",
+  "displayName": "Auxiliary",
+  "goalVariant": true,
+  "fluxCapacitors": 12,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "prv_flickercore"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_frasare",
+        "WS 002": "prv_frasare",
+        "WS 003": "prv_frasare"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 004": "pdburst",
+        "WS 005": "pdburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

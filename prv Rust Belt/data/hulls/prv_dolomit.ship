@@ -1,0 +1,156 @@
+{
+  "hullName": "Dolomit",
+  "hullId": "prv_dolomit",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_dolomit.png",
+  "style": "PRV_LOW",
+  "height": 140,
+  "width": 150,
+  "center": [75, 64.5],
+  "collisionRadius": 117.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 113.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "eccm"
+  ],
+  "builtInWeapons": {
+    "BI01": "prv_sidewinder",
+    "BI02": "prv_sidewinder"
+  },
+  "weaponSlots": [
+    {
+      "id": "BI01",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-18, 45]
+    },
+    {
+      "id": "BI02",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 90,
+      "locations": [-36, 45]
+    },
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [62, -20]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [62, 22]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": 0,
+      "locations": [36.5, 0]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 180,
+      "angle": -45,
+      "locations": [5.5, -40]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": 0,
+      "locations": [66.5, -51]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -88.5,
+      "locations": [30.5, -54]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 80,
+      "locations": [10.5, 37]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "HIDDEN",
+      "arc": 190,
+      "angle": 90,
+      "locations": [-29.5, 51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-60.5, 18.5],
+      "length": 46,
+      "width": 33,
+      "angle": 180,
+      "contrailSize": 33,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-60.5, -18.5],
+      "length": 46,
+      "width": 33,
+      "angle": -180,
+      "contrailSize": 33,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    -59.5, -24,
+    -33.5, -59.5,
+    11.5, -59.5,
+    21, -68.5,
+    39.5, -69,
+    45.5, -62.5,
+    65, -61,
+    65.5, -44,
+    43.5, -34.5,
+    60.5, -23.5,
+    54, -11.5,
+    57.5, -0.5,
+    53.5, 10,
+    64, 18,
+    63.5, 28.5,
+    39.5, 31.5,
+    39.5, 44.5,
+    7.5, 73,
+    -10, 56.5,
+    -50, 56.5,
+    -50, 35,
+    -59.5, 20,
+    -53, 0.5
+  ]
+}

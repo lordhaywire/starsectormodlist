@@ -1,0 +1,46 @@
+{
+  "variantId": "acs_palatine_standard",
+  "hullId": "acs_palatine",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 37,
+  "fluxVents": 36,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "acs_large_hellboredakka",
+        "WS 001": "acs_large_hellboredakka",
+        "WS 002": "acs_medium_squall",
+        "WS 003": "acs_medium_squall",
+        "WS 004": "hveldriver",
+        "WS 005": "dualflak",
+        "WS 007": "hveldriver",
+        "WS 008": "vulcan",
+        "WS 009": "vulcan",
+        "WS 014": "acs_vulcanmk2",
+        "WS 015": "acs_vulcanmk2",
+        "WS 018": "vulcan",
+        "WS 019": "vulcan",
+        "WS 020": "acs_vulcanmk2",
+        "WS 021": "acs_vulcanmk2",
+        "WS0001": "tpc",
+        "WS0002": "tpc",
+        "WS0003": "hveldriver",
+        "WS0004": "hveldriver"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "broadsword_wing",
+    "broadsword_wing"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+	"id":"prv_agni_tooth_shot",
+	"onHitEffect":"prv.agni.weapons.prv_agni_teeth_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":50.0,
+	"hitGlowRadius":36,
+	"width":15,
+	"fadeTime":0.15,
+	"fringeColor":[
+		196,
+		0,
+		32,
+		128
+      ],
+	"coreColor":[225,255,200,255],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/prv/missiles/prv_shell_agni_tooth.png"
+}

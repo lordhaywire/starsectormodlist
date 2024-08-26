@@ -1,0 +1,20 @@
+{
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"conquest_Elite":10,
+		"onslaught_Elite":10,
+	},
+
+    "knownShips":{
+        "hulls":[
+           "onslaught",
+		"conquest",
+
+
+
+        ],
+    },
+
+
+}
+

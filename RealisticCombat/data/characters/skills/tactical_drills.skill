@@ -1,0 +1,17 @@
+{
+    "id":"tactical_drills",
+    "governingAptitude":"leadership",
+    "compressHullmods":false,
+    "scope":"ALL_COMBAT_SHIPS",
+    "effectGroups":[
+        {
+	    "requiredSkillLevel":1,
+	    "effectBasedOnLevel":false,
+	    "effects":[
+	         {"type":"HULLMOD_UNLOCK", "hullmods":{"turretgyros":1}},
+		 {"type":"FLEET", "script":"RealisticCombat.com.fs.starfarer.api.impl.campaign.skills.MarineTraining$Level1"},
+		 {"type":"FLEET", "script":"RealisticCombat.com.fs.starfarer.api.impl.campaign.skills.MarineTraining$Level2"},
+	    ]
+	},
+    ],
+}

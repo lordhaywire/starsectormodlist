@@ -4,11 +4,6 @@
 	},
 	"knownWeapons":{
 		"tags":["prv_bp"],
-		"weapons":[
-			"prv_fusion_burster",
-			"prv_spatterflamer",
-			"prv_massdriver",
-		]
 	},
 	"knownFighters":{
 		"tags":["prv_bp"],

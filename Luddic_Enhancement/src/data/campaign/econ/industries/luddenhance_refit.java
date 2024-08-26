@@ -15,7 +15,7 @@ public class luddenhance_refit extends BaseIndustry {
                 demand(Commodities.RARE_METALS, size);
 				demand(Commodities.METALS, size + 2);
 				demand(Commodities.ORGANICS, size + 2);
-				demand(Commodities.VOLATILES, size + 2);
+				demand(Commodities.VOLATILES, size + 1);
 
                 supply(Commodities.SHIPS, size - 3);
 				supply(Commodities.HEAVY_MACHINERY, size - 3);

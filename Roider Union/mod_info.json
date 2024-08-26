@@ -2,10 +2,10 @@
     "id": "roider",
     "name": "Roider Union",
     "author": "SafariJohn",
-    "version": "1.4.6",
+    "version": "2.1.0",
     "description": "Adds the Roider Union, an alliance of independent asteroid miners and minor corporations.",
-    "gameVersion": "0.96a-RC8",
-    "jars":["jars/Roider_Union.jar"],
+    "gameVersion": "0.97a-RC11",
+    "jars":["jars/Roider_Union_Kt.jar"],
     "dependencies": [
         {
             "id": "lw_lazylib",
@@ -14,7 +14,11 @@
         {
             "id": "MagicLib",
             "name": "MagicLib"
+        },
+        {
+            "id": "RetroLib",
+            "name": "RetroLib"
         }
     ],
-    "modPlugin":"scripts.Roider_ModPlugin"
+    "modPlugin":"roiderUnion.ModPlugin"
 }

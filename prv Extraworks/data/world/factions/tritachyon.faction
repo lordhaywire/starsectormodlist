@@ -1,0 +1,15 @@
+{	
+	"knownShips":{
+		"hulls":[
+			"prv_gryning_tt",
+			"prv_gnista_tt",
+		],
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"hulls":{
+			"prv_gnista_tt":0.5,
+			"prv_gryning_tt":0.2,
+		},
+	},
+}

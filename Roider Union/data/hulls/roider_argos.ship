@@ -4,7 +4,7 @@
   "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/roider_argos.png",
   "style": "ROIDER_HULL",
-  "height": 355,
+  "height": 359,
   "width": 226,
   "center": [113, 174],
   "collisionRadius": 240,
@@ -13,26 +13,27 @@
   "viewOffset": 0,
   "builtInMods": [
     "roider_midas",
-    "roider_argosConversion"
+    "roider_argosConversion",
+	"roider_argosHangar"
   ],
+  "builtInWings": [
+    "roider_breaker_wing",
+    "borer_wing",
+    "borer_wing",
+  ],
+  "builtInWeapons": {
+    "LEFT COVER": "roider_argos_leftMask",
+    "RIGHT COVER": "roider_argos_rightMask"
+  },
   "weaponSlots": [
     {
       "id": "WS 001",
       "size": "LARGE",
       "type": "MISSILE",
       "mount": "TURRET",
-      "arc": 160,
-      "angle": 45,
-      "locations": [95, 48]
-    },
-    {
-      "id": "WS 002",
-      "size": "LARGE",
-      "type": "MISSILE",
-      "mount": "TURRET",
-      "arc": 160,
-      "angle": -45,
-      "locations": [95, -48]
+      "arc": 220,
+      "angle": 0,
+      "locations": [110, -0]
     },
     {
       "id": "WS 003",
@@ -41,7 +42,8 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": 30,
-      "locations": [130, 42]
+      "locations": [130, 42],
+      "renderOrderMod": 200
     },
     {
       "id": "WS 004",
@@ -50,7 +52,8 @@
       "mount": "TURRET",
       "arc": 120,
       "angle": -30,
-      "locations": [130, -42]
+      "locations": [130, -42],
+      "renderOrderMod": 200
     },
     {
       "id": "WS 005",
@@ -59,7 +62,8 @@
       "mount": "TURRET",
       "arc": 180,
       "angle": 60,
-      "locations": [110, 83]
+      "locations": [110, 83],
+      "renderOrderMod": 200
     },
     {
       "id": "WS 006",
@@ -68,43 +72,46 @@
       "mount": "TURRET",
       "arc": 180,
       "angle": -60,
-      "locations": [110, -83]
+      "locations": [110, -83],
+      "renderOrderMod": 200
+    },
+    {
+      "id": "LEFT COVER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [126, 67],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 007",
       "size": "MEDIUM",
-      "type": "MISSILE",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": 0,
-      "locations": [129, 64]
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 60,
+      "angle": 15,
+      "locations": [132, 65]
+    },
+    {
+      "id": "RIGHT COVER",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [126, -67],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 008",
       "size": "MEDIUM",
-      "type": "MISSILE",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": -0,
-      "locations": [129, -64]
-    },
-    {
-      "id": "WS 009",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
-      "arc": 134,
-      "angle": 110,
-      "locations": [18, 77]
-    },
-    {
-      "id": "WS 010",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
-      "mount": "TURRET",
-      "arc": 134,
-      "angle": -110,
-      "locations": [18, -77]
+      "arc": 60,
+      "angle": -15,
+      "locations": [132, -65]
     },
     {
       "id": "WS 011",
@@ -177,6 +184,46 @@
       "arc": 0,
       "angle": -90,
       "locations": [-59, -74]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -59, 22,
+        -59, -22
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -74, 22,
+        -87, -21,
+        -6, 21,
+        -46, -21
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -74, -22,
+        -87, 21,
+        -6, -21,
+        -46, 21
+      ]
     }
   ],
   "engineSlots": [
@@ -269,9 +316,9 @@
     145, -80,
     135, -60,
     150, -47,
-    170, -40,
-    177, 0,
-    170, 40,
+    175, -35,
+    180, -0,
+    175, 35,
     150, 47,
     135, 60,
     145, 80,

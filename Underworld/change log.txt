@@ -1,3 +1,26 @@
+Coming Soon:
+- Added quest: Starlight Gala
+  * A special event at the Gala Parade fleet (new name for the Enlightenment Cavalcade), featuring a unique Cabal contact
+  * Quest can also be completed by blowing up the Palace
+
+Version 1.8.3 (February 3, 2024):
+- Updated for Starsector 0.97a
+
+Version 1.8.2 (October 30, 2023):
+- Gala Parade fleet has better loot but takes longer to respawn, especially if you kill it
+- Palace always deploys and cannot retreat, like a station
+- Cabal bar event can now occasionally generate Cabal contacts
+  * Dice wagers depend on the importance of the contact
+- New text for Cabal reputation level descriptions
+- Cabal fleets spawn less often near player colonies at higher reputation levels
+  * This is in addition to the behavior described in the 1.8.0 patch notes
+- Cabal submarket no longer allows the player to sell items back to them
+- Nexerelin Random Sector compatibility fix
+- Slight performance optimization when Underworld weapons/ships are not present in a battle
+- Slight performance improvement in campaign when using Cabal
+- Palace music doesn't play in the menus erroneously
+- IndEvo crash fix
+
 Version 1.8.1 (May 29, 2023):
 - The bonus items sold by the Cabal submarkets are now globally unique (you can't buy two Pristine Nanoforges anymore, just one)
 - Cabal submarkets now sell one each of IndEvo Luxury Goods VPC, Drugs VPC, Relay Hypertransmitter, and Simulation Engine
@@ -48,7 +71,7 @@ Version 1.8.0 (May 26, 2023):
     - Barbarian, Boar, Predator, Scythe, Shark, Stalker, Tiger, and Venom
     - Razor Fighter Wing and Revolver Support Wing
   * Mercenaries have access to:
-    - Barbarian, Boar, Dragon, Predator, Renegade, Scythe, Shark, Stalker, Tiger, and Venom-X
+    - Barbarian, Boar, Dragon, Predator, Renegade, Scythe, Shark, Stalker, Tiger, and Venom-X   
     - Razor Fighter Wing and Revolver Support Wing
   * Pirates have access to:
     - Amalgam (uncommon), Barbarian, Boar, Dragon (uncommon), Infernus (rare), Mongrel, Predator, Predator-X, Renegade (uncommon), Scythe, Shark, Sidecar, Stalker (uncommon), Tiger, Torch, Venom, Venom-X (rare)

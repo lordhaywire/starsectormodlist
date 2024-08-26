@@ -1,0 +1,195 @@
+{
+  "bounds": [
+    -30,
+    -17,
+    -18,
+    -20,
+    -4,
+    -47,
+    18,
+    -47,
+    32,
+    -34,
+    23,
+    -0,
+    31,
+    34,
+    17,
+    46,
+    -5,
+    45,
+    -18,
+    20,
+    -30,
+    17
+  ],
+  "builtInMods": [
+    "fluxshunt","pointdefenseai"
+  ],
+  "builtInWeapons": {
+    "WS0002": "heavyburst",
+    "WS0003": "heavyburst"
+  },
+  "builtInWings": [],
+  "center": [
+    50,
+    36
+  ],
+  "collisionRadius": 85,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 14,
+      "length": 35,
+      "location": [
+        -35,
+        -0
+      ],
+      "style": "MIDLINE",
+      "width": 14
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -33.5,
+        6
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 64,
+      "length": 24,
+      "location": [
+        -33.5,
+        -6
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 4,
+      "length": 14,
+      "location": [
+        -33,
+        10.5
+      ],
+      "style": "MIDLINE",
+      "width": 4
+    },
+    {
+      "angle": -180,
+      "contrailSize": 4,
+      "length": 14,
+      "location": [
+        -33,
+        -10.5
+      ],
+      "style": "MIDLINE",
+      "width": 4
+    }
+  ],
+  "height": 70,
+  "hullId": "strix",
+  "hullName": "Strix",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 80,
+  "spriteName": "graphics/ships/strix.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        18,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 70,
+      "arc": 270,
+      "id": "WS0002",
+      "locations": [
+        7,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": -70,
+      "arc": 270,
+      "id": "WS0003",
+      "locations": [
+        7,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 130,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        -13,
+        19
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -130,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        -13,
+        -19
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0006",
+      "locations": [
+        24,
+        37
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0007",
+      "locations": [
+        24,
+        -37
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "UNIVERSAL"
+    },
+  ],
+  "width": 100
+}

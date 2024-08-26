@@ -1,0 +1,285 @@
+{
+  "bounds": [
+    101,
+    -5,
+    100,
+    -27.5,
+    105.5,
+    -34.5,
+    85.5,
+    -55,
+    38,
+    -51.5,
+    17,
+    -40,
+    -12.5,
+    -40,
+    -12.5,
+    -53.5,
+    -22.5,
+    -64,
+    -85,
+    -69,
+    -105.5,
+    -49,
+    -104.5,
+    -22,
+    -88.5,
+    -18.5,
+    -96.5,
+    -11,
+    -96.5,
+    11,
+    -88.5,
+    18.5,
+    -104.5,
+    22,
+    -105.5,
+    49,
+    -85,
+    69,
+    -22.5,
+    64,
+    -12.5,
+    53.5,
+    -12.5,
+    40,
+    29,
+    38.5,
+    44.5,
+    53,
+    85.5,
+    55,
+    105.5,
+    34.5,
+    103.5,
+    28,
+    104.5,
+    5
+  ],
+  "builtInMods": [
+    "civgrade"
+  ],
+
+  "builtInWings": [],
+  "center": [
+    69,
+    105
+  ],
+  "collisionRadius": 143,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 37,
+      "location": [
+        -105,
+        41
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 37,
+      "location": [
+        -105,
+        -41
+      ],
+      "style": "LOW_TECH",
+      "width": 7
+    },
+    {
+      "angle": 180,
+      "contrailSize": 7,
+      "length": 38.5,
+      "location": [
+        -105,
+        34
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": -180,
+      "contrailSize": 7,
+      "length": 38.5,
+      "location": [
+        -105,
+        -34
+      ],
+      "style": "MIDLINE",
+      "width": 7
+    },
+    {
+      "angle": 180,
+      "contrailSize": 23,
+      "length": 47.5,
+      "location": [
+        -105.5,
+        26
+      ],
+      "style": "MIDLINE",
+      "width": 23
+    },
+    {
+      "angle": -180,
+      "contrailSize": 23,
+      "length": 47.5,
+      "location": [
+        -105.5,
+        -26
+      ],
+      "style": "MIDLINE",
+      "width": 23
+    }
+  ],
+  "height": 210,
+  "hullId": "filgap_era",
+  "hullName": "Era",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 124.5,
+  "spriteName": "graphics/filgap/ships/filgap_era.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 51,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        78.5,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -51,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        78.5,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 132,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        -83,
+        49
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -132,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        -83,
+        -49
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        -40,
+        40
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 225,
+      "id": "WS0006",
+      "locations": [
+        -40,
+        -40
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -21,
+        -53
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 45,
+      "arc": 0,
+      "id": "WS0008",
+      "locations": [
+        -21,
+        53
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 45,
+      "arc": 270,
+      "id": "WS0009",
+      "locations": [
+        46,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 270,
+      "id": "WS0010",
+      "locations": [
+        56,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        93,
+        -15
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 138
+}

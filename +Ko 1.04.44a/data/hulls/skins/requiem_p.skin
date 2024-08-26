@@ -1,0 +1,22 @@
+{
+	"baseHullId":"requiem",
+	"skinHullId":"requiem_p",
+	"hullName":"Requiem (P)",
+	"descriptionId":"requiem",
+	"descriptionPrefix":"BEARCLAW!",
+    	"tags":["pirate"],
+	"tech":"Pirate",
+    "ordnancePoints":70,
+    "hullDesignation":"Destroyer",
+	"spriteName":"graphics/ships/dtype-3-p.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["frontshield"],
+	"builtInWeapons":{    },
+	"weaponSlotChanges":{
+	   "WS0002":{   "type": "COMPOSITE",},
+        },
+	},
+}

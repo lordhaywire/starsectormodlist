@@ -1,0 +1,100 @@
+{
+  "variantId": "mod_chrasseus_standard",
+  "hullId": "mod_chrasseus",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 11,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "harpoonpod",
+        "WS0020": "harpoonpod",
+        "WS0021": "harpoonpod",
+        "WS0022": "harpoonpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0011": "squall",
+        "WS0012": "squall"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "mark9",
+        "WS0004": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hellbore",
+        "WS0002": "hellbore"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "devastator",
+        "WS0010": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "vulcan",
+        "WS0008": "vulcan",
+        "WS0014": "vulcan",
+        "WS0023": "dualflak",
+        "WS0025": "lightdualmg",
+        "WS0027": "vulcan",
+        "WS0029": "lightdualmg",
+        "WS0031": "lightdualmg",
+        "WS0033": "vulcan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vulcan",
+        "WS0007": "vulcan",
+        "WS0013": "vulcan",
+        "WS0024": "dualflak",
+        "WS0026": "lightdualmg",
+        "WS0028": "vulcan",
+        "WS0030": "lightdualmg",
+        "WS0032": "lightdualmg",
+        "WS0034": "vulcan"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": [
+    "longbow_wing",
+    "longbow_wing",
+    "longbow_wing",
+    "longbow_wing",
+    "cobra_wing",
+    "cobra_wing",
+    "cobra_wing",
+    "dagger_wing",
+    "dagger_wing",
+    "dagger_wing"
+  ]
+}

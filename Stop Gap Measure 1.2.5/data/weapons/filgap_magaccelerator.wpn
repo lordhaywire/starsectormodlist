@@ -1,0 +1,35 @@
+{
+  "animationType": "GLOW",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "railgun_fire",
+  "glowColor": [
+    100,
+    255,
+    5,
+    155
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_magaccelerator_glow_hardpoint.png",
+  "hardpointOffsets": [
+    8.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_magaccelerator_hardpoint.png",
+  "id": "filgap_magaccelerator",
+  "projectileSpecId": "filgap_magaccelerator_shot",
+  "size": "SMALL",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_magaccelerator_glow_turret.png",
+  "turretOffsets": [
+    4,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_magaccelerator_turret.png",
+  "type": "BALLISTIC"
+}

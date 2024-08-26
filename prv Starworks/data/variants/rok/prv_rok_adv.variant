@@ -2,8 +2,8 @@
   "variantId": "prv_rok_adv",
   "hullId": "prv_rok",
   "displayName": "Advanced",
-  "goalVariant": false,
-  "fluxCapacitors": 14,
+  "goalVariant": true,
+  "fluxCapacitors": 17,
   "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
@@ -39,10 +39,20 @@
       }
     },
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_ljungeld"
+        "WS0003": "prv_heavygravkan"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
       }
     },
     {
@@ -55,16 +65,6 @@
         "WS0013": "prv_pskd"
       }
     },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0008": "prv_sipdlaser",
-        "WS0009": "prv_sipdlaser",
-        "WS0010": "prv_sipdlaser",
-        "WS0011": "prv_sipdlaser",
-      }
-    }
   ],
   "modules": [],
   "wings": []

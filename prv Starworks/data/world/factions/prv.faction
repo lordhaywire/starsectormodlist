@@ -42,7 +42,6 @@
 		},
 		"hulls":{
 			"prv_is":0.75,
-			#"prv_valljud":0.5,		#jesus christ stop spawning
 			"prv_eld":1.5,
 			"prv_brand":0.5,			#elite ship
 			"prv_flamma":1.5,
@@ -53,7 +52,7 @@
 			"gemini":0,
 			"prv_gemini":1,
 			"condor":0,
-			"prv_condor":2,
+			"prv_condor":2.4,
 			"prv_gryning":0.1,
 			"prv_sinne":0.5,			#elite ship
 			### phase
@@ -132,18 +131,18 @@
 			"heavymauler",
 		#ballistic large
 			"mjolnir",
-			"prv_spatterflamer",
-			"prv_massdriver",
+			#"prv_spatterflamer",
+			#"prv_massdriver",
 		#energy small
 			"mininglaser",
 			"lrpdlaser",
 			"pdburst",
 			"amblaster",
 			"irpulse",
-			"prv_fusion_burster",
+			#"prv_fusion_burster",
 		#energy medium
 			"pulselaser",
-			"heavyblaster",
+			#"heavyblaster",
 			"heavyburst",
 			"phasebeam",
 			"ionpulser",

@@ -1,0 +1,14 @@
+{
+    "prv_jursla_gbe_fire":
+    [
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.350,"volume":0.80},
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.375,"volume":0.80},
+        {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.400,"volume":0.80},
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.350,"volume":0.75},
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.375,"volume":0.75},
+        {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.400,"volume":0.75},
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.350,"volume":0.70},
+	  {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.375,"volume":0.70},
+        {"file":"sounds/prv/sfx_wpn/prv_lpk_fire.ogg","pitch":0.400,"volume":0.70},
+    ],
+}

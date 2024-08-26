@@ -1,0 +1,20 @@
+{
+	# should be a copy of "combatSmall", minus variants that are annoying to fight in low numbers
+	# for example, no Hyperions or fast beam-based kiting loadouts, or ships with damper field
+	"combatSmall":{
+		###10
+		"prv_agni_hatchling_male":6,
+		"prv_agni_hatchling_female":4,
+	},
+	"combatMedium":{
+		###10
+		"prv_agni_juvenile_male":6,
+		"prv_agni_juvenile_female":4,
+	},
+	"combatLarge":{
+		###10
+		"prv_agni_buck_male":10,
+		###10
+		"prv_agni_doe_female":10,
+	},
+}

@@ -1,0 +1,21 @@
+{
+  "displayName": "Bomber",
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "filgap_asp",
+  "hullMods": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "filgap_asp_Bomber",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_david_f"
+      }
+    }
+  ],
+  "wings": []
+}

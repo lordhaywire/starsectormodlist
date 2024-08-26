@@ -1,0 +1,69 @@
+{
+  "variantId": "prv_middag_mission",
+  "hullId": "prv_middag",
+  "displayName": "",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 46,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "prv_arcfault_insulator"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0019": "prv_siege_akers"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0017": "prv_kaja",
+        "WS0018": "prv_kaja",
+        "WS0020": "prv_kaja",
+        "WS0021": "prv_kaja"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "pulselaser",
+        "WS0004": "pulselaser",
+        "WS0005": "pulselaser",
+        "WS0006": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_pskd",
+        "WS0002": "prv_pskd",
+        "WS0007": "prv_pskd",
+        "WS0008": "prv_pskd"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0012": "prv_sipdlaser",
+        "WS0013": "prv_sipdlaser",
+        "WS0014": "prv_sipdlaser",
+        "WS0015": "prv_sipdlaser",
+        "WS0016": "prv_sipdlaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

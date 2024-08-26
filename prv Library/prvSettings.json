@@ -1,0 +1,16 @@
+{
+	# Affected mod				# Description
+	# prv Agni
+	"enableAgni":true,			# Enables the Agni system theme for sector generation. Without this no Agni will spawn. Default true.
+	# prv Rust Belt
+	"forceKratul":false,			# Adds the Kratul star system even when Nexerelin is generating a random sector. Default false.
+	"enableDebrisBelts":true,		# Enables random generation of the Debris Belt terrain. Default true.
+	"enableRaiders":true,			# If false the Rust Belt will not exhibit raiding behavior when used in combination with Vayras Mod. Default true.
+	"enableSyndicateGrowth":true,		# Enables War Syndicate industry spread. Default true.
+	# prv Starworks
+	"enableDoctrineSwitching":true,	# Enables the prv to periodically update its fleet doctrine. Default true.
+	"enableHallar":true,			# Enables the Höga Hallar system theme for sector generation, the lost home system of one of the prv Houses. Default true.
+	"addSwarmHosts":false,			# Adds Ande and Gast Integrated Swarm carriers to the prv's fleet lineup. Default false, requires a new campaign to take effect.
+	# prv Lib (shared)
+	"showAoEBounds":false,			# Draws a circle showing precise AoE bounds for certain effects. Default false.
+}

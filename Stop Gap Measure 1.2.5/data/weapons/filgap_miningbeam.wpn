@@ -1,0 +1,58 @@
+{
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+    255,
+    155,
+    155,
+    255
+  ],
+  "fireSoundOne": "laser_intro",
+  "fireSoundTwo": "laser_loop",
+  "fringeColor": [
+    255,
+    0,
+    0,
+    175
+  ],
+  "glowColor": [
+    255,
+    155,
+    155,
+    255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_miningbeam_HP_glow.png",
+  "hardpointOffsets": [
+    18,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_miningbeam_HP.png",
+  "hitGlowRadius": 0,
+  "id": "filgap_miningbeam",
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER
+  ],
+  "pixelsPerTexel": 5,
+  "size": "MEDIUM",
+  "specClass": "beam",
+  "textureScrollSpeed": 72,
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_miningbeam_T_glow.png",
+  "turretOffsets": [
+    12,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_miningbeam_T.png",
+  "type": "ENERGY",
+	"mountTypeOverride":"HYBRID",
+
+  "width": 28
+}

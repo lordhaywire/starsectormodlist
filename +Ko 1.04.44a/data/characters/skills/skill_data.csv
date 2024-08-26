@@ -1,0 +1,4 @@
+id,name,order,tier,reqPoints,reqPointsPerExtraSkill,description,author,combat officer,admiral,admin,tags,icon
+# dummy skills to unlock hullmods,,,,,,,,,,,,
+dummy_skill_ordstore,dum_ordstore,10100,0,,,,,,,,npc_only,graphics/icons/skills/EW.png
+dummy_skill_phantomflux,dum_phantom,10200,0,,,,,,,,npc_only,graphics/icons/skills/EW.png

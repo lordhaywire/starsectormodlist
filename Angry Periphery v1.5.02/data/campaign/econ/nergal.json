@@ -1,0 +1,74 @@
+{
+	"starSystem":"nergal",
+	"markets":[
+		{
+			"entities":["nergal_planet_1"],
+			"faction":"sindrian_diktat",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"cold",
+				"thin_atmosphere",
+				"poor_light",
+				"ore_abundant",
+				"volatiles_trace",
+				"rare_ore_moderate",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"heavybatteries",
+				"militarybase",
+				"battlestation_mid",
+				"mining",		
+			],
+		},
+		{
+			"entities":["nergal_planet_2"],
+			"faction":"MaybeGoogle",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"cold",
+				"thin_atmosphere",
+				"poor_light",
+				"ore_moderate",
+				"volatiles_trace",
+				"ruins_scattered",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"heavybatteries",
+				"militarybase",
+				"battlestation_mid",
+				["commerce", "dealmaker_holosuite"],
+				"refining",
+				"cryorevival",
+			],
+		},
+		{
+			"entities":["nergal_obs"],
+			"faction":"MaybeGoogle",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"ore_moderate",
+				"rare_ore_moderate",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"grounddefenses",
+				"lightindustry",
+				"orbitalworks",
+				"orbitalstation_high",
+				"patrolhq",		
+			],
+		},
+	],
+
+
+}

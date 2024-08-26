@@ -1,0 +1,14 @@
+{
+	### Blueprint colors ###
+	"graphics":{
+		"fighterSkinsPlayerAndNPC":{	},
+		"fighterSkinsPlayerOnly":{
+			"prv_klirr_PRV_HIGH":"graphics/prv/ships/fighters/prv_klirr.png",
+			"prv_klirr_PRV_MID":"graphics/prv/ships/fighters/prv_klirr.png",
+			"prv_klirr_PRV_LOW":"graphics/prv/ships/fighters/prv_klirr_rb.png",
+			"prv_klirr_HIGH_TECH":"graphics/prv/ships/fighters/prv_klirr_high.png",
+			"prv_klirr_MIDLINE":"graphics/prv/ships/fighters/prv_klirr_mid.png",
+			"prv_klirr_LOW_TECH":"graphics/prv/ships/fighters/prv_klirr_low.png",
+		},
+	},
+}

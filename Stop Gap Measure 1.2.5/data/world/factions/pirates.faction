@@ -1,0 +1,28 @@
+{
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "pirate_bp"],
+        "hulls":[
+            "filgap_opportunity",
+            "filgap_adjudicator",
+			"falcon_p",
+            "filgap_bahamut",
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "pirate_bp", "pirates"],
+        "hulls":[
+            "filgap_opportunity",
+            "filgap_adjudicator",
+			"falcon_p",
+            "filgap_bahamut",
+
+
+        ],
+    },
+
+
+}

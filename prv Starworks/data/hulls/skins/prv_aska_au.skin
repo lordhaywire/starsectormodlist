@@ -3,7 +3,7 @@
 	"descriptionPrefix":"This Aska has had its phase teleporter adapted into a deadly assault weapon. The pyrite coating is a bit of a mystery - perhaps it's required for the system to function?",
 	"systemId":"prv_phasechainer",
 	"baseValueMult": 1.33,
-	"ordnancePoints":140,
+	"ordnancePoints":120,
 	"addHints":[HIDE_IN_CODEX],
 	"builtInMods":["safetyoverrides"],
 	"descriptionId": "prv_aska",

@@ -1,0 +1,34 @@
+{
+	"codex":{
+		"damage_kinetic":{
+			"title":"Kinetic Penetrator",
+			"body":"Kinetic penetrators are great against shields and armor but deal low damage.",
+		},
+		"damage_highexplosive":{
+			"title":"Explosively Formed Penetrator",
+			"body":"Explosively formed penetrators struggle against shields and armor but deal high damage.",
+		},
+		"damage_fragmentation":{
+			"title":"Shrapnel",
+			"body":"Shrapnel is very poor against both armor and shields but deals enormous damage.",
+		}, 
+		"damage_energy":{
+			"title":"Directed energy",
+			"body":"Directed energy is equally effective against shields and armor and deals adequate damage.",
+		},
+	},
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

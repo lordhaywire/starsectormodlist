@@ -1,0 +1,30 @@
+{
+  "displayName": "Overdriven",
+  "fluxCapacitors": 0,
+  "fluxVents": 3,
+  "goalVariant": false,
+  "hullId": "prv_gnista_lc",
+  "hullMods": ["safetyoverrides",],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0.5,
+  "variantId": "prv_gnista_lc_overdriven",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sabot_single",
+        "WS0002": "sabot_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "LCHP1": "chaingun"
+      }
+    }
+  ],
+  "wings": []
+}

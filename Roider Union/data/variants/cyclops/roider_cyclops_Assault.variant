@@ -3,7 +3,7 @@
     "displayName": "Assault",
     "fluxCapacitors": 4,
     "fluxVents": 10,
-    "goalVariant": true,
+    "goalVariant": false,
     "hullId": "roider_cyclops",
     "hullMods": ["armoredweapons"],
     "permaMods": [],

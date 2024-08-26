@@ -3,7 +3,7 @@
   "hullId": "prv_ballebo",
   "displayName": "Domain-era",
   "goalVariant": true,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 9,
   "fluxVents": 20,
   "quality": 2,
   "permaMods": [],
@@ -16,28 +16,22 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "prv_rorsangare"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0008": "sabotpod"
+        "WS0007": "sabotpod"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0006": "heavyblaster"
+        "WS0008": "prv_lpk"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "prv_lpk"
+        "WS0006": "prv_heavyspattergun",
+        "WS0005": "prv_heavyspattergun"
       }
     },
     {

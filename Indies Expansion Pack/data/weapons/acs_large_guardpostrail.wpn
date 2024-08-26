@@ -1,0 +1,47 @@
+{
+  "id": "acs_large_guardpostrail",
+  "specClass": "projectile",
+  "projectileSpecId": "acs_guardpostfrig_lrm",
+  "type": "UNIVERSAL",
+  "size": "LARGE",
+  "turretSprite": "graphics/acs_friglauncher_base2.png",
+  "hardpointSprite": "graphics/acs_friglauncher_base2.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    2,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    18,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "autocharge": true,
+  "smokeSpec": {
+    "particleSizeMin": 12,
+    "particleSizeRange": 12,
+    "cloudParticleCount": 6,
+    "cloudDuration": 1.5,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 4,
+    "blowbackDuration": 2,
+    "blowbackLength": 22,
+    "blowbackSpread": 15,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "reaper_fire"
+}

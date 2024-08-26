@@ -14,7 +14,7 @@
   ],
   "weaponGroups": [
     {
-      "autofire": false,
+      "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0001": "prv_jursla",
@@ -41,8 +41,7 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "heavyburst",
-        "WS0008": "heavyburst"
+        "WS0003": "prv_vakt",
       }
     },
     {
@@ -67,7 +66,10 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_vakt",
+        #"WS0021": "heavyburst",
+        #"WS0023": "heavyburst",
+        "WS0007": "heavyburst",
+        "WS0008": "heavyburst"
       }
     }
   ],

@@ -1,0 +1,19 @@
+{
+    "id":"RealisticCombat",
+    "name":"Realistic Combat",
+    "author":"Liral",
+    "version":"2.0.6",
+    "gameVersion": "0.97a-RC11",
+    "jars":["jars/RealisticCombat.jar"],
+    "modPlugin":"RealisticCombat.plugins.ModPlugin",
+    "description":"                         OVERVIEW\nRealistic ship and weapon range, speed, and damage.  Safe to add to and remove from your save game and mods folder, runs with all mods, and will not crash.\n\n                     TECH SUPPORT\nPost any Realistic Combat bug to the Realistic Combat mod thread on the Starsector Forum.\n\n                ENABLE OTHER MODS\n  To acknowledge that Realistic Combat drastically changes balance by adding realism mechanics and changing the loaded base stats of weapons and ships, including those of mods, and enable playing Realistic Combat with other mods, click mod_info.json in the folder of this mod and change true to false beside totalConversion:",
+    "totalConversion":true,
+    "replace":[
+	"data/characters/skills/ballistic_mastery.skill",
+	"data/characters/skills/energy_weapon_mastery.skill",
+	"data/characters/skills/impact_mitigation.skill",
+	"data/characters/skills/missile_specialization.skill",
+	"data/characters/skills/tactical_drills.skill",
+	"data/characters/skills/target_analysis.skill",
+    ]
+}

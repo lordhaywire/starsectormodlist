@@ -1,0 +1,50 @@
+{
+  "displayName": "Privateer",
+  "fluxCapacitors": 8,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_gnejs_p",
+  "hullMods": [],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_gnejs_p_privateer",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "prv_lighttripleac",
+        "WS0005": "prv_lighttripleac",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_blaster_charge_launcher"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_fusion_burster",
+        "WS0003": "prv_fusion_burster",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "vulcan",
+        "WS0007": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+}

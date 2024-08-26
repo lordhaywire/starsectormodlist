@@ -10,6 +10,9 @@ import com.fs.starfarer.api.combat.DamagingProjectileAPI;
 import com.fs.starfarer.api.combat.MissileAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipHullSpecAPI;
+import com.fs.starfarer.api.fleet.FleetMemberAPI;
+import com.fs.starfarer.api.graphics.SpriteAPI;
+import com.fs.starfarer.api.mission.FleetSide;
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
@@ -245,5 +248,48 @@ public class UW_Util {
         if (!influences.contains(faction)) {
             influences.add(faction);
         }
+    }
+
+    public static Vector2f getSafeSpawn(float collisionRadius, FleetSide side, float mapX, float mapY, boolean pursuit) {
+        Vector2f spawnLocation = new Vector2f();
+        float searchRadius = collisionRadius * 1.25f;
+        while (searchRadius > 0) {
+            searchRadius -= collisionRadius * 0.05f;
+            spawnLocation.x = MathUtils.getRandomNumberInRange(-mapX / 2f, mapX / 2f);
+            spawnLocation.y = mapY / 2f;
+            if (side == FleetSide.PLAYER) {
+                spawnLocation.y *= -1f;
+            }
+            if (pursuit) {
+                spawnLocation.y *= -1f;
+            }
+
+            boolean collision = false;
+            List<ShipAPI> ships = getShipsWithinRange(spawnLocation, searchRadius);
+            for (ShipAPI ship : ships) {
+                if (ship.isFighter() || ship.isDrone() || ship.isShuttlePod() || ship.isPiece()) {
+                    continue;
+                }
+                collision = true;
+            }
+
+            if (!collision) {
+                break;
+            }
+        }
+
+        return spawnLocation;
+    }
+
+    public static float getMemberRadiusEstimate(FleetMemberAPI member) {
+        float radius = 500f;
+        if (member.getHullSpec().getShieldSpec() != null) {
+            radius = member.getHullSpec().getShieldSpec().getRadius();
+        } else if (!member.getHullSpec().getSpriteName().isEmpty()) {
+            SpriteAPI sprite = Global.getSettings().getSprite(member.getHullSpec().getSpriteName());
+            float fudgeFactor = 1.5f;
+            radius = ((sprite.getWidth() / 2f) + (sprite.getHeight() / 2f)) * 0.5f * fudgeFactor;
+        }
+        return radius;
     }
 }

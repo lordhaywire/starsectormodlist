@@ -13,7 +13,6 @@
   "shieldRadius": 106,
   "viewOffset": 0,
   "builtInMods": [
-    "civgrade"
   ],
   "weaponSlots": [
     {

@@ -1,6 +1,6 @@
 {
     "displayName": "Shieldbreaker",
-    "fluxCapacitors": 15,
+    "fluxCapacitors": 18,
     "fluxVents": 30,
     "hullId": "roider_wrecker_p",
     "hullMods": [

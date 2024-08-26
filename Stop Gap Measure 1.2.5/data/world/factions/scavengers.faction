@@ -1,0 +1,85 @@
+{
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
+        "hulls":[
+            "filgap_cossack",
+            "filgap_opportunity",
+            "filgap_ballista",
+            "filgap_foundation",
+            "filgap_wagner",
+            "filgap_auspicious",
+            "filgap_bahamut",
+
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "scavengers"],
+        "hulls":[
+            "filgap_cossack",
+            "filgap_opportunity",
+			"atlas",
+			"kite_original",
+			"doom",
+			"afflictor",
+			"prometheus",
+			"omen",
+			"shade",
+			"tempest",
+			"conquest",
+			"gryphon",
+			"eagle",
+			"valkyrie",
+			"harbinger",
+			"filgap_chrysops",
+			"filgap_ballista",
+            "filgap_foundation",
+            "filgap_orthus",
+            "filgap_dragoon",
+            "filgap_cossack",
+            "filgap_wagner",
+            "filgap_auspicious",
+            "filgap_bahamut",
+            "filgap_kuunlan",
+
+
+
+
+
+
+
+        ],
+    },
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "scavengers"],
+		"weapons":[
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"gauss",
+			"mjolnir",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"filgap_chargedlaser",
+			"filgap_aton",
+		],
+	},
+
+}

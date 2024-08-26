@@ -5,7 +5,7 @@
   "goalVariant": true,
   "hullId": "edshipyard_doog",
   "hullMods": [
-    "hardened_subsystems",
+    "reinforcedhull",
     "missleracks",
     "auxiliarythrusters",
     "adaptive_coils"

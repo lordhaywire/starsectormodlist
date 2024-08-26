@@ -1,0 +1,30 @@
+{
+  "variantId": "acs_optio_standard",
+  "hullId": "acs_optio",
+  "displayName": "Standard",
+  "goalVariant": true,
+  "fluxCapacitors": 6,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "targetingunit"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "acs_smallrotarygatling",
+        "WS0002": "railgun",
+        "WS0003": "acs_small_flakhag",
+        "WS0004": "acs_small_flakhag",
+        "WS0005": "acs_medium_hag",
+        "WS0006": "acs_velites_single"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,36 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "LINKED",
+  "fireSoundTwo": "plasma_cannon_fire",
+  "glowColor": [
+    150,
+    250,
+    238,
+    150
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/filgap/weapons/filgap_icebomb_hp_glow.png",
+  "hardpointOffsets": [
+    41.5,
+    0
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_icebomb_HP.png",
+  "id": "filgap_icebomb",
+  "projectileSpecId": "filgap_icebomb_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/filgap/weapons/filgap_icebomb_turret_glow.png",
+  "turretOffsets": [
+    44,
+    0
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_icebomb_turret.png",
+  "type": "ENERGY"
+}

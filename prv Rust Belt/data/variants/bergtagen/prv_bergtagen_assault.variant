@@ -1,0 +1,89 @@
+{
+  "variantId": "prv_bergtagen_assault",
+  "hullId": "prv_bergtagen",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "heavyarmor",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_belt_blaster",
+        "WS0004": "prv_belt_blaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "salamanderpod",
+        "WS0024": "salamanderpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "prv_brytare_pod",
+        "WS0023": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "mark9"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "arbalest",
+        "WS0007": "arbalest",
+        "WS0008": "arbalest",
+        "WS0009": "arbalest",
+        "WS0010": "prv_lightthumper",
+        "WS0011": "prv_lightthumper"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "devastator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dualflak",
+        "WS0012": "dualflak",
+        "WS0014": "mininglaser",
+        "WS0016": "mininglaser",
+        "WS0017": "mininglaser",
+        "WS0018": "mininglaser",
+        "WS0019": "mininglaser"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "M01": "prv_module_armor_bergtagen_l_standard"
+    },
+    {
+      "M02": "prv_module_armor_bergtagen_r_standard"
+    }
+  ],
+  "wings": []
+}

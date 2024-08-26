@@ -1,6 +1,6 @@
 {
 	"id":"prv_gravkan_shot",
-	"onHitEffect":"scripts.weapons.prv_gravkan_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_gravkan_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

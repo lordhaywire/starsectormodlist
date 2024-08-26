@@ -4,5 +4,7 @@ Gardener Mass Driver,supportships_gardener_massdriver,0,,100,1100,,400,,40,10,,,
 Ion Pulse Cannon,supportships_ipc,0,,100,800,,300,500,0,0,,15,0.75,,ENERGY,260,,0,0.45,1,,0,10,2,5,,1000,,,,,,"SYSTEM,SHOW_IN_CODEX",,TPC_only,,,General,,,,,"Hits on hull or armor have a %s chance to arc to weapons and engines, dealing extra damage equal to the original hit.",25%,,,,1
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Aspirant Mask,supportships_aspirant_mask,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,1
+Ossifrage Mask,supportships_ossifrage_mask,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, hide_in_codex",,,,,,,,,,,,,,1
+Aspirant Mask,supportships_aspirant_mask,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,SYSTEM,"no_sell, hide_in_codex",,,,,,,,,,,,,,1
+supportships_hospice_legal,supportships_hospice_legal,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,"no_sell, hide_in_codex",,,,,,,,,,,This weapon is built-in only.,,TRUE,0
+supportships_hospice_illegal,supportships_hospice_illegal,,,,1,1,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,"no_sell, hide_in_codex",,,,,,,,,,,This weapon is built-in only.,,TRUE,1

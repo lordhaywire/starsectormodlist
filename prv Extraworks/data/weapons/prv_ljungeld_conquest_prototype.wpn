@@ -1,0 +1,44 @@
+{
+  "animationType": "GLOW",
+  "autocharge": true,
+  "barrelMode": "LINKED",
+  "separateRecoilForLinkedBarrels": true,
+  "fireSoundOne": "prv_ljungeld_chargeup",
+  "fireSoundTwo": "prv_spattergun_fire",
+  "glowColor": [
+    255,
+    0,
+    127,
+    200
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_ljungeld_conquest_prototype_hardpoint_glow.png",
+  "hardpointOffsets": [
+    142,
+    12,
+    142,
+    -12
+  ],
+  "hardpointSprite": "graphics/prv/weapons/prv_ljungeld_conquest_prototype_hardpoint.png",
+  "id": "prv_ljungeld_conquest_prototype",
+  "projectileSpecId": "prv_ljungeld_prototype_shot",
+  "size": "LARGE",
+  "specClass": "projectile",
+  #"textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "turretGlowSprite": "graphics/prv/weapons/prv_ljungeld_conquest_prototype_turret_glow.png",
+  "turretOffsets": [
+    73,
+    -12,
+    73,
+    12
+  ],
+  "turretSprite": "graphics/prv/weapons/prv_ljungeld_conquest_prototype_turret.png",
+  "type": "ENERGY"
+}

@@ -1,6 +1,6 @@
 {
 	"id":"prv_akers_shot",
-	"onHitEffect":"data.scripts.weapons.prv_akers_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_akers_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

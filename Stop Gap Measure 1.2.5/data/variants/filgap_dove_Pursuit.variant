@@ -1,0 +1,29 @@
+{
+  "displayName": "Pursuit",
+  "fluxCapacitors": 3,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "filgap_dove",
+  "hullMods": [
+    "surveying_equipment"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_dove_Pursuit",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightmortar",
+        "WS0002": "lightdualac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

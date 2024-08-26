@@ -1,0 +1,53 @@
+{
+  "variantId": "filgap_era_freighter",
+  "hullId": "filgap_era",
+  "displayName": "Freighter",
+  "goalVariant": true,
+  "fluxCapacitors": 8,
+  "fluxVents": 10,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "auxiliary_fuel_tanks",
+    "expanded_cargo_holds"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "lightac",
+        "WS0002": "lightac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0007": "swarmer",
+        "WS0008": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0009": "heatseeker",
+        "WS0011": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "lightmg",
+        "WS0004": "lightmg",
+        "WS0005": "filgap_miningarray",
+        "WS0006": "filgap_miningarray",
+        "WS0010": "filgap_scattergun"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,7 +1,7 @@
 {
     "displayName": "Rocket",
     "fluxCapacitors": 10,
-    "fluxVents": 6,
+    "fluxVents": 11,
     "goalVariant": true,
     "hullId": "roider_onager",
     "hullMods": ["missleracks"],
@@ -33,5 +33,5 @@
             }
         }
     ],
-    "wings": ["roider_dragline_wing"]
+    "wings": ["roider_duster_wing"]
 }

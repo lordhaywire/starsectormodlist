@@ -1,0 +1,54 @@
+{
+	### Blueprint colors ###
+	"designTypeColors":{
+		"Rust Belt":[189,66,0,255],
+	},
+	### Story Points ###
+	"bonusXP":{
+		"prvRBTallTales":1,
+		"prvRBMinerRobbery":1,
+	},
+	### Rules
+	"ruleCommandPackages":[
+		"prv.rb.campaign.rulecmd",
+	],
+	### Graphics ###
+	"graphics":{
+		"fighterSkinsPlayerAndNPC":{	},
+		"fighterSkinsPlayerOnly":{
+			"sarissa_PRV_LOW":"graphics/prv/ships/fighters/prv_sarissa_rb.png",
+			"xyphos_PRV_LOW":"graphics/prv/ships/fighters/prv_xyphos_rb.png",
+			"mining_drone_PRV_LOW":"graphics/prv/ships/fighters/prv_mining_drone_rb.png",
+		},
+		
+		# Unless listed in fighterSkinsExcludeFromSharing, fighter skins may show up on
+		# ships of other tech types that do not have a fighter skin defined specifically for them.
+		# In that case, the closest average-color matching scheme is used.
+		"fighterSkinsExcludeFromSharing":{
+		},
+	
+		"blueprint_packages":{
+			"prv_pirate_package":"graphics/prv/icons/cargo/prv_pirate_bp.png",
+			"prv_rb_package":"graphics/prv/icons/cargo/prv_rb_bp.png",
+			
+			"prv_rare_package_gnejserhead":"graphics/prv/icons/cargo/prv_rare_bp_gnejserhead.png",
+			"prv_rare_package_wolf_rb":"graphics/prv/icons/cargo/prv_rare_bp_wolf_rb.png",
+		},
+		"industry":{
+			"prv_rb_war_syndicate_hq_generic": "graphics/prv/icons/industry/prv_war_syndicate_hq_generic.png",
+		},
+		"misc":{
+			"prv_intel_rb_raids":"graphics/prv/icons/intel/pirate_station_cropped.png",
+			"prv_rings_debris0":"graphics/prv/planets/prv_rings_debris0.png",
+		},
+		"status":{
+			"prv_heavyilluminator_range":"graphics/prv/icons/status/prv_heavyilluminator_range.png",
+		},
+		"fx":{
+			"prv_towcable":"graphics/prv/fx/prv_towcable.png",
+			"prv_targetingpulse":"graphics/prv/fx/prv_targeting_pulse.png",
+			"prv_minehead_mine":"graphics/prv/missiles/prv_missile_minehead_mine.png",
+			"prv_karbid_saw":"graphics/prv/fx/prv_karbid_saw.png",
+		},
+	},	
+}

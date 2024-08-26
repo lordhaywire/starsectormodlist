@@ -1,0 +1,28 @@
+package roiderUnion.ids
+
+object RoiderFactions {
+    const val ROIDER_UNION = "roider"
+    const val ROIDER_UNION_BULK = "roider_bulk"
+    const val THI = "tiandong"
+    const val IRON_SHELL = "timid_xiv"
+    const val SCY = "SCY"
+    const val CABAL = "cabal"
+    const val BLADE_BREAKERS = "blade_breakers"
+    const val EXIPIRATED = "exipirated"
+    const val GMDA = "gmda"
+    const val GMDA_PATROL = "gmda_patrol"
+    const val VAMPIRES = "draco"
+    const val WEREWOLVES = "fang"
+    const val GREY_GOO = "mess"
+    const val JUNK_PIRATES = "junk_pirates"
+    const val JUNK_HOUNDS = "junk_pirates_hounds"
+    const val JUNK_JUNKBOYS = "junk_pirates_junkboys"
+    const val JUNK_TECHNICIANS = "junk_pirates_technicians"
+    const val CRYSTANITE_PIRATES = "crystanite_pir"
+    const val ZOMBIES = "infected"
+    const val NULL_ORDER = "nullorder"
+    const val TEMPLARS = "templars"
+    const val CARTEL = "the_cartel"
+    const val ARS = "al_ars"
+    const val COLONIAL_PIRATES = "loa_colonialpirates"
+}

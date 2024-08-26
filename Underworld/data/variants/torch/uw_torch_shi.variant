@@ -1,12 +1,13 @@
 {
     "displayName": "Shielded",
-    "fluxCapacitors": 10,
+    "fluxCapacitors": 9,
     "fluxVents": 10,
     "goalVariant": true,
     "hullId": "uw_torch",
     "hullMods": [
         "frontshield",
-        "auxiliarythrusters"
+        "auxiliarythrusters",
+        "turretgyros"
     ],
     "permaMods": [],
     "sMods": [],

@@ -7,7 +7,7 @@
     255,
     255
   ],
-  "everyFrameEffect": "data.scripts.weapons.prv_d_SystemBlinker_Ljus_EveryFrameEffect",
+  "everyFrameEffect": "prv.corp.weapons.prv_d_SystemBlinker_Ljus_EveryFrameEffect",
   "frameRate": 0,
   "fringeColor": [
     255,

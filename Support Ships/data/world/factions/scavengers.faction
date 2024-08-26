@@ -2,6 +2,7 @@
 	"knownShips":{
 		"hulls":[
 			"supportships_geoid",
+			"supportships_hospice",
 			]
 		}
 },

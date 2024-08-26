@@ -1,0 +1,169 @@
+{
+  "hullName": "Sunder (prv)",
+  "hullId": "prv_sunder_ryak",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/rare/prv_sunder_ryak.png",
+  "style": "PRV_MID",
+  "height": 192,
+  "width": 112,
+  "center": [56, 84],
+  "collisionRadius": 118,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 132,
+  "viewOffset": 100,
+  "builtInMods": [
+    "prv_volatiledrivecore",
+    "prv_ramshield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": 90,
+      "locations": [-40, 35]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 170,
+      "angle": -90,
+      "locations": [-40, -35]
+    },
+    {
+      "id": "WS0004",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [40, -0]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [31, -30]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [31, 30]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [28, -48]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [28, 48]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 180,
+      "locations": [-50, -0]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 45,
+      "locations": [-9, -42.5]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -45,
+      "locations": [-9, 42.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-83.5, 16.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-83.5, -16.5],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-78.5, 33.5],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-78.5, -33.5],
+      "length": 64,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    -76.5, 33,
+    -59, 40,
+    -54, 50,
+    -30, 44,
+    -14.5, 35,
+    2, 49.5,
+    25.5, 54.5,
+    27.5, 34,
+    99, 11,
+    49, 7,
+    49, -7,
+    99, -11,
+    27.5, -34,
+    25.5, -54.5,
+    2, -49.5,
+    -14.5, -35,
+    -30, -44,
+    -54, -50,
+    -59, -40,
+    -76.5, -33,
+    -82, -16,
+    -63, -0,
+    -82, 16
+  ]
+}

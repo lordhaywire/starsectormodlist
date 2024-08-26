@@ -6,7 +6,7 @@
   "style": "PRV_HIGH",
   "height": 140,
   "width": 150,
-  "center": [75, 75],
+  "center": [75, 65],
   "collisionRadius": 115,
   "shieldCenter": [0, -0],
   "shieldRadius": 110,
@@ -14,10 +14,10 @@
   "builtInMods": [
     "prv_volatiledrivecore",
     "prv_ramshield",
-    "prv_tcore"
+    #"prv_tcore"
   ],
   "builtInWeapons": {
-    "DC01": "prv_d_emitter_brand",
+    #"DC01": "prv_d_emitter_brand"
   },
   "weaponSlots": [
     {
@@ -27,43 +27,43 @@
       "mount": "TURRET",
       "arc": 360,
       "angle": 0,
-      "locations": [-20, -0]
+      "locations": [-25, -0]
     },
     {
       "id": "WS0001",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "SYNERGY",
       "mount": "TURRET",
       "arc": 120,
-      "angle": 45,
-      "locations": [5, 30]
+      "angle": 60,
+      "locations": [11, 58]
     },
     {
       "id": "WS0003",
       "size": "SMALL",
-      "type": "ENERGY",
+      "type": "SYNERGY",
       "mount": "TURRET",
       "arc": 120,
-      "angle": -45,
-      "locations": [5, -30]
+      "angle": -60,
+      "locations": [11, -58]
     },
     {
       "id": "WS0004",
       "size": "SMALL",
       "type": "SYNERGY",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": 0,
-      "locations": [35, 56]
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 30,
+      "locations": [13, 27.5]
     },
     {
       "id": "WS0005",
       "size": "SMALL",
       "type": "SYNERGY",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": 0,
-      "locations": [35, 40]
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -30,
+      "locations": [13, -27.5]
     },
     {
       "id": "WS0006",
@@ -72,21 +72,48 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [43, -48]
+      "locations": [36, -42]
+    },
+    #{
+    #  "id": "DC01",
+    #  "size": "SMALL",
+    #  "type": "DECORATIVE",
+    #  "mount": "TURRET",
+    #  "arc": 0,
+    #  "angle": 0,
+    #  "locations": [-10, -0]
+    #},
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 45,
+      "locations": [2, 42]
     },
     {
-      "id": "DC01",
+      "id": "WS0008",
       "size": "SMALL",
-      "type": "DECORATIVE",
+      "type": "SYNERGY",
       "mount": "TURRET",
-      "arc": 0,
+      "arc": 120,
+      "angle": -45,
+      "locations": [2, -42]
+    },
+    {
+      "id": "WS0009",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
       "angle": 0,
-      "locations": [-5, -0]
+      "locations": [36, 42]
     }
   ],
   "engineSlots": [
     {
-      "location": [-23, 56],
+      "location": [-28, 56],
       "length": 30,
       "width": 21,
       "angle": 180,
@@ -94,7 +121,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-23, -57],
+      "location": [-28, -57],
       "length": 30,
       "width": 21,
       "angle": -180,
@@ -102,7 +129,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-45, 32.5],
+      "location": [-50, 32.5],
       "length": 18,
       "width": 7,
       "angle": 180,
@@ -110,7 +137,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-45, -33.5],
+      "location": [-50, -33.5],
       "length": 18,
       "width": 7,
       "angle": -180,
@@ -118,7 +145,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-49, 26.5],
+      "location": [-54, 26.5],
       "length": 18,
       "width": 7,
       "angle": 180,
@@ -126,7 +153,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-48, -27.5],
+      "location": [-53, -27.5],
       "length": 18,
       "width": 7,
       "angle": -180,
@@ -134,7 +161,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-53, 20.5],
+      "location": [-58, 20.5],
       "length": 18,
       "width": 7,
       "angle": 180,
@@ -142,7 +169,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-50.5, -21.5],
+      "location": [-55.5, -21.5],
       "length": 18,
       "width": 7,
       "angle": -180,
@@ -150,7 +177,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-22, 46.5],
+      "location": [-27, 46.5],
       "length": 13,
       "width": 9,
       "angle": 180,
@@ -158,7 +185,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-22, -46.5],
+      "location": [-27, -46.5],
       "length": 13,
       "width": 9,
       "angle": -180,
@@ -167,20 +194,29 @@
     }
   ],
   "bounds": [
-    -58.5, 9.5,
-    -33.5, 31.5,
-    -5, 68,
-    20.5, 69.5,
-    34, 63.5,
-    27, 41.5,
-    54, 24.5,
-    34.5, 0,
-    54, -24.5,
-    27, -41.5,
-    34, -63.5,
-    20.5, -69.5,
-    -5, -68,
-    -33.5, -31.5,
-    -58.5, -9.5
+    -63.5, 9.5,
+    -35, 30.5,
+    -6, 68,
+    15.5, 69.5,
+    29, 63.5,
+    32, 31,
+    38.5, 24.5,
+    49, 24.5,
+    42.5, 16.5,
+    52, 15.5,
+    56, 19,
+    69, 7,
+    69, -7,
+    56, -19,
+    52, -15.5,
+    42.5, -16.5,
+    49, -24.5,
+    38.5, -24.5,
+    33, -28,
+    29, -63.5,
+    15.5, -69.5,
+    -6, -68,
+    -35, -30.5,
+    -63.5, -9.5
   ]
 }

@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 15,
+    "fluxVents": 15,
+    "goalVariant": true,
+    "hullId": "eridani_mule",
+    "hullMods": [
+        "hiressensors",
+        "ecm"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "eridani_mule_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "heavymininglaser"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "atropos",
+                "WS 002": "atropos"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "mininglaser",
+                "WS 006": "mininglaser"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 005": "pdlaser"}
+        }
+    ],
+    "wings": []
+}

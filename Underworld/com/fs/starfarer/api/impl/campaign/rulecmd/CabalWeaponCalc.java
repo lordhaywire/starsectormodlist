@@ -127,7 +127,7 @@ public class CabalWeaponCalc extends BaseCommandPlugin {
             return false;
         }
 
-        float shieldedFraction = Misc.getShieldedCargoFraction(fleet);
+        float shieldedFraction = Misc.getShieldedCargoFraction(Global.getSector().getPlayerFleet());
         float totalCreditsValue = totalWeaponsValue(Global.getSector().getPlayerFleet(), true, shieldedFraction);
         double valueToTake = extortionAmount(totalCreditsValue);
         float powerLevel = UW_Util.calculatePowerLevel(fleet);

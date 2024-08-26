@@ -1,0 +1,17 @@
+{
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+			"prv_bp":0.33,
+			"prv_adv_bp":0.33,
+			"prv_cap_bp":0.33,
+			"prv_lab_bp":0.33,
+			"prv_swarm_bp":0.33,
+		},
+	},
+},
+
+
+
+
+

@@ -36,13 +36,8 @@
                   "WS0008": "edshipyard_riptide_beam",
                   "WS0009": "edshipyard_riptide_beam",
                   "WS0010": "edshipyard_riptide_beam",
-                  "WS0011": "edshipyard_riptide_beam"
-              }
-          },
-          {
-              "autofire": true,
-              "mode": "LINKED",
-              "weapons": {
+                  "WS0011": "edshipyard_riptide_beam",
+                  "WS0012": "edshipyard_riptide_beam",
                   "WS0015": "edshipyard_riptide_beam",
                   "WS0016": "edshipyard_riptide_beam",
                   "WS0017": "edshipyard_riptide_beam",

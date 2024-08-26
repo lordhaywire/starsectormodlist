@@ -1,0 +1,36 @@
+{
+  "id": "prv_agni_flamelash",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_flamelash_shot",
+  "type": "ENERGY",
+  "size": "SMALL",
+  "everyFrameEffect": "prv.agni.weapons.prv_flamelash_trail_EveryFrameEffect",
+  "turretSprite": "graphics/prv/weapons/prv_agni_flamelash_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_agni_flamelash_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_flamelash_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_agni_flamelash_hardpoint_glow.png",
+  "glowColor": [
+    225,
+    96,
+    0,
+    255
+  ],
+  "turretOffsets": [
+    8,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING_BURST",
+  "animationType": "GLOW",
+  "fireSoundTwo": "prv_pureflame_lance_fire",
+  "mountTypeOverride": "HYBRID"
+}

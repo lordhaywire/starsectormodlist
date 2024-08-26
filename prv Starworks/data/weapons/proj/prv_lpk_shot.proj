@@ -1,7 +1,7 @@
 {
 	"id":"prv_lpk_shot",
 	"specClass":"missile",
-	"onHitEffect":"scripts.weapons.prv_lpk_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_lpk_OnHitEffect",
 	#"spawnType":"BEAM",
 	"missileType":"MISSILE",
 	"collisionClass":"MISSILE_FF",

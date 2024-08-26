@@ -1,6 +1,6 @@
 {
 	"quality":1,
-	"displayName":"Heavy Assault Fighter",
+	"displayName":"Heavy Fighter",
 	"hullId":"roider_rocksaw",
 	"variantId":"roider_rocksaw_Fighter",
 	"fluxVents":0,
@@ -13,7 +13,7 @@
                 {"autofire": false,
 		"mode":"LINKED",
 		 "weapons":{
-		 			"WS 001":"roider_chaingun"
+		 			"WS 001":"roider_doldrums_fighter"
 		 		   }
 		},
                 {"autofire": false,

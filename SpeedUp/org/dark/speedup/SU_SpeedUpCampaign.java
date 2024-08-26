@@ -40,14 +40,13 @@ public class SU_SpeedUpCampaign implements CampaignInputListener {
     private static final String SOUND_ID = "ui_noise_static_message";
     private static final String TEXT_COLOR = "standardTextColor";
 
-    //private static boolean initialized = false;
+    private static boolean initialized = false;
     private static boolean firstFrame = true;
 
     private static float mult = BASE_SPEEDUP;
     private static LocalData data;
 
     public static void reloadSettings() throws IOException, JSONException {
-
         JSONObject settings = Global.getSettings().loadJSON(SETTINGS_FILE);
         JSONArray options = settings.getJSONArray("speedOptionsCampaign");
 
@@ -99,13 +98,17 @@ public class SU_SpeedUpCampaign implements CampaignInputListener {
             ON_AT_START[i] = option.optBoolean("onAtStart", false);
         }
 
-        //initialized = true;
+        initialized = true;
     }
 
     // Input handling is cargo-culted from SU_SpeedUpEveryFrame
     @Override
     public void processCampaignInputPreFleetControl(List<InputEventAPI> events) {
         //Global.getLogger(this.getClass()).info("Input pre-fleet");
+        if (!initialized) {
+            return;
+        }
+
         if (data == null) {
             data = new SU_SpeedUpEveryFrame.LocalData(ACTIVATE_KEY.length);
         }

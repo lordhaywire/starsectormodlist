@@ -1,0 +1,16 @@
+{
+  "id":"prvrb",
+	"name":"prv Rust Belt",
+	"author":"Prav",	
+	"version":"v1.3",
+	"description":"Adds the Rust Belt faction.",
+	"dependencies": [
+		{
+			"id": "prvlib",
+			"name": "prv Library",
+		},
+	],
+	"modPlugin":"prv.rb.RBModPlugin", # Insert the path to your mod's implementation of ModPlugin here
+	"gameVersion":"0.97a-RC6",
+	"jars":["jar/prvrb.jar"],
+}

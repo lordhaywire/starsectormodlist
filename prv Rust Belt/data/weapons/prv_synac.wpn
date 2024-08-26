@@ -1,0 +1,62 @@
+{
+  "id": "prv_synac",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_synac_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "displayArcRadius": 650,
+  "turretSprite": "graphics/prv/weapons/prv_synac_turret_main.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_synac_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_synac_hardpoint_main.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_synac_hardpoint_recoil.png",
+  #"specialWeaponGlowHeight": 40,
+  #"specialWeaponGlowWidth": 15,
+  "visualRecoil": 6,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    20,
+    -4,
+    19,
+    0,
+    20,
+    4
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    22,
+    -4,
+    20,
+    0,
+    22,
+    4
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "LINKED",
+  "animationType": "MUZZLE_FLASH",
+  "autocharge": true,
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 38,
+    "particleSizeMin": 6,
+    "particleSizeRange": 14,
+    "particleDuration": 0.6,
+    "particleCount": 18,
+    "particleColor": [
+      220,
+      130,
+      80,
+      175
+    ]
+  },
+  "fireSoundTwo": "autocannon_fire"
+}

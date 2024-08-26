@@ -1,0 +1,147 @@
+{
+  "hullName": "Flamma (P)",
+  "hullId": "prv_flamma_p",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_flamma_p.png",
+  "style": "LOW_TECH",
+  "height": 120,
+  "width": 100,
+  "center": [50, 53],
+  "collisionRadius": 93.5,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 91,
+  "viewOffset": 0,
+  "builtInMods": [
+    #"prv_volatiledrivecore",
+    #"prv_ramshield"
+  ],
+  "builtInWeapons": {
+    "WS0005": "prv_spatterflamer"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 60,
+      "locations": [47, 4]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -60,
+      "locations": [29, -5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [10, 13]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 90,
+      "angle": 30,
+      "locations": [-12, 26]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [2, -22]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-50, 20],
+      "length": 46,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, -20],
+      "length": 46,
+      "width": 16,
+      "angle": -180,
+      "contrailSize": 16,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, -9],
+      "length": 32,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50, 9],
+      "length": 32,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-35, -32],
+      "length": 12,
+      "width": 5,
+      "angle": -155,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-35, 32],
+      "length": 12,
+      "width": 5,
+      "angle": 155,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-42.5, 29.5],
+      "length": 12,
+      "width": 5,
+      "angle": 155,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-42.5, -29.5],
+      "length": 12,
+      "width": 5,
+      "angle": -155,
+      "contrailSize": 5,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -48.5, 19.5,
+    -9.5, 39,
+    8.5, 26.5,
+    32.5, 14,
+    54, 9,
+    67, -2.5,
+    54, -15,
+    32.5, -20,
+    8.5, -32.5,
+    -9.5, -45,
+    -48.5, -25.5
+  ]
+}

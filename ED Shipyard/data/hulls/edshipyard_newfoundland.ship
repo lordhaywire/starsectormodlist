@@ -7,13 +7,14 @@
   "height": 350,
   "width": 176,
   "center": [88, 31],
-  "collisionRadius": 410,
+  "collisionRadius": 1000,
   "shieldCenter": [236, -0],
   "shieldRadius": 148,
   "viewOffset": 0,
   "builtInMods": [
     "edshipyard_train_locomotive",
-    "advancedcore"
+    "advancedcore",
+    "edshipyard_small_drone_hangar"
   ],
   "builtInWeapons": {
     "Stage1A": "edshipyard_steam",
@@ -72,7 +73,7 @@
       "size": "LARGE",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 85,  #Constrained arc is required to get the broadside AI to turn enough that other modules can shoot
+      "arc": 112,
       "angle": 90,
       "locations": [27, 53]
     },
@@ -81,7 +82,7 @@
       "size": "LARGE",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 85,
+      "arc": 112,
       "angle": -90,
       "locations": [27, -53]
     },
@@ -90,7 +91,7 @@
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 85,
+      "arc": 112,
       "angle": 90,
       "locations": [82.5, 46.5]
     },
@@ -99,7 +100,7 @@
       "size": "MEDIUM",
       "type": "HYBRID",
       "mount": "TURRET",
-      "arc": 85,
+      "arc": 112,
       "angle": -90,
       "locations": [82.5, -46.5]
     },
@@ -133,7 +134,7 @@
     {
       "id": "WS0010",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "UNIVERSAL",
       "mount": "TURRET",
       "arc": 270,
       "angle": 135,
@@ -142,7 +143,7 @@
     {
       "id": "WS0011",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "UNIVERSAL",
       "mount": "TURRET",
       "arc": 270,
       "angle": -135,
@@ -151,7 +152,7 @@
     {
       "id": "WS0008",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "UNIVERSAL",
       "mount": "TURRET",
       "arc": 270,
       "angle": -135,
@@ -160,7 +161,7 @@
     {
       "id": "WS0009",
       "size": "SMALL",
-      "type": "MISSILE",
+      "type": "UNIVERSAL",
       "mount": "TURRET",
       "arc": 270,
       "angle": 135,
@@ -201,6 +202,18 @@
       "arc": 0,
       "angle": 120,
       "locations": [17.5, 86]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        60.5, -0,
+        82, -0
+      ]
     }
   ],
   "engineSlots": [

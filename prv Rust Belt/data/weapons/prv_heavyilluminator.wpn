@@ -1,0 +1,72 @@
+{
+  "id": "prv_heavyilluminator",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "prv.rb.weapons.prv_heavyilluminator_Effect",
+  "everyFrameEffect": "prv.rb.weapons.prv_heavyilluminator_Effect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "displayArcRadius": 550,
+  "turretSprite": "graphics/prv/weapons/prv_heavyilluminator_turret.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_heavyilluminator_turret_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_heavyilluminator_hardpoint.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_heavyilluminator_hardpoint_glow.png",
+  "glowColor": [
+    255,
+    64,
+    0,
+    125
+  ],
+  "hitGlowRadius": 0,
+  "turretOffsets": [
+    16,
+    0,
+    18,
+    6,
+    18,
+    -6
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    24,
+    0,
+    22,
+    5,
+    22,
+    -5
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "fringeColor": [
+    255,
+    64,
+    0,
+    255
+  ],
+  "coreColor": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "width": 6,
+  "textureType": ROUGH,
+  "textureScrollSpeed": 65,
+  "pixelsPerTexel": 5,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundTwo": "graviton_beam_loop"
+}

@@ -1,0 +1,24 @@
+{
+	"id":"prv_agni_claw_shot",
+	"onHitEffect":"prv.agni.weapons.prv_agni_claw_Effect",
+	"onFireEffect":"prv.agni.weapons.prv_agni_claw_Effect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":0,
+	"hitGlowRadius":36,
+	"width":30,
+	"fadeTime":0.15,
+	"fringeColor":[
+		196,
+		0,
+		32,
+		0
+      ],
+	"coreColor":[225,255,200,0],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"",
+	"passThroughMissiles":true,
+}

@@ -1,0 +1,101 @@
+{
+  "hullName": "Klirr",
+  "hullId": "prv_klirr",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/prv/ships/fighters/prv_klirr.png",
+  "style": "PRV_HIGH",
+  "height": 40,
+  "width": 52,
+  "center": [26, 18],
+  "collisionRadius": 40,
+  "shieldCenter": [3, -0],
+  "shieldRadius": 36,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [13, 13]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "HIDDEN",
+      "arc": 10,
+      "angle": 0,
+      "locations": [13, 17]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [11, -14.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-14, -10.5],
+      "length": 21,
+      "width": 7,
+      "angle": 180,
+      "contrailSize": 7,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-14, 10.5],
+      "length": 21,
+      "width": 7,
+      "angle": -180,
+      "contrailSize": 7,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-10.5, 7.5],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-10.5, -7.5],
+      "length": 10,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-14.5, 16],
+      "length": 10,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-14.5, -16],
+      "length": 10,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 5,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    -15, 15.5,
+    8.5, 22,
+    18, 0,
+    8.5, -22,
+    -15, -15.5,
+    6.5, 0
+  ]
+}

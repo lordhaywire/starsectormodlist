@@ -1,0 +1,265 @@
+{
+	id:"Bhilai",
+
+	"color":[215,213,133,175],	
+	"baseUIColor":[215,213,133,255],
+	"darkUIColor":[51,71,67,175],
+	"gridUIColor":[215,213,133,175],
+	"brightUIColor":[215,213,133,255],
+	
+	"displayName":"Bhilai Astra",
+	"logo":"graphics/factions/bhilai_flag.png",
+	"crest":"graphics/factions/bhilai_crest.png",
+	"displayNameWithArticle":"Bhilai Astra",
+	"shipNamePrefix":"BA",
+	"shipNameSources":{
+		"DIKTAT":2,
+		"BRITISH_NAVY":1, 
+		"ROMAN":1,
+		"GREEK":1,
+		"EGYPTIAN":1,
+		"PERSIAN":1,
+		"SPACE":1,
+		"GENERAL":1,
+	},
+	"names":{
+		"old english":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+        "kocsuckers":2,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{},
+		"hulls":{},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "Bhilai", "KoC_Export"],
+		"hulls":[],
+	},
+	"knownShips":{
+		"tags":["base_bp", "Bhilai", "KoC_Export"],
+		"hulls":[],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["Bhilai", "KoC_Export"],
+		"hulls":[],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "Bhilai", "KoC_Export"],
+		"fighters":[],
+	},
+	"priorityFighters":{
+		"tags":["Bhilai", "KoC_Export"],
+		"fighters":[],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp"],
+		"weapons":[
+			"lightneedler",
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"heavyneedler",
+			"gauss",
+			"mjolnir",
+			"multineedler",
+			"breachpod",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"turretgyros",
+			"armoredweapons",
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"heavyarmor",
+			"insulatedengine",
+			"pointdefenseai",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"operations_center",
+			"recovery_shuttles",
+			"fluxbreakers",
+			"solar_shielding",
+			"stabilizedshieldemitter",
+            "ordstore",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":2,
+		"phaseShips":0,
+		
+		"officerQuality":3,
+		"shipQuality":4,
+		"numShips":3,
+		
+		"shipSize":3,
+		
+		"aggression":3,
+		
+		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"coordinated_maneuvers",
+			"crew_training",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"ai_cores",	
+	],
+	"music":{
+		"theme":"music_diktat_market_neutral",
+		"market_neutral":"music_diktat_market_neutral",
+		"market_hostile":"music_diktat_market_hostile",
+		"market_friendly":"music_diktat_market_friendly",
+		"encounter_neutral":"music_diktat_encounter_neutral",
+		"encounter_hostile":"music_diktat_encounter_hostile",
+		"encounter_friendly":"music_diktat_encounter_friendly",
+	},
+	"internalComms":"sindrian_diktat_internal",
+	"portraits":{
+		"standard_male":[
+"graphics/faces/AMPP_13.png",
+"graphics/faces/AMPP_102.png",
+"graphics/faces/AMPP_103.png",
+"graphics/faces/AMPP_40.png",
+"graphics/faces/AMPP_3.png",
+"graphics/faces/AMPP_17.png",
+"graphics/faces/AMPP_18.png",
+"graphics/faces/AMPP_19.png",
+"graphics/faces/AMPP_20.png",
+"graphics/faces/AMPP_21.png",
+"graphics/faces/AMPP_23.png",
+"graphics/faces/AMPP_24.png",
+"graphics/faces/AMPP_25.png",
+"graphics/faces/AMPP_26.png",
+"graphics/faces/AMPP_28.png",
+"graphics/faces/AMPP_29.png",
+"graphics/faces/AMPP_30.png",
+"graphics/faces/AMPP_34.png",
+"graphics/faces/AMPP_35.png",
+"graphics/faces/AMPP_37.png",
+"graphics/faces/AMPP_50.png",
+"graphics/faces/AMPP_55.png",
+"graphics/faces/AMPP_56.png",
+"graphics/faces/AMPP_57.png",
+"graphics/faces/AMPP_81.png",
+"graphics/faces/AMPP_89.png",
+"graphics/faces/AMPP_90.png",
+"graphics/faces/AMPP_104.png",
+		],
+		"standard_female":[
+"graphics/faces/AMPP_2.png",
+"graphics/faces/AMPP_36.png",
+"graphics/faces/AMPP_99.png",
+"graphics/faces/AMPP_4.png",
+"graphics/faces/AMPP_22.png",
+"graphics/faces/AMPP_46.png",
+"graphics/faces/AMPP_73.png",
+"graphics/faces/AMPP_87.png",
+"graphics/faces/AMPP_94.png",
+"graphics/faces/AMPP_109.png",
+		],
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"official":5,
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":10,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":10,
+		},
+	},	
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":1,
+		"AICoreRepMult":1,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		#"makesPirateBases":true, # testing
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},	
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"Grand Guru"},
+		},
+		"posts":{
+			"factionLeader":{"name":"Grand Guru"},
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Mercantile Convoy",
+		"tradeLiner":"Liner Convoy",
+		"smallTrader":"Trader",
+		
+		"patrolSmall":"Fast Picket",
+		"patrolMedium":"Patrol",
+		"patrolLarge":"Detachment",
+		
+		"inspectionFleet":"Internal Security Fleet",
+		"taskForce":"Task Force",
+		
+		"foodReliefFleet":"Relief Convoy",
+	},
+},
+
+

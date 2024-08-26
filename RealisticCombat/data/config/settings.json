@@ -1,0 +1,19 @@
+{
+    "fogOfWar":false,
+    "minCombatZoom":0.5,
+    "maxCombatZoom":40.0,
+    "plugins": {
+	"FleetRetreat":"RealisticCombat.plugins.FleetRetreat",
+	"Modification":"RealisticCombat.plugins.Modification",
+	"Indication":"RealisticCombat.plugins.Indication",
+	"Radar":"RealisticCombat.plugins.Radar",
+	"FreeCamera":"RealisticCombat.plugins.FreeCamera",
+    },
+    "graphics":{
+        "radar":{
+            "missile":"graphics/missile.png",
+            "missileLock":"graphics/missile_lock.png"
+        }
+    },
+    "escapeStartDistance": 5500,
+}

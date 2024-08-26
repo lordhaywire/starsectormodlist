@@ -3,7 +3,7 @@
   "hullId": "prv_brand",
   "displayName": "Beam",
   "goalVariant": true,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 11,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
@@ -12,21 +12,6 @@
   ],
   "weaponGroups": [
     {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0006": "phasebeam"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0004": "prv_fusion_burster",
-        "WS0005": "prv_fusion_burster"
-      }
-    },
-    {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
@@ -34,13 +19,35 @@
       }
     },
     {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "phasebeam",
+        "WS0009": "phasebeam"
+      }
+    },
+    {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
         "WS0001": "prv_sipdlaser",
-        "WS0003": "prv_sipdlaser"
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser"
       }
     },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
   ],
   "modules": [],
   "wings": []

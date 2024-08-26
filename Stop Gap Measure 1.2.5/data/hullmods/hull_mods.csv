@@ -1,0 +1,5 @@
+name,id,tier,rarity,tags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+# ship skin buffs,,,,,,,,,,,,,,,,
+Luddic Refit,filgap_luddic_refit,,,,,,TRUE,,0,0,0,0,data.hullmods.filgap_Luddic_Refit,"This ship has been produced using manufacturing capabilities of Luddic Church shipyard. Use of reinforced bulkhead and reliance on lower technology  leads to a %s percent improvement in hull integrity and %s percent decrease in supply consumption. However, increase in mass induce a %s percent decrease in handling. Luddic ships also need more crew (%s/%s/%s/%s ) to compensate lacks of autonomous systems. ",,graphics/filgap/hullmods/filgap_luddic_refit.png

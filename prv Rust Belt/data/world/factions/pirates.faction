@@ -1,0 +1,33 @@
+{	
+	"knownShips":{
+		"tags":["prv_pirate_bp"],
+		"hulls":[
+			"prv_gnista_p",
+			"prv_tystnad_p",
+			"prv_flamma_p",
+			"prv_kakafoni_p",
+			"prv_rok_p",
+		],
+	},
+	"knownWeapons":{
+		"tags":[
+			"prv_pirate_bp"
+		],
+		"weapons":[
+			"prv_fusion_burster",
+		],
+	},
+	"knownFighters":{
+		"tags":["prv_pirate_bp"],
+	},
+	"hullFrequency":{
+		"hulls":{
+			"prv_dolomit_p":0.35,
+			"prv_bergslag_p":0.25, #should be just an occasional thing
+			"prv_rok_p":0.15, #very uncommon in non-RB fleets
+		},
+	},
+	"custom":{
+		"syndicateName": "pirate scum",
+	}
+}

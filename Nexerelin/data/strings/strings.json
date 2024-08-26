@@ -9,11 +9,13 @@
 		"close":"close",
 		"colony":"colony",
 		"colonies":"colonies",
+		"commodity":"commodity",
 		"conquest":"conquest",
 		"continue":"continue",
 		"cost":"cost",
 		"CR":"CR",
 		"credits":"credits",
+		"crisis":"crisis",
 		"designType":"design type",
 		"diplomacy":"diplomacy",
 		"diplomatic":"diplomatic",
@@ -36,7 +38,8 @@
 		"marines":"marines",
 		"options":"options",
 		"player":"player",
-		"planet":"planet",		
+		"planet":"planet",
+		"production":"production",
 		"priority":"priority",
 		"relay":"relay",
 		"rename":"rename",
@@ -299,7 +302,7 @@
 		"intelButtonUnlockMastery":"Unlock mastery",
 		"intelButtonUnlockMasteryWithLevel":"Unlock mastery (level %s)",
 		"intelButtonCellKill":"Internal security mode",
-		"intelButtonCellKillTooltip":"When operative is idle, will periodically travel to player or commissioning faction colonies with Pather cells, and destroy them. Will also find unlocated pirate bases if no relevant cells exist.\n\nShould only be used on one operative at a time, as nothing prevents multiple operatives from trying to remove the same cell.",
+		"intelButtonCellKillTooltip":"When operative is idle, will periodically travel to player faction colonies with Pather cells, and destroy them. Will also find unlocated pirate bases if no relevant cells exist.\n\nShould only be used on one operative at a time, as nothing prevents multiple operatives from trying to remove the same cell.",
 		"intelButtonRepeatRelations":"Repeat relation actions",
 		"intelButtonRepeatRelationsTooltip":"After completing a raise/lower relations action, repeat it until reaching the maximum effect or ordered to abort (or you run out of money).",
 		"intelHeaderLocalReport":"Local report",
@@ -568,6 +571,31 @@
 		"descConnections":"You can use your connections to pull a few strings and ensure $theExpeditionName never gets beyond the planning stage.",
 		"descConnections2":"Calling in these favors will reduce your standing with $theFaction by %s points.",
 		"descConnectionsTooLow":"You do not have sufficient connections with $faction officials to stall out this kind of an operation.",
+	},
+	
+	"nex_backgrounds":{
+		"dialogTitle":"Choose your Background",
+		"dialogPara1":"A background can determine an assortment of different things, be that starting cargo, skills or future interactions with other characters. You can also choose to begin as a nobody who has yet to make their name known.",
+		"dialogPara2":"Hover over a background to get more information.",
+		
+		"intelTitle":"Background: %s",
+		"intelDescNoBackground":"You have no known background.",
+		
+		"bgDebt_intelDesc":"You currently have to pay back %s credits every month.",
+		"bgDebt_intelDescEnded":"The collector of your debt is no more, and without him, you don't have to worry about him using his material in case of missed payment.",
+		"bgDebt_intelDescFleet":"With Kanta's help, you discovered the location of your debt collector's fleet. They are currently standing still within the %s star system.",
+		"bgDebt_selectionTooltipFormula":"The formula for debt calculation is: (%s + (%s * %s)) * %s",
+		
+		"bgDebt_dialogOpt_discussDebt":"Discuss matters related to your debt",
+		"bgDebt_dialogOpt_discussDebtTooltip":"This option may have effects related to your backstory.",
+		"bgDebt_dialog_discussDebt1":"Before leaving, you mention the name of the collector of your debt, and before you can continue Kanta interupts you.",
+		"bgDebt_dialog_discussDebt2":"\"Ah, %s. %s has been a small thorn in Kanta's eyes. Whatever your matter is, i think we would both benefit from having %s out of them.",
+		"bgDebt_dialog_discussDebt3":"\"May Cydonia guide you towards this wretched marauder,\" she says giving an intense look at him.",
+		"bgDebt_dialog_discussDebt4":"Backstory Updated",
+		
+		"bgDebt_fleetName":"Debt Collector's Fleet",
+		"bgDebt_msg_win":"You defeated the fleet holding the collector of your debt. Payment is now permanently paused.",
+		"bgDebt_reportNode_name":"An obligation from your past",
 	},
 	
 	"nex_baseStrike":{
@@ -852,7 +880,12 @@
 		
 		"intelCeasefireTitle":"Ceasefire Offer",
 		"intelPeaceTreatyTitle":"Peace Treaty Offer",
+		"intelAllianceTitle":"Alliance Offer",
 		"intelCeasefireDesc":"$TheFaction $isOrAre offering a $ceasefireOrPeaceTreaty to end the ongoing hostilities. In the absence of further overt hostile actions, this will run for at least $days days and until further diplomatic events occur.",
+		"intelAllianceDescInvite":"$TheFaction has offered us an invitation to their alliance, the $alliance.",
+		"intelAllianceDescJoin":"$TheFaction has requested to join our alliance, the $alliance.",
+		"intelAllianceDescNew":"$TheFaction has invited us to form a new alliance.",
+		"intelAllianceDescMerge":"$TheFaction has invited us to merge your two alliances, $alliance and $otherAlliance.",
 		"intelCeasefireDescTime":"You have $timeLeft $days to accept or reject the offer.",
 		"intelCeasefireDescResult":"You have $acceptedOrRejected the offer.",
 		"intelCeasefireConfirm":"Confirm?",
@@ -865,6 +898,7 @@
 		"title":"Diplomacy Profile",
 		"alignments":"alignments",
 		"warWeariness":"war weariness",
+		"badboy":"infamy",
 		
 		"claimedMarkets":"$TheFaction has revanchist claims on the following markets: ",
 		"claimedMarketsEntry":"$market (size $size)",
@@ -924,6 +958,7 @@
 		"joinedFaction":"Joined $theNewFaction",
 		"leftFaction":"Left $theOldFaction",
 		"numMarkets":"$Faction   $numMarkets market(s), total size $size",
+		"numMarketsClaimed":"$Faction   $numMarkets market(s) claimed, total size $size",
 		"switchedFactions":"Left $theOldFaction for $theNewFaction",
 
 		"relationshipLimit":"Relationship between $faction1 and $faction2 limited to $relationship",
@@ -1053,6 +1088,7 @@
 		"scramblingFrom":"scrambling from $target",
 		"orbiting":"orbiting $target",
 		"rendezvous":"waiting at rendezvous point",
+		"usingGate":"using $target",
 		
 		"assisting":"assisting $target",
 		"attacking":"attacking $target",
@@ -1112,7 +1148,7 @@
 		"tableIncrement":"Last daily increment",
 		"tablePool2":"Invasion points",
 		"desc":"The fleet pool is generated by a faction's markets based on availability of %s, modified by stability. Imports count for less, local (on-market) production counts for a lot more. Each faction also receives a flat number of points for existing, and another flat number based on the current player level. The pool is spent on various fleet-related events in Nexerelin.",
-		"desc2":"Invasion points are generated similarly, but also count %s, and have some modifiers to handle factions which are hostile to everyone. They also stop accumulating if the faction is at peace.",
+		"desc2":"Invasion points are generated similarly, but also count %s, and have some modifiers to handle factions which are hostile to everyone. They also accumulate more slowly if the faction is at peace.",
 	},
 	
 	"nex_fleetRequest":{
@@ -1323,6 +1359,8 @@
 		"btnRunPlayerAI":"Auto-move units",
 		"btnRunPlayerAI_tooltip":"Let the AI move all deployed units as it sees fit. Will not move units that already have a move or withdraw order. Will not deploy new units or use special abilities.",
 		"btnTogglePlayerAI":"Auto-move at turn end",
+		"btnPlayerAICanDrop":"Auto-move can deploy units",
+		"btnPlayerAICanDrop_tooltip":"Auto-move will deploy player units from orbit as it sees fit.",
 		"btnNewUnit":"New %s %s",
 		"btnNewUnitMarine":"New marine %s",
 		"btnNewUnitHeavy":"New heavy %s",
@@ -1527,7 +1565,7 @@
 		"modifierFactionAttackMult":"%s damage dealt",
 		"modifierFactionDamageTakenMult":"%s damage received",
 		"modifierFactionMoraleDamageTakenMult":"%s morale damage received",
-		"modifierLuddicMoraleDamageTakenMult":"%s morale damage received on originally Luddic-held colonies (effect squared for militia)",
+		"modifierLuddicMoraleDamageTakenMult":"%s morale damage received on originally Luddic-held colonies (effect squared with Luddic Majority)",
 		
 		"modifierStation":"Orbital Station",
 		"modifierStationDesc":"An orbital station is active. Enemy fleets cannot support ground forces.",
@@ -1611,6 +1649,7 @@
 		"ability_ignisPluvia_tooltip4":"The selected Olympus will consume %s CR to conduct this attack.",
 		
 		"noLootReasonNotHeld":"Industry not held",
+		"noLootReasonAlreadyLooted":"Already looted this industry",
 		"noLootReasonOwnMarket":"Can't loot from own market",
 		"noLootReasonStrength":"Player strength must be half of total strength or more (when invasion is not player-initiated)",
 		
@@ -1637,6 +1676,15 @@
 		"cellDisruptName":"Cell infiltrated",
 		"cellDisruptDesc":"Your operative has infiltrated and destroyed a Luddic Path cell on one of your colonies.",
 		
+		"pirateCommissionName":"Pirate commission",
+		"pirateCommissionDesc":"Being an 'official' pirate gives you some protection from predation by fellow pirates, although honor among theives only goes so far. Effect increases with relationship level.",
+		"lpCommissionName":"Pather commission",
+		"lpCommissionDesc":"A fellow walker of the Path has a certain leeway in using the Adversary's tools against it, although other cells may not see it that way. Effect increases with relationship level.",
+		"pirateFriendlyName":"Pirate relations",
+		"pirateFriendlyDesc":"You've established some positive ties in the pirate community, making them less likely to prey on your faction. Effect increases with relationship level.",
+		"lpFriendlyName":"Pather relations",
+		"lpFriendlyDesc":"Your relations with the way of the Path have made some (but not all) of the cells more likely to overlook your transgressions. Effect increases with relationship level.",		
+		
 		"defensiveFleetName":"Defensive fleets",
 		"defensiveFleetDesc":"Fleets of various types can keep the spaceways safe from marauding Pathers and pirates.",
 		"defenseFleetName":"Defense fleets",
@@ -1655,6 +1703,59 @@
 		"mercPackageBulletDebt":"Cancelled due to debt",
 		"mercPackageBtnCancel":"Cancel contract",
 		"mercPackageConfirmPromptCancel":"Confirm contract termination?",
+		
+		"generic_eventBullet":"Imminent %s attack",
+		"generic_eventAvertedBullet":"%s attack averted",
+		
+		"police_factorName":"Sectorpol",
+		"police_factorTooltip":"The governments of the Sector tend to not like free ports, seen as havens and breeding grounds for criminals and scoundrels of all types. Interstellar law enforcement agents circulate in your systems, acting in a manner sometimes barely distinguishable from the outlaws they pursue.",
+		"police_activityCauseDesc":"Colonies with Free Port",
+		"police_activityCauseTooltip":"Event progress value is based on the number and size of colonies with the \"Free Port\" condition, and their production or trade of Recreational Drugs and Heavy Armaments. Less active colonies may escape notice entirely.",
+		"police_activityCauseTooltipHighlight":"Free Port, Recreational Drugs, Heavy Armaments",
+		
+		"police_raidNoun":"police raid",
+		"police_raidForcesNoun":"Sectorpol gendarmerie",
+		"police_fleetName":"NAT Investigators",
+		"police_fleetRaid":"NAT Gendarmes",
+		"police_fleetRaidLarge":"Sectorpol Gendarmerie Command",
+		"police_raidUnrestReason":"Police action against criminals",
+		
+		"police_eventBullet":"Imminent police crackdown",
+		"police_eventBulletHighlight":"police crackdown",
+		"police_eventAvertedBullet":"Police crackdown averted",
+		"police_eventDesc1":"You've received intel that an interstellar coalition is preparing to serve a search and arrest warrant on one of your colonies that has a Free Port, to remove \"criminal elements\" entrenched there.",
+		"police_eventDesc1Highlight":"search and arrest warrant, Free Port",
+		"police_eventDesc2":"Given the nature of hunter and hunted alike here, this event is likely to result in significant disruption of the colony's spaceport and other crime-related locations.",
+		"police_eventDesc2Highlight":"significant disruption, spaceport, other crime-related locations",
+		"police_eventDesc3":"Militarily thwarting the raid will result in the factions leaving your dens of vice alone, and you will gain reputation with criminal factions.",
+		"police_eventDesc3Highlight":"reputation with criminal factions",
+		"police_eventResetReq":"You remove all free ports worthy of Sectorpol's notice",
+		
+		"police_intelButtonTextResist":"Resist the raid",
+		"police_intelDescResist":"Your forces will attempt to resist the raid.",
+		"police_intelDescNoResist":"Your forces will comply with the police and allow the raid to take place.",
+		"police_intelDescNoChange":"The police forces are in-system and the order to resist cannot be rescinded.",
+		
+		"diktat_mainRowTooltip1":"You've attracted the attention of %s.",
+		"diktat_mainRowTooltip2":"Sindrian raider fleets have been sighted in your space, attacking trade fleets regardless of their factional allegiance.",
+		"diktat_eventDesc1":"You've received intel that the %s is planning an attack to saturation-bombard your fuel production facilities.",
+		"diktat_eventDesc1Highlight":"saturation-bombard",
+		"diktat_eventDesc2":"If the attack is defeated the %s will likely abandon further efforts against you, and your ability to export fuel will be improved.",
+		"diktat_eventDesc2Highlight":"%s,export fuel,improved",
+		"diktat_eventLoc":"Sindria",
+		"diktat_eventResetReq1":"You go to %s and make an agreement with the $faction",
+		"diktat_eventResetReq2":"%s is tactically bombarded",
+		"diktat_eventResetReq3":"Fuel production on %s is significantly disrupted",
+		"diktat_causeDesc1":"Your colony production of fuel is high enough for the %s - which depends on its own fuel production for much of its economy - to take notice.",
+		"diktat_causeDesc2":"Event progress is based on maximum fuel production. %s below %s per colony should be enough to divert the $faction's attention.",
+		"diktat_causeDesc2Highlight":"Reducing production levels",
+		"diktat_causeDesc3":"Knocking the $faction out of the fuel production game is also an option. Much of their fuel production depends on a Domain-era %s installed in their production facilities on Sindria.",
+		
+		"diktat_factionNameShort":"Diktat",
+		"diktat_factionNameShortSFC":"Company",
+		
+		"remnant_friendlyActivityCauseName":"Friendly with Remnants",
+		"remnant_friendlyActivityCauseTooltip":"Your association with the Remnants via %s leads to them grudgingly accepting your status as an uninvited neighbour.",
 	},
 	
 	"exerelin_landmarks":{
@@ -1677,6 +1778,7 @@
 		"marketDirectoryOptionIndustrySearch":"Search for industry",
 		"marketDirectoryHeaderIndustrySearch":"search(%s)",
 		"marketDirectoryHeaderIndustrySearch2":"%s results(s) found",
+		"marketDirectoryOptionDisputedSearch":"Revanchist claims",
 		"marketDirectoryButtonShow":"show",
 		
 		"intelCaptureTitle":"Market Captured - $market",
@@ -1857,6 +1959,9 @@
 		"btnHomeworldPickMode1":"core",
 		"btnHomeworldPickMode2":"non-core",
 		
+		"btnHomeworldNeighbors":"Starting neighbors",
+		"btnHomeworldNeighborsTooltip":"Allow picking starting planets in already-inhabited systems in non-random sector? No effect in random sector.",
+		
 		# migrated from rules.csv
 		"optionStartingRelations":"Starting faction relations",
 		"tooltipStartingRelations":"Non-default settings will also disable faction relationship clamping. If random, will randomize diplomacy traits. 'Flatten' sets all relations to zero.",
@@ -1874,6 +1979,9 @@
 		"tooltipHardMode":"Hard mode\n- Other factions are more aggressive towards yours\n- %s lower colony growth rate; %s lower colony income\n- %s higher vengeance point generation",
 		"optionSpacerObligation":"Spacer obligation",
 		"tooltipSpacerObligation":"Growing monthly payments as seen in the spacer start option.",
+		"optionStipend":"Academy stipend",
+		"tooltipStipend":"Toggles the Galatian Academy stipend with monthly payments to player for the first three cycles of the game. Stipend is automatically disabled in Starfarer mode or with spacer start.",
+		"tooltipStipendHighlight":"automatically disabled",
 		"optionRandomStartLocation":"Random start location",
 		"tooltipRandomStartLocation":"Start at a random colony of your faction, instead of the faction's predefined starting location.",
 		"optionStartingDMods":"Starting D-mods",
@@ -1979,8 +2087,8 @@
 		
 		"headerTitle":"Insurance management",
 		"headerBreakdown":"Breakdown",
-		"descInsuranceMult":"Insurance mult: %s×",
-		"descPremiumMult":"Premium mult: %s×",
+		"descInsuranceMult":"Insurance mult: %s ×",
+		"descPremiumMult":"Premium mult: %s ×",
 		"descLifetimePremiums":"Total lifetime premiums",
 		"descLifetimeClaims":"Total lifetime claims",
 		"descHistoryTime":"Claims from past %s days",
@@ -2002,7 +2110,7 @@
 
 		"helpPara3Title":"Premiums",
 		"helpPara3-1":"Insurance premiums are paid up front in full and will not be refunded under any circumstances.",
-		"helpPara3-2":"The insurance premium multiplier ranges from %s× to %s×. It increases when claims are paid and decreases for every %s days that elapse on the policy.",
+		"helpPara3-2":"The insurance premium multiplier ranges from %s × to %s ×. It increases when claims are paid and decreases for every %s days that elapse on the policy.",
 		"helpPara3-3":"The multiplier formula is: %s + (claims - annualized premiums)/%s",
 		
 		"helpFooter":"Copyright © c.%s FeBSure. All rights reserved.",
@@ -2131,6 +2239,7 @@
 		"ethosName_Generous":"Generous",
 		"ethosName_Honorable":"Honorable",
 		"ethosName_Humanitarian":"Humanitarian",
+		"ethosName_Idealistic":"Idealistic",
 		"ethosName_Knowledge":"Knowledge",
 		"ethosName_Liar":"Liar",
 		"ethosName_Mercenary":"Mercenary",
@@ -2396,6 +2505,7 @@
 		"intelDescDebug":"This intel is displayed only for debugging. You should not be seeing it under normal conditions.",
 		
 		"intelButtonCommand":"Give orders",
+		"intelButtonReviveAll":"Revive all ships",
 		"intelTooltipCommandInBattle":"Fleet is currently in battle and cannot receive orders.",
 		"intelButtonDisband":"Disband",
 		"intelButtonRecreate":"Revive flagship",
@@ -2483,6 +2593,8 @@
 	},
 	
 	"nex_strategicAI":{
+		"intelTitle":"Strategic AI",
+		
 		"intelBulletUpdate":"Strategy meeting",
 		"intelBulletUpdateAdd":"%s new concern(s): %s",
 		"intelBulletUpdateRemove":"%s concern(s) removed: %s",
@@ -2491,8 +2603,8 @@
 		"intelPara_daysToNextMeeting":"%s days to next strategy meeting",
 		"intelPara_income":"Our factionwide monthly income from markets is %s",
 		"intelPara_competitors":"Other factions with significant commodity competition:",
-		"intelPara_fleetPool":"Fleet pool at %s/%s",
-		"intelPara_invasionPoints":"Invasion points: %s",
+		"intelPara_fleetPool":"Fleet pool at %s / %s  (%s/day)",
+		"intelPara_invasionPoints":"Invasion points: %s / %s  (%s/day)",
 		"intelPara_recentActions":"Concerns recently acted on",
 		"intelPara_actionDelegateDesc":"This action was taken due to the strategic concern %s.",
 		
@@ -2505,10 +2617,12 @@
 		"statValue":"value",
 		"statDefenseAdjustedValue":"value/defense",
 		"statImportVolume":"import volume",
+		"statDomesticProduction":"in-faction production",
 		"statCommodityType":"commodity type",
 		"statFactionPower":"faction power",
 		"statCompetingShare":"competitor's market share",
 		"statExistingMarketShare":"existing market share",
+		"statRecentAttacks":"recent attacks",
 		"statRage":"current pirate rage",
 		"statRaidAnger":"rage at recent attacks",
 		"statQualityDeficit":"Distance to target quality",
@@ -2516,6 +2630,7 @@
 		"statTrait":"trait",
 		"statDiplomacyChancePositive":"positive diplomacy chance",
 		"statDiplomacyChanceNegative":"negative diplomacy chance",
+		"statInvPoints":"invasion point stockpile",
 		"statFleetPool":"fleet pool proportion",
 		"statPriorityOverTime":"priority over time",
 		"statDispositionPositive":"high disposition",
@@ -2544,8 +2659,13 @@
 		
 		"concernDesc_paranoidHigherRepLevel":"This concern is applying at a higher reputation level than normal due to the Paranoid trait.",
 		"concernDesc_predatoryHigherRepLevel":"This concern is applying at a higher reputation level than normal due to the Predatory trait.",
+		"concernDesc_revanchism_success":"We have reclaimed our rightful territory of $market (size $size)!",
 		"concernDesc_retaliation_success":"We must respond in kind at once, to show $theFaction that we are not defenseless.",
 		"concernDesc_retaliation_fail":"Although their attempt failed, we must swiftly punish them for their insolence.",
+		
+		"playerRaid":"player raid",
+		"playerBombardment":"player bombardment",
+		"playerInvasion":"player invasion",
 		
 		"btnGoIntel":"Go to intel",
 		"btnGoIntelShort":"goto",
@@ -2572,7 +2692,7 @@
 		"intel_desc2":"To avert an undesirable outcome, $theFaction demands a tribute equal to %s of the colony's gross income. Its population growth will also be reduced by %s, and it cannot exceed size %s.",
 		"intel_descAccepted":"You are currently paying tribute from $market.",
 		"intel_descRejected":"You have refused to pay tribute for $market.",
-		"intel_descOver":"The tribute event is now over.",
+		"intel_descOver":"The tribute event has been terminated due to circumstances, such as a change in the faction claiming the system.",
 		"intel_descTime":"You have $timeLeft $days to accept the offer.",
 		"intel_dialogConfirm":"Confirm?",
 	},
@@ -2655,6 +2775,7 @@
 		"statsPrisonersRansomed":"Prisoners ransomed",
 		"statsSlavesSold":"Slaves sold",
 		"statsOrphansMade":"Orphans made",
+		"statsPlanetsSurveyed":"Planets surveyed",
 		
 		"intelTitleConquest":"Conquest Victory",
 		"intelTitleDiplomatic":"Diplomatic Victory",
@@ -2692,6 +2813,10 @@
 		"knightName1":"Rhianne",
 		"knightName2":"Argent",
 		
+		# I haven't actually read either of these books, just needed a name ref
+		"scientistName1":"Yasutaka",	# after Yasutaka Tsutsui
+		"scientistName2":"Liu",			# after Liu Cixin
+		
 		"m1_name":"Captive Cores",
 		"m1_stage1Desc":"Recover the Beta Cores stored on %s. You could hit the secure facility where they're stored, or talk to someone in authority who can help you.",
 		"m1_stage2Desc":"Return the Beta Cores you've recovered to %s at %s. Alternatively, you might choose to bring them to either %s or %s.",
@@ -2712,6 +2837,17 @@
 		"fragments_returnNextStep":"Return to %s and talk to $name",
 		
 		"fragments_fleetName":"Mysterious Allies",
+		
+		"lostScientist_name":"File Drawer Problem",
+		"lostScientist_goToAcademyDesc":"Go to the %s to look for clues on the missing scientist, %s.",
+		"lostScientist_goToPlanetDesc":"Travel to %s in the %s to find the missing scientist %s.",
+		"lostScientist_checkFleetDesc":"Investigate the nearby battle in the %s system.",
+		"lostScientist_returnMidnightDesc":"Return to $name on %s and deliver the research paper.",
+		
+		"lostScientist_goToAcademyNextStep":"Go to the %s",
+		"lostScientist_goToPlanetNextStep":"Go to %s in the %s system",
+		"lostScientist_checkFleetNextStep":"Investigate battle in %s",
+		#"missingSci_returnMidnightNextStep":"Return to $name on %s",	# generated in code
 		
 		"brawl_name":"Showdown",
 		"brawl_boilerplateDesc":"A large Hegemony and allied operation is planned against the Remnants. $name has asked you to prevent it from succeeding.",
@@ -2741,6 +2877,7 @@
 		"salvation_investigateLeadsDesc":"Agent $agentName has given you two potential leads to follow.",
 		"salvation_investigateLeadsDesc1":"Go to the %s and see if you can find the fleet that attacked the base.",
 		"salvation_investigateLeadsDesc2":"A senior %s executive might be able to help. If you don't know anyone like that, Midnight could put you in touch.",
+		"salvation_investigateLeadsDesc2Known":"A senior %s executive might be able to help. Try %s on %s.",
 		"salvation_returnDesc":"Return to %s and report what you have learned.",
 		"salvation_defendPlanetDesc":"Go to %s and help defend it from Towering's attack. Move quickly.",
 		"salvation_defendPlanetDescPKed":"%s has been destroyed, but Towering is still in sight. Destroy him.",
@@ -2766,6 +2903,7 @@
 		"salvation_toweringChatter_death1":"\"fools... as long as humanity exists, the sector is condemned.\"",
 		"salvation_toweringChatter_death2":"\"we/i was its only salvation... i was...\"",
 		#"salvation_toweringChatter_death3":"<signal lost>",
+		"salvation_toweringChatter_taunt":"flee then, humans. only the void shall embrace you, as you grow cold and die...",
 		"salvation_playthroughLog_line":"Saved $target from $towering",
 		
 		"deadDropItem1":"a crate of exotic optronic components",
@@ -2891,6 +3029,7 @@
 		"header_diplomacy":"Diplomacy",
 		"header_alliances":"Alliances",
 		"header_invasions":"Invasions",
+		"header_groundBattles":"Ground battles",
 		"header_insurance":"Insurance",
 		"header_agents":"Operatives",
 		"header_prisoners":"Prisoners",
@@ -2912,7 +3051,10 @@
 		"name_agentEventFilterLevel":"Operative event filter level",
 		"tooltip_agentEventFilterLevel":"Works more or less the same way as the diplomacy filter.",
 		
+		"name_enableHostileFleetEvents":"Enable hostile fleet events",
+		"tooltip_enableHostileFleetEvents":"If false, should disable all invasions, raids, etc. from this mod. Vanilla events such as pirate raids and colony crises will be unaffected.",
 		"name_enableInvasions":"Enable invasions",
+		"tooltip_enableInvasions":"Enables invasion events by NPC factions (including player-requested fleets). Player fleet will always be able to personally invade regardless of this setting.",
 		"name_legacyInvasions":"Use legacy invasion system",
 		"tooltip_legacyInvasions":"Disables the ground battle minigame and reverts to the old system of single-day invasion resolution. Will not affect ground battles already in progress.",
 		"name_invasionsOnlyAfterPlayerColony":"Prevent invasions until first player colony",
@@ -2942,11 +3084,20 @@
 		"tooltip_fleetRequestCostPerFP":"Credit cost of requested fleets per fleet point (hidden value) of the generated fleet(s).",
 		"name_creditLossOnColonyLossMult":"Credit loss mult on market loss",
 		"tooltip_creditLossOnColonyLossMult":"Multiplier of the player's stored credits lost when a market is captured by another faction. The proportion of total credits lost is equal to the market size divided by the total size of all markets in the faction, multiplied by this number. It is doubled on Starfarer mode, and cannot exceed 75%%.",
+		
 		"name_groundBattleDamageMult":"Ground battle damage mult",
 		"tooltip_groundBattleDamageMult":"Modifies the damage units do to each other during ground battles.",
+		"name_groundBattleGarrisonSizeMult":"Garrison size mult",
+		"tooltip_groundBattleGarrisonSizeMult":"Modifies troop count for market garrisons in ground battles. Also affects legacy invasions.",
+		"name_groundBattleGarrisonXP":"Garrison XP",
+		"tooltip_groundBattleGarrisonXP":"Sets the XP level of garrisons in ground battles. XP has same effects as for player marines, other than morale.",
+		"name_groundBattleInvasionTroopSizeMult":"Invasion troop size mult",
+		"tooltip_groundBattleInvasionTroopSizeMult":"Modifies troop count for invasion fleets in ground battles. Applied when fleet is generated. Note that because of movement limits, it may not be possible to overwhelm a defender with pure numbers. Also affects legacy invasions.",
+		"name_groundBattleInvasionTroopXP":"Invasion troop XP",
+		"tooltip_groundBattleInvasionTroopXP":"Sets the XP level of invasion troops in ground battles. XP has same effects as for player marines, other than morale.",
 		
 		"name_enableDiplomacy":"Enable diplomacy",
-		"tooltip_followersDiplomacy":"Toggles random and AI-picked diplomacy events between factions.",
+		"tooltip_enableDiplomacy":"Toggles random and AI-picked diplomacy events between factions.",
 		"name_followersDiplomacy":"Player faction has diplomacy events",
 		#"tooltip_followersDiplomacy":"Toggles random and AI-picked diplomacy events for player faction.",
 		"name_diplomacyInterval":"Diplomacy interval",
@@ -2960,7 +3111,8 @@
 		"name_allianceGracePeriod":"Alliance grace period",
 		"tooltip_allianceGracePeriod":"Non-scripted alliances cannot form for this many days at start of game.",
 		#"name_allianceFormationInterval":"Interval for attempting to form alliances",
-		"name_ignoreAlignmentForAlliances":"Ignore faction alignments for forming/joining alliances",		
+		"name_ignoreAlignmentForAlliances":"Ignore faction alignments for forming/joining alliances",
+		"name_npcAllianceOffers":"NPCs make alliance offers to player",		
 		
 		"name_legacyInsurance":"Legacy insurance",
 		"tooltip_legacyInsurance":"Old insurance system with automatic free insurance from your commissioning faction (but not from player faction).",
@@ -2994,6 +3146,7 @@
 		"tooltip_useNewVengeanceEncounters":"A more vanilla-style, once-and-done ambush mechanic for vengeance fleets.",
 		"name_vengeanceFleetSizeMult":"Vengeance fleet size mult",
 		
+		"name_enableColonyExpeditions":"Enable NPC colony expeditions",
 		"name_colonyExpeditionInterval":"Colony expedition interval",
 		"tooltip_colonyExpeditionInterval":"Base interval at which colony expeditions are launched, modified by factors such as the number of existing colonies. Each participating faction has a chance to be selected in each expedition round.",
 		"name_colonyExpeditionsOnlyAfterPlayerColony":"Colony expeditions only after player colony",
@@ -3004,15 +3157,22 @@
 		
 		"name_enableStrategicAI":"Enable strategic AI",
 		"tooltip_enableStrategicAI":"Toggles the new experimental strategic AI for NPC factions. This setting takes effect on [game load], adding AIs to applicable factions if enabled and purging any AIs if disabled.",
+		"name_showStrategicAI":"Show strategic AI",
+		"tooltip_showStrategicAI":"If false, AI for other factions will not be shown in intel screen.",
 		"name_enableVictory":"Enable victory",
 		"tooltip_enableVictory":"If off, prevents the victory event from occuring even if conditions are met (except for story-based or other scripted victories).",
 		"name_hardModeColonyGrowthMult":"Starfarer mode colony growth mult",
 		"name_hardModeColonyIncomeMult":"Starfarer mode colony income mult",
 		"name_enablePunitiveExpeditions":"Enable punitive expeditions",
-		"tooltip_enablePunitiveExpeditions":"Toggles vanilla punitive expeditions sent by factions for commodity competition and/or operating free ports. Does not affect bombardments of player colonies in claimed territory.",
+		"tooltip_enablePunitiveExpeditions":"Toggles vanilla (pre-0.97) punitive expeditions sent by factions for commodity competition and/or operating free ports. Does not affect bombardments of player colonies in claimed territory. Not needed with vanilla factions, but use this if a mod faction is sending expeditions.",
+		"name_enableNexColonyCrises":"Enable Nexerelin's colony crises",
+		"tooltip_enableNexColonyCrises":"Enable colony crises added by this mod (currently this is just the free port one).",
 		"name_officerDeaths":"Officer deaths",
 		"tooltip_officerDeaths":"Player officers may be killed or go MIA in combat.",
 		"name_rebellionMult":"Rebellion generation mult",
 		"tooltip_rebellionMult":"Modifies the rate at which rebellions break out due to low stability.",
+		
+		"name_skipStoryDefault":"Default \"skip story\" option",
+		"tooltip_skipStoryDefault":"Default setting for the \"skip story\" toggle in new game setup dialog.",
 	}
 }

@@ -1,0 +1,17 @@
+{
+	"id":"filgap_firecontrol",
+	"type":"STAT_MOD",
+	"aiType":"WEAPON_BOOST",
+	
+	"statsScript":"data.shipsystems.scripts.filgap_FireControlStats",
+	
+	"weaponGlowColor":[50,255,0,255],
+	"weaponTypes":[ENERGY,BALLISTIC],
+	
+	
+	"useSound":"system_high_energy_focus_activate",
+	"deactivateSound":"system_high_energy_focus_deactivate",
+	
+	"outOfUsesSound":"gun_out_of_ammo",
+	"loopSound":"system_high_energy_focus_loop",	
+}

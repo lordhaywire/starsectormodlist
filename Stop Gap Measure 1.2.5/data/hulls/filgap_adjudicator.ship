@@ -1,0 +1,295 @@
+{
+  "bounds": [
+    53.5,
+    -8,
+    75,
+    -8,
+    99,
+    -19,
+    99,
+    -28,
+    9,
+    -62,
+    -6,
+    -73,
+    -35,
+    -73,
+    -49,
+    -66,
+    -84,
+    -71,
+    -92,
+    -66,
+    -95,
+    -34,
+    -77.5,
+    -30.5,
+    -77,
+    -26.5,
+    -91.5,
+    -22,
+    -102.5,
+    -16.5,
+    -102.5,
+    16.5,
+    -91.5,
+    22,
+    -77,
+    26.5,
+    -77.5,
+    30.5,
+    -95,
+    34,
+    -92,
+    66,
+    -84,
+    71,
+    -49,
+    66,
+    -35,
+    73,
+    -6,
+    73,
+    9,
+    62,
+    99,
+    28,
+    99,
+    19,
+    75,
+    8,
+    53.5,
+    8
+  ],
+  "builtInWings": [],
+  "center": [
+    73.5,
+    102
+  ],
+  "collisionRadius": 122.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -94.5,
+        39.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -94.5,
+        -39.5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 28.5,
+      "location": [
+        -93,
+        50.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 28.5,
+      "location": [
+        -93,
+        -50.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -92,
+        62
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -92,
+        -62
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": 180,
+      "contrailSize": 13,
+      "length": 39.5,
+      "location": [
+        -103,
+        11
+      ],
+      "style": "LOW_TECH",
+      "width": 13
+    },
+    {
+      "angle": -180,
+      "contrailSize": 13,
+      "length": 39.5,
+      "location": [
+        -103,
+        -11
+      ],
+      "style": "LOW_TECH",
+      "width": 13
+    }
+  ],
+  "height": 204,
+  "hullId": "filgap_adjudicator",
+  "hullName": "Adjudicator",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0.5
+  ],
+  "shieldRadius": 115.5,
+  "spriteName": "graphics/filgap/ships/filgap_adjudicator.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 60,
+      "arc": 200,
+      "id": "WS0001",
+      "locations": [
+        -27,
+        31.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -60,
+      "arc": 200,
+      "id": "WS0002",
+      "locations": [
+        -27.5,
+        -30.5
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 60,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        9,
+        44.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -60,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        9,
+        -43.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 135,
+      "id": "WS0005",
+      "locations": [
+        14,
+        0.5
+      ],
+      "mount": "TURRET",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        53,
+        42
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        53,
+        -42
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0008",
+      "locations": [
+        -70.5,
+        50.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0009",
+      "locations": [
+        -70.5,
+        -50
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 181,
+      "id": "WS0010",
+      "locations": [
+        -83.5,
+        0.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 146
+}

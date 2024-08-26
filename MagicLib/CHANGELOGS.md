@@ -1,3 +1,241 @@
+Version 1.4.5
+
+**MagicBounty**
+- May now use "target_importantPersonId" for bounties to use a specific captain (Important Person id) instead of generating one (requested by multiple).
+
+Version 1.4.4
+
+**MagicSubsystems**
+- Fixed crash when a subsystem has the same hotkey that another mod is using.
+- Added a check for empty drone list in `HoveringFormation` and `SpinningCircleFormation` (reported by Genir).
+- Changed result of `SpinningCircleFormation` division to get an angle to a float instead of int (reported by Genir).
+
+**MagicAchievements**
+- Added a TextPanel overload to `completeAchievement`, so completing an achievement will display a message there (requested by Lukas04).
+
+**MagicBounty**
+- Bounty board no longer resets scroll position when a bounty is accepted (requested by SteelSirokos).
+
+**Other**
+- Changed MagicLib license to MIT from CC BY-NC-SA 4.0, basically removing any restrictions.
+
+Version 1.4.3
+
+**MagicSubsystems**
+- Fixed accidental breaking change in MagicSubsystems 1.4.2. Caused a crash in KoL. Reported by persocom01.
+
+Version 1.4.2
+
+**MagicPaintjobs**
+- Fixed all possible paintjobs being shown as applied on the hullmod (reported by NITEGHXST).
+
+**MagicBounty**
+- Fixed bounty board job cell all grey when portrait is invalid (reported by mrmagolor, others).
+
+**Misc**
+- Moved `PIDController` from `org.magiclib.subsystems.drones` to `org.magiclib.util` (non-breaking change, old one is marked deprecated).
+
+Version 1.4.1
+
+**MagicSubsystems**
+- UI is no longer shown if all subsystems were removed during combat (President Matt Damon).
+- Distortion no longer affects subsystem text (President Matt Damon)
+- Info text now scales based on screen size and fades in/out (President Matt Damon).
+
+**MagicPaintjobs**
+- Paintjobs popup is four wide instead of two (reported by NITEGHXST).
+
+**MagicAchievements**
+- Memory is now saved during combat as well, which fixes the Revisionist achievement (reported by Fuzzatron)
+
+Version 1.4.0
+
+**New: MagicSubsystems**
+- tldr; Combat Activators + CMUtils.
+- Add additional "ship systems" to ships, each triggered with a hotkey.
+- Add drones with formations and charges.
+- All displayed in a vanilla-like UI.
+- Contributed by **President Matt Damon**. UI code contributed by **tomatopaste**.
+- See examples in `org.magiclib.subsystems.examples`.
+- See MagicLib README.md for migration guide from Combat Activators.
+
+Version 1.3.11
+
+**MagicBounty**
+- Fixed a crash when a bounty has no flagship (reported by Dostya).
+
+**MagicPaintjobs**
+- Fixed paintjobs duplicating in the selector every save load (reported by Galaga Galaxian).
+
+Version 1.3.10
+
+**MagicBounty**
+- Fixes Bounty Board to respect `mb_distance` flags (contributed by President Matt Damon).
+
+**MagicAchievements**
+- Added `completeAchievement` methods to `MagicAchievementManager` (before, you needed an instance of `MagicAchievement` to complete one).
+
+**MagicPaintjobs**
+- Fixed automatically unlocked paintjobs not being automatically unlocked (reported by Galaga Galaxian).
+- No longer loads paintjobs for ships that don't exist (e.g. from a mod that's not installed).
+- Cleaned up some logging that reported an error on first run and added pj ids to pjs that fail to load.
+
+Version 1.3.9
+
+- Quick 0.97a update (mod_info.json change)
+- Changed a few instances of logging to "warn" instead of "error" in order to be less alarming.
+
+Version 1.3.8
+
+**MagicCampaign**
+- Fixed 5 year old crash: MagicCampaignTrailPlugin sometimes crashed with ConcurrentModificationException if player moved between hyperspace and regular space (reported by Xaiier).
+- Added `MagicCampaign.createDerelict` overload that lets you mark a derelict as unrecoverable.
+
+**MagicUI**
+- Fade interpolation fix (contributed by Starficz).
+
+**MagicAchievements**
+- Made it clearer when a crash is from using devmode.
+- Fixed achievement `advance` methods running when achievements are disabled.
+
+**MagicBounty**
+- Fixed occasional crash when filtering a bounty (reported by laf223).
+
+Version 1.3.7
+
+**MagicBounty**
+- May no longer re-Accept already-Completed bounties. Sorry.
+- Intel fixes.
+  - May now mark unimportant (reported by MuleDriver).
+  - No longer always new (reported by MuleDriver).
+  - Shouldn't show up if there are no bounties loaded (reported by MuleDriver).
+  - Potentially fixes issues if MagicBounty is disabled.
+
+**MagicAchievements**
+- Fixed another Linux-only crash when viewing intel (reported by Brainwright).
+
+**MagicPaintjobs**
+- Cleaned up "select ship" popup (centered text, fixed cell placement, shows current paintjob).
+
+**MagicCampaign**
+- Fixed MagicCampaignTrailPlugin not working (reported by Xaiier and maybe others, sorry).
+
+**MagicAutoTrails**
+- Trails no longer disappear after piercing (e.g. Plasma Cannon trail with Trailer Moments) (reported by Nia).
+
+Version 1.3.6
+
+**MagicBounty**
+- Fixed rare crash if bounty was null (reported by Arthur_The_Ok).
+- Fixed "Accept this job" sometimes not updating its text after accepting.
+
+**MagicAchievements**
+- Fixed Linux-only crash when viewing intel (reported by Brainwright).
+
+Version 1.3.5
+
+**MagicPaintjobs**
+- Added a notification when a paintjob is unlocked. 
+  - Actually, this was meant to be in 1.3.0, but somehow I deleted the code without realizing.
+- Paintjobs now apply to `baseHullId` instead of `hullId`.
+  - So, both `wolf` and `wolf_d` will share paintjobs.
+- In `magic_paintjobs.csv`, the `hull_id` column has been replaced with `hull_ids`.
+  - This change is backwards-compatible. No need to update your csv.
+  - `hull_ids` is comma-separated. A single paintjob may now apply to multiple hulls.
+- Added `ShipKillsAchievement` as an abstract class to easily make "Kill X ships using a \<ship\>" achievements.
+- Various UI fixes.
+
+Version 1.3.4
+
+**MagicBounty**
+- Accepted bounties are now always displayed on the Board, even when out of range of the bounty giver.
+
+**MagicPaintjobs**
+- The Paintjob hullmod no longer shows up as installable.
+- Fixed crash from ConcurrentModificationException (reported by Meelock)
+
+Version 1.3.3
+**Other**
+- Fixed unintentional dependency on LunaLib.
+
+**MagicPaintjobs**
+- Paintjobs are now built-in hullmods. This prevents changing variants from unapplying them.
+- Paintjobs images are no longer preloaded into VRAM, which unintentionally caused VRAM use when the feature was disabled.
+- \<redacted\> paintjobs now indicate that they cannot be changed.
+
+Version 1.3.2
+**MagicBounty**
+- Fixed a crash when accepting "apocrita_belcher" bounty (reported by rosnok).
+
+Version 1.3.1
+**MagicBounty**
+- Fixed a crash on load ("No enum constant", reported by timediver0)
+
+Version 1.3.0
+
+**MagicAchievements**
+- **New feature!** Cross-save achievements framework that any mod may add to.
+- 20+ achievements available in a separate mod, Magic Achievements: Vanilla Pack.
+- May be disabled using LunaLib's settings menu.
+- Achievements work similarly to Steam's; once unlocked, they are unlocked forever and across all saves.
+  - Nexerelin's Milestones, in contrast, are per-save.
+- Find them under your Intel under `Personal`.
+
+**MagicPaintjobs**
+- **New feature!** Cross-save paintjobs (ship skins) framework that any mod may add to.
+- Useful as rewards for achievements! Or for any other reason.
+- Mods may add paintjobs, which will be locked by default. The modder chooses when/how to unlock them.
+- Caution: because Starsector preloads almost everything, paintjobs in a mod will be loaded into VRAM even if they aren't applied.
+
+**MagicBounty**
+-  **New feature!** Intel Board
+  - Displays all bounties (if you meet the conditions) within 10LY of your location.
+  - **You no longer need to travel to a location to accept a bounty.**
+  - Removed MagicBounty default time limits (there will only be a time limit if the bounty maker added one).
+  - Contributed by President Matt Damon. Thank you!
+- Fixed a potential crash after resetting a bounty via console command (reported by mrmagolor).
+
+**CombatGUI**
+- Properly released to everybody!
+- Breaking changes from the Discord-only 1.2.0 version to add `MagicCombat` to the class names.
+  - I don't believe anybody was using this, but I'll release a backwards-compat patch if someone asks me to.
+
+**Other**
+- Added `MagicTxt.ellipsizeStringAfterLength(String str, int length)`.
+- Added some more logging when checking if items can be installed in industries (reported by MnHebi).
+- Added `MagicRefreshableBaseIntelPlugin`, which adds a method to refresh Intel's center panel. Used by MagicPaintjobs.
+
+Version 1.2.1 (discord-only)
+
+**MagicBounty**
+- Text now supports all vanilla variables (requested by CivilYoshi).
+
+Version 1.2.0 (discord-only)
+
+**CombatGUI**
+- **New feature!** Contributed by @Jannes/DesperatePeter!
+
+**MagicBounty**
+- Bounty fleets are no longer aggressive toward non-player fleets. They should no longer attack each other (reported by Avanitia).
+- Days elapsed calculation was incorrect; the day of the month was used rather than days since game start during the first cycle.
+  - Bounties that show up after a certain number of days will now do so correctly.
+
+Version 1.1.3
+
+**MagicBounty**
+- Fixed "location_entitiesID" never working (reported by vicegrip).
+- Fixed "trigger_memKeys_any" never working (reported by vicegrip).
+
+Version 1.1.2
+
+**Effects**
+- Fixed some effects being rendered twice (if they were added from csv, both new and backward-compat code loaded them) (reported by Nia).
+
+**MagicBounty**
+- Added two new text variables for use (requested by Nia), and changed $faction to $targetFaction (backwards-compatible):
+  - $targetFaction The name of the faction (with article) of the bounty fleet.
+  - $givingFaction The name of the faction (with article) that's giving the bounty.
+  - $rewardFaction The name of the faction (with article) that's giving the bounty reward (typically same as givingFaction).
 
 Version 1.1.1
 

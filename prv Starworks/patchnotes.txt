@@ -2,119 +2,210 @@ prv Starworks
 
 ###
 
-v27
+v28.3 - Savegame compatible. Probably.
+
+Added a couple of dialogue events with prv-related worldbuilding.
+- Visit a bar on The Works over Utbo while friendly with the prv.
+- Visit the bar on Fristad. Low trigger chance.
+
+Added a dialogue event to analyze a derelict prv station.
+- Look for the ruins of Höga Hallar.
+
+Commissioned Crews
+- Tooltip updated.
+- Command Implants max speed bonus increased to 10%.
+- Nav Rating bonus unchanged.
+- Can now be switched to Disconnected mode.
+-- This prevents personality switches but cuts the bonus to +5%/0%.
+
+Fräsare
+- Now generates one extra anomaly. Spawn timings adjusted slightly.
+- Fixed a bug related to beam collision while phasing in.
+
+Added Trace Volatiles to the Ryak High-Energy Labs. Requires a new campaign to take effect.
+
+###
+
+v28.2 - Savegame compatible.
+
+Reduced the occurence rate of prv ships in mercenary fleets.
+Fixed a crash that would occur in combat with prv-model Starfortresses.
+prv Star Fortress mines will now behave as Gravity Well mines and exert a push field while active.
+
+###
+
+v28.1 - Savegame compatible unless your Nexerelin is very old.
+
+Nexerelin: Added diplomatic trait Predatory to the prv, replacing Paranoid.
+Modding: Added the "prv_tensor_skip" ship tag, which blocks the Tensor Drive push effect.
+Fixed a potential issue with Disruption Zones and fighters that do not have an associated fighter bay.
+Swapped the Gryning (TT) with a standard Gryning in the Title Screen Variants, resolving a crash.
+
+###
+
+v28 - NOT SAVEGAME COMPATIBLE
 
 ----------------
-- Weapons
+- General
 ----------------
 
-Added the Blaster Charge Rack, Disperser and Launcher
-- Directed energy blast missiles. Crude but flexible.
-- Used by the Rust Belt.
-
-Vakt Flicker Beam
-- Damage per second increased by 30%.
-- Flux per second increased by 3%
--- Now 0.8 flux/damage.
-
-Svala, Rörsångare Torpedoes
-- Retired, should no longer spawn. 
-- Custom AI disabled.
-
-Heavy Akers sprite updated.
-Fixed Shock Detonator tooltip.
+Split off all Rust Belt and Agni content into separate mods.
+Moved all prv-derived variants (such as the Flamma (Diktat)) to Extraworks.
 
 ----------------
 - Ships
 ----------------
 
-Flamma (Diktat)
-- Medium turret mount changed from composite to ballistic.
-- Maintenance and recovery cost reduced to 5.
-- Description updated.
+Included no-livery sprites of most prv ships, located in the "graphics\prv\ships\no markings" subfolder. 
+- To use them, simply overwrite the standard sprites.
 
-Eld (Diktat)
-- Description updated.
+Rounded off many ship deployment and maintenance costs:
+Skymning		47 -> 45
+Välljud		37 -> 40 (*)
+Rök			34 -> 35
+Fasvinge		31 -> 30
+Kakafoni 		24 -> 22
+Is			19 -> 20
+Brand			21 -> 20
+Flock (P-Mod)	19 -> 17
+Sorl			17 -> 14 (*)
+Ande			11 -> 10
+Gast			19 -> 20
+Vålnad		29 -> 30
 
-Flock (League)
-- Redesignated from Flock (Export)
-- Medium composite mounts changed to missile.
-- Small composite mounts changed to ballistic.
-- No longer used by the Sindrian Diktat.
-- Description updated.
+(*) See below
 
-Tystnad (League)
-- Medium composite mount changed to missile.
-
-Sorl (League)
-- Front medium turrets changed to missile.
-- Rear medium turret changed to hybrid.
-- Small mounts changed to energy.
-- Removed Gengångare Reversion Core hullmod.
-
-Fasnod
-- Built-in AM Blaster removed.
-- Mounts updated, all now converge frontally.
-- OP increased by 5.
+Brand
+- System changed to Repulsive Damper Field.
+-- Damper with a slight pushing effect.
 - Sprite updated.
+- Weapon mounts updated.
+- Armor increased to 700.
+- OP increased by 25.
+- Removed Tide Vanes hullmod.
 
-Fasnod (P)
+Flock
+- Sprite updated.
 - Mounts updated.
-- Maintenance and recovery cost reduced to 7.
+
+Sorl
+- Sprite updated, now more similar to the original model.
+- Ship system reverted to Phase Skimmer.
+- Deployment and maintenance cost reduced to 14.
+- Acceleration increased slightly.
+- Credit value increased to 52 000.
+
+Välljud
+- Friendly fighters caught in a Disruption Zone collapse will now trigger a fast replacement.
+- Maintenance and recovery cost increased to 40.
+- Fighter bay count increased to 4.
+- Disruption Zone vfx tweaked.
+
+Is
+- Time Freeze system cooldown increased by 33%.
+- Flux dissipation increased by 33%.
+- Flux capacity increased by 20%.
+
+Aska
 - Sprite updated.
+
+Ilbud
+- Sprite updated.
+- Removed High Maintenance hullmod.
+- Added Delicate Subsystems hullmod.
 
 Shrike (prv)
-- OP increased by 5.
+- Once again has a Ramshield.
+-- Was accidentally removed due to backend changes.
 
-Skymning
-- Shield efficiency improved to 0,8.
-
-Gabbro
-- Mounts updated, now a dedicated broadside ship.
-- OP increased by 35.
-- Shield changed to 150° Omni.
--- Same as the base Starliner.
+Gryning
 - Sprite updated.
+- Built-in Skatunge launchers replaced by small hybrid hardpoints.
+- OP increased by 10.
 
-Gremlin (RB)
-- Shield removed.
-- Maintenance and recovery cost reduced to 4.
+Aska (Au)
+- OP reduced to 120.
 
-Hornfels
-- Small hybrid hardpoints changed to turrets.
-- Sprite adjusted.
+Ande, Gast, Vålnad Swarm Hosts
+- Swarm Host hullmod no longer affects fighter range or behavior.
+- Added Defensive Targeting Array as a built-in hullmod.
+- (Vålnad) Removed erraneous Volatile Drive Core death effect.
 
-Hornfels (LP)
-- Hybrid mounts changed to ballistic.
-- Built-in Hammer Launcher replaced with Jackhammers.
-- Sprite adjusted.
+Tweaked the color of the Skymning hangar.
 
-Ljus (LP)
-- Built-in Hammer Launcher replaced with Jackhammer.
+----------------
+- Weapons
+----------------
 
-Aska (LC)
-- Removed ALWAYS_PANIC AI hint.
+Rounded off many weapon ranges:
+Light Akers 	425 -> 450
+Heavy Akers 	675 -> 700
+Siege Akers 	750 -> 900 (+)
+Akers Denova	750 -> 700
+Akers Nova 		850 -> 900
+Studsare		850 -> 700 (-)
+Automatstudsare	750 -> 700
+Jursla GE		750 -> 700
+Svepfräsare 	750 -> 700
+Akers Repeater	375 -> 400 (f)
 
-Many, many ship variant updates.
+(f) Fighter weapon
+(+) Noteworthy buff
+(-) Noteworthy nerf
+
+Studsare
+- Range reduced to 700 (as per chart).
+- Recoil reduced.
+
+Skata LRM
+- Range reduced to 2500.
+- Muzzle flash color fixed.
+
+Gravpjäs
+- Flux/shot reduced by 20%
+-- Now 1,0 flux/damage.
+
+Fixed Svepfräsare hitting child and sibling modules.
+Significantly increased Vakt beam thickness.
+Sidensvans now use the missile guidance mutablestat to determine ECCM bonuses.
+Fixed a bug where Berguv torpedoes were ignoring their ECCM guidance bonus.
+
+----------------
+- Fighters
+----------------
+
+Jämmer
+- Karbinfräsare range reduced by 33%.
+- Karbinfräsare rotation rate increased by 100%.
+- Firing the Karbinfräsare will briefly but significantly reduce the fighter's turn rate.
+- Hitting a target with the Råka torpedo will now grant a brief increase in energy weapon range.
+-- Effective Karbinfräsar-range is now 300 su (default) / 600 su (after hit).
+
+Stillhet
+- Inget Flicker Lance damage increased by 100%.
 
 ----------------
 - Other
 ----------------
 
-Agni Pureflame burn effect
-- Reduced the application rate for heavy burns, they will now linger for longer.
--- Due to hit strength calculations this will slightly reduce the total damage.
-- Color will now shift towards blue-white at very high burn levels.
+Added relationship descriptions for the prv.
+Added commission dialogue.
+Added AI core turn-in dialogue.
+Added bar descriptions.
+Added port descriptions.
+Added fleet comm dialogue.
 
-Agni Scale Fighter
-- Now lists Heat Radiance as one of its weapons.
--- Was previously displayed as a hullmod.
-- Heat Radiance damage type changed to energy.
-- Base damage reduced by 25%.
+Arcfault Ejector
+- Gravity effect will now last slightly longer.
+- Reduced the particle size for small ships.
 
-Various faction equipment tweaks. 
-Significantly reduced the Rusters selection of missiles.
-Gravitic effects will now ignore DEM drones.
-Removed incorrectly listed Ramshield Adjunct S-mod bonus (was nonfunctional).
-Fixed a crash related to ships with a Ramshield listener that have their ShieldAPI nulled post-creation.
-Fixed Sindrian Diktat design type not being purple.
+Ramshield Adjunct
+- Now properly removes the shield damage penalty when S-modded.
+- OP cost reduced to 20 on capital ships.
+
+Removed the Heavy Blaster, Shard Driver and Spatterflamer from the prv.
+Added access to several ships and weapons for the Mercenaries.
+Corrected a few station icons showing the wrong tier.
+Fixed an error where dead Swarmhost fighters would still generate glow particles.
+Fixed the Energized Reactive Field ship system description not highlighting the damage number.
+Modding note: All classpaths have been updated.

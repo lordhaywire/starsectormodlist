@@ -1,0 +1,9 @@
+{
+    "Standard-unit dimensions for the map before adjusting for objectives.":"",
+
+    "Base width of the map.":"",
+    "mapWidthBase": 18000,
+
+    "Base height of the map":"",
+    "mapHeightBase": 18000
+}

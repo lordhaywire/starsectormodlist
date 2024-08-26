@@ -28,39 +28,39 @@
 		"hierarchial":	 -0.5,
 	},
 	"diplomacyTraits":[
-		"paranoid", 
+		"predatory", 
 		"temperamental", 
 		"envious", 
 	],
     
     "startShipsSolo":[["prv_flamma_overdriven"]],
     "startShipsCombatSmall":[
-      ["prv_eld_hunter", "prv_fasnod_support", "prv_gnista_cs"],						#9 + 10 + 5 = 24
-	["prv_fasklot_flicker", "prv_flamma_standard", "prv_ljus_ks"],					#13 + 5 + 3 = 21
+      ["prv_eld_elite", "prv_fasnod_strike", "prv_gnista_cs"],						#9 + 10 + 5 = 24
+	["prv_fasklot_flicker", "prv_flamma_standard", "prv_ljus_strike"],				#13 + 5 + 3 = 21
     ],
     "startShipsTradeSmall":[
-      ["prv_munsbit_standard ", "prv_shrike_balanced", "prv_flamma_beam"], 				#6 + 8 + 5     = 19
-      ["prv_tarsus_aux", "prv_ljus_ambush", "prv_flamma_strike", "prv_gnista_escort"],		#3 + 5 + 5 + 3 = 16
+      ["prv_munsbit_standard ", "prv_shrike_attack", "prv_flamma_beam"], 				#6 + 8 + 5     = 19
+      ["prv_tarsus_aux", "prv_ljus_pd", "prv_flamma_beam", "prv_gnista_cs"],				#3 + 5 + 5 + 3 = 16
     ],
     "startShipsCombatLarge":[
-      ["prv_aska_elite", "prv_fasklot_attack", "prv_ljus_strike"],					#27 + 13 + 5     = 45
-      ["prv_flock_attack", "prv_eld_elite", "prv_fasnod_standard", "prv_tiger_aux_c"],		#17 + 13 + 9 + 7 = 46
+      ["prv_aska_ryak", "prv_fasklot_attack", "prv_ljus_strike"],						#27 + 13 + 5     = 45
+      ["prv_flock_strike", "prv_eld_elite", "prv_fasnod_flicker", "prv_tiger_aux_c"],		#17 + 13 + 9 + 7 = 46
     ],
     "startShipsTradeLarge":[
       ["prv_ilbud_stealth", "prv_gemini_aux_i", "prv_tiger_support"],					#10 + 9 + 7 = 26
     ],
     "startShipsCarrierSmall":[
 	["prv_sorl_attack", "prv_ljus_strike", "prv_flamma_beam"],						#15 + 5 + 5 = 25
-	["prv_ande_nav", "prv_tystnad_overdriven", "prv_ljus_strike"],					#11 + 9 + 5 = 25
+	["prv_ande_nav", "prv_tystnad_ryak", "prv_ljus_strike"],						#11 + 9 + 5 = 25
     ],
     "startShipsCarrierLarge":[
-	["prv_kakafoni_balanced", "prv_sorl_escort", "prv_ljus_strike"],					#24 + 15 + 5     = 44
-	["prv_gast_grav", "prv_condor_aux_b", "prv_flamma_beam", "prv_gnista_strike"],		#21 + 10 + 5 + 3 = 39
+	["prv_kakafoni_ryak", "prv_sorl_escort", "prv_ljus_strike"],					#24 + 15 + 5     = 44
+	["prv_gast_grav", "prv_condor_aux_b", "prv_flamma_beam", "prv_gnista_missile"],		#21 + 10 + 5 + 3 = 39
     ],
     "startShipsSuper":[
-    	["prv_sinne_missile"],
+    	["prv_sinne_ryak"],
     	["prv_fasvinge_starter"],
-    	["prv_brand_hunter"],
+    	["prv_brand_standard"],
     ],
     
     "startSpecialItems":[

@@ -4,7 +4,7 @@
   "projectileSpecId": "prv_lpk_shot",
   "type": "MISSILE",
   "size": "MEDIUM",
-  "everyFrameEffect": "scripts.weapons.prv_lpk_ScriptEffect",
+  "everyFrameEffect": "prv.corp.weapons.prv_lpk_ScriptEffect",
   "turretSprite": "graphics/prv/weapons/prv_lpk_turret.png",
   "hardpointSprite": "graphics/prv/weapons/prv_lpk_hardpoint.png",
   "renderHints": [

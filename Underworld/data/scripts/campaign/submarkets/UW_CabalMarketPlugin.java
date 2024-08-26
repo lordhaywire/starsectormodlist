@@ -316,6 +316,9 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
 
     @Override
     public boolean isIllegalOnSubmarket(CargoStackAPI stack, TransferAction action) {
+        if (action == TransferAction.PLAYER_SELL) {
+            return true;
+        }
         if (Global.getSector().getPlayerFleet().isTransponderOn()) {
             return true;
         }
@@ -365,6 +368,9 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
 
     @Override
     public boolean isIllegalOnSubmarket(FleetMemberAPI member, TransferAction action) {
+        if (action == TransferAction.PLAYER_SELL) {
+            return true;
+        }
         if (Global.getSector().getPlayerFleet().isTransponderOn()) {
             return true;
         }
@@ -374,6 +380,9 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
 
     @Override
     public boolean isIllegalOnSubmarket(String commodityId, TransferAction action) {
+        if (action == TransferAction.PLAYER_SELL) {
+            return true;
+        }
         if (Global.getSector().getPlayerFleet().isTransponderOn()) {
             return true;
         }
@@ -386,6 +395,9 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
 
     @Override
     public String getIllegalTransferText(CargoStackAPI stack, TransferAction action) {
+        if (action == TransferAction.PLAYER_SELL) {
+            return "No refunds!";
+        }
         if ((action == TransferAction.PLAYER_BUY) && (stack.getSpecialItemSpecIfSpecial() != null)
                 && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("uw_cabal_minipackage")) {
             return "Req: " + submarket.getFaction().getDisplayName() + " - " + RepLevel.FAVORABLE.getDisplayName().toLowerCase();
@@ -427,6 +439,15 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
     }
 
     @Override
+    public String getIllegalTransferText(FleetMemberAPI member, TransferAction action) {
+        if (action == TransferAction.PLAYER_SELL) {
+            return "No refunds!";
+        }
+
+        return super.getIllegalTransferText(member, action);
+    }
+
+    @Override
     protected Object writeReplace() {
         if (okToUpdateShipsAndWeapons()) {
             pruneWeapons(0f);
@@ -465,7 +486,7 @@ public class UW_CabalMarketPlugin extends BlackMarketPlugin {
                 Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtTransmitter", true);
             }
             if ((stack.getSpecialItemSpecIfSpecial() != null) && stack.getSpecialItemSpecIfSpecial().getId().contentEquals("IndEvo_simulator")) {
-                Global.getSector().getMemoryWithoutUpdate().set("IndEvo_simulator", true);
+                Global.getSector().getMemoryWithoutUpdate().set("$uw_boughtSimulator", true);
             }
         }
     }

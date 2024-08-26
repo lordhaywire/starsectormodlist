@@ -3,8 +3,8 @@
 	"type":"ENGINE_MOD",
 	#"aiType":"MANEUVERING_JETS",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.ai.systems.prv_tensordrive_ai",
-	"statsScript":"shipsystems.prv_tensordrive",
+	"aiScript":"prv.corp.ai.systems.prv_tensordrive_ai",
+	"statsScript":"prv.corp.shipsystems.prv_tensordrive",
 	
 	"engineGlowLengthMult":1,
 	"engineGlowWidthMult":1,

@@ -1,38 +1,23 @@
 name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
-Cocoon,prv_agni_cocoon,,,,,,,,3,0.02,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
-Cocoon,prv_agni_cocoon_large,,,,,,,,3,0.02,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
-Cocoon,prv_agni_cocoon_fighter,,,,,,,,1,0.025,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
-Lunge,prv_agni_microburn,1,,,,,,,2,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/icons/hullsys/burn_drive.png
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Phase Assault,prv_phasechainer,,,,,,0.15,,,,0.325,5.35,0.325,9,,,,,,TRUE,TRUE,TRUE,,,,,graphics/icons/hullsys/displacer.png
-Absolute Territory Field,prv_absterr,,0.2,,,,,,,,0.5,4,0.1,15,,,,,,,,,,,,,graphics/icons/hullsys/damper_field.png
 Lykta System,prv_lykta,,0.3,,,,,,,,3,,,,TRUE,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_ljus_lykta.png
 Gravity Shield,prv_gravity_shield,,0.05,,,,,,,,0.1,,3,0.25,TRUE,,,,,,,,,,,,graphics/icons/hullsys/damper_field.png
-Gravity Pulse Core,prv_gravity_pulse_shield,,0.05,,,,,,,,0.1,,3,0.25,TRUE,,,,,,,,,,,,graphics/icons/hullsys/damper_field.png
 Gravity Orbits,prv_gravity_orbits,,0.05,,,,,,,,0.1,,0.1,5,TRUE,,,,,,,,,,,,graphics/icons/hullsys/damper_field.png
-Limit Break,prv_limitbreak,,,,,,,,,,0.5,11,0.5,24,,,,,,,,,TRUE,TRUE,,,graphics/icons/hullsys/infernium_injector.png
-Missile Chaff,prv_missilechaff,,,,,,,,3,0.125,0,0.1,0,3.5,,,,,,,,,,,,,graphics/icons/hullsys/flare_launcher.png
 Phase Recall,prv_phaserecall,,,,,,0.6,,2,0.025,2,,2,10,FALSE,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_ljus_lykta.png
 Plasma Thrusters,prv_plasmamanjets,,,,,,,,,,1,5,1,5,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
 Tensor Drive,prv_tensordrive,,,,,,,,3,0.16666,0.15,0.3,0.15,0.5,,,,,TRUE,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
 Heavy Tensor Drive,prv_tensordrive_heavy,,,,,,,,3,0.1,0.225,0.45,0.225,3,,,,,TRUE,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
-Micro Burn,prv_microburn_p,1,,,,,,,2,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/icons/hullsys/burn_drive.png
 Plasma Burn,prv_microburn_fighter,1,,,,,,,3,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/icons/hullsys/burn_drive.png
-Unstable Thrusters,prv_plasmamanjets_overtuned,,,,,,,,,,1,5,1,5,,,,,,,,,,,,,graphics/icons/hullsys/maneuvering_jets.png
 Heavy Phase Teleporter,prv_heavyphaseteleporter,,,,,,0.125,,,,0.5,0,0.5,10,,TRUE,,,,,,,,,,,graphics/icons/hullsys/displacer.png
 Energized Reactive Field,prv_erfield,,0.1,,,,,,,,0.11,3,0.11,,,,,,,,,,,,,,graphics/icons/hullsys/damper_field.png
-Reactive Emitter,prv_erfield_p,,0.25,,,,,,,,0.1,6.9,0.1,6.9,,,,,,,,,,,,,graphics/icons/hullsys/emp_emitter.png
 Energized Reactive Field,prv_erfield_fighter,,1,,,,,,,,,1.5,,,FALSE,,,,,,,,TRUE,,,,graphics/icons/hullsys/damper_field.png
-Time Freeze,prv_timefreeze,,1,,,,,,,,1,2,1,15,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_timefreeze.png
+Time Freeze,prv_timefreeze,,1,,,,,,,,1,2,1,20,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_timefreeze.png
 Temporal Core,prv_temporalcore,,0.1,,,,,,,,,,,5,TRUE,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_flickercore.png
 Flux Fracture,prv_fracturer,,,,,,,,3,0.0667,0.7,0.3,2.25,,,,,,,,,,,TRUE,,,graphics/icons/hullsys/interdictor_array.png
-Evasive Formation,prv_evasive_formation,,,,,,0.5,,,,0.5,20,0.5,10,,,,,,,,,,,,,graphics/icons/hullsys/infernium_injector.png
-Targeting Pulse,prv_targetingpulse,,,,,,0.15,,,,1.5,,4.5,,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
+Repulsive Damper Field,prv_gravcircuit_damper,1,,,,,,,2,0.05,0.25,3,0.25,0,,,,,TRUE,,,,TRUE,TRUE,,uses_damper_ai,graphics/icons/hullsys/damper_field.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Ion Storm,prv_ionstorm,,,,,,0.1,,2,0.075,0.25,,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 EMP Cluster Mine Strike,prv_mine_strike_emp_cluster,,,,,,0.1,,2,0.075,0.25,,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 EMP Cluster Mine Strike,prv_mine_strike_emp_cluster_station,,,,,,0.025,,4,0.2,0.25,,0.25,2,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
-Gravity Mine Strike,prv_mine_strike_gravity,,,,,,0.1,,5,0.2,0.25,,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 Gravity Well,prv_gravitywell,,,,,,0.1,,7,0.1,0.25,,0.25,,,,,,,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 Disruption Zone,prv_disruptionzone,,,,,,0.3,,,,1,,1,19,,,,,TRUE,,,,,,,,graphics/icons/hullsys/interdictor_array.png
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -41,5 +26,3 @@ Phase Cloak,prv_phasecloak_fighter,,,,,,,,,,0.5,,0.5,2,TRUE,,TRUE,TRUE,TRUE,,,,T
 Kaja Drones,prv_gunpod_kaja,,,,,,,,3,0.05,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
 LPK Drones,prv_gunpod_lpk,,,,,,,,4,0.0667,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
 Redan Drones,prv_station_drone_redan,,,,,,,,3,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
-Skans Drones,prv_station_drone_skans,,,,,,,,4,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png
-Skans Drones,prv_station_drone_skans_light,,,,,,,,2,,0,,0,0,,,,,,,,,,,,,graphics/icons/hullsys/drone_pd_high.png

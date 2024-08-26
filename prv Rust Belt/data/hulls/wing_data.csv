@@ -1,0 +1,10 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_grus_wing,prv_grus_dev,"interceptor1, interceptor, low, prv_rb_bp",1,,4,4,V,4000,250,600,3,INTERCEPTOR,Interceptor,8,4000,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_buddy_wing,prv_buddy_utility,"fighter2, fighter, low, prv_rb_bp, auto_fighter",1,,4,6,CLAW,4000,500,,3,FIGHTER,Utility Craft,15,3000,,,,,,,,,,,,,
+prv_buddy_recovery_wing,prv_buddy_utility,"restricted, no_drop, no_sell",0,,0,0,BOX,4000,500,,1,FIGHTER,Utility Craft,15,1000,,,,,,,,,,,,,
+prv_karbid_wing,prv_karbid_assault,"fighter3, fighter, low, prv_rb_bp",2,,5,8,BOX,4000,400,-400,2,FIGHTER,Fighter,12,5000,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_skarn_wing,prv_skarn_strafe,"bomber3, bomber, low, prv_rb_bp, merc",1,,6,10,CLAW,4000,1200,-500,3,BOMBER,Strike Fighter,10,7000,,,,,,,,,,,,,
+prv_kalk_wing,prv_kalk_bomber,"bomber5, bomber, mid, prv_rb_bp, rare_bp, merc",2,,6,18,BOX,4000,1800,,3,BOMBER,Phase Bomber,18,10500,,,,,,,,,,,,,

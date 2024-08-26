@@ -1,0 +1,49 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 15,
+  "fluxVents": 20,
+  "goalVariant": true,
+  "hullId": "filgap_hammerhead_cgr",
+  "hullMods": [
+    "armoredweapons",
+    "auxiliarythrusters"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "filgap_hammerhead_cgr_standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyac",
+        "WS 002": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 003": "filgap_david",
+        "WS 004": "filgap_david"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 005": "lightag",
+        "WS 006": "lightag"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 007": "lightdualmg",
+        "WS 008": "lightdualmg"
+      }
+    }
+  ],
+  "wings": []
+}

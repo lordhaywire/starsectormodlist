@@ -1,0 +1,28 @@
+{
+	"baseHullId":"tempest",
+	"skinHullId":"kocpest",
+	"hullName":"Tempest (KoC)",
+	"descriptionId":"tempest",  # optional
+	"descriptionPrefix":"With bare hulls aqquired through a trade deal with the Persean League, and much to the chargrin of the Hegemony, the Ko Combine have gained access to military grade hulls. Sporting modified engines, reactive armour and a revised dampener system, the Ko Combine variant offers better defensive value than the base model. The entire starboard side has been gutted and refitted with a more versatile composite mount. The Tempest drones - which were not aqquired as part of the trade deal - have been replaced with a modified version of the Ko Combines own-brand pulse drones.",
+	"tags":["rare_bp","KoC"],
+	"spriteName":"graphics/ships/kocpest.png",
+	"builtInMods":["blockade"],
+	"removeBuiltInWings": ["terminator_wing"],
+	"builtInWings": ["2m_pulse_wing"],
+	"systemId":"damper",
+	"weaponSlotChanges":{
+	   "WS 001":{
+		  "type": "ENERGY",
+	   },
+	   "WS 002":{
+		  "type": "COMPOSITE",
+	   },
+	   "WS 003":{
+		  "type": "ENERGY",
+	   },
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+	},  
+}

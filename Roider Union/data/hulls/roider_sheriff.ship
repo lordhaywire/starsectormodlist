@@ -1,5 +1,5 @@
 {
-  "hullName": "Sheriff",
+  "hullName": "Desperado",
   "hullId": "roider_sheriff",
   "hullSize": "FRIGATE",
   "spriteName": "graphics/ships/sheriff/roider_sheriff.png",
@@ -12,16 +12,12 @@
   "shieldRadius": 61,
   "viewOffset": 0,
   "builtInMods": [
-    "roider_midas",
-    "roider_sheriffDrones"
-	#"delicate"
+    "roider_midas"
   ],
   "builtInWeapons": {
+    "COVER": "roider_sheriff_mask",
     "GLOW": "roider_sheriff_glow"
   },
-  "builtInWings": [
-    "roider_breaker_wing"
-  ],
   "weaponSlots": [
     {
       "id": "GLOW",
@@ -30,43 +26,47 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
-      "locations": [7, 0]
+      "locations": [7, 0],
+      "renderOrderMod": 2
     },
     {
       "id": "WS 001",
       "size": "SMALL",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
-      "arc": 10,
-      "angle": 0,
-      "locations": [24, -25]
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": -45,
+      "locations": [9, -29],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 002",
       "size": "SMALL",
       "type": "BALLISTIC",
-      "mount": "HARDPOINT",
-      "arc": 10,
-      "angle": -0,
-      "locations": [24, 25]
+      "mount": "TURRET",
+      "arc": 140,
+      "angle": 45,
+      "locations": [9, 29],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 003",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
-      "arc": 140,
-      "angle": -45,
-      "locations": [9, -29]
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [38, -0]
     },
     {
       "id": "WS 004",
       "size": "SMALL",
-      "type": "MISSILE",
-      "mount": "TURRET",
-      "arc": 140,
-      "angle": 45,
-      "locations": [9, 29]
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [29, -0],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 005",
@@ -75,7 +75,8 @@
       "mount": "TURRET",
       "arc": 200,
       "angle": -60,
-      "locations": [-7, -18]
+      "locations": [-7, -18],
+      "renderOrderMod": 100
     },
     {
       "id": "WS 006",
@@ -84,19 +85,18 @@
       "mount": "TURRET",
       "arc": 200,
       "angle": 60,
-      "locations": [-7, 18]
+      "locations": [-7, 18],
+      "renderOrderMod": 100
     },
     {
-      "id": "LB 1",
+      "id": "COVER",
       "size": "SMALL",
-      "type": "LAUNCH_BAY",
-      "mount": "HIDDEN",
-      "arc": 5,
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
       "angle": 0,
-      "locations": [
-        34, -0,
-        -12.5, -0
-      ]
+      "locations": [31, -0],
+      "renderOrderMod": 1
     }
   ],
   "engineSlots": [

@@ -8,9 +8,9 @@
   "hullName": "Shrike (prv)",
   "restoreToBaseHull": false,
   "style": "PRV_MID",
-  "ordnancePoints":70,
+  "ordnancePoints":75,
   "skinHullId": "prv_shrike",
-  "builtInMods":["prv_volatiledrivecore",],
+  "builtInMods":["prv_volatiledrivecore","prv_ramshield"],
   "spriteName": "graphics/prv/ships/prv_shrike.png",
 	"engineSlotChanges":{
 		"0":{"style":"PRV_MID"},

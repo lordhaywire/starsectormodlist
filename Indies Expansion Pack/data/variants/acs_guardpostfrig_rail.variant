@@ -1,0 +1,43 @@
+{
+  "variantId": "acs_guardpostfrig_rail",
+  "hullId": "acs_guardpostfrig",
+  "displayName": "Deployed Defense Pod",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "acs_exteminator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vulcan"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "acs_minilocust_single"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "acs_medium_modborerrailslauncher"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

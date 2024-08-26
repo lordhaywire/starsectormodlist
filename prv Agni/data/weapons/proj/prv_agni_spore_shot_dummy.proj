@@ -1,0 +1,60 @@
+{
+	"id":"prv_agni_spore_shot_dummy",
+	"onFireEffect":"prv.agni.weapons.prv_agni_spore_replacement_OnFireEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	"length":20.0,
+	"glowRadius":24,
+	"hitGlowRadius":24,	
+	"width":3,
+	"fadeTime":0.15,
+	#"explosionRadius":250, # purely visual
+	"fringeColor":[
+		128,
+		255,
+		96,
+		255
+      ],
+	"glowColor":[
+		128,
+		255,
+		96,
+		64
+	],
+	"behaviorSpec":{
+		"behavior":"PROXIMITY_FUSE",
+		"range":25,
+		"vsMissileRange":25,
+		"shotRangeVariance":0.35,
+		"explosionSpec":
+			{
+				"duration":0.25f,
+				 "radius":75, #17
+				 "coreRadius":37.5, #12 # full damage within core radius
+				 "collisionClass":PROJECTILE_FF,
+				 "collisionClassByFighter":PROJECTILE_FIGHTER,
+				 "particleSizeMin":2.0,
+				 "particleSizeRange":8.0,
+				 "particleDuration":1.5,
+				 "particleCount":50,
+				 "particleColor":[128,255,96,128],
+				 "explosionColor":[128,255,96,48],
+				 "useDetailedExplosion":true,
+				 "useDetailedExplosionColorAlpha":true,
+				 "detailedExplosionRadius":75,
+				 "detailedExplosionFlashRadius":25,
+				 "detailedExplosionFlashDuration":0.25,
+				 "detailedExplosionFlashColorFringe":[128,255,96,32],
+				 "detailedExplosionFlashColorCore":[196,0,32,255],
+				 "sound":"system_canister_flak_explosion"},
+			},
+		},
+	}
+	"coreColor":[225,255,200,200],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/prv/missiles/prv_mine_emp_glow.png"
+}

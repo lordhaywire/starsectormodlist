@@ -1,10 +1,17 @@
-Bar event trigger requirements:
+Bar event and dialogue trigger requirements:
 
-Grinning man at private table (Orbital Station - Ruster blueprint)
-- Market is owned by the Rust Belt.
-- Player has a colony.
-- Player has a relationship with the market owner no worse than Suspicious.
-- Player does not already know how to build a Orbital Station - Ruster.
+Fristad Tracking (Flavor)
+- Must be leaving a Fristad bar.
+- Must have at least 7 crew.
+- 10% chance.
+
+Petty Noble Celebration (Flavor)
+- Entity must be The Works. nb: Utbo is not The Works.
+- prv relation at least +10.
+- Event has not been declined in the last 60 days.
+
+Station Analysis
+- Entity must be Höga Hallar.
 
 Awkward lab technician (Laboratory Complex access)
 - Market has a Laboratory Complex.
@@ -17,24 +24,8 @@ Awkward lab technician (Laboratory Complex access)
 
 Bounty trigger requirements:
 
-Göran Fridén
-- 25 FP player fleet size.
-- Market owner: Rust Belt, Pirates, or an ally of either.
-
-Sanna, The Green Devil
-- 50 FP player fleet size.
-- Market: Ryak High-Energy Labs.
--- If the HEL is not present in the sector, Market owner: prv.
-
-Fristaten Lasse
-- 50 FP player fleet size.
-- Market owner: Independent, Pirates or an ally of either.
-
-Flight Into the Unknown
-- 75 FP player fleet size.
-- Market owner: prv or prv ally.
-
 Lost Property
+- Mod enabled: prv Rust Belt.
 - 75 FP player fleet size.
 - Market owner: prv.
 
@@ -42,11 +33,8 @@ Fool's Gold
 - 100 FP player fleet size.
 - Market owner: Pirates, Independent, Rust Belt, Persean League or the Sindrian Diktat.
 
-Ivar Balke
-- 100 FP player fleet size.
-- Market owner: Hegemony.
-
 Precariously Precocious
+- Mod enabled: prv Agni.
 - 100 FP player fleet size.
 - prv relation at least +50.
 - Market owner: prv.

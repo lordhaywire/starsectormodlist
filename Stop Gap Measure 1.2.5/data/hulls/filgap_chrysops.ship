@@ -1,0 +1,203 @@
+{
+  "bounds": [
+    46.5,
+    -27.5,
+    64.5,
+    -34,
+    64.5,
+    -38.5,
+    32.5,
+    -47,
+    14.5,
+    -75,
+    -14.5,
+    -77,
+    -23.5,
+    -47,
+    -53.5,
+    -33,
+    -23.5,
+    -21,
+    -44.5,
+    -18,
+    -63.5,
+    -3,
+    -63.5,
+    3,
+    -44.5,
+    18,
+    -23.5,
+    21,
+    -53.5,
+    33,
+    -23.5,
+    47,
+    -14.5,
+    77,
+    14.5,
+    75,
+    32.5,
+    47,
+    64.5,
+    38.5,
+    64.5,
+    34,
+    46.5,
+    27.5
+  ],
+  "builtInMods": [
+    "delicate",
+    "phasefield"
+  ],
+  "builtInWings": [],
+  "center": [
+    76,
+    65
+  ],
+  "collisionRadius": 101.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 18,
+      "length": 45,
+      "location": [
+        -23.5,
+        51.5
+      ],
+      "style": "MIDLINE",
+      "width": 18
+    },
+    {
+      "angle": -180,
+      "contrailSize": 18,
+      "length": 45,
+      "location": [
+        -23.5,
+        -51.5
+      ],
+      "style": "MIDLINE",
+      "width": 18
+    },
+    {
+      "angle": 180,
+      "contrailSize": 6,
+      "length": 28.5,
+      "location": [
+        -20.5,
+        57.5
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 6,
+      "length": 28.5,
+      "location": [
+        -20.5,
+        -57.5
+      ],
+      "style": "MIDLINE",
+      "width": 6
+    }
+  ],
+  "height": 130,
+  "hullId": "filgap_chrysops",
+  "hullName": "Chrysops",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 89.5,
+  "spriteName": "graphics/filgap/ships/filgap_chrysops.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        40.5,
+        20
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        40.5,
+        -20
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        3.5,
+        58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -45,
+      "arc": 225,
+      "id": "WS0004",
+      "locations": [
+        3.5,
+        -58
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0005",
+      "locations": [
+        41,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 139.5,
+      "arc": 225,
+      "id": "WS0006",
+      "locations": [
+        -17,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -139.5,
+      "arc": 225,
+      "id": "WS0007",
+      "locations": [
+        -17,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 152
+}

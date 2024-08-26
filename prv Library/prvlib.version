@@ -1,0 +1,11 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/johcas/prvStarworksRelease/master/prvlib.version",
+    "modName":"prv Library",
+    "modThreadId":12553,
+    "modVersion":
+    {
+        "major":1,
+        "minor":1,
+        "patch":0,
+    },
+}

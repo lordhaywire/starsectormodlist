@@ -1,0 +1,118 @@
+{
+	"id":"prv_blaster_charge",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	#"onFireEffect":"com.fs.starfarer.api.impl.combat.dem.DEMEffect",
+	"onFireEffect":"prv.rb.weapons.prv_blaster_charge_OnFireEffect",
+	"sprite":"graphics/prv/missiles/prv_missile_blaster_charge.png",
+	"size":[10,20],	
+	"center":[5,10],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,64,0,196],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"armingTime":0,
+	"maxFlightTime":5,
+	"engineSpec":{"turnAcc":300, #200
+				  "turnRate":200, #100
+				  "maxSpeed":300,
+				  "acc":400,
+				  "dec":150},
+	"engineSlots":[{"id":"ES1",
+					"loc":[-11, 1],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,64,0,196], #255,145,75
+						"contrailDuration":0,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.250f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":1, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"glowAlternateColor":[255,64,0,128],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":45.0,
+				    "angle":165.0},
+				{"id":"ES2",
+					"loc":[-11, -1],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,64,0,196], #255,145,75
+						"contrailDuration":0,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.250f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":1, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"glowAlternateColor":[255,64,0,128],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":4.0,
+				    "length":45.0,
+				    "angle":195.0},
+				{"id":"ES3",
+					"loc":[-13, 0],
+				    #"style":"MISSILE_MIDLINE",
+				    "style":"CUSTOM",
+				    "styleSpec":{
+						"mode":"QUAD_STRIP", # PARTICLES or QUAD_STRIP, determines which params are used
+						"engineColor":[255,64,0,196], #255,145,75
+						"contrailDuration":1,
+						"contrailWidthMult":0.5,
+						"contrailWidthAddedFractionAtEnd":2,  # can be negative. makes trail spread out/narrow at the end
+						"contrailMinSeg":5, # min segment length, in pixels
+						"contrailMaxSpeedMult":.250f,
+						"contrailAngularVelocityMult":0.5f,
+						"contrailSpawnDistMult":1, # how far away from engine it starts
+						"contrailColor":[100,100,100,150],
+						"glowAlternateColor":[255,64,0,128],
+						"type":"GLOW" # GLOW or SMOKE; additive or regular blend mode
+					},
+				    "width":6.0,
+				    "length":70.0,
+				    "angle":180.0}],
+	"behaviorSpec":{"behavior":"CUSTOM",
+		"minDelayBeforeTriggering":0.75,
+		"triggerDistance":[400,500],
+		"preferredMinFireDistance":300,
+		"preferredMaxFireDistance":500,
+		"allowedDriftFraction":0.25,
+		"turnRateBoost":200,
+		"targetingTime":1.5,
+		"firingTime":0.25,
+		"targetingLaserId":"prv_targetinglaser_ruster",
+		"targetingLaserFireOffset":[8, 0],
+		"targetingLaserRange":500,
+		"payloadWeaponId":"prv_blaster_charge_payload",
+		"targetingLaserArc":15,
+		"randomStrafe":true,
+		"bombPumped":true,
+		"fadeOutEngineWhenFiring":true;
+		"destroyMissleWhenDoneFiring":true,
+		"destroyedExplosionColor":[255,64,0,0],
+		
+		"withShapedExplosion":true,
+		"shapedExplosionNumParticles":15,
+		"shapedExplosionMinParticleDur":0.75,
+		"shapedExplosionMaxParticleDur":1.5,
+		"shapedExplosionMinParticleSize":30,
+		"shapedExplosionMaxParticleSize":70,
+		"shapedExplosionArc":45,
+		"shapedExplosionMinParticleVel":25,
+		"shapedExplosionMaxParticleVel":125,
+		"shapedExplosionColor":[255,96,0,128],
+		"shapedExplosionEndSizeMin":1,
+		"shapedExplosionEndSizeMax":2,
+		"shapedExplosionScatter":35,
+	},	
+}

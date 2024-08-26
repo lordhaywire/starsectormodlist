@@ -1,0 +1,173 @@
+{
+  "hullName": "Revelation (LP)",
+  "hullId": "acs_revelation_lp",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/bounty/acs_lp_revelation.png",
+  "style": "LOW_TECH",
+  "height": 105,
+  "width": 62,
+  "center": [31, 52.5],
+  "collisionRadius": 80,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 70,
+  "viewOffset": 50,
+  "builtInMods": [
+    "acs_dampervent",
+    "hardened_subsystems",
+    "hardenedshieldemitter",
+    "fluxbreakers",
+    "damaged_mounts",
+    "delicate"
+  ],
+  "builtInWeapons": {
+    "WS0004": "acs_revelation_lp_deco"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [0.5, -0],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 90,
+      "locations": [-22.5, 11],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -90,
+      "locations": [-22.5, -11],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS 004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [30.5, -0],
+      "renderOrderMod": 1
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3.5, 19],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [3.5, -19],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [37.5, -0]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [15.5, -14.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": -0,
+      "locations": [15.5, 14.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 5,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 4
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-50, -0],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-43, -7.5],
+      "length": 28.0812,
+      "width": 6.76646,
+      "angle": -175,
+      "contrailSize": 6.76646,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-43, 7.5],
+      "length": 28.0812,
+      "width": 6.76646,
+      "angle": 175,
+      "contrailSize": 6.76646,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-16, 23.5],
+      "length": 24.910698,
+      "width": 8.878535,
+      "angle": 160,
+      "contrailSize": 8.878535,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-16, -23.5],
+      "length": 24.910698,
+      "width": 8.878535,
+      "angle": -160,
+      "contrailSize": 8.878535,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    46, -8.5,
+    -8.5, -25.5,
+    -48.5, -0,
+    -8.5, 25.5,
+    46, 8.5
+  ]
+}

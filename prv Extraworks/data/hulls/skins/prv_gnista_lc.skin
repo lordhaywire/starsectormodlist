@@ -1,0 +1,37 @@
+{
+	"baseHullId":"prv_gnista",
+	"skinHullId":"prv_gnista_lc",
+	"hullName":"Gnista (LC)",
+	"descriptionId":"prv_gnista",
+	"descriptionPrefix": "Built-to-Order for the Luddic Church, this ship has been modified to better match Church fleet (and ecclesiastic) doctrine.",
+	"tags":["LC_bp"],
+	"tech":"Luddic Church",
+	"restoreToBaseHull":false,
+	"fleetPoints":4,
+	"baseValueMult":1.33,
+	#"shieldEfficiency":0.7,
+	"spriteName":"graphics/prv/ships/prv_gnista_lc.png",
+	"systemId":"ammofeed",
+	"removeWeaponSlots":["WS0003"],
+	"removeBuiltInMods":["prv_volatiledrivecore","prv_ramshield"],
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0001":{
+		  "type": "COMPOSITE",
+	   },
+	   "LCHP1":{
+		  "mount": "HARDPOINT",
+		  "type": "BALLISTIC",
+		  "size": "MEDIUM",
+	   },
+    },
+	#"builtInMods":["degraded_engines","faulty_grid","unstable_injector"],
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+	},    
+}

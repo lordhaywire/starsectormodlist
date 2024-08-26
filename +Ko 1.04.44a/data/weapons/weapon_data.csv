@@ -1,0 +1,29 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Flicker PD Laser,flicker_pdl,0,,600,500,300,,,0,100,3,,,,ENERGY,,180,0.1,0.1,0.3,1.5,,,,,10000,,,,,PD,"pd9, beam6, base_bp, merc",,Ko Combine,,Point Defense,,,,,,,,,,19.6
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+X Pulse Laser (Single Shot),xpulse_fighter,0,,250,700,,75,,0,50,6,,,,ENERGY,75,,0.1,0.9,,,,,,,,1000,,,,SYSTEM,,,Ko Combine,,General,,,,,,,,,,19
+X Pulse Laser,xpulse,1,,250,700,,75,,0,50,6,,,,ENERGY,75,,0.1,1.2,3,0.1,,,,,,1000,,,,,"energy8, midline_bp,  KoC, persean, independent, hegemony",,Ko Combine,,General,,,,,,,,,,19
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AP Machine Gun,apmg,2,,1200,500,,40,,4,50,8,,,,KINETIC,18,,0,0.4,5,0.1,0,5,1,15,,700,,,30,"PD, PD_ALSO, FIRE_WHEN_INEFFICIENT","kinetic11, pd10, SR, midline_bp, merc, ind, KoC, persean, independent, hegemony",,Bhilai Astra,,Anti Fighter,,,,,Rounds deal an additional %s damage to armor. This damage is not reduced by armor.,10,,,,3
+Pulse Detonation Cannon,gravburst,2,,1000,500,,700,,0,7,10,,,,ENERGY,1050,,0,2,,,,,,,,1000,,,,,"energy12, midline_bp,  KoC, independent",,Ko Combine,,General,,,,,,,,,,22.125
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Heavy Mining Laser,heavymininglaser,0,,1000,800,400,,,0,8,20,,,,ENERGY,,300,0.25,0.25,,,,,,,5000,,,,,FIRE_WHEN_INEFFICIENT,"beam0, energy0, lowtech_bp, KoC, independent,",,Eridani-Utopia Terraforming,,General,,,,,Deals hard flux damage to shields.,hard flux,,,,12
+Mk.XII Coach Cannon,mark10,1,,5000,800,,100,,5,15,22,,,,KINETIC,80,,0,1.6,,,10,15,0.25,5,,1200,,,50,,"kinetic18, midline_bp, KoC, persean, independent, hegemony",,Ko Combine,,Anti Shield,,,,,,,,,,7.25
+Mk.XII Coach Cannon (XIV),mark10_xiv,1,,5000,800,,100,,5,15,26,,,,KINETIC,80,,0,2,,,10,15,0.25,5,,1200,,,50,,"kinetic18, hegemony, no_sell, no_dealer, no_drop_salvage, hist1, XIV_bp, restricted",,XIV Battlegroup,,Anti Shield,,,,,,,,,,7.25
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Maiden MRM,maiden,0,,200,2000,,100,1000,15,20,4,,,,ENERGY,0,,0,25,1,,0,0,0,,,400,50,15,150,"DO_NOT_AIM, DO_NOT_CONSERVE, DIRECT_AIM","utility13, missile0, base_bp, KoC, persean, independent",,Ko Combine,,EMP Strike,Fast,Excellent,,,Hits generate an arc that deals 500 EMP damage to weapons and engines. This arc pierces shields.,500,,,TRUE,11.25
+Maiden MRM Pod,maidenpod,1,,1000,2000,,100,1000,15,15,8,,,,ENERGY,0,,0,25,2,0.25,0,0,0,,,400,50,15,150,"DO_NOT_AIM, DO_NOT_CONSERVE, DIRECT_AIM","utility13, missile_bp, KoC, persean, independent",,Ko Combine,,EMP Strike,Fast,Excellent,,,Hits generate an arc that deals 500 EMP damage to weapons and engines. This arc pierces shields.,500,,,TRUE,12.2
+Mad Maiden,madmaiden,2,,5000,2000,,100,1000,15,10,15,,,,ENERGY,0,,0,25,4,0.25,0,0,0,,,400,50,15,150,"DO_NOT_AIM, DO_NOT_CONSERVE, DIRECT_AIM","utility13, missile_bp, KoC, persean, independent",,Ko Combine,,EMP Strike,Fast,Excellent,,,Hits generate an arc that deals 500 EMP damage to weapons and engines. This arc pierces shields.,500,,,TRUE,12.2
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Streak MRM,streak,1,,200,2000,,250,,10,30,4,5,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,0,,500,100,8,150,"DO_NOT_AIM, MISSILE_SPREAD","base_bp, merc, KoC, persean, independent, hegemony",,Bhilai Astra,,Anti Armor,Medium,Medium,,,,,,,TRUE,11.75
+Streak MRM Pod,streak_pod,1,,1200,2000,,250,,10,30,10,20,,,HIGH_EXPLOSIVE,0,,0,8.75,2,0.25,0,0,0,0,,500,100,8,150,"DO_NOT_AIM, MISSILE_SPREAD","base_bp, merc, KoC, persean, independent, hegemony",,Bhilai Astra,,Anti Armor,Medium,Medium,,,,,,,TRUE,12.31
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#V++,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gust MLRS,gustmlrs,1,,2250,2500,,100,,15,20,10,60,,,KINETIC,0,,,5.2,5,0.2,0,0,0,0,,600,100,4.75,300,"DO_NOT_AIM, CONSERVE_3, STRIKE, MISSILE_SPREAD","missile19, strike15, missile_bp, merc",,Eridani-Utopia Terraforming,,Suppression,Very Fast,Special,,,"Unguided after a brief initial aiming stage. When impacting shields, a resonator unit activates to increase the base damage by %s.",150,,,,16.2
+Hammer-class Torpedo Pod,hammerpod,1,,900,1200,,1500,,30,10,12,12,,,HIGH_EXPLOSIVE,0,,0,8.5,3,0.25,10,10,0,,,500,40,4,350,STRIKE,"strike16, rocket14, lowtech_bp",,Eridani-Utopia Terraforming,,Torpedo,Fast,None,,,,,,,TRUE,8
+Atropos-class Torpedo Pod,atrops_pod,2,,600,1200,,1000,,40,10,12,10,,,HIGH_EXPLOSIVE,0,,0,8.5,2,0.5,0,0,0,0,,400,150,4,300,GUIDED_POOR,"strike9, missile1, missile_bp, merc",,Mbaye-Gogol,,Torpedo,Fast,Good,,,,,,,TRUE,9.5
+Bombardier Atropos Launcher,atropos_l,2,,1200,1200,,1000,,40,10,20,18,,,HIGH_EXPLOSIVE,0,,0,11,3,0.5,0,0,0,0,,400,150,4,300,GUIDED_POOR,"strike9, missile1, missile_bp, merc",,Mbaye-Gogol,,Torpedo,Fast,Good,,,,,,,TRUE,9.5
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#(Custom TPC for Sleipnir),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Thermal Pulse Cannon,tpc_int,0,,100000,1000,,250,,0,0,,20,1,,ENERGY,150,,0,0.2,1,,0,10,2,5,,1000,,,,SYSTEM,,TPC_only,Domain Restricted,,General,,,,,,,,,,40

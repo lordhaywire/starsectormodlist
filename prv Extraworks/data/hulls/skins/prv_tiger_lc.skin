@@ -1,0 +1,42 @@
+{
+	"baseHullId": "prv_tiger",
+	"descriptionId": "prv_tiger",
+	"descriptionPrefix": "Built-to-Order for the Luddic Church, this ship has been modified to better match Church fleet (and ecclesiastic) doctrine.",
+	"tags":["LC_bp"],
+	"tech":"Luddic Church",
+	"suppliesToRecover":8,
+	"suppliesPerMonth":8,
+	#"shieldEfficiency":0.8,
+	"hullName": "Tiger (LC)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_tiger_lc",
+	"spriteName": "graphics/prv/ships/prv_tiger_lc.png",
+	"systemId": "forgevats",
+	"removeBuiltInMods":["prv_volatiledrivecore","prv_ramshield"],
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+		"2":{"style":"LOW_TECH"},
+		"3":{"style":"LOW_TECH"},
+		"4":{"style":"LOW_TECH"},
+		"5":{"style":"LOW_TECH"},
+	}, 
+	"weaponSlotChanges":{
+		"WS0001":{
+		  "type": "COMPOSITE",
+		  "size": "MEDIUM",
+		},
+		"WS0002":{
+		  "type": "COMPOSITE",
+		},
+		"WS0003":{
+		  "type": "BALLISTIC",
+		},
+		"WS0004":{
+		  "type": "BALLISTIC",
+		},	
+		"WS0005":{
+		  "type": "MISSILE",
+		},
+	},
+}

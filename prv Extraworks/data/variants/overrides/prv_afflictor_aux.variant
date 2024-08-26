@@ -1,0 +1,40 @@
+{
+  "variantId": "prv_afflictor_aux",
+  "hullId": "afflictor",
+  "displayName": "Auxiliary",
+  "goalVariant": true,
+  "fluxCapacitors": 10,
+  "fluxVents": 10,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "hardened_subsystems",
+    "prv_flickercore"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_spattergun",
+        "WS 002": "prv_spattergun",
+        "WS 003": "prv_spattergun",
+        "WS 004": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 006": "prv_sipdlaser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

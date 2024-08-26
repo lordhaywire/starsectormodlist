@@ -1,0 +1,37 @@
+{
+	"specClass":"beam",
+	"id":"heavymininglaser",
+	"type":"ENERGY",
+	"mountTypeOverride":"HYBRID",
+	"size":"LARGE",
+	"displayArcRadius":500,
+
+	"turretSprite":"graphics/weapons/heavy_mining_laser_turret.png",
+	"turretGlowSprite":"graphics/weapons/heavy_mining_laser_turret_glow.png",
+	#"turretUnderSprite":"graphics/weapons/mjolnir_turret_under.png",
+
+	"hardpointSprite":"graphics/weapons/heavy_mining_laser_hardpoint.png",
+	"hardpointGlowSprite":"graphics/weapons/heavy_mining_laser_hardpoint_glow.png",
+	#"hardpointUnderSprite":"graphics/weapons/mjolnir_hardpoint_under.png",	
+
+	"turretOffsets":[30, 0],
+	"turretAngleOffsets":[0],
+	"hardpointOffsets":[40, 0],
+	"hardpointAngleOffsets":[0],
+	"fringeColor":[255,0,0,175],
+	"coreColor":[255,155,155,255],
+	"glowColor":[255,155,155,255],
+	#"fringeColor":[155,0,0,255],
+	#"coreColor":[255,255,255,255],
+	#"glowColor":[255,100,100,255],	
+	"width":33.0,
+	"textureType":ROUGH,
+	#"textureType":["graphics/fx/beam_chunky_fringe.png","graphics/fx/beam_chunky_core.png"],
+	"textureScrollSpeed":104.0,
+	"pixelsPerTexel":5.0,
+	"pierceSet":[PROJECTILE_FF,PROJECTILE_NO_FF,PROJECTILE_FIGHTER,MISSILE_FF,MISSILE_NO_FF],
+	"fireSoundOne":"laser_intro",
+	"fireSoundTwo":"laser_loop",
+
+	"beamEffect":"data.weapons.proj.AlligatorSurfing",	
+}

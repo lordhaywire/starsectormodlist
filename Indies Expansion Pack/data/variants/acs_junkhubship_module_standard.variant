@@ -1,0 +1,90 @@
+{
+  "variantId": "acs_junkhubship_module_standard",
+  "hullId": "acs_junkhubship_module",
+  "displayName": "Nomadic",
+  "goalVariant": false,
+  "fluxCapacitors": 50,
+  "fluxVents": 43,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "acs_medium_lascannon",
+        "WS0004": "acs_medium_lascannon",
+        "WS0005": "acs_bigmookrailslauncher",
+        "WS0006": "acs_bigmookrailslauncher",
+        "WS0007": "acs_watchtowerrailslauncher",
+        "WS0008": "acs_watchtowerrailslauncher",
+        "WS0010": "acs_angrymookrailslauncher",
+        "WS0011": "dualflak",
+        "WS0012": "dualflak",
+        "WS0017": "acs_velites_pod",
+        "WS0018": "acs_velites_pod",
+        "WS0019": "acs_toyhammer_small2",
+        "WS0020": "acs_toyhammer_small2",
+        "WS0021": "acs_minilocust_single",
+        "WS0022": "acs_minilocust_single",
+        "WS0023": "heatseeker",
+        "WS0024": "heatseeker",
+        "WS0025": "acs_minilocust_single",
+        "WS0026": "acs_minilocust_single",
+        "WS0027": "acs_toyhammer_small",
+        "WS0028": "acs_toyhammer_small",
+        "WS0029": "acs_smallrotarygatling",
+        "WS0030": "acs_smallrotarygatling",
+        "WS0031": "acs_vulcanmk2",
+        "WS0032": "acs_vulcanmk2",
+        "WS0033": "acs_small_flakhag",
+        "WS0034": "acs_small_flakhag",
+        "WS0035": "acs_small_lasgun",
+        "WS0036": "acs_small_lasgun",
+        "WS0043": "acs_small_lasgun",
+        "WS0044": "acs_small_lasgun",
+        "WS0045": "taclaser",
+        "WS0046": "taclaser",
+        "WS0047": "taclaser",
+        "WS0048": "taclaser",
+        "WS0049": "acs_small_lascannon",
+        "WS0050": "acs_small_lascannon",
+        "WS0051": "acs_smallrotarygatlingthumper",
+        "WS0052": "acs_smallrotarygatlingthumper",
+        "WS0053": "acs_small_flakhag",
+        "WS0054": "acs_small_flakhag",
+        "WS0055": "acs_vulcanmk2",
+        "WS0056": "acs_vulcanmk2",
+        "WS0057": "acs_small_lasgun",
+        "WS0058": "acs_small_lasgun",
+        "WS0059": "acs_small_flakhag",
+        "WS0060": "acs_small_flakhag",
+        "WS0061": "acs_medium_lasgun",
+        "WS0062": "acs_medium_lasgun",
+        "WS0063": "tachyonlance",
+        "WS0064": "acs_large_thumper",
+        "WS0065": "acs_large_hellboredakka"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "WS0001": "acs_junkhubship_module_left_standard"
+    },
+    {
+      "WS0002": "acs_junkhubship_module_right_standard"
+    },
+    {
+      "WS0009": "acs_junkhubship_shield_module_standard"
+    }
+  ],
+  "wings": [
+    "acs_militia_Fighter_wing",
+    "acs_militia_Fighter_wing",
+    "acs_militia_Fighter_wing",
+    "acs_militia_Fighter_wing"
+  ]
+}

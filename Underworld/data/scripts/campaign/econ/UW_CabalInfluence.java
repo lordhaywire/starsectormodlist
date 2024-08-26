@@ -3,6 +3,7 @@ package data.scripts.campaign.econ;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
 import com.fs.starfarer.api.campaign.econ.MarketImmigrationModifier;
 import com.fs.starfarer.api.impl.campaign.econ.BaseMarketConditionPlugin;
+import com.fs.starfarer.api.impl.campaign.ids.Conditions;
 import com.fs.starfarer.api.impl.campaign.population.PopulationComposition;
 import com.fs.starfarer.api.ui.TooltipMakerAPI;
 import com.fs.starfarer.api.util.Misc;
@@ -26,6 +27,11 @@ public class UW_CabalInfluence extends BaseMarketConditionPlugin implements Mark
 
         market.getStability().unmodify(id);
         market.getAccessibilityMod().unmodifyFlat(id);
+    }
+
+    @Override
+    public boolean showIcon() {
+        return !market.hasCondition(Conditions.DECIVILIZED);
     }
 
     @Override

@@ -1,0 +1,99 @@
+id,type,text1,text2,text3,text4,notes
+#############################,,,,,,
+### prv Ships,,,,,,
+#############################,,,,,,
+prv_kite,SHIP,"Remodeled to carry a wing of escort drones instead of a gun turret, this shuttle features an impressively optimized flight deck complete with a miniature manufactory.
+
+A familiar civilian design, the ""Kite""-class aeroshuttle is the day-to-day reminder of Fabrique Orbitale's reputation for aeronautical engineering- a valuable specialty even in the age of space travel. This compact space/aircraft is streamlined for efficient atmospheric flight and boasts a grid of cleverly distributed short-burst maneuvering thrusters coordinated by a delta-level AI subsystem to ensure smooth landings (a point driven home by Fabrique marketing by way of amusing ad-holos featuring a well-dressed couple and an overfull wine glass). The Kite has powerful engines for a civilian ship of its size, though zero-G maneuverability leaves something to be desired when the special subsystem is not engaged.
+
+In the dangerous cycles post-Collapse, the Kite has been outfitted with a defense turret in place of the executive-class viewing dome and the two auxiliary jet-pods are replaced with missile systems (which do not need to draw on the limited powerplant). It won't stand up in a fair fight, but the Kite can be given unexpectedly sharp teeth and use its speed to escape from raiders. Luddic Path radicals have even been known to use modified Kite to deliver strike weapons against helpless freighters, followed by engaging the maneuvering subsystem to make a swift exit to avoid the wrath of their victim's escort.",,,,
+prv_mule,SHIP,"Impressed to bulk out the prv's depleted merchant marine, this sturdy combat freighter has been given a quick refit before being put on hazard duty.
+
+Quite possibly meeting its match against the rimward pirates, the Mules have fared little better than the rest of the prv’s shipping fleet. Corporate logistics continue to be intermittently successful at best.",,,,
+prv_sunder_ryak,SHIP,"Retaining little of the standard model’s spirit, this Sunder has had its powerful generator and energy battery replaced with ballistic cannons and additional armor. An EMP-countermeasure array backs up the gunnery, giving the ship a significant edge in a close-in brawl.
+
+Extensively remodeled by Mångtekniska Regalvarven in an attempt to fit the common Sunder into their fleets, the effort came to an end with the loss of Regalvarven’s home station, Hallar. The few Sunder conversions that have survived since maintain fine records of serving their house well and proudly.",,,,
+prv_conquest_ryak,SHIP,"This Conquest has been heavily modified at the Ryak High-Energy Labs to serve as a test platform for an experimental armaments project. It now backs up its main broadside batteries with a powerful spinal-mount particle projector. Generally considered a somewhat awkward model.
+
+The Conquest-class battlecruiser is the embodiment of concentrated firepower. Developed in the period just preceding the popularization of fighter craft, the class emphasizes firepower and speed over armor protection.
+
+Space Naval tacticians of the day were confident that new weapons systems would always outperform armor and shields and thus were the key to winning an engagement. So why not build a ship for speed and power? Give it the armor protection of a cruiser, but arm it with the best weapons available to any ship, and have it remain faster than any of those lumbering behemoths of the line. The Conquest is a good example of these concepts put into a hull. Many other advanced technologies were incorporated into the design, including weapon mounts designed for a circling engagement. This maneuver requires greater navigational skill while serving to provide more tactical options to the commanding officers. 
+
+Fortune favors the bold, the ancients said. This class of ships does indeed favor the bold captain, willing to risk everything for the thrill of victory.",,,,
+prv_fika,SHIP,"Well armed for a freighter, the Fika is often used as a tender for prv expeditionary fleets. Fast taskforces expecially appreciate its high engine burn rate.
+
+A further development of the Munsbit hullform, the Fika offers more armor, more cargo space, more guns, and as one would expect, more expenses. It’s been remarked that perhaps the prv would have fewer logistical problems if they simply used cheaper cargo ships.",,,,
+prv_middag,SHIP,"As many prv ships the Middag straddles the line between ambitious and megalomanic - oversized and overarmed, this freighter is capable of standing up to most cruisers in the sector in direct combat. It is extravagant to a fault, and much too expensive for civilian shipping - or deployment in most navies, for that matter. Only a small number were built before the production lines were retooled to manufacture smaller and demilitarized versions.",,,,
+,,,,,,
+#############################,,,,,,
+### prv Fighters,,,,,,
+#############################,,,,,,
+prv_klirr,SHIP,"As a slaved combat drone entirely dependent on its host for fire control, the Klirr offers significant firepower but is largely incapable of independent action. The subsumed targeting circuits allow it to take full advantage of any range improvements its host enjoys.",,,,
+,,,,,,
+#############################,,,,,,
+### Rust Belt Ships,,,,,,
+#############################,,,,,,
+prv_enforcer_rb,SHIP,"Some Enforcers hulls have found their way into Ruster hands, where they have been modified to better suit local preferences: point defense lasers and a mount for an energy blaster.
+
+While well-liked among the syndicates, Enforcer hulls are still fairly rare in the belts. Most remain intact in Hegemony fleets, deployed a thankful distance away from Ruster habitats in the Kratul system. Only a smattering of hulls purchased through various smuggling outfits end up getting the full conversion treatment.",,,,
+prv_eld_rb,SHIP,"Though referred to as a ”petty mockery” by the prv Starworks corporation, the Rust Belt model of the Eld destroyer nonetheless finds itself as an appreciated ship among sector fringe elements, offering a competent mix of speed and firepower.
+
+While the ship’s relationship to the prv Eld is evident at a glance, the Rust Belt model rebuilds large parts of the ship to be more suited for Outer Yard construction habits. This does result in it being cheaper to build, maintain and field, but leaves a noticable mark in the ship’s perfomance ratings due to a weaker generator and much more common frontal shield emitter - not to mention the complete lack of a tensor drive.
+
+The Head4 syndicate claim that they produce the ship from a now-decrypted production chip stolen in a convoy raid. While outsiders have been unable to confirm the claims, it has been noted that the Old Wharf Eld production is down an average of 27% since the first Eldsjäl sighting was documented. According to the prv this reduction was done to shift production towards the Tystnad. 
+
+Clear and credible sources supporting either side remain elusive.",,,,
+prv_visent_xl,SHIP,"Equipped with a larger and more heavily shielded cargo module than the standard model, this Visent is a sturdy but painfully unweildy freighter. It is combat-capable and can carry a fair complement of missiles, but its poor handling tends to leave it very vulnerable to lighter ships.
+
+Free traders of the belt often voice the complaint that ”the only way to hide something on a Visent is to lose it in the general mess”. These complaints, along with some encouraging venture funding, has lead to the development of the XL Cargo Module: sporting well over a hundred individualized compartments, many of which are discretely but thoroughly shielded against inquisitive patrol sensors and unneccessarily thorough customs officers, the XL helps ensure that free commerce in the sector is not overly hindered by stuffy bureaucrats or outdated regulations.",,,,
+prv_grendel_rb,SHIP,"Lacking the phase coils of the original hull, this Grendel conversion instead augments its considerable ballistic array with several heavy energy mounts. But while the ship's firepower is intimidating, the lack of a central fire control computer drastically limits its offensive potential.
+
+The Hegemony occasionally sell off a Grendel hull that's too worn down even for penal use, and consign it to the scrapyards. And useful scrap hulls have a way of ending up in Ruster hands. The Outer Yard shipbuilders of Frank & Stein Werft handle the conversion and reconstruction of these ships, but have gained a reputation for being somewhat unreliable both when it comes to delivery dates and the quality of the finished ship.",,,,
+,,,,,,
+#############################,,,,,,
+### Midline ships,,,,,,
+#############################,,,,,,
+prv_flamma_midline,SHIP,"An adaptation of the Flamma manufactured for the Sindrian Diktat. This version opts for agility over advanced defenses, and can outpace most larger ships. 
+
+Suitable for both assault and support roles, the Diktat has found itself purchasing the ship in significant amounts - with a bulk discount to match. It is generally accepted that the prv is exporting the hulls at a loss.",,,,
+prv_eld_midline,SHIP,"An agile and flexible destroyer that can be outfitted for most mission profiles. The Lion Andrada himself authorized this modification of the Eld, with additional missile mounts, beefed-up engines, and no sensitive tensor drive to plague fleet logistics.",,,,
+prv_sorl_midline,SHIP,"An adaptation of the Sorl for use by some of the lesser members in the Persean League. It is highly reliant on its maneuvering jets for mobility, and provides a significant amount of missile firepower.
+
+It is approached with a certain degree of scepticism within the League, with the hulls mainly being commissioned by League members who would, perhaps, prefer that their dues not support Kazeron's naval yards directly.",,,,
+prv_flock_midline,SHIP,A somewhat fragile light cruiser built around a fast-cycle heavy missile mount. A limited number of ballistic hardpoints has the ship relying entirely on its intimidating missile complement.,,,,
+,,,,,,
+,,,,,,
+#############################,,,,,,
+### Other Ships,,,,,,
+#############################,,,,,,
+prv_flock_lg,SHIP,"A somewhat fragile light cruiser built to the exacting specifications demanded by the Lion's Guard, environmentally-hardened to survive the harsh fires of Askonia. Its combination of energy blasters, missiles, and high mobility has proven popular with the more aggressive commanders among the Guard.
+
+The bridge of every ship of the class has a life-size marble bust of the Executor himself, each individually hand-crafted, unique in its own exquisite way.",,,,
+prv_gryning_tt,SHIP,A light and agile frigate equipped with light armaments and a time-warping device that lets it - in effect - speed up the local flow of time by a large degree for a brief duration.,,,,
+prv_ljus_lp,SHIP,"A sensor frigate sans sensors, this ship is dedicated to bringing the light of Ludd unto the unbelievers by means of a nose-mounted missile launcher. Extremely threatening for as long as the magazine lasts.",,,,
+,,,,,,
+#############################,,,,,,
+### Weapons,,,,,,
+#############################,,,,,,
+prv_ljungeld_conquest_prototype,WEAPON,"A large-scale test platform used in the development of the Ljungeld particle beam, embedded into the structure of a Conquest-class Battlecruiser. Unlike the final Ljungeld model, this weapon fires a barrage of energy blasts that arc through shields more by sheer energy than through field modulation.
+
+The major limiting factor of the design is that once an energy blast is fired, it is no longer possible - or at least practically feasible - to adjust it in response to changes in the shield structure and it must rely on sheer power to compensate for any misalignments.
+
+This straight-forward - brutal even - approach of the test-bed model proved two things: First of all, it worked. The energy blasts reliably arced past shields, often dealing significant damage to the craft behind them. And second of all, it didn't work. The scale of the weapon was immense, and the performance just could not justify such an investment for a weapon that, in the end, was less damaging than a plasma cannon. As such a less direct approach was tried and eventually succeded - a reactive particle beam, that creates and exploits feedback patterns.",Assault,,,
+prv_jursla_gbe,WEAPON,"The charged graviton clusters fired by this cannon are highly disruptive to shield emitters, but follow irregular trajectories that leave them highly inaccurate when not shepherded by a Jursla guidebeam.
+
+Bulky, unreliable and power-hungry, the GBE has found little use in the navies of the Persean sector.",Close Support,,,
+prv_sidensvans_fighter,WEAPON,"Fast moving and able to aquire its target from almost any angle, the Sidensvans is a versatile support weapon that will repeatedly attempt to strike its target.
+
+Adapted for companion use, this rack carries minimal ammunition but can be hot-swapped in moments by the deck crew when the fighter returns to rearm.",Fighter,,,
+prv_skata_sat,WEAPON,"A fearsome pack of missiles equipped with unstable subspace-tearing warheads. Fired in a long uncontrolled burst, the saturation-tuned Skata missiles will turn a large volume of space into a volatile particle soup. Highly hazardous to any target caught in the area.
+
+A relatively recent effort of the HEL, these missiles do an admirable job of turning empty nothing into a very dangerous place indeed. Efforts to stabilize the warheads have run into a brick wall, with investigations into surviving Domain-era research archives suggesting that the subspace tearing effect should be impossible in the first place. Wide-scale deployment is unlikely in the foreseeable future.",,,,
+,,,,,,
+#############################,,,,,,
+### Systems,,,,,,
+#############################,,,,,,
+prv_tofsmes_flak,SHIP_SYSTEM,"Launches a group of EMP countermeasures which intercept enemy fighters and missiles, disabling them with an EMP burst.
+
+Somewhat larger than the Blåmes EMP missile it is derived from, the Tofsmes has enhanced sensors and a more powerful engine, letting it intercept other missiles. The EMP warhead is identical, and will effectively knock out engines and weapons on whatever it hits.",Offensive,"Launches a group of EMP countermeasures which intercept enemy fighters and missiles, dealing 90 energy and 540 EMP damage each.",90 | 540,
+prv_gunpod_lpk,SHIP_SYSTEM,Deploys many combat drones armed with LPK laser pulse cannons.,Drones,Deploys 4 combat drones armed with Linjär PK energy cannons.,4 | Linjär PK,

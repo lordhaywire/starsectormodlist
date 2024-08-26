@@ -3,63 +3,65 @@
   "hullId": "prv_valljud",
   "displayName": "Elite",
   "goalVariant": true,
-  "fluxCapacitors": 30,
+  "fluxCapacitors": 20,
   "fluxVents": 50,
-  "quality": 3,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "targetingunit"
+    "targetingunit",
+    "eccm",
   ],
   "weaponGroups": [
     {
       "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0001": "prv_ljungeld"
-      }
-    },
-    {
-      "autofire": false,
       "mode": "ALTERNATING",
       "weapons": {
-        "WS0015": "sabotpod",
-        "WS0016": "sabotpod"
+        "WS0009": "prv_kraka",
+        "WS0015": "prv_kraka",
+        "WS0016": "prv_kraka",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_spattergun",
-        "WS0004": "prv_spattergun"
+        "WS0001": "prv_siege_akers"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0011": "prv_akers_nova",
-        "WS0012": "prv_akers_nova"
+        "WS0013": "prv_akers",
+        "WS0014": "prv_akers",
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "pdburst",
-        "WS0006": "pdburst",
-        "WS0007": "prv_pskd",
-        "WS0008": "prv_pskd",
-        "WS0009": "heavyburst",
-        "WS0013": "prv_pskd",
-        "WS0014": "prv_pskd"
+        "WS0011": "prv_gravkan",
+        "WS0012": "prv_gravkan",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sipdlaser",
+        "WS0004": "prv_sipdlaser",
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
       }
     }
   ],
   "modules": [],
   "wings": [
-    "prv_stilllhet_wing",
-    "longbow_wing",
+    "prv_diskordant_wing",
+    "prv_diskordant_wing",
+    "prv_skran_wing",
     "prv_missljud_wing"
   ]
 }

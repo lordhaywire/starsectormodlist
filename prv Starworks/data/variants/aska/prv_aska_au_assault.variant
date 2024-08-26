@@ -1,0 +1,46 @@
+{
+  "displayName": "Assault",
+  "fluxCapacitors": 12,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "prv_aska_au",
+  "hullMods": [
+    "hardened_subsystems", 
+    "prv_arcfault_insulator",
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_au_assault",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "pulselaser",
+        "WS0003": "pulselaser",
+        "WS0004": "pulselaser"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "prv_sipdlaser",
+        "WS0006": "prv_sipdlaser",
+        "WS0007": "prv_sipdlaser",
+        "WS0008": "prv_sipdlaser",
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser"
+      }
+    }
+  ],
+  "wings": []
+}

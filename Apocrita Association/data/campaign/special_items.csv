@@ -1,6 +1,0 @@
-name,id,tags,tech/manufacturer,rarity,base price,stack size,cargo space,baseRaidDanger,icon,sound id,sound id drop,plugin,plugin params,desc,order
-Base ModSpec,modspec,modspec,,,1,1000,1,,graphics/icons/cargo/modspec2.png,ui_chip_pickup,ui_modspec_drop,com.fs.starfarer.api.campaign.impl.items.ModSpecItemPlugin,,"A collection of notes, guidelines, and practical examples that enable one to adapt and apply this modification to various hulls.",50
-,,,,,,,,,,,,,,,
-# blueprints,,,,,,,,,,,,,,,
-Apocrita Association Ship Package,bee_apocrita_package,package_bp,,,35000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,apocrita_ship_bp,Enables heavy industry to construct the more common ship hulls produced by the Apocrita Association.,210
-Apocrita Association Weapon Package,bee_apocrita_wpn,package_bp,,,15000,1000,1,,graphics/icons/cargo/blueprint_midline.png,ui_chip_pickup,ui_bp_package_drop,com.fs.starfarer.api.campaign.impl.items.MultiBlueprintItemPlugin,apocrita_wpn_bp,Enables heavy industry to construct the more common weapons produced by the Apocrita Association.,211

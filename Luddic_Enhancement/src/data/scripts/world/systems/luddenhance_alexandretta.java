@@ -26,7 +26,6 @@ public class luddenhance_alexandretta implements SectorGeneratorPlugin {
 	public void generate(SectorAPI sector) {
 		StarSystemAPI system = sector.createStarSystem("Alexandretta");
 		LocationAPI hyper = Global.getSector().getHyperspace();
-		
 		system.setBackgroundTextureFilename("graphics/backgrounds/background6.jpg");
 		
 		// create the star and generate the hyperspace anchor for this system
@@ -174,31 +173,60 @@ public class luddenhance_alexandretta implements SectorGeneratorPlugin {
 			
 		PlanetAPI alexandretta3 = system.addPlanet("cerbrus", star, "Cerberus", "tundra", 100, 100, 5000, 900);
 		alexandretta3.setCustomDescriptionId("luddicchurch_cerebrus");
+		if (!Global.getSettings().getModManager().isModEnabled("tahlan")) {
+			MarketAPI alexandretta3Market = AddMarketplace.addMarketplace(LUDDIC_CHURCH, alexandretta3,
+					null,
+					"Cerberus", 5,
+					new ArrayList<>
+							(Arrays.asList(Conditions.POPULATION_5,
+									Conditions.RUINS_EXTENSIVE,
+									Conditions.VERY_COLD,
+									Conditions.ORE_MODERATE,
+									Conditions.RARE_ORE_SPARSE)),
+					new ArrayList<>
+							(Arrays.asList( // list of industries
+									Industries.SPACEPORT,
+									Industries.MILITARYBASE,
+									Industries.HEAVYBATTERIES,
+									luddenhance_industries.REFIT,
+									Industries.POPULATION)),
+					new ArrayList<>(
+							Arrays.asList( // which submarkets to generate
+									Submarkets.SUBMARKET_BLACK,
+									Submarkets.GENERIC_MILITARY,
+									Submarkets.SUBMARKET_OPEN,
+									Submarkets.SUBMARKET_STORAGE)),
+					0.3f
+			);
+		}
+		if (Global.getSettings().getModManager().isModEnabled("tahlan")) {
+			MarketAPI alexandretta3Market = AddMarketplace.addMarketplace (LUDDIC_CHURCH, alexandretta3,
+					null,
+					"Cerberus", 6,
+					new ArrayList<>
+							(Arrays.asList(Conditions.POPULATION_6,
+									Conditions.RUINS_EXTENSIVE,
+									Conditions.VERY_COLD,
+									Conditions.ORE_MODERATE,
+									Conditions.RARE_ORE_SPARSE)),
+					new ArrayList<>
+							(Arrays.asList( // list of industries
+									Industries.SPACEPORT,
+									Industries.MILITARYBASE,
+									Industries.HEAVYBATTERIES,
+									Industries.BATTLESTATION,
+									luddenhance_industries.REFIT,
+									Industries.POPULATION)),
+					new ArrayList<>(
+							Arrays.asList( // which submarkets to generate
+									Submarkets.SUBMARKET_BLACK,
+									Submarkets.GENERIC_MILITARY,
+									Submarkets.SUBMARKET_OPEN,
+									Submarkets.SUBMARKET_STORAGE)),
+					0.3f
+			);
+		}
 
-		MarketAPI alexandretta3Market = AddMarketplace.addMarketplace (LUDDIC_CHURCH, alexandretta3,
-				null,
-				"Cerberus", 5,
-				new ArrayList<>
-						(Arrays.asList(Conditions.POPULATION_5,
-						Conditions.RUINS_EXTENSIVE,
-						Conditions.VERY_COLD,
-						Conditions.ORE_MODERATE,
-						Conditions.RARE_ORE_SPARSE)),
-                new ArrayList<>
-                        (Arrays.asList( // list of industries
-                                Industries.SPACEPORT,
-                                Industries.MILITARYBASE,
-								Industries.HEAVYBATTERIES,
-								luddenhance_industries.REFIT,
-                                Industries.POPULATION)),
-                new ArrayList<>(
-                        Arrays.asList( // which submarkets to generate
-                                Submarkets.SUBMARKET_BLACK,
-                                Submarkets.GENERIC_MILITARY,
-                                Submarkets.SUBMARKET_OPEN,
-								Submarkets.SUBMARKET_STORAGE)),
-				0.3f
-		);
 		SectorEntityToken alexandratta_buoy = system.addCustomEntity(
 				"alexandratta_buoy",
 				"Alexandretta Nav Buoy",

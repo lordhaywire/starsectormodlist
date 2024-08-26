@@ -1,8 +1,0 @@
-{
-	"id":"belch",
-	"type":"WEAPON",
-	"aiType":"CANISTER_FLAK",
-	
-	"weaponDataId":"bee_systemwpn_belch",
-	"outOfUsesSound":"gun_out_of_ammo",
-}

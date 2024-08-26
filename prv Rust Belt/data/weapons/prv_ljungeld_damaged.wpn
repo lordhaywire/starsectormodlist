@@ -1,0 +1,64 @@
+{
+  "id": "prv_ljungeld_damaged",
+  "specClass": "beam",
+  "type": "ENERGY",
+  "size": "MEDIUM",
+  "beamEffect": "prv.rb.weapons.prv_ljungeld_damaged_BeamEffect",
+  "collisionClass": "RAY",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "turretSprite": "graphics/prv/weapons/prv_ljungeld_damaged.png",
+  "turretGlowSprite": "graphics/prv/weapons/prv_ljungeld_damaged_glow.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_ljungeld_damaged.png",
+  "hardpointGlowSprite": "graphics/prv/weapons/prv_ljungeld_damaged_glow.png",
+  "renderAboveAllWeapons": 0,
+  "glowColor": [
+    255,
+    0,
+    64,
+    196
+  ],
+  "hitGlowRadius": 25,
+  "turretOffsets": [
+    27,
+    -0.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    43.5,
+    -0.5
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "beamFireOnlyOnFullCharge": true,
+  "fringeColor": [
+    255,
+    0,
+    0,
+    196
+  ],
+  "coreColor": [
+    229,
+    255,
+    238,
+    223
+  ],
+  "width": 9,
+  "textureType": [
+    "graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+    "graphics/prv/fx/prv_beam_ljungeld_core.png"
+  ],
+  "textureScrollSpeed": 256,
+  "pixelsPerTexel": 2,
+  "pierceSet": [
+    PROJECTILE_FF,
+    PROJECTILE_NO_FF,
+    PROJECTILE_FIGHTER,
+    MISSILE_FF,
+    MISSILE_NO_FF
+  ],
+  "fireSoundOne": "prv_ljungeld_damaged_chargeup",
+  "fireSoundTwo": "prv_ljungeld_damaged_fire"
+}

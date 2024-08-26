@@ -35,19 +35,27 @@
             "roider":1.5,
 		},
 		"hulls":{
-			# Make the Cyclops and Onager a little more common
+			# Make Argos a little less common because it is in so many pick groups
+			"roider_argos":0.8,
+			
+			# Make the Cyclops and Aurochs (Onager) a little more common
 			"roider_cyclops":1.25,
 			"roider_onager":1.25,
 			
-			# These two have limited loadouts, so we don't want to see them often
-			"roider_colossus2":0.25,
+			# These have limited loadouts, so we don't want to see them often
 			"roider_pepperbox":0.25,
+			"roider_trailboss":0.25,
 			
 			# Gets to appear in small fleets, so make it rarer
 			"roider_roach":0.5,
 			
 			# Not a conversion, so it should be rarer
 			"roider_sheriff":0.5,
+			
+			# Rare ships
+			"roider_onager_damper":0.1,
+			"roider_ranch_damper":0.1,
+			"roider_rockroach":0.1,
 			
 			# Just say no
 			"roider_gambit_early":0,
@@ -102,6 +110,9 @@
 			"hellbore",
 			#"irpulse",
 			#"pulselaser",
+			"hurricane",
+			"squall",
+			"locust",
 		],
 	},
 	"priorityWeapons":{
@@ -112,6 +123,7 @@
 	"knownHullMods":{
 		"tags":["base_bp", "roider", "roider_bp"],
 		"hullMods":[
+			"ballistic_rangefinder",
 			"turretgyros",
 			"armoredweapons",
 			"autorepair",
@@ -265,5 +277,7 @@
 		"roider_expedition":"Prospector",
 		"roider_expeditionMajor":"Tech Expedition",
 		"roider_expeditionMother":"Tech Expedition",
+
+		"roider_nomads":"Nomad Caravan",
 	}
 },

@@ -1,11 +1,12 @@
 {
     "displayName": "Patrol",
-    "fluxCapacitors": 2,
+    "fluxCapacitors": 5,
     "fluxVents": 14,
     "goalVariant": true,
     "hullId": "roider_bombard",
     "hullMods": ["converted_hangar"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_bombard_Patrol",
     "weaponGroups": [
         {
@@ -22,16 +23,14 @@
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "lightmortar",
-				"WS 003": "heavymortar"
-			}
+                "WS 001": "lidardish",
+                "WS 003": "heavymortar"
+            }
         },
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS 002": "roider_marksman"
-            }
+            "weapons": {"WS 002": "roider_marksman"}
         }
     ],
     "wings": ["talon_wing"]

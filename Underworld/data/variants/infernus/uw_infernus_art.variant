@@ -1,6 +1,6 @@
 {
     "displayName": "Artillery",
-    "fluxCapacitors": 3,
+    "fluxCapacitors": 7,
     "fluxVents": 50,
     "goalVariant": true,
     "hullId": "uw_infernus",

@@ -16,7 +16,7 @@
 				"marine":0.5,
 				"heavy":0.5,
 			},
-			"enemyDropCostMult":1.5,
+			"enemyDropCostMult":1.25,
 			"enemyBombardmentCostMult":2,
 			"dropAttritionFactor":10,
 			"tags":["noBombard"],
@@ -30,7 +30,7 @@
 				"marine":1,
 				"heavy":1,
 			},
-			"enemyDropCostMult":2,
+			"enemyDropCostMult":1.5,
 			"dropAttritionFactor":20,
 			"tags":["noBombard", "preventBombardment"],
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.GroundDefensesPlugin",
@@ -38,7 +38,7 @@
 		},
 		"planetaryshield":{
 			"tags":["noBombard", "preventBombardment", "preventBombardmentSuper", "preventEW", "preventInspire", "preventCAS"],
-			"enemyDropCostMult":2,
+			"enemyDropCostMult":1.5,
 			"dropAttritionMult":2,
 			"icon":"graphics/icons/intel/red_planet.png",
 		},
@@ -98,7 +98,17 @@
 				"marine":0.2,
 				"heavy":0.1,
 			},	
-		},		
+		},
+		
+		"militarygarrison":{	# AotD Planetary Defense Bureau
+			"tags":["resistBombard"],
+			"strengthMult":1.2,
+			"troopCounts":{
+				"mililtia":2,
+				"marine":1,
+				"heavy":0.5,
+			},	
+		},
 	},
 	
 	"conditions":{
@@ -132,6 +142,27 @@
 			"color":[190,63,0,255],
 			"tags":[],
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.FPEDefensePlugin",
+		},
+		
+		"IndEvo_mineFieldCondition":{
+			"desc":"Some mines are still present close to $market and will interfere with deployments and orbital fires.",
+			"highlights":["25%", "25%"],
+			"color":[224,96,48,255],
+			"tags":["preventBombardment", "preventCAS"],
+			"plugin":"exerelin.campaign.intel.groundbattle.plugins.IndEvoMinefieldPlugin",
+		},
+		
+		"hmi_fang_spawn":{
+			"troopCounts":{
+				"militia":1,
+				"marine":0.5,
+			},
+		},
+		"hmi_draco_spawn":{
+			"troopCounts":{
+				"militia":1,
+				"marine":0.5,
+			},
 		},
 	},
 	
@@ -190,11 +221,17 @@
 	#},
 	
 	"unitTypes":{
+		# note on unit mults: it may be best if the personnel mult for infantry units, and equipment mult for mechanized units, is 1 if possible
+		# otherwise unusual behavior may occur
+		# if you need an extra-large unit, use the unitSizeMult
+		
 		"marine":{
 			"name":"marine",
 			"type":"MARINE",	# legacy setting, may remove later; for now it's mandatory though
-			#"sprite":"optional/path_to/sprite.png",	# used in background of unit card; not automatically loaded so specify it in settings.json if needed
 			"playerCanCreate":true,
+			#"sprite":"optional/path_to/sprite.png",	# used in background of unit card; not automatically loaded so specify it in settings.json if needed
+			#"plugin":"package.plugin.ClassName",
+			#"playerMemKeyToShow":"$myMemKey",	# if non-null, button to create this unit will not appear in ground battle UI unless key is set to true in player MemoryAPI
 			"strength":1,
 			"personnel":{
 				"commodityId":"marines",
@@ -210,9 +247,9 @@
 			"playerCanCreate":true,
 			"strength":5.5,
 			"unitSizeMult":0.166667,
-			"dropCostMult":7.5,
-			"offensiveStrMult":1.25,
-			"crampedStrMult":0.75,
+			"dropCostMult":7.5,			# base drop/move cost is proportional to unit size, measured by number of equipment items if present or number of personnel items otherwise
+			"offensiveStrMult":1.25,	# on industries not held by the unit's side
+			"crampedStrMult":0.75,		# on things like station-only markets and water-surface planets
 			"equipment":{
 				"commodityId":"hand_weapons",
 				"crewReplacerJobId":"nex_groundBattle_heavyarms",
@@ -256,7 +293,46 @@
 			},
 			"tags":["rebel"],
 			"sortOrder":4,
-		}
+		},
+		
+		#"lobster":{
+		#	"name":"lobster",
+		#	"type":"MARINE",
+		#	"playerCanCreate":false,
+		#	"playerMemKeyToShow":"$nex_canCreateLobsterTroops",
+		#	"strength":1,
+		#	"personnel":{
+		#		"commodityId":"lobster",
+		#		"crewReplacerJobId":"nex_groundBattle_lobsters",
+		#		"mult":1,
+		#	},
+		#	"tags":["marine", "lobster"],
+		#	"sortOrder":1,
+		#},
+		
+		#"helldiver":{
+		#	"name":"helldiver",
+		#	"type":"MARINE",
+		#	"playerCanCreate":true,
+		#	"strength":1,
+		#	"unitSizeMult":2,
+		#	"personnel":{
+		#		"commodityId":"crew",
+		#		"crewReplacerJobId":"nex_groundBattle_helldivers",
+		#		"mult":1,
+		#	},
+		#	"tags":["marine"],
+		#	"sortOrder":1.5,
+		#},
+	},
+	
+	# specify plugins not associated with an industry, condition, faction or such here
+	"plugins":{
+		"generalPlugin":"exerelin.campaign.intel.groundbattle.plugins.GeneralPlugin",
+		"factionBonusPlugin":"exerelin.campaign.intel.groundbattle.plugins.FactionBonusPlugin",
+		"planetHazardPlugin":"exerelin.campaign.intel.groundbattle.plugins.PlanetHazardPlugin",
+		"fleetSupportPlugin":"exerelin.campaign.intel.groundbattle.plugins.FleetSupportPlugin",
+		#"lobsterTroops":"exerelin.campaign.intel.groundbattle.plugins.LobsterTroopPlugin",
 	},
 	
 	

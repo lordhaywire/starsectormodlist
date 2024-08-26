@@ -1,0 +1,10 @@
+{	
+	"knownShips":{
+		"tags":["prv_lg_bp"],
+	},
+	"hullFrequency":{
+		"tags":{
+			"prv_lg_bp":0.33,
+		},
+	},	
+}

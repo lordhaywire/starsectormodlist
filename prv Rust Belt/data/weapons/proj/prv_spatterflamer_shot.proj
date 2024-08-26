@@ -1,0 +1,20 @@
+{
+	"id":"prv_spatterflamer_shot",
+	"onHitEffect":"prv.rb.weapons.prv_spatterflamer_sticky_OnHitEffect",
+	"passThroughMissiles":true,
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	"length":120.0,
+	"width":60,
+	"hitGlowRadius":30,
+	#"glowColor":[199,102,255,128], #proj glow
+	#"glowRadius":20,
+	"fadeTime":0.25,
+	"fringeColor":[199,102,255,128],
+	"coreColor":[220,160,255,196],
+	"textureScrollSpeed":-256.0,
+	"pixelsPerTexel":1.0,
+}

@@ -1,0 +1,21 @@
+{
+	"id":"prv_evasive_formation",
+	"type":"STAT_MOD",
+	#"aiType":"TARGETING_FEED",
+	"aiType":"CUSTOM",
+	"aiScript":"prv.rb.ai.systems.prv_evasive_formation_ai",
+	
+	"statsScript":"prv.rb.shipsystems.prv_evasive_formation",
+	
+	"useSound":"system_targeting_feed",
+	#"loopSound":"system_targeting_feed_loop",
+	"deactivateSound":"gun_out_of_ammo",
+	"outOfUsesSound":"gun_out_of_ammo",
+	
+	"aiHints":{
+	}
+}
+
+
+
+

@@ -1,0 +1,22 @@
+{
+    "displayName": "Belt",
+    "fluxCapacitors": 0,
+    "fluxVents": 9,
+    "goalVariant": false,
+    "hullId": "hound_d_pirates",
+    "hullMods": ["blast_doors","heavyarmor"],
+    "permaMods": [],
+    "variantId": "prv_hound_d_pirates_belt",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "prv_kartesch"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 002": "prv_lightthumper"}
+        }
+    ]
+}

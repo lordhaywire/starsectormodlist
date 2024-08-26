@@ -1,0 +1,9 @@
+{
+	"knownWeapons":{
+		"weapons":[
+			"prv_fusion_burster",
+			"prv_spatterflamer",
+			"prv_massdriver",
+		]
+	},
+}

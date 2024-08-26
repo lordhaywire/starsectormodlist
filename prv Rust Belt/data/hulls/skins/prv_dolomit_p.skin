@@ -1,0 +1,40 @@
+{
+	"baseHullId":"prv_dolomit",
+	"skinHullId":"prv_dolomit_p",
+	"hullName":"Dolomit (P)",
+	"descriptionId":"prv_dolomit_p",
+	"descriptionPrefix":"This ship has been heavily modified - and poorly maintained - by its pirate crew. The installation of an oversized missile mount has significantly enhanced its firepower.",
+	"tags":["prv_pirate_bp"],
+	"tech":"Pirate",
+	"ordnancePoints":95,
+	#"fleetPoints":14,
+	#"suppliesToRecover":14,
+	#"suppliesPerMonth":14,
+	#"baseValueMult":1.25,
+	"spriteName":"graphics/prv/ships/prv_dolomit_p.png",
+	"systemId":"displacer_degraded",
+	#"addHints":[HIDE_IN_CODEX],
+	"removeWeaponSlots":["BI01","BI02","BI03","BI04"], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["eccm"], 		# hullmod ids
+	"removeBuiltInWeapons":["BI01","BI02","BI03","BI04"], 		# weapon slot ids
+	"weaponSlotChanges":{
+	   "WS0003":{
+		  "type": "BALLISTIC",
+	   },
+	   "WS0005":{
+		  "type": "BALLISTIC",
+		  "mount": "HARDPOINT",
+		  "arc": 5,
+	   },
+	   "WS0008":{
+		  "type": "MISSILE",
+		  "mount": "TURRET",
+		  "arc": 30,
+	   },
+    },
+	"engineSlotChanges":{
+		"0":{"style":"LOW_TECH"},
+		"1":{"style":"LOW_TECH"},
+	},    
+}

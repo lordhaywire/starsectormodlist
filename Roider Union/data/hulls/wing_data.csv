@@ -1,13 +1,11 @@
 id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
-roider_rocksaw_wing,roider_rocksaw_Fighter,"fighter4, fighter, rare_bp, roider, merc",2,,9,14,CLAW,3000,500,300,2,FIGHTER,Heavy Assault Fighter,15,16000,,,,,,,,,,,,,1
-roider_dragline_wing,roider_dragline_S,"support3, support, rare_bp, roider, merc",3,,7,15,V,0,500,,2,SUPPORT,Support,15,10000,,,,,,,,,,,,,2
+roider_rocksaw_wing,roider_rocksaw_Fighter,"fighter6, fighter, rare_bp, roider, merc",2,,9,14,CLAW,3000,500,300,2,FIGHTER,Heavy Fighter,15,12000,,,,,,,,,,,,,1
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,3
-roider_duster_wing,roider_duster_Fighter,"fighter5, fighter, roider, merc, rare_bp",1,,7,10,V,4000,500,700,3,FIGHTER,Heavy Fighter,10,6000,,,,,,,,,,,,,4
-roider_bolt_wing,roider_bolt_Fighter,"interceptor4, interceptor, roider, merc, rare_bp",1,,6,8,V,3000,1000,600,4,INTERCEPTOR,Interceptor,10,4000,,,,,,,,,,,,,5
+roider_duster_wing,roider_duster_Fighter,"interceptor4, interceptor, roider, roider_bp, merc",1,,6,10,V,4000,500,100,3,INTERCEPTOR,Heavy Interceptor,8,10000,,,,,,,,,,,,,4
+roider_bolt_wing,roider_bolt_Fighter,"interceptor4, interceptor, roider, merc, rare_bp",2,,5,8,V,3000,1000,600,4,INTERCEPTOR,Interceptor,10,8000,,,,,,,,,,,,,5
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,6
-roider_breaker_wing,roider_drone_breaker,"fighter2, fighter, roider, roider_bp, merc, auto_fighter",0,,3,2,V,4000,500,600,4,FIGHTER,Assault Drone,5,6000,,,,,,,,,,,,,7
-roider_tracker_wing,roider_drone_tracker,"fighter0, fighter, roider, roider_bp, merc, auto_fighter",0,,2,0,BOX,0,500,,6,FIGHTER,Defense Drone,3,5000,,,,,,,,,,,,,8
+roider_breaker_wing,roider_drone_breaker,"fighter2, fighter, roider, roider_bp, merc, auto_fighter",0,,3,2,V,4000,500,600,4,FIGHTER,Assault Drone,5,3000,,,,,,,,,,,,,7
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,9
-roider_hopskip2_wing,roider_hopskip2_Bomber,"bomber4, bomber, roider, merc",1,,5,13,CLAW,6000,2500,1000,2,BOMBER,Bomber,15,12000,,,,,,,,,,,,,10
-roider_armature_single_wing,roider_armature_Left,"bomber4, bomber, roider, merc, auto_fighter",3,,8,9,V,4000,2000,600,1,BOMBER,Strike Drone,18,8000,,,,,,,,,,,,,11
-roider_armature_wing,roider_armature_Bomber,"bomber6, bomber, roider, merc, auto_fighter, rare_bp",3,,16,20,V,4000,2000,600,2,BOMBER,Strike Drone,18,16000,,,,,,,,,,,,,12
+roider_hopskip2_wing,roider_hopskip2_Bomber,"bomber4, bomber, roider, merc, roider_bp",1,,5,13,CLAW,6000,2500,700,2,BOMBER,Bomber,15,9000,,,,,,,,,,,,,10
+roider_armature_single_wing,roider_armature_Left,"bomber4, bomber, roider, merc, auto_fighter",3,,5,9,V,4000,2000,500,1,BOMBER,Strike Drone,18,8000,,,,,,,,,,,,,11
+roider_armature_wing,roider_armature_Bomber,"bomber6, bomber, roider, merc, auto_fighter, rare_bp",3,,9,20,V,4000,2000,500,2,BOMBER,Strike Drone,18,16000,,,,,,,,,,,,,12

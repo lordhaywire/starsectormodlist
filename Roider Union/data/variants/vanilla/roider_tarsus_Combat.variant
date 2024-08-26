@@ -1,10 +1,11 @@
 {
     "displayName": "Combat",
     "fluxCapacitors": 6,
-    "fluxVents": 7,
+    "fluxVents": 8,
     "hullId": "tarsus",
     "hullMods": ["converted_hangar"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_tarsus_Combat",
     "weaponGroups": [
         {

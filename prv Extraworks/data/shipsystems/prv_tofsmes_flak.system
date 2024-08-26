@@ -1,0 +1,8 @@
+{
+	"id":"prv_tofsmes_flak",
+	"type":"WEAPON",
+	"aiType":"CANISTER_FLAK",
+	
+	"weaponDataId":"prv_tofsmes",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

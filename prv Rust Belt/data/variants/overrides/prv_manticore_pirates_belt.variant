@@ -1,0 +1,41 @@
+{
+  "variantId": "prv_manticore_pirates_belt",
+  "hullId": "manticore_pirates",
+  "displayName": "Belt",
+  "goalVariant": false,
+  "fluxCapacitors": 11,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "frontemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "jackhammer",
+        "WS 005": "jackhammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_lighttripleac",
+        "WS 002": "prv_lighttripleac",
+        "WS 003": "prv_lighttripleac"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

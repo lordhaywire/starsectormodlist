@@ -1,0 +1,124 @@
+{
+  "hullName": "huntsman",
+  "hullId": "filgap_huntsman",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/filgap/ships/filgap_huntsman.png",
+  "style": "LOW_TECH",
+  "height": 94,
+  "width": 61,
+  "center": [30, 48.5],
+  "collisionRadius": 69,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 60,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [33.5, 14]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 10,
+      "angle": 0,
+      "locations": [24.5, -25]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 240,
+      "angle": -30,
+      "locations": [4.5, -17]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -180,
+      "locations": [-16, -0.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 135,
+      "locations": [-4.5, 26]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -135,
+      "locations": [-3, -28.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-48.5, -0.5],
+      "length": 34.5,
+      "width": 11,
+      "angle": 180,
+      "contrailSize": 11,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-5.5, 26.5],
+      "length": 11.521298,
+      "width": 3.746824,
+      "angle": 127.5,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-5, -28.5],
+      "length": 11.521298,
+      "width": 3.746824,
+      "angle": -127.5,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34.5, 15.5],
+      "length": 12.5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-34.5, -17.5],
+      "length": 12.5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 128,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -49.5, -0,
+    -25.5, 23,
+    21, 28,
+    34, 15,
+    30.5, -10.5,
+    46, -14,
+    45, -22.5,
+    20, -32.5,
+    -2.5, -29.5,
+    -32.5, -21
+  ]
+}

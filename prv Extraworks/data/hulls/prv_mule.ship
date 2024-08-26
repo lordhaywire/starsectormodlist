@@ -1,0 +1,193 @@
+{
+  "hullName": "Mule (prv)",
+  "hullId": "prv_mule",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/prv/ships/prv_mule.png",
+  "style": "PRV_MID",
+  "height": 192,
+  "width": 128,
+  "center": [64, 91],
+  "collisionRadius": 130,
+  "shieldCenter": [4, 0],
+  "shieldRadius": 125,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_volatiledrivecore",
+    "prv_auxiliary"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [72, 36]
+    },
+    {
+      "id": "WS 002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [72, -36]
+    },
+    {
+      "id": "WS 003",
+      "size": "MEDIUM",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 0,
+      "locations": [60, 0]
+    },
+    {
+      "id": "WS 004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-12, 40]
+    },
+    {
+      "id": "WS 005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 180,
+      "locations": [-56, 0]
+    },
+    {
+      "id": "WS 006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-12, -40]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-82, 31],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-82, 23],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-82, 17],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-77, 0],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-82, -16],
+      "length": 32,
+      "width": 8,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-82, -22],
+      "length": 48,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-82, -30],
+      "length": 64,
+      "width": 16,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-44, 49],
+      "length": 16,
+      "width": 8,
+      "angle": 155,
+      "contrailSize": 128,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-50, 44],
+      "length": 8,
+      "width": 8,
+      "angle": 155,
+      "contrailSize": 128,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-50, -44],
+      "length": 8,
+      "width": 8,
+      "angle": -155,
+      "contrailSize": 128,
+      "style": "PRV_MID"
+    },
+    {
+      "location": [-44, -49],
+      "length": 16,
+      "width": 8,
+      "angle": -155,
+      "contrailSize": 128,
+      "style": "PRV_MID"
+    }
+  ],
+  "bounds": [
+    23, 39,
+    18, 34,
+    30, 26,
+    37, 37,
+    70, 40,
+    76, 18,
+    92, 6,
+    92, -6,
+    76, -18,
+    70, -40,
+    37, -37,
+    30, -26,
+    18, -34,
+    23, -39,
+    -7, -51,
+    -40, -52,
+    -47, -43,
+    -63, -43,
+    -70, -35,
+    -79, -33,
+    -72, -0,
+    -79, 33,
+    -70, 35,
+    -63, 43,
+    -47, 43,
+    -40, 52,
+    -7, 51
+  ]
+}

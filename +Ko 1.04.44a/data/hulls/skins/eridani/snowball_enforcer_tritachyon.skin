@@ -1,0 +1,44 @@
+{
+	"baseHullId":"enforcer",
+	"skinHullId":"snowball_enforcer_tritachyon",
+	"hullName":"Enforcer (EU)",
+	#"coversColor":[45,92,117,255],
+	"coversColor":[107,199,255,255],
+	#"style":"HIGH_TECH",#doesn't work lol
+	#"hullStyle":"HIGH_TECH",#doesn't work lol
+	"descriptionId":"enforcer",
+	"descriptionPrefix":"Inspired by the white snow of Eochu Bres, the Tri-Tachyon aesthetic variant of the Enforcer is supposed to allow the eye to embark on a journey full of tranquility and peace, and although this is an absolute weapon of terror in many soldiers' hands, this should not interfere with one's need to demonstrate beauty with their own behaviour. It is a technological achievement to create something retaining a rich look in spite of being made of equally if not less (according to what rumours say) expensive as the original enforcer's materials.",
+	"tags":["rare_bp","persean","independent","merc","eridani"],
+	"tech":"Eridani-Utopia",
+    "shieldEfficiency":0.8,
+	"spriteName":"graphics/ships/eridani/snowball_enforcer_tritachyon.png",
+	"builtInMods":["efficiency_overhaul"],
+	 "engineSlotChanges":{
+		"0":{
+            "style": "HIGH_TECH"
+        },
+        "1":{
+            "style": "HIGH_TECH"
+        },
+        "2":{
+            "style": "HIGH_TECH"
+        },
+        "3":{
+            "style": "HIGH_TECH"
+        },
+        "4":{
+            "style": "HIGH_TECH"
+        },
+        "5":{
+            "style": "HIGH_TECH"
+        }
+	 },
+#    "systemId":"microburn",
+    "weaponSlotChanges":{
+	   "WS 001":{"type": "ENERGY"},
+	   "WS 002":{"type": "ENERGY"},
+	   "WS 003":{"type": "ENERGY"},
+	   "WS 004":{"type": "ENERGY"},
+	   "WS 005":{"type": "ENERGY"},
+    },
+}

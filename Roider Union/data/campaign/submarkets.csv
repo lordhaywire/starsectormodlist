@@ -6,17 +6,6 @@ Weapons and other military hardware can be bought and sold here even if they're 
 
 Will buy locally illegal goods.
 
-Selling enough of a commodity will temporarily resolve a shortage.",scripts.campaign.submarkets.Roider_UnionHQSubmarketPlugin,,99
-roider_resupplyMarket,Resupply,,Trade supplies and fuel.,scripts.campaign.submarkets.Roider_ResupplySubmarketPlugin,,1
-roider_fringeMarket,"Open
-Market",,"The open market. Only legal goods may be traded here, and transactions are subject to tariffs. More goods are available when stability is high.
-
-Selling enough of a commodity will temporarily resolve a shortage.",scripts.campaign.submarkets.Roider_FringeSubmarketPlugin,,0
-roider_fringeBlackMarket,"Black
-Market",pirates,"The black market. Anything and everything can be bought or sold, and there are no tariffs. More goods are available when stability is low.
-
-Selling a commodity will not resolve a shortage.
-
-Black market transactions may catch the eye of authorities, resulting in cargo scans and reduced faction standing, unless the trades are carried out with the transponder turned off.
-
-Engaging in legitimate trade as a ""cover"" also reduces the probability of attracting the attention of authorities.",scripts.campaign.submarkets.Roider_FringeBlackSubmarketPlugin,,999
+Selling enough of a commodity will temporarily resolve a shortage.",roiderUnion.submarkets.UnionHQSubmarketController,,99
+roider_nomadMarket,"Roider
+Nomads",,"Trade with roider nomads of all stripes. Anything and everything can be bought or sold, but quantities are limited and transactions are subject to tariffs.",roiderUnion.submarkets.NomadSubmarketPlugin,,1

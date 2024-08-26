@@ -1,0 +1,53 @@
+{
+  "id":"prv_targetinglaser_ruster",
+  "beamEffect": "prv.rb.weapons.prv_targetinglaser_ruster_BeamEffect",
+  "collisionClass": "RAY_FIGHTER",
+  "collisionClassByFighter": "RAY_FIGHTER",
+  "coreColor": [
+	255,
+	255,
+	255,
+	155
+  ],
+  "fringeColor": [
+	255,64,0,255
+  ],
+  "glowColor": [
+    255,64,0,255
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "hardpointGlowSprite": "graphics/fx/empty.png",
+  "hardpointOffsets": [
+    0,
+    0
+  ],
+  "hardpointSprite": "graphics/fx/empty.png",
+  "hitGlowRadius": 0,
+  "pierceSet": [
+	PROJECTILE_FF,
+	PROJECTILE_NO_FF,
+	PROJECTILE_FIGHTER,
+	MISSILE_FF,
+	MISSILE_NO_FF
+  ],
+  "pixelsPerTexel": 5,
+  "size": "SMALL",
+  "specClass": "beam",
+  "textureType":SMOOTH,
+  "textureScrollSpeed":128.0,
+  "turretAngleOffsets": [
+    0
+  ],
+  "turretGlowSprite": "graphics/fx/empty.png",
+  "turretOffsets": [
+    0,
+    0
+  ],
+  "turretSprite": "graphics/fx/empty.png",
+  "type": "ENERGY",
+  "width": 11,
+  "hitGlowBrightenDuration":0.1,
+  "fireSoundOne":"targeting_laser_burst",
+}

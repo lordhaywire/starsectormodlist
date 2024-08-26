@@ -2,8 +2,8 @@
 	"id":"prv_gravity_orbits",
 	"type":"STAT_MOD",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.ai.systems.prv_gravity_orbits_ai",
-	"statsScript":"scripts.shipsystems.prv_gravity_orbits",
+	"aiScript":"prv.corp.ai.systems.prv_gravity_orbits_ai",
+	"statsScript":"prv.corp.shipsystems.prv_gravity_orbits",
 
 	"useSound":"system_emp_emitter_activate",
 	#"loopSound":"system_emp_emitter_loop",

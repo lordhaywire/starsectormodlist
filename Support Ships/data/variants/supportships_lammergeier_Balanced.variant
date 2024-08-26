@@ -3,7 +3,7 @@
   "hullId": "supportships_lammergeier",
   "displayName": "Balanced",
   "goalVariant": true,
-  "fluxCapacitors": 1,
+  "fluxCapacitors": 5,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],

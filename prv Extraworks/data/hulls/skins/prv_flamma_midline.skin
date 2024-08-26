@@ -1,0 +1,38 @@
+{
+	"baseHullId":"prv_flamma",
+	"skinHullId":"prv_flamma_midline",
+	"hullName":"Flamma (Diktat)",
+	"descriptionId":"prv_flamma_midline",
+	#"descriptionPrefix":"License-produced model of the Flamma manufactured in the Sindrian Diktat. This version opts for agility over durability.",
+	"tags":["prv_midline_bp","merc"],
+	"tech":"Midline",
+	"restoreToBaseHull":false,
+	"fleetPoints":6,
+	"suppliesToRecover":5,
+	"suppliesPerMonth":5,
+	"baseValueMult":0.9,
+	"spriteName":"graphics/prv/ships/prv_flamma_midline.png",
+	"systemId":"maneuveringjets",
+	"builtInMods":[ "prv_ramshield_modular" ],
+	"removeWeaponSlots":[], 		# ids
+	#"removeEngineSlots":[2, 4], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["prv_ramshield"], 		# hullmod ids
+	"weaponSlotChanges":{
+	   "WS0005":{
+		  #"type": "COMPOSITE",
+		  "type": "BALLISTIC",
+	   },
+	},
+	"builtInWeapons":{
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+	},    
+}

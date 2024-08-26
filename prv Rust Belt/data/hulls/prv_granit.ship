@@ -1,0 +1,129 @@
+{
+  "hullName": "Granit",
+  "hullId": "prv_granit",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/prv/ships/prv_granit.png",
+  "style": "PRV_LOW",
+  "height": 124,
+  "width": 96,
+  "center": [49, 55],
+  "collisionRadius": 83,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 82,
+  "viewOffset": 0,
+  "builtInMods": [
+    "prv_crewcomforts"
+  ],
+  "builtInWeapons": {
+    "WS0006": "prv_d_emitter_granit",
+    "WS0007": "prv_ljungeld_damaged"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [53, -10]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [31, 19]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": -90,
+      "locations": [-27, -20]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 90,
+      "locations": [-27, 22]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [14, -16]
+    },
+    {
+      "id": "SYS1",
+      "size": "SMALL",
+      "type": "SYSTEM",
+      "mount": "HARDPOINT",
+      "arc": 5,
+      "angle": 0,
+      "locations": [36, 37]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [17, 37]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-9.5, 37]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-54, 6.5],
+      "length": 42,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "PRV_LOW"
+    },
+    {
+      "location": [-54, -4.5],
+      "length": 42,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "PRV_LOW"
+    }
+  ],
+  "bounds": [
+    67.5, 2,
+    42.5, 1,
+    50, -15.5,
+    29.5, -20,
+    22, -27.5,
+    7, -28,
+    -7, -41,
+    -38, -42,
+    -52.5, -10.5,
+    -52, 15,
+    -41, 43,
+    -6.5, 47,
+    7, 28,
+    27, 27.5
+  ]
+}

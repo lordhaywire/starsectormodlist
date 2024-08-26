@@ -1,0 +1,2 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+#prv_agnifeeder,Xenobiological Outpost,20,75,,2,,,"structure, prv_agnifeeder",,graphics/prv/icons/industry/prv_agnifeeder.png,prv.agni.campaign.prvAgniFeeder,"A biological research facility, operating in utmost secrecy on a remote asteroid. It’s unclear exactly what is done here, but it does seem to calm the local astrofauna.",2070,LOW

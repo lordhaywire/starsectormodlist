@@ -67,6 +67,8 @@ public class LightShader implements ShaderAPI {
 
     static final String DATA_KEY = "shaderlib_LightShader";
 
+    public static final String DO_NOT_RENDER = "shaderlib_do_not_render";
+
     private static final Comparator<LightAPI> LIGHTSIZE = new Comparator<LightAPI>() {
         @Override
         public int compare(LightAPI light1, LightAPI light2) {
@@ -93,8 +95,6 @@ public class LightShader implements ShaderAPI {
     static float STANDARD_HEIGHT = 100f;
 
     private static final Vector2f ZERO = new Vector2f();
-
-    private static final Color deadSurface = new Color(0, 100, 150);
 
     private static final Vector2f tempVec = new Vector2f();
 
@@ -184,6 +184,7 @@ public class LightShader implements ShaderAPI {
     private int maxLineLights = 372;
     private int normalBufferId = 0;
     private boolean normalEnabled = false;
+    private boolean optimizeNormal = false;
     private int normalTex = 0;
     private int program = 0;
     private int programAux = 0;
@@ -608,6 +609,10 @@ public class LightShader implements ShaderAPI {
 
     @Override
     public void destroy() {
+        if (!enabled) {
+            return;
+        }
+
         if (program != 0) {
             ByteBuffer countbb = ByteBuffer.allocateDirect(4);
             ByteBuffer shadersbb = ByteBuffer.allocateDirect(8);
@@ -724,6 +729,7 @@ public class LightShader implements ShaderAPI {
     @Override
     public void initCombat() {
         Global.getCombatEngine().getCustomData().put(DATA_KEY, new LocalData());
+        Tessellate.clearCache();
 
         /*
          if (!enabled) { return; }
@@ -1658,8 +1664,11 @@ public class LightShader implements ShaderAPI {
         int size = asteroids.size();
         for (int i = 0; i < size; i++) {
             final CombatEntityAPI asteroid = asteroids.get(i);
-            final Vector2f asteroidLocation = asteroid.getLocation();
+            if (asteroid.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f asteroidLocation = asteroid.getLocation();
             if (!ShaderLib.isOnScreen(asteroidLocation, 100f)) { // You can't trust asteroid collision radius.
                 continue;
             }
@@ -1740,6 +1749,9 @@ public class LightShader implements ShaderAPI {
         size = ships.size();
         for (int i = 0; i < size; i++) {
             final ShipAPI ship = ships.get(i);
+            if ((optimizeNormal && ship.isHulk()) || ship.getCustomData().containsKey(DO_NOT_RENDER)) {
+                continue;
+            }
             Vector2f shipLocation = ship.getLocation();
 
             if (!ShaderLib.isOnScreen(shipLocation, 1.25f * ship.getCollisionRadius())) {
@@ -1809,8 +1821,6 @@ public class LightShader implements ShaderAPI {
 
             BoundsAPI bounds = ship.getVisualBounds();
             if (bounds != null) {
-                bounds.update(ship.getLocation(), ship.getFacing());
-
                 GL11.glEnable(GL11.GL_STENCIL_TEST);
                 GL11.glDisable(GL11.GL_DEPTH_TEST);
                 GL11.glDisable(GL11.GL_TEXTURE_2D);
@@ -1821,7 +1831,7 @@ public class LightShader implements ShaderAPI {
                 GL11.glClearStencil(0);
                 GL11.glClear(GL11.GL_STENCIL_BUFFER_BIT); // Clear stencil buffer
 
-                Tessellate.render(bounds, 1f, 1f, 1f, ship.getId());
+                Tessellate.render(bounds, 1f, 1f, 1f, ship);
 
                 GL11.glColorMask(true, true, true, true);
                 GL11.glStencilFunc(GL11.GL_EQUAL, 16, 0xFF); // Pass test if stencil value is 16
@@ -2189,8 +2199,11 @@ public class LightShader implements ShaderAPI {
         size = missiles.size();
         for (int i = 0; i < size; i++) {
             final MissileAPI missile = missiles.get(i);
-            final Vector2f missileLocation = missile.getLocation();
+            if (missile.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f missileLocation = missile.getLocation();
             if (!ShaderLib.isOnScreen(missileLocation, 1.25f * missile.getCollisionRadius())) {
                 continue;
             }
@@ -2319,8 +2332,11 @@ public class LightShader implements ShaderAPI {
         int size = asteroids.size();
         for (int i = 0; i < size; i++) {
             final CombatEntityAPI asteroid = asteroids.get(i);
-            final Vector2f asteroidLocation = asteroid.getLocation();
+            if (asteroid.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f asteroidLocation = asteroid.getLocation();
             if (!ShaderLib.isOnScreen(asteroidLocation, 100f)) { // You can't trust asteroid collision radius.
                 continue;
             }
@@ -2359,6 +2375,9 @@ public class LightShader implements ShaderAPI {
         size = ships.size();
         for (int i = 0; i < size; i++) {
             final ShipAPI ship = ships.get(i);
+            if ((optimizeNormal && ship.isHulk()) || ship.getCustomData().containsKey(DO_NOT_RENDER)) {
+                continue;
+            }
             final Vector2f shipLocation = ship.getLocation();
 
             if (!ShaderLib.isOnScreen(shipLocation, 1.25f * ship.getCollisionRadius())) {
@@ -2366,6 +2385,9 @@ public class LightShader implements ShaderAPI {
             }
 
             TextureEntry entry = ShaderLib.getShipTexture(ship, TextureDataType.SURFACE_MAP);
+            if (ship.isHulk()) {
+                entry = null;
+            }
             SpriteAPI sprite;
             SpriteAPI originalSprite = ship.getSpriteAPI();
             Color originalColor = null;
@@ -2375,9 +2397,6 @@ public class LightShader implements ShaderAPI {
                 sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                 sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
                 sprite.setAlphaMult(ship.getCombinedAlphaMult());
-                if (ship.isHulk()) {
-                    sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                }
             } else {
                 sprite = originalSprite;
                 originalColor = sprite.getColor();
@@ -2387,8 +2406,6 @@ public class LightShader implements ShaderAPI {
 
             BoundsAPI bounds = ship.getVisualBounds();
             if (bounds != null) {
-                bounds.update(ship.getLocation(), ship.getFacing());
-
                 GL11.glEnable(GL11.GL_STENCIL_TEST);
                 GL11.glDisable(GL11.GL_DEPTH_TEST);
                 GL11.glDisable(GL11.GL_TEXTURE_2D);
@@ -2399,7 +2416,7 @@ public class LightShader implements ShaderAPI {
                 GL11.glClearStencil(0);
                 GL11.glClear(GL11.GL_STENCIL_BUFFER_BIT); // Clear stencil buffer
 
-                Tessellate.render(bounds, 1f, 1f, 1f, ship.getId());
+                Tessellate.render(bounds, 1f, 1f, 1f, ship);
 
                 GL11.glColorMask(true, true, true, true);
                 GL11.glStencilFunc(GL11.GL_EQUAL, 16, 0xFF); // Pass test if stencil value is 16
@@ -2496,9 +2513,6 @@ public class LightShader implements ShaderAPI {
                         sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                         sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
                         sprite.setAlphaMult(Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult()));
-                        if (ship.isHulk()) {
-                            sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                        }
                         sprite.renderAtCenter(slotLocation.x, slotLocation.y);
                     } else {
                         sprite = originalSprite;
@@ -2549,9 +2563,6 @@ public class LightShader implements ShaderAPI {
                             sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                             sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
                             sprite.setAlphaMult(Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult()));
-                            if (ship.isHulk()) {
-                                sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                            }
                             sprite.renderAtCenter(weaponLocation.x, weaponLocation.y);
                         } else {
                             sprite = originalSprite;
@@ -2589,9 +2600,6 @@ public class LightShader implements ShaderAPI {
                             sprite = entry.sprite;
                             sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                             sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
-                            if (ship.isHulk()) {
-                                sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                            }
                             weapon.renderBarrel(sprite, weaponLocation,
                                     Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult()));
                         } else {
@@ -2633,9 +2641,6 @@ public class LightShader implements ShaderAPI {
                             sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                             sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
                             sprite.setAlphaMult(Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult()));
-                            if (ship.isHulk()) {
-                                sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                            }
                             sprite.renderAtCenter(weaponLocation.x, weaponLocation.y);
                         } else {
                             sprite = originalSprite;
@@ -2673,9 +2678,6 @@ public class LightShader implements ShaderAPI {
                             sprite = entry.sprite;
                             sprite.setSize(originalSprite.getWidth(), originalSprite.getHeight());
                             sprite.setCenter(originalSprite.getCenterX(), originalSprite.getCenterY());
-                            if (ship.isHulk()) {
-                                sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                            }
                             weapon.renderBarrel(sprite, weaponLocation,
                                     Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult()));
                         } else {
@@ -2713,9 +2715,6 @@ public class LightShader implements ShaderAPI {
                                 sprite.setAlphaMult(
                                         Math.min(ship.getCombinedAlphaMult(), originalSprite.getAlphaMult())
                                         * msl.getBrightness());
-                                if (ship.isHulk()) {
-                                    sprite.setColor(new Color(deadSurface.getRed(), deadSurface.getGreen(), deadSurface.getBlue(), sprite.getColor().getAlpha()));
-                                }
                                 sprite.renderAtCenter(missileLocation.x + renderOffset.x,
                                         missileLocation.y + renderOffset.y);
                             } else {
@@ -2738,8 +2737,11 @@ public class LightShader implements ShaderAPI {
         size = missiles.size();
         for (int i = 0; i < size; i++) {
             final MissileAPI missile = missiles.get(i);
-            final Vector2f missileLocation = missile.getLocation();
+            if (missile.getCustomData().containsKey(LightShader.DO_NOT_RENDER)) {
+                continue;
+            }
 
+            final Vector2f missileLocation = missile.getLocation();
             if (!ShaderLib.isOnScreen(missileLocation, 1.25f * missile.getCollisionRadius())) {
                 continue;
             }
@@ -2801,6 +2803,7 @@ public class LightShader implements ShaderAPI {
         bloomScale = (float) settings.getDouble("bloomScale");
         bloomIntensity = (float) settings.getDouble("bloomIntensity");
         normalEnabled = settings.getBoolean("enableNormal");
+        optimizeNormal = settings.getBoolean("optimizeNormals");
         specularMultiplier = (float) settings.getDouble("specularIntensity");
         specularHardness = (float) settings.getDouble("specularHardness");
         flatness = (float) settings.getDouble("normalFlatness");

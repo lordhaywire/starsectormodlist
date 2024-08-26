@@ -1,0 +1,44 @@
+Bar event and dialogue trigger requirements:
+
+Rich Miner (Flavor)
+- Open comm link with a Ruster fleet.
+- System is not in the populated core.
+- Other fleet is smaller than yours.
+- You have been identified.
+- You have friendly relations with the Rust Belt.
+
+Concourse Firefight (Flavor)
+- Market is Outer Yard.
+- Outer Yard is owned by the Rust Belt.
+- Trigger chance is higher at stability 4 or less.
+
+Grinning man at private table (Orbital Station - Ruster blueprint)
+- Market is owned by the Rust Belt.
+- Player has a colony or at least 1 million credits.
+- Player has a relationship with the market owner no worse than Suspicious.
+- Player does not already know how to build a Orbital Station - Ruster.
+
+###
+
+Bounty trigger requirements:
+
+Göran Fridén
+- 25 FP player fleet size.
+- Market owner: Rust Belt, Pirates, or an ally of either.
+
+Sanna, The Green Devil
+- 50 FP player fleet size.
+- Market: Ryak High-Energy Labs.
+-- If the HEL is not present in the sector, Market owner: prv.
+
+Fristaten Lasse
+- 50 FP player fleet size.
+- Market owner: Independent, Pirates or an ally of either.
+
+Flight Into the Unknown
+- 75 FP player fleet size.
+- Market owner: prv or prv ally.
+
+Ivar Balke
+- 100 FP player fleet size.
+- Market owner: Hegemony.

@@ -1,0 +1,134 @@
+{
+  "hullName": "Optio",
+  "hullId": "acs_optio",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/acs_optio.png",
+  "style": "MIDLINE",
+  "height": 99,
+  "width": 98,
+  "center": [49, 49.5],
+  "collisionRadius": 115,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 85.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    "hardenedshieldemitter",
+    "pointdefenseai"
+  ],
+  "builtInWings": [
+    "acs_hastati_wing"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 246,
+      "angle": 51,
+      "locations": [18.5, 23],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 246,
+      "angle": -51,
+      "locations": [18.5, -23],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 246,
+      "angle": 115.5,
+      "locations": [-32.5, 32],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 246,
+      "angle": -115.5,
+      "locations": [-32.5, -32],
+      "renderOrderMod": 5
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -22, 0.5,
+        -19.5, -0.5
+      ]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 18,
+      "angle": 0,
+      "locations": [37.5, 9],
+      "renderOrderMod": 2
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 18,
+      "angle": 0,
+      "locations": [39.5, -8]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-44.5, 13],
+      "length": 52,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 52,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-44, -13],
+      "length": 52,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 52,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-47, -21.5],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 40,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-47.5, 21.5],
+      "length": 40,
+      "width": 12,
+      "angle": 180,
+      "contrailSize": 40,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    31, -39,
+    -35, -44,
+    -35, 44,
+    31, 39
+  ]
+}

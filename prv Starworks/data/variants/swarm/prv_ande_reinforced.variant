@@ -3,12 +3,12 @@
   "hullId": "prv_ande",
   "displayName": "Reinforced",
   "goalVariant": true,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 2,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
-    "fluxbreakers"
+    "advancedoptics"
   ],
   "weaponGroups": [
     {

@@ -1,0 +1,21 @@
+{
+  "id":"prvextra",
+	"name":"prv Extraworks",
+	"author":"Prav",	
+	"version":"v8",
+	"description":"Adds additional content to the prv Starworks and Rust Belt mods.",
+	"gameVersion":"0.97a-RC6",
+	"dependencies": [
+		{
+			"id": "prv",
+			"name": "prv Starworks",
+			"version": "v28"
+		},
+		{
+			"id": "prvrb",
+			"name": "prv Rust Belt",
+			#"version": "v1"
+		},
+	],
+	"jars":["jar/prvextra.jar"],
+}

@@ -14,8 +14,8 @@
 				"spaceport",
 				"roider_union_hq",
 				"orbitalstation_high",
-				"heavybatteries",
-			],
+				"heavybatteries"
+			]
 		},
 		{
 			"entities":["roider_maggies"],
@@ -29,13 +29,12 @@
 				"population",
 				"spaceport",
 				"patrolhq",
-				"roider_dives",
+				["roider_dives", "roider_charter"],
 				"lightindustry",
-				"battlestation_mid",
-				"heavybatteries",
-			],
+				"heavybatteries"
+			]
 		}
-	],
+	]
 
 }
 

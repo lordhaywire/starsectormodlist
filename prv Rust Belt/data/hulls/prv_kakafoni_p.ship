@@ -1,0 +1,274 @@
+{
+  "hullName": "Kakafoni (P)",
+  "hullId": "prv_kakafoni_p",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/prv/ships/prv_kakafoni_p.png",
+  "style": "LOW_TECH",
+  "height": 197,
+  "width": 342,
+  "center": [171, 98],
+  "collisionRadius": 224,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 177.5,
+  "viewOffset": 0,
+  "builtInMods": [
+    #"prv_volatiledrivecore",
+    #"prv_ramshield_modular"
+  ],
+  "builtInWeapons": {
+    "WS0009": "prv_d_cover_kakafoni_p_main",
+    "WS0012": "prv_d_cover_kakafoni_p_left"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [9, 68]
+    },
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": -0,
+      "locations": [5, -68]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": 45,
+      "locations": [12, 118.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 200,
+      "angle": -45,
+      "locations": [12, -118.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 135,
+      "locations": [-26, 132]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -135,
+      "locations": [-26, -132]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 135,
+      "angle": 0,
+      "locations": [18, -0]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 150,
+      "locations": [-76, 61]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -150,
+      "locations": [-76, -61]
+    },
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -49, -45,
+        -42.5, -51.5,
+        -33.5, -24.5,
+        -48.5, -31,
+        -62, -48.5,
+        -33.5, -34,
+        -49, -8
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        -32, 39,
+        -48, 56,
+        -64.5, 45.5,
+        -33, 16.5,
+        -49.5, 4.5,
+        -38, 7.5,
+        -52, 37.5,
+        -43.5, 24.5
+      ]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "HARDPOINT",
+      "arc": 15,
+      "angle": 0,
+      "locations": [15, 95]
+    },
+    {
+      "id": "WS0009",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 15,
+      "angle": -0,
+      "locations": [-1, -68.5],
+      "renderOrderMod": 3
+    },
+    {
+      "id": "WS0012",
+      "size": "LARGE",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 15,
+      "angle": -0,
+      "locations": [9.5, 81.5],
+      "renderOrderMod": 3
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-53, 117],
+      "length": 75,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53, -117],
+      "length": 75,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, 85],
+      "length": 90,
+      "width": 23,
+      "angle": 180,
+      "contrailSize": 23,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-65, -85],
+      "length": 90,
+      "width": 23,
+      "angle": 180,
+      "contrailSize": 23,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51, 99],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51, -99],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-52, 106],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-52, -106],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-56, 92],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-56, -92],
+      "length": 25,
+      "width": 7,
+      "angle": 180,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -46, 18.5,
+    -89, 61,
+    -52.5, 85.5,
+    -46.5, 132.5,
+    -20.5, 158,
+    2, 134,
+    19.5, 145,
+    31.5, 130,
+    15, 66.5,
+    22, 26.5,
+    75, 14.5,
+    78, 18.5,
+    92.5, 6.5,
+    92.5, -6.5,
+    78, -18.5,
+    75, -14.5,
+    22, -26.5,
+    15, -66.5,
+    31.5, -130,
+    19.5, -145,
+    2, -134,
+    -20.5, -158,
+    -46.5, -132.5,
+    -52.5, -85.5,
+    -89, -61,
+    -46, -18.5,
+    -62.5, 0
+  ]
+}

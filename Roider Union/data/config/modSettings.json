@@ -1,41 +1,23 @@
 {
+	"RetroLib": {
+		"retroLib_conversionPriceMult": 1.0
+	},
 	"RoiderUnion":{
-		"roider_minIndieRoiderBases":2,
-		"roider_maxIndieRoiderBases":3,
-		"roider_maxRoiderFringeHQs":1,
+		"maxNomadFleets": 10,
+		"maxNomadTradeFleets": 10,
 		
-		"roider_maxExpeditions":5,
-		"roider_expeditionDelay":90, # days after tutorial finishes, 90 default
-		"roider_expeditionLootFactions":[ # factions for shipwreck selection
-			"independent",
-			"pirates",
-			"hegemony",
-			"persean",
-			"tritachyon",
-			"hegemony",
-			"luddic_church",
-			"luddic_path",
-			"roider"
-		],
-		
-		"roider_conversionPriceMult":0.98,
-		
-		# Conversion fleet settings
-		"roider_aprMaxFleets":6,
-		"roider_aprFactions":{ # Factions that can spawn conversion fleets
-			"independent": 2, # weight is multiplied by number of Dives/HQs
-			"hegemony": 1,
-			"persean": 1,
-			"roider": 1, # no boost for Roiders since they already have Union HQs
-			"pirates": 2,
+		"maxNomadBases": 5,
+		"maxT5NomadBases": 1,
+		"maxT4NomadBases": 1,
+		"maxT3NomadBases": 1,
+		"nomadBaseSpawnIntervalMax": 220,
+		"nomadBaseSpawnIntervalMin": 150,
+		"nomadBaseFactionWeights":{
+			"roider": 1,
+			"independent": 1
 		},
-		"roider_aprFactionsNoRep":[ # Factions that don't have rep requirements
-			"pirates",
-		],
-		"roider_aprFactionsNoCom":[ # Factions that don't require commissions
-			"independent",
-			"pirates",
-		],
+
+		"maxMiningFleets": 30,
 		
 		# Required rep level to buy ship at Union HQ
 		# Overrides retrofit spec requirements, if they exist
@@ -82,6 +64,7 @@
 		},
 		"mining_weapon_strengths":{
 			"roider_blastinglaser": 6,
+			"roider_hammer_armature": 0.75,
 		},
 	}
 }

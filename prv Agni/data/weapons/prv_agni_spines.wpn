@@ -1,0 +1,71 @@
+{
+  "id": "prv_agni_spines",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_spine_shot",
+  "type": "BALLISTIC",
+  "size": "MEDIUM",
+  "everyFrameEffect": "prv.agni.weapons.prv_agni_FluxInhibitedAmmoRegen",
+  "turretSprite": "graphics/prv/weapons/prv_agni_spines_turret.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_spines_hardpoint.png",
+  "turretOffsets": [
+    11,
+    2.5,
+    11,
+    -2.5,
+    10,
+    -10,
+    10,
+    10,
+    4,
+    -12,
+    4,
+    12
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    2,
+    15,
+    -2,
+    7,
+    -12,
+    7,
+    12,
+    13,
+    -10,
+    13,
+    10
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 48,
+    "spread": 24,
+    "particleSizeMin": 3,
+    "particleSizeRange": 9,
+    "particleDuration": 0.5,
+    "particleCount": 20,
+    "particleColor": [
+      64,
+      128,
+      48,
+      255
+    ]
+  },
+  "fireSoundTwo": "railgun_fire",
+}

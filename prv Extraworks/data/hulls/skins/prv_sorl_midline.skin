@@ -1,0 +1,36 @@
+{
+	"baseHullId":"prv_sorl",
+	"skinHullId":"prv_sorl_midline",
+	"hullName":"Sorl (League)",
+	"descriptionId":"prv_sorl_midline",
+	"tags":["prv_midline_bp","merc"],
+	"tech":"Midline",
+	"restoreToBaseHull":false,
+	"spriteName":"graphics/prv/ships/prv_sorl_midline.png",
+	"systemId":"maneuveringjets",
+	"builtInMods":["prv_ramshield_modular"],
+	"removeBuiltInMods":["prv_companion_integration","prv_ramshield","prv_gengangare"], 
+	"weaponSlotChanges":{
+	   "WS0005":{
+		  "type": "MISSILE"
+	   },
+	   "WS0006":{
+		  "type": "MISSILE",
+	   },
+	   "WS0007":{
+		  "type": "HYBRID",
+	   },
+    },
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+		"8":{"style":"MIDLINE"},
+		"9":{"style":"MIDLINE"},
+	}, 
+}

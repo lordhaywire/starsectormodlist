@@ -1,0 +1,80 @@
+{
+	"starSystem":"Ivree",
+	"markets":[
+
+		{
+		"entities":["scilly"],
+			"faction":"tritachyon",
+			"size":5,
+			"startingConditions":[
+				"ice",
+				"thin_atmosphere",
+				"organics_common",
+				"volatiles_trace",
+				"population_5",
+				#"military_base",
+				#"organics_complex",
+				#"outpost",
+				"low_gravity",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"grounddefenses",
+				"militarybase",
+				"waystation",
+			],
+
+		},
+		{
+			"entities":["nirut"],
+			"faction":"hegemony",
+			"size":4,
+			"startingConditions":[
+				"terran",
+				"ruins_scattered",
+				"population_4",
+				#"frontier",
+				#"outpost",
+				"farmland_adequate",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+				"lightindustry",
+				"heavybatteries",
+				"patrolhq",
+			],
+
+		},
+		{
+			"entities":["barra_station"],
+			"faction":"luddic_church",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				#"orbital_station",
+				#"large_refugee_population",
+				#"luddic_majority",
+				#"military_base",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"militarybase",
+				"orbitalstation",
+				["orbitalworks"],
+
+			],
+
+		},
+
+	],
+	
+}
+
+
+

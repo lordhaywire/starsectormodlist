@@ -1,6 +1,11 @@
 {
 	"id":"prv_skata_lrm",
-	"onHitEffect":"scripts.weapons.prv_skata_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_skata_OnHitEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+	      "soup_duration":3f,
+	      "soup_dps":200f,
+	      "soup_size":100f
+	},
 	"specClass":"missile",	
 	"missileType":"MISSILE",
 	"sprite":"graphics/prv/missiles/prv_missile_skata.png",

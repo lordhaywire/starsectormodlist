@@ -5,23 +5,24 @@
     "fluxVents": 9,
     "goalVariant": true,
     "hullId": "roider_cyclops",
-    "hullMods": ["hardened_subsystems","fluxbreakers"],
+    "hullMods": [
+        "hardened_subsystems",
+        "fluxbreakers"
+    ],
     "permaMods": [],
     "variantId": "roider_cyclops_Escort",
     "weaponGroups": [
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {
-                "WS 003": "flak"
-            }
+            "weapons": {"WS 003": "arbalest"}
         },
         {
             "autofire": true,
             "mode": "LINKED",
             "weapons": {
-                "WS 001": "lightac",
-                "WS 002": "lightac"
+                "WS 001": "roider_marksman",
+                "WS 002": "roider_marksman"
             }
         }
     ]

@@ -1,0 +1,305 @@
+{
+  "bounds": [
+    65,
+    77.5,
+    64.5,
+    36,
+    77.5,
+    25.5,
+    50.5,
+    21,
+    47.5,
+    12.5,
+    26,
+    11.5,
+    17.5,
+    2,
+    20,
+    -6.5,
+    77.5,
+    -19.5,
+    77.5,
+    -30.5,
+    97.5,
+    -31,
+    96.5,
+    -41,
+    67.5,
+    -59.5,
+    62.5,
+    -80,
+    39,
+    -81.5,
+    24,
+    -101,
+    -22,
+    -102,
+    -57,
+    -81,
+    -54,
+    -55,
+    -35,
+    -48,
+    -70.5,
+    -34.5,
+    -62,
+    -28,
+    -57,
+    25,
+    -69.5,
+    36.5,
+    -44,
+    43,
+    -34,
+    54,
+    -57,
+    59,
+    -58,
+    88,
+    -20,
+    104,
+    23,
+    105
+  ],
+  "builtInMods": [
+    "repair_gantry"
+  ],
+  "center": [
+    111,
+    88
+  ],
+  "collisionRadius": 150,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -62,
+        77
+      ],
+      "style": "LOW_TECH",
+      "width": 32
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -63,
+        66
+      ],
+      "style": "LOW_TECH",
+      "width": 32
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -63,
+        -64
+      ],
+      "style": "LOW_TECH",
+      "width": 32
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -63,
+        -75
+      ],
+      "style": "LOW_TECH",
+      "width": 32
+    }
+  ],
+  "height": 190,
+  "hullId": "filgap_babel",
+  "hullName": "babel",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    1,
+    1
+  ],
+  "shieldRadius": 140,
+  "spriteName": "graphics/filgap/ships/filgap_babel.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 40,
+      "arc": 200,
+      "id": "WS 003",
+      "locations": [
+        28,
+        80
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -50,
+      "arc": 200,
+      "id": "WS 004",
+      "locations": [
+        20,
+        -80
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "SYNERGY"
+    },
+    {
+      "angle": -20,
+      "arc": 200,
+      "id": "WS 007",
+      "locations": [
+        68,
+        -42
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -80,
+      "arc": 210,
+      "id": "WS 008",
+      "locations": [
+        1,
+        -101
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 80,
+      "arc": 210,
+      "id": "WS 011",
+      "locations": [
+        2,
+        103
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 110,
+      "id": "WS 013",
+      "locations": [
+        46,
+        64
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 180,
+      "arc": 150,
+      "id": "WS 014",
+      "locations": [
+        -58,
+        -2
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 300,
+      "id": "WS 015",
+      "locations": [
+        -34,
+        17,
+        -50,
+        -21
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 300,
+      "id": "WS 016",
+      "locations": [
+        -47,
+        26
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 300,
+      "id": "WS 017",
+      "locations": [
+        -35,
+        -17,
+        -48,
+        13
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        -22.5,
+        105
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0002",
+      "locations": [
+        -22.5,
+        -105
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 133.5,
+      "arc": 0,
+      "id": "WS0003",
+      "locations": [
+        -65.5,
+        40
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -133.5,
+      "arc": 0,
+      "id": "WS0004",
+      "locations": [
+        -65.5,
+        -40
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 220
+}

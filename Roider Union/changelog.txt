@@ -1,16 +1,136 @@
-Version 1.4.6
+Version 2.1.0
+ New Features
+ - Added Historical Roider Charter special item for Roider Dives and Union HQ
+   - Boosts production, mining range, and fleet size
+ - Organics are now available as void resources for Dives and Union HQ to gather
+ 
  Changes
- - Updated to 0.96a
- - Removed MagicLib version requirement
+ - Nerfed Calidor's Interdiction Sequence
+   - Reduced range from 1000 to 800
+   - Restarts target's engines after a few seconds
+ - Void resources in Roider systems are now preset
+ - Rebalanced void resource generation - roughly a bell curve, now
  
  Bug Fixes
- - Fixed crash when tech expedition's source market is destroyed
+ - Fixed cargo screen lag 100%
+ - Fixed nomad bases in fringe not accurately tracking commodity sales for shortages/surpluses
+ - Fixed Mad MIDAS bar event's bad result being shown - it was still happening, though
 
 
-Version 1.4.5
+Version 2.0.6
+ Bug Fixes
+ - Fixed initialization crash on new game
+
+
+Version 2.0.6
+ Bug Fixes
+ - Fixed prospector fleets being spammed
+ - Fixed Union HQ submarket and retrofitting not using Roider Union rep/commission
+ - Fixed NPE from Rockpiper Shipworks
+ - Reduced lag when opening inventory - still looking for main cause
+
+
+Version 2.0.5
+ Bug Fixes
+ - Fixed random Phasenet crash
+ - Added missing Ring Flare Launcher description
+ - Blocked roider prospectors from spawning in some invalid places
+
+
+Version 2.0.4
  New Features
- - reenabled MIDAS terrain effects thanks to MagicLib update
- - added BetterColony support
+ - Added Ring Flare Launcher
+   - Used by Argos-class mothership and Jane-class tanker
+ 
+ Bug Fixes
+ - Fixed incompatibility crash with Ashes of the Domain
+ - Stopped Neural Link hullmods from being transferred to armor modules
+
+
+Version 2.0.3
+ Changes
+ - Improved Zap SRM's zap visual
+ - Improved Phasenet's zapping visuals
+
+ Bug Fixes
+ - Fixed Wrecker towing crash
+
+
+Version 2.0.2
+ Bug Fixes
+ - Fixed crash when replacing Roider Union capital
+ - Corrected Rocksaw normal map's name
+
+
+Version 2.0.1
+ Changes
+ - Roach's armor module now temporal shifts with it
+ - Fixed a few variants affected by vanilla's weapon OP changes that slipped by my first pass
+
+ Bug Fixes
+ - Fixed NoClassDefFoundError crash when starting a game with Nexerelin
+
+
+Version 2.0
+ New Features
+ - Moved all code from Java to Kotlin
+ - Added Doldrums Chaingun - small kinetic burst gun
+ - Added Calidor-class carrier - premium destroyer carrier
+ - Added Cowboy-class light (frigate) carrier
+   - Renamed destroyer Cowboy to Trailboss
+ - Added S-Mod effect to MIDAS - reduces kinetic damage to hull/armor
+ - Added S-Mod effect to Firestorm Integration -  gives Ballistic Rangefinder's effects
+ - Unified fringe mechanics under "nomads" concept
+   - Fringe stations come in various sizes and all offer retrofits through special Argosi Bazaari industry
+   - Nomad trade fleets travel between fringe stations and core worlds
+   - Systems with Roider Union stations display transponder warning on jump points
+   - If Korovin is lost, a fringe Roider station will replace it as Roider Union's capital
+ - Added an industry BP for Roider Dives, which now costs less to build
+ - Improved Sharpshooter's hit chance
+ - Moved most retrofitting code to new RetroLib library mod
+   - Added generic frame hulls - convert any ship to a Roider ship!
+ - Externalized all strings for translators
+ - Maybe other stuff not covered in Changes section
+ 
+ Changes
+ - Reworked Argos mothership
+   - Replaced some weapon mounts with drone wings
+   - Added Drone Reserves hullmod - 100% replacement rate and replaces whole wing at a time
+ - Reworked Ranch carrier into heavy carrier
+   - Armor! Guns! Still lots of fighters!
+ - Reworked Gambit fast cruiser
+   - Added pirate Gambit
+ - Gave Bombard destroyer the LIDAR Array system
+   - Removed DTC hullmod
+ - Blasting Laser is now a Hybrid (Energy) weapon
+ - Rotary Hammer Launcher is now a premium 12 OP missile weapon
+   - Triple shot with select-fire
+ - Added Holistic Gyro-Stabilizer hullmod to Cyclops
+   - Reduced recoil, faster turret rotation, increased medium ballistic/hybrid range
+ - Added an escape burn system to Hopskip Mk.II bomber
+   - Reduced cruise speed
+ - Renamed Onager destroyer to Aurochs destroyer
+   - Removed old Aurochs
+ - Renamed Cowboy light carrier to Trailboss light carrier
+   - Changed built-in drones to open slot
+   - Added Outrider hullmod - blocks bombers
+   - Changed medium ballistic turret to energy
+ - Renamed Sheriff frigate to Desperado frigate
+   - Removed drone wing and reworked weapon mounts
+ - Reworked Rocksaw heavy fighter
+   - Now has Doldrums Chaingun as main armament
+ - Renamed Armature strike drone to Tracker strike drone
+   - Removed old Tracker
+   - If carrier has MIDAS, provides a speed boost to carrier's other fighters
+ - SP-improved a couple Roider Union industries
+ - Removed Ogrov, Dragline, Nolasher
+ - Removed ability to build in Tracker Swap
+ - Reduced number of particles in Pile Driver's onFire effects
+ - Other changes I've lost track of
+ 
+ Bug Fixes
+ - Removed a lot of possible NPEs
+ - Fixed some issues with Phasenet pull speed
 
 
 Version 1.4.4

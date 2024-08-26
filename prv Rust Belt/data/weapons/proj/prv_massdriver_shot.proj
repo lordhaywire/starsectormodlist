@@ -1,0 +1,36 @@
+{
+	"id":"prv_massdriver_shot",
+	"onFireEffect":"prv.rb.weapons.prv_massdriver_OnFireEffect",
+	"passThroughMissiles":true,	
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":250.0,
+	"hitGlowRadius":75,
+	"width":10,
+	"fadeTime":0.5,
+	
+	## color
+	# blue 200°
+	"fringeColor":[178,229,255,127],
+	"coreColor":[255,255,255,255],	
+	"glowColor":[178,229,255,25],
+	# green 160°
+	#"fringeColor":[204,255,238,127],
+	#"coreColor":[229,255,247,200],	
+	#"glowColor":[204,255,238,25],
+	# yellow 40°
+	#"fringeColor":[235,180,60,127],
+	#"coreColor":[255,255,255,255],	
+	#"glowColor":[235,220,180,25],
+	## end color
+	
+	"glowRadius":75,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":0.5,
+	"bulletSprite":"graphics/prv/missiles/prv_shell_massdriver.png"
+	#"bulletSprite":"graphics/missiles/shell_round_lrg.png"
+}

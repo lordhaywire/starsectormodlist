@@ -2,11 +2,11 @@
     "masterVersionFile":"https://www.sc2mafia.com/Starsector/version/audioplus.version",
     "modName":"Audio Plus",
     "modThreadId":10985,
-    "directDownloadURL": "https://bitbucket.org/modmafia/audio-plus/downloads/Audio_Plus_1.2.0.7z",
+    "directDownloadURL": "https://bitbucket.org/modmafia/audio-plus/downloads/Audio_Plus_1.2.1.7z",
     "modVersion":
     {
         "major":1,
         "minor":2,
-        "patch":0
+        "patch":1
     },
 }

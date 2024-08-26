@@ -1,0 +1,18 @@
+{
+	"hullFrequency":{
+		"hulls":{
+			"prv_enforcer_rb":0.8,
+			"enforcer_d_pirates":0.4,
+			"prv_grendel_rb":0.5, 	#uncommon
+		},
+	},
+	"variantOverrides":{
+		###10
+            "prv_gnejs_p_pirate":2,		#standard
+		"prv_gnejs_p_ambush":2,		#standard
+            "prv_gnejs_p_privateer":4,	#rb-only
+            ###10
+            "prv_eld_rb_assault":5,		#rb-only
+            "prv_eld_rb_belt":5,		#rb-only
+	},
+},	

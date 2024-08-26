@@ -1,0 +1,80 @@
+{
+	"starSystem":"arcadia",
+	"markets":[
+		{
+			"entities":["nomios"],
+			"faction":"MaybeGoogle",
+			"size":5,
+			"startingConditions":[
+				"population_5",
+				"thin_atmosphere",
+				"cold",
+				"volatiles_abundant",
+				"organics_common",
+				"rogue_ai_core",
+                "stealth_minefields",
+                #"trade_center",
+			],
+			"industries":[
+				["population", "orbital_fusion_lamp"],
+				"spaceport",
+				["cryosanctum", "dealmaker_holosuite"],
+				"heavybatteries",
+				"militarybase",
+				"lightindustry",
+				"cryorevival",
+				"orbitalstation_high",
+                "mining",
+			],
+		},
+		{
+			"entities":["arcadia_station"],
+			"faction":"hegemony",
+			"size":5,
+			"startingConditions":[
+				"volatiles_abundant",
+                "outpost",
+				"population_5",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"militarybase",
+				"starfortress",
+				"mining",
+                #"commerce",
+                "grounddefenses",
+                "waystation",
+			],
+		},
+		{
+			"entities":["agreus"],
+			"faction":"KoC",
+			"size":6,
+			"startingConditions":[
+				"shipbreaking_center",
+				"ruins_extensive",
+				"population_6",
+				"ore_sparse",
+				"volatiles_trace",
+				"cold",
+				"no_atmosphere",
+                "headquarters"
+			],
+			"industries":[
+				"population",
+				"megaport",
+				["refining", "catalytic_core"],
+				"militarybase",
+				"heavyindustry",
+				["heavybatteries", "drone_replicator"],
+                "techmining",
+                "waystation",
+#               "KoC_Breaking",
+#				"orbitalstation",
+			],
+		},
+	],
+
+
+}

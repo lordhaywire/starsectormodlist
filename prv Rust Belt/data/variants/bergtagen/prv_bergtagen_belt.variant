@@ -1,0 +1,89 @@
+{
+  "variantId": "prv_bergtagen_belt",
+  "hullId": "prv_bergtagen",
+  "displayName": "Belt",
+  "goalVariant": true,
+  "fluxCapacitors": 16,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "armoredweapons",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "hellbore",
+        "WS0004": "hellbore"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "prv_blaster_charge_cluster",
+        "WS0024": "prv_blaster_charge_cluster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0013": "prv_brytare_pod",
+        "WS0023": "prv_brytare_pod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_massdriver",
+        "WS0015": "prv_massdriver"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "arbalest",
+        "WS0007": "arbalest",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "prv_heavyilluminator",
+        "WS0009": "prv_heavyilluminator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dualflak",
+        "WS0012": "dualflak",
+        "WS0010": "lrpdlaser",
+        "WS0011": "lrpdlaser",
+        "WS0014": "lrpdlaser",
+        "WS0016": "lrpdlaser",
+        "WS0017": "lrpdlaser",
+        "WS0018": "lrpdlaser",
+        "WS0019": "lrpdlaser"
+      }
+    }
+  ],
+  "modules": [
+    {
+      "M01": "prv_module_armor_bergtagen_l_standard"
+    },
+    {
+      "M02": "prv_module_armor_bergtagen_r_standard"
+    }
+  ],
+  "wings": []
+}

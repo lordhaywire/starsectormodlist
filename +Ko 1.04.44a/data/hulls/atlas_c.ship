@@ -1,0 +1,405 @@
+{
+  "bounds": [
+    -94,
+    -43,
+    -84,
+    -54,
+    -43,
+    -55,
+    -38,
+    -83,
+    -16,
+    -86,
+    -13,
+    -60,
+    37,
+    -95,
+    209,
+    -95,
+    273,
+    -0,
+    273,
+    -0,
+    209,
+    95,
+    37,
+    95,
+    -13,
+    60,
+    -16,
+    86,
+    -38,
+    83,
+    -43,
+    55,
+    -84,
+    54,
+    -94,
+    43
+  ],
+  "builtInMods": ["civgrade","converted_koc","militarized_subsystems"],
+  "builtInWings": [],
+  "center": [
+    109,
+    105
+  ],
+  "collisionRadius": 330,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -99,
+        44
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -101,
+        33
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -104,
+        17
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 96,
+      "location": [
+        -104,
+        0
+      ],
+      "style": "MIDLINE",
+      "width": 24
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -104,
+        -17
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -101,
+        -32
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 32,
+      "location": [
+        -99,
+        -44
+      ],
+      "style": "MIDLINE",
+      "width": 8
+    }
+  ],
+  "height": 388,
+  "hullId": "atlas_c",
+  "hullName": "Atlas (C)",
+  "hullSize": "CAPITAL_SHIP",
+  "shieldCenter": [
+    85,
+    0
+  ],
+  "shieldRadius": 230,
+  "spriteName": "graphics/ships/atlas_c.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 110,
+      "arc": 210,
+      "id": "WS 001",
+      "locations": [
+        -26,
+        78.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 250,
+      "arc": 210,
+      "id": "WS 002",
+      "locations": [
+        -26,
+        -77.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 210,
+      "id": "WS 003",
+      "locations": [
+        242,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "ENERGY"
+    },
+    {
+      "angle": 140,
+      "arc": 5,
+      "id": "WS 006",
+      "locations": [
+        -87,
+        54.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 220,
+      "arc": 5,
+      "id": "WS 007",
+      "locations": [
+        -87,
+        -53.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -50,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        161,
+        -93
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 50,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        161,
+        93
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -130,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        82,
+        -93
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 130,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        82,
+        93
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": 90,
+      "arc": 210,
+      "id": "WS0005",
+      "locations": [
+        121,
+        94
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 210,
+      "id": "WS0006",
+      "locations": [
+        121,
+        -94
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 210,
+      "id": "WS0007",
+      "locations": [
+        266,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        120.5,
+        52,
+        134.5,
+        60,
+        134.5,
+        40,
+        107.5,
+        64,
+        107,
+        41.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        121.5,
+        -50.5,
+        133.5,
+        -41,
+        133.5,
+        -60,
+        106.5,
+        -40,
+        107,
+        -62.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 3",
+      "locations": [
+        199.5,
+        45.5,
+        208.5,
+        59,
+        207.5,
+        34,
+        191,
+        36,
+        189,
+        59
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 4",
+      "locations": [
+        199.5,
+        -46,
+        190.5,
+        -33,
+        209.5,
+        -34.5,
+        208.5,
+        -59,
+        190,
+        -56
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 5",
+      "locations": [
+        41,
+        -43.5,
+        51.5,
+        -33.5,
+        50.5,
+        -57,
+        33.5,
+        -56.5,
+        34,
+        -32
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 6",
+      "locations": [
+        42.5,
+        45,
+        49.5,
+        60,
+        50.5,
+        40.5,
+        35.5,
+        61.5,
+        32,
+        40
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 218
+}

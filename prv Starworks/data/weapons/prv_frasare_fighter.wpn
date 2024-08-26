@@ -3,7 +3,7 @@
   "specClass": "beam",
   "type": "ENERGY",
   "size": "SMALL",
-  "beamEffect": "scripts.weapons.prv_fragbeam_fighter_BeamEffect",
+  "beamEffect": "prv.corp.weapons.prv_fragbeam_fighter_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/prv/weapons/prv_frasare_fighter_turret.png",

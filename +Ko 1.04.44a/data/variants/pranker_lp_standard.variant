@@ -1,0 +1,49 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 10,
+    "fluxVents": 20,
+    "goalVariant": true,
+    "hullId": "pranker_lp",
+    "hullMods": [],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "pranker_lp_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS0012": "hammerrack"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0013": "devastator",
+                "WS0014": "devastator"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0010": "chaingun",
+                "WS0011": "chaingun"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS0001": "lightdualmg",
+                "WS0002": "lightdualmg",
+                "WS0004": "apmg",
+                "WS0005": "apmg",
+                "WS0006": "lightdualmg",
+                "WS0007": "lightdualmg",
+                "WS0008": "lightmg",
+                "WS0009": "lightmg"
+            }
+        }
+    ],
+    "wings": ["talon_wing"]
+}

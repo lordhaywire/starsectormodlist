@@ -1,2 +1,0 @@
-name,id,demand class,base price,export value,price variability,utility,origin,tags,stack size,cargo space,icon,sound id,sound id drop,order,economyTier,econUnitOrigUnused,econUnit,baseRaidDanger,eU * base value,iconWidthMult,plugin,desc
-Oculian Cookies,ocua_cookies,luxury_goods,,,3,1,ocua_atalie3,"exotic, luxury, expensive, ocua_cookies",1000,1,graphics/Oculian Armada/icons/cargo/ocua_cookies.png,ui_cargo_luxury,ui_cargo_luxury_drop,1,2.9,300,500,,,1,,

@@ -1,0 +1,15 @@
+id,trigger,conditions,script,text,options,notes
+# Game starts,,,,,,
+ngcFilgapLuddicStart,AddNewGameChoices,,"SetTooltip ngcFilgapLuddic ""A small expedition sponsorized by Jangola Luddic Church to rediscover the beauty of creation. .\n\nIncludes Luddic Path and Knights ships to put down Domain aberration.""",,"6:ngcFilgapLuddic:An unofficial Luddic crusader, leading a small exploration fleet (faster start)",
+
+ngcFilgapLuddic,NewGameOptionSelected,$option == ngcFilgapLuddic,"NGCAddShip filgap_bogomil_Standard
+NGCAddShip filgap_copernic_Exploration
+NGCAddShip filgap_fulk_Standard
+NGCAddShip cerberus_luddic_path_Attack
+NGCAddCredits 10000
+SetTextHighlights ""Luddic Church and Luddic Path""",,0:ngcFilgapLuddicContinue:Continue,
+ngcFilgapLuddicContinue,NewGameOptionSelected,$option == ngcFilgapLuddicContinue,"NGCAddCharacterPoints 0
+FireAll NGCDifficultyOptions",,,
+
+
+,,,,,,

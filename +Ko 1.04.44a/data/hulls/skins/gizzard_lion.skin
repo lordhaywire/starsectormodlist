@@ -1,0 +1,28 @@
+{
+	"baseHullId":"gizzard",
+	"skinHullId":"gizzard_lion",
+	"hullName":"Gizzard (LG)",
+	"descriptionId":"gizzard",
+	"descriptionPrefix":"One of the prides of the Lion's Guard Fleet, refitted with the latest in Sindrian Tech as a bulwark against ill-fated aggressors.",
+    	"tags":["lions_guard"],
+	"tech":"Lions Guard",
+    "hullDesignation":"Destroyer",
+	"shieldEfficiency":0.6,
+	"spriteName":"graphics/ships/gizzard_lion.png",
+	"coversColor":[255,255,255,255],
+	"removeHints":["ALWAYS_PANIC"],
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":["missleracks"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["andrada_mods", "solar_shielding", "coherer"],
+	"builtInWeapons":{    },
+	"weaponSlotChanges":{
+	   "WS0002":{   "type": "ENERGY",},
+	   "WS0003":{   "type": "ENERGY",},
+	   "WS0004":{   "type": "ENERGY",},
+	   "WS0005":{   "type": "ENERGY",},
+	   "WS0006":{   "type": "ENERGY",},
+        },
+	},
+}

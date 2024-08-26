@@ -12,7 +12,8 @@
   "shieldRadius": 55,
   "viewOffset": 0,
   "builtInMods": [
-    "roider_midas"
+    "roider_midas",
+	"roider_holisticStab"
   ],
   "weaponSlots": [
     {

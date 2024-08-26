@@ -26,9 +26,7 @@ public class supportships_MinisculeHangar extends BaseHullMod {
 		stats.getDynamic().getMod(Stats.INTERCEPTOR_COST_MOD).modifyPercent(id, ALL_FIGHTER_COST_PERCENT);
 		stats.getDynamic().getMod(Stats.SUPPORT_COST_MOD).modifyPercent(id, ALL_FIGHTER_COST_PERCENT);
 		
-		if(stats.getVariant().getHullMods().contains("expanded_deck_crew")){
-            MagicIncompatibleHullmods.removeHullmodWithWarning(stats.getVariant(), "expanded_deck_crew", "supportships_miniscule_hangar");
-        }
+
 	}
 
 	public String getDescriptionParam(int index, HullSize hullSize, ShipAPI ship) {

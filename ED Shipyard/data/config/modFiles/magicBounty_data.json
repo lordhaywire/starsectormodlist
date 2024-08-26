@@ -1,5 +1,4 @@
 {
-	# there is one old quest in unique_bounty_data.csv that works with magic lib
 	"edshipyard_DestroyTheWurg":{
 		"trigger_marketFaction_any":["independent"],
 		"trigger_market_minSize": 4,
@@ -13,10 +12,13 @@
 		"job_intel_failure": "You're no better than her, you know. And one day the assassins will come for you too.",
 		"job_intel_expired": "",
 		"job_forFaction": "independent",
-		"job_deadline": 0,
 		"job_credit_reward": 2000000,
 		"job_reward_scaling": 0,
-		"job_reputation_reward":200,
+		"job_reputation_reward":60,
+        "job_item_reward": {
+          "fuel": 1000,
+          "supplies": 500
+        },
 		"job_type":"destruction",
 		"job_show_type": true,
 		"job_show_captain": true,
@@ -29,7 +31,7 @@
 		"target_first_name":"Jamie",
 		"target_last_name":"Cadiz",
 		"target_gender": "FEMALE",
-		"target_rank": "Renegade",
+		"target_rank": "spaceAdmiral",
 		"target_post": "Founder",
 		"target_personality": "aggressive",
 		"target_level": 7,
@@ -113,7 +115,6 @@
         "job_intel_success": "By the time your salvage drones finish picking over the glowing wreckage, your comm system notifies you that payment has been delivered.",
         "job_intel_expired": "A brief blurb on the holonet mentions the pirates you were tasked with eliminating. Apparently after the ED pirates finished taking over a regional pirate gang, they attended a feast in their honor hosted by a neighboring pirate leader under the auspices of carving up territory.  All the ED pirates were killed that night",
         "job_forFaction": "independent",
-        "job_deadline": 120,
         "job_credit_reward": 100000,
         "job_reward_scaling": 0.4,
         "job_reputation_reward":5,
@@ -169,7 +170,6 @@
 		"job_comm_reply": "Greetings!  We've found some anomalous readings near by, would you care to investigate them with us?",
 		"job_intel_success": "The remains of the science expedition float silently through space, the occasional spark from the former insides of a shattered ship briefly tagged by the thermal image processor.  The money is yours now, along with your reputation.",
 		"job_intel_expired": "News reaches you that an ED exploration expedition to the outer rim was a failure, no new worlds or ruins were located.",
-        "job_deadline": 120,
         "job_credit_reward": 67000,
         "job_reward_scaling": 0.25,
         "job_reputation_reward":5,
@@ -226,11 +226,11 @@
         #LOCATION
 		"location_distance": "FAR",
 		"location_themes": [
-		"theme_interesting_minor",	
-		"theme_ruins_secondary",
-		"theme_derelict_survey_ship",
-		"theme_derelict_probes",        
-		"procgen_no_theme_pulsar_blackhole",
+          "theme_interesting_minor",
+          "theme_ruins_secondary",
+          "theme_derelict_survey_ship",
+          "theme_derelict_probes",
+          "procgen_no_theme_pulsar_blackhole",
 		],
 		"location_themes_blacklist":[
 			"theme_already_occupied",
@@ -238,17 +238,17 @@
 			"theme_hidden",
 		],
 		"location_entities": [
-		"gate",
-		"station",
-		"wreck",
-		"debris",
-		"stable_location",
-		"comm_relay",
-		"nav_buoy",
-		"sensor_array",
-		"gas_giant",
-		"planet",
-		"jump_point"
+          "gate",
+          "station",
+          "wreck",
+          "debris",
+          "stable_location",
+          "comm_relay",
+          "nav_buoy",
+          "sensor_array",
+          "gas_giant",
+          "planet",
+          "jump_point"
 		],
 		"location_prioritizeUnexplored": true,
 		"location_defaultToAnyEntity": true
@@ -267,7 +267,6 @@
 		"job_description": "The Eccentric Design bureau has long been suspected of stealing secrets, a deep space listening post in the ==$system system== has picked up anomalous signal returns suggesting an ED spy fleet is nearby.  Track them down and destroy them before they leave.",
 		"job_comm_reply": "Leave immediately",
 		"job_intel_success": "The \"spy\" fleet has been destroyed and your reward is in hand.",
-        "job_deadline": 180,
         "job_credit_reward": 90000,
         "job_reward_scaling": 0.0,
         "job_reputation_reward":8,
@@ -350,7 +349,7 @@
         
         #BOUNTY DESCRIPTION
         
-        "job_name": "High Value Bounty: Icarus \"Gun Slinger\" Mataan",
+        "job_name": "Icarus \"Gun Slinger\" Mataan",
 		"job_description": "A few years ago Icaraus Mataan, a maintenance crew lead shift worker at the Nova Maxios Eccentric Designs shipyards was tasked with sorting out some insane ship construction mishap.  Well Icarus and his crew managed to sort it out all right but they figured they'd take the resulting one of a kind ship and sell it to a pirate gang.  Icarus was about as bad at diplomacy as they were good at repair and ended up having to shoot their way out of a \"negotiation\".  That gave Icarus and his men a taste for blood and they've been full pirate ever since.",
 		"job_comm_reply": "You think you're the first to take a shot at us?  You're not even the first this month!  Your ships will make a nice addition.",
 		"job_intel_success": "The rabid Icarus Mataan has been brought to justice and your compensation has been received.",
@@ -371,7 +370,7 @@
         "target_personality": "aggressive",
         "target_level": 4,
         "target_elite_skills":2,
-        "target_rank": "Captain",
+        "target_rank": "spaceCaptain",
         "target_post": "Fleet Commander",
         "target_skill_preference": "YES_ENERGY_YES_BALLISTIC_NO_MISSILE_NO_DEFENSE",
     
@@ -399,7 +398,7 @@
         "location_defaultToAnyEntity": true
     },
 	"edshipyard_Riptide_HVB":{
-        "trigger_player_minLevel": 12,
+        "trigger_player_minLevel": 11,
 
         "trigger_min_fleet_size": 180,
         #"trigger_weight_mult": 1000, #todo remove
@@ -414,6 +413,10 @@
         "job_intel_expired": "",
         #"job_forFaction": "independent",
         "job_credit_reward": 250000,
+        "job_item_reward": {
+          "fuel": 800,
+          "supplies": 400
+        },
         "job_reward_scaling": .5,
         "job_type":"assassination",
         "job_show_fleet": "presetText",
@@ -425,7 +428,7 @@
         "target_personality": "aggressive",
         "target_level": 6,
         "target_elite_skills":2,
-        "target_rank": "Captain",
+        "target_rank": "spaceCaptain",
         "target_post": "Fleet Commander",
         "target_skill_preference": "YES_ENERGY_YES_BALLISTIC_NO_MISSILE_YES_DEFENSE",
     
@@ -463,14 +466,14 @@
         "location_defaultToAnyEntity": true
     },
     "edshipyard_Chupacabra_HVB":{
-        "trigger_player_minLevel": 10,
+        "trigger_player_minLevel": 8,
 
         "trigger_min_fleet_size": 250,
-        "trigger_weight_mult": 1,
+        #"trigger_weight_mult": 1,
 
         #BOUNTY DESCRIPTION
 
-        "job_name": "High Value Bounty: Euthanize the Chupacabra",
+        "job_name": "Euthanize the Chupacabra",
 		"job_description": "By Ludd, another fucking stolen prototype.  What the hell is happening to this sector?\nED's latest and greatest technology demonstrator, the \"Chupacabra\" has been stolen after integrating some top secret weaponry. Standardish stuff so far.  Where it gets interesting is Tri-Tachyon initiated the heist by having a black ops team integrate an Alpha Core trained in exfiltrating ships from 'complex' situations.  Well as soon as this core was fully integrated into the Chupacabra it promptly killed the team and the skeleton crew of the ship then flew off into Remnant controlled space.\nYou're one of the few pilots with a fleet we can count on to destroy this ship and stop whatever machinations are at work here.\nCuriously, for as good as that exfiltration core was at escaping, it sure doesn't seem to be making any effort to conceal its location so it could be some sort of a trap.  But at least that means we know it's exact location.",
 		"job_comm_reply": "01010000 01010010 01000101 01010000 01000001 01010010 01000101 00100000 01010100 01001111 00100000 01000100 01001001 01000101",
 		"job_intel_success": "Someone else's failure, again resolved through violence. For a while anyway.",
@@ -493,7 +496,7 @@
         "target_aiCoreId": "alpha_core",
         "target_level": 7,
         "target_elite_skills": 7,
-        "target_rank": "Captain",
+        "target_rank": "specialAgent",
         "target_post": "Fleet Commander",
         "target_skill_preference": "ANY",
 
@@ -519,5 +522,166 @@
         "location_themes": ["theme_remnant", "theme_remnant_main", "theme_remnant_secondary"],
         "location_prioritizeUnexplored": true,
         "location_defaultToAnyEntity": true
+    },
+    "edshipyard_DestroyTradeFleet":{
+      "trigger_player_minLevel": 7,
+
+      "trigger_min_fleet_size": 110,
+
+      "trigger_marketFaction_any": ["pirates"],
+      "trigger_marketFaction_alliedWith": true,
+      "trigger_marketFaction_none": ["independent"],
+
+      #BOUNTY DESCRIPTION
+
+      "job_name": "Disrupt ED Shipyards trade route",
+      "job_description": "The image of a well dressed man sitting in a chair appears on the holoscreen, his body is relaxed, but eyes menacing and face unobscured to demonstrate he is unafraid of identification, clearly wanting notoriety.\n\n \"There's new executive leadership at ED Shipyards on $location and as a show of goodwill I've generously offered to continue granting my protection that their predecessors have enjoyed. The new leadership has scoffed at my reasonable proposition believing me to be an unserious man.\"\n\n\"Coinciding with the leadership change, there's been an unusual trade fleet that runs out of $location. No one is quite sure where it goes from there, but it always comes back, loads up and leaves again. Destroy this fleet and demonstrate to them that their “risk assessment” is flawed.\"",
+      "job_comm_reply": "Consider your actions carefully",
+      "job_intel_success": "The ED supply fleet is destroyed, it's goods now yours and your payment received",
+      "job_intel_failure": "",
+      "job_intel_expired": "", #doesn't Expire
+      "job_forFaction": "pirates",
+      "job_credit_reward": 78000,
+      "job_type":"neutralisation",
+      "job_show_captain": false,
+      "job_show_fleet": "vanilla",
+      "job_show_distance": "none",
+      "job_difficultyDescription": "auto",
+      "job_pick_script": "edshipyard_DestroyTradeFleet_trigger",
+      "job_reputation_reward":10,
+      "job_item_reward": {
+        "fighter_bp edshipyard_maltese_wing": 1
+      },
+
+      #TARGET COMMANDER (OPTIONAL)
+      "target_personality": "cautious",
+      "target_level": 2,
+      "target_elite_skills":1,
+      "target_rank": "spaceCaptain",
+      "target_post": "fleetCommander",
+      "target_skill_preference": "NO_ENERGY_NO_BALLISTIC_NO_MISSILE_YES_DEFENSE",
+
+      #TARGET FLEET
+
+      "fleet_name":"ED Sensitive Goods Transport Fleet",
+      "fleet_faction": "independent",
+      "fleet_flagship_variant":"edshipyard_newfoundland_warfreighter",
+      "fleet_flagship_recoverable": true,
+      "fleet_flagship_autofit": true,
+      "fleet_preset_autofit": true,
+      "fleet_scaling_multiplier": 0,
+      "fleet_min_FP": 160,
+      "fleet_composition_faction": "ed_shipyard_faction",
+      "fleet_composition_quality": 2,
+      "fleet_transponder": true,
+      "fleet_no_retreat": false,
+      "fleet_behavior": "PASSIVE",
+      "fleet_preset_ships": {
+        #Util
+        "edshipyard_dachshund_variant": 3,
+        "edshipyard_bernard_variant": 1,
+
+        #combat
+        #frigates
+        "edshipyard_wolfhound_assault": 2,
+        "edshipyard_bischon_assault": 1,
+
+        #destroyers
+        "edshipyard_pomeranian_beam": 1,
+        "edshipyard_shiba_beamer": 1,
+        "edshipyard_corgi_dust": 1,
+
+        #cruisers,
+        "edshipyard_malinois_support": 1,
+        "edshipyard_rottweiler_assault": 1,
+        "edshipyard_saluki_beam": 1,
+      },
+
+      #LOCATION
+      "location_entitiesID": [
+        "new_maxios",
+        "nex_prismFreeport",
+      ],
+      "location_marketFactions": [
+        "independent"
+      ],
+      "location_distance": "CLOSE",
+      "location_defaultToAnyEntity": true
+    },
+
+    "edshipyard_Doog_HVB":{
+      "trigger_player_minLevel": 12,
+
+      "trigger_min_fleet_size": 200,
+
+      #"trigger_weight_mult": 1000,
+
+      #BOUNTY DESCRIPTION
+
+      "job_name": "Assasinate Neroko Gamiinu",
+      "job_description": "The Eccentric Designs Corporation has posted this bounty for a maniac that stole a prototype ship and a fleet worth of ships from Nova Maxios during a pirate raid, their leader is relentless and very dangerous. She is known for collecting fingers of her enemies.",
+      "job_comm_reply": "Give me your fingers!",
+      "job_intel_success": "",
+      "job_intel_failure": "",
+      "job_intel_expired": "", #doesn't Expire
+      #"job_forFaction": "independent",
+      "job_credit_reward": 250000,
+      "job_reward_scaling": .25,
+      "job_reputation_reward":10,
+      "job_item_reward": {
+        "ed_exotic_ship_package":1,
+      },
+      "job_type":"assassination",
+      "job_show_fleet": "flagship",
+      "job_show_distance": "vanilla",
+      "job_difficultyDescription": "auto",
+
+      #TARGET COMMANDER (OPTIONAL)
+
+      "target_first_name":"Neroko",
+      "target_last_name":"Gamiinu",
+      "target_gender":"FEMALE",
+      "target_personality": "aggressive",
+      "target_level": 5,
+      "target_elite_skills": 5,
+      "target_rank": "spaceAdmiral",
+      "target_post": "Fleet Commander",
+      "target_skill_preference": "ANY",
+
+      #TARGET FLEET
+
+      "fleet_name":"The Nerokosuki",
+      "fleet_faction": "ML_bounty",
+      "fleet_flagship_variant":"edshipyard_doog_prototype",
+      "fleet_flagship_name":"EekumBokum",
+      "fleet_flagship_recoverable": true,
+      "fleet_flagship_autofit": false,
+      "fleet_preset_ships":
+      {
+        "edshipyard_groenendael_dust": 1,
+        "edshipyard_bullmastiff_assault": 1,
+        "edshipyard_rottweiler_assault": 1,
+        "edshipyard_beauceron_rescue": 1,
+        "edshipyard_beagle_assault": 1,
+        "edshipyard_malinois_support": 1,
+        "edshipyard_pomeranian_dust": 1,
+        "edshipyard_shiba_assault": 1,
+        "edshipyard_bischon_assault": 1,
+        "edshipyard_chihuahua_assault": 1,
+      },
+      "fleet_preset_autofit": false,
+      "fleet_scaling_multiplier": 1.4,
+      "fleet_min_FP": 600,
+      "fleet_composition_faction": "pirates",
+      "fleet_composition_quality": 0,
+      "fleet_transponder": false,
+      "fleet_no_retreat": true,
+      "fleet_behavior": "AGGRESSIVE",
+
+      #LOCATION
+      "location_distance": "FAR",
+      "location_themes_blacklist": ["theme_already_occupied", "theme_already_colonized", "theme_hidden", "no_pulsar_blackhole"],
+      "location_prioritizeUnexplored": true,
+      "location_defaultToAnyEntity": true
     },
 }

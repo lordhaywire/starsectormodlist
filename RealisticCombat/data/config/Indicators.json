@@ -1,0 +1,105 @@
+{
+    "general":{
+	"Use the default settings written into the code of":"",
+	"each indicator rather than the custom settings":"",
+	"in the corresponding section.":"",
+	"default":true,
+	
+	"Press to toggle all indicators on or off":"",
+	"toggleKey":35,
+
+	"Zoom level closer than which every indicator":"",
+	"should be hidden":"",
+	"zoomCutoff":1.5,
+    },
+
+    "Diffraction":{
+	"enabled":true,
+	
+	"X-axis distance from indicator center to edges":"",
+	"offsetX":50,
+
+	"Y-axis distance from center of indicator to cursor":"",
+	"offsetY":-75,
+
+	"Indicator line base width":"",
+	"thickness":2.5,
+    },
+
+    "Lead":{
+	"enabled":true,
+	
+	"Number of segments comprising the circle that is":"",
+	"the lead indicator.":"",
+	"segments": 256,
+
+	"Base thickness of the lead indicator":"",
+	"thickness":0.03,
+    },
+    
+    "Momentum":{
+	"enabled":true,
+	
+	"Factor whereby to multiply the shield radius of a":"",
+	"ship to obtain the distance from its shield center":"",
+	"to the innermost point of its momentum indicator":"",
+	"offsetFactor":1.5,
+
+	"Factor whereby to multiply all momentum indicator lengths":"",
+	"lengthFactor":10,
+
+	"Factor whereby to multiply  all momentum indicator widths":"",
+	"widthFactor":10
+    },
+
+    "Projectile":{
+	"enabled":true,
+
+	"Segments comprising each energy projectile indicator":"",
+	"energySegments":16,
+
+	"Base length of all strong ballistic projectile indicators":"",
+	"ballisticLengthStrong":12,
+
+	"Base width of all strong ballistic projectile indicators":"",
+	"ballisticWidthStrong":7.5,
+
+	"Base length of all strong missile indicators":"",
+	"missileLengthStrong":15,
+
+	"Base width of all strong missile indicators":"",
+	"missileWidthStrong":7.5,
+
+	"Base radius of all strong energy projectile indicators":"",
+	"energyRadiusStrong":7.5,
+
+	"Base length of all weak ballistic projectile indicators":"",
+	"ballisticLengthWeak":8,
+
+	"Base width of all weak ballistic projectile indicators":"",
+	"ballisticWidthWeak":4,
+
+	"Base length of all weak missile indicators":"",
+	"missileLengthWeak":10,
+
+	"Base width of all weak missile indicators":"",
+	"missileWidthWeak":5,
+
+	"Base radius of all weak energy projectile indicators":"",
+	"energyRadiusWeak":5,
+    },
+
+    "Status":{
+	"enabled":true,
+	
+	"Base thickness of every edge of every indicator diamond":"",
+	"edgeThickness":6.7,
+
+	"Factor of the base radius, from center to corner,":"",
+	"of the innermost indicator diamond equalling that of":"",
+	"the next-innermost indicator diamond, with the radius":"",
+	"of the third-innermost diamond equalling that of the":"",
+	"innermost diamond times twice this factor, and so on.":"",
+	"innermostDiamondRadiusFactor":1.15,
+    }
+}

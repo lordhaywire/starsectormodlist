@@ -1,0 +1,53 @@
+{
+	"baseHullId": "prv_eld",
+	#"descriptionPrefix":"License-produced model of the Eld manufactured in the Sindrian Diktat. Carries a potent energy focus battery instead of the synergy mounts of the base model.",
+	"tags":["prv_midline_bp","merc"],
+	"tech":"Midline",
+	"removeBuiltInWeapons":["DC01"],
+	"removeWeaponSlots":["DC01"],
+	"removeBuiltInMods":["prv_ramshield"],
+	#"suppliesToRecover":12,
+	#"suppliesPerMonth":12,
+	"maxSpeed":90,
+	"builtInMods":["prv_ramshield_modular"],
+	"systemId":"highenergyfocus",
+	"descriptionId": "prv_eld_midline",
+	"hullName": "Eld (Diktat)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_eld_midline",
+	"spriteName": "graphics/prv/ships/prv_eld_midline.png",
+	"weaponSlotChanges":{
+		"WS0007":{
+		  "type": "ENERGY",
+		},
+		"WS0008":{
+		  "type": "ENERGY",
+		},
+		"WS0005":{
+		  "type": "BALLISTIC",
+		},
+		"WS0006":{
+		  "type": "BALLISTIC",
+		},
+		"WSML01":{
+		  "type": "MISSILE",
+		},
+		"WSML02":{
+		  "type": "MISSILE",
+		},
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+		"8":{"style":"MIDLINE"},
+		"9":{"style":"MIDLINE"},
+		"10":{"style":"MIDLINE"},
+		"11":{"style":"MIDLINE"},
+	},  
+}

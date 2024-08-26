@@ -1,0 +1,297 @@
+{
+  "bounds": [
+    100,
+    -14,
+    105,
+    -22,
+    104.5,
+    -43.5,
+    33,
+    -72,
+    17,
+    -84.5,
+    -6.5,
+    -73.5,
+    -16,
+    -41.5,
+    -70,
+    -33,
+    -105,
+    -27,
+    -111,
+    -22.5,
+    -111,
+    22.5,
+    -105,
+    27,
+    -70,
+    33,
+    -16,
+    41.5,
+    -6.5,
+    73.5,
+    17,
+    84.5,
+    33,
+    72,
+    104.5,
+    43.5,
+    105,
+    22,
+    100,
+    14
+  ],
+  "builtInMods": [
+    "magazines",
+    "automated"
+
+  ],
+  "builtInWeapons": {
+    "WS0013": "tpc"
+  },
+  "builtInWings": [],
+  "center": [
+    90,
+    110
+  ],
+  "collisionRadius": 162.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 21,
+      "length": 49,
+      "location": [
+        -13,
+        -48
+      ],
+      "style": "LOW_TECH",
+      "width": 21
+    },
+    {
+      "angle": -180,
+      "contrailSize": 21,
+      "length": 49,
+      "location": [
+        -13,
+        48
+      ],
+      "style": "LOW_TECH",
+      "width": 21
+    },
+    {
+      "angle": 180,
+      "contrailSize": 21,
+      "length": 49,
+      "location": [
+        -110.5,
+        -10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 21
+    },
+    {
+      "angle": -180,
+      "contrailSize": 21,
+      "length": 49,
+      "location": [
+        -110.5,
+        10.5
+      ],
+      "style": "LOW_TECH",
+      "width": 21
+    },
+    {
+      "angle": 180,
+      "contrailSize": 12,
+      "length": 41,
+      "location": [
+        -7.5,
+        -62
+      ],
+      "style": "LOW_TECH",
+      "width": 12
+    },
+    {
+      "angle": -180,
+      "contrailSize": 12,
+      "length": 41,
+      "location": [
+        -7.5,
+        62
+      ],
+      "style": "LOW_TECH",
+      "width": 12
+    }
+  ],
+  "height": 217,
+  "hullId": "filgap_redoubt",
+  "hullName": "Redoubt",
+  "hullSize": "CRUISER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 146.5,
+  "spriteName": "graphics/filgap/ships/filgap_redoubt.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 30,
+      "arc": 150,
+      "id": "WS0001",
+      "locations": [
+        72.5,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -30,
+      "arc": 150,
+      "id": "WS0002",
+      "locations": [
+        72.5,
+        -33
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        42,
+        25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": -0,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        42,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 90,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        14,
+        65.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 225,
+      "id": "WS0006",
+      "locations": [
+        14,
+        -65.5
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 140,
+      "arc": 150,
+      "id": "WS0007",
+      "locations": [
+        -32,
+        28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -140,
+      "arc": 150,
+      "id": "WS0008",
+      "locations": [
+        -32,
+        -28
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0009",
+      "locations": [
+        98.5,
+        40
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0010",
+      "locations": [
+        98.5,
+        -40
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 140,
+      "arc": 0,
+      "id": "WS0011",
+      "locations": [
+        -54.5,
+        30
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -140,
+      "arc": 0,
+      "id": "WS0012",
+      "locations": [
+        -54.5,
+        -30
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -0,
+      "arc": 0,
+      "id": "WS0013",
+      "locations": [
+        81.5,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 180
+}

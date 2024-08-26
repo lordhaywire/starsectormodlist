@@ -1,0 +1,41 @@
+{
+	"prv_agni_warning_beacon":{
+		"defaultName":"Warning Beacon", # used if name=null in addCustomEntity()
+		"defaultRadius":40, # used if radius<0 in addCustomEntity()
+		"detectionRange":3000, # must be >0 for discoverable/discoveryXP to be used
+		"discoverable":true,
+		"discoveryXP":500,
+		"icon":"graphics/icons/warning_beacon.png",
+		"iconColor":[196,0,32,255],
+		"iconWidth":24,
+		"iconHeight":24,
+		"spriteWidth":64,
+		"spriteHeight":64,
+		"showInCampaign":true,
+		"showIconOnMap":true,
+		"scaleIconWithZoom":true,
+		"customDescriptionId":"warning_beacon",
+		"interactionImage":"graphics/illustrations/comm_relay.jpg",
+		"tags":["has_interaction_dialog", "warning_beacon", "prv_agni_beacon", "neutrino_low"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+		"pluginClass":"prv.agni.campaign.themes.AgniWarningBeaconEntityPlugin",
+	},
+	"prv_agnifeeder":{
+		"defaultName":"Xenolab", # used if name=null in addCustomEntity()
+		"defaultRadius":40, # used if radius<0 in addCustomEntity()
+		"customDescriptionId":"prv_agnifeeder",
+		"icon":"graphics/prv/icons/map/prv_agni_agnifeeder_icon.png",
+		"sprite":"graphics/prv/stations/prv_station_agnifeeder.png",
+		"spriteWidth":88,
+		"spriteHeight":83,
+		"iconWidth":16,
+		"iconHeight":16,
+		"renderShadow":true,
+		"useLightColor":true,
+		"interactionImage":"graphics/illustrations/vacuum_colony.jpg",
+		"tags":["has_interaction_dialog","prv_agni_biostation"],
+		"layers":[STATIONS], # what layer(s) to render in. See CampaignEngineLayers.java for possible values
+	},
+}
+
+

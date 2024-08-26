@@ -3,13 +3,12 @@
   "hullId": "prv_valljud",
   "displayName": "Strike",
   "goalVariant": true,
-  "fluxCapacitors": 21,
+  "fluxCapacitors": 19,
   "fluxVents": 50,
-  "quality": 2,
+  "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
-    "frontemitter"
   ],
   "weaponGroups": [
     {
@@ -32,8 +31,14 @@
       "mode": "LINKED",
       "weapons": {
         "WS0009": "pulselaser",
-        "WS0013": "prv_spattergun",
-        "WS0014": "prv_spattergun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "irpulse",
+        "WS0014": "irpulse"
       }
     },
     {
@@ -59,6 +64,7 @@
   ],
   "modules": [],
   "wings": [
+    "prv_jammer_wing",
     "prv_jammer_wing",
     "prv_jammer_wing",
     "longbow_wing"

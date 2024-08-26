@@ -1,6 +1,6 @@
 {
   "id": "prv_kraka_auto",
-  "everyFrameEffect": "scripts.weapons.prv_autokraka_EveryFrameEffect",
+  "everyFrameEffect": "prv.corp.weapons.prv_autokraka_EveryFrameEffect",
   "specClass": "projectile",
   "projectileSpecId": "prv_kraka_mrm",
   "type": "MISSILE",

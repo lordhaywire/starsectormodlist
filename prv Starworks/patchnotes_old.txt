@@ -2,6 +2,125 @@ prv Starworks
 
 ###
 
+v27
+
+----------------
+- Weapons
+----------------
+
+Added the Blaster Charge Rack, Disperser and Launcher
+- Directed energy blast missiles. Crude but flexible.
+- Used by the Rust Belt.
+
+Vakt Flicker Beam
+- Damage per second increased by 30%.
+- Flux per second increased by 3%
+-- Now 0.8 flux/damage.
+
+Svala, Rörsångare Torpedoes
+- Retired, should no longer spawn. 
+- Custom AI disabled.
+
+Heavy Akers sprite updated.
+Fixed Shock Detonator tooltip.
+
+----------------
+- Ships
+----------------
+
+Flamma (Diktat)
+- Medium turret mount changed from composite to ballistic.
+- Maintenance and recovery cost reduced to 5.
+- Description updated.
+
+Eld (Diktat)
+- Description updated.
+
+Flock (League)
+- Redesignated from Flock (Export)
+- Medium composite mounts changed to missile.
+- Small composite mounts changed to ballistic.
+- No longer used by the Sindrian Diktat.
+- Description updated.
+
+Tystnad (League)
+- Medium composite mount changed to missile.
+
+Sorl (League)
+- Front medium turrets changed to missile.
+- Rear medium turret changed to hybrid.
+- Small mounts changed to energy.
+- Removed Gengångare Reversion Core hullmod.
+
+Fasnod
+- Built-in AM Blaster removed.
+- Mounts updated, all now converge frontally.
+- OP increased by 5.
+- Sprite updated.
+
+Fasnod (P)
+- Mounts updated.
+- Maintenance and recovery cost reduced to 7.
+- Sprite updated.
+
+Shrike (prv)
+- OP increased by 5.
+
+Skymning
+- Shield efficiency improved to 0,8.
+
+Gabbro
+- Mounts updated, now a dedicated broadside ship.
+- OP increased by 35.
+- Shield changed to 150° Omni.
+-- Same as the base Starliner.
+- Sprite updated.
+
+Gremlin (RB)
+- Shield removed.
+- Maintenance and recovery cost reduced to 4.
+
+Hornfels
+- Small hybrid hardpoints changed to turrets.
+- Sprite adjusted.
+
+Hornfels (LP)
+- Hybrid mounts changed to ballistic.
+- Built-in Hammer Launcher replaced with Jackhammers.
+- Sprite adjusted.
+
+Ljus (LP)
+- Built-in Hammer Launcher replaced with Jackhammer.
+
+Aska (LC)
+- Removed ALWAYS_PANIC AI hint.
+
+Many, many ship variant updates.
+
+----------------
+- Other
+----------------
+
+Agni Pureflame burn effect
+- Reduced the application rate for heavy burns, they will now linger for longer.
+-- Due to hit strength calculations this will slightly reduce the total damage.
+- Color will now shift towards blue-white at very high burn levels.
+
+Agni Scale Fighter
+- Now lists Heat Radiance as one of its weapons.
+-- Was previously displayed as a hullmod.
+- Heat Radiance damage type changed to energy.
+- Base damage reduced by 25%.
+
+Various faction equipment tweaks. 
+Significantly reduced the Rusters selection of missiles.
+Gravitic effects will now ignore DEM drones.
+Removed incorrectly listed Ramshield Adjunct S-mod bonus (was nonfunctional).
+Fixed a crash related to ships with a Ramshield listener that have their ShieldAPI nulled post-creation.
+Fixed Sindrian Diktat design type not being purple.
+
+###
+
 v26.4
 
 Updated for game version 0.96a.

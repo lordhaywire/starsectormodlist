@@ -1,0 +1,57 @@
+v0.6 - Save Game compatible
+	- Fixed a weapon size mismatch on the Hoefen - You may need to rearm it if one is in your current fleet - TY last_misadventure for letting me know
+	- Reduced the range of the Pulse Blaster, Ion Burst, & Light Plasma Cannon from 1k to 800 and the OP to 12 Medium, 18 Large - Ty Village for your cometary
+	- Added a line (s,m,l) of Frag/EMP suppression Ion pulse weapons - Does equal amounts of Frag and EMP damage  - Test case idea, I'd appreciate feedback
+	- Fixed a mismatch with the nonoex version file - TY ButtercupSandwich and Nissa, Typo Fairy for letting me know
+
+v0.5.1 - Save Game compatible*
+	- Added Nexerelin as a dependency to support Random Core Worlds mode - *This will work with games saved with the 5.0 version using Nexerelin
+	- Added a secondary download link to a version for players who do not use Nexerelin - *This version will work with games saved with the 5.0 version if it was saved w/out Nex installed
+		- Note: In Random Core Worlds mode the mod will not generate stations and become a ship/weapon pack, the added simple event will still function
+	- Added the above Note to the "mod technical notes" spoiler tab on the forum page
+
+v0.5 - Save Game compatible
+	- I've read discussions on reddit and the forums regarding the lack of variety of non-beam energy in the medium slot so I added the following weapons to the TT lineup:
+		- Added a new Medium Energy High Explosive weapon, the Pulse Blaster - Has the effect of removing armor on armor and hull hits
+		- Added a new Medium Energy Kinetic Weapon, the Ion Burst - Has the effect of disabling weapons upon armor and hull hits
+		- Added a new Large Energy Weapon, the Light Plasma Cannon - A scaled down version of the Plasma Cannon for ships with a tighter OP budget
+	- Added a new Heavy Cruiser, the Braijsa - I noted a conversation on r/starsector regarding the lack of a Dominator style tank role ship for High Tech
+	- Added the new ship to the "All Ships Image" on the mod forum
+
+v0.4 - Save Game compatible
+	- Renamed the stations added by this mod to be more thematic - New game sector generation only - TY Coil for the suggestion
+	- Added a cruiser sized heavy freighter, the Rabaroansa - TY Sheito for suggesting a non-phase High-Tech Colossus analog 
+	- Added a new Hybrid Cruiser, the Involucra - TY KnightR for suggesting a High-Tech analog of the Mora
+	- Added the built in mod "Operations Center" to the Morat (destoyer) and the Hofoen (Battle Cruiser) - Gives a High-Tech flagship option for wolfpack as well as heavy ship fleets
+	- Reduced the wing count of the Dajeil drone from 6 to 4 - Though having the same DPS as the mining laser, the PD Pulse does not have the drawback of beams
+	- Touched up the image of the Genar - Noted some artifacts and breaks that needed some fixing
+	- Re-worded the descriptions for a better sentence flow and refinement of meaning - TY BladedQueen for your ongoing editing
+	- Added the two new ships as well as the touched up Genar to the "All Ships Image" on the mod forum
+	
+v0.3 - Save Game compatible
+	- Incorporated Inventor Racoon's quest mod "Internal Affairs" with permission - Adds a nice little starter quest for new TT captains that gives a contact at the end  
+		-Though the above mod has not been updated in some time, if you have it installed disable it as this is an updated .97a replacement and not compatible
+	- Changed the designation of the Jandraligeli and Chamlis from Combat Freighter to Combat Tanker as was intended - Fixing an oopsie
+	- Added a line of High-Tech Tankers (1 frigate, 1 destroyer, 1 capital) - I read complaints on reddit that it made no sense that Tri-Tac was forced to use low tech tankers 
+	- Fixed an issue with the file download link - TY Coil for letting me know 
+	- Changed the mod folder name from TTE to Tri-Tac Expansion - As always delete the old folder (TTE 0.2) - The mod ID remains the same 
+	- Re-made the "All Ships Image" on the mod forum to add the three new ships - Take a peek if you are interested :)	
+
+v0.2 - Save Game compatible
+	- Added a line (1 frigate, 1 destroyer, 1 capital) of Hybrid ships that are not quite battle carriers but do carry wings and can put up a good fight for their weight
+		-Note: The above addition will allow Tri-Tac to field some wings in their game made fleets and bypass their Carriers=0 setting
+	- Gave the descriptions another pass - TY BladedQueen for your suggestions and submissions
+	- Removed some extraneous lines in the generation scripts - Streamlines the memory load
+	- Added a bonus to energy projectile speed to the built in hull mod - This benefits pulse weapons and not beams
+	- Lowered the range bonus of the built in hull mod from 20% to 15% - In further testing I felt when combining it with a targeting core it was a little bit too much
+	- Added a new weapon, PD Pulse Mining Laser - Essentially a mining laser pulse analog with roughly the same stats - To give a lacking option and better take advantage of the hull mod 
+	- Re-designed the Dajeil wing by replacing the weapon to the new PD Pulse Mining Laser and giving it similar stats as the Borer wing but retaining the support role of the mining drone
+	- Re-made the "All Ships Image" on the mod forum to reflect the new ships from this and the previous patch
+
+v0.1.1 - Save Game compatible
+	- Added two new ships to the lineup - Both are combat freighters with shielded cargo holds, 1 frigate and 1 cruiser - I felt Tri-Tac smugglers would appreciate a High-Tech option
+	- Re-wrote several descriptions and fixed some grammatical errors - Rookie mistake oops. - TY BladedQueen for your observations
+	
+v0.1
+	- Initial release for review, testing and constructive criticism.
+		

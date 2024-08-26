@@ -4,21 +4,19 @@
   "hullSize": "FRIGATE",
   "spriteName": "graphics/prv/ships/prv_gryning.png",
   "style": "PRV_HIGH",
-  "height": 93,
-  "width": 78,
-  "center": [39, 45],
+  "height": 92,
+  "width": 80,
+  "center": [40, 44],
   "collisionRadius": 69,
-  "shieldCenter": [0, -0],
+  "shieldCenter": [1, 1],
   "shieldRadius": 63.5,
   "viewOffset": 0,
   "builtInMods": [
     "prv_volatiledrivecore",
-    "prv_ramshield",
+    "prv_ramshield"
   ],
   "builtInWeapons": {
-    "D01":"prv_d_emitter_gryning",
-    "WS0003": "prv_skatunge",
-    "WS0004": "prv_skatunge",
+    "D01": "prv_d_emitter_gryning",
   },
   "weaponSlots": [
     {
@@ -42,20 +40,20 @@
     {
       "id": "WS0003",
       "size": "SMALL",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 0,
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
       "angle": 0,
-      "locations": [18.5, -13.5]
+      "locations": [21, -14]
     },
     {
       "id": "WS0004",
       "size": "SMALL",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 0,
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 5,
       "angle": -0,
-      "locations": [18.5, 13.5]
+      "locations": [21, 14]
     },
     {
       "id": "WS0005",
@@ -64,7 +62,7 @@
       "mount": "TURRET",
       "arc": 210,
       "angle": 90,
-      "locations": [-4, 17]
+      "locations": [-3, 17]
     },
     {
       "id": "WS0006",
@@ -73,7 +71,7 @@
       "mount": "TURRET",
       "arc": 210,
       "angle": -90,
-      "locations": [-4, -17]
+      "locations": [-3, -17]
     },
     {
       "id": "D01",
@@ -82,28 +80,28 @@
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
-      "locations": [-4, -0]
+      "locations": [-3, 0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-45.5, 10],
+      "location": [-43, 9],
       "length": 34,
-      "width": 25,
+      "width": 22,
       "angle": 180,
-      "contrailSize": 25,
+      "contrailSize": 22,
       "style": "PRV_HIGH"
     },
     {
-      "location": [-45.5, -10],
+      "location": [-43, -9],
       "length": 34,
-      "width": 25,
+      "width": 22,
       "angle": -180,
-      "contrailSize": 25,
+      "contrailSize": 22,
       "style": "PRV_HIGH"
     },
     {
-      "location": [-34.5, 24.5],
+      "location": [-32.5, 24.5],
       "length": 35,
       "width": 10,
       "angle": 180,
@@ -111,7 +109,7 @@
       "style": "PRV_HIGH"
     },
     {
-      "location": [-34.5, -24.5],
+      "location": [-32.5, -24.5],
       "length": 35,
       "width": 10,
       "angle": -180,

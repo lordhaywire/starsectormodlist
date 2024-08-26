@@ -1,0 +1,41 @@
+name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn rate,OPs,ammo,ammo/sec,reload size,type,energy/shot,energy/second,chargeup,chargedown,burst size,burst delay,min spread,max spread,spread/shot,spread decay/sec,beam speed,proj speed,launch speed,flight time,proj hitpoints,hints,tags,groupTag,tech/manufacturer,for weapon tooltip>>,primaryRoleStr,speedStr,trackingStr,turnRateStr,accuracyStr,customPrimary,customPrimaryHL,customAncillary,customAncillaryHL,noDPSInTooltip,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#IR Pulse Laser,#irpulse,1,,250,500,,50,,0,50,5,,,,ENERGY,50,,0.33,0,,,,,,,,1000,,,,,energy8,,,,,,,,,,,,,,19.25
+#Light Mortar,#lightmortar,0,,75,500,,75,,4,30,2,,,,HIGH_EXPLOSIVE,50,,0,1,1,,0,20,5,5,,500,,,10,,he6,,,,,,,,,,,,,,0.75
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mag Accelerator,filgap_magaccelerator,2,,400,800,,100,300,15,15,6,,,,HIGH_EXPLOSIVE,120,,,1,1,,0,4,0.5,2,,1100,,,40,,"he6, filgap_archeomid_bp",,,,Anti Armor,,,,,,,,,,
+Scattergun,filgap_scattergun,1,3,400,500,,50,,1,30,4,,,,FRAGMENTATION,10,,0,0.75,6,0.01,5,10,2,1,,650,,,8,PD,"pd7, base_bp",,,,Point Defense,,,,,,,,,,
+Mosychlos Burst Assault Gun,filgap_mosychlosbag,1,,850,800,,40,,6,10,11,,,,HIGH_EXPLOSIVE,30,,0,0.5,6,0.1,5,20,3,10,,800,,,30,,"he15, filgap_archeolow_bp",,,,Anti Armor,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Saturation Launcher,filgap_saturation_launcher,1,,50,1200,,75,,5,50,3,90,,,KINETIC,0,,0,8,6,0.15,0,0,0,0,,500,100,5,70,DO_NOT_CONSERVE,"utility7, missile0, base_bp",,,,Suppression,Fast,Good,,,,,,,,
+Lotop ACM Launcher,filgap_ion_torpedo,2,,2500,6000,,400,,20,20,10,3,,,ENERGY,0,,0,10,1,,0,0,0,0,,450,80,12,500,"GUIDED_POOR,STRIKE","strike8,missile0, filgap_archeohigh_bp, HIDE_IN_CODEX",,,,Finisher,Medium,Very Poor,,,,,,,TRUE,
+Lotop ACM Launcher (S),filgap_ion_torpedo_single,2,,1000,6000,,400,,20,20,3,1,,,ENERGY,0,,0,10,1,,0,0,0,0,,450,80,12,500,"GUIDED_POOR,STRIKE","strike13,missile7, filgap_archeohigh_bp, HIDE_IN_CODEX",,,,Finisher,Medium,Very Poor,,,,,,,TRUE,
+Matsar System,filgap_matsar,2,0.25,8000,6000,,400,,20,10,22,8,0.02,2,ENERGY,0,,0,29.5,2,0.5,0,0,0,0,,450,80,12,500,"GUIDED_POOR,STRIKE","strike18,missile15, filgap_archeohigh_bp, HIDE_IN_CODEX",,,,Finisher,Medium,Very Poor,,,,,,,TRUE,
+Hive Launcher,filgap_hive,2,,1500,1000,,100,,15,40,10,120,,,HIGH_EXPLOSIVE,0,,0,3,3,0.2,0,0,0,0,,300,100,5,50,"ANTI_FTR, DO_NOT_AIM, DO_NOT_CONSERVE","utility10, missile4, missile_bp",,,,Anti Small Craft,Fast,Excellent,,,,,,,,
+
+Saturation Launcher,filgap_saturation_launcher_f,1,,50,1200,,75,,5,50,0,15,,,KINETIC,0,,0,8,6,0.15,0,0,0,0,,500,100,5,70,"DO_NOT_CONSERVE, SYSTEM","utility7, missile0",,,,Suppression,Fast,Good,,,,,,,,
+David SRM Launcher,filgap_david_f,0,,150,1100,,500,,15,30,4,1,,,HIGH_EXPLOSIVE,0,,0,0.8,1,,0,0,0,0,,600,100,3,70,"GUIDED_POOR, SYSTEM","missile7, strike2",,,,Finisher,Fast,Poor,,,,,,,TRUE,
+David SRM Launcher,filgap_david,0,,150,1100,,500,,15,30,2,3,,,HIGH_EXPLOSIVE,0,,0,0.8,1,,0,0,0,0,,600,100,3,70,GUIDED_POOR,"missile7, strike2, base_bp",,,,Finisher,Fast,Poor,,,,,,,TRUE,
+David SRM Pod,filgap_davidsystem,0,,1000,1100,,500,,5,15,8,15,,,HIGH_EXPLOSIVE,0,,0,5,3,0.15,0,0,0,0,,600,100,3,70,GUIDED_POOR,"missile10, strike8, base_bp",,,,Finisher,Fast,Poor,,,,,,,TRUE,
+Locust SRM Salvo,filgap_locust_f,1,,4000,1400,,200,,5,30,0,3,,,FRAGMENTATION,0,,0,5,3,0.1,0,0,0,0,,400,100,6,60,"ANTI_FTR, DO_NOT_AIM, SYSTEM","utility18, missile15",,,,Anti Small Craft,Fast,Excellent,,,,,,,,
+Scorpius LRM System,filgap_scorpius,1,,3000,10000,,350,,25,10,18,25,0.25,5,KINETIC,0,,0,10,5,0.2,0,0,0,0,,600,200,25,100,"GUIDED_POOR, DO_NOT_CONSERVE","utility13, missile12, base_bp",,,,Long Range Support,Medium,Very Poor,,,,,,,,
+
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Plasma Caster,filgap_plasma_caster,2,2,400,650,,60,,0,30,6,,,,ENERGY,60,,0.75,0,3,0.15,0,10,3,1.5,,800,,,,,"energy9, remnant, filgap_archeohigh_bp",,,,General,,,,,,,,,,,,
+Charged Laser,filgap_chargedlaser,1,,1200,750,,185,,5,6,11,6,0.75,,ENERGY,220,,0.5,0.6,3,0.1,0,5,2,2,,1500,,,,,"energy13, filgap_archeomid_bp",,,,General,,,,,,,,,,,,
+Plasma Surge,filgap_psurge,2,,2000,450,,250,,8,35,10,,,,FRAGMENTATION,100,,0,1.8,1,,0,10,5,10,,600,,,,"PD,ANTI_FTR","pd15, remnant, filgap_archeohigh_bp, HIDE_IN_CODEX",,,,Point Defense,,,,,,,,,,
+Heavy Mining Beam,filgap_miningbeam,0,,800,700,600,,,15,10,8,,,,ENERGY,,800,0.5,0.5,1,3,,,,,1200,,,,,,"energy10, beam10, base_bp",,,,Support,,,,,,,,,,,,
+Aton Burst Laser,filgap_aton,1,,6500,850,1400,,,0,7,22,,,,ENERGY,,1000,0.25,1,2,2,,,,,5000,,,,,,"beam15,energy18, rare_bp, filgap_archeomid_bp",,,,General,,,,,,,,,,
+
+Short Range Laser,filgap_SRL,1,,200,600,150,,,0,100,0,,,,ENERGY,,75,0,0.5,,,,,,,3600,,,,,"ANTI_FTR, SYSTEM",beam4,,,,Anti Small Craft,,,,,,,,,,
+Wielding Beam,filgap_wieldingbeam,1,,200,600,50,,,30,100,0,,,,ENERGY,,30,0,0.25,,,,,,,3600,,,,,"ANTI_FTR, SYSTEM","pd5, beam4",,,,Anti Small Craft,,,,,,,,,,
+Salvaged Thermal Pulse Cannon,filgap_stpc,0,,100000,800,,250,,0,0,,20,1,,ENERGY,150,,0,0.2,1,,0,15,2,5,,1000,,,,,,"SYSTEM,SHOW_IN_CODEX",,,,,General,,,,,,,,,,40
+
+
+MB-3 PDS Array,filgap_miningarray,1,,800,700,120,,,0,20,8,,,,FRAGMENTATION,,150,0.2,0.2,,,,,,,3600,,,,,PD,"pd8, beam2, base_bp",,,,Point Defense,,,,,,,,,,,,
+Ice Bomb,filgap_icebomb,3,0.5,7000,900,,1200,,0,10,25,,,,KINETIC,2000,,1,9,,,,,,,,650,,,300,,"energy20, kinetic19,remnant, filgap_archeohigh_bp, HIDE_IN_CODEX",,,,Anti Shield,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+

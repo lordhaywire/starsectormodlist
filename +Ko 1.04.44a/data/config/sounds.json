@@ -1,0 +1,15 @@
+{
+#collapseopen WEAPONS
+
+	# Graviton Pulse Cannon
+	"koc_gravpulsecannon_fire":
+	[
+		{"file":"sounds/sfx_wpn_energy/plasma_cannon_fire_02.ogg","pitch":1.0,"volume":0.7},
+	],	
+	
+#collapseclose
+}
+
+
+
+

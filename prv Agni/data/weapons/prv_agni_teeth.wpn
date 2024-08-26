@@ -1,0 +1,47 @@
+{
+  "id": "prv_agni_teeth",
+  "specClass": "projectile",
+  "projectileSpecId": "prv_agni_tooth_shot",
+  "type": "BALLISTIC",
+  "size": "SMALL",
+  "everyFrameEffect": "prv.agni.weapons.prv_agni_teeth_EveryFrameWeaponPlugin",
+  "turretSprite": "graphics/prv/weapons/prv_agni_teeth_turret_main.png",
+  "turretGunSprite": "graphics/prv/weapons/prv_agni_teeth_turret_recoil.png",
+  "hardpointSprite": "graphics/prv/weapons/prv_agni_teeth_hardpoint_main.png",
+  "hardpointGunSprite": "graphics/prv/weapons/prv_agni_teeth_hardpoint_recoil.png",
+  "visualRecoil": 5,
+  "renderHints": [
+    "RENDER_BARREL_BELOW"
+  ],
+  "turretOffsets": [
+    10,
+    0
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    9.5,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 36,
+    "spread": 16,
+    "particleSizeMin": 3,
+    "particleSizeRange": 9,
+    "particleDuration": 0.25,
+    "particleCount": 15,
+    "particleColor": [
+      196,
+      0,
+      32,
+      255
+    ]
+  },
+  "fireSoundTwo": "railgun_fire",
+}

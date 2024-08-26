@@ -1,0 +1,19 @@
+{
+	"id":"prv_synac_shot",
+	"specClass":"projectile",
+	"onFireEffect":"prv.rb.weapons.prv_synac_OnFireEffect",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":30.0,
+	"hitGlowRadius":30,
+	"width":6,
+	"fadeTime":0.25,
+	#"fringeColor":[255,155,125,255],
+	#"coreColor":[255,255,200,150],
+	"fringeColor":[220,255,220,200],
+	"coreColor":[245,245,245,80],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_large_green.png"
+}

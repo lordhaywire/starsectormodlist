@@ -54,7 +54,7 @@
 		],
 		"hull_50":[
 			{"text":"You cannot kill me! I do not have time to bleed!"},
-			{"text":"Pain is weakness leaving the body"},
+			{"text":"Pain is weakness leaving the body."},
 			{"text":"You call that breaking my spine?"},
 		],
 		"hull_30":[
@@ -74,13 +74,15 @@
 		],
 		"victory":[
 			{"text":"You've done me proud, boys!"},
-			{"text":"Everyone of you deserves a medal!"},
 			{"text":"The worm has turned, gentlemen!"},
 			{"text":"Time to inform your next of kin!"},
 			{"text":"You're dead, that's good, amen."},
+			{"text":"This is my rifle, this is my gun! You maggots stink and that's why we won!"},
+		],
+		"victory_boss":[
 			{"text":"If God had wanted you to live, He would not have created me!"},
 			{"text":"Today is a good day!"},
-			{"text":"This is my rifle, this is my gun! You maggots stink and that's why we won!"},
+			{"text":"Everyone of you deserves a medal!"},
 		],
 	}
 }

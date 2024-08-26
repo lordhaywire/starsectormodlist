@@ -1,7 +1,7 @@
 {
     "displayName": "Elite",
-    "fluxCapacitors": 12,
-    "fluxVents": 15,
+    "fluxCapacitors": 17,
+    "fluxVents": 20,
     "goalVariant": true,
     "hullId": "roider_gambit",
     "hullMods": [],
@@ -13,20 +13,15 @@
         {
             "autofire": false,
             "mode": "LINKED",
-            "weapons": {"WS 001": "roider_spike_driver"}
+            "weapons": {
+                "WS 002": "hveldriver",
+                "WS 003": "hveldriver"
+            }
         },
         {
             "autofire": false,
             "mode": "LINKED",
             "weapons": {"WS 005": "hurricane"}
-        },
-        {
-            "autofire": false,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 002": "hveldriver",
-                "WS 003": "hveldriver"
-            }
         },
         {
             "autofire": true,

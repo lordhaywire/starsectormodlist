@@ -1,0 +1,45 @@
+{
+  "displayName": "Specialist",
+  "fluxCapacitors": 16,
+  "fluxVents": 20,
+  "goalVariant": false,
+  "hullId": "prv_ilbud_h",
+  "hullMods": [
+    "auxiliarythrusters",
+    "hardened_subsystems"
+  ],
+  "modules": [],
+  "permaMods": [],
+  "quality": 0.25,
+  "variantId": "prv_ilbud_h_spec",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "chaingun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "atropos",
+        "WS0006": "atropos"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
+  "wings": []
+}

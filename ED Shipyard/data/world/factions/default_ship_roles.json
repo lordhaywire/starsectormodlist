@@ -66,21 +66,21 @@
 		"edshipyard_collie_rescue":8,
 	},
 	"carrierMedium":{
-		"edshipyard_corgi_variant":8,
+		"edshipyard_corgi_variant":6,
 		"edshipyard_corgi_dust":4,
-		"edshipyard_dachshund_pirate":8,
-		"edshipyard_malinois_support":8,
-		"edshipyard_beauceron_pirate":8,
-		"edshipyard_beauceron_rescue":10,
+		"edshipyard_dachshund_pirate":4,
+		"edshipyard_malinois_support":4,
+		"edshipyard_beauceron_pirate":4,
+		"edshipyard_beauceron_rescue":6,
 	},
 	"carrierLarge":{
 		"edshipyard_groenendael_dust":3,
 		"edshipyard_groenendael_variant":3,
 		"edshipyard_groenendael_beam":2,
 		"edshipyard_wurgandal_worldeater":1,
-		"edshipyard_retriever_rescue":6,
-		"edshipyard_dobermann_pirate":8,
-		"edshipyard_retriever_pirate":6,
+		"edshipyard_retriever_rescue":5,
+		"edshipyard_dobermann_pirate":4,
+		"edshipyard_retriever_pirate":4,
 	},
 
 	# phase ships
@@ -107,11 +107,11 @@
 		"edshipyard_chin_smuggler":2,		
 	},
 	"freighterMedium":{
-		"edshipyard_dachshund_variant":10,
+		"edshipyard_dachshund_variant":5,
 	},
 	"freighterLarge":{
 		"edshipyard_newfoundland_warfreighter":1,
-		"edshipyard_dalmatian_phase":5,
+		"edshipyard_dalmatian_phase":4,
 	},
 	
 	"tankerSmall":{
@@ -121,7 +121,7 @@
 		"edshipyard_basenji_explorer":4,
 	},
 	"tankerLarge":{
-		"edshipyard_bernard_variant":8,
+		"edshipyard_bernard_variant":4,
 	},
 	
 	"personnelSmall":{

@@ -1,3 +1,51 @@
+Version 2.6.7
+- Ambush Swap system no longer is used by the AI while retreating
+- Newfoundland - various minor tweaks
+- Wurgandal
+-- Minor balance tweaks
+-- AI Maw usage is a tad safer
+-- Maw AoE damage is reduced based on distance from the source
+-- Modules now slowly drain their flux to the central core
+- Armor drone repair rate reduced by 1/3
+- Dobermann Grand Salvo now is affected by modifications to RoF
+- Utility ships more likely to show up in ED Markets
+- Integration with Exiled Space (rare faction)
+
+Version 2.6.6
+- Doog bounty now works
+- Removed doog portrait, it was thematically incorrect
+- Cleaned up Magic Bounty ranks
+- Saluki-X now gets added to game world on new game
+- Removed versioning kill code, instead there is a warning in the version file
+- Reduced MAW arc chance with missiles.
+- Gunnery Control Mod MAW blacklist
+
+Version 2.6.5
+- Upgrade to SS .97a
+- New Super Ship start for Nexerlin
+- Minor bug fixes
+
+Version 2.6.4
+- Much less likely two newfoundlands will collide
+- Wurg has better AI targeting of ships with modules that report as phase ships
+- Shield breaker (shotgun) sounds redone to better fit with Star Sector, weapon volume lowered
+- Added a new distress encounter
+
+Version 2.6.3
+- Wurgandal buffs
+-- ~10% more hull
+-- ~8% more flux dissipation from weapon segments
+-- No zero flux speed penalty
+-- Lowered supply usage by 25%
+- Newfoundland is a bit smarter at activating its anti-missile system
+- More attempts at Newfoundland collision prevention
+
+Version 2.6.2
+- New bounty given out by pirates
+- Prism Freeport again has an ED Submarket
+- Newfoundland (the train) now gently pushes away friendly ships it would collide with.  This helps a LOT with collisions.
+- Reduced pirate ship spawn frequency weighting
+
 Version 2.6.1
 - Repair drones now report to Detailed Combat Results how repair data
 

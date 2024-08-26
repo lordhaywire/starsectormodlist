@@ -1,12 +1,13 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 28,
-    "fluxVents": 12,
+    "fluxCapacitors": 40,
+    "fluxVents": 20,
     "goalVariant": true,
     "hullId": "roider_argos",
     "hullMods": [
         "eccm",
-        "reinforcedhull"
+        "missleracks",
+        "roider_trackerSwap"
     ],
     "permaMods": [],
     "sMods": [],
@@ -14,34 +15,15 @@
     "weaponGroups": [
         {
             "autofire": false,
-            "mode": "ALTERNATING",
-            "weapons": {
-                "WS 001": "squall",
-                "WS 002": "squall"
-            }
+            "mode": "LINKED",
+            "weapons": {"WS 001": "squall"}
         },
         {
             "autofire": false,
             "mode": "ALTERNATING",
             "weapons": {
-                "WS 007": "salamanderpod",
-                "WS 008": "salamanderpod"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 009": "roider_spike_driver",
-                "WS 010": "roider_spike_driver"
-            }
-        },
-        {
-            "autofire": true,
-            "mode": "LINKED",
-            "weapons": {
-                "WS 005": "lightac",
-                "WS 006": "lightac"
+                "WS 007": "harpoonpod",
+                "WS 008": "harpoonpod"
             }
         },
         {
@@ -50,6 +32,14 @@
             "weapons": {
                 "WS 011": "shredder",
                 "WS 012": "shredder"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "lightac",
+                "WS 006": "lightac"
             }
         },
         {

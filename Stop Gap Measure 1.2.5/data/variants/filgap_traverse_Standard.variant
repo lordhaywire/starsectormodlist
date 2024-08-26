@@ -1,0 +1,24 @@
+{
+  "displayName": "Standard",
+  "fluxCapacitors": 6,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "filgap_traverse",
+  "hullMods": [
+    "blast_doors"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_traverse_Standard",
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "filgap_scattergun",
+        "WS0002": "vulcan"
+      }
+    }
+  ],
+  "wings": []
+}

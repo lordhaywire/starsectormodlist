@@ -1,0 +1,81 @@
+{
+  "variantId": "prv_conquest_ryak_alfa",
+  "hullId": "prv_conquest_ryak",
+  "displayName": "Alfamodell",
+  "goalVariant": true,
+  "fluxCapacitors": 31,
+  "fluxVents": 50,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "magazines",
+    "extendedshieldemitter",
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_ljungeld_conquest_prototype"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "sabotpod",
+        "WS 020": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 012": "autopulse",
+        "WS 014": "autopulse"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 022": "prv_heavyakers",
+        "WS 023": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "heavyburst",
+        "WS 013": "heavyburst",
+        "WS 015": "heavyburst",
+        "WS 016": "heavyburst",
+        "WS 017": "heavyburst",
+        "WS 018": "heavyburst"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_pskd",
+        "WS 004": "prv_pskd",
+        "WS 007": "prv_pskd",
+        "WS 008": "prv_pskd",
+        "WS 009": "prv_pskd",
+        "WS 010": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

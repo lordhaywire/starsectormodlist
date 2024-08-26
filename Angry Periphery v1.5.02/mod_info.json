@@ -1,0 +1,15 @@
+{
+    "id": "Angry Periphery",
+    "name": "Angry Periphery",
+    "author": "Great Wound",
+    "version": "1.5.02",
+    "utility": "false",
+    "description": "For a bigger tougher KoC and a little more gogoling.",
+    "gameVersion": "0.97a",
+    "dependencies": [
+        {
+            "id": "Everybody loves KoC",
+            "name": "Everybody loves KoC",
+        }
+    ],
+}

@@ -1,0 +1,36 @@
+name,id,tier,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+,,,,,,,,,,,,,,,,,
+Ordnance Storage,ordstore,0,req_spaceport,"Logistics, Requires Dock",10000,,,,5,10,15,25,data.hullmods.ordstore,Reduces cargo capacity by %s and increases the monthly maintenance supply cost by %s.,,Reduces ordinance cost of Ballistic and Missile weapons by %s depending on size.,graphics/ordstore.png
+Flux Capacitor,phantomflux,0,req_spaceport,"Logistics, Requires Dock",10000,,,,5,10,15,25,data.hullmods.phantomflux,Reduces cargo capacity by %s and increases the monthly maintenance supply cost by %s.,,Reduces ordinance cost of Energy weapons by %s depending on size.,graphics/fluxcapacitor.png
+,,,,,,,,,,,,,,,,,
+# Faction mods,,,,,,,,,,,,,,,,,
+Blockade Runner,blockade,,"no_drop, no_drop_salvage","Engines, Defenses",,FALSE,,,5,10,15,25,data.hullmods.blockade,"Allows the Zero-Flux speed boost to take effect at up to %s flux.
+
+Reduces High Explosive damage taken by hull and armour by %s.",,"Increases Zero-Flux speed boost by %s.
+
+%s burn speed.",graphics/blockade.png
+Converted Cargo Bay,converted_koc,,,,,,TRUE,,0,0,0,0,data.hullmods.ConvertedKoC,This ship's cargo hold has been converted to house a pair of fighter bays.,Pair of improvised fighter bays.,,graphics/hullmods/converted_hangar.png
+Phase Resonator,maybegoogle,,"no_drop, no_drop_salvage",Phase,,FALSE,,,5,10,15,25,data.hullmods.maybegoogle,"%s deals hard flux damage to shields.
+
+Increases phase-time bonus by %s.",,Reduces phase cloak cooldown by %s.,graphics/maybegoogle.png
+Dedicated Shield Generator,eridani,,defensive,Defenses,,,TRUE,,0,0,0,0,data.hullmods.eridani,"Installs a dedicated omni-shield generator on the ship. The shield has a %s degree arc.
+
+The shield generator draws power from engines and reduces the ship's top speed by %s.",,,graphics/hullmods/damper_field.png
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+# Commission this!,,,,,,,,,,,,,,,,,
+Engine specialists,CHM_Commission_this,,,Ko Combine,,,TRUE,,0,0,0,0,data.hullmods.CHM_Commission_this,"In order to avoid blockade patrols Ko Combine engineers are trained to push their engines to their limits. Their ability to rapidly restore engine functions during combat situations makes them harder to catch during a pursuit.
+
+%s faster engine repair speed during combat.",,,graphics/factions/crest_ko_combine_new.png
+Phase Hazing,CHM_Mission_to_commission,,,Mbaye Gogol,,,TRUE,,0,0,0,0,data.hullmods.CHM_Mission_to_commission,"As part of their training Mbaye-Gogol recruits are expected to undergo a controversial number of rapid phase-shifts. Those that don't drop out are better able to maintain their composure in almost any situation.
+
+Reduces the rate at which combat readiness degrades by %s.
+%s fewer crew casualties from hull damage sustained in combat.",,,graphics/factions/crest_mbaye-gogol.png
+Eridani Targetting Modifications,CHM_eridaniTM,,,Eridani Utopia,,,TRUE,,0,0,0,0,data.hullmods.CHM_eridaniTM,Increases base range of Energy weapons by %s.,,,graphics/factions/crest_eridani_utopia.png
+###Bhilai TO DO,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+###Bug fix/dirty workaround,,,,,,,,,,,,,,,,,
+Revised Systems,aarevised,,,Mbaye Gogol,4000,,TRUE,,5,10,15,25,data.hullmods.aDroneShield,%s,,,graphics/hullmods/temporal_shell.png
+###used in place of no_auto_penalty,,,,,,,,,,,,,,,,,

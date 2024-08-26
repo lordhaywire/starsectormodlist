@@ -1,0 +1,164 @@
+{
+  "bounds": [
+    -75,
+    -35,
+    78,
+    -28,
+    80,
+    -17,
+    75,
+    -10,
+    75,
+    10,
+    80,
+    17,
+    78,
+    28,
+    -75,
+    35
+  ],
+  "builtInMods": [
+    "insulatedengine",
+    "assault_package"
+  ],
+  "builtInWings": [],
+  "center": [
+    41,
+    80
+  ],
+  "collisionRadius": 101.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -77,
+        28
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -76,
+        19
+      ],
+      "style": "MIDLINE",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 80,
+      "location": [
+        -75,
+        0
+      ],
+      "style": "MIDLINE",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -76,
+        -19
+      ],
+      "style": "MIDLINE",
+      "width": 16
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 48,
+      "location": [
+        -77,
+        -28
+      ],
+      "style": "MIDLINE",
+      "width": 12
+    }
+  ],
+  "height": 164,
+  "hullId": "bodkin_esc",
+  "hullName": "Freki",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 120,
+  "spriteName": "graphics/ships/freki.png",
+  "style": "MIDLINE",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 90,
+      "arc": 190,
+      "id": "WS0001",
+      "locations": [
+        -29,
+        27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -90,
+      "arc": 190,
+      "id": "WS0002",
+      "locations": [
+        -29,
+        -27
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 240,
+      "id": "WS0003",
+      "locations": [
+        12,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "HYBRID"
+    },
+    {
+      "angle": 0,
+      "arc": 2,
+      "id": "WS0004",
+      "locations": [
+        58,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "LARGE",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -4,26,
+        -10,26,
+        -4,-26,
+        -10,-26
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 82
+}

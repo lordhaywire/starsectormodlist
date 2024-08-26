@@ -1,0 +1,8 @@
+{
+	"starSystemLocations":{
+		"prv_stjarngard":[-18400,690], 	# prv
+		"prv_kylan":[-19000,-7500], 		# prv, rb
+		"prv_kratul":[-22000,-12000],		# prv, rb
+		"prv_colchis":[8000,2000], 		# solutions
+	}
+}

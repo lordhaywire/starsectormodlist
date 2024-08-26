@@ -1,0 +1,36 @@
+{
+    "Factor whereby to multiply the muzzle velocities of the projectiles":"",
+    "of the weapons of every strike craft":"",
+    "muzzleVelocityFactorForStrikeCraft":0.5,
+    
+    "The vertical distance from the center of a ship to its top or bottom":"",
+    "is the lesser of its width or length times this factor and must be":"",
+    "strafed to jink a projectile.":"",
+    "halfThicknessFactor":0.125,
+
+    "A missile must turn perpendicular to its path and fly straight through":"",
+    "this factor of its collision radius, the longest line through itself":"",
+    "to vertically jink an incoming projectile.":"",
+    "evasionDistanceFactorMissile":0.5,
+    
+    "Factor whereby a non-launcher projectile weapon overestimates the":"",
+    "distance to its target.":"",
+    "rangingFactor":1.2,
+
+    "Factor whereby a non-launcher projectile weapon underestimates the":"",
+    "time wherein its target could strafe off the path of the projectiles":"",
+    "of the weapon":"",
+    "leadingFactor":0.8,
+
+    "Multiply ship acceleration by this factor to determine ship strafing":"",
+    "acceleration when updating projectile weapon range to maximum jinkable":"",
+    "range.":"",
+    "strafingAccelerationFactors":{
+	"DEFAULT":1,
+	"FIGHTER":1,
+	"FRIGATE":1,
+	"DESTROYER":0.75,
+	"CRUISER":0.50,
+	"CAPITAL_SHIP":.25
+    }
+}

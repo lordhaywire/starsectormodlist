@@ -3,7 +3,7 @@
   "hullId": "prv_sinne",
   "displayName": "Ryak",
   "goalVariant": true,
-  "fluxCapacitors": 7,
+  "fluxCapacitors": 9,
   "fluxVents": 10,
   "quality": 2,
   "permaMods": [],
@@ -16,8 +16,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0005": "prv_fusion_burster",
-        "WS0006": "prv_fusion_burster"
+        "WS0005": "prv_spattergun",
+        "WS0006": "prv_spattergun"
       }
     },
     {
@@ -32,14 +32,8 @@
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0004": "ioncannon"
-      }
-    },
-    {
-      "autofire": true,
-      "mode": "LINKED",
-      "weapons": {
-        "WS0003": "pdburst"
+        "WS0003": "pdburst",
+        "WS0004": "pdburst"
       }
     }
   ],

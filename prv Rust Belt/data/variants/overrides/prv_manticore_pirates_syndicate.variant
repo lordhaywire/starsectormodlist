@@ -1,0 +1,43 @@
+{
+  "variantId": "prv_manticore_pirates_syndicate",
+  "hullId": "manticore_pirates",
+  "displayName": "Syndicate",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 18,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "missleracks",
+    "converted_hangar",
+    "frontemitter"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "prv_massdriver"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 004": "jackhammer",
+        "WS 005": "jackhammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "prv_lightthumper",
+        "WS 002": "prv_lightthumper",
+        "WS 003": "prv_lightthumper"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": ["mining_drone_wing"]
+}

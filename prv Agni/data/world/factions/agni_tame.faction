@@ -1,0 +1,235 @@
+{
+	id:"agni_tame",
+	"color":[170,222,255,127],
+	"secondaryUIColor":[196,0,32,255],
+      "secondarySegments":6,
+	
+	"showInIntelTab":false,
+	
+	"displayName":"Agni",
+	"displayNameWithArticle":"the Agni",
+	"displayNameLong":"Agni",
+	"displayNameLongWithArticle":"the Agni",
+	"entityNamePrefix":"agni",
+	"personNamePrefix":"agni",
+	"personNamePrefixAOrAn":"an",
+	"displayNameIsOrAre":"are",
+	"logo":"graphics/prv/factions/prv_agni.png",
+	"crest":"graphics/prv/factions/prv_crest_agni.png",
+	#"shipNamePrefix":"Designation:",
+	"shipNamePrefix":"",
+	"shipNameSources":{
+		"BEASTS":0.25,
+		"AGNI":1,
+	},
+	#"description":"No description yet.",
+	"names":{
+		"myth":1,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["prv_agni"],
+	},
+	"knownShips":{
+		"tags":["prv_agni",],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+#	"priorityShips":{
+#		"tags":["prv_agni"],
+#	},
+	"knownFighters":{
+		"tags":["prv_agni",],
+	},
+#	"priorityFighters":{
+#		"tags":["prv_agni",],
+#	},
+	"knownWeapons":{
+		"tags":["prv_agni",],
+	},
+#	"priorityWeapons":{
+#		"tags":["prv_agni",],
+#	},
+	"knownHullMods":{
+		"hullMods":[
+			"heavyarmor",
+			"prv_agni_phoenixshroud",
+			"prv_agni_solarcarapace",
+			"prv_agni_toughhide",
+			"prv_agni_behavior",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":3,
+		"shipQuality":5,
+		"numShips":3,
+		
+		"shipSize":3,
+		
+		"aggression":2,
+		
+		"combatFreighterProbability":0,     				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,  	# as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":1,
+
+		"commanderSkillsShuffleProbability":1,
+		"commanderSkills":[
+			"coordinated_maneuvers",
+			"wolfpack_tactics",
+			"carrier_group",
+			"weapon_drills",
+			"sensors",
+		],
+	},
+	"illegalCommodities":[
+	
+	],
+	"portraits":{
+		"standard_male":[
+			#custom
+			"graphics/prv/portraits/prv_agni_u_1.png",
+			#end custom
+		],
+		"standard_female":[
+			#custom
+			"graphics/prv/portraits/prv_agni_u_1.png",
+			#end custom
+		],
+	},
+#	"voices":{
+#		"LOW":{
+#			"soldier":10,
+#			"spacer":10,
+#			"aristo":3,
+#		},
+#		"MEDIUM":{
+#			"official":10,
+#			"business":10,
+#			"aristo":5,
+#		},
+#		"HIGH":{
+#			"business":5,
+#			"faithful":5,
+#			"aristo":10,
+#		},
+#	},	
+	"custom":{
+		"postsNoBounties":true,
+		"syndicateName": "Agni Handlers",
+		"noAICoresFromAutomatedDefenses":true,
+		"officersOnAutomatedDefenses":true,
+		"allowsTransponderOffTrade":true,
+		"engageWhenEvenStrength":true,
+		"offersCommissions":false,
+		"engagesInHostilities":false,
+		"buysAICores":false,
+		"AICoreValueMult":0,
+		"AICoreRepMult":0,
+		"buysSurveyData":false,
+		"hostilityImpactOnGrowth":false,
+		"caresAboutAtrocities":true,
+		"punitiveExpeditionData":{
+			"vsCompetitors":false,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+		#prv Doctrine Drift
+		"noDoctrineDrift": false,
+		####### Starship Legends support
+		"starshipLegendsConfig":{
+			"goodTraitFrequency":{
+				"peak_cr_time":3,
+				"repair":1,
+				"malfunction":3,
+				"mount_durability":1,
+				"engine_durability":1,
+				"hull_integrity":5,
+				"armor_strength":5,
+				"emp_resistance":3,
+				"engine_power":5,
+				"maneuverability":5,
+				"damage":3,
+				"weapon_stability":1,
+				"turret_rotation":2,
+				"range":3,
+				"fighter_damage":3,
+				"fighter_speed":3,
+				"fighter_durability":3,
+				"refit_time":0,
+				"overload_time":0,
+				"flux_capacity":0,
+				"flux_dissipation":0,
+				"vent_rate":0,
+				"shield_raise_rate":0,
+				"shield_stability":0,
+				"shield_strength":0,
+				"phase_cost":0,
+				"phase_cooldown":0,
+			},
+			"badTraitFrequency":{
+				"peak_cr_time":3,
+				"repair":1,
+				"malfunction":3,
+				"mount_durability":1,
+				"engine_durability":1,
+				"hull_integrity":5,
+				"armor_strength":5,
+				"emp_resistance":3,
+				"engine_power":5,
+				"maneuverability":5,
+				"damage":3,
+				"weapon_stability":1,
+				"turret_rotation":2,
+				"range":3,
+				"fighter_damage":3,
+				"fighter_speed":3,
+				"fighter_durability":3,
+				"refit_time":0,
+				"overload_time":0,
+				"flux_capacity":0,
+				"flux_dissipation":0,
+				"vent_rate":0,
+				"shield_raise_rate":0,
+				"shield_stability":0,
+				"shield_strength":0,
+				"phase_cost":0,
+				"phase_cooldown":0,
+			},
+		},
+		############ Starship Legends End
+	},
+	"fleetTypeNames":{
+		"trade":"Forage Shoal",
+		"tradeLiner":"Migration",
+		"tradeSmuggler":"Stalking Shoal",
+		"smallTrader":"Foragers",
+		
+		"scavengerSmall":"Shoal",
+		"scavengerMedium":"Family",
+		"scavengerLarge":"Clan",
+		
+		"patrolSmall":"Shoal",
+		"patrolMedium":"Family",
+		"patrolLarge":"Clan",
+		
+		"inspectionFleet":"Rampagers",
+		"taskForce":"Swarmers",
+		
+		"foodReliefFleet":"Lek Shoal",
+	},
+},	

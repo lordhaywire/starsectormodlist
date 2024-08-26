@@ -1,0 +1,51 @@
+{
+  "variantId": "prv_enforcer_rb_syndicate",
+  "hullId": "prv_enforcer_rb",
+  "displayName": "Syndicate",
+  "goalVariant": true,
+  "fluxCapacitors": 9,
+  "fluxVents": 20,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "heavyac",
+        "WS 005": "heavyac"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 002": "harpoonpod",
+        "WS 004": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_heavyilluminator"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "mininglaser",
+        "WS 007": "mininglaser",
+        "WS 008": "mininglaser",
+        "WS 009": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

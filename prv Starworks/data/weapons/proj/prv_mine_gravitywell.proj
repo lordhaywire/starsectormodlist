@@ -1,6 +1,6 @@
 {
 	"id":"prv_mine_gravitywell",
-	"onHitEffect":"data.scripts.weapons.prv_mine_gravity_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_mine_gravity_OnHitEffect",
 	"specClass":"missile",	
 	"missileType":"PHASE_MINE",
 	"sprite":"graphics/prv/missiles/prv_mine_gravity.png",

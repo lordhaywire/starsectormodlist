@@ -1,6 +1,6 @@
 {
 	"id":"prv_akers_denova_shot",
-	"onHitEffect":"scripts.weapons.prv_akers_denova_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_akers_denova_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

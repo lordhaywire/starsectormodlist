@@ -1,0 +1,4 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_oklang_escort_wing,prv_oklang_beam,"support2, fighter, high, auto_fighter, no_drop, no_sell, restricted, stay_in_front_of_ship",3,0.5,4,14,BOX,0,400,,4,SUPPORT,Companion Drone,8,9000,,,,,,,,,,,,,
+prv_klirr_wing,prv_klirr_grav,"support4, fighter, high, prv_adv_bp, prv_stjarngard_bp, merc, auto_fighter, stay_in_front_of_ship",3,,6,20,BOX,0,750,,3,SUPPORT,Companion Drone,20,12500,,,,,,,,,,,,,

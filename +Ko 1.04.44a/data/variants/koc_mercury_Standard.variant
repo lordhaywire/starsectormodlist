@@ -1,0 +1,26 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 0,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "koc_mercury",
+    "hullMods": ["militarized_subsystems"],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "koc_mercury_Standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "xpulse",
+                "WS 002": "xpulse"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "maiden"}
+        }
+    ]
+}

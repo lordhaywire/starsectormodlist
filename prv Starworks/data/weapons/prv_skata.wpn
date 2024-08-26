@@ -1,6 +1,6 @@
 {
   "id": "prv_skata",
-  "everyFrameEffect": "scripts.weapons.prv_skata_EveryFrameEffect",
+  "everyFrameEffect": "prv.corp.weapons.prv_skata_EveryFrameEffect",
   "specClass": "projectile",
   "projectileSpecId": "prv_skata_lrm",
   "type": "MISSILE",
@@ -45,10 +45,7 @@
     "particleDuration": 1,
     "particleCount": 11,
     "particleColor": [
-      255,
-      207,
-      64,
-      196
+	165,225,100,196
     ]
   },
   "textureType": ROUGH,

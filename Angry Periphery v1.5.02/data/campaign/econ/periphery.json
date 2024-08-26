@@ -1,0 +1,47 @@
+{
+	"starSystem":"periphery",
+	"markets":[
+		{
+			"entities":["periphery_planet"],
+			"faction":"luddic_church",
+			"size":4,
+			"startingConditions":[
+				"population_4",
+				"habitable",
+				"ruins_widespread",
+				"meteor_impacts",
+				"farmland_adequate",
+				"ore_moderate",
+				"organics_abundant",
+				"volatiles_trace",
+				"luddic_majority",
+
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"farming",
+				"planetaryshield",			
+			],
+		},
+		{
+			"entities":["periphery_station"],
+			"faction":"luddic_path",
+			"size":3,
+			"startingConditions":[
+				"population_3",
+				"luddic_majority",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"patrolhq",
+				"fuelprod",
+				"waystation",
+			],
+		},
+	],
+
+
+}

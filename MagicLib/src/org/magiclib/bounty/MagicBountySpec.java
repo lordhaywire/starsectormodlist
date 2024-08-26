@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class MagicBountySpec {
 
-    /**
+    /*
      * trigger parameters
      * ALL OPTIONAL
      */
@@ -79,9 +79,9 @@ public class MagicBountySpec {
      */
     public String job_name;
     /**
-     * full text of the bounty offer, the description will handle some text variables such as "$he_or_she". See documentation for more details
+     * Full text of the bounty offer. The description will handle some text variables such as "$he_or_she". See documentation for more details
      */
-    public String job_description;
+    @Nullable public String job_description;
     /**
      * Reply of the enemy to your hail, default to "The other $shipOrFleet does not answer to you hails."
      */
@@ -117,7 +117,7 @@ public class MagicBountySpec {
     @NotNull
     public Map<String, Integer> job_item_reward;
     /**
-     * assassination, destruction, obliteration, neutralisation
+     * assassination, destruction, obliteration, neutralization
      */
     public MagicBountyLoader.JobType job_type;
     /**
@@ -175,6 +175,7 @@ public class MagicBountySpec {
     public String existing_target_memkey;
 
     //ALL OPTIONAL BELOW HERE
+    @Nullable public String target_importantPersonId;
     /**
      * Enemy captain's first name.
      */
@@ -274,7 +275,7 @@ public class MagicBountySpec {
     // Section: location
 
     /**
-     * preset location, can default to the other preferences if those are defined and the location doesn't exists due to Nexerelin random mode
+     * Preset locations (SectorEntityTokens, not markets, variable is poorly named) to spawn the bounty fleet, will fall back to other choices (if they are defined) and if this preset location doesn't exist (eg due to Nexerelin's random mode).
      */
     public List<String> location_marketIDs;
     /**
@@ -352,6 +353,7 @@ public class MagicBountySpec {
             String job_memKey,
             String job_conclusion_script,
             String existing_target_memkey,
+            String target_importantPersonId,
             String target_first_name,
             String target_last_name,
             String target_portrait,
@@ -413,7 +415,7 @@ public class MagicBountySpec {
         this.job_intel_success = job_intel_success;
         this.job_intel_failure = job_intel_failure;
         this.job_intel_expired = job_intel_expired;
-        this.job_forFaction = job_forFaction;
+        this.job_forFaction = MagicTxt.nullStringIfEmpty(job_forFaction);
         this.job_difficultyDescription = job_difficultyDescription;
         this.job_deadline = job_deadline;
         this.job_credit_reward = job_credit_reward;
@@ -429,7 +431,7 @@ public class MagicBountySpec {
                 this.job_type = MagicBountyLoader.JobType.Obliteration;
             } else if (job_type.equalsIgnoreCase("neutralisation")
                     || job_type.equalsIgnoreCase("neutralization")) {
-                this.job_type = MagicBountyLoader.JobType.Neutralisation;
+                this.job_type = MagicBountyLoader.JobType.Neutralization;
             } else {
                 this.job_type = MagicBountyLoader.JobType.Assassination;
             }
@@ -495,6 +497,7 @@ public class MagicBountySpec {
         this.job_memKey = job_memKey;
         this.job_conclusion_script = job_conclusion_script;
         this.existing_target_memkey = existing_target_memkey;
+        this.target_importantPersonId = target_importantPersonId;
         this.target_first_name = target_first_name;
         this.target_last_name = target_last_name;
         this.target_portrait = target_portrait;

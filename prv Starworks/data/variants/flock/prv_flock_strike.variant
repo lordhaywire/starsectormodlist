@@ -3,7 +3,7 @@
   "hullId": "prv_flock",
   "displayName": "Strike",
   "goalVariant": true,
-  "fluxCapacitors": 14,
+  "fluxCapacitors": 9,
   "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
@@ -40,7 +40,8 @@
       "mode": "LINKED",
       "weapons": {
         "WS0005": "irpulse",
-        "WS0006": "irpulse"
+        "WS0006": "irpulse",
+        "WS0009": "irpulse",
       }
     },
     {

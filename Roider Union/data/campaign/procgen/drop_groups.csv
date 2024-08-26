@@ -17,3 +17,9 @@ item_roider_package,roider_market_blueprints,25
 "item_fighter_bp:{tags:[roider, !rare_bp]}",roider_market_blueprints,50
 "item_fighter_bp:{tags:[roider, rare_bp]}",roider_market_blueprints,20
 "item_weapon_bp:{tags:[roider, rare_bp]}",roider_market_blueprints,10
+,,
+item_roider_charter,rare_tech,3
+,,
+item_roider_charter,rare_tech_low,3
+,,
+item_roider_charter,techmining_first_find,1

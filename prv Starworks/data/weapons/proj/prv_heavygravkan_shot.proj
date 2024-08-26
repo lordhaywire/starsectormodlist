@@ -1,6 +1,6 @@
 {
 	"id":"prv_heavygravkan_shot",
-	"onHitEffect":"scripts.weapons.prv_gravkan_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_gravkan_OnHitEffect",
 	"passThroughMissiles":true,	
 	"passThroughFighters":true,
 	"passThroughFightersOnlyWhenDestroyed":true,	

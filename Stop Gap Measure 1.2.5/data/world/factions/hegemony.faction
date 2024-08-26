@@ -1,0 +1,63 @@
+{
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"filgap_retribution_Elite":10,
+
+	},
+
+	"hullFrequency":{
+		"tags":{
+			"heg_aux_bp":1,
+			"XIV_bp":0.25,
+		},
+		"hulls":{
+			"filgap_starblazer":0,
+			"filgap_nitassinan":0,
+			"filgap_rosatom":0,
+			"buffalo2":0, # just say no
+		},
+	},
+
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "heg_aux_bp", "lowtech_bp"],
+        "hulls":[
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "heg_aux_bp", "lowtech_bp", "midline_bp", "XIV_bp", "hegemony"],
+        "hulls":[
+            "filgap_cossack",
+			"filgap_charon",
+			"retribution",
+			"pegasus",
+
+
+
+        ],
+    },
+
+	"priorityShips":{
+		"tags":[],
+		# capitals are all priority - this makes it so that they will get picked for the "capital" size ship
+		# without concern for matching the doctrine, i.e. a Legion will be as likely a pick as an Onslaught
+		# despite the Legion being a carrier and the carrier portion of the doctrine being low 
+		"hulls":[
+			"legion",
+			"legion_xiv",
+			"onslaught",
+			"onslaught_xiv",
+			"retribution",
+			"pegasus",
+
+			
+			# need to be prioritized otherwise the Legion eats any and all carrier points
+			"condor",
+			"mora",
+		],
+	},
+
+}

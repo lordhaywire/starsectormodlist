@@ -1,0 +1,79 @@
+{
+  "variantId": "prv_grendel_rb_assault",
+  "hullId": "prv_grendel_rb",
+  "displayName": "Assault",
+  "goalVariant": true,
+  "fluxCapacitors": 0,
+  "fluxVents": 29,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "unstable_injector"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_hfl_array"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 007": "swarmer",
+        "WS 008": "swarmer",
+        "WS 009": "swarmer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_spatterflamer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_heavyilluminator",
+        "WS0004": "irautolance"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 000": "lightmg",
+        "WS 001": "mininglaser",
+        "WS 002": "mininglaser",
+        "WS 003": "mininglaser",
+        "WS 004": "mininglaser",
+        "WS 005": "lightmg",
+        "WS 006": "lightmg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 010": "heavymg",
+        "WS 012": "heavymg",
+        "WS 014": "heavymg"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "flak",
+        "WS 013": "flak"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,27 @@
+{
+	
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+		"filgap_era_lc_Overdriven":30,
+		"filgap_starblazer_Overdriven":30,
+	},
+	"hullFrequency":{
+		"tags":{
+		},
+		"hulls":{
+			"filgap_era":0,
+			"filgap_rosatom":0,
+			"filgap_wardlaw":0,
+			"filgap_babel":0,
+
+		},
+
+	},
+	
+},
+
+
+
+
+
+

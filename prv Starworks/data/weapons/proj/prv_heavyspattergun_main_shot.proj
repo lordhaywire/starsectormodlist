@@ -1,7 +1,6 @@
 {
 	"id":"prv_heavyspattergun_main_shot",
-	#"onHitEffect":"scripts.weapons.prv_spattergun_unified_OnHitEffect",
-	"onHitEffect":"scripts.weapons.prv_spattergun_sticky_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_spattergun_sticky_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC_AS_BEAM",
 	"collisionClass":"RAY",

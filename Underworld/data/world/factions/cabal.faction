@@ -296,30 +296,35 @@
     },
     "ranks":{
         "ranks":{
-            "factionLeader":{"name":"Enlightened One"},
+            "factionLeader":{"name":"Enlightened"},
 
-            "spaceCommander":{"name":"Shepherd"},
-            "spaceCaptain":{"name":"High Seer"},
-            "spaceAdmiral":{"name":"Illustrious Leader"},
+            "uw_bursar":{"name":"Bursar"},
+
+            "spaceCommander":{"name":"Star"},
+            "spaceCaptain":{"name":"Radiant"},
+            "spaceAdmiral":{"name":"Illustrious"},
+
+            "citizen":{"name":"Cabalero"},
         },
         "posts":{
-            "factionLeader":{"name":"Enlightened One"},
+            # It's all Cabalero
+            "factionLeader":{"name":"Cabalero"},
 
-            "patrolCommander":{"name":"Seer"},
-            "fleetCommander":{"name":"Evangelist"},
+            "patrolCommander":{"name":"Cabalero"},
+            "fleetCommander":{"name":"Cabalero"},
 
-            "baseCommander":{"name":"Councilor"},
-            "stationCommander":{"name":"High Councilor"},
-            "outpostCommander":{"name":"Celebrant"},
-            "portmaster":{"name":"Master of Travel"},
+            "baseCommander":{"name":"Cabalero"},
+            "stationCommander":{"name":"Cabalero"},
+            "outpostCommander":{"name":"Cabalero"},
+            "portmaster":{"name":"Cabalero"},
 
-            "supplyOfficer":{"name":"Tech-Priest"},
-            "supplyManager":{"name":"Provider"},
-            "medicalSupplier":{"name":"Healer"},
+            "supplyOfficer":{"name":"Cabalero"},
+            "supplyManager":{"name":"Cabalero"},
+            "medicalSupplier":{"name":"Cabalero"},
 
-            "citizen":{"name":"Follower"},
+            "citizen":{"name":"Cabalero"},
 
-            "investigator":{"name":"Inquisitor"},
+            "investigator":{"name":"Cabalero"},
         },
     },
     "voices":{
@@ -339,7 +344,7 @@
         },
     },
     "custom":{
-		"decentralized":true,
+        "decentralized":true,
         "engageWhenEvenStrength":true,
         "exemptFromFoodShortages":true,
         "noPatrols":true,

@@ -1,0 +1,10 @@
+{
+	#
+	# terrain with gameplay effects
+	#
+	
+	"prv_debris_belt":{
+		"plugin":"prv.rb.campaign.terrain.RustBeltTerrainPlugin",
+		"loopOne":"terrain_asteroid_field",
+	},
+}

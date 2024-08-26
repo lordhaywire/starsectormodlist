@@ -3,7 +3,7 @@
 	"type":"STAT_MOD",
 	"aiType":"MINE_STRIKE",
 	
-	"statsScript":"scripts.shipsystems.prv_mine_strike_emp_cluster_station",
+	"statsScript":"prv.corp.shipsystems.prv_mine_strike_emp_cluster_station",
 
 	"canUseWhileRightClickSystemOn":true,
 

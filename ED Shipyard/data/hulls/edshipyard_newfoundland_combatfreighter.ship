@@ -16,7 +16,8 @@
     "always_detaches",
     "edshipyard_no_shields",
     "expanded_cargo_holds",
-    "advancedcore"
+    "advancedcore",
+    "edshipyard_small_drone_hangar"
   ],
   "builtInWeapons": {
     "P1": "edshipyard_PATH"

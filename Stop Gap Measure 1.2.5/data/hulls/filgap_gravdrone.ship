@@ -1,0 +1,67 @@
+{
+  "hullName": "Filum",
+  "hullId": "filgap_filum",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/filgap/ships/filgap_gravdrone.png",
+  "style": "MIDLINE",
+  "height": 25,
+  "width": 24,
+  "center": [12, 12.5],
+  "collisionRadius": 23,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 19,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [8, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-12, 8],
+      "length": 10.5,
+      "width": 4,
+      "angle": 180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-12, -8],
+      "length": 10.5,
+      "width": 4,
+      "angle": -180,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-4.5, 12.5],
+      "length": 10.5,
+      "width": 4,
+      "angle": 145,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    },
+    {
+      "location": [-4.5, -12.5],
+      "length": 10.5,
+      "width": 4,
+      "angle": -145,
+      "contrailSize": 4,
+      "style": "MIDLINE"
+    }
+  ],
+  "bounds": [
+    -12, -8.5,
+    -3, -11.5,
+    12, -11,
+    12, 11,
+    -3, 11.5,
+    -12, 8.5
+  ]
+}

@@ -1,0 +1,36 @@
+{
+	"id":"prv_spatterflamer_1_shot",
+	"onHitEffect":"prv.rb.weapons.prv_spatterflamer_sticky_OnHitEffect",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"collisionRadius":0,
+	"armingTime":0.2,
+	####
+	"explosionColor":[199,102,255,196],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":75, # purely visual
+	"explosionSpec":{"duration":0.1f, # not visual
+		"radius":25,
+		"coreRadius":15, # full damage within core radius
+		"collisionClass":HITS_SHIPS_AND_ASTEROIDS,
+		"collisionClassByFighter":HITS_SHIPS_AND_ASTEROIDS,
+		"particleSizeMin":8.0,
+		"particleSizeRange":4.0,
+		"particleDuration":2,
+		"particleCount":15,
+		"particleColor":[220,160,255,196]
+				},
+	####
+	"length":10.0,
+	"width":10,
+	"fadeTime":0.3,
+	"fringeColor":[199,102,255,196],
+	"coreColor":[220,160,255,196],
+	"glowColor":[199,102,255,128], #proj glow
+	"glowRadius":10,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":1,
+	#"bulletSprite":"graphics/prv/missiles/prv_shell_spattergun.png",		
+}

@@ -1,15 +1,4 @@
 {
-	"PRV_LOW":{
-		"engineColor":[255,102,51,255], #15/70
-		"contrailParticleSizeMult":8,
-		"contrailParticleDuration":3,
-		"contrailParticleFinalSizeMult":0.25,
-		"contrailMaxSpeedMult":0.5,
-		"contrailAngularVelocityMult":0.5,
-		"contrailColor":[51,40,36,40],
-		"contrailCampaignColor":[255,102,51,255],
-		"type":"SMOKE" # GLOW or SMOKE
-	},
 	"PRV_MID":{
 		"engineColor":[102,255,212,255], # BLU7 was 192 alpha
 		"contrailParticleSizeMult":8,
@@ -30,17 +19,6 @@
 		"contrailAngularVelocityMult":0f,
 		"contrailColor":[102,232,255,25],
 		"contrailCampaignColor":[102,232,255,255],
-		"type":"GLOW" # GLOW or SMOKE
-	},
-	"PRV_AGNI":{
-		"engineColor":[128,255,96,255], #AGNI_SPINE_GREEN
-		"contrailParticleSizeMult":8,
-		"contrailParticleDuration":1.5,
-		"contrailParticleFinalSizeMult":1.5,
-		"contrailMaxSpeedMult":0.3,
-		"contrailAngularVelocityMult":-1,
-		"contrailColor":[128,255,96,12],
-		"contrailCampaignColor":[128,255,96,24],
 		"type":"GLOW" # GLOW or SMOKE
 	},
 }

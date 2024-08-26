@@ -1,0 +1,50 @@
+{
+  "displayName": "Balanced",
+  "fluxCapacitors": 16,
+  "fluxVents": 19,
+  "goalVariant": true,
+  "hullId": "prv_flock_midline",
+  "hullMods": [
+    "dedicated_targeting_core",
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "prv_flock_midline_balanced",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0001": "sabotpod",
+        "WS0002": "sabotpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "cyclone"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "railgun",
+        "WS0004": "railgun"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "pdlaser",
+        "WS0006": "pdlaser",
+        "WS0007": "pdlaser",
+        "WS0008": "pdlaser",
+        "WS0009": "pdlaser",
+      }
+    },
+  ],
+  "wings": []
+}

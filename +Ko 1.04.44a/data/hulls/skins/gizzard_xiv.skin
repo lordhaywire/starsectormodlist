@@ -1,0 +1,26 @@
+{
+	"baseHullId":"gizzard",
+	"skinHullId":"gizzard_xiv",
+	"hullName":"Gizzard (XIV)",
+	"descriptionId":"gizzard",
+	"descriptionPrefix":"Built to the specifications of the 14th Domain Battlegroup which founded the Hegemony, this vessel is a prime example of the Domain Navy's 'decisive battle' doctrine, particularly exhibited by a series of radical structural modifications performed using pre-Collapse industrial technology.",
+    	"tags":["sindrian_diktat","lions_guard"],
+	"tech":"XIV Battlegroup",
+    "hullDesignation":"Destroyer",
+	"shieldEfficiency":0.8,
+	"spriteName":"graphics/ships/gizzard/xiv.png",
+	"coversColor":[255,255,255,255],
+	"removeHints":["ALWAYS_PANIC"],
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	#"removeBuiltInMods":["missleracks"], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":["fourteenth"],
+	"builtInWeapons":{    },
+	"weaponSlotChanges":{
+	   "WS0001":{   "type": "BALLISTIC",},
+	   "WS0002":{   "type": "MISSILE",},
+	   "WS0003":{   "type": "MISSILE",}
+        },
+	},
+}

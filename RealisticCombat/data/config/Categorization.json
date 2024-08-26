@@ -1,0 +1,15 @@
+{
+    "Classify any weapon specification of damage above that":"",
+    "of the following damage type to be the corresponding":"",
+    "weapon category.":"",
+    "damageThresholds":{
+	"LAUNCHER_TORPEDO":{
+	    "KINETIC":1000,
+	    "HIGH_EXPLOSIVE":1000,
+	    "ENERGY":1000,
+	    "FRAGMENTATION":4000,
+	    "OTHER":1000,
+	    "DEFAULT":1000,
+	}
+    },
+}

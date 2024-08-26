@@ -3,14 +3,14 @@
   "hullId": "prv_skymning",
   "displayName": "Tensor",
   "goalVariant": true,
-  "fluxCapacitors": 32,
+  "fluxCapacitors": 35,
   "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
   "hullMods": [
     "targetingunit",
     "prv_missile_plating",
-    "eccm",
+    "eccm"
   ],
   "weaponGroups": [
     {
@@ -25,52 +25,58 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0012": "prv_korp"
-      }
-    },
-    {
-      "autofire": false,
-      "mode": "LINKED",
-      "weapons": {
         "WS0004": "prv_kraka",
         "WS0005": "prv_kraka",
         "WS0006": "prv_kraka"
       }
     },
     {
-      "autofire": true,
+      "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "prv_vakt",
+        "WS0012": "prv_korp"
       }
     },
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0009": "lrpdlaser",
-        "WS0010": "lrpdlaser",
-        "WS0011": "lrpdlaser",
-        "WS0013": "lrpdlaser",
-        "WS0014": "lrpdlaser",
-        "WS0015": "lrpdlaser",
-        "WS0016": "lrpdlaser",
-        "WS0017": "lrpdlaser",
-        "WS0018": "lrpdlaser",
-        "WS0019": "lrpdlaser",
-        "WS0020": "lrpdlaser",
-        "WS0022": "lrpdlaser"
+        "WS0007": "prv_akers_nova",
+        "WS0008": "prv_akers_nova",
+        #"WS0021": "prv_akers_nova",
+        #"WS0023": "prv_akers_nova"
       }
     },
-
     {
       "autofire": true,
       "mode": "LINKED",
       "weapons": {
-        "WS0007": "heavyburst",
-        "WS0008": "heavyburst"
+        "WS0009": "prv_sipdlaser",
+        "WS0010": "prv_sipdlaser",
+        "WS0011": "prv_sipdlaser",
+        "WS0013": "prv_sipdlaser",
+        "WS0014": "prv_sipdlaser",
+        "WS0015": "prv_sipdlaser",
+        "WS0016": "prv_sipdlaser",
+        "WS0017": "prv_sipdlaser",
+        "WS0018": "prv_sipdlaser",
+        "WS0019": "prv_sipdlaser",
+        "WS0020": "prv_sipdlaser",
+        "WS0022": "prv_sipdlaser"
       }
     },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyburst"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
   ],
   "modules": [],
   "wings": [

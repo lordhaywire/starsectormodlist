@@ -1,0 +1,117 @@
+{
+   "hullFrequency":{
+        "tags":{
+        },
+        "hulls":{
+            "filgap_velite":10,
+			"buffalo2":0,
+			"gryphon":3,
+			"heron":2,
+			"filgap_starblazer":0,
+			"filgap_babel":0.5,
+			"filgap_nitassinan":0.5,
+            "filgap_orthus":0,
+
+
+
+        },
+    },
+
+    # ships the faction gets access to when importing S&W out-of-faction
+    "shipsWhenImporting":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp"],
+        "hulls":[
+			"filgap_trajan",
+
+        ],
+    },
+
+    "knownShips":{
+        "tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "persean"],
+        "hulls":[
+			"filgap_velite",
+			"filgap_trajan",
+			"filgap_charon",
+			"crig",
+			"ox",
+			"dram",
+			"phaeton",
+			"prometheus",
+			"gemini",
+			"atlas",
+			"mercury",
+			"hermes",
+			"kite_original",
+			"mudskipper",
+			"wayfarer",
+			"nebula",
+			"valkyrie",
+			"starliner",
+			"buffalo",
+			"colossus",
+			
+			"vigilance",
+			"brawler",
+			"monitor",
+			
+			"hammerhead",
+			"sunder",
+			"drover",
+			
+			"heron",
+			"falcon",
+			"eagle",
+			"champion",
+			"gryphon",
+			
+			"conquest",
+			"pegasus",
+
+
+        ],
+    },
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":[],
+		"hulls":[
+			#"gryphon",
+			#"heron",
+			"conquest",
+			"pegasus",
+			"filgap_trajan",
+
+		],
+	},
+
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "missile_bp", "hightech_bp", "persean"],
+		"weapons":[
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"gauss",
+			"mjolnir",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"filgap_magaccelerator",
+
+
+		],
+	},
+
+
+}

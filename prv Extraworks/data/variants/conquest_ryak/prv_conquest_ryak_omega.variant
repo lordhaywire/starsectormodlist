@@ -1,0 +1,80 @@
+{
+  "variantId": "prv_conquest_ryak_omega",
+  "hullId": "prv_conquest_ryak",
+  "displayName": "Omegamodell",
+  "goalVariant": true,
+  "fluxCapacitors": 22,
+  "fluxVents": 50,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "targetingunit",
+    "advancedoptics"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "BI01": "prv_ljungeld_conquest_prototype"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 019": "sabotpod",
+        "WS 020": "sabotpod"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 012": "prv_jursla",
+        "WS 014": "prv_jursla"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 011": "phasebeam",
+        "WS 013": "phasebeam",
+        "WS 015": "phasebeam",
+        "WS 016": "phasebeam",
+        "WS 017": "phasebeam",
+        "WS 018": "phasebeam"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 022": "prv_heavyakers",
+        "WS 023": "prv_heavyakers"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_vakt"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 003": "prv_pskd",
+        "WS 004": "prv_pskd",
+        "WS 007": "prv_pskd",
+        "WS 008": "prv_pskd",
+        "WS 009": "prv_pskd",
+        "WS 010": "prv_pskd"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -129,17 +129,17 @@
 	
 	"ed_shotgun_s":
     [
-        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":1.2,"volume":0.6},
+        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":1.1,"volume":0.29},
     ],
 	
 	"ed_shotgun_m":
     [
-        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":1.0,"volume":0.8},
+        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":0.9,"volume":0.33},
     ],
 	
 	"ed_shotgun_l":
     [
-        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":0.8,"volume":1.0},
+        {"file":"sounds/edshipyard/sfx_systems/shotgun.ogg","pitch":0.7,"volume":0.45},
     ],
 	
 	"ed_scattershot_s":

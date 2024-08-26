@@ -12,7 +12,13 @@
 		"roider_star_system":[
 			{"file":"roider_star_system.ogg","source":"sounds/music","volume":0.6}, 
 		],
+		"roider_retrofit":[
+			{"file":"roider_special.ogg","source":"sounds/music/factions","volume":0.2}, 
+		],
 	},
+	"roider_silent":[
+		{"file":"sounds/roider_silent.ogg","pitch":1,"volume":0.5},
+	],
 	"roider_blastinglaser":[
 		{"file":"sounds/weapons/roider_blasting_laser.ogg","pitch":1.03,"volume":0.49},
 		{"file":"sounds/weapons/roider_blasting_laser.ogg","pitch":1.0,"volume":0.50},
@@ -47,6 +53,11 @@
 		{"file":"sounds/weapons/roider_pile_driver.ogg","pitch":1.03,"volume":0.99},
 		{"file":"sounds/weapons/roider_pile_driver.ogg","pitch":1.0,"volume":1.00},
 		{"file":"sounds/weapons/roider_pile_driver.ogg","pitch":0.97,"volume":1.01},
+	],
+	"roider_doldrums_fire":[
+		{"file":"sounds/weapons/roider_doldrums_chaingun.ogg","pitch":1.03,"volume":0.59},
+		{"file":"sounds/weapons/roider_doldrums_chaingun.ogg","pitch":1.0,"volume":0.60},
+		{"file":"sounds/weapons/roider_doldrums_chaingun.ogg","pitch":0.97,"volume":0.61},
 	],
 	
 	"roider_system_phasenet_activate":[ 

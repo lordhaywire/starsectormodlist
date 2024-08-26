@@ -3,7 +3,7 @@
   "hullId": "prv_kakafoni",
   "displayName": "Ryak",
   "goalVariant": true,
-  "fluxCapacitors": 4,
+  "fluxCapacitors": 6,
   "fluxVents": 30,
   "quality": 3,
   "permaMods": [],
@@ -56,7 +56,7 @@
   ],
   "modules": [],
   "wings": [
-    "prv_missljud_wing",
-    "prv_stilllhet_wing"
+    "prv_skran_wing",
+    "prv_skran_wing"
   ]
 }

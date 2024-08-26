@@ -1,0 +1,28 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+prv_rb_syndicate_network,Syndicate Network,,,,3,,,"prv_pirate, tactical_bombardment, structure",,graphics/prv/icons/industry/prv_armed_community.png,prv.rb.campaign.prv_war_syndicate,A haven for freebooters of all kinds. Pirate fleets will regularly launch from here.,2445,HIGH
+prv_rb_syndicate_hq,War Syndicate HQ,100,120,,7,,,"prv_pirate, tactical_bombardment, industry",,graphics/prv/icons/industry/prv_war_syndicate_hq.png,prv.rb.campaign.prv_war_syndicate,A professional face for what most would describe as shameless pillaging. The War Syndicate offers a haven to pirates throughout the faction’s colonies.,2446,EXTREME
+prv_station1_rb,Orbital Station - Ruster,45,90,,3,,prv_station2_rb,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:prv_station1_rb_standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,prv.rb.campaign.prv_station_rb,"A Rust Belt-style space station, featuring resilient drones and a heavy artillery battery.
+
+Must be reduced before invasions or bombardment can be attempted.",2047.3,
+prv_station2_rb,Battlestation - Ruster,100,120,,4,prv_station1_rb,prv_station3_rb,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:prv_station2_rb_standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,prv.rb.campaign.prv_station_rb,"A Rust Belt-style space station, augmented with additional combat modules. Twin artillery batteries are backed up by a significant missile and fighter complement.
+
+Must be reduced before invasions or bombardment can be attempted.",2057.3,
+prv_station3_rb,Star Fortress - Ruster,200,180,,5,prv_station2_rb,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:prv_station3_rb_standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/battlestation.png,prv.rb.campaign.prv_station_rb,"A fortified Rust Belt-style battlestation, featuring durable armor, resilient defense drones and heavy firepower.
+
+Must be reduced before invasions or bombardment can be attempted.",2067.3,
+,,,,,,,,,,,,,,
+#prv_rb_pirate_1,Raider Hideout,,,,3,,,"prv_pirate, tactical_bombardment, structure",,graphics/prv/icons/industry/prv_raider_base.png,,"In good times, merchants. In bad times, pirates. Outlaws operate out of this hideout, and in greater numbers if the market has low stability.",2444,EXTREME
+#prv_rb_pirate_2,Armed Community,,,,5,,,"prv_pirate, tactical_bombardment, structure",,graphics/prv/icons/industry/prv_armed_community.png,,"Rusters take a very distributed approach to warfare, a bring-your-own-ship attitude to military procurement, and regard chain of command as largely optional. Large raiding parties can launch from the colony, and in greater numbers if stability is low.",2445,EXTREME
+#prv_rb_pirate_3,War Syndicate HQ,100,120,,7,,,"prv_pirate, tactical_bombardment, industry",,graphics/prv/icons/industry/prv_war_syndicate_hq.png,,The War Syndicate puts a professional face on what some would describe as shameless pillaging. If colony stability is low entire pirate armadas may be launched from these facilities.,2446,EXTREME

@@ -1,0 +1,20 @@
+{
+	"knownWeapons":{
+		"tags":["prv_lp_bp"],
+	},
+	"shipsWhenImporting":{
+		"tags":["prv_lp_bp"],
+	},
+	"knownShips":{
+		"tags":["prv_lp_bp"],
+	},
+	"knownFighters":{
+		"tags":["prv_lp_bp"],
+	},
+	"priorityFighters":{
+		"fighters":[
+			"prv_broadsword_pather_wing",
+			"prv_talon_pather_wing",
+		],
+	},
+}

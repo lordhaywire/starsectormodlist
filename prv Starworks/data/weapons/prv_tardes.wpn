@@ -1,7 +1,7 @@
 {
 	"specClass":"beam",
 	"id":"prv_tardes",
-	"beamEffect":"scripts.weapons.prv_tardes_BeamEffect",
+	"beamEffect":"prv.corp.weapons.prv_tardes_BeamEffect",
 	"type":"ENERGY",
 	"size":"SMALL",
 	"turretSprite":"graphics/weapons/ionbeam_t_base.png",

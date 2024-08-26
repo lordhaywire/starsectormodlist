@@ -1,0 +1,10 @@
+{
+    "DESTROYED_ENEMY": [
+	["destroyedEnemy1","1"],
+	["destroyedEnemy2","2"]
+    ],
+    "DESTROYED_FRIENDLY": [
+	["destroyedFriendly1","1"],
+	["destroyedFriendly2","2"]
+    ],
+}

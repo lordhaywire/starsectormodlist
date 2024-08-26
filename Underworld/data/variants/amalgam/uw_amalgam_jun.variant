@@ -1,7 +1,7 @@
 {
     "displayName": "Junker",
     "fluxCapacitors": 0,
-    "fluxVents": 34,
+    "fluxVents": 36,
     "goalVariant": true,
     "hullId": "uw_amalgam",
     "hullMods": [

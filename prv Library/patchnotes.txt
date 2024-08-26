@@ -1,0 +1,13 @@
+prv Library
+
+###
+
+v1.1
+
+Fräsare anomalies no longer damage allied fighters and missiles.
+
+###
+
+v1
+
+Initial Release

@@ -1,0 +1,22 @@
+{
+  "variantId": "acs_smallderelicdrone_variant",
+  "hullId": "acs_smallderelicdrone",
+  "displayName": "Defense Drone",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "acs_dronethumper"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

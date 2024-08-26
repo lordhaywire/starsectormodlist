@@ -1,6 +1,6 @@
 {
 	"id":"prv_akers_nova_shot",
-	"onHitEffect":"data.scripts.weapons.prv_akers_nova_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_akers_nova_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

@@ -1,0 +1,28 @@
+{
+  "baseHullId": "filgap_copernic",
+  "baseValueMult": 1.2,
+  "builtInMods": [
+     "militarized_subsystems"
+  ],
+  "descriptionId": "filgap_copernic",
+  "descriptionPrefix": "This ship is on the Hegemony auxiliary list and as such its systems have been upgraded to military standard and a rigorous schedule of servicing enforced with the expectation that it can be pressed into military service during emergencies.",
+  "fighterBays": 1,
+  "fleetPoints": 4,
+  "fpMod": 0,
+  "hullDesignation": "Destroyer",
+  "hullName": "Copernic (A)",
+  "manufacturer": "",
+  "ordnancePoints": 65,
+  "removeBuiltInMods": [
+    "solar_shielding",
+    "surveying_equipment"
+  ],
+  "removeBuiltInWings": [
+    "filum_wing"
+  ],
+  "restoreToBaseHull": false,
+  "skinHullId": "filgap_copernic_h",
+  "spriteName": "graphics/filgap/ships/filgap_copernic_h.png",
+	"tags":["heg_aux_bp"],
+  "tech": "Hegemony"
+}

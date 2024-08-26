@@ -1,0 +1,67 @@
+{
+  "variantId": "prv_gremlin_rb_rare_hybrid",
+  "hullId": "prv_gremlin_rb_rare",
+  "displayName": "Hybrid",
+  "goalVariant": false,
+  "fluxCapacitors": 27,
+  "fluxVents": 30,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "dedicated_targeting_core",
+    "stabilizedshieldemitter",
+    "reinforcedhull"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_hfl_array"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS 005": "heatseeker",
+        "WS 009": "pilum"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 008": "prv_belt_blaster"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 006": "prv_fusion_burster",
+        "WS 007": "prv_fusion_burster",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "prv_lighttripleac",
+        "WS0003": "prv_lighttripleac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS 001": "mininglaser",
+        "WS 002": "mininglaser",
+        "WS 003": "mininglaser",
+        "WS 004": "mininglaser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

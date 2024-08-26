@@ -1,0 +1,30 @@
+{
+	"baseHullId":"mercury",
+	"skinHullId":"koc_mercury",
+	"hullName":"Mercury (KoC)",
+	"descriptionId":"mercury",
+	"descriptionPrefix":"Modified for deep space exploration, this vessel has been overhauled to reduced dependance on supply lines.",
+	"tags":["independent","KoC_Export","Persean"],
+	"tech":"Ko Combine",
+	"spriteName":"graphics/ships/koc_mercury.png",
+	"removeWeaponSlots":[], 		# ids
+	"removeEngineSlots":[], 		# indices, as engine slots have no id in the .ship file
+	"removeBuiltInMods":[], 		# hullmod ids
+	"removeBuiltInWeapons":[], 		# weapon slot ids
+	"builtInMods":[],
+	"builtInWeapons":{},
+#	"removeHints":["CIVILIAN"],
+	"ordnancePoints":30,
+	"weaponSlotChanges":{
+	   "WS 001":{
+		  "type": "ENERGY",
+	   },
+	   "WS 002":{
+		  "type": "ENERGY",
+	   },
+	   "WS 003":{
+		  "type": "COMPOSITE",
+		  "angle": 0,
+	   },
+	},
+}

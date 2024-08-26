@@ -1,8 +1,0 @@
-{
-	"id":"al_chafflauncher",
-	"type":"WEAPON",
-	"aiType":"FLARE",
-	
-	"weaponDataId":"al_chafflauncher",
-	"outOfUsesSound":"gun_out_of_ammo",
-}

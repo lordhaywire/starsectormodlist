@@ -1,0 +1,4 @@
+id,variant,tags,tier,rarity,fleet pts,op cost,formation,range,attackRunRange,attackPositionOffset,num,role,role desc,refit,base value,,,,,,,,,,,,,number
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+prv_agni_down_wing,prv_agni_down_fuzz,"auto_fighter, no_drop, no_sell, rapid_reform, leader_no_swarm, wingmen_no_swarm, restricted",3,,6,4,V,4000,200,100,3,FIGHTER,Guardian Symbiote,5,16000,,,,,,,,,,,,,
+prv_agni_scale_wing,prv_agni_scale_plate,"auto_fighter, no_drop, no_sell, rapid_reform, leader_no_swarm, wingmen_no_swarm, restricted",3,,6,4,V,4000,200,100,3,FIGHTER,Guardian Symbiote,5,16000,,,,,,,,,,,,,

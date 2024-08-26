@@ -51,6 +51,7 @@
 		"job_memKey":"$test_bounty",
 		#"job_conclusion_script":"magiclib_test_bounty_completed",
 
+		"target_importantPersonId": "your_important_person_id_optional",
 		"target_first_name":"Jonas-August",
 		"target_last_name":"Lindenburg the Third",
 		#"target_portrait":"",
@@ -89,7 +90,6 @@
 		#"location_marketFactions":[],
 		"location_distance":"",
 		"location_themes":[
-			,
 		],
 		#"location_themes_blacklist":[],
 		"location_entities":[
@@ -109,4 +109,3 @@
 		"location_defaultToAnyEntity":true
 	},
 }
-k

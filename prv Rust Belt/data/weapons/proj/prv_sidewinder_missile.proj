@@ -1,0 +1,43 @@
+{
+	"id":"prv_sidewinder_srm",
+	"onHitEffect":"com.fs.starfarer.api.impl.combat.PilumOnHitEffect",
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/prv/missiles/prv_missile_sidewinder.png",
+	"size":[8,20],	
+	"center":[4,10],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[255,100,50,255], #nasty green  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":0, # purely visual #was 80, now handled in OnHit
+	"flameoutTime":1.125, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.75, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{
+		"turnAcc":360,
+		"turnRate":270,
+		"acc":500,
+		"dec":250},
+	"engineSlots":[{"id":"ES1",
+		"loc":[-6, 0],
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", 				# PARTICLES or QUAD_STRIP, determines which params are used
+			"engineColor":[255,145,75,255], 		#golden yellow HSB 45 80 100
+			"contrailDuration":2,				#1
+			"contrailWidthMult":2,
+			"contrailWidthAddedFractionAtEnd":2,  	# can be negative. makes trail spread out/narrow at the end	#2.5
+			"contrailMinSeg":9, 				# min segment length, in pixels
+			"contrailMaxSpeedMult":0,
+			"contrailAngularVelocityMult":1,
+			"contrailSpawnDistMult":0.125, 		# how far away from engine it starts
+			#"contrailColor":[255,234,171,25], 		# golden yellow @ 33% sat
+			"contrailColor":[100,100,100,50],
+			"glowSizeMult":1,
+			"type":"SMOKE" 					# GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":8.0,
+		"length":40.0,
+		"angle":180.0},
+	]
+}

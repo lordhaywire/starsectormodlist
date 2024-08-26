@@ -1,5 +1,5 @@
 {
-  "beamEffect": "scripts.weapons.prv_vakt_BeamEffect",
+  "beamEffect": "prv.corp.weapons.prv_vakt_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "coreColor": [
@@ -59,5 +59,5 @@
   ],
   "turretSprite": "graphics/prv/weapons/prv_uvbeam_fighter.png",
   "type": "ENERGY",
-  "width": 15
+  "width": 30
 }

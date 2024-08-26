@@ -1,0 +1,245 @@
+{
+	id:"Eridani",
+	"color":[204,229,255,255],
+	"baseUIColor":[178,225,225,255],
+	"darkUIColor":[0,153,76,175],
+	"gridUIColor":[0,153,76,75],
+	"brightUIColor":[204,229,255,255],
+	
+	"displayName":"Eridani-Utopia",
+	"logo":"graphics/factions/eridani_utopia.png",
+	"crest":"graphics/factions/crest_eridani_utopia.png",
+	"displayNameWithArticle":"Eridani-Utopia",
+	"shipNamePrefix":"EU",
+	"shipNameSources":{
+		"DIKTAT":2,
+		"BRITISH_NAVY":1, 
+		"ROMAN":1,
+		"GREEK":1,
+		"EGYPTIAN":1,
+		"PERSIAN":1,
+		"SPACE":1,
+		"GENERAL":1,
+	},
+	"names":{
+		"old english":1,
+		"world":1,
+		"future":1,
+		"myth":1,
+        "kocsuckers":2,
+	},
+	# variantOverrides restricts hulls to listed variants and adjusts their probability
+	"variantOverrides":{
+	},
+	# multiplier for how often hulls show up in the faction's fleets
+	"hullFrequency":{
+		"tags":{"KoC_Export":0.5,
+		},
+		"hulls":{
+		},
+	},
+	# ships the faction gets access to when importing S&W out-of-faction
+	"shipsWhenImporting":{
+		"tags":["base_bp", "eridani", "KoC_Export"],
+		"hulls":["wolf","apogee","odyssey","dram"],
+	},
+	"knownShips":{
+		"tags":["base_bp", "eridani", "KoC_Export"],
+		"hulls":["wolf","apogee","odyssey","dram"],
+	},
+	# listing ships here will make the faction mostly use them even if other hulls become available
+	"priorityShips":{
+		"tags":["eridani", "KoC_Export"],
+		"hulls":["wolf","apogee","odyssey"],
+	},
+	"knownFighters":{
+		"tags":["base_bp", "eridani", "KoC_Export"],
+		"fighters":[],
+	},
+	"priorityFighters":{
+		"tags":["eridani", "KoC_Export"],
+		"fighters":[],
+	},
+	"knownWeapons":{
+		"tags":["base_bp", "lowtech_bp", "midline_bp", "hightech_bp", "missile_bp"],
+		"weapons":[
+			"lightneedler",
+			"railgun",
+			"dualflak",
+			"heavymauler",
+			"hveldriver",
+			"heavyneedler",
+			"gauss",
+			"mjolnir",
+			"multineedler",
+			"breachpod",
+			"sabotpod",
+			"phasecl",
+			"cyclone",
+			"hurricane",
+			"squall",
+			"locust",
+			"pdburst",
+			"amblaster",
+			"phasebeam",
+			"heavyblaster",
+			"heavyburst",
+			"ionpulser",
+			"ionbeam",
+			"plasma",
+			"guardian",
+			"tachyonlance",
+		],
+	},
+	"priorityWeapons":{
+		"tags":[],
+		"weapons":[
+		],
+	},
+	"knownHullMods":{
+		"tags":["base_bp"],
+		"hullMods":[
+			"advancedshieldemitter", # accelerated
+			"augmentedengines",
+			"autorepair",
+			"converted_hangar",
+			"eccm",
+			"ecm",
+			"expanded_deck_crew",
+			"magazines",
+			"missleracks",
+			"extendedshieldemitter",
+			"frontemitter",
+			"frontshield",  # makeshift
+			"hardenedshieldemitter",
+			"insulatedengine",
+			"targetingunit",
+			"nav_relay",
+			"adaptiveshields", # omni
+			"recovery_shuttles",
+			"fluxbreakers",
+			"solar_shielding",
+			"stabilizedshieldemitter",
+			"surveying_equipment",
+			"hiressensors",
+			"efficiency_overhaul",
+            "phantomflux",
+		],
+	},
+	"factionDoctrine":{
+		"warships":5,
+		"carriers":1,
+		"phaseShips":1,
+		
+		"officerQuality":3,
+		"shipQuality":2,
+		"numShips":5,
+		
+		"shipSize":2,
+		
+		"aggression":4,
+		
+		"combatFreighterProbability":0.1,      				# instead of some portion of the freighters in a fleet
+		"combatFreighterCombatUseFraction":0,  				# as part of the normal combat lineup
+		"combatFreighterCombatUseFractionWhenPriority":0,   # as part of normal combat lineup, when marked as priority ship
+		"autofitRandomizeProbability":0.1,
+		
+		"commanderSkillsShuffleProbability":0,
+		"commanderSkills":[
+			"coordinated_maneuvers",
+			"crew_training",
+		],
+	},
+	"illegalCommodities":[
+		"drugs",
+		"organs",
+		"luxury_goods",
+		"ai_cores",	
+	],
+	"music":{
+		"theme":"music_diktat_market_neutral",
+		"market_neutral":"music_diktat_market_neutral",
+		"market_hostile":"music_diktat_market_hostile",
+		"market_friendly":"music_diktat_market_friendly",
+		"encounter_neutral":"music_diktat_encounter_neutral",
+		"encounter_hostile":"music_diktat_encounter_hostile",
+		"encounter_friendly":"music_diktat_encounter_friendly",
+	},
+	"internalComms":"sindrian_diktat_internal",
+	"portraits":{
+		"standard_male":[
+"graphics/faces/AMPP_42.png",
+"graphics/faces/AMPP_67.png",
+"graphics/faces/AMPP_71.png",
+"graphics/faces/AMPP_78.png",
+"graphics/faces/AMPP_101.png",
+"graphics/faces/AMPP_65.png",
+"graphics/faces/AMPP_79.png",
+"graphics/faces/AMPP_108.png",
+		],
+		"standard_female":[
+"graphics/faces/AMPP_100.png",
+"graphics/faces/AMPP_61.png",
+"graphics/faces/AMPP_62.png",
+"graphics/faces/AMPP_63.png",
+"graphics/faces/AMPP_64.png",
+"graphics/faces/AMPP_66.png",
+		],
+	},
+	"voices":{
+		"LOW":{
+			"soldier":10,
+			"official":5,
+			"spacer":5,
+		},
+		"MEDIUM":{
+			"soldier":10,
+			"official":10,
+		},
+		"HIGH":{
+			"soldier":5,
+			"official":10,
+		},
+	},	
+	"custom":{
+		"offersCommissions":true,
+		"engagesInHostilities":true,
+		"buysAICores":true,
+		"AICoreValueMult":1,
+		"AICoreRepMult":1,
+		"buysSurveyData":true,
+		"hostilityImpactOnGrowth":true,
+		#"makesPirateBases":true, # testing
+		"caresAboutAtrocities":false,
+		"punitiveExpeditionData":{
+			"vsCompetitors":true,
+			"vsFreePort":false,
+			"canBombard":true,
+			"territorial":true,
+		},
+	},	
+	"ranks":{
+		"ranks":{
+			"factionLeader":{"name":"2nd Cheif"},
+		},
+		"posts":{
+			"factionLeader":{"name":"2nd Cheif"},
+		},
+	},
+	"fleetTypeNames":{
+		"trade":"Mercantile Convoy",
+		"tradeLiner":"Liner Convoy",
+		"smallTrader":"Trader",
+		
+		"patrolSmall":"Fast Picket",
+		"patrolMedium":"Patrol",
+		"patrolLarge":"Detachment",
+		
+		"inspectionFleet":"Internal Security Fleet",
+		"taskForce":"Task Force",
+		
+		"foodReliefFleet":"Relief Convoy",
+	},
+},
+
+

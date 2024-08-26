@@ -13,7 +13,6 @@
   "viewOffset": 0,
   "builtInMods": [
     "delicate",
-    "high_maintenance",
     "operations_center",
     "edshipyard_small_drone_hangar",
     "edshipyard_tyrantmaw_bombardment",
@@ -24,9 +23,6 @@
     "MAW": "edshipyard_MAW",
     "WURGBAR": "edshipyard_WURGBAR"
   },
-  "builtInWings": [
-    "edshipyard_papillon_wing",
-  ],
   "weaponSlots": [
     {
       "id": "MAW",

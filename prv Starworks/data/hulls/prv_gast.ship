@@ -13,7 +13,8 @@
   "viewOffset": 0,
   "builtInMods": [
     "prv_swarm_host",
-    "prv_intangible"
+    "prv_intangible",
+    "defensive_targeting_array"
   ],
   "builtInWeapons": {
     "WS0001": "prv_tardes"

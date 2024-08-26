@@ -1,0 +1,255 @@
+{
+  "bounds": [
+    45,
+    -6,
+    42,
+    -13.5,
+    65.5,
+    -14.5,
+    71.5,
+    -18.5,
+    71,
+    -30.5,
+    1,
+    -57,
+    -33,
+    -56.5,
+    -71.5,
+    -40,
+    -69.5,
+    -21,
+    -41.5,
+    -7,
+    -49.5,
+    -0,
+    -41.5,
+    7,
+    -69.5,
+    21,
+    -71.5,
+    40,
+    -33,
+    56.5,
+    1,
+    57,
+    71,
+    30.5,
+    71.5,
+    18.5,
+    65.5,
+    14.5,
+    42,
+    13.5,
+    45,
+    6
+  ],
+  "builtInWings": [],
+  "center": [
+    64,
+    72
+  ],
+  "collisionRadius": 100,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 8,
+      "length": 30,
+      "location": [
+        -69,
+        24.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 8,
+      "length": 30,
+      "location": [
+        -69,
+        -24.5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 5,
+      "length": 18,
+      "location": [
+        -65.5,
+        17.5
+      ],
+      "style": "LOW_TECH",
+      "width": 5
+    },
+    {
+      "angle": -180,
+      "contrailSize": 5,
+      "length": 18,
+      "location": [
+        -65.5,
+        -17.5
+      ],
+      "style": "LOW_TECH",
+      "width": 5
+    },
+    {
+      "angle": 180,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -67.5,
+        32
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    },
+    {
+      "angle": -180,
+      "contrailSize": 3,
+      "length": 12,
+      "location": [
+        -67.5,
+        -32
+      ],
+      "style": "LOW_TECH",
+      "width": 3
+    }
+  ],
+  "height": 144,
+  "hullId": "filgap_cossack",
+  "hullName": "Cossack",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 87.5,
+  "spriteName": "graphics/filgap/ships/filgap_cossack.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": -135,
+      "arc": 180,
+      "id": "WS0001",
+      "locations": [
+        -31.5,
+        -32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 135,
+      "arc": 180,
+      "id": "WS0002",
+      "locations": [
+        -31.5,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 225,
+      "id": "WS0003",
+      "locations": [
+        51,
+        26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS0004",
+      "locations": [
+        51,
+        -26
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 225,
+      "id": "WS0005",
+      "locations": [
+        8,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -90,
+      "arc": 0,
+      "id": "WS0006",
+      "locations": [
+        -10.5,
+        -50.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 90,
+      "arc": 0,
+      "id": "WS0007",
+      "locations": [
+        -10.5,
+        50.5
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "MISSILE"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        22.5,
+        6
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 2",
+      "locations": [
+        23,
+        -8
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 3",
+      "locations": [
+        30,
+        -2.5
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    }
+  ],
+  "width": 128
+}

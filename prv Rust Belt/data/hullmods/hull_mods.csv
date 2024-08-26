@@ -1,0 +1,30 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+,,,,,,,,,,,,,,,,,,,
+### Built-in,,,,,,,,,,,,,,,,,,,
+Overstressed Fire Control,prv_badtar,,,Rust Belt,,,,,TRUE,,0,0,0,0,prv.rb.hullmods.prv_badtar,"The crude targeting computers on this ship are badly overtaxed, leading to a moderate reduction in target leading, and a reduction in weapon ranges past %s units by %s.",Reduces weapon range.,,graphics/prv/hullmods/prv_badtar.png
+Habitat,prv_habitat,,,Rust Belt,,,,,TRUE,,0,0,0,0,prv.rb.hullmods.prv_habitat,"The crew facilities on this ship have been restructured to enable long-term habitation. The facilities desired for permanent ship-bound life are considerably bulkier than those required for mere transport, reducing maximum crew capacity by %s.",Greatly reduces crew capacity.,,graphics/prv/hullmods/prv_habitat.png
+Exposed Flux Transport,prv_exposed_flux_transport,,,Rust Belt,,,,,TRUE,,0,0,0,0,prv.rb.hullmods.prv_exposed_flux_transport,The modifications done to this ship have left the main flux line very exposed. Any %s suffered by the ship will reduce its %s rate by %s.,Hull damage reduces flux dissipation.,,graphics/prv/hullmods/prv_exposed_flux_transport.png
+Buddy Recovery Unit,prv_fetchdrone,,,Rust Belt,,,,,TRUE,,0,0,0,0,prv.rb.hullmods.prv_fetchdrone,Launches %s to tow and recover any disabled drone belonging to the ship.,Attempts to recover and relaunch any disabled drones.,,graphics/hullmods/automated_repair_unit.png
+,,,,,,,,,,,,,,,,,,,
+### Rare,,,,,,,,,,,,,,,,,,,
+Arc Smelter,prv_arcsmelter,3,,Rust Belt,"req_spaceport,special","Logistics, Requires Dock",12000,,,,8,16,24,40,prv.rb.hullmods.prv_arcsmelter,A small slagwork in the ship converts up to %s ore or %s transplutonic ore into smelted metals of the same quality once every %s. ,Refines ore into metal.,,graphics/prv/hullmods/prv_arcsmelter.png
+,,,,,,,,,,,,,,,,,,,
+### Standard,,,,,,,,,,,,,,,,,,,
+Ruggedization,prv_ruggedization,1,,Rust Belt,"req_spaceport, special, merc","Logistics, Requires Dock",3000,,,,5,8,12,20,prv.rb.hullmods.prv_ruggedization,"A comprehensive overhaul of at-risk systems allows the ship to better weather repeated stress, effectively increasing the number of deployments the ship can undertake before requiring time for recovery. Reduces the combat readiness cost per deployment and recovery rate by %s.
+
+The per-day supply consumption for CR recovery is reduced to account for the slower recovery rate, but increasing the maximum number of deployments a ship can undertake before recovery will also increase the maximum cost of recovery proportionally. The total supply cost per deployment remains the same. 
+
+Also reduces most secondary CR costs by %s, for no net change in supply costs.",Improves deployment logistics.,,graphics/prv/hullmods/prv_ruggedization.png
+Crew Comforts,prv_crewcomforts,2,,Rust Belt,"req_spaceport, special, merc","Logistics, Requires Dock",4500,,,,3,6,9,15,prv.rb.hullmods.prv_crewcomforts,"Enlarged and enhanced crew facilities ensure that the crew is hale and hearty, reducing the rate at which combat readiness degrades by %s.
+
+Increases the combat readiness recovery rate by %s. The per-day supply consumption for CR recovery is increased to account for the increased recovery rate, but the total supply cost remains the same.
+
+The ship’s crew will also require an additional %s/%s/%s/%s supplies per month, depending on hullsize.",Improves combat endurance and recovery rate.,Increases the maximum combat readiness of the ship by %s.,graphics/prv/hullmods/prv_crewcomforts.png
+Blast Heater,prv_blastheater,3,0.5,Rust Belt,"offensive, merc",Weapons,9000,,,,6,12,24,35,prv.rb.hullmods.prv_blastheater,"While the flux level is above %s, the flux cost to fire energy weapon is reduced by up to %s. 
+
+While the flux level is below %s, the rate of fire of ballistic weapons is increased by up to %s.",Boosts weapons based on the flux level.,Reduces the ship’s flux capacity by %s.,graphics/prv/hullmods/prv_blastheater.png
+,,,,,,,,,,,,,,,,,,,
+### Commissioned Crew,,,,,,,,,,,,,,,,,,,
+Belt Spirit,prv_belt_spirit,,,Rust Belt,,,,,TRUE,,0,0,0,0,prv.rb.hullmods.prv_belt_spirit,"Rusters are incorrigible free spirits, which has some worrying implications when it comes to naval discipline. Maximum combat readiness for manned ships is reduced by %s.
+
+They are however also excellent mechanics, and ensure that their ships have %s increased hull integrity and that repairs can be performed %s faster, both in and out of combat.",Reduces maximum CR and increases repair rates.,,graphics/prv/hullmods/prv_belt_spirit.png

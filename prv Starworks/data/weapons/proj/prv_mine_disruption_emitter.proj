@@ -1,6 +1,6 @@
 {
 	"id":"prv_mine_disruption_emitter",
-	"onHitEffect":"data.scripts.weapons.prv_mine_disruption_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_mine_disruption_OnHitEffect",
 	"specClass":"missile",	
 	"missileType":"PHASE_MINE",
 	"sprite":"graphics/prv/missiles/prv_mine_disruption.png",

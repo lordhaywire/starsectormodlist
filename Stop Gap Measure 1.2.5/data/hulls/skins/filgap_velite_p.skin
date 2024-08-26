@@ -1,0 +1,15 @@
+{
+  "baseHullId": "filgap_velite",
+  "baseValueMult": 0.8,
+  "descriptionId": "filgap_velite",
+  "descriptionPrefix": "This ship has been heavily modified - and poorly maintained - by its pirate crew.",
+  "tags":["pirate_bp"],
+  "tech":"Pirate",
+  "fleetPoints": 5,
+  "hullDesignation": "Frigate",
+  "hullName": "Velite (P)",
+  "ordnancePoints": 45,
+  "restoreToBaseHull": false,
+  "skinHullId": "filgap_velite_p",
+  "spriteName": "graphics/filgap/ships/filgap_velite_p.png"
+}

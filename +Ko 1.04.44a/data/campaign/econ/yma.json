@@ -1,0 +1,83 @@
+{
+	"starSystem":"yma",
+	"markets":[
+		{
+			"entities":["qaras"],
+			"faction":"Eridani",
+			"size":5,
+			#"freePort":true,
+			"startingConditions":[
+				#"tundra",
+				#"hydroponics_complex",
+				"population_5",
+				"habitable",
+				"volatiles_diffuse",
+				"organics_abundant",
+				"farmland_rich",
+                "cold",
+                "decivilized_subpop",
+                "frontier",
+				"headquarters",
+			],
+			"industries":[
+				"population",
+				"farming",
+				"spaceport",
+				"mining",
+				"heavybatteries",
+				#"fuelprod",
+				"militarybase",
+				#"heavyindustry",
+				#"lightindustry",
+                "battlestation_high",
+                "waystation",
+			],
+		},
+		{
+			"entities":["hanan_pacha"],
+			"faction":"Eridani",
+			"size":3,
+			#"freePort":true,
+			"startingConditions":[
+				"population_3",
+				"decivilized_subpop",
+				"ruins_widespread",
+				"rare_ore_sparse",
+                "outpost",
+                "irradiated",
+                "extreme_weather",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"patrolhq",
+                "techmining"
+			],
+		},
+		{
+			"entities":["salamanca"],
+			"faction":"persean",
+			"size":5,
+			"startingConditions":[
+				"dense_atmosphere",
+				"organics_plentiful",
+				"population_5",
+				"cold",
+				"extreme_weather",
+				#"organized_crime",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+				"mining",
+				"grounddefenses",
+				"patrolhq",
+			],
+		},
+	],
+
+
+}
+
+
+

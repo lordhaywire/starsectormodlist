@@ -1,8 +1,9 @@
 {	
 	"startShipsSuper":[
 	  ["edshipyard_doog_prototype"],
-	  ["edshipyard_newfoundland_warfreighter"]
-	],
+	  ["edshipyard_newfoundland_warfreighter"],
+      ["edshipyard_saluki_x"]
+    ],
 	
 	"startShipsGrandFleet":[
 	  ["edshipyard_groenendael_dust","edshipyard_rottweiler_assault","edshipyard_beauceron_rescue","edshipyard_redbone_assault","edshipyard_corgi_dust","edshipyard_corgi_dust","edshipyard_bernard_variant","edshipyard_bernese_tug"],

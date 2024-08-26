@@ -1,5 +1,5 @@
 {
-  "beamEffect": "scripts.weapons.prv_sipdlaser_BeamEffect",
+  "beamEffect": "prv.corp.weapons.prv_sipdlaser_BeamEffect",
   "collisionClass": "RAY",
   "collisionClassByFighter": "RAY_FIGHTER",
   "coreColor": [

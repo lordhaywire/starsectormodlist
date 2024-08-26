@@ -1,0 +1,60 @@
+{
+    "displayName": "Sparky",
+    "fluxCapacitors": 40,
+    "fluxVents": 50,
+    "goalVariant": true,
+    "hullId": "oddykoc",
+    "hullMods": [
+        "targetingunit",
+        "frontemitter"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "oddykoc_Sparky",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "mark10_xiv",
+                "WS 002": "mark10_xiv"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "madmaiden"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 004": "gravburst",
+                "WS 006": "gravburst"
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "apmg",
+                "WS 007": "lightdualmg",
+                "WS 008": "flicker_pdl",
+                "WS 009": "flicker_pdl",
+                "WS 010": "flicker_pdl",
+                "WS 011": "flicker_pdl",
+                "WS 012": "flicker_pdl",
+                "WS 013": "flicker_pdl",
+                "WS 014": "flicker_pdl",
+                "WS 015": "lightdualmg",
+                "WS 016": "lightdualmg",
+                "WS 017": "lightdualmg",
+                "WS 018": "lightdualmg"
+            }
+        }
+    ],
+    "wings": [
+        "4m_pulse_wing",
+        "4m_pulse_wing"
+    ]
+}

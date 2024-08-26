@@ -23,7 +23,8 @@ public class UW_ScrapyardMarketPlugin extends BlackMarketPlugin {
         if (action == TransferAction.PLAYER_SELL) {
             return "No refunds!";
         }
-        return "Illegal to trade on the " + submarket.getNameOneLine().toLowerCase() + " here";
+
+        return super.getIllegalTransferText(stack, action);
     }
 
     @Override
@@ -31,7 +32,8 @@ public class UW_ScrapyardMarketPlugin extends BlackMarketPlugin {
         if (action == TransferAction.PLAYER_SELL) {
             return "No refunds!";
         }
-        return "Illegal to buy";
+
+        return super.getIllegalTransferText(member, action);
     }
 
     @Override

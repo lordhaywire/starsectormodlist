@@ -21,6 +21,7 @@
 			"cost":20,
 			"params": {	# tries upgrading first, if the industry doesn't exist then it adds
 				"upgrade":"patrolhq",
+				"upgradeTo":"militarybase",
 				"add":"militarybase",
 			},
 			"className":"exerelin.world.factionsetup.AddOrUpgradeIndustry",
@@ -32,6 +33,7 @@
 			"cost":20,
 			"params": {
 				"upgrade":"heavyindustry",
+				"upgradeTo":"orbitalworks",	# force upgrade target, currently use for Ashes of the Domain compatibility
 				"add":"heavyindustry",
 			},
 			"className":"exerelin.world.factionsetup.AddOrUpgradeIndustry",

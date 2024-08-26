@@ -2,8 +2,8 @@
   "variantId": "prv_shrike_attack",
   "hullId": "prv_shrike",
   "displayName": "Attack",
-  "goalVariant": false,
-  "fluxCapacitors": 12,
+  "goalVariant": true,
+  "fluxCapacitors": 17,
   "fluxVents": 20,
   "quality": 0,
   "permaMods": [],
@@ -28,6 +28,7 @@
       "mode": "LINKED",
       "weapons": {
         "WS 000": "prv_sipdlaser",
+        #"WS 001": "prv_sipdlaser",
         "WS 002": "prv_sipdlaser",
         "WS 006": "prv_sipdlaser",
         "WS 007": "prv_sipdlaser"

@@ -1,0 +1,58 @@
+{
+  "displayName": "Redemption",
+  "fluxCapacitors": 10,
+  "fluxVents": 16,
+  "goalVariant": true,
+  "hullId": "prv_aska_lc",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks",
+    "converted_hangar"
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_lc_redemption",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hurricane",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "breachpod",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "heavymortar",
+        "WS0004": "heavymortar",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightdualac",
+        "WS0008": "lightdualac",
+        "WS0005": "lightdualac",
+        "WS0006": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan"
+      }
+    }
+  ],
+  "wings": ["talon_wing"]
+}

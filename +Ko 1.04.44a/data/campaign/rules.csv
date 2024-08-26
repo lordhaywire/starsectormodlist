@@ -1,0 +1,138 @@
+id,trigger,conditions,script,text,options,notes
+# new game creation KoC,,,,,,
+ngcKoCStart,AddNewGameChoices,,"SetTooltip ngcKoC ""A large fuel tanker and support vessels.\n\ \n\Ample cargo space and fuel reserves make this start suitable for trade and exploration.\n\ \n\Normal Difficulty - No Tutorial.""",,"7:ngcKoC:A fuel trader, holding a long-term contract with the Ko Combine",
+,,,,,,
+ngcKoCPicked,NewGameOptionSelected,$option == ngcKoC,"NGCAddShip buffalo_c_standard
+NGCAddShip koc_mercury_Standard
+NGCAddShip propsector_standard
+NGCAddShip propsector_standard
+NGCAddShip pranker_standard
+NGCAddCargo RESOURCES fuel 1000
+AddTextSmall ""Acquired level 1 officer"" good
+SetTextHighlights ""level 1 officer""
+$ngcAddOfficer = true",Would you like to know more?,"0:ngcKoCBegin:Begin Game
+1:ngcKoCBo1:Tell me more",
+ngcKoCBo1,NewGameOptionSelected,$option == ngcKoCBo1,"NGCAddCharacterPoints 1
+AddTextSmall ""Gained 1 additional skill point"" good
+SetTextHighlights ""1 additional skill point""","The Ko Combine secured their application for independence pre-collapse, an applications whose legitimacy has been questioned on more than one occasion. Although the Hegemony officially disproved they grudgingly honoured the application as a public demonstration of upholding the Domain’s legacy. Though their independence was not without compromise, as technically they still fall under Domain rule, a technicality the Hegemony is keen to remind them of, they have the legal right to govern themselves with regards to industrial and civil rule. Military issues are still a matter of Domain policy and the Hegemony were quick to upgrade Arcadia to a Star Fortress as a means of ‘protecting’ Arcadia. 
+
+At the same time Arcadia was being upgraded the Ko Combine negotiated a “self-defence treaty” with the Persean league as a means of acquiring military assets which they permitted from producing themselves, and which the Hegemony refused to supply. Although problematic, the Hegemony saw an opportunity and began using the Ko Combine as a mediatory in negations with other independent bodies who refused direct contact, and while this has achieved success, a worrying connection has been made between those bodies refusing ‘Hegemony interference’ and those promptly receiving Persean made armaments. HEGINT has been keen to establish a connection between the Ko Combine and the supply of Persean weapons but so far this has been unsuccessful. Should a connection be proven it is well-acknowledged that Arcadia Station is poised to remove any ‘war-profiteers’ from the surface of Arcadia and re-establish Hegemony control of the planet.","0:ngcKoCBegin:Begin Game
+1:ngcKoCBo2:[[COMSEC INT.REP – BHILAI ASTRA]]",
+ngcKoCBo2,NewGameOptionSelected,$option == ngcKoCBo2,"NGCAddShip valkyrie_ass_Standard
+AddTextSmall ""Unlocked Ordnance Storage hullmod"" good
+SetTextHighlights ""Ordnance Storage""
+NGCSetSkill dummy_skill_ordstore 1","Originally a standard Domain-era industrial manufacturer, with the onset of the Collapse Bhilai Astra has become an eccentric organization with an almost cult-like devotion to its craft, primarily serving the Hegemony. The workers who handle the weapons and ships treat them with an almost religious reverence, meticulously maintaining and caring for them as if they were sacred relics. The higher-ups regard the production process itself as a sacred ritual, and oversee it with an obsessive zeal.
+ 
+While Bhilai Astra primarily supplies the Hegemony and the independent market with its weapons, the company itself remains indifferent to the intentions or allegiances of its customers. This indifference to worldly matters has earned Bhilai Astra the ire of the more righteous and empathetic inhabitants of the sector, most notably the Church of Galactic Redemption, who view the heavy weapons manufacturer as yet another minion of Moloch, actively prolonging and intensifying the sector's many conflicts.
+ 
+By comparison, Bhilai Astra's approach to customers who mishandle their beloved weapons is uncompromising. Lifetime bans on all dealings with the company and its subsidiaries are the norm, often accompanied by a mysterious wave of black-ops mercenaries carrying suspiciously large amounts of Bhilai equipment, apparently tasked with hunting down the offender.",0:ngcKoCBegin:Begin Game,
+ngcKoCCon4,NewGameOptionSelected,$option == ngcKoCBegin,"NGCSetDifficulty normal
+$ngcSkipTutorial = true
+NGCAddCharacterPoints 1
+NGCSetStartingLocation Arcadia 2500 5000
+NGCAddStandardStartingScript
+NGCDone",,,
+,,,,,,
+# new game creation MbG,,,,,,
+ngcMbGStart,AddNewGameChoices,,"SetTooltip ngcMbG ""A phase cruiser and drone escorts.\n\ \n\Intended for the more clandestine player.\n\ \n\Normal Difficulty - No Tutorial.""",,7:ngcMbG:An operative of the Mbaye-Gogle Directorive,
+,,,,,,
+ngcMbGPicked,NewGameOptionSelected,$option == ngcMbG,"NGCAddShip google_geist_Standard
+NGCAddShip google_bastillon_Standard
+NGCAddShip google_bastillon_Standard
+NGCAddCargo RESOURCES beta_core 2
+AddTextSmall ""Acquired Automated Ships skill"" good
+SetTextHighlights ""Automated Ships""
+NGCSetSkill automated_ships 1",Would you like to know more?,"0:ngcMbGBegin:Begin Game
+1:ngcMbGBo1:Tell me more",
+ngcMbGBo1,NewGameOptionSelected,$option == ngcMbGBo1,"NGCAddShip google_defender_Standard
+NGCAddCargo RESOURCES gamma_core 1","Mbaye-Gogol profit off their indentured servants in more ways than one. Their indentured servants little more than slaves held to contracts they can never hope to repay. Found in servitude in all levels of society the lives of an indentured varies greatly but they are an easily replaceable commodity and it is contractual that any servant showing signs of dissent be shipped of to the frozen mines of Nomios, a fate that is often final. The Directorate is also known to trade ‘debt’ with foreign powers as a form of currency and it is commonplace for Hegemony and Diktat officials to have indentured servants attending their personal needs. With the lives of indentured servants being so fickle there is a desperation to escape. While some attempt a stolen shuttle ride through the orbital minefields others seek out the underground where rumors of escape are abound.
+
+Mbaye-Gogol has also found itself a place in the organs trade, officially they source their organs from their indentured, either from those seeking a quick way to repay a portion of their debts or from those who those who fall in the mines still owing. In either case, the donor has agreed in writing. The Supreme Executor of Sindria himself is known to have negotiated a supply contract with Mbaye-Gogol for his most loyal guard and, some claim, himself. It would be foolish to believe he is the only man in the sector who has such an arrangement which lends credits to the theory that he has also arranged for a contingency of cryopods should he and his men need to go in to hiding.","0:ngcMbGBegin:Begin Game
+1:ngcMbGBo2:[[COMSEC INT.REP – ERIDANI-UTOPIA]]",
+ngcMbGBo2,NewGameOptionSelected,$option == ngcMbGBo2,"AddTextSmall ""Unlocked Flux Capacitor hullmod"" good
+SetTextHighlights ""Flux Capacitor""
+NGCSetSkill dummy_skill_phantomflux 1","Following the Hanan Pacha atrocity and the demilitarization of the Yma system the remnants of Eridani-Utopia were quickly abandoned by their closest ally, Tri-Tachyon. Left with little defense they found themselves the targets of constant pillaging and raiding by pirates and brigands. With their calls for help going unheeded their stockpiles of resources and domain tech quickly evaporated into the holds of outgoing raider parties. Although there has been no official connection the precision with which the raids were conducted were too accurate for common pirates, only Tri-Tachyon operatives are known to be so precise. 
+
+When their stockpiles were depleted the raiding stopped a less structured class of pirate took hold of the system. Eridani-Utopia was scattered and on the verge of collapse, their saving grace came from a former brother of the Path and the so-called pirate-lords under his command who found the world beset by the disenfranchised. Claiming a higher purpose they subjugated the remaining citizens and used the the shell of Eridani-Utopia to re-establish themselves as a legitimate polity. After achieving recognition, with the support of the Church, they have began searching the sector for a holy reliquary of unknown purpose. Their claim is that the the atrocity that occurred on Hanan Pacha was an attempt to cover up its existence and only once they have reclaimed the holy artifact can the final words of Ludd come to pass.",0:ngcMbGBegin:Begin,
+ngcMbGCon4,NewGameOptionSelected,$option == ngcMbGBegin,"NGCSetDifficulty normal
+$ngcSkipTutorial = true
+NGCAddCharacterPoints 1
+NGCSetStartingLocation Arcadia -2500 -3000
+NGCAddStandardStartingScript
+NGCDone",,,
+,,,,,,
+# Donating supplies at Behehmoth also improves relations with the Path,,,,,,
+# News of your good deed spreads,,,,,,
+shrineGiveOffering,DialogOptionSelected,$option == shrineGiveOffering,"AddText ""A subcurate accepts your offering with prayer and thanks.""
+AddRemoveCommodity supplies -10 true
+AdjustRep luddic_church SHRINE_OFFERING
+AdjustRep luddic_path SHRINE_OFFERING
+$offeringMade = true 60
+FireBest ShrineMainOptions",,,
+,,,,,,
+"# Pay the tithe, increase your rep with the path",,,,,,
+LPTithePay,DialogOptionSelected,$option == payTithe,"#AddText ""Lost $entity.LP_tithe credits"" textEnemyColor
+AddRemoveCommodity credits -$entity.LP_tithe true
+$entity.LP_tithePaid = true 30
+MakeOtherFleetNonHostile LP_tithe true 30
+AdjustRep luddic_path SHRINE_OFFERING
+#AddText ""\""Blessings of Ludd be upon you.\""""
+AddText ""The connection is cut before you have a chance to respond.""
+ShowDefaultVisual
+EndConversation","""Perhaps your soul is not yet lost to the machine.""
+OR
+""Truly, Ludd's hand has guided you.""",cutCommLink:Cut the comm link,
+,,,,,,
+# pirate shrine ripped from David! (Having some Fun.),,,,,,
+# Sell your soul!,,,,,,
+kocchopOpenDialog,OpenInteractionDialog,$tag:KoC_Chop,"PrintDescription 1
+AddText ""The landing bay is filled with riff raff and vagabonds. An overly muscled man looks you over suspiciously and inquires about what business you have coming here.""
+ShowDefaultVisual
+FireBest kocchopMainOptions",,,
+kocchopMainOptions,kocchopMainOptions,,"SetShortcut kocchopLeave ""ESCAPE""",,"0:kocchopVisit:Tour the station
+1:kocchopMakeOffering:Ask about the cryo pods
+10:kocchopLeave:Leave",
+kocchopVisit,DialogOptionSelected,$option == kocchopVisit,FireBest kocchopMainOptions,"The muscled man leads you about the station. He's careful to keep you a distance from the cryo pods, whilst the lights appear to be on it's impossible to tell if their contents are preserved as all the diagnotic displays are dead.
+
+""We're not like those Gogols down there, freezing for profit. If you don't want to suffer the existence of this sector we'll take care of you. You and your men are always welcome to volunteer for storage.""
+
+
+After a time, you return to your ship.",kocchopLeave:Leave,
+kocchopLeave,DialogOptionSelected,$option == kocchopLeave,DismissDialog,,,
+,,,,,,
+kocchopOfferingAlreadyMade,DialogOptionSelected,"$option == kocchopMakeOffering
+$KoCofferingMade score:100",,It's too late for second thoughts and it's clear it will take time to process the volunteers you have supplied before they're willing to accept more.,,
+kocchopOfferingEnough,DialogOptionSelected,"$option == kocchopMakeOffering
+$player.crew >= 10","SetTextHighlightColors buttonShortcut
+SetTextHighlights 10","You inquire about the prospects of volunteering some of your crew for storage.
+
+The muscled man smiles gleefully ""Of course you can mate, you and your are always welcome, we'll even wave the paper work and fees. Just be sure to say your final goodbyes, we can't be unfreezing people willy nilly, scrambles the brain you see.""","0:kocchopGiveOffering:Volunteer 10 crewmen
+1:kocchopCancelOffering:Never mind",
+kocchopOfferingNotEnough,DialogOptionSelected,"$option == kocchopMakeOffering
+$player.crew < 10","SetTextHighlightColors buttonShortcut
+SetTextHighlights 10","You inquire about the prospects of volunteering some of your crew for storage.
+
+The muscled man laughs heartilly, ""I like you! As much as I'd love to process them I think you'll need those guys to get home, I'm sure if you toured the local bars you'll find a few volunteers in their stead?""",,
+kocchopGiveOffering,DialogOptionSelected,$option == kocchopGiveOffering,"AddText ""The boss man accepts your volunteers with a sinister smile as they're led away into the stations darkness.""
+AddRemoveCommodity crew -10 true
+NGCAddShip google_defender_Standard
+AdjustRep pirates SHRINE_OFFERING
+$KoCofferingMade = true 60
+FireBest kocchopMainOptions",,,
+kocchopCancelOffering,DialogOptionSelected,$option == kocchopCancelOffering,FireBest kocchopMainOptions,,,
+,,,,,,
+,,,,,,
+#tell me more tell me more,,,,,,
+KoC_politics_ask,PopulateOptions,$id == ibrahim,FireAll KoC_politics,,"0:KoC_Politics_Overview:Ask about the Arcadia System
+",
+#like does he drive a car,,,,,,
+KoC_Politics_Overview,DialogOptionSelected,$option == KoC_Politics_Overview,,"""Arcadia is a melting pot of ideologies. On one side you have the Hegemony, the ‘rightful’ rulers of the system. On the other you have the Ko Combine who purchased Argeus from the Hegemony and only hang on to their independence because of a ‘self-defense’ arms deal they struck with the Persean League. There’s also Mbaye-Gogol on Nomios, most of what we hear is rumours but it’s clear they’ve been making deals with Tri-Tachyon and the Sindarian Diktat.""","12:KoC_Politics_KoC:Ask about the Ko Combine
+13:KoC_Politics_MbG:Ask about Mbaye-Gogol
+13:KoC_Politics_ErU:Ask about Eridani-Utopia
+20:KoC_Politics_Nevermind:Nevermind.",
+#did she put up a fight,,,,,,
+KoC_Politics_KoC,DialogOptionSelected,$option == KoC_Politics_KoC,FireAll KoC_politics,"""The Ko Combine seek complete independence, officially they act as diplomats for the Hegemony but it’s rather suspicious how many of those who resist the Hegemony seem to have an ample supply of Persean made arms following a visit. If they’re playing both sides of the conflict they’re playing with fire. One wrong move and the Hegemony will use that Star-Fortress of theirs for something more than just territorial defence.""",,
+KoC_Politics_MbG,DialogOptionSelected,$option == KoC_Politics_MbG,FireAll KoC_politics,"""Mbaye pay their indentured servants next to nothing in order to keep costs down and extend their contracts. While most workers act diligently in order to avoid being transferred to the frozen mines of Nomios there have been occasions of runaway servants. They’re known to supply the Sindrian Diktat with slaves and organs for Andrada’s ‘personal use’ and supposedly they have a cryopod reserved with his name on it.""",,
+KoC_Politics_ErU,DialogOptionSelected,$option == KoC_Politics_ErU,FireAll KoC_politics,"""They were the Chosen Ones! It was said they would destroy the Luddics, not join them! Bring prosperity to the Sector, not leave it in ruins! They were our brothers… we loved them...""",,
+#wtf dude!,,,,,,
+KoC_Politics_Nevermind,DialogOptionSelected,$option == KoC_Politics_Nevermind,FireAll PopulateOptions,,,

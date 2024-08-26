@@ -1,84 +1,4 @@
 {
-      ######AGNI#########
-	"prv_agni_lonely":
-	[
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":0.9,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.1,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":0.9,"volume":0.95},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.1,"volume":1.05},
-	],
-	"prv_agni_pleased":
-	[
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":0.9,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":1.1,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":0.9,"volume":0.95},
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_pleased.ogg","pitch":1.1,"volume":1.05},
-	],
-	"prv_agni_hmm":
-	[
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":0.9,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.1,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":0.9,"volume":0.95},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_lonely.ogg","pitch":1.1,"volume":1.05},
-	],
-	"prv_agni_chatter":
-	[
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":0.9,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":1.1,"volume":1.05},
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":0.9,"volume":0.95},
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":1.00,"volume":1.00},
-		{"file":"sounds/prv/sfx_cries/prv_agni_chatter.ogg","pitch":1.1,"volume":1.05},
-	],
-      
-      ######WEAPONS######
-	"prv_agni_spore_fire": 
-	[
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.45,"volume":0.35},
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.35,"volume":0.35},
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.55,"volume":0.35},
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.45,"volume":0.30},
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.35,"volume":0.30},
-		{"file":"sounds/sfx_wpn_missiles/hammer_fire_01.ogg","pitch":1.55,"volume":0.30},
-	],
-	"prv_agni_spore_explosion":
-	{
-	"sounds":[
-		{"file":"sounds/sfx_systems/canister_flak_explosion_01.ogg","pitch":1.5,"volume":0.5},
-		{"file":"sounds/sfx_systems/canister_flak_explosion_02.ogg","pitch":1.5,"volume":0.5},
-		{"file":"sounds/sfx_systems/canister_flak_explosion_03.ogg","pitch":1.5,"volume":0.5},
-		{"file":"sounds/sfx_systems/canister_flak_explosion_04.ogg","pitch":1.5,"volume":0.5},
-		{"file":"sounds/sfx_systems/canister_flak_explosion_05.ogg","pitch":1.5,"volume":0.5},
-		],
-	},
-	"prv_blaster_charge_fire": 
-	[
-		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.85,"volume":0.5},
-		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.75,"volume":0.45},
-		{"file":"sounds/sfx_wpn_missiles/gorgon_dem_fire_01.ogg","pitch":0.70,"volume":0.55},
-	],
-	"prv_blaster_charge_cluster_fire": 
-	[
-		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.85,"volume":0.6},
-		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.75,"volume":0.55},
-		{"file":"sounds/sfx_wpn_missiles/hydra_dem_fire_01.ogg","pitch":0.70,"volume":0.65},
-	],
-	"prv_blaster_charge_payload_fire": 
-	[
-		{"file":"sounds/sfx_wpn_energy/mining_blaster_fire_01.ogg","pitch":1,"volume":0.45},
-	],
-	"prv_massdriver_fire":
-	[
-		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_01_loud.ogg","pitch":0.75,"volume":1},
-		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_02_loud.ogg","pitch":0.75,"volume":1},
-		{"file":"sounds/sfx_wpn_guns/hephaestus_fire_03_loud.ogg","pitch":0.75,"volume":1},
-	],    
 	"prv_bounder_fire":
 	[
 		{"file":"sounds/prv/sfx_wpn/prv_bounder_fire.ogg","pitch":0.95,"volume":1.55},
@@ -121,15 +41,6 @@
 		{"file":"sounds/prv/sfx_wpn/prv_spattergun_fire.ogg","pitch":1.575,"volume":0.77},
 		{"file":"sounds/prv/sfx_wpn/prv_spattergun_fire.ogg","pitch":1.550,"volume":0.77},
 		{"file":"sounds/prv/sfx_wpn/prv_spattergun_fire.ogg","pitch":1.550,"volume":0.73},
-	],
-	"prvspatterflamer_fire": 
-	[
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.75,"volume":1.25},
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.70,"volume":1.25},
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.65,"volume":1.25},
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.75,"volume":1.35},
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.70,"volume":1.35},
-		{"file":"sounds/prv/sfx_wpn/prv_spatterflamer_fire.ogg","pitch":1.65,"volume":1.35},
 	],
 	"prv_lpk_fire":
 	[
@@ -192,23 +103,6 @@
 		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_fire.ogg","pitch":1.1,"volume":2},
 		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_fire.ogg","pitch":0.9,"volume":2.2},
 		{"file":"sounds/prv/sfx_wpn/prv_ljungeld_fire.ogg","pitch":1.1,"volume":2.2},
-	],
-	"prv_hfl_array_chargeup":
-	[
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_chargeup.ogg","pitch":1,"volume":0.67},
-	],
-	"prv_hfl_array_fire":
-	[
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1,"volume":1.6},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.9,"volume":1.6},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.1,"volume":1.6},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.95,"volume":1.6},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.05,"volume":1.6},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1,"volume":1.4},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.9,"volume":1.4},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.1,"volume":1.4},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":0.95,"volume":1.4},
-		{"file":"sounds/prv/sfx_wpn/prv_hfl_array_fire.ogg","pitch":1.05,"volume":1.4},
 	],
 	"prv_akers_nova_fire":
 	[
@@ -349,13 +243,11 @@
 	######ENGINES######
 	
 	"engine_loop":{
-		"PRV_LOW":{"sounds":[0,1,2,3,4], "pitch":1, "volume":0.5},
 		"PRV_MID":{"sounds":[5,6,7,8,9], "pitch":1, "volume":0.3},
 		"PRV_HIGH":{"sounds":[10,11,12,13,14], "pitch":1, "volume":0.5},
 		},
 		
 	"engine_accelerate":{ # played when ship receives an "engine boost" from having zero flux 
-		"PRV_LOW":{"sounds":[0,1,2], "pitch":0.8, "volume":1},
 		"PRV_MID":{"sounds":[0,1,2], "pitch":0.9, "volume":1},
 		"PRV_HIGH":{"sounds":[0,1,2], "pitch":1, "volume":1},	
 	},
@@ -363,22 +255,18 @@
 	######SHIELDS######
 	
 	"shield_burnout":{ # played when a ship overloads
-		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
 		"PRV_MID":{"sounds":[0], "pitch":0.85, "volume":1},
 		"PRV_HIGH":{"sounds":[0], "pitch":1, "volume":1},
 	},
 	"emp_loop":{ # played to accompany the lighning arcs displayed when a ship is overloaded
-		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
 		"PRV_MID":{"sounds":[0], "pitch":0.85, "volume":1},
 		"PRV_HIGH":{"sounds":[0], "pitch":1, "volume":1},	
 	},
 	"flux_loop":{ # played while a ship is venting flux
-		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
 		"PRV_MID":{"sounds":[0], "pitch":0.85, "volume":1},
 		"PRV_HIGH":{"sounds":[0], "pitch":1, "volume":1},	
 	},	
 	"vent_flux":{ # played once when a ship starts venting flux
-		"PRV_LOW":{"sounds":[0], "pitch":0.7, "volume":1},
 		"PRV_MID":{"sounds":[0], "pitch":0.85, "volume":1},
 		"PRV_HIGH":{"sounds":[0], "pitch":1, "volume":1},
 	},	
@@ -386,12 +274,10 @@
 	# Similar setup to engine loop - defines which of the two sounds to use, and
 	# what pitch/volume to use them at, depending on ship style and size
 	"shield_lower":{
-		"PRV_LOW":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"PRV_MID":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"PRV_HIGH":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 	},
 	"shield_raise":{
-		"PRV_LOW":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"PRV_MID":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 		"PRV_HIGH":{"sounds":[0,1,2], "pitch":1, "volume":0.75},
 	},

@@ -1,43 +1,359 @@
 id,trigger,conditions,script,text,options,notes
+,,,,,,
+### Fristad,,,,,,
+prvFristadHuntHook,ReturnFromBar,"$id == prv_kratul_fristad
+RollProbability 0.1
+!$player.prvFristadHunt
+$player.crew > 6",$player.prvFristadHunt = true,"Retracing your unsteady steps towards the landing shuttle, a sudden movement startles you.",prvFristadHunt1:What was that?!,
+prvFristadHunt1,DialogOptionSelected,$option == prvFristadHunt1,"SetStoryOption prvFristadHunt1Shoot 1 prvFristadShot ui_char_spent_story_point_combat ""Stopped an alien abduction""","A large hairy tripod creature is escaping your party, moving with uncanny speed and carrying one of your struggling crewmen by the head.","prvFristadHunt1Command:What are you looking at? Shoot it!
+prvFristadHunt1Stunned:I- what? What?
+prvFristadHunt1Panic:Scream
+prvFristadHunt1Shoot:Take it out",
+prvFristadHunt1Command,DialogOptionSelected,$option == prvFristadHunt1Command,,"Directing your bodyguards they lay down a barrage of fire towards the rapidly disappearing triped. It takes a glancing hit, but does not appear to slow down.",prvFristadHunt2:Pursue it,
+prvFristadHunt1Stunned,DialogOptionSelected,$option == prvFristadHunt1Stunned,,"With you standing baffled, the remains of your bodyguard fire towards the retreating predator, taking care not to hit their kidnapped comrade.",prvFristadHunt2:Pursue it,
+prvFristadHunt1Panic,DialogOptionSelected,$option == prvFristadHunt1Panic,,"In what is perhaps not your proudest moment you scream like a little girl as the alien beast carries off one of your security detail. 
+
+The remains of your bodyguard fire towards the retreating predator, taking care not to hit their kidnapped comrade.",prvFristadHunt2:Pursue it,
+prvFristadHunt1Shoot,DialogOptionSelected,$option == prvFristadHunt1Shoot,,A lightning draw of your sidearm has you firing at the creature just as it is cresting a ridge. A thunderbolt of plasma destroys one of its legs and it falls over.,prvFristadHunt1Shoot1:Continue,
+prvFristadHunt1Shoot1,DialogOptionSelected,$option == prvFristadHunt1Shoot1,,The rest of your group quickly catch up to the beast and tear it to shreds with a burst of microgauss fire.,prvFristadHunt1Shoot2:Continue,
+prvFristadHunt1Shoot2,DialogOptionSelected,$option == prvFristadHunt1Shoot2,,The abductee is unresponsive and his head has three deep gashes that are bleeding profusely.,"prvFristadHunt1ShootMedbay:Take the man to your medbay
+prvFristadHunt1ShootLeave:Leave him",
+prvFristadHunt1ShootMedbay,DialogOptionSelected,$option == prvFristadHunt1ShootMedbay,"ShowDefaultVisual
+EndConversation","As the shuttle is not far away you quickly carry the man to the ship's doctor, who stabilizes him. He will need time to recuperate, but should be able to resume his duties.",,
+prvFristadHunt1ShootLeave,DialogOptionSelected,$option == prvFristadHunt1ShootLeave,"AddCommodity crew -1
+$player.ethosRuthless++
+ShowDefaultVisual
+EndConversation","You have no need for the unwary, or worse, unlucky. You instruct your guards to leave the stricken man where he is. They look at each other, disconcerted, but obey.",,
+prvFristadHunt2,DialogOptionSelected,$option == prvFristadHunt2,,With the abductor seemingly unharmed it slinks over a ridge and disappears from your sight. You give a brief pursuit before having to face the fact that you've lost track of the beast.,"prvFristadHunt3:Try to find the trail again
+prvFristadHunt2End:There is little we can do. Return to the ship",
+prvFristadHunt2End,DialogOptionSelected,$option == prvFristadHunt2End,"AddCommodity crew -1
+ShowDefaultVisual
+EndConversation","You notify the local authorities about the incident. They inform you that they'll send out a search rotor, but that chances of finding the man alive are poor.",,
+prvFristadHunt3,DialogOptionSelected,$option == prvFristadHunt3,ShowImageVisual ilm,"You trudge through the freezing wilderness outside the Fristad spaceport for several hours without seeing neither hide nor hair of any life at all. A brief trail of blood spatters gives you hope, but a small stream interrupts the trail and you fail to pick it up again.","prvFristadHunt4:Persist
+prvFristadHunt3End:Return to the ship",
+prvFristadHunt3End,DialogOptionSelected,$option == prvFristadHunt3End,"AddCommodity crew -1
+ShowDefaultVisual
+EndConversation","Having neither the clothes, the equipment nor the expertise to track such a creature, you're bitterly forced to abandon your man.",,
+prvFristadHunt4,DialogOptionSelected,$option == prvFristadHunt4,,The freezing cold of the outdoors goes from unpleasant to threatening as you insist on continuing to search in the wilderness. You find the occasional broken branch or muddy footprint that suggests that a large creature has recently went ahead of you.,prvFristadHunt41:Continue,
+prvFristadHunt41,DialogOptionSelected,$option == prvFristadHunt41,,"Eventually the sun begins to fall, and your one of your men addresses you: ""Sir, we need to return to the ship. We're out of our element, we have no clear path forward, and it's getting dark.""","prvFristadHunt5:Persist
+prvFristadHunt4End:Return to the ship",
+prvFristadHunt4End,DialogOptionSelected,$option == prvFristadHunt4End,"AddCommodity crew -1
+ShowDefaultVisual
+EndConversation","You're forced to agree. You've done everything you could, to no avail. ",,
+prvFristadHunt5,DialogOptionSelected,$option == prvFristadHunt5,,"Looking the men in the eye, you berate them for abandoning a comrade in his time of need. On your insistence they agree to continue the search.",prvFristadHunt51:Continue,
+prvFristadHunt51,DialogOptionSelected,$option == prvFristadHunt51,AddCommodity crew -2,"As dusk turns to night, your men disappear one by one. The first two loudly announced that they were abandoning the 'hopeless' search. ",prvFristadHunt52:Continue,
+prvFristadHunt52,DialogOptionSelected,$option == prvFristadHunt52,AddCommodity crew -3,"A third took a bad step and fell down a ravine, breaking his leg. You ordered numbers four and five to see him back to town.",prvFristadHunt53:Continue,
+prvFristadHunt53,DialogOptionSelected,$option == prvFristadHunt53,"AddCommodity crew -1
+SetStoryOption prvFristadHunt6 1 prvFristadHunt ui_char_spent_story_point_combat ""Saved comrade from tripedal abductor on Fristad""",Your last bodyguard disappeared with a rustling sound and a cut-off yelp. In the darkness of the night you're reduced to following the narrow cone of a borrowed flashlight.,"prvFristadHunt6:Persist
+prvFristadHunt5End:Return to town.",
+prvFristadHunt5End,DialogOptionSelected,$option == prvFristadHunt5End,"ShowDefaultVisual
+EndConversation","Bitterly returning to the ship after many hours, you feel exhausted and defeated. The group you sent back are still unaccounted for. Your men look at you with scepticism and sympathy.",,
+prvFristadHunt6,DialogOptionSelected,$option == prvFristadHunt6,,You insist on continuing your pursuit through the freezing dark. After what feels like an eternity you hear a faint moaning in the distance.,prvFristadHunt61:Continue,
+prvFristadHunt61,DialogOptionSelected,$option == prvFristadHunt61,,"Marshalling your last bits of stamina, you turn off your flashlight, draw your sidearm, and quickly and quietly approach the sound.",prvFristadHunt62:Continue,
+prvFristadHunt62,DialogOptionSelected,$option == prvFristadHunt62,,"In the last faint penumbra of daylight you see a large triped shape shuffling around, investigating a dark shape on the ground.",prvFristadHunt7:End it,
+prvFristadHunt7,DialogOptionSelected,$option == prvFristadHunt7,,In one smooth movement you flick on your flashlight and shoot the creature in its chest. You fire until the barrel is red hot in the black night. Even perforated by a dozen microgauss rounds the beast takes several seconds to fall over with a discordant wail.,prvFristadHunt71:Continue,
+prvFristadHunt71,DialogOptionSelected,$option == prvFristadHunt71,,"On investigation the dark shape turns out to be your missing crewman, bloodied and unresponsive. You administer basic first aid, signal your ship crew, and set down to await relief.",prvFristadHunt72:Continue,
+prvFristadHunt72,DialogOptionSelected,$option == prvFristadHunt72,,"After several long, dark, cold eternities you wake from an unwilling rest to the sound of a rotorcraft and a calm voice telling you that ""We got you, it's gonna be OK.""",prvFristadHunt73:Continue,
+prvFristadHunt73,DialogOptionSelected,$option == prvFristadHunt73,"$player.EthosHumanist++
+$player.EthosCynic--
+ShowDefaultVisual","You come to in a medbay by the spaceport, surrounded by your executive officer, your ship doctor, and a few guards.",prvFristadHunt74:Continue,
+prvFristadHunt74,DialogOptionSelected,$option == prvFristadHunt74,"AddCommodity crew 1
+AddCommodity crew 3","They inform you that the man you rescued will most likely make a passable recovery. The men you sent back also made it, exhausted and with one broken leg but otherwise in good humor. However the deserters and the final missing man are still unaccounted for.",prvFristadHunt75:Continue,
+prvFristadHunt75,DialogOptionSelected,$option == prvFristadHunt75,EndConversation,As you are greeted by the bridge crew on your return you think that you have rarely seen more crisp salutes.,,
+,,,,,,
+### Hallar,,,,,,
+prvHallarBPHook,PopulateOptions,"$id == prv_hallar_station score:1000
+!$player.investigatedHallar","SetStoryOption prvHallarBPAssess 1 prvAssessedHallar ui_char_spent_story_point_technology ""Reverse-engineered Höga Hallar""",The station is abandoned but structurally intact. This would be an ideal opportunity to investigate how it works and gain some insight into prv megastructure technology.,prvHallarBPAssess:Assess structure,
+prvHallarBPAssess,DialogOptionSelected,$option == prvHallarBPAssess,"PrvInvestigateHallar
+ShowImageVisual ai_core_uninstall
+$player.investigatedHallar = true
+FireAll PopulateOptions","Dispatching every man of your crew to scan, probe, analyze, kick over, examine, or otherwise interrogate every inch of the station yields results - after many hours of exploration one of your teams have located a well-protected data core near the heart of the gargantuan structure, which promises to contain a full technical schematic of the station. 
+
+Medbay reports that the man who found it should make a full recovery. Some defensive turret still had a trickle of power left.",,
+,,,,,,
+### Noble Corporate,,,,,,
+prvPettyNobHook,DialogOptionSelected,"$id == prv_stjarngard_utbo_station score:1000
+$option == marketVisitBar
+RepGTE $faction.id FAVORABLE
+!$player.prvPettyNobChat","$player.prvPettyNobChat = true 60
+FireBest BarShuttleDownPrintDesc
+FireBest BarPrintDesc
+FireBest prvPettyNobHook1",,,
+prvPettyNobHook1,prvPettyNobHook1,,"SetShortcut prvPettyNobDifferentBar ""ESCAPE""",A group of festive youths have claimed most of the bar and are buying drinks for anyone around them.,"prvPettyNobIntro:Join the festive youths
+prvPettyNobDifferentBar:Find a different bar",
+prvPettyNobDifferentBar,DialogOptionSelected,$option == prvPettyNobDifferentBar,"$option = marketVisitBar
+FireBest BarPrintDesc
+BarCMD showOptions","Not wanting to get caught up in anything - or at least, not in whatever those kids were up to - you amble along the concourse until you find a marginally less likely establishment.",,
+prvPettyNobIntro,DialogOptionSelected,$option == prvPettyNobIntro,"SetShortcut prvPettyNobLeaveDiscretely ""ESCAPE""","Mingling with the young men you find out that one of their party will be presented with his noble commission tomorrow. Spirits are high, and flowing freely.","prvPettyNobMainIntro:Join the festivities
+prvPettyNobLeave:Present your best wishes before leaving
+prvPettyNobLeaveDiscrete:Leave discretely",
+prvPettyNobLeave,DialogOptionSelected,$option == prvPettyNobLeave,"$player.ethosHonorable++
+$player.prvPettyNobChat = true",You offer the young man best of luck with his future career before leaving the group.,prvPettyNobBackToBar:Continue,
+prvPettyNobLeaveDiscrete,DialogOptionSelected,$option == prvPettyNobLeaveDiscrete,$player.prvPettyNobChat = true,You quietly slip away from the increasingly boisterous party.,prvPettyNobBackToBar:Continue,
+prvPettyNobBackToBar,DialogOptionSelected,$option == prvPettyNobBackToBar,"$option = marketVisitBar
+BarCMD showOptions",Escaping the growing din of celebration you look over the less jubilant bar visitors.,,
+prvPettyNobMainIntro,DialogOptionSelected,$option == prvPettyNobMainIntro,,"Mingling with the cadets, merchants sons, libertines, romantics and assorted hangers on you find yourself fascinated by the naive optimism of the youths. In a time defined by disaster and decay they seem utterly convinced that they are indestructible and that tomorrow belongs to them.","prvPettyNobMainIntro1:These are the future leaders of the prv, still untested and untried
+prvPettyNobMainIntro2:You find yourself almost jealous of their spirit
+prvPettyNobMainIntro3:These kids wouldn't last a cycle on the fringe
+prvPettyNobMainIntro4:It is heartening to see such optimism",
+prvPettyNobMainIntro1,DialogOptionSelected,$option == prvPettyNobMainIntro1,"$option = prvPettyNobMain
+FireBest DialogOptionSelected
+$player.ethosOrder++",,,
+prvPettyNobMainIntro2,DialogOptionSelected,$option == prvPettyNobMainIntro2,"$option = prvPettyNobMain
+FireBest DialogOptionSelected
+$player.ethosIdealistic++",,,
+prvPettyNobMainIntro3,DialogOptionSelected,$option == prvPettyNobMainIntro3,"$option = prvPettyNobMain
+FireBest DialogOptionSelected
+$player.ethosCynical++",,,
+prvPettyNobMainIntro4,DialogOptionSelected,$option == prvPettyNobMainIntro4,"$option = prvPettyNobMain
+FireBest DialogOptionSelected
+$player.ethosHumanist++",,,
+prvPettyNobMain,DialogOptionSelected,$option == prvPettyNobMain,"$option = prvPettyNobMain1
+FireBest DialogOptionSelected
+BeginConversation prv_ivarsson
+ShowPersonVisual","As the night drags long and the wolf hour approaches you find yourself in a conversation with one of the older men from the group, discussing history and politics and more specifically the byzantine structure of the prv.",,
+prvPettyNobMain1,DialogOptionSelected,$option == prvPettyNobMain1,"SetShortcut prvPettyNobMainLeave ""ESCAPE""",,"prvPettyNobMainCorp:I don't understand how you can be a noble in a corporation
+prvPettyNobMainHouses:Tell me about the great houses
+prvPettyNobMainUtbo:What's the deal with Utbo? Bunch of farmers and people playing as knights?
+prvPettyNobMainLeave:I think that's enough for tonight",
+prvPettyNobMainCorp,DialogOptionSelected,$option == prvPettyNobMainCorp,,"""Well it's... it's like this right, if you supply a fully armed warship you get a discount on your membership fees. The- *hic* the Heggies would call them an income tax but it's really entirely voluntary. Anyway these fees can get pretty hefty for the estates of the richer families. You know the ones that own all this here-"" He makes some curious waving gesture with one arm. ""- all this stuff. They commission a ship, two ships, a squadron, so on, send off one of their sons to command it, keep an eye on it, and in exchange they get to stay rich.""",prvPettyNobMainCorp1:Continue,
+prvPettyNobMainCorp1,DialogOptionSelected,$option == prvPettyNobMainCorp1,,"At this point the man's gesturing knocks his drink over the side of the table, and as the hardened glass hits the ground a small lid slams over the top of the container, saving the amber contents. Most bizarre.",prvPettyNobMainCorp2:Continue,
+prvPettyNobMainCorp2,DialogOptionSelected,$option == prvPettyNobMainCorp2,,"Unperturbed he continues, ""But young Jonathan here, his father - my brother - he's been doing well, owns a small trading house, consumer appliances. Kid'll be the first in the family to serve as a CO. You're a spacer, aren't you?"" ","prvPettyNobMainCorpConfirm:Confirm
+prvPettyNobMainCorpDeny:Deny (lie)",
+prvPettyNobMainCorpConfirm,DialogOptionSelected,$option == prvPettyNobMainCorpConfirm,#$player.ethosTruth++,"""When you're out there, keep an eye out for the prv Edge effect, it's a Flamma-class frigate. Good ship; graviton core's barely 40 cycles old. I helped his father outfit it, got all the best blasters.""",prvPettyNobMainCorp3:Continue,
+prvPettyNobMainCorpDeny,DialogOptionSelected,$option == prvPettyNobMainCorpDeny,#$player.ethosLiar++,"""Hmph. Have another drink, you're too uptight.""",prvPettyNobMainCorp3:Continue,
+prvPettyNobMainCorp3,DialogOptionSelected,$option == prvPettyNobMainCorp3,,"""Now, strictly speaking it's not nobility, we don't have kings and queens or anything like that. I think the term actually started as a mockery. But the estate is all heritable, and who can you trust to actually come back with your ships other than blood relations?""","prvPettyNobMainCorpHireSomeone:But why the personal command? Surely you could hire someone
+prvPettyNobMainCorpGotAPoint:You've got a point
+prvPettyNobMainCorpNotMine: I wouldn't trust any of mine",
+prvPettyNobMainCorpHireSomeone,DialogOptionSelected,$option == prvPettyNobMainCorpHireSomeone,"#$player.ethosIdealistic++
+$option = prvPettyNobMain1
+FireBest DialogOptionSelected","""Some do. Some do. But how many people do you know who you'd trust with a hundred thousand credits? Even if the Perseans wouldn't pay for your ship, Kanta sure would.""
+
+""And while I mean no disrespect to the Lion Andrada, the Heggies got to learn this lesson the hard way.""",,
+prvPettyNobMainCorpGotAPoint,DialogOptionSelected,$option == prvPettyNobMainCorpGotAPoint,"#$player.ethosCynical++
+$option = prvPettyNobMain1
+FireBest DialogOptionSelected","""Damn right I do."" He finishes his drink for emphasis.",,
+prvPettyNobMainCorpNotMine,DialogOptionSelected,$option == prvPettyNobMainCorpNotMine,"$option = prvPettyNobMainCorpNotMine
+FireBest DialogOptionSelected",,,
+#prvPettyNobMainCorpNotMine1a,DialogOptionSelected,"$option == prvPettyNobMainCorpNotMine
+!$player.prvPettyNobDistrustsFamily score:50","AdjustRepActivePerson SUSPICIOUS -5
+$player.ethosCynical++
+$player.prvPettyNobDistrustsFamily 1
+$option = prvPettyNobMain1
+FireBest DialogOptionSelected","He peers at you over his drink for an uncomfortably long time before speaking: ""No, I suppose you wouldn't.""",,
+prvPettyNobMainCorpNotMine1,DialogOptionSelected,$option == prvPettyNobMainCorpNotMine,"$option = prvPettyNobMain1
+FireBest DialogOptionSelected","He peers at you over his drink for an uncomfortably long time before speaking: ""No, I suppose you wouldn't.""",,
+prvPettyNobMainHouses,DialogOptionSelected,$option == prvPettyNobMainHouses,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""They're big. They're rich. They're powerful. That's about all they have in common. Is there a particular one you wanted to know about?""",,
+prvPettyNobMainHouses1,DialogOptionSelected,$option == prvPettyNobMainHouses1,"SetShortcut prvPettyNobMainHousesBack ""ESCAPE""",,"prvPettyNobMainHousesGyllenhaag:House Gyllenhaag
+prvPettyNobMainHousesRyak:The Ryak High-Energy Labs
+prvPettyNobMainHousesParia:CzU-Pariabyrån
+prvPettyNobMainHousesWorks:The Works United
+prvPettyNobMainHousesFFV:Förenade Fissionsverken
+prvPettyNobMainHousesPerseiska:Perseiska Kompaniet
+prvPettyNobMainHousesRegal:Mångtekniska Regalvarven
+prvPettyNobMainHousesATH:Tidsbörsen ATH
+prvPettyNobMainHousesBack:Enough about the houses",
+,,,,,,
+### TEST,,,,,,
+#prvPettyNobMainHouses1,DialogOptionSelected,$option == prvPettyNobMainHouses1,FireAll prvPettyNobHouseIndex,,,
+#prvPettyNobHouseIndexOptGyllenhaag,prvPettyNobHouseIndex,!$player.prvPettyNobGyllenhaag,,,prvPettyNobMainHousesGyllenhaag:House Gyllenhaag,
+#prvPettyNobHouseIndexOptRyak,prvPettyNobHouseIndex,!$player.prvPettyNobRyak,,,prvPettyNobMainHousesRyak:The Ryak High-Energy Labs,
+#prvPettyNobHouseIndexOptParia,prvPettyNobHouseIndex,!$player.prvPettyNobParia,,,prvPettyNobMainHousesParia:CzU-Pariabyrån,
+#prvPettyNobHouseIndexOptWorks,prvPettyNobHouseIndex,!$player.prvPettyNobWorks,,,prvPettyNobMainHousesWorks:The Works United,
+#prvPettyNobHouseIndexOptFFV,prvPettyNobHouseIndex,!$player.prvPettyNobFFV,,,prvPettyNobMainHousesFFV:Förenade Fissionsverken,
+#prvPettyNobHouseIndexOptPerseiska,prvPettyNobHouseIndex,!$player.prvPettyNobPerseiska,,,prvPettyNobMainHousesPerseiska:Perseiska Kompaniet,
+#prvPettyNobHouseIndexOptRegal,prvPettyNobHouseIndex,!$player.prvPettyNobRegal,,,prvPettyNobMainHousesRegal:Mångtekniska Regalvarven,
+#prvPettyNobHouseIndexOptATH,prvPettyNobHouseIndex,!$player.prvPettyNobATH,,,prvPettyNobMainHousesATH:Tidsbörsen ATH,
+#prvPettyNobHouseIndexOptBack,prvPettyNobHouseIndex,,"SetShortcut prvPettyNobMainHousesBack ""ESCAPE""",,prvPettyNobMainHousesBack:Enough about the houses,
+### END TEST,,,,,,
+,,,,,,
+prvPettyNobMainHousesGyllenhaag,DialogOptionSelected,$option == prvPettyNobMainHousesGyllenhaag,$player.prvPettyNobGyllenhaag = true 1,"""Got a buddy there, nephew of a cousin to Mikael Gyllenhaag or something like that. Anyway he says they've got some organic vat-grown stuff that's going to change the world. I doubt it, the corporation makes its money on logistics and deep space construction - what do they know about biotech?""",prvPettyNobMainHousesGyllenhaag1:Continue,
+prvPettyNobMainHousesGyllenhaag1,DialogOptionSelected,$option == prvPettyNobMainHousesGyllenhaag1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","Waving a finger in the air he goes on: ""If there's any house that's a family business it's this one. The Gyllenhaags hold just about all the executive positions, and own controlling interests in everything from agrav to zk-snarkers.""",,
+prvPettyNobMainHousesRyak,DialogOptionSelected,$option == prvPettyNobMainHousesRyak,"$player.prvPettyNobRyak = true 1
+$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""Ehh they're not really a proper house. It's owned in shares by everyone else, not even allowed to operate its own warships. They make some cool stuff though, I got an agrav bed, really saves on space. Wife loves it too."" He's already ruddy from a night of drinking, but is that a blush? May just be your own drink playing with your head.",,
+prvPettyNobMainHousesParia,DialogOptionSelected,$option == prvPettyNobMainHousesParia,$player.prvPettyNobParia = true 1,"""Bunch of spooks and spies. Freaks and weirdoes. I stay away from them and you should too.""",prvPettyNobMainHousesParia1:Continue,
+prvPettyNobMainHousesParia1,DialogOptionSelected,$option == prvPettyNobMainHousesParia1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""Their media division puts out good holos though, I'll grant them that. They've also got the market cornered on security services, everything from cameras and mallcops to black ICE and special ops.""",,
+prvPettyNobMainHousesWorks,DialogOptionSelected,$option == prvPettyNobMainHousesWorks,$player.prvPettyNobWorks = true 1,"""Heavy industry. Heavy movers. Stay out of their way or you'll get run over. The air is very thin on that space station. Lots of 'accidents' among the top executives. Keeps them sharp, I guess. Not for me.""",prvPettyNobMainHousesWorks1:Continue,
+prvPettyNobMainHousesWorks1,DialogOptionSelected,$option == prvPettyNobMainHousesWorks1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""They got a lot of Utboers working among them in the lower rungs. I think they're trying to infiltrate the place, take it over. I don't know. Not my problem. Just save me from having to listen to their stupid accents.""",,
+prvPettyNobMainHousesFFV,DialogOptionSelected,$option == prvPettyNobMainHousesFFV,$player.prvPettyNobFFV = true 1,"""'The power company'. Makes just about every fusion engine you'll find around here. Lots of trade with nukes, volatiles and organics too, got a monopoly on exports from Nedan."" ",prvPettyNobMainHousesFFV1:Continue,
+prvPettyNobMainHousesFFV1,DialogOptionSelected,$option == prvPettyNobMainHousesFFV1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""Technically they're a merger of two conglomerates, and I hear they're just one bad year away from liquidating one or the other. But I've heard that for twenty years now.""",,
+prvPettyNobMainHousesPerseiska,DialogOptionSelected,$option == prvPettyNobMainHousesPerseiska,$player.prvPettyNobPerseiska = true 1,"""They call themselves traders. Hah! They're a warfleet, everything in the house exists solely to support their navy.""",prvPettyNobMainHousesPerseiska1:Continue,
+prvPettyNobMainHousesPerseiska1,DialogOptionSelected,$option == prvPettyNobMainHousesPerseiska1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""But those ships? I wouldn't mess around with them. Kompaniet pays its dues in violence, and they deliver it in abundance.""",,
+prvPettyNobMainHousesRegal,DialogOptionSelected,$option == prvPettyNobMainHousesRegal,$player.prvPettyNobRegal = true 1,"""There's this fancy corp term, 'vertical integration', you know? When you make everything you need to build something really fancy. That's Regalvarven. They commissioned a new Aska last year and every single piece of it, from the instant meals in the canteen to the main reactor, was supposedly made by some manufacturer owned by the house. Probably not true, but probably not far off from true either.""",prvPettyNobMainHousesRegal1:Continue,
+prvPettyNobMainHousesRegal1,DialogOptionSelected,$option == prvPettyNobMainHousesRegal1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""Now they used to be a lot richer, but the failure of the Yttre Bortom colony has them down on their luck."" He scratches his beard. ""I don't know much about that really. The media kept blaming Tritachyon sabotage, but I'm not sure what they're supposed to have actually done. I think they're just covering for their own screwups.""",,
+prvPettyNobMainHousesATH,DialogOptionSelected,$option == prvPettyNobMainHousesATH,$player.prvPettyNobATH = true 1,"""Ugh, they make my head hurt. Once I got an invoice for a tachyon analyzer I was due to purchase next week. I had no such plans. And you know what? The fuckers were right, I ended up needing one."" ",prvPettyNobMainHousesATH1:Continue,
+prvPettyNobMainHousesATH1,DialogOptionSelected,$option == prvPettyNobMainHousesATH1,"$option = prvPettyNobMainHouses1
+FireBest DialogOptionSelected","""Jonathan just laughs at me and says they've got some AI running behavior prediction on us. I don't know about that.""",,
+prvPettyNobMainHousesBack,DialogOptionSelected,$option == prvPettyNobMainHousesBack,"$option = prvPettyNobMain1
+FireBest DialogOptionSelected",,,
+,,,,,,
+prvPettyNobMainUtbo,DialogOptionSelected,$option == prvPettyNobMainUtbo,,"""This is gonna be a long one. Ready?""","prvPettyNobMainUtbo1:Yeah
+prvPettyNobMainUtboOutro:Maybe some other time",
+prvPettyNobMainUtbo1,DialogOptionSelected,$option == prvPettyNobMainUtbo1,,"""What I've heard is that even before the collapse some religious communalist group ran the place. Complete maniacs, even by Luddic standards. Wasn't too bad until they took control of the ground batteries, at which point they started shooting down any ship that approached the planet. This happened around c30, so a long time ago now."" ",prvPettyNobMainUtbo2:Continue,
+prvPettyNobMainUtbo2,DialogOptionSelected,$option == prvPettyNobMainUtbo2,,"""Anyway long story short they put the planet in self-isolation, but ultimately managed to make themselves very unpopular, something about agrarian reforms. Ended badly, millions of people dead. After just a few cycles central authority had degenerated pretty badly, and people turned to banditry.""",prvPettyNobMainUtbo3:Continue,
+prvPettyNobMainUtbo3,DialogOptionSelected,$option == prvPettyNobMainUtbo3,,"""The more successful bandits would set up an area of their own that they required protection money - taxes - from and took all kinds of titles, 'King', 'General', 'President' and so on.""",prvPettyNobMainUtbo4:Continue,
+prvPettyNobMainUtbo4,DialogOptionSelected,$option == prvPettyNobMainUtbo4,,"""The greatest of the bandits was Karl Barre, would accept an oath of fealty from landholders, no questions asked about how they got the land, in exchange for protection. Supposedly he got the idea from an old holo. Dunno if I believe that part. Regardless, he ended up with a lot of people signing up with him, sometimes voluntarily, sometimes less so.""",prvPettyNobMainUtbo5:Continue,
+prvPettyNobMainUtbo5,DialogOptionSelected,$option == prvPettyNobMainUtbo5,,"""Regardless, while this is going on the entire sector is going to hell in a handbasket and no one is really in any position to worry about what's going on planetside. But eventually the various minor trade houses at The Works unify for a moment to ask 'Why don't we run that place? We're up here, and they're down there.' A couple of cycles later they had founded the The Works United conglomerate framework, did a fairly impressive orbital drop to take control of the ground batteries, and took full control of all trade with Utbo.""",prvPettyNobMainUtbo6:Continue,
+prvPettyNobMainUtbo6,DialogOptionSelected,$option == prvPettyNobMainUtbo6,,"""They didn't really have much influence on what happens planetside, still don't, and they don't really care to either. The Utbo crown wants a closed border to help maintain their authority, and so long as they get that they're happy to send up some tithes to the station."" ",prvPettyNobMainUtbo7:Continue,
+prvPettyNobMainUtbo7,DialogOptionSelected,$option == prvPettyNobMainUtbo7,,"""Not that they have much choice - so long as The Works have guns in orbit they can't retake the ground batteries, and without the batteries they can't take out the orbiting guns.""",prvPettyNobMainUtbo8:Continue,
+prvPettyNobMainUtbo8,DialogOptionSelected,$option == prvPettyNobMainUtbo8,"$option = prvPettyNobMain1
+FireBest DialogOptionSelected","""These days CzU recruit almost half their marines from the natives, and they've got so many of them signing up that only one in ten planetside applicants ever make it into space. I sure hope they're selecting for loyalty.""",,
+prvPettyNobMainUtboOutro,DialogOptionSelected,$option == prvPettyNobMainUtboOutro,"$option = prvPettyNobMain1
+FireBest DialogOptionSelected","""Fine by me. To ignorance!"" He raises his glass to you and drinks deeply. You're not entirely sure he's mocking you, but you have your suspicions.",,
+,,,,,,
+prvPettyNobMainLeave,DialogOptionSelected,$option == prvPettyNobMainLeave,FireBest ReturnFromBar,,,
+,,,,,,
+,,,,,,
+,,,,,,
 # relationship level descriptions,,,,,,
-relLevelNeutralPirates,RelationshipLevelDesc,"$faction.rel == NEUTRAL
-$faction.id == rb",,"At ease with life in the belts, you’ve learned enough about Ruster habits to pass unnoticed as you go about your business.",,
-relLevelFavorablePirates,RelationshipLevelDesc,"$faction.rel == FAVORABLE
-$faction.id == rb",,"You've been around belt salvors, smugglers, syndicate enforcers and other types of Rusters often enough, and know how to act so they see you as one of their own.",,
-relLevelWelcomingPirates,RelationshipLevelDesc,"$faction.rel == WELCOMING
-$faction.id == rb",,"You've gained a measure of notoriety among the major syndicates, and know who to bribe and whom to bully to get what you want.",,
-relLevelFriendlyPirates,RelationshipLevelDesc,"$faction.rel == FRIENDLY
-$faction.id == rb",,"A dear friend of fringe spacers, you find yourself greeted warmly in any Ruster port, and you rarely need to pay for your own drinks.",,
-relLevelCooperativePirates,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
-$faction.id == rb",,"You're familiar to some of the movers and shakers of the Great Belt Alliance, and there is talk of extending the membership charter to include your fleet.",,
-relLevelSuspiciousPirates,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
-$faction.id == rb",,"While still considered an outsider, Rusters understand that you’re not as bad as most core-dwellers.",,
-relLevelInhospitablePirates,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
-$faction.id == rb",,"Rusters immediately figure you for an outsider and are unlikely to offer you much hospitality. As long as you’re discrete your credits are still welcome, however.",,
-relLevelHostilePirates,RelationshipLevelDesc,"$faction.rel == HOSTILE
-$faction.id == rb",,"You’ve left a mark on the GBA, who in turn have put a mark on your head. Rusters consider you an enemy and are likely to attack you on sight.",,
-relLevelVengefulPirates,RelationshipLevelDesc,"$faction.rel == VENGEFUL
-$faction.id == rb",,"Worse than even the prv, Rusters curse your name for your countless crimes against their life and liberty and will go out of their way to cause you the slightest bit of harm.",,
+# PRV,,,,,,
+relLevelCooperativePrv,RelationshipLevelDesc,"$faction.rel == COOPERATIVE
+$faction.id == prv",FireAll RelLevelMoreDescription,"Stories of your exploits inspire young blood across the prv into ever more reckless ambition, while the various houses move mercilessly against each other as they try to be the ones to guide your hand.",,
+relLevelFriendlyPrv,RelationshipLevelDesc,"$faction.rel == FRIENDLY
+$faction.id == prv",FireAll RelLevelMoreDescription,"You seem to have become a focal point in the political scheming inside the prv, with several houses trying to use you to further their latest plots. Few doors are closed to you.",,
+relLevelWelcomingPrv,RelationshipLevelDesc,"$faction.rel == WELCOMING
+$faction.id == prv",FireAll RelLevelMoreDescription,"You’ve found yourself on the good side of a few nobles, who see you as a charming rogue and a reliable agent. You can expect to get away with some minor indescretions.",,
+relLevelFavorablePrv,RelationshipLevelDesc,"$faction.rel == FAVORABLE
+$faction.id == prv",FireAll RelLevelMoreDescription,"You’ve picked up a swagger and a sense of how things are done in the prv, a whiff of the winds of power. You find yourself bothering less and less with formal avenues, and meeting less resistance in turn.",,
+relLevelNeutralPrv,RelationshipLevelDesc,"$faction.rel == NEUTRAL
+$faction.id == prv",FireAll RelLevelMoreDescription,"The prv care little for you one way or another, and are unlikely to involve you in their schemes.",,
+relLevelSuspiciousPrv,RelationshipLevelDesc,"$faction.rel == SUSPICIOUS
+$faction.id == prv",FireAll RelLevelMoreDescription,"An unreliable agent, a less-than-charming rogue, and a killer for hire; you are not respected in the prv, but you are tolerated. For now.",,
+relLevelInhospitablePrv,RelationshipLevelDesc,"$faction.rel == INHOSPITABLE
+$faction.id == prv",FireAll RelLevelMoreDescription,"Having offended more than a few officials, your existence inside the prv sphere of influence is decidedly fragile. You are the very definition of a disposable asset.",,
+relLevelHostilePrv,RelationshipLevelDesc,"$faction.rel == HOSTILE
+$faction.id == prv",FireAll RelLevelMoreDescription,"Intractable, arrogant, impossible, rude, crude, there is no end to the epithets you find used to describe your conduct. Having given up any hope of advantageously deploying your special talents against each other, the prv power brokers have decided that you are best eliminated.",,
+relLevelVengefulPrvSF,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == prv
+$player.fleetPoints >= 160",FireAll RelLevelMoreDescription,"You are nemesis, the bringer of divine punishment that has struck down the prv for their impudent arrogance. You are the rider on the pale horse, the bringer of death. You are the end of hope.",,
+relLevelVengefulPrvLF,RelationshipLevelDesc,"$faction.rel == VENGEFUL
+$faction.id == prv
+$player.fleetPoints < 160",FireAll RelLevelMoreDescription,"In the war of assassins your exploits have left you as the one feared and hated the most. Seen as an almost metaphysical evil sent to mar the prv, a dark spirit that cannot be reasoned with, you are hunted at every turn.",,
 ,,,,,,
-prvAgniBeaconPresenceOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
-$prvAgniPresence","ShowDefaultVisual
-SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+# PRV COMMISSION,,,,,,
+CMSNTextRejectHostile_prv,CMSNTextRejectHostile,$faction.id == prv,,"""Oh, I like your attitude. Hah. No, those sins of yours do not wash away so easily.""",,
+CMSNTextHasOther_prv,CMSNTextHasOther,$faction.id == prv,,"""We’re not currently looking for additional agents inside $theOtherCommissionFaction, so you’ll have to resign that commission before we can make use of you.",,
+CMSNTextUnsuited_prv,CMSNTextUnsuited,$faction.id == prv,,"""I don’t really see what you’d be good for. Come back when you’ve shown some worth.""",,
+CMSNTextSuitedPart1_prv,CMSNTextSuitedPart1,$faction.id == prv,,"""You’ve been useful to us so far, and we can make further use of you.
 
-""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
-prvAgniBeaconNestOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
-$prvAgniNest","ShowDefaultVisual
-SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
+Working under a formal commission would entitle you do a monthly stipend, but you would lose any deniability as an independent operator, and anyone hostile to the corporation would regard you as an enemy.
 
-""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
-prvAgniBeaconSwarmOpenDialog,OpenInteractionDialog,"$tag:warning_beacon
-$prvAgniSwarm","ShowDefaultVisual
-SetShortcut beaconLeave ""ESCAPE""","This autonomous warning beacon emits a looping message.
-
-""DANGER: This star system is known to contain spaceborn biological hazards. Access to this system by unauthorized parties is forbidden by House Gyllenhaag edict 174.23. Any ships leaving the system must undergo a category CX decontamination before entering a pressurized environment.""",beaconLeave:Leave,
+If this should become inconvenient for our work you can request to be striken from the rolls at any time, and we will make up some suitable excuse for terminating your commission.""",,
+CMSNTextSuitedPart2_prv,CMSNTextSuitedPart2,$faction.id == prv,,"""Will you walk the path of knives with us?""",,
+CMSNTextWelcomePart1_prv,CMSNTextWelcomePart1,$faction.id == prv,,"""Very well, welcome to the official fraction of Pariabyrån, $playerName. Your service resumes immediately.""",,
+CMSNTextWelcomePart2_prv,CMSNTextWelcomePart2,$faction.id == prv,,"""You will be granted an honorary knighthood, and my adjutant will supply you with all the information you will need on the formal terms of commissioning. Is there anything else I can help you with?""",,
+CMSNTextChangeMind_prv,CMSNTextChangeMind,$faction.id == prv,,"""As you wish. We’ll… remain in touch, $playerName.""",,
+CMSNResignAskToConfirm_prv,CMSNResignAskToConfirm,$faction.id == prv,,"""What are you up to now? No, I suspect you won’t answer that. Do you wish for me to formally erase you from the list of commissioned operators?""",,
+CMSNResignConfirmed_prv,CMSNResignConfirmed,$faction.id == prv,,"""It is done. We look forward to hearing of your future undertakings, former agent.""",,
+CMSNResignCancelled_prv,CMSNResignCancelled,$faction.id == prv,,"""Very well, you will remain on the rolls, agent.""",,
 ,,,,,,
-# stable location - building stuff,,,,,,
-# NOT FUNCTIONAL,,,,,,
-#stable_buildprvAgniFeederOpt,Stable_AddBuildOptions,,,,70:SL_buildprvAgniFeeder:Construct a xenobiological outpost,
-#stable_buildprvAgniFeeder,DialogOptionSelected,$option == SL_buildprvAgniFeeder,"$slBuildType = prv_agnifeeder 0
-Objectives printCost $slBuildType
-FireBest Stable_BuildConfirmOptions",,,
+# AI CORES,,,,,,
+aiCores_turnInOptionSell_prv,DialogOptionSelected,"$option == aiCores_startTurnIn
+$faction.id == prv",FireAll PopulateCoresTurnInOptions,"""Dangerous stuff you’ve got there. You can’t trust those damn things, you know. Did you hear about the alpha at the HEL that was disguising itself as a gamma? Who knows what trouble that one could have caused if it was plugged in.
+
+Anyway, I can give you a respectable bounty for any cores you’ve gotten your hands on, no questions asked.""
+OR
+""Those things always creep me out. Never understood what’s supposed to motivate them.
+
+Anyway, I can give you a respectable bounty for any cores you’ve gotten your hands on, no questions asked.""
+OR
+""Fascinating things. Have you ever touched one directly, $playerLastName? You can feel the sheer power through the metal, it's something more than a mere mechanism.
+
+Anyway, I can give you a respectable bounty for any cores you’ve gotten your hands on, no questions asked.""",,
+aiCores_turnInResponse_prv,AICoresTurnedIn,$faction.id == prv,FireAll PopulateOptions,"""We’ll take the goods into custody, I’m clearing the transfer contract as we speak."" $personName finishes entering a few commands and looks up. ""It’s our problem now.""",,
+,,,,,,
+# BAR ENTRY,,,,,,
+bar_desc_prv,BarPrintDesc,$faction.id == prv,ShowImageVisual space_bar,"You find yourself in a corporate lounge, expensively but tastelessly decorated and full of what you suspect are largely fakes, dead-end suits with neither talent nor connections. A group of men by a game table shuffle around piles of chips representing either very large or very small amounts of money, while sharply-dressed men and women prowl around the bar, looking for other predators of similar inclination. Fake smiles and giggles stand in for sincere emotion, and a quiet soundtrack does its best to escape notice.",,
+bar_desc_prv_nedan,BarPrintDesc,"$faction.id == prv
+$market.id == prv_stjarngard_ymer_moon2_market score: 100",ShowImageVisual pirate_bar,"Seeking out the only bar in the settlement that actually welcomes spacers, you enter a circular room that surrounds a roaring flame, several meters tall and open to the dark nighttime sky through an oculus at the center of the domed roof. Booths and benches oriented towards the center line the outer wall, letting each patron choose his level of comfort between the freezing cold of the walls and the scorching heat of the flame geyser.",,
+bar_desc_prv_utbo_planet,BarPrintDesc,"$faction.id == independent
+$market.id == prv_stjarngard_utbo_market score: 100",ShowImageVisual teahouse,"Decorated with fine wood, intricate textiles, and a real fireplace, the värdshus - inn - you enter offers weary spacers food, lodging, and, of course, drink. A group of boisterous young nobles are playing a cardgame by a table in the back, with most of the serving girls hovering close-by, hoping to catch an eye. In the central parts of the room serious merchant-captains enjoy rich meals with thick cuts of meat, mounds of boiled tubers, and thick gravy, while a few men by the bar slowly sip amber spirits while in quiet conversation. In spite of the youthful energy in the back the overall feeling of the bar is calm and collected, almost muted.",,
+bar_desc_prv_utbo_station,BarPrintDesc,"$faction.id == prv
+$market.id == prv_stjarngard_utbo_market score: 100",ShowImageVisual teahouse,"Decorated with fine wood, intricate textiles, and a real fireplace, the värdshus - inn - you enter offers weary spacers food, lodging, and, of course, drink. A group of boisterous young nobles are playing a cardgame by a table in the back, with most of the serving girls hovering close-by, hoping to catch an eye. In the central parts of the room serious merchant-captains enjoy rich meals with thick cuts of meat, mounds of boiled tubers, and thick gravy, while a few men by the bar slowly sip amber spirits while in quiet conversation. In spite of the youthful energy in the back the overall feeling of the bar is calm and collected, almost muted.",,
+bar_desc_prv_kratul,BarPrintDesc,"$faction.id == prv
+$market.id == prv_kratul_kratul_market score: 100",ShowImageVisual space_bar,"You find yourself in a back-street club, assaulted by intense music bordering on noise. A large agrav plate is slowly spinning in the middle of the room, serving as a dance floor, or possibly ceiling, full of sweaty youths in color-shifting clothing dancing the night away in a daze of stimulants. By the bar in the back you find a calmer environment, where dark figures sit around underlit tables, enjoying quiet drinks and quieter conversations. A metered acousto-suppressive device by each table renders the music muted, and conversations private.",,
+,,,,,,
+# GREETINGS,,,,,,
+# prv fleet greeting lines,,,,,,
+greetingPRVFriendly,OpenCommLink,"$faction.id == prv
+$faction.friendlyToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Identity confirmed. Still alive, I see.""
+OR
+""Good to see you, colleague. Killed anyone exciting lately?""
+OR
+""I’ve got some strange hypertopo reads, how’s your data?""
+OR
+""The vidlink shows a clean and sharp captain who seems equal measures high-strung and nervous, with every last detail on the bridge in impeccable shape.""
+
+""How can I be of assistance,  $playerSirOrMadam?""
+OR
+The vidlink shows a wearied captain, somewhat dishelved, lounged back in a well-worn command seat.
+
+""What’s new, $playerLastName?""",,
+greetingPRVHostileWeaker,OpenCommLink,"$faction.id == prv
+$entity.isHostile
+$entity.relativeStrength < 0",$entity.ignorePlayerCommRequests = true 1,"Attention. Your vessel has been scanned and identified as hostile. Further attempts at aggression will be repaid sevenfold.
+OR
+""You’ve got me at a disadvantage, captain. But I will fight as a lion if I have to.""",,
+greetingPRVHostileWeakerDefiant,OpenCommLink,"$faction.id == prv
+$entity.isHostile
+$entity.relativeStrength < 0
+$entity.weakerThanPlayerButHolding",$entity.ignorePlayerCommRequests = true 1,"The prv $personRank looks proud and resigned. ""So this is where it ends? Very well. I’ve served my house proudly.""
+OR
+""I will not go quietly into the long night. I will make this bloody and vicious. Choose wisely.""
+OR
+""Do you believe in luck, $playerFirstName? It always runs out eventually, but you never know for who, or when.""",,
+greetingPRVHostileStronger,OpenCommLink,"$faction.id == prv
+$entity.isHostile
+$entity.relativeStrength >= 0",$entity.ignorePlayerCommRequests = true 1,"Your signals are ignored, quietly swallowed by the static void created by opposing ECM.
+OR
+Your comms are replied to with a mirrored copy, pointless gibberish.
+OR
+As soon as you send your comm request your ship is assaulted by EM effectors trying to jam your comm systems. At this distance the effect is annoying, but largely harmless.",,
+greetingPRVNeutral,OpenCommLink,"$faction.id == prv
+$faction.neutralToPlayer","$menuState = fleetConvMain 0
+FireAll PopulateOptions","""Well met, $playerSirOrMadam.""
+OR
+""Hallå där $playerSirOrMadam! Can we be of assistance?""
+OR
+""ID acknowledged. Is there a problem, $playerSirOrMadam?""
+OR
+""For your own safety please maintain tactical distance.""
+OR
+""You are required not to interfere with prv operations in this volume, $playerSirOrMadam. Go about your business.""",,
+,,,,,,
+,,,,,,
+,,,,,,
+# Trade panel flavor text,,,,,,
+flavorTextMarketPrv,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == prv","AddText ""The meticulously orderly port concourse is filled with trader starcraft of every size. In spite of the busy dockworkers and traders there is a muted atmosphere in the port, and men feel more inclined to whisper than to raise their voice."" marketFlavorTextColor
+AddText ""A few small gardens have been planted throughout the concourse, with benches and pergolas adding a shade of privacy for those who desire it."" marketFlavorTextColor",,,
+flavorTextMarketPrvUnstable,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == prv
+$stability < 3","AddText ""The meticulously orderly port concourse is largely empty. What few ships and traders there are conduct their business in hushed tones."" marketFlavorTextColor
+AddText ""A few small gardens have been planted throughout the concourse, but appear to be very poorly maintained - half overgrown and half shriveled."" marketFlavorTextColor",,,
+flavorTextMarketPrvVeryUnstable,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == prv
+$stability == 0 score: 25","AddText ""The port concourse is largely empty, with shuttles and cargo loaders parked haphazardly. What few ships and traders there are conduct their business in hushed tones."" marketFlavorTextColor
+AddText ""A few small gardens had been planted throughout the concourse. Most are dead and dried up, but a water leak has turned one of the larger plots into a foul-smelling swamp."" marketFlavorTextColor",,,
+flavorTextMarketPrvSneak,TradePanelFlavorText,"$global.tradePanelMode == MARKET
+$faction.id == prv
+$player.transponderOn == false","AddText ""Landing at the private dock of a petty noble, you find yourself personally greeted by the man as you disembark. Your lack of proper docking clearance doesn't bother him - he seems to consider the whole thing a thrilling caper."" marketFlavorTextColor
+AddText ""You’re guided through the man’s small estate and leave through the servants’ entrance, at the ransom of a promise to tell the man a story about your adventures once you return."" marketFlavorTextColor",,,
+,,,,,,
+greetingDefaultTOffNormalPrv,OpenCommLink,"!$player.transponderOn
+$faction.id == prv
+$entity.relativeStrength >= 0",,"$PersonRank $personName looks exasperated. ""Turn on your transponder if you want to talk.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",
+greetingDefaultTOffWeakerPrv,OpenCommLink,"!$player.transponderOn
+$faction.id == prv
+$entity.relativeStrength < 0",,"$PersonRank $personName looks concerned. ""If you want to talk, identify yourself first.""","turnOnTransponder:Turn your transponder on
+cutCommLink:Cut the comm link",

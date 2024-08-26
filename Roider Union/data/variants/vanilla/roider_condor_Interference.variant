@@ -1,11 +1,12 @@
 {
     "displayName": "Interference",
-    "fluxCapacitors": 5,
+    "fluxCapacitors": 9,
     "fluxVents": 6,
     "goalVariant": true,
     "hullId": "condor",
     "hullMods": [],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_condor_Interference",
     "weaponGroups": [
         {

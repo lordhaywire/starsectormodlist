@@ -1,0 +1,32 @@
+{
+	"starSystem":"aztlan",
+	"markets":[
+		{
+			"entities":["Zorrah"],
+			"faction":"Bhilai",
+			"size":5,
+			"startingConditions":[
+                "industrial_polity",
+				"population_5",
+				"cold",
+				"thin_atmosphere",
+				"poor_light",
+				"ore_moderate",
+				"volatiles_trace",
+				"headquarters",
+			],
+			"industries":[
+				"population",
+				"spaceport",
+                "lightindustry",
+				"heavyindustry",
+				"heavybatteries",
+				"militarybase",
+			],
+		},
+	],
+
+}
+
+
+

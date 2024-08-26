@@ -1,0 +1,30 @@
+{
+	### Blueprint colors ###
+	"designTypeColors":{
+		"Detached Agni Organ":[196,0,32,255],
+		"Agni":[196,0,32,255],
+	},
+	### Graphics ###
+	"graphics":{
+		"status":{
+			"prv_agni_web": "graphics/prv/icons/status/prv_agni_web.png",
+			"prv_agni_cocoon":"graphics/prv/icons/hullsys/prv_agni_cocoon.png",
+		},
+		"fx":{
+			"prv_agni_overlay_cocoon":"graphics/prv/fx/prv_overlay_agni_coccoon.png",
+			"prv_agni_tooth":"graphics/prv/missiles/prv_shell_agni_tooth.png",
+			"prv_agni_spore":"graphics/prv/fx/prv_agni_spore.png",
+			"prv_agni_web":"graphics/prv/fx/prv_agni_web_fx_small.png",
+			"prv_agni_fin_large_l":"graphics/prv/fx/prv_agni_fin_large_l.png",
+			"prv_agni_fin_large_r":"graphics/prv/fx/prv_agni_fin_large_r.png",
+			"prv_agni_tail":"graphics/prv/fx/prv_agni_tail.png",
+			"prv_agni_tentacle":"graphics/prv/fx/prv_agni_tentacle.png",
+			"prv_agni_claw":"graphics/prv/fx/prv_agni_claw.png",
+			"prv_agni_base":"graphics/prv/fx/prv_agni_base.png",
+		},
+	},	
+	### Bonus XP ###
+	"bonusXP":{
+		"prvSetUpAgniFeeder": 1,
+	},
+}

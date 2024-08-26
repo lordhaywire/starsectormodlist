@@ -10,6 +10,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.lazywizard.lazylib.MathUtils;
+import org.magiclib.Magic_modPlugin;
+import org.magiclib.bounty.intel.BountyBoardIntelPlugin;
+import org.magiclib.bounty.intel.BountyBoardProvider;
 import org.magiclib.util.*;
 
 import java.io.IOException;
@@ -207,12 +210,9 @@ public class MagicBountyLoader {
             }
 
             //fixes for my own mistakes
-            List<String> locations = new ArrayList<>();
-            if (getStringList(bountyId, "location_marketIDs") != null) {
-                locations = getStringList(bountyId, "location_marketIDs");
-            } else if (getStringList(bountyId, "location_entitiesID") != null) {
-                locations = getStringList(bountyId, "location_entitiesID");
-            }
+            // Wisp: fixes for Tart's mistakes :P
+            List<String> locations = getStringList(bountyId, "location_marketIDs");
+            locations.addAll(getStringList(bountyId, "location_entitiesID"));
 
             //fixes for my own mistakes
             Integer minSize = getInt(bountyId, "fleet_min_FP", getInt(bountyId, "fleet_min_DP"));
@@ -262,6 +262,7 @@ public class MagicBountyLoader {
 
                     getString(bountyId, "existing_target_memkey", null),
 
+                    getString(bountyId, "target_importantPersonId"),
                     getString(bountyId, "target_first_name"),
                     getString(bountyId, "target_last_name"),
                     getString(bountyId, "target_portrait"),
@@ -322,6 +323,16 @@ public class MagicBountyLoader {
         }
 
         validateAndCullLoadedBounties();
+
+        BountyBoardIntelPlugin.Companion.getPROVIDERS().clear();
+        try {
+            for (String className : MagicSettings.getList(MagicVariables.MAGICLIB_ID, "bountyProviders")) {
+                BountyBoardIntelPlugin.Companion.addProvider((BountyBoardProvider)
+                        Global.getSettings().getScriptClassLoader().loadClass(className).newInstance());
+            }
+        } catch (Throwable ex) {
+            throw new RuntimeException(ex);
+        }
 
         if (MagicVariables.verbose) {
             LOG.info("\n ######################\n\n MAGIC BOUNTIES LOADING COMPLETE\n\n ######################");
@@ -570,10 +581,10 @@ public class MagicBountyLoader {
                     }
                 }
             } else {
-                LOG.error("MagicBountyData is unable to find " + BOUNTY_BOARD + " within " + MagicVariables.MAGICLIB_ID + " in modSettings.json");
+                LOG.warn("MagicBountyData is unable to find " + BOUNTY_BOARD + " within " + MagicVariables.MAGICLIB_ID + " in modSettings.json");
             }
         } catch (JSONException ex) {
-            LOG.error("MagicBountyData is unable to read the content of " + MagicVariables.MAGICLIB_ID + " in modSettings.json", ex);
+            LOG.warn("MagicBountyData is unable to read the content of " + MagicVariables.MAGICLIB_ID + " in modSettings.json", ex);
         }
 
         List<String> bountiesAvailable = new ArrayList<>();
@@ -616,7 +627,7 @@ public class MagicBountyLoader {
     private static JSONObject loadBountyData() {
         JSONObject this_bounty_data = null;
         try {
-            if (Global.getSector() != null && Global.getSector().getPlayerPerson().getNameString().equalsIgnoreCase("ML_Test"))
+            if (Magic_modPlugin.isMagicLibTestMode())
                 this_bounty_data = Global.getSettings().getMergedJSONForMod(TESTING_PATH, MagicVariables.MAGICLIB_ID);
             else
                 this_bounty_data = Global.getSettings().getMergedJSONForMod(PATH, MagicVariables.MAGICLIB_ID);
@@ -840,7 +851,8 @@ public class MagicBountyLoader {
         /**
          * Requires the destruction or disabling of 2/3rd of the enemy fleet.
          */
-        Neutralisation,
+        Neutralization,
+        Neutralisation, // Kept for backwards compatibility
     }
 
     public enum ShowFleet {

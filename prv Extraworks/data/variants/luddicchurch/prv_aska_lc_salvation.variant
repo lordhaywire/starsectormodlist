@@ -1,0 +1,58 @@
+{
+  "displayName": "Salvation",
+  "fluxCapacitors": 11,
+  "fluxVents": 10,
+  "goalVariant": true,
+  "hullId": "prv_aska_lc",
+  "hullMods": [
+    "dedicated_targeting_core",
+    "missleracks",
+    "converted_hangar",
+  ],
+  "permaMods": [],
+  "quality": 1,
+  "variantId": "prv_aska_lc_salvation",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+	  "WS0002": "jackhammer",
+        "WS0004": "jackhammer",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "hammerrack",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+	  "WS0003": "arbalest",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "lightdualac",
+        "WS0006": "lightdualac",
+	  "WS0007": "lightdualac",
+	  "WS0008": "lightdualac",
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "vulcan",
+        "WS0010": "vulcan"
+      }
+    },
+  ],
+  "wings": ["perdition_wing"]
+}

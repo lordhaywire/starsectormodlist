@@ -4,12 +4,12 @@
   "hullSize": "CRUISER",
   "spriteName": "graphics/ships/roider_ranch.png",
   "style": "ROIDER_HULL",
-  "height": 269,
-  "width": 120,
-  "center": [60, 147],
-  "collisionRadius": 200,
+  "height": 243,
+  "width": 154,
+  "center": [77, 132],
+  "collisionRadius": 160,
   "shieldCenter": [0, -0],
-  "shieldRadius": 190,
+  "shieldRadius": 160,
   "viewOffset": 0,
   "builtInMods": [
     "roider_midas1"
@@ -22,38 +22,38 @@
     {
       "id": "WS 003",
       "size": "MEDIUM",
-      "type": "MISSILE",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
-      "angle": 90,
-      "locations": [-11, 41]
+      "angle": 60,
+      "locations": [2, 36]
     },
     {
       "id": "WS 004",
       "size": "MEDIUM",
-      "type": "MISSILE",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 150,
-      "angle": -90,
-      "locations": [-11, -41]
+      "angle": -60,
+      "locations": [2, -36]
     },
     {
       "id": "WS 001",
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 180,
-      "angle": 55,
-      "locations": [78, 47]
+      "arc": 210,
+      "angle": 0,
+      "locations": [82, -0]
     },
     {
       "id": "WS 002",
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 180,
-      "angle": -55,
-      "locations": [78, -47]
+      "arc": 210,
+      "angle": 0,
+      "locations": [64, -0]
     },
     {
       "id": "WS 005",
@@ -61,8 +61,8 @@
       "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 170,
-      "angle": 120,
-      "locations": [-79, 37]
+      "angle": 135,
+      "locations": [-58, 26]
     },
     {
       "id": "WS 006",
@@ -70,8 +70,8 @@
       "type": "BALLISTIC",
       "mount": "TURRET",
       "arc": 170,
-      "angle": -120,
-      "locations": [-79, -37]
+      "angle": -135,
+      "locations": [-58, -26]
     },
     {
       "id": "LEFT BAY",
@@ -81,9 +81,8 @@
       "arc": 0,
       "angle": 90,
       "locations": [
-        17, 39,
-        -38.5, 39,
-        -54, 37
+        7, 59,
+        -3, 59
       ]
     },
     {
@@ -94,9 +93,9 @@
       "arc": 0,
       "angle": -90,
       "locations": [
-        17, -39,
-        -39, -39,
-        -54, -37
+        32, -39,
+        7, -59,
+        -3, -59
       ]
     },
     {
@@ -107,9 +106,10 @@
       "arc": 0,
       "angle": 0,
       "locations": [
-        27, -0,
-        29, 11,
-        29, -11
+        63, -29,
+        51, 31,
+        51, -31,
+        63, 29
       ]
     },
     {
@@ -120,9 +120,9 @@
       "arc": 0,
       "angle": 180,
       "locations": [
-        -60, -0,
-        -62, 11,
-        -62, -11
+        -84, -0,
+        -21, 10,
+        -21, -10
       ]
     },
     {
@@ -132,30 +132,39 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
-      "locations": [91, -0]
+      "locations": [94, -0]
     },
     {
       "id": "WS 008",
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 200,
-      "angle": -70,
-      "locations": [56, -32]
+      "arc": 120,
+      "angle": -45,
+      "locations": [29, -25]
     },
     {
       "id": "WS 007",
       "size": "SMALL",
       "type": "BALLISTIC",
       "mount": "TURRET",
-      "arc": 200,
-      "angle": 70,
-      "locations": [56, 32]
+      "arc": 120,
+      "angle": 45,
+      "locations": [29, 25]
+    },
+    {
+      "id": "WS 009",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 210,
+      "angle": 0,
+      "locations": [42, -0]
     }
   ],
   "engineSlots": [
     {
-      "location": [-147, 15],
+      "location": [-132, 39],
       "length": 60,
       "width": 24,
       "angle": 180,
@@ -163,7 +172,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-147, -15],
+      "location": [-132, -39],
       "length": 60,
       "width": 24,
       "angle": -180,
@@ -171,40 +180,48 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-142, -0],
-      "length": 60,
+      "location": [-127, 25],
+      "length": 54,
       "width": 20,
       "angle": 180,
       "contrailSize": 20,
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-138, 27],
-      "length": 36,
-      "width": 12,
+      "location": [-127, -25],
+      "length": 54,
+      "width": 20,
+      "angle": -180,
+      "contrailSize": 20,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-111, 56],
+      "length": 32,
+      "width": 8,
+      "angle": -180,
+      "contrailSize": 8,
+      "style": "ROIDER_ENGINE"
+    },
+    {
+      "location": [-111, -56],
+      "length": 32,
+      "width": 8,
       "angle": 180,
-      "contrailSize": 12,
+      "contrailSize": 8,
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-138, -27],
-      "length": 36,
+      "location": [-111, 64],
+      "length": 40,
       "width": 12,
       "angle": -180,
       "contrailSize": 12,
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-116, 42],
-      "length": 16,
-      "width": 12,
-      "angle": -180,
-      "contrailSize": 12,
-      "style": "ROIDER_ENGINE"
-    },
-    {
-      "location": [-116, -42],
-      "length": 16,
+      "location": [-111, -64],
+      "length": 40,
       "width": 12,
       "angle": 180,
       "contrailSize": 12,
@@ -212,37 +229,37 @@
     }
   ],
   "bounds": [
-    -26, -52,
-    -5, -52,
-    3, -43,
-    51, -44,
-    51, -57,
-    94, -57,
-    99, -45,
-    87, -39,
-    118, -27,
-    111, -18,
-    111, 18,
-    118, 27,
-    87, 39,
-    99, 45,
-    94, 57,
-    51, 57,
-    51, 44,
-    3, 43,
-    -5, 52,
-    -26, 52,
-    -30, 43,
-    -67, 44,
-    -76, 50,
-    -106, 49,
-    -114, 37,
-    -135, 31,
-    -135, -31,
-    -114, -37,
-    -106, -49,
-    -76, -50,
-    -67, -44,
-    -30, -43
+    -115, -8,
+    -104, -15,
+    -125, -20,
+    -130, -44,
+    -109, -49,
+    -109, -66,
+    -92, -74,
+    -56, -73,
+    -47, -57,
+    -32, -57,
+    -19, -71,
+    23, -71,
+    46, -41,
+    72, -40,
+    108, -25,
+    98, -13,
+    98, 13,
+    108, 25,
+    72, 40,
+    46, 41,
+    23, 71,
+    -19, 71,
+    -32, 57,
+    -47, 57,
+    -56, 73,
+    -92, 74,
+    -109, 66,
+    -109, 49,
+    -130, 44,
+    -125, 20,
+    -104, 15,
+    -115, 8
   ]
 }

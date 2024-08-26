@@ -1,0 +1,150 @@
+{
+  "bounds": [
+    43,
+    -15,
+    43,
+    15,
+    35,
+    35,
+    -9,
+    35,
+    -44,
+    29,
+    -44,
+    10,
+    -32,
+    10,
+    -32,
+    -10,
+    -44,
+    -10,
+    -44,
+    -29,
+    -23,
+    -34,
+    18,
+    -34
+  ],
+  "builtInMods": [
+    "civgrade",
+    #"prv_leanhangar",
+    "repair_gantry"
+  ],
+  "builtInWeapons": {
+    "WS0004": "lightmg",
+    "WS0005": "lightmg"
+  },
+  "builtInWings": [],
+  "center": [
+    55,
+    55
+  ],
+  "collisionRadius": 90.5,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -32,
+        5.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 30,
+      "length": 30,
+      "location": [
+        -32,
+        -5.5
+      ],
+      "style": "PRV_LOW",
+      "width": 10
+    }
+  ],
+  "height": 110,
+  "hullId": "prv_skiffer",
+  "hullName": "Skiffer",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 89,
+  "spriteName": "graphics/prv/ships/prv_skiffer.png",
+  "style": "PRV_LOW",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -5,
+        29,
+        7.5,
+        30,
+        7.5,
+        -33,
+        0,
+        -25.5,
+        -7,
+        -31
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": -0,
+      "arc": 60,
+      "id": "WS0002",
+      "locations": [
+        32,
+        0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "HYBRID"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0001",
+      "locations": [
+        43,
+        24
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "COMPOSITE"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        28,
+        -24.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0005",
+      "locations": [
+        28,
+        -31.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "BUILT_IN"
+    }
+  ],
+  "width": 110
+}

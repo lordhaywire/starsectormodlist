@@ -1,0 +1,60 @@
+{
+  "hullName": "Lentaka Drone",
+  "hullId": "acs_smallderelicdrone",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/acs_smallderelicdrone.png",
+  "style": "LOW_TECH",
+  "height": 22,
+  "width": 26,
+  "center": [13, 11],
+  "collisionRadius": 12,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 12,
+  "viewOffset": 0,
+  "builtInMods": [
+    "no_weapon_flux"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS 001",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0, 0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-6, 0],
+      "length": 12,
+      "width": 6,
+      "angle": 180,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-6, 6],
+      "length": 8,
+      "width": 4,
+      "angle": 160,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-6, -6],
+      "length": 8,
+      "width": 4,
+      "angle": 200,
+      "contrailSize": 64,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    5.5, 6,
+    -5, 6,
+    -5, -6,
+    5.5, -6
+  ]
+}

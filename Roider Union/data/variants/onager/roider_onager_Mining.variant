@@ -1,15 +1,13 @@
 {
     "displayName": "Mining",
     "fluxCapacitors": 10,
-    "fluxVents": 10,
+    "fluxVents": 11,
     "goalVariant": true,
     "hullId": "roider_onager",
-    "hullMods": [
-        "surveying_equipment",
-        "insulatedengine"
-    ],
+    "hullMods": ["surveying_equipment"],
     "modules": [{"PROW ARMOR": "roider_onager_armor_Standard"}],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_onager_Mining",
     "weaponGroups": [
         {

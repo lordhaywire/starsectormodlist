@@ -1,0 +1,17 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sModDesc,sprite
+Symbiote Host,prv_agni_phoenixshroud,3,0,Agni,,,,,TRUE,,0,0,0,0,prv.agni.hullmods.prv_agni_phoenixshroud,Exhausing a group of armor cells will spawn a wing of short-lived %s fighters.,Sheds damaged armor cells as fighters.,,graphics/prv/hullmods/prv_agni_eyes.png
+Prominence,prv_agni_prominence,1,0,Agni,,,,,TRUE,TRUE,0,0,0,0,prv.agni.hullmods.prv_agni_prominence,"The ship is shrouded in flames, dealing %s high explosive damage per second to itself and any nearby ships.
+
+The ship explodes once it is entirely exhausted, dealing up to %s energy damage to ships within %s range and burning them for an additional %s high explosive damage over time.",Cloaks the ship in flames.,,graphics/prv/hullmods/prv_agni_eyes.png
+Solar Carapace,prv_agni_solarcarapace,2,0,Agni,,,,,TRUE,,0,0,0,0,prv.agni.hullmods.prv_agni_solarcarapace,"Decreases the effect operating in a solar corona has on combat readiness by %s; also has the same effect against storms in deep hyperspace.
+
+In combat the carapace proves highly resistant to beam and EMP attacks, reducing damage taken from them by %s. EMP damage from beams will be reduced by a total of %s.",Reduces effect of being in corona and beam damage taken.,,graphics/prv/hullmods/prv_agni_eyes.png
+Tough Hide,prv_agni_toughhide,0,0,Agni,,,,,TRUE,,0,0,0,0,prv.agni.hullmods.prv_agni_toughhide,The durable armored hide treats %s and %s damage as %s damage.,Turns high explosive damage into energy damage.,,graphics/prv/hullmods/prv_agni_eyes.png
+Agni Behavior,prv_agni_behavior,0,0,Agni,,,,,TRUE,TRUE,0,0,0,0,prv.agni.hullmods.prv_agni_behavior,"This creature will become increasingly cautious as it gets hurt, and will retreat on its own volition if it is badly wounded.",Animal instincts.,,graphics/prv/hullmods/prv_agni_eyes.png
+Symbiote Crevice,prv_agni_symbiote_crevice,0,0,Agni,,,,,TRUE,,0,0,0,0,com.fs.starfarer.api.impl.hullmods.FighterChassisStorage,Fighter replacement rate does not go down when fighters are lost.,Fighter replacement rate does not go down.,,graphics/prv/hullmods/prv_agni_eyes.png
+Sharp Senses,prv_agni_sharp_senses,0,0,Agni,,,,,TRUE,,0,0,0,0,prv.agni.hullmods.prv_agni_sharp_senses,"Extends the range of ballistic and energy weapons by %s.
+
+Also increases target-leading accuracy and greatly increases in-combat sensor range.",Greatly extends non-missile weapon range.,,graphics/prv/hullmods/prv_agni_eyes.png
+,,,,,,,,,,,,,,,,,,,
+### Built-in,,,,,,,,,,,,,,,,,,,
+Biosensor Integration,prv_agni_eyes,,,Agni,,,,,TRUE,,0,0,0,0,prv.agni.hullmods.prv_agni_eyes,"Unorthodox optical equipment has been integrated into the ship’s sensor network, extending the range of energy and ballistic weapons by %s.",Biooptical integration enhances weapon range.,,graphics/prv/hullmods/prv_agni_eyes.png

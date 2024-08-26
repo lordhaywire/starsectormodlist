@@ -1,0 +1,5 @@
+command,class,tags,syntax,help
+CheckVariantOPUsage,prv.lib.console.prvConsoleCheckVariantOPUsage,"prv,campaign",checkvariantopusage all|<manufacturer>,Prints a list of all hull variants belonging to the specified manufacturer which use an inappropriate amount of OP. Manufacturer argument is case sensitive and includes whitespace.
+ListManufacturers,prv.lib.console.prvConsoleListManufacturers,"prv,campaign",listmanufacturers,"Prints a list of all manufacturers of starships, weapons and hullmods in the sector."
+ListKnownByFaction,prv.lib.console.prvConsoleListKnownByFaction,"prv,campaign",listknownbyfaction <factionId> <weapons|fighters|ships|hullmods|all>,Prints a list of all blueprints in the chosen category known by the faction.
+IsKnownByFaction,prv.lib.console.prvConsoleIsKnownByFaction,"prv,campaign",isKnownByFaction all|<factionId> weaponId|fighterId|shipId|hullmodId,Checks if a given faction knows a specific blueprint.

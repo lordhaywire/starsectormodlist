@@ -1,0 +1,43 @@
+{
+	"id":"gravburst_shot_null",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":45.0,
+	"width":7,
+	"fadeTime":5,
+#	"fringeColor":[5,135,175,255],  #BLUE
+#	"coreColor":[200,225,255,255],  #BLUE
+#	"glowColor":[25,215,255,255],   #BLUE
+	"fringeColor":[255,100,100,255],  #RED
+	"coreColor":[255,255,255,255],  #RED
+	"glowColor":[255,0,0,125],   #RED
+	"glowRadius":50,
+	"hitGlowRadius":50,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png",
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":-0.2, # negative value = explosion distance AFTER max range (overrides fadeout time)
+					"probOfVariance":1, # 1/4 shorts always reaches max range
+					"range":0,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":75,
+									 "coreRadius":50, # full damage within core radius - at least equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":5.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":50,
+									 #  "particleColor":[25,215,255,255],      #BLUE
+									 #  "explosionColor":[200,225,255,255],    #BLUE
+									 "particleColor":[255,0,0,125],      #RED
+									 "explosionColor":[255,100,100,175],    #RED
+									 "sound":"amsrm_fire"},
+					},
+}

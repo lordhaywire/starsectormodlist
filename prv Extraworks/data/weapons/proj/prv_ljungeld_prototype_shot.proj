@@ -1,0 +1,23 @@
+{
+	"id":"prv_ljungeld_prototype_shot",
+	"onHitEffect":"prv.extra.weapons.prv_ljungeld_prototype_OnHitEffect",
+	"specClass":"projectile",
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	#"spawnType":"BALLISTIC",
+	#"collisionClass":"PROJECTILE_FF",
+	#"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"length":40, #27
+	"hitGlowRadius":15,
+	"width":40, #27
+	"fadeTime":0.4,
+	"fringeColor":[255,0,127,255],	#light blue w/ red tint #it's called pink chucklefuck
+	"coreColor":[229,255,238,196],
+	"glowColor":[255,0,127,255],
+	"glowRadius":18,
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	#"bulletSprite":"graphics/prv/missiles/prv_shell_akers_nova.png"	
+}

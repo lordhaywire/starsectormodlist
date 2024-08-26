@@ -1,0 +1,43 @@
+{
+    "displayName": "Standard",
+    "fluxCapacitors": 50,
+    "fluxVents": 5,
+    "goalVariant": true,
+    "hullId": "atlas_c",
+    "hullMods": [
+        "expanded_deck_crew",
+        "extendedshieldemitter",
+        "additional_berthing"
+    ],
+    "permaMods": [],
+    "sMods": [],
+    "variantId": "atlas_c_standard",
+    "weaponGroups": [
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 003": "heavyburst"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 001": "lightmg",
+                "WS 002": "lightmg",
+                "WS0005": "lightdualmg",
+                "WS0006": "lightdualmg",
+                "WS0007": "lightmg"
+            }
+        }
+    ],
+    "wings": [
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing",
+        "4c_pulse_wing"
+    ]
+}

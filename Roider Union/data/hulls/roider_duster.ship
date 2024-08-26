@@ -12,9 +12,19 @@
   "shieldRadius": 30,
   "viewOffset": 0,
   "builtInMods": [
-	"roider_midas_fighter"
+	"roider_midas_fighter",
+	"pointdefenseai"
   ],
   "weaponSlots": [
+    {
+      "id": "WS 003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-10, 0]
+    },
     {
       "id": "WS 002",
       "size": "SMALL",

@@ -1,0 +1,9 @@
+Bounty trigger requirements:
+
+Friend of Ludd
+- 25 FP player fleet size.
+- Market owner: Luddic Path, Independent or Tritachyon.
+
+Gudalik Trial Group
+- 125 FP player fleet size.
+- Market owner: Tritachyon or Tritachyon ally.

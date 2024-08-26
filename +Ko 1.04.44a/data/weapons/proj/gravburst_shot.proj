@@ -1,0 +1,41 @@
+{
+	"id":"gravburst_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":50.0,
+	"width":20,
+	"fadeTime":0.3,
+	"fringeColor":[255,0,0,255],
+	"coreColor":[255,255,255,200],
+	"glowColor":[255,0,0,125],
+	"glowRadius":50,
+	"hitGlowRadius":50,	
+	"textureType":"ROUGH",  # now also used for "BALLISTIC_AS_BEAM", if specified
+	#"textureType":["graphics/fx/emp_arcs.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-256,
+	"pixelsPerTexel":1.0,
+	"passThroughMissiles":true,
+	"passThroughFighters":true,
+	"passThroughFightersOnlyWhenDestroyed":true,
+	"behaviorSpec":{"behavior":"PROXIMITY_FUSE",
+					"shotRangeVariance":-0.2, # negative value = explosion distance AFTER max range (overrides fadeout time)
+					"probOfVariance":1, # 1/4 shorts always reaches max range
+					"range":0,
+					"explosionSpec":{"duration":0.1f,
+									 "radius":50,
+									 "coreRadius":40, # full damage within core radius - at least equal to proximity fuse range
+									 "collisionClass":PROJECTILE_FF,
+									 "collisionClassByFighter":PROJECTILE_FIGHTER,
+									 "particleSizeMin":5.0,
+									 "particleSizeRange":3.0,
+									 "particleDuration":1,
+									 "particleCount":50,
+									 #  "particleColor":[25,215,255,255],      #BLUE
+									 #  "explosionColor":[200,225,255,255],    #BLUE
+									 "particleColor":[255,0,0,125],      #RED
+									 "explosionColor":[255,100,100,175],    #RED
+									 "sound":"amsrm_fire"},
+					},
+}

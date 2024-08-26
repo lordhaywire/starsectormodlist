@@ -1,0 +1,5 @@
+name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u (base cap),cr/u,max uses,regen,charge up,active,down,cooldown,toggle,noDissipation,noHardDissipation,hardFlux,noFiring,noTurning,noStrafing,noAccel,noShield,noVent,isPhaseCloak,tags,icon
+Cocoon,prv_agni_cocoon,,,,,,,,3,0.02,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
+Cocoon,prv_agni_cocoon_large,,,,,,,,3,0.02,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
+Cocoon,prv_agni_cocoon_fighter,,,,,,,,1,0.025,0.25,,,0,,,,,,,,,,,,,graphics/prv/icons/hullsys/prv_agni_cocoon.png
+Lunge,prv_agni_microburn,1,,,,,,,2,0.1,0.5,0.5,0.5,,,,,,,,TRUE,TRUE,,,,,graphics/icons/hullsys/burn_drive.png

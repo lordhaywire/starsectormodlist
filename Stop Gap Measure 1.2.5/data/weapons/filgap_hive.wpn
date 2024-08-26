@@ -1,0 +1,74 @@
+{
+  "animationType": "SMOKE",
+  "barrelMode": "ALTERNATING",
+  "fireSoundTwo": "swarmer_fire",
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    12,
+    11.5,
+    14,
+    8.5,
+    16,
+    5.5,
+    12,
+    -11.5,
+    14,
+    -8.5,
+    16,
+    -5.5
+  ],
+  "hardpointSprite": "graphics/filgap/weapons/filgap_hive_hardpoint.png",
+  "id": "filgap_hive",
+  "projectileSpecId": "type_1_srm",
+  "size": "MEDIUM",
+  "smokeSpec": {
+    "blowbackDuration": 1.1,
+    "blowbackLength": 20,
+    "blowbackParticleCount": 4,
+    "blowbackSpread": 10,
+    "cloudDuration": 1,
+    "cloudParticleCount": 3,
+    "cloudRadius": 8,
+    "particleColor": [
+      170,
+      160,
+      150,
+      130
+    ],
+    "particleSizeMin": 10,
+    "particleSizeRange": 16
+  },
+  "specClass": "projectile",
+  "textureType": ROUGH,
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "turretOffsets": [
+    11,
+    11.5,
+    13,
+    8.5,
+    15,
+    5.5,
+    11,
+    -11.5,
+    13,
+    -8.5,
+    15,
+    -5.5
+  ],
+  "turretSprite": "graphics/filgap/weapons/filgap_hive_turret.png",
+  "type": "MISSILE"
+}

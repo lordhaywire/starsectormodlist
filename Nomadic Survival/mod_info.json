@@ -1,0 +1,11 @@
+{
+	"id":"sun_nomadic_survival",
+	"name":"Nomadic Survival",
+    "utility":"false",
+	"author":"Sundog",
+	"version":"1.4.0",
+	"description":"Adds options for exploiting planets, making it possible to survive for extended periods in the far reaches of the sector.\n\nINCOMPATIBLE MODS:\n  - Perilous Expanse\n  - Fuel Siphoning",
+    "gameVersion":"0.97a-RC8",
+	"jars":["jars/NomadicSurvival.jar"],
+    "modPlugin":"nomadic_survival.ModPlugin",
+}

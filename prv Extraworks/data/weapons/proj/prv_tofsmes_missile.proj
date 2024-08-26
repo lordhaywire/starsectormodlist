@@ -1,0 +1,46 @@
+{
+	"id":"prv_tofsmes_missile",
+	"specClass":"missile",
+	#"missileType":"ROCKET",
+	"missileType":"MISSILE",
+	"onFireEffect":"prv.extra.weapons.prv_tofsmes_OnFireEffect",
+	"onHitEffect":"prv.corp.weapons.prv_blames_OnHitEffect",
+	#"fizzleOnReachingWeaponRange":true,
+	"sprite":"graphics/prv/missiles/prv_missile_tofsmes.png",
+	"size":[8,20],	
+	"center":[4,10],
+	"collisionRadius":9,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[51,0,153,196],  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":50, # purely visual
+	"armingTime":0.67,
+	"flameoutTime":0.5, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.5, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	#"engineSpec":{"turnAcc":1800,		#450
+	#			  "turnRate":900,	#225
+	#			  "acc":800,	#800
+	#			  "dec":1600},	#0
+	"engineSpec":{"turnAcc":450,
+				  "turnRate":225,
+				  "acc":800,
+				  "dec":0},
+	"engineSlots":[{"id":"ES1",
+		"loc":[-7, 0],
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", 				# PARTICLES or QUAD_STRIP, determines which params are used
+			"engineColor":[153,102,255,196], 		#
+			"contrailDuration":0.6,				# 1
+			"contrailWidthMult":1.5,
+			"contrailWidthAddedFractionAtEnd":-1.25,  # can be negative. makes trail spread out/narrow at the end	#2.5
+			"contrailMinSeg":12, 				# min segment length, in pixels
+			"contrailMaxSpeedMult":0.5f,
+			"contrailAngularVelocityMult":0.5f,
+			"contrailColor":[51,0,153,196],
+			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":8.0,
+		"length":30.0,
+		"angle":180.0}]
+}

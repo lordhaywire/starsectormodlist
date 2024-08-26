@@ -44,5 +44,7 @@
       }
     }
   ],
-  "wings": []
+  "wings": [
+    "edshipyard_papillon_wing"
+  ]
 }

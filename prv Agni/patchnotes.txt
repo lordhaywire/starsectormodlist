@@ -1,0 +1,11 @@
+prv Agni
+
+###
+
+v1
+
+Initial Release, split from prv Starworks
+
+Agni calls in combat now have a flood timer.
+Disabled the Xenolab. It may return in some form.
+Improved Agni post-battle loot handling.

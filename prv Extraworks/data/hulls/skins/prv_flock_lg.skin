@@ -1,0 +1,44 @@
+{
+	"baseHullId":"prv_flock",
+	"skinHullId":"prv_flock_lg",
+	"hullName":"Flock (LG)",
+	"descriptionId":"prv_flock_lg",
+	#"descriptionPrefix":"This ship was built to the exacting specifications demanded by the Lion's Guard, environmentally-hardened to survive the harsh fires of Askonia.",
+	"tags":["prv_lg_bp"],
+	"tech":"Lion's Guard",
+	"restoreToBaseHull":false,
+	"ordnancePoints":130,
+	"shieldEfficiency":0.7,
+	"addHints":[HIDE_IN_CODEX],
+	"baseValueMult":1,
+	"spriteName":"graphics/prv/ships/prv_flock_lg.png",
+	"systemId":"displacer",
+	"removeBuiltInMods":["eccm","prv_ramshield","prv_volatiledrivecore"], 		# hullmod ids
+	"removeBuiltInWeapons":[
+		"BI01",		#autolauncher
+	],
+	"weaponSlotChanges":{
+	   "BI01":{
+		  "mount": "HARDPOINT",
+		  "type": "MISSILE",
+	   },
+	   "WS0001":{
+		  "type": "ENERGY",
+	   },
+	   "WS0002":{
+		  "type": "ENERGY",
+	   },
+    },
+	"builtInMods":["missleracks", "solar_shielding", "coherer"],
+	"builtInWeapons":{
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+	},    
+}

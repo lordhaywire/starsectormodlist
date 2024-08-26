@@ -5,7 +5,7 @@
   "type":"ENERGY",
   "mountTypeOverride":"HYBRID",
   "size": "MEDIUM",
-  "everyFrameEffect": "scripts.weapons.prv_gravkan_EveryFrameEffect",
+  "everyFrameEffect": "prv.corp.weapons.prv_gravkan_EveryFrameEffect",
   "turretSprite": "graphics/prv/weapons/prv_gravkan_turret.png",
   "turretGlowSprite": "graphics/prv/weapons/prv_gravkan_turret_glow.png",
   "turretGunSprite": "graphics/prv/weapons/prv_gravkan_turret_recoil.png",

@@ -1,0 +1,240 @@
+{
+  "bounds": [
+    -75,
+    -25,
+    -30,
+    -40,
+    10,
+    -20,
+    30,
+    -40,
+    65,
+    -17,
+    56,
+    -0,
+    65,
+    17,
+    30,
+    40,
+    10,
+    20,
+    -30,
+    40,
+    -75,
+    25,
+    -65,
+    -0
+  ],
+  "builtInWings": [],
+  "center": [
+    43,
+    80
+  ],
+  "collisionRadius": 110,
+  "coversColor": "255,255,255,255",
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 28,
+      "length": 55,
+      "location": [
+        -69,
+        0
+      ],
+      "style": "LOW_TECH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 11,
+      "length": 40,
+      "location": [
+        -71,
+        11
+      ],
+      "style": "LOW_TECH",
+      "width": 11
+    },
+    {
+      "angle": -180,
+      "contrailSize": 11,
+      "length": 40,
+      "location": [
+        -71,
+        -11
+      ],
+      "style": "LOW_TECH",
+      "width": 11
+    },
+    {
+      "angle": 180,
+      "contrailSize": 28,
+      "length": 70,
+      "location": [
+        -76,
+        20
+      ],
+      "style": "LOW_TECH",
+      "width": 28
+    },
+    {
+      "angle": -180,
+      "contrailSize": 28,
+      "length": 70,
+      "location": [
+        -76,
+        -20
+      ],
+      "style": "LOW_TECH",
+      "width": 28
+    }
+  ],
+  "height": 150,
+  "hullId": "requiem",
+  "hullName": "Requiem",
+  "hullSize": "DESTROYER",
+    "builtInMods": ["rugged","distributed_fire_control"],
+  "shieldCenter": [
+    0,
+    -0
+  ],
+  "shieldRadius": 100,
+  "spriteName": "graphics/ships/dtype-3.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+#    {
+#      "angle": 0,
+#      "arc": 120,
+#      "id": "WS0001",
+#      "locations": [
+#        -1,
+#        -0
+#      ],
+#      "mount": "TURRET",
+#      "size": "MEDIUM",
+#      "type": "MISSILE"
+#    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0002",
+      "locations": [
+        50,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "MEDIUM",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 5,
+      "id": "WS0003",
+      "locations": [
+        61,
+        17
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -0,
+      "arc": 5,
+      "id": "WS0004",
+      "locations": [
+        61,
+        -17
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 70,
+      "arc": 180,
+      "id": "WS0005",
+      "locations": [
+        29,
+        19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -70,
+      "arc": 180,
+      "id": "WS0006",
+      "locations": [
+        29,
+        -19
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 120,
+      "arc": 220,
+      "id": "WS0007",
+      "locations": [
+        -38,
+        23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -120,
+      "arc": 220,
+      "id": "WS0008",
+      "locations": [
+        -38,
+        -23
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "LB 1",
+      "locations": [
+        -33,
+        -0
+      ],
+      "mount": "HIDDEN",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY"
+    },
+    {
+      "angle": 50,
+      "arc": 5,
+      "id": "WS0009",
+      "locations": [
+        -23,
+        15.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    },
+    {
+      "angle": -50,
+      "arc": 5,
+      "id": "WS0010",
+      "locations": [
+        -23,
+        -15.5
+      ],
+      "mount": "HIDDEN",
+      "size": "SMALL",
+      "type": "SYSTEM"
+    }
+  ],
+  "width": 86
+}

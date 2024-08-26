@@ -43,7 +43,7 @@
 		],
 		"hull_50":[
 			{"text":"Hull integrity at 50%!"},
-			{"text":"Where's our fighter screen!"},
+			{"text":"Where's our fighter screen!?"},
 			{"text":"I can't hold 'em alone!"}
 		],
 		"hull_30":[
@@ -66,6 +66,9 @@
 			{"text":"We have triumphed!"},
 			{"text":"The enemy crumbles!"},
 			{"text":"Scavenging teams are green lit."},
+		],
+		"victory_boss":[
+			{"text":"Get me a drink."},
 		],
 	}
 }

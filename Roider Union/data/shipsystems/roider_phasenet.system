@@ -2,9 +2,9 @@
 	"id":"roider_phasenet",
 	"type":"STAT_MOD",
 	"aiType":"CUSTOM",
-	"aiScript":"scripts.combat.Roider_PhasenetAI",
+	"aiScript":"roiderUnion.combat.phasenet.PhasenetAI",
 	
-	"statsScript":"scripts.combat.Roider_PhasenetStats",
+	"statsScript":"roiderUnion.combat.phasenet.PhasenetController",
 	
 	
 	"useSound":"roider_system_phasenet_activate",

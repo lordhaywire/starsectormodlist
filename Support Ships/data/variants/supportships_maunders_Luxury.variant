@@ -3,7 +3,7 @@
   "hullId": "supportships_maunders",
   "displayName": "Luxury",
   "goalVariant": true,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 1,
   "fluxVents": 10,
   "quality": 1,
   "permaMods": [],

@@ -9,6 +9,8 @@ import com.fs.starfarer.api.campaign.PersonImportance;
 import com.fs.starfarer.api.campaign.RepLevel;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.fs.starfarer.api.campaign.econ.MarketAPI;
+import com.fs.starfarer.api.characters.FullName;
+import com.fs.starfarer.api.characters.FullName.Gender;
 import com.fs.starfarer.api.characters.ImportantPeopleAPI;
 import com.fs.starfarer.api.characters.PersonAPI;
 import com.fs.starfarer.api.combat.ShipAIConfig;
@@ -19,6 +21,8 @@ import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import com.fs.starfarer.api.impl.campaign.ids.Personalities;
 import com.fs.starfarer.api.impl.campaign.ids.Ranks;
 import com.fs.starfarer.api.impl.campaign.ids.Skills;
+import com.fs.starfarer.api.impl.campaign.ids.Tags;
+import com.fs.starfarer.api.impl.campaign.ids.Voices;
 import com.fs.starfarer.api.impl.campaign.intel.bar.events.BarEventManager;
 import com.fs.starfarer.api.impl.campaign.procgen.ProcgenUsedNames;
 import com.fs.starfarer.api.impl.campaign.procgen.StarSystemGenerator;
@@ -28,6 +32,7 @@ import data.scripts.campaign.econ.UW_CabalInfluence;
 import data.scripts.campaign.events.UW_EventManager;
 import data.scripts.campaign.fleets.UW_CabalFleetManager;
 import data.scripts.campaign.fleets.UW_PalaceFleet;
+import data.scripts.campaign.intel.UW_StarlightGala;
 import data.scripts.campaign.intel.bar.CabalBarEventCreator;
 import data.scripts.campaign.submarkets.UW_CabalMarketPlugin;
 import data.scripts.campaign.submarkets.UW_ScrapyardMarketPlugin;
@@ -47,7 +52,7 @@ import org.json.JSONObject;
 public class UnderworldModPlugin extends BaseModPlugin {
 
     // Both of these are used only when LunaLib is not available.
-    private static boolean isStarlightCabalEnabled = true;
+    public static boolean Module_StarlightCabal = true;
     private static float cabalFleetFactor = 1f;
 
     public static boolean hasGraphicsLib = false;
@@ -132,7 +137,7 @@ public class UnderworldModPlugin extends BaseModPlugin {
     private static void loadSettingsFile() throws IOException, JSONException {
         JSONObject settings = Global.getSettings().loadJSON(SETTINGS_FILE);
 
-        isStarlightCabalEnabled = settings.getBoolean("starlightCabal");
+        Module_StarlightCabal = settings.getBoolean("starlightCabal");
         cabalFleetFactor = (float) settings.getDouble("cabalFleetFactor");
     }
 
@@ -170,9 +175,9 @@ public class UnderworldModPlugin extends BaseModPlugin {
 
     public static boolean isStarlightCabalEnabled() {
         if (Global.getSettings().getModManager().isModEnabled("lunalib")) {
-            return LunaSettings.getBoolean("underworld", "isStarlightCabalEnabled");
+            return Module_StarlightCabal = LunaSettings.getBoolean("underworld", "isStarlightCabalEnabled");
         }
-        return isStarlightCabalEnabled;
+        return Module_StarlightCabal;
     }
 
     public static float getCabalFleetFactor() {
@@ -193,6 +198,7 @@ public class UnderworldModPlugin extends BaseModPlugin {
         x.alias("UW_ScrapyardMarketPlugin", UW_ScrapyardMarketPlugin.class);
         x.alias("UW_EventManager", UW_EventManager.class);
         x.alias("UW_PalaceFleet", UW_PalaceFleet.class);
+        x.alias("UW_StarlightGala", UW_StarlightGala.class);
     }
 
     @Override
@@ -257,7 +263,7 @@ public class UnderworldModPlugin extends BaseModPlugin {
 
         MarketAPI market = Global.getSector().getEconomy().getMarket("uw_arigato");
         if (market != null) {
-            PersonAPI admin = market.getFaction().createRandomPerson();
+            PersonAPI admin = market.getFaction().createRandomPerson(StarSystemGenerator.random);
             admin.setPostId(Ranks.POST_ADMINISTRATOR);
             admin.setRankId(Ranks.SPACE_ADMIRAL);
             admin.getName().setLast("Dickerson");
@@ -279,6 +285,58 @@ public class UnderworldModPlugin extends BaseModPlugin {
             market.getCommDirectory().addPerson(admin, 0);
             market.addPerson(admin);
         }
+
+        PersonAPI person = Global.getSector().getFaction("cabal").createRandomPerson(StarSystemGenerator.random);
+        person.setId("uw_zeb");
+        person.setName(new FullName("Zeb", "Sparks", Gender.MALE)); // Original name is Zebroid Williams
+        person.setRankId(Ranks.FACTION_LEADER);
+        person.setPostId(Ranks.FACTION_LEADER);
+        person.addTag(Tags.CONTACT_MILITARY);
+        person.addTag(Tags.CONTACT_UNDERWORLD);
+        person.setImportance(PersonImportance.VERY_HIGH);
+        person.setVoice(Voices.VILLAIN); // Maybe create a unique voice?
+        person.setGender(Gender.MALE);
+        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "uw_zeb"));
+        person.setPersonality("aggressive");
+        person.getStats().setLevel(7);
+        person.getStats().setSkillLevel(Skills.HELMSMANSHIP, 2);
+        person.getStats().setSkillLevel(Skills.IMPACT_MITIGATION, 2);
+        person.getStats().setSkillLevel(Skills.FIELD_MODULATION, 2);
+        person.getStats().setSkillLevel(Skills.POINT_DEFENSE, 2);
+        person.getStats().setSkillLevel(Skills.SYSTEMS_EXPERTISE, 2);
+        person.getStats().setSkillLevel(Skills.ENERGY_WEAPON_MASTERY, 2);
+        person.getStats().setSkillLevel(Skills.GUNNERY_IMPLANTS, 2);
+        person.getStats().setSkillLevel(Skills.ELECTRONIC_WARFARE, 1); // commander skill
+        person.getStats().setSkillLevel(Skills.FLUX_REGULATION, 1); // commander skill
+        person.getStats().setSkillLevel(Skills.CYBERNETIC_AUGMENTATION, 1); // commander skill
+        ip.addPerson(person);
+
+        person = Global.getSector().getFaction("cabal").createRandomPerson(StarSystemGenerator.random);
+        person.setId("uw_peggy");
+        person.setName(new FullName("Pigmenta", "Pennington", Gender.FEMALE)); // "Peggy"
+        person.setRankId("uw_bursar");
+        person.setPostId(Ranks.CITIZEN);
+        person.setGender(Gender.FEMALE);
+        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "uw_peggy"));
+        ip.addPerson(person);
+
+        person = Global.getSector().getFaction("cabal").createRandomPerson(StarSystemGenerator.random);
+        person.setId("uw_shark1");
+        person.setName(new FullName("Cozen", "Shylock", Gender.MALE));
+        person.setRankId(Ranks.CITIZEN);
+        person.setPostId(Ranks.CITIZEN);
+        person.setGender(Gender.MALE);
+        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "uw_shark1"));
+        ip.addPerson(person);
+
+        person = Global.getSector().getFaction("cabal").createRandomPerson(StarSystemGenerator.random);
+        person.setId("uw_shark2");
+        person.setName(new FullName("Cuda", "Bilkins", Gender.FEMALE));
+        person.setRankId(Ranks.CITIZEN);
+        person.setPostId(Ranks.CITIZEN);
+        person.setGender(Gender.FEMALE);
+        person.setPortraitSprite(Global.getSettings().getSpriteName("characters", "uw_shark2"));
+        ip.addPerson(person);
     }
 
     @Override

@@ -1,0 +1,43 @@
+{
+  "displayName": "Attack",
+  "fluxCapacitors": 18,
+  "fluxVents": 0,
+  "goalVariant": true,
+  "hullId": "filgap_herder",
+  "hullMods": [
+    "missleracks"
+  ],
+  "permaMods": [],
+  "quality": 0,
+  "variantId": "filgap_herder_Attack",
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0003": "reaper",
+        "WS0004": "reaper"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "ALTERNATING",
+      "weapons": {
+        "WS0005": "sabot",
+        "WS0006": "sabot"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vulcan",
+        "WS0002": "vulcan"
+      }
+    }
+  ],
+  "wings": [
+    "broadsword_wing",
+    "warthog_wing"
+  ]
+}

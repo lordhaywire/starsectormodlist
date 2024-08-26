@@ -1,0 +1,60 @@
+{
+	"baseHullId": "prv_eld",
+	"descriptionPrefix":"This ship was built to the exacting specifications demanded by the Lion's Guard, environmentally-hardened to survive the harsh fires of Askonia.",
+	"tags":["prv_lg_bp"],
+	"tech":"Lion's Guard",
+	"baseValueMult": 1,
+	"removeBuiltInWeapons":["DC01"],
+	"removeWeaponSlots":["DC01"],
+	"removeBuiltInMods":["prv_ramshield","prv_volatiledrivecore"],
+	"addHints":[HIDE_IN_CODEX],
+	"maxSpeed":90,
+	"shieldEfficiency":0.8,
+	"builtInMods":["solar_shielding","coherer"],
+	"systemId":"highenergyfocus",
+	"descriptionId": "prv_eld_midline",
+	"hullName": "Eld (LG)",
+	"restoreToBaseHull": false,
+	"skinHullId": "prv_eld_lg",
+	"spriteName": "graphics/prv/ships/prv_eld_lg.png",
+	"weaponSlotChanges":{
+		"WS0001":{
+		  "type": "ENERGY",
+		},
+		"WS0002":{
+		  "type": "ENERGY",
+		},
+		"WS0005":{
+		  "type": "ENERGY",
+		},
+		"WS0006":{
+		  "type": "ENERGY",
+		},
+		"WS0007":{
+		  "type": "ENERGY",
+		},
+		"WS0008":{
+		  "type": "ENERGY",
+		},
+		"WSML01":{
+		  "type": "UNIVERSAL",
+		},
+		"WSML02":{
+		  "type": "UNIVERSAL",
+		},
+	},
+	"engineSlotChanges":{
+		"0":{"style":"MIDLINE"},
+		"1":{"style":"MIDLINE"},
+		"2":{"style":"MIDLINE"},
+		"3":{"style":"MIDLINE"},
+		"4":{"style":"MIDLINE"},
+		"5":{"style":"MIDLINE"},
+		"6":{"style":"MIDLINE"},
+		"7":{"style":"MIDLINE"},
+		"8":{"style":"MIDLINE"},
+		"9":{"style":"MIDLINE"},
+		"10":{"style":"MIDLINE"},
+		"11":{"style":"MIDLINE"},
+	},  
+}

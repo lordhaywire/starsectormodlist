@@ -1,0 +1,106 @@
+{
+  "hullName": "Sumpter",
+  "hullId": "acs_sumpter",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/acs_sumpter.png",
+  "style": "LOW_TECH",
+  "height": 59,
+  "width": 56,
+  "center": [28, 29.5],
+  "collisionRadius": 76.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 47,
+  "viewOffset": 0,
+  "builtInMods": [
+    "frontshield",
+    "repair_gantry",
+    "acs_secondgradedeck"
+  ],
+  "builtInWings": [
+    "acs_borer_smol_wing"
+  ],
+  "builtInWeapons": {
+    "WS0003": "acs_sumpter_deco"
+  },
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [0.5, 19]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [5, 19]
+    },
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
+      "arc": 25,
+      "angle": 0,
+      "locations": [14.5, 2]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-5.5, 1],
+      "renderOrderMod": 3
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [0, -0],
+      "renderOrderMod": 2
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-27, 11],
+      "length": 50.5,
+      "width": 19,
+      "angle": 180,
+      "contrailSize": 19,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-27, -9.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-26.5, -1],
+      "length": 24.5,
+      "width": 9,
+      "angle": 180,
+      "contrailSize": 9,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    24.5, -21.5,
+    -23, -23,
+    -17.5, 22.5,
+    24.5, 21.5
+  ]
+}

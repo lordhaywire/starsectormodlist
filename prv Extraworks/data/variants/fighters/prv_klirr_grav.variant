@@ -1,0 +1,33 @@
+{
+  "variantId": "prv_klirr_grav",
+  "hullId": "prv_klirr",
+  "displayName": "Companion Drone",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [
+    "eccm",
+    "prv_slavedfirecontrol",
+    "no_weapon_flux"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "prv_jursla_gbe",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "prv_sidensvans_fighter"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

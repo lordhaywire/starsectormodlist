@@ -1,0 +1,87 @@
+{
+    "playableFaction":true,
+    "corvusCompatible":true,
+    
+    "rebelFleetSuffix":"Free Syndicate",
+    
+    "difficultyString":"hard",
+    
+    "directoryUseShortName":true,
+	
+    "marketSpawnWeight":0.5,
+    "freeMarket":true,
+     
+    "startRelationships":{ 
+		"player":		-0.3,
+		"prv":		-0.6,
+		"pirates":		-0.3,
+		"hegemony":		-0.3,
+		"persean":		-0.3,
+		"sindrian_diktat":-0.3,
+		"independent":	-0.3,
+		"luddic_path":	-0.3,
+		},
+    #"maxRelationships":{ },
+    #"minRelationships":{"pirates":-0.45,},
+    "diplomacyPositiveChance":{ "pirates":1.5, },
+    #"diplomacyNegativeChance":{ "pirates":1, "independent":1.5, "persean":1, "luddic_church":0.75,},
+    "morality":"neutral",
+    
+    "alignments":{
+        #"diplomatic":	  0,
+        "technocratic": -0.5,
+        #"corporate":	  0,
+        "militarist":	 -0.5,
+        "ideological":	  1,
+        "hierarchial":	 -1,
+    },
+	"diplomacyTraits":[
+		#"irredentist", 
+		"lowprofile",
+		"anarchist", 
+		"dislikes_ai", 
+		"stalwart",
+		"neutralist",
+	],
+    
+   "startShipsSolo":[["prv_granit_elite"]],
+   "startShipsCombatSmall":[
+      ["prv_dolomit_attack", "prv_basalt_attack", "prv_gremlin_rb_attack"],
+   ],
+    "startShipsTradeSmall":[
+	["prv_venture_rb_merch", "prv_basalt_protected", "hound_d_pirates_Shielded"],
+      ["prv_visent_smuggler", "cerberus_d_pirates_Standard", "prv_granit_belt"],
+    ],
+    "startShipsCombatLarge":[
+      ["prv_hornfels_standard", "prv_dolomit_balanced", "prv_basalt_protected"],		#17 + 12 + 5 = 34
+      ["prv_dominator_rb_line", "prv_flamma_p_assault", "prv_gnista_p_balanced"],	#25 + 5 + 3  = 33
+    ],
+    "startShipsTradeLarge":[
+      ["prv_bergslag_belt", "prv_visent_lh", "prv_flamma_p_overdriven"],					#21 + 5 + 6 = 32
+      ["prv_gabbro_mil", "mule_d_pirates_Standard", "prv_gnejs_belt", "prv_basalt_protected"],	#15 + 7 + 7 + 5 = 34
+    ],
+    "startShipsCarrierSmall":[
+	["prv_skiffer_belt", "prv_skiffer_industrial", "prv_granit_belt", "prv_basalt_attack"],
+    ],
+    "startShipsCarrierLarge":[
+	["prv_flock_rb_attack", "prv_tystnad_p_ambush", "prv_gremlin_rb_balanced"],
+    ],
+    #"startShipsSuper":[["prv_tystnad_mod_starter"]],
+    
+    "startSpecialItems":[
+        [["prv_rb_package", ""]],
+    ],
+    
+    "industrySeeds":[
+        {"id":"prv_rb_syndicate_hq", "mult":0.05},
+        {"id":"orbitalworks", "mult":0.1},
+    ],
+    
+    "defenceStations":[
+	  {"ids":["prv_station1_rb", "prv_station2_rb", "prv_station3_rb"], "weight":2},
+        #{"ids":["orbitalstation_mid", "battlestation_mid", "starfortress_mid"], "weight":0.25},
+        #{"ids":["orbitalstation_high", "battlestation_high", "starfortress_high"], "weight":0.25},
+    ],
+    
+    #"customStations":["prv_station_oy",],
+}

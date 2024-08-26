@@ -2,9 +2,9 @@
   "id":"luddenhanceied",
 	"name":"Luddic Enhancement IED",
 	"author": "King Alfonzo",
-	"version":"1.2.6",
+	"version":"1.2.6a",
 	"description":"Originally apart of Luddic Enhancement, this mod adds Martyr ships to the Luddic Path.",
-    "gameVersion":"0.96a-RC8",
+    "gameVersion": "0.97a-RC8",
     "dependencies": [
         {
             "id": "lw_lazylib",

@@ -1,0 +1,43 @@
+{
+    "displayName": "Syndicate",
+    "fluxCapacitors": 9,
+    "fluxVents": 10,
+    "goalVariant": true,
+    "hullId": "prv_wolf_rb",
+    "hullMods": ["heavyarmor","armoredweapons"],
+    "permaMods": [],
+    "quality": 0.5,
+    "variantId": "prv_wolf_rb_syndicate",
+    "weaponGroups": [
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {"WS 006": "prv_lightthumper"}
+        },
+        {
+            "autofire": false,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 005": "annihilator",
+            }
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 001": "prv_lighttripleac"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {"WS 004": "lightag"}
+        },
+        {
+            "autofire": true,
+            "mode": "LINKED",
+            "weapons": {
+                "WS 002": "mininglaser",
+                "WS 003": "mininglaser"
+            }
+        }
+    ]
+}

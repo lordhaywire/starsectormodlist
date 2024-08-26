@@ -2,11 +2,11 @@
   "hullName": "Gambit (P)",
   "hullId": "roider_gambit_p_early",
   "hullSize": "CRUISER",
-  "spriteName": "graphics/ships/roider_gambit_p.png",
+  "spriteName": "graphics/ships/gambit/roider_gambit_p.png",
   "style": "ROIDER_HULL",
-  "height": 183,
-  "width": 150,
-  "center": [75, 96],
+  "height": 188,
+  "width": 152,
+  "center": [76, 96],
   "collisionRadius": 130,
   "shieldCenter": [-3, -0],
   "shieldRadius": 125,
@@ -16,16 +16,10 @@
 	"ill_advised",
 	"comp_structure"
   ],
+  "builtInWeapons": {
+    "MED MASK": "roider_gambit_p_mask"
+  },
   "weaponSlots": [
-    {
-      "id": "WS 001",
-      "size": "MEDIUM",
-      "type": "BALLISTIC",
-      "mount": "HARDPOINT",
-      "arc": 5,
-      "angle": 0,
-      "locations": [79, -0]
-    },
     {
       "id": "WS 002",
       "size": "MEDIUM",
@@ -33,7 +27,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [15, 54]
+      "locations": [17, 54]
     },
     {
       "id": "WS 003",
@@ -42,7 +36,7 @@
       "mount": "HARDPOINT",
       "arc": 5,
       "angle": 0,
-      "locations": [15, -54]
+      "locations": [17, -54]
     },
     {
       "id": "WS 004",
@@ -51,7 +45,8 @@
       "mount": "TURRET",
       "arc": 210,
       "angle": 0,
-      "locations": [52, -0]
+      "locations": [23, -0],
+      "renderOrderMod": 200
     },
     {
       "id": "WS 005",
@@ -60,7 +55,7 @@
       "mount": "TURRET",
       "arc": 210,
       "angle": 0,
-      "locations": [21, -0]
+      "locations": [50, 0]
     },
     {
       "id": "WS 006",
@@ -69,7 +64,7 @@
       "mount": "TURRET",
       "arc": 200,
       "angle": 130,
-      "locations": [-30, 49]
+      "locations": [-28, 49]
     },
     {
       "id": "WS 007",
@@ -78,12 +73,31 @@
       "mount": "TURRET",
       "arc": 200,
       "angle": -130,
-      "locations": [-30, -49]
+      "locations": [-28, -49]
+    },
+    {
+      "id": "MANTLE",
+      "size": "SMALL",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [64, -0]
+    },
+    {
+      "id": "MED MASK",
+      "size": "SMALL",
+      "type": "DECORATIVE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [36, -0],
+      "renderOrderMod": 100
     }
   ],
   "engineSlots": [
     {
-      "location": [-92, -36.5],
+      "location": [-90, -36.5],
       "length": 64,
       "width": 20,
       "angle": 180,
@@ -91,7 +105,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-92, 35.5],
+      "location": [-90, 36.5],
       "length": 64,
       "width": 20,
       "angle": 180,
@@ -99,7 +113,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-85, -59],
+      "location": [-83, -59],
       "length": 42,
       "width": 16,
       "angle": 180,
@@ -107,7 +121,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-85, 59],
+      "location": [-83, 59],
       "length": 42,
       "width": 16,
       "angle": -180,
@@ -115,7 +129,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-92, 48.5],
+      "location": [-90.5, 49],
       "length": 64,
       "width": 20,
       "angle": 180,
@@ -123,7 +137,7 @@
       "style": "ROIDER_ENGINE"
     },
     {
-      "location": [-92, -48.5],
+      "location": [-90, -49],
       "length": 64,
       "width": 20,
       "angle": -180,
@@ -132,33 +146,22 @@
     }
   ],
   "bounds": [
-    -58, -10,
-    -47, -11,
-    -50, -27,
-    -91, -22,
-    -80, -64,
-    -55, -64,
-    -49, -71,
-    -31, -69,
-    -7, -72,
-    16, -66,
-    12, -42,
-    7, -33,
-    58, -31,
-    76, -18,
-    76, 18,
-    58, 31,
-    7, 33,
-    12, 42,
-    16, 66,
-    -7, 72,
-    -31, 69,
-    -49, 71,
-    -55, 64,
-    -80, 64,
-    -91, 22,
-    -50, 27,
-    -47, 11,
-    -58, 10
+    -56, -10,
+    -48, -25,
+    -92, -21,
+    -78, -63,
+    -5, -73,
+    19, -66,
+    18, -35,
+    66, -33,
+    79, -0,
+    66, 33,
+    18, 35,
+    19, 66,
+    -5, 73,
+    -78, 63,
+    -92, 21,
+    -48, 25,
+    -56, 10
   ]
 }

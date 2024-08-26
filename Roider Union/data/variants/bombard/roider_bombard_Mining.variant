@@ -1,10 +1,11 @@
 {
     "displayName": "Mining",
-    "fluxCapacitors": 14,
-    "fluxVents": 10,
+    "fluxCapacitors": 18,
+    "fluxVents": 15,
     "hullId": "roider_bombard",
     "hullMods": ["roider_fighterClamps"],
     "permaMods": [],
+    "sMods": [],
     "variantId": "roider_bombard_Mining",
     "weaponGroups": [
         {
@@ -20,7 +21,7 @@
         {
             "autofire": true,
             "mode": "LINKED",
-            "weapons": {"WS 001": "lightdualac"}
+            "weapons": {"WS 001": "lidardish"}
         },
         {
             "autofire": true,

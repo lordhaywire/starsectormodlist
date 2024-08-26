@@ -1,0 +1,39 @@
+{
+  "variantId": "prv_gnista_tt_support",
+  "hullId": "prv_gnista_tt",
+  "displayName": "Support",
+  "goalVariant": true,
+  "fluxCapacitors": 7,
+  "fluxVents": 8,
+  "quality": 0.5,
+  "permaMods": [],
+  "hullMods": [
+    #"missleracks",
+    "missile_autoloader",
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0002": "atropos_single"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "ioncannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

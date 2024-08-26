@@ -1,0 +1,294 @@
+{
+  "bounds": [
+    -4,
+    38,
+    68,
+    40,
+    92.5,
+    28,
+    88.5,
+    11.5,
+    24,
+    9,
+    24,
+    -11,
+    88.5,
+    -11.5,
+    90,
+    -25.5,
+    70,
+    -38,
+    -12,
+    -42,
+    -32,
+    -35,
+    -62,
+    -51,
+    -99,
+    -23,
+    -96,
+    28.5,
+    -64,
+    50,
+    -47,
+    45
+  ],
+  "builtInMods": [
+    "civgrade",
+    "heavyarmor",
+    "militarized_subsystems"
+  ],
+  "builtInWings": [],
+  "center": [
+    52,
+    98
+  ],
+  "collisionRadius": 140,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 38,
+      "location": [
+        -97,
+        25
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 30,
+      "location": [
+        -97.5,
+        10
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 40,
+      "location": [
+        -97,
+        -12
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 38,
+      "location": [
+        -97,
+        -26
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -99,
+        -19
+      ],
+      "style": "LOW_TECH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 64,
+      "length": 64,
+      "location": [
+        -99,
+        18
+      ],
+      "style": "LOW_TECH",
+      "width": 20
+    },
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 30,
+      "location": [
+        -93.5,
+        5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": -180,
+      "contrailSize": 44,
+      "length": 30,
+      "location": [
+        -93.5,
+        -5
+      ],
+      "style": "LOW_TECH",
+      "width": 8
+    },
+    {
+      "angle": 180,
+      "contrailSize": 44,
+      "length": 38,
+      "location": [
+        -85.5,
+        35.5
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    },
+    {
+      "angle": -180,
+      "contrailSize": 44,
+      "length": 38,
+      "location": [
+        -85.5,
+        -35.5
+      ],
+      "style": "LOW_TECH",
+      "width": 6
+    }
+  ],
+  "height": 195,
+  "hullId": "filgap_wardlaw",
+  "hullName": "Wardlaw",
+  "hullSize": "DESTROYER",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 120,
+  "spriteName": "graphics/filgap/ships/filgap_wardlaw.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 135,
+      "arc": 250,
+      "id": "WS 001",
+      "locations": [
+        -61,
+        37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 225,
+      "arc": 250,
+      "id": "WS 002",
+      "locations": [
+        -61,
+        -37
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS 003",
+      "locations": [
+        81,
+        21
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 225,
+      "id": "WS 004",
+      "locations": [
+        81,
+        -20
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 45,
+      "arc": 250,
+      "id": "WS0001",
+      "locations": [
+        52,
+        33
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -45,
+      "arc": 250,
+      "id": "WS0002",
+      "locations": [
+        52,
+        -30
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 60,
+      "arc": 180,
+      "id": "WS0003",
+      "locations": [
+        29.5,
+        32
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": -60,
+      "arc": 180,
+      "id": "WS0004",
+      "locations": [
+        30,
+        -31
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 250,
+      "id": "WS0005",
+      "locations": [
+        17,
+        -0
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 360,
+      "id": "WS0006",
+      "locations": [
+        -14,
+        -25
+      ],
+      "mount": "TURRET",
+      "size": "SMALL",
+      "type": "MISSILE"
+    }
+  ],
+  "width": 104
+}

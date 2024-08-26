@@ -1,10 +1,10 @@
 {
     "displayName": "Support",
-    "fluxCapacitors": 13,
+    "fluxCapacitors": 15,
     "fluxVents": 8,
     "goalVariant": true,
     "hullId": "roider_jane",
-    "hullMods": ["expanded_deck_crew"],
+    "hullMods": ["roider_trackerSwap"],
     "modules": [{"PROW ARMOR": "roider_jane_armor_Standard"}],
     "permaMods": [],
     "sMods": [],

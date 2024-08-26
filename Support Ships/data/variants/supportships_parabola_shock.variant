@@ -1,6 +1,6 @@
 {
     "displayName": "Shock",
-    "fluxCapacitors": 9,
+    "fluxCapacitors": 13,
     "fluxVents": 27,
     "hullId": "supportships_parabola",
     "hullMods": ["advancedoptics"],

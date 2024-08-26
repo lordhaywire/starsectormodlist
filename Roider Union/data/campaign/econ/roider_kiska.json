@@ -6,7 +6,7 @@
 			"faction":"roider",
 			"size":4,
 			"startingConditions":[
-				"population_4",
+				"population_4"
 			],
 			"industries":[
 				"population",
@@ -17,13 +17,12 @@
 				"lightindustry",
 				"battlestation_mid",
 				"heavybatteries"
-			],
+			]
 		},
 		{
 			"entities":["roider_threeSisters"],
 			"faction":"independent",
 			"size":3,
-			"freePort":true,
 			"startingConditions":[
 				"population_3"
 			],
@@ -34,14 +33,14 @@
 				"roider_dives",
 				"orbitalstation",
 				"heavybatteries"
-			],
+			]
 		},
 		{
 			"entities":["roider_zinStation"],
 			"faction":"tritachyon",
 			"size":4,
 			"startingConditions":[
-				"population_4",
+				"population_4"
 			],
 			"industries":[
 				"population",
@@ -49,10 +48,10 @@
 				"heavyindustry",
 				"militarybase",
 				"battlestation_high",
-				"heavybatteries",
-			],
+				"heavybatteries"
+			]
 		}
-	],
+	]
 
 }
 

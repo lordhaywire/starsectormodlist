@@ -1,0 +1,49 @@
+{
+	"id":"prv_skata_sat",
+	"onHitEffect":"prv.corp.weapons.prv_skata_OnHitEffect",
+	"onFireEffect":"prv.extra.weapons.prv_skata_SaturationEffect",
+	"behaviorSpec":{"behavior":"CUSTOM",
+	      "soup_duration":7f,
+	      "soup_dps":150f,
+	      "soup_size":150f
+	},
+	"specClass":"missile",	
+	"missileType":"MISSILE",
+	"sprite":"graphics/prv/missiles/prv_missile_skata.png",
+	"size":[7,13],	
+	"center":[3.5,6.5],
+	"collisionRadius":8,
+	"collisionClass":"MISSILE_NO_FF",
+	"explosionColor":[165,225,100,255], 			#nasty green  # purely visual, will get a white additively blended core on top of this color
+	"explosionRadius":0, # purely visual #was 80, now handled in OnHit
+	"flameoutTime":1.125, # total time from flameout to full fadeout
+	"noEngineGlowTime":0.75, # time spent without the engine glow being rendered
+	"fadeTime":0.5, # fadeout duration	
+	"engineSpec":{
+		"turnAcc":240,
+		"turnRate":90,
+		"acc":750,
+		"dec":250},
+	"engineSlots":[{"id":"ES1",
+		"loc":[-9, 0],
+		"style":"CUSTOM",
+		"styleSpec":{
+			"mode":"QUAD_STRIP", 				# PARTICLES or QUAD_STRIP, determines which params are used
+			"engineColor":[145,255,75,255], 		#golden yellow HSB 45 80 100
+			"contrailDuration":0.2,				#1
+			"contrailWidthMult":2,
+			"contrailWidthAddedFractionAtEnd":0.25,  	# can be negative. makes trail spread out/narrow at the end	#2.5
+			"contrailMinSeg":9, 				# min segment length, in pixels
+			"contrailMaxSpeedMult":0f,
+			"contrailAngularVelocityMult":0.5f,
+			#"contrailColor":[255,234,171,25], 		# golden yellow @ 33% sat
+			"contrailColor":[145,255,75,15],
+			"glowSizeMult":1.75,
+			#"glowAlternateColor":[255,0,0,255],
+			"type":"GLOW" 					# GLOW or SMOKE; additive or regular blend mode
+		},
+		"width":4.0,
+		"length":24.0,
+		"angle":180.0},
+	]
+}

@@ -1,0 +1,101 @@
+{
+  "bounds": [
+    31.5,
+    0,
+    21,
+    -9.5,
+    10.5,
+    -10,
+    -4.5,
+    -17,
+    -19.5,
+    -17,
+    -30.5,
+    -11.5,
+    -30.5,
+    11.5,
+    -19.5,
+    17,
+    -4.5,
+    17,
+    10.5,
+    10,
+    21,
+    9.5,
+    31.5,
+    -0
+  ],
+  "builtInMods": [
+    "hiressensors",
+    "insulatedengine"
+  ],
+  "builtInWings": [],
+  "center": [
+    19,
+    33
+  ],
+  "collisionRadius": 53,
+  "engineSlots": [
+    {
+      "angle": 180,
+      "contrailSize": 10,
+      "length": 31.5,
+      "location": [
+        -31,
+        5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    },
+    {
+      "angle": -180,
+      "contrailSize": 10,
+      "length": 31.5,
+      "location": [
+        -31,
+        -5
+      ],
+      "style": "LOW_TECH",
+      "width": 10
+    }
+  ],
+  "height": 66,
+  "hullId": "filgap_dove",
+  "hullName": "Dove",
+  "hullSize": "FRIGATE",
+  "shieldCenter": [
+    0,
+    0
+  ],
+  "shieldRadius": 44.5,
+  "spriteName": "graphics/filgap/ships/filgap_dove.png",
+  "style": "LOW_TECH",
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "angle": 0,
+      "arc": 0,
+      "id": "WS0001",
+      "locations": [
+        5,
+        -13
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    },
+    {
+      "angle": 0,
+      "arc": 60,
+      "id": "WS0002",
+      "locations": [
+        -1,
+        -0
+      ],
+      "mount": "HARDPOINT",
+      "size": "SMALL",
+      "type": "BALLISTIC"
+    }
+  ],
+  "width": 38
+}

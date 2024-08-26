@@ -1,0 +1,58 @@
+{
+  "variantId": "filgap_wagner_Pirate",
+  "hullId": "filgap_wagner_p",
+  "displayName": "Pirate",
+  "goalVariant": true,
+  "fluxCapacitors": 24,
+  "fluxVents": 20,
+  "quality": 0,
+  "permaMods": [],
+  "hullMods": [
+    "armoredweapons",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "shredder",
+        "WS0002": "shredder",
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "hammer",
+        "WS0010": "hammer"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "filgap_davidsystem",
+        "WS0008": "filgap_davidsystem"
+}
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heavyac"
+      }
+    },
+    {
+      "autofire": true,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0004": "vulcan",
+        "WS005": "vulcan",
+        "WS006": "lightdualmg"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

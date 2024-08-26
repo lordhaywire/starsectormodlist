@@ -1,6 +1,6 @@
 {
 	"id":"prv_akers_fighter_shot",
-	"onHitEffect":"data.scripts.weapons.prv_heavyakers_OnHitEffect",
+	"onHitEffect":"prv.corp.weapons.prv_heavyakers_OnHitEffect",
 	"specClass":"projectile",
 	"spawnType":"BALLISTIC",
 	"collisionClass":"PROJECTILE_FF",

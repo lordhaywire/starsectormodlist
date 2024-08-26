@@ -1,0 +1,15 @@
+{
+	### Graphics ###
+	"graphics":{
+		"fx":{
+			"prv_beam_ljungeld_core":"graphics/prv/fx/prv_beam_ljungeld_core.png",
+			"prv_beam_ljungeld_fringe":"graphics/prv/fx/prv_beam_ljungeld_fringe.png",
+			"prv_diamond_beam_core_cut":"graphics/prv/fx/prv_diamond_beam_core_cut.png",
+			"prv_overlay_indicator_circle":"graphics/prv/fx/prv_overlay_indicator_circle.png",
+			"prv_overlay_spatterfire":"graphics/prv/fx/prv_overlay_spatterfire.png",
+			"prv_overlay_spatterfire_border":"graphics/prv/fx/prv_overlay_spatterfire_border.png",
+			"prv_overlay_diszone":"graphics/prv/fx/prv_overlay_diszone.png",
+			"prv_overlay_rift":"graphics/prv/fx/prv_overlay_rift.png",
+		},
+	},	
+}
