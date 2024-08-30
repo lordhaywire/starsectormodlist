@@ -2,7 +2,7 @@
   "id":"TTE",
 	"name":"Tri-Tac Expansion",
 	"author":"Dazs",	
-	"version":"0.6",
+	"version":"0.6.1",
 	"description":"A compilation of various ships and stations designed to buff up Tri-Tac's fleet and military might.",
 	"gameVersion":"0.97a-RC11",
  	"modPlugin":"data.scripts.TTE_modPlugin",

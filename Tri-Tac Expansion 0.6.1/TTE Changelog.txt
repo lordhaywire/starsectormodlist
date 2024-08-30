@@ -1,3 +1,9 @@
+v0.6.1 - Save Game compatible
+	- Fixed a mount mismatch on the Azadian front hardpoints- TY Toad for noting it and letting me know
+	- Fixed a graphics error with the nonex version of the mod - TY denil380 for informing me and sorry for the hassle it caused you
+	- Removed the STRIKE hint on the Ion Burst - Initially this weapon was slow firing but the current version no longer needs this tag
+	- Changed the primary role of the Pulse Blaster to Anti-Armor and the Ion Burst to Anti-Shield - Had them as General which is for energy weapons
+
 v0.6 - Save Game compatible
 	- Fixed a weapon size mismatch on the Hoefen - You may need to rearm it if one is in your current fleet - TY last_misadventure for letting me know
 	- Reduced the range of the Pulse Blaster, Ion Burst, & Light Plasma Cannon from 1k to 800 and the OP to 12 Medium, 18 Large - Ty Village for your cometary

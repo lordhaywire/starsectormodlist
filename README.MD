@@ -76,7 +76,7 @@ I have included all the mod files in this repository.  You can just download the
 
 [Support Ships v0.8.0](https://fractalsoftworks.com/forum/index.php?topic=25186.0) - Updated 8/25/24
 
-[Tri-Tachyon Expansion v0.6](https://fractalsoftworks.com/forum/index.php?topic=30322.0) - Added 8/25/24
+[Tri-Tachyon Expansion v0.6.1](https://fractalsoftworks.com/forum/index.php?topic=30322.0) - Added 8/25/24
 
 ## Faction Mods
 

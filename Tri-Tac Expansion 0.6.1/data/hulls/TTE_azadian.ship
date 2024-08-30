@@ -194,7 +194,7 @@
       "id": "WS0020",
       "size": "MEDIUM",
       "type": "ENERGY",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 35,
       "angle": 0,
       "locations": [132.5, 98]
