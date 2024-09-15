@@ -50,6 +50,10 @@ object SCUtils {
 
         return data*/
 
+        /*if (Global.getSector().playerFleet == null) {
+            return SCData(Global.getFactory().createEmptyFleet("player", "", false))
+        }*/
+
         return getFleetData(Global.getSector().playerFleet)
     }
 
@@ -66,10 +70,18 @@ object SCUtils {
 
                 if (!fleet.eventListeners.any { it is SCData }) {
                     fleet.addEventListener(data)
+
+                    //Experimental, but should help in some cases
+                    var skills = data.getAllActiveSkillsPlugins()
+                    for (skill in skills) {
+                        skill.onActivation(data)
+                    }
                 }
                 if (!fleet.hasScriptOfClass(SCData::class.java)) {
                     fleet.addScript(data)
                 }
+
+
             }
         }
 

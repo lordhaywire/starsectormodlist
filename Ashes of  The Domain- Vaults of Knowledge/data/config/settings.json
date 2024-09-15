@@ -91,7 +91,7 @@
 			"orbitalheavy_sub":"graphics/icons/tech/subicon_orbital_manu.png",
 			"bifrost_sub":"graphics/icons/tech/subicon_bifrost.png",
 			"stella_manufactorium_sub":"graphics/icons/tech/subicon_stella.png",
-			"modula_program_sub":"graphics/icons/tech/subicon_modula_program.png",
+			"hightech_sub":"graphics/icons/tech/subicon_modula_program.png",
 			"none":"graphics/icons/tech/generic.png",
 			"researched":"graphics/icons/tech/researched.png",
 			"mining_megaplex_sub":"graphics/icons/tech/subicon_mining_megaplex.png",
@@ -112,9 +112,11 @@
 			"dmg_type_boom":"graphics/ui/icons/damagetype_high_explosive.png",
 			"dmg_type_frag":"graphics/ui/icons/damagetype_fragmentation.png",
 			"dmg_type_other":"graphics/ui/icons/damagetype_other.png",
+						"question":"graphics/ui/more_info.png"
 		},
 		"rendering":{
             "GlitchSquare":"graphics/fx/solid_square.png",
+
 		}
 
 	}

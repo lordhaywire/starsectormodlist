@@ -154,3 +154,23 @@ cTap_infoText_Restoration_TASC,DialogOptionSelected,$option == aotd_colonize_hyp
 100:defaultLeave:Leave",
 ctapColonyEstablishing_TASC,DialogOptionSelected,$option == aotd_colonize_hypershunt_confrim_tasc,"AoTDHypershuntColonization TascColonizataion
 DismissDialog",,,
+,,,,,,
+# Research Databank sell ,,,,,,
+databanks_turnInOption,PopulateOptions,"$isPerson
+ResearchSell personCanAcceptDbs",FireBest DissableDatabankOptionIfNeeded,,"15:databanks_startTurnIn:""I'd like to turn in these databanks that I've acquired...""",
+databanks_disableTurnInOption,DissableDatabankOptionIfNeeded,!ResearchSell playerHasDbs,"SetTooltip databanks_startTurnIn ""You do not have any databanks in your possession.""
+SetEnabled databanks_startTurnIn false",,,
+databanks_turnInOptionSelGeneric,DialogOptionSelected,$option == databanks_startTurnIn,ResearchSell generateInitResponse,,,
+,,,,,,
+,,,,,,
+databanks_neverMindOptionSelected,DialogOptionSelected,$option == databanks_neverMind,FireAll PopulateOptions,,,
+databanks_turnInOptionSelected,DialogOptionSelected,$option == databanks_selectDbs,ResearchSell selectDatabanks,,,
+,,,,,,
+,,,,,,
+,,,,,,
+databanks_turnInResponseDefault,DatabanksTurnedIn,"$isPerson
+ResearchSell personCanAcceptDbs","FireAll PopulateOptions
+ResearchSell generateAfterResponse",,,
+,,,,,,
+#Research Contract Mechanic ,,,,,,
+,,,,,,

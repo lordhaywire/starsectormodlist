@@ -38,21 +38,21 @@ I have included all the mod files in this repository.  You can just download the
 
 [Realistic Combat v2.0.6](https://fractalsoftworks.com/forum/index.php?topic=24855.0) - Added 8/25/24
 
-[Second-In-Command v1.1.3](https://fractalsoftworks.com/forum/index.php?topic=30407.0) - Added 8/25/24
+[Second-In-Command v1.1.8](https://fractalsoftworks.com/forum/index.php?topic=30407.0) - Updated 9/15/24
 
 ## Megamods
 
 [Ashes of The Domain - Virtues of Society v1.1.1](https://www.ashesofthedomain.info/) - Added 8/25/24
 
-[Ashes of The Domain - Vaults of Knowledge v2.2.7](https://www.ashesofthedomain.info/) - Added 8/25/24
+[Ashes of The Domain - Vaults of Knowledge v2.3.8](https://www.ashesofthedomain.info/) - Updated 9/15/24
 
 [Ashes of The Domain - Cryosleeper Options v2.0.3](https://www.ashesofthedomain.info/) - Added 8/25/24
 
-[Knights of Ludd](https://fractalsoftworks.com/forum/index.php?topic=29124.0) - Added 8/25/24
+[Knights of Ludd v1.2.0](https://fractalsoftworks.com/forum/index.php?topic=29124.0) - Added 8/25/24
 
 [Nexerelin v0.11.2c](https://fractalsoftworks.com/forum/index.php?topic=9175.0) - Updated 8/24/24
 
-[Random Assortment of Things v2.3.2](https://fractalsoftworks.com/forum/index.php?topic=26260.0) - Added 8/25/24
+[Random Assortment of Things v2.4.3](https://fractalsoftworks.com/forum/index.php?topic=26260.0) - Updated 9/15/24
 
 ## Content Expansions:
 
@@ -92,7 +92,7 @@ I have included all the mod files in this repository.  You can just download the
 
 [Gensoukyou Manufacture v8.1.rc1](https://fractalsoftworks.com/forum/index.php?topic=28396.0) - Added 8/25/24
 
-[Hiver Swarm v1.1.3](https://fractalsoftworks.com/forum/index.php?topic=22965.0) - Updated 8/25/24
+[Hiver Swarm v1.1.4](https://fractalsoftworks.com/forum/index.php?topic=22965.0) - Updated 9/15/24
 
 [Iron Shell v1.183aj](https://fractalsoftworks.com/forum/index.php?topic=18297.0) - Added 8/25/24
 

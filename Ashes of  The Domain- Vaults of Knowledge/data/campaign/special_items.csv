@@ -7,7 +7,7 @@ A computational device capable of performing calculations that violate both the 
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 Base Ship Blueprint,special_ship_bp,single_bp,,,10000,1000,1,,graphics/icons/cargo/blueprint_shiphull.png,ui_chip_pickup,ui_ship_bp_drop,data.kaysaar.aotd.vok.campaign.econ.items.SpecialBlueprintPlugin,,Enables heavy industry to construct ship hulls described by this blueprint.,300
-,,,,,,,,,,,,,,,
+Base Item Blueprint,aotd_item_bp,single_bp,,,10000,1000,1,,graphics/icons/cargo/blueprint_shiphull.png,ui_chip_pickup,ui_ship_bp_drop,data.kaysaar.aotd.vok.campaign.econ.items.ItemBlueprintPlugin,,Enables heavy industry to construct item described by this blueprint.,300
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,

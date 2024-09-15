@@ -203,7 +203,7 @@ class  AbyssGenerator {
         val nebulaPlugin = (nebula as CampaignTerrainAPI).plugin as AbyssTerrainInHyperspacePlugin
         val editor = OldNebulaEditor(nebulaPlugin)
         editor.regenNoise()
-        editor.noisePrune(0.75f)
+        editor.noisePrune(0.70f)
         editor.regenNoise()
 
         //Clear all but a part on the right to make it less even
@@ -284,6 +284,14 @@ class  AbyssGenerator {
            fractures.fracture2.location.set(pos2)
            if (isFinal) {
                fractures.fracture1.addTag("rat_final_fracture")
+
+               if (Global.getSettings().modManager.isModEnabled("second_in_command")) {
+                   var preSystem = fractures.fracture1.starSystem
+                   var drone = AbyssEntityGenerator.spawnMinorEntity(preSystem, "rat_abyss_drone")
+                   drone.addTag("rat_abyssal_xo_entity")
+
+                   drone.setCircularOrbit(fractures.fracture1, MathUtils.getRandomNumberInRange(0f, 360f), 200f, 80f)
+               }
            }
 
            AbyssProcgen.clearTerrainAroundFractures(fractures)

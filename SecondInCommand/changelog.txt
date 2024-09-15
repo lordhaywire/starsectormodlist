@@ -1,3 +1,55 @@
+Version 1.1.8
+Save Compatible with 1.1.x
+
+- The "Starfaring" Capstone skills now require 3 previous skills, instead of 4.
+- Increased Privateerings base reward back to 500 credits.
+- Fixed a bug that caused the "Privateering" reward to be way worse if there was any civilian ship in the opposing fleet.
+- Decreased spawnrate of executive officers on derelict ships.
+- Fixed a crash with the Re-Entry skill.
+
+
+
+Version 1.1.7
+Save Compatible with 1.1.x
+
+- You can now press F1 on a skill added by other mods to see which mod it is from.
+- Added "ListAptitudes", "LevelExecutive", "AddExecutive" Console Commands
+- Adjusted Orders of the Aptitudes so that other mods can more easily put theirs inbetween them.
+
+
+
+Version 1.1.6
+Save Compatible with 1.1.x
+
+- The "Expedition" skill now has a +25% increase for salvage (including rare items) from stations and derelicts.
+- Reduced the executive officer xp gain by a slight amount.
+- Added a (unused) stat that can be modified to reduce or increase the automated points of a ship.
+- Added "Order" column to the SCAptitudes.csv file.
+- Fixed a rare crash on save load.
+
+
+
+Version 1.1.5
+Save Compatible with 1.1.x
+
+- Made it possible for other mods to add skills that enable automated ship recovery & penalty negation
+- Updated the tooltips of skills that provide automated ship points.
+
+
+
+Version 1.1.4
+Save Compatible with 1.1.x
+
+- Added the ability to change an executive officers portrait (Officer Picker -> Manage -> Click on Portrait)
+- You now gain an additional nexerelin operative at lv15.
+- "Continuous Repairs" now requires 240DP instead of 300DP to repair d-mods.
+- Increased "Bulk Transports" from 30% to 40%.
+- Increased "Makeshift Equipments" supply reduction from 20% to 25%.
+- Increased "Privateering"s base bounty reward from 300 to 400.
+- Added the "High Constrast Icons" config for people that have difficulities with spotting which skills are active.
+
+
+
 Version 1.1.3
 Save Compatible with 1.1.x
 
